@@ -1,0 +1,2197 @@
+{
+ "02_botanical_crown_r2.png": {
+  "style_detected": "Soft colored pencil botanical sketch",
+  "roles": [
+   {
+    "role": "1",
+    "score": 6,
+    "problems": [
+     "Soft pencil style lacks contrast for apparel",
+     "Floral crown feels slightly disconnected from fur",
+     "Lacks dynamic lighting or wow factor"
+    ],
+    "fixes": [
+     "Increase overall contrast",
+     "Integrate crown deeper into fur shadows",
+     "Use bolder linework"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "2",
+    "score": 3,
+    "problems": [
+     "White fur on white background causes massive underbase halos",
+     "81k stray pixels will print as dirty specks",
+     "Soft pencil edges will look blurry on DTG"
+    ],
+    "fixes": [
+     "Add a hard outline or distinct background color",
+     "Mask out stray pixels completely",
+     "Increase edge contrast"
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Soft edges and stray marks will ruin DTG print",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "3",
+    "score": 4,
+    "problems": [
+     "Pencil shading cannot be stitched",
+     "Too many tiny petals and leaves",
+     "White fur needs a border to show on light caps"
+    ],
+    "fixes": [
+     "Simplify floral crown to solid shapes",
+     "Use block shading for fur",
+     "Limit to 6 distinct thread colors"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "4",
+    "score": 5,
+    "problems": [
+     "Stray marks around the edges",
+     "Fur texture is uniform and mushy on the sides",
+     "Right eye catchlight slightly off-center"
+    ],
+    "fixes": [
+     "Clean background noise",
+     "Sharpen eye catchlights",
+     "Add varied fur directional strokes"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "5",
+    "score": 7,
+    "problems": [
+     "None obvious, generic botanical sketch style"
+    ],
+    "fixes": [
+     "None needed"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "6",
+    "score": 6,
+    "problems": [
+     "Pencil sketch style might look too faint on short-coated dogs",
+     "White background reliance limits shirt colors"
+    ],
+    "fixes": [
+     "Establish a bolder, more graphic botanical style",
+     "Define clear borders for all breeds"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "7",
+    "score": 5,
+    "problems": [
+     "Dog with flower crown is very common",
+     "Soft sketch doesn't pop in 150px thumbnails"
+    ],
+    "fixes": [
+     "Use vibrant, saturated colors for the crown",
+     "Increase overall contrast for thumbnail readability"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "8",
+    "score": 6,
+    "problems": [
+     "Captures the Bichon look but lacks specific character",
+     "Ears blend too much into the head"
+    ],
+    "fixes": [
+     "Define ear separation slightly more",
+     "Ensure topknot is distinct"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "9",
+    "score": 4,
+    "problems": [
+     "Missed the happy, open-mouth expression with tongue out",
+     "AI is closed-mouth and stoic compared to reference"
+    ],
+    "fixes": [
+     "Prompt for open mouth, happy expression, tongue out"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "10",
+    "score": 4,
+    "problems": [
+     "Too traditional",
+     "Lacks irony or bold aesthetic"
+    ],
+    "fixes": [
+     "Make it hyper-realistic or Y2K graphic style"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "11",
+    "score": 6,
+    "problems": [
+     "Cute but a bit pale",
+     "Wants more vibrant flowers"
+    ],
+    "fixes": [
+     "Brighter pinks and greens in the crown"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "12",
+    "score": 3,
+    "problems": [
+     "Way too cutesy with the flower crown",
+     "Soft pencil style is unappealing"
+    ],
+    "fixes": [
+     "Remove flowers",
+     "Use a bolder, more masculine illustration style"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   },
+   {
+    "role": "13",
+    "score": 6,
+    "problems": [
+     "Safe gift but might look cheap if printed poorly due to soft edges"
+    ],
+    "fixes": [
+     "Ensure crisp print quality"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "14",
+    "score": 5,
+    "problems": [
+     "Looks like a generic digital filter over a photo",
+     "Lacks true artistic stroke variation"
+    ],
+    "fixes": [
+     "Introduce genuine-looking pencil strokes and varied line weights"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Pleasant color palette in crown",
+   "Accurate fluffy texture",
+   "Symmetrical composition"
+  ],
+  "must_fix_before_production": [
+   "Remove 81k stray pixels",
+   "Harden outer edges to prevent underbase halos",
+   "Adjust contrast for white fur to separate from background"
+  ],
+  "prompt_rewrite": "A crisp, high-contrast graphic illustration of a white fluffy Bichon Poodle head, front-facing, happy open mouth with tongue out, wearing a vibrant botanical flower crown with roses and daisies, bold clean outlines, solid white background, vector art style, no text --no soft edges, blurry shading",
+  "usage": {
+   "promptTokenCount": 3323,
+   "candidatesTokenCount": 1927,
+   "totalTokenCount": 7138,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1148
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    }
+   ],
+   "thoughtsTokenCount": 1888,
+   "serviceTier": "standard"
+  }
+ },
+ "03_groovy_70s_r2.png": {
+  "style_detected": "70s retro flat vector illustration",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "The retro rays lack a cohesive radial origin point, making them feel pasted on rather than integrated.",
+     "The pure white fur lacks shading, making the dog's head look like a flat cloud rather than a dimensional object."
+    ],
+    "fixes": [
+     "Adjust the sunburst rays to originate from a single center point behind the dog's snout.",
+     "Add subtle warm-gray or cream vector shading to the fur to give the head volume."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Severe resolution issue: requires >10x upscale for a full front print, which will cause massive pixelation.",
+     "High near_white_share (55%) means this will completely vanish on white/light shirts without a heavy, stiff underbase."
+    ],
+    "fixes": [
+     "Auto-trace the image into a true vector (SVG) to solve the upscale issue permanently.",
+     "Restrict garment colors to darks/mid-tones or add a contrasting drop shadow/outline to the white fur."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "The thin black outlines around the fur texture might be too dense and cause thread bunching at a 4-inch scale.",
+     "Some of the teal shadow shapes behind the rays are too small/thin for clean satin stitches."
+    ],
+    "fixes": [
+     "Remove the internal black fur detail lines; rely on the silhouette.",
+     "Eliminate the teal drop shadows on the rays to keep the thread count and density manageable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "The wavy rays are asymmetrical; the left side has different spacing and curves than the right side.",
+     "Eye catchlights are inconsistent (left eye has one dot, right eye has a smeared double dot)."
+    ],
+    "fixes": [
+     "Redraw the rays in post-processing to be perfectly symmetrical.",
+     "Clean up the eye catchlights so both have a single, crisp white dot in the same position."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "The style is a generic retro vector, no obvious IP flags.",
+     "No text or watermarks detected."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The pure white fur works for a Bichon, but this flat style might look muddy or overly complex on brindle or multi-colored breeds."
+    ],
+    "fixes": [
+     "Establish a strict 3-color limit for the dog faces across the series to maintain the flat, graphic aesthetic regardless of breed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "The white dog on a white background lacks thumbnail stopping power.",
+     "The 70s retro dog niche is getting saturated; this needs a stronger hook."
+    ],
+    "fixes": [
+     "Present the mockup on a heather gray or sand shirt to make the white fur pop.",
+     "Add customizable retro typography (e.g., dog's name) below the graphic to increase perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "The illustration's head is perfectly round, whereas the reference dog has a slightly flatter top and wider cheeks.",
+     "Missing the distinct dark tear-stain shading around the eyes seen in the reference."
+    ],
+    "fixes": [
+     "Flatten the top curve of the head slightly.",
+     "Add subtle gray/brown shading around the inner corners of the eyes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "The reference dog has a very specific wide-eyed, slightly derpy expression that is lost in the generic 'cute' vector eyes.",
+     "The reference dog's ears blend more into the face fluff; the illustration separates them with hard black lines."
+    ],
+    "fixes": [
+     "Enlarge the eyes slightly and show a tiny bit more sclera (white of the eye) to match the reference's expression.",
+     "Soften or remove the hard black outline separating the ears from the cheeks."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "A bit too basic, looks like Canva clipart."
+    ],
+    "fixes": [
+     "Make the colors more vibrant or add some ironic text."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "Cute, but I wish it looked exactly like my dog's specific markings."
+    ],
+    "fixes": [
+     "Offer it on cute pastel colored shirts, not just basic tees."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too feminine and retro for my taste. I wouldn't wear this."
+    ],
+    "fixes": [
+     "Make a version with a more neutral, less 'groovy' background."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe gift, but feels a little generic."
+    ],
+    "fixes": [
+     "Put it on a tote bag instead of a shirt."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul; the vector lines are sterile and the retro motif is clich\u00e9."
+    ],
+    "fixes": [
+     "Introduce some organic texture or hand-drawn imperfections to the linework."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   }
+  ],
+  "top_strengths": [
+   "Clean, flat colors make it highly suitable for embroidery.",
+   "Trendy 70s retro aesthetic appeals to younger demographics.",
+   "Easily adaptable template for a multi-breed product line."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the image to resolve the critical 10x upscale requirement.",
+   "Fix the asymmetrical eye catchlights.",
+   "Ensure the design is only offered on non-white garments due to the high near-white share."
+  ],
+  "prompt_rewrite": "A flat vector illustration of a fluffy white Bichon Poodle dog head, front-facing, sticking tongue out, groovy 1970s style. Symmetrical wavy retro sunburst rays in orange, yellow, and teal radiating perfectly from behind the head. Thick clean black outlines, flat solid colors, subtle cream shading on the white fur for volume, white background, no text, crisp vector art style.",
+  "usage": {
+   "promptTokenCount": 3273,
+   "candidatesTokenCount": 2271,
+   "totalTokenCount": 7256,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1086
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2187
+    }
+   ],
+   "thoughtsTokenCount": 1712,
+   "serviceTier": "standard"
+  }
+ },
+ "04_woodblock_r2.png": {
+  "style_detected": "Clean vector illustration / mascot logo",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails to read as 'woodblock'.",
+     "Looks like generic vector clipart rather than stylized art."
+    ],
+    "fixes": [
+     "Introduce rough, carved line weights.",
+     "Add organic ink textures to mimic block printing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "12.77x upscale for full front will cause severe pixelation.",
+     "White fur on light shirts lacks sufficient contrast."
+    ],
+    "fixes": [
+     "Generate at higher resolution or use vector tracing.",
+     "Add a subtle contrasting drop shadow for light garments."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution too low for DTG full front print.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Fur details in the chin area are slightly too dense."
+    ],
+    "fixes": [
+     "Simplify chin and neck fur lines to a minimum 0.05 in spacing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Minor asymmetry in top head fur tufts.",
+     "Nose shape is slightly too geometric."
+    ],
+    "fixes": [
+     "Symmetrize top head fur.",
+     "Round out the nose shape."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Thick vector outline style might look too much like generic sports mascots for some breeds."
+    ],
+    "fixes": [
+     "Ensure consistent line weight and shading style across all breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Looks like standard stock vector art.",
+     "Lacks a unique hook for high perceived value."
+    ],
+    "fixes": [
+     "Inject more distinct artistic flair to stand out."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 5,
+    "problems": [
+     "Ears are too distinctly separated from the head.",
+     "Bichons/Poodles often have a more unified 'cloud' look."
+    ],
+    "fixes": [
+     "Blend ear shapes into the main head silhouette more seamlessly."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 4,
+    "problems": [
+     "Graphic has distinct ear flaps; reference has a unified round afro.",
+     "Graphic nose is brown; reference is black."
+    ],
+    "fixes": [
+     "Change nose to black.",
+     "Make head shape a single round cloud without separated ears."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic and millennial-core.",
+     "Needs more edge or irony."
+    ],
+    "fixes": [
+     "Add a funny expression or trendy accessory."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but a bit too clipart-like.",
+     "Doesn't capture the specific round fluffiness of the photo."
+    ],
+    "fixes": [
+     "Make it fluffier and rounder like the photo."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "A bit too cute.",
+     "Thick lines make it acceptable for a cap, but wouldn't wear on a tee."
+    ],
+    "fixes": [
+     "Keep bold outlines, desaturate the tongue."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, but maybe too generic."
+    ],
+    "fixes": [
+     "Ensure it prints cleanly on a mug or tote."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Completely lacks the requested woodblock style.",
+     "Looks like a digital vector trace."
+    ],
+    "fixes": [
+     "Rework entirely to include carving marks and organic ink textures."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 10
+   }
+  ],
+  "top_strengths": [
+   "Clean bold outlines",
+   "Excellent thread color count for embroidery",
+   "Symmetrical and balanced composition"
+  ],
+  "must_fix_before_production": [
+   "Resolve massive 12.77x upscale needed for full front print",
+   "Adjust head shape to match reference's unified round afro",
+   "Change nose color to black"
+  ],
+  "prompt_rewrite": "A front-facing, head-only portrait of a fluffy white Bichon Poodle mix, unified round cloud-like haircut, black nose, tongue out. Authentic Japanese woodblock print style, rough carved lines, organic ink texture, bold black outlines, cream paper background, no text.",
+  "usage": {
+   "promptTokenCount": 3273,
+   "candidatesTokenCount": 1887,
+   "totalTokenCount": 7384,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2187
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1086
+    }
+   ],
+   "thoughtsTokenCount": 2224,
+   "serviceTier": "standard"
+  }
+ },
+ "05_neon_synthwave_r2.png": {
+  "style_detected": "80s retrowave / synthwave vector clipart",
+  "roles": [
+   {
+    "role": "1 art_director",
+    "score": 6,
+    "problems": [
+     "Subject lighting is disconnected from the background.",
+     "Dog looks like standard clipart pasted onto a synthwave grid."
+    ],
+    "fixes": [
+     "Apply dramatic cyan and magenta rim lighting to the dog's fur.",
+     "Integrate the subject into the neon color palette."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "2 print_technician",
+    "score": 4,
+    "problems": [
+     "Soft neon glows will create a white underbase halo on dark shirts.",
+     "Square background edge will look like a cheap iron-on patch."
+    ],
+    "fixes": [
+     "Convert soft glows to solid vector offset strokes.",
+     "Remove the square background grid for a floating die-cut design."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "3 embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "Too many colors (8 est).",
+     "Background grid lines are too thin to stitch cleanly."
+    ],
+    "fixes": [
+     "Remove background entirely.",
+     "Reduce to 5 solid colors (white, grey, black, pink, cyan) with satin stitch outlines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "4 ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Fur texture is overly symmetrical, creating an uncanny look.",
+     "Tongue lacks a central anatomical crease."
+    ],
+    "fixes": [
+     "Introduce slight asymmetry to the fur clumps.",
+     "Add a subtle vertical crease to the tongue."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "5 ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic aesthetic."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "6 series_designer",
+    "score": 6,
+    "problems": [
+     "The hard square background limits placement options.",
+     "Flat lighting on the dog won't scale well to short-haired breeds."
+    ],
+    "fixes": [
+     "Use a transparent background with floating neon elements.",
+     "Establish a consistent neon rim-lighting rule for all breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "7 marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Thumbnail detail survival is low.",
+     "Square block design looks low-effort on apparel."
+    ],
+    "fixes": [
+     "Remove the background box to increase perceived value.",
+     "Thicken the neon outlines for better thumbnail readability."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "8 breed_expert",
+    "score": 6,
+    "problems": [
+     "Too perfectly groomed.",
+     "Ears blend too seamlessly into the head shape."
+    ],
+    "fixes": [
+     "Make fur slightly more tousled and curly.",
+     "Define the drop-ear separation more clearly."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "9 likeness_judge",
+    "score": 5,
+    "problems": [
+     "Misses the specific messy charm of the reference.",
+     "Lacks the subtle darker fur/tear staining around the eyes."
+    ],
+    "fixes": [
+     "Add subtle grey shading around the eyes.",
+     "Flatten the top knot slightly to match the reference."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "10 genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Synthwave feels a bit dated/cheugy."
+    ],
+    "fixes": [
+     "Pivot to a more Y2K or cyber-grunge aesthetic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "11 millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute dog, but the harsh square background is unappealing."
+    ],
+    "fixes": [
+     "Remove the grid, keep just the neon-outlined dog."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "12 male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "Too much pink for my taste."
+    ],
+    "fixes": [
+     "Offer a variant with only cyan/blue neon."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "13 gift_buyer",
+    "score": 6,
+    "problems": [
+     "Looks a bit like generic stock art."
+    ],
+    "fixes": [
+     "Needs to look more custom or stylized."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "14 art_lover",
+    "score": 4,
+    "problems": [
+     "Highly derivative trope.",
+     "Disconnect between flat vector dog and neon background."
+    ],
+    "fixes": [
+     "Integrate the lighting properly.",
+     "Stylize the fur to match the geometric background."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Vibrant, eye-catching color palette.",
+   "Clear, recognizable dog breed silhouette.",
+   "Symmetrical and balanced composition."
+  ],
+  "must_fix_before_production": [
+   "Remove the square background grid to avoid a 'boxy' print.",
+   "Convert soft neon glows to hard vector offsets to prevent underbase halos.",
+   "Vectorize and upscale to fix the T1 resolution issue."
+  ],
+  "prompt_rewrite": "Vector illustration of a white Bichon Poodle dog head, front-facing, tongue out. 80s retrowave synthwave aesthetic. The dog is illuminated by dramatic cyan and magenta rim lighting. Solid black background, no grid, floating die-cut design. Hard vector edges, no soft glows, flat bold colors, slightly asymmetrical tousled fur. No text.",
+  "usage": {
+   "promptTokenCount": 3287,
+   "candidatesTokenCount": 1973,
+   "totalTokenCount": 7371,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1112
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    }
+   ],
+   "thoughtsTokenCount": 2111,
+   "serviceTier": "standard"
+  }
+ },
+ "06_paper_cut_r2.png": {
+  "style_detected": "3D digital paper cut-out / layered cardstock vector",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Perfect symmetry makes it feel static and digitally generated.",
+     "Drop shadows are too soft and airbrushed, lacking physical paper texture."
+    ],
+    "fixes": [
+     "Introduce slight asymmetry in the ears and fur layers.",
+     "Use hard-edged, solid-color offset layers instead of soft drop shadows."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive 11.5x upscale needed for full front will destroy edge crispness.",
+     "Soft drop shadows (0.477 gradient share) will cause patchy white underbase halos on dark shirts.",
+     "2360px of stray marks will print as random white specks."
+    ],
+    "fixes": [
+     "Generate at minimum 4000x4000px.",
+     "Convert soft shadows to solid vector shapes or apply a halftone filter.",
+     "Hard-clip the outer boundary and erase all stray pixels."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Soft gradients on a white design will fail DTG underbase printing on dark garments.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Drop shadows cannot be stitched.",
+     "Too many tiny, jagged fur points on the inner layers."
+    ],
+    "fixes": [
+     "Remove all drop shadows.",
+     "Simplify fur layers into 3-4 solid color blocks (white, light grey, dark grey) with thicker points."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Eyes are perfectly mirrored, creating an uncanny stare.",
+     "Tongue lacks a central crease.",
+     "Stray marks present outside the main head."
+    ],
+    "fixes": [
+     "Adjust catchlights so they share the same light source direction.",
+     "Add a subtle vertical crease to the tongue.",
+     "Mask and delete stray marks."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic dog breed in a common craft style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Paper-cut style relies heavily on fluff. Translating this to sleek breeds (e.g., Doberman) might look flat."
+    ],
+    "fixes": [
+     "Establish design rules for short-haired breeds, using muscle definition for paper layers instead of fur."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "White dog on a white background gets lost in small thumbnails."
+    ],
+    "fixes": [
+     "Present the design on dark mockups (navy/black) for primary listing images."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Snout is slightly too broad compared to standard Bichon/Poodle cuts."
+    ],
+    "fixes": [
+     "Narrow the muzzle layers slightly."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Misses the specific tear staining/darker fur around the eyes of the reference dog.",
+     "Missing the red plaid bandana which adds significant character."
+    ],
+    "fixes": [
+     "Add slight grey/brown shading layers around the inner eyes.",
+     "Include the red plaid bandana at the neck."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit too 'craft fair' and lacks an edgy or ironic aesthetic."
+    ],
+    "fixes": [
+     "Add a weird or fun element, like retro sunglasses or a cowboy hat."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but feels a bit sterile. Wants to see her exact dog's accessories."
+    ],
+    "fixes": [
+     "Add the red bandana to make it feel personalized."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too cutesy for a standard front-print hoodie."
+    ],
+    "fixes": [
+     "Scale down to a subtle left-chest print."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe gift, but print quality issues with shadows could make it look cheap."
+    ],
+    "fixes": [
+     "Ensure crisp, solid colors for a high-quality feel."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like a digital filter rather than authentic papercraft. Perfect symmetry gives away AI origin."
+    ],
+    "fixes": [
+     "Introduce organic imperfections and varied paper textures."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Clear, recognizable silhouette.",
+   "Strong contrast and pop on dark garments.",
+   "Distinct, trendy paper-cut aesthetic."
+  ],
+  "must_fix_before_production": [
+   "Remove all soft drop shadows and replace with hard vector offsets.",
+   "Upscale resolution natively to fix the 11.5x deficit.",
+   "Clean up the 2360px of stray marks outside the design.",
+   "Break perfect symmetry in the eyes and fur."
+  ],
+  "prompt_rewrite": "A 3D paper cut-out illustration of a white fluffy Bichon Poodle dog head, front-facing, head only. Wearing a red plaid bandana. Crisp hard vector edges, distinct layered cardstock textures, solid flat colors, no soft drop shadows, no gradients. Slight organic asymmetry in the fur layers and lighting. Clean white background, no text.",
+  "usage": {
+   "promptTokenCount": 3327,
+   "candidatesTokenCount": 2069,
+   "totalTokenCount": 7690,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1152
+    }
+   ],
+   "thoughtsTokenCount": 2294,
+   "serviceTier": "standard"
+  }
+ },
+ "07_pop_art_r2.png": {
+  "style_detected": "Flat vector clipart / simple comic style",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Lacks true 'pop art' punch (missing halftone dots, bold color blocking).",
+     "Reads as generic vector clipart rather than a premium brand signature."
+    ],
+    "fixes": [
+     "Add halftone shading instead of flat grey.",
+     "Use thicker, more dynamic line weights for a stylized edge."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "High upscale needed (7.63x) will cause severe pixelation on full front.",
+     "383px of stray marks outside art will print as dirty specks.",
+     "Large solid white areas will feel heavy/sweaty if underbased on darks."
+    ],
+    "fixes": [
+     "Vectorize or use AI upscaler to 8x.",
+     "Clean background to pure transparency.",
+     "Knock out pure white to utilize shirt color on light garments."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Stray marks and extreme upscale requirement will ruin physical print."
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Grey shading details in the fur are too complex for a small cap front."
+    ],
+    "fixes": [
+     "Simplify fur shading to 1-2 contour lines.",
+     "Use solid fill white with satin stitch black outlines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Stray marks in background (flagged by tech data).",
+     "Grey shading on the forehead looks like a smudge rather than fur volume."
+    ],
+    "fixes": [
+     "Erase background artifacts.",
+     "Refine forehead grey shading to follow fur direction."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 6,
+    "problems": [
+     "None. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "Style is easy to replicate but lacks a unique brand signature.",
+     "Too common in the POD market."
+    ],
+    "fixes": [
+     "Introduce a specific stylistic rule (e.g., unique highlight color, geometric background shape) to unify the series."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Pink background pops, but art looks like stock vector.",
+     "Won't stand out in a saturated market at a premium price."
+    ],
+    "fixes": [
+     "Add a witty typography element or unique artistic flair to justify >$25 price."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Captures the Bichon/Poodle 'cloud' look well.",
+     "Snout might be slightly too short/wide compared to standard."
+    ],
+    "fixes": [
+     "Slightly elongate the snout for a more accurate Poodle look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 4,
+    "problems": [
+     "Misses the dog's distinct expression (open mouth, tongue out).",
+     "Reference dog has a slightly more textured, less perfectly round haircut."
+    ],
+    "fixes": [
+     "Prompt for 'open mouth, tongue out, happy panting expression, slightly messy curly fur'."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic. Looks like a mom-shirt graphic.",
+     "Needs to be more ironic, y2k, or hyper-stylized."
+    ],
+    "fixes": [
+     "Make it look like a vintage 90s airbrush or add weird/funny text."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 5,
+    "problems": [
+     "Cute, but a bit generic.",
+     "Doesn't capture the goofy smile of the real dog."
+    ],
+    "fixes": [
+     "Add the tongue out.",
+     "Put it on a pastel crewneck."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Way too cutesy and pink.",
+     "I wouldn't wear this."
+    ],
+    "fixes": [
+     "Grayscale version, distressed texture, put it on a dark grey hoodie."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Safe gift, but looks a bit cheap/clipart-y."
+    ],
+    "fixes": [
+     "Put it on a mug or tote bag instead of a shirt."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Zero artistic soul.",
+     "It's a sterile vector trace."
+    ],
+    "fixes": [
+     "Needs visible brushstrokes, interesting color theory, or a unique compositional angle."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   }
+  ],
+  "top_strengths": [
+   "Clean outlines",
+   "High contrast",
+   "Easily digitizable for embroidery"
+  ],
+  "must_fix_before_production": [
+   "Remove 383px stray marks",
+   "Upscale 8x for print",
+   "Capture reference dog's open-mouth expression"
+  ],
+  "prompt_rewrite": "A flat vector illustration of a white fluffy Bichon Poodle mix dog head, front-facing, happy expression with open mouth and tongue out, thick black outlines, simple cel shading, solid bright pink background, pop art style, clean graphic design, no text.",
+  "usage": {
+   "promptTokenCount": 3285,
+   "candidatesTokenCount": 1859,
+   "totalTokenCount": 7402,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1110
+    }
+   ],
+   "thoughtsTokenCount": 2258,
+   "serviceTier": "standard"
+  }
+ },
+ "08_tattoo_flash_r2.png": {
+  "style_detected": "Traditional American Tattoo Flash",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Symmetrical composition is slightly rigid.",
+     "Swallows feel tacked on rather than organically integrated with the dog."
+    ],
+    "fixes": [
+     "Overlap elements more naturally.",
+     "Break perfect symmetry slightly for a hand-drawn feel."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "Stray marks (190px) will print as unwanted specks.",
+     "High near-white share (0.445) requires heavy underbase on darks."
+    ],
+    "fixes": [
+     "Erase all stray pixels outside the main art.",
+     "Tint pure white areas slightly off-white for better DTG contrast."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "14 colors exceed the 6-color cap limit.",
+     "Pepper shading in fur and gradients in bird wings cannot be stitched."
+    ],
+    "fixes": [
+     "Reduce to 6 flat colors (White, Black, Red, Blue, Yellow, Green).",
+     "Remove all shading and simplify swallow wing details."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Swallow tail feathers merge into a single unnatural block.",
+     "Dog's left eye catchlight is misaligned with the right."
+    ],
+    "fixes": [
+     "Redraw swallow tails to separate feathers.",
+     "Align eye catchlights to the same position."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Uses generic traditional tattoo motifs."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Tattoo flash is a strong style, but might clash with breeds that don't fit the 'tough' aesthetic."
+    ],
+    "fixes": [
+     "Standardize framing elements (e.g., always use roses) to unify the series across diverse breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Thumbnail reads well, but the 'tattoo dog' niche is highly competitive."
+    ],
+    "fixes": [
+     "Offer personalization (dog's name in a traditional tattoo banner) to increase perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Head is too perfectly spherical.",
+     "Lacks the slight ear definition seen in typical Bichon/Poodle cuts."
+    ],
+    "fixes": [
+     "Flatten the top of the head slightly.",
+     "Add subtle definition to separate the drop ears from the main head shape."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Misses the specific eye shape and slight dark rims of the reference dog.",
+     "Reference has a wider, flatter top knot."
+    ],
+    "fixes": [
+     "Widen the head shape.",
+     "Add slight dark shading around the eyes to match the reference's tear stains."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 5,
+    "problems": [
+     "A bit too standard with the roses and swallows.",
+     "Needs more edge or irony to be trendy."
+    ],
+    "fixes": [
+     "Swap swallows for something unexpected like barbed wire or 8-balls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute dog, but the tattoo elements might be too masculine for my taste."
+    ],
+    "fixes": [
+     "Offer a version with softer floral elements like peonies."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "Good style, but the floral makes it lean slightly feminine."
+    ],
+    "fixes": [
+     "Remove roses, keep swallows, add a classic text banner."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe bet for a dog lover who likes tattoos, but a bit niche."
+    ],
+    "fixes": [
+     "Ensure print quality is high so it doesn't look cheap."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Feels like a digital pastiche rather than authentic hand-painted spit-shading."
+    ],
+    "fixes": [
+     "Introduce slight imperfections in line weight and watercolor texture."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Strong symmetrical composition reads well at a distance.",
+   "Bold outlines and high contrast fit the POD medium well.",
+   "Clear, recognizable traditional tattoo aesthetic."
+  ],
+  "must_fix_before_production": [
+   "Clean up 190px of stray marks outside the design.",
+   "Upscale >4x for full front printing.",
+   "Create a simplified 6-color flat version for cap embroidery."
+  ],
+  "prompt_rewrite": "A front-facing head-only portrait of a fluffy white Bichon Poodle mix, traditional American tattoo flash style, bold black outlines, solid flat colors, traditional pepper shading, flanked by traditional swallows and red roses, white background, no text, no banners, symmetrical composition, slightly flattened top head, slight dark rims around eyes.",
+  "usage": {
+   "promptTokenCount": 3302,
+   "candidatesTokenCount": 1998,
+   "totalTokenCount": 7323,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1127
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    }
+   ],
+   "thoughtsTokenCount": 2023,
+   "serviceTier": "standard"
+  }
+ },
+ "09_folk_embroidery_r2.png": {
+  "style_detected": "faux folk floral embroidery",
+  "roles": [
+   {
+    "role": "1 art_director",
+    "score": 7,
+    "problems": [
+     "Black background box restricts apparel placement.",
+     "Symmetry is slightly too rigid, lacking organic craft feel."
+    ],
+    "fixes": [
+     "Knock out black background for a transparent PNG.",
+     "Introduce slight variations in floral placement."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "2 print_technician",
+    "score": 6,
+    "problems": [
+     "9.63x upscale needed; will pixelate heavily on full front.",
+     "Solid black background will print as a heavy, sweaty ink slab.",
+     "White fur lacks contrast for printing on sand/light shirts."
+    ],
+    "fixes": [
+     "Use AI upscaler to 10x resolution.",
+     "Remove black background entirely.",
+     "Add cool grey/blue shadows to white fur."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "3 embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "17 colors exceeds 6-color cap limit.",
+     "Faux-thread fur texture is too complex to digitize at 4 inches.",
+     "Gradients in flower petals cannot be stitched."
+    ],
+    "fixes": [
+     "Reduce palette to white, black, red, blue, green.",
+     "Convert fur to solid block fills.",
+     "Simplify flowers to flat vector shapes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "4 ai_artifact_inspector",
+    "score": 7,
+    "problems": [
+     "Bottom floral elements are slightly asymmetrical.",
+     "Fur texture near the bottom neck edge looks melted/repetitive."
+    ],
+    "fixes": [
+     "Manually mirror bottom flowers.",
+     "Clean up neck fur edge in Photoshop."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "5 ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic folk art style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "6 series_designer",
+    "score": 7,
+    "problems": [
+     "Faux-stitch texture might look strange on short-coated breeds (e.g., Pugs)."
+    ],
+    "fixes": [
+     "Adapt stitch style per breed (e.g., satin stitch for short coats, French knots for curly)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "7 marketplace_merchandiser",
+    "score": 7,
+    "problems": [
+     "Low thumbnail detail survival (0.403).",
+     "Black box makes it look like a cheap square sticker."
+    ],
+    "fixes": [
+     "Remove background.",
+     "Increase contrast on the dog's facial features."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "8 breed_expert",
+    "score": 7,
+    "problems": [
+     "Muzzle is slightly wide for a pure poodle, leans toward doodle."
+    ],
+    "fixes": [
+     "Narrow the muzzle slightly if targeting purebred poodles."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "9 likeness_judge",
+    "score": 4,
+    "problems": [
+     "Missed the open mouth and tongue entirely.",
+     "Missing the red plaid bandana.",
+     "Expression is stoic, reference is happy/derpy."
+    ],
+    "fixes": [
+     "Prompt for open mouth, tongue out, and red bandana."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "10 genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "A bit 'grandma core' unless styled ironically."
+    ],
+    "fixes": [
+     "Print on a baby tee or oversized vintage wash hoodie."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "11 millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "Doesn't capture the specific goofy personality of the reference dog."
+    ],
+    "fixes": [
+     "Add the tongue and bandana to match the real dog."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 30
+   },
+   {
+    "role": "12 male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too floral and cutesy."
+    ],
+    "fixes": [
+     "Remove flowers, use a geometric border."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "13 gift_buyer",
+    "score": 6,
+    "problems": [
+     "Needs to look exactly like the recipient's dog."
+    ],
+    "fixes": [
+     "Fix the likeness by adding the bandana and open mouth."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "14 art_lover",
+    "score": 6,
+    "problems": [
+     "Faux-embroidery texture looks obviously digital/AI upon close inspection."
+    ],
+    "fixes": [
+     "Lean into a true vector illustration style instead of fake stitches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Strong folk art aesthetic.",
+   "Good color harmony.",
+   "Clear, recognizable subject."
+  ],
+  "must_fix_before_production": [
+   "Remove solid black background.",
+   "Upscale resolution by at least 10x.",
+   "Fix likeness by adding open mouth, tongue, and red bandana."
+  ],
+  "prompt_rewrite": "A symmetrical folk art embroidery style illustration of a white fluffy poodle head, front-facing, open mouth with tongue out, wearing a red plaid bandana, surrounded by vibrant red and blue embroidered flowers, black background, highly detailed thread texture, no text.",
+  "usage": {
+   "promptTokenCount": 3282,
+   "candidatesTokenCount": 1932,
+   "totalTokenCount": 7179,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2187
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1095
+    }
+   ],
+   "thoughtsTokenCount": 1965,
+   "serviceTier": "standard"
+  }
+ },
+ "14_master_gold_leaf_r2.png": {
+  "style_detected": "digital bevel-emboss medallion with photorealistic pet portrait",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "The 'gold leaf' reads as a flat digital bevel effect, lacking tactile texture.",
+     "Composition is overly symmetrical and rigid, feeling like a decorative plate rather than apparel art."
+    ],
+    "fixes": [
+     "Prompt for 'textured metallic gold leaf flakes, asymmetrical organic flourishes'.",
+     "Allow the dog's fur to slightly overlap the inner frame to create depth."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "T1 upscale >4x needed for full front; currently too low-res.",
+     "T4 heavy gradients in the gold frame will print patchy on dark DTG shirts.",
+     "T11 stray marks (162px) outside the art will print as random specks."
+    ],
+    "fixes": [
+     "Upscale 6x using AI upscaler.",
+     "Convert gold frame gradients to solid spot colors or apply a halftone filter.",
+     "Manually erase all pixels outside the outer circular boundary."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 3,
+    "problems": [
+     "T5 >6 colors (est 20); too complex for standard cap embroidery.",
+     "Gradients in the gold swirls cannot be stitched.",
+     "Fluffy white fur lacks defined borders for thread paths."
+    ],
+    "fixes": [
+     "Create a separate simplified file.",
+     "Reduce frame to 2 solid colors (green, flat gold).",
+     "Reduce dog to 3 colors with hard outlines and block shading."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Fur texture on the lower chin and neck is mushy and lacks strand definition.",
+     "Minor inconsistencies in the thickness of the gold swirls on the left vs right side."
+    ],
+    "fixes": [
+     "Inpaint the lower neck/chin area to restore sharp fur strands.",
+     "Mirror one half of the frame in post-processing for perfect symmetry if desired."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. The dog and the Celtic/Art Nouveau knotwork are generic."
+    ],
+    "fixes": [
+     "No action needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The strict circular frame is rigid. Pointy-eared dogs (e.g., German Shepherds) will look cramped or get cut off awkwardly."
+    ],
+    "fixes": [
+     "Design the template so ears, snouts, or fur can break the outer boundary of the frame for a more dynamic series."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Thumb detail survival is 0.471; intricate gold details turn to mush at 150px thumbnail size.",
+     "Looks like a coaster or decorative plate, not trendy apparel."
+    ],
+    "fixes": [
+     "Thicken the gold swirls by 200% for better small-scale readability.",
+     "Increase contrast between the white dog and the green background."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Reads perfectly as a Bichon Frise in a show cut, but lacks the specific messy, stringy poodle texture of the reference dog."
+    ],
+    "fixes": [
+     "Prompt for 'loose poodle curls, slightly messy drop ears' instead of a perfect round Bichon dome."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 4,
+    "problems": [
+     "Missed the specific dog. Reference has distinctively wide-set, large eyes and a flatter top head.",
+     "AI dog has standard, closer-set eyes and a perfect dome head."
+    ],
+    "fixes": [
+     "Use Image-to-Image with a lower denoising strength (0.4) to preserve the specific eye placement and head shape of the reference."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 3,
+    "problems": [
+     "Looks like something a grandmother would buy on a decorative plate. Too formal and stuffy."
+    ],
+    "fixes": [
+     "Ditch the green/gold frame. Make the dog wear sunglasses or a trendy accessory."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "The dog is adorable, but the frame feels a bit too 'Renaissance fair' for everyday casual wear."
+    ],
+    "fixes": [
+     "Change the frame to something softer, like a floral wreath or pastel geometric shapes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "The gold swirls and green background look like an Irish pub logo, clashing with the fluffy white dog."
+    ],
+    "fixes": [
+     "Remove the frame entirely. Just a high-contrast, slightly gritty portrait of the dog."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "A bit generic, but a safe, nice-looking gift for an older relative who loves their Bichon."
+    ],
+    "fixes": [
+     "Add an option to customize with the dog's name in a matching gold font below the circle."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "The 'gold leaf' is clearly a digital bevel effect, lacking the tactile, imperfect nature of real gold leaf. Feels like digital kitsch."
+    ],
+    "fixes": [
+     "Prompt for 'impasto oil painting, genuine textured gold leaf flakes, mixed media' to add artistic legitimacy."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   }
+  ],
+  "top_strengths": [
+   "Strong, clear focal point with good contrast against the dark green.",
+   "Dog's expression is happy and engaging.",
+   "Clean circular composition makes for easy placement on garments."
+  ],
+  "must_fix_before_production": [
+   "Upscale image by at least 4x for full front printing.",
+   "Clean up the 162px of stray marks outside the circular frame.",
+   "Simplify the gold gradients to solid colors for DTG printing on darks, or apply a halftone."
+  ],
+  "prompt_rewrite": "A front-facing, head-only portrait of a white Maltipoo dog with wide-set dark eyes, slightly messy loose curls, and a flat top head, tongue out smiling. The dog is framed inside a thick, bold, solid-color Art Nouveau circular border in dark green and flat metallic gold. Genuine textured gold leaf flakes, impasto painting style, organic asymmetrical flourishes, white background, no text.",
+  "usage": {
+   "promptTokenCount": 3328,
+   "candidatesTokenCount": 2282,
+   "totalTokenCount": 7937,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1141
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2187
+    }
+   ],
+   "thoughtsTokenCount": 2327,
+   "serviceTier": "standard"
+  }
+ }
+}
