@@ -2,7 +2,7 @@
 import base64, json, os, sys, time, urllib.request, urllib.error
 
 KEY = os.environ["GEMINI_API_KEY"]
-MODEL = os.environ.get("CRITIC_MODEL", "gemini-2.5-pro")
+MODEL = os.environ.get("CRITIC_MODEL", "gemini-3.1-pro-preview")
 MAX = int(os.environ.get("MAX_CRITIQUES", "20"))  # hard cap per run
 REF = os.environ.get("LIKENESS_REF", "refs/linda/ref_2025-08_front_smile.jpg")
 d = sys.argv[1]

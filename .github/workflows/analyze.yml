@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       dir: {description: "Folder with PNGs", default: "out/linda"}
-      critic_model: {description: "Gemini critic model", default: "gemini-2.5-pro"}
+      critic_model: {description: "Gemini critic model", default: "gemini-3.1-pro-preview"}
       max_critiques: {description: "Hard cap on critiques this run", default: "20"}
       only: {description: "Comma list of png names (blank = all)", default: ""}
 permissions:
