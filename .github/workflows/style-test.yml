@@ -5,6 +5,8 @@ on:
       model: {description: "Gemini image model", default: "gemini-2.5-flash-image"}
       max_images: {description: "Hard cap on images this run", default: "14"}
       only: {description: "Comma list of style ids (blank = all)", default: ""}
+      styles_file: {description: "Styles JSON", default: "scripts/styles.json"}
+      out_dir: {description: "Output folder", default: "out/linda"}
 permissions:
   contents: write
 jobs:
@@ -19,6 +21,8 @@ jobs:
           MODEL: ${{ inputs.model }}
           MAX_IMAGES: ${{ inputs.max_images }}
           ONLY: ${{ inputs.only }}
+          STYLES_FILE: ${{ inputs.styles_file }}
+          OUT_DIR: ${{ inputs.out_dir }}
         run: python3 scripts/generate.py
       - name: Commit results
         run: |

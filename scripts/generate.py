@@ -9,9 +9,10 @@ ONLY = [s for s in os.environ.get("ONLY", "").split(",") if s]
 REFS = {"smile": "refs/linda/ref_2025-08_front_smile.jpg",
         "fluffy": "refs/linda/ref_2025-01_front_fluffy.jpg"}
 
-cfg = json.load(open("scripts/styles.json"))
+cfg = json.load(open(os.environ.get("STYLES_FILE", "scripts/styles.json")))
+OUT = os.environ.get("OUT_DIR", "out/linda")
 styles = [s for s in cfg["styles"] if not ONLY or s["id"] in ONLY][:MAX_IMAGES]
-os.makedirs("out/linda", exist_ok=True)
+os.makedirs(OUT, exist_ok=True)
 url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
 log = []
 for s in styles:
@@ -34,11 +35,11 @@ for s in styles:
             d = p.get("inlineData") or p.get("inline_data")
             if d:
                 ext = "png" if "png" in d.get("mimeType", d.get("mime_type", "")) else "jpg"
-                open(f"out/linda/{s['id']}.{ext}", "wb").write(base64.b64decode(d["data"]))
+                open(f"{OUT}/{s['id']}.{ext}", "wb").write(base64.b64decode(d["data"]))
                 saved = True; break
         if saved: break
     print(s["id"], "OK" if saved else "NO IMAGE", resp.get("usageMetadata", {}))
     log.append({"id": s["id"], "ok": saved, "usage": resp.get("usageMetadata", {})})
     time.sleep(2)
-json.dump(log, open("out/linda/run_log.json", "w"), indent=1)
+json.dump(log, open(f"{OUT}/run_log.json", "w"), indent=1)
 print("images:", sum(1 for x in log if x.get("ok")), "of", len(styles))

@@ -1,13 +1,89 @@
 [
  {
+  "file": "08_tattoo_flash.png",
+  "verdict": "REWORK",
+  "concept": 6.25,
+  "concept_pro": 6.55,
+  "customers": 5.8,
+  "would_buy": "3/5",
+  "avg_price": 22.0,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (129px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 7,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 6,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 6,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 5,
+   "gift_buyer": 7,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize or AI-upscale the 735px image to support a 9x enlargement for full-front printing.",
+   "Halftone all gradients to prevent patchy printing on dark garments.",
+   "Erase the 129px of stray marks in the background to prevent random ink spots."
+  ],
+  "strengths": [
+   "Strong, symmetrical composition ideal for t-shirt graphics.",
+   "High contrast and bold outlines ensure the design pops.",
+   "Successfully merges a popular pet niche with a trending aesthetic (tattoo flash)."
+  ],
+  "style_detected": "American Traditional Tattoo Flash",
+  "prompt_rewrite": "American traditional tattoo flash art of a fluffy white Bichon Poodle dog head, front-facing, symmetrical. The dog is smiling with tongue out, wearing a red and white checkered bandana. Flanked by traditional tattoo swallows and red roses. Heavy black bold outlines, solid flat colors, authentic black whip shading and stippling, no soft gradients, white background, vector illustration style, no text, no letters.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too millennial-core and safe.",
+   "millennial_dog_mom": "Loves the cute face, but might find the swallows too 'biker' or masculine.",
+   "male_owner_35_55": "Tattoo style is appealing, but the dog itself is very fluffy and 'cutesy'.",
+   "gift_buyer": "Safe, attractive design, but might hesitate if it doesn't look exactly like the recipient's specific dog.",
+   "art_lover": "Digital gradients ruin the illusion of traditional flash."
+  }
+ },
+ {
   "file": "07_pop_art.png",
-  "verdict": "REJECT",
-  "total": 5.87,
-  "pro": 5.91,
+  "verdict": "REWORK",
+  "concept": 6.23,
+  "concept_pro": 6.51,
   "customers": 5.8,
   "would_buy": "2/5",
   "avg_price": 13.0,
-  "hard_fails": [
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "halftone gradients 35-45 LPI for dark garments",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [
+   "detail lost at small sizes"
+  ],
+  "production_notes": [
    "print_technician: Halftones and soft edges will cause severe print defects on dark DTG.",
    "embroidery_digitizer: Too many colors and un-stitchable halftone gradients."
   ],
@@ -21,14 +97,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 4,
-   "ai_artifact_inspector": 7,
    "series_designer": 6,
    "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 3,
+   "ai_artifact_inspector": 7,
    "breed_expert": 7,
    "likeness_judge": 7,
    "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
    "genz_tiktok_shopper": 5,
    "millennial_dog_mom": 8,
    "male_owner_35_55": 4,
@@ -46,17 +122,36 @@
    "Strong, clean linework on the main subject"
   ],
   "style_detected": "Comic book pop-art vector with halftone background",
-  "prompt_rewrite": "A front-facing, head-only portrait of a fluffy white Bichon Poodle mix, solid flat vector illustration, thick black outlines, bold pop-art style, solid bright magenta background, no halftones, no gradients, crisp hard edges, white background, no text."
+  "prompt_rewrite": "A front-facing, head-only portrait of a fluffy white Bichon Poodle mix, solid flat vector illustration, thick black outlines, bold pop-art style, solid bright magenta background, no halftones, no gradients, crisp hard edges, white background, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'millennial pop art'. Needs to be more ironic or y2k aesthetic.",
+   "millennial_dog_mom": "Cyan and yellow are a bit harsh for a cute fluffy dog.",
+   "male_owner_35_55": "Too colorful and cartoonish. Wouldn't wear a pink and cyan halftone dog.",
+   "gift_buyer": "Background makes it look a bit cheap/clip-arty.",
+   "art_lover": "Superficial application of 'pop art' (just halftones behind a standard vector). Lacks true compositional elements."
+  }
  },
  {
   "file": "03_groovy_70s.png",
   "verdict": "REWORK",
-  "total": 5.75,
-  "pro": 5.85,
+  "concept": 6.11,
+  "concept_pro": 6.45,
   "customers": 5.6,
   "would_buy": "3/5",
   "avg_price": 15.0,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T3 soft/semi-transparent edge risk -> underbase halo",
@@ -66,14 +161,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
    "series_designer": 7,
    "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 3,
+   "ai_artifact_inspector": 6,
    "breed_expert": 7,
    "likeness_judge": 6,
    "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
    "genz_tiktok_shopper": 7,
    "millennial_dog_mom": 7,
    "male_owner_35_55": 3,
@@ -91,17 +186,37 @@
    "Symmetrical and balanced composition."
   ],
   "style_detected": "Psychedelic 70s / Lisa Frank hybrid",
-  "prompt_rewrite": "A flat vector illustration of a white fluffy Bichon Poodle mix dog head, front-facing, happy expression with tongue out. The dog is pure white with black nose and eyes. Behind the dog is a retro 1970s psychedelic sunburst with thick, wavy, flat-color rays in mustard yellow, burnt orange, and teal. Peter Max style, bold outlines, no gradients, solid colors, clean white background, no text, head only."
+  "prompt_rewrite": "A flat vector illustration of a white fluffy Bichon Poodle mix dog head, front-facing, happy expression with tongue out. The dog is pure white with black nose and eyes. Behind the dog is a retro 1970s psychedelic sunburst with thick, wavy, flat-color rays in mustard yellow, burnt orange, and teal. Peter Max style, bold outlines, no gradients, solid colors, clean white background, no text, head only.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Feels a bit 'millennial Lisa Frank' rather than ironic vintage 70s.",
+   "millennial_dog_mom": "The face paint look is weird; I want the dog to look naturally cute.",
+   "male_owner_35_55": "Way too colorful and psychedelic. Not my style.",
+   "gift_buyer": "Might be too specific of a style if they don't love tie-dye/70s.",
+   "art_lover": "Feels like a standard AI prompt. Lacks true artistic intent."
+  }
  },
  {
   "file": "06_paper_cut.png",
   "verdict": "REWORK",
-  "total": 5.63,
-  "pro": 5.91,
+  "concept": 5.9,
+  "concept_pro": 6.36,
   "customers": 5.2,
   "would_buy": "2/5",
   "avg_price": 20.6,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 5,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T2 background hard to separate (edge ~ background color)",
@@ -111,14 +226,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
    "series_designer": 7,
    "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 5,
+   "ai_artifact_inspector": 6,
    "breed_expert": 7,
    "likeness_judge": 5,
    "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 5,
    "genz_tiktok_shopper": 4,
    "millennial_dog_mom": 7,
    "male_owner_35_55": 4,
@@ -136,17 +251,104 @@
    "Good use of negative space in the fur texture."
   ],
   "style_detected": "Simulated 3D paper cut illustration",
-  "prompt_rewrite": "A front-facing head-only portrait of a fluffy white poodle with its tongue out, wearing a red checkered bandana. Authentic paper cut art style, constructed from distinct layers of flat colored paper. Hard crisp edges, solid flat colors, absolutely no gradients, no soft drop shadows. Clean white background, vector art style, highly detailed layered depth, wide round fluffy head."
+  "prompt_rewrite": "A front-facing head-only portrait of a fluffy white poodle with its tongue out, wearing a red checkered bandana. Authentic paper cut art style, constructed from distinct layers of flat colored paper. Hard crisp edges, solid flat colors, absolutely no gradients, no soft drop shadows. Clean white background, vector art style, highly detailed layered depth, wide round fluffy head.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'craft fair'. Needs more edge or irony.",
+   "millennial_dog_mom": "Cute, but the cream color might wash out on lighter shirts.",
+   "male_owner_35_55": "Too cutesy and craft-like for my taste.",
+   "gift_buyer": "Safe gift, but looks a bit like generic clip art.",
+   "art_lover": "Paper cut effect is simulated with gradients rather than true flat vector shapes, looking digitally generated."
+  }
+ },
+ {
+  "file": "02_botanical_crown.png",
+  "verdict": "REWORK",
+  "concept": 5.71,
+  "concept_pro": 6.18,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 19.0,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [
+   "detail lost at small sizes"
+  ],
+  "production_notes": [
+   "print_technician: Will print with severe underbase halos and stray specks if not pre-processed.",
+   "embroidery_digitizer: Too complex and detailed for standard cap embroidery."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (3986px) -> must be cleaned",
+   "T6 detail lost at chest/thumbnail size"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 6,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 3,
+   "gift_buyer": 6,
+   "art_lover": 5
+  },
+  "must_fix": [
+   "Apply a hard clipping mask to remove all soft/semi-transparent edges to prevent underbase halos.",
+   "Erase 3986px of stray marks outside the main art.",
+   "Upscale >4x for full front printing."
+  ],
+  "strengths": [
+   "Appealing, soft aesthetic that targets a specific demographic well.",
+   "Good capture of the dog's joyful expression and fluffy texture."
+  ],
+  "style_detected": "vintage botanical colored pencil illustration",
+  "prompt_rewrite": "A front-facing, head-only portrait of a white fluffy Bichon Poodle mix wearing an asymmetrical botanical flower crown. Vintage colored pencil illustration style, clean bold outlines, high contrast, solid stark white background, no soft faded edges, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Feels a bit 'cottagecore grandma' rather than trendy or ironic.",
+   "millennial_dog_mom": "Very cute, but delicate style might look faded on standard cotton tees.",
+   "male_owner_35_55": "Too feminine and cutesy with the flower crown.",
+   "gift_buyer": "Safe gift, but print quality issues (halos) might cause returns.",
+   "art_lover": "Looks like a standard AI colored pencil filter."
+  }
  },
  {
   "file": "04_woodblock.png",
-  "verdict": "REJECT",
-  "total": 5.46,
-  "pro": 5.64,
+  "verdict": "REWORK",
+  "concept": 5.68,
+  "concept_pro": 6.0,
   "customers": 5.2,
   "would_buy": "2/5",
   "avg_price": 24.0,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 5,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T4 heavy gradients -> needs halftone for dark DTG",
@@ -154,14 +356,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
    "series_designer": 6,
    "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 5,
+   "ai_artifact_inspector": 6,
    "breed_expert": 6,
    "likeness_judge": 5,
    "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 5,
    "genz_tiktok_shopper": 5,
    "millennial_dog_mom": 6,
    "male_owner_35_55": 5,
@@ -179,60 +381,37 @@
    "Good use of negative space for fur texture"
   ],
   "style_detected": "Faux woodblock or linocut illustration with digital woodgrain texture",
-  "prompt_rewrite": "A bold linocut print of a fluffy white poodle head, front-facing, solid cream fill with thick black carved outlines, red tongue, stark white background, authentic irregular block print edges, no woodgrain texture, no text, minimalist graphic style."
- },
- {
-  "file": "14_master_gold_leaf.png",
-  "verdict": "REJECT",
-  "total": 5.44,
-  "pro": 5.61,
-  "customers": 5.2,
-  "would_buy": "2/5",
-  "avg_price": 24.0,
-  "hard_fails": [],
-  "tech_flags": [
-   "T1 upscale >4x for full front",
-   "T5 >6 colors -> cap needs separate simplified art",
-   "T11 stray marks/specks outside the art (201px) -> must be cleaned"
-  ],
-  "scores": {
-   "art_director": 6,
-   "print_technician": 5,
-   "ai_artifact_inspector": 6,
-   "series_designer": 6,
-   "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 4,
-   "breed_expert": 5,
-   "likeness_judge": 4,
-   "ip_compliance_reviewer": 7,
-   "genz_tiktok_shopper": 5,
-   "millennial_dog_mom": 6,
-   "male_owner_35_55": 4,
-   "gift_buyer": 6,
-   "art_lover": 5
-  },
-  "must_fix": [
-   "Erase 201px of stray marks outside the circular medallion.",
-   "Upscale >4x for full front printing.",
-   "Adjust coat color to pure white to match the reference likeness."
-  ],
-  "strengths": [
-   "Strong, symmetrical composition that works well as a central graphic.",
-   "High perceived value due to the ornate decorative style.",
-   "Clean facial features with good eye contact."
-  ],
-  "style_detected": "Art Nouveau / Klimt-inspired decorative gold leaf medallion",
-  "prompt_rewrite": "A front-facing, head-only portrait of a pure white Bichon Frise dog with a perfectly spherical fluffy haircut and a wide happy smile. Set against a circular Art Nouveau background featuring high-contrast dark green and metallic gold leaf spiral motifs. Symmetrical composition, rich decorative arts style, crisp vector-like edges, no text, pure white background outside the medallion."
+  "prompt_rewrite": "A bold linocut print of a fluffy white poodle head, front-facing, solid cream fill with thick black carved outlines, red tongue, stark white background, authentic irregular block print edges, no woodgrain texture, no text, minimalist graphic style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too traditional/craft-fair.",
+   "millennial_dog_mom": "Woodgrain makes it look a bit rustic for a typical 'dog mom' aesthetic.",
+   "male_owner_35_55": "Too cutesy and curly.",
+   "gift_buyer": "Safe, but maybe too specific in style if the recipient doesn't like woodblock art.",
+   "art_lover": "Faux woodgrain texture over a digital vector drawing looks cheap and inauthentic."
+  }
  },
  {
   "file": "05_neon_synthwave.png",
-  "verdict": "REJECT",
-  "total": 5.39,
-  "pro": 5.52,
+  "verdict": "REWORK",
+  "concept": 5.68,
+  "concept_pro": 6.0,
   "customers": 5.2,
   "would_buy": "3/5",
   "avg_price": 20.0,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T2 background hard to separate (edge ~ background color)",
@@ -243,14 +422,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
    "series_designer": 6,
    "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 3,
+   "ai_artifact_inspector": 6,
    "breed_expert": 6,
    "likeness_judge": 5,
    "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
    "genz_tiktok_shopper": 6,
    "millennial_dog_mom": 6,
    "male_owner_35_55": 4,
@@ -268,65 +447,34 @@
    "Symmetrical design is easy to center on apparel."
   ],
   "style_detected": "80s neon synthwave / retrowave portrait",
-  "prompt_rewrite": "A flat vector-style illustration of a fluffy white bichon-poodle mix dog head, front-facing, tongue out. 1980s synthwave aesthetic, hard-edged neon pink and cyan rim lighting on the fur. Asymmetrical geometric retro-grid background, no soft glows, no gradients, solid colors only, dark background, no text, clean edges."
- },
- {
-  "file": "02_botanical_crown.png",
-  "verdict": "REJECT",
-  "total": 5.38,
-  "pro": 5.64,
-  "customers": 5.0,
-  "would_buy": "2/5",
-  "avg_price": 19.0,
-  "hard_fails": [
-   "print_technician: Will print with severe underbase halos and stray specks if not pre-processed.",
-   "embroidery_digitizer: Too complex and detailed for standard cap embroidery."
-  ],
-  "tech_flags": [
-   "T1 upscale >4x for full front",
-   "T2 background hard to separate (edge ~ background color)",
-   "T3 soft/semi-transparent edge risk -> underbase halo",
-   "T5 >6 colors -> cap needs separate simplified art",
-   "T11 stray marks/specks outside the art (3986px) -> must be cleaned",
-   "T6 detail lost at chest/thumbnail size"
-  ],
-  "scores": {
-   "art_director": 6,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
-   "series_designer": 6,
-   "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 3,
-   "breed_expert": 7,
-   "likeness_judge": 6,
-   "ip_compliance_reviewer": 7,
-   "genz_tiktok_shopper": 4,
-   "millennial_dog_mom": 7,
-   "male_owner_35_55": 3,
-   "gift_buyer": 6,
-   "art_lover": 5
-  },
-  "must_fix": [
-   "Apply a hard clipping mask to remove all soft/semi-transparent edges to prevent underbase halos.",
-   "Erase 3986px of stray marks outside the main art.",
-   "Upscale >4x for full front printing."
-  ],
-  "strengths": [
-   "Appealing, soft aesthetic that targets a specific demographic well.",
-   "Good capture of the dog's joyful expression and fluffy texture."
-  ],
-  "style_detected": "vintage botanical colored pencil illustration",
-  "prompt_rewrite": "A front-facing, head-only portrait of a white fluffy Bichon Poodle mix wearing an asymmetrical botanical flower crown. Vintage colored pencil illustration style, clean bold outlines, high contrast, solid stark white background, no soft faded edges, no text."
+  "prompt_rewrite": "A flat vector-style illustration of a fluffy white bichon-poodle mix dog head, front-facing, tongue out. 1980s synthwave aesthetic, hard-edged neon pink and cyan rim lighting on the fur. Asymmetrical geometric retro-grid background, no soft glows, no gradients, solid colors only, dark background, no text, clean edges.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit basic. Needs more irony or a stronger aesthetic commitment.",
+   "millennial_dog_mom": "The neon is a bit harsh. Usually prefers softer aesthetics.",
+   "male_owner_35_55": "Too pink and cutesy. The circular badge feels like a cheap sticker.",
+   "gift_buyer": "Fun, but synthwave might be too specific of a style for a general gift.",
+   "art_lover": "Looks exactly like a generic AI prompt. Lacks human touch or unique composition."
+  }
  },
  {
   "file": "09_folk_embroidery.png",
-  "verdict": "REJECT",
-  "total": 5.36,
-  "pro": 5.73,
+  "verdict": "REWORK",
+  "concept": 5.68,
+  "concept_pro": 6.27,
   "customers": 4.8,
   "would_buy": "2/5",
   "avg_price": 13.0,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T3 soft/semi-transparent edge risk -> underbase halo",
@@ -334,14 +482,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
    "series_designer": 7,
    "marketplace_merchandiser": 6,
-   "embroidery_digitizer": 3,
+   "ai_artifact_inspector": 6,
    "breed_expert": 7,
    "likeness_judge": 4,
    "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
    "genz_tiktok_shopper": 4,
    "millennial_dog_mom": 7,
    "male_owner_35_55": 3,
@@ -359,17 +507,97 @@
    "Clear, engaging eye contact"
   ],
   "style_detected": "Digital illustration mimicking folk floral embroidery overlaid on realistic fur",
-  "prompt_rewrite": "Macro photography of physical folk embroidery on black fabric, featuring a front-facing head-only portrait of a fluffy white Bichon Poodle dog wearing a red plaid bandana. The dog's fur and vibrant, large floral accents are made of distinct, thick, tactile embroidery threads. Clean solid edges, high contrast, wide happy smile, symmetrical composition, no text."
+  "prompt_rewrite": "Macro photography of physical folk embroidery on black fabric, featuring a front-facing head-only portrait of a fluffy white Bichon Poodle dog wearing a red plaid bandana. The dog's fur and vibrant, large floral accents are made of distinct, thick, tactile embroidery threads. Clean solid edges, high contrast, wide happy smile, symmetrical composition, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Feels a bit too 'grandma's couch' with the traditional embroidery style. Lacks irony or edge.",
+   "millennial_dog_mom": "Very cute, but the flat bottom edge looks strange on a t-shirt. I wish it had the bandana from the photo.",
+   "male_owner_35_55": "Too feminine and decorative. Not a style I would wear on a hoodie.",
+   "gift_buyer": "Pretty, but looks a bit like generic stock art rather than a custom portrait of the specific dog.",
+   "art_lover": "The 'embroidery' is clearly a fake digital filter over a standard AI dog. Lacks material authenticity."
+  }
+ },
+ {
+  "file": "14_master_gold_leaf.png",
+  "verdict": "REWORK",
+  "concept": 5.57,
+  "concept_pro": 5.82,
+  "customers": 5.2,
+  "would_buy": "2/5",
+  "avg_price": 24.0,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (201px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 5,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 5,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 5
+  },
+  "must_fix": [
+   "Erase 201px of stray marks outside the circular medallion.",
+   "Upscale >4x for full front printing.",
+   "Adjust coat color to pure white to match the reference likeness."
+  ],
+  "strengths": [
+   "Strong, symmetrical composition that works well as a central graphic.",
+   "High perceived value due to the ornate decorative style.",
+   "Clean facial features with good eye contact."
+  ],
+  "style_detected": "Art Nouveau / Klimt-inspired decorative gold leaf medallion",
+  "prompt_rewrite": "A front-facing, head-only portrait of a pure white Bichon Frise dog with a perfectly spherical fluffy haircut and a wide happy smile. Set against a circular Art Nouveau background featuring high-contrast dark green and metallic gold leaf spiral motifs. Symmetrical composition, rich decorative arts style, crisp vector-like edges, no text, pure white background outside the medallion.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too traditional/grandma-core.",
+   "millennial_dog_mom": "Beautiful, but coat color doesn't match her pure white dog.",
+   "male_owner_35_55": "Too ornate and decorative.",
+   "gift_buyer": "Looks expensive, but style is very specific if recipient's taste is unknown.",
+   "art_lover": "AI interpretation of gold leaf is flat."
+  }
  },
  {
   "file": "12_master_impressionist.png",
   "verdict": "REJECT",
-  "total": 5.07,
-  "pro": 5.24,
+  "concept": 5.41,
+  "concept_pro": 5.82,
   "customers": 4.8,
   "would_buy": "2/5",
   "avg_price": 10.0,
-  "hard_fails": [
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [
    "print_technician: Soft white edges on white background will fail DTG printing on dark garments."
   ],
   "tech_flags": [
@@ -382,14 +610,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 3,
-   "ai_artifact_inspector": 6,
    "series_designer": 5,
    "marketplace_merchandiser": 5,
-   "embroidery_digitizer": 4,
+   "ai_artifact_inspector": 6,
    "breed_expert": 7,
    "likeness_judge": 6,
    "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 4,
    "genz_tiktok_shopper": 4,
    "millennial_dog_mom": 7,
    "male_owner_35_55": 3,
@@ -407,17 +635,37 @@
    "Strong appeal to the core dog-mom demographic."
   ],
   "style_detected": "Digital soft-brush pet portrait (faux-impressionist)",
-  "prompt_rewrite": "A graphic t-shirt design of a fluffy white Bichon Poodle head, front-facing, thick impasto oil painting style, bold visible palette knife strokes, crisp solid edges against a pure white background, no soft fades, vibrant contrasting underpainting, no text."
+  "prompt_rewrite": "A graphic t-shirt design of a fluffy white Bichon Poodle head, front-facing, thick impasto oil painting style, bold visible palette knife strokes, crisp solid edges against a pure white background, no soft fades, vibrant contrasting underpainting, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too 'Facebook mom'. Lacks irony or streetwear appeal.",
+   "millennial_dog_mom": "A bit plain without a background, but very sweet.",
+   "male_owner_35_55": "Too cutesy and soft. Looks like a greeting card.",
+   "gift_buyer": "Safe and cute, but might look cheap if print quality is blurry.",
+   "art_lover": "Lacks actual impasto texture; just looks like a digital smudge brush."
+  }
  },
  {
   "file": "10_ink_watercolor.png",
   "verdict": "REJECT",
-  "total": 5.01,
-  "pro": 5.15,
+  "concept": 5.36,
+  "concept_pro": 5.73,
   "customers": 4.8,
   "would_buy": "2/5",
   "avg_price": 10.0,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T2 background hard to separate (edge ~ background color)",
@@ -428,14 +676,14 @@
   ],
   "scores": {
    "art_director": 6,
-   "print_technician": 3,
-   "ai_artifact_inspector": 6,
    "series_designer": 6,
    "marketplace_merchandiser": 5,
-   "embroidery_digitizer": 3,
+   "ai_artifact_inspector": 6,
    "breed_expert": 6,
    "likeness_judge": 4,
    "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 3,
    "genz_tiktok_shopper": 4,
    "millennial_dog_mom": 7,
    "male_owner_35_55": 3,
@@ -454,17 +702,35 @@
    "Clean ink outlines on the facial features"
   ],
   "style_detected": "digital ink and watercolor wash",
-  "prompt_rewrite": "A front-facing headshot of a fluffy white Bichon Poodle mix wearing a red and white checkered bandana, ink and watercolor illustration style, clean solid white background. Detailed black ink outlines, subtle integrated watercolor washes in teal and pink within the fur shadows, expressive dark eyes, pink tongue out, flat top head fluff, vector-like clean edges, no text, no random paint splatters outside the dog."
+  "prompt_rewrite": "A front-facing headshot of a fluffy white Bichon Poodle mix wearing a red and white checkered bandana, ink and watercolor illustration style, clean solid white background. Detailed black ink outlines, subtle integrated watercolor washes in teal and pink within the fur shadows, expressive dark eyes, pink tongue out, flat top head fluff, vector-like clean edges, no text, no random paint splatters outside the dog.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Aesthetic is too 'millennial mom'",
+   "millennial_dog_mom": "A bit generic, looks like a stock image rather than my specific dog",
+   "male_owner_35_55": "Too colorful and cutesy for a standard hoodie or cap",
+   "gift_buyer": "Safe and cute, but lacks a personalized touch like a name drop",
+   "art_lover": "Looks exactly like a standard Midjourney v5 prompt"
+  }
  },
  {
   "file": "01_stained_glass.png",
   "verdict": "REJECT",
-  "total": 4.83,
-  "pro": 5.05,
+  "concept": 5.02,
+  "concept_pro": 5.37,
   "customers": 4.5,
   "would_buy": "2/5",
   "avg_price": 13.0,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T4 heavy gradients -> needs halftone for dark DTG",
@@ -473,14 +739,14 @@
   ],
   "scores": {
    "art_director": 5,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
    "series_designer": 5,
    "marketplace_merchandiser": 5.5,
-   "embroidery_digitizer": 3,
+   "ai_artifact_inspector": 6,
    "breed_expert": 5.5,
    "likeness_judge": 4,
    "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
    "genz_tiktok_shopper": 4,
    "millennial_dog_mom": 6.5,
    "male_owner_35_55": 3,
@@ -499,31 +765,47 @@
    "Clear thick outer outline for easy masking"
   ],
   "style_detected": "Digital painting with a faux stained-glass border",
-  "prompt_rewrite": "A pure white fluffy Bichon Poodle mix dog head, tongue out, wearing a red and white checkered bandana. Entire image executed in authentic stained glass style, geometric facets, bold black lead lines separating flat vibrant colors, no soft shading, white background, vector art style, symmetrical composition."
+  "prompt_rewrite": "A pure white fluffy Bichon Poodle mix dog head, tongue out, wearing a red and white checkered bandana. Entire image executed in authentic stained glass style, geometric facets, bold black lead lines separating flat vibrant colors, no soft shading, white background, vector art style, symmetrical composition.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a millennial mom shirt.",
+   "millennial_dog_mom": "Cute, but the stained glass border is a bit weird.",
+   "male_owner_35_55": "Too cutesy and colorful.",
+   "gift_buyer": "Safe gift, but the color doesn't match the reference dog.",
+   "art_lover": "Fails as 'stained glass' art."
+  }
  },
  {
   "file": "11_master_swirl.png",
   "verdict": "REJECT",
-  "total": 4.69,
-  "pro": 4.88,
+  "concept": 4.85,
+  "concept_pro": 5.15,
   "customers": 4.4,
   "would_buy": "2/5",
   "avg_price": 12.2,
-  "hard_fails": [],
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
   "tech_flags": [
    "T1 upscale >4x for full front",
    "T5 >6 colors -> cap needs separate simplified art"
   ],
   "scores": {
    "art_director": 5,
-   "print_technician": 4,
-   "ai_artifact_inspector": 6,
    "series_designer": 5,
    "marketplace_merchandiser": 5,
-   "embroidery_digitizer": 3,
+   "ai_artifact_inspector": 6,
    "breed_expert": 6,
    "likeness_judge": 5,
    "ip_compliance_reviewer": 4,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
    "genz_tiktok_shopper": 4,
    "millennial_dog_mom": 6,
    "male_owner_35_55": 3,
@@ -541,17 +823,37 @@
    "Strong contrast between the white dog and dark background."
   ],
   "style_detected": "Van Gogh Starry Night pastiche / Impasto oil painting",
-  "prompt_rewrite": "A front-facing headshot of a fluffy white Bichon-Poodle mix wearing a red checkered bandana, painted in a thick impasto oil painting style. The background features abstract, swirling, moody blue and gold brushstrokes with an organic, faded vignette edge, isolated on a white background. Heavy texture, visible palette knife marks, expressive lighting, no text, no circular crop."
+  "prompt_rewrite": "A front-facing headshot of a fluffy white Bichon-Poodle mix wearing a red checkered bandana, painted in a thick impasto oil painting style. The background features abstract, swirling, moody blue and gold brushstrokes with an organic, faded vignette edge, isolated on a white background. Heavy texture, visible palette knife marks, expressive lighting, no text, no circular crop.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Gives 'boomer Facebook ad' vibes.",
+   "millennial_dog_mom": "Cute, but a bit generic.",
+   "male_owner_35_55": "Too artsy and cutesy.",
+   "gift_buyer": "Safe gift, but looks like something from a mall kiosk.",
+   "art_lover": "Derivative pastiche of Van Gogh."
+  }
  },
  {
   "file": "13_master_renaissance.png",
   "verdict": "REJECT",
-  "total": 4.3,
-  "pro": 4.64,
+  "concept": 4.64,
+  "concept_pro": 5.2,
   "customers": 3.8,
   "would_buy": "2/5",
   "avg_price": 8.0,
-  "hard_fails": [
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 2,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "halftone gradients 35-45 LPI for dark garments",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [
    "print_technician: Soft vignette edges will create unacceptable white underbase halos on dark garments."
   ],
   "tech_flags": [
@@ -564,14 +866,14 @@
   ],
   "scores": {
    "art_director": 4,
-   "print_technician": 3,
-   "ai_artifact_inspector": 6,
    "series_designer": 4,
    "marketplace_merchandiser": 4,
-   "embroidery_digitizer": 2,
+   "ai_artifact_inspector": 6,
    "breed_expert": 7,
    "likeness_judge": 6,
    "ip_compliance_reviewer": 9,
+   "print_technician": 3,
+   "embroidery_digitizer": 2,
    "genz_tiktok_shopper": 3,
    "millennial_dog_mom": 6,
    "male_owner_35_55": 3,
@@ -588,50 +890,13 @@
    "Good eye clarity and general facial proportions."
   ],
   "style_detected": "soft digital pastel with heavy vignette",
-  "prompt_rewrite": "A head-only portrait of a white poodle bichon mix dog, tongue out, wearing a red and white checkered bandana, classical Renaissance oil painting style, visible impasto brushstrokes, dramatic chiaroscuro lighting, solid white background, highly detailed curly fur texture, masterpiece --no text, vignette, soft airbrush, blurry edges, dark background"
- },
- {
-  "file": "08_tattoo_flash.png",
-  "verdict": "REJECT",
-  "total": 0.0,
-  "pro": 0.0,
-  "customers": 0.0,
-  "would_buy": "0/5",
-  "avg_price": 0.0,
-  "hard_fails": [],
-  "tech_flags": [
-   "T1 upscale >4x for full front",
-   "T4 heavy gradients -> needs halftone for dark DTG",
-   "T5 >6 colors -> cap needs separate simplified art",
-   "T11 stray marks/specks outside the art (129px) -> must be cleaned"
-  ],
-  "scores": {
-   "art_director": null,
-   "print_technician": null,
-   "ai_artifact_inspector": null,
-   "series_designer": null,
-   "marketplace_merchandiser": null,
-   "embroidery_digitizer": null,
-   "breed_expert": null,
-   "likeness_judge": null,
-   "ip_compliance_reviewer": null,
-   "genz_tiktok_shopper": null,
-   "millennial_dog_mom": null,
-   "male_owner_35_55": null,
-   "gift_buyer": null,
-   "art_lover": null
-  },
-  "must_fix": [
-   "Vectorize or AI-upscale the 735px image to support a 9x enlargement for full-front printing.",
-   "Halftone all gradients to prevent patchy printing on dark garments.",
-   "Erase the 129px of stray marks in the background to prevent random ink spots."
-  ],
-  "strengths": [
-   "Strong, symmetrical composition ideal for t-shirt graphics.",
-   "High contrast and bold outlines ensure the design pops.",
-   "Successfully merges a popular pet niche with a trending aesthetic (tattoo flash)."
-  ],
-  "style_detected": "American Traditional Tattoo Flash",
-  "prompt_rewrite": "American traditional tattoo flash art of a fluffy white Bichon Poodle dog head, front-facing, symmetrical. The dog is smiling with tongue out, wearing a red and white checkered bandana. Flanked by traditional tattoo swallows and red roses. Heavy black bold outlines, solid flat colors, authentic black whip shading and stippling, no soft gradients, white background, vector illustration style, no text, no letters."
+  "prompt_rewrite": "A head-only portrait of a white poodle bichon mix dog, tongue out, wearing a red and white checkered bandana, classical Renaissance oil painting style, visible impasto brushstrokes, dramatic chiaroscuro lighting, solid white background, highly detailed curly fur texture, masterpiece --no text, vignette, soft airbrush, blurry edges, dark background",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a boomer Facebook meme shirt.",
+   "millennial_dog_mom": "Cute face, but the black background shadow is depressing.",
+   "male_owner_35_55": "Too soft and cutesy.",
+   "gift_buyer": "Dark halo might look bad on a shirt.",
+   "art_lover": "Fails 'master renaissance' prompt completely."
+  }
  }
 ]

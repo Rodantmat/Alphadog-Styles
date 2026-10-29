@@ -1,0 +1,50 @@
+{
+ "base": "Using the attached photo of this exact dog as the likeness reference (keep her face, eye shape, nose, ear length and fluffy pure white coat recognizable). Head and ears only, perfectly front-facing and symmetrical, centered with generous empty margin on all sides, isolated on a flat pure white background with NO texture, NO shadow, NO vignette, NO stray marks. Crisp hard edges, no soft glow, no feathering. Absolutely no text, letters, signature or watermark.",
+ "styles": [
+  {
+   "id": "08_tattoo_flash_r2",
+   "ref": "smile",
+   "prompt": "American traditional tattoo flash art of a fluffy white Bichon Poodle dog head, front-facing, symmetrical. The dog is smiling with tongue out. Flanked by traditional tattoo swallows and red roses. Heavy black bold outlines, solid flat colors, authentic black whip shading and stippling, no soft gradients, white background, vector illustration style, no text, no letters. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "07_pop_art_r2",
+   "ref": "smile",
+   "prompt": "A front-facing, head-only portrait of a fluffy white Bichon Poodle mix, solid flat vector illustration, thick black outlines, bold pop-art style, solid bright magenta background, no halftones, no gradients, crisp hard edges, white background, no text. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "03_groovy_70s_r2",
+   "ref": "fluffy",
+   "prompt": "A flat vector illustration of a white fluffy Bichon Poodle mix dog head, front-facing, happy expression with tongue out. The dog is pure white with black nose and eyes. Behind the dog is a retro 1970s psychedelic sunburst with thick, wavy, flat-color rays in mustard yellow, burnt orange, and teal. Peter Max style, bold outlines, no gradients, solid colors, clean white background, no text, head only. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "06_paper_cut_r2",
+   "ref": "smile",
+   "prompt": "A front-facing head-only portrait of a fluffy white poodle with its tongue out. Authentic paper cut art style, constructed from distinct layers of flat colored paper. Hard crisp edges, solid flat colors, absolutely no gradients, no soft drop shadows. Clean white background, vector art style, highly detailed layered depth, wide round fluffy head. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "02_botanical_crown_r2",
+   "ref": "smile",
+   "prompt": "A front-facing, head-only portrait of a white fluffy Bichon Poodle mix wearing an asymmetrical botanical flower crown. Vintage colored pencil illustration style, clean bold outlines, high contrast, solid stark white background, no soft faded edges, no text. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "04_woodblock_r2",
+   "ref": "fluffy",
+   "prompt": "A bold linocut print of a fluffy white poodle head, front-facing, solid cream fill with thick black carved outlines, red tongue, stark white background, authentic irregular block print edges, no woodgrain texture, no text, minimalist graphic style. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "05_neon_synthwave_r2",
+   "ref": "smile",
+   "prompt": "A flat vector-style illustration of a fluffy white bichon-poodle mix dog head, front-facing, tongue out. 1980s synthwave aesthetic, hard-edged neon pink and cyan rim lighting on the fur. Asymmetrical geometric retro-grid background, no soft glows, no gradients, solid colors only, dark background, no text, clean edges. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "09_folk_embroidery_r2",
+   "ref": "fluffy",
+   "prompt": "Macro photography of physical folk embroidery on black fabric, featuring a front-facing head-only portrait of a fluffy white Bichon Poodle dog. The dog's fur and vibrant, large floral accents are made of distinct, thick, tactile embroidery threads. Clean solid edges, high contrast, wide happy smile, symmetrical composition, no text. No bandana, no collar, no clothing."
+  },
+  {
+   "id": "14_master_gold_leaf_r2",
+   "ref": "fluffy",
+   "prompt": "A front-facing, head-only portrait of a pure white Bichon Frise dog with a perfectly spherical fluffy haircut and a wide happy smile. Set against a circular Art Nouveau background featuring high-contrast dark green and metallic gold leaf spiral motifs. Symmetrical composition, rich decorative arts style, crisp vector-like edges, no text, pure white background outside the medallion. No bandana, no collar, no clothing."
+  }
+ ]
+}
