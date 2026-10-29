@@ -1,0 +1,185 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "australian_shepherd__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Australian Shepherd (medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "australian_shepherd__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Australian Shepherd (medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "australian_shepherd__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Australian Shepherd (medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "doberman_pinscher__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Doberman Pinscher (sleek short coat, erect pointed ears, long narrow muzzle, athletic body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "doberman_pinscher__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Doberman Pinscher (sleek short coat, erect pointed ears, long narrow muzzle, athletic body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "doberman_pinscher__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Doberman Pinscher (sleek short coat, erect pointed ears, long narrow muzzle, athletic body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "pembroke_welsh_corgi__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Pembroke Welsh Corgi (large erect ears, fox-like face, short legs, long body, no tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "pembroke_welsh_corgi__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Pembroke Welsh Corgi (large erect ears, fox-like face, short legs, long body, no tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "pembroke_welsh_corgi__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Pembroke Welsh Corgi (large erect ears, fox-like face, short legs, long body, no tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "miniature_schnauzer__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Miniature Schnauzer (bushy eyebrows, beard and mustache, folded ears, wiry coat). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "miniature_schnauzer__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Miniature Schnauzer (bushy eyebrows, beard and mustache, folded ears, wiry coat). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "miniature_schnauzer__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Miniature Schnauzer (bushy eyebrows, beard and mustache, folded ears, wiry coat). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "boxer__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Boxer (square muzzle, short coat, folded ears, wrinkled forehead, muscular body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "boxer__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Boxer (square muzzle, short coat, folded ears, wrinkled forehead, muscular body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "boxer__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Boxer (square muzzle, short coat, folded ears, wrinkled forehead, muscular body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "pomeranian__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Pomeranian (tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "pomeranian__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Pomeranian (tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "pomeranian__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Pomeranian (tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "bernese_mountain_dog__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Bernese Mountain Dog (big fluffy thick coat, drop ears, gentle face, bushy tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "bernese_mountain_dog__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Bernese Mountain Dog (big fluffy thick coat, drop ears, gentle face, bushy tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "bernese_mountain_dog__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Bernese Mountain Dog (big fluffy thick coat, drop ears, gentle face, bushy tail). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "shih_tzu__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Shih Tzu (long flowing coat, flat short muzzle, drop ears, topknot). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "shih_tzu__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Shih Tzu (long flowing coat, flat short muzzle, drop ears, topknot). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "shih_tzu__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Shih Tzu (long flowing coat, flat short muzzle, drop ears, topknot). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "great_dane__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Great Dane (very tall, long deep muzzle, folded drop ears, deep chest, long legs). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "great_dane__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Great Dane (very tall, long deep muzzle, folded drop ears, deep chest, long legs). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "great_dane__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Great Dane (very tall, long deep muzzle, folded drop ears, deep chest, long legs). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "boston_terrier__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Boston Terrier (erect bat ears, square flat face, short muzzle, compact body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "boston_terrier__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Boston Terrier (erect bat ears, square flat face, short muzzle, compact body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "boston_terrier__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Boston Terrier (erect bat ears, square flat face, short muzzle, compact body). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "chihuahua__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Chihuahua (tiny dog, very large erect ears, apple-shaped head, big round eyes). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "chihuahua__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Chihuahua (tiny dog, very large erect ears, apple-shaped head, big round eyes). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "chihuahua__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Chihuahua (tiny dog, very large erect ears, apple-shaped head, big round eyes). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  },
+  {
+   "id": "havanese__classic",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Havanese (silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "havanese__cool",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Havanese (silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "havanese__heart",
+   "ref": "anchor_geo",
+   "prompt": "Image 1 is an approved finished geometric design set for a French Bulldog: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create a NEW design set of the same kind for a Havanese (silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back). Keep the breed accurate and instantly recognizable. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 1. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  }
+ ]
+}

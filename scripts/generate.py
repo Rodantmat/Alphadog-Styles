@@ -10,6 +10,8 @@ REFS = {"smile": "refs/linda/ref_2025-08_front_smile.jpg",
         "fluffy": "refs/linda/ref_2025-01_front_fluffy.jpg",
         "full": "refs/linda/ref_2014_full_sitting.jpg",
         "oneline_sheet": "refs/style_oneline_sheet.jpg",
+        "anchor_line": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg",
+        "anchor_geo": "out/themes/gemini-nano-banana-2.1/geo_poly.jpg",
         "frenchie_pair": "out/cust_sheets/p2_frenchie_classic.png",
         "frenchie_heart": "out/cust_sheets/p2_frenchie_heart.png"}
 
@@ -23,19 +25,25 @@ for s in styles:
     img_b64 = base64.b64encode(open(REFS[s["ref"]], "rb").read()).decode()
     parts = [{"inline_data": {"mime_type": "image/png" if REFS[s["ref"]].endswith(".png") else "image/jpeg", "data": img_b64}}]
     if s.get("style_ref"):  # match an existing design's exact style (front/back coherence)
-        parts.append({"inline_data": {"mime_type": "image/png", "data": base64.b64encode(open(s["style_ref"], "rb").read()).decode()}})
+        parts.append({"inline_data": {"mime_type": "image/png" if s["style_ref"].endswith(".png") else "image/jpeg", "data": base64.b64encode(open(s["style_ref"], "rb").read()).decode()}})
     parts.append({"text": cfg["base"] + " " + s["prompt"]})
     body = {"contents": [{"parts": parts}],
         "generationConfig": {"responseModalities": ["IMAGE"]}}
     if os.environ.get("ASPECT"): body["generationConfig"]["imageConfig"] = {"aspectRatio": os.environ["ASPECT"]}
     req = urllib.request.Request(url, data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json", "x-goog-api-key": API_KEY})
-    try:
-        resp = json.load(urllib.request.urlopen(req, timeout=180))
-    except urllib.error.HTTPError as e:
-        msg = e.read().decode()[:400]; print(s["id"], "HTTP", e.code, msg); log.append({"id": s["id"], "error": e.code, "msg": msg})
-        if e.code in (400, 401, 403): break
-        time.sleep(5); continue
+    resp = None
+    for attempt in range(4):
+        try:
+            resp = json.load(urllib.request.urlopen(req, timeout=240)); break
+        except urllib.error.HTTPError as e:
+            msg = e.read().decode()[:400]; print(s["id"], "HTTP", e.code, msg, "attempt", attempt)
+            if e.code in (401, 403): break
+            time.sleep(8 * (attempt + 1))
+        except Exception as e:
+            print(s["id"], "err", repr(e)[:200]); time.sleep(8 * (attempt + 1))
+    if resp is None:
+        log.append({"id": s["id"], "ok": False, "error": "failed"}); continue
     saved = False
     for c in resp.get("candidates", []):
         for p in c.get("content", {}).get("parts", []):

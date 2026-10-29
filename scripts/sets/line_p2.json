@@ -1,0 +1,221 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "australian_shepherd__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Australian Shepherd (medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "australian_shepherd__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Australian Shepherd (medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "australian_shepherd__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Australian Shepherd (medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "doberman_pinscher__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Doberman Pinscher (sleek short coat, erect pointed ears, long narrow muzzle, athletic body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "doberman_pinscher__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Doberman Pinscher (sleek short coat, erect pointed ears, long narrow muzzle, athletic body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "doberman_pinscher__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Doberman Pinscher (sleek short coat, erect pointed ears, long narrow muzzle, athletic body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "pembroke_welsh_corgi__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Pembroke Welsh Corgi (large erect ears, fox-like face, short legs, long body, no tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "pembroke_welsh_corgi__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Pembroke Welsh Corgi (large erect ears, fox-like face, short legs, long body, no tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "pembroke_welsh_corgi__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Pembroke Welsh Corgi (large erect ears, fox-like face, short legs, long body, no tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "miniature_schnauzer__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Miniature Schnauzer (bushy eyebrows, beard and mustache, folded ears, wiry coat). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "miniature_schnauzer__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Miniature Schnauzer (bushy eyebrows, beard and mustache, folded ears, wiry coat). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "miniature_schnauzer__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Miniature Schnauzer (bushy eyebrows, beard and mustache, folded ears, wiry coat). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "boxer__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Boxer (square muzzle, short coat, folded ears, wrinkled forehead, muscular body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "boxer__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Boxer (square muzzle, short coat, folded ears, wrinkled forehead, muscular body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "boxer__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Boxer (square muzzle, short coat, folded ears, wrinkled forehead, muscular body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "pomeranian__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Pomeranian (tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "pomeranian__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Pomeranian (tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "pomeranian__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Pomeranian (tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "bernese_mountain_dog__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Bernese Mountain Dog (big fluffy thick coat, drop ears, gentle face, bushy tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "bernese_mountain_dog__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Bernese Mountain Dog (big fluffy thick coat, drop ears, gentle face, bushy tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "bernese_mountain_dog__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Bernese Mountain Dog (big fluffy thick coat, drop ears, gentle face, bushy tail). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "shih_tzu__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Shih Tzu (long flowing coat, flat short muzzle, drop ears, topknot). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "shih_tzu__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Shih Tzu (long flowing coat, flat short muzzle, drop ears, topknot). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "shih_tzu__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Shih Tzu (long flowing coat, flat short muzzle, drop ears, topknot). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "great_dane__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Great Dane (very tall, long deep muzzle, folded drop ears, deep chest, long legs). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "great_dane__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Great Dane (very tall, long deep muzzle, folded drop ears, deep chest, long legs). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "great_dane__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Great Dane (very tall, long deep muzzle, folded drop ears, deep chest, long legs). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "boston_terrier__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Boston Terrier (erect bat ears, square flat face, short muzzle, compact body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "boston_terrier__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Boston Terrier (erect bat ears, square flat face, short muzzle, compact body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "boston_terrier__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Boston Terrier (erect bat ears, square flat face, short muzzle, compact body). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "chihuahua__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Chihuahua (tiny dog, very large erect ears, apple-shaped head, big round eyes). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "chihuahua__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Chihuahua (tiny dog, very large erect ears, apple-shaped head, big round eyes). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "chihuahua__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Chihuahua (tiny dog, very large erect ears, apple-shaped head, big round eyes). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "havanese__classic",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Havanese (silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "havanese__cool",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Havanese (silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  },
+  {
+   "id": "havanese__heart",
+   "ref": "oneline_sheet",
+   "prompt": "Image 1 is a sheet of elegant single-continuous-line dog drawings (the target hand-drawn style). Image 2 is an approved finished design set for a French Bulldog showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, on one canvas. Create a NEW design set of the same kind for a Havanese (silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back). Keep the breed accurate and instantly recognizable. Same single flowing hand-drawn line, same weight, same expressive face, same layout and proportions, not over-detailed inside the body. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line.",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg"
+  }
+ ]
+}
