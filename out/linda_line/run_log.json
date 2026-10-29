@@ -1,0 +1,782 @@
+[
+ {
+  "id": "L01_one_line_fine",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 416,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1706,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 158
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L02_one_line_bold",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 417,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1707,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 159
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L03_one_line_scribble",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 417,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1707,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 159
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L04_one_line_pink_tongue",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 419,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1709,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 161
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L05_one_line_profile",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 415,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1705,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 157
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L06_stencil_bold",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 427,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1717,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 169
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L07_ink_fur_strokes",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 422,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1712,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 164
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L08_solid_silhouette",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 423,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1713,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 165
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L09_negative_space_badge",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 423,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1713,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 165
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L10_linocut",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 417,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1707,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 159
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L11_sumi_brush",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 425,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1715,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 167
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L12_geometric_outline",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 425,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1715,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 167
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L13_geometric_heavy_frame",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 421,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1711,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 163
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L14_lowpoly_mono",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 420,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1710,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 162
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L15_construction_circles",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 426,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1716,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 168
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L16_constellation",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 416,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1706,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 158
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L17_elegant_swash",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 429,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1719,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 171
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L18_implied_minimal",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 428,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1718,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 170
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L19_abstract_ribbon",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 428,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1718,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 170
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L20_abstract_curls",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 415,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1705,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 157
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L21_topographic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 416,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1706,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 158
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L22_halftone_dots",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 413,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1703,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 155
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L23_stipple",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 415,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1705,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 157
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L24_engraving",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 414,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1704,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 156
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L25_paper_stencil_bridges",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 414,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1704,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 156
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L26_clean_icon_outline",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 417,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1707,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 159
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L27_split_line_solid",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 424,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1714,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 166
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L28_brush_plus_line",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 422,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1712,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 164
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L29_fingerprint_swirl",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 415,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1705,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 157
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L30_tribal_bold",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 414,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1704,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 156
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ }
+]
