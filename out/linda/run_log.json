@@ -1,0 +1,366 @@
+[
+ {
+  "id": "01_stained_glass",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 424,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1714,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 166
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "02_botanical_crown",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 422,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1712,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 164
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "03_groovy_70s",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 428,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1718,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 170
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "04_woodblock",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 424,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1714,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 166
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "05_neon_synthwave",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 419,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1709,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 161
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "06_paper_cut",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 415,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1705,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 157
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "07_pop_art",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 420,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1710,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 162
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "08_tattoo_flash",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 422,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1712,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 164
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "09_folk_embroidery",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 418,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1708,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 160
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "10_ink_watercolor",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 414,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1704,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 156
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "11_master_swirl",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 425,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1715,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 167
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "12_master_impressionist",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 421,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1711,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 163
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "13_master_renaissance",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 424,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1714,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 166
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "14_master_gold_leaf",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 419,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1709,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 161
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ }
+]
