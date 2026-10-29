@@ -1,0 +1,201 @@
+{
+ "family": "silhouette",
+ "best": "out/refine/silhouette/r4/r4_evolve1.png",
+ "best_verdict": {
+  "file": "r4_evolve1.png",
+  "verdict": "REWORK",
+  "concept": 5.68,
+  "concept_pro": 6.27,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 21.2,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for full front print and stray marks will ruin the print."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (39359px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 7,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the image to fix the 13.6x upscale requirement.",
+   "Remove the 39359px of stray marks.",
+   "Add a white underbase/fill for printing on black garments."
+  ],
+  "strengths": [
+   "Strong contrast and clear silhouette.",
+   "Accurate capture of the dog's joyful expression.",
+   "Scalable vector-style aesthetic."
+  ],
+  "style_detected": "black and white vector line art",
+  "prompt_rewrite": "A bold black and white vector line art illustration of a fluffy Bichon Poodle mix dog head, front-facing, tongue out, wearing a solid color bandana. Clean thick outlines, minimalist shading, pure white background, no text, scalable graphic tee design.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'millennial mom' core.",
+   "millennial_dog_mom": "Cute, but I'd want it to look exactly like my dog's bandana color.",
+   "male_owner_35_55": "Too cutesy.",
+   "gift_buyer": "Safe gift, but looks like something from a big box store.",
+   "art_lover": "Lacks artistic soul."
+  }
+ },
+ "history": [
+  {
+   "round": 1,
+   "top": [
+    [
+     "r1_stencil.png",
+     "REWORK",
+     5.6,
+     "2/5",
+     20.0
+    ],
+    [
+     "r1_bridges.png",
+     "REWORK",
+     5.57,
+     "2/5",
+     18.0
+    ],
+    [
+     "r1_solid.png",
+     "REJECT",
+     5.04,
+     "2/5",
+     18.0
+    ],
+    [
+     "r1_badge.png",
+     "REJECT",
+     4.76,
+     "3/5",
+     12.0
+    ]
+   ]
+  },
+  {
+   "round": 2,
+   "top": [
+    [
+     "r2_evolve2.png",
+     "REWORK",
+     5.66,
+     "2/5",
+     20.6
+    ],
+    [
+     "r2_fresh2.png",
+     "REWORK",
+     5.55,
+     "3/5",
+     18.4
+    ],
+    [
+     "r2_fresh1.png",
+     "REJECT",
+     5.49,
+     "2/5",
+     9.0
+    ],
+    [
+     "r2_evolve1.png",
+     "REJECT",
+     5.44,
+     "2/5",
+     18.4
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "top": [
+    [
+     "r3_fresh1.png",
+     "REWORK",
+     5.6,
+     "2/5",
+     21.6
+    ],
+    [
+     "r3_evolve1.png",
+     "REWORK",
+     5.58,
+     "2/5",
+     20.6
+    ],
+    [
+     "r3_fresh2.png",
+     "REJECT",
+     5.39,
+     "2/5",
+     18.4
+    ],
+    [
+     "r3_evolve2.png",
+     "REJECT",
+     4.75,
+     "0/5",
+     16.6
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "top": [
+    [
+     "r4_evolve1.png",
+     "REWORK",
+     5.68,
+     "2/5",
+     21.2
+    ],
+    [
+     "r4_fresh1.png",
+     "REWORK",
+     5.55,
+     "3/5",
+     16.4
+    ],
+    [
+     "r4_fresh2.png",
+     "REJECT",
+     5.41,
+     "3/5",
+     19.6
+    ],
+    [
+     "r4_evolve2.png",
+     "REJECT",
+     5.35,
+     "2/5",
+     20.0
+    ]
+   ]
+  }
+ ]
+}

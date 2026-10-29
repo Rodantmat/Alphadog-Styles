@@ -1,0 +1,242 @@
+[
+ {
+  "file": "r4_evolve1.png",
+  "verdict": "REWORK",
+  "concept": 5.68,
+  "concept_pro": 6.27,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 21.2,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for full front print and stray marks will ruin the print."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (39359px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 7,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the image to fix the 13.6x upscale requirement.",
+   "Remove the 39359px of stray marks.",
+   "Add a white underbase/fill for printing on black garments."
+  ],
+  "strengths": [
+   "Strong contrast and clear silhouette.",
+   "Accurate capture of the dog's joyful expression.",
+   "Scalable vector-style aesthetic."
+  ],
+  "style_detected": "black and white vector line art",
+  "prompt_rewrite": "A bold black and white vector line art illustration of a fluffy Bichon Poodle mix dog head, front-facing, tongue out, wearing a solid color bandana. Clean thick outlines, minimalist shading, pure white background, no text, scalable graphic tee design.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'millennial mom' core.",
+   "millennial_dog_mom": "Cute, but I'd want it to look exactly like my dog's bandana color.",
+   "male_owner_35_55": "Too cutesy.",
+   "gift_buyer": "Safe gift, but looks like something from a big box store.",
+   "art_lover": "Lacks artistic soul."
+  }
+ },
+ {
+  "file": "r4_fresh1.png",
+  "verdict": "REWORK",
+  "concept": 5.55,
+  "concept_pro": 5.91,
+  "customers": 5.0,
+  "would_buy": "3/5",
+  "avg_price": 16.4,
+  "concept_hard_fails": [],
+  "print_score": 7,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 7,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Knock out white background for transparency",
+   "Soften aggressive brow lines to match reference dog's sweet expression",
+   "Create an inverted version for dark garments"
+  ],
+  "strengths": [
+   "Clean, scalable vector-like lines",
+   "High contrast",
+   "Easily digitizable for embroidery"
+  ],
+  "style_detected": "Bold vector mascot line art / coloring book silhouette",
+  "prompt_rewrite": "A minimalist black and white vector line art illustration of a sweet fluffy Bichon Poodle dog head, front-facing, soft round eyes, friendly expression, thick clean outlines, no aggressive brows, solid white background, no text, flat 2d design",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a car decal.",
+   "millennial_dog_mom": "Cute but a bit intense. Wants a sweet look, not a high school mascot.",
+   "male_owner_35_55": "Clean, good for a cap, but a bit generic.",
+   "gift_buyer": "Safe bet, but doesn't capture the specific dog's sweet face.",
+   "art_lover": "Devoid of artistic soul. Looks like a live-trace of a generic 3D render."
+  }
+ },
+ {
+  "file": "r4_fresh2.png",
+  "verdict": "REJECT",
+  "concept": 5.41,
+  "concept_pro": 5.82,
+  "customers": 4.8,
+  "would_buy": "3/5",
+  "avg_price": 19.6,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (28400px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 5,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Add white outer stroke for black tee compatibility.",
+   "Clean 28400px stray marks.",
+   "Vectorize to fix 22x upscale requirement.",
+   "Adjust top head shape to match reference dog's wider/flatter fluff."
+  ],
+  "strengths": [
+   "Highly scalable vector-like style.",
+   "Excellent for embroidery and small chest prints.",
+   "Bold contrast."
+  ],
+  "style_detected": "bold vector mascot line art",
+  "prompt_rewrite": "A bold black and white vector line art illustration of a fluffy Bichon Poodle mix dog head, front-facing, thick black outlines, solid white fill, smooth rounded cloud-like top head fluff, wide-set dark eyes, tongue out, wearing a red checkered bandana, clean white background, minimalist mascot logo style, high contrast, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic.",
+   "millennial_dog_mom": "Cute, but a bit too stark with the heavy black lines.",
+   "male_owner_35_55": "Good bold graphic, not too cutesy.",
+   "gift_buyer": "Safe, but too generic if they want it to look exactly like their dog.",
+   "art_lover": "Lacks artistic soul."
+  }
+ },
+ {
+  "file": "r4_evolve2.png",
+  "verdict": "REJECT",
+  "concept": 5.35,
+  "concept_pro": 5.58,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 20.0,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (367px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Remove stray marks (367px)",
+   "Knock out white background",
+   "Create inverted version for dark tees",
+   "Vectorize or upscale 12x"
+  ],
+  "strengths": [
+   "Bold contrast",
+   "Clear silhouette",
+   "Highly scalable for embroidery"
+  ],
+  "style_detected": "vector line art silhouette",
+  "prompt_rewrite": "A bold black and white vector silhouette illustration of a fluffy Bichon poodle head, front-facing, thick variable-weight outlines, organic asymmetrical cloud-like fur, tongue out, transparent background, minimalist emblem style, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and millennial-core.",
+   "millennial_dog_mom": "A bit stark in just black and white.",
+   "male_owner_35_55": "A bit too cute with the tongue out.",
+   "gift_buyer": "Generic, but that makes it a safe gift.",
+   "art_lover": "Looks like cheap clip art."
+  }
+ }
+]

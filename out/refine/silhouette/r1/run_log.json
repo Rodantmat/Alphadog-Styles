@@ -1,0 +1,106 @@
+[
+ {
+  "id": "r1_solid",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 466,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1756,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 208
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_badge",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 470,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1760,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 212
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_stencil",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 469,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1759,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 211
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_bridges",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 460,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1750,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 202
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ }
+]

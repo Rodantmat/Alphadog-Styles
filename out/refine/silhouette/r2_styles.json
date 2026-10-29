@@ -1,0 +1,27 @@
+{
+ "base": "Using the attached photo of this exact dog as the likeness reference (keep her round fluffy head shape, long drop ears, dark eyes, button nose and happy tongue-out expression recognizable), create a professional brand-quality logo artwork of her HEAD ONLY for a premium apparel brand. Pure black on a flat pure white background, no gray, no gradients, no texture, no shadow, no frame, no collar, no body below the neck. Generous empty margin on every side, art centered and symmetric-feeling. All lines and shapes BOLD: minimum stroke about 3% of the image width so it stays readable at 4 inches and on a black shirt when inverted to white. Confident, deliberate, original graphic design (not generic clip art, not a photo filter, not an AI portrait). Crisp vector-like edges. Absolutely no text, letters, signature or watermark.",
+ "styles": [
+  {
+   "id": "r2_evolve1",
+   "ref": "smile",
+   "style_ref": "out/refine/silhouette/r1/r1_stencil.png",
+   "prompt": "Image 2 is the current best draft of this design. Redraw it improved: keep its concept and style identity and the dog likeness from image 1, head only, no text. Apply these fixes: Clean 12036px stray marks from the background.; Create an inverted white-ink version for dark tees.; Upscale >4x or vectorize for full front printing.. Keep every line bold and the result perfectly clean black on white."
+  },
+  {
+   "id": "r2_fresh1",
+   "ref": "smile",
+   "prompt": "Bold lines minimum 3% of image width. A bold black and white vector silhouette of a fluffy Bichon Poodle head, front-facing, thick clean lines, stencil style, solid white background, no text, minimalist, high contrast, suitable for screen printing."
+  },
+  {
+   "id": "r2_evolve2",
+   "ref": "smile",
+   "style_ref": "out/refine/silhouette/r1/r1_bridges.png",
+   "prompt": "Image 2 is the current best draft of this design. Redraw it improved: keep its concept and style identity and the dog likeness from image 1, head only, no text. Apply these fixes: Vectorize to fix low resolution for large prints; Create a dark-garment version with a white outer stroke. Keep every line bold and the result perfectly clean black on white."
+  },
+  {
+   "id": "r2_fresh2",
+   "ref": "smile",
+   "prompt": "Bold lines minimum 3% of image width. A bold black and white vector silhouette of a fluffy Bichon poodle head, front-facing, thick varying line weight, solid black shadows, negative space for white fur, clean white background, no text, minimalist graphic design style"
+  }
+ ]
+}

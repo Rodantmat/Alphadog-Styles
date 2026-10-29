@@ -1,0 +1,233 @@
+[
+ {
+  "file": "r1_stencil.png",
+  "verdict": "REWORK",
+  "concept": 5.6,
+  "concept_pro": 6.0,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 20.0,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (12036px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Clean 12036px stray marks from the background.",
+   "Create an inverted white-ink version for dark tees.",
+   "Upscale >4x or vectorize for full front printing."
+  ],
+  "strengths": [
+   "High contrast scales well for embroidery and left-chest prints.",
+   "Highly replicable style for a 25-breed series.",
+   "Clean, recognizable silhouette."
+  ],
+  "style_detected": "minimalist vector stencil silhouette",
+  "prompt_rewrite": "A bold black and white vector silhouette of a fluffy Bichon Poodle head, front-facing, thick clean lines, stencil style, solid white background, no text, minimalist, high contrast, suitable for screen printing.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a millennial mom bumper sticker.",
+   "millennial_dog_mom": "Cute but a bit stark in just black and white.",
+   "male_owner_35_55": "A bit too cute with the tongue out.",
+   "gift_buyer": "Safe bet, but maybe too generic.",
+   "art_lover": "Zero artistic soul. It's a sterile vector trace."
+  }
+ },
+ {
+  "file": "r1_bridges.png",
+  "verdict": "REWORK",
+  "concept": 5.57,
+  "concept_pro": 6.09,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 18.0,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for a 12-inch front print without vectorization."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize to fix low resolution for large prints",
+   "Create a dark-garment version with a white outer stroke"
+  ],
+  "strengths": [
+   "Clean, scalable lines",
+   "High contrast",
+   "Embroidery friendly"
+  ],
+  "style_detected": "Bold vector line art / high-contrast silhouette",
+  "prompt_rewrite": "A bold black and white vector silhouette of a fluffy Bichon poodle head, front-facing, thick varying line weight, solid black shadows, negative space for white fur, clean white background, no text, minimalist graphic design style",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a stock vector.",
+   "millennial_dog_mom": "Cute, but the white tongue is weird.",
+   "male_owner_35_55": "A bit too cutesy with the scalloped edges.",
+   "gift_buyer": "Safe, but maybe too generic.",
+   "art_lover": "Soulless vector art."
+  }
+ },
+ {
+  "file": "r1_solid.png",
+  "verdict": "REJECT",
+  "concept": 5.04,
+  "concept_pro": 5.33,
+  "customers": 4.6,
+  "would_buy": "2/5",
+  "avg_price": 18.0,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 5,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 5,
+   "male_owner_35_55": 6,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize to fix the 12.8x upscale requirement.",
+   "Create an inverted white version for dark garments.",
+   "Fix the unsettling eye shapes."
+  ],
+  "strengths": [
+   "High contrast reads well at very small sizes.",
+   "Easily convertible to vector format.",
+   "Simple enough for basic chest embroidery."
+  ],
+  "style_detected": "solid black vector silhouette",
+  "prompt_rewrite": "A premium, stylized bold line-art illustration of a fluffy Bichon-Poodle mix dog head, front-facing, thick black outlines with elegant negative space detailing fur texture, sweet and soft expression, white background, minimalist high-end apparel graphic design, vector style, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic. Gives generic craft-store vibes.",
+   "millennial_dog_mom": "The eyes look a little scary and intense.",
+   "male_owner_35_55": "A bit too much solid black for a big shirt print, might feel stiff.",
+   "gift_buyer": "Safe but a bit boring. Doesn't look very expensive.",
+   "art_lover": "Zero originality. Looks like a bucket-fill tool was used on a stock photo."
+  }
+ },
+ {
+  "file": "r1_badge.png",
+  "verdict": "REJECT",
+  "concept": 4.76,
+  "concept_pro": 5.0,
+  "customers": 4.4,
+  "would_buy": "3/5",
+  "avg_price": 12.0,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 6,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 5,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 6,
+   "print_technician": 4,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 5,
+   "male_owner_35_55": 5,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Remove the solid black background circle to ensure printability on both dark and light garments.",
+   "Fix the irregular notch on the right eye.",
+   "Adjust the outer fur edge to be curly rather than spiky."
+  ],
+  "strengths": [
+   "High contrast reads well at small sizes.",
+   "Easily adaptable for embroidery if the background is removed.",
+   "Scalable format for a multi-breed series."
+  ],
+  "style_detected": "High-contrast negative space vector badge",
+  "prompt_rewrite": "A pure black and white line-art silhouette of a fluffy Bichon Poodle dog head, front-facing, tongue out, curly cloud-like fur texture, transparent background, no containing circle, bold minimalist vector style, varied line weights, no text, white background.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a corporate logo.",
+   "millennial_dog_mom": "A bit stark and heavy with all the black.",
+   "male_owner_35_55": "Giant black circle on a shirt is uncomfortable.",
+   "gift_buyer": "Safe, but unexciting.",
+   "art_lover": "Zero artistic merit, looks auto-traced."
+  }
+ }
+]

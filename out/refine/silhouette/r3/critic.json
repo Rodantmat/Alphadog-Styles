@@ -1,0 +1,963 @@
+{
+ "r3_evolve1.png": {
+  "style_detected": "Bold vector line art / high-contrast mascot logo",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Solid execution but generic stock-vector look.",
+     "White fill vanishes on white tees; black lines vanish on black tees without a bounding stroke."
+    ],
+    "fixes": [
+     "Add a bold, continuous outer stroke.",
+     "Design an inverted version specifically for dark garments."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Requires 12x upscale for full front print.",
+     "Contrast issues on pure black or pure white shirts."
+    ],
+    "fixes": [
+     "Vectorize and scale up.",
+     "Knock out the white background but retain white fill for the dog's face."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Some tight, jagged corners in the fur texture."
+    ],
+    "fixes": [
+     "Simplify the jagged fur edges slightly to reduce needle jumps."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 7,
+    "problems": [
+     "Slight asymmetry in the tongue split and bottom lip line."
+    ],
+    "fixes": [
+     "Mirror the bottom jaw/tongue for perfect symmetry in vector software."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Thick black shadows might look too harsh or muddy on short-coated breeds."
+    ],
+    "fixes": [
+     "Establish a strict shadow-to-highlight ratio rule to ensure consistency across all coat types."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Highly saturated market for this exact generic vector style."
+    ],
+    "fixes": [
+     "Pair with strong typography or offer personalization to increase perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Top knot isn't quite round enough for a classic Bichon 'powder puff' cut."
+    ],
+    "fixes": [
+     "Round out the top of the head silhouette."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Reference dog has rounder, more prominent eyes and a wider snout.",
+     "Missing the signature red bandana."
+    ],
+    "fixes": [
+     "Widen the eye shape and shorten the snout.",
+     "Add the bandana if strict likeness is required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Looks like basic millennial clip-art."
+    ],
+    "fixes": [
+     "Add ironic text or use a more distressed Y2K aesthetic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute but a bit generic."
+    ],
+    "fixes": [
+     "Offer custom name drops below the graphic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "A bit too cutesy with the big smile."
+    ],
+    "fixes": [
+     "Tone down the smile slightly for a more neutral expression."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but needs good garment contrast to pop."
+    ],
+    "fixes": [
+     "Print exclusively on mid-tone colors like navy or heather gray."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Mechanical and lacks artistic soul."
+    ],
+    "fixes": [
+     "Introduce varied line weights or a subtle hand-drawn texture."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Extremely clean, vector-ready lines.",
+   "Perfect for embroidery due to low color count and thick strokes.",
+   "High contrast reads well at small sizes."
+  ],
+  "must_fix_before_production": [
+   "Vectorize and upscale to resolve the T1 flag.",
+   "Create an inverted version or add a thick bounding stroke for pure black/white garments.",
+   "Round the eyes and top knot to better match the specific reference photo."
+  ],
+  "prompt_rewrite": "A bold, high-contrast black and white vector line art illustration of a fluffy Bichon-Poodle mix dog head, front-facing, perfectly round powder-puff haircut, large round dark eyes, open mouth with tongue, thick clean outlines, minimalist mascot logo style, solid white background, no text.",
+  "usage": {
+   "promptTokenCount": 3328,
+   "candidatesTokenCount": 1835,
+   "totalTokenCount": 7654,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1153
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    }
+   ],
+   "thoughtsTokenCount": 2491,
+   "serviceTier": "standard"
+  }
+ },
+ "r3_evolve2.png": {
+  "style_detected": "Thick-line vector illustration / Mascot logo",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 4,
+    "problems": [
+     "Split-screen presentation is unusable as a single graphic.",
+     "The negative-space version (right) has an inverted white nose, looking skull-like."
+    ],
+    "fixes": [
+     "Generate a single, centered graphic.",
+     "Ensure the nose remains solid black regardless of background."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Split-screen layout cannot be printed directly as a single apparel graphic.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Split background will print as a massive block.",
+     "Needs 6x upscale for full front print.",
+     "Fine details in the mouth will close up at left-chest size."
+    ],
+    "fixes": [
+     "Remove the split background (isolate the left dog).",
+     "Vectorize the image to solve upscaling.",
+     "Thicken the negative space lines inside the mouth."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "The left design is close, but the tongue and mouth lines are too tight for thread."
+    ],
+    "fixes": [
+     "Use only the left (positive) version.",
+     "Simplify the mouth/tongue area, removing the smallest black gaps."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 3,
+    "problems": [
+     "Split canvas is an AI artifact from prompting for 'black and white tees'.",
+     "Right-side image has an inverted nose (white with black nostrils)."
+    ],
+    "fixes": [
+     "Stop asking for multiple background colors in the prompt.",
+     "Fix the nose inversion on the dark version."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 8,
+    "problems": [
+     "None detected. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "The thick-line vector style is scalable, but the split-screen presentation breaks consistency."
+    ],
+    "fixes": [
+     "Standardize the prompt to produce a single, isolated subject."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 4,
+    "problems": [
+     "The split image is confusing at thumbnail size.",
+     "Looks like a mistake or a template, not a finished product."
+    ],
+    "fixes": [
+     "Crop to just the left dog head for the thumbnail."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Captures the 'cloud' head and drop ears well.",
+     "Top of the head is slightly too bumpy."
+    ],
+    "fixes": [
+     "Make the top of the head a smoother, rounder curve."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 6,
+    "problems": [
+     "Graphic has a much wider, happier open mouth than the reference.",
+     "Missing the darker fur around the eyes seen in the photo."
+    ],
+    "fixes": [
+     "Narrow the tongue/mouth opening.",
+     "Add subtle thicker lines around the eyes to mimic the tear stains."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "The split screen is weird.",
+     "Looks like a stock vector, not a cool graphic tee."
+    ],
+    "fixes": [
+     "Just give me one cool graphic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 5,
+    "problems": [
+     "The left one is cute, but the right one is scary.",
+     "I just want one cute dog on my shirt."
+    ],
+    "fixes": [
+     "Remove the creepy inverted one on the right."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "Too cutesy for me.",
+     "The split design is confusing."
+    ],
+    "fixes": [
+     "Make it a single image."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "I wouldn't know which side prints.",
+     "It looks like a mistake."
+    ],
+    "fixes": [
+     "Fix the layout so it looks like a real shirt design."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Very generic clip-art style.",
+     "The negative space inversion on the right is poorly executed."
+    ],
+    "fixes": [
+     "Needs more unique stylistic flair."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean, bold lines on the left-side graphic.",
+   "Easily recognizable as a fluffy poodle/bichon mix.",
+   "Left graphic is highly suitable for embroidery."
+  ],
+  "must_fix_before_production": [
+   "Isolate the left dog head and delete the right side and split background.",
+   "Vectorize the isolated graphic to allow for the required 6x upscale.",
+   "Ensure the background is fully transparent."
+  ],
+  "prompt_rewrite": "A single, centered vector illustration of a fluffy white Bichon Poodle dog head, thick black outlines, solid white fill, minimalist mascot logo style, front-facing, symmetrical, solid white background, no text, single subject only.",
+  "usage": {
+   "promptTokenCount": 3353,
+   "candidatesTokenCount": 1983,
+   "totalTokenCount": 7368,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1178
+    }
+   ],
+   "thoughtsTokenCount": 2032,
+   "serviceTier": "standard"
+  }
+ },
+ "r3_fresh1.png": {
+  "style_detected": "Bold vector line art, comic inking style",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Symmetrical perfection feels slightly rigid.",
+     "Lacks a unique 'wow' factor; resembles standard stock vector art."
+    ],
+    "fixes": [
+     "Introduce slight asymmetry in the fur tufts.",
+     "Thicken the outer contour line slightly for better visual pop."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Pure white background needs knockout for dark shirts.",
+     "Fine lines in the bandana plaid will plug up on 4-inch left-chest prints.",
+     "Requires >4x upscale for full front print."
+    ],
+    "fixes": [
+     "Remove white background (make transparent).",
+     "Simplify the plaid pattern for the small emblem version.",
+     "Vectorize or use high-quality AI upscaler to resolve resolution."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Plaid bandana has too many intersecting fine lines.",
+     "Fur texture lines are too dense for a 4x2.25 cap front."
+    ],
+    "fixes": [
+     "Reduce fur detail lines by 50%.",
+     "Change plaid to a simple 2-color checkerboard or solid fill with a border."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Tongue has a slight double-line on the left edge.",
+     "Plaid pattern warps slightly unnaturally on the right side of the bandana."
+    ],
+    "fixes": [
+     "Clean up the tongue outline.",
+     "Straighten the grid lines on the bandana's right fold."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Heavy reliance on the bandana for visual interest might not translate to breeds without props.",
+     "Line weight needs strict standardization across the 25 breeds."
+    ],
+    "fixes": [
+     "Ensure the core face/fur style is strong enough without the bandana.",
+     "Define a standard outer stroke weight (e.g., 4pt) for the series."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "High competition for black-and-white vector dog shirts.",
+     "Needs strong brand presentation to stand out."
+    ],
+    "fixes": [
+     "Market with bold typography or unique garment colors (heather gray/sand)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Top of the head is a bit too perfectly spherical, resembling a Bichon more than the specific Poodle mix reference."
+    ],
+    "fixes": [
+     "Flatten the top knot slightly to match the reference photo's grooming style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Real dog has distinct tear staining/darkness around the eyes.",
+     "Real dog has a wider, flatter head shape; design is idealized."
+    ],
+    "fixes": [
+     "Widen the head slightly.",
+     "Add subtle shading or thicker lines under the eyes to reflect markings."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Looks like standard Redbubble merch.",
+     "Lacks irony or a unique aesthetic edge."
+    ],
+    "fixes": [
+     "Add a distressed texture or pair with a trendy phrase."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit stark in just black and white.",
+     "Might prefer the actual red color in the bandana."
+    ],
+    "fixes": [
+     "Offer a version with a colored bandana (red plaid)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "The fluffy dog is inherently 'cutesy', though the bold style helps."
+    ],
+    "fixes": [
+     "Keep the high contrast. Avoid pastel shirt colors."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Needs to look exactly like the recipient's dog to be a great gift."
+    ],
+    "fixes": [
+     "Ensure high print quality so it doesn't look cheap."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks the hand-drawn imperfections of true linocut or ink illustration.",
+     "Feels algorithmic."
+    ],
+    "fixes": [
+     "Introduce variable line weights that mimic a real brush or dip pen."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "High contrast and clean lines",
+   "Easily recognizable subject",
+   "Good scalability for large prints"
+  ],
+  "must_fix_before_production": [
+   "Remove white background for dark apparel compatibility",
+   "Simplify bandana plaid for small prints and embroidery",
+   "Vectorize or upscale >4x for full front print"
+  ],
+  "prompt_rewrite": "A bold, black and white vector line art illustration of a fluffy Bichon-Poodle mix dog head, front-facing, wearing a simple plaid bandana. Thick comic-book style inking, high contrast, solid white fill with black outlines, clean white background, slightly flattened top knot, minimalist, no text.",
+  "usage": {
+   "promptTokenCount": 3326,
+   "candidatesTokenCount": 1864,
+   "totalTokenCount": 7318,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1151
+    }
+   ],
+   "thoughtsTokenCount": 2128,
+   "serviceTier": "standard"
+  }
+ },
+ "r3_fresh2.png": {
+  "style_detected": "bold vector line-art / coloring book illustration",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Style is bold line-art, not a true silhouette as briefed.",
+     "Lacks a white fill layer, making it invisible on black tees.",
+     "Top of head is too domed/peaked compared to standard Bichon cuts."
+    ],
+    "fixes": [
+     "Add a solid white underbase/fill to the interior.",
+     "Flatten the top curve of the head slightly to create a 'cloud' shape."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (12.95x for full front).",
+     "16,200px of stray marks will print as dirty specks.",
+     "Black lines will vanish on dark shirts without a white fill."
+    ],
+    "fixes": [
+     "Vectorize the image to solve resolution and allow infinite scaling.",
+     "Delete all stray pixels outside the main contour.",
+     "Add a white fill layer."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Inner eye details (catchlights) might be too small for standard thread at 2.25in height."
+    ],
+    "fixes": [
+     "Simplify the eye catchlights to a single white dot.",
+     "Thicken the thinnest inner fur lines slightly for better stitch registration."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Stray marks present outside the main drawing.",
+     "The tongue line merges awkwardly with the lower lip/chin fluff.",
+     "Slight asymmetry in the ear fluff weight."
+    ],
+    "fixes": [
+     "Clean up stray pixels.",
+     "Redraw the bottom of the tongue to separate it clearly from the chin fur."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "The 'thick outer, thin inner' line style is highly replicable, but calling it 'silhouette' in the brief is a misnomer."
+    ],
+    "fixes": [
+     "Rename the internal style guide to 'bold line-art'.",
+     "Ensure all 25 breeds use the exact same outer stroke weight."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Very generic. Looks like standard stock vector art.",
+     "Lacks a unique 'AlphaDog' hook to justify a premium price."
+    ],
+    "fixes": [
+     "Needs a signature element (e.g., a specific stylized eye or a consistent geometric framing) to stand out from cheap competitors."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "The head shape is a bit too triangular/peaked.",
+     "Bichons and Poodles usually have a more spherical or flat-topped 'cloud' groom."
+    ],
+    "fixes": [
+     "Widen the top of the head fluff to make it more perfectly round/spherical."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 4,
+    "problems": [
+     "Misses the specific wide-set, slightly droopy eye shape of the reference dog.",
+     "Misses the bandana (key identifier).",
+     "Head shape is too pointy compared to the reference."
+    ],
+    "fixes": [
+     "Flatten the head top.",
+     "Round the eyes more and space them slightly wider.",
+     "Add the checkered bandana."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit basic/boomer-humor style.",
+     "Not aesthetic or ironic enough."
+    ],
+    "fixes": [
+     "Make the lines chunkier, maybe add a Y2K star or a funny expression."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "It's cute but looks like a generic clipart dog, not a specific pet."
+    ],
+    "fixes": [
+     "Make the eyes softer and more puppy-like."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too cutesy.",
+     "Looks like a coloring book page."
+    ],
+    "fixes": [
+     "Needs a more aggressive or graphic streetwear edge."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, but maybe too plain for a premium gift."
+    ],
+    "fixes": [
+     "Add a pop of color, like a red bandana, to make it feel less like a cheap print."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Zero originality.",
+     "Textbook AI/stock vector generation. Lacks soul or artistic hand."
+    ],
+    "fixes": [
+     "Introduce organic brush strokes or a linocut texture to give it an artisanal feel."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 12
+   }
+  ],
+  "top_strengths": [
+   "Clean high-contrast lines.",
+   "Easily readable at small sizes (left chest).",
+   "Highly suitable for embroidery translation."
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix the 12.95x upscale requirement.",
+   "Remove 16,200px of stray marks.",
+   "Add a solid white fill layer so it works on black garments."
+  ],
+  "prompt_rewrite": "A bold black and white vector line-art illustration of a fluffy Bichon Poodle mix dog head, front-facing, symmetrical, thick black outer outlines, minimal thin inner details, solid white fill, wearing a checkered bandana, flat round cloud-like head shape, clean white background, no text, streetwear emblem style.",
+  "usage": {
+   "promptTokenCount": 3360,
+   "candidatesTokenCount": 2132,
+   "totalTokenCount": 8104,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1185
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    }
+   ],
+   "thoughtsTokenCount": 2612,
+   "serviceTier": "standard"
+  }
+ }
+}

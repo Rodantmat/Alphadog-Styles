@@ -1,0 +1,235 @@
+[
+ {
+  "file": "r2_evolve2.png",
+  "verdict": "REWORK",
+  "concept": 5.66,
+  "concept_pro": 5.96,
+  "customers": 5.2,
+  "would_buy": "2/5",
+  "avg_price": 20.6,
+  "concept_hard_fails": [],
+  "print_score": 7,
+  "cap_score": 8,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 7,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 8,
+   "print_technician": 7,
+   "embroidery_digitizer": 8,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize to fix the 12.22x upscale requirement.",
+   "Adjust eye shape to be rounder and softer to match the reference likeness."
+  ],
+  "strengths": [
+   "High contrast makes it very readable at small sizes.",
+   "Excellent candidate for embroidery due to solid shapes.",
+   "Clean, artifact-free generation."
+  ],
+  "style_detected": "bold vector silhouette, high-contrast stencil",
+  "prompt_rewrite": "A bold black and white vector silhouette of a fluffy Bichon-Poodle mix dog head, front-facing, wearing a checkered bandana. The dog has very round, soft dark eyes, a black button nose, and a slightly asymmetrical tongue hanging out. The fur texture should be irregular and fluffy, not perfectly scalloped. Use varied line weights to mimic a hand-drawn brush pen. High contrast, solid black shapes, white background, no text, head only.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a standard mom-shirt graphic.",
+   "millennial_dog_mom": "A bit stark in just black and white.",
+   "male_owner_35_55": "A bit too 'fluffy/cute' for a standard guy's hoodie.",
+   "gift_buyer": "Might not look exactly like the recipient's specific dog due to generic eyes.",
+   "art_lover": "Highly generic vector-stock aesthetic."
+  }
+ },
+ {
+  "file": "r2_fresh2.png",
+  "verdict": "REWORK",
+  "concept": 5.55,
+  "concept_pro": 5.91,
+  "customers": 5.0,
+  "would_buy": "3/5",
+  "avg_price": 18.4,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize to fix low resolution (T1 upscale flag).",
+   "Create a version with a white outline or inverted colors for printing on black tees.",
+   "Break the perfect machine symmetry slightly."
+  ],
+  "strengths": [
+   "High contrast and bold lines scale well for both chest and back prints.",
+   "Easily digitizable for embroidery.",
+   "Clean, easily recognizable silhouette."
+  ],
+  "style_detected": "bold vector line art / mascot logo style",
+  "prompt_rewrite": "A bold black and white vector line-art illustration of a fluffy Bichon Poodle head, front-facing, soft friendly expression, large round eyes, slight organic asymmetry, thick outlines, clean white background, minimalist flat design, no text, no shading gradients.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and millennial-core.",
+   "millennial_dog_mom": "Cute, but a bit intense with the heavy black eyes.",
+   "male_owner_35_55": "A bit too cutesy, but the bold lines make it acceptable for a cap.",
+   "gift_buyer": "Safe bet, but maybe too generic to feel special.",
+   "art_lover": "Soulless, perfectly symmetrical vector art."
+  }
+ },
+ {
+  "file": "r2_fresh1.png",
+  "verdict": "REJECT",
+  "concept": 5.49,
+  "concept_pro": 5.82,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 9.0,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (32467px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Remove 32467px of stray marks",
+   "Create inverted white-line version for dark shirts",
+   "Vectorize to fix 25x upscale requirement"
+  ],
+  "strengths": [
+   "Clean, scalable lines",
+   "High contrast",
+   "Instantly readable silhouette at small sizes"
+  ],
+  "style_detected": "High-contrast black and white vector line art / mascot logo style",
+  "prompt_rewrite": "A bold black and white vector line art illustration of a fluffy Bichon Poodle dog head, front-facing, wearing a checkered bandana, tongue out. Thick variable outlines, solid black eyes and nose, minimalist flat graphic style, white background, no text, slightly asymmetrical organic hand-drawn feel.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and millennial.",
+   "millennial_dog_mom": "Cute, but a bit plain.",
+   "male_owner_35_55": "A bit too cutesy for a standard large print tee.",
+   "gift_buyer": "Safe, but might be too generic if looking for a specific pet's likeness.",
+   "art_lover": "Looks like generic clip art."
+  }
+ },
+ {
+  "file": "r2_evolve1.png",
+  "verdict": "REJECT",
+  "concept": 5.44,
+  "concept_pro": 5.73,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 18.4,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for print and stray marks will cause print errors."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (11944px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize to fix the 21x upscale requirement.",
+   "Clean the 11,944px of stray background marks.",
+   "Ensure white areas are filled with opaque white for printing on dark garments."
+  ],
+  "strengths": [
+   "Bold, high-contrast lines are highly visible.",
+   "Translates easily to embroidery with minor tweaks.",
+   "Captures the general fluffy texture well."
+  ],
+  "style_detected": "high-contrast vector mascot line art",
+  "prompt_rewrite": "A bold black and white vector silhouette illustration of a fluffy Bichon Poodle mix head, front-facing, thick varied line weight, round cloud-like haircut, clean white background, high contrast stencil style, no text, ultra high resolution.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and 'craft fair'.",
+   "millennial_dog_mom": "Cute, but stark in just black and white.",
+   "male_owner_35_55": "A bit too cutesy with the big eyes and tongue.",
+   "gift_buyer": "Safe, generic design.",
+   "art_lover": "Looks like a cheap automated vector trace."
+  }
+ }
+]

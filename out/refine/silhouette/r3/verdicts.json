@@ -1,0 +1,241 @@
+[
+ {
+  "file": "r3_fresh1.png",
+  "verdict": "REWORK",
+  "concept": 5.6,
+  "concept_pro": 6.0,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 21.6,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 5,
+  "cap_ready": false,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 5,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Remove white background for dark apparel compatibility",
+   "Simplify bandana plaid for small prints and embroidery",
+   "Vectorize or upscale >4x for full front print"
+  ],
+  "strengths": [
+   "High contrast and clean lines",
+   "Easily recognizable subject",
+   "Good scalability for large prints"
+  ],
+  "style_detected": "Bold vector line art, comic inking style",
+  "prompt_rewrite": "A bold, black and white vector line art illustration of a fluffy Bichon-Poodle mix dog head, front-facing, wearing a simple plaid bandana. Thick comic-book style inking, high contrast, solid white fill with black outlines, clean white background, slightly flattened top knot, minimalist, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like standard Redbubble merch.",
+   "millennial_dog_mom": "A bit stark in just black and white.",
+   "male_owner_35_55": "The fluffy dog is inherently 'cutesy', though the bold style helps.",
+   "gift_buyer": "Needs to look exactly like the recipient's dog to be a great gift.",
+   "art_lover": "Lacks the hand-drawn imperfections of true linocut or ink illustration."
+  }
+ },
+ {
+  "file": "r3_evolve1.png",
+  "verdict": "REWORK",
+  "concept": 5.58,
+  "concept_pro": 5.96,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 20.6,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 7,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize and upscale to resolve the T1 flag.",
+   "Create an inverted version or add a thick bounding stroke for pure black/white garments.",
+   "Round the eyes and top knot to better match the specific reference photo."
+  ],
+  "strengths": [
+   "Extremely clean, vector-ready lines.",
+   "Perfect for embroidery due to low color count and thick strokes.",
+   "High contrast reads well at small sizes."
+  ],
+  "style_detected": "Bold vector line art / high-contrast mascot logo",
+  "prompt_rewrite": "A bold, high-contrast black and white vector line art illustration of a fluffy Bichon-Poodle mix dog head, front-facing, perfectly round powder-puff haircut, large round dark eyes, open mouth with tongue, thick clean outlines, minimalist mascot logo style, solid white background, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like basic millennial clip-art.",
+   "millennial_dog_mom": "Cute but a bit generic.",
+   "male_owner_35_55": "A bit too cutesy with the big smile.",
+   "gift_buyer": "Safe design, but needs good garment contrast to pop.",
+   "art_lover": "Mechanical and lacks artistic soul."
+  }
+ },
+ {
+  "file": "r3_fresh2.png",
+  "verdict": "REJECT",
+  "concept": 5.39,
+  "concept_pro": 5.91,
+  "customers": 4.6,
+  "would_buy": "2/5",
+  "avg_price": 18.4,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (16200px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize to fix the 12.95x upscale requirement.",
+   "Remove 16,200px of stray marks.",
+   "Add a solid white fill layer so it works on black garments."
+  ],
+  "strengths": [
+   "Clean high-contrast lines.",
+   "Easily readable at small sizes (left chest).",
+   "Highly suitable for embroidery translation."
+  ],
+  "style_detected": "bold vector line-art / coloring book illustration",
+  "prompt_rewrite": "A bold black and white vector line-art illustration of a fluffy Bichon Poodle mix dog head, front-facing, symmetrical, thick black outer outlines, minimal thin inner details, solid white fill, wearing a checkered bandana, flat round cloud-like head shape, clean white background, no text, streetwear emblem style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit basic/boomer-humor style.",
+   "millennial_dog_mom": "It's cute but looks like a generic clipart dog, not a specific pet.",
+   "male_owner_35_55": "Too cutesy.",
+   "gift_buyer": "Safe, but maybe too plain for a premium gift.",
+   "art_lover": "Zero originality."
+  }
+ },
+ {
+  "file": "r3_evolve2.png",
+  "verdict": "REJECT",
+  "concept": 4.75,
+  "concept_pro": 4.85,
+  "customers": 4.6,
+  "would_buy": "0/5",
+  "avg_price": 16.6,
+  "concept_hard_fails": [
+   "art_director: Split-screen layout cannot be printed directly as a single apparel graphic."
+  ],
+  "print_score": 4,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "symmetry check"
+  ],
+  "needs_regen": [
+   "art cropped by canvas",
+   "detail lost at small sizes"
+  ],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T6 detail lost at chest/thumbnail size",
+   "T9 asymmetry high",
+   "T10 art touches canvas edge (cropped)"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 3,
+   "breed_expert": 7,
+   "likeness_judge": 6,
+   "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 5,
+   "male_owner_35_55": 5,
+   "gift_buyer": 5,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Isolate the left dog head and delete the right side and split background.",
+   "Vectorize the isolated graphic to allow for the required 6x upscale.",
+   "Ensure the background is fully transparent."
+  ],
+  "strengths": [
+   "Clean, bold lines on the left-side graphic.",
+   "Easily recognizable as a fluffy poodle/bichon mix.",
+   "Left graphic is highly suitable for embroidery."
+  ],
+  "style_detected": "Thick-line vector illustration / Mascot logo",
+  "prompt_rewrite": "A single, centered vector illustration of a fluffy white Bichon Poodle dog head, thick black outlines, solid white fill, minimalist mascot logo style, front-facing, symmetrical, solid white background, no text, single subject only.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "The split screen is weird.",
+   "millennial_dog_mom": "The left one is cute, but the right one is scary.",
+   "male_owner_35_55": "Too cutesy for me.",
+   "gift_buyer": "I wouldn't know which side prints.",
+   "art_lover": "Very generic clip-art style."
+  }
+ }
+]
