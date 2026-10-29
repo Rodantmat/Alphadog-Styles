@@ -1,0 +1,30 @@
+name: analyze
+on:
+  workflow_dispatch:
+    inputs:
+      dir: {description: "Folder with PNGs", default: "out/linda"}
+      critic_model: {description: "Gemini critic model", default: "gemini-2.5-pro"}
+      max_critiques: {description: "Hard cap on critiques this run", default: "20"}
+permissions:
+  contents: write
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install numpy scipy pillow
+      - name: Technical checks
+        run: python3 scripts/analyze_tech.py "${{ inputs.dir }}"
+      - name: Critic panel
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          CRITIC_MODEL: ${{ inputs.critic_model }}
+          MAX_CRITIQUES: ${{ inputs.max_critiques }}
+        run: python3 scripts/critic.py "${{ inputs.dir }}"
+      - name: Report
+        run: python3 scripts/report.py "${{ inputs.dir }}"
+      - name: Commit
+        run: |
+          git config user.name "alphadog-bot"; git config user.email "alphadog-bot@users.noreply.github.com"
+          git add "${{ inputs.dir }}"; git commit -m "Analyzer report $(date -u +%F_%H%M)" || echo none; git push
