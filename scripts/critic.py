@@ -42,11 +42,14 @@ def call(img_path, style, techsum):
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
     req = urllib.request.Request(url, data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": KEY})
     r = json.load(urllib.request.urlopen(req, timeout=300))
-    txt = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"])
+    txt = "".join(p.get("text", "") for p in r["candidates"][0]["content"]["parts"] if not p.get("thought"))
+    txt = txt.strip().removeprefix("```json").removesuffix("```").strip()
     return json.loads(txt), r.get("usageMetadata", {})
 
 out = {}
-files = sorted(f for f in os.listdir(d) if f.endswith(".png"))[:MAX]
+errors = []
+ONLY = [x for x in os.environ.get("ONLY", "").split(",") if x]
+files = sorted(f for f in os.listdir(d) if f.endswith(".png") and (not ONLY or f in ONLY))[:MAX]
 for f in files:
     t = tech.get(f, {})
     techsum = {k: t.get(k) for k in ["subject_bbox_px", "upscale_needed", "soft_edge_share", "bg_low_contrast_edge", "gradient_share",
@@ -58,8 +61,9 @@ for f in files:
             res, usage = call(os.path.join(d, f), style, techsum); res["usage"] = usage; out[f] = res
             print(f, "ok", usage.get("totalTokenCount")); break
         except urllib.error.HTTPError as e:
-            print(f, "HTTP", e.code, e.read().decode()[:300]); time.sleep(10)
+            m = e.read().decode()[:600]; print(f, "HTTP", e.code, m); errors.append({"file": f, "http": e.code, "msg": m}); time.sleep(10)
         except Exception as e:
-            print(f, "err", repr(e)[:200]); time.sleep(5)
+            print(f, "err", repr(e)[:300]); errors.append({"file": f, "err": repr(e)[:600]}); time.sleep(5)
     time.sleep(1)
 json.dump(out, open(os.path.join(d, "critic.json"), "w"), indent=1)
+json.dump(errors, open(os.path.join(d, "critic_errors.json"), "w"), indent=1)
