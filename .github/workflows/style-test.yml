@@ -1,0 +1,29 @@
+name: style-test
+on:
+  workflow_dispatch:
+    inputs:
+      model: {description: "Gemini image model", default: "gemini-2.5-flash-image"}
+      max_images: {description: "Hard cap on images this run", default: "14"}
+      only: {description: "Comma list of style ids (blank = all)", default: ""}
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MODEL: ${{ inputs.model }}
+          MAX_IMAGES: ${{ inputs.max_images }}
+          ONLY: ${{ inputs.only }}
+        run: python3 scripts/generate.py
+      - name: Commit results
+        run: |
+          git config user.name "alphadog-bot"
+          git config user.email "alphadog-bot@users.noreply.github.com"
+          git add out/
+          git commit -m "Style test results $(date -u +%F_%H%M)" || echo "nothing to commit"
+          git push

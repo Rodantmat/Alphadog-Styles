@@ -1,0 +1,19 @@
+{
+  "base": "Using the attached photo of this exact dog as the likeness reference (keep her face, eye shape, nose, ear length and fluffy cream coat recognizable), create a front-facing head portrait of this fluffy cream Bichon-style poodle: round cloud-shaped head, long fluffy drop ears, big dark round eyes, black button nose, happy open mouth with pink tongue out. Head and ears only, centered, perfectly front-facing and symmetrical, isolated on a plain flat white background, designed as a bold t-shirt graphic. Absolutely no text, no letters, no words, no watermark, no signature, no frame, no people, no collar.",
+  "styles": [
+    {"id": "01_stained_glass", "ref": "smile", "prompt": "Style: luminous stained-glass mosaic, jewel-tone glass pieces (sapphire, ruby, amber, emerald) with thick black leading lines, light glowing through the glass."},
+    {"id": "02_botanical_crown", "ref": "smile", "prompt": "Style: vintage botanical engraving, fine ink cross-hatching, with a lush crown of wildflowers, roses and leaves woven into the fur, soft muted watercolor tints."},
+    {"id": "03_groovy_70s", "ref": "fluffy", "prompt": "Style: groovy 1970s psychedelic poster art, fur made of flowing melting rainbow bands in orange, mustard, pink and teal, wavy outlines, radiating sunburst behind the head."},
+    {"id": "04_woodblock", "ref": "fluffy", "prompt": "Style: traditional Japanese woodblock print, visible wood grain texture, the curly fur rendered as curling wave crests and cloud scrolls, limited indigo, cream and vermilion palette."},
+    {"id": "05_neon_synthwave", "ref": "smile", "prompt": "Style: glowing neon line art in magenta and electric cyan on a dark navy circle, retro synthwave striped sun behind the head, soft glow bloom."},
+    {"id": "06_paper_cut", "ref": "smile", "prompt": "Style: layered paper-cut art, six stacked layers of pastel paper with soft realistic drop shadows creating depth, crisp cut edges."},
+    {"id": "07_pop_art", "ref": "smile", "prompt": "Style: bold pop-art comic illustration, thick black outlines, bright flat colors (hot pink, yellow, cyan), Ben-Day halftone dot shading."},
+    {"id": "08_tattoo_flash", "ref": "smile", "prompt": "Style: American traditional tattoo flash, bold black outlines, limited palette of red, green, yellow and black, framed by two roses and swallows, no banner."},
+    {"id": "09_folk_embroidery", "ref": "fluffy", "prompt": "Style: folk embroidery, the fur filled with stitched floral and geometric thread patterns, visible satin-stitch and thread texture, colorful threads on cream."},
+    {"id": "10_ink_watercolor", "ref": "fluffy", "prompt": "Style: loose expressive ink linework with vibrant watercolor splashes and drips in turquoise, coral and violet, energetic and painterly."},
+    {"id": "11_master_swirl", "ref": "fluffy", "prompt": "Style: post-impressionist oil painting with thick impasto and swirling directional brushstrokes, deep blues and golden yellows, starry swirling night sky circle behind the head. Original composition."},
+    {"id": "12_master_impressionist", "ref": "smile", "prompt": "Style: French impressionist oil painting, soft dappled broken brushstrokes, pastel water-lily garden colors in lilac, sage and pink light. Original composition."},
+    {"id": "13_master_renaissance", "ref": "smile", "prompt": "Style: Italian Renaissance oil portrait with sfumato soft shading, warm umber and gold tones, subtle craquelure, dark oval vignette behind the head. Original composition."},
+    {"id": "14_master_gold_leaf", "ref": "fluffy", "prompt": "Style: art nouveau gold-leaf painting, ornate gold mosaic spirals and geometric patterns behind the head, rich gold, emerald and black. Original composition."}
+  ]
+}
