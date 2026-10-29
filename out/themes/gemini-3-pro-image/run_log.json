@@ -1,0 +1,110 @@
+[
+ {
+  "id": "sil_solid",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 452,
+   "candidatesTokenCount": 1304,
+   "totalTokenCount": 1943,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 194
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 187,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "sil_stencil",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 452,
+   "candidatesTokenCount": 1298,
+   "totalTokenCount": 1955,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 194
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 205,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "geo_poly",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 454,
+   "candidatesTokenCount": 1286,
+   "totalTokenCount": 1917,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 196
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 177,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "geo_circles",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 445,
+   "candidatesTokenCount": 1286,
+   "totalTokenCount": 1972,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 187
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 241,
+   "serviceTier": "standard"
+  }
+ }
+]
