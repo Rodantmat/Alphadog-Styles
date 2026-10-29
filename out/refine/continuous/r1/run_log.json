@@ -1,0 +1,106 @@
+[
+ {
+  "id": "r1_bold1line",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 467,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1757,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 209
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_loops",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 470,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1760,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 212
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_swash",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 467,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1757,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 209
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_geoline",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 468,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1758,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 210
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ }
+]

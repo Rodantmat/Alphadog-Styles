@@ -1,0 +1,27 @@
+{
+ "base": "Using the attached photo of this exact dog as the likeness reference (keep her round fluffy head shape, long drop ears, dark eyes, button nose and happy tongue-out expression recognizable), create a professional brand-quality logo artwork of her HEAD ONLY for a premium apparel brand. Pure black on a flat pure white background, no gray, no gradients, no texture, no shadow, no frame, no collar, no body below the neck. Generous empty margin on every side, art centered and symmetric-feeling. All lines and shapes BOLD: minimum stroke about 3% of the image width so it stays readable at 4 inches and on a black shirt when inverted to white. Confident, deliberate, original graphic design (not generic clip art, not a photo filter, not an AI portrait). Crisp vector-like edges. Absolutely no text, letters, signature or watermark.",
+ "styles": [
+  {
+   "id": "r4_evolve1",
+   "ref": "smile",
+   "style_ref": "out/refine/continuous/r3/r3_evolve1.png",
+   "prompt": "Image 2 is the current best draft of this design. Redraw it improved: keep its concept and style identity and the dog likeness from image 1, head only, no text. Apply these fixes: Upscale the image by at least 10x or convert to vector to fix the 13.3x resolution deficit.; Erase the 52px of stray marks in the background.; Fix the anatomical merge of the tongue and bottom lip.. Keep every line bold and the result perfectly clean black on white."
+  },
+  {
+   "id": "r4_fresh1",
+   "ref": "smile",
+   "prompt": "Bold lines minimum 3% of image width. A single unbroken continuous line drawing of a fluffy Bichon poodle dog head, front-facing, minimalist black ink line on pure white background, abstract continuous line art style, bold stroke, no shading, no disconnected lines, no text, clean vector aesthetic."
+  },
+  {
+   "id": "r4_evolve2",
+   "ref": "smile",
+   "style_ref": "out/refine/continuous/r3/r3_evolve2.png",
+   "prompt": "Image 2 is the current best draft of this design. Redraw it improved: keep its concept and style identity and the dog likeness from image 1, head only, no text. Apply these fixes: Vectorize the image to resolve the 12.8x upscale requirement.; Create an inverted version or add a thick white bounding stroke so the design is visible on black garments.; Break the perfect mirror symmetry to make it look less artificially generated.. Keep every line bold and the result perfectly clean black on white."
+  },
+  {
+   "id": "r4_fresh2",
+   "ref": "smile",
+   "prompt": "Bold lines minimum 3% of image width. A bold, continuous-line style illustration of a fluffy Bichon-Poodle mix head, front-facing, white fill with thick black outlines, slight organic asymmetry, hand-drawn vector art style, solid white background, no text, minimalist, wearing a subtle bandana."
+  }
+ ]
+}

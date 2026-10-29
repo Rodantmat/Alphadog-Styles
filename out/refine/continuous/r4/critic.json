@@ -1,0 +1,947 @@
+{
+ "r4_evolve1.png": {
+  "style_detected": "standard minimalist vector line art (not continuous line)",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 4,
+    "problems": [
+     "Fails the 'continuous line' brand brief entirely; it is a standard multi-line drawing.",
+     "Bottom of the ears feature bizarre, paw-like curled loops.",
+     "Lacks a distinct 'wow' factor, resembling generic stock clipart."
+    ],
+    "fixes": [
+     "Enforce a strict single-line contour aesthetic in the prompt.",
+     "Remove the anatomical anomalies (loops) at the base of the ears."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Black lines will disappear on black/navy tees.",
+     "Requires massive 13.3x upscale for full front, which will pixelate.",
+     "Tech flag T11 indicates 124px of stray marks outside the main art."
+    ],
+    "fixes": [
+     "Vectorize the image to allow infinite scaling.",
+     "Add a 2pt white offset stroke/outline for dark garment compatibility.",
+     "Clean all stray pixels in the background."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "The highly scalloped fur outline will create excessive needle jumps and a jagged stitch out.",
+     "The tiny loops at the bottom of the ears are too small to stitch cleanly."
+    ],
+    "fixes": [
+     "Simplify the outer fur silhouette to fewer, broader curves.",
+     "Erase the tiny inner loops on the ears."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "AI hallucinated tiny toes/paws at the bottom of both drop ears.",
+     "Eye catchlights are asymmetrical (left is a dot, right is a curved wedge).",
+     "Nose structure is slightly lopsided."
+    ],
+    "fixes": [
+     "Manually erase the 'toe' loops on the ears.",
+     "Redraw eye catchlights to match perfectly.",
+     "Symmetrize the nostrils."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 8,
+    "problems": [
+     "None. It is a highly generic dog illustration."
+    ],
+    "fixes": [
+     "No action needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 4,
+    "problems": [
+     "This standard line art style is not unique enough to serve as a recognizable brand signature.",
+     "Does not fulfill the 'continuous line' family requirement."
+    ],
+    "fixes": [
+     "Pivot the entire generation pipeline to a true one-line contour drawing style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 4,
+    "problems": [
+     "Low perceived value; looks like a free vector download.",
+     "Will not stand out in a saturated Etsy thumbnail grid."
+    ],
+    "fixes": [
+     "Needs a more distinct artistic flair (like actual continuous line) to justify a premium price."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Head shape is too wide and flat on top.",
+     "Lacks the classic spherical 'cloud' cut typical of Bichons/Poodles."
+    ],
+    "fixes": [
+     "Round out the top of the head to be taller and more spherical."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Misses the extreme roundness of the reference dog's head.",
+     "Fails to include the bandana, which is a key character element in the reference."
+    ],
+    "fixes": [
+     "Adjust head silhouette to match the reference's height.",
+     "Add a simple line-art bandana around the neck."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic, gives off 'mom-shirt' vibes rather than aesthetic streetwear."
+    ],
+    "fixes": [
+     "Make it a trendy, abstract one-line art style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the weird paws on the ears are confusing once you notice them."
+    ],
+    "fixes": [
+     "Fix the ears so they look like hair, not feet."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Too cutesy and clipart-like for a men's hoodie."
+    ],
+    "fixes": [
+     "Needs a more geometric or abstract approach."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 10
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, but a bit plain for a premium gift."
+    ],
+    "fixes": [
+     "Incorporate the bandana for more personality."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Lacks artistic soul. Fails the continuous line prompt entirely."
+    ],
+    "fixes": [
+     "Use a strict one-line contour prompt to create actual art."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 12
+   }
+  ],
+  "top_strengths": [
+   "Clean, high-contrast black and white lines.",
+   "Good scalability for small left-chest embroidery (if simplified).",
+   "Easily recognizable as a fluffy dog breed."
+  ],
+  "must_fix_before_production": [
+   "Erase the hallucinated 'paw' loops at the bottom of the ears.",
+   "Vectorize the image to resolve the 13.3x upscale requirement.",
+   "Clean the 124px of stray marks from the background.",
+   "Add a white offset stroke for printing on dark garments."
+  ],
+  "prompt_rewrite": "A single, unbroken continuous line drawing of a fluffy Bichon Poodle dog head, front-facing, minimalist contour art style, black line on pure white background, perfectly round cloud-like head shape, wearing a bandana, abstract single-line aesthetic, no text, no shading, vector style.",
+  "usage": {
+   "promptTokenCount": 3353,
+   "candidatesTokenCount": 1948,
+   "totalTokenCount": 7400,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1178
+    }
+   ],
+   "thoughtsTokenCount": 2099,
+   "serviceTier": "standard"
+  }
+ },
+ "r4_evolve2.png": {
+  "style_detected": "bold vector line art / stencil",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails the 'continuous line' brief; this is standard bold vector line art.",
+     "Top head fluff asymmetry is visually distracting rather than organic."
+    ],
+    "fixes": [
+     "Adjust prompt to force a single unbroken line style, or re-categorize the brand line to 'bold vector'.",
+     "Balance the scalloped edges on the top of the head."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 7,
+    "problems": [
+     "143px of stray marks will print as random ink specks.",
+     "White fill on a white tee requires a strict black boundary; bottom neck area is open."
+    ],
+    "fixes": [
+     "Erase all stray pixels outside the main design.",
+     "Close the bottom neck line to contain the white fill, or knock out the white for light garments."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Inner eye catchlights and tiny nostril details may close up at 4-inch scale."
+    ],
+    "fixes": [
+     "Enlarge eye catchlights.",
+     "Simplify the nose highlight into a single larger shape."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Stray background marks detected.",
+     "Viewer's left ear has a strange detached line segment at the bottom curve."
+    ],
+    "fixes": [
+     "Clean background.",
+     "Connect the floating line on the bottom left ear to the main stroke."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Highly generic vector style."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Style is highly replicable, but relies on thick black outlines which might overwhelm fine-featured breeds (like Greyhounds)."
+    ],
+    "fixes": [
+     "Establish a strict line-weight ratio (e.g., 4pt outer, 2pt inner) to ensure consistency across 25 breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Looks like standard stock vector art; lacks a unique hook for a premium brand."
+    ],
+    "fixes": [
+     "Pair with strong, proprietary typography to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Ears are too distinct and spaniel-like. Bichon/Poodle ears blend seamlessly into the head fluff."
+    ],
+    "fixes": [
+     "Remove the hard inner lines separating the top of the ears from the skull."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Reference dog has a wider, flatter top-knot. Graphic has a peaked, narrow top.",
+     "Missed the red bandana, which is a key character element in the photo."
+    ],
+    "fixes": [
+     "Flatten and widen the top head silhouette.",
+     "Optional: Add the bandana outline to capture the specific dog's vibe."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Giving millennial clip-art energy. Not ironic or aesthetic enough."
+    ],
+    "fixes": [
+     "Make it an actual continuous single line, or add a Y2K/grunge texture."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but a bit plain. I wish it had a tiny bit of color."
+    ],
+    "fixes": [
+     "Add a subtle pastel background shape or color the tongue pink."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "Clean and simple. Good for a subtle chest logo on a dark hoodie."
+    ],
+    "fixes": [
+     "Keep it high contrast black and white."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe bet, but looks like any generic dog shirt."
+    ],
+    "fixes": [
+     "Needs an option to add the dog's name underneath."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul. The line weights feel automated and mechanical."
+    ],
+    "fixes": [
+     "Introduce calligraphic line weight variation (thick to thin transitions)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "High contrast black and white is perfect for DTG and screen printing.",
+   "Easily digitizable for embroidery due to solid shapes.",
+   "Clean, scalable vector aesthetic."
+  ],
+  "must_fix_before_production": [
+   "Remove the 143px of stray marks in the background.",
+   "Close the bottom neck line to contain the white fill for printing on light garments.",
+   "Upscale image by at least 4x for full front print viability."
+  ],
+  "prompt_rewrite": "A minimalist, bold black and white vector line-art illustration of a fluffy Bichon Poodle mix head, front-facing, flat wide top-knot, drop ears blending into the head fluff, tongue out. Thick, smooth, continuous-style black outlines with solid white fill, pure white background, no shading, no text, clean stencil style.",
+  "usage": {
+   "promptTokenCount": 3358,
+   "candidatesTokenCount": 2009,
+   "totalTokenCount": 7284,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1183
+    }
+   ],
+   "thoughtsTokenCount": 1917,
+   "serviceTier": "standard"
+  }
+ },
+ "r4_fresh1.png": {
+  "style_detected": "bold vector outline, coloring book style (not true continuous line)",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails the 'continuous line' brief; reads as standard vector clip art.",
+     "Heavy brow lines create an unintended intense or angry expression."
+    ],
+    "fixes": [
+     "Connect disconnected line segments to mimic a true single-line drawing.",
+     "Remove the harsh brow lines above the eyes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 7,
+    "problems": [
+     "Source resolution is too low for a 12-inch front print (requires >12x upscale).",
+     "Solid white fill will feel heavy and plasticky on white tees if printed as-is."
+    ],
+    "fixes": [
+     "Vectorize the image to solve resolution issues.",
+     "Knock out the white fill so the garment color shows through on light shirts."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 8,
+    "problems": [
+     "Jagged, dense zig-zags around the beard/mouth will cause thread bunching at 2.25 inches."
+    ],
+    "fixes": [
+     "Simplify the beard texture into fewer, smoother curves."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Lines above eyes look like floating eyebrows rather than fur folds.",
+     "Tongue shape is slightly asymmetrical."
+    ],
+    "fixes": [
+     "Delete the floating brow lines.",
+     "Symmetrize the tongue."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 8,
+    "problems": [
+     "None. It is a generic dog illustration."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Style is too generic to be a recognizable, ownable brand signature across 25 breeds."
+    ],
+    "fixes": [
+     "Enforce a strict 'one continuous overlapping line' rule to make the series distinct."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "High contrast is good for thumbnails, but the design blends in with cheap SVG bundles on Etsy."
+    ],
+    "fixes": [
+     "Present on premium lifestyle mockups to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Sharply separated ears look more like a spaniel or hound.",
+     "Bichon/Poodle ear fluff should blend seamlessly into the head silhouette."
+    ],
+    "fixes": [
+     "Blend the top of the ears into the main head fluff."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Misses the soft, happy expression of the reference photo.",
+     "Drawing looks slightly aggressive; reference dog has less defined ear separation."
+    ],
+    "fixes": [
+     "Soften the eyes, remove harsh brows, and widen the smile."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic and millennial-core. Lacks aesthetic edge."
+    ],
+    "fixes": [
+     "Make it a true abstract continuous line for a minimalist vibe."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "Cute, but the dog looks a little mad or intense."
+    ],
+    "fixes": [
+     "Make the eyes softer and happier."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "A bit too cartoonish for a standard hoodie."
+    ],
+    "fixes": [
+     "Keep lines clean, remove the tongue for a more neutral look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 7,
+    "problems": [
+     "Safe and recognizable, but a bit plain."
+    ],
+    "fixes": [
+     "Ensure it prints cleanly."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like generic vector clip art, not a crafted continuous line illustration."
+    ],
+    "fixes": [
+     "Redraw as a genuine single-line contour drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 12
+   }
+  ],
+  "top_strengths": [
+   "High contrast and bold lines ensure excellent printability.",
+   "Easily convertible to embroidery for caps.",
+   "Scalable and simple composition."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the image to fix the extreme upscale requirement.",
+   "Remove the harsh brow lines to fix the aggressive expression.",
+   "Knock out the white background/fill for apparel printing."
+  ],
+  "prompt_rewrite": "A single continuous line drawing of a fluffy Bichon Poodle mix dog head, front-facing, happy soft expression, minimalist contour line art, black line on pure white background, elegant, unbroken line, no shading, no text, vector style --no disconnected lines, shading, text, background elements",
+  "usage": {
+   "promptTokenCount": 3328,
+   "candidatesTokenCount": 1912,
+   "totalTokenCount": 7589,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1153
+    }
+   ],
+   "thoughtsTokenCount": 2349,
+   "serviceTier": "standard"
+  }
+ },
+ "r4_fresh2.png": {
+  "style_detected": "Bold vector line art / coloring book style (not continuous line)",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails the 'continuous line' brief entirely; it is standard bold line art.",
+     "Lacks originality, feels like generic stock vector."
+    ],
+    "fixes": [
+     "Reroll with strict 'single unbroken line' prompt weights.",
+     "Alternatively, pivot brand brief to 'bold vector line'."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 7,
+    "problems": [
+     "Requires massive 10.7x upscale for full front.",
+     "6410px of stray marks outside main art.",
+     "Black lines will disappear on dark tees without white fill/underbase."
+    ],
+    "fixes": [
+     "Vectorize the image to solve upscale and stray marks simultaneously.",
+     "Create a white-filled version for dark garments."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 8,
+    "problems": [
+     "Minor tight gaps in the tongue and lower jaw area."
+    ],
+    "fixes": [
+     "Simplify mouth lines.",
+     "Merge bandana folds into fewer, thicker satin stitches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 7,
+    "problems": [
+     "Stray marks/specks present.",
+     "Slight asymmetry in the bottom jaw fluff."
+    ],
+    "fixes": [
+     "Erase background specks.",
+     "Mirror or balance the lower jawline."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 8,
+    "problems": [
+     "None. Highly generic style avoids IP issues."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "This specific thick-line style might look harsh on sleek breeds (e.g., Doberman)."
+    ],
+    "fixes": [
+     "Establish line-weight rules that adapt slightly based on coat type."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Low stopping power; looks like a free coloring page.",
+     "Hard to justify premium pricing."
+    ],
+    "fixes": [
+     "Add a single pop of brand color (e.g., red bandana) to stand out."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Reads as a generic doodle/bichon.",
+     "Misses the specific eye character of the reference."
+    ],
+    "fixes": [
+     "Adjust eye shape to be slightly less perfectly round."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 6,
+    "problems": [
+     "Graphic looks younger and cleaner than the reference dog.",
+     "Missed the tear stains and specific eye droop."
+    ],
+    "fixes": [
+     "Add subtle line texture under the eyes to match the real dog's character."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic, gives millennial mom energy."
+    ],
+    "fixes": [
+     "Make it ironic, abstract, or add Y2K graphic elements."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "Cute, but a bit plain without color."
+    ],
+    "fixes": [
+     "Color the bandana red like the photo."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "A bit too cutesy with the bandana and perfect fluff."
+    ],
+    "fixes": [
+     "Remove bandana for a cleaner, more neutral look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe but unexciting."
+    ],
+    "fixes": [
+     "Offer personalization (name drop under the dog)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul, feels like automated vector tracing."
+    ],
+    "fixes": [
+     "Introduce true continuous line complexity and variation in line weight."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Highly printable bold lines",
+   "Excellent candidate for embroidery",
+   "Clear breed recognition"
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix the 10x upscale requirement and remove 6410px of stray marks",
+   "Create an inverted or white-filled version for dark garments",
+   "Decide whether to accept this style or force true 'continuous line'"
+  ],
+  "prompt_rewrite": "A single continuous unbroken line drawing of a fluffy Bichon Poodle head, front-facing, wearing a bandana, minimalist continuous line art, bold black line on pure white background, abstract single line, no shading, no text.",
+  "usage": {
+   "promptTokenCount": 3354,
+   "candidatesTokenCount": 1882,
+   "totalTokenCount": 6842,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2175
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1179
+    }
+   ],
+   "thoughtsTokenCount": 1606,
+   "serviceTier": "standard"
+  }
+ }
+}

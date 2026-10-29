@@ -1,0 +1,237 @@
+[
+ {
+  "file": "r1_geoline.png",
+  "verdict": "REWORK",
+  "concept": 5.71,
+  "concept_pro": 6.18,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 20.0,
+  "concept_hard_fails": [],
+  "print_score": 7,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 7,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the image to solve the 12.8x upscale requirement.",
+   "Ensure the interior is filled with opaque white ink for printing on dark garments.",
+   "Break the unnatural perfect symmetry of the outer fur scallops."
+  ],
+  "strengths": [
+   "High contrast and bold lines ensure excellent scalability for chest prints.",
+   "Clean, artifact-free design that is easily replicable across multiple breeds.",
+   "Highly suitable for embroidery with minimal adjustments."
+  ],
+  "style_detected": "Bold vector line art / stencil (not true continuous line)",
+  "prompt_rewrite": "A single continuous line drawing of a fluffy Bichon-Poodle dog head, front-facing, head-only, minimalist geoline style, unbroken black ink line on a solid white background, organic asymmetrical fur texture, no text, clean vector aesthetic.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit basic and millennial. Lacks edge.",
+   "millennial_dog_mom": "Cute, but stark black-and-white is a bit harsh.",
+   "male_owner_35_55": "Too cutesy with the tongue out for a standard hoodie.",
+   "gift_buyer": "Looks like a generic clip art dog, not necessarily a specific pet.",
+   "art_lover": "Lacks artistic soul; looks like an automated vector trace."
+  }
+ },
+ {
+  "file": "r1_bold1line.png",
+  "verdict": "REJECT",
+  "concept": 5.49,
+  "concept_pro": 5.82,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 19.4,
+  "concept_hard_fails": [],
+  "print_score": 7,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 7,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize to solve the 13.5x upscale requirement.",
+   "Create an inverted (white line) version for printing on dark garments.",
+   "Connect broken lines on the left ear."
+  ],
+  "strengths": [
+   "Clean, high-contrast lines ideal for vectorization.",
+   "Easily recognizable as a fluffy dog.",
+   "No complex gradients or background artifacts."
+  ],
+  "style_detected": "basic vector line art contour drawing",
+  "prompt_rewrite": "A true single continuous line drawing of a fluffy Bichon Poodle dog head, front-facing, bold black line on white background, abstract minimalist continuous line art style, no disconnected lines, single unbroken path, round cloud-like head, floppy ears, no text, vector style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like clip art.",
+   "millennial_dog_mom": "Cute but plain.",
+   "male_owner_35_55": "Too cutesy with the big eyes and tongue.",
+   "gift_buyer": "Might look cheap if printed poorly.",
+   "art_lover": "Fails the continuous line brief."
+  }
+ },
+ {
+  "file": "r1_loops.png",
+  "verdict": "REJECT",
+  "concept": 5.09,
+  "concept_pro": 5.29,
+  "customers": 4.8,
+  "would_buy": "3/5",
+  "avg_price": 18.6,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Upscale image >4x for full front printing",
+   "Remove the confusing paw-like shapes at the bottom",
+   "Create a white-fill version for dark garments"
+  ],
+  "strengths": [
+   "High contrast and clean edges",
+   "Excellent for embroidery and small left-chest prints",
+   "Easily readable silhouette"
+  ],
+  "style_detected": "Bold vector line art / mascot logo (fails continuous line brief)",
+  "prompt_rewrite": "A single continuous unbroken line drawing of a fluffy Bichon poodle head, minimalist continuous line art style, front-facing, round wide eyes, happy expression, tongue out, black line on pure white background, head and neck only, no paws, no text, bold graphic design.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a car decal from 2010.",
+   "millennial_dog_mom": "Cute, but the eyes look a little mean.",
+   "male_owner_35_55": "A bit generic, but clean enough for a cap.",
+   "gift_buyer": "Safe design, but might not look exactly like the recipient's dog.",
+   "art_lover": "Lacks artistic merit; feels like automated clip art rather than a deliberate style."
+  }
+ },
+ {
+  "file": "r1_swash.png",
+  "verdict": "REJECT",
+  "concept": 4.55,
+  "concept_pro": 4.78,
+  "customers": 4.2,
+  "would_buy": "2/5",
+  "avg_price": 11.4,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Will not print visibly on black or white shirts without major file prep and inversion."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (33285px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 3,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize and upscale to resolve 146px resolution issue.",
+   "Create a dark-garment version (invert black lines to white) so it prints on black tees.",
+   "Clean 33,285px of stray marks from the background.",
+   "Remove the hanging tongue to match the reference likeness."
+  ],
+  "strengths": [
+   "Clear, recognizable silhouette of a fluffy dog.",
+   "High contrast makes it easy to vectorize.",
+   "Symmetrical and balanced composition."
+  ],
+  "style_detected": "standard comic/coloring-book vector line art",
+  "prompt_rewrite": "A single continuous line drawing of a fluffy Bichon Poodle dog head, front-facing, dynamic swash brushstrokes, minimalist elegant logo style, black ink on pure white background, no text, highly stylized, premium apparel graphic, mouth closed, dark round eyes.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a generic boomer ad.",
+   "millennial_dog_mom": "Cute but a bit generic.",
+   "male_owner_35_55": "Too cutesy and cartoonish for a hoodie.",
+   "gift_buyer": "Safe but boring.",
+   "art_lover": "Lacks artistic merit; looks like automated vector trace."
+  }
+ }
+]
