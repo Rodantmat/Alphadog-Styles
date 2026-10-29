@@ -1,0 +1,6689 @@
+{
+ "p1_poodle_cool.png": {
+  "style_detected": "loose curly line art sketch",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Style is a loose sketch, not the requested continuous-line",
+     "Scribbled shading inside sunglasses looks messy and cheap"
+    ],
+    "fixes": [
+     "Change prompt to enforce single continuous line",
+     "Make sunglasses lenses solid black or empty outlines"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 3,
+    "problems": [
+     "Catastrophic resolution (146x130px) requires 41x upscale for back print",
+     "28,433px of stray marks will print as dirty specks"
+    ],
+    "fixes": [
+     "Must vectorize the image completely before printing",
+     "Manually erase all stray pixels outside the main line art"
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution is far too low for POD without vectorization.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Scribbles in sunglasses are too dense for clean stitching",
+     "Some floating curls are too small/thin for cap embroidery"
+    ],
+    "fixes": [
+     "Simplify sunglasses to thick outlines only",
+     "Connect floating curls to the main body or delete them"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Paws on the full-body dog are slightly blobby/undefined",
+     "Collar/tag area on full-body dog is a tangled mess of lines"
+    ],
+    "fixes": [
+     "Redraw paws with distinct toe lines",
+     "Simplify collar to a single clean line with one distinct circle tag"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected"
+    ],
+    "fixes": [
+     "None needed"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Curly line style works for poodles but may fail on sleek breeds like Dobermans",
+     "Inconsistent line weight between front and back designs"
+    ],
+    "fixes": [
+     "Adapt line style to represent different fur textures while keeping the sunglasses motif",
+     "Standardize stroke width across the set"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Black and white line art blends into a saturated market",
+     "Thumbnail impact is low without a pop of color"
+    ],
+    "fixes": [
+     "Print on brightly colored garments (e.g., mustard, teal)",
+     "Add one spot color (e.g., red collar or colored sunglass reflections)"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Topknot is a bit too perfectly round, looks slightly like a clown wig",
+     "Tail on full body is a bit ambiguous, looks like a separate cloud"
+    ],
+    "fixes": [
+     "Make topknot slightly more organic/textured",
+     "Connect tail more clearly to the hindquarters"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A as per instructions"
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "A bit basic, looks like standard clip art"
+    ],
+    "fixes": [
+     "Make the sunglasses trendier (e.g., tiny 90s glasses or huge visors)"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "Wants it to look exactly like her specific doodle mix"
+    ],
+    "fixes": [
+     "Offer slight variations in ear length or curl tightness"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too cutesy and cartoonish for my taste"
+    ],
+    "fixes": [
+     "Use a more realistic or geometric line art style"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Might look cheap if printed poorly due to low resolution"
+    ],
+    "fixes": [
+     "Ensure crisp print quality via vectorization"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks genuine artistic intent, feels like a generic digital filter"
+    ],
+    "fixes": [
+     "Incorporate true continuous-line techniques with varying line weight"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clear, recognizable breed silhouette",
+   "Fun, cohesive sunglasses motif for a series",
+   "High contrast black-on-white is easy to extract"
+  ],
+  "must_fix_before_production": [
+   "Vectorize the image to solve the 41x upscale requirement",
+   "Clean up 28,433px of stray marks",
+   "Simplify the scribbled shading inside the sunglasses"
+  ],
+  "prompt_rewrite": "A minimalist continuous-line drawing of a poodle dog head wearing sunglasses, front-facing, solid black lines on pure white background, clean vector style, no shading, no scribbles, single unbroken line aesthetic, no text.",
+  "usage": {
+   "promptTokenCount": 3425,
+   "candidatesTokenCount": 1961,
+   "totalTokenCount": 6937,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1243
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1551,
+   "serviceTier": "standard"
+  }
+ },
+ "p1_poodle_delicate.png": {
+  "style_detected": "Minimalist curly line art / faux continuous line",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Floating flourishes under the headshot look accidental and messy.",
+     "Not a true continuous line, breaking the intended aesthetic."
+    ],
+    "fixes": [
+     "Delete bottom flourishes on the headshot.",
+     "Connect broken lines to simulate a single stroke."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "19,579px of stray marks will print as random dirt spots.",
+     "Black lines will completely disappear on navy garments.",
+     "Requires massive 63x upscale for back print."
+    ],
+    "fixes": [
+     "Run a strict despeckle filter to remove all floating dots.",
+     "Create an inverted white-line file for dark shirts.",
+     "Vectorize before scaling."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Stray marks and low resolution will ruin the physical print.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "Too many tiny, tight curls for a 4-inch cap front.",
+     "Floating dots cannot be stitched cleanly."
+    ],
+    "fixes": [
+     "Simplify the headshot to just the outer silhouette and basic facial features.",
+     "Remove all disconnected lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "Disconnected dots around the full body.",
+     "Uneven eye catchlights in the headshot.",
+     "Weird mustache-like curls floating below the head."
+    ],
+    "fixes": [
+     "Erase all floating artifacts.",
+     "Duplicate and flip one eye's catchlight for symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 6,
+    "problems": [
+     "None detected."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "The curly line style works for poodles but will be hard to adapt consistently for smooth-coated breeds like Dobermans."
+    ],
+    "fixes": [
+     "Establish a brand rule for line weight and abstraction that applies equally to straight fur."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Line art is highly saturated; this doesn't stand out in a thumbnail."
+    ],
+    "fixes": [
+     "Market specifically as a premium 'front-and-back' matching set to add perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Tail on the full body looks slightly detached from the rump."
+    ],
+    "fixes": [
+     "Connect the base of the tail to the main body line."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit too 'millennial mom', lacks edge or irony."
+    ],
+    "fixes": [
+     "None, wrong demographic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the random squiggles at the bottom of the face are confusing."
+    ],
+    "fixes": [
+     "Clean up the bottom edge."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Too delicate and cutesy for my taste."
+    ],
+    "fixes": [
+     "None, wrong demographic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Looks like a safe, standard gift for a poodle owner."
+    ],
+    "fixes": [
+     "Ensure print quality is high."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like generic vector stock art, lacks genuine artistic intent."
+    ],
+    "fixes": [
+     "Make it a true continuous line drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Clear breed recognition.",
+   "Clean black-and-white contrast.",
+   "Versatile dual-design format for front/back printing."
+  ],
+  "must_fix_before_production": [
+   "Clean up 19,579px of stray marks and floating dots.",
+   "Remove floating flourishes under the headshot.",
+   "Vectorize and upscale for the back print.",
+   "Create an inverted white-line version for navy garments."
+  ],
+  "prompt_rewrite": "A minimalist continuous-line drawing of a poodle dog head, front-facing, head-only, black lines on pure white background, clean vector style, elegant and simple, no text, no floating dots, single continuous stroke effect.",
+  "usage": {
+   "promptTokenCount": 3394,
+   "candidatesTokenCount": 1878,
+   "totalTokenCount": 7187,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1236
+    }
+   ],
+   "thoughtsTokenCount": 1915,
+   "serviceTier": "standard"
+  }
+ },
+ "p1_poodle_detailed.png": {
+  "style_detected": "loose curly line art sketch",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Not a true continuous line; feels like a loose sketch with broken strokes.",
+     "Lacks a strong focal anchor between the two graphics."
+    ],
+    "fixes": [
+     "Enforce strict single-line constraint in prompt.",
+     "Clean up loose ends and floating curls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "32200px stray marks will print as dirty specks on the garment.",
+     "Massive upscale (47x) will severely pixelate the fine lines."
+    ],
+    "fixes": [
+     "Vectorize the image to fix upscale issues.",
+     "Apply a hard threshold to remove background specks."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Stray marks and extreme upscale requirement will ruin print quality.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Too many tiny overlapping curly lines for a 4-inch cap.",
+     "Will become a dense thread nest and pucker the fabric."
+    ],
+    "fixes": [
+     "Simplify curls into solid shapes.",
+     "Reduce overall line count by at least 60%."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Eyes on the full-body dog look slightly misaligned.",
+     "Multiple floating, disconnected curl lines."
+    ],
+    "fixes": [
+     "Redraw eyes for perfect symmetry.",
+     "Connect floating lines to the main body structure."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic dog sketch."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Curly line style works for poodles but will fail for smooth-coated breeds like Dobermans."
+    ],
+    "fixes": [
+     "Adapt the line weight/style to represent smooth coats without losing the brand's minimalist look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Line art is very common in POD.",
+     "Lacks a pop of color to stop scrollers in thumbnails."
+    ],
+    "fixes": [
+     "Add a single brand-color accent, like a red collar or tongue."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Reads well as a poodle, but the snout on the full body is slightly blunt."
+    ],
+    "fixes": [
+     "Elongate the muzzle slightly on the full-body version."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 5,
+    "problems": [
+     "A bit too 'mom-core'.",
+     "Needs more edge or strict minimalism."
+    ],
+    "fixes": [
+     "Make it a strict, abstract one-line drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the lines look a bit messy up close."
+    ],
+    "fixes": [
+     "Use smoother, cleaner curves."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too delicate and curly.",
+     "Not masculine enough for a standard hoodie."
+    ],
+    "fixes": [
+     "Use thicker, bolder strokes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe bet, but looks like it might be a cheap generic print."
+    ],
+    "fixes": [
+     "Ensure high print quality so it doesn't look like a cheap iron-on."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Faux continuous line is obvious and lacks artistic intent."
+    ],
+    "fixes": [
+     "Use a better AI model for true single-line art."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clear breed recognition.",
+   "Good dual-layout concept for front and back printing."
+  ],
+  "must_fix_before_production": [
+   "Vectorize to resolve the 47x upscale requirement.",
+   "Remove 32200px of stray marks to prevent dirty prints.",
+   "Simplify line complexity for embroidery compatibility."
+  ],
+  "prompt_rewrite": "A strict continuous single-line drawing of a poodle dog, front-facing head on the left, full body sitting on the right, minimalist black ink on pure white background, no text, clean vector style, no floating or broken lines.",
+  "usage": {
+   "promptTokenCount": 3402,
+   "candidatesTokenCount": 1876,
+   "totalTokenCount": 7159,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1244
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    }
+   ],
+   "thoughtsTokenCount": 1881,
+   "serviceTier": "standard"
+  }
+ },
+ "p1_poodle_heart.png": {
+  "style_detected": "minimalist faux-continuous line art with heart motifs",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Heart placement on the full-body dog feels tacked on rather than integrated.",
+     "Line weights lack deliberate hierarchy, making it feel flat."
+    ],
+    "fixes": [
+     "Integrate the heart motif organically into the collar or chest.",
+     "Vary line thickness to emphasize the outer silhouette."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "19,374px of stray marks will print as dirty specks on the garment.",
+     "19.91x upscale required for the back print will cause severe pixelation."
+    ],
+    "fixes": [
+     "Vectorize the artwork to eliminate all stray marks and allow infinite scaling.",
+     "Ensure minimum line thickness is 1.5pt for DTG printing."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Excessive stray marks and extreme upscaling required will ruin print quality."
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Too many small, tight curls in the fur for a 4-inch cap logo.",
+     "Bottom heart flourish on the emblem is too thin and wide."
+    ],
+    "fixes": [
+     "Remove the bottom flourish entirely.",
+     "Reduce the number of fur curls by 50% and thicken remaining lines to >0.05 inches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Full-body dog's right eye is slightly warped compared to the left.",
+     "The continuous line illusion breaks awkwardly at the ear bases and paws."
+    ],
+    "fixes": [
+     "Redraw the right eye for perfect symmetry.",
+     "Connect broken line segments to maintain the continuous line illusion."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None apparent; generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The 'heart on top of head' motif will look awkward on pointy-eared or short-coated breeds."
+    ],
+    "fixes": [
+     "Move the signature heart motif to the chest or collar to ensure it works across all 25 breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Black and white line art blends into a saturated market.",
+     "Thumbnail readability is low for the full-body design."
+    ],
+    "fixes": [
+     "Add a single spot color (e.g., a red heart) to increase thumbnail click-through rate."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Reads well as a poodle/bichon, but the tail on the full body is slightly too thick for a standard poodle cut."
+    ],
+    "fixes": [
+     "Taper the tail slightly to better match standard breed grooming."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A per instructions."
+    ],
+    "fixes": [
+     "N/A per instructions."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit too 'millennial mom' aesthetic; lacks edge."
+    ],
+    "fixes": [
+     "Make the line art thicker and chunkier like tattoo flash."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "The full body is cute, but I prefer just the subtle pocket logo."
+    ],
+    "fixes": [
+     "Offer the pocket logo on pastel colored crewnecks."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Way too cutesy with the hearts; looks like a Valentine's card."
+    ],
+    "fixes": [
+     "Remove the hearts entirely."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe bet for a poodle owner, but looks a bit like cheap clip art."
+    ],
+    "fixes": [
+     "Print on high-quality heathered blanks to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Faux continuous line art is a tired trend; lacks genuine artistic expression."
+    ],
+    "fixes": [
+     "Use varied line weights to create depth rather than uniform digital strokes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   }
+  ],
+  "top_strengths": [
+   "Clear, recognizable breed silhouette.",
+   "Consistent style between the emblem and full-body designs.",
+   "High contrast black-and-white is easy to print on light garments."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the artwork to remove the 19,374px of stray marks.",
+   "Ensure the file is natively high-resolution to avoid the 19.91x upscale requirement.",
+   "Simplify the fur curls for the left-chest embroidery version."
+  ],
+  "prompt_rewrite": "A minimalist, continuous-line drawing of a poodle dog's head, front-facing, head-only, incorporating a subtle heart shape into the collar area. Black ink on a pure white background, clean vector style, uniform line weight, no text, no shading, no stray marks.",
+  "usage": {
+   "promptTokenCount": 3420,
+   "candidatesTokenCount": 1832,
+   "totalTokenCount": 7350,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1238
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 2098,
+   "serviceTier": "standard"
+  }
+ },
+ "p2_frenchie_classic.png": {
+  "style_detected": "faux continuous line art with decorative flourishes",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Decorative curly flourishes feel disconnected from the dog",
+     "Not a true continuous line, breaks illusion"
+    ],
+    "fixes": [
+     "Remove random swirls",
+     "Ensure lines connect logically"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "T1 upscale >4x needed for full front",
+     "T11 stray marks (21348px) will print as dirty specks"
+    ],
+    "fixes": [
+     "Vectorize artwork to solve resolution",
+     "Erase all stray pixels outside main lines"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Variable line weights",
+     "Unnecessary curly details at the bottom of the head"
+    ],
+    "fixes": [
+     "Normalize line thickness to >= 0.05 in",
+     "Delete curly flourishes for left-chest cap"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "AI hallucinated a curly mustache on the head",
+     "AI hallucinated a long curly tail on the full body"
+    ],
+    "fixes": [
+     "Erase mustache swirls",
+     "Redraw tail as a proper Frenchie stub"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected"
+    ],
+    "fixes": [
+     "None needed"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "Flourishes will look inconsistent across 25 breeds",
+     "Line weight variations lack a strict brand rule"
+    ],
+    "fixes": [
+     "Establish strict uniform line weight",
+     "Ban decorative swirls from the series prompt"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Anatomical errors (tail) will cause returns from breed fans",
+     "Thumbnail looks slightly messy due to stray marks"
+    ],
+    "fixes": [
+     "Fix breed anatomy",
+     "Increase line contrast for thumbnails"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Image is a French Bulldog, not a Bichon/Poodle",
+     "Frenchies do not have long curly tails"
+    ],
+    "fixes": [
+     "Remove curly tail entirely",
+     "Update prompt if Bichon was actually intended"
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Severe anatomical error (curly tail on Frenchie)",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo per instructions"
+    ],
+    "fixes": [
+     "None"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 5,
+    "problems": [
+     "The mustache swirls are weird"
+    ],
+    "fixes": [
+     "Make it cleaner"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute style but the tail is wrong for a Frenchie"
+    ],
+    "fixes": [
+     "Fix the tail"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too dainty and curly"
+    ],
+    "fixes": [
+     "Make lines bolder, remove swirls"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Might buy if they don't notice the tail error"
+    ],
+    "fixes": [
+     "Ensure breed accuracy"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Faux continuous line lacks genuine artistic intent"
+    ],
+    "fixes": [
+     "Use a real single-line artist"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "High contrast black and white",
+   "Recognizable Frenchie face",
+   "Easily vectorizable"
+  ],
+  "must_fix_before_production": [
+   "Erase curly flourishes under the head",
+   "Erase curly tail on the full body",
+   "Clean 21348px of stray marks",
+   "Vectorize to fix low resolution"
+  ],
+  "prompt_rewrite": "A minimalist continuous single-line drawing of a French Bulldog, black line on pure white background, accurate breed anatomy, stub tail, no curly flourishes, no decorative swirls, clean vector style, no text.",
+  "usage": {
+   "promptTokenCount": 3402,
+   "candidatesTokenCount": 1806,
+   "totalTokenCount": 6961,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1244
+    }
+   ],
+   "thoughtsTokenCount": 1753,
+   "serviceTier": "standard"
+  }
+ },
+ "p2_frenchie_cool.png": {
+  "style_detected": "Minimalist continuous line art with scribble shading",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 4,
+    "problems": [
+     "Left head emblem has bizarre, anatomically nonsensical curly flourishes at the neck.",
+     "Scribble shading inside sunglasses clashes with the clean continuous line aesthetic.",
+     "Overall execution feels like a generic AI filter rather than intentional illustration."
+    ],
+    "fixes": [
+     "Erase the curly lines extending from the bottom of the left head.",
+     "Replace scribble shading in glasses with solid black or clean diagonal hatching."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (28.72x) will cause severe pixelation if not vectorized.",
+     "22793px of stray marks/specks will print as dirty dots on the shirt.",
+     "Fine scribbles in glasses may bleed together on DTG."
+    ],
+    "fixes": [
+     "Auto-trace to vector before upscaling.",
+     "Run a despeckle filter to remove the 22793px stray marks.",
+     "Simplify glasses shading."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution is too low (needs 28x upscale) and stray marks are too high for direct printing.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Scribble fill in the sunglasses is too dense and chaotic for clean stitching.",
+     "Bottom curly lines on the chest emblem waste space and look messy."
+    ],
+    "fixes": [
+     "Convert sunglasses to a simple satin stitch outline or solid fill.",
+     "Crop out the bottom curly flourishes entirely for the 4x2.25 cap area."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 3,
+    "problems": [
+     "Left image: Unexplained curly appendages mimicking a mustache or abstract collar.",
+     "Right image: Messy line intersections around the front paws.",
+     "Inconsistent line weight and AI-typical scribble artifacts in the lenses."
+    ],
+    "fixes": [
+     "Manually erase the neck curls.",
+     "Clean up paw line intersections in Illustrator.",
+     "Redraw sunglasses lenses."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 8,
+    "problems": [
+     "None detected. Generic line art style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Continuous line art is a highly scalable concept for 25 breeds.",
+     "The scribble shading rule is inconsistently applied between the two drawings."
+    ],
+    "fixes": [
+     "Establish strict brand rules: e.g., single line weight, no scribble fills, pure silhouette."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Line art dog shirts are highly saturated on Etsy/TikTok.",
+     "Lacks a pop of color to stop the scroll in a 150px thumbnail."
+    ],
+    "fixes": [
+     "Add one spot color (e.g., a red collar or blue lens reflection) to increase perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 2,
+    "problems": [
+     "Prompt requested a Bichon-type poodle, but this is unmistakably a French Bulldog (bat ears, smushed snout)."
+    ],
+    "fixes": [
+     "Update metadata/listing to French Bulldog, or regenerate entirely if Bichon is required."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Complete breed mismatch based on the requested Bichon criteria.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Line art trend feels a bit 2018.",
+     "The weird mustache lines on the left are confusing."
+    ],
+    "fixes": [
+     "Make it edgier or add ironic text."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute for a Frenchie owner, but the chest logo looks messy with those extra swirls."
+    ],
+    "fixes": [
+     "Clean up the chest logo so it's just the cute face."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "Sunglasses make it less cutesy, which is good, but the squiggly lines are too abstract."
+    ],
+    "fixes": [
+     "Make the lines thicker and more masculine/bold."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design for a Frenchie lover, but looks a bit cheap/unfinished."
+    ],
+    "fixes": [
+     "Clean up the messy scribbles."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Lacks the intentionality of true continuous line art (like Picasso's animal sketches).",
+     "Clearly an AI generation with nonsensical artifacts."
+    ],
+    "fixes": [
+     "Redraw manually to ensure the line path makes logical, aesthetic sense."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 10
+   }
+  ],
+  "top_strengths": [
+   "Clear, unmistakable French Bulldog silhouette.",
+   "Easily convertible to vector format.",
+   "High contrast black-on-white works well for light garments."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the image to solve the 28x upscale requirement.",
+   "Remove the 22793px of stray marks/background noise.",
+   "Erase the nonsensical curly lines extending from the bottom of the left head.",
+   "Replace the messy scribble shading in the sunglasses with solid fills or clean lines."
+  ],
+  "prompt_rewrite": "A minimalist continuous line art drawing of a French Bulldog wearing sunglasses, front-facing head only, single unbroken black line on pure white background, clean vector style, no messy scribbles, no abstract flourishes, no text.",
+  "usage": {
+   "promptTokenCount": 3425,
+   "candidatesTokenCount": 2137,
+   "totalTokenCount": 7279,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1243
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1717,
+   "serviceTier": "standard"
+  }
+ },
+ "p2_frenchie_detailed.png": {
+  "style_detected": "Decorative swirly line art / faux continuous line",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Swirls feel chaotic and disconnected, failing the 'continuous line' brief.",
+     "Visual hierarchy is lost in uniform line weight."
+    ],
+    "fixes": [
+     "Enforce a strict single-line pathing constraint.",
+     "Vary line weight to emphasize core facial features."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "T11 stray marks (29775px) will print as random specks.",
+     "T1 upscale needed; fine swirls may plug or drop out on textured cotton."
+    ],
+    "fixes": [
+     "Clean all floating pixels outside main art.",
+     "Vectorize and thicken lines to minimum 2pt."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 3,
+    "problems": [
+     "Overlapping swirls are too dense for a 4x2.25 cap.",
+     "Lines are too thin and will cause thread breaks."
+    ],
+    "fixes": [
+     "Simplify to core silhouette only.",
+     "Ensure all lines are >= 0.05 in thick with no tiny gaps."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Too complex and thin for standard cap embroidery without total redraw.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "Floating, disconnected swirls around the head and body.",
+     "Asymmetrical ear detailing (left ear has internal floating loops, right does not)."
+    ],
+    "fixes": [
+     "Manually delete floating artifacts.",
+     "Balance internal ear details for symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Swirl density might overwhelm long-haired breeds in the 25-breed set.",
+     "Not a true continuous line, making standardizing difficult."
+    ],
+    "fixes": [
+     "Standardize swirl count and line weight rules per breed.",
+     "Commit to either true continuous line or standard vector illustration."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Line art market is saturated.",
+     "Thumbnail reads as messy due to excessive curls."
+    ],
+    "fixes": [
+     "Increase line weight for better thumbnail contrast.",
+     "Offer on trendy garment colors, not just white/gray."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Image is clearly a French Bulldog, failing completely to read as a Bichon-type poodle."
+    ],
+    "fixes": [
+     "Generate correct breed (Bichon) or update listing to French Bulldog."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed depicted for the requested Bichon prompt.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A per instructions."
+    ],
+    "fixes": [
+     "N/A."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Aesthetic feels dated (2010s vector art).",
+     "Too busy."
+    ],
+    "fixes": [
+     "Make it more abstract or minimalist."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit messy with the floating lines."
+    ],
+    "fixes": [
+     "Clean up the floating bits for a cleaner look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Too decorative and curly.",
+     "Looks like a salon logo."
+    ],
+    "fixes": [
+     "Use bolder, geometric lines without curls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Wrong breed if buying for a Bichon owner."
+    ],
+    "fixes": [
+     "Match breed to listing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks authentic hand-drawn feel.",
+     "Looks like algorithmic swirl brushes."
+    ],
+    "fixes": [
+     "Introduce slight line weight variation mimicking a real pen."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Clear French Bulldog silhouette.",
+   "High contrast black and white.",
+   "Distinctive swirly aesthetic."
+  ],
+  "must_fix_before_production": [
+   "Remove floating stray marks (29775px).",
+   "Simplify overlapping swirls for embroidery.",
+   "Ensure breed matches intended product (Frenchie vs Bichon)."
+  ],
+  "prompt_rewrite": "A single continuous black line drawing of a French Bulldog head, front-facing, minimalist, clean white background, no shading, no floating lines, vector art style, no text.",
+  "usage": {
+   "promptTokenCount": 3401,
+   "candidatesTokenCount": 1893,
+   "totalTokenCount": 7270,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1243
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    }
+   ],
+   "thoughtsTokenCount": 1976,
+   "serviceTier": "standard"
+  }
+ },
+ "p2_frenchie_heart.png": {
+  "style_detected": "minimalist continuous line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Layout contains two separate graphics on one canvas.",
+     "Line weights lack dynamic variation."
+    ],
+    "fixes": [
+     "Split into two separate production files.",
+     "Apply a subtle calligraphic brush profile for varied line thickness."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (17.42x) for full front.",
+     "31,720px of stray marks will print as dirty specks."
+    ],
+    "fixes": [
+     "Vectorize the artwork before scaling.",
+     "Run a despeckle filter or manually erase stray pixels."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution too low and stray marks will ruin print quality.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Facial wrinkles and paw lines on the full body are too dense.",
+     "Top heart loop is too thin for standard satin stitches."
+    ],
+    "fixes": [
+     "Simplify paw and muzzle lines.",
+     "Thicken all lines to at least 0.05 inches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "The 'continuous' line breaks in several places (e.g., right ear, chest).",
+     "Minor stray artifacts present around the edges."
+    ],
+    "fixes": [
+     "Manually connect broken paths in Illustrator.",
+     "Erase stray marks."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Continuous line style is difficult to translate to fluffy breeds (like Poodles) without looking messy."
+    ],
+    "fixes": [
+     "Establish strict guidelines for abstracting long fur into simple loops."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Line art is common; lacks immediate stopping power in thumbnails."
+    ],
+    "fixes": [
+     "Present on lifestyle mockups with high-contrast backgrounds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Prompt asks for a Bichon-type poodle, but this is clearly a French Bulldog."
+    ],
+    "fixes": [
+     "Update metadata to French Bulldog or generate new art for Bichon."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Completely wrong breed for the requested Bichon check.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 5,
+    "problems": [
+     "A bit basic and 'millennial'."
+    ],
+    "fixes": [
+     "Make the line art more abstract or edgy."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the full body pose is a bit stiff."
+    ],
+    "fixes": [
+     "Soften the expression and pose."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too cutesy with the heart motif."
+    ],
+    "fixes": [
+     "Remove the heart for a more neutral option."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, but generic."
+    ],
+    "fixes": [
+     "Offer personalization options."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul; feels like a standard vector trace."
+    ],
+    "fixes": [
+     "Introduce varied line weight for dynamic tension."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean, minimalist aesthetic",
+   "Clear breed recognition (for Frenchie)",
+   "Easily adaptable for embroidery"
+  ],
+  "must_fix_before_production": [
+   "Separate the two graphics into distinct files",
+   "Vectorize to solve the 17.42x upscale requirement",
+   "Clean 31,720px of stray marks"
+  ],
+  "prompt_rewrite": "minimalist continuous single black line drawing of a French Bulldog head, front-facing, symmetrical, enclosed in a simple line-art heart, white background, vector style, no shading, no text",
+  "usage": {
+   "promptTokenCount": 3418,
+   "candidatesTokenCount": 1810,
+   "totalTokenCount": 7445,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1236
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 2217,
+   "serviceTier": "standard"
+  }
+ },
+ "p3_rottweiler_classic.png": {
+  "style_detected": "Vector line art / coloring book style (not continuous line)",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Fails the 'continuous line' brief entirely; it is standard vector line art.",
+     "Curly flourishes under the headshot are distracting and clash with the breed's aesthetic."
+    ],
+    "fixes": [
+     "Enforce a strict single-line constraint in the prompt.",
+     "Remove the bottom curly flourishes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Cut-off text at the bottom will print as garbage.",
+     "High upscale needed (36x) will cause pixelation if not vectorized first."
+    ],
+    "fixes": [
+     "Crop out the bottom text.",
+     "Live-trace to vector before scaling for the full back print."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Too many fine wrinkle lines on the face for a 4-inch cap.",
+     "The curly flourishes will stitch poorly and add unnecessary trims."
+    ],
+    "fixes": [
+     "Simplify facial wrinkles by 50%.",
+     "Delete the bottom flourishes entirely."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "Text artifacts at the bottom edge.",
+     "Front right paw (viewer's left) on the sitting dog has merged, mushy toes."
+    ],
+    "fixes": [
+     "Erase text artifacts.",
+     "Redraw the toes on the sitting dog's paw for clear separation."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 3,
+    "problems": [
+     "Visible cut-off text at the bottom ('CLASSIC CONTINUOUS')."
+    ],
+    "fixes": [
+     "Crop the image above the text line."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Contains generated text/watermark artifacts at the bottom.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "The curly flourishes on the chest logo won't translate well to all 25 breeds.",
+     "Style is generic clipart, lacking a unique brand signature."
+    ],
+    "fixes": [
+     "Standardize the bottom crop of the headshot (e.g., simple V-neck fade).",
+     "Commit to a true continuous-line style for brand consistency."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Very generic line art that blends into a saturated market.",
+     "Lacks stopping power as a thumbnail."
+    ],
+    "fixes": [
+     "Add a single pop of color (e.g., a red collar) to increase thumbnail click-through."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Reads clearly as a Rottweiler, not a Bichon (ignoring prompt error).",
+     "Head shape is slightly too domed for a standard Rottweiler."
+    ],
+    "fixes": [
+     "Flatten the top of the skull slightly to match breed standards."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Instructed to ignore reference photo."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Looks like basic boomer-core apparel.",
+     "No aesthetic appeal or irony."
+    ],
+    "fixes": [
+     "Make it y2k tribal style or add edgy typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 5,
+    "problems": [
+     "A bit too harsh and masculine with the heavy black lines."
+    ],
+    "fixes": [
+     "Soften the lines, use a dark charcoal grey instead of pure black."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "Flourishes on the chest logo are too fussy/feminine."
+    ],
+    "fixes": [
+     "Remove the curly lines under the head."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe but slightly boring design."
+    ],
+    "fixes": [
+     "Ensure print quality is high so it doesn't look like cheap clipart."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Looks like standard vector clipart.",
+     "Fails the 'continuous line' promise entirely."
+    ],
+    "fixes": [
+     "Commission an actual artist to draw a true continuous line portrait."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 10
+   }
+  ],
+  "top_strengths": [
+   "High contrast black and white is excellent for DTG printing.",
+   "Clear, immediate breed recognition for the Rottweiler."
+  ],
+  "must_fix_before_production": [
+   "Crop out the text artifacts at the bottom of the image.",
+   "Remove the curly flourishes from the chest emblem.",
+   "Redraw the merged toes on the sitting dog's front paw."
+  ],
+  "prompt_rewrite": "A minimalist continuous single-line drawing of a Rottweiler dog head, front-facing, head-only, black ink line on pure white background, vector art style, clean white background, no text, no shading, single unbroken line.",
+  "usage": {
+   "promptTokenCount": 3395,
+   "candidatesTokenCount": 1970,
+   "totalTokenCount": 7619,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1237
+    }
+   ],
+   "thoughtsTokenCount": 2254,
+   "serviceTier": "standard"
+  }
+ },
+ "p3_rottweiler_cool.png": {
+  "style_detected": "Black and white comic-style vector line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Fails the 'continuous-line' brief; uses sketchy, disconnected strokes with shading.",
+     "Bizarre curly flourishes under the headshot look like a mustache."
+    ],
+    "fixes": [
+     "Redraw using a strict single continuous line.",
+     "Remove the decorative swirls under the neck."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (21.77x) will cause severe pixelation.",
+     "41,538px of stray marks outside the art will print as dirty specks."
+    ],
+    "fixes": [
+     "Vectorize the artwork to solve resolution issues.",
+     "Mask and delete all stray pixels in the background."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Sunglass reflections are too scribbly for clean stitching.",
+     "Full body design has too many fine, overlapping lines for a 4-inch cap."
+    ],
+    "fixes": [
+     "Simplify sunglass lenses to solid fill or single diagonal lines.",
+     "Use only the headshot for caps, removing bottom swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "Paws on the full-body dog are melted and lack distinct toes.",
+     "Unexplained floating curly lines under the headshot.",
+     "Sunglass scribbles look like AI noise rather than intentional reflections."
+    ],
+    "fixes": [
+     "Redraw paws with correct anatomical structure.",
+     "Erase floating neck curls.",
+     "Clean up lens reflections."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The 'sunglasses' motif is repeatable, but the sketchy line style isn't ownable enough.",
+     "Not a true continuous line as requested."
+    ],
+    "fixes": [
+     "Establish a strict continuous-line rule for the AI prompt to ensure consistency across all 25 breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Very standard 'cool dog' graphic.",
+     "Lacks a unique hook to stand out in a saturated POD market."
+    ],
+    "fixes": [
+     "Adopt the requested continuous-line style to increase perceived artistic value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Reads clearly as a Rottweiler (blocky head, drop ears), matching the style name, but fails the prompt's Bichon check."
+    ],
+    "fixes": [
+     "Ensure prompt breed matches intended output."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Feels a bit like generic boomer humor."
+    ],
+    "fixes": [
+     "Make it more minimalist or ironic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 5,
+    "problems": [
+     "A bit too masculine/edgy for my taste."
+    ],
+    "fixes": [
+     "Soften the lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "Like the cool vibe, but the curly lines on the left are weird."
+    ],
+    "fixes": [
+     "Remove the weird mustache curls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Safe gift for a Rottie owner, but looks a bit cheap."
+    ],
+    "fixes": [
+     "Clean up the messy lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 18
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Looks like generic vector stock art.",
+     "Lacks the elegance of true continuous line art."
+    ],
+    "fixes": [
+     "Execute a genuine single-line contour drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "High contrast black-and-white is easy to print.",
+   "Clear breed recognition for a Rottweiler."
+  ],
+  "must_fix_before_production": [
+   "Vectorize artwork to resolve the 21.77x upscale requirement.",
+   "Clean up 41,538px of stray marks in the background.",
+   "Erase the unnatural curly flourishes under the headshot.",
+   "Redraw the melted paws on the full-body illustration."
+  ],
+  "prompt_rewrite": "A strict single continuous-line drawing of a Rottweiler wearing sunglasses, minimalist black line on pure white background, no shading, no disconnected strokes. Left side shows a front-facing headshot, right side shows the full body sitting. Clean vector style, no text, no stray marks.",
+  "usage": {
+   "promptTokenCount": 3425,
+   "candidatesTokenCount": 1771,
+   "totalTokenCount": 7024,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1243
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1828,
+   "serviceTier": "standard"
+  }
+ },
+ "p3_rottweiler_detailed.png": {
+  "style_detected": "Black and white vector line art with ornamental swirls",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Decorative swirls on the neck and tail feel out of place for a rugged breed.",
+     "Fails the 'continuous-line' brief; it is standard variable-width line art."
+    ],
+    "fixes": [
+     "Remove curly flourishes.",
+     "Enforce strict continuous line prompt or stick to clean vector inking."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (16.85x) will cause pixelation.",
+     "27,249px of stray marks will print as dirty specks on the garment."
+    ],
+    "fixes": [
+     "Vectorize the artwork to solve the upscale issue.",
+     "Manually erase all stray pixels outside the main line art."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution too low and stray marks too high for direct printing."
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Too much internal line detail for a 4-inch cap.",
+     "Ornamental swirls will look messy and add unnecessary thread jumps."
+    ],
+    "fixes": [
+     "Delete decorative swirls.",
+     "Reduce internal fur lines by 60% and thicken main outlines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Bizarre floating curly lines attached to the neck (left) and tail area (right).",
+     "Slight asymmetry in the eyes and jowls."
+    ],
+    "fixes": [
+     "Erase floating curls.",
+     "Redraw eyes for perfect symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None obvious. Generic line art style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The random swirls might not translate well to all 25 breeds.",
+     "Line weight variation is inconsistent."
+    ],
+    "fixes": [
+     "Standardize line weight.",
+     "Drop the ornamental curls to ensure consistency across breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Black and white line art is common.",
+     "Doesn't stand out in thumbnails against saturated dog apparel."
+    ],
+    "fixes": [
+     "Add a subtle spot color or a solid background shape to boost thumbnail contrast."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Fails the Bichon test completely.",
+     "This is clearly a Rottweiler or Mastiff mix (blocky head, short coat)."
+    ],
+    "fixes": [
+     "Update the listing to Rottweiler, or generate a new image using a Bichon prompt."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Completely wrong breed for a Bichon listing."
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Looks like a generic vector stock image.",
+     "Not aesthetic or ironic enough."
+    ],
+    "fixes": [
+     "Make it a true continuous line drawing for a minimalist aesthetic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 4,
+    "problems": [
+     "Too aggressive/masculine looking.",
+     "Not cute or fluffy."
+    ],
+    "fixes": [
+     "Soften the expression."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "The curly lines make it look weird and feminine."
+    ],
+    "fixes": [
+     "Remove the swirls for a cleaner look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "A bit plain for a gift."
+    ],
+    "fixes": [
+     "Add a customized name drop option."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic intent.",
+     "The decorative swirls feel like AI hallucinations rather than deliberate design."
+    ],
+    "fixes": [
+     "Execute a genuine continuous line technique."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean black and white contrast.",
+   "Good anatomical proportions for a Rottweiler.",
+   "Clear separation of chest emblem and back print."
+  ],
+  "must_fix_before_production": [
+   "Remove AI-hallucinated curly lines from neck and tail.",
+   "Vectorize to fix 16.85x upscale requirement.",
+   "Clean 27,249px of stray marks."
+  ],
+  "prompt_rewrite": "A minimalist continuous-line drawing of a Rottweiler dog, front-facing head only, single unbroken black line on white background, clean vector style, no shading, no decorative swirls, no text.",
+  "usage": {
+   "promptTokenCount": 3402,
+   "candidatesTokenCount": 1749,
+   "totalTokenCount": 7538,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1244
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    }
+   ],
+   "thoughtsTokenCount": 2387,
+   "serviceTier": "standard"
+  }
+ },
+ "p3_rottweiler_heart.png": {
+  "style_detected": "minimalist black-and-white vector line art with heart motifs",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Composition is balanced but visually generic.",
+     "Line weights lack intentional hierarchy, appearing wobbly in places."
+    ],
+    "fixes": [
+     "Introduce varied line weights for depth.",
+     "Refine curves to look hand-drawn rather than auto-traced."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (19x) for full front.",
+     "23,905px of stray marks/specks will print as dirty dust on shirts."
+    ],
+    "fixes": [
+     "Vectorize the artwork to solve scaling.",
+     "Run a despeckle filter or manually delete stray pixels outside main lines."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution too low and too many stray marks for clean DTG print.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Muzzle and eye details are too dense for a 4-inch left chest.",
+     "Some connecting lines are thinner than 0.05 inches."
+    ],
+    "fixes": [
+     "Simplify facial wrinkles.",
+     "Thicken all primary outlines to minimum 0.05 inches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "Full-body dog has a bizarre, curly pig-like tail.",
+     "Floating, disconnected lines near the chest heart."
+    ],
+    "fixes": [
+     "Redraw the tail to match the breed.",
+     "Connect or remove floating vector fragments."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Standard generic line art."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The 'head in heart' + 'full body' formula is repeatable, but lacks a unique brand signature."
+    ],
+    "fixes": [
+     "Add a consistent, unique geometric element or specific shading style to make it ownable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Blends into a highly saturated market of minimalist dog line art.",
+     "Low perceived value without color."
+    ],
+    "fixes": [
+     "Offer on premium colored garments (heather gray, sand).",
+     "Create lifestyle mockups to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 4,
+    "problems": [
+     "Reads clearly as a Rottweiler/Mastiff, completely failing the Bichon prompt.",
+     "The curly tail on the full-body Rottweiler is anatomically incorrect."
+    ],
+    "fixes": [
+     "Generate actual Bichon if required.",
+     "If keeping Rottweiler, change tail to docked or thick/straight."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too 'millennial dog mom', lacks irony or edge."
+    ],
+    "fixes": [
+     "Make it more abstract or Y2K aesthetic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit plain, but the heart is cute."
+    ],
+    "fixes": [
+     "Add a custom name drop option."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Too cutesy with the hearts, wouldn't wear this."
+    ],
+    "fixes": [
+     "Remove hearts, make lines bolder and more rugged."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, but looks a bit cheap."
+    ],
+    "fixes": [
+     "Print on a high-quality hoodie."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Looks like generic stock vector art."
+    ],
+    "fixes": [
+     "Introduce genuine continuous-line techniques."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "High contrast black-and-white translates well to multiple garment colors.",
+   "Clear, recognizable breed features (for a Rottweiler).",
+   "Scalable concept for a 25-breed collection."
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix the 19x upscale requirement.",
+   "Clean up the 23,905px of stray marks.",
+   "Fix the anatomically incorrect curly tail on the full-body dog."
+  ],
+  "prompt_rewrite": "A minimalist, black-and-white continuous line art illustration of a Rottweiler dog head, front-facing, enclosed in a simple heart shape. Clean vector style, solid black lines on pure white background, no shading, no text, single continuous line aesthetic, highly detailed eyes and snout.",
+  "usage": {
+   "promptTokenCount": 3419,
+   "candidatesTokenCount": 1937,
+   "totalTokenCount": 7293,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1237
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1937,
+   "serviceTier": "standard"
+  }
+ },
+ "p4_golden_classic.png": {
+  "style_detected": "generic black and white vector clipart",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Fails the 'continuous-line' brief entirely; it is standard multi-stroke vector art.",
+     "Bizarre, disconnected decorative swirls under the left dog head distract from the design."
+    ],
+    "fixes": [
+     "Rewrite prompt to enforce strict single-line contour drawing.",
+     "Remove the decorative swirls to maintain a clean, modern aesthetic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 3,
+    "problems": [
+     "Catastrophic resolution issue: requires ~40x upscale for a full front print, guaranteeing severe pixelation.",
+     "30,657 pixels of stray marks flagged; these will print as random black specks on the garment."
+    ],
+    "fixes": [
+     "Generate base art at a minimum of 4000x4000px.",
+     "Run a strict vector cleanup or threshold filter to eliminate all stray pixels outside the main line art."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution is far too low for DTG printing; upscale artifacts will ruin the garment.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "The full-body dog has too many dense, overlapping fur lines that will cause thread bunching.",
+     "The thin swirls under the chest emblem are too delicate for standard cap embroidery."
+    ],
+    "fixes": [
+     "Simplify the full-body fur texture by removing 50% of the interior detail lines.",
+     "Delete the bottom swirls on the chest emblem entirely."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Left dog's eyes are asymmetrical in shape and size.",
+     "Right dog's tail base merges awkwardly with the hind leg anatomy.",
+     "Unexplained floating vector lines (swirls) under the left head."
+    ],
+    "fixes": [
+     "Inpaint the left eye to match the right eye's dimensions.",
+     "Redraw the right dog's tail base for clear anatomical separation.",
+     "Erase the floating swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. The artwork is highly generic and lacks identifiable signatures or protected elements."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 4,
+    "problems": [
+     "The style is too generic to serve as a recognizable, ownable brand signature across 25 breeds.",
+     "Does not meet the 'continuous-line' requirement of the brand brief."
+    ],
+    "fixes": [
+     "Develop a strict, unique prompt that forces a minimalist, single-line aesthetic to unify the collection."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Lacks stopping power. Looks like free stock vector art, offering no differentiation in a saturated dog apparel market."
+    ],
+    "fixes": [
+     "Pivot to a more distinct, trend-forward artistic style (e.g., true minimalist continuous line or geometric)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 4,
+    "problems": [
+     "Fails the prompt's specific Bichon-type poodle test entirely; this is clearly a Golden Retriever.",
+     "As a Golden Retriever, it is accurate, but it fails the requested breed check."
+    ],
+    "fixes": [
+     "If a Bichon is needed, regenerate with specific Bichon/Poodle keywords. If Golden is intended, update the brief."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A as per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Looks like a generic graphic tee from a discount store. Not aesthetic or ironic enough."
+    ],
+    "fixes": [
+     "Make it a trendy minimalist line drawing or add Y2K design elements."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "It's cute, but the weird curly lines under the head look like a mistake."
+    ],
+    "fixes": [
+     "Remove the curly lines and make the dog look a bit softer."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "A bit too much like clipart. I prefer something more subtle or technical looking."
+    ],
+    "fixes": [
+     "Use a rougher sketch style or a simpler geometric logo approach."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design for a Golden Retriever owner, but feels a little cheap/basic."
+    ],
+    "fixes": [
+     "Print it on a high-quality heathered shirt to elevate the perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Devoid of artistic soul. It's standard, uninspired AI vector generation."
+    ],
+    "fixes": [
+     "Use a prompt that mimics a specific, challenging traditional medium like linocut or blind contour."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 12
+   }
+  ],
+  "top_strengths": [
+   "High contrast black and white design is easy to separate for printing.",
+   "Breed (Golden Retriever) is instantly recognizable."
+  ],
+  "must_fix_before_production": [
+   "Generate at a significantly higher resolution to avoid 40x upscale artifacts.",
+   "Remove the 30,657 pixels of stray marks and the bizarre decorative swirls under the head.",
+   "Separate the left and right images into two distinct files for front and back printing."
+  ],
+  "prompt_rewrite": "A minimalist, single continuous-line drawing of a Golden Retriever dog head, front-facing, head only, stark black line on pure white background, unbroken contour line art style, modern aesthetic, no shading, no text, no decorative swirls, clean vector style.",
+  "usage": {
+   "promptTokenCount": 3401,
+   "candidatesTokenCount": 2134,
+   "totalTokenCount": 7640,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1243
+    }
+   ],
+   "thoughtsTokenCount": 2105,
+   "serviceTier": "standard"
+  }
+ },
+ "p4_golden_cool.png": {
+  "style_detected": "black and white line art / vector illustration",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "The style is generic vector line art, not a unique 'continuous-line' style as briefed.",
+     "The sunglasses on the dog feel like a generic clip-art addition rather than integrated into the style.",
+     "The composition is unbalanced; the front chest emblem (left) has strange, floating curly lines extending from the bottom.",
+     "The back print (right) is a full body, but the brief asked for a matching set. The full body is less stylized than the head."
+    ],
+    "fixes": [
+     "Prompt for a true 'continuous, single-line drawing' style.",
+     "Remove the floating curly lines from the bottom of the left emblem.",
+     "Ensure the full-body illustration matches the stylization level of the head emblem."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "High upscale needed (20.85x) for a full front print will cause pixelation or blurriness.",
+     "Stray marks (37532px) flagged by tech data will print as dirty specks.",
+     "The fine lines in the fur texture might drop out or look jagged when printed, especially on textured garments.",
+     "The solid black areas in the sunglasses might feel heavy and sweaty on a large back print."
+    ],
+    "fixes": [
+     "Generate at a much higher resolution or use a dedicated vectorizer.",
+     "Clean up all stray marks and specks in post-processing.",
+     "Thicken the thinnest lines to ensure they hold up during printing.",
+     "Consider adding a halftone or distressed texture to the solid black areas to improve breathability."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "The left chest emblem is generally good for embroidery, but the thin lines detailing the fur are too fine to stitch cleanly.",
+     "The floating curly lines at the bottom are unnecessary and will look strange stitched.",
+     "The reflections in the sunglasses are too complex for a small cap logo."
+    ],
+    "fixes": [
+     "Simplify the fur texture to thicker, bolder shapes.",
+     "Remove the floating curly lines.",
+     "Simplify the sunglasses to solid black or a very simple two-tone reflection."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "The floating curly lines under the left dog head are nonsensical artifacts.",
+     "The reflection lines in the sunglasses are messy and inconsistent.",
+     "The paws on the full-body dog (right) look slightly melted and lack distinct toes.",
+     "The tail on the full-body dog looks detached or awkwardly attached."
+    ],
+    "fixes": [
+     "Erase the floating curly lines.",
+     "Redraw the sunglass reflections to be clean and deliberate.",
+     "Refine the paw anatomy.",
+     "Adjust the tail attachment point."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 9,
+    "problems": [
+     "No obvious IP issues detected. It's a generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "The style is too generic to be a strong, ownable brand signature across 25 breeds.",
+     "The 'cool dog in sunglasses' trope is overdone and doesn't fit all breeds well (e.g., a wrinkled Pug might look strange).",
+     "The disconnect in stylization between the head and full body will make the series feel disjointed."
+    ],
+    "fixes": [
+     "Develop a more unique, specific line-art style (e.g., geometric, true continuous line, woodcut).",
+     "Drop the sunglasses to focus on the breed characteristics, or make them an optional variant.",
+     "Ensure consistent stylization rules apply to both head and full-body illustrations."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 4,
+    "problems": [
+     "This looks like thousands of other dog vectors on Etsy. It lacks stopping power.",
+     "The black and white design might look cheap if not printed perfectly.",
+     "The 'cool dog' concept is dated."
+    ],
+    "fixes": [
+     "Add a pop of color (e.g., a colored bandana or colored sunglasses reflections).",
+     "Improve the uniqueness of the illustration style.",
+     "Market it specifically to Golden Retriever owners rather than a general 'cool dog' audience."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "The image shows a Golden Retriever, but the brief mentions a Bichon-type poodle. The illustration does not match the requested breed."
+    ],
+    "fixes": [
+     "Generate a new illustration featuring a Bichon-type poodle (round cloud head, drop ears)."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed generated.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "As instructed, ignoring the reference photo and judging breed readability from image 1 alone. The image is clearly a Golden Retriever, not a Bichon."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 3,
+    "problems": [
+     "It's giving 'boomer humor'. The sunglasses are cringe.",
+     "The style is too basic, looks like a free vector download."
+    ],
+    "fixes": [
+     "Make it more ironic or aesthetic. Maybe a Y2K style or a really weird, abstract line drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 4,
+    "problems": [
+     "It's a Golden Retriever, I want a fluffy little dog like mine.",
+     "It's a bit too masculine/aggressive with the dark sunglasses."
+    ],
+    "fixes": [
+     "Make it a cute, fluffy breed.",
+     "Remove the sunglasses and make the expression sweeter."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "It's okay, a bit generic. I'd wear it on a fishing trip maybe.",
+     "The curly lines on the left one are weird."
+    ],
+    "fixes": [
+     "Get rid of the curly lines.",
+     "Make the lines thicker and more rugged."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "It's a safe gift for a Golden owner, but not very special.",
+     "Looks a bit cheap."
+    ],
+    "fixes": [
+     "Add some color or a nice background to make it look higher quality."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 2,
+    "problems": [
+     "It's completely devoid of artistic merit. It's a generic, soulless vector.",
+     "The 'continuous line' brief was completely ignored."
+    ],
+    "fixes": [
+     "Hire a real artist to draw a true continuous line illustration."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   }
+  ],
+  "top_strengths": [
+   "Clean black and white contrast.",
+   "Easily recognizable as a dog (specifically a Golden Retriever)."
+  ],
+  "must_fix_before_production": [
+   "Generate the correct breed (Bichon-type poodle).",
+   "Remove the floating curly lines from the left emblem.",
+   "Clean up the 37532px of stray marks.",
+   "Upscale the image significantly for print."
+  ],
+  "prompt_rewrite": "A true continuous, single-line drawing of a Bichon Frise dog head, front-facing, minimalist, elegant, black line on white background, no shading, no sunglasses, no text, vector style.",
+  "usage": {
+   "promptTokenCount": 3424,
+   "candidatesTokenCount": 2513,
+   "totalTokenCount": 5937,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1242
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "p4_golden_detailed.png": {
+  "style_detected": "Detailed vector line art / coloring book style",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails the 'continuous-line' brief; this is standard detailed line art.",
+     "Decorative swirls on the headshot feel disconnected from the full-body style."
+    ],
+    "fixes": [
+     "Use a true single-line continuous stroke prompt.",
+     "Remove the decorative swirls under the head."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "29,796px of stray marks will print as random dirty specks.",
+     "Requires significant upscaling for a full back print."
+    ],
+    "fixes": [
+     "Run a strict noise-reduction/cleanup pass to remove stray pixels.",
+     "Vectorize the image for infinite scaling."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "Too many fine, overlapping fur lines for a 4-inch cap.",
+     "Swirls are too thin to stitch cleanly."
+    ],
+    "fixes": [
+     "Simplify fur into solid block shapes.",
+     "Thicken main outlines and remove bottom swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Minor asymmetry in the headshot's fur volume.",
+     "Swirls end abruptly without tapering."
+    ],
+    "fixes": [
+     "Balance fur volume on the left and right of the head.",
+     "Remove swirls entirely."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Detailed fur lines work here, but will look sparse on short-coated breeds (e.g., Pugs)."
+    ],
+    "fixes": [
+     "Establish a shading convention (like stippling) that works for both short and long coats."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Black and white line art is highly saturated.",
+     "Lacks a unique visual hook for thumbnails."
+    ],
+    "fixes": [
+     "Add a pop of brand color or a geometric background element."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Image 1 is clearly a Golden Retriever, completely failing the Bichon-type poodle requirement."
+    ],
+    "fixes": [
+     "Generate a Bichon Poodle with a round cloud head and drop ears."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed generated."
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too traditional and millennial.",
+     "Lacks irony or y2k aesthetic edge."
+    ],
+    "fixes": [
+     "Make it more stylized or add ironic typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the swirls give a dated 2010s wall-decal vibe."
+    ],
+    "fixes": [
+     "Remove the swirls for a cleaner look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "A bit too soft and illustrative."
+    ],
+    "fixes": [
+     "Thicken lines to resemble a woodcut or traditional tattoo."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, but slightly generic."
+    ],
+    "fixes": [
+     "Leave space for a custom name drop below the dog."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like standard vector stock art.",
+     "Lacks a unique artistic voice."
+    ],
+    "fixes": [
+     "Introduce genuine continuous line technique."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Clean, high-contrast black and white design.",
+   "Instantly recognizable as a Golden Retriever.",
+   "Good layout separation for front/back POD printing."
+  ],
+  "must_fix_before_production": [
+   "Clean up the 29,796px of stray marks.",
+   "Remove the decorative swirls from the headshot.",
+   "Change the breed to Bichon Poodle to match the brief."
+  ],
+  "prompt_rewrite": "A single continuous-line drawing of a Bichon Poodle dog head, front-facing, head-only, minimalist black ink on pure white background, single unbroken stroke, no shading, no text, clean vector style, apparel emblem design.",
+  "usage": {
+   "promptTokenCount": 3394,
+   "candidatesTokenCount": 1710,
+   "totalTokenCount": 7327,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1236
+    }
+   ],
+   "thoughtsTokenCount": 2223,
+   "serviceTier": "standard"
+  }
+ },
+ "p4_golden_heart.png": {
+  "style_detected": "vector line art coloring book style",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Not a true continuous line style, reads as standard vector line art.",
+     "Line weights differ slightly between the chest emblem and back graphic."
+    ],
+    "fixes": [
+     "Enforce a strict single-weight continuous line prompt.",
+     "Unify line thickness across both graphics."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive stray marks (33,780px) will print as dirty specks.",
+     "Requires extreme upscaling (48x) which will pixelate the lines."
+    ],
+    "fixes": [
+     "Vectorize the image to fix resolution issues.",
+     "Delete all stray pixels outside the main line art paths."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Stray marks and low resolution will ruin the physical print.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Left chest emblem has fine inner fur details that will clump when stitched.",
+     "Floating heart above the head will cause jump stitches."
+    ],
+    "fixes": [
+     "Remove fine inner fur lines for the cap version.",
+     "Connect the top heart to the main heart outline."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Slight asymmetry in the eyes and fur clumps.",
+     "Bottom loop of the heart on the left is uneven."
+    ],
+    "fixes": [
+     "Mirror the vector paths for perfect symmetry on the emblem.",
+     "Smooth out the bottom heart loop."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Heart motif might not fit breeds with long snouts or tall ears without breaking the boundary awkwardly."
+    ],
+    "fixes": [
+     "Standardize the heart frame size and establish rules for how snouts/ears break the frame consistently."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Black and white line art is common; lacks stopping power in a small thumbnail."
+    ],
+    "fixes": [
+     "Add a single brand color (e.g., red) to the hearts to increase thumbnail click-through rate."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Fails the Bichon-type poodle test completely. This is clearly a Golden Retriever."
+    ],
+    "fixes": [
+     "Generate a Bichon with a round cloud head and curly fur texture."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed depicted based on the prompt criteria.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic and cutesy. Lacks irony or aesthetic edge."
+    ],
+    "fixes": [
+     "Make the line art more abstract or minimalist."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the heart is a bit clich\u00e9."
+    ],
+    "fixes": [
+     "Offer personalization with the dog's name."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Way too cutesy with the hearts. Would not wear this."
+    ],
+    "fixes": [
+     "Remove the hearts. Make the line art more rugged."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe gift, but black lines look a bit cheap."
+    ],
+    "fixes": [
+     "Print on high-quality heathered shirts to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Generic vector stock-art aesthetic. Lacks an authentic artist's hand."
+    ],
+    "fixes": [
+     "Use a true continuous contour line technique with varying pressure."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Clean, high-contrast design.",
+   "Clear front/back concept.",
+   "Highly readable at a distance."
+  ],
+  "must_fix_before_production": [
+   "Clean up 33k stray pixels.",
+   "Vectorize for infinite scaling.",
+   "Fix the breed mismatch (generate a Bichon instead of a Golden)."
+  ],
+  "prompt_rewrite": "A minimalist continuous single-line drawing of a Bichon Poodle dog head, front-facing, enclosed in a simple heart shape. Black line art on a pure white background, vector style, uniform line weight, no shading, no text, clean and elegant.",
+  "usage": {
+   "promptTokenCount": 3426,
+   "candidatesTokenCount": 1895,
+   "totalTokenCount": 7425,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1244
+    }
+   ],
+   "thoughtsTokenCount": 2104,
+   "serviceTier": "standard"
+  }
+ },
+ "p5_shepherd_classic.png": {
+  "style_detected": "Standard black and white vector clipart with arbitrary decorative flourishes",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Fails the 'continuous-line' brief; it is standard vector line art.",
+     "Decorative swirls at the bottom of the head and tail feel disconnected and cheap."
+    ],
+    "fixes": [
+     "Use a true continuous-line technique.",
+     "Remove floating flourishes entirely."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive 27x upscale needed for full front will cause severe pixelation.",
+     "30,184 pixels of stray marks will print as dirty specks on the garment."
+    ],
+    "fixes": [
+     "Vectorize the image to solve resolution issues.",
+     "Manually erase all stray pixels outside the main art."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution is too low for a 12-inch print and stray marks will ruin the transfer."
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Left chest design has too many fine fur lines for a 4-inch cap.",
+     "Floating swirls require unnecessary jump stitches."
+    ],
+    "fixes": [
+     "Simplify fur details into solid shapes.",
+     "Delete the floating swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Right dog's tail merges into a bizarre, unnatural decorative swirl.",
+     "Left dog has disconnected floating lines that serve no anatomical purpose."
+    ],
+    "fixes": [
+     "Redraw the right dog's tail naturally.",
+     "Delete floating flourishes on the left."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "The arbitrary swirls won't adapt well to all 25 breeds.",
+     "Style is not distinct enough to serve as a recognizable brand signature."
+    ],
+    "fixes": [
+     "Drop the swirls.",
+     "Develop a more ownable shading technique like specific cross-hatching."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Looks like standard stock vector art.",
+     "Low differentiation in a highly saturated dog apparel market."
+    ],
+    "fixes": [
+     "Add a unique brand element or typography to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Reads clearly as a German Shepherd, but chest fluff on the full body is slightly generic.",
+     "Back slope on the sitting dog is a bit flat for a GSD."
+    ],
+    "fixes": [
+     "Refine the slope of the GSD's back on the full-body graphic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Gives generic boomer Facebook ad vibes.",
+     "Not aesthetic or ironic enough."
+    ],
+    "fixes": [
+     "Make it minimalist single-line or hyper-stylized Y2K."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 5,
+    "problems": [
+     "A bit too intense.",
+     "The curly swirls look out of place on a German Shepherd."
+    ],
+    "fixes": [
+     "Softer lines, remove the weird tail swirl."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "Good standard GSD shirt, but the curly swirls are too decorative."
+    ],
+    "fixes": [
+     "Remove all curly flourishes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe bet for a GSD owner, but looks a bit cheap like a car decal."
+    ],
+    "fixes": [
+     "Clean up the stray marks so the print looks high quality."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul.",
+     "The swirls are a lazy attempt at adding style."
+    ],
+    "fixes": [
+     "Commission a real continuous line artist."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clear breed recognition",
+   "High contrast suitable for simple printing"
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix 27x upscale requirement",
+   "Remove floating swirls and tail flourish",
+   "Clean 30k px of stray marks"
+  ],
+  "prompt_rewrite": "A minimalist, true continuous-line drawing of a German Shepherd dog head, front-facing, symmetrical, solid black line on pure white background, no shading, no decorative swirls, no text, clean vector style.",
+  "usage": {
+   "promptTokenCount": 3402,
+   "candidatesTokenCount": 1750,
+   "totalTokenCount": 7450,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1244
+    }
+   ],
+   "thoughtsTokenCount": 2298,
+   "serviceTier": "standard"
+  }
+ },
+ "p5_shepherd_cool.png": {
+  "style_detected": "Bold black-and-white vector illustration with hatching (not continuous line)",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 4,
+    "problems": [
+     "Fails 'continuous-line' brief; uses varied weights and hatching.",
+     "Bizarre curly flourishes on the left emblem look like a misplaced mustache.",
+     "Inconsistent rendering between left (bold) and right (sketchy) images."
+    ],
+    "fixes": [
+     "Enforce strict single-line style in prompt.",
+     "Remove decorative bottom swirls.",
+     "Unify line weight across both graphics."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 3,
+    "problems": [
+     "Massive upscale needed (15.38x) for full front.",
+     "32,885px of stray marks will print as dirty specks.",
+     "Scribbled sunglasses reflections may look like print errors."
+    ],
+    "fixes": [
+     "Run aggressive noise reduction/despeckle.",
+     "Vectorize and scale up before printing.",
+     "Simplify sunglass reflections to solid shapes."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution too low and stray marks too high for immediate print.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "Too much fine hatching in ears and sunglasses for a 4-inch cap.",
+     "Bottom curly flourishes will stitch poorly and waste thread."
+    ],
+    "fixes": [
+     "Remove all hatching and shading lines.",
+     "Delete bottom flourishes.",
+     "Thicken main outlines to >= 0.05 in."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "Unexplained curly appendages on the left chest graphic.",
+     "Front left paw on the full-body dog lacks definition.",
+     "High asymmetry in the chest fur."
+    ],
+    "fixes": [
+     "Erase curly appendages.",
+     "Redraw front left paw for clarity.",
+     "Mirror chest fur lines for symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Standard vector dog art."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 4,
+    "problems": [
+     "Style is generic vector, not a unique 'continuous line' signature.",
+     "Adding random flourishes (like the curls) won't scale well to 25 breeds."
+    ],
+    "fixes": [
+     "Develop a stricter, truly continuous-line prompt template.",
+     "Standardize the crop and framing for the chest emblem."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Saturated 'cool dog in sunglasses' trope.",
+     "Lacks differentiation to command a premium price."
+    ],
+    "fixes": [
+     "Execute the continuous-line brief properly to stand out.",
+     "Target specific breed niches accurately."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Prompt bleed: 'shepherd cool' style name caused a German Shepherd generation instead of the requested Bichon-type poodle."
+    ],
+    "fixes": [
+     "Remove 'shepherd' from the style prompt to avoid breed confusion.",
+     "Regenerate with specific Bichon physical traits."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Generated entirely the wrong dog breed.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Feels like generic millennial graphic tee art.",
+     "Not ironic or aesthetic enough."
+    ],
+    "fixes": [
+     "Make it a true minimalist continuous line."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 4,
+    "problems": [
+     "Too masculine/aggressive.",
+     "Wrong breed for a fluffy dog owner."
+    ],
+    "fixes": [
+     "Generate the actual Bichon breed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "Likes the German Shepherd, but the curly mustache lines are weird."
+    ],
+    "fixes": [
+     "Remove the curly lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Only works if gifting to a GSD owner, fails for Bichon owners."
+    ],
+    "fixes": [
+     "Fix breed accuracy."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like generic stock vector art.",
+     "Fails the continuous line artistic constraint."
+    ],
+    "fixes": [
+     "Use a more authentic, hand-drawn continuous line style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "High contrast black-and-white translates well to DTG.",
+   "Strong, recognizable silhouette for the generated breed."
+  ],
+  "must_fix_before_production": [
+   "Regenerate to fix breed mismatch (generated GSD instead of Bichon).",
+   "Clean 32,885px of stray marks.",
+   "Remove bizarre curly flourishes on the left emblem.",
+   "Upscale resolution significantly."
+  ],
+  "prompt_rewrite": "A continuous single-line drawing of a Bichon poodle dog head, front-facing, minimalist black ink line on pure white background, no shading, no hatching, no text, clean vector style.",
+  "usage": {
+   "promptTokenCount": 3428,
+   "candidatesTokenCount": 2013,
+   "totalTokenCount": 8093,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1246
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 2652,
+   "serviceTier": "standard"
+  }
+ },
+ "p5_shepherd_detailed.png": {
+  "style_detected": "detailed black and white vector illustration, woodcut/engraving style",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails 'continuous-line' brief; uses multiple hatched lines.",
+     "Arbitrary decorative swirls on the headshot lack cohesion with the full-body graphic."
+    ],
+    "fixes": [
+     "Redraw using a single, unbroken continuous line.",
+     "Remove floating dots and swirls from the chest emblem."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Requires massive 14.42x upscale for full front.",
+     "32,971px of stray marks will print as dirty specks."
+    ],
+    "fixes": [
+     "Vectorize the image to solve resolution issues.",
+     "Clean all stray pixels outside the main line art."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 3,
+    "problems": [
+     "Fur detailing is too dense for a 4-inch cap.",
+     "Lines are thinner than 0.05 inches and will cause thread breaks."
+    ],
+    "fixes": [
+     "Simplify to a bold silhouette.",
+     "Remove 80% of internal fur lines."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Detail level impossible to stitch cleanly at 4x2.25 inches.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Full body: back right paw merges into the tail.",
+     "Front paws have inconsistent toe counts."
+    ],
+    "fixes": [
+     "Redraw back leg to separate from tail.",
+     "Correct front paws to have four distinct toes each."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The ornate swirls on the chest emblem won't translate well to all 25 breeds.",
+     "Style is highly detailed, making consistency across short/long coats difficult."
+    ],
+    "fixes": [
+     "Standardize a clean, unadorned base for the chest emblem.",
+     "Establish strict line-weight rules for the series."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "German Shepherd line art is highly saturated.",
+     "Lacks a unique brand hook to stand out in thumbnails."
+    ],
+    "fixes": [
+     "Incorporate a distinct brand color or geometric frame."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Prompt asks for a Bichon-type poodle, but this is clearly a German Shepherd.",
+     "Fails breed accuracy for Bichon completely."
+    ],
+    "fixes": [
+     "Generate a Bichon-type dog if that is the target breed."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed entirely based on the prompt's Bichon requirement.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too traditional and boomer-core.",
+     "Lacks irony or aesthetic appeal."
+    ],
+    "fixes": [
+     "Make it minimalist or y2k style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 4,
+    "problems": [
+     "Too intense and masculine.",
+     "Not cute or cozy enough."
+    ],
+    "fixes": [
+     "Softer lines, friendlier expression."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "A bit generic, looks like standard clip art."
+    ],
+    "fixes": [
+     "None, it's acceptable as a basic tee."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but feels a bit cheap."
+    ],
+    "fixes": [
+     "Ensure print quality is high to justify price."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks originality.",
+     "Looks like standard vector stock art."
+    ],
+    "fixes": [
+     "Use true continuous line technique for artistic merit."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Strong, recognizable silhouette for the German Shepherd.",
+   "Good contrast for printing on light or mid-tone garments."
+  ],
+  "must_fix_before_production": [
+   "Clean 32,971px of stray marks.",
+   "Vectorize to fix the 14.42x upscale requirement.",
+   "Remove disconnected swirls from the chest emblem."
+  ],
+  "prompt_rewrite": "black and white continuous line drawing of a German Shepherd dog head, front-facing, head-only, minimalist vector style, single unbroken line path, white background, no text, no decorative swirls, clean edges",
+  "usage": {
+   "promptTokenCount": 3396,
+   "candidatesTokenCount": 1918,
+   "totalTokenCount": 7819,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1238
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    }
+   ],
+   "thoughtsTokenCount": 2505,
+   "serviceTier": "standard"
+  }
+ },
+ "p5_shepherd_heart.png": {
+  "style_detected": "black and white vector line art, coloring book style",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Composition is split into two distinct elements in one file.",
+     "The floating heart on the full-body dog's chest looks tacked on."
+    ],
+    "fixes": [
+     "Separate into two files for front/back printing.",
+     "Integrate the chest heart into the fur texture or remove it."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "High stray marks (22196px) will cause random ink specks.",
+     "Needs massive upscaling (15.31x) for full front, causing blur."
+    ],
+    "fixes": [
+     "Vectorize to fix scaling issues.",
+     "Manually erase stray pixels outside the main art."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Stray marks and low resolution will ruin the print."
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Full body has too much fine fur detail for a 4-inch cap.",
+     "Thin heart outline on the left emblem might get lost."
+    ],
+    "fixes": [
+     "Use only the left head for caps.",
+     "Thicken the heart outline and remove fine inner ear lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Top loop of the heart on the left emblem is a messy infinity/heart mashup.",
+     "Heart on the right dog's chest ignores fur volume."
+    ],
+    "fixes": [
+     "Redraw the top heart loop to be a clean, single shape.",
+     "Warp the chest heart to follow fur contours."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None obvious. Generic line art style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The 'heart on chest' gimmick won't work for short-haired or wrinkled breeds."
+    ],
+    "fixes": [
+     "Standardize the emblem approach (left) and drop the chest-tattoo heart."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "B&W line art is very common.",
+     "Two-part image is confusing as a single thumbnail."
+    ],
+    "fixes": [
+     "Mock up separately as front/back on the garment for thumbnails."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Fails the Bichon brief entirely. It is clearly a German Shepherd."
+    ],
+    "fixes": [
+     "Generate a Bichon/Poodle mix instead if that is the target."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed generated."
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit cheesy with the heart motifs.",
+     "Not edgy or aesthetic enough."
+    ],
+    "fixes": [
+     "Remove the hearts, make it a distressed vintage graphic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the heart on the chest is a bit much."
+    ],
+    "fixes": [
+     "Remove the chest heart."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too cutesy with the hearts."
+    ],
+    "fixes": [
+     "Remove all heart graphics."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but needs to be on a good quality shirt."
+    ],
+    "fixes": [
+     "Ensure crisp printing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like generic vector stock art.",
+     "Lacks unique artistic voice."
+    ],
+    "fixes": [
+     "Introduce a more organic, hand-drawn line quality."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Clean, high-contrast lines.",
+   "Accurate German Shepherd anatomy.",
+   "Easily convertible to vector."
+  ],
+  "must_fix_before_production": [
+   "Separate into two distinct image files.",
+   "Clean 22196px of stray marks.",
+   "Fix the messy top loop on the left heart.",
+   "Remove the unnatural heart on the right dog's chest."
+  ],
+  "prompt_rewrite": "A black and white continuous line art illustration of a German Shepherd dog head, front-facing, clean vector style, coloring book style, solid white background, no text, no shading, single uniform line weight.",
+  "usage": {
+   "promptTokenCount": 3431,
+   "candidatesTokenCount": 1723,
+   "totalTokenCount": 7054,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1249
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1900,
+   "serviceTier": "standard"
+  }
+ },
+ "p6_chihuahua_classic.png": {
+  "style_detected": "standard black and white vector line art, not continuous line",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Fails the 'continuous line' brief entirely; it's standard line art.",
+     "Floating swirls on the headshot feel disconnected and clip-art-like."
+    ],
+    "fixes": [
+     "Enforce a strict single-line contour style.",
+     "Remove decorative floating swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "24258px of stray marks outside the art will print as dirty specks.",
+     "Requires significant upscaling (17.93x) for full front/back print."
+    ],
+    "fixes": [
+     "Run a strict noise-removal pass to clear stray pixels.",
+     "Vectorize the image to allow infinite scaling without pixelation."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Tapered ends of the decorative swirls are too thin to stitch cleanly.",
+     "Some fine details in the ears may close up at 4-inch scale."
+    ],
+    "fixes": [
+     "Delete the floating swirls.",
+     "Simplify inner ear lines for the left-chest version."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Swirls on the headshot look like detached, misplaced whiskers.",
+     "Slight asymmetry in the full-body dog's eyes."
+    ],
+    "fixes": [
+     "Erase the floating swirls.",
+     "Correct eye symmetry in post-processing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic dog illustration."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "Style is too generic to be an 'ownable' brand signature.",
+     "Not true continuous line, which will make standardizing across 25 breeds difficult."
+    ],
+    "fixes": [
+     "Pivot to a genuine continuous-line prompt or rebrand the line as 'bold vector'."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 4,
+    "problems": [
+     "Lacks stopping power in a saturated market.",
+     "Looks like free stock vectors."
+    ],
+    "fixes": [
+     "Add a single spot color (e.g., a red collar) to boost thumbnail visibility."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Prompt requested a Bichon-type poodle, but this is clearly a Chihuahua (bat ears, apple head)."
+    ],
+    "fixes": [
+     "Generate a Bichon if required, or update the brief to match the Chihuahua art."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed generated based on the role description.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic, gives millennial clip-art vibes."
+    ],
+    "fixes": [
+     "Make it more abstract or add trendy typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the mustache swirls on the face are weird."
+    ],
+    "fixes": [
+     "Remove the swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too delicate and cutesy."
+    ],
+    "fixes": [
+     "Use thicker, more aggressive line weights."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Safe, but looks a bit cheap."
+    ],
+    "fixes": [
+     "Ensure high print quality."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Lacks artistic soul, fails the continuous line concept."
+    ],
+    "fixes": [
+     "Commission a real artist for genuine contour drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "High contrast black and white is easy to print.",
+   "Clear, recognizable Chihuahua silhouette.",
+   "Solid lines are generally good for embroidery."
+  ],
+  "must_fix_before_production": [
+   "Clean 24258px of stray marks outside the art.",
+   "Vectorize to fix the 17.93x upscale requirement.",
+   "Remove the floating decorative swirls from the headshot."
+  ],
+  "prompt_rewrite": "A genuine single continuous line drawing of a Chihuahua dog, front-facing, head-only, minimalist contour art, unbroken black line on pure white background, no shading, no decorative swirls, no text, vector style.",
+  "usage": {
+   "promptTokenCount": 3394,
+   "candidatesTokenCount": 1889,
+   "totalTokenCount": 7481,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1236
+    }
+   ],
+   "thoughtsTokenCount": 2198,
+   "serviceTier": "standard"
+  }
+ },
+ "p6_chihuahua_cool.png": {
+  "style_detected": "black and white vector cartoon line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Generic stock-vector aesthetic.",
+     "Mustache element feels dated and visually disconnected from the dog's anatomy."
+    ],
+    "fixes": [
+     "Remove the mustache.",
+     "Introduce varied line weights for a more hand-drawn, premium feel."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "35929px of stray marks will print as dirty specks.",
+     "Requires massive 23.79x upscale for full front, risking severe pixelation/blur."
+    ],
+    "fixes": [
+     "Manually erase all stray pixels outside the main line art.",
+     "Re-vectorize at a much higher native resolution."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Stray marks and low resolution will ruin DTG print quality.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Mustache lines are too thin and sprawling for a clean 4-inch cap front.",
+     "Some inner ear details are too dense."
+    ],
+    "fixes": [
+     "Delete the mustache.",
+     "Simplify inner ear linework to prevent thread bunching."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Floating artifacts around the left head.",
+     "Mustache connects awkwardly to the chin.",
+     "Right dog's back leg anatomy is slightly merged."
+    ],
+    "fixes": [
+     "Clean up floating pixels.",
+     "Redraw the back leg separation on the full-body graphic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "The mustache is too specific; applying it to 25 breeds will look forced.",
+     "Sunglasses theme is consistent but overused."
+    ],
+    "fixes": [
+     "Drop the mustache.",
+     "Keep sunglasses as the unifying element across all 25 breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "High saturation of 'dog in sunglasses' designs on Etsy/Amazon.",
+     "Lacks a unique hook to justify a premium price."
+    ],
+    "fixes": [
+     "Add a subtle pop of color (e.g., reflection in glasses) to stand out in thumbnails."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Fails the Bichon-type poodle brief entirely.",
+     "Clearly depicts a Chihuahua (erect ears, apple dome head, short snout)."
+    ],
+    "fixes": [
+     "Regenerate entirely using Bichon/Poodle keywords (drop ears, fluffy round head)."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong dog breed generated.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Mustache humor feels very 2012 millennial."
+    ],
+    "fixes": [
+     "Make it edgier or more minimalist."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the mustache is a bit weird for my dog."
+    ],
+    "fixes": [
+     "Remove mustache, keep just the sunglasses."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "A bit too goofy."
+    ],
+    "fixes": [
+     "Make the linework grittier."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but only if they own a Chihuahua."
+    ],
+    "fixes": [
+     "Ensure breed accuracy."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Looks like cheap, automated vector stock."
+    ],
+    "fixes": [
+     "Needs actual artistic interpretation, not just a filter look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "High contrast black and white reads well from a distance.",
+   "Clear, recognizable silhouette for the Chihuahua."
+  ],
+  "must_fix_before_production": [
+   "Clean up 35929px of stray marks to prevent print errors.",
+   "Regenerate to match the requested Bichon breed.",
+   "Remove the mustache for better cross-breed consistency."
+  ],
+  "prompt_rewrite": "A black and white continuous-line vector illustration of a Bichon Frise dog head, front-facing, wearing cool sunglasses. Round fluffy cloud head, drop ears, clean solid black lines, white background, no text, no mustache, minimalist apparel graphic style.",
+  "usage": {
+   "promptTokenCount": 3426,
+   "candidatesTokenCount": 1901,
+   "totalTokenCount": 7223,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1244
+    }
+   ],
+   "thoughtsTokenCount": 1896,
+   "serviceTier": "standard"
+  }
+ },
+ "p6_chihuahua_detailed.png": {
+  "style_detected": "vector line art / coloring book",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Decorative swirls on the head emblem feel disconnected from the full-body style.",
+     "Not a true 'continuous line' style as briefed, but rather standard line art."
+    ],
+    "fixes": [
+     "Remove floating swirls and dots.",
+     "Unify line weight and shading style between head and body."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "24,629px of stray marks will print as dirty specks.",
+     "High upscale (16x) will cause severe pixelation on the back print."
+    ],
+    "fixes": [
+     "Vectorize the image to resolve upscale issues.",
+     "Manually erase all stray pixels outside the main lines."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Excessive stray marks and extreme upscale needed.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Fine fur details and whiskers are too thin for thread.",
+     "Floating dots and swirls add unnecessary jump stitches."
+    ],
+    "fixes": [
+     "Delete swirls and dots.",
+     "Thicken main outlines to >= 0.05 in.",
+     "Simplify inner ear and chest fur lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Floating dots under the head.",
+     "Swirls emerge awkwardly from the neck.",
+     "Minor asymmetry in the full-body dog's front paws."
+    ],
+    "fixes": [
+     "Erase floating dots and neck swirls.",
+     "Redraw front paws on the full-body image for symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic line art."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The 'swirl' motif on the chest emblem might not translate well to all 25 breeds.",
+     "Line art is slightly generic for a signature brand style."
+    ],
+    "fixes": [
+     "Drop the swirls to ensure consistency across all breeds.",
+     "Standardize line thickness rules for the series."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Black and white line art blends into a saturated market.",
+     "Lacks a unique hook for small thumbnails."
+    ],
+    "fixes": [
+     "Add a subtle spot color (e.g., pink tongue) to boost thumbnail click-through."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Fails Bichon-type prompt entirely; this is clearly a Chihuahua (large erect ears, apple dome head)."
+    ],
+    "fixes": [
+     "Update listing to Chihuahua, or generate a new image with drop ears and curly fur for Bichon."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed depicted for the specific Bichon prompt.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Instructed to ignore reference and give 5."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic, looks like a standard vector stock image.",
+     "Not aesthetic or ironic enough."
+    ],
+    "fixes": [
+     "Make it y2k style or add edgy typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the swirls on the chest are a bit weird."
+    ],
+    "fixes": [
+     "Remove the weird mustache swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too delicate and cutesy.",
+     "The swirls look like a tramp stamp."
+    ],
+    "fixes": [
+     "Remove the swirls.",
+     "Make the lines bolder and more masculine."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but a bit plain for a special gift."
+    ],
+    "fixes": [
+     "Add an option to put the dog's name under the chest logo."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul.",
+     "Looks like automated vector tracing."
+    ],
+    "fixes": [
+     "Introduce varied line weights that mimic actual brush or pen strokes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean vector-like appearance",
+   "Clear breed recognition for Chihuahua",
+   "Good contrast for printing on light garments"
+  ],
+  "must_fix_before_production": [
+   "Clean 24,629px of stray marks to prevent dirty prints",
+   "Vectorize to fix 16x upscale requirement",
+   "Remove disconnected swirls and dots from chest emblem"
+  ],
+  "prompt_rewrite": "black and white vector line art of a chihuahua, single continuous line style, front-facing head only, clean white background, no text, no decorative swirls, bold outlines, minimalist apparel graphic",
+  "usage": {
+   "promptTokenCount": 3396,
+   "candidatesTokenCount": 1963,
+   "totalTokenCount": 7578,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1238
+    }
+   ],
+   "thoughtsTokenCount": 2219,
+   "serviceTier": "standard"
+  }
+ },
+ "p6_chihuahua_heart.png": {
+  "style_detected": "Vector line art / coloring book style",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Not a true continuous-line style as requested, just standard vector line art.",
+     "Heart element feels disconnected from the dog's drawing style."
+    ],
+    "fixes": [
+     "Unify line weight.",
+     "Use a strict single continuous line prompt for the dog."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "20971px of stray marks will print as dirty specks.",
+     "17.58x upscale needed for the back print will cause severe pixelation."
+    ],
+    "fixes": [
+     "Vectorize the image before scaling.",
+     "Erase all background noise and stray pixels."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution too low for full back print; stray marks require manual cleaning.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Left chest design has too much fine detail in the fur and eyes for a 4-inch cap."
+    ],
+    "fixes": [
+     "Simplify eye reflections.",
+     "Thicken main outlines and remove fine fur texture lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Minor asymmetry in the heart loop.",
+     "Right dog's back leg anatomy is slightly awkward."
+    ],
+    "fixes": [
+     "Redraw heart loop for perfect symmetry.",
+     "Adjust right dog's hind leg positioning."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic line art."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Standard line art is easily replicable but lacks a unique ownable brand signature."
+    ],
+    "fixes": [
+     "Introduce a specific geometric or continuous-line rule that applies to all 25 breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Very generic 'dog in heart' design.",
+     "Blends in with thousands of existing Etsy SVGs."
+    ],
+    "fixes": [
+     "Add a unique brand element or distinct artistic flair to stand out."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Fails the Bichon-type poodle prompt completely.",
+     "This is clearly a Chihuahua (erect ears, apple head, short coat)."
+    ],
+    "fixes": [
+     "Regenerate entirely to feature a dog with a round cloud head, drop ears, and curly coat."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed depicted.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic.",
+     "Gives off 'live laugh love' energy, not aesthetic."
+    ],
+    "fixes": [
+     "Make it minimalist continuous line or Y2K style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but a bit generic."
+    ],
+    "fixes": [
+     "Add personalization option for the dog's name."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Too cutesy with the heart.",
+     "Not masculine or neutral."
+    ],
+    "fixes": [
+     "Remove heart.",
+     "Use a more stoic pose."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe bet, but looks like a cheap generic print."
+    ],
+    "fixes": [
+     "Improve line quality to look hand-drawn."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul.",
+     "Looks like stock vector art."
+    ],
+    "fixes": [
+     "Use a more expressive, less rigid prompt."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean black and white contrast.",
+   "Clear breed recognition (as a Chihuahua)."
+  ],
+  "must_fix_before_production": [
+   "Regenerate as Bichon/Poodle to match the brief.",
+   "Clean 20971px stray marks.",
+   "Vectorize for upscaling."
+  ],
+  "prompt_rewrite": "A continuous single-line drawing of a Bichon Poodle dog head, front-facing, minimalist black line on white background, no text, vector art style, clean white background",
+  "usage": {
+   "promptTokenCount": 3420,
+   "candidatesTokenCount": 1860,
+   "totalTokenCount": 7290,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1238
+    }
+   ],
+   "thoughtsTokenCount": 2010,
+   "serviceTier": "standard"
+  }
+ },
+ "p7_dachshund_classic.png": {
+  "style_detected": "Black and white vector line art illustration",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails the 'continuous line' brief; it is standard line art.",
+     "Arbitrary decorative swirls under the head emblem are distracting."
+    ],
+    "fixes": [
+     "Redraw using a true single continuous line technique.",
+     "Remove the decorative swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "Tech flags indicate 59,723px of stray marks.",
+     "Requires massive 18x upscale for full front print."
+    ],
+    "fixes": [
+     "Clean background and stray pixels.",
+     "Vectorize the image before scaling for print."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Fur detail lines are too dense and thin for cap embroidery.",
+     "Swirls on the chest emblem will stitch poorly."
+    ],
+    "fixes": [
+     "Simplify fur texture to thicker, fewer lines.",
+     "Delete the bottom swirls entirely."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Swirls under the head appear as nonsensical AI hallucinations.",
+     "Slight asymmetry in pupil shape and catchlights."
+    ],
+    "fixes": [
+     "Erase the swirls.",
+     "Manually correct the right pupil to match the left."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "The decorative swirls will not adapt consistently across 25 different breeds."
+    ],
+    "fixes": [
+     "Standardize the chest emblem to be just the dog's head/neck."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Looks like generic stock art.",
+     "Lacks stopping power in a saturated market."
+    ],
+    "fixes": [
+     "Incorporate strong, breed-specific typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 3,
+    "problems": [
+     "Prompt asks if it reads as a Bichon-type poodle; it fails completely as it is clearly a Dachshund."
+    ],
+    "fixes": [
+     "If a Bichon is needed, generate a new image. If Dachshund is intended, the art is accurate."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic and lacks aesthetic appeal."
+    ],
+    "fixes": [
+     "Make it more stylized or ironic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit plain, lacks cute accessories."
+    ],
+    "fixes": [
+     "Add a subtle cute element like a bandana."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "The swirls on the chest logo are too feminine/fussy."
+    ],
+    "fixes": [
+     "Remove the swirls for a cleaner look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe but unexciting design."
+    ],
+    "fixes": [
+     "Ensure the breed matches the recipient's dog exactly."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks the requested continuous line artistry; looks like generic vector art."
+    ],
+    "fixes": [
+     "Execute a true, single-line minimalist drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Clean, high-contrast black and white lines.",
+   "Easily recognizable as a Dachshund.",
+   "Good layout for a front/back apparel set."
+  ],
+  "must_fix_before_production": [
+   "Remove the decorative swirls under the head emblem.",
+   "Clean the 59,723px of stray marks.",
+   "Vectorize to fix the 18x upscale requirement."
+  ],
+  "prompt_rewrite": "A minimalist, true continuous-line drawing of a Dachshund dog. Left side: front-facing head only, clean neck cutoff, no decorative swirls. Right side: matching full-body seated Dachshund. Black line art on pure white background, single unbroken line style, no text, no shading, high contrast vector style.",
+  "usage": {
+   "promptTokenCount": 3396,
+   "candidatesTokenCount": 1844,
+   "totalTokenCount": 7610,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1238
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    }
+   ],
+   "thoughtsTokenCount": 2370,
+   "serviceTier": "standard"
+  }
+ },
+ "p7_dachshund_cool.png": {
+  "style_detected": "Bold black-and-white vector line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails the 'continuous-line' brief; it is standard line art.",
+     "The decorative swirls under the headshot look like a misplaced mustache."
+    ],
+    "fixes": [
+     "Redraw using a true single continuous line.",
+     "Remove the bottom neck swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "38852px of stray marks will cause random ink specks.",
+     "Requires >4x upscale for the back print, risking pixelation."
+    ],
+    "fixes": [
+     "Clean stray pixels in background.",
+     "Vectorize the image before scaling to full back size."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Neck swirls on the left image are too thin and unnecessary for a chest logo.",
+     "Sunglass reflection lines might be too dense for a 4-inch cap."
+    ],
+    "fixes": [
+     "Delete bottom neck swirls.",
+     "Simplify sunglass reflections into solid white blocks."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Minor asymmetry in the sunglass frames.",
+     "Neck swirls end abruptly in space."
+    ],
+    "fixes": [
+     "Symmetrize the glasses.",
+     "Erase the floating swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic dog illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Not a continuous line style as requested.",
+     "Relying on sunglasses for 25 breeds might become repetitive."
+    ],
+    "fixes": [
+     "Adopt a strict continuous-line aesthetic to unify the series without relying on props."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "B&W vector dogs are highly saturated.",
+     "Lacks a unique hook without the continuous-line execution."
+    ],
+    "fixes": [
+     "Print on trendy garment colors like sand or heather gray."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Prompt mentions Bichon, but this is clearly a Dachshund.",
+     "As a Dachshund, it is accurate (snout, ears, paws)."
+    ],
+    "fixes": [
+     "Update metadata to Dachshund."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "Looks a bit like basic stock art."
+    ],
+    "fixes": [
+     "Make the line weight thicker for a Y2K vibe."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "The swirls under the head look weird."
+    ],
+    "fixes": [
+     "Remove the swirls for a cleaner look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "A bit illustrative, but the sunglasses make it okay."
+    ],
+    "fixes": [
+     "Keep it simple, print on dark heather shirts."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, but slightly generic."
+    ],
+    "fixes": [
+     "Offer personalization with the dog's name."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Fails the continuous-line brief.",
+     "Looks like standard vector clip art."
+    ],
+    "fixes": [
+     "Commission a real continuous line artist."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean contrast",
+   "Clear breed recognition",
+   "Easily digitizable for embroidery"
+  ],
+  "must_fix_before_production": [
+   "Remove distracting neck swirls on the headshot",
+   "Clean 38852px stray marks",
+   "Vectorize for upscaling"
+  ],
+  "prompt_rewrite": "A single continuous line drawing of a Dachshund dog head wearing sunglasses, front-facing, minimalist, black line on white background, no shading, no text, clean vector style.",
+  "usage": {
+   "promptTokenCount": 3419,
+   "candidatesTokenCount": 1812,
+   "totalTokenCount": 7210,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1237
+    }
+   ],
+   "thoughtsTokenCount": 1979,
+   "serviceTier": "standard"
+  }
+ },
+ "p7_dachshund_detailed.png": {
+  "style_detected": "Detailed black-and-white vector line art / etching style (not continuous line)",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 4,
+    "problems": [
+     "Fails the brand brief completely: this is detailed cross-hatching/etching, not a 'continuous-line' drawing.",
+     "The decorative curly swirls and floating dots on the left chest emblem feel cheap, generic, and disconnected from the organic drawing style of the dog.",
+     "Visual hierarchy is split evenly between the two graphics rather than presenting them as a cohesive set."
+    ],
+    "fixes": [
+     "Change the generation prompt to strictly enforce 'single continuous line' and 'minimalist'.",
+     "Remove the decorative swirls and dots from the chest emblem; let the dog's silhouette be the logo."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "High upscale requirement (15.13x) for the full back print will result in blurry or jagged lines if not properly vectorized first.",
+     "The extremely fine hatching lines in the dog's fur will plug up or disappear when printed at a 4-inch left-chest size on textured cotton.",
+     "Tech flag indicates 22558px of stray marks, likely the floating dots and background noise."
+    ],
+    "fixes": [
+     "Vectorize the image using image trace to ensure infinite scalability.",
+     "Thicken the minimum line weight for the left-chest version.",
+     "Erase the floating dots around the left emblem."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 2,
+    "problems": [
+     "Impossible to embroider as-is at 4 inches. The dense cross-hatching and fine fur details will turn into a solid, bulletproof thread nest.",
+     "Lines are significantly thinner than the 0.05-inch minimum requirement.",
+     "The curly flourishes on the left are too thin to stitch cleanly."
+    ],
+    "fixes": [
+     "Requires a total redraw for embroidery. Remove 90% of the interior shading lines.",
+     "Convert to a bold, solid outline with only major anatomical features (eyes, nose, ear flaps) indicated."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Detail level is fundamentally incompatible with small-scale embroidery.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "The front paws on the sitting dog (right) are mushy and lack defined anatomical toes.",
+     "The transition from the back leg to the tail on the sitting dog is smeared and ambiguous.",
+     "Unnecessary floating dots around the left emblem act as stray artifacts."
+    ],
+    "fixes": [
+     "Inpaint the front paws to have 4 distinct, anatomically correct toes.",
+     "Clean up the line work where the tail meets the hind leg.",
+     "Manually erase the four floating dots."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 10,
+    "problems": [],
+    "fixes": [],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "While this specific detailed style could be replicated across 25 breeds, it violates the 'continuous-line' brand brief.",
+     "The curly flourishes on the left emblem are a crutch that won't look cohesive across all 25 breeds (e.g., a tough Pitbull with dainty swirls will look ridiculous)."
+    ],
+    "fixes": [
+     "Establish a strict continuous-line prompt template.",
+     "Standardize the left-chest emblem to be just the dog's head/shoulders without arbitrary decorative framing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Looks like standard stock vector art. Lacks the modern, trendy aesthetic of true continuous-line minimalist apparel.",
+     "The chest emblem looks a bit dated due to the tribal-esque swirls."
+    ],
+    "fixes": [
+     "Pivot to the requested continuous-line style to capture the minimalist/aesthetic market.",
+     "Showcase the front/back print concept clearly in mockups to add perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 1,
+    "problems": [
+     "The prompt specifically asks if this reads as a Bichon-type poodle. It completely fails this test; it is unequivocally a long-haired Dachshund.",
+     "As a Dachshund, it is accurate, but it fails the literal evaluation criteria provided for this role."
+    ],
+    "fixes": [
+     "If a Bichon is needed, generate a completely new image with a round cloud head and drop ears.",
+     "If a Dachshund is intended, update the evaluation criteria to match the 'dachshund detailed' style name."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Wrong breed entirely based on the specific prompt question.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 3,
+    "problems": [
+     "The curly lines on the left give me 2010s millennial vibes. Not aesthetic or minimalist enough."
+    ],
+    "fixes": [
+     "Make it a single, unbroken line drawing. Remove the shading and the weird swirls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 8,
+    "problems": [
+     "I actually think the detailed drawing is really pretty, though the dots are a bit random."
+    ],
+    "fixes": [
+     "Just clean up the random dots."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "The full dog on the back is fine, but I wouldn't wear a hoodie with those curly mustache-looking things on the chest."
+    ],
+    "fixes": [
+     "Drop the decorative swirls on the chest logo."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "gift_buyer",
+    "score": 7,
+    "problems": [
+     "It's a safe, recognizable drawing of a Dachshund. Good for a gift, but maybe a bit generic."
+    ],
+    "fixes": [
+     "Ensure it prints cleanly so it doesn't look cheap."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "It lacks artistic intent. It's a mishmash of a decent etching-style dog with completely incongruous vector swirls slapped on the side."
+    ],
+    "fixes": [
+     "Commit to one cohesive artistic style. If it's supposed to be continuous line, make it continuous line."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Strong black-and-white contrast suitable for DTG printing on light garments.",
+   "Clear, recognizable Dachshund anatomy (despite the prompt's Bichon question).",
+   "Good dual-placement concept (chest emblem + back print) for apparel."
+  ],
+  "must_fix_before_production": [
+   "Remove the decorative swirls and floating dots from the left chest emblem.",
+   "Vectorize the artwork to handle the 15x upscale requirement for the back print.",
+   "Redraw the front paws on the sitting dog to fix the mushy AI artifacts.",
+   "Completely simplify the design if it is to be used for embroidery (currently impossible to stitch)."
+  ],
+  "prompt_rewrite": "A minimalist continuous single-line drawing of a Dachshund dog, black line on a pure white background. Left side of image: a simple, unbroken continuous-line headshot of a Dachshund. Right side of image: a matching unbroken continuous-line full-body sitting Dachshund. Elegant, modern, abstract wireframe style, strictly one continuous line per dog, no shading, no cross-hatching, no decorative swirls, no text, clean vector art.",
+  "usage": {
+   "promptTokenCount": 3396,
+   "candidatesTokenCount": 2473,
+   "totalTokenCount": 8220,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2158
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1238
+    }
+   ],
+   "thoughtsTokenCount": 2351,
+   "serviceTier": "standard"
+  }
+ },
+ "p7_dachshund_heart.png": {
+  "style_detected": "Black and white vector line art with hatching (not continuous line)",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Fails the 'continuous-line' brief; uses standard outlines and hatching.",
+     "Bottom loop of the heart on the left emblem is asymmetrical and awkward."
+    ],
+    "fixes": [
+     "Prompt for 'single continuous line, unbroken stroke'.",
+     "Redraw the bottom heart loop to be a clean, symmetrical point."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "T1 upscale flag: 15.52x needed for full front, will pixelate heavily.",
+     "T11 flag: 50774px of stray marks outside art.",
+     "Fine hatching lines may drop out or blur on textured cotton."
+    ],
+    "fixes": [
+     "Run through vectorizer or high-res AI upscaler.",
+     "Mask and delete all background stray pixels.",
+     "Thicken fine hatching lines to minimum 1pt."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Too much fine hatching in the ears and chest for small cap embroidery.",
+     "Heart collar charm on the right image is too small to stitch cleanly."
+    ],
+    "fixes": [
+     "Remove all interior hatching; keep only main structural outlines.",
+     "Enlarge the collar heart charm by 200% for the cap version."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Left: The line forming the bottom of the heart crosses over itself unnaturally.",
+     "Right: Back right paw blends ambiguously into the tail."
+    ],
+    "fixes": [
+     "Erase the crossover loop at the bottom of the left heart.",
+     "Define the separation between the back paw and tail with a clear outline."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic animal illustration."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "The hatching style might look messy on heavily wrinkled breeds (e.g., Pugs) if not controlled."
+    ],
+    "fixes": [
+     "Establish strict rules for interior line density across all 25 breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Line art dogs are highly saturated on Etsy/Amazon.",
+     "Lacks a unique hook to justify a premium price."
+    ],
+    "fixes": [
+     "Offer personalization (dog's name inside the top heart).",
+     "Print on premium garment colors (sand/navy) to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Prompt asks for Bichon-type poodle, but image is clearly a Dachshund (long snout, floppy ears).",
+     "As a Dachshund, the anatomy is decent, but the front legs on the right are slightly too thick."
+    ],
+    "fixes": [
+     "Update prompt to specify Dachshund if that is the intent.",
+     "Slim down the front legs slightly for accurate Dachshund proportions."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Instructed to ignore reference and give 5."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit too 'millennial craft fair' and basic."
+    ],
+    "fixes": [
+     "Make the lines chunkier or add an ironic/edgy text element."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "Wants to see her specific breed, but loves the heart motif."
+    ],
+    "fixes": [
+     "Ensure the full 25-breed rollout is completed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 3,
+    "problems": [
+     "Too cutesy with the double hearts."
+    ],
+    "fixes": [
+     "Remove the hearts for a more neutral, masculine option."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Needs to be easily recognizable as the recipient's exact dog."
+    ],
+    "fixes": [
+     "Keep the breed traits highly accurate."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like standard stock vector art, lacks genuine artistic flair."
+    ],
+    "fixes": [
+     "Actually use the 'continuous line' style requested in the brief for a more modern, artistic look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "Clean, high-contrast vector aesthetic suitable for dark and light shirts.",
+   "Highly adaptable template for a 25-breed series.",
+   "Expressive eyes that connect with the viewer."
+  ],
+  "must_fix_before_production": [
+   "Clean up the 50774px of stray marks to prevent print artifacts.",
+   "Fix the awkward crossover loop at the bottom of the left heart.",
+   "Vectorize and upscale to resolve the 15.52x resolution deficit."
+  ],
+  "prompt_rewrite": "A single continuous-line drawing of a Dachshund, minimalist black line art on pure white background. Left side: front-facing Dachshund head enclosed in a simple, perfect heart outline. Right side: full body seated Dachshund. Unbroken stroke, no hatching, no shading, flat vector style, clean bold lines, no text, apparel graphic design.",
+  "usage": {
+   "promptTokenCount": 3419,
+   "candidatesTokenCount": 2066,
+   "totalTokenCount": 7186,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1237
+    }
+   ],
+   "thoughtsTokenCount": 1701,
+   "serviceTier": "standard"
+  }
+ }
+}
