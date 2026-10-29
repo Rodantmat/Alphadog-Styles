@@ -13,12 +13,17 @@ ink = cv2.morphologyEx(ink.astype(np.uint8), cv2.MORPH_OPEN, np.ones((3, 3), np.
 n, lab, st, _ = cv2.connectedComponentsWithStats(ink.astype(np.uint8), 8)
 for i in range(1, n):                       # despeckle
     if st[i, cv2.CC_STAT_AREA] < 400: ink[lab == i] = False
-cols = ink.any(0); W = len(cols); lo, hi = int(W * .3), int(W * .7)
-gap, best, run = lo, 0, 0
-for x in range(lo, hi):                     # widest empty column run between front and back
-    run = run + 1 if not cols[x] else 0
-    if run > best: best, gap = run, x - run // 2
-parts = {"front": ink[:, :gap], "back": ink[:, gap:]}
+# split front emblem / back print: 2-means on component x-centres (weighted by area), robust when the two touch in x
+n, lab, st, cen = cv2.connectedComponentsWithStats(ink.astype(np.uint8), 8)
+W = ink.shape[1]; ids = [i for i in range(1, n)]
+xs_ = np.array([cen[i][0] for i in ids]); ar_ = np.array([st[i, cv2.CC_STAT_AREA] for i in ids], float)
+c = np.array([W * .22, W * .72])
+for _ in range(20):
+    asg = (np.abs(xs_ - c[1]) < np.abs(xs_ - c[0])).astype(int)
+    for k in (0, 1):
+        if (asg == k).any(): c[k] = np.average(xs_[asg == k], weights=ar_[asg == k])
+front_ids = [i for i, a_ in zip(ids, asg) if a_ == 0]; back_ids = [i for i, a_ in zip(ids, asg) if a_ == 1]
+parts = {"front": np.isin(lab, front_ids), "back": np.isin(lab, back_ids)}
 def dark_garment_mask(m):
     """Naive inversion turns black eyes/noses/lenses into glowing white blobs. For dark shirts: solid blobs become
     white ring + dark pupil (shirt shows through) + white catchlight, so eyes keep their focal contrast."""
