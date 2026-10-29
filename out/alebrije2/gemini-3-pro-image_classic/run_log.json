@@ -1,0 +1,110 @@
+[
+ {
+  "id": "classic_feather_jewel",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 862,
+   "candidatesTokenCount": 1402,
+   "totalTokenCount": 2532,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 346
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 268,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "classic_feather_sunset",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 864,
+   "candidatesTokenCount": 1390,
+   "totalTokenCount": 2535,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 348
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 281,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "classic_butterfly_jewel",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 861,
+   "candidatesTokenCount": 1360,
+   "totalTokenCount": 2469,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 345
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 248,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "classic_butterfly_sunset",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 863,
+   "candidatesTokenCount": 1359,
+   "totalTokenCount": 2455,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 347
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 233,
+   "serviceTier": "standard"
+  }
+ }
+]
