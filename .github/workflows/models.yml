@@ -1,0 +1,21 @@
+name: models
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: |
+          mkdir -p out/meta
+          curl -s "https://generativelanguage.googleapis.com/v1beta/models?pageSize=200" -H "x-goog-api-key: $GEMINI_API_KEY" | python3 -c "
+          import json,sys
+          m=json.load(sys.stdin).get('models',[])
+          out=[{'name':x['name'],'methods':x.get('supportedGenerationMethods'),'desc':x.get('description','')[:90]} for x in m if any(k in x['name'].lower() for k in ('image','imagen','banana','flash','pro'))]
+          json.dump(out,open('out/meta/models.json','w'),indent=1); print(len(m))"
+          git config user.name alphadog-bot; git config user.email alphadog-bot@users.noreply.github.com
+          git add out/meta; git commit -m "model list" || true
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
