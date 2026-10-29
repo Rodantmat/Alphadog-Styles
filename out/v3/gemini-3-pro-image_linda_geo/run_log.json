@@ -1,0 +1,83 @@
+[
+ {
+  "id": "mini_poodle_linda__classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 676,
+   "candidatesTokenCount": 1324,
+   "totalTokenCount": 2234,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 160
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 234,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "mini_poodle_linda__cool",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 676,
+   "candidatesTokenCount": 1300,
+   "totalTokenCount": 2253,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 160
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 277,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "mini_poodle_linda__heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 676,
+   "candidatesTokenCount": 1313,
+   "totalTokenCount": 2286,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 160
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 297,
+   "serviceTier": "standard"
+  }
+ }
+]
