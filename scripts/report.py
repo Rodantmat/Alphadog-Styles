@@ -13,7 +13,12 @@ CONCEPT_HARD = {"ai_artifact_inspector", "ip_compliance_reviewer", "breed_expert
 AUTO_FIX = {"T1": "AI upscale to 4500 px", "T2": "background removal to transparent PNG", "T3": "hard alpha threshold (no semi-transparent pixels)",
             "T4": "halftone gradients 35-45 LPI for dark garments", "T11": "despeckle / remove stray marks", "T9": "symmetry check"}
 NEEDS_REGEN = {"T7": "too low contrast for most garments", "T10": "art cropped by canvas", "T6": "detail lost at small sizes"}
-norm = lambda s: re.sub(r"^\d+\s*[-_.:]?\s*", "", (s or "")).strip().lower()
+ORDER = ["art_director", "print_technician", "embroidery_digitizer", "ai_artifact_inspector", "ip_compliance_reviewer", "series_designer",
+         "marketplace_merchandiser", "breed_expert", "likeness_judge", "genz_tiktok_shopper", "millennial_dog_mom", "male_owner_35_55", "gift_buyer", "art_lover"]
+def norm(s):
+    s = str(s or "").strip().lower()
+    if s.isdigit() and 1 <= int(s) <= len(ORDER): return ORDER[int(s) - 1]
+    return re.sub(r"^\d+\s*[-_.:]?\s*", "", s)
 rows = []
 for f in sorted(set(tech) | set(crit)):
     c = crit.get(f, {}); t = tech.get(f, {})

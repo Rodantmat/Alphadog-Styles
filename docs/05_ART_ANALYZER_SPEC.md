@@ -28,3 +28,13 @@ Hard fails: any text/letters/watermark; resemblance to a specific famous artwork
 - REWORK: fixable issues (prompt or post-processing).
 - REJECT: hard fail or score < 5.5.
 Weights: pros 60% (art director 10, print 10, artifacts 10, series 10, merchandiser 10, IP gate, others 4 each), customers 40%.
+
+## v1.1 changes (after first runs)
+- Verdict now judges CONCEPT (art + market + customers). Print/embroidery issues that the pipeline can fix automatically (upscale, background removal, hard alpha, despeckle, halftone) are listed as auto-fixes, not rejections. Only issues needing regeneration (low garment contrast, cropped art, detail lost small) block.
+- PASS bar: concept >= 7.5, >= 4/5 customer personas would buy, their average price >= $24 (our tee price), no concept hard-fail.
+- Critic model: gemini-3.1-pro-preview (2.5-pro retired for new users). ~7.5k tokens per review.
+- Role ids normalized (model sometimes returns numbers).
+
+## Results so far (Linda pilot)
+- Round 1 (14 styles): best concept 6.25 (tattoo flash), 6.23 (pop art), 6.11 (groovy 70s). Nothing passes. Common critique: "generic AI pet portrait with a style filter", customers' price ceiling $8–24, below our $24 tee.
+- Round 2 (9 REWORKs, prompts rewritten by critics): print-cleaner (white bg, hard edges, white coat) but blander; best 6.36 (folk embroidery). Lesson: don't fix print constraints by dumbing down the prompt — generate rich art, then fix production in automated post-processing.

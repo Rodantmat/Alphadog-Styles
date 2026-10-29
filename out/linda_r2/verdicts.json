@@ -362,6 +362,71 @@
   }
  },
  {
+  "file": "02_botanical_crown_r2.png",
+  "verdict": "REJECT",
+  "concept": 5.27,
+  "concept_pro": 5.58,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 15.6,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Soft edges and stray marks will ruin DTG print"
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T11 stray marks/specks outside the art (81710px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 6,
+   "art_lover": 5
+  },
+  "must_fix": [
+   "Remove 81k stray pixels",
+   "Harden outer edges to prevent underbase halos",
+   "Adjust contrast for white fur to separate from background"
+  ],
+  "strengths": [
+   "Pleasant color palette in crown",
+   "Accurate fluffy texture",
+   "Symmetrical composition"
+  ],
+  "style_detected": "Soft colored pencil botanical sketch",
+  "prompt_rewrite": "A crisp, high-contrast graphic illustration of a white fluffy Bichon Poodle head, front-facing, happy open mouth with tongue out, wearing a vibrant botanical flower crown with roses and daisies, bold clean outlines, solid white background, vector art style, no text --no soft edges, blurry shading",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too traditional",
+   "millennial_dog_mom": "Cute but a bit pale",
+   "male_owner_35_55": "Way too cutesy with the flower crown",
+   "gift_buyer": "Safe gift but might look cheap if printed poorly due to soft edges",
+   "art_lover": "Looks like a generic digital filter over a photo"
+  }
+ },
+ {
   "file": "14_master_gold_leaf_r2.png",
   "verdict": "REJECT",
   "concept": 5.19,
@@ -482,69 +547,6 @@
    "male_owner_35_55": "Way too cutesy and pink.",
    "gift_buyer": "Safe gift, but looks a bit cheap/clipart-y.",
    "art_lover": "Zero artistic soul."
-  }
- },
- {
-  "file": "02_botanical_crown_r2.png",
-  "verdict": "REJECT",
-  "concept": 0.0,
-  "concept_pro": 0.0,
-  "customers": 0.0,
-  "would_buy": "0/5",
-  "avg_price": 0.0,
-  "concept_hard_fails": [],
-  "print_score": 0,
-  "cap_score": 0,
-  "cap_ready": false,
-  "print_ready_raw": false,
-  "auto_fixes": [
-   "AI upscale to 4500 px",
-   "background removal to transparent PNG",
-   "despeckle / remove stray marks",
-   "hard alpha threshold (no semi-transparent pixels)"
-  ],
-  "needs_regen": [],
-  "production_notes": [],
-  "tech_flags": [
-   "T1 upscale >4x for full front",
-   "T2 background hard to separate (edge ~ background color)",
-   "T3 soft/semi-transparent edge risk -> underbase halo",
-   "T11 stray marks/specks outside the art (81710px) -> must be cleaned"
-  ],
-  "scores": {
-   "art_director": null,
-   "series_designer": null,
-   "marketplace_merchandiser": null,
-   "ai_artifact_inspector": null,
-   "breed_expert": null,
-   "likeness_judge": null,
-   "ip_compliance_reviewer": null,
-   "print_technician": null,
-   "embroidery_digitizer": null,
-   "genz_tiktok_shopper": null,
-   "millennial_dog_mom": null,
-   "male_owner_35_55": null,
-   "gift_buyer": null,
-   "art_lover": null
-  },
-  "must_fix": [
-   "Remove 81k stray pixels",
-   "Harden outer edges to prevent underbase halos",
-   "Adjust contrast for white fur to separate from background"
-  ],
-  "strengths": [
-   "Pleasant color palette in crown",
-   "Accurate fluffy texture",
-   "Symmetrical composition"
-  ],
-  "style_detected": "Soft colored pencil botanical sketch",
-  "prompt_rewrite": "A crisp, high-contrast graphic illustration of a white fluffy Bichon Poodle head, front-facing, happy open mouth with tongue out, wearing a vibrant botanical flower crown with roses and daisies, bold clean outlines, solid white background, vector art style, no text --no soft edges, blurry shading",
-  "customer_quotes": {
-   "genz_tiktok_shopper": "",
-   "millennial_dog_mom": "",
-   "male_owner_35_55": "",
-   "gift_buyer": "",
-   "art_lover": ""
   }
  }
 ]

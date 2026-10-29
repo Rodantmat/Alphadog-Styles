@@ -10,9 +10,9 @@ PASS needs: concept >= 7.5, >= 4/5 customers buy, avg price >= $24 (our tee pric
 | 4 | 08_tattoo_flash_r2 | **REWORK** | 5.59 | 5.85 | 5.2 | 2/5 | 22.6 | 5 | 4 | 2 | - |
 | 5 | 06_paper_cut_r2 | **REWORK** | 5.52 | 6.0 | 4.8 | 2/5 | 10.0 | 4 | 6 | 5 | - |
 | 6 | 04_woodblock_r2 | **REJECT** | 5.38 | 5.64 | 5.0 | 2/5 | 18.0 | 4 | 7 | 1 | - |
-| 7 | 14_master_gold_leaf_r2 | **REJECT** | 5.19 | 5.58 | 4.6 | 2/5 | 8.8 | 4 | 3 | 3 | - |
-| 8 | 07_pop_art_r2 | **REJECT** | 4.81 | 5.09 | 4.4 | 2/5 | 12.6 | 4 | 6 | 2 | - |
-| 9 | 02_botanical_crown_r2 | **REJECT** | 0.0 | 0.0 | 0.0 | 0/5 | 0.0 | 0 | 0 | 4 | - |
+| 7 | 02_botanical_crown_r2 | **REJECT** | 5.27 | 5.58 | 4.8 | 2/5 | 15.6 | 3 | 4 | 4 | - |
+| 8 | 14_master_gold_leaf_r2 | **REJECT** | 5.19 | 5.58 | 4.6 | 2/5 | 8.8 | 4 | 3 | 3 | - |
+| 9 | 07_pop_art_r2 | **REJECT** | 4.81 | 5.09 | 4.4 | 2/5 | 12.6 | 4 | 6 | 2 | - |
 
 ## 09_folk_embroidery_r2 — REWORK (concept 6.36)
 Reads as: faux folk floral embroidery
@@ -62,6 +62,14 @@ Must fix: Resolve massive 12.77x upscale needed for full front print; Adjust hea
 Auto-fixes in post: AI upscale to 4500 px
 Customer reactions: genz_tiktok_shopper: Too basic and millennial-core. | millennial_dog_mom: Cute, but a bit too clipart-like. | male_owner_35_55: A bit too cute. | gift_buyer: Safe, but maybe too generic. | art_lover: Completely lacks the requested woodblock style.
 
+## 02_botanical_crown_r2 — REJECT (concept 5.27)
+Reads as: Soft colored pencil botanical sketch
+Scores: art_director=6, series_designer=6, marketplace_merchandiser=5, ai_artifact_inspector=5, breed_expert=6, likeness_judge=4, ip_compliance_reviewer=7, print_technician=3, embroidery_digitizer=4, genz_tiktok_shopper=4, millennial_dog_mom=6, male_owner_35_55=3, gift_buyer=6, art_lover=5
+Strengths: Pleasant color palette in crown; Accurate fluffy texture; Symmetrical composition
+Must fix: Remove 81k stray pixels; Harden outer edges to prevent underbase halos; Adjust contrast for white fur to separate from background
+Auto-fixes in post: AI upscale to 4500 px; background removal to transparent PNG; despeckle / remove stray marks; hard alpha threshold (no semi-transparent pixels)
+Customer reactions: genz_tiktok_shopper: Too traditional | millennial_dog_mom: Cute but a bit pale | male_owner_35_55: Way too cutesy with the flower crown | gift_buyer: Safe gift but might look cheap if printed poorly due to soft edges | art_lover: Looks like a generic digital filter over a photo
+
 ## 14_master_gold_leaf_r2 — REJECT (concept 5.19)
 Reads as: digital bevel-emboss medallion with photorealistic pet portrait
 Scores: art_director=6, series_designer=6, marketplace_merchandiser=5, ai_artifact_inspector=5, breed_expert=6, likeness_judge=4, ip_compliance_reviewer=7, print_technician=4, embroidery_digitizer=3, genz_tiktok_shopper=3, millennial_dog_mom=6, male_owner_35_55=4, gift_buyer=6, art_lover=4
@@ -77,11 +85,3 @@ Strengths: Clean outlines; High contrast; Easily digitizable for embroidery
 Must fix: Remove 383px stray marks; Upscale 8x for print; Capture reference dog's open-mouth expression
 Auto-fixes in post: AI upscale to 4500 px; despeckle / remove stray marks
 Customer reactions: genz_tiktok_shopper: Too basic. Looks like a mom-shirt graphic. | millennial_dog_mom: Cute, but a bit generic. | male_owner_35_55: Way too cutesy and pink. | gift_buyer: Safe gift, but looks a bit cheap/clipart-y. | art_lover: Zero artistic soul.
-
-## 02_botanical_crown_r2 — REJECT (concept 0.0)
-Reads as: Soft colored pencil botanical sketch
-Scores: art_director=None, series_designer=None, marketplace_merchandiser=None, ai_artifact_inspector=None, breed_expert=None, likeness_judge=None, ip_compliance_reviewer=None, print_technician=None, embroidery_digitizer=None, genz_tiktok_shopper=None, millennial_dog_mom=None, male_owner_35_55=None, gift_buyer=None, art_lover=None
-Strengths: Pleasant color palette in crown; Accurate fluffy texture; Symmetrical composition
-Must fix: Remove 81k stray pixels; Harden outer edges to prevent underbase halos; Adjust contrast for white fur to separate from background
-Auto-fixes in post: AI upscale to 4500 px; background removal to transparent PNG; despeckle / remove stray marks; hard alpha threshold (no semi-transparent pixels)
-Customer reactions: genz_tiktok_shopper:  | millennial_dog_mom:  | male_owner_35_55:  | gift_buyer:  | art_lover: 

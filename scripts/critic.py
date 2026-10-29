@@ -32,7 +32,7 @@ Roles:
 {ROLES}
 Return ONLY JSON:
 {{{{"style_detected":"what style it actually reads as","roles":[{{{{"role":"<id>","score":0-10,"problems":["..."],"fixes":["..."],"hard_fail":false,"hard_fail_reason":"","would_buy":null,"max_price_usd":null}}}}],"top_strengths":["..."],"must_fix_before_production":["..."],"prompt_rewrite":"an improved full generation prompt for this style that fixes the issues while keeping the dog head front-facing, head-only, no text"}}}}
-Customers (10-14) must fill would_buy (true/false) and max_price_usd for a tee."""
+"role" must be the exact text id (e.g. "art_director", "gift_buyer"), never a number. Customers (10-14) must fill would_buy (true/false) and max_price_usd for a tee."""
 
 def call(img_path, style, techsum):
     parts = [{"inline_data": {"mime_type": "image/png", "data": base64.b64encode(open(img_path, "rb").read()).decode()}},
