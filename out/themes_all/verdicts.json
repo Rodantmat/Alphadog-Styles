@@ -1,0 +1,719 @@
+[
+ {
+  "file": "pfl31_sil_solid.png",
+  "verdict": "REWORK",
+  "concept": 6.57,
+  "concept_pro": 6.82,
+  "customers": 6.2,
+  "would_buy": "3/5",
+  "avg_price": 24.6,
+  "concept_hard_fails": [],
+  "print_score": 7,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (164477px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 7,
+   "series_designer": 7,
+   "marketplace_merchandiser": 7,
+   "ai_artifact_inspector": 7,
+   "breed_expert": 7,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 7,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 6,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 7,
+   "gift_buyer": 7,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Split image into two separate files for chest and back",
+   "Clean 164k px of stray background marks",
+   "Thicken internal lines for embroidery compatibility",
+   "Vectorize to fix upscale requirements"
+  ],
+  "strengths": [
+   "Clean, scalable vector style",
+   "Excellent breed recognition",
+   "High contrast ideal for POD printing"
+  ],
+  "style_detected": "High-contrast vector silhouette with negative space line art",
+  "prompt_rewrite": "A solid black silhouette of a French Bulldog head, front-facing, head-only, with minimal white negative-space line art defining facial wrinkles and features, crisp vector style, stark white background, no text, perfectly symmetrical.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too basic/millennial-core without edgy text or irony.",
+   "millennial_dog_mom": "Slightly stark, might prefer a softer or more detailed look.",
+   "male_owner_35_55": "None. Good masculine, clean aesthetic.",
+   "gift_buyer": "Safe, universally recognizable, but could look cheap if printed poorly.",
+   "art_lover": "Lacks artistic soul; looks like standard vector stock art."
+  }
+ },
+ {
+  "file": "pfl31_geo_poly.png",
+  "verdict": "REWORK",
+  "concept": 6.51,
+  "concept_pro": 6.45,
+  "customers": 6.6,
+  "would_buy": "3/5",
+  "avg_price": 24.0,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (160982px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 8,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 8,
+   "print_technician": 5,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 6,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 8,
+   "gift_buyer": 7,
+   "art_lover": 5
+  },
+  "must_fix": [
+   "Clean up the stray marks and specks outside the artwork.",
+   "Ensure the design is generated at a higher resolution or use a high-quality upscaler.",
+   "Thicken the finer lines to ensure they print cleanly."
+  ],
+  "strengths": [
+   "Clean, modern geometric style.",
+   "Clearly identifiable as a French Bulldog.",
+   "Well-suited for embroidery and screen printing (once cleaned up)."
+  ],
+  "style_detected": "geometric line art / low poly",
+  "prompt_rewrite": "A minimalist geometric line art illustration of a French Bulldog, featuring a front-facing head emblem on the left and a matching full-body sitting pose on the right. The design should use clean, bold black lines with consistent weight, creating a low-poly effect. Ensure perfect symmetry in the head emblem and accurate anatomical proportions for the breed. The background must be pure white, with no stray marks, text, or shading. The style should be easily adaptable to other dog breeds.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "It's a bit too plain. Needs some color or a cooler vibe.",
+   "millennial_dog_mom": "It's cute, but I prefer designs that look more like my actual dog.",
+   "male_owner_35_55": "I like the clean, geometric look. It's not too cutesy.",
+   "gift_buyer": "It's a safe gift for a Frenchie owner, but maybe a bit generic.",
+   "art_lover": "The geometric style is a bit clich\u00e9 and lacks originality."
+  }
+ },
+ {
+  "file": "pnb21_sil_solid.png",
+  "verdict": "REWORK",
+  "concept": 6.27,
+  "concept_pro": 6.58,
+  "customers": 5.8,
+  "would_buy": "3/5",
+  "avg_price": 21.6,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Stray marks and low resolution will ruin the physical print."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (203850px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 7,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 7,
+   "gift_buyer": 7,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize to fix the 9.84x upscale requirement",
+   "Remove the 203850px of stray marks flagged in the background",
+   "Thicken internal negative space lines for embroidery compatibility"
+  ],
+  "strengths": [
+   "Clean, high-contrast readability",
+   "Accurate general breed silhouette",
+   "Easily adaptable to 2-color printing"
+  ],
+  "style_detected": "high-contrast vector silhouette with negative space line art",
+  "prompt_rewrite": "black and white vector silhouette of a French Bulldog head, front-facing, clean negative space line art detailing wrinkles and facial features, solid black shapes, minimalist geometric style, pure white background, crisp edges, no text, no stray marks",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and 'millennial core'.",
+   "millennial_dog_mom": "A bit stark in pure black and white.",
+   "male_owner_35_55": "None, fits a clean, masculine aesthetic well.",
+   "gift_buyer": "Safe design, but might look cheap if print quality is poor.",
+   "art_lover": "Looks like generic vector stock art."
+  }
+ },
+ {
+  "file": "ppro3_sil_stencil.png",
+  "verdict": "REWORK",
+  "concept": 6.13,
+  "concept_pro": 6.49,
+  "customers": 5.6,
+  "would_buy": "3/5",
+  "avg_price": 15.0,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (205887px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 7,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 7,
+   "gift_buyer": 6,
+   "art_lover": 5
+  },
+  "must_fix": [
+   "Vectorize to fix 10.65x upscale requirement and remove 205887px of stray marks",
+   "Separate into two distinct files for left-chest and back printing",
+   "Fix eye asymmetry on the full-body graphic"
+  ],
+  "strengths": [
+   "High contrast and excellent readability",
+   "Easily adaptable for embroidery",
+   "Highly scalable style for a 25-breed series"
+  ],
+  "style_detected": "minimalist black and white vector stencil",
+  "prompt_rewrite": "A minimalist black and white vector stencil of a French Bulldog, solid black silhouette with bold white negative space lines defining facial features and wrinkles, clean sharp edges, geometric style, pure white background, front-facing head only, symmetrical eyes, no text, no background elements.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, lacks trendy aesthetic or irony",
+   "millennial_dog_mom": "Black and white is a bit stark",
+   "male_owner_35_55": "None, fits the bold, non-cutesy preference perfectly",
+   "gift_buyer": "Needs clear presentation as a premium front/back set",
+   "art_lover": "Lacks artistic soul, looks like standard clip art"
+  }
+ },
+ {
+  "file": "pfl31_geo_circles.png",
+  "verdict": "REWORK",
+  "concept": 6.03,
+  "concept_pro": 6.31,
+  "customers": 5.6,
+  "would_buy": "4/5",
+  "avg_price": 25.6,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (101976px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 7,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 5,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 6,
+   "millennial_dog_mom": 4,
+   "male_owner_35_55": 6,
+   "gift_buyer": 6,
+   "art_lover": 6
+  },
+  "must_fix": [
+   "Clean the 101976px of stray marks flagged in the tech data.",
+   "Vectorize the artwork to solve the upscaling requirement.",
+   "Redesign the back view to look less like a rabbit and more like a muscular bulldog."
+  ],
+  "strengths": [
+   "Highly scalable and ownable brand style.",
+   "Excellent candidate for embroidery and minimalist apparel.",
+   "High contrast and clean aesthetic."
+  ],
+  "style_detected": "Minimalist geometric intersecting circle line art",
+  "prompt_rewrite": "A minimalist geometric line art design of a French Bulldog, created entirely from intersecting perfect circles and clean curves. Black lines on a pure white background. Left side: front-facing head emblem. Right side: full-body back view emphasizing a broad bulldog chest. No text, vector style, crisp edges, perfect symmetry.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Likes the minimal, tattoo-like aesthetic.",
+   "millennial_dog_mom": "Too abstract and cold.",
+   "male_owner_35_55": "Appreciates the clean, non-cutesy design.",
+   "gift_buyer": "Safe, modern design that fits most tastes.",
+   "art_lover": "Enjoys the Bauhaus/geometric approach."
+  }
+ },
+ {
+  "file": "ppro3_geo_circles.png",
+  "verdict": "REWORK",
+  "concept": 5.93,
+  "concept_pro": 6.42,
+  "customers": 5.2,
+  "would_buy": "3/5",
+  "avg_price": 24.6,
+  "concept_hard_fails": [],
+  "print_score": 7,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (214805px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 7,
+   "breed_expert": 7,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 7,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Remove white background to eliminate stray marks.",
+   "Vectorize or upscale for the large back print.",
+   "Simplify inner eye details for the 4-inch embroidery file."
+  ],
+  "strengths": [
+   "Highly scalable and consistent style.",
+   "Excellent contrast for DTG printing.",
+   "Easily recognizable breed silhouette."
+  ],
+  "style_detected": "Geometric overlapping circle line art, minimalist vector",
+  "prompt_rewrite": "A front-facing, head-only portrait of a French Bulldog, executed in a minimalist geometric line art style using overlapping circles and precise curves. Thick, consistent black outlines on a pure white background. No shading, no gradients, no text. Symmetrical, clean vector aesthetic.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'millennial Etsy' aesthetic.",
+   "millennial_dog_mom": "A bit stark in just black and white.",
+   "male_owner_35_55": "None, likes the clean, non-cutesy look.",
+   "gift_buyer": "Safe design, but might feel a bit impersonal.",
+   "art_lover": "Feels like automated vector tracing, lacks soul."
+  }
+ },
+ {
+  "file": "pnb21_geo_circles.png",
+  "verdict": "REWORK",
+  "concept": 5.89,
+  "concept_pro": 6.22,
+  "customers": 5.4,
+  "would_buy": "3/5",
+  "avg_price": 23.2,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Unremoved white background and stray pixels will ruin DTG print."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (209972px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 7,
+   "series_designer": 6,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 7,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Remove the solid white background to create a transparent PNG.",
+   "Clean the 209972px of stray marks flagged by the tech data.",
+   "Simplify the internal overlapping lines for the 4-inch left chest version to ensure print/embroidery clarity."
+  ],
+  "strengths": [
+   "Highly scalable vector-style aesthetic.",
+   "Clear, recognizable French Bulldog silhouette.",
+   "Cohesive pairing between the head emblem and full-body print."
+  ],
+  "style_detected": "Geometric overlapping circle line art",
+  "prompt_rewrite": "A minimalist geometric line-art illustration of a French Bulldog head, front-facing, constructed entirely of overlapping black circles and clean curves on a pure white background. Thick, uniform black lines, vector logo style, no shading, no text, high contrast, clean intersections.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a tech startup logo, not a cool streetwear graphic.",
+   "millennial_dog_mom": "A bit stark and masculine.",
+   "male_owner_35_55": "None, likes the clean, non-cutesy aesthetic.",
+   "gift_buyer": "Might be too abstract for an older relative.",
+   "art_lover": "Feels like a generic vector stock asset, lacks soul."
+  }
+ },
+ {
+  "file": "ppro3_sil_solid.png",
+  "verdict": "REWORK",
+  "concept": 5.87,
+  "concept_pro": 6.18,
+  "customers": 5.4,
+  "would_buy": "3/5",
+  "avg_price": 16.4,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (190534px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 6,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 7,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the artwork to resolve the 9.6x upscale requirement.",
+   "Remove the white background (190,534px of stray marks) to ensure transparency.",
+   "Thicken internal detail lines for the cap embroidery file."
+  ],
+  "strengths": [
+   "High contrast and excellent readability at small sizes.",
+   "Easily adaptable for both DTG printing and embroidery.",
+   "Clear, unmistakable breed identification (French Bulldog)."
+  ],
+  "style_detected": "high-contrast vector silhouette, solid black and white stencil",
+  "prompt_rewrite": "A matching apparel graphic set featuring a French Bulldog. Left: a front-facing head-only emblem. Right: a full-body sitting French Bulldog. Style: high-contrast black and white vector silhouette, solid black fills with thick white negative space lines for facial details and wrinkles. Clean edges, pure white background, minimalist geometric stencil style, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a basic stock vector, not trendy or aesthetic enough.",
+   "millennial_dog_mom": "A bit stark in just black and white; lacks a cute factor.",
+   "male_owner_35_55": "None, it's a clean, masculine design suitable for a hoodie.",
+   "gift_buyer": "Safe but slightly generic gift option.",
+   "art_lover": "Lacks artistic soul; feels mass-produced and automated."
+  }
+ },
+ {
+  "file": "pnb21_sil_stencil.png",
+  "verdict": "REWORK",
+  "concept": 5.84,
+  "concept_pro": 6.27,
+  "customers": 5.2,
+  "would_buy": "3/5",
+  "avg_price": 15.0,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (202853px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Clean the 202853px of stray marks from the background",
+   "Create an inverted white version for navy shirts",
+   "Upscale 10x for the back print"
+  ],
+  "strengths": [
+   "Highly scalable across multiple breeds",
+   "Excellent contrast for thumbnail visibility",
+   "Easily adaptable for embroidery"
+  ],
+  "style_detected": "high-contrast vector stencil silhouette",
+  "prompt_rewrite": "A high-contrast black and white stencil silhouette of a French Bulldog, geometric themes, left side shows a small front-facing head-only emblem, right side shows a matching full-body sitting dog, clean vector style, bold negative space detailing, solid white background, no text, no stray marks.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, lacks irony or trendy aesthetic",
+   "millennial_dog_mom": "A bit stark and masculine",
+   "male_owner_35_55": "None, fits the demographic well",
+   "gift_buyer": "Needs to feel premium to justify as a gift",
+   "art_lover": "Looks like standard vector stock, lacks artistic soul"
+  }
+ },
+ {
+  "file": "pnb21_geo_poly.png",
+  "verdict": "REWORK",
+  "concept": 5.65,
+  "concept_pro": 5.82,
+  "customers": 5.4,
+  "would_buy": "3/5",
+  "avg_price": 21.4,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (220400px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 6,
+   "millennial_dog_mom": 4,
+   "male_owner_35_55": 7,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize to fix the 8.79x upscale requirement.",
+   "Clean the 220,400px of stray marks from the background.",
+   "Simplify the chest emblem mesh for embroidery viability."
+  ],
+  "strengths": [
+   "Clean, bold lines suitable for multiple print methods.",
+   "Easily scalable to a 25-breed series.",
+   "Appeals strongly to male demographics."
+  ],
+  "style_detected": "Geometric low-poly black and white line art",
+  "prompt_rewrite": "A minimalist geometric low-poly line art illustration of a French Bulldog, black lines on a pure white background. Left side: front-facing head only, simplified mesh. Right side: full body sitting. Clean, bold, symmetrical vector style, no shading, no text, pure white background.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit basic, feels like 2016 hipster art.",
+   "millennial_dog_mom": "Too harsh and masculine.",
+   "male_owner_35_55": "None. Fits my preference for non-cutesy, graphic designs.",
+   "gift_buyer": "Safe design, but feels a bit impersonal.",
+   "art_lover": "Derivative stock-vector aesthetic."
+  }
+ },
+ {
+  "file": "ppro3_geo_poly.png",
+  "verdict": "REWORK",
+  "concept": 5.63,
+  "concept_pro": 5.91,
+  "customers": 5.2,
+  "would_buy": "3/5",
+  "avg_price": 20.4,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (192689px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 7,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize the image to allow for 9.6x upscaling without quality loss.",
+   "Remove the 192k pixels of stray marks/background noise.",
+   "Simplify the smallest polygons for the 4-inch left-chest version."
+  ],
+  "strengths": [
+   "Highly scalable across multiple breeds.",
+   "Excellent for embroidery and high-contrast printing.",
+   "Clear, unmistakable breed recognition."
+  ],
+  "style_detected": "Geometric low-poly line art",
+  "prompt_rewrite": "A dual-image apparel design featuring a French Bulldog in a minimalist geometric low-poly style. Left side: a front-facing, head-only emblem. Right side: a matching full-body sitting pose. Black thick line art with solid black and white polygonal fills, pure white background, perfectly symmetrical head, high contrast, no text, vector art style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Low-poly trend feels dated (2014 era).",
+   "millennial_dog_mom": "A bit harsh and masculine.",
+   "male_owner_35_55": "None. Fits demographic preferences perfectly.",
+   "gift_buyer": "Might look cheap if print is faded.",
+   "art_lover": "Looks like standard stock vector art."
+  }
+ },
+ {
+  "file": "pfl31_sil_stencil.png",
+  "verdict": "REJECT",
+  "concept": 5.32,
+  "concept_pro": 5.67,
+  "customers": 4.8,
+  "would_buy": "3/5",
+  "avg_price": 19.6,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution too low for full front print; background artifacts will ruin dark shirts."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (174182px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize and upscale to resolve the 10.47x size deficit.",
+   "Remove the 174,182 stray background pixels to prevent white boxes on dark shirts.",
+   "Fix the melted linework on the full body's front leg."
+  ],
+  "strengths": [
+   "High contrast works well for basic screen printing.",
+   "Clear, recognizable breed silhouette.",
+   "Appeals to male demographic seeking non-cutesy apparel."
+  ],
+  "style_detected": "High-contrast black and white vector stencil",
+  "prompt_rewrite": "A high-contrast black and white vector stencil of a French Bulldog, front-facing head only, clean bold lines, solid black shapes with thick white negative space cutouts for wrinkles and facial features, minimalist, symmetrical, pure white background, no text, no shading, flat vector style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit basic. Needs more edge or irony.",
+   "millennial_dog_mom": "Cute, but the eyes are a little intense.",
+   "male_owner_35_55": "Clean and not overly cutesy.",
+   "gift_buyer": "Safe bet, but looks like a generic stock image.",
+   "art_lover": "Lacks artistic soul. Looks like an automated live-trace."
+  }
+ }
+]

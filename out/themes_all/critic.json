@@ -1,0 +1,2829 @@
+{
+ "pfl31_geo_circles.png": {
+  "style_detected": "Minimalist geometric intersecting circle line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 7,
+    "problems": [
+     "Strong geometric execution on the head.",
+     "The back view (right) is too abstract and resembles a rabbit due to the ear and body proportions."
+    ],
+    "fixes": [
+     "Widen the shoulders on the back view to reflect a bulldog's stocky build.",
+     "Adjust ear shape on the back view to match the iconic Frenchie bat ears."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Tech data flags 101976px of stray marks outside the art.",
+     "Requires significant upscaling (9.64x) for full front/back printing."
+    ],
+    "fixes": [
+     "Run a strict background removal and despeckle filter.",
+     "Vectorize the image to allow infinite scaling without pixelation."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Some intersecting lines create very tiny enclosed shapes (e.g., near the eyes) that will be hard to stitch cleanly."
+    ],
+    "fixes": [
+     "Merge the smallest geometric fragments into larger adjacent shapes.",
+     "Ensure all black lines are at least 1.5mm thick for the 4-inch chest emblem."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "A few circle intersections do not snap perfectly, creating slight wobbles.",
+     "The nose geometry on the left emblem is slightly asymmetrical."
+    ],
+    "fixes": [
+     "Re-draw in Illustrator using the shape builder tool to ensure mathematically perfect curves.",
+     "Mirror the left half of the face to the right for perfect symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "No IP issues detected. Generic geometric style."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Highly scalable concept.",
+     "Long-haired breeds might be difficult to translate into this strict circle-geometry style."
+    ],
+    "fixes": [
+     "Develop a secondary geometric rule (e.g., intersecting ovals) for fluffy breeds to maintain brand consistency."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "High contrast reads well as a thumbnail.",
+     "Might be perceived as too simple or generic without a strong brand context."
+    ],
+    "fixes": [
+     "Mock this up on premium heathered garments to elevate the perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 5,
+    "problems": [
+     "Head emblem reads clearly as a French Bulldog.",
+     "Back view lacks the characteristic broad chest and narrow hips of a Frenchie; looks like a rabbit."
+    ],
+    "fixes": [
+     "Redesign the back view to emphasize the bulldog's muscular, top-heavy silhouette."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "Likes the minimal, tattoo-like aesthetic.",
+     "Back view is a bit confusing."
+    ],
+    "fixes": [
+     "Make the back view more obviously a dog."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 4,
+    "problems": [
+     "Too abstract and cold.",
+     "Prefers designs that show the dog's cute expression."
+    ],
+    "fixes": [
+     "Add slight variations in line weight to give it more warmth."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "Appreciates the clean, non-cutesy design.",
+     "Would wear this on a cap or hoodie."
+    ],
+    "fixes": [
+     "Keep it strictly black and white."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe, modern design that fits most tastes.",
+     "Needs to be clearly recognizable as the specific breed."
+    ],
+    "fixes": [
+     "Fix the back view so the recipient knows it's a Frenchie."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 6,
+    "problems": [
+     "Enjoys the Bauhaus/geometric approach.",
+     "The execution feels a bit automated rather than thoughtfully composed."
+    ],
+    "fixes": [
+     "Refine the intersecting curves to create more dynamic negative space."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 30
+   }
+  ],
+  "top_strengths": [
+   "Highly scalable and ownable brand style.",
+   "Excellent candidate for embroidery and minimalist apparel.",
+   "High contrast and clean aesthetic."
+  ],
+  "must_fix_before_production": [
+   "Clean the 101976px of stray marks flagged in the tech data.",
+   "Vectorize the artwork to solve the upscaling requirement.",
+   "Redesign the back view to look less like a rabbit and more like a muscular bulldog."
+  ],
+  "prompt_rewrite": "A minimalist geometric line art design of a French Bulldog, created entirely from intersecting perfect circles and clean curves. Black lines on a pure white background. Left side: front-facing head emblem. Right side: full-body back view emphasizing a broad bulldog chest. No text, vector style, crisp edges, perfect symmetry.",
+  "usage": {
+   "promptTokenCount": 3421,
+   "candidatesTokenCount": 2026,
+   "totalTokenCount": 6867,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1420,
+   "serviceTier": "standard"
+  }
+ },
+ "pfl31_geo_poly.png": {
+  "style_detected": "geometric line art / low poly",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "The geometric style is executed well, but the composition feels a bit unbalanced with the two elements side-by-side.",
+     "The line weights are inconsistent, especially around the eyes and nose.",
+     "Lacks a strong focal point or 'wow factor' to elevate it above standard POD designs."
+    ],
+    "fixes": [
+     "Ensure consistent line weights throughout the design.",
+     "Consider adding a subtle background element or color accent to create a stronger focal point.",
+     "Refine the composition to better balance the two elements."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "The design requires significant upscaling (7.41x) for a full front print, which may result in pixelation or blurriness.",
+     "There are a large number of stray marks/specks outside the art (160982px) that must be cleaned before printing.",
+     "Some of the finer lines may not print well, especially on darker garments."
+    ],
+    "fixes": [
+     "Clean up the stray marks and specks outside the main artwork.",
+     "Ensure the design is generated at a higher resolution or use a high-quality upscaler.",
+     "Thicken the finer lines to ensure they print clearly."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "The design is generally well-suited for embroidery, but some of the smaller geometric shapes may need to be simplified or enlarged.",
+     "The line weights may need to be adjusted to ensure they stitch cleanly."
+    ],
+    "fixes": [
+     "Simplify the smaller geometric shapes, especially around the eyes and nose.",
+     "Ensure all lines are at least 0.05 inches thick."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "There are some minor inconsistencies in the geometric shapes, particularly around the ears and muzzle.",
+     "The eyes on the full-body dog look slightly asymmetrical.",
+     "The stray marks outside the art are a significant issue."
+    ],
+    "fixes": [
+     "Refine the geometric shapes to ensure consistency and symmetry.",
+     "Adjust the eyes on the full-body dog to ensure they match.",
+     "Clean up the stray marks outside the artwork."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 8,
+    "problems": [
+     "No obvious IP issues detected. The design is a generic geometric representation of a French Bulldog."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "The geometric style is recognizable and could work well across different breeds.",
+     "However, it may be challenging to capture the unique characteristics of some breeds (e.g., long-haired dogs) using this style."
+    ],
+    "fixes": [
+     "Develop guidelines for adapting the geometric style to different coat types and body shapes.",
+     "Ensure the core characteristics of each breed are clearly identifiable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "The design is clean and modern, but it may blend in with other geometric animal designs on the market.",
+     "The lack of color or a strong focal point may reduce its stopping power as a thumbnail."
+    ],
+    "fixes": [
+     "Consider adding a subtle color accent or background element to make the design stand out.",
+     "Ensure the thumbnail clearly shows both the chest emblem and the full-body print."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 8,
+    "problems": [
+     "The design clearly reads as a French Bulldog, with the characteristic bat ears, short muzzle, and compact body."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "The design is a French Bulldog, while the reference photo is a Bichon-type poodle. They do not match."
+    ],
+    "fixes": [
+     "Ensure the design matches the intended breed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "It's a bit too plain. Needs some color or a cooler vibe."
+    ],
+    "fixes": [
+     "Add some neon accents or a glitch effect."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "It's cute, but I prefer designs that look more like my actual dog."
+    ],
+    "fixes": [
+     "Offer customization options for different coat colors."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 8,
+    "problems": [
+     "I like the clean, geometric look. It's not too cutesy."
+    ],
+    "fixes": [
+     "None, it's good as is."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 30
+   },
+   {
+    "role": "gift_buyer",
+    "score": 7,
+    "problems": [
+     "It's a safe gift for a Frenchie owner, but maybe a bit generic."
+    ],
+    "fixes": [
+     "Offer it on a variety of products (mugs, tote bags, etc.)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 5,
+    "problems": [
+     "The geometric style is a bit clich\u00e9 and lacks originality."
+    ],
+    "fixes": [
+     "Incorporate more unique or unexpected geometric shapes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   }
+  ],
+  "top_strengths": [
+   "Clean, modern geometric style.",
+   "Clearly identifiable as a French Bulldog.",
+   "Well-suited for embroidery and screen printing (once cleaned up)."
+  ],
+  "must_fix_before_production": [
+   "Clean up the stray marks and specks outside the artwork.",
+   "Ensure the design is generated at a higher resolution or use a high-quality upscaler.",
+   "Thicken the finer lines to ensure they print cleanly."
+  ],
+  "prompt_rewrite": "A minimalist geometric line art illustration of a French Bulldog, featuring a front-facing head emblem on the left and a matching full-body sitting pose on the right. The design should use clean, bold black lines with consistent weight, creating a low-poly effect. Ensure perfect symmetry in the head emblem and accurate anatomical proportions for the breed. The background must be pure white, with no stray marks, text, or shading. The style should be easily adaptable to other dog breeds.",
+  "usage": {
+   "promptTokenCount": 3421,
+   "candidatesTokenCount": 2229,
+   "totalTokenCount": 5650,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ "pfl31_sil_solid.png": {
+  "style_detected": "High-contrast vector silhouette with negative space line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 7,
+    "problems": [
+     "Layout contains two disconnected elements on one canvas.",
+     "Style is clean but leans slightly toward generic stock vector."
+    ],
+    "fixes": [
+     "Split into two separate production files (chest and back).",
+     "Introduce subtle stylized angles to make the silhouette proprietary."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 7,
+    "problems": [
+     "Tech data flags 164k px of stray marks outside the main art.",
+     "Full front/back requires >4x upscale, risking pixelation."
+    ],
+    "fixes": [
+     "Run a strict background removal/cleanup pass.",
+     "Vectorize the image before scaling to garment size."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Fine negative-space lines (wrinkles, paws) will close up at 4-inch cap size."
+    ],
+    "fixes": [
+     "Thicken all internal white lines to >= 0.05 inches.",
+     "Simplify facial wrinkles for the left-chest version."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 7,
+    "problems": [
+     "Minor asymmetry in the full-body dog's chest lines and paw placement."
+    ],
+    "fixes": [
+     "Mirror or manually adjust the chest line weights for perfect symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. It is a generic breed silhouette."
+    ],
+    "fixes": [
+     "No action needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Highly scalable, but requires strict line-weight rules to look cohesive across 25 breeds."
+    ],
+    "fixes": [
+     "Establish a standard stroke width for all negative space details across the series."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 7,
+    "problems": [
+     "Solid black silhouettes are common; lacks immediate stopping power without context."
+    ],
+    "fixes": [
+     "Mock up on premium heather or sand garments to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Excellent French Bulldog proportions (bat ears, flat muzzle, stocky chest)."
+    ],
+    "fixes": [
+     "None required for breed accuracy."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Instructed to ignore reference photo."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "A bit too basic/millennial-core without edgy text or irony."
+    ],
+    "fixes": [
+     "Pair with bold, ironic streetwear typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "Slightly stark, might prefer a softer or more detailed look."
+    ],
+    "fixes": [
+     "Print on pastel or heathered blanks to soften the contrast."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 7,
+    "problems": [
+     "None. Good masculine, clean aesthetic."
+    ],
+    "fixes": [
+     "Offer on dark grey or navy hoodies."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 32
+   },
+   {
+    "role": "gift_buyer",
+    "score": 7,
+    "problems": [
+     "Safe, universally recognizable, but could look cheap if printed poorly."
+    ],
+    "fixes": [
+     "Ensure crisp vector printing to maintain premium feel."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul; looks like standard vector stock art."
+    ],
+    "fixes": [
+     "Introduce slight hand-drawn imperfections or texture to the edges."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Clean, scalable vector style",
+   "Excellent breed recognition",
+   "High contrast ideal for POD printing"
+  ],
+  "must_fix_before_production": [
+   "Split image into two separate files for chest and back",
+   "Clean 164k px of stray background marks",
+   "Thicken internal lines for embroidery compatibility",
+   "Vectorize to fix upscale requirements"
+  ],
+  "prompt_rewrite": "A solid black silhouette of a French Bulldog head, front-facing, head-only, with minimal white negative-space line art defining facial wrinkles and features, crisp vector style, stark white background, no text, perfectly symmetrical.",
+  "usage": {
+   "promptTokenCount": 3430,
+   "candidatesTokenCount": 1824,
+   "totalTokenCount": 7455,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1248
+    }
+   ],
+   "thoughtsTokenCount": 2201,
+   "serviceTier": "standard"
+  }
+ },
+ "pfl31_sil_stencil.png": {
+  "style_detected": "High-contrast black and white vector stencil",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Eyes appear slightly manic due to the stark white ring pupil design.",
+     "White linework on the full body is haphazard compared to the clean head emblem."
+    ],
+    "fixes": [
+     "Simplify eye cutouts to solid shapes.",
+     "Unify line weight and negative space logic between head and body."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (10.47x) will cause severe pixelation.",
+     "174k stray pixels will print as a faint white box on dark garments."
+    ],
+    "fixes": [
+     "Vectorize the artwork to solve resolution limits.",
+     "Strictly remove all background data to ensure pure transparency."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution too low for full front print; background artifacts will ruin dark shirts.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Full body has too many thin, jagged white lines that won't stitch cleanly.",
+     "Eye details on the head are too complex for a 4-inch cap."
+    ],
+    "fixes": [
+     "Use only the head for caps.",
+     "Thicken all white negative space lines to >0.05 inches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Right eye on the head emblem has a misshapen pupil.",
+     "White lines on the sitting dog's front right leg look melted."
+    ],
+    "fixes": [
+     "Redraw pupils as clean, symmetrical dots.",
+     "Clean up leg linework to follow actual anatomy."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Standard generic dog silhouette."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Style relies heavily on wrinkles/folds, which may not translate well to fluffy breeds without looking blobby."
+    ],
+    "fixes": [
+     "Establish a strict rule for how fur texture is handled in negative space for long-haired breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Very common style on POD platforms. Lacks differentiation."
+    ],
+    "fixes": [
+     "Add a unique brand element or geometric framing to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Bat ears and flat face read correctly as a French Bulldog.",
+     "Muzzle on the full body looks slightly too long/boxy compared to the head."
+    ],
+    "fixes": [
+     "Shorten the muzzle slightly on the full-body version to match the head emblem."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A as per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit basic. Needs more edge or irony."
+    ],
+    "fixes": [
+     "Print oversized on a vintage wash tee."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but the eyes are a little intense."
+    ],
+    "fixes": [
+     "Soften the expression."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "Clean and not overly cutesy."
+    ],
+    "fixes": [
+     "Keep it simple."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Safe bet, but looks like a generic stock image."
+    ],
+    "fixes": [
+     "Offer personalization options."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Lacks artistic soul. Looks like an automated live-trace."
+    ],
+    "fixes": [
+     "Introduce intentional, stylized brushstrokes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 10
+   }
+  ],
+  "top_strengths": [
+   "High contrast works well for basic screen printing.",
+   "Clear, recognizable breed silhouette.",
+   "Appeals to male demographic seeking non-cutesy apparel."
+  ],
+  "must_fix_before_production": [
+   "Vectorize and upscale to resolve the 10.47x size deficit.",
+   "Remove the 174,182 stray background pixels to prevent white boxes on dark shirts.",
+   "Fix the melted linework on the full body's front leg."
+  ],
+  "prompt_rewrite": "A high-contrast black and white vector stencil of a French Bulldog, front-facing head only, clean bold lines, solid black shapes with thick white negative space cutouts for wrinkles and facial features, minimalist, symmetrical, pure white background, no text, no shading, flat vector style.",
+  "usage": {
+   "promptTokenCount": 3425,
+   "candidatesTokenCount": 1918,
+   "totalTokenCount": 7569,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1243
+    }
+   ],
+   "thoughtsTokenCount": 2226,
+   "serviceTier": "standard"
+  }
+ },
+ "pnb21_geo_circles.png": {
+  "style_detected": "Geometric overlapping circle line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 7,
+    "problems": [
+     "Line weights are entirely uniform, lacking visual hierarchy.",
+     "Design feels slightly more like a corporate logo than apparel art."
+    ],
+    "fixes": [
+     "Introduce 2-3 distinct line weights to separate outline from inner details.",
+     "Add a subtle offset shadow or single accent color."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Tech data flags massive stray marks (209972px) outside the art.",
+     "Solid white background will print as a heavy, sweaty block on dark shirts."
+    ],
+    "fixes": [
+     "Strictly knock out the white background to transparent.",
+     "Run a despeckle filter to clear the flagged stray marks."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Unremoved white background and stray pixels will ruin DTG print.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Too many overlapping internal circles for a clean 4-inch cap stitch.",
+     "Tiny enclosed spaces (like the nose details) will become thread knots."
+    ],
+    "fixes": [
+     "Delete 50% of the internal intersecting lines for the left-chest/cap version.",
+     "Simplify the nose and eye highlights into solid satin stitches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Some circle intersections don't perfectly align, creating tiny awkward gaps.",
+     "The back-print dog's front right paw has confusing overlapping geometry."
+    ],
+    "fixes": [
+     "Manually snap vector nodes together at intersections.",
+     "Simplify the paw geometry to read clearly as toes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Highly generic geometric style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "This strict circle-only logic will be very difficult to apply to long-haired or floppy-eared breeds."
+    ],
+    "fixes": [
+     "Expand the style guide to allow ellipses and sweeping curves for long fur."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Black and white line art blends into the saturated market.",
+     "Lacks stopping power in a 150px thumbnail."
+    ],
+    "fixes": [
+     "Offer on trendy garment colors (sand, heather gray).",
+     "Add a single pop of neon or pastel color to one geometric shape."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Does not read as a Bichon (per role prompt), but perfectly reads as a French Bulldog (per main brief)."
+    ],
+    "fixes": [
+     "None for Frenchie. If Bichon is needed, completely redraw with cloud-like curves."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Looks like a tech startup logo, not a cool streetwear graphic."
+    ],
+    "fixes": [
+     "Make the lines thicker and add a distressed texture."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit stark and masculine."
+    ],
+    "fixes": [
+     "Print it on a soft pastel hoodie."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 7,
+    "problems": [
+     "None, likes the clean, non-cutesy aesthetic."
+    ],
+    "fixes": [
+     "Keep it on dark heather or navy shirts."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 30
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Might be too abstract for an older relative."
+    ],
+    "fixes": [
+     "Ensure the breed silhouette remains instantly recognizable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Feels like a generic vector stock asset, lacks soul."
+    ],
+    "fixes": [
+     "Introduce slight organic imperfections to the lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Highly scalable vector-style aesthetic.",
+   "Clear, recognizable French Bulldog silhouette.",
+   "Cohesive pairing between the head emblem and full-body print."
+  ],
+  "must_fix_before_production": [
+   "Remove the solid white background to create a transparent PNG.",
+   "Clean the 209972px of stray marks flagged by the tech data.",
+   "Simplify the internal overlapping lines for the 4-inch left chest version to ensure print/embroidery clarity."
+  ],
+  "prompt_rewrite": "A minimalist geometric line-art illustration of a French Bulldog head, front-facing, constructed entirely of overlapping black circles and clean curves on a pure white background. Thick, uniform black lines, vector logo style, no shading, no text, high contrast, clean intersections.",
+  "usage": {
+   "promptTokenCount": 3420,
+   "candidatesTokenCount": 1948,
+   "totalTokenCount": 6985,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1238
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1617,
+   "serviceTier": "standard"
+  }
+ },
+ "pnb21_geo_poly.png": {
+  "style_detected": "Geometric low-poly black and white line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Execution is clean but generic.",
+     "Lacks a unique brand signature to separate it from stock vectors."
+    ],
+    "fixes": [
+     "Introduce a single pop of brand color.",
+     "Vary line weights (thicker outlines, thinner interior mesh)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "High upscale needed (8.79x) for back print will cause pixelation.",
+     "Data flags 220,400px of stray marks outside the art."
+    ],
+    "fixes": [
+     "Vectorize the image before printing.",
+     "Run a strict background removal/cleanup script."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Dense polygon clusters around the eyes/snout on the 4-inch emblem.",
+     "Risk of thread bunching and needle breaks in tight corners."
+    ],
+    "fixes": [
+     "Simplify the mesh for the chest emblem.",
+     "Remove interior eye details for sizes under 3 inches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Asymmetrical pupil reflections in the head emblem.",
+     "Slightly jumbled geometry on the full-body dog's front right paw."
+    ],
+    "fixes": [
+     "Manually mirror the eye polygons.",
+     "Redraw the paw lines to match the clean angles of the body."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Standard geometric abstraction."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Style works well for short-coated breeds like Frenchies.",
+     "Strict straight lines will struggle to represent long-haired breeds (e.g., Collies) accurately."
+    ],
+    "fixes": [
+     "Develop a specific geometric abstraction rule for long fur to maintain series consistency."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Highly saturated style on POD marketplaces.",
+     "Low differentiation leads to price competition."
+    ],
+    "fixes": [
+     "Market as a premium streetwear set.",
+     "Use edgy, high-contrast lifestyle mockups."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Bat ears and wide stance read clearly as a French Bulldog.",
+     "Muzzle on the full-body version is slightly too elongated for breed standard."
+    ],
+    "fixes": [
+     "Flatten the snout geometry on the full-body graphic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "A bit basic, feels like 2016 hipster art."
+    ],
+    "fixes": [
+     "Print the back graphic massively oversized."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 4,
+    "problems": [
+     "Too harsh and masculine.",
+     "Lacks the cute factor I want for my dog."
+    ],
+    "fixes": [
+     "Offer on pastel-colored garments."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 7,
+    "problems": [
+     "None. Fits my preference for non-cutesy, graphic designs."
+    ],
+    "fixes": [
+     "Keep it on dark heather or navy shirts."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 30
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but feels a bit impersonal."
+    ],
+    "fixes": [
+     "Allow adding the dog's name in a matching geometric font."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Derivative stock-vector aesthetic.",
+     "Lacks artistic soul or originality."
+    ],
+    "fixes": [
+     "Incorporate organic textures inside the polygons."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean, bold lines suitable for multiple print methods.",
+   "Easily scalable to a 25-breed series.",
+   "Appeals strongly to male demographics."
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix the 8.79x upscale requirement.",
+   "Clean the 220,400px of stray marks from the background.",
+   "Simplify the chest emblem mesh for embroidery viability."
+  ],
+  "prompt_rewrite": "A minimalist geometric low-poly line art illustration of a French Bulldog, black lines on a pure white background. Left side: front-facing head only, simplified mesh. Right side: full body sitting. Clean, bold, symmetrical vector style, no shading, no text, pure white background.",
+  "usage": {
+   "promptTokenCount": 3421,
+   "candidatesTokenCount": 1928,
+   "totalTokenCount": 7149,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    }
+   ],
+   "thoughtsTokenCount": 1800,
+   "serviceTier": "standard"
+  }
+ },
+ "pnb21_sil_solid.png": {
+  "style_detected": "high-contrast vector silhouette with negative space line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 7,
+    "problems": [
+     "Lacks a unique brand signature; resembles standard stock vector art.",
+     "Composition is safe but lacks a 'wow' factor to stand out."
+    ],
+    "fixes": [
+     "Introduce a subtle geometric framing element.",
+     "Add a distinct, ownable stylization to the negative space lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Severe upscale needed (9.84x) for full front will cause pixelation.",
+     "Massive stray marks (203850px) flagged in tech data will print as dirty specks."
+    ],
+    "fixes": [
+     "Vectorize the image to solve resolution issues.",
+     "Aggressively clean the background to pure transparency."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Stray marks and low resolution will ruin the physical print.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Fine negative space lines (wrinkles, paws) may close up when scaled to 4 inches.",
+     "Eye catchlights are too small for clean stitching."
+    ],
+    "fixes": [
+     "Thicken internal white lines to >= 0.05 inches.",
+     "Simplify eye details into single, larger satin stitches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Tech data indicates significant stray marks outside the main art.",
+     "Slight asymmetry in the sitting dog's front paw toes."
+    ],
+    "fixes": [
+     "Erase all background artifacts.",
+     "Redraw front paws on the full-body graphic for symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 8,
+    "problems": [
+     "Generic style, low risk, but closely mirrors common stock vectors."
+    ],
+    "fixes": [
+     "Ensure generation is entirely original."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Translating this smooth-coat negative space style to long-haired breeds (e.g., Afghan Hound) will be challenging."
+    ],
+    "fixes": [
+     "Develop specific guidelines for rendering fur textures using this exact line-weight."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Highly saturated market for basic dog silhouettes.",
+     "Thumbnail may not stop scrolling due to lack of color or novelty."
+    ],
+    "fixes": [
+     "Use high-contrast, brightly colored apparel mockups.",
+     "Bundle as a matching set to increase perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Ears are slightly too rounded at the tips for a perfect Frenchie standard.",
+     "Muzzle could be slightly wider."
+    ],
+    "fixes": [
+     "Broaden the ear bases and flatten the tips slightly.",
+     "Widen the jowls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored reference photo as instructed."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic and 'millennial core'.",
+     "Lacks irony or aesthetic edge."
+    ],
+    "fixes": [
+     "Print oversized on a vintage wash tee."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 7,
+    "problems": [
+     "A bit stark in pure black and white."
+    ],
+    "fixes": [
+     "Offer in softer garment colors like heather gray or sand."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 7,
+    "problems": [
+     "None, fits a clean, masculine aesthetic well."
+    ],
+    "fixes": [
+     "Print on dark heather hoodies."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 7,
+    "problems": [
+     "Safe design, but might look cheap if print quality is poor."
+    ],
+    "fixes": [
+     "Ensure crisp edges in production."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like generic vector stock art.",
+     "Lacks artistic soul or hand-drawn warmth."
+    ],
+    "fixes": [
+     "Introduce a linocut or woodblock texture to the solid black areas."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Clean, high-contrast readability",
+   "Accurate general breed silhouette",
+   "Easily adaptable to 2-color printing"
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix the 9.84x upscale requirement",
+   "Remove the 203850px of stray marks flagged in the background",
+   "Thicken internal negative space lines for embroidery compatibility"
+  ],
+  "prompt_rewrite": "black and white vector silhouette of a French Bulldog head, front-facing, clean negative space line art detailing wrinkles and facial features, solid black shapes, minimalist geometric style, pure white background, crisp edges, no text, no stray marks",
+  "usage": {
+   "promptTokenCount": 3421,
+   "candidatesTokenCount": 1956,
+   "totalTokenCount": 7290,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    }
+   ],
+   "thoughtsTokenCount": 1913,
+   "serviceTier": "standard"
+  }
+ },
+ "pnb21_sil_stencil.png": {
+  "style_detected": "high-contrast vector stencil silhouette",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Slightly generic vector stock appearance",
+     "Lacks the requested geometric themes from the brand brief"
+    ],
+    "fixes": [
+     "Incorporate subtle geometric framing or angles to elevate brand identity",
+     "Ensure line weights are consistent between head and body"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Black ink on navy shirts will have poor contrast",
+     "Tech flag shows 202853px of stray marks",
+     "Requires significant upscale (9.98x) for back print"
+    ],
+    "fixes": [
+     "Create an inverted white-ink version for dark garments",
+     "Apply strict thresholding to remove stray background pixels",
+     "Vectorize or use high-end AI upscaler for the back print"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Some negative space lines around the snout are too thin for 4-inch cap scale"
+    ],
+    "fixes": [
+     "Thicken negative space gaps to at least 0.05 inches",
+     "Simplify the chest emblem slightly for cleaner stitching"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Stray marks outside the main art (flagged by tech data)",
+     "Slight asymmetry in the full-body chest wrinkles"
+    ],
+    "fixes": [
+     "Mask and delete all pixels outside the primary silhouettes",
+     "Mirror or balance the chest wrinkle lines"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected"
+    ],
+    "fixes": [
+     "None needed"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Stencil style works well for short coats, but translating this exact look to long-haired breeds (like the reference photo) may lose readability"
+    ],
+    "fixes": [
+     "Establish a standard for how fur texture is abstracted into negative space for fluffy breeds"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "High contrast is good for thumbnails, but the design is common in the POD market"
+    ],
+    "fixes": [
+     "Market specifically as a premium front-and-back matching set to differentiate"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "None, reads perfectly as a French Bulldog (bat ears, wide stance, smushed face)"
+    ],
+    "fixes": [
+     "None needed"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A per instructions"
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic, lacks irony or trendy aesthetic"
+    ],
+    "fixes": [
+     "Print oversized on vintage wash tees"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit stark and masculine"
+    ],
+    "fixes": [
+     "Offer on softer apparel colors like sand or heather gray"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "None, fits the demographic well"
+    ],
+    "fixes": [
+     "Print on heavyweight hoodies"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Needs to feel premium to justify as a gift"
+    ],
+    "fixes": [
+     "Ensure crisp edges during printing"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like standard vector stock, lacks artistic soul"
+    ],
+    "fixes": [
+     "Introduce subtle hand-drawn irregularities or geometric motifs"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 0
+   }
+  ],
+  "top_strengths": [
+   "Highly scalable across multiple breeds",
+   "Excellent contrast for thumbnail visibility",
+   "Easily adaptable for embroidery"
+  ],
+  "must_fix_before_production": [
+   "Clean the 202853px of stray marks from the background",
+   "Create an inverted white version for navy shirts",
+   "Upscale 10x for the back print"
+  ],
+  "prompt_rewrite": "A high-contrast black and white stencil silhouette of a French Bulldog, geometric themes, left side shows a small front-facing head-only emblem, right side shows a matching full-body sitting dog, clean vector style, bold negative space detailing, solid white background, no text, no stray marks.",
+  "usage": {
+   "promptTokenCount": 3423,
+   "candidatesTokenCount": 1854,
+   "totalTokenCount": 7008,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1241
+    }
+   ],
+   "thoughtsTokenCount": 1731,
+   "serviceTier": "standard"
+  }
+ },
+ "ppro3_geo_circles.png": {
+  "style_detected": "Geometric overlapping circle line art, minimalist vector",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Execution is clean but slightly generic.",
+     "Lacks a unique brand identifier to separate it from stock vector art."
+    ],
+    "fixes": [
+     "Introduce a single, consistent accent color or specific line-weight hierarchy."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 7,
+    "problems": [
+     "White background is flagged as 214,805px of stray marks.",
+     "Requires >4x upscaling for the full back print."
+    ],
+    "fixes": [
+     "Knock out white background to transparent PNG.",
+     "Vectorize or use high-end AI upscaler for crisp edges."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Inner eye circles and nostril details on the chest emblem may close up at 4-inch scale."
+    ],
+    "fixes": [
+     "Simplify the eye construction and enlarge nostril gaps for the left-chest file."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 7,
+    "problems": [
+     "Minor line thickness inconsistencies where curves intersect on the full body."
+    ],
+    "fixes": [
+     "Standardize stroke weights globally in post-processing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic geometric style."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Rigid geometric circles may struggle to convey long-haired or fluffy breeds accurately."
+    ],
+    "fixes": [
+     "Establish specific curve rules for translating fur texture into geometric shapes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "High contrast is great for thumbnails, but the style is common on Etsy."
+    ],
+    "fixes": [
+     "Market on premium, non-standard garment colors (e.g., sand, sage) to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Hind leg posture on the full body is slightly generic, lacking the specific Frenchie 'frog dog' sit."
+    ],
+    "fixes": [
+     "Adjust hindquarter curves to better reflect the breed's typical stance."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit too 'millennial Etsy' aesthetic."
+    ],
+    "fixes": [
+     "Make it edgier or add a Y2K color pop."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit stark in just black and white."
+    ],
+    "fixes": [
+     "Offer in softer ink colors like navy or dark grey."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "None, likes the clean, non-cutesy look."
+    ],
+    "fixes": [
+     "Print on high-quality heavyweight hoodies."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 32
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but might feel a bit impersonal."
+    ],
+    "fixes": [
+     "Ensure breed accuracy is perfect."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Feels like automated vector tracing, lacks soul."
+    ],
+    "fixes": [
+     "Introduce intentional asymmetry or hand-drawn imperfections."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Highly scalable and consistent style.",
+   "Excellent contrast for DTG printing.",
+   "Easily recognizable breed silhouette."
+  ],
+  "must_fix_before_production": [
+   "Remove white background to eliminate stray marks.",
+   "Vectorize or upscale for the large back print.",
+   "Simplify inner eye details for the 4-inch embroidery file."
+  ],
+  "prompt_rewrite": "A front-facing, head-only portrait of a French Bulldog, executed in a minimalist geometric line art style using overlapping circles and precise curves. Thick, consistent black outlines on a pure white background. No shading, no gradients, no text. Symmetrical, clean vector aesthetic.",
+  "usage": {
+   "promptTokenCount": 3421,
+   "candidatesTokenCount": 1801,
+   "totalTokenCount": 7017,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    }
+   ],
+   "thoughtsTokenCount": 1795,
+   "serviceTier": "standard"
+  }
+ },
+ "ppro3_geo_poly.png": {
+  "style_detected": "Geometric low-poly line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Generic geometric style lacks unique brand identity.",
+     "Composition is standard, lacking dynamic tension."
+    ],
+    "fixes": [
+     "Introduce a secondary brand color to specific polygons.",
+     "Vary line weights for depth."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Needs 9.6x upscale for full back print.",
+     "192,689px of stray marks/noise detected in background."
+    ],
+    "fixes": [
+     "Vectorize the artwork to solve resolution issues.",
+     "Remove all background noise during vectorization."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Smallest polygons around eyes and ears may clump at 4-inch scale."
+    ],
+    "fixes": [
+     "Merge tiny adjacent polygons for the left-chest/cap version."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Minor asymmetry in chest and ear polygons."
+    ],
+    "fixes": [
+     "Manually mirror one half of the head design for perfect symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Rigid polygon style may struggle to represent long-haired breeds accurately."
+    ],
+    "fixes": [
+     "Establish a rule for translating fur into jagged geometric edges for fluffy breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Geometric animal market is highly saturated.",
+     "May blend in with existing stock art on Etsy."
+    ],
+    "fixes": [
+     "Market as a matching set (chest + back) to differentiate.",
+     "Print on premium, non-standard garment colors."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "None. Reads instantly and accurately as a French Bulldog."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Low-poly trend feels dated (2014 era)."
+    ],
+    "fixes": [
+     "Update style to y2k wireframe or chrome aesthetic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit harsh and masculine."
+    ],
+    "fixes": [
+     "Offer in softer apparel colors like pastel pink or mint."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 7,
+    "problems": [
+     "None. Fits demographic preferences perfectly."
+    ],
+    "fixes": [
+     "Print on dark heather grey hoodies."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Might look cheap if print is faded."
+    ],
+    "fixes": [
+     "Ensure crisp, high-contrast DTG printing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 3,
+    "problems": [
+     "Looks like standard stock vector art.",
+     "Lacks soul or artistic touch."
+    ],
+    "fixes": [
+     "Incorporate hand-drawn imperfections or dynamic shading."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 12
+   }
+  ],
+  "top_strengths": [
+   "Highly scalable across multiple breeds.",
+   "Excellent for embroidery and high-contrast printing.",
+   "Clear, unmistakable breed recognition."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the image to allow for 9.6x upscaling without quality loss.",
+   "Remove the 192k pixels of stray marks/background noise.",
+   "Simplify the smallest polygons for the 4-inch left-chest version."
+  ],
+  "prompt_rewrite": "A dual-image apparel design featuring a French Bulldog in a minimalist geometric low-poly style. Left side: a front-facing, head-only emblem. Right side: a matching full-body sitting pose. Black thick line art with solid black and white polygonal fills, pure white background, perfectly symmetrical head, high contrast, no text, vector art style.",
+  "usage": {
+   "promptTokenCount": 3421,
+   "candidatesTokenCount": 1804,
+   "totalTokenCount": 7042,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    }
+   ],
+   "thoughtsTokenCount": 1817,
+   "serviceTier": "standard"
+  }
+ },
+ "ppro3_sil_solid.png": {
+  "style_detected": "high-contrast vector silhouette, solid black and white stencil",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Composition is highly standard, bordering on clip-art.",
+     "Lacks a unique brand signature or geometric framing to elevate it."
+    ],
+    "fixes": [
+     "Introduce a subtle geometric bounding shape or stylized linework to make it proprietary."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Tech flags indicate 190,534px of stray marks (likely a non-transparent white background).",
+     "Requires 9.6x upscale for the full back print, which will cause pixelation."
+    ],
+    "fixes": [
+     "Vectorize the image to allow infinite scaling.",
+     "Strictly remove the white background to allow shirt color to show through."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Negative space lines defining the muzzle and wrinkles may close up when scaled to 2.25 inches for a cap."
+    ],
+    "fixes": [
+     "Thicken all internal white detail lines by 20% for the cap emblem file."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Front right paw on the full-body dog has slightly merged/mushy toes.",
+     "Minor asymmetry in the lower jowls of the head emblem."
+    ],
+    "fixes": [
+     "Redraw the toes on the sitting dog for clarity.",
+     "Mirror the left jowl to the right side for perfect symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 6,
+    "problems": [
+     "None. Standard breed representation."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Pure silhouettes can make similar breeds (e.g., Frenchie vs. Boston Terrier) hard to distinguish without color."
+    ],
+    "fixes": [
+     "Ensure breed-specific exaggerated features (like the bat ears here) are strictly maintained across all 25 breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "The dog silhouette market is highly saturated; this lacks immediate stopping power."
+    ],
+    "fixes": [
+     "Market explicitly as a premium 'front/back matching set' to differentiate from standard single-print tees."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "Reads perfectly as a French Bulldog (ignoring the Bichon prompt text).",
+     "The sitting posture is slightly stiff; Frenchies often sit with a wider, more slumped stance."
+    ],
+    "fixes": [
+     "Widen the back legs slightly in the full-body graphic for a more natural breed posture."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A as per instructions."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Looks like a basic stock vector, not trendy or aesthetic enough."
+    ],
+    "fixes": [
+     "Add a distressed vintage texture or ironic typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "A bit stark in just black and white; lacks a cute factor."
+    ],
+    "fixes": [
+     "Offer the print in softer colors like rose gold or sage green."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 7,
+    "problems": [
+     "None, it's a clean, masculine design suitable for a hoodie."
+    ],
+    "fixes": [
+     "Keep it simple."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 35
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe but slightly generic gift option."
+    ],
+    "fixes": [
+     "Ensure high-quality garment blanks to elevate perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul; feels mass-produced and automated."
+    ],
+    "fixes": [
+     "Introduce subtle hand-drawn linework variations to make it feel crafted."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "High contrast and excellent readability at small sizes.",
+   "Easily adaptable for both DTG printing and embroidery.",
+   "Clear, unmistakable breed identification (French Bulldog)."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the artwork to resolve the 9.6x upscale requirement.",
+   "Remove the white background (190,534px of stray marks) to ensure transparency.",
+   "Thicken internal detail lines for the cap embroidery file."
+  ],
+  "prompt_rewrite": "A matching apparel graphic set featuring a French Bulldog. Left: a front-facing head-only emblem. Right: a full-body sitting French Bulldog. Style: high-contrast black and white vector silhouette, solid black fills with thick white negative space lines for facial details and wrinkles. Clean edges, pure white background, minimalist geometric stencil style, no text.",
+  "usage": {
+   "promptTokenCount": 3421,
+   "candidatesTokenCount": 1784,
+   "totalTokenCount": 7316,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    }
+   ],
+   "thoughtsTokenCount": 2111,
+   "serviceTier": "standard"
+  }
+ },
+ "ppro3_sil_stencil.png": {
+  "style_detected": "minimalist black and white vector stencil",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 7,
+    "problems": [
+     "Full body dog eyes lack symmetry",
+     "Layout requires manual separation for front/back printing"
+    ],
+    "fixes": [
+     "Correct right eye on full body to match left",
+     "Split into two separate production files"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "print_technician",
+    "score": 6,
+    "problems": [
+     "Requires 10.65x upscale for full back print",
+     "205887px of stray marks flagged in background"
+    ],
+    "fixes": [
+     "Vectorize artwork to resolve upscale and stray mark issues simultaneously"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 7,
+    "problems": [
+     "Fine negative space lines around jowls may close up during stitching"
+    ],
+    "fixes": [
+     "Thicken all internal white detail lines to minimum 0.05 inches"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Right eye on the full-body graphic is misshapen and smaller",
+     "Hidden background artifacts flagged by tech data"
+    ],
+    "fixes": [
+     "Redraw full-body eyes for perfect symmetry",
+     "Apply strict thresholding to remove background noise"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected"
+    ],
+    "fixes": [
+     "None required"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "series_designer",
+    "score": 7,
+    "problems": [
+     "Line thickness might be hard to standardize on fluffy breeds (e.g., Poodles)"
+    ],
+    "fixes": [
+     "Establish a strict stroke-weight guide for negative space details across all 25 breeds"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Slightly generic stock-vector appearance lacks unique brand identity"
+    ],
+    "fixes": [
+     "Add a subtle, consistent geometric framing element unique to AlphaDog"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "breed_expert",
+    "score": 7,
+    "problems": [
+     "None, reads perfectly as a French Bulldog"
+    ],
+    "fixes": [
+     "None required"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "N/A per instructions"
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": ""
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic, lacks trendy aesthetic or irony"
+    ],
+    "fixes": [
+     "Offer on trendy garment washes (e.g., acid wash, oversized fit)"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Black and white is a bit stark"
+    ],
+    "fixes": [
+     "Print on softer colors like heather gray or sand"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 7,
+    "problems": [
+     "None, fits the bold, non-cutesy preference perfectly"
+    ],
+    "fixes": [
+     "None"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Needs clear presentation as a premium front/back set"
+    ],
+    "fixes": [
+     "Market with clear mockups showing both placements"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 5,
+    "problems": [
+     "Lacks artistic soul, looks like standard clip art"
+    ],
+    "fixes": [
+     "Introduce slight hand-drawn imperfections to the line work"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": null
+   }
+  ],
+  "top_strengths": [
+   "High contrast and excellent readability",
+   "Easily adaptable for embroidery",
+   "Highly scalable style for a 25-breed series"
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix 10.65x upscale requirement and remove 205887px of stray marks",
+   "Separate into two distinct files for left-chest and back printing",
+   "Fix eye asymmetry on the full-body graphic"
+  ],
+  "prompt_rewrite": "A minimalist black and white vector stencil of a French Bulldog, solid black silhouette with bold white negative space lines defining facial features and wrinkles, clean sharp edges, geometric style, pure white background, front-facing head only, symmetrical eyes, no text, no background elements.",
+  "usage": {
+   "promptTokenCount": 3425,
+   "candidatesTokenCount": 1622,
+   "totalTokenCount": 6710,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2182
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1243
+    }
+   ],
+   "thoughtsTokenCount": 1663,
+   "serviceTier": "standard"
+  }
+ }
+}
