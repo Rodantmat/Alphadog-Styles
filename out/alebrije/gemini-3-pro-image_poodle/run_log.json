@@ -1,0 +1,56 @@
+[
+ {
+  "id": "poodle_alebrije_a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 523,
+   "candidatesTokenCount": 1321,
+   "totalTokenCount": 2102,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 265
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 258,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "poodle_alebrije_b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 542,
+   "candidatesTokenCount": 1300,
+   "totalTokenCount": 2066,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 284
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 224,
+   "serviceTier": "standard"
+  }
+ }
+]
