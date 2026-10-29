@@ -1,5 +1,48 @@
 [
  {
+  "file": "04_woodblock.png",
+  "verdict": "REJECT",
+  "total": 5.12,
+  "pro": 5.33,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 20.6,
+  "hard_fails": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T11 stray marks/specks outside the art (63px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 5,
+   "print_technician": 4,
+   "ai_artifact_inspector": 6,
+   "series_designer": 5,
+   "marketplace_merchandiser": 6,
+   "embroidery_digitizer": 5,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Completely remove the woodgrain background texture to prevent a massive gradient block print.",
+   "Clean up the 63px of stray marks outside the main design.",
+   "Upscale the image by at least 4x for print clarity."
+  ],
+  "strengths": [
+   "Cute, engaging expression with the tongue out.",
+   "Clear breed recognition.",
+   "Good limited color palette (navy, white, red) suitable for apparel."
+  ],
+  "style_detected": "faux woodblock with digital woodgrain texture overlay",
+  "prompt_rewrite": "A true woodcut print illustration of a fluffy white Bichon Poodle mix head, front-facing, tongue out, wearing a red checkered bandana. Stark black and white contrast with bold navy blue gouge marks, rough angular linework, authentic block print style, solid white background, isolated subject, no woodgrain texture overlay, no text, vector style."
+ },
+ {
   "file": "01_stained_glass.png",
   "verdict": "REJECT",
   "total": 0.0,
@@ -88,41 +131,6 @@
    "T4 heavy gradients -> needs halftone for dark DTG",
    "T5 >6 colors -> cap needs separate simplified art",
    "T11 stray marks/specks outside the art (23px) -> must be cleaned"
-  ],
-  "scores": {
-   "art_director": null,
-   "print_technician": null,
-   "ai_artifact_inspector": null,
-   "series_designer": null,
-   "marketplace_merchandiser": null,
-   "embroidery_digitizer": null,
-   "breed_expert": null,
-   "likeness_judge": null,
-   "ip_compliance_reviewer": null,
-   "genz_tiktok_shopper": null,
-   "millennial_dog_mom": null,
-   "male_owner_35_55": null,
-   "gift_buyer": null,
-   "art_lover": null
-  },
-  "must_fix": [],
-  "strengths": [],
-  "style_detected": null,
-  "prompt_rewrite": null
- },
- {
-  "file": "04_woodblock.png",
-  "verdict": "REJECT",
-  "total": 0.0,
-  "pro": 0.0,
-  "customers": 0.0,
-  "would_buy": "0/5",
-  "avg_price": 0.0,
-  "hard_fails": [],
-  "tech_flags": [
-   "T1 upscale >4x for full front",
-   "T4 heavy gradients -> needs halftone for dark DTG",
-   "T11 stray marks/specks outside the art (63px) -> must be cleaned"
   ],
   "scores": {
    "art_director": null,

@@ -1,1 +1,250 @@
-{}
+{
+ "04_woodblock.png": {
+  "style_detected": "faux woodblock with digital woodgrain texture overlay",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 5,
+    "problems": [
+     "Relies on a digital woodgrain background texture rather than actual woodcut linework.",
+     "Perfectly mirrored symmetry feels artificial and lifeless."
+    ],
+    "fixes": [
+     "Remove the woodgrain texture entirely.",
+     "Use angular, varied line weights to mimic actual gouge marks.",
+     "Introduce slight asymmetry in the fur curls."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Woodgrain background creates a massive, patchy gradient block on dark shirts (T4).",
+     "63px of stray marks outside the art (T11).",
+     "Requires massive 7.6x upscale for full front (T1)."
+    ],
+    "fixes": [
+     "Mask out and delete the woodgrain background completely.",
+     "Erase stray marks.",
+     "Vectorize the linework or use an AI upscaler to 8x resolution."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 5,
+    "problems": [
+     "Woodgrain background cannot be stitched.",
+     "Fur curls are too thin and dense for a 4-inch cap front."
+    ],
+    "fixes": [
+     "Delete the background texture.",
+     "Simplify the fur into larger, grouped shapes with thicker outlines.",
+     "Limit to 4 thread colors (white, navy, red, black)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Woodgrain texture bleeds unnaturally into the white fur.",
+     "Stray specks around the perimeter.",
+     "Bottom left and right curls are exact digital mirrors."
+    ],
+    "fixes": [
+     "Isolate the dog from the background texture.",
+     "Clean up perimeter artifacts.",
+     "Redraw bottom curls to break exact symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None. Generic stylized dog."
+    ],
+    "fixes": [
+     "None required."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 5,
+    "problems": [
+     "The style relies on a background texture overlay, which won't scale consistently across short-haired breeds."
+    ],
+    "fixes": [
+     "Define the signature style through the linework (thick, blocky cuts) rather than a texture filter."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Woodgrain background reduces contrast, making the thumbnail look muddy (thumb_detail_survival 0.37)."
+    ],
+    "fixes": [
+     "Remove background for stark white-on-dark contrast.",
+     "Thicken main outlines for better small-scale readability."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Curls are too uniform and stylized, resembling a sheep more than a poodle's natural fluff."
+    ],
+    "fixes": [
+     "Vary the size and direction of the curls.",
+     "Make the top knot slightly less perfectly domed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Graphic eyes are too large and anime-like compared to the reference.",
+     "Missing the red checkered bandana which adds specific character."
+    ],
+    "fixes": [
+     "Shrink eyes slightly.",
+     "Add the red checkered bandana around the neck."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Wood texture looks like a millennial craft fair coaster."
+    ],
+    "fixes": [
+     "Make it a stark, high-contrast graphic without the wood texture."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "The background makes it look like a square block on a shirt."
+    ],
+    "fixes": [
+     "Remove the background so it's just the cute dog face."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too cutesy and decorative with the perfect swirls."
+    ],
+    "fixes": [
+     "Make the linework rougher and less perfectly curled."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Worried the wood background will print like a big stiff square."
+    ],
+    "fixes": [
+     "Ensure it's a clean cutout with no background."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Faux woodgrain texture is a cheap digital trick.",
+     "Lacks authentic woodcut gouge marks and tension."
+    ],
+    "fixes": [
+     "Generate true woodcut style with stark contrast and angular cuts, no texture overlays."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Cute, engaging expression with the tongue out.",
+   "Clear breed recognition.",
+   "Good limited color palette (navy, white, red) suitable for apparel."
+  ],
+  "must_fix_before_production": [
+   "Completely remove the woodgrain background texture to prevent a massive gradient block print.",
+   "Clean up the 63px of stray marks outside the main design.",
+   "Upscale the image by at least 4x for print clarity."
+  ],
+  "prompt_rewrite": "A true woodcut print illustration of a fluffy white Bichon Poodle mix head, front-facing, tongue out, wearing a red checkered bandana. Stark black and white contrast with bold navy blue gouge marks, rough angular linework, authentic block print style, solid white background, isolated subject, no woodgrain texture overlay, no text, vector style.",
+  "usage": {
+   "promptTokenCount": 3305,
+   "candidatesTokenCount": 2072,
+   "totalTokenCount": 7523,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1118
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2187
+    }
+   ],
+   "thoughtsTokenCount": 2146,
+   "serviceTier": "standard"
+  }
+ }
+}
