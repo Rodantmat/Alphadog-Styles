@@ -1,0 +1,27 @@
+{
+ "base": "Using the attached photo of this exact dog as the likeness reference (keep her round fluffy head shape, long drop ears, dark eyes, button nose and happy tongue-out expression recognizable), create a professional brand-quality logo artwork of her HEAD ONLY for a premium apparel brand. Pure black on a flat pure white background, no gray, no gradients, no texture, no shadow, no frame, no collar, no body below the neck. Generous empty margin on every side, art centered and symmetric-feeling. All lines and shapes BOLD: minimum stroke about 3% of the image width so it stays readable at 4 inches and on a black shirt when inverted to white. Confident, deliberate, original graphic design (not generic clip art, not a photo filter, not an AI portrait). Crisp vector-like edges. Absolutely no text, letters, signature or watermark.",
+ "styles": [
+  {
+   "id": "r3_evolve1",
+   "ref": "smile",
+   "style_ref": "out/refine/geometric/r2/r2_evolve1.png",
+   "prompt": "Image 2 is the current best draft of this design. Redraw it improved: keep its concept and style identity and the dog likeness from image 1, head only, no text. Apply these fixes: Vectorize the image to resolve the 15x upscale requirement.; Create an inverted colorway specifically for printing on black/dark garments.; Adjust the eyebrow arches to match the reference dog's softer expression.. Keep every line bold and the result perfectly clean black on white."
+  },
+  {
+   "id": "r3_fresh1",
+   "ref": "smile",
+   "prompt": "Bold lines minimum 3% of image width. A front-facing head-only portrait of a fluffy white Bichon Poodle, true geometric low-poly style, composed of sharp intersecting triangles and polygons, black and white vector art, thick outer outline, sweet round eyes, tongue out, no text, solid white background."
+  },
+  {
+   "id": "r3_evolve2",
+   "ref": "smile",
+   "style_ref": "out/refine/geometric/r2/r2_fresh1.png",
+   "prompt": "Image 2 is the current best draft of this design. Redraw it improved: keep its concept and style identity and the dog likeness from image 1, head only, no text. Apply these fixes: Vectorize and upscale to fix the 12.56x resolution deficit.; Add a solid white fill to the interior so it prints on dark garments.; Simplify the fine line clusters around the nose for embroidery viability.; Round the top silhouette to better match the Bichon breed standard.. Keep every line bold and the result perfectly clean black on white."
+  },
+  {
+   "id": "r3_fresh2",
+   "ref": "smile",
+   "prompt": "Bold lines minimum 3% of image width. A front-facing, head-only geometric line art portrait of a fluffy Bichon-Poodle mix dog. Bold black outlines with solid white fill on a pure white background. The outer silhouette should be round and cloud-like, while internal details use sharp geometric facets. Large dark round eyes, tongue sticking out. Minimalist, vector style, varied line weights, highly symmetrical, no text."
+  }
+ ]
+}

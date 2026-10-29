@@ -1,0 +1,106 @@
+[
+ {
+  "id": "r1_polyheavy",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 469,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1759,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 211
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_compass",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 476,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1766,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 218
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_facets",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 465,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1755,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 207
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "r1_wire",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 473,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1763,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 215
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ }
+]

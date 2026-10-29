@@ -1,0 +1,275 @@
+[
+ {
+  "file": "r2_evolve1.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   446,
+   349
+  ],
+  "upscale_needed": {
+   "full_front": 15.47,
+   "left_chest_4in": 3.44,
+   "cap_front": 2.69
+  },
+  "bg_low_contrast_edge": 0.055,
+  "soft_edge_share": 0.109,
+  "interior_bg_colored": 0.644,
+  "gradient_share": 0.092,
+  "palette95": 4,
+  "thread_colors_est": 2,
+  "chest_detail_survival": 0.952,
+  "thumb_detail_survival": 0.674,
+  "near_white_share": 0.653,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.659,
+    "edge_visible": 0.793,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.302,
+    "edge_visible": 0.43,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.019,
+    "edge_visible": 0.697,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.799,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.781,
+    "usable": true
+   }
+  },
+  "usable_garments": [
+   "heather_gray",
+   "navy",
+   "sand"
+  ],
+  "fill_ratio": 0.737,
+  "center": [
+   0.493,
+   0.494
+  ],
+  "asymmetry": 0.017,
+  "touches_edge": false,
+  "stray_marks_px": 0,
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ]
+ },
+ {
+  "file": "r2_evolve2.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   516,
+   415
+  ],
+  "upscale_needed": {
+   "full_front": 13.01,
+   "left_chest_4in": 2.89,
+   "cap_front": 2.33
+  },
+  "bg_low_contrast_edge": 0.056,
+  "soft_edge_share": 0.123,
+  "interior_bg_colored": 0.752,
+  "gradient_share": 0.065,
+  "palette95": 2,
+  "thread_colors_est": 2,
+  "chest_detail_survival": 0.931,
+  "thumb_detail_survival": 0.621,
+  "near_white_share": 0.76,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.764,
+    "edge_visible": 0.77,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.207,
+    "edge_visible": 0.463,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.014,
+    "edge_visible": 0.678,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.788,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.755,
+    "usable": true
+   }
+  },
+  "usable_garments": [
+   "heather_gray",
+   "navy",
+   "sand"
+  ],
+  "fill_ratio": 0.715,
+  "center": [
+   0.495,
+   0.487
+  ],
+  "asymmetry": 0.129,
+  "touches_edge": false,
+  "stray_marks_px": 21,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (21px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "r2_fresh1.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   562,
+   430
+  ],
+  "upscale_needed": {
+   "full_front": 12.56,
+   "left_chest_4in": 2.79,
+   "cap_front": 2.14
+  },
+  "bg_low_contrast_edge": 0.058,
+  "soft_edge_share": 0.119,
+  "interior_bg_colored": 0.726,
+  "gradient_share": 0.122,
+  "palette95": 7,
+  "thread_colors_est": 3,
+  "chest_detail_survival": 0.911,
+  "thumb_detail_survival": 0.523,
+  "near_white_share": 0.744,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.754,
+    "edge_visible": 0.76,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.177,
+    "edge_visible": 0.453,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.032,
+    "edge_visible": 0.692,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.772,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.761,
+    "usable": true
+   }
+  },
+  "usable_garments": [
+   "heather_gray",
+   "navy",
+   "sand"
+  ],
+  "fill_ratio": 0.681,
+  "center": [
+   0.499,
+   0.499
+  ],
+  "asymmetry": 0.166,
+  "touches_edge": false,
+  "stray_marks_px": 0,
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ]
+ },
+ {
+  "file": "r2_fresh2.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   474,
+   403
+  ],
+  "upscale_needed": {
+   "full_front": 13.4,
+   "left_chest_4in": 2.98,
+   "cap_front": 2.53
+  },
+  "bg_low_contrast_edge": 0.059,
+  "soft_edge_share": 0.118,
+  "interior_bg_colored": 0.687,
+  "gradient_share": 0.101,
+  "palette95": 4,
+  "thread_colors_est": 2,
+  "chest_detail_survival": 0.943,
+  "thumb_detail_survival": 0.646,
+  "near_white_share": 0.697,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.703,
+    "edge_visible": 0.793,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.258,
+    "edge_visible": 0.446,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.019,
+    "edge_visible": 0.694,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.817,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.794,
+    "usable": true
+   }
+  },
+  "usable_garments": [
+   "heather_gray",
+   "navy",
+   "sand"
+  ],
+  "fill_ratio": 0.677,
+  "center": [
+   0.495,
+   0.489
+  ],
+  "asymmetry": 0.108,
+  "touches_edge": false,
+  "stray_marks_px": 0,
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ]
+ }
+]

@@ -1,0 +1,195 @@
+{
+ "family": "geometric",
+ "best": "out/refine/geometric/r3/r3_fresh2.png",
+ "best_verdict": {
+  "file": "r3_fresh2.png",
+  "verdict": "REWORK",
+  "concept": 5.9,
+  "concept_pro": 6.24,
+  "customers": 5.4,
+  "would_buy": "2/5",
+  "avg_price": 19.4,
+  "concept_hard_fails": [],
+  "print_score": 8,
+  "cap_score": 8,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 7,
+   "breed_expert": 8,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 9,
+   "print_technician": 8,
+   "embroidery_digitizer": 8,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 6,
+   "gift_buyer": 7,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize or upscale >4x for large prints.",
+   "Remove white background completely for dark garments.",
+   "Incorporate the bandana to improve likeness and uniqueness."
+  ],
+  "strengths": [
+   "High contrast and highly printable.",
+   "Easily adaptable for embroidery.",
+   "Bold silhouette works well at small sizes."
+  ],
+  "style_detected": "Thick-line vector silhouette",
+  "prompt_rewrite": "A front-facing head of a fluffy white Bichon Poodle mix wearing a bandana, bold geometric line art style, thick black outlines, sharp faceted angles, high contrast, minimalist vector style, white background, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a generic car decal from 2010.",
+   "millennial_dog_mom": "Cute, but I wish it had the little bandana from the photo.",
+   "male_owner_35_55": "A bit too cutesy with the giant smile.",
+   "gift_buyer": "Safe, but might not look exactly like the recipient's specific dog.",
+   "art_lover": "Lacks artistic soul; feels like a basic live-trace or generic vector asset."
+  }
+ },
+ "history": [
+  {
+   "round": 1,
+   "top": [
+    [
+     "r1_wire.png",
+     "REJECT",
+     5.25,
+     "1/5",
+     18.0
+    ],
+    [
+     "r1_facets.png",
+     "REJECT",
+     5.06,
+     "2/5",
+     18.6
+    ],
+    [
+     "r1_polyheavy.png",
+     "REJECT",
+     4.87,
+     "3/5",
+     17.4
+    ],
+    [
+     "r1_compass.png",
+     "REJECT",
+     4.8,
+     "2/5",
+     15.0
+    ]
+   ]
+  },
+  {
+   "round": 2,
+   "top": [
+    [
+     "r2_evolve1.png",
+     "REWORK",
+     5.52,
+     "2/5",
+     18.4
+    ],
+    [
+     "r2_fresh1.png",
+     "REJECT",
+     5.46,
+     "2/5",
+     21.2
+    ],
+    [
+     "r2_fresh2.png",
+     "REJECT",
+     4.85,
+     "2/5",
+     19.0
+    ],
+    [
+     "r2_evolve2.png",
+     "REJECT",
+     4.77,
+     "2/5",
+     18.6
+    ]
+   ]
+  },
+  {
+   "round": 3,
+   "top": [
+    [
+     "r3_fresh2.png",
+     "REWORK",
+     5.9,
+     "2/5",
+     19.4
+    ],
+    [
+     "r3_evolve2.png",
+     "REJECT",
+     5.41,
+     "2/5",
+     20.6
+    ],
+    [
+     "r3_evolve1.png",
+     "REJECT",
+     5.12,
+     "2/5",
+     19.4
+    ],
+    [
+     "r3_fresh1.png",
+     "REJECT",
+     5.11,
+     "1/5",
+     18.6
+    ]
+   ]
+  },
+  {
+   "round": 4,
+   "top": [
+    [
+     "r4_evolve1.png",
+     "REJECT",
+     5.41,
+     "2/5",
+     18.4
+    ],
+    [
+     "r4_evolve2.png",
+     "REJECT",
+     5.4,
+     "3/5",
+     21.2
+    ],
+    [
+     "r4_fresh2.png",
+     "REJECT",
+     5.31,
+     "2/5",
+     19.4
+    ],
+    [
+     "r4_fresh1.png",
+     "REJECT",
+     5.3,
+     "3/5",
+     19.6
+    ]
+   ]
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "base": "Using the attached photo of this exact dog as the likeness reference (keep her round fluffy head shape, long drop ears, dark eyes, button nose and happy tongue-out expression recognizable), create a professional brand-quality logo artwork of her HEAD ONLY for a premium apparel brand. Pure black on a flat pure white background, no gray, no gradients, no texture, no shadow, no frame, no collar, no body below the neck. Generous empty margin on every side, art centered and symmetric-feeling. All lines and shapes BOLD: minimum stroke about 3% of the image width so it stays readable at 4 inches and on a black shirt when inverted to white. Confident, deliberate, original graphic design (not generic clip art, not a photo filter, not an AI portrait). Crisp vector-like edges. Absolutely no text, letters, signature or watermark.",
+ "styles": [
+  {
+   "id": "r1_polyheavy",
+   "ref": "smile",
+   "prompt": "Style: geometric polygon head, heavy bold outer outline, a few thick triangulation lines and bold solid black triangles for eyes and nose, perfectly symmetrical, front-facing."
+  },
+  {
+   "id": "r1_compass",
+   "ref": "smile",
+   "prompt": "Style: geometric icon built only from perfect circles and arcs (compass construction), thick even line weight, the round head, curly fur tufts and drop ears from overlapping circle segments, front-facing."
+  },
+  {
+   "id": "r1_facets",
+   "ref": "smile",
+   "prompt": "Style: bold faceted crystal head made of flat solid black and white triangles only (no gray), strong angular facets, symmetrical, front-facing."
+  },
+  {
+   "id": "r1_wire",
+   "ref": "smile",
+   "prompt": "Style: thick straight-line geometric construction, head formed by bold lines meeting at precise angles, a few solid black accents for eyes and nose, symmetrical, front-facing, architectural."
+  }
+ ]
+}
