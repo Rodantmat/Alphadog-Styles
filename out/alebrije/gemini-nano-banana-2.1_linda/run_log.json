@@ -1,0 +1,56 @@
+[
+ {
+  "id": "linda_alebrije_a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2548,
+   "candidatesTokenCount": 1627,
+   "totalTokenCount": 4981,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 308
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 806,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "linda_alebrije_b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2567,
+   "candidatesTokenCount": 1981,
+   "totalTokenCount": 5127,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 327
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 579,
+   "serviceTier": "standard"
+  }
+ }
+]
