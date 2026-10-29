@@ -9,6 +9,7 @@ ONLY = [s for s in os.environ.get("ONLY", "").split(",") if s]
 REFS = {"smile": "refs/linda/ref_2025-08_front_smile.jpg",
         "fluffy": "refs/linda/ref_2025-01_front_fluffy.jpg",
         "full": "refs/linda/ref_2014_full_sitting.jpg",
+        "oneline_sheet": "refs/style_oneline_sheet.jpg",
         "frenchie_pair": "out/cust_sheets/p2_frenchie_classic.png",
         "frenchie_heart": "out/cust_sheets/p2_frenchie_heart.png"}
 

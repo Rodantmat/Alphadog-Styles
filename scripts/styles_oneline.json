@@ -1,0 +1,20 @@
+{
+ "base": "Image 1 is a sheet of elegant single-continuous-line dog drawings: one unbroken flowing line, expressive faces with dark eyes and nose, minimal and airy, natural loops where the line crosses itself, plain background. Create a NEW design set for a French Bulldog in EXACTLY this drawing style and spirit (hand-drawn single flowing line, charming expressive face, minimal strokes, not over-detailed): the small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, as one coherent set on one canvas. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no decorative curls or ornaments except the natural loops of the line itself. ",
+ "styles": [
+  {
+   "id": "line_ref_weight",
+   "ref": "oneline_sheet",
+   "prompt": "Line weight: medium-fine, similar to the reference sheet."
+  },
+  {
+   "id": "line_bolder",
+   "ref": "oneline_sheet",
+   "prompt": "Line weight: about twice as thick as the reference sheet, even and confident, so it prints clearly on a tee and can be inverted to white on a black shirt."
+  },
+  {
+   "id": "line_ground",
+   "ref": "oneline_sheet",
+   "prompt": "Line weight: medium, about 1.5 times the reference sheet. The back print dog sits on a single flowing ground line that continues from the dog's body, like the reference sheet."
+  }
+ ]
+}
