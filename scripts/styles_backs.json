@@ -1,0 +1,53 @@
+{
+ "base": "Image 1 is a photo of this exact dog (likeness reference: round fluffy cloud head, long drop ears, dark eyes, button nose, happy tongue-out face). Image 2 is the matching chest emblem from the same apparel set. Create the BACK PRINT of the set: this dog's FULL BODY sitting upright and front-facing, head to paws, drawn in EXACTLY the same art style as image 2: same line weight, same stroke character, same black-and-white treatment, same level of detail, same face rendering, so the front emblem and this back print clearly belong together as one coherent design. Pure black ink on flat pure white background, no gray, no shading gradients, no texture, no ground line, no shadow, no frame, no collar. Generous empty margin on all sides. Crisp vector-like edges. Absolutely no text, letters, signature or watermark.",
+ "styles": [
+  {
+   "id": "L02_one_line_bold_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L02_one_line_bold.png",
+   "prompt": "Style to match: continuous bold marker-weight single line."
+  },
+  {
+   "id": "L06_stencil_bold_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L06_stencil_bold.png",
+   "prompt": "Style to match: bold black-and-white stencil."
+  },
+  {
+   "id": "L25_paper_stencil_bridges_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L25_paper_stencil_bridges.png",
+   "prompt": "Style to match: cut-paper stencil with stencil bridges."
+  },
+  {
+   "id": "L13_geometric_heavy_frame_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L13_geometric_heavy_frame.png",
+   "prompt": "Style to match: geometric polygon with heavy outline and thin triangulation."
+  },
+  {
+   "id": "L21_topographic_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L21_topographic.png",
+   "prompt": "Style to match: topographic contour lines."
+  },
+  {
+   "id": "L19_abstract_ribbon_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L19_abstract_ribbon.png",
+   "prompt": "Style to match: abstract elegant ribbon lines with thick-thin variation."
+  },
+  {
+   "id": "L09_negative_space_badge_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L09_negative_space_badge.png",
+   "prompt": "Style to match: solid black circle badge with the dog carved out as white negative space, the dog breaking out of the top of the badge."
+  },
+  {
+   "id": "L20_abstract_curls_BACK",
+   "ref": "full",
+   "style_ref": "out/linda_line/L20_abstract_curls.png",
+   "prompt": "Style to match: abstract bold spiral curls for the fur."
+  }
+ ]
+}

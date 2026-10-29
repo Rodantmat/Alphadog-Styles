@@ -7,6 +7,9 @@ on:
       max_critiques: {description: "Hard cap on critiques this run", default: "20"}
       only: {description: "Comma list of png names (blank = all)", default: ""}
       brief: {description: "Brand brief for critics", default: ""}
+      subject: {description: "What the image shows (critic)", default: ""}
+      refnote: {description: "Meaning of image 2 (critic)", default: ""}
+      likeness_ref: {description: "Image 2 path", default: "refs/linda/ref_2025-08_front_smile.jpg"}
 permissions:
   contents: write
 jobs:
@@ -25,6 +28,9 @@ jobs:
           MAX_CRITIQUES: ${{ inputs.max_critiques }}
           ONLY: ${{ inputs.only }}
           BRIEF: ${{ inputs.brief }}
+          SUBJECT: ${{ inputs.subject }}
+          REFNOTE: ${{ inputs.refnote }}
+          LIKENESS_REF: ${{ inputs.likeness_ref }}
         run: python3 scripts/critic.py "${{ inputs.dir }}"
       - name: Report
         run: python3 scripts/report.py "${{ inputs.dir }}"

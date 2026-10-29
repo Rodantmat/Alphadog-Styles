@@ -5,6 +5,8 @@ KEY = os.environ["GEMINI_API_KEY"]
 MODEL = os.environ.get("CRITIC_MODEL", "gemini-3.1-pro-preview")
 MAX = int(os.environ.get("MAX_CRITIQUES", "20"))  # hard cap per run
 BRIEF = os.environ.get("BRIEF") or "The brand wants rich, fun, exciting signature art that ALSO prints well on products and sells."
+REFNOTE = os.environ.get("REFNOTE") or "Image 2 is the real dog (likeness reference)."
+SUBJECT = os.environ.get("SUBJECT") or "the head of a fluffy Bichon-style poodle"
 REF = os.environ.get("LIKENESS_REF", "refs/linda/ref_2025-08_front_smile.jpg")
 d = sys.argv[1]
 tech = {t["file"]: t for t in json.load(open(os.path.join(d, "tech.json")))}
@@ -26,7 +28,7 @@ CUSTOMERS (honest gut reactions, would they actually pay?):
 13 gift_buyer (buying for a family member who loves their dog, price sensitive)
 14 art_lover (gallery-goer, cares about craft and originality, hates generic AI look)"""
 
-PROMPT = f"""You are a rigorous review board for a print-on-demand apparel brand (AlphaDog). Image 1 is a candidate t-shirt/hoodie/cap graphic: the head of a fluffy Bichon-style poodle in the style named "{{style}}". Image 2 is the real dog (likeness reference).
+PROMPT = f"""You are a rigorous review board for a print-on-demand apparel brand (AlphaDog). Image 1 is a candidate t-shirt/hoodie/cap graphic: {SUBJECT} in the style named "{{style}}". {REFNOTE}
 Brand brief: {BRIEF} Be harsh and specific. Calibrate scores: 5 = an average sellable POD design, 7 = clearly above average, 9-10 = exceptional and rare. Never give everyone 8. Every problem must be concrete (where, what) and every fix actionable (prompt change or post-processing step).
 Measured technical data from our code (trust these numbers): {{tech}}
 Roles:

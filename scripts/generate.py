@@ -7,7 +7,8 @@ MODEL = os.environ.get("MODEL", "gemini-2.5-flash-image")
 MAX_IMAGES = int(os.environ.get("MAX_IMAGES", "14"))  # hard cap per run
 ONLY = [s for s in os.environ.get("ONLY", "").split(",") if s]
 REFS = {"smile": "refs/linda/ref_2025-08_front_smile.jpg",
-        "fluffy": "refs/linda/ref_2025-01_front_fluffy.jpg"}
+        "fluffy": "refs/linda/ref_2025-01_front_fluffy.jpg",
+        "full": "refs/linda/ref_2014_full_sitting.jpg"}
 
 cfg = json.load(open(os.environ.get("STYLES_FILE", "scripts/styles.json")))
 OUT = os.environ.get("OUT_DIR", "out/linda")
@@ -17,9 +18,11 @@ url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generate
 log = []
 for s in styles:
     img_b64 = base64.b64encode(open(REFS[s["ref"]], "rb").read()).decode()
-    body = {"contents": [{"parts": [
-        {"inline_data": {"mime_type": "image/jpeg", "data": img_b64}},
-        {"text": cfg["base"] + " " + s["prompt"]}]}],
+    parts = [{"inline_data": {"mime_type": "image/jpeg", "data": img_b64}}]
+    if s.get("style_ref"):  # match an existing design's exact style (front/back coherence)
+        parts.append({"inline_data": {"mime_type": "image/png", "data": base64.b64encode(open(s["style_ref"], "rb").read()).decode()}})
+    parts.append({"text": cfg["base"] + " " + s["prompt"]})
+    body = {"contents": [{"parts": parts}],
         "generationConfig": {"responseModalities": ["IMAGE"]}}
     req = urllib.request.Request(url, data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json", "x-goog-api-key": API_KEY})
