@@ -1,0 +1,1465 @@
+{
+ "C1_rottweiler_continuous_line.png": {
+  "style_detected": "continuous line drawing",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Not a true single continuous line (multiple breaks).",
+     "Uniform line weight lacks dynamic tension and depth."
+    ],
+    "fixes": [
+     "Vary line weight to create visual hierarchy.",
+     "Ensure a single unbroken path if marketed as 'continuous'."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "Low resolution requires 5.7x upscale, causing blur.",
+     "Anti-aliased edges will create white underbase halos on dark garments."
+    ],
+    "fixes": [
+     "Vectorize the image to create crisp, scalable paths.",
+     "Remove background completely and output as 1-bit monochrome."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "Overlapping loops around eyes and nose will cause thread build-up.",
+     "Lines are too dense in the center for clean stitching."
+    ],
+    "fixes": [
+     "Simplify the path and remove inner loops in the eyes.",
+     "Increase spacing between parallel lines to minimum 0.05 inches."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Left eye line loops awkwardly into the forehead.",
+     "Tongue/jaw separation is ambiguous and messy."
+    ],
+    "fixes": [
+     "Redraw eye loops to follow anatomical contours.",
+     "Clarify the mouth line to separate tongue from lower lip."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic line art style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Style works for smooth coats but will struggle to represent fluffy breeds cleanly.",
+     "Lacks a unique brand signature to stand out from stock art."
+    ],
+    "fixes": [
+     "Establish rules for representing different fur textures using specific loop patterns.",
+     "Add a subtle, consistent geometric element to tie the series together."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Continuous line art is highly saturated on POD marketplaces.",
+     "Low thumbnail detail survival; looks like a scribble at 150px."
+    ],
+    "fixes": [
+     "Thicken the primary silhouette outline for better thumbnail readability.",
+     "Market with a strong, unique typography layout to add value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Fails the prompt's Bichon test; clearly reads as a Rottweiler.",
+     "Lacks the distinct tan markings crucial for Rottweiler identity."
+    ],
+    "fixes": [
+     "Use line density or specific shading loops to suggest eyebrow and muzzle markings."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Instructed to ignore likeness."
+    ],
+    "fixes": [
+     "N/A"
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Too basic and millennial 'wine mom' aesthetic.",
+     "Lacks irony or trend appeal."
+    ],
+    "fixes": [
+     "Make it more abstract or pair with edgy typography."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute, but a bit generic.",
+     "Needs to look premium to justify $24."
+    ],
+    "fixes": [
+     "Print on high-quality, muted color blanks (e.g., sage, oat)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too delicate and artsy.",
+     "Prefers bolder graphics or realistic portraits."
+    ],
+    "fixes": [
+     "Thicken lines significantly for a more masculine look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe gift, but might look cheap if the print is blurry."
+    ],
+    "fixes": [
+     "Ensure crisp printing and offer in nice packaging."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Obviously AI-generated; not a true continuous line.",
+     "Lacks the intentionality of human-made line art."
+    ],
+    "fixes": [
+     "Commission a real artist for genuine continuous line work."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean, minimalist aesthetic suitable for modern apparel.",
+   "Easily recognizable as a Rottweiler silhouette.",
+   "1-color design keeps production costs low."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the artwork to resolve low resolution and anti-aliasing issues.",
+   "Simplify overlapping loops around the eyes and nose for embroidery viability.",
+   "Ensure the background is 100% transparent."
+  ],
+  "prompt_rewrite": "A minimalist, single continuous line drawing of a Rottweiler dog head, front-facing, pure black line on a pure white background, elegant and simple, vector art style, varying line weight, no shading, no text, clean loops, highly recognizable breed features.",
+  "usage": {
+   "promptTokenCount": 3415,
+   "candidatesTokenCount": 1970,
+   "totalTokenCount": 7441,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1239
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2176
+    }
+   ],
+   "thoughtsTokenCount": 2056,
+   "serviceTier": "standard"
+  }
+ },
+ "C2_retriever_bold_stencil.png": {
+  "style_detected": "High-contrast vector stencil / threshold silhouette",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 7,
+    "problems": [
+     "The style is highly commercial but leans slightly generic, resembling a standard Photoshop threshold filter rather than a bespoke illustration.",
+     "The bottom neck edge is a bit jagged and unresolved, ending abruptly."
+    ],
+    "fixes": [
+     "Smooth out the bottom neck fur to create a more deliberate, elegant logo-like termination.",
+     "Introduce slight variations in line weight to give it a more hand-crafted, premium feel rather than a strict digital trace."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "T11: Massive amount of stray marks (30,486px) due to watermarks and text badges.",
+     "T2/T3: Soft edges (0.525) and jpeg compression artifacts around the black lines will cause a jagged, messy print or underbase halo on DTG.",
+     "T7: As a black graphic with a white background, it only prints well on light shirts unless the background is knocked out. If knocked out, it disappears on dark shirts."
+    ],
+    "fixes": [
+     "Manually erase all watermarks and the top right badge.",
+     "Vectorize the image (Image Trace) to convert it to pure 1-bit black and transparent, eliminating all soft edges.",
+     "Create a negative/inverted version (white ink on transparent) to allow printing on dark garments like navy or black."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 9,
+    "problems": [
+     "The jagged edges at the very bottom of the neck might result in messy jump stitches or overly dense tie-offs."
+    ],
+    "fixes": [
+     "Simplify the bottom neck fur into fewer, bolder points.",
+     "Digitize the black areas as solid tatami fills or satin stitches for the thinner lines, leaving the white areas as negative space (fabric)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Heavy watermarking across the entire image (@KolyDigital).",
+     "A UI/Stock badge is baked into the top right corner.",
+     "Slight asymmetry in the highlights of the nose (left side has a hook, right side is a dot)."
+    ],
+    "fixes": [
+     "Clone stamp/heal out all text and watermarks.",
+     "Mirror or manually adjust the nose highlights for better symmetry."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 2,
+    "problems": [
+     "The image contains explicit copyright watermarks ('@KolyDigital') and a product badge ('STL file / SVG file'). Using this exact file is a direct copyright violation of the stock artist's work."
+    ],
+    "fixes": [
+     "Do not use this specific file. Generate a new, original asset using the prompt, or legally purchase the license for this vector and use the clean source file."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Contains explicit third-party watermarks and creator tags.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 9,
+    "problems": [
+     "The style is very strong for a series, but ensuring the 'threshold' level remains consistent across breeds with different fur colors (e.g., a black lab vs a white poodle) will be challenging."
+    ],
+    "fixes": [
+     "Establish strict guidelines for the ratio of black to white space (e.g., 60% black / 40% white) to ensure all 25 breeds look like they belong to the exact same collection."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 7,
+    "problems": [
+     "The 'stencil dog' market is highly saturated on Etsy and Amazon. It lacks a unique hook to justify a premium $24 price tag on a basic tee."
+    ],
+    "fixes": [
+     "Position this as a premium, minimalist 'signature' line. Mock it up on high-end blanks (like Comfort Colors or heavy canvas totes) and embroidered caps to elevate the perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 8,
+    "problems": [
+     "Reads perfectly as a Golden Retriever or Flat-Coated Retriever. (Note: ignoring the 'Bichon' prompt error, evaluating as the visual subject). The stop (forehead angle) is slightly steep for a show-standard Golden, but perfectly acceptable for a stylized graphic."
+    ],
+    "fixes": [
+     "None required for breed recognition."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Calibration run: ignoring likeness."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "It's giving 'millennial dog dad'. Not very trendy, aesthetic, or ironic. It's just a standard dog logo."
+    ],
+    "fixes": [
+     "Make the lines more fluid or abstract to fit current Y2K or minimalist line-art trends."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 8,
+    "problems": [
+     "A bit masculine/heavy with all the thick black ink, but I'd buy it if it was embroidered small on a dad hat or left chest of a cozy sweatshirt."
+    ],
+    "fixes": [
+     "Offer it as a small pocket-sized print or embroidery rather than a massive full-front graphic."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 9,
+    "problems": [
+     "None. I like that it's bold, not cartoonish, and looks like a cool brand logo."
+    ],
+    "fixes": [
+     "Print it on a dark heather grey or olive green shirt (needs inverted white ink)."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 28
+   },
+   {
+    "role": "gift_buyer",
+    "score": 8,
+    "problems": [
+     "Very safe, recognizable design. Perfect gift for my dad who loves his Golden."
+    ],
+    "fixes": [
+     "Ensure it prints cleanly without looking cheap."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks artistic soul. It looks exactly like a photograph run through a digital threshold filter. There is no evidence of a human hand or intentional linework."
+    ],
+    "fixes": [
+     "Redraw the stencil shapes with a brush pen or vector tool to give the edges intentional, artistic flow rather than jagged digital artifacts."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "High contrast makes it instantly readable from a distance.",
+   "Excellent candidate for clean, low-color embroidery.",
+   "Highly scalable style for a cohesive 25-breed brand line."
+  ],
+  "must_fix_before_production": [
+   "Remove all watermarks and the top right badge.",
+   "Vectorize the image to pure black and transparent to remove soft edges and compression artifacts.",
+   "Create an inverted (white ink) version to allow printing on dark garments."
+  ],
+  "prompt_rewrite": "A minimalist, elegant, high-contrast black and white stencil silhouette of a Golden Retriever dog head, front-facing, symmetrical, bold solid black shapes and clean negative space, premium logo style, vector art style, pure white background, no text, no watermarks.",
+  "usage": {
+   "promptTokenCount": 3468,
+   "candidatesTokenCount": 2385,
+   "totalTokenCount": 8443,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1291
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2177
+    }
+   ],
+   "thoughtsTokenCount": 2590,
+   "serviceTier": "standard"
+  }
+ },
+ "C3_shihtzu_ink_fur_strokes.png": {
+  "style_detected": "bold high-contrast vector ink illustration",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Artwork is cropped at the top edge.",
+     "Style is a bit generic stock-vector, lacking the 'elegant minimalist' brand requirement.",
+     "Heavy black areas feel dense rather than airy."
+    ],
+    "fixes": [
+     "Scale down artwork to ensure full head is within canvas.",
+     "Reduce line thickness and density to achieve a more minimalist look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Tech data shows 80% soft edges; high risk of underbase halos on dark garments.",
+     "1583px of stray marks detected (likely the watermark).",
+     "Requires >4x upscale for full front."
+    ],
+    "fixes": [
+     "Apply strict black/white thresholding to remove anti-aliasing.",
+     "Erase bottom right watermark and stray pixels.",
+     "Vectorize before upscaling."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 4,
+    "problems": [
+     "Fur strokes are too dense and overlapping for a 4-inch cap front.",
+     "Tight negative space around the nose and eyes will close up and cause thread breaks.",
+     "Too much detail for a clean 6-color minimalist stitch."
+    ],
+    "fixes": [
+     "Remove 50% of the interior fur lines.",
+     "Widen all white gaps between black strokes to at least 0.05 inches.",
+     "Simplify the beard into solid shapes rather than individual hairs."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 4,
+    "problems": [
+     "Visible watermark/text in the bottom right corner.",
+     "Top of the head is artificially cropped by the frame edge.",
+     "Some fur lines on the left cheek merge into a solid black blob unnaturally."
+    ],
+    "fixes": [
+     "Crop or clone-stamp out the watermark.",
+     "Regenerate with 'fully contained in frame' prompt.",
+     "Manually separate merged fur lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 3,
+    "problems": [
+     "Clear watermark/URL text visible in the bottom right corner indicating stock site scraping or AI hallucination of a copyright mark."
+    ],
+    "fixes": [
+     "Must completely remove the watermark before any commercial use."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Visible watermark/text implies potential copyright infringement or uncleaned AI artifact.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "This dense ink style works for fluffy dogs but might look overly harsh or skeletal on short-coated breeds (like Dobermans).",
+     "Not minimalist enough for the brand brief."
+    ],
+    "fixes": [
+     "Pivot the series style to thinner, more uniform line weights.",
+     "Establish a rule for maximum line count per illustration."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Reads well at thumbnail size due to high contrast.",
+     "Lacks differentiation; looks like standard POD vector art.",
+     "Cropped top reduces perceived premium value."
+    ],
+    "fixes": [
+     "Fix the crop.",
+     "Present on premium mockups to elevate the generic style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 6,
+    "problems": [
+     "Reads perfectly as a Shih Tzu (domed head, mustache, drop ears), but prompt requested Bichon-type. Fails Bichon check, passes Shih Tzu check."
+    ],
+    "fixes": [
+     "If Bichon is needed, needs rounder afro-like top and less distinct mustache.",
+     "If Shih Tzu is intended, it is accurate."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored as per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "A bit too 'standard dog mom' graphic.",
+     "Not ironic, aesthetic, or minimalist enough for current trends."
+    ],
+    "fixes": [
+     "Make it a trendy continuous line drawing instead."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute and recognizable, but the cropped head looks like a printing mistake."
+    ],
+    "fixes": [
+     "Show the whole head."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 5,
+    "problems": [
+     "A bit too stylized and fluffy.",
+     "Prefers cleaner, more geometric or subtle logos."
+    ],
+    "fixes": [
+     "Simplify the fur details."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Good safe gift for a Shih Tzu owner.",
+     "Watermark makes it look cheap/stolen."
+    ],
+    "fixes": [
+     "Remove watermark."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Looks like mass-produced clip art.",
+     "Lacks a unique artistic signature or elegance."
+    ],
+    "fixes": [
+     "Introduce a more distinct, elegant line-art style."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "High contrast makes it very readable from a distance.",
+   "Easily convertible to a 1-color print.",
+   "Accurate representation of Shih Tzu breed features."
+  ],
+  "must_fix_before_production": [
+   "Remove the watermark/text in the bottom right corner.",
+   "Fix the cropped top of the head so the entire design floats cleanly.",
+   "Apply a strict black/white threshold to remove soft edges for DTG printing.",
+   "Drastically simplify interior lines for embroidery compatibility."
+  ],
+  "prompt_rewrite": "minimalist elegant black and white line art logo of a Shih Tzu dog head, front-facing, clean vector style, solid white background, fully contained within frame, no cropped edges, simplified strokes, no text, no watermarks, high contrast",
+  "usage": {
+   "promptTokenCount": 3466,
+   "candidatesTokenCount": 2150,
+   "totalTokenCount": 7339,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1289
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2177
+    }
+   ],
+   "thoughtsTokenCount": 1723,
+   "serviceTier": "standard"
+  }
+ },
+ "C4_shepherd_geometric_line.png": {
+  "style_detected": "minimalist geometric polygon line art",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Composition is balanced but reads as a generic stock vector.",
+     "Snout proportions make it look feline rather than canine."
+    ],
+    "fixes": [
+     "Elongate the muzzle polygons to establish a clear canine silhouette."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "T1 upscale needed (>4x) for front print.",
+     "T3 soft edge risk will cause underbase halos if not perfectly vectorized."
+    ],
+    "fixes": [
+     "Convert to pure vector (SVG) to eliminate soft edges and allow infinite scaling."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Line intersections at the nose and ears may create bulky thread knots."
+    ],
+    "fixes": [
+     "Ensure all lines are at least 1.5mm thick and simplify the nose triangle."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Geometry is clean but lacks canine anatomical accuracy in the jawline."
+    ],
+    "fixes": [
+     "Adjust lower polygon structure to extend the muzzle and widen the jaw."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 6,
+    "problems": [
+     "Highly resembles standard stock vectors for 'geometric cat' or 'wolf'."
+    ],
+    "fixes": [
+     "Add a unique, brand-specific geometric flourish to make it ownable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Strict straight lines will be difficult to adapt for wrinkly or floppy-eared breeds."
+    ],
+    "fixes": [
+     "Establish brand rules for integrating slight curves for non-pointy breeds."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 5,
+    "problems": [
+     "Geometric animals are a saturated trend from 2016.",
+     "May struggle to command a premium $24 price point."
+    ],
+    "fixes": [
+     "Pair with strong modern typography or print on premium garment washes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 4,
+    "problems": [
+     "Fails completely as a Bichon (per prompt text) and looks more like a cat than a Shepherd.",
+     "Snout is too short and blunt."
+    ],
+    "fixes": [
+     "Lengthen the muzzle polygons and broaden the jawline to read as a Shepherd."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored per instructions."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 4,
+    "problems": [
+     "Feels like 2014 millennial hipster art.",
+     "Not ironic or trendy enough."
+    ],
+    "fixes": [
+     "Update to a wireframe 3D render style instead of flat 2D lines."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 5,
+    "problems": [
+     "Too stark and aggressive.",
+     "Lacks the cute factor for fluffy dog owners."
+    ],
+    "fixes": [
+     "Soften the lines or add a small geometric floral element."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 6,
+    "problems": [
+     "A bit generic, resembles a tech startup logo."
+    ],
+    "fixes": [
+     "Thicken the lines for a more aggressive, masculine look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "gift_buyer",
+    "score": 5,
+    "problems": [
+     "Hard to identify the specific breed, making it a risky gift."
+    ],
+    "fixes": [
+     "Ensure the breed silhouette is unmistakable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   },
+   {
+    "role": "art_lover",
+    "score": 4,
+    "problems": [
+     "Lacks soul or artistic hand.",
+     "Looks algorithmically generated."
+    ],
+    "fixes": [
+     "Introduce slight line weight variations to simulate hand-drawing."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   }
+  ],
+  "top_strengths": [
+   "Clean, scalable geometry",
+   "High contrast suitable for any garment color",
+   "Embroidery friendly"
+  ],
+  "must_fix_before_production": [
+   "Vectorize to fix soft edges and upscale issues",
+   "Elongate snout to look distinctly canine rather than feline"
+  ],
+  "prompt_rewrite": "minimalist geometric line art of a German Shepherd dog head, front facing, symmetrical polygon vector style, black lines on white background, distinct long canine snout, no text, clean white background",
+  "usage": {
+   "promptTokenCount": 3454,
+   "candidatesTokenCount": 1824,
+   "totalTokenCount": 7453,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2204
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1250
+    }
+   ],
+   "thoughtsTokenCount": 2175,
+   "serviceTier": "standard"
+  }
+ },
+ "C5_beagle_elegant_swash.png": {
+  "style_detected": "minimalist black and white vector silhouette with elegant swash lines",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 7,
+    "problems": [
+     "The UI watermark 'cenci\u00e1vel' in the bottom left completely ruins the composition and commercial viability.",
+     "The transition of the bottom neck swash ends a bit abruptly, lacking a perfect taper."
+    ],
+    "fixes": [
+     "Crop or digitally erase the watermark completely.",
+     "Refine the bottom-most point of the neck swash to taper more smoothly into nothingness."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 5,
+    "problems": [
+     "Technical data flags 92,272 pixels of stray marks, which is the watermark. This will print as an ugly grey/black block.",
+     "High soft edge share (0.718) means the anti-aliasing will create a white underbase halo if printed on dark garments.",
+     "Upscale needed is very high (9.09x) for a full front print, which will blur the crisp lines."
+    ],
+    "fixes": [
+     "Erase the watermark.",
+     "Apply a hard threshold/posterize effect to force all pixels to 100% black or 100% transparent.",
+     "Vectorize the image (Image Trace in Illustrator) to allow infinite scaling without pixelation."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 8,
+    "problems": [
+     "The watermark cannot be embroidered.",
+     "The very thin line defining the top of the dog's head might be too thin for a clean satin stitch if scaled down to a 2-inch cap height."
+    ],
+    "fixes": [
+     "Remove the watermark.",
+     "Thicken the top head outline slightly to ensure it is at least 1.5mm wide at the final embroidery size."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 6,
+    "problems": [
+     "Massive UI/watermark artifact in the bottom left corner.",
+     "The eye is a solid black shape with no catchlight, making it look slightly lifeless.",
+     "The line defining the mouth/jowl merges a bit awkwardly into the neck shadow."
+    ],
+    "fixes": [
+     "Remove the 'cenci\u00e1vel' text box.",
+     "Add a small, crisp white dot (catchlight) to the upper right of the eye.",
+     "Slightly separate the jowl line from the main neck shadow for better anatomical definition."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 1,
+    "problems": [
+     "The image contains a blatant UI overlay/watermark ('cenci\u00e1vel'), strongly indicating it is a screenshot of proprietary software or a stock image site."
+    ],
+    "fixes": [
+     "The watermark MUST be removed to avoid copyright or trademark infringement claims."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Contains visible watermark/UI element indicating potential copyright infringement.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 8,
+    "problems": [
+     "While this smooth, sweeping style works beautifully for a short-coated hound/beagle, it will be difficult to translate to curly or wire-haired breeds (like a Poodle or Schnauzer) while maintaining the exact same visual language."
+    ],
+    "fixes": [
+     "Develop a specific rule for the series: use scalloped or jagged swashes for textured coats, while keeping the overall high-contrast, heavy-shadow composition consistent."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 7,
+    "problems": [
+     "The watermark makes the thumbnail look cheap and unprofessional.",
+     "Black on white is safe but can get lost in a sea of similar designs on Etsy."
+    ],
+    "fixes": [
+     "Clean the image.",
+     "Mock this up as a white print on a premium dark heather grey or navy garment to increase perceived value."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 9,
+    "problems": [
+     "Note: The prompt brief mentioned Bichon, but the style name and image are clearly a Beagle/Hound. Evaluating as a Beagle: The ear drop, snout shape, and brow are highly accurate to a Beagle's profile."
+    ],
+    "fixes": [
+     "Ensure the eye has a softer expression by adding a catchlight, as Beagles are known for their pleading eyes."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Instructed to ignore likeness."
+    ],
+    "fixes": [
+     "None."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 5,
+    "problems": [
+     "It's a bit too 'millennial corporate logo' for my aesthetic. Looks like a vet clinic logo."
+    ],
+    "fixes": [
+     "Print it massive on the back of a vintage-washed oversized tee."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 9,
+    "problems": [
+     "I love how clean and elegant it is, but the weird text at the bottom has to go."
+    ],
+    "fixes": [
+     "Remove the text. Put this on a cozy crewneck sweatshirt."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 35
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 8,
+    "problems": [
+     "It's masculine enough and not overly cutesy. Good for a hat."
+    ],
+    "fixes": [
+     "Embroider it on a dark grey trucker hat."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 25
+   },
+   {
+    "role": "gift_buyer",
+    "score": 8,
+    "problems": [
+     "Looks like a very safe, classy gift for someone who owns a Beagle."
+    ],
+    "fixes": [
+     "Remove the watermark so it doesn't look like a mistake."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "art_lover",
+    "score": 6,
+    "problems": [
+     "It feels very digital and lacks the soul of a true hand-drawn brush stroke. The watermark is unacceptable."
+    ],
+    "fixes": [
+     "Introduce slight organic imperfections to the line weights so it looks like real ink rather than a digital pen tool."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 20
+   }
+  ],
+  "top_strengths": [
+   "Highly recognizable breed silhouette.",
+   "Excellent use of negative space.",
+   "Perfectly suited for 1-color printing and embroidery."
+  ],
+  "must_fix_before_production": [
+   "Completely remove the 'cenci\u00e1vel' watermark/UI text from the bottom left.",
+   "Vectorize the image to fix the upscale and soft-edge issues.",
+   "Add a small white catchlight to the eye."
+  ],
+  "prompt_rewrite": "A minimalist, elegant black and white vector silhouette of a Beagle dog head, 3/4 profile. The design uses sweeping, thick-to-thin swash lines to define the dog's features, ears, and neck. High contrast, solid black shapes on a pure white background. Clean vector edges, no shading, no gradients. The eye has a distinct white catchlight. No text, no watermarks, no UI elements, no background clutter. Premium logo design style.",
+  "usage": {
+   "promptTokenCount": 3491,
+   "candidatesTokenCount": 2330,
+   "totalTokenCount": 8212,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 1293
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2198
+    }
+   ],
+   "thoughtsTokenCount": 2391,
+   "serviceTier": "standard"
+  }
+ },
+ "C6_retriever_abstract_line.png": {
+  "style_detected": "minimalist continuous line drawing",
+  "roles": [
+   {
+    "role": "art_director",
+    "score": 6,
+    "problems": [
+     "Composition is bottom-heavy due to the long, trailing neck line.",
+     "Line weight varies inconsistently, lacking intentional calligraphy."
+    ],
+    "fixes": [
+     "Taper the bottom line intentionally rather than letting it fade.",
+     "Normalize line weight for a more cohesive, elegant look."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "print_technician",
+    "score": 4,
+    "problems": [
+     "Massive upscale needed (21.95x) will cause severe pixelation.",
+     "Soft edge share (0.568) risks white underbase halos on dark garments.",
+     "41,264 pixels of stray marks will print as dirty specks."
+    ],
+    "fixes": [
+     "Vectorize the artwork to solve resolution and soft edge issues.",
+     "Manually erase all stray marks outside the main line path.",
+     "Convert to pure 1-bit monochrome."
+    ],
+    "hard_fail": true,
+    "hard_fail_reason": "Resolution is too low for print without major vectorization.",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "embroidery_digitizer",
+    "score": 6,
+    "problems": [
+     "Lines are too thin in certain loops (eye, nose) for clean stitching.",
+     "Open bottom line provides no clean tie-off point."
+    ],
+    "fixes": [
+     "Thicken all lines to a minimum of 0.05 inches.",
+     "Close the bottom loop or add a distinct terminal point."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ai_artifact_inspector",
+    "score": 5,
+    "problems": [
+     "Art touches the canvas edge and is cropped at the bottom.",
+     "Unintended stray marks and specks scattered around the image.",
+     "Eye loop is slightly malformed and uncanny."
+    ],
+    "fixes": [
+     "Expand canvas to ensure no cropping.",
+     "Clean up stray pixels.",
+     "Redraw the eye loop for better anatomical suggestion."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "ip_compliance_reviewer",
+    "score": 7,
+    "problems": [
+     "None detected. Generic abstract style."
+    ],
+    "fixes": [
+     "None needed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "series_designer",
+    "score": 6,
+    "problems": [
+     "Profile view works for retrievers, but may fail for flat-faced breeds (e.g., Pugs) in a 25-breed series."
+    ],
+    "fixes": [
+     "Establish strict guidelines on whether the series uses profile or front-facing angles per breed."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "marketplace_merchandiser",
+    "score": 6,
+    "problems": [
+     "Continuous line art is highly saturated in the POD market.",
+     "May not stand out as a small thumbnail."
+    ],
+    "fixes": [
+     "Thicken the lines for better thumbnail readability.",
+     "Offer personalization (custom dog name) to differentiate."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "breed_expert",
+    "score": 5,
+    "problems": [
+     "Reads as a generic floppy-eared dog (could be a hound, pointer, or retriever).",
+     "Lacks specific retriever markers (blocky head, specific ear set)."
+    ],
+    "fixes": [
+     "Adjust the snout to be slightly blockier.",
+     "Modify the ear shape to be distinctly retriever rather than hound-like."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "likeness_judge",
+    "score": 5,
+    "problems": [
+     "Ignored per instructions."
+    ],
+    "fixes": [
+     "Ignored per instructions."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": null,
+    "max_price_usd": null
+   },
+   {
+    "role": "genz_tiktok_shopper",
+    "score": 6,
+    "problems": [
+     "A bit basic, but fits the clean girl aesthetic."
+    ],
+    "fixes": [
+     "Put it on a trendy oversized baby tee."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 20
+   },
+   {
+    "role": "millennial_dog_mom",
+    "score": 6,
+    "problems": [
+     "Cute and subtle, but maybe too abstract."
+    ],
+    "fixes": [
+     "Make the dog look slightly happier or more recognizable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 24
+   },
+   {
+    "role": "male_owner_35_55",
+    "score": 4,
+    "problems": [
+     "Too delicate and artsy. Doesn't look like a standard dog logo."
+    ],
+    "fixes": [
+     "Use a bolder, more structured silhouette."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 15
+   },
+   {
+    "role": "gift_buyer",
+    "score": 6,
+    "problems": [
+     "Safe design, but might not look exactly like the recipient's specific dog."
+    ],
+    "fixes": [
+     "Ensure the breed is clearly identifiable."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": true,
+    "max_price_usd": 22
+   },
+   {
+    "role": "art_lover",
+    "score": 5,
+    "problems": [
+     "Continuous line art is a bit clich\u00e9 and lacks true artistic depth."
+    ],
+    "fixes": [
+     "Add a unique twist, like a single pop of color or varied line textures."
+    ],
+    "hard_fail": false,
+    "hard_fail_reason": "",
+    "would_buy": false,
+    "max_price_usd": 18
+   }
+  ],
+  "top_strengths": [
+   "Elegant, minimalist aesthetic suitable for premium branding.",
+   "Highly adaptable for embroidery if lines are thickened.",
+   "Easily scalable style for a multi-breed collection."
+  ],
+  "must_fix_before_production": [
+   "Vectorize the image to fix the 21x upscale requirement and soft edges.",
+   "Clean up the 41,264 pixels of stray marks.",
+   "Ensure the artwork does not touch the canvas edge."
+  ],
+  "prompt_rewrite": "A single continuous black line drawing of a retriever dog head, front-facing, minimalist, elegant, pure white background, vector art style, clean sharp edges, consistent line weight, no shading, no stray marks, no text.",
+  "usage": {
+   "promptTokenCount": 3486,
+   "candidatesTokenCount": 2014,
+   "totalTokenCount": 7622,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2190
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 1296
+    }
+   ],
+   "thoughtsTokenCount": 2122,
+   "serviceTier": "standard"
+  }
+ }
+}
