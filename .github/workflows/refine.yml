@@ -1,0 +1,32 @@
+name: refine
+on:
+  workflow_dispatch:
+    inputs:
+      families: {description: "Comma list, run one after another", default: "geometric,continuous,silhouette"}
+      rounds: {description: "Max rounds per family", default: "4"}
+      variants: {description: "Images per round", default: "4"}
+      model: {description: "Image model", default: "gemini-2.5-flash-image"}
+      critic_model: {description: "Critic model", default: "gemini-3.1-pro-preview"}
+permissions:
+  contents: write
+jobs:
+  refine:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install numpy scipy pillow
+      - name: Refine each family in order
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          ROUNDS: ${{ inputs.rounds }}
+          VARIANTS: ${{ inputs.variants }}
+          MODEL: ${{ inputs.model }}
+          CRITIC_MODEL: ${{ inputs.critic_model }}
+        run: |
+          git config user.name "alphadog-bot"; git config user.email "alphadog-bot@users.noreply.github.com"
+          for f in $(echo "${{ inputs.families }}" | tr ',' ' '); do
+            FAMILY=$f python3 scripts/refine.py || true
+            git add out/refine; git commit -m "Refine $f $(date -u +%F_%H%M)" || true
+            for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
+          done

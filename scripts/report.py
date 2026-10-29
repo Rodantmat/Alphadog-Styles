@@ -19,6 +19,9 @@ def norm(s):
     s = str(s or "").strip().lower()
     if s.isdigit() and 1 <= int(s) <= len(ORDER): return ORDER[int(s) - 1]
     return re.sub(r"^\d+\s*[-_.:]?\s*", "", s)
+# v1.2 calibration: the owner's 6 market reference designs scored 5.2-6.8 (avg 5.8, best 6.77, prices 18-24).
+# PASS = clearly beats the best market reference.
+PASS_CONCEPT, PASS_BUYERS, PASS_PRICE = 6.8, 3, 20
 rows = []
 for f in sorted(set(tech) | set(crit)):
     c = crit.get(f, {}); t = tech.get(f, {})
@@ -40,7 +43,7 @@ for f in sorted(set(tech) | set(crit)):
     # verdict on CONCEPT (production handled by pipeline unless regen needed)
     if not c: verdict = "NO REVIEW"
     elif concept_hard or concept < 5.5 or buyers <= 1: verdict = "REJECT"
-    elif concept >= 7.5 and buyers >= 4 and avg_price >= 24 and not regen: verdict = "PASS"
+    elif concept >= PASS_CONCEPT and buyers >= PASS_BUYERS and avg_price >= PASS_PRICE and not regen: verdict = "PASS"
     else: verdict = "REWORK"
     rows.append({"file": f, "verdict": verdict, "concept": concept, "concept_pro": round(concept_pro, 2), "customers": round(cust, 2),
                  "would_buy": f"{buyers}/5", "avg_price": avg_price, "concept_hard_fails": concept_hard,
@@ -52,7 +55,7 @@ for f in sorted(set(tech) | set(crit)):
                  "customer_quotes": {k: (roles.get(k, {}).get("problems") or [""])[0] for k in CUST}})
 rows.sort(key=lambda r: -r["concept"])
 json.dump(rows, open(os.path.join(d, "verdicts.json"), "w"), indent=1)
-L = ["# Art Analyzer Report", "", "PASS needs: concept >= 7.5, >= 4/5 customers buy, avg price >= $24 (our tee price), no concept hard-fail, nothing needing regeneration.", "",
+L = ["# Art Analyzer Report", "", "PASS needs: concept >= 6.8 (beats best market reference 6.77), >= 3/5 customers buy, avg price >= $20, no concept hard-fail, nothing needing regeneration.", "",
      "| Rank | Design | Verdict | Concept | Pros | Customers | Would buy | Avg $ | Print | Cap | Auto-fixes | Needs regen |",
      "|---|---|---|---|---|---|---|---|---|---|---|---|"]
 for i, r in enumerate(rows, 1):
