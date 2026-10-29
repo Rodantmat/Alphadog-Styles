@@ -1,0 +1,25 @@
+{
+ "base": "Image 1 is a finished apparel design set for a French Bulldog: a small FRONT chest emblem (head, left) and the matching full-body BACK print (right), in a bold continuous-line style. Create a NEW design set of the SAME dog breed with the SAME layout (front head emblem on the left, matching full-body sitting back print on the right, same proportions, same canvas), same level of polish and bold, uniform, print-friendly weight, pure black on a flat pure white background, no gray, no gradients, no shadow, no frame, no curly flourishes, no ornaments, no text or letters. The front and back must clearly be one coherent set. The new visual theme is: ",
+ "styles": [
+  {
+   "id": "sil_solid",
+   "ref": "frenchie_pair",
+   "prompt": "SILHOUETTE. Both the head emblem and the full body are solid black silhouettes with only the eyes, nose, mouth and a few key inner shapes carved out as white negative space. Iconic, bold, graphic, instantly readable."
+  },
+  {
+   "id": "sil_stencil",
+   "ref": "frenchie_pair",
+   "prompt": "SILHOUETTE STENCIL. Solid black shapes with thin white stencil-cut lines separating the ears, face, chest, legs and tail, high contrast, like a premium vinyl-cut decal. Both head emblem and body."
+  },
+  {
+   "id": "geo_poly",
+   "ref": "frenchie_pair",
+   "prompt": "GEOMETRIC. Both the head and the body are built from bold straight lines and clean polygons (triangles, trapezoids) like a sharp low-poly line drawing, symmetrical, with a few solid black triangle accents for eyes and nose."
+  },
+  {
+   "id": "geo_circles",
+   "ref": "frenchie_pair",
+   "prompt": "GEOMETRIC. Both the head and the body are built from perfect circles, arcs and straight segments, like a compass-and-ruler construction, even bold line weight, minimal and modern."
+  }
+ ]
+}

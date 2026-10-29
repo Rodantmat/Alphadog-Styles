@@ -7,6 +7,7 @@ on:
       only: {description: "Comma list of style ids (blank = all)", default: ""}
       styles_file: {description: "Styles JSON", default: "scripts/styles.json"}
       out_dir: {description: "Output folder", default: "out/linda"}
+      aspect: {description: "Aspect ratio (blank = default)", default: ""}
 permissions:
   contents: write
 jobs:
@@ -23,6 +24,7 @@ jobs:
           ONLY: ${{ inputs.only }}
           STYLES_FILE: ${{ inputs.styles_file }}
           OUT_DIR: ${{ inputs.out_dir }}
+          ASPECT: ${{ inputs.aspect }}
         run: python3 scripts/generate.py
       - name: Commit results
         run: |
