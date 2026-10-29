@@ -6,6 +6,7 @@ on:
       critic_model: {description: "Gemini critic model", default: "gemini-3.1-pro-preview"}
       max_critiques: {description: "Hard cap on critiques this run", default: "20"}
       only: {description: "Comma list of png names (blank = all)", default: ""}
+      brief: {description: "Brand brief for critics", default: ""}
 permissions:
   contents: write
 jobs:
@@ -23,6 +24,7 @@ jobs:
           CRITIC_MODEL: ${{ inputs.critic_model }}
           MAX_CRITIQUES: ${{ inputs.max_critiques }}
           ONLY: ${{ inputs.only }}
+          BRIEF: ${{ inputs.brief }}
         run: python3 scripts/critic.py "${{ inputs.dir }}"
       - name: Report
         run: python3 scripts/report.py "${{ inputs.dir }}"
