@@ -1,0 +1,23 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "mini_poodle_linda__classic",
+   "ref": "smile",
+   "style_ref": "out/themes/gemini-nano-banana-2.1/geo_poly.jpg",
+   "prompt": "Image 1 is a photo of Linda, a real MINI poodle (small fluffy white Bichon-type poodle: round cloud-like fluffy head, soft curly fluffy coat, long drop ears with soft curls, dark eyes, black button nose, happy tongue out): keep her likeness and small fluffy proportions. Image 2 is an approved finished geometric design set: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create the NEW set of the same kind for Linda the mini poodle. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 2. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Plain classic version, no accessories."
+  },
+  {
+   "id": "mini_poodle_linda__cool",
+   "ref": "smile",
+   "style_ref": "out/themes/gemini-nano-banana-2.1/geo_poly.jpg",
+   "prompt": "Image 1 is a photo of Linda, a real MINI poodle (small fluffy white Bichon-type poodle: round cloud-like fluffy head, soft curly fluffy coat, long drop ears with soft curls, dark eyes, black button nose, happy tongue out): keep her likeness and small fluffy proportions. Image 2 is an approved finished geometric design set: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create the NEW set of the same kind for Linda the mini poodle. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 2. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Both the front head and the back dog wear sunglasses built from simple geometric shapes (solid black angular lenses), nothing else added."
+  },
+  {
+   "id": "mini_poodle_linda__heart",
+   "ref": "smile",
+   "style_ref": "out/themes/gemini-nano-banana-2.1/geo_poly.jpg",
+   "prompt": "Image 1 is a photo of Linda, a real MINI poodle (small fluffy white Bichon-type poodle: round cloud-like fluffy head, soft curly fluffy coat, long drop ears with soft curls, dark eyes, black button nose, happy tongue out): keep her likeness and small fluffy proportions. Image 2 is an approved finished geometric design set: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, built from bold straight lines and clean polygons with a few solid black triangle accents for eyes and nose. Create the NEW set of the same kind for Linda the mini poodle. EXACTLY the same geometric construction style, bold even line weight, level of detail, layout and proportions as image 2. Pure black on flat pure white background, no gray, no gradients, no shadow, no frame, no text or letters, no ornaments. Heart edition: the front head emblem sits inside an angular heart outline made of straight lines, with a small angular heart above it; the back dog wears a small angular heart-shaped tag on a thin collar line."
+  }
+ ]
+}

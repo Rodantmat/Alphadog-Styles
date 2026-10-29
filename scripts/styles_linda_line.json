@@ -1,0 +1,23 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "mini_poodle_linda__classic",
+   "ref": "smile",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg",
+   "prompt": "Image 1 is a photo of Linda, a real MINI poodle (small fluffy white Bichon-type poodle: round cloud-like fluffy head, soft curly fluffy coat, long drop ears with soft curls, dark eyes, black button nose, happy tongue out): keep her likeness and small fluffy proportions. Image 2 is an approved finished design set showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, in a bold single flowing hand-drawn continuous line. Create the NEW set of the same kind for Linda the mini poodle. Same single flowing line, same weight, same expressive face, same layout and proportions, not over-detailed. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Plain classic version, no accessories."
+  },
+  {
+   "id": "mini_poodle_linda__cool",
+   "ref": "smile",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg",
+   "prompt": "Image 1 is a photo of Linda, a real MINI poodle (small fluffy white Bichon-type poodle: round cloud-like fluffy head, soft curly fluffy coat, long drop ears with soft curls, dark eyes, black button nose, happy tongue out): keep her likeness and small fluffy proportions. Image 2 is an approved finished design set showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, in a bold single flowing hand-drawn continuous line. Create the NEW set of the same kind for Linda the mini poodle. Same single flowing line, same weight, same expressive face, same layout and proportions, not over-detailed. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Both the front head and the back dog wear simple black aviator sunglasses (solid dark lenses with a tiny white glint), nothing else added."
+  },
+  {
+   "id": "mini_poodle_linda__heart",
+   "ref": "smile",
+   "style_ref": "out/oneline/gemini-nano-banana-2.1/line_bolder.jpg",
+   "prompt": "Image 1 is a photo of Linda, a real MINI poodle (small fluffy white Bichon-type poodle: round cloud-like fluffy head, soft curly fluffy coat, long drop ears with soft curls, dark eyes, black button nose, happy tongue out): keep her likeness and small fluffy proportions. Image 2 is an approved finished design set showing the EXACT layout, drawing style and line weight wanted: a small FRONT chest emblem (head only) on the left and the matching full-body sitting BACK print on the right, in a bold single flowing hand-drawn continuous line. Create the NEW set of the same kind for Linda the mini poodle. Same single flowing line, same weight, same expressive face, same layout and proportions, not over-detailed. Pure black line on flat pure white background, no gray, no fill, no shading, no frame, no text or letters, no curly flourishes or ornaments except the natural loops of the line. Heart edition: the front head emblem sits inside one single flowing heart-shaped line, with a small heart above it; the back dog wears a small heart-shaped tag hanging from a thin collar line."
+  }
+ ]
+}
