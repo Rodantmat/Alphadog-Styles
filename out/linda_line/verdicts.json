@@ -1,0 +1,1816 @@
+[
+ {
+  "file": "L21_topographic.png",
+  "verdict": "REWORK",
+  "concept": 6.16,
+  "concept_pro": 6.13,
+  "customers": 6.2,
+  "would_buy": "2/5",
+  "avg_price": 19.8,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (63612px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 6,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 6,
+   "gift_buyer": 7,
+   "art_lover": 5
+  },
+  "must_fix": [
+   "Vectorize to remove 63k stray pixels and allow upscaling.",
+   "Add white catchlights to the eyes.",
+   "Reduce line density significantly for embroidery compatibility.",
+   "Round the top of the head silhouette."
+  ],
+  "strengths": [
+   "Clean black-and-white aesthetic.",
+   "Easily adaptable to single-color printing.",
+   "Unique, modern take on dog portraits."
+  ],
+  "style_detected": "topographic contour line art",
+  "prompt_rewrite": "A minimalist, elegant, black-and-white vector-style logo of a fluffy Bichon Poodle head, front-facing. Executed in a clean topographic contour line art style. Wavy, evenly spaced black lines on a pure white background. The dog has a perfectly round cloud-like head, drop ears, and dark eyes with white catchlights. No text, bold silhouette, scalable graphic design.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'millennial craft fair'. Needs to be edgier.",
+   "millennial_dog_mom": "Cute, but the eyes are a little creepy without the white sparkles.",
+   "male_owner_35_55": "A bit too intricate. Looks like a maze.",
+   "gift_buyer": "Good safe design, but worried it might print blurry.",
+   "art_lover": "The topographic filter applied to a dog face feels like a cheap digital trick."
+  }
+ },
+ {
+  "file": "L09_negative_space_badge.png",
+  "verdict": "REWORK",
+  "concept": 6.14,
+  "concept_pro": 6.36,
+  "customers": 5.8,
+  "would_buy": "2/5",
+  "avg_price": 18.8,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "embroidery_digitizer: Stitch density of the solid background circle is unworkable for standard cap embroidery."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (23914px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 7,
+   "ip_compliance_reviewer": 8,
+   "print_technician": 5,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 5,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 6,
+   "gift_buyer": 7,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Remove the solid black background circle to allow for embroidery and dark garment printing.",
+   "Clean the 23914px of stray marks outside the main art.",
+   "Simplify the jagged fur edges into smoother curves for embroidery compatibility."
+  ],
+  "strengths": [
+   "Instantly recognizable as the target breed.",
+   "High contrast and clear facial features.",
+   "Scales well for small formats (if the background is removed)."
+  ],
+  "style_detected": "negative space vector badge",
+  "prompt_rewrite": "minimalist elegant continuous line art, head-only silhouette of a fluffy Bichon poodle, front-facing, single bold black line on pure white background, no filled backgrounds, no circles, abstract geometric curves, premium logo style, vector art, no text",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a basic sticker, not an aesthetic apparel graphic.",
+   "millennial_dog_mom": "Very cute face, but the big black circle is too harsh for a fluffy white dog.",
+   "male_owner_35_55": "A bit too cutesy with the tongue out for a minimalist hoodie.",
+   "gift_buyer": "Safe design, but looks like it uses a lot of heavy ink.",
+   "art_lover": "Lacks artistic originality. Looks like an automated vector trace rather than an elegant abstract line."
+  }
+ },
+ {
+  "file": "L25_paper_stencil_bridges.png",
+  "verdict": "REWORK",
+  "concept": 5.98,
+  "concept_pro": 6.36,
+  "customers": 5.4,
+  "would_buy": "2/5",
+  "avg_price": 19.8,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 7,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 6,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 5,
+   "gift_buyer": 7,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the image to resolve the 14x upscale requirement.",
+   "Knock out the white background/fill for proper apparel printing.",
+   "Add catchlights to the eyes to prevent a lifeless stare."
+  ],
+  "strengths": [
+   "High contrast works well for small thumbnails.",
+   "Thick lines are highly suitable for clean embroidery.",
+   "Instantly recognizable as a fluffy poodle/bichon mix."
+  ],
+  "style_detected": "bold vector stencil / high-contrast clipart",
+  "prompt_rewrite": "A minimalist, elegant, signature black-and-white head-only logo of a fluffy Bichon Poodle mix, tongue out. Bold negative space stencil style, geometric abstract lines, pure black and white, no shading, flat vector style, white background, front-facing, slightly organic line weight, premium apparel graphic --no text, grayscale, realism, 3d",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic. Looks like millennial clipart.",
+   "millennial_dog_mom": "A bit stark in pure black and white.",
+   "male_owner_35_55": "Too 'cutesy' with the tongue out for a standard men's hoodie.",
+   "gift_buyer": "Safe and recognizable, but feels slightly generic.",
+   "art_lover": "Lacks artistic soul. Looks like standard vector stock art."
+  }
+ },
+ {
+  "file": "L13_geometric_heavy_frame.png",
+  "verdict": "REWORK",
+  "concept": 5.58,
+  "concept_pro": 5.96,
+  "customers": 5.0,
+  "would_buy": "3/5",
+  "avg_price": 17.4,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 7,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 5,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize to fix 13x upscale requirement",
+   "Simplify dense inner triangles for embroidery",
+   "Thicken outer silhouette for better visual hierarchy"
+  ],
+  "strengths": [
+   "Clean single-color printability",
+   "Scalable vector-like aesthetic",
+   "Avoids overly cutesy cliches"
+  ],
+  "style_detected": "Low-poly geometric line art",
+  "prompt_rewrite": "A minimalist, elegant, continuous line art silhouette of a fluffy Bichon Poodle head, front-facing, single black ink line on white background, organic flowing lines, premium logo style, no text, vector art --no geometric, low-poly, shading",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Low-poly gives 2014 hipster vibes, not current aesthetic trends.",
+   "millennial_dog_mom": "A bit too harsh/angular for a fluffy dog.",
+   "male_owner_35_55": "Outer lines could be bolder for better contrast on dark hoodies.",
+   "gift_buyer": "A bit too abstract for someone who just wants a cute picture of their dog.",
+   "art_lover": "Low-poly filters feel clich\u00e9 and lack true artistic intent."
+  }
+ },
+ {
+  "file": "L20_abstract_curls.png",
+  "verdict": "REWORK",
+  "concept": 5.57,
+  "concept_pro": 5.82,
+  "customers": 5.2,
+  "would_buy": "2/5",
+  "avg_price": 18.4,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for DTG printing without severe pixelation or vectorization artifacts."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (36486px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 5,
+   "marketplace_merchandiser": 6,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 8,
+   "print_technician": 4,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Upscale image by 50x using vectorization or AI upscaler",
+   "Clean 36,486px of stray marks",
+   "Redraw ambiguous mouth/tongue area"
+  ],
+  "strengths": [
+   "High contrast silhouette",
+   "No background",
+   "Easily adaptable for embroidery"
+  ],
+  "style_detected": "symmetrical tribal-vector line art with filigree curls",
+  "prompt_rewrite": "A minimalist, elegant, black-and-white head-only line art of a fluffy Bichon-Poodle mix dog, front-facing, happy open mouth. Continuous line style, varied line weight, organic abstract curls, no tribal motifs, single ink color, solid white background, clean vector style, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a millennial mom car decal or a 2010s tribal tattoo. Not trendy.",
+   "millennial_dog_mom": "Cute, but the mouth looks a little weird.",
+   "male_owner_35_55": "A bit too decorative/curly for my taste. Looks like a grooming salon logo.",
+   "gift_buyer": "Safe design, but maybe a bit generic.",
+   "art_lover": "Symmetry is too perfect, feels machine-generated. Curls are formulaic."
+  }
+ },
+ {
+  "file": "L29_fingerprint_swirl.png",
+  "verdict": "REWORK",
+  "concept": 5.51,
+  "concept_pro": 5.58,
+  "customers": 5.4,
+  "would_buy": "2/5",
+  "avg_price": 20.4,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "embroidery_digitizer: Line density and thinness will cause catastrophic failure in embroidery."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (4771px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 5,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 5,
+   "art_lover": 6
+  },
+  "must_fix": [
+   "Vectorize and drastically reduce line density for print/embroidery viability.",
+   "Clean up T11 stray marks (4771px).",
+   "Thicken remaining lines to minimum 1.5pt."
+  ],
+  "strengths": [
+   "Distinctive, ownable visual style.",
+   "Strong geometric symmetry.",
+   "Easily adaptable to a single ink color."
+  ],
+  "style_detected": "fingerprint swirl line art",
+  "prompt_rewrite": "A minimalist, elegant, black-and-white head-only line art of a fluffy Bichon-style poodle. The design uses thick, bold, widely-spaced continuous lines in a simplified fingerprint swirl pattern. High contrast, pure white background, solid black lines. The dog has a happy expression with an open mouth and visible tongue. Ensure lines are thick enough for apparel printing, no fine details, no text, symmetrical composition.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too optical-illusion/trippy.",
+   "millennial_dog_mom": "Unique but a little cold/clinical compared to my actual fluffy dog.",
+   "male_owner_35_55": "Looks like a thumbprint.",
+   "gift_buyer": "Might be hard to tell it's a dog from across the room.",
+   "art_lover": "Interesting concept, but execution feels algorithmic."
+  }
+ },
+ {
+  "file": "L18_implied_minimal.png",
+  "verdict": "REJECT",
+  "concept": 5.39,
+  "concept_pro": 5.78,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 7.6,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low to print without vectorization; stray marks will print as dirty specks."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (16949px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 7,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the image to fix the 113x126px resolution issue.",
+   "Remove the 16,949 pixels of stray marks in the background.",
+   "Remove eye catchlights for cap embroidery."
+  ],
+  "strengths": [
+   "High contrast, single-color design is perfect for cheap printing.",
+   "Instantly recognizable as a fluffy dog breed.",
+   "Clean, bold lines are generally good for embroidery."
+  ],
+  "style_detected": "bold vector line art / cartoon minimalist",
+  "prompt_rewrite": "A minimalist, elegant continuous line drawing of a fluffy Bichon poodle head, front-facing, black ink on pure white background. Single continuous bold line, abstract geometric logo style, sophisticated and premium. Head only, no text, no shading, solid black lines.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit basic and 'cheugy'. Not aesthetic or edgy enough.",
+   "millennial_dog_mom": "Cute, but looks a bit like a standard sticker.",
+   "male_owner_35_55": "Too cutesy and cartoonish for a men's hoodie.",
+   "gift_buyer": "Safe choice, but feels a bit cheap/generic.",
+   "art_lover": "Lacks artistic soul. Looks like a generic vector asset."
+  }
+ },
+ {
+  "file": "L26_clean_icon_outline.png",
+  "verdict": "REJECT",
+  "concept": 5.33,
+  "concept_pro": 5.69,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 17.8,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": false,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (20185px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 7,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 6,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 7,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Clean 20,185px of stray marks from the background.",
+   "Apply a threshold filter to remove anti-aliasing grays and force pure 1-bit black and white.",
+   "Vectorize the image to allow for >4x upscaling without quality loss."
+  ],
+  "strengths": [
+   "Highly scalable and reproducible style for a 25-breed series.",
+   "Thick, clean lines are excellent for cap embroidery.",
+   "Instantly recognizable as the target breed."
+  ],
+  "style_detected": "clean vector icon outline, slightly cartoonish",
+  "prompt_rewrite": "minimalist elegant continuous line art, single black line on pure white background, head-only silhouette of a fluffy poodle, sophisticated geometric stencil style, no shading, no cartoon features, premium apparel graphic design, vector style, pure black and white, bold clean lines",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and 'millennial-core'. Lacks edge or aesthetic appeal.",
+   "millennial_dog_mom": "A bit generic, but very cute and wearable.",
+   "male_owner_35_55": "Too cutesy and cartoonish for a men's hoodie or cap.",
+   "gift_buyer": "Safe and recognizable, but might feel a bit cheap/stock-like for a premium gift.",
+   "art_lover": "Lacks artistic soul; looks like mass-produced vector stock art."
+  }
+ },
+ {
+  "file": "L12_geometric_outline.png",
+  "verdict": "REJECT",
+  "concept": 5.31,
+  "concept_pro": 5.51,
+  "customers": 5.0,
+  "would_buy": "3/5",
+  "avg_price": 12.4,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (30px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 5,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 6,
+   "gift_buyer": 5,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize to fix the severe 16x upscale requirement.",
+   "Remove the 30px of stray marks in the background.",
+   "Delete the strange vertical line bisecting the tongue."
+  ],
+  "strengths": [
+   "Highly suitable for embroidery.",
+   "Prints easily in a single color.",
+   "Clean, closed shapes."
+  ],
+  "style_detected": "low-poly geometric line art",
+  "prompt_rewrite": "minimalist elegant continuous line art, head only, front facing fluffy Bichon Poodle mix, black ink on pure white background, single continuous flowing line, capturing a round fluffy powder-puff silhouette, premium logo style, vector graphic, no text, no shading",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Low-poly feels like 2014 internet culture, not current aesthetic.",
+   "millennial_dog_mom": "A bit too sharp and masculine for my fluffy dog.",
+   "male_owner_35_55": "A bit generic, but I like that it's not overly cute.",
+   "gift_buyer": "Looks a bit like cheap clipart.",
+   "art_lover": "Derivative and lacks artistic soul."
+  }
+ },
+ {
+  "file": "L10_linocut.png",
+  "verdict": "REJECT",
+  "concept": 5.25,
+  "concept_pro": 5.42,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 18.0,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "embroidery_digitizer: Too complex to digitize cleanly at small scale."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 5,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 5,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Drastically simplify internal fur lines for embroidery viability.",
+   "Vectorize and upscale to resolve T1 tech flag.",
+   "Adjust style to meet the 'minimalist' brand brief."
+  ],
+  "strengths": [
+   "High contrast black and white.",
+   "Clear breed recognition.",
+   "Symmetrical and balanced composition."
+  ],
+  "style_detected": "detailed linocut / woodblock print",
+  "prompt_rewrite": "minimalist elegant continuous line art of a fluffy poodle head, front-facing, single continuous black line on white background, abstract, geometric, premium logo style, no text, clean white background, wide cute eyes",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like generic boomer dog mom art.",
+   "millennial_dog_mom": "A bit too dark and intense.",
+   "male_owner_35_55": "A bit too detailed and fussy.",
+   "gift_buyer": "Safe choice, but heavy stylization might not look exactly like the recipient's dog.",
+   "art_lover": "Looks like an automated vector trace."
+  }
+ },
+ {
+  "file": "L03_one_line_scribble.png",
+  "verdict": "REJECT",
+  "concept": 5.12,
+  "concept_pro": 5.33,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 7.6,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (863px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 4,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 6,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize and thicken lines to minimum 2pt for printing.",
+   "Clean 863px of stray marks.",
+   "Drastically simplify loops for embroidery compatibility."
+  ],
+  "strengths": [
+   "Clean black and white contrast.",
+   "Easily recognizable as a fluffy dog breed.",
+   "Simple enough for basic printing."
+  ],
+  "style_detected": "loopy continuous line art / scribble vector",
+  "prompt_rewrite": "A minimalist, elegant, bold black-and-white line art silhouette of a Bichon Poodle mix head, front-facing. Use a single continuous, variable-weight bold line. Geometric, abstract, premium logo style. Solid white background, no text, no shading, high contrast, suitable for universal brand consistency across all dog breeds.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'momcore' and basic.",
+   "millennial_dog_mom": "Cute, but a bit plain.",
+   "male_owner_35_55": "Too curly and cutesy.",
+   "gift_buyer": "Safe, but maybe too generic.",
+   "art_lover": "Lacks artistic intent."
+  }
+ },
+ {
+  "file": "L24_engraving.png",
+  "verdict": "REJECT",
+  "concept": 5.12,
+  "concept_pro": 5.2,
+  "customers": 5.0,
+  "would_buy": "2/5",
+  "avg_price": 18.0,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [
+   "detail lost at small sizes"
+  ],
+  "production_notes": [
+   "embroidery_digitizer: Too much fine detail and stippling to digitize for a cap."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (5587px) -> must be cleaned",
+   "T6 detail lost at chest/thumbnail size"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 4,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 6,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 5
+  },
+  "must_fix": [
+   "Redraw entirely to meet the minimalist/stencil brand brief.",
+   "Remove all stippling and fine lines to prevent DTG print halos and allow for embroidery.",
+   "Clean up 5587px of stray marks in the background."
+  ],
+  "strengths": [
+   "Accurate breed representation.",
+   "Pleasant, friendly expression.",
+   "Good symmetry and balance."
+  ],
+  "style_detected": "detailed fine-line engraving and stippling illustration",
+  "prompt_rewrite": "A minimalist, elegant, bold black-and-white stencil graphic of a fluffy Bichon poodle head, front-facing, solid shapes, high contrast, no shading, no stippling, clean vector style, white background, single continuous line or geometric abstract line art, premium logo design, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too traditional.",
+   "millennial_dog_mom": "Cute, but a bit too detailed/old-fashioned.",
+   "male_owner_35_55": "Too delicate and cutesy.",
+   "gift_buyer": "Safe, but a bit generic.",
+   "art_lover": "Technically proficient but lacks originality."
+  }
+ },
+ {
+  "file": "L11_sumi_brush.png",
+  "verdict": "REJECT",
+  "concept": 5.11,
+  "concept_pro": 5.31,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 18.4,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for any acceptable print quality; stray marks will ruin the print."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (25094px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 6,
+   "series_designer": 4,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Generate at a significantly higher resolution (currently requires 47x upscale).",
+   "Remove all 25k+ pixels of stray marks and background noise.",
+   "Convert broken brush strokes to a uniform, continuous line style for embroidery compatibility and brand consistency."
+  ],
+  "strengths": [
+   "Instantly recognizable as the target breed.",
+   "Clean black and white contrast (ignoring technical artifacts).",
+   "Cute and approachable expression."
+  ],
+  "style_detected": "sumi-e brush stroke / broken line vector art",
+  "prompt_rewrite": "minimalist black and white continuous line art logo, head-only portrait of a fluffy bichon poodle, elegant abstract geometric vector style, bold uniform line weight, single ink color, solid white background, no text, premium apparel graphic",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too 'mom-core'.",
+   "millennial_dog_mom": "Very cute, but I'd want it to look exactly like my dog.",
+   "male_owner_35_55": "Too cutesy and delicate.",
+   "gift_buyer": "Safe gift, but maybe a bit plain.",
+   "art_lover": "Looks like standard vector stock art."
+  }
+ },
+ {
+  "file": "L19_abstract_ribbon.png",
+  "verdict": "REJECT",
+  "concept": 5.11,
+  "concept_pro": 5.31,
+  "customers": 4.8,
+  "would_buy": "2/5",
+  "avg_price": 16.8,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 5,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for print without manual vectorization; stray marks will print as dirty specks."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (16188px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 6,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 4,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 5,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the image to resolve the 109px resolution issue.",
+   "Clean up the 16,188 pixels of stray marks in the background.",
+   "Connect or remove the floating lines at the bottom of the neck."
+  ],
+  "strengths": [
+   "High contrast, pure black and white.",
+   "Cute, recognizable expression.",
+   "Easily adaptable for single-color printing."
+  ],
+  "style_detected": "Standard variable-width digital line art / comic inking",
+  "prompt_rewrite": "A minimalist, elegant, signature black-and-white head-only line art of a fluffy Bichon poodle, continuous single line style, abstract ribbon, bold geometric stencil, single ink color, front-facing, premium logo design, pure white background, no text, vector art style --no shading, realistic details, disconnected lines",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit too basic and 'millennial craft fair'.",
+   "millennial_dog_mom": "Cute, but looks like something I could get on a mug at a big box store.",
+   "male_owner_35_55": "Too cutesy and delicate.",
+   "gift_buyer": "Safe, but a bit generic.",
+   "art_lover": "Lacks artistic originality."
+  }
+ },
+ {
+  "file": "L14_lowpoly_mono.png",
+  "verdict": "REJECT",
+  "concept": 5.1,
+  "concept_pro": 5.56,
+  "customers": 4.4,
+  "would_buy": "2/5",
+  "avg_price": 7.6,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 6,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 7,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Remove the pink tongue color to meet the single-ink requirement.",
+   "Vectorize the image to resolve the 14x upscale requirement for full-front printing."
+  ],
+  "strengths": [
+   "Extremely clean and easy to reproduce.",
+   "Perfect for embroidery due to thick lines and solid fills.",
+   "Instantly recognizable as a fluffy dog breed."
+  ],
+  "style_detected": "Geometric vector line art / jagged silhouette",
+  "prompt_rewrite": "A premium, elegant, minimalist continuous line art illustration of a fluffy Bichon Poodle dog head, front-facing, strictly monochrome black and white, no shading, no extra colors, bold stencil style, sophisticated abstract curves, white background, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and millennial-core.",
+   "millennial_dog_mom": "A bit stiff, but still cute and recognizable.",
+   "male_owner_35_55": "Too cutesy and clip-art-like for a men's hoodie.",
+   "gift_buyer": "Safe and recognizable, but feels a bit cheap.",
+   "art_lover": "Lacks artistic soul."
+  }
+ },
+ {
+  "file": "L30_tribal_bold.png",
+  "verdict": "REJECT",
+  "concept": 5.04,
+  "concept_pro": 5.33,
+  "customers": 4.6,
+  "would_buy": "2/5",
+  "avg_price": 18.0,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 5,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 5,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 4,
+   "male_owner_35_55": 6,
+   "gift_buyer": 5,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Vectorize the image to allow for the massive 11.46x upscale required for full front printing.",
+   "Redesign to replace sharp tribal spikes with soft, elegant lines to meet the brand brief and match the breed."
+  ],
+  "strengths": [
+   "High contrast and strictly black-and-white.",
+   "Highly reproducible for both screen printing and embroidery.",
+   "Clear, unmistakable focal point."
+  ],
+  "style_detected": "Bold tribal vector / sports mascot logo",
+  "prompt_rewrite": "A minimalist, elegant, signature black-and-white head-only line art of a fluffy Bichon poodle. Continuous flowing lines, sophisticated negative space, soft cloud-like fur representation. Front-facing, head-only, solid white background, no text, premium logo style, avoiding sharp tribal spikes or heavy vector shapes.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Gives off 'boomer biker' vibes. Not aesthetic or cute enough for my feed.",
+   "millennial_dog_mom": "Too harsh and spiky for a fluffy dog. I want something cute, soft, and minimalist.",
+   "male_owner_35_55": "I actually don't mind the bold look, it avoids being overly cutesy. Would look okay on a black cap.",
+   "gift_buyer": "A bit intense, but it's clearly a fluffy dog. Might be okay if they like graphic tees.",
+   "art_lover": "Looks like cheap stock vector art. Completely lacks the 'elegant abstract' quality requested in the brief."
+  }
+ },
+ {
+  "file": "L01_one_line_fine.png",
+  "verdict": "REJECT",
+  "concept": 4.9,
+  "concept_pro": 5.24,
+  "customers": 4.4,
+  "would_buy": "2/5",
+  "avg_price": 16.4,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 5,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Drastically thicken lines for print/embroidery viability",
+   "Remove the horizontal line for better cap placement",
+   "Upscale and vectorize to prevent pixelation"
+  ],
+  "strengths": [
+   "Clean white background",
+   "Accurate breed representation",
+   "Simple single-color concept"
+  ],
+  "style_detected": "minimalist thin-line 'peeking' illustration",
+  "prompt_rewrite": "A bold, thick continuous black line drawing of a fluffy Bichon Poodle dog head, front-facing, minimalist logo style, elegant abstract line, variable stroke width, solid white background, no text, no horizontal base line, premium apparel graphic.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a mom-shirt from 2015.",
+   "millennial_dog_mom": "Cute but very common.",
+   "male_owner_35_55": "Way too dainty and delicate.",
+   "gift_buyer": "Safe gift, but maybe a bit too plain.",
+   "art_lover": "Lacks genuine artistic expression."
+  }
+ },
+ {
+  "file": "L06_stencil_bold.png",
+  "verdict": "REJECT",
+  "concept": 4.85,
+  "concept_pro": 5.02,
+  "customers": 4.6,
+  "would_buy": "2/5",
+  "avg_price": 16.4,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize the image to resolve the 12.77x upscale requirement.",
+   "Thicken the tongue outline for embroidery compatibility."
+  ],
+  "strengths": [
+   "Excellent printability with only 2 colors.",
+   "Easily adaptable for embroidery.",
+   "Clear, recognizable subject matter."
+  ],
+  "style_detected": "generic vector clipart / coloring book outline",
+  "prompt_rewrite": "A premium, elegant, minimalist continuous single-line drawing of a fluffy Bichon Poodle head, front-facing, pure black line on pure white background. Sophisticated abstract geometric style, no shading, no cartoon elements, single uniform line weight, high-end apparel graphic, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and 'millennial-core'.",
+   "millennial_dog_mom": "Cute, but looks like big-box store apparel.",
+   "male_owner_35_55": "Too cutesy and cartoonish.",
+   "gift_buyer": "Safe, but might be perceived as a cheap gift.",
+   "art_lover": "Lacks artistic merit."
+  }
+ },
+ {
+  "file": "L22_halftone_dots.png",
+  "verdict": "REJECT",
+  "concept": 4.83,
+  "concept_pro": 5.11,
+  "customers": 4.4,
+  "would_buy": "2/5",
+  "avg_price": 7.6,
+  "concept_hard_fails": [
+   "art_director: Does not meet the required minimalist line/stencil brand style."
+  ],
+  "print_score": 3,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "hard alpha threshold (no semi-transparent pixels)",
+   "symmetry check"
+  ],
+  "needs_regen": [
+   "detail lost at small sizes"
+  ],
+  "production_notes": [
+   "embroidery_digitizer: Halftone cannot be digitized for a 4-inch cap front."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (17626px) -> must be cleaned",
+   "T6 detail lost at chest/thumbnail size",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 4,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 7,
+   "likeness_judge": 7,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 5,
+   "male_owner_35_55": 4,
+   "gift_buyer": 5,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Completely change style from halftone to solid line/stencil to meet brand brief.",
+   "Remove 17k stray pixels.",
+   "Ensure design is vector-based to survive 16x upscale.",
+   "Redesign for embroidery compatibility (no dots)."
+  ],
+  "strengths": [
+   "Accurate likeness to the reference photo.",
+   "Captures the fluffy breed characteristics well.",
+   "Good expression with the tongue out."
+  ],
+  "style_detected": "halftone dot portrait",
+  "prompt_rewrite": "A minimalist, elegant, continuous single-line drawing of a fluffy Bichon Poodle dog head, front-facing, pure black line on pure white background, bold stencil style, geometric abstract logo design, no shading, no halftone, no text, vector art style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a retro newspaper clipping, not an aesthetic minimalist tee.",
+   "millennial_dog_mom": "Cute expression, but the dot style feels harsh and less cuddly.",
+   "male_owner_35_55": "Too fuzzy. I prefer bold, graphic logos.",
+   "gift_buyer": "Might look like a cheap print if the dots blur.",
+   "art_lover": "Halftone filter over a photo is a clich\u00e9 technique."
+  }
+ },
+ {
+  "file": "L07_ink_fur_strokes.png",
+  "verdict": "REJECT",
+  "concept": 4.77,
+  "concept_pro": 5.02,
+  "customers": 4.4,
+  "would_buy": "2/5",
+  "avg_price": 16.4,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 5,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Stray marks and low resolution will ruin the print."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (29352px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 5,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Clean the 29,352px of stray marks from the background.",
+   "Upscale the image significantly from its 166x135 bounding box.",
+   "Simplify outer fur edges for embroidery compatibility."
+  ],
+  "strengths": [
+   "Easily recognizable as a fluffy dog breed.",
+   "Pure black and white, suitable for single-color printing.",
+   "Good contrast and clear facial features."
+  ],
+  "style_detected": "standard vector clipart / stylized ink strokes",
+  "prompt_rewrite": "A minimalist, elegant, single continuous line drawing of a fluffy Bichon poodle dog head, front-facing, pure black line on pure white background, premium logo style, abstract geometric curves, no text, high contrast, clean vector style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a basic 'mom shirt' graphic.",
+   "millennial_dog_mom": "Cute, but I've seen this exact style everywhere.",
+   "male_owner_35_55": "Too cutesy for a hoodie.",
+   "gift_buyer": "Safe gift, but doesn't look expensive.",
+   "art_lover": "Soulless vector clipart."
+  }
+ },
+ {
+  "file": "L23_stipple.png",
+  "verdict": "REJECT",
+  "concept": 4.77,
+  "concept_pro": 5.02,
+  "customers": 4.4,
+  "would_buy": "2/5",
+  "avg_price": 16.8,
+  "concept_hard_fails": [
+   "art_director: Fails core brand identity brief (not minimalist/line art)."
+  ],
+  "print_score": 3,
+  "cap_score": 2,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "background removal to transparent PNG",
+   "despeckle / remove stray marks",
+   "hard alpha threshold (no semi-transparent pixels)"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Stipple dots will fail DTG underbase registration on dark shirts.",
+   "embroidery_digitizer: Stipple style is impossible to embroider cleanly."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (5125px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 4,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 2,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 5,
+   "art_lover": 4
+  },
+  "must_fix": [
+   "Completely replace stipple style with solid vector lines to meet brand brief.",
+   "Eliminate all semi-transparent pixels and gradients for DTG/embroidery compatibility.",
+   "Clean 5125px of stray background marks."
+  ],
+  "strengths": [
+   "Symmetrical and balanced composition.",
+   "Cute, engaging facial expression.",
+   "Clear recognition as a fluffy poodle/Bichon."
+  ],
+  "style_detected": "detailed stipple/dot-work illustration",
+  "prompt_rewrite": "A minimalist, elegant, continuous black line drawing of a fluffy Bichon-style poodle head, front-facing, bold stencil style, geometric abstract line art, solid black ink on pure white background, no shading, no stippling, no text, premium logo design.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Looks like a generic millennial craft-fair shirt.",
+   "millennial_dog_mom": "Cute, but feels a bit like standard clip art.",
+   "male_owner_35_55": "Too delicate and cutesy for a unisex hoodie.",
+   "gift_buyer": "Safe design, but print quality risks make it a gamble for a gift.",
+   "art_lover": "Stippling looks mechanically generated, lacking human intentionality."
+  }
+ },
+ {
+  "file": "L17_elegant_swash.png",
+  "verdict": "REJECT",
+  "concept": 4.73,
+  "concept_pro": 5.09,
+  "customers": 4.2,
+  "would_buy": "2/5",
+  "avg_price": 15.0,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (28218px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 5,
+   "series_designer": 4,
+   "marketplace_merchandiser": 5,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Clean 28,218 stray pixels from the background.",
+   "Vectorize the image to allow for the required 38x upscale.",
+   "Thicken fine lines around the muzzle for embroidery compatibility."
+  ],
+  "strengths": [
+   "Clear breed recognition.",
+   "High contrast black-and-white suitable for single-color printing.",
+   "Good base structure for embroidery adaptation."
+  ],
+  "style_detected": "standard vector clipart / varied-weight line illustration",
+  "prompt_rewrite": "Minimalist elegant continuous line art, head-only silhouette of a fluffy Bichon Poodle mix, front-facing, tongue out, bold black stencil lines on pure white background, premium boutique logo style, geometric abstraction, single ink color, no text, vector style.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a millennial mom shirt.",
+   "millennial_dog_mom": "Cute, but a bit generic.",
+   "male_owner_35_55": "Too cutesy.",
+   "gift_buyer": "Safe gift, but $24 is a bit steep for a standard graphic tee.",
+   "art_lover": "Lacks artistic merit."
+  }
+ },
+ {
+  "file": "L04_one_line_pink_tongue.png",
+  "verdict": "REJECT",
+  "concept": 4.69,
+  "concept_pro": 5.02,
+  "customers": 4.2,
+  "would_buy": "2/5",
+  "avg_price": 15.8,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [
+   "detail lost at small sizes"
+  ],
+  "production_notes": [
+   "embroidery_digitizer: Lines are too thin to digitize cleanly for caps."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T6 detail lost at chest/thumbnail size"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Thicken all lines significantly for print and embroidery viability.",
+   "Remove the white background.",
+   "Remove the pink tongue to meet the single-color brief.",
+   "Add variable line weight for a more elegant, premium feel."
+  ],
+  "strengths": [
+   "Clean execution",
+   "Cute expression",
+   "Easily recognizable as a fluffy dog"
+  ],
+  "style_detected": "thin uniform line art with spot color",
+  "prompt_rewrite": "A minimalist, elegant, single-color black line-art logo of a fluffy Poodle head, front-facing, bold variable line weight, continuous line style, abstract geometric curves, stark white background, no text, premium apparel graphic design.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a mom shirt.",
+   "millennial_dog_mom": "Cute, but a bit plain.",
+   "male_owner_35_55": "Way too cutesy.",
+   "gift_buyer": "Safe but unexciting.",
+   "art_lover": "Lacks artistic merit."
+  }
+ },
+ {
+  "file": "L02_one_line_bold.png",
+  "verdict": "REJECT",
+  "concept": 4.66,
+  "concept_pro": 4.84,
+  "customers": 4.4,
+  "would_buy": "2/5",
+  "avg_price": 15.8,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 5,
+  "cap_ready": false,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [
+   "print_technician: Resolution is too low for a full front print without vectorization."
+  ],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 4,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 6,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 6,
+   "embroidery_digitizer": 5,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 6,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize the image to fix the severe low resolution.",
+   "Simplify the tight loops at the bottom of the ears for embroidery compatibility.",
+   "Thicken the overall line weight to meet the 'bold stencil/elegant abstract' brand brief."
+  ],
+  "strengths": [
+   "Clean, single-color design suitable for basic printing.",
+   "Easily recognizable as a fluffy dog breed.",
+   "Good contrast in the facial features."
+  ],
+  "style_detected": "basic contour line drawing / coloring book style",
+  "prompt_rewrite": "A premium, elegant, minimalist logo of a Bichon Poodle head, front-facing, executed in a single bold continuous black line style on a pure white background. Abstract geometric curves, thick uniform line weight, no shading, no fine squiggles, high-end apparel graphic design, recognizable silhouette, vector art style, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and craft-fair looking.",
+   "millennial_dog_mom": "Cute, but a bit plain.",
+   "male_owner_35_55": "Way too cutesy.",
+   "gift_buyer": "Safe, but slightly boring.",
+   "art_lover": "Lacks artistic merit; very literal and uninspired."
+  }
+ },
+ {
+  "file": "L16_constellation.png",
+  "verdict": "REJECT",
+  "concept": 4.63,
+  "concept_pro": 4.78,
+  "customers": 4.4,
+  "would_buy": "1/5",
+  "avg_price": 13.0,
+  "concept_hard_fails": [],
+  "print_score": 4,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (28px) -> must be cleaned"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 6,
+   "print_technician": 4,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 4,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize and thicken all lines to minimum 2pt.",
+   "Remove 28px of stray marks in the background.",
+   "Resolve the clashing styles by either removing the organic fur lines or the geometric nodes."
+  ],
+  "strengths": [
+   "Symmetrical and centered composition.",
+   "Clear, recognizable dog breed silhouette.",
+   "High contrast black-and-white suitable for single-color printing."
+  ],
+  "style_detected": "mixed organic line art with geometric constellation overlay",
+  "prompt_rewrite": "A minimalist, elegant, single-color black-and-white vector logo of a fluffy Bichon Poodle head, front-facing. The entire design is constructed purely from a geometric constellation style: interconnected dots and straight lines forming the silhouette and features, no organic curves, bold uniform line weight, white background, clean stencil aesthetic, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Constellation aesthetic feels dated (2014 Tumblr era).",
+   "millennial_dog_mom": "Geometric lines on the face look a bit like a cage or weird mask.",
+   "male_owner_35_55": "Too delicate and cutesy.",
+   "gift_buyer": "Lines on the head are confusing.",
+   "art_lover": "Juxtaposition of organic illustration and geometric nodes is unresolved."
+  }
+ },
+ {
+  "file": "L05_one_line_profile.png",
+  "verdict": "REJECT",
+  "concept": 4.6,
+  "concept_pro": 4.87,
+  "customers": 4.2,
+  "would_buy": "2/5",
+  "avg_price": 15.8,
+  "concept_hard_fails": [],
+  "print_score": 5,
+  "cap_score": 4,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 5,
+   "embroidery_digitizer": 4,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Vectorize and thicken lines for print/embroidery viability",
+   "Remove disconnected neck swoops",
+   "Remove human-like eyebrows"
+  ],
+  "strengths": [
+   "Clean black and white contrast",
+   "Easily printable with single ink",
+   "Captures basic breed traits"
+  ],
+  "style_detected": "Generic digital line art / coloring book style",
+  "prompt_rewrite": "A true single continuous line drawing of a fluffy Bichon Poodle head, front-facing, minimalist elegant logo style, bold uniform black line on white background, abstract geometric curves, no disconnected strokes, no shading, premium apparel graphic design --no text, shading, realistic details, disconnected lines",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and millennial-coded.",
+   "millennial_dog_mom": "Cute, but a bit plain.",
+   "male_owner_35_55": "Too delicate and cutesy.",
+   "gift_buyer": "Safe, but doesn't look expensive.",
+   "art_lover": "Lacks artistic intent; generic digital trace."
+  }
+ },
+ {
+  "file": "L28_brush_plus_line.png",
+  "verdict": "REJECT",
+  "concept": 4.41,
+  "concept_pro": 4.55,
+  "customers": 4.2,
+  "would_buy": "2/5",
+  "avg_price": 15.0,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 5,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (21021px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 4,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 4,
+   "breed_expert": 6,
+   "likeness_judge": 5,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 3,
+   "embroidery_digitizer": 5,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 6,
+   "male_owner_35_55": 3,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Generate at a usable resolution (currently requires 45x upscale).",
+   "Clean the 21,021 stray background pixels.",
+   "Balance the severe line-weight asymmetry between the left and right ears.",
+   "Redesign to meet the 'premium minimalist/continuous line' brand brief instead of generic clip art."
+  ],
+  "strengths": [
+   "Clear, high-contrast black and white silhouette.",
+   "Easily recognizable as a fluffy dog breed.",
+   "No complex gradients, making color separation easy."
+  ],
+  "style_detected": "generic vector clip art line drawing",
+  "prompt_rewrite": "A minimalist, elegant, single continuous line drawing of a fluffy Bichon-Poodle mix head, front-facing, pure black line on white background, premium logo style, abstract geometric curves, bold clean vector style, no shading, no hatching, no text, white background.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic and boomer-core. Lacks any aesthetic edge.",
+   "millennial_dog_mom": "It's cute but a bit generic. Doesn't feel special enough for $24.",
+   "male_owner_35_55": "Too cutesy and looks like cheap clip art. Wouldn't wear this on a hoodie.",
+   "gift_buyer": "Safe gift, but looks a bit cheap. Might not impress the recipient.",
+   "art_lover": "Lacks artistic soul. It's an uninspired, generic vector trace."
+  }
+ },
+ {
+  "file": "L15_construction_circles.png",
+  "verdict": "REJECT",
+  "concept": 4.36,
+  "concept_pro": 4.6,
+  "customers": 4.0,
+  "would_buy": "1/5",
+  "avg_price": 11.0,
+  "concept_hard_fails": [],
+  "print_score": 6,
+  "cap_score": 7,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 5,
+   "breed_expert": 5,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 6,
+   "print_technician": 6,
+   "embroidery_digitizer": 7,
+   "genz_tiktok_shopper": 3,
+   "millennial_dog_mom": 5,
+   "male_owner_35_55": 4,
+   "gift_buyer": 5,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Elevate style from clip art to premium minimalist",
+   "Add catchlights to eyes to remove dead stare",
+   "Vectorize for upscaling"
+  ],
+  "strengths": [
+   "Easily reproducible across garments",
+   "Perfect technical setup for embroidery",
+   "Clean black and white contrast"
+  ],
+  "style_detected": "basic vector icon / clip art",
+  "prompt_rewrite": "A minimalist, elegant, single continuous line drawing of a fluffy Bichon Poodle mix dog head, front-facing, pure white background, solid black ink line, variable line weight, sophisticated boutique logo style, abstract geometric elegance, no text, no shading, premium apparel graphic.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic.",
+   "millennial_dog_mom": "Cute but too generic.",
+   "male_owner_35_55": "Too cutesy and cartoonish.",
+   "gift_buyer": "Safe design, but looks a bit cheap for a $24 gift.",
+   "art_lover": "Zero artistic merit."
+  }
+ },
+ {
+  "file": "L27_split_line_solid.png",
+  "verdict": "REJECT",
+  "concept": 4.19,
+  "concept_pro": 4.45,
+  "customers": 3.8,
+  "would_buy": "0/5",
+  "avg_price": 0.0,
+  "concept_hard_fails": [],
+  "print_score": 3,
+  "cap_score": 3,
+  "cap_ready": false,
+  "print_ready_raw": false,
+  "auto_fixes": [
+   "AI upscale to 4500 px",
+   "despeckle / remove stray marks",
+   "symmetry check"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T11 stray marks/specks outside the art (101px) -> must be cleaned",
+   "T9 asymmetry high"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 5,
+   "marketplace_merchandiser": 4,
+   "ai_artifact_inspector": 4,
+   "breed_expert": 5,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 6,
+   "print_technician": 3,
+   "embroidery_digitizer": 3,
+   "genz_tiktok_shopper": 4,
+   "millennial_dog_mom": 3,
+   "male_owner_35_55": 5,
+   "gift_buyer": 4,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Redesign to function as a true 1-color print (eliminate the reliance on both black and white elements).",
+   "Remove the massive solid black fill to improve garment breathability and embroidery viability.",
+   "Clean the 101px of stray marks."
+  ],
+  "strengths": [
+   "High contrast",
+   "Easily scalable concept across different breeds"
+  ],
+  "style_detected": "Split-face high-contrast vector graphic",
+  "prompt_rewrite": "A minimalist, elegant, single-thickness continuous line drawing of a fluffy Bichon Poodle head, front-facing, pure white background, black ink only, abstract geometric logo style, uniform line weight, no solid fills, no split face, clean vector art --no text, shading, realistic details, heavy blocks of color",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "A bit basic and dated. Gives 2014 Tumblr vibes.",
+   "millennial_dog_mom": "Too harsh and stark. I want something cute and soft for my fluffy dog.",
+   "male_owner_35_55": "It's okay, bold enough for a hoodie, but the split face is a weird choice.",
+   "gift_buyer": "Too specific of an art style. Might not match the recipient's taste.",
+   "art_lover": "Gimmicky split-face design lacks artistic nuance and elegance."
+  }
+ },
+ {
+  "file": "L08_solid_silhouette.png",
+  "verdict": "REJECT",
+  "concept": 4.03,
+  "concept_pro": 4.18,
+  "customers": 3.8,
+  "would_buy": "0/5",
+  "avg_price": 11.8,
+  "concept_hard_fails": [],
+  "print_score": 7,
+  "cap_score": 6,
+  "cap_ready": true,
+  "print_ready_raw": true,
+  "auto_fixes": [
+   "AI upscale to 4500 px"
+  ],
+  "needs_regen": [],
+  "production_notes": [],
+  "tech_flags": [
+   "T1 upscale >4x for full front"
+  ],
+  "scores": {
+   "art_director": 4,
+   "series_designer": 4,
+   "marketplace_merchandiser": 3,
+   "ai_artifact_inspector": 4,
+   "breed_expert": 5,
+   "likeness_judge": 4,
+   "ip_compliance_reviewer": 7,
+   "print_technician": 7,
+   "embroidery_digitizer": 6,
+   "genz_tiktok_shopper": 3,
+   "millennial_dog_mom": 4,
+   "male_owner_35_55": 5,
+   "gift_buyer": 4,
+   "art_lover": 3
+  },
+  "must_fix": [
+   "Redraw eyes to remove the creepy blank stare",
+   "Add internal line details to break up the solid black mass",
+   "Refine nose cutout to look less like a skull"
+  ],
+  "strengths": [
+   "Easily reproducible in one color",
+   "High contrast",
+   "Simple outer shape is embroidery friendly"
+  ],
+  "style_detected": "Basic solid black silhouette with negative space cutouts",
+  "prompt_rewrite": "A premium, elegant continuous line art logo of a fluffy Bichon Poodle head, front-facing, minimalist black ink on white background, sophisticated geometric stencil style, expressive eyes with catchlights, clever use of negative space, no solid black blobs, vector art style, no text.",
+  "customer_quotes": {
+   "genz_tiktok_shopper": "Too basic, looks like a spooky ghost dog.",
+   "millennial_dog_mom": "Not cute at all. The empty eyes are scary.",
+   "male_owner_35_55": "A bit too plain. Just a black blob.",
+   "gift_buyer": "Doesn't look premium enough for a $24 gift.",
+   "art_lover": "Devoid of artistic merit. Purely functional silhouette with poor use of negative space."
+  }
+ }
+]
