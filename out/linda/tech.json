@@ -1,0 +1,1002 @@
+[
+ {
+  "file": "01_stained_glass.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   954,
+   810
+  ],
+  "upscale_needed": {
+   "full_front": 6.67,
+   "left_chest_4in": 1.48,
+   "cap_front": 1.26
+  },
+  "bg_low_contrast_edge": 0.119,
+  "soft_edge_share": 0.213,
+  "interior_bg_colored": 0.003,
+  "gradient_share": 0.499,
+  "palette95": 70,
+  "thread_colors_est": 22,
+  "chest_detail_survival": 0.819,
+  "thumb_detail_survival": 0.445,
+  "near_white_share": 0.126,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.112,
+    "edge_visible": 0.653,
+    "usable": true
+   },
+   "black": {
+    "pixels_lost": 0.193,
+    "edge_visible": 0.616,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.006,
+    "edge_visible": 0.618,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.743,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.323,
+    "edge_visible": 0.652,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "white",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.731,
+  "center": [
+   0.5,
+   0.501
+  ],
+  "asymmetry": 0.051,
+  "touches_edge": false,
+  "stray_marks_px": 92,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (92px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "02_botanical_crown.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   791,
+   731
+  ],
+  "upscale_needed": {
+   "full_front": 7.39,
+   "left_chest_4in": 1.64,
+   "cap_front": 1.52
+  },
+  "bg_low_contrast_edge": 0.291,
+  "soft_edge_share": 0.42,
+  "interior_bg_colored": 0.06,
+  "gradient_share": 0.212,
+  "palette95": 40,
+  "thread_colors_est": 12,
+  "chest_detail_survival": 0.67,
+  "thumb_detail_survival": 0.297,
+  "near_white_share": 0.361,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.435,
+    "edge_visible": 0.343,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.014,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.21,
+    "edge_visible": 0.426,
+    "usable": false
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.189,
+    "edge_visible": 0.236,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "navy"
+  ],
+  "fill_ratio": 0.75,
+  "center": [
+   0.506,
+   0.501
+  ],
+  "asymmetry": 0.113,
+  "touches_edge": false,
+  "stray_marks_px": 3986,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (3986px) -> must be cleaned",
+   "T6 detail lost at chest/thumbnail size"
+  ]
+ },
+ {
+  "file": "03_groovy_70s.png",
+  "size": [
+   1088,
+   960
+  ],
+  "subject_bbox_px": [
+   815,
+   730
+  ],
+  "upscale_needed": {
+   "full_front": 7.4,
+   "left_chest_4in": 1.64,
+   "cap_front": 1.47
+  },
+  "bg_low_contrast_edge": 0.161,
+  "soft_edge_share": 0.292,
+  "interior_bg_colored": 0.001,
+  "gradient_share": 0.458,
+  "palette95": 68,
+  "thread_colors_est": 18,
+  "chest_detail_survival": 0.858,
+  "thumb_detail_survival": 0.412,
+  "near_white_share": 0.302,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.268,
+    "edge_visible": 0.619,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.015,
+    "edge_visible": 0.914,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.008,
+    "edge_visible": 0.923,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.96,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.039,
+    "edge_visible": 0.585,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.655,
+  "center": [
+   0.497,
+   0.464
+  ],
+  "asymmetry": 0.124,
+  "touches_edge": false,
+  "stray_marks_px": 23,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (23px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "04_woodblock.png",
+  "size": [
+   1088,
+   960
+  ],
+  "subject_bbox_px": [
+   842,
+   710
+  ],
+  "upscale_needed": {
+   "full_front": 7.61,
+   "left_chest_4in": 1.69,
+   "cap_front": 1.43
+  },
+  "bg_low_contrast_edge": 0.069,
+  "soft_edge_share": 0.15,
+  "interior_bg_colored": 0.0,
+  "gradient_share": 0.621,
+  "palette95": 17,
+  "thread_colors_est": 4,
+  "chest_detail_survival": 0.837,
+  "thumb_detail_survival": 0.37,
+  "near_white_share": 0.651,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.458,
+    "edge_visible": 0.736,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.94,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.038,
+    "edge_visible": 0.622,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.233,
+    "edge_visible": 0.515,
+    "usable": false
+   },
+   "sand": {
+    "pixels_lost": 0.31,
+    "edge_visible": 0.759,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray"
+  ],
+  "fill_ratio": 0.698,
+  "center": [
+   0.5,
+   0.501
+  ],
+  "asymmetry": 0.019,
+  "touches_edge": false,
+  "stray_marks_px": 63,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T11 stray marks/specks outside the art (63px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "05_neon_synthwave.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   605,
+   611
+  ],
+  "upscale_needed": {
+   "full_front": 8.84,
+   "left_chest_4in": 1.98,
+   "cap_front": 1.98
+  },
+  "bg_low_contrast_edge": 1.0,
+  "soft_edge_share": 1.0,
+  "interior_bg_colored": 0.001,
+  "gradient_share": 0.408,
+  "palette95": 92,
+  "thread_colors_est": 28,
+  "chest_detail_survival": 0.938,
+  "thumb_detail_survival": 0.545,
+  "near_white_share": 0.122,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.098,
+    "edge_visible": 0.0,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.011,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.0,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.114,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.0,
+    "edge_visible": 1.0,
+    "usable": true
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray",
+   "navy",
+   "sand"
+  ],
+  "fill_ratio": 0.836,
+  "center": [
+   0.499,
+   0.492
+  ],
+  "asymmetry": 0.052,
+  "touches_edge": false,
+  "stray_marks_px": 42,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (42px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "06_paper_cut.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   839,
+   705
+  ],
+  "upscale_needed": {
+   "full_front": 7.66,
+   "left_chest_4in": 1.7,
+   "cap_front": 1.43
+  },
+  "bg_low_contrast_edge": 0.934,
+  "soft_edge_share": 0.997,
+  "interior_bg_colored": 0.0,
+  "gradient_share": 0.491,
+  "palette95": 24,
+  "thread_colors_est": 5,
+  "chest_detail_survival": 0.84,
+  "thumb_detail_survival": 0.523,
+  "near_white_share": 0.494,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.543,
+    "edge_visible": 0.0,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.015,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.029,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.383,
+    "edge_visible": 0.675,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.68,
+  "center": [
+   0.497,
+   0.513
+  ],
+  "asymmetry": 0.067,
+  "touches_edge": false,
+  "stray_marks_px": 28,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T11 stray marks/specks outside the art (28px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "07_pop_art.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   818,
+   728
+  ],
+  "upscale_needed": {
+   "full_front": 7.42,
+   "left_chest_4in": 1.65,
+   "cap_front": 1.47
+  },
+  "bg_low_contrast_edge": 0.273,
+  "soft_edge_share": 0.432,
+  "interior_bg_colored": 0.08,
+  "gradient_share": 0.459,
+  "palette95": 99,
+  "thread_colors_est": 16,
+  "chest_detail_survival": 0.812,
+  "thumb_detail_survival": 0.309,
+  "near_white_share": 0.533,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.462,
+    "edge_visible": 0.416,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.13,
+    "edge_visible": 1.0,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.033,
+    "edge_visible": 0.913,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.001,
+    "edge_visible": 0.998,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.195,
+    "edge_visible": 0.966,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.743,
+  "center": [
+   0.507,
+   0.497
+  ],
+  "asymmetry": 0.08,
+  "touches_edge": false,
+  "stray_marks_px": 0,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T6 detail lost at chest/thumbnail size"
+  ]
+ },
+ {
+  "file": "08_tattoo_flash.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   735,
+   598
+  ],
+  "upscale_needed": {
+   "full_front": 9.03,
+   "left_chest_4in": 2.01,
+   "cap_front": 1.63
+  },
+  "bg_low_contrast_edge": 0.104,
+  "soft_edge_share": 0.18,
+  "interior_bg_colored": 0.007,
+  "gradient_share": 0.418,
+  "palette95": 72,
+  "thread_colors_est": 20,
+  "chest_detail_survival": 0.899,
+  "thumb_detail_survival": 0.443,
+  "near_white_share": 0.411,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.348,
+    "edge_visible": 0.704,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.238,
+    "edge_visible": 0.564,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.024,
+    "edge_visible": 0.641,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.006,
+    "edge_visible": 0.726,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.117,
+    "edge_visible": 0.712,
+    "usable": true
+   }
+  },
+  "usable_garments": [
+   "heather_gray",
+   "navy",
+   "sand"
+  ],
+  "fill_ratio": 0.663,
+  "center": [
+   0.499,
+   0.493
+  ],
+  "asymmetry": 0.08,
+  "touches_edge": false,
+  "stray_marks_px": 129,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (129px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "09_folk_embroidery.png",
+  "size": [
+   1088,
+   960
+  ],
+  "subject_bbox_px": [
+   755,
+   703
+  ],
+  "upscale_needed": {
+   "full_front": 7.68,
+   "left_chest_4in": 1.71,
+   "cap_front": 1.59
+  },
+  "bg_low_contrast_edge": 0.193,
+  "soft_edge_share": 0.315,
+  "interior_bg_colored": 0.028,
+  "gradient_share": 0.089,
+  "palette95": 159,
+  "thread_colors_est": 30,
+  "chest_detail_survival": 0.787,
+  "thumb_detail_survival": 0.379,
+  "near_white_share": 0.307,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.375,
+    "edge_visible": 0.523,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.03,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.053,
+    "edge_visible": 0.665,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.001,
+    "edge_visible": 0.972,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.233,
+    "edge_visible": 0.827,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.7,
+  "center": [
+   0.499,
+   0.499
+  ],
+  "asymmetry": 0.057,
+  "touches_edge": false,
+  "stray_marks_px": 0,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T5 >6 colors -> cap needs separate simplified art"
+  ]
+ },
+ {
+  "file": "10_ink_watercolor.png",
+  "size": [
+   1088,
+   960
+  ],
+  "subject_bbox_px": [
+   768,
+   759
+  ],
+  "upscale_needed": {
+   "full_front": 7.11,
+   "left_chest_4in": 1.58,
+   "cap_front": 1.56
+  },
+  "bg_low_contrast_edge": 0.468,
+  "soft_edge_share": 0.62,
+  "interior_bg_colored": 0.13,
+  "gradient_share": 0.43,
+  "palette95": 89,
+  "thread_colors_est": 20,
+  "chest_detail_survival": 0.78,
+  "thumb_detail_survival": 0.35,
+  "near_white_share": 0.474,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.451,
+    "edge_visible": 0.26,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.053,
+    "edge_visible": 0.966,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.075,
+    "edge_visible": 0.869,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.002,
+    "edge_visible": 0.971,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.142,
+    "edge_visible": 0.443,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.584,
+  "center": [
+   0.491,
+   0.541
+  ],
+  "asymmetry": 0.124,
+  "touches_edge": false,
+  "stray_marks_px": 4204,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (4204px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "11_master_swirl.png",
+  "size": [
+   1088,
+   960
+  ],
+  "subject_bbox_px": [
+   692,
+   692
+  ],
+  "upscale_needed": {
+   "full_front": 7.8,
+   "left_chest_4in": 1.73,
+   "cap_front": 1.73
+  },
+  "bg_low_contrast_edge": 0.116,
+  "soft_edge_share": 0.233,
+  "interior_bg_colored": 0.001,
+  "gradient_share": 0.186,
+  "palette95": 94,
+  "thread_colors_est": 25,
+  "chest_detail_survival": 0.833,
+  "thumb_detail_survival": 0.45,
+  "near_white_share": 0.11,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.145,
+    "edge_visible": 0.564,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.04,
+    "edge_visible": 0.949,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.073,
+    "edge_visible": 0.48,
+    "usable": false
+   },
+   "navy": {
+    "pixels_lost": 0.032,
+    "edge_visible": 0.88,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.335,
+    "edge_visible": 0.515,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "navy"
+  ],
+  "fill_ratio": 0.787,
+  "center": [
+   0.5,
+   0.499
+  ],
+  "asymmetry": 0.113,
+  "touches_edge": false,
+  "stray_marks_px": 0,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T5 >6 colors -> cap needs separate simplified art"
+  ]
+ },
+ {
+  "file": "12_master_impressionist.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   830,
+   726
+  ],
+  "upscale_needed": {
+   "full_front": 7.44,
+   "left_chest_4in": 1.65,
+   "cap_front": 1.45
+  },
+  "bg_low_contrast_edge": 0.783,
+  "soft_edge_share": 0.956,
+  "interior_bg_colored": 0.003,
+  "gradient_share": 0.715,
+  "palette95": 34,
+  "thread_colors_est": 7,
+  "chest_detail_survival": 0.739,
+  "thumb_detail_survival": 0.504,
+  "near_white_share": 0.22,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.334,
+    "edge_visible": 0.001,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.02,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.074,
+    "edge_visible": 0.988,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.432,
+    "edge_visible": 0.279,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.719,
+  "center": [
+   0.498,
+   0.503
+  ],
+  "asymmetry": 0.077,
+  "touches_edge": false,
+  "stray_marks_px": 160,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (160px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "13_master_renaissance.png",
+  "size": [
+   1152,
+   896
+  ],
+  "subject_bbox_px": [
+   867,
+   861
+  ],
+  "upscale_needed": {
+   "full_front": 6.27,
+   "left_chest_4in": 1.39,
+   "cap_front": 1.38
+  },
+  "bg_low_contrast_edge": 0.851,
+  "soft_edge_share": 0.963,
+  "interior_bg_colored": 0.001,
+  "gradient_share": 0.708,
+  "palette95": 39,
+  "thread_colors_est": 12,
+  "chest_detail_survival": 0.688,
+  "thumb_detail_survival": 0.481,
+  "near_white_share": 0.053,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.075,
+    "edge_visible": 0.0,
+    "usable": false
+   },
+   "black": {
+    "pixels_lost": 0.043,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "heather_gray": {
+    "pixels_lost": 0.086,
+    "edge_visible": 0.991,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 1.0,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.403,
+    "edge_visible": 0.614,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "black",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.818,
+  "center": [
+   0.503,
+   0.493
+  ],
+  "asymmetry": 0.1,
+  "touches_edge": false,
+  "stray_marks_px": 239,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T2 background hard to separate (edge ~ background color)",
+   "T3 soft/semi-transparent edge risk -> underbase halo",
+   "T4 heavy gradients -> needs halftone for dark DTG",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (239px) -> must be cleaned"
+  ]
+ },
+ {
+  "file": "14_master_gold_leaf.png",
+  "size": [
+   1088,
+   960
+  ],
+  "subject_bbox_px": [
+   859,
+   867
+  ],
+  "upscale_needed": {
+   "full_front": 6.23,
+   "left_chest_4in": 1.4,
+   "cap_front": 1.4
+  },
+  "bg_low_contrast_edge": 0.082,
+  "soft_edge_share": 0.144,
+  "interior_bg_colored": 0.001,
+  "gradient_share": 0.156,
+  "palette95": 62,
+  "thread_colors_est": 21,
+  "chest_detail_survival": 0.784,
+  "thumb_detail_survival": 0.384,
+  "near_white_share": 0.156,
+  "garments": {
+   "white": {
+    "pixels_lost": 0.069,
+    "edge_visible": 0.735,
+    "usable": true
+   },
+   "black": {
+    "pixels_lost": 0.127,
+    "edge_visible": 0.546,
+    "usable": false
+   },
+   "heather_gray": {
+    "pixels_lost": 0.002,
+    "edge_visible": 0.642,
+    "usable": true
+   },
+   "navy": {
+    "pixels_lost": 0.0,
+    "edge_visible": 0.791,
+    "usable": true
+   },
+   "sand": {
+    "pixels_lost": 0.289,
+    "edge_visible": 0.694,
+    "usable": false
+   }
+  },
+  "usable_garments": [
+   "white",
+   "heather_gray",
+   "navy"
+  ],
+  "fill_ratio": 0.786,
+  "center": [
+   0.499,
+   0.5
+  ],
+  "asymmetry": 0.074,
+  "touches_edge": false,
+  "stray_marks_px": 201,
+  "tech_flags": [
+   "T1 upscale >4x for full front",
+   "T5 >6 colors -> cap needs separate simplified art",
+   "T11 stray marks/specks outside the art (201px) -> must be cleaned"
+  ]
+ }
+]
