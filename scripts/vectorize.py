@@ -1,7 +1,7 @@
 """Raster pair sheet -> clean production vectors. Usage: python vectorize.py <pair.png> <out_prefix>
 Splits front emblem / back print, upscales, smooths, thresholds, traces with potrace -> SVG (hard edges, no semi-transparent pixels),
 renders transparent PNGs (black ink and white ink) at print size."""
-import sys, io, numpy as np, cv2, potrace, cairosvg
+import sys, io, os, numpy as np, cv2, potrace, cairosvg
 from PIL import Image
 src, pre = sys.argv[1], sys.argv[2]
 g = cv2.imread(src, 0); S = 4
@@ -29,6 +29,8 @@ def path_d(mask):
         d.append("Z")
     return "".join(d)
 for name, m in parts.items():
+    if name == "front" and int(os.environ.get("FRONT_THICKEN", "0")) > 0:
+        m = cv2.dilate(m.astype(np.uint8), np.ones((3, 3), np.uint8), iterations=int(os.environ["FRONT_THICKEN"])).astype(bool)
     ys, xs = np.where(m); m = m[max(ys.min() - 20, 0):ys.max() + 20, max(xs.min() - 20, 0):xs.max() + 20]
     h, w = m.shape; d = path_d(m)
     svg = lambda col: f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}" width="{w}" height="{h}"><path d="{d}" fill="{col}" fill-rule="evenodd"/></svg>'
