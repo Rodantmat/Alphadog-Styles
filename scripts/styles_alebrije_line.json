@@ -1,0 +1,38 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "mini_a",
+   "ref": "out/sets/line_p1/poodle__classic.jpg",
+   "style_ref": "refs/linda/ref_2025-08_front_smile.jpg",
+   "prompt": "Image 1 is an APPROVED finished continuous-line design. Keep ALL its black lines, drawing style, line weight, layout (front head emblem left, full-body sitting back print right) and the dog exactly as drawn. Turn it into an ELEGANT ALEBRIJE edition: add a pair of graceful line-drawn large feathered angel-like wings to the BACK dog only (the front emblem stays head-only, no wings), drawn with the same thin flowing black line as the rest. Color: restrained flat fills only in large clean areas of the wings and a few soft areas of the dog, using just 3 colors: teal, coral and golden yellow; thin black outline, the dog's body stays mostly white/uncolored line art. Decoration: a few simple dots, small flowers or leaf curls on the wings only, airy and uncluttered with lots of white space; absolutely not crowded or busy. White background, no text. Image 2 is Linda, a small MINI poodle: redraw the dog as Linda (smaller, rounder fluffy cloud-like head, shorter soft curly coat, tongue out) but keep image 1's line style."
+  },
+  {
+   "id": "classic_a",
+   "ref": "out/sets/line_p1/poodle__classic.jpg",
+   "prompt": "Image 1 is an APPROVED finished continuous-line design. Keep ALL its black lines, drawing style, line weight, layout (front head emblem left, full-body sitting back print right) and the dog exactly as drawn. Turn it into an ELEGANT ALEBRIJE edition: add a pair of graceful line-drawn large feathered angel-like wings to the BACK dog only (the front emblem stays head-only, no wings), drawn with the same thin flowing black line as the rest. Color: restrained flat fills only in large clean areas of the wings and a few soft areas of the dog, using just 3 colors: teal, coral and golden yellow; thin black outline, the dog's body stays mostly white/uncolored line art. Decoration: a few simple dots, small flowers or leaf curls on the wings only, airy and uncluttered with lots of white space; absolutely not crowded or busy. White background, no text."
+  },
+  {
+   "id": "mini_b",
+   "ref": "out/sets/line_p1/poodle__classic.jpg",
+   "style_ref": "refs/linda/ref_2025-08_front_smile.jpg",
+   "prompt": "Image 1 is an APPROVED finished continuous-line design. Keep ALL its black lines, drawing style, line weight, layout (front head emblem left, full-body sitting back print right) and the dog exactly as drawn. Turn it into an ELEGANT ALEBRIJE edition: add a pair of graceful line-drawn two pairs of delicate butterfly wings to the BACK dog only (the front emblem stays head-only, no wings), drawn with the same thin flowing black line as the rest. Color: restrained flat fills only in large clean areas of the wings and a few soft areas of the dog, using just 3 colors: magenta, turquoise and orange; thin black outline, the dog's body stays mostly white/uncolored line art. Decoration: a few simple dots, small flowers or leaf curls on the wings only, airy and uncluttered with lots of white space; absolutely not crowded or busy. White background, no text. Image 2 is Linda, a small MINI poodle: redraw the dog as Linda (smaller, rounder fluffy cloud-like head, shorter soft curly coat, tongue out) but keep image 1's line style."
+  },
+  {
+   "id": "classic_b",
+   "ref": "out/sets/line_p1/poodle__classic.jpg",
+   "prompt": "Image 1 is an APPROVED finished continuous-line design. Keep ALL its black lines, drawing style, line weight, layout (front head emblem left, full-body sitting back print right) and the dog exactly as drawn. Turn it into an ELEGANT ALEBRIJE edition: add a pair of graceful line-drawn two pairs of delicate butterfly wings to the BACK dog only (the front emblem stays head-only, no wings), drawn with the same thin flowing black line as the rest. Color: restrained flat fills only in large clean areas of the wings and a few soft areas of the dog, using just 3 colors: magenta, turquoise and orange; thin black outline, the dog's body stays mostly white/uncolored line art. Decoration: a few simple dots, small flowers or leaf curls on the wings only, airy and uncluttered with lots of white space; absolutely not crowded or busy. White background, no text."
+  },
+  {
+   "id": "mini_c",
+   "ref": "out/sets/line_p1/poodle__classic.jpg",
+   "style_ref": "refs/linda/ref_2025-08_front_smile.jpg",
+   "prompt": "Image 1 is an APPROVED finished continuous-line design. Keep ALL its black lines, drawing style, line weight, layout (front head emblem left, full-body sitting back print right) and the dog exactly as drawn. Turn it into an ELEGANT ALEBRIJE edition: add a pair of graceful line-drawn slender elegant feather wings to the BACK dog only (the front emblem stays head-only, no wings), drawn with the same thin flowing black line as the rest. Color: restrained flat fills only in large clean areas of the wings and a few soft areas of the dog, using just 2 colors: deep blue and gold; thin black outline, the dog's body stays mostly white/uncolored line art. Decoration: a few simple dots, small flowers or leaf curls on the wings only, airy and uncluttered with lots of white space; absolutely not crowded or busy. White background, no text. Image 2 is Linda, a small MINI poodle: redraw the dog as Linda (smaller, rounder fluffy cloud-like head, shorter soft curly coat, tongue out) but keep image 1's line style."
+  },
+  {
+   "id": "classic_c",
+   "ref": "out/sets/line_p1/poodle__classic.jpg",
+   "prompt": "Image 1 is an APPROVED finished continuous-line design. Keep ALL its black lines, drawing style, line weight, layout (front head emblem left, full-body sitting back print right) and the dog exactly as drawn. Turn it into an ELEGANT ALEBRIJE edition: add a pair of graceful line-drawn slender elegant feather wings to the BACK dog only (the front emblem stays head-only, no wings), drawn with the same thin flowing black line as the rest. Color: restrained flat fills only in large clean areas of the wings and a few soft areas of the dog, using just 2 colors: deep blue and gold; thin black outline, the dog's body stays mostly white/uncolored line art. Decoration: a few simple dots, small flowers or leaf curls on the wings only, airy and uncluttered with lots of white space; absolutely not crowded or busy. White background, no text."
+  }
+ ]
+}
