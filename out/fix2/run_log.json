@@ -1,0 +1,650 @@
+[
+ {
+  "id": "L2_poodle_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2392,
+   "candidatesTokenCount": 1702,
+   "totalTokenCount": 4553,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 152
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 459,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L2_poodle_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2392,
+   "candidatesTokenCount": 1774,
+   "totalTokenCount": 4684,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 152
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 518,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L2_poodle_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2392,
+   "candidatesTokenCount": 1401,
+   "totalTokenCount": 4281,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 152
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 488,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L2_poodle_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2392,
+   "candidatesTokenCount": 1746,
+   "totalTokenCount": 4407,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 152
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 269,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L2_gsd_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2403,
+   "candidatesTokenCount": 1379,
+   "totalTokenCount": 4529,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 163
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 747,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L2_gsd_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2403,
+   "candidatesTokenCount": 1381,
+   "totalTokenCount": 4658,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 163
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 874,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L2_gsd_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2403,
+   "candidatesTokenCount": 1403,
+   "totalTokenCount": 4681,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 163
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 875,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "L2_gsd_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2403,
+   "candidatesTokenCount": 1368,
+   "totalTokenCount": 4635,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 163
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 864,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2443,
+   "candidatesTokenCount": 1437,
+   "totalTokenCount": 4809,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 203
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 929,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2443,
+   "candidatesTokenCount": 1476,
+   "totalTokenCount": 5208,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 203
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1289,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2443,
+   "candidatesTokenCount": 1420,
+   "totalTokenCount": 4567,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 203
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 704,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2443,
+   "candidatesTokenCount": 1441,
+   "totalTokenCount": 4408,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 203
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 524,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2453,
+   "candidatesTokenCount": 1444,
+   "totalTokenCount": 4656,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 213
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 759,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2453,
+   "candidatesTokenCount": 1488,
+   "totalTokenCount": 4493,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 213
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 552,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2453,
+   "candidatesTokenCount": 1448,
+   "totalTokenCount": 4677,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 213
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 776,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dachs_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2453,
+   "candidatesTokenCount": 1440,
+   "totalTokenCount": 4399,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 213
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 506,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2433,
+   "candidatesTokenCount": 1424,
+   "totalTokenCount": 4691,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 193
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 834,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2433,
+   "candidatesTokenCount": 1457,
+   "totalTokenCount": 5047,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 193
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1157,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2433,
+   "candidatesTokenCount": 1434,
+   "totalTokenCount": 4536,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 193
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 669,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2433,
+   "candidatesTokenCount": 1454,
+   "totalTokenCount": 4937,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 193
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1050,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2451,
+   "candidatesTokenCount": 1467,
+   "totalTokenCount": 4449,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 211
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 531,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2451,
+   "candidatesTokenCount": 1469,
+   "totalTokenCount": 4891,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 211
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 971,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2451,
+   "candidatesTokenCount": 1510,
+   "totalTokenCount": 4258,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 211
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 297,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "G2_dane_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2451,
+   "candidatesTokenCount": 1436,
+   "totalTokenCount": 4546,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 211
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 659,
+   "serviceTier": "standard"
+  }
+ }
+]
