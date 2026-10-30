@@ -1,0 +1,31 @@
+name: eyes
+on:
+  workflow_dispatch:
+    inputs:
+      in_dirs: {description: "comma list of dirs with jpgs", default: "out/sets_orig/line_p1"}
+      out_file: {description: "result json", default: "out/eyes/eyes.json"}
+      only: {description: "substring filter list", default: ""}
+      model: {description: "model", default: "gemini-3.1-pro-preview"}
+permissions:
+  contents: write
+jobs:
+  eyes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Detect
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IN_DIRS: ${{ inputs.in_dirs }}
+          OUT_FILE: ${{ inputs.out_file }}
+          ONLY: ${{ inputs.only }}
+          MODEL: ${{ inputs.model }}
+        run: python3 scripts/detect_eyes.py
+      - name: Commit
+        run: |
+          git config user.name "alphadog-bot"
+          git config user.email "alphadog-bot@users.noreply.github.com"
+          git add out/
+          git commit -m "eye boxes $(date -u +%F_%H%M)" || echo none
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
