@@ -45,7 +45,8 @@ def dark_garment_mask(m):
         out[holes] = 1
     return out.astype(bool)
 def path_d(mask):
-    plist = potrace.Bitmap(~mask).trace(turdsize=30, alphamax=1.1, opttolerance=0.6)
+    try: plist = potrace.Bitmap(~mask).trace(turdsize=30, alphamax=1.1, opttolerance=0.6)
+    except ValueError: plist = potrace.Bitmap(~mask).trace(turdsize=30, alphamax=1.1, opttolerance=0.6, opticurve=False)
     d = []
     for c in plist:
         s = c.start_point; d.append(f"M{s.x:.1f},{s.y:.1f}")
