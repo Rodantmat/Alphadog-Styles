@@ -1,0 +1,1622 @@
+[
+ {
+  "id": "N_line_siberian_husky_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1395,
+   "candidatesTokenCount": 1586,
+   "totalTokenCount": 3261,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 275
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 280,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1395,
+   "candidatesTokenCount": 1610,
+   "totalTokenCount": 3775,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 275
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 770,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1395,
+   "candidatesTokenCount": 1501,
+   "totalTokenCount": 3570,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 275
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 674,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1395,
+   "candidatesTokenCount": 1515,
+   "totalTokenCount": 3533,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 275
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 623,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1412,
+   "candidatesTokenCount": 1459,
+   "totalTokenCount": 3727,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 292
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 856,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1412,
+   "candidatesTokenCount": 1509,
+   "totalTokenCount": 3703,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 292
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 782,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1412,
+   "candidatesTokenCount": 1519,
+   "totalTokenCount": 3226,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 292
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 295,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1412,
+   "candidatesTokenCount": 1544,
+   "totalTokenCount": 3241,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 292
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 285,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1420,
+   "candidatesTokenCount": 1490,
+   "totalTokenCount": 3453,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 543,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1420,
+   "candidatesTokenCount": 1529,
+   "totalTokenCount": 3277,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 328,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1420,
+   "candidatesTokenCount": 1496,
+   "totalTokenCount": 3702,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 786,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_siberian_husky_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1420,
+   "candidatesTokenCount": 1519,
+   "totalTokenCount": 3303,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 364,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1392,
+   "candidatesTokenCount": 1511,
+   "totalTokenCount": 3909,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 272
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1006,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1392,
+   "candidatesTokenCount": 2285,
+   "totalTokenCount": 3899,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 272
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 222,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1392,
+   "candidatesTokenCount": 1551,
+   "totalTokenCount": 3295,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 272
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 352,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1392,
+   "candidatesTokenCount": 1579,
+   "totalTokenCount": 3395,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 272
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 424,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1409,
+   "candidatesTokenCount": 1505,
+   "totalTokenCount": 3388,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 289
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 474,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1409,
+   "candidatesTokenCount": 1492,
+   "totalTokenCount": 3332,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 289
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 431,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1409,
+   "candidatesTokenCount": 1545,
+   "totalTokenCount": 4121,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 289
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1167,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1409,
+   "candidatesTokenCount": 1526,
+   "totalTokenCount": 3297,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 289
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 362,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1417,
+   "candidatesTokenCount": 1521,
+   "totalTokenCount": 4012,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1074,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1417,
+   "candidatesTokenCount": 1525,
+   "totalTokenCount": 3509,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 567,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1417,
+   "candidatesTokenCount": 1520,
+   "totalTokenCount": 3700,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 763,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_siberian_husky_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1417,
+   "candidatesTokenCount": 1524,
+   "totalTokenCount": 3415,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 474,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1391,
+   "candidatesTokenCount": 1469,
+   "totalTokenCount": 3150,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 271
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 290,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1391,
+   "candidatesTokenCount": 1519,
+   "totalTokenCount": 3592,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 271
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 682,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1391,
+   "candidatesTokenCount": 1497,
+   "totalTokenCount": 3013,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 271
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 125,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1391,
+   "candidatesTokenCount": 1434,
+   "totalTokenCount": 3064,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 271
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 239,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1408,
+   "candidatesTokenCount": 1520,
+   "totalTokenCount": 3058,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 288
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 130,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1408,
+   "candidatesTokenCount": 1426,
+   "totalTokenCount": 3074,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 288
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 240,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1408,
+   "candidatesTokenCount": 1473,
+   "totalTokenCount": 3221,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 288
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 340,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1408,
+   "candidatesTokenCount": 1502,
+   "totalTokenCount": 3399,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 288
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 489,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1416,
+   "candidatesTokenCount": 1529,
+   "totalTokenCount": 2989,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 296
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 44,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1416,
+   "candidatesTokenCount": 1515,
+   "totalTokenCount": 3249,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 296
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 318,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1416,
+   "candidatesTokenCount": 1474,
+   "totalTokenCount": 3107,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 296
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 217,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_pug_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1416,
+   "candidatesTokenCount": 1492,
+   "totalTokenCount": 3180,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 296
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 272,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1453,
+   "totalTokenCount": 3463,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 622,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1497,
+   "totalTokenCount": 3761,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 876,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1501,
+   "totalTokenCount": 3335,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 446,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1520,
+   "totalTokenCount": 3865,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 957,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1512,
+   "totalTokenCount": 3549,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 632,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1485,
+   "totalTokenCount": 3277,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 387,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1527,
+   "totalTokenCount": 3295,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 363,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1481,
+   "totalTokenCount": 3105,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 219,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1535,
+   "totalTokenCount": 3816,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 868,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1498,
+   "totalTokenCount": 4007,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1096,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1464,
+   "totalTokenCount": 3233,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 356,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_geo_pug_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1523,
+   "totalTokenCount": 3301,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 365,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1659,
+   "totalTokenCount": 3272,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 225,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1601,
+   "totalTokenCount": 3748,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 759,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1532,
+   "totalTokenCount": 3381,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 461,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1388,
+   "candidatesTokenCount": 1721,
+   "totalTokenCount": 3496,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 387,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1531,
+   "totalTokenCount": 3301,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 365,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1525,
+   "totalTokenCount": 3383,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 453,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1529,
+   "totalTokenCount": 3321,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 387,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1405,
+   "candidatesTokenCount": 1498,
+   "totalTokenCount": 3347,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 285
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 444,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1576,
+   "totalTokenCount": 4184,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1195,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1538,
+   "totalTokenCount": 3496,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 545,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1565,
+   "totalTokenCount": 3520,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 542,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "N_line_american_pit_bull_terrier_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 1413,
+   "candidatesTokenCount": 1511,
+   "totalTokenCount": 3824,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 293
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 900,
+   "serviceTier": "standard"
+  }
+ }
+]
