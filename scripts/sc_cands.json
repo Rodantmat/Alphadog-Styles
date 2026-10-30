@@ -1,0 +1,53 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "SC_line__a",
+   "theme": "line",
+   "slug": "shiba_inu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/new6_1/N_line_shiba_inu_heart__d.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is a finished design of a Shiba Inu: a small front head inside a heart outline with a small heart on top (left) and the full-body sitting dog with a collar and heart tag (right). Redraw it as the plain classic version: REMOVE the heart outline, the small top heart and the bottom loop entirely, and REMOVE the collar and heart tag from the back dog. Enlarge the front head so it is about the same size as the back dog's head scale is in similar designs (head about 60 percent of the back dog's height), centered where the heart was. Keep both dogs exactly as drawn otherwise (same faces, eyes, ears, fur lines, tail, pose, line weight). Pure black lines on flat white, no gray, no shading, no text."
+  },
+  {
+   "id": "SC_line__b",
+   "theme": "line",
+   "slug": "shiba_inu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/new6_1/N_line_shiba_inu_heart__d.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is a finished design of a Shiba Inu: a small front head inside a heart outline with a small heart on top (left) and the full-body sitting dog with a collar and heart tag (right). Redraw it as the plain classic version: REMOVE the heart outline, the small top heart and the bottom loop entirely, and REMOVE the collar and heart tag from the back dog. Enlarge the front head so it is about the same size as the back dog's head scale is in similar designs (head about 60 percent of the back dog's height), centered where the heart was. Keep both dogs exactly as drawn otherwise (same faces, eyes, ears, fur lines, tail, pose, line weight). Pure black lines on flat white, no gray, no shading, no text."
+  },
+  {
+   "id": "SC_line__c",
+   "theme": "line",
+   "slug": "shiba_inu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/new6_1/N_line_shiba_inu_heart__d.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is a finished design of a Shiba Inu: a small front head inside a heart outline with a small heart on top (left) and the full-body sitting dog with a collar and heart tag (right). Redraw it as the plain classic version: REMOVE the heart outline, the small top heart and the bottom loop entirely, and REMOVE the collar and heart tag from the back dog. Enlarge the front head so it is about the same size as the back dog's head scale is in similar designs (head about 60 percent of the back dog's height), centered where the heart was. Keep both dogs exactly as drawn otherwise (same faces, eyes, ears, fur lines, tail, pose, line weight). Pure black lines on flat white, no gray, no shading, no text."
+  },
+  {
+   "id": "SC_line__d",
+   "theme": "line",
+   "slug": "shiba_inu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/new6_1/N_line_shiba_inu_heart__d.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is a finished design of a Shiba Inu: a small front head inside a heart outline with a small heart on top (left) and the full-body sitting dog with a collar and heart tag (right). Redraw it as the plain classic version: REMOVE the heart outline, the small top heart and the bottom loop entirely, and REMOVE the collar and heart tag from the back dog. Enlarge the front head so it is about the same size as the back dog's head scale is in similar designs (head about 60 percent of the back dog's height), centered where the heart was. Keep both dogs exactly as drawn otherwise (same faces, eyes, ears, fur lines, tail, pose, line weight). Pure black lines on flat white, no gray, no shading, no text."
+  }
+ ]
+}
