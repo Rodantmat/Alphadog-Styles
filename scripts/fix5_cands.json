@@ -1,0 +1,345 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "F5_cav_line_heart__a",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg",
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the cavalier heart design to fix: its full-body sitting dog on the right has NO chest lines. Image 2 is the classic cavalier: the flowing chest, neck and feathered chest contour lines on its chest and front are the truth. In image 1 draw exactly the same chest lines as the dog in image 2 (same shapes, same position, same line weight), keeping its collar with the small heart tag, ears and everything else. The heart and front head stay identical. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "F5_cav_line_heart__b",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg",
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the cavalier heart design to fix: its full-body sitting dog on the right has NO chest lines. Image 2 is the classic cavalier: the flowing chest, neck and feathered chest contour lines on its chest and front are the truth. In image 1 draw exactly the same chest lines as the dog in image 2 (same shapes, same position, same line weight), keeping its collar with the small heart tag, ears and everything else. The heart and front head stay identical. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "F5_cav_line_heart__c",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg",
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the cavalier heart design to fix: its full-body sitting dog on the right has NO chest lines. Image 2 is the classic cavalier: the flowing chest, neck and feathered chest contour lines on its chest and front are the truth. In image 1 draw exactly the same chest lines as the dog in image 2 (same shapes, same position, same line weight), keeping its collar with the small heart tag, ears and everything else. The heart and front head stay identical. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "F5_cav_line_heart__d",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg",
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the cavalier heart design to fix: its full-body sitting dog on the right has NO chest lines. Image 2 is the classic cavalier: the flowing chest, neck and feathered chest contour lines on its chest and front are the truth. In image 1 draw exactly the same chest lines as the dog in image 2 (same shapes, same position, same line weight), keeping its collar with the small heart tag, ears and everything else. The heart and front head stay identical. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "M_line_classic__a",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_classic__b",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_classic__c",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_classic__d",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_cool__a",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_cool__b",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_cool__c",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_cool__d",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_heart__a",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_heart__b",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_heart__c",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_line_heart__d",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in single flowing continuous line style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_classic__a",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_classic__b",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_classic__c",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_classic__d",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (no accessories). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_cool__a",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_cool__b",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_cool__c",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_cool__d",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the aviator sunglasses of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_heart__a",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_heart__b",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_heart__c",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  },
+  {
+   "id": "M_geo_heart__d",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design of a standard poodle in bold geometric polygon lines style. Redraw it as a MINI poodle: a small, cute, compact dog with a rounder fluffy head, a soft mid-length curly-ish wavy coat covering the head, ears and body (like a bichon / maltipoo / maltese mix: natural fluffy teddy-bear look, NOT a clipped show poodle, no pompoms, no topknot), soft fluffy drop ears, dark eyes, black nose. Draw the curly-ish texture with the same kind of lines as image 1 (do not add extra detail). KEEP IDENTICAL to image 1: the exact same drawing style, line weight, eye style (white iris, off-centre black pupil with highlight), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose, composition, and accessories (the collar with small heart tag and the heart of image 1). Pure black on flat white, no text."
+  }
+ ]
+}
