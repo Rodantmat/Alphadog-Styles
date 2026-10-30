@@ -1,0 +1,341 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "LI_line_classic__a",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_classic__b",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_classic__c",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_classic__d",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_cool__a",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_cool__b",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_cool__c",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_cool__d",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_heart__a",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_heart__b",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_heart__c",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_line_heart__d",
+   "theme": "line",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_classic__a",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_classic__b",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_classic__c",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_classic__d",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. No accessories. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_cool__a",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_cool__b",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_cool__c",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_cool__d",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__cool.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Both dogs keep the same aviator sunglasses as image 1 (and no tongue needed behind them). HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_heart__a",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_heart__b",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_heart__c",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  },
+  {
+   "id": "LI_geo_heart__d",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__heart.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design of a mini poodle. Images 2 and 3 are photos of Linda, a small white bichon-poodle: she has a perfectly ROUND, big, puffy cotton-ball head that is wider than her short muzzle, big round dark eyes under soft fluffy brows, a SHORT rounded muzzle with a small black nose, a happy open smile with the tongue out, soft medium-length wavy ears hanging at the sides of the head and blending into the head fluff (not long, not curly ringlets), a compact chubby-fluffy body with short legs and a soft short curly coat, and a small tail curled over the back. Redraw image 1 as Linda: change ONLY the dog's identity to Linda as described (round puffball head, short muzzle, big round eyes, tongue-out smile, soft ears, compact fluffy body, short legs). No topknot, no poodle pompoms, no long face, no long ringlet ears. Keep the heart outline with small heart on top around the front head and the collar with small heart tag on the back dog exactly as in image 1. HARD RULES: Output the SAME canvas, small front head emblem on the left and matching full-body sitting dog on the right, same positions and sizes, same line weight, same drawing style, same eye style (white iris, off-centre black pupil with small highlight). Pure black lines on flat white background, no gray, no shading, no text, nothing cut off, tail and ears complete."
+  }
+ ]
+}
