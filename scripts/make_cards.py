@@ -1,10 +1,10 @@
 import os,sys
 from PIL import Image, ImageDraw, ImageFont
 os.chdir('/home/claude/alphadog-styles')
-br="french_bulldog labrador_retriever golden_retriever german_shepherd dachshund poodle beagle rottweiler german_shorthaired_pointer bulldog cane_corso cavalier_king_charles_spaniel yorkshire_terrier australian_shepherd doberman_pinscher pembroke_welsh_corgi miniature_schnauzer boxer pomeranian bernese_mountain_dog shih_tzu great_dane boston_terrier chihuahua havanese".split()
+br="french_bulldog labrador_retriever golden_retriever german_shepherd dachshund poodle beagle rottweiler german_shorthaired_pointer bulldog cane_corso cavalier_king_charles_spaniel yorkshire_terrier australian_shepherd doberman_pinscher pembroke_welsh_corgi miniature_schnauzer boxer pomeranian bernese_mountain_dog shih_tzu great_dane boston_terrier chihuahua havanese siberian_husky pug american_pit_bull_terrier border_collie shiba_inu mini_poodle".split()
 out=sys.argv[1]; only=set(int(x) for x in sys.argv[2:]) if len(sys.argv)>2 else None
 def P(th,s,v):
-    for p in('p1','p2'):
+    for p in("p1","p2","p3"):
         f=f'out/sets/{th}_{p}/{s}__{v}.jpg'
         if os.path.exists(f): return f
 os.makedirs(out,exist_ok=True)

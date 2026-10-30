@@ -1,0 +1,109 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "MC_line__a",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MC_line__b",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MC_line__c",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MC_line__d",
+   "theme": "line",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p3/mini_poodle__classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MC_geo__a",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MC_geo__b",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MC_geo__c",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MC_geo__d",
+   "theme": "geo",
+   "slug": "mini_poodle",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/mini_poodle__classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic mini poodle design (front head on the left, full-body sitting dog on the right). Image 2 is the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, size relative to the face, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; the dogs' heads, fur, ears, body, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  }
+ ]
+}
