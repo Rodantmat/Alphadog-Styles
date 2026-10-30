@@ -1,0 +1,1205 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "E_beagle_classic__a",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_beagle_classic__b",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_beagle_classic__c",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_beagle_classic__d",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_beagle_heart__a",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_beagle_heart__b",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_beagle_heart__c",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_beagle_heart__d",
+   "theme": "line",
+   "slug": "beagle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/beagle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_classic__a",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_classic__b",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_classic__c",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_classic__d",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_heart__a",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_heart__b",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_heart__c",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bulldog_heart__d",
+   "theme": "line",
+   "slug": "bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_classic__a",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_classic__b",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_classic__c",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_classic__d",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_heart__a",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_heart__b",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_heart__c",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cane_corso_heart__d",
+   "theme": "line",
+   "slug": "cane_corso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cane_corso__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_classic__a",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_classic__b",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_classic__c",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_classic__d",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_heart__a",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_heart__b",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_heart__c",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_cavalier_king_charles_spaniel_heart__d",
+   "theme": "line",
+   "slug": "cavalier_king_charles_spaniel",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_classic__a",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_classic__b",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_classic__c",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_classic__d",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_heart__a",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_heart__b",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_heart__c",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_dachshund_heart__d",
+   "theme": "line",
+   "slug": "dachshund",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/dachshund__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_classic__a",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_classic__b",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_classic__c",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_classic__d",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_heart__a",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_heart__b",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_heart__c",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_french_bulldog_heart__d",
+   "theme": "line",
+   "slug": "french_bulldog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/french_bulldog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_classic__a",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_classic__b",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_classic__c",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_classic__d",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_heart__a",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_heart__b",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_heart__c",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shepherd_heart__d",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_classic__a",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_classic__b",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_classic__c",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_classic__d",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_heart__a",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_heart__b",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_heart__c",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_german_shorthaired_pointer_heart__d",
+   "theme": "line",
+   "slug": "german_shorthaired_pointer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_classic__a",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_classic__b",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_classic__c",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_classic__d",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_heart__a",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_heart__b",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_heart__c",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_golden_retriever_heart__d",
+   "theme": "line",
+   "slug": "golden_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/golden_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_classic__a",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_classic__b",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_classic__c",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_classic__d",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_heart__a",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_heart__b",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_heart__c",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_labrador_retriever_heart__d",
+   "theme": "line",
+   "slug": "labrador_retriever",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/labrador_retriever__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_classic__a",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_classic__b",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_classic__c",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_classic__d",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_heart__a",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_heart__b",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_heart__c",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_poodle_heart__d",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_classic__a",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_classic__b",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_classic__c",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_classic__d",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_heart__a",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_heart__b",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_heart__c",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_rottweiler_heart__d",
+   "theme": "line",
+   "slug": "rottweiler",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/rottweiler__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_yorkshire_terrier_classic__a",
+   "theme": "line",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_yorkshire_terrier_classic__b",
+   "theme": "line",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_yorkshire_terrier_classic__c",
+   "theme": "line",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_yorkshire_terrier_classic__d",
+   "theme": "line",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (the two eyes of the front head on the left and the two eyes of the full-body dog on the right). Each eye: keep its outer eyelid outline exactly where it is, keep the thin round iris ring, and make the inside of the iris mostly WHITE with ONE smaller solid black pupil that does not touch the ring and leaves a clearly visible white crescent around it, plus one tiny white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly to the right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same eye size, same eyelids, same style in all four eyes. Do NOT touch anything else: ears, nose, fur lines, body, outline, heart or accessories stay pixel-identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY the eyes. Pure black lines on flat white background, no gray, no shading, no text."
+  }
+ ]
+}
