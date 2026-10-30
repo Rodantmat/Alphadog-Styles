@@ -1,0 +1,300 @@
+{
+"beagle__classic.jpg": [
+"B r=10.0",
+"B r=10.4",
+"B r=8.2",
+"B r=8.4"
+],
+"beagle__heart.jpg": [
+"B r=8.0",
+"B r=8.0",
+"B r=6.4",
+"B r=7.0"
+],
+"bulldog__classic.jpg": [
+"B r=8.8",
+"B r=8.2",
+"B r=6.4",
+"B r=6.2"
+],
+"bulldog__heart.jpg": [
+"B r=8.2",
+"B r=7.8",
+"B r=7.0",
+"B r=7.0"
+],
+"cane_corso__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"A r=5.8"
+],
+"cane_corso__heart.jpg": [
+"skip",
+"skip",
+"skip",
+"A r=5.0"
+],
+"cavalier_king_charles_spaniel__classic.jpg": [
+"B r=12.0",
+"B r=11.6",
+"B r=9.8",
+"B r=9.2"
+],
+"cavalier_king_charles_spaniel__heart.jpg": [
+"B r=9.2",
+"B r=9.4",
+"B r=8.8",
+"B r=9.2"
+],
+"dachshund__classic.jpg": [
+"B r=8.0",
+"B r=8.6",
+"B r=7.0",
+"B r=7.6"
+],
+"dachshund__heart.jpg": [
+"skip",
+"skip"
+],
+"french_bulldog__classic.jpg": [
+"B r=11.0",
+"B r=10.8",
+"B r=9.4",
+"B r=9.0"
+],
+"french_bulldog__heart.jpg": [
+"B r=10.8",
+"B r=11.0",
+"B r=9.0",
+"B r=9.4"
+],
+"german_shepherd__classic.jpg": [
+"skip",
+"A r=7.6",
+"skip",
+"skip"
+],
+"german_shepherd__heart.jpg": [
+"skip",
+"skip",
+"skip",
+"B r=4.2"
+],
+"german_shorthaired_pointer__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"german_shorthaired_pointer__heart.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"golden_retriever__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"A r=10.2"
+],
+"golden_retriever__heart.jpg": [
+"skip",
+"A r=9.4",
+"skip",
+"skip"
+],
+"labrador_retriever__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"labrador_retriever__heart.jpg": [
+"B r=7.2",
+"B r=7.6",
+"B r=6.0",
+"B r=6.2"
+],
+"poodle__classic.jpg": [
+"skip",
+"B r=6.6",
+"skip",
+"B r=4.0"
+],
+"poodle__heart.jpg": [
+"B r=6.4",
+"B r=6.0",
+"B r=5.2",
+"B r=5.0"
+],
+"rottweiler__classic.jpg": [
+"A r=8.6",
+"B r=5.6",
+"B r=3.6",
+"B r=3.6"
+],
+"rottweiler__heart.jpg": [
+"B r=5.6",
+"skip",
+"B r=6.2",
+"B r=6.2"
+],
+"yorkshire_terrier__classic.jpg": [
+"B r=10.4",
+"B r=11.4",
+"B r=8.2",
+"B r=9.0"
+],
+"yorkshire_terrier__heart.jpg": [
+"B r=9.4",
+"B r=10.0",
+"B r=8.6",
+"B r=9.4"
+],
+"australian_shepherd__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"B r=4.0"
+],
+"australian_shepherd__heart.jpg": [
+"B r=5.0",
+"B r=5.8",
+"skip",
+"skip"
+],
+"bernese_mountain_dog__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"bernese_mountain_dog__heart.jpg": [
+"B r=7.2",
+"B r=6.6",
+"B r=6.2",
+"B r=6.4"
+],
+"boston_terrier__classic.jpg": [
+"B r=11.0",
+"B r=10.6",
+"B r=8.6",
+"B r=8.6"
+],
+"boston_terrier__heart.jpg": [
+"B r=10.0",
+"B r=10.8",
+"B r=8.6",
+"B r=9.0"
+],
+"boxer__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"boxer__heart.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"chihuahua__classic.jpg": [
+"B r=12.8",
+"B r=13.2",
+"B r=10.4",
+"B r=11.0"
+],
+"chihuahua__heart.jpg": [
+"skip",
+"B r=11.2",
+"B r=9.4",
+"skip"
+],
+"doberman_pinscher__classic.jpg": [
+"skip",
+"A r=8.6",
+"skip",
+"B r=5.0"
+],
+"doberman_pinscher__heart.jpg": [
+"B r=5.8",
+"B r=6.4",
+"B r=5.2",
+"B r=7.0"
+],
+"great_dane__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"B r=4.0"
+],
+"great_dane__heart.jpg": [
+"B r=5.6",
+"B r=5.4",
+"B r=4.0",
+"B r=4.0"
+],
+"havanese__classic.jpg": [
+"B r=10.0",
+"B r=10.2",
+"B r=9.0",
+"B r=9.2"
+],
+"havanese__heart.jpg": [
+"B r=8.6",
+"B r=9.0",
+"B r=9.0",
+"B r=9.4"
+],
+"miniature_schnauzer__classic.jpg": [
+"B r=9.0",
+"B r=8.6",
+"B r=6.6",
+"B r=5.8"
+],
+"miniature_schnauzer__heart.jpg": [
+"B r=8.4",
+"B r=8.4",
+"B r=6.6",
+"B r=7.2"
+],
+"pembroke_welsh_corgi__classic.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"pembroke_welsh_corgi__heart.jpg": [
+"skip",
+"skip",
+"skip",
+"skip"
+],
+"pomeranian__classic.jpg": [
+"B r=11.4",
+"B r=10.8",
+"B r=8.6",
+"B r=8.4"
+],
+"pomeranian__heart.jpg": [
+"B r=7.4",
+"B r=7.6",
+"B r=9.2",
+"B r=9.2"
+],
+"shih_tzu__classic.jpg": [
+"B r=10.0",
+"B r=8.2",
+"B r=9.4",
+"B r=8.0"
+],
+"shih_tzu__heart.jpg": [
+"B r=8.2",
+"B r=8.2",
+"B r=8.8",
+"B r=8.6"
+]
+}
