@@ -1,0 +1,231 @@
+{
+ "out/sets_orig/line_p1/beagle__heart.jpg": [
+  {
+   "box_2d": [
+    439,
+    211,
+    481,
+    245
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    440,
+    307,
+    481,
+    341
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    226,
+    704,
+    267,
+    735
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    228,
+    785,
+    264,
+    815
+   ],
+   "which": "front"
+  }
+ ],
+ "out/sets_orig/line_p1/dachshund__classic.jpg": [
+  {
+   "box_2d": [
+    420,
+    185,
+    474,
+    226
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    418,
+    279,
+    472,
+    320
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    189,
+    722,
+    245,
+    760
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    178,
+    806,
+    228,
+    840
+   ],
+   "which": "back"
+  }
+ ],
+ "out/sets_orig/line_p1/french_bulldog__classic.jpg": [
+  {
+   "box_2d": [
+    422,
+    309,
+    488,
+    356
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    286,
+    783,
+    345,
+    822
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    428,
+    181,
+    499,
+    225
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    298,
+    677,
+    356,
+    714
+   ],
+   "which": "front"
+  }
+ ],
+ "out/sets_orig/line_p1/french_bulldog__cool.jpg": [],
+ "out/sets_orig/line_p1/french_bulldog__heart.jpg": [
+  {
+   "box_2d": [
+    415,
+    181,
+    498,
+    241
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    404,
+    290,
+    488,
+    356
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    286,
+    677,
+    356,
+    727
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    275,
+    767,
+    345,
+    822
+   ],
+   "which": "front"
+  }
+ ],
+ "out/sets_orig/line_p1/golden_retriever__heart.jpg": [
+  {
+   "box_2d": [
+    399,
+    213,
+    435,
+    245
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    396,
+    304,
+    431,
+    336
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    189,
+    709,
+    217,
+    736
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    184,
+    777,
+    211,
+    803
+   ],
+   "which": "front"
+  }
+ ],
+ "out/sets_orig/line_p1/poodle__classic.jpg": [
+  {
+   "box_2d": [
+    217,
+    711,
+    251,
+    739
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    220,
+    769,
+    251,
+    797
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    397,
+    206,
+    442,
+    244
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    397,
+    296,
+    442,
+    334
+   ],
+   "which": "front"
+  }
+ ]
+}
