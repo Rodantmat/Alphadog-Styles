@@ -1,0 +1,1082 @@
+[
+ {
+  "id": "F_golden_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2490,
+   "candidatesTokenCount": 1589,
+   "totalTokenCount": 5011,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 250
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 932,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_golden_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2490,
+   "candidatesTokenCount": 1450,
+   "totalTokenCount": 5409,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 250
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1469,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_golden_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2490,
+   "candidatesTokenCount": 1480,
+   "totalTokenCount": 4296,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 250
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 326,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_golden_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2490,
+   "candidatesTokenCount": 1465,
+   "totalTokenCount": 5077,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 250
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1122,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_gsd_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2466,
+   "candidatesTokenCount": 1458,
+   "totalTokenCount": 4445,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 226
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 521,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_gsd_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2466,
+   "candidatesTokenCount": 1450,
+   "totalTokenCount": 4535,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 226
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 619,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_gsd_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2466,
+   "candidatesTokenCount": 1474,
+   "totalTokenCount": 4422,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 226
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 482,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_gsd_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2466,
+   "candidatesTokenCount": 1513,
+   "totalTokenCount": 4654,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 226
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 675,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dachshund_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2434,
+   "candidatesTokenCount": 1501,
+   "totalTokenCount": 4793,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 194
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 858,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dachshund_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2434,
+   "candidatesTokenCount": 1852,
+   "totalTokenCount": 4756,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 194
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 470,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dachshund_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2434,
+   "candidatesTokenCount": 1414,
+   "totalTokenCount": 4476,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 194
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 628,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dachshund_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2434,
+   "candidatesTokenCount": 1467,
+   "totalTokenCount": 4685,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 194
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 784,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_poodle_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2437,
+   "candidatesTokenCount": 1475,
+   "totalTokenCount": 4215,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 197
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 303,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_poodle_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2437,
+   "candidatesTokenCount": 1463,
+   "totalTokenCount": 4507,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 197
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 607,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_poodle_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2437,
+   "candidatesTokenCount": 1521,
+   "totalTokenCount": 4554,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 197
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 596,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_poodle_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2437,
+   "candidatesTokenCount": 1452,
+   "totalTokenCount": 4444,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 197
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 555,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_beagle_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2438,
+   "candidatesTokenCount": 1523,
+   "totalTokenCount": 4600,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 198
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 639,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_beagle_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2438,
+   "candidatesTokenCount": 1483,
+   "totalTokenCount": 5135,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 198
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 1214,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_beagle_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2438,
+   "candidatesTokenCount": 1465,
+   "totalTokenCount": 4482,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 198
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 579,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_beagle_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2438,
+   "candidatesTokenCount": 1471,
+   "totalTokenCount": 4786,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 198
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 877,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_cav_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2467,
+   "candidatesTokenCount": 1487,
+   "totalTokenCount": 4722,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 227
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 768,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_cav_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2467,
+   "candidatesTokenCount": 1505,
+   "totalTokenCount": 4519,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 227
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 547,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_cav_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2467,
+   "candidatesTokenCount": 1469,
+   "totalTokenCount": 4826,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 227
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 890,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_cav_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2467,
+   "candidatesTokenCount": 1438,
+   "totalTokenCount": 4706,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 227
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 801,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1397,
+   "totalTokenCount": 4113,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 271,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1420,
+   "totalTokenCount": 4244,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 379,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1375,
+   "totalTokenCount": 4619,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 799,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1456,
+   "totalTokenCount": 4194,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 293,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1404,
+   "totalTokenCount": 4468,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 619,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1384,
+   "totalTokenCount": 4175,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 346,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1380,
+   "totalTokenCount": 4506,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 681,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1391,
+   "totalTokenCount": 4487,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 651,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1415,
+   "totalTokenCount": 4262,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 402,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1386,
+   "totalTokenCount": 4410,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 579,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1397,
+   "totalTokenCount": 4383,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 541,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_chi_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2445,
+   "candidatesTokenCount": 1763,
+   "totalTokenCount": 5011,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 205
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 803,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dach_geo_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2452,
+   "candidatesTokenCount": 1838,
+   "totalTokenCount": 5272,
+   "promptTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    },
+    {
+     "modality": "TEXT",
+     "tokenCount": 212
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 982,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dach_geo_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2452,
+   "candidatesTokenCount": 1762,
+   "totalTokenCount": 4974,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 212
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 760,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dach_geo_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2452,
+   "candidatesTokenCount": 1516,
+   "totalTokenCount": 4476,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 212
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 508,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "F_dach_geo_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 2452,
+   "candidatesTokenCount": 1481,
+   "totalTokenCount": 4635,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 212
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 2240
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 702,
+   "serviceTier": "standard"
+  }
+ }
+]
