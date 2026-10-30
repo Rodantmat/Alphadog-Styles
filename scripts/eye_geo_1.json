@@ -1,0 +1,1205 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "E_yorkshire_terrier_heart__a",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/yorkshire_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_yorkshire_terrier_heart__b",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/yorkshire_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_yorkshire_terrier_heart__c",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/yorkshire_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_yorkshire_terrier_heart__d",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p1/yorkshire_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_classic__a",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_classic__b",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_classic__c",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_classic__d",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_heart__a",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_heart__b",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_heart__c",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_australian_shepherd_heart__d",
+   "theme": "geo",
+   "slug": "australian_shepherd",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/australian_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_classic__a",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_classic__b",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_classic__c",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_classic__d",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_heart__a",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_heart__b",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_heart__c",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_bernese_mountain_dog_heart__d",
+   "theme": "geo",
+   "slug": "bernese_mountain_dog",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/bernese_mountain_dog__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_classic__a",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_classic__b",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_classic__c",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_classic__d",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_heart__a",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_heart__b",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_heart__c",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boston_terrier_heart__d",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_classic__a",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_classic__b",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_classic__c",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_classic__d",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_heart__a",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_heart__b",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_heart__c",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_boxer_heart__d",
+   "theme": "geo",
+   "slug": "boxer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_classic__a",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_classic__b",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_classic__c",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_classic__d",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_heart__a",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_heart__b",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_heart__c",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_chihuahua_heart__d",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_classic__a",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_classic__b",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_classic__c",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_classic__d",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_heart__a",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_heart__b",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_heart__c",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_doberman_pinscher_heart__d",
+   "theme": "geo",
+   "slug": "doberman_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_classic__a",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_classic__b",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_classic__c",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_classic__d",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_heart__a",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_heart__b",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_heart__c",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_great_dane_heart__d",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/great_dane__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_classic__a",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_classic__b",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_classic__c",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_classic__d",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_heart__a",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_heart__b",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_heart__c",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_havanese_heart__d",
+   "theme": "geo",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/havanese__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_classic__a",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_classic__b",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_classic__c",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_classic__d",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_heart__a",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_heart__b",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_heart__c",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_miniature_schnauzer_heart__d",
+   "theme": "geo",
+   "slug": "miniature_schnauzer",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/miniature_schnauzer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_classic__a",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_classic__b",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_classic__c",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_classic__d",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_heart__a",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_heart__b",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_heart__c",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pembroke_welsh_corgi_heart__d",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_classic__a",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_classic__b",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_classic__c",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_classic__d",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_heart__a",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_heart__b",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_heart__c",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_pomeranian_heart__d",
+   "theme": "geo",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/pomeranian__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_classic__a",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_classic__b",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_classic__c",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_classic__d",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_heart__a",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_heart__b",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_heart__c",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "E_shih_tzu_heart__d",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Redraw ONLY the four eyes (two eyes of the front head on the left, two eyes of the full-body dog on the right). Keep the flat geometric, angular poly style of the drawing. Each eye keeps its exact position and overall size. Make each eye a clean eye shape with a thin black outline, mostly WHITE inside, with ONE solid black round pupil that does not touch the outline and leaves a clearly visible white crescent around it, and one small white highlight dot inside the pupil at its upper right. The pupil must NOT sit in the exact centre: shift every pupil slightly toward the same direction (looking slightly right and a little up), identical in all four eyes, so both eyes of each dog look the same way and are perfectly aligned with each other. Same size and style in all four eyes. Do NOT touch anything else: ears, nose, facets, body, outline, heart, collar stay pixel-identical. HARD RULES: Output the SAME image: same canvas, same two drawings in the same positions and sizes, same line weight. Change ONLY the eyes. Pure black on flat white background, no gray, no shading, no text."
+  }
+ ]
+}
