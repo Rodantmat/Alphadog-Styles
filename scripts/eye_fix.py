@@ -113,12 +113,54 @@ def paint_geo(img, e):
         if blob[disc].all(): break
     cv2.circle(img, (int(round(gx)), int(round(gy))), int(round(gr)), 255, -1, lineType=cv2.LINE_AA)
     return "painted"
+
+def geo_eye2(m, bx0, by0, bx1, by1):
+    """solid-eye finder by distance transform inside the (slightly padded) box"""
+    H, W = m.shape
+    pad = 0.25*max(bx1-bx0, by1-by0)
+    x0, x1, y0, y1 = max(0,int(bx0-pad)), min(W,int(bx1+pad)), max(0,int(by0-pad)), min(H,int(by1+pad))
+    win = m[y0:y1, x0:x1]
+    dt = cv2.distanceTransform(win, cv2.DIST_L2, 5)
+    yy, xx = np.mgrid[0:win.shape[0], 0:win.shape[1]]
+    inb = (xx+x0 >= bx0) & (xx+x0 <= bx1) & (yy+y0 >= by0) & (yy+y0 <= by1)
+    d = np.where(inb, dt, 0)
+    iy, ix = np.unravel_index(np.argmax(d), d.shape); rs = float(d[iy, ix])
+    if rs < 2.4: return None
+    # existing glint: enclosed white component near the centre
+    white = (1-win).astype(np.uint8)
+    n, lab, st, cen = cv2.connectedComponentsWithStats(white, 4)
+    has = False
+    for k in range(1, n):
+        x, y, w, h, a = st[k]
+        if x == 0 or y == 0 or x+w >= win.shape[1] or y+h >= win.shape[0]: continue
+        if a < 3 or a > 0.7*np.pi*rs*rs*1.5 or w < 0.35*rs or h < 0.35*rs: continue
+        if np.hypot(cen[k][0]-ix, cen[k][1]-iy) <= 1.6*rs:
+            comp = (lab == k).astype(np.uint8)
+            ring = cv2.dilate(comp, np.ones((3, 3), np.uint8), iterations=2) - comp
+            if win[ring > 0].mean() >= 0.9: has = True
+    return ix+x0, iy+y0, rs, has, (win, dt, x0, y0)
+def paint_geo2(img, e):
+    cx, cy, rs, has, (win, dt, x0, y0) = e
+    if has: return "has_glint"
+    gr = max(1.6, 0.26*rs)
+    ix, iy = int(round(cx-x0)), int(round(cy-y0))
+    yy, xx = np.ogrid[:win.shape[0], :win.shape[1]]
+    for f in (0.45, 0.35, 0.25, 0.15, 0.0):
+        gx, gy = ix+f*rs, iy-f*rs
+        disc = (xx-gx)**2+(yy-gy)**2 <= (gr+1.3)**2
+        if win[disc].all(): break
+    else:
+        return "nofit"
+    cv2.circle(img, (int(round(gx+x0)), int(round(gy+y0))), int(round(gr)), 255, -1, lineType=cv2.LINE_AA)
+    return "painted"
 for path, eyes in res.items():
     g = cv2.imread(path, 0)
     H, W = g.shape
     m = (g < 128).astype(np.uint8)
     out = g.copy(); lg = []
     for e in eyes:
+        if "box_2d" not in e:
+            e = {"box_2d": json.loads(e["box"])}
         y0, x0, y1, x1 = e["box_2d"]
         cx, cy = (x0+x1)/2*W/1000, (y0+y1)/2*H/1000
         R = max((x1-x0)*W/1000, (y1-y0)*H/1000)*0.75
@@ -126,8 +168,8 @@ for path, eyes in res.items():
             r = line_eye(m, cx, cy, R, max((x1-x0)*W/1000, (y1-y0)*H/1000)/2)
             lg.append("noeye" if r is None else paint_line(out, m, r))
         else:
-            r = geo_eye(m, cx, cy, R)
-            lg.append("noblob" if r is None else paint_geo(out, r))
+            r = geo_eye2(m, x0*W/1000, y0*H/1000, x1*W/1000, y1*H/1000)
+            lg.append("noblob" if r is None else paint_geo2(out, r))
     name = os.path.basename(path)
     cv2.imwrite(f"{DST}/{name}", out, [cv2.IMWRITE_JPEG_QUALITY, 95])
     log[name] = lg

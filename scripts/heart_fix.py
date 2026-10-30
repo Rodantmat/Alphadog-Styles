@@ -19,7 +19,7 @@ def heart_comp(m, sx):
     return n, lab, st, cands[0][1]
 # ---- template from poodle
 pf, _ = find(SRC, "poodle", "heart")
-pg = cv2.imread(pf, 0); pm = (pg < 128).astype(np.uint8); psx = split_x(pm)
+pg = cv2.imread(pf, 0); pm = (pg < 128).astype(np.uint8); psx = min(split_x(pm), int(0.5*pm.shape[1]))
 n, lab, st, hk = heart_comp(pm, psx)
 tx, ty, tw, th = st[hk, :4]
 T = (lab[ty:ty+th, tx:tx+tw] == hk).astype(np.uint8)
@@ -34,7 +34,7 @@ EXTRA = {'golden_retriever': [(335,240,362,249)], 'beagle': [(305,216,387,266)],
 for i, (slug, name, _) in enumerate(b):
     f, p = find(SRC, slug, "heart")
     g = cv2.imread(f, 0); m = (g < 128).astype(np.uint8); H, W = m.shape
-    sx = split_x(m)
+    sx = min(split_x(m), int(0.5*W))
     if slug == "poodle":
         out = g
         report[slug] = "template"
@@ -83,7 +83,7 @@ for i, (slug, name, _) in enumerate(b):
             silT = cv2.dilate(silT, np.ones((5, 5), np.uint8))
             n2, lab2, st2, cen2 = cv2.connectedComponentsWithStats(mm, 8)
             for k in range(1, n2):
-                if cen2[k][0] >= sx and st2[k,0] > sx: continue
+                if cen2[k][0] >= sx: continue
                 reg = lab2 == k
                 outside = (reg & (silT == 0)).sum() / max(1, reg.sum())
                 cx = st2[k, 0] + st2[k, 2]/2; cy = st2[k, 1] + st2[k, 3]/2
