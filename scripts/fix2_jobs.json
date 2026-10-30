@@ -1,0 +1,83 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "L2_poodle_heart",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets/line_p1/poodle__heart.jpg",
+    "out/sets/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (classic version). In image 1 the full-body sitting dog on the right is missing its tail. Add the same curly tail as the dog in image 2 has, same side, size and curl style. The heart, the front head and everything else must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L2_gsd_classic",
+   "theme": "line",
+   "slug": "german_shepherd",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets/line_p1/german_shepherd__classic.jpg",
+    "out/sets/line_p1/german_shepherd__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same German shepherd design (heart version). In image 1 the full-body sitting dog on the right is missing its tail. Add the same bushy tail as the dog in image 2 (same side, size, shape and line style, lying on the ground at the lower left behind the rump). Everything else stays identical, including the front head. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G2_dachs_cool",
+   "theme": "geo",
+   "slug": "dachshund",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets/geo_p1/dachshund__cool.jpg",
+    "out/sets/geo_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the dachshund cool design to fix: its full-body dog on the right is turned sideways in a different pose. Image 2 is the classic dachshund: its pose (sitting, body and head facing the viewer, ears hanging, small tail) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, geometric facets, size, position, small tail) with only geometric sunglasses added on its face in the same style as the sunglasses in image 1. The front head on the left stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G2_dachs_heart",
+   "theme": "geo",
+   "slug": "dachshund",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets/geo_p1/dachshund__heart.jpg",
+    "out/sets/geo_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the dachshund heart design to fix: its full-body dog on the right is turned sideways in a different pose. Image 2 is the classic dachshund: its pose (sitting, body and head facing the viewer, ears hanging, small tail) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, geometric facets, size, position, small tail) and add only a thin collar with a small heart tag on the chest in the same style as the collar and tag of image 1. The heart and front head on the left stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G2_dane_cool",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets/geo_p2/great_dane__cool.jpg",
+    "out/sets/geo_p2/great_dane__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Great Dane cool design to fix: the head of its full-body dog is turned sideways and the dog differs from the classic. Image 2 is the classic Great Dane: its pose (sitting, head facing the viewer, no tail) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, facets, size, position) with only geometric sunglasses added in the same style as image 1. The front head on the left stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G2_dane_heart",
+   "theme": "geo",
+   "slug": "great_dane",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets/geo_p2/great_dane__heart.jpg",
+    "out/sets/geo_p2/great_dane__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Great Dane heart design to fix: the head of its full-body dog is turned sideways, and it has a tail the classic does not have. Image 2 is the classic Great Dane: its pose (sitting, head facing the viewer, no tail) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, facets, size, position, no tail) and add only a thin collar with a small heart tag on the chest in the same style as image 1. The heart and front head on the left stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  }
+ ]
+}
