@@ -1,0 +1,429 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "L_corgi_cool__a",
+   "theme": "line",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/line_p1/dachshund__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi design to fix. Image 2 is the CORRECT corgi (classic version, no sunglasses): its face, body proportions, fur lines, ears and pose are the truth. Image 3 only shows how the sunglasses should look. Redraw image 1 so that BOTH the front head and the full-body dog are exactly the dog of image 2 (same face shape and muzzle, same body proportions, same fluffy chest and fur lines, same size and position of each drawing) and only ADD black aviator sunglasses like those in image 3 on both heads. The corgi must look like a real corgi (fox-like face, long muzzle, big upright ears), not like a pig. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_corgi_cool__b",
+   "theme": "line",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/line_p1/dachshund__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi design to fix. Image 2 is the CORRECT corgi (classic version, no sunglasses): its face, body proportions, fur lines, ears and pose are the truth. Image 3 only shows how the sunglasses should look. Redraw image 1 so that BOTH the front head and the full-body dog are exactly the dog of image 2 (same face shape and muzzle, same body proportions, same fluffy chest and fur lines, same size and position of each drawing) and only ADD black aviator sunglasses like those in image 3 on both heads. The corgi must look like a real corgi (fox-like face, long muzzle, big upright ears), not like a pig. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_corgi_cool__c",
+   "theme": "line",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/line_p1/dachshund__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi design to fix. Image 2 is the CORRECT corgi (classic version, no sunglasses): its face, body proportions, fur lines, ears and pose are the truth. Image 3 only shows how the sunglasses should look. Redraw image 1 so that BOTH the front head and the full-body dog are exactly the dog of image 2 (same face shape and muzzle, same body proportions, same fluffy chest and fur lines, same size and position of each drawing) and only ADD black aviator sunglasses like those in image 3 on both heads. The corgi must look like a real corgi (fox-like face, long muzzle, big upright ears), not like a pig. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_corgi_cool__d",
+   "theme": "line",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/line_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/line_p1/dachshund__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi design to fix. Image 2 is the CORRECT corgi (classic version, no sunglasses): its face, body proportions, fur lines, ears and pose are the truth. Image 3 only shows how the sunglasses should look. Redraw image 1 so that BOTH the front head and the full-body dog are exactly the dog of image 2 (same face shape and muzzle, same body proportions, same fluffy chest and fur lines, same size and position of each drawing) and only ADD black aviator sunglasses like those in image 3 on both heads. The corgi must look like a real corgi (fox-like face, long muzzle, big upright ears), not like a pig. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_cool__a",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__cool.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg",
+    "out/sets_orig/line_p2/pomeranian__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian cool design to fix: its line quality and fluff do not match the classic version. Image 2 is the classic Pomeranian (the truth: same fluffy face and body outline, same curly tail, same fur line style and weight, same size and position of each drawing). Image 3 is the current cool version, used only to see the sunglasses style. Redraw so that BOTH the front head and the full-body dog are exactly the dog of image 2 and the ONLY difference is black aviator sunglasses on both heads, like image 3. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_cool__b",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__cool.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg",
+    "out/sets_orig/line_p2/pomeranian__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian cool design to fix: its line quality and fluff do not match the classic version. Image 2 is the classic Pomeranian (the truth: same fluffy face and body outline, same curly tail, same fur line style and weight, same size and position of each drawing). Image 3 is the current cool version, used only to see the sunglasses style. Redraw so that BOTH the front head and the full-body dog are exactly the dog of image 2 and the ONLY difference is black aviator sunglasses on both heads, like image 3. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_cool__c",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__cool.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg",
+    "out/sets_orig/line_p2/pomeranian__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian cool design to fix: its line quality and fluff do not match the classic version. Image 2 is the classic Pomeranian (the truth: same fluffy face and body outline, same curly tail, same fur line style and weight, same size and position of each drawing). Image 3 is the current cool version, used only to see the sunglasses style. Redraw so that BOTH the front head and the full-body dog are exactly the dog of image 2 and the ONLY difference is black aviator sunglasses on both heads, like image 3. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_cool__d",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__cool.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg",
+    "out/sets_orig/line_p2/pomeranian__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian cool design to fix: its line quality and fluff do not match the classic version. Image 2 is the classic Pomeranian (the truth: same fluffy face and body outline, same curly tail, same fur line style and weight, same size and position of each drawing). Image 3 is the current cool version, used only to see the sunglasses style. Redraw so that BOTH the front head and the full-body dog are exactly the dog of image 2 and the ONLY difference is black aviator sunglasses on both heads, like image 3. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_havanese_heart__a",
+   "theme": "line",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/havanese__heart.jpg",
+    "out/sets_orig/line_p2/havanese__classic.jpg",
+    "out/sets_orig/line_p2/havanese__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Havanese heart design to fix. Images 2 (classic) and 3 (cool) are the same Havanese with a hairy, long silky fur look drawn with many flowing hair strands. In image 1 the full-body sitting dog on the right shows barely any hair lines. Redraw ONLY that dog so it keeps exactly the same pose, outline, collar and heart tag, size and position but has the same fur strand line density and style as the dog in images 2 and 3 (flowing wavy hair strands over body, chest and legs). Left side (heart and head emblem) stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_havanese_heart__b",
+   "theme": "line",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/havanese__heart.jpg",
+    "out/sets_orig/line_p2/havanese__classic.jpg",
+    "out/sets_orig/line_p2/havanese__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Havanese heart design to fix. Images 2 (classic) and 3 (cool) are the same Havanese with a hairy, long silky fur look drawn with many flowing hair strands. In image 1 the full-body sitting dog on the right shows barely any hair lines. Redraw ONLY that dog so it keeps exactly the same pose, outline, collar and heart tag, size and position but has the same fur strand line density and style as the dog in images 2 and 3 (flowing wavy hair strands over body, chest and legs). Left side (heart and head emblem) stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_havanese_heart__c",
+   "theme": "line",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/havanese__heart.jpg",
+    "out/sets_orig/line_p2/havanese__classic.jpg",
+    "out/sets_orig/line_p2/havanese__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Havanese heart design to fix. Images 2 (classic) and 3 (cool) are the same Havanese with a hairy, long silky fur look drawn with many flowing hair strands. In image 1 the full-body sitting dog on the right shows barely any hair lines. Redraw ONLY that dog so it keeps exactly the same pose, outline, collar and heart tag, size and position but has the same fur strand line density and style as the dog in images 2 and 3 (flowing wavy hair strands over body, chest and legs). Left side (heart and head emblem) stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_havanese_heart__d",
+   "theme": "line",
+   "slug": "havanese",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/havanese__heart.jpg",
+    "out/sets_orig/line_p2/havanese__classic.jpg",
+    "out/sets_orig/line_p2/havanese__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Havanese heart design to fix. Images 2 (classic) and 3 (cool) are the same Havanese with a hairy, long silky fur look drawn with many flowing hair strands. In image 1 the full-body sitting dog on the right shows barely any hair lines. Redraw ONLY that dog so it keeps exactly the same pose, outline, collar and heart tag, size and position but has the same fur strand line density and style as the dog in images 2 and 3 (flowing wavy hair strands over body, chest and legs). Left side (heart and head emblem) stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_poodle_classic__a",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/poodle__classic.jpg",
+    "out/sets_orig/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (heart version). In image 1 the full-body dog on the right has no tail. Add the same geometric pom-pom tail as in image 2 (same angular tail line and polygon pom-pom, same size and position, behind the rump on the right). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_poodle_classic__b",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/poodle__classic.jpg",
+    "out/sets_orig/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (heart version). In image 1 the full-body dog on the right has no tail. Add the same geometric pom-pom tail as in image 2 (same angular tail line and polygon pom-pom, same size and position, behind the rump on the right). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_poodle_classic__c",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/poodle__classic.jpg",
+    "out/sets_orig/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (heart version). In image 1 the full-body dog on the right has no tail. Add the same geometric pom-pom tail as in image 2 (same angular tail line and polygon pom-pom, same size and position, behind the rump on the right). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_poodle_classic__d",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/poodle__classic.jpg",
+    "out/sets_orig/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (heart version). In image 1 the full-body dog on the right has no tail. Add the same geometric pom-pom tail as in image 2 (same angular tail line and polygon pom-pom, same size and position, behind the rump on the right). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_classic__a",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_classic__b",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_classic__c",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_classic__d",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_classic__a",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same corgi design (heart version). The nose of the dogs in image 1 is a plain solid black shape; the nose in image 2 has geometric detail (small facet lines and a white highlight). Add the same kind of nose detail to the noses of BOTH the front head and the full-body dog in image 1. Change only the noses; everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_classic__b",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same corgi design (heart version). The nose of the dogs in image 1 is a plain solid black shape; the nose in image 2 has geometric detail (small facet lines and a white highlight). Add the same kind of nose detail to the noses of BOTH the front head and the full-body dog in image 1. Change only the noses; everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_classic__c",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same corgi design (heart version). The nose of the dogs in image 1 is a plain solid black shape; the nose in image 2 has geometric detail (small facet lines and a white highlight). Add the same kind of nose detail to the noses of BOTH the front head and the full-body dog in image 1. Change only the noses; everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_classic__d",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same corgi design (heart version). The nose of the dogs in image 1 is a plain solid black shape; the nose in image 2 has geometric detail (small facet lines and a white highlight). Add the same kind of nose detail to the noses of BOTH the front head and the full-body dog in image 1. Change only the noses; everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_shih_cool__a",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/shih_tzu__cool.jpg",
+    "out/sets_orig/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same shih tzu design (classic). The full-body dog on the right in image 1 has no tail. Add the same curled geometric tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_shih_cool__b",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/shih_tzu__cool.jpg",
+    "out/sets_orig/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same shih tzu design (classic). The full-body dog on the right in image 1 has no tail. Add the same curled geometric tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_shih_cool__c",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/shih_tzu__cool.jpg",
+    "out/sets_orig/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same shih tzu design (classic). The full-body dog on the right in image 1 has no tail. Add the same curled geometric tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_shih_cool__d",
+   "theme": "geo",
+   "slug": "shih_tzu",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/shih_tzu__cool.jpg",
+    "out/sets_orig/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same shih tzu design (classic). The full-body dog on the right in image 1 has no tail. Add the same curled geometric tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_boston_cool__a",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "front",
+   "refs": [
+    "out/sets_orig/geo_p2/boston_terrier__cool.jpg",
+    "out/sets_orig/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same Boston terrier (classic). In image 1 the lines on the face of the front head are overcrowded (hatching, dots, extra lines around the muzzle and forehead). Clean up ONLY the front head face so its line density and construction match the face in image 2, while keeping the sunglasses of image 1 exactly. The right-hand full-body dog stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_boston_cool__b",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "front",
+   "refs": [
+    "out/sets_orig/geo_p2/boston_terrier__cool.jpg",
+    "out/sets_orig/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same Boston terrier (classic). In image 1 the lines on the face of the front head are overcrowded (hatching, dots, extra lines around the muzzle and forehead). Clean up ONLY the front head face so its line density and construction match the face in image 2, while keeping the sunglasses of image 1 exactly. The right-hand full-body dog stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_boston_cool__c",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "front",
+   "refs": [
+    "out/sets_orig/geo_p2/boston_terrier__cool.jpg",
+    "out/sets_orig/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same Boston terrier (classic). In image 1 the lines on the face of the front head are overcrowded (hatching, dots, extra lines around the muzzle and forehead). Clean up ONLY the front head face so its line density and construction match the face in image 2, while keeping the sunglasses of image 1 exactly. The right-hand full-body dog stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_boston_cool__d",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "front",
+   "refs": [
+    "out/sets_orig/geo_p2/boston_terrier__cool.jpg",
+    "out/sets_orig/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same Boston terrier (classic). In image 1 the lines on the face of the front head are overcrowded (hatching, dots, extra lines around the muzzle and forehead). Clean up ONLY the front head face so its line density and construction match the face in image 2, while keeping the sunglasses of image 1 exactly. The right-hand full-body dog stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  }
+ ]
+}

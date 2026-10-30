@@ -1,0 +1,421 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "L_poodle_cool__a",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p1/poodle__cool.jpg",
+    "out/sets_orig/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (classic version) for reference. In image 1 the full-body sitting dog on the right is missing its tail. Add the same curly tail as the dog in image 2 has, on the same side and with the same size and curl style. The front head emblem on the left must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_poodle_cool__b",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p1/poodle__cool.jpg",
+    "out/sets_orig/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (classic version) for reference. In image 1 the full-body sitting dog on the right is missing its tail. Add the same curly tail as the dog in image 2 has, on the same side and with the same size and curl style. The front head emblem on the left must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_poodle_cool__c",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p1/poodle__cool.jpg",
+    "out/sets_orig/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (classic version) for reference. In image 1 the full-body sitting dog on the right is missing its tail. Add the same curly tail as the dog in image 2 has, on the same side and with the same size and curl style. The front head emblem on the left must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_poodle_cool__d",
+   "theme": "line",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p1/poodle__cool.jpg",
+    "out/sets_orig/line_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same poodle design (classic version) for reference. In image 1 the full-body sitting dog on the right is missing its tail. Add the same curly tail as the dog in image 2 has, on the same side and with the same size and curl style. The front head emblem on the left must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_boxer_classic__a",
+   "theme": "line",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/boxer__classic.jpg",
+    "out/sets_orig/line_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same boxer design (heart version) for reference. Remove ONLY the tail from the full-body sitting dog on the right (the line curling up behind the rump at lower left); the rear should end cleanly like the dog in image 2 which has no tail. Do not touch anything else, the front head emblem stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_boxer_classic__b",
+   "theme": "line",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/boxer__classic.jpg",
+    "out/sets_orig/line_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same boxer design (heart version) for reference. Remove ONLY the tail from the full-body sitting dog on the right (the line curling up behind the rump at lower left); the rear should end cleanly like the dog in image 2 which has no tail. Do not touch anything else, the front head emblem stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_boxer_classic__c",
+   "theme": "line",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/boxer__classic.jpg",
+    "out/sets_orig/line_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same boxer design (heart version) for reference. Remove ONLY the tail from the full-body sitting dog on the right (the line curling up behind the rump at lower left); the rear should end cleanly like the dog in image 2 which has no tail. Do not touch anything else, the front head emblem stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_boxer_classic__d",
+   "theme": "line",
+   "slug": "boxer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/boxer__classic.jpg",
+    "out/sets_orig/line_p2/boxer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same boxer design (heart version) for reference. Remove ONLY the tail from the full-body sitting dog on the right (the line curling up behind the rump at lower left); the rear should end cleanly like the dog in image 2 which has no tail. Do not touch anything else, the front head emblem stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_heart__a",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__heart.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian heart design to fix. Image 2 is the classic Pomeranian, the truth for the body. The full-body sitting dog on the RIGHT of image 1 is completely different from the classic one. Redraw ONLY that right-hand dog so it is exactly the dog of image 2 (same pose, fluffy fur lines, curly tail, proportions, line style, size and position) and ADD only a thin collar with a small heart tag hanging on the chest (keep the collar and tag style of the current dog in image 1). The left side (heart and head emblem) must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_heart__b",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__heart.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian heart design to fix. Image 2 is the classic Pomeranian, the truth for the body. The full-body sitting dog on the RIGHT of image 1 is completely different from the classic one. Redraw ONLY that right-hand dog so it is exactly the dog of image 2 (same pose, fluffy fur lines, curly tail, proportions, line style, size and position) and ADD only a thin collar with a small heart tag hanging on the chest (keep the collar and tag style of the current dog in image 1). The left side (heart and head emblem) must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_heart__c",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__heart.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian heart design to fix. Image 2 is the classic Pomeranian, the truth for the body. The full-body sitting dog on the RIGHT of image 1 is completely different from the classic one. Redraw ONLY that right-hand dog so it is exactly the dog of image 2 (same pose, fluffy fur lines, curly tail, proportions, line style, size and position) and ADD only a thin collar with a small heart tag hanging on the chest (keep the collar and tag style of the current dog in image 1). The left side (heart and head emblem) must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "L_pom_heart__d",
+   "theme": "line",
+   "slug": "pomeranian",
+   "variant": "heart",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/line_p2/pomeranian__heart.jpg",
+    "out/sets_orig/line_p2/pomeranian__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the Pomeranian heart design to fix. Image 2 is the classic Pomeranian, the truth for the body. The full-body sitting dog on the RIGHT of image 1 is completely different from the classic one. Redraw ONLY that right-hand dog so it is exactly the dog of image 2 (same pose, fluffy fur lines, curly tail, proportions, line style, size and position) and ADD only a thin collar with a small heart tag hanging on the chest (keep the collar and tag style of the current dog in image 1). The left side (heart and head emblem) must stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_dachs_cool__a",
+   "theme": "geo",
+   "slug": "dachshund",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/dachshund__cool.jpg",
+    "out/sets_orig/geo_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same dachshund design (classic) for reference. In image 1 the full-body dog on the right has no tail. Add the same small angular geometric tail as in image 2 at the lower right behind the rump, same shape, size and line weight. Everything else stays identical, including the front head. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_dachs_cool__b",
+   "theme": "geo",
+   "slug": "dachshund",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/dachshund__cool.jpg",
+    "out/sets_orig/geo_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same dachshund design (classic) for reference. In image 1 the full-body dog on the right has no tail. Add the same small angular geometric tail as in image 2 at the lower right behind the rump, same shape, size and line weight. Everything else stays identical, including the front head. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_dachs_cool__c",
+   "theme": "geo",
+   "slug": "dachshund",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/dachshund__cool.jpg",
+    "out/sets_orig/geo_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same dachshund design (classic) for reference. In image 1 the full-body dog on the right has no tail. Add the same small angular geometric tail as in image 2 at the lower right behind the rump, same shape, size and line weight. Everything else stays identical, including the front head. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_dachs_cool__d",
+   "theme": "geo",
+   "slug": "dachshund",
+   "variant": "cool",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/dachshund__cool.jpg",
+    "out/sets_orig/geo_p1/dachshund__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same dachshund design (classic) for reference. In image 1 the full-body dog on the right has no tail. Add the same small angular geometric tail as in image 2 at the lower right behind the rump, same shape, size and line weight. Everything else stays identical, including the front head. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_gsp_classic__a",
+   "theme": "geo",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__classic.jpg",
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same pointer design (heart version). Image 2 has a SMALL short angular tail just at the base of the rump on the ground line at the lower right. Add exactly that same small tail (same shape, size, position, line weight) to the full-body dog in image 1, which currently has none. Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_gsp_classic__b",
+   "theme": "geo",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__classic.jpg",
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same pointer design (heart version). Image 2 has a SMALL short angular tail just at the base of the rump on the ground line at the lower right. Add exactly that same small tail (same shape, size, position, line weight) to the full-body dog in image 1, which currently has none. Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_gsp_classic__c",
+   "theme": "geo",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__classic.jpg",
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same pointer design (heart version). Image 2 has a SMALL short angular tail just at the base of the rump on the ground line at the lower right. Add exactly that same small tail (same shape, size, position, line weight) to the full-body dog in image 1, which currently has none. Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_gsp_classic__d",
+   "theme": "geo",
+   "slug": "german_shorthaired_pointer",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__classic.jpg",
+    "out/sets_orig/geo_p1/german_shorthaired_pointer__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same pointer design (heart version). Image 2 has a SMALL short angular tail just at the base of the rump on the ground line at the lower right. Add exactly that same small tail (same shape, size, position, line weight) to the full-body dog in image 1, which currently has none. Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_cool__a",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_cool__b",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_cool__c",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_yorkie_cool__d",
+   "theme": "geo",
+   "slug": "yorkshire_terrier",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p1/yorkshire_terrier__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "The face expression of the Yorkshire terrier in BOTH drawings (front head and full-body dog) looks angry. Make it look friendly and gentle: soften and relax the eyebrow/brow lines (no downward angled angry brows), keep the eyes open and gentle (if eyes are visible keep them as dark shapes with a calm, round look), and let the mouth line be calm and slightly upturned. Change only these expression lines; the head shape, hair lines, ears, topknot, sunglasses (if any), heart (if any), body and tail stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_cool__a",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi cool design to fix: the dogs look fatter and rounder than the other versions. Image 2 is the corgi classic version: use its slimmer face shape, head width, body width and proportions as the truth for both the front head and the full-body dog. Redraw image 1 so both drawings have the same slimmer proportions, size and construction as image 2, keeping the geometric sunglasses of image 1 as they are, and keeping the same line weight and drawing size/position. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_cool__b",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi cool design to fix: the dogs look fatter and rounder than the other versions. Image 2 is the corgi classic version: use its slimmer face shape, head width, body width and proportions as the truth for both the front head and the full-body dog. Redraw image 1 so both drawings have the same slimmer proportions, size and construction as image 2, keeping the geometric sunglasses of image 1 as they are, and keeping the same line weight and drawing size/position. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_cool__c",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi cool design to fix: the dogs look fatter and rounder than the other versions. Image 2 is the corgi classic version: use its slimmer face shape, head width, body width and proportions as the truth for both the front head and the full-body dog. Redraw image 1 so both drawings have the same slimmer proportions, size and construction as image 2, keeping the geometric sunglasses of image 1 as they are, and keeping the same line weight and drawing size/position. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_corgi_cool__d",
+   "theme": "geo",
+   "slug": "pembroke_welsh_corgi",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__classic.jpg",
+    "out/sets_orig/geo_p2/pembroke_welsh_corgi__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the corgi cool design to fix: the dogs look fatter and rounder than the other versions. Image 2 is the corgi classic version: use its slimmer face shape, head width, body width and proportions as the truth for both the front head and the full-body dog. Redraw image 1 so both drawings have the same slimmer proportions, size and construction as image 2, keeping the geometric sunglasses of image 1 as they are, and keeping the same line weight and drawing size/position. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_chi_classic__a",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/chihuahua__classic.jpg",
+    "out/sets_orig/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same chihuahua design (heart version). The full-body dog on the right in image 1 has no tail. Add the same thin curved tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_chi_classic__b",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/chihuahua__classic.jpg",
+    "out/sets_orig/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same chihuahua design (heart version). The full-body dog on the right in image 1 has no tail. Add the same thin curved tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_chi_classic__c",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/chihuahua__classic.jpg",
+    "out/sets_orig/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same chihuahua design (heart version). The full-body dog on the right in image 1 has no tail. Add the same thin curved tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "G_chi_classic__d",
+   "theme": "geo",
+   "slug": "chihuahua",
+   "variant": "classic",
+   "side": "back",
+   "refs": [
+    "out/sets_orig/geo_p2/chihuahua__classic.jpg",
+    "out/sets_orig/geo_p2/chihuahua__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the design to edit. Image 2 is the same chihuahua design (heart version). The full-body dog on the right in image 1 has no tail. Add the same thin curved tail as in image 2 (same shape, size, side, position and line weight). Everything else stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else. Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  }
+ ]
+}

@@ -23,14 +23,19 @@ os.makedirs(OUT, exist_ok=True)
 url = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent"
 log = []
 for s in styles:
-    img_b64 = base64.b64encode(open(REFS.get(s["ref"], s["ref"]), "rb").read()).decode()
-    parts = [{"inline_data": {"mime_type": "image/png" if REFS.get(s["ref"], s["ref"]).endswith(".png") else "image/jpeg", "data": img_b64}}]
-    if s.get("style_ref"):  # match an existing design's exact style (front/back coherence)
-        parts.append({"inline_data": {"mime_type": "image/png" if s["style_ref"].endswith(".png") else "image/jpeg", "data": base64.b64encode(open(s["style_ref"], "rb").read()).decode()}})
+    def _img(path):
+        return {"inline_data": {"mime_type": "image/png" if path.endswith(".png") else "image/jpeg", "data": base64.b64encode(open(path, "rb").read()).decode()}}
+    if s.get("refs"):  # explicit ordered list of image paths (edit jobs)
+        parts = [_img(r) for r in s["refs"]]
+    else:
+        parts = [_img(REFS.get(s["ref"], s["ref"]))]
+        if s.get("style_ref"):
+            parts.append(_img(s["style_ref"]))
     parts.append({"text": cfg["base"] + " " + s["prompt"]})
     body = {"contents": [{"parts": parts}],
         "generationConfig": {"responseModalities": ["IMAGE"]}}
-    if os.environ.get("ASPECT"): body["generationConfig"]["imageConfig"] = {"aspectRatio": os.environ["ASPECT"]}
+    asp = s.get("aspect") or os.environ.get("ASPECT")
+    if asp: body["generationConfig"]["imageConfig"] = {"aspectRatio": asp}
     req = urllib.request.Request(url, data=json.dumps(body).encode(),
         headers={"Content-Type": "application/json", "x-goog-api-key": API_KEY})
     resp = None
