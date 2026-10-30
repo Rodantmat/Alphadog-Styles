@@ -1,0 +1,252 @@
+{
+"beagle__classic": [
+"c",
+0.0053,
+2317
+],
+"beagle__heart": [
+"a",
+0.0067,
+2362
+],
+"bulldog__classic": [
+"c",
+0.0087,
+979
+],
+"bulldog__heart": [
+"c",
+0.0072,
+2371
+],
+"cane_corso__classic": [
+"c",
+0.0063,
+2659
+],
+"cane_corso__heart": [
+"c",
+0.0067,
+2433
+],
+"cavalier_king_charles_spaniel__classic": [
+"c",
+0.0067,
+3622
+],
+"cavalier_king_charles_spaniel__heart": [
+"a",
+0.0063,
+2395
+],
+"dachshund__classic": [
+"a",
+0.0062,
+1588
+],
+"dachshund__heart": [
+"b",
+0.0084,
+1641
+],
+"french_bulldog__classic": [
+"d",
+0.0065,
+2252
+],
+"french_bulldog__heart": [
+"b",
+0.0054,
+2028
+],
+"german_shepherd__classic": [
+"a",
+0.0069,
+3128
+],
+"german_shepherd__heart": [
+"c",
+0.0073,
+1761
+],
+"german_shorthaired_pointer__classic": [
+"a",
+0.008,
+3872
+],
+"german_shorthaired_pointer__heart": [
+"b",
+0.0076,
+1699
+],
+"golden_retriever__classic": [
+"c",
+0.0088,
+2783
+],
+"golden_retriever__heart": [
+"d",
+0.0097,
+2401
+],
+"labrador_retriever__classic": [
+"b",
+0.0061,
+5211
+],
+"labrador_retriever__heart": [
+"a",
+0.0076,
+3816
+],
+"poodle__classic": [
+"c",
+0.012,
+2231
+],
+"poodle__heart": [
+"b",
+0.0086,
+1593
+],
+"rottweiler__classic": [
+"b",
+0.006,
+2679
+],
+"rottweiler__heart": [
+"a",
+0.0078,
+2642
+],
+"yorkshire_terrier__classic": [
+"a",
+0.0096,
+2543
+],
+"yorkshire_terrier__heart": [
+"a",
+0.011,
+2489
+],
+"australian_shepherd__classic": [
+"b",
+0.0088,
+2029
+],
+"australian_shepherd__heart": [
+"a",
+0.0091,
+1212
+],
+"bernese_mountain_dog__classic": [
+"a",
+0.0089,
+867
+],
+"bernese_mountain_dog__heart": [
+"d",
+0.0087,
+3655
+],
+"boston_terrier__classic": [
+"a",
+0.0072,
+2832
+],
+"boston_terrier__heart": [
+"d",
+0.0068,
+1626
+],
+"boxer__classic": [
+"d",
+0.0063,
+4545
+],
+"boxer__heart": [
+"b",
+0.0068,
+4304
+],
+"chihuahua__classic": [
+"c",
+0.0088,
+2921
+],
+"chihuahua__heart": [
+"a",
+0.008,
+1758
+],
+"doberman_pinscher__classic": [
+"c",
+0.0067,
+2806
+],
+"doberman_pinscher__heart": [
+"d",
+0.0087,
+2511
+],
+"great_dane__classic": [
+"d",
+0.008,
+2873
+],
+"great_dane__heart": [
+"a",
+0.0112,
+2243
+],
+"havanese__classic": [
+"b",
+0.0079,
+2578
+],
+"havanese__heart": [
+"a",
+0.0087,
+3060
+],
+"miniature_schnauzer__classic": [
+"a",
+0.0061,
+4366
+],
+"miniature_schnauzer__heart": [
+"d",
+0.0069,
+2513
+],
+"pembroke_welsh_corgi__classic": [
+"c",
+0.0097,
+1371
+],
+"pembroke_welsh_corgi__heart": [
+"a",
+0.0067,
+4447
+],
+"pomeranian__classic": [
+"b",
+0.0084,
+4226
+],
+"pomeranian__heart": [
+"c",
+0.0082,
+3077
+],
+"shih_tzu__classic": [
+"b",
+0.0076,
+2263
+],
+"shih_tzu__heart": [
+"d",
+0.0091,
+1653
+]
+}

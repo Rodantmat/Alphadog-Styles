@@ -1,6 +1,6 @@
 import cv2,numpy as np,json,sys,glob,os
 D=sys.argv[1]; side=sys.argv[2]; out=sys.argv[3]
-r=json.load(open('out/eyes/merged_line.json'))
+r=json.load(open('out/eyes/merged_line.json' if 'geo' not in D else 'out/eyes/merged_geo_sets.json'))
 files=sorted(glob.glob(f'{D}/*.jpg')); tiles=[]
 for f in files:
     n=os.path.basename(f)[:-4]; g=cv2.imread(f); H,W=g.shape[:2]
