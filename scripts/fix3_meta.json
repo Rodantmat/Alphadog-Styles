@@ -1,0 +1,52 @@
+{
+ "F_golden_classic": {
+  "side": "both",
+  "mode": "both",
+  "orig": "out/sets/line_p1/golden_retriever__classic.jpg"
+ },
+ "F_gsd_cool": {
+  "side": "back",
+  "mode": "full",
+  "orig": "out/sets/line_p1/german_shepherd__cool.jpg"
+ },
+ "F_dachshund_heart": {
+  "side": "back",
+  "mode": "full",
+  "orig": "out/sets/line_p1/dachshund__heart.jpg"
+ },
+ "F_poodle_heart": {
+  "side": "back",
+  "mode": "full",
+  "orig": "out/sets/line_p1/poodle__heart.jpg"
+ },
+ "F_beagle_heart": {
+  "side": "back",
+  "mode": "full",
+  "orig": "out/sets/line_p1/beagle__heart.jpg"
+ },
+ "F_cav_heart": {
+  "side": "front",
+  "mode": "full",
+  "orig": "out/sets/line_p1/cavalier_king_charles_spaniel__heart.jpg"
+ },
+ "F_chi_classic": {
+  "side": "back",
+  "mode": "tail",
+  "orig": "out/sets/line_p2/chihuahua__classic.jpg"
+ },
+ "F_chi_cool": {
+  "side": "back",
+  "mode": "tail",
+  "orig": "out/sets/line_p2/chihuahua__cool.jpg"
+ },
+ "F_chi_heart": {
+  "side": "back",
+  "mode": "tail",
+  "orig": "out/sets/line_p2/chihuahua__heart.jpg"
+ },
+ "F_dach_geo_heart": {
+  "side": "back",
+  "mode": "full",
+  "orig": "out/sets/geo_p1/dachshund__heart.jpg"
+ }
+}
