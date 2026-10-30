@@ -27,5 +27,5 @@ for th, (folder, thick) in THEMES.items():
                 im.thumbnail((T, T)); sh.paste(im, (j * T, 30)); d.text((j * T + 8, 8), f"{name} - {v}", fill="black")
             sh.save(f"{ROOT}/contact_sheets/{folder}_{i:02d}_{slug}.jpg", quality=88)
 with ThreadPoolExecutor(int(os.environ.get("WORKERS", "6"))) as ex:
-    list(ex.map(lambda j: subprocess.run(j[0], env=j[1], capture_output=True), JOBS))
+    list(ex.map(lambda j: None if os.path.exists(j[0][3]+'_back_whiteink.png') else subprocess.run(j[0], env=j[1], capture_output=True), JOBS))
 print("done", len(JOBS))
