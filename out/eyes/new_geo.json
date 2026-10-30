@@ -1,0 +1,344 @@
+{
+ "out/eyes_in/geo/geo_p1__german_shorthaired_pointer__classic.jpg": [
+  {
+   "box_2d": [
+    279,
+    196,
+    333,
+    244
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    279,
+    349,
+    333,
+    397
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    148,
+    631,
+    177,
+    661
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    148,
+    713,
+    177,
+    743
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p1__labrador_retriever__heart.jpg": [
+  {
+   "box_2d": [
+    476,
+    211,
+    521,
+    251
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    476,
+    332,
+    521,
+    373
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    164,
+    627,
+    197,
+    657
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    164,
+    711,
+    197,
+    741
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p1__poodle__classic.jpg": [
+  {
+   "box_2d": [
+    371,
+    215,
+    418,
+    257
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    371,
+    332,
+    418,
+    374
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    224,
+    648,
+    251,
+    671
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    224,
+    714,
+    251,
+    737
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p1__yorkshire_terrier__classic.jpg": [
+  {
+   "box_2d": [
+    488,
+    186,
+    558,
+    245
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    488,
+    341,
+    558,
+    400
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    278,
+    619,
+    318,
+    656
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    278,
+    712,
+    318,
+    748
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p1__yorkshire_terrier__heart.jpg": [
+  {
+   "box_2d": [
+    496,
+    218,
+    551,
+    267
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    496,
+    328,
+    551,
+    377
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    277,
+    627,
+    319,
+    664
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    277,
+    708,
+    319,
+    746
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p2__chihuahua__classic.jpg": [
+  {
+   "box_2d": [
+    514,
+    163,
+    598,
+    228
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    514,
+    361,
+    598,
+    428
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    282,
+    613,
+    331,
+    654
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    282,
+    719,
+    331,
+    759
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p2__chihuahua__heart.jpg": [
+  {
+   "box_2d": [
+    502,
+    172,
+    586,
+    241
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    502,
+    350,
+    586,
+    419
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    270,
+    611,
+    333,
+    662
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    270,
+    715,
+    333,
+    766
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p2__pembroke_welsh_corgi__classic.jpg": [
+  {
+   "box_2d": [
+    494,
+    196,
+    556,
+    250
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    494,
+    343,
+    556,
+    397
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    275,
+    627,
+    310,
+    660
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    275,
+    707,
+    310,
+    740
+   ],
+   "which": "back"
+  }
+ ],
+ "out/eyes_in/geo/geo_p2__shih_tzu__heart.jpg": [
+  {
+   "box_2d": [
+    494,
+    212,
+    553,
+    256
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    494,
+    332,
+    553,
+    376
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    267,
+    635,
+    314,
+    670
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    267,
+    726,
+    314,
+    761
+   ],
+   "which": "back"
+  }
+ ]
+}
