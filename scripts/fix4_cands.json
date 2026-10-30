@@ -1,0 +1,173 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "H_poodle_cool__a",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle cool design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) with only geometric sunglasses added on its face in the same style as the sunglasses in image 1. The front head on the left stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_poodle_cool__b",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle cool design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) with only geometric sunglasses added on its face in the same style as the sunglasses in image 1. The front head on the left stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_poodle_cool__c",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle cool design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) with only geometric sunglasses added on its face in the same style as the sunglasses in image 1. The front head on the left stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_poodle_cool__d",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__cool.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle cool design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) with only geometric sunglasses added on its face in the same style as the sunglasses in image 1. The front head on the left stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_poodle_heart__a",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle heart design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) and add only a thin collar with a small heart tag on the chest in the same style as the collar and tag of image 1. The heart and front head on the left stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_poodle_heart__b",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle heart design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) and add only a thin collar with a small heart tag on the chest in the same style as the collar and tag of image 1. The heart and front head on the left stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_poodle_heart__c",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle heart design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) and add only a thin collar with a small heart tag on the chest in the same style as the collar and tag of image 1. The heart and front head on the left stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_poodle_heart__d",
+   "theme": "geo",
+   "slug": "poodle",
+   "variant": "heart",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p1/poodle__heart.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric poodle heart design to fix: the head of its full-body sitting dog on the right is turned sideways and the pose differs from the classic. Image 2 is the classic geometric poodle: its pose (sitting, body and head facing the viewer, both ears hanging, curly tail pom-pom on the right) is the truth. Redraw ONLY the full-body dog on the right of image 1 so it is exactly the dog of image 2 (same pose, same geometric facets, same size and position) and add only a thin collar with a small heart tag on the chest in the same style as the collar and tag of image 1. The heart and front head on the left stay identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_boston_cool__a",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__cool.jpg",
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Boston terrier cool design to fix: the full-body dog on the right has a small tail nub at the lower right that the classic does not have. Image 2 is the classic geometric Boston terrier, which has no tail: its body outline is the truth. Redraw ONLY the lower right of the full-body dog of image 1 so there is no tail nub and the haunch outline is closed exactly like in image 2. Everything else, including the sunglasses and the front head, stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_boston_cool__b",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__cool.jpg",
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Boston terrier cool design to fix: the full-body dog on the right has a small tail nub at the lower right that the classic does not have. Image 2 is the classic geometric Boston terrier, which has no tail: its body outline is the truth. Redraw ONLY the lower right of the full-body dog of image 1 so there is no tail nub and the haunch outline is closed exactly like in image 2. Everything else, including the sunglasses and the front head, stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_boston_cool__c",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__cool.jpg",
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Boston terrier cool design to fix: the full-body dog on the right has a small tail nub at the lower right that the classic does not have. Image 2 is the classic geometric Boston terrier, which has no tail: its body outline is the truth. Redraw ONLY the lower right of the full-body dog of image 1 so there is no tail nub and the haunch outline is closed exactly like in image 2. Everything else, including the sunglasses and the front head, stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  },
+  {
+   "id": "H_boston_cool__d",
+   "theme": "geo",
+   "slug": "boston_terrier",
+   "variant": "cool",
+   "side": "back",
+   "mode": "full",
+   "refs": [
+    "out/sets/geo_p2/boston_terrier__cool.jpg",
+    "out/sets/geo_p2/boston_terrier__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Boston terrier cool design to fix: the full-body dog on the right has a small tail nub at the lower right that the classic does not have. Image 2 is the classic geometric Boston terrier, which has no tail: its body outline is the truth. Redraw ONLY the lower right of the full-body dog of image 1 so there is no tail nub and the haunch outline is closed exactly like in image 2. Everything else, including the sunglasses and the front head, stays identical. HARD RULES: This is a surgical edit. Output the SAME image: same canvas, same two drawings in the same positions, same sizes, same line weight and same drawing style. Change ONLY what is described. Do not redraw, simplify, move, resize or restyle anything else (eyes, nose, ears, heart, collar and every other line stay exactly as they are). Pure black lines on flat white background, no gray, no shading, no text, no extra decorations."
+  }
+ ]
+}
