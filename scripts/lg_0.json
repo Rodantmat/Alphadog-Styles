@@ -1,0 +1,109 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "LG_cool__a",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "LG_cool__b",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "LG_cool__c",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "LG_cool__d",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with sunglasses. Redraw image 1 adding the exact same sunglasses as in image 2 (same shape, solid black lenses with highlight) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "LG_heart__a",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart frame sized so the whole front head fits inside it), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "LG_heart__b",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart frame sized so the whole front head fits inside it), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "LG_heart__c",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart frame sized so the whole front head fits inside it), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "LG_heart__d",
+   "theme": "geo",
+   "slug": "mini_poodle_linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_geo_classic__d.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design (front head left, full-body sitting dog right). Image 2 shows the same style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart frame sized so the whole front head fits inside it), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and drawing style. Change ONLY what is described; heads, fur, ears, body, tongue, tail and pose stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  }
+ ]
+}
