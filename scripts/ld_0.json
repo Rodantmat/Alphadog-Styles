@@ -1,0 +1,187 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "LD_line_cool__a",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with aviator sunglasses. Redraw image 1 adding the exact same aviator sunglasses as in image 2 (solid black lenses with highlight, scaled to the face) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_line_heart__a",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with a single-line heart outline around the front head, a small heart with loop on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart sized so the whole front head with ears fits inside it, keep the head the same size), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_line_cool__b",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with aviator sunglasses. Redraw image 1 adding the exact same aviator sunglasses as in image 2 (solid black lenses with highlight, scaled to the face) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_line_heart__b",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with a single-line heart outline around the front head, a small heart with loop on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart sized so the whole front head with ears fits inside it, keep the head the same size), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_line_cool__c",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with aviator sunglasses. Redraw image 1 adding the exact same aviator sunglasses as in image 2 (solid black lenses with highlight, scaled to the face) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_line_heart__c",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with a single-line heart outline around the front head, a small heart with loop on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart sized so the whole front head with ears fits inside it, keep the head the same size), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_line_cool__d",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with aviator sunglasses. Redraw image 1 adding the exact same aviator sunglasses as in image 2 (solid black lenses with highlight, scaled to the face) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_line_heart__d",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/line_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic design of Linda (front head left, full-body sitting dog right). Image 2 shows the same style with a single-line heart outline around the front head, a small heart with loop on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2 (heart sized so the whole front head with ears fits inside it, keep the head the same size), and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, ears, tongue, fluff, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LD_geo_classic__a",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished continuous-line design of Linda, a small fluffy dog (front head left, full-body sitting dog right). Image 2 is a design in the bold geometric polygon style. Redraw image 1 in the exact geometric polygon style of image 2 (straight bold lines, angular facets, solid black triangle-like nose, same line weight and construction), keeping the SAME dog: same round fluffy head with the same proportions, big dark eyes with brows, short muzzle, open smile with tongue, long wavy hanging ears as angular facets, fluffy body, short legs, curled tail, same pose, layout, sizes and positions. Head must not be larger than in image 1. Pure black on flat white, no gray, no text."
+  },
+  {
+   "id": "LD_geo_classic__b",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished continuous-line design of Linda, a small fluffy dog (front head left, full-body sitting dog right). Image 2 is a design in the bold geometric polygon style. Redraw image 1 in the exact geometric polygon style of image 2 (straight bold lines, angular facets, solid black triangle-like nose, same line weight and construction), keeping the SAME dog: same round fluffy head with the same proportions, big dark eyes with brows, short muzzle, open smile with tongue, long wavy hanging ears as angular facets, fluffy body, short legs, curled tail, same pose, layout, sizes and positions. Head must not be larger than in image 1. Pure black on flat white, no gray, no text."
+  },
+  {
+   "id": "LD_geo_classic__c",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished continuous-line design of Linda, a small fluffy dog (front head left, full-body sitting dog right). Image 2 is a design in the bold geometric polygon style. Redraw image 1 in the exact geometric polygon style of image 2 (straight bold lines, angular facets, solid black triangle-like nose, same line weight and construction), keeping the SAME dog: same round fluffy head with the same proportions, big dark eyes with brows, short muzzle, open smile with tongue, long wavy hanging ears as angular facets, fluffy body, short legs, curled tail, same pose, layout, sizes and positions. Head must not be larger than in image 1. Pure black on flat white, no gray, no text."
+  },
+  {
+   "id": "LD_geo_classic__d",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished continuous-line design of Linda, a small fluffy dog (front head left, full-body sitting dog right). Image 2 is a design in the bold geometric polygon style. Redraw image 1 in the exact geometric polygon style of image 2 (straight bold lines, angular facets, solid black triangle-like nose, same line weight and construction), keeping the SAME dog: same round fluffy head with the same proportions, big dark eyes with brows, short muzzle, open smile with tongue, long wavy hanging ears as angular facets, fluffy body, short legs, curled tail, same pose, layout, sizes and positions. Head must not be larger than in image 1. Pure black on flat white, no gray, no text."
+  },
+  {
+   "id": "LD_geo_classic__e",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished continuous-line design of Linda, a small fluffy dog (front head left, full-body sitting dog right). Image 2 is a design in the bold geometric polygon style. Redraw image 1 in the exact geometric polygon style of image 2 (straight bold lines, angular facets, solid black triangle-like nose, same line weight and construction), keeping the SAME dog: same round fluffy head with the same proportions, big dark eyes with brows, short muzzle, open smile with tongue, long wavy hanging ears as angular facets, fluffy body, short legs, curled tail, same pose, layout, sizes and positions. Head must not be larger than in image 1. Pure black on flat white, no gray, no text."
+  },
+  {
+   "id": "LD_geo_classic__f",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_line_classic.jpg",
+    "out/sets/geo_p1/poodle__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished continuous-line design of Linda, a small fluffy dog (front head left, full-body sitting dog right). Image 2 is a design in the bold geometric polygon style. Redraw image 1 in the exact geometric polygon style of image 2 (straight bold lines, angular facets, solid black triangle-like nose, same line weight and construction), keeping the SAME dog: same round fluffy head with the same proportions, big dark eyes with brows, short muzzle, open smile with tongue, long wavy hanging ears as angular facets, fluffy body, short legs, curled tail, same pose, layout, sizes and positions. Head must not be larger than in image 1. Pure black on flat white, no gray, no text."
+  }
+ ]
+}
