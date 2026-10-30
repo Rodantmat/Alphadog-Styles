@@ -1,0 +1,174 @@
+{
+ "out/eyes_in/line/line_p1__dachshund__heart.jpg": [
+  {
+   "box_2d": [
+    438,
+    203,
+    486,
+    238
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    438,
+    307,
+    486,
+    342
+   ],
+   "which": "front"
+  }
+ ],
+ "out/eyes_in/line/line_p2__boxer__classic.jpg": [
+  {
+   "box_2d": [
+    320,
+    181,
+    387,
+    232
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    320,
+    322,
+    384,
+    373
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    181,
+    699,
+    233,
+    733
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    181,
+    788,
+    231,
+    822
+   ],
+   "which": "front"
+  }
+ ],
+ "out/eyes_in/line/line_p2__havanese__heart.jpg": [
+  {
+   "box_2d": [
+    424,
+    217,
+    468,
+    248
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    424,
+    303,
+    468,
+    334
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    235,
+    714,
+    283,
+    746
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    235,
+    796,
+    278,
+    828
+   ],
+   "which": "front"
+  }
+ ],
+ "out/eyes_in/line/line_p2__pomeranian__heart.jpg": [
+  {
+   "box_2d": [
+    442,
+    214,
+    482,
+    246
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    442,
+    284,
+    479,
+    315
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    304,
+    708,
+    357,
+    740
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    285,
+    781,
+    334,
+    815
+   ],
+   "which": "front"
+  }
+ ],
+ "out/eyes_in/line/line_p2__shih_tzu__heart.jpg": [
+  {
+   "box_2d": [
+    468,
+    226,
+    506,
+    257
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    462,
+    306,
+    501,
+    336
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    306,
+    695,
+    346,
+    727
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    300,
+    782,
+    340,
+    814
+   ],
+   "which": "front"
+  }
+ ]
+}
