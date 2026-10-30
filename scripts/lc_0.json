@@ -1,0 +1,125 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "LC_A__a",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg",
+    "refs/linda/ref_2025-08_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LC_A__b",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg",
+    "refs/linda/ref_2025-08_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LC_A__c",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg",
+    "refs/linda/ref_front_b.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LC_A__d",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p1/poodle__classic.jpg",
+    "refs/linda/ref_front_b.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LC_B__a",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_line_classic__a.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg",
+    "refs/linda/ref_2025-08_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LC_B__b",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_line_classic__a.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg",
+    "refs/linda/ref_2025-08_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LC_B__c",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_line_classic__a.jpg",
+    "refs/linda/ref_front_b.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LC_B__d",
+   "theme": "line",
+   "slug": "linda",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/li_0/LI_line_classic__a.jpg",
+    "refs/linda/ref_front_b.jpg",
+    "refs/linda/ref_2025-08_front_smile.jpg",
+    "refs/linda/ref_2014_full_sitting.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an approved finished design (layout and drawing-style truth): small front head emblem on the left and the full-body sitting dog on the right. The other images are real photos of Linda, a small white bichon-poodle mix. Redraw image 1 as Linda, keeping the SAME overall size, scale and proportions as image 1 (the head must NOT be enlarged: the back dog's head is about one quarter of its full height, the front emblem about the same size as in image 1). Linda's real features, copy them faithfully from the photos: soft white curly-wavy fluffy coat all over, a round fluffy head with the fluff swept slightly upward and forward over a rounded forehead (not a big pompom ball), big round dark eyes with fluffy brows, a SHORT muzzle with a small black nose, a happy relaxed open smile with a little pink tongue, two soft wavy drop ears that hang along the sides of the face down to about jaw level and blend into the head fluff, a compact body with short legs and a small plumed tail. Draw the fluffy coat with the same loose flowing curly lines as image 1 (same line weight, same level of detail, no extra decoration, no zigzags). No collar, no accessories. Pure black on flat white, no gray, no shading, no text, nothing cut off."
+  }
+ ]
+}
