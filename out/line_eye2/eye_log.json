@@ -1,0 +1,300 @@
+{
+"beagle__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"beagle__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"bulldog__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"bulldog__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"cane_corso__classic.jpg": [
+"painted r=7.6 dark=0.45",
+"painted r=7.7 dark=0.00",
+"ok",
+"ok"
+],
+"cane_corso__heart.jpg": [
+"skip(small/odd)",
+"skip(small/odd)",
+"ok(catchlight)",
+"ok"
+],
+"cavalier_king_charles_spaniel__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"cavalier_king_charles_spaniel__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"dachshund__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"dachshund__heart.jpg": [
+"ok(catchlight)",
+"tiny"
+],
+"french_bulldog__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"skip(small/odd)",
+"ok(catchlight)"
+],
+"french_bulldog__heart.jpg": [
+"ok(catchlight)",
+"skip(small/odd)",
+"ok(catchlight)",
+"skip(small/odd)"
+],
+"german_shepherd__classic.jpg": [
+"skip(small/odd)",
+"skip(small/odd)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"german_shepherd__heart.jpg": [
+"skip(small/odd)",
+"skip(small/odd)",
+"ok",
+"ok(catchlight)"
+],
+"german_shorthaired_pointer__classic.jpg": [
+"skip(small/odd)",
+"ok(catchlight)",
+"ok(catchlight)",
+"skip(small/odd)"
+],
+"german_shorthaired_pointer__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(small)",
+"skip(small/odd)"
+],
+"golden_retriever__classic.jpg": [
+"skip(small/odd)",
+"ok(catchlight)",
+"skip(small/odd)",
+"skip(small/odd)"
+],
+"golden_retriever__heart.jpg": [
+"painted r=7.7 dark=0.44",
+"painted r=7.8 dark=0.42",
+"painted r=5.6 dark=0.41",
+"painted r=5.7 dark=0.41"
+],
+"labrador_retriever__classic.jpg": [
+"ok",
+"ok",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"labrador_retriever__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"poodle__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"poodle__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"painted small",
+"ok(catchlight)"
+],
+"rottweiler__classic.jpg": [
+"painted r=7.4 dark=0.48",
+"painted r=7.5 dark=0.46",
+"ok",
+"ok(catchlight)"
+],
+"rottweiler__heart.jpg": [
+"painted r=8.3 dark=0.38",
+"painted r=8.2 dark=0.36",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"yorkshire_terrier__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"yorkshire_terrier__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"australian_shepherd__classic.jpg": [
+"ok(catchlight)",
+"skip(small/odd)",
+"ok",
+"ok(catchlight)"
+],
+"australian_shepherd__heart.jpg": [
+"ok(catchlight)",
+"ok",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"bernese_mountain_dog__classic.jpg": [
+"skip(small/odd)",
+"skip(small/odd)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"bernese_mountain_dog__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"boston_terrier__classic.jpg": [
+"ok(catchlight)",
+"ok",
+"ok(catchlight)",
+"ok"
+],
+"boston_terrier__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"boxer__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"boxer__heart.jpg": [
+"ok",
+"ok",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"chihuahua__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"chihuahua__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"doberman_pinscher__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"skip(small/odd)",
+"painted r=5.7 dark=0.00"
+],
+"doberman_pinscher__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"painted small",
+"painted r=7.3 dark=0.00"
+],
+"great_dane__classic.jpg": [
+"skip(small/odd)",
+"skip(small/odd)",
+"ok(small)",
+"skip(small/odd)"
+],
+"great_dane__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(small)",
+"ok(small)"
+],
+"havanese__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"havanese__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"miniature_schnauzer__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"miniature_schnauzer__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"pembroke_welsh_corgi__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"pembroke_welsh_corgi__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"pomeranian__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"pomeranian__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"shih_tzu__classic.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+],
+"shih_tzu__heart.jpg": [
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)",
+"ok(catchlight)"
+]
+}

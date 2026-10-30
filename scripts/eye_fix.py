@@ -134,6 +134,7 @@ def geo_eye2(m, bx0, by0, bx1, by1):
         x, y, w, h, a = st[k]
         if x == 0 or y == 0 or x+w >= win.shape[1] or y+h >= win.shape[0]: continue
         if a < 3 or a > 0.7*np.pi*rs*rs*1.5 or w < 0.35*rs or h < 0.35*rs: continue
+        if a < 0.62*np.pi*(w/2)*(h/2): continue          # facets/triangles are not glints, only round-ish dots
         if np.hypot(cen[k][0]-ix, cen[k][1]-iy) <= 1.6*rs:
             comp = (lab == k).astype(np.uint8)
             ring = cv2.dilate(comp, np.ones((3, 3), np.uint8), iterations=2) - comp
@@ -145,8 +146,9 @@ def paint_geo2(img, e):
     gr = max(1.6, 0.26*rs)
     ix, iy = int(round(cx-x0)), int(round(cy-y0))
     yy, xx = np.ogrid[:win.shape[0], :win.shape[1]]
-    for f in (0.45, 0.35, 0.25, 0.15, 0.0):
-        gx, gy = ix+f*rs, iy-f*rs
+    offs = [(f, -f) for f in (0.45, 0.35, 0.25, 0.15, 0.0)] + [(-f, -f) for f in (0.35, 0.25)] + [(f, f) for f in (0.3, 0.2)] + [(-f, f) for f in (0.3, 0.2)]
+    for fx, fy in offs:
+        gx, gy = ix+fx*rs, iy+fy*rs
         disc = (xx-gx)**2+(yy-gy)**2 <= (gr+1.3)**2
         if win[disc].all(): break
     else:
