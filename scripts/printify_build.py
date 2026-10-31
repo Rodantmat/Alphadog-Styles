@@ -37,7 +37,7 @@ def place(prod,side,kind):
         hh=0.95; w=hh*H*a/W; w=min(w,0.95)
         return dict(x=0.5,y=0.5,scale=round(w,3))
     if kind=="bighead":
-        w=0.75 if prod=="tee" else 0.5; h=w*W/a/H
+        w=0.75 if prod=="tee" else 0.58; h=w*W/a/H
         return dict(x=0.5,y=round(min(0.5, 0.04+h/2),3),scale=w)
 THEME={"line":"Continuous Line Art","geo":"Geometric"}; VAR={"classic":"Classic","cool":"Cool","heart":"Heart"}
 PNAME={"tee":"T-Shirt","hoodie":"Hoodie"}
