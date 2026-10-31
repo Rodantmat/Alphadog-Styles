@@ -1,0 +1,161 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "MF_classic__a",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__classic.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_classic__b",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__classic.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_classic__c",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__classic.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_classic__d",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__classic.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_cool__a",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__cool.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose. No sunglasses on this design except those already in image 1; keep them exactly.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_cool__b",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__cool.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose. No sunglasses on this design except those already in image 1; keep them exactly.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_cool__c",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__cool.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose. No sunglasses on this design except those already in image 1; keep them exactly.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_cool__d",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__cool.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose. No sunglasses on this design except those already in image 1; keep them exactly.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_heart__a",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__heart.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_heart__b",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__heart.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_heart__c",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__heart.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  },
+  {
+   "id": "MF_heart__d",
+   "theme": "geo",
+   "slug": "maltese",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p3/maltese__heart.jpg",
+    "out/sets/geo_p3/bichon_frise__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the geometric Maltese design: the faces of BOTH dogs (the large front head on the left and the small head of the sitting dog on the right) look angry and mad because of the heavy angular brow lines above the eyes, the heavy scowling muzzle and the frowning mouth lines. Image 2 shows the friendly sweet face expression wanted (soft round eyes, gentle brows, relaxed muzzle). Redraw ONLY the faces of both dogs of image 1 so they look sweet, gentle and friendly: remove the angular scowling brow lines (replace by small soft short brow lines high above the eyes), keep large round dark eyes with a white iris, off-centre black pupil and highlight, soften the muzzle with fewer, lighter lines, keep the black nose, and add a small gentle closed smile line under the nose.  HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes, same line weight and geometric style. Change ONLY the faces as described; ears, hair, topknot, body, legs, tail, sunglasses, heart and collar stay exactly as in image 1. Pure black lines on flat white background, no gray, no shading, no text."
+  }
+ ]
+}
