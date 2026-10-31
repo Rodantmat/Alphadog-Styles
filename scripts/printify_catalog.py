@@ -9,13 +9,14 @@ for bp in (145,77):
     except Exception as e: out[f"ship_{bp}_99"]=str(e)
 bps=g("/v1/catalog/blueprints.json")
 keys=["bella","comfort colors","next level","gildan","independent","cotton heritage","lane seven","champion","sol","hoodie","sweatshirt"]
-cand=[b for b in bps if any(k in b["title"].lower() for k in ["bella+canvas","bella + canvas","comfort colors","next level","independent trading","cotton heritage","lane seven"]) and any(w in b["title"].lower() for w in ["tee","t-shirt","hoodie","sweatshirt","fleece"])]
+cand=[b for b in bps if any(k in (b.get("brand","")+" "+b.get("model","")+" "+b["title"]).lower() for k in ["bella","comfort colors","next level","independent","cotton heritage","lane seven","champion"]) and any(w in b["title"].lower() for w in ["tee","t-shirt","hoodie","sweatshirt","fleece"]) and not any(x in b["title"].lower() for x in ["kid","youth","toddler","women","baby","tank","long sleeve","crop","zip"])]
+print(len(cand))
 out["candidates"]=[]
-for b in cand[:40]:
+for b in cand[:30]:
     try:
         pps=g(f"/v1/catalog/blueprints/{b['id']}/print_providers.json")
         d={"id":b["id"],"title":b["title"],"providers":[]}
-        for p in pps[:6]:
+        for p in [p for p in pps if p['id'] in (99,3,6,27,29,72,1)][:3]:
             e={"id":p["id"],"title":p["title"]}
             try:
                 vs=g(f"/v1/catalog/blueprints/{b['id']}/print_providers/{p['id']}/variants.json")["variants"]
