@@ -1,0 +1,21 @@
+name: printify-mock
+on:
+  workflow_dispatch:
+    inputs:
+      shop: {required: true}
+      pids: {required: true}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          SHOP: ${{ inputs.shop }}
+          PIDS: ${{ inputs.pids }}
+        run: python3 scripts/printify_mock.py
+      - run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/mock && git commit -m "mockups" && git pull -q --rebase && git push
