@@ -7,8 +7,9 @@ for pid in os.environ["PIDS"].split(","):
     p=json.load(urllib.request.urlopen(r))
     col={}
     for v in p["variants"]:
-        c=v["title"].split(" / ")[0]; col.setdefault(c,[]).append(v["id"])
-    got=0
+        for c in v["title"].split(" / "):
+            if c in WANT: col.setdefault(c,[]).append(v["id"])
+    got=0; print(pid,[v["title"] for v in p["variants"]][:3],len(p["images"]),p["images"][0].keys() if p["images"] else "")
     for c in WANT:
         if c not in col: continue
         for pos in ("front","back"):
