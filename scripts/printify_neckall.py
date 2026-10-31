@@ -30,7 +30,7 @@ while True:
             inks={ink.get(im["id"]) for ph in a["placeholders"] for im in ph["images"]}-{None}
             if len(inks)!=1: ok=False; break
             i=inks.pop()
-            ph=[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"]]} for q in a["placeholders"]]
+            ph=[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"]]} for q in a["placeholders"] if q["images"]]
             ph.append({"position":"neck","images":[{"id":neck[i],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
             new.append({"variant_ids":a["variant_ids"],"placeholders":ph})
         if not ok: failed+=1; print("SKIP (ink unknown)",p["id"],flush=True); continue
