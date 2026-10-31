@@ -1,0 +1,20 @@
+name: printify-catalog
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read Printify catalog (read-only)
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: |
+          mkdir -p out
+          python3 scripts/printify_catalog.py 2>&1 | tee out/printify_catalog.txt
+      - name: Commit result
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/printify_catalog.txt && git commit -m "printify catalog dump" && git pull -q --rebase && git push
