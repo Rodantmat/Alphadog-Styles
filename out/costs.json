@@ -1,0 +1,2006 @@
+{
+ "tee_pair": {
+  "2XL / Forest Green": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Maroon": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Ice Grey": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Sand": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Sport Grey": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Navy": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Charcoal": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Dark Heather": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Black": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / Natural": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "2XL / White": {
+   "cost": 1747,
+   "price": 2999
+  },
+  "3XL / Forest Green": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Ice Grey": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Maroon": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Sand": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Charcoal": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Black": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Natural": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Navy": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Sport Grey": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / White": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "3XL / Dark Heather": {
+   "cost": 1882,
+   "price": 3199
+  },
+  "M / Forest Green": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Forest Green": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Forest Green": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Forest Green": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Ice Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Ice Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Ice Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Maroon": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Maroon": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Ice Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Maroon": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Maroon": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Sand": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Sand": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Sand": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Sand": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Navy": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Black": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Dark Heather": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Sport Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / White": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Natural": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Black": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Sport Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Natural": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Black": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Charcoal": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Black": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / White": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Dark Heather": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Charcoal": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Sport Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Charcoal": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Sport Grey": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / White": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Natural": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Navy": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Navy": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Natural": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "XL / Navy": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / White": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "S / Charcoal": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "M / Dark Heather": {
+   "cost": 1601,
+   "price": 2799
+  },
+  "L / Dark Heather": {
+   "cost": 1601,
+   "price": 2799
+  }
+ },
+ "hoodie_pair": {
+  "Dark Heather / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "White / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sand / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Navy / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Charcoal / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Black / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Navy / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "White / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Black / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sand / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Black / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sport Grey / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Navy / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Dark Heather / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Light Blue / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "White / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Charcoal / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sand / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Charcoal / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Maroon / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Light Blue / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Black / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sport Grey / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Dark Heather / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sport Grey / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Charcoal / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Light Blue / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Maroon / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "White / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Maroon / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Light Blue / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Dark Heather / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sport Grey / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Navy / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Maroon / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sand / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Forest Green / XL": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Forest Green / L": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Forest Green / M": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Forest Green / S": {
+   "cost": 2790,
+   "price": 4999
+  },
+  "Sand / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "White / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Black / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Navy / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Light Blue / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Maroon / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Charcoal / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Dark Heather / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Sport Grey / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Forest Green / 2XL": {
+   "cost": 3010,
+   "price": 5399
+  },
+  "Light Blue / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "White / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Black / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Sport Grey / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Maroon / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Charcoal / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Navy / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Dark Heather / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Sand / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  },
+  "Forest Green / 3XL": {
+   "cost": 3144,
+   "price": 5799
+  }
+ },
+ "tee_pocket": {
+  "2XL / Forest Green": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Light Pink": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Light Blue": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Maroon": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Ice Grey": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Sand": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Military Green": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Sport Grey": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Navy": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Dark Chocolate": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Heather Navy": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Charcoal": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Dark Heather": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Black": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Natural": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / White": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "3XL / Light Pink": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Forest Green": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Ice Grey": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Maroon": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Light Blue": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Sand": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Military Green": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Charcoal": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Black": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Heather Navy": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Natural": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Navy": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Dark Chocolate": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Sport Grey": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / White": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Dark Heather": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "XL / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  }
+ },
+ "hoodie_pocket": {
+  "Dark Heather / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Heather / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Heather / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Heather / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "White / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Light Pink / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Black / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Dark Chocolate / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Navy / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Light Blue / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Heather Navy / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Maroon / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Military Green / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Charcoal / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Dark Heather / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Sport Grey / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Ash / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Forest Green / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Dark Chocolate / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Heather Navy / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Light Blue / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "White / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Black / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Sport Grey / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Military Green / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Maroon / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Charcoal / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Light Pink / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Navy / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Dark Heather / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Sand / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Forest Green / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Ash / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  }
+ },
+ "tee_portrait": {
+  "2XL / Forest Green": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Light Pink": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Light Blue": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Maroon": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Ice Grey": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Sand": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Military Green": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Sport Grey": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Navy": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Dark Chocolate": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Heather Navy": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Charcoal": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Dark Heather": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Black": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / Natural": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "2XL / White": {
+   "cost": 1159,
+   "price": 2999
+  },
+  "3XL / Light Pink": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Forest Green": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Ice Grey": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Maroon": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Light Blue": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Sand": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Military Green": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Charcoal": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Black": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Heather Navy": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Natural": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Navy": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Dark Chocolate": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Sport Grey": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / White": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "3XL / Dark Heather": {
+   "cost": 1292,
+   "price": 3199
+  },
+  "XL / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Light Pink": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Forest Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Light Blue": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Ice Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Maroon": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Sand": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Black": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Heather Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Sport Grey": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Natural": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Navy": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / White": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Military Green": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "S / Charcoal": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "M / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "XL / Dark Chocolate": {
+   "cost": 1010,
+   "price": 2799
+  },
+  "L / Dark Heather": {
+   "cost": 1010,
+   "price": 2799
+  }
+ },
+ "hoodie_portrait": {
+  "Dark Heather / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Heather / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Black / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Heather / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Heather Navy / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Charcoal / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "White / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Blue / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Heather / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sport Grey / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Military Green / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Dark Chocolate / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Navy / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Maroon / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Light Pink / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / M": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / L": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / XL": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Ash / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Forest Green / S": {
+   "cost": 2158,
+   "price": 4999
+  },
+  "Sand / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "White / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Light Pink / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Black / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Dark Chocolate / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Navy / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Light Blue / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Heather Navy / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Maroon / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Military Green / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Charcoal / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Dark Heather / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Sport Grey / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Ash / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Forest Green / 2XL": {
+   "cost": 2377,
+   "price": 5399
+  },
+  "Dark Chocolate / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Heather Navy / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Light Blue / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "White / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Black / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Sport Grey / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Military Green / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Maroon / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Charcoal / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Light Pink / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Navy / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Dark Heather / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Sand / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Forest Green / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  },
+  "Ash / 3XL": {
+   "cost": 2509,
+   "price": 5799
+  }
+ }
+}
