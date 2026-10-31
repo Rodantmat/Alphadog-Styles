@@ -1,17 +1,26 @@
 name: printify-check
 on:
   workflow_dispatch:
+permissions:
+  contents: write
 jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - name: List Printify shops and products (read-only)
         env:
           T: ${{ secrets.PRINTIFY_TOKEN }}
         run: |
+          exec > >(tee out_printify_check.txt) 2>&1
           if [ -z "$T" ]; then echo "SECRET_EMPTY"; exit 1; fi
           echo "== shops =="
           curl -s -H "Authorization: Bearer $T" https://api.printify.com/v1/shops.json | python3 -c "import sys,json; d=json.load(sys.stdin); print(json.dumps([{k:s.get(k) for k in ('id','title','sales_channel')} for s in d] if isinstance(d,list) else d))"
           SID=$(curl -s -H "Authorization: Bearer $T" https://api.printify.com/v1/shops.json | python3 -c "import sys,json; print(json.load(sys.stdin)[0]['id'])")
           echo "== products =="
           curl -s -H "Authorization: Bearer $T" "https://api.printify.com/v1/shops/$SID/products.json" | python3 -c "import sys,json; d=json.load(sys.stdin); print([(p['id'],p['title'],p.get('visible')) for p in d.get('data',[])])"
+      - name: Commit result
+        run: |
+          mkdir -p out && mv out_printify_check.txt out/printify_check.txt
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/printify_check.txt && git commit -m "printify check result" && git pull -q --rebase && git push
