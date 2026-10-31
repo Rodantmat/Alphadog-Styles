@@ -17,6 +17,7 @@ jobs:
     timeout-minutes: 120
     steps:
       - uses: actions/checkout@v4
+      - run: pip install cairosvg pillow
       - name: Build DRAFTS (never publishes)
         env:
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}

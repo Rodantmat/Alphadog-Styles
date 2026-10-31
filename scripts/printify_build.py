@@ -2,7 +2,7 @@
 import os, json, base64, urllib.request, urllib.error, time, sys
 T=os.environ["PRINTIFY_TOKEN"]; SHOP=int(os.environ["SHOP"]); CH=os.environ.get("CHANNEL","etsy")
 NB=int(os.environ.get("BREEDS","10")); DESIGNS=os.environ.get("DESIGNS","line_classic,line_cool,line_heart").split(",")
-PRODS=os.environ.get("PRODUCTS","tee,hoodie").split(","); LAYOUT=os.environ.get("LAYOUT","pair"); MAXN=int(os.environ.get("MAXN","1000"))
+PRODS=os.environ.get("PRODUCTS","tee,hoodie").split(","); LAYOUTS=os.environ.get("LAYOUT","pair").split(","); MAXN=int(os.environ.get("MAXN","1000"))
 def call(method,path,body=None,retry=3):
     for a in range(retry):
         data=json.dumps(body).encode() if body is not None else None
@@ -44,14 +44,28 @@ PNAME={"tee":"T-Shirt","hoodie":"Hoodie"}
 STATE="out/state_%s.json"%CH
 state=json.load(open(STATE)) if os.path.exists(STATE) else {}
 uploads=json.load(open("out/uploads.json")) if os.path.exists("out/uploads.json") else {}
+import io
+def art_bytes(slug,des,side,ink):
+    p=f"shop/art/{slug}/{des}/{side}_{ink}.png"
+    if os.path.exists(p): return open(p,"rb").read()
+    import cairosvg
+    from PIL import Image
+    base="back" if side=="back" else "front"
+    w={"front":1169,"frontbig":2400,"back":4471}[side]
+    png=cairosvg.svg2png(url=f"shop/svg/{des}/{slug}_{base}.svg",output_width=w)
+    if ink=="whiteink":
+        im=Image.open(io.BytesIO(png)).convert("RGBA"); a=im.split()[3]
+        im=Image.merge("RGBA",(a.point(lambda v:255),a.point(lambda v:255),a.point(lambda v:255),a)); o=io.BytesIO(); im.save(o,"PNG"); png=o.getvalue()
+    return png
 def upload(slug,des,side,ink):
     k=f"{slug}/{des}/{side}_{ink}"
     if k in uploads: return uploads[k]
-    b=base64.b64encode(open(f"shop/art/{slug}/{des}/{side}_{ink}.png","rb").read()).decode()
+    b=base64.b64encode(art_bytes(slug,des,side,ink)).decode()
     r=call("POST","/v1/uploads/images.json",{"file_name":f"{slug}_{des}_{side}_{ink}.png","contents":b})
     uploads[k]=r["id"]; json.dump(uploads,open("out/uploads.json","w")); return r["id"]
 made=0
-for slug,disp,desc in BREEDS:
+for LAYOUT in LAYOUTS:
+ for slug,disp,desc in BREEDS:
   for des in DESIGNS:
     th,vr=des.split("_")
     for prod in PRODS:
@@ -65,13 +79,19 @@ for slug,disp,desc in BREEDS:
         ph=[]
         if LAYOUT in("pair","pocket"):
             ph.append({"position":"front","images":[dict(id=upload(slug,des,"front",ink),angle=0,**place(prod,"front","pocket"))]})
+        if LAYOUT=="portrait":
+            ph.append({"position":"front","images":[dict(id=upload(slug,des,"frontbig",ink),angle=0,**place(prod,"front","bighead"))]})
         if LAYOUT=="pair":
             ph.append({"position":"back","images":[dict(id=upload(slug,des,"back",ink),angle=0,**place(prod,"back","back"))]})
         return {"variant_ids":[v["id"] for v in vl],"placeholders":ph}
       variants=[{"id":v["id"],"price":PRICE[prod][v["options"]["size"]],"is_enabled":True} for v in lv+dv]
-      lay={"pair":"Pocket Portrait + Full Body Back","pocket":"Pocket Portrait"}[LAYOUT]
+      lay={"pair":"Pocket Portrait + Full Body Back","pocket":"Pocket Portrait","portrait":"Portrait"}[LAYOUT]
       title=f"{disp} {THEME[th]} {VAR[vr]} Dog Lover {PNAME[prod]} | {lay}"
-      if CH=="ebay": title=f"{disp} Dog Lover {PNAME[prod]} {THEME[th]} {VAR[vr]} Gift Unisex"[:80]
+      if CH!="etsy":
+          ls={"pair":"Front & Back","pocket":"Pocket Print","portrait":"Big Portrait"}[LAYOUT]; ts={"line":"Line Art","geo":"Geometric"}[th]
+          title=f"{disp} {PNAME[prod]} Dog Lover {ts} {VAR[vr]} {ls}"
+          if len(title)>80: title=f"{disp} {PNAME[prod]} Dog {ts} {VAR[vr]} {ls}"
+          if len(title)>80: title=title[:80].rsplit(" ",1)[0]
       body={"title":title,
         "description":f"<p>{disp} dog lover {PNAME[prod].lower()} with {THEME[th].lower()} artwork, {VAR[vr].lower()} style. Layout: {lay.lower()}.</p><p>Unisex fit, soft and comfortable. Made to order and printed in the USA/EU by a Printify partner; allow about 10 business days to produce before shipping.</p><p>Art style: black ink on light colors, white ink on dark colors.</p>",
         "blueprint_id":bp,"print_provider_id":99,"variants":variants,
