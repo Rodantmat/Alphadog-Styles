@@ -63,6 +63,16 @@ def upload(slug,des,side,ink):
     b=base64.b64encode(art_bytes(slug,des,side,ink)).decode()
     r=call("POST","/v1/uploads/images.json",{"file_name":f"{slug}_{des}_{side}_{ink}.png","contents":b})
     uploads[k]=r["id"]; json.dump(uploads,open("out/uploads.json","w")); return r["id"]
+def adopt():
+    page=1; got={}
+    while True:
+        r=call("GET",f"/v1/shops/{SHOP}/products.json?limit=50&page={page}")
+        for p in r.get("data",[]): got[p["title"]]=p
+        if page>=r.get("last_page",1): break
+        page+=1
+    return got
+EXIST=adopt() if CH!="etsy" else {}
+print("existing in shop:",len(EXIST),flush=True)
 made=0
 for LAYOUT in LAYOUTS:
  for slug,disp,desc in BREEDS:
@@ -93,10 +103,13 @@ for LAYOUT in LAYOUTS:
           if len(title)>80: title=f"{disp} {PNAME[prod]} Dog {ts} {VAR[vr]} {ls}"
           if len(title)>80: title=title[:80].rsplit(" ",1)[0]
       body={"title":title,
-        "description":f"<p>{disp} dog lover {PNAME[prod].lower()} with {THEME[th].lower()} artwork, {VAR[vr].lower()} style. Layout: {lay.lower()}.</p><p>Unisex fit, soft and comfortable. Made to order and printed in the USA/EU by a Printify partner; allow about 10 business days to produce before shipping.</p><p>Art style: black ink on light colors, white ink on dark colors.</p>",
+        "description":f"<p>{desc.capitalize()}: the {disp} captured in {THEME[th].lower()} artwork, {VAR[vr].lower()} style.</p><p>{disp} dog lover {PNAME[prod].lower()} with {THEME[th].lower()} artwork, {VAR[vr].lower()} style. Layout: {lay.lower()}.</p><p>Unisex fit, soft and comfortable. Made to order and printed in the USA/EU by a Printify partner; allow about 10 business days to produce before shipping.</p><p>Art style: black ink on light colors, white ink on dark colors.</p>",
         "blueprint_id":bp,"print_provider_id":99,"variants":variants,
         "print_areas":[x for x in (pa(lv,"blackink") if lv else None, pa(dv,"whiteink") if dv else None) if x],
         "tags":[t[:20] for t in [disp.lower(),"dog lover shirt" if prod=="tee" else "dog lover hoodie","dog mom gift","dog dad gift","dog breed shirt","line art dog","minimalist dog","pet lover gift","dog owner gift","unisex "+PNAME[prod].lower(),"dog portrait","gift for dog lover","dog art"]][:13]}
+      if title in EXIST:
+          p=EXIST[title]; state[key]={"id":p["id"],"title":title,"variants":len([x for x in p["variants"] if x.get("is_enabled")]),"adopted":True}
+          json.dump(state,open(STATE,"w"),indent=1); print("ADOPT",key,flush=True); continue
       p=call("POST",f"/v1/shops/{SHOP}/products.json",body)
       state[key]={"id":p["id"],"title":title,"variants":len([x for x in p["variants"] if x.get("is_enabled")])}
       json.dump(state,open(STATE,"w"),indent=1); made+=1
