@@ -1,0 +1,28 @@
+name: buffer-check
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: List Buffer organizations and channels (read-only)
+        env:
+          K: ${{ secrets.BUFFER_API_KEY }}
+        run: |
+          mkdir -p out
+          exec > >(tee out/buffer_check.txt) 2>&1
+          if [ -z "$K" ]; then echo "SECRET_EMPTY"; exit 1; fi
+          q() { curl -s -X POST https://api.buffer.com -H "Authorization: Bearer $K" -H "Content-Type: application/json" -d "$1"; }
+          echo "== orgs =="
+          O=$(q '{"query":"query { account { organizations { id } } }"}'); echo "$O"
+          OID=$(echo "$O" | python3 -c "import sys,json; print(json.load(sys.stdin)['data']['account']['organizations'][0]['id'])")
+          echo "== channels =="
+          q "{\"query\":\"query GetChannels(\$organizationId: OrganizationId!) { channels(input: { organizationId: \$organizationId }) { id name service } }\",\"variables\":{\"organizationId\":\"$OID\"}}"
+          echo
+      - name: Commit result
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/buffer_check.txt && git commit -m "buffer check result" && git pull -q --rebase && git push
