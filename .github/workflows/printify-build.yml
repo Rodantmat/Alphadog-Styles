@@ -1,0 +1,38 @@
+name: printify-build
+on:
+  workflow_dispatch:
+    inputs:
+      shop: {required: true}
+      channel: {required: true}
+      breeds: {default: "10"}
+      designs: {default: "line_classic,line_cool,line_heart"}
+      products: {default: "tee,hoodie"}
+      layout: {default: "pair"}
+      maxn: {default: "1000"}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build DRAFTS (never publishes)
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          SHOP: ${{ inputs.shop }}
+          CHANNEL: ${{ inputs.channel }}
+          BREEDS: ${{ inputs.breeds }}
+          DESIGNS: ${{ inputs.designs }}
+          PRODUCTS: ${{ inputs.products }}
+          LAYOUT: ${{ inputs.layout }}
+          MAXN: ${{ inputs.maxn }}
+        run: |
+          mkdir -p out
+          python3 scripts/printify_build.py 2>&1 | tee out/build_${{ inputs.channel }}.log
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/state_*.json out/uploads.json out/build_*.log 2>/dev/null
+          git commit -m "printify build state" && git pull -q --rebase && git push
