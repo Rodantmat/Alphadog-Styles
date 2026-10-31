@@ -1,0 +1,15 @@
+name: printify-cost
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: python3 scripts/printify_cost.py
+      - run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/costs.json && git commit -m costs && git pull -q --rebase && git push
