@@ -1,0 +1,109 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "LE_geo_cool__a",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with sunglasses. Redraw image 1 adding the exact same geometric sunglasses as in image 2 (solid black angular lenses) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LE_geo_heart__a",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2, with the heart frame large enough that the whole front head including both ears fits inside it and the head stays the same size, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LE_geo_cool__b",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with sunglasses. Redraw image 1 adding the exact same geometric sunglasses as in image 2 (solid black angular lenses) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LE_geo_heart__b",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2, with the heart frame large enough that the whole front head including both ears fits inside it and the head stays the same size, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LE_geo_cool__c",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with sunglasses. Redraw image 1 adding the exact same geometric sunglasses as in image 2 (solid black angular lenses) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LE_geo_heart__c",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2, with the heart frame large enough that the whole front head including both ears fits inside it and the head stays the same size, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LE_geo_cool__d",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with sunglasses. Redraw image 1 adding the exact same geometric sunglasses as in image 2 (solid black angular lenses) over the eyes of BOTH the front head and the back dog, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  },
+  {
+   "id": "LE_geo_heart__d",
+   "theme": "geo",
+   "slug": "linda",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "refs/linda/canonical_geo_classic.jpg",
+    "out/sets/geo_p1/poodle__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the finished classic geometric design of Linda (front head left, full-body sitting dog right). Image 2 shows the same geometric style with a geometric heart frame around the front head, a small geometric heart on top, and a collar with a small heart tag on the back dog. Redraw image 1 adding exactly those heart elements as in image 2, with the heart frame large enough that the whole front head including both ears fits inside it and the head stays the same size, and nothing else. HARD RULES: Output the SAME canvas, same two drawings in the same positions and sizes. Do not enlarge the heads. The dog keeps EXACTLY the same face, head shape, fluffy hair, ears, tongue, body, legs, tail and pose as image 1. Pure black lines on flat white background, no gray, no shading, no text, nothing cut off."
+  }
+ ]
+}
