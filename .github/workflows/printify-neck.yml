@@ -1,0 +1,18 @@
+name: printify-neck
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: |
+          mkdir -p out
+          python3 scripts/printify_neck.py 2>&1 | tee out/neck_log.txt
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/neck out/neck_result.json out/neck_log.txt shop/brand 2>/dev/null; git commit -m neck && git pull -q --rebase && git push
