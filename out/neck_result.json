@@ -1,0 +1,44 @@
+{
+ "tee": {
+  "id": "6ae638b9a19cfe3c6e05f62b",
+  "costs": [
+   1081
+  ],
+  "print_areas": [
+   [
+    "neck",
+    "front",
+    "back"
+   ],
+   [
+    "neck",
+    "front",
+    "back"
+   ]
+  ],
+  "images": 5
+ },
+ "hoodie": {
+  "id": "6ae638d0a19cfe3c6e05f655",
+  "costs": [
+   2233
+  ],
+  "print_areas": [
+   [
+    "front",
+    "back",
+    "left_sleeve",
+    "right_sleeve",
+    "neck"
+   ],
+   [
+    "front",
+    "back",
+    "left_sleeve",
+    "right_sleeve",
+    "neck"
+   ]
+  ],
+  "images": 3
+ }
+}
