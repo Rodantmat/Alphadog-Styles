@@ -1,0 +1,20 @@
+name: printify-variants
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read variants (read-only)
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: |
+          mkdir -p out
+          python3 scripts/printify_variants.py 2>&1 | tee out/printify_variants.txt
+      - name: Commit result
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/printify_variants.txt out/printify_variants.json && git commit -m "printify variants dump" && git pull -q --rebase && git push
