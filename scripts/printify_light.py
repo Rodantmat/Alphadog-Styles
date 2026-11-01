@@ -17,6 +17,9 @@ if MODE=="probe":
     print("sizes",sorted({v["options"]["size"] for v in vs}))
     print("placeholders",json.dumps(vs[0]["placeholders"]))
     json.dump(vs,open("out/bella_variants.json","w"))
+    h=call("GET","/v1/catalog/blueprints/77/print_providers/99/variants.json")["variants"]
+    import collections
+    print("HOODIE placeholders",collections.Counter(json.dumps(v["placeholders"]) for v in h).most_common(4))
     # hoodie sample product light/dark info
     SHOP=int(os.environ["SHOP"]); st=json.load(open(f"out/state_{os.environ['CHANNEL']}.json"))
     k=next(k for k in st if k.endswith("hoodie|pair") or k.endswith("hoodie|portrait"))
