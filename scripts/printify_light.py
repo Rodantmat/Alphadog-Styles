@@ -59,6 +59,21 @@ if MODE not in("probe","fetch"):
                     for lay in ("pair","portrait","pocket"):
                         for prod in ("tee","hoodie"): out.append(f"{slug}|{d}|{prod}|{lay}")
         return out
+
+    DIMF="out/upl_dims.json"; DIMS=json.load(open(DIMF)) if os.path.exists(DIMF) else {}
+    def dims(i):
+        if i not in DIMS:
+            r=call("GET",f"/v1/uploads/{i}.json"); DIMS[i]=[r["width"],r["height"]]; json.dump(DIMS,open(DIMF,"w"))
+        return DIMS[i]
+    AREAS={"tee":{"front":(2767,3362),"back":(2767,3362)},"hoodie":{"front":(2919,1944),"back":(3033,2528)}}
+    def fit(prod,side,kind,iw,ih):
+        W,H=AREAS[prod][side]; a=iw/ih
+        if kind=="back": w=min(0.95,0.94*H*a/W); return dict(x=0.5,y=0.5,scale=round(w,3))
+        if kind=="pocket":
+            w=min((0.30*3185/W if prod=="tee" else 0.26),0.30*H*a/W); h=w*W/a/H
+            return dict(x=0.76,y=round(0.05+h/2 if prod=="hoodie" else 0.17,3),scale=round(w,3))
+        w=min(0.75 if prod=="tee" else 0.58,0.9*H*a/W); h=w*W/a/H
+        return dict(x=0.5,y=round(min(0.5,0.04+h/2),3),scale=round(w,3))
     def sync_wait(): time.sleep(0.35)
     if MODE=="hoodies":
         base=json.load(open(f"out/state_{CH}.json")); n=0
@@ -67,7 +82,20 @@ if MODE not in("probe","fetch"):
             if prod!="hoodie" or k in LS or k not in base: continue
             pid=base[k]["id"]; p=call("GET",f"/v1/shops/{SHOP}/products/{pid}.json")
             vs=[{"id":v["id"],"price":price("hoodie",lay,v["options"] if False else next((s for s in SIZES if v["title"].endswith("/ "+s) or v["title"].endswith("/"+s)),"M")),"is_enabled":(v["is_enabled"] and any(v["title"].startswith(c) for c in HOOD_LIGHT))} for v in p["variants"]]
-            call("PUT",f"/v1/shops/{SHOP}/products/{pid}.json",{"variants":vs})
+            pas=[]
+            for a_ in p["print_areas"]:
+                phs=[]
+                for q in a_["placeholders"]:
+                    ims=[]
+                    for im in q["images"]:
+                        d_=dict(id=im["id"],angle=0)
+                        if q["position"]=="front": d_.update(fit("hoodie","front","pocket" if lay in("pair","pocket") else "big",*dims(im["id"])))
+                        elif q["position"]=="back": d_.update(fit("hoodie","back","back",*dims(im["id"])))
+                        else: d_.update(x=im["x"],y=im["y"],scale=im["scale"])
+                        ims.append(d_)
+                    phs.append({"position":q["position"],"images":ims})
+                pas.append({"variant_ids":a_["variant_ids"],"placeholders":phs})
+            call("PUT",f"/v1/shops/{SHOP}/products/{pid}.json",{"variants":vs,"print_areas":pas})
             LS[k]={"id":pid,"prod":"hoodie","enabled":sum(v["is_enabled"] for v in vs),"published":False}; save(); n+=1
             if n%25==0: print("hoodies",n,flush=True)
             sync_wait()
@@ -96,9 +124,9 @@ if MODE not in("probe","fetch"):
                 if len(title)>80: title=f"{disp} T-Shirt Dog {ts} {VAR[vr]} {ls2}"
                 if len(title)>80: title=title[:80].rsplit(" ",1)[0]
             ph=[]
-            if lay in("pair","pocket"): ph.append({"position":"front","images":[dict(id=up[f"{slug}/{d}/front_blackink"],angle=0,**place("front","pocket"))]})
-            if lay=="portrait": ph.append({"position":"front","images":[dict(id=up[f"{slug}/{d}/frontbig_blackink"],angle=0,**place("front","big"))]})
-            if lay=="pair": ph.append({"position":"back","images":[dict(id=up[f"{slug}/{d}/back_blackink"],angle=0,**place("back","back"))]})
+            if lay in("pair","pocket"): ph.append({"position":"front","images":[dict(id=up[f"{slug}/{d}/front_blackink"],angle=0,**fit("tee","front","pocket",*dims(up[f"{slug}/{d}/front_blackink"])))]})
+            if lay=="portrait": ph.append({"position":"front","images":[dict(id=up[f"{slug}/{d}/frontbig_blackink"],angle=0,**fit("tee","front","big",*dims(up[f"{slug}/{d}/frontbig_blackink"])))]})
+            if lay=="pair": ph.append({"position":"back","images":[dict(id=up[f"{slug}/{d}/back_blackink"],angle=0,**fit("tee","back","back",*dims(up[f"{slug}/{d}/back_blackink"])))]})
             ph.append({"position":"neck","images":[{"id":neck["blackink"],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
             body={"title":title,"description":f"<p>{desc.capitalize()}: the {disp} captured in {THEME[th].lower()} artwork, {VAR[vr].lower()} style.</p><p>Premium soft Bella+Canvas 3001 unisex jersey tee with {THEME[th].lower()} artwork. Layout: {ls.lower()}.</p><p>Unisex fit, soft and comfortable. Made to order by a Printify partner; allow about 10 business days to produce before shipping.</p>",
               "blueprint_id":12,"print_provider_id":99,

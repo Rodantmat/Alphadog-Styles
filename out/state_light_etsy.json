@@ -179,10 +179,11 @@
   "enabled": 24,
   "published": false
  },
- "french_bulldog|line_classic|tee|pair": {
+ "french_bulldog|line_classic|tee|pair#old": {
   "id": "6ae6acf8a91d5262ab0b31b9",
   "prod": "tee",
   "enabled": 30,
-  "published": false
+  "published": false,
+  "old": true
  }
 }
