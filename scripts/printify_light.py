@@ -189,6 +189,34 @@ if MODE=="oldcheck":
                     print(" ",q["position"],im.get("type"),im.get("scale"),im.get("x"),im.get("y"),flush=True)
         for j,im in enumerate(p["images"][:4]):
             open(f"out/mock4/old_{j}.jpg","wb").write(urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"}),timeout=60).read())
+if MODE=="blanks":
+    import io,base64
+    from PIL import Image
+    os.makedirs("out/blanks",exist_ok=True)
+    BS="out/blanks_state.json"; bst=json.load(open(BS)) if os.path.exists(BS) else {}
+    im=Image.new("RGBA",(800,800),(0,0,0,0)); im.putpixel((400,400),(0,0,0,2))
+    bio=io.BytesIO(); im.save(bio,"PNG")
+    if "img" not in bst:
+        bst["img"]=call("POST","/v1/uploads/images.json",{"file_name":"blank_dot.png","contents":base64.b64encode(bio.getvalue()).decode()})["id"]; json.dump(bst,open(BS,"w"))
+    cfgs={"tee":(12,[v for v in call("GET","/v1/catalog/blueprints/12/print_providers/99/variants.json")["variants"] if v["options"]["size"]=="M" and v["options"]["color"] in BELLA_LIGHT]),
+          "hoodie":(77,[v for v in call("GET","/v1/catalog/blueprints/77/print_providers/99/variants.json")["variants"] if v["options"]["size"]=="M" and v["options"]["color"] in HOOD_LIGHT])}
+    for prod,(bp,vs) in cfgs.items():
+        if prod not in bst:
+            ids=[v["id"] for v in vs]
+            ph=[{"position":"front","images":[{"id":bst["img"],"x":0.5,"y":0.5,"scale":0.2,"angle":0}]},{"position":"back","images":[{"id":bst["img"],"x":0.5,"y":0.5,"scale":0.2,"angle":0}]}]
+            p=call("POST",f"/v1/shops/{SHOP}/products.json",{"title":"BLANK mockup source - do not publish "+prod,"description":"blank","blueprint_id":bp,"print_provider_id":99,"variants":[{"id":i,"price":2000,"is_enabled":True} for i in ids],"print_areas":[{"variant_ids":ids,"placeholders":ph}]})
+            bst[prod]={"id":p["id"],"colors":{str(v["id"]):v["options"]["color"] for v in vs}}; json.dump(bst,open(BS,"w"))
+    time.sleep(90)
+    man=[]
+    for prod in ("tee","hoodie"):
+        p=call("GET",f"/v1/shops/{SHOP}/products/{bst[prod]['id']}.json")
+        for i,imx in enumerate(p["images"]):
+            cols=sorted({bst[prod]["colors"].get(str(v),"?") for v in imx.get("variant_ids",[])})
+            fn=f"out/blanks/{prod}_{i:02d}.jpg"
+            try: open(fn,"wb").write(urllib.request.urlopen(urllib.request.Request(imx["src"],headers={"User-Agent":"a"}),timeout=60).read())
+            except Exception as e: print("ERR",e); continue
+            man.append({"file":fn,"prod":prod,"position":imx.get("position"),"colors":cols,"default":imx.get("is_default")})
+    json.dump(man,open("out/blanks/manifest.json","w"),indent=1); print("BLANKS DONE",len(man),flush=True)
 if MODE=="verify":
     res={}; bad=0
     for k,v in LS.items():
