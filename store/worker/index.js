@@ -116,7 +116,8 @@ export default {
      const text=(mail_.text||String(mail_.html||"").replace(/<[^>]+>/g," ")).slice(0,20000);
      await db.prepare("INSERT INTO support_inbox(mailbox,from_addr,subject,body,raw_size,created) VALUES(?,?,?,?,?,?)").bind(box,String(message.from||"").toLowerCase(),String(mail_.subject||"").slice(0,300),text,raw.byteLength,Date.now()).run();
    }finally{ if(db.close)ctx.waitUntil(db.close()) }
-   if(env.OWNER_EMAIL){try{await message.forward(env.OWNER_EMAIL)}catch(e){}}
+   const fwd=String(message.to||"").toLowerCase().startsWith("customization")?env.FORWARD_CUSTOM:env.FORWARD_SUPPORT;  // separate mailboxes (verified Email Routing destinations)
+   if(fwd){try{await message.forward(fwd)}catch(e){}}
  },
  async fetch(req,env0,ctx){const box={};try{return await this.handle(req,env0,ctx,box)}finally{if(box.db&&box.db.close)ctx.waitUntil(box.db.close())}},
  async handle(req,env0,ctx,box){
@@ -181,7 +182,7 @@ export default {
     let i=0;for(const x of ph){await DB.prepare("INSERT INTO custom_photos(req_id,idx,mime,b64,created) VALUES(?,?,?,?,?)").bind(id,i++,x.mime,x.b64,now()).run()}
     const link=(env.SITE_URL||u.origin)+"/#/custom/"+id+"?k="+tok, CE=CUSTOM_EM[lang];
     await mail(env,e,CE.gotS(id),`<p>${CE.gotP(esc(data.dog.name||""))}</p><p><a href="${link}">${CE.view}</a></p>`,"customization@alphadogstyles.com",CUSTOM_FROM);
-    if(env.OWNER_EMAIL)await mail(env,env.OWNER_EMAIL,`New custom design request ${id}`,`<p><b>${esc(e)}</b> asked for a custom design (${ph.length} photos).</p><pre style="white-space:pre-wrap">${esc(JSON.stringify(data,null,1))}</pre>`,e,CUSTOM_FROM);
+    const cto=env.FORWARD_CUSTOM||env.OWNER_EMAIL;if(cto)await mail(env,cto,`New custom design request ${id}`,`<p><b>${esc(e)}</b> asked for a custom design (${ph.length} photos).</p><pre style="white-space:pre-wrap">${esc(JSON.stringify(data,null,1))}</pre>`,e,CUSTOM_FROM);
     return J({id,k:tok});
   }
   let cm;
