@@ -1,0 +1,50 @@
+{
+ "bella_3001": {
+  "v2_prices_brazil": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v2_availability": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v1_product": {
+   "title": "Unisex Staple T-Shirt | Bella + Canvas 3001",
+   "err": null
+  }
+ },
+ "gildan_18500": {
+  "v2_prices_brazil": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v2_availability": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v1_product": {
+   "title": "Unisex Heavy Blend Hoodie | Gildan 18500",
+   "err": null
+  }
+ },
+ "bella_3480_tank": {
+  "v2_prices_brazil": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v2_availability": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v1_product": {
+   "title": "Unisex Staple Tank Top | Bella + Canvas 3480",
+   "err": null
+  }
+ },
+ "yupoong_6245_cap": {
+  "v2_prices_brazil": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v2_availability": {
+   "error": "HTTP Error 401: Unauthorized"
+  },
+  "v1_product": {
+   "title": "Classic Dad Hat | Yupoong 6245CM",
+   "err": null
+  }
+ }
+}
