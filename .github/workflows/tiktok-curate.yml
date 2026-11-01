@@ -1,0 +1,24 @@
+name: tiktok-curate
+on:
+  workflow_dispatch:
+    inputs:
+      limit: { default: "100" }
+      dry: { default: "0" }
+permissions:
+  contents: write
+concurrency: tiktok-publish
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          LIMIT: ${{ inputs.limit }}
+          DRY: ${{ inputs.dry }}
+        run: python3 scripts/tiktok_curate.py
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out || true; git commit -m "tiktok curated" && git pull -q --rebase && git push || true

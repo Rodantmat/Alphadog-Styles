@@ -2,7 +2,7 @@ name: tiktok-publish-cron
 # Keeps publishing the remaining TikTok listings in Printify-rate-limit-sized batches. Does nothing once everything is published (delete this file afterwards).
 on:
   workflow_dispatch:
-  schedule: [{ cron: "7,37 * * * *" }]
+  # paused: TikTok shop product limit reached; tiktok-curate.yml keeps the best listings live
 permissions:
   contents: write
 concurrency: tiktok-publish
