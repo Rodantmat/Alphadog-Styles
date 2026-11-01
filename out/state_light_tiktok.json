@@ -3562,5 +3562,3569 @@
   "prod": "hoodie",
   "enabled": 42,
   "published": false
+ },
+ "french_bulldog|line_classic|tee|pair": {
+  "id": "6ae6c9e1340a0b43b901b999",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_classic|tee|portrait": {
+  "id": "6ae6c9e4b4536cb10309aaec",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_classic|tee|pocket": {
+  "id": "6ae6c9e7340a0b43b901b99d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_cool|tee|pair": {
+  "id": "6ae6c9ea73cf98f438066e7c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_cool|tee|portrait": {
+  "id": "6ae6c9edf0cc71d31d094fc7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_cool|tee|pocket": {
+  "id": "6ae6c9f073cf98f438066e7e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_heart|tee|pair": {
+  "id": "6ae6c9f305f6dc952a0e8966",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_heart|tee|portrait": {
+  "id": "6ae6c9f6bdc68f81c20f1afd",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|line_heart|tee|pocket": {
+  "id": "6ae6c9f905f6dc952a0e896b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_classic|tee|pair": {
+  "id": "6ae6c9fb4a39c0f86906c160",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_classic|tee|portrait": {
+  "id": "6ae6c9fe73cf98f438066e89",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_classic|tee|pocket": {
+  "id": "6ae6ca0173cf98f438066e90",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_cool|tee|pair": {
+  "id": "6ae6ca04340a0b43b901b9c1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_cool|tee|portrait": {
+  "id": "6ae6ca06340a0b43b901b9c7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_cool|tee|pocket": {
+  "id": "6ae6ca0905f6dc952a0e8989",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_heart|tee|pair": {
+  "id": "6ae6ca0cb4536cb10309ab09",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_heart|tee|portrait": {
+  "id": "6ae6ca0e5d17aa531b00d074",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "french_bulldog|geo_heart|tee|pocket": {
+  "id": "6ae6ca11f0cc71d31d094fe9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_classic|tee|pair": {
+  "id": "6ae6ca1473cf98f438066e97",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_classic|tee|portrait": {
+  "id": "6ae6ca1678892803fa02e427",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_classic|tee|pocket": {
+  "id": "6ae6ca195d17aa531b00d085",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_cool|tee|pair": {
+  "id": "6ae6ca1cf0cc71d31d094fee",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_cool|tee|portrait": {
+  "id": "6ae6ca1eb4536cb10309ab10",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_cool|tee|pocket": {
+  "id": "6ae6ca21f0cc71d31d094ff1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_heart|tee|pair": {
+  "id": "6ae6ca24b4536cb10309ab15",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_heart|tee|portrait": {
+  "id": "6ae6ca27340a0b43b901b9db",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|line_heart|tee|pocket": {
+  "id": "6ae6ca29340a0b43b901b9e0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_classic|tee|pair": {
+  "id": "6ae6ca2cf0cc71d31d094ffa",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_classic|tee|portrait": {
+  "id": "6ae6ca2f340a0b43b901b9ec",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_classic|tee|pocket": {
+  "id": "6ae6ca31f0cc71d31d095001",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_cool|tee|pair": {
+  "id": "6ae6ca345d17aa531b00d099",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_cool|tee|portrait": {
+  "id": "6ae6ca37b4536cb10309ab23",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_cool|tee|pocket": {
+  "id": "6ae6ca3a5d17aa531b00d09f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_heart|tee|pair": {
+  "id": "6ae6ca3cb4536cb10309ab29",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_heart|tee|portrait": {
+  "id": "6ae6ca3fb4536cb10309ab2c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "labrador_retriever|geo_heart|tee|pocket": {
+  "id": "6ae6ca425d17aa531b00d0ac",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_classic|tee|pair": {
+  "id": "6ae6ca44f0cc71d31d09500e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_classic|tee|portrait": {
+  "id": "6ae6ca47b4536cb10309ab38",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_classic|tee|pocket": {
+  "id": "6ae6ca4ab4536cb10309ab3b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_cool|tee|pair": {
+  "id": "6ae6ca4c5d17aa531b00d0bf",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_cool|tee|portrait": {
+  "id": "6ae6ca4f5d17aa531b00d0c7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_cool|tee|pocket": {
+  "id": "6ae6ca5278892803fa02e45c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_heart|tee|pair": {
+  "id": "6ae6ca555d17aa531b00d0cf",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_heart|tee|portrait": {
+  "id": "6ae6ca575d17aa531b00d0d3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|line_heart|tee|pocket": {
+  "id": "6ae6ca5a5d17aa531b00d0d8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_classic|tee|pair": {
+  "id": "6ae6ca5d5d17aa531b00d0dd",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_classic|tee|portrait": {
+  "id": "6ae6ca5f5d17aa531b00d0e5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_classic|tee|pocket": {
+  "id": "6ae6ca6278892803fa02e466",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_cool|tee|pair": {
+  "id": "6ae6ca655d17aa531b00d0ed",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_cool|tee|portrait": {
+  "id": "6ae6ca675d17aa531b00d0f1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_cool|tee|pocket": {
+  "id": "6ae6ca6ab4536cb10309ab53",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_heart|tee|pair": {
+  "id": "6ae6ca6d05f6dc952a0e89cf",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_heart|tee|portrait": {
+  "id": "6ae6ca6f05f6dc952a0e89d1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "golden_retriever|geo_heart|tee|pocket": {
+  "id": "6ae6ca724a39c0f86906c1be",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_classic|tee|pair": {
+  "id": "6ae6ca75340a0b43b901ba24",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_classic|tee|portrait": {
+  "id": "6ae6ca785d17aa531b00d108",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_classic|tee|pocket": {
+  "id": "6ae6ca7abdc68f81c20f1b66",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_cool|tee|pair": {
+  "id": "6ae6ca7d340a0b43b901ba36",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_cool|tee|portrait": {
+  "id": "6ae6ca8073cf98f438066eea",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_cool|tee|pocket": {
+  "id": "6ae6ca83f0cc71d31d09504f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_heart|tee|pair": {
+  "id": "6ae6ca85bdc68f81c20f1b7b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_heart|tee|portrait": {
+  "id": "6ae6ca884a39c0f86906c1f9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|line_heart|tee|pocket": {
+  "id": "6ae6ca8b340a0b43b901ba4e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_classic|tee|pair": {
+  "id": "6ae6ca8e73cf98f438066f01",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_classic|tee|portrait": {
+  "id": "6ae6ca904a39c0f86906c208",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_classic|tee|pocket": {
+  "id": "6ae6ca935d17aa531b00d12a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_cool|tee|pair": {
+  "id": "6ae6ca96f0cc71d31d09506c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_cool|tee|portrait": {
+  "id": "6ae6ca994a39c0f86906c217",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_cool|tee|pocket": {
+  "id": "6ae6ca9cf0cc71d31d095073",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_heart|tee|pair": {
+  "id": "6ae6ca9f5d17aa531b00d13c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_heart|tee|portrait": {
+  "id": "6ae6caa273cf98f438066f1e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shepherd|geo_heart|tee|pocket": {
+  "id": "6ae6caa5340a0b43b901ba7e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_classic|tee|pair": {
+  "id": "6ae6caa773cf98f438066f28",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_classic|tee|portrait": {
+  "id": "6ae6caaa73cf98f438066f2c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_classic|tee|pocket": {
+  "id": "6ae6caad4a39c0f86906c244",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_cool|tee|pair": {
+  "id": "6ae6cab073cf98f438066f36",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_cool|tee|portrait": {
+  "id": "6ae6cab2f0cc71d31d095092",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_cool|tee|pocket": {
+  "id": "6ae6cab573cf98f438066f41",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_heart|tee|pair": {
+  "id": "6ae6cab8340a0b43b901ba9b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_heart|tee|portrait": {
+  "id": "6ae6cabb73cf98f438066f4c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|line_heart|tee|pocket": {
+  "id": "6ae6cabdf0cc71d31d09509f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_classic|tee|pair": {
+  "id": "6ae6cac0bdc68f81c20f1bc7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_classic|tee|portrait": {
+  "id": "6ae6cac3bdc68f81c20f1bcc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_classic|tee|pocket": {
+  "id": "6ae6cac678892803fa02e4f3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_cool|tee|pair": {
+  "id": "6ae6cac8bdc68f81c20f1bd5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_cool|tee|portrait": {
+  "id": "6ae6cacbbdc68f81c20f1bd7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_cool|tee|pocket": {
+  "id": "6ae6cacebdc68f81c20f1bdb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_heart|tee|pair": {
+  "id": "6ae6cad178892803fa02e4ff",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_heart|tee|portrait": {
+  "id": "6ae6cad3bdc68f81c20f1be1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "dachshund|geo_heart|tee|pocket": {
+  "id": "6ae6cad678892803fa02e509",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_classic|tee|pair": {
+  "id": "6ae6cad9bdc68f81c20f1bea",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_classic|tee|portrait": {
+  "id": "6ae6cadc73cf98f438066f5c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_classic|tee|pocket": {
+  "id": "6ae6cadf4a39c0f86906c272",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_cool|tee|pair": {
+  "id": "6ae6cae2b4536cb10309abe7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_cool|tee|portrait": {
+  "id": "6ae6cae5f0cc71d31d0950c7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_cool|tee|pocket": {
+  "id": "6ae6cae773cf98f438066f6f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_heart|tee|pair": {
+  "id": "6ae6caeaf0cc71d31d0950d4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_heart|tee|portrait": {
+  "id": "6ae6caed340a0b43b901bae6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|line_heart|tee|pocket": {
+  "id": "6ae6caef340a0b43b901bae9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_classic|tee|pair": {
+  "id": "6ae6caf273cf98f438066f85",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_classic|tee|portrait": {
+  "id": "6ae6caf5340a0b43b901baf2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_classic|tee|pocket": {
+  "id": "6ae6caf7b4536cb10309abfb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_cool|tee|pair": {
+  "id": "6ae6cafa340a0b43b901bafa",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_cool|tee|portrait": {
+  "id": "6ae6cafdb4536cb10309abff",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_cool|tee|pocket": {
+  "id": "6ae6caffb4536cb10309ac00",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_heart|tee|pair": {
+  "id": "6ae6cb02340a0b43b901bb08",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_heart|tee|portrait": {
+  "id": "6ae6cb05340a0b43b901bb0b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "poodle|geo_heart|tee|pocket": {
+  "id": "6ae6cb085d17aa531b00d1a4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_classic|tee|pair": {
+  "id": "6ae6cb0a5d17aa531b00d1a6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_classic|tee|portrait": {
+  "id": "6ae6cb0d05f6dc952a0e8a85",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_classic|tee|pocket": {
+  "id": "6ae6cb104a39c0f86906c293",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_cool|tee|pair": {
+  "id": "6ae6cb13340a0b43b901bb16",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_cool|tee|portrait": {
+  "id": "6ae6cb1505f6dc952a0e8a87",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_cool|tee|pocket": {
+  "id": "6ae6cb18f0cc71d31d0950f8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_heart|tee|pair": {
+  "id": "6ae6cb1b340a0b43b901bb1f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_heart|tee|portrait": {
+  "id": "6ae6cb1db4536cb10309ac0d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|line_heart|tee|pocket": {
+  "id": "6ae6cb2078892803fa02e53f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_classic|tee|pair": {
+  "id": "6ae6cb235d17aa531b00d1bb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_classic|tee|portrait": {
+  "id": "6ae6cb265d17aa531b00d1be",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_classic|tee|pocket": {
+  "id": "6ae6cb28f0cc71d31d095105",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_cool|tee|pair": {
+  "id": "6ae6cb2bf0cc71d31d095107",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_cool|tee|portrait": {
+  "id": "6ae6cb2e78892803fa02e54d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_cool|tee|pocket": {
+  "id": "6ae6cb3278892803fa02e553",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_heart|tee|pair": {
+  "id": "6ae6cb3478892803fa02e559",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_heart|tee|portrait": {
+  "id": "6ae6cb375d17aa531b00d1d7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "beagle|geo_heart|tee|pocket": {
+  "id": "6ae6cb3a5d17aa531b00d1db",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_classic|tee|pair": {
+  "id": "6ae6cb3c73cf98f438066fa3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_classic|tee|portrait": {
+  "id": "6ae6cb3f73cf98f438066fa8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_classic|tee|pocket": {
+  "id": "6ae6cb4278892803fa02e56b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_cool|tee|pair": {
+  "id": "6ae6cb45340a0b43b901bb3c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_cool|tee|portrait": {
+  "id": "6ae6cb47340a0b43b901bb3e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_cool|tee|pocket": {
+  "id": "6ae6cb4a73cf98f438066fbc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_heart|tee|pair": {
+  "id": "6ae6cb4d5d17aa531b00d1fe",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_heart|tee|portrait": {
+  "id": "6ae6cb51b4536cb10309ac45",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|line_heart|tee|pocket": {
+  "id": "6ae6cb54f0cc71d31d09514c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_classic|tee|pair": {
+  "id": "6ae6cb57b4536cb10309ac4a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_classic|tee|portrait": {
+  "id": "6ae6cb59f0cc71d31d095155",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_classic|tee|pocket": {
+  "id": "6ae6cb5c5d17aa531b00d229",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_cool|tee|pair": {
+  "id": "6ae6cb5fb4536cb10309ac6c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_cool|tee|portrait": {
+  "id": "6ae6cb6173cf98f438066ff9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_cool|tee|pocket": {
+  "id": "6ae6cb6473cf98f438066fff",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_heart|tee|pair": {
+  "id": "6ae6cb67340a0b43b901bb69",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_heart|tee|portrait": {
+  "id": "6ae6cb6ab4536cb10309ac75",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "rottweiler|geo_heart|tee|pocket": {
+  "id": "6ae6cb6c05f6dc952a0e8ad5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|tee|pair": {
+  "id": "6ae6cb6f05f6dc952a0e8ad7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|tee|portrait": {
+  "id": "6ae6cb7205f6dc952a0e8ad8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|tee|pocket": {
+  "id": "6ae6cb7505f6dc952a0e8adc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|tee|pair": {
+  "id": "6ae6cb77b4536cb10309ac7c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|tee|portrait": {
+  "id": "6ae6cb7af0cc71d31d095189",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|tee|pocket": {
+  "id": "6ae6cb7d05f6dc952a0e8ae2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|tee|pair": {
+  "id": "6ae6cb80340a0b43b901bb7d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|tee|portrait": {
+  "id": "6ae6cb8373cf98f43806701d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|tee|pocket": {
+  "id": "6ae6cb855d17aa531b00d255",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|tee|pair": {
+  "id": "6ae6cb8805f6dc952a0e8afb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|tee|portrait": {
+  "id": "6ae6cb8bf0cc71d31d09519c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|tee|pocket": {
+  "id": "6ae6cb8df0cc71d31d09519f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|tee|pair": {
+  "id": "6ae6cb90bdc68f81c20f1c61",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|tee|portrait": {
+  "id": "6ae6cb9373cf98f438067026",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|tee|pocket": {
+  "id": "6ae6cb96bdc68f81c20f1c65",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|tee|pair": {
+  "id": "6ae6cb9973cf98f43806702b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|tee|portrait": {
+  "id": "6ae6cb9b73cf98f43806702e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|tee|pocket": {
+  "id": "6ae6cb9e73cf98f43806702f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_classic|tee|pair": {
+  "id": "6ae6cba1bdc68f81c20f1c67",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_classic|tee|portrait": {
+  "id": "6ae6cba305f6dc952a0e8b04",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_classic|tee|pocket": {
+  "id": "6ae6cba65d17aa531b00d263",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_cool|tee|pair": {
+  "id": "6ae6cba9340a0b43b901bb8f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_cool|tee|portrait": {
+  "id": "6ae6cbab78892803fa02e5c1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_cool|tee|pocket": {
+  "id": "6ae6cbaef0cc71d31d0951c0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_heart|tee|pair": {
+  "id": "6ae6cbb15d17aa531b00d26a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_heart|tee|portrait": {
+  "id": "6ae6cbb3b4536cb10309ac8e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|line_heart|tee|pocket": {
+  "id": "6ae6cbb6340a0b43b901bb95",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_classic|tee|pair": {
+  "id": "6ae6cbb9f0cc71d31d0951cc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_classic|tee|portrait": {
+  "id": "6ae6cbbc5d17aa531b00d272",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_classic|tee|pocket": {
+  "id": "6ae6cbbe78892803fa02e5cd",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_cool|tee|pair": {
+  "id": "6ae6cbc15d17aa531b00d278",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_cool|tee|portrait": {
+  "id": "6ae6cbc45d17aa531b00d27c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_cool|tee|pocket": {
+  "id": "6ae6cbc605f6dc952a0e8b1e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_heart|tee|pair": {
+  "id": "6ae6cbc973cf98f438067037",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_heart|tee|portrait": {
+  "id": "6ae6cbcc5d17aa531b00d281",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bulldog|geo_heart|tee|pocket": {
+  "id": "6ae6cbcf78892803fa02e5e3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_classic|tee|pair": {
+  "id": "6ae6cbd178892803fa02e5e7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_classic|tee|portrait": {
+  "id": "6ae6cbd4340a0b43b901bbac",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_classic|tee|pocket": {
+  "id": "6ae6cbd7340a0b43b901bbb2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_cool|tee|pair": {
+  "id": "6ae6cbd905f6dc952a0e8b26",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_cool|tee|portrait": {
+  "id": "6ae6cbdc78892803fa02e5f3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_cool|tee|pocket": {
+  "id": "6ae6cbdf5d17aa531b00d289",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_heart|tee|pair": {
+  "id": "6ae6cbe178892803fa02e5f9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_heart|tee|portrait": {
+  "id": "6ae6cbe4f0cc71d31d0951ef",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|line_heart|tee|pocket": {
+  "id": "6ae6cbe6340a0b43b901bbc0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_classic|tee|pair": {
+  "id": "6ae6cbe9340a0b43b901bbc6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_classic|tee|portrait": {
+  "id": "6ae6cbecf0cc71d31d0951f6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_classic|tee|pocket": {
+  "id": "6ae6cbee05f6dc952a0e8b32",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_cool|tee|pair": {
+  "id": "6ae6cbf1b4536cb10309aca1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_cool|tee|portrait": {
+  "id": "6ae6cbf473cf98f438067051",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_cool|tee|pocket": {
+  "id": "6ae6cbf705f6dc952a0e8b37",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_heart|tee|pair": {
+  "id": "6ae6cbf95d17aa531b00d2a3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_heart|tee|portrait": {
+  "id": "6ae6cbfcf0cc71d31d095203",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cane_corso|geo_heart|tee|pocket": {
+  "id": "6ae6cbff73cf98f438067052",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|tee|pair": {
+  "id": "6ae6cc0273cf98f438067053",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|tee|portrait": {
+  "id": "6ae6cc0573cf98f438067055",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|tee|pocket": {
+  "id": "6ae6cc08f0cc71d31d095213",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|tee|pair": {
+  "id": "6ae6cc0af0cc71d31d095226",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|tee|portrait": {
+  "id": "6ae6cc0df0cc71d31d095233",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|tee|pocket": {
+  "id": "6ae6cc10f0cc71d31d09523e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|tee|pair": {
+  "id": "6ae6cc1378892803fa02e638",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|tee|portrait": {
+  "id": "6ae6cc15b4536cb10309acd0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|tee|pocket": {
+  "id": "6ae6cc18340a0b43b901bbfa",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|tee|pair": {
+  "id": "6ae6cc1bf0cc71d31d09524e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|tee|portrait": {
+  "id": "6ae6cc1d73cf98f438067082",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|tee|pocket": {
+  "id": "6ae6cc20340a0b43b901bc01",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tee|pair": {
+  "id": "6ae6cc23340a0b43b901bc03",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tee|portrait": {
+  "id": "6ae6cc26b4536cb10309acdb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tee|pocket": {
+  "id": "6ae6cc29340a0b43b901bc08",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|tee|pair": {
+  "id": "6ae6cc2bb4536cb10309acdc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|tee|portrait": {
+  "id": "6ae6cc2e5d17aa531b00d2e3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|tee|pocket": {
+  "id": "6ae6cc315d17aa531b00d2e7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|tee|pair": {
+  "id": "6ae6cc3305f6dc952a0e8b6a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|tee|portrait": {
+  "id": "6ae6cc36bdc68f81c20f1cba",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|tee|pocket": {
+  "id": "6ae6cc39340a0b43b901bc0e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|tee|pair": {
+  "id": "6ae6cc3c5d17aa531b00d2f7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|tee|portrait": {
+  "id": "6ae6cc3e340a0b43b901bc12",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|tee|pocket": {
+  "id": "6ae6cc415d17aa531b00d2fc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|tee|pair": {
+  "id": "6ae6cc44bdc68f81c20f1cc8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|tee|portrait": {
+  "id": "6ae6cc47bdc68f81c20f1ccd",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|tee|pocket": {
+  "id": "6ae6cc4abdc68f81c20f1cd0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|tee|pair": {
+  "id": "6ae6cc4d05f6dc952a0e8b7c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|tee|portrait": {
+  "id": "6ae6cc4f5d17aa531b00d310",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|tee|pocket": {
+  "id": "6ae6cc52bdc68f81c20f1cda",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|tee|pair": {
+  "id": "6ae6cc5505f6dc952a0e8b86",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|tee|portrait": {
+  "id": "6ae6cc585d17aa531b00d331",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|tee|pocket": {
+  "id": "6ae6cc5a5d17aa531b00d33d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|tee|pair": {
+  "id": "6ae6cc5d5d17aa531b00d340",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|tee|portrait": {
+  "id": "6ae6cc6078892803fa02e66d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|tee|pocket": {
+  "id": "6ae6cc6205f6dc952a0e8b9b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_classic|tee|pair": {
+  "id": "6ae6cc655d17aa531b00d349",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_classic|tee|portrait": {
+  "id": "6ae6cc685d17aa531b00d34a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_classic|tee|pocket": {
+  "id": "6ae6cc6a5d17aa531b00d351",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_cool|tee|pair": {
+  "id": "6ae6cc6d78892803fa02e677",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_cool|tee|portrait": {
+  "id": "6ae6cc705d17aa531b00d356",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_cool|tee|pocket": {
+  "id": "6ae6cc7205f6dc952a0e8ba5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_heart|tee|pair": {
+  "id": "6ae6cc75f0cc71d31d095293",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_heart|tee|portrait": {
+  "id": "6ae6cc785d17aa531b00d35c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|line_heart|tee|pocket": {
+  "id": "6ae6cc7a5d17aa531b00d35f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_classic|tee|pair": {
+  "id": "6ae6cc7d5d17aa531b00d362",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_classic|tee|portrait": {
+  "id": "6ae6cc8078892803fa02e681",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_classic|tee|pocket": {
+  "id": "6ae6cc83bdc68f81c20f1d0c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_cool|tee|pair": {
+  "id": "6ae6cc86bdc68f81c20f1d11",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_cool|tee|portrait": {
+  "id": "6ae6cc89bdc68f81c20f1d12",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_cool|tee|pocket": {
+  "id": "6ae6cc8bf0cc71d31d0952ab",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_heart|tee|pair": {
+  "id": "6ae6cc8e340a0b43b901bc4b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_heart|tee|portrait": {
+  "id": "6ae6cc915d17aa531b00d36b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "australian_shepherd|geo_heart|tee|pocket": {
+  "id": "6ae6cc93bdc68f81c20f1d15",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_classic|tee|pair": {
+  "id": "6ae6cc9678892803fa02e68a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_classic|tee|portrait": {
+  "id": "6ae6cc99f0cc71d31d0952b3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_classic|tee|pocket": {
+  "id": "6ae6cc9b340a0b43b901bc51",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_cool|tee|pair": {
+  "id": "6ae6cc9e05f6dc952a0e8bd3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_cool|tee|portrait": {
+  "id": "6ae6cca178892803fa02e68f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_cool|tee|pocket": {
+  "id": "6ae6cca473cf98f4380670b9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_heart|tee|pair": {
+  "id": "6ae6cca6f0cc71d31d0952bb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_heart|tee|portrait": {
+  "id": "6ae6cca905f6dc952a0e8bd7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|line_heart|tee|pocket": {
+  "id": "6ae6ccacf0cc71d31d0952bf",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|tee|pair": {
+  "id": "6ae6ccaff0cc71d31d0952c3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|tee|portrait": {
+  "id": "6ae6ccb178892803fa02e699",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|tee|pocket": {
+  "id": "6ae6ccb4340a0b43b901bc63",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|tee|pair": {
+  "id": "6ae6ccb6340a0b43b901bc65",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|tee|portrait": {
+  "id": "6ae6ccb905f6dc952a0e8be3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|tee|pocket": {
+  "id": "6ae6ccbc05f6dc952a0e8be5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|tee|pair": {
+  "id": "6ae6ccbf05f6dc952a0e8beb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|tee|portrait": {
+  "id": "6ae6ccc15d17aa531b00d386",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|tee|pocket": {
+  "id": "6ae6ccc405f6dc952a0e8bf5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|tee|pair": {
+  "id": "6ae6ccc7f0cc71d31d0952d9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|tee|portrait": {
+  "id": "6ae6ccc9bdc68f81c20f1d2e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|tee|pocket": {
+  "id": "6ae6cccc340a0b43b901bc88",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|tee|pair": {
+  "id": "6ae6cccf05f6dc952a0e8c06",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|tee|portrait": {
+  "id": "6ae6ccd2340a0b43b901bc91",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|tee|pocket": {
+  "id": "6ae6ccd405f6dc952a0e8c0f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|tee|pair": {
+  "id": "6ae6ccd75d17aa531b00d397",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|tee|portrait": {
+  "id": "6ae6ccdabdc68f81c20f1d37",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|tee|pocket": {
+  "id": "6ae6ccdc05f6dc952a0e8c17",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|tee|pair": {
+  "id": "6ae6ccdf5d17aa531b00d3a0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|tee|portrait": {
+  "id": "6ae6cce25d17aa531b00d3a5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|tee|pocket": {
+  "id": "6ae6cce505f6dc952a0e8c20",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|tee|pair": {
+  "id": "6ae6cce778892803fa02e6c1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|tee|portrait": {
+  "id": "6ae6ccea340a0b43b901bca8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|tee|pocket": {
+  "id": "6ae6cced5d17aa531b00d3b0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|tee|pair": {
+  "id": "6ae6ccef05f6dc952a0e8c2f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|tee|portrait": {
+  "id": "6ae6ccf2f0cc71d31d0952f6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|tee|pocket": {
+  "id": "6ae6ccf5f0cc71d31d0952f7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|tee|pair": {
+  "id": "6ae6ccf8f0cc71d31d0952f9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|tee|portrait": {
+  "id": "6ae6ccfa340a0b43b901bcba",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|tee|pocket": {
+  "id": "6ae6ccfd73cf98f4380670fb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|tee|pair": {
+  "id": "6ae6ccff5d17aa531b00d3c9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|tee|portrait": {
+  "id": "6ae6cd025d17aa531b00d3cb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|tee|pocket": {
+  "id": "6ae6cd055d17aa531b00d3d1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|tee|pair": {
+  "id": "6ae6cd07bdc68f81c20f1d5c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|tee|portrait": {
+  "id": "6ae6cd0a5d17aa531b00d3d4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|tee|pocket": {
+  "id": "6ae6cd0d78892803fa02e6de",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|tee|pair": {
+  "id": "6ae6cd105d17aa531b00d3da",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|tee|portrait": {
+  "id": "6ae6cd125d17aa531b00d3db",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|tee|pocket": {
+  "id": "6ae6cd1573cf98f438067116",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|tee|pair": {
+  "id": "6ae6cd17f0cc71d31d095317",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|tee|portrait": {
+  "id": "6ae6cd1a73cf98f43806711c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|tee|pocket": {
+  "id": "6ae6cd1d73cf98f438067126",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|tee|pair": {
+  "id": "6ae6cd20f0cc71d31d095321",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|tee|portrait": {
+  "id": "6ae6cd22340a0b43b901bcea",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|tee|pocket": {
+  "id": "6ae6cd25bdc68f81c20f1d74",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_classic|tee|pair": {
+  "id": "6ae6cd28bdc68f81c20f1d76",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_classic|tee|portrait": {
+  "id": "6ae6cd2a340a0b43b901bcf0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_classic|tee|pocket": {
+  "id": "6ae6cd2d73cf98f43806712d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_cool|tee|pair": {
+  "id": "6ae6cd30340a0b43b901bcf5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_cool|tee|portrait": {
+  "id": "6ae6cd3373cf98f438067133",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_cool|tee|pocket": {
+  "id": "6ae6cd36340a0b43b901bcfa",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_heart|tee|pair": {
+  "id": "6ae6cd38340a0b43b901bcfe",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_heart|tee|portrait": {
+  "id": "6ae6cd3bf0cc71d31d095327",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|line_heart|tee|pocket": {
+  "id": "6ae6cd3e340a0b43b901bd0a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_classic|tee|pair": {
+  "id": "6ae6cd4078892803fa02e6f8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_classic|tee|portrait": {
+  "id": "6ae6cd43f0cc71d31d09532c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_classic|tee|pocket": {
+  "id": "6ae6cd4678892803fa02e6fe",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_cool|tee|pair": {
+  "id": "6ae6cd495d17aa531b00d411",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_cool|tee|portrait": {
+  "id": "6ae6cd4b78892803fa02e70a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_cool|tee|pocket": {
+  "id": "6ae6cd4ef0cc71d31d095335",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_heart|tee|pair": {
+  "id": "6ae6cd515d17aa531b00d417",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_heart|tee|portrait": {
+  "id": "6ae6cd5378892803fa02e718",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boxer|geo_heart|tee|pocket": {
+  "id": "6ae6cd56340a0b43b901bd19",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_classic|tee|pair": {
+  "id": "6ae6cd59f0cc71d31d095344",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_classic|tee|portrait": {
+  "id": "6ae6cd5bbdc68f81c20f1d8a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_classic|tee|pocket": {
+  "id": "6ae6cd5e5d17aa531b00d421",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_cool|tee|pair": {
+  "id": "6ae6cd6173cf98f43806714a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_cool|tee|portrait": {
+  "id": "6ae6cd635d17aa531b00d424",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_cool|tee|pocket": {
+  "id": "6ae6cd66bdc68f81c20f1d90",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_heart|tee|pair": {
+  "id": "6ae6cd69340a0b43b901bd2c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_heart|tee|portrait": {
+  "id": "6ae6cd6b78892803fa02e72d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|line_heart|tee|pocket": {
+  "id": "6ae6cd6e73cf98f438067155",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_classic|tee|pair": {
+  "id": "6ae6cd7173cf98f438067156",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_classic|tee|portrait": {
+  "id": "6ae6cd7305f6dc952a0e8c70",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_classic|tee|pocket": {
+  "id": "6ae6cd7678892803fa02e735",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_cool|tee|pair": {
+  "id": "6ae6cd7978892803fa02e737",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_cool|tee|portrait": {
+  "id": "6ae6cd7c78892803fa02e73d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_cool|tee|pocket": {
+  "id": "6ae6cd7ebdc68f81c20f1d97",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_heart|tee|pair": {
+  "id": "6ae6cd815d17aa531b00d437",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_heart|tee|portrait": {
+  "id": "6ae6cd845d17aa531b00d439",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pomeranian|geo_heart|tee|pocket": {
+  "id": "6ae6cd86340a0b43b901bd3b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|tee|pair": {
+  "id": "6ae6cd8a73cf98f438067161",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|tee|portrait": {
+  "id": "6ae6cd8d78892803fa02e746",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|tee|pocket": {
+  "id": "6ae6cd90bdc68f81c20f1d9e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|tee|pair": {
+  "id": "6ae6cd9305f6dc952a0e8c82",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|tee|portrait": {
+  "id": "6ae6cd95f0cc71d31d095361",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|tee|pocket": {
+  "id": "6ae6cd985d17aa531b00d44c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|tee|pair": {
+  "id": "6ae6cd9b5d17aa531b00d44f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|tee|portrait": {
+  "id": "6ae6cd9e5d17aa531b00d453",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|tee|pocket": {
+  "id": "6ae6cda05d17aa531b00d454",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|tee|pair": {
+  "id": "6ae6cda3f0cc71d31d09536c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|tee|portrait": {
+  "id": "6ae6cda65d17aa531b00d45d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|tee|pocket": {
+  "id": "6ae6cda973cf98f438067171",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|tee|pair": {
+  "id": "6ae6cdacbdc68f81c20f1daf",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|tee|portrait": {
+  "id": "6ae6cdaf5d17aa531b00d464",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|tee|pocket": {
+  "id": "6ae6cdb178892803fa02e758",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|tee|pair": {
+  "id": "6ae6cdb4f0cc71d31d095379",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|tee|portrait": {
+  "id": "6ae6cdb7bdc68f81c20f1db5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|tee|pocket": {
+  "id": "6ae6cdb9f0cc71d31d095380",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_classic|tee|pair": {
+  "id": "6ae6cdbcf0cc71d31d095385",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_classic|tee|portrait": {
+  "id": "6ae6cdbff0cc71d31d09538b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_classic|tee|pocket": {
+  "id": "6ae6cdc1f0cc71d31d09538f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_cool|tee|pair": {
+  "id": "6ae6cdc4340a0b43b901bd59",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_cool|tee|portrait": {
+  "id": "6ae6cdc7f0cc71d31d095396",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_cool|tee|pocket": {
+  "id": "6ae6cdcaf0cc71d31d095398",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_heart|tee|pair": {
+  "id": "6ae6cdcc05f6dc952a0e8c9a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_heart|tee|portrait": {
+  "id": "6ae6cdcf73cf98f438067188",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|line_heart|tee|pocket": {
+  "id": "6ae6cdd205f6dc952a0e8c9d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_classic|tee|pair": {
+  "id": "6ae6cdd5340a0b43b901bd60",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_classic|tee|portrait": {
+  "id": "6ae6cdd8340a0b43b901bd62",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_classic|tee|pocket": {
+  "id": "6ae6cddaf0cc71d31d0953ad",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_cool|tee|pair": {
+  "id": "6ae6cddd73cf98f43806719a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_cool|tee|portrait": {
+  "id": "6ae6cde073cf98f43806719e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_cool|tee|pocket": {
+  "id": "6ae6cde273cf98f4380671a6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_heart|tee|pair": {
+  "id": "6ae6cde573cf98f4380671b6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_heart|tee|portrait": {
+  "id": "6ae6cde873cf98f4380671ba",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shih_tzu|geo_heart|tee|pocket": {
+  "id": "6ae6cdebf0cc71d31d0953c4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_classic|tee|pair": {
+  "id": "6ae6cdedf0cc71d31d0953c6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_classic|tee|portrait": {
+  "id": "6ae6cdf0f0cc71d31d0953c8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_classic|tee|pocket": {
+  "id": "6ae6cdf2bdc68f81c20f1dea",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_cool|tee|pair": {
+  "id": "6ae6cdf5f0cc71d31d0953cc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_cool|tee|portrait": {
+  "id": "6ae6cdf878892803fa02e790",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_cool|tee|pocket": {
+  "id": "6ae6cdfb5d17aa531b00d4a4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_heart|tee|pair": {
+  "id": "6ae6cdfebdc68f81c20f1df4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_heart|tee|portrait": {
+  "id": "6ae6ce00bdc68f81c20f1df6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|line_heart|tee|pocket": {
+  "id": "6ae6ce035d17aa531b00d4ae",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_classic|tee|pair": {
+  "id": "6ae6ce06bdc68f81c20f1dfa",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_classic|tee|portrait": {
+  "id": "6ae6ce085d17aa531b00d4b2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_classic|tee|pocket": {
+  "id": "6ae6ce0b78892803fa02e79b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_cool|tee|pair": {
+  "id": "6ae6ce0e340a0b43b901bd91",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_cool|tee|portrait": {
+  "id": "6ae6ce1005f6dc952a0e8cd4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_cool|tee|pocket": {
+  "id": "6ae6ce135d17aa531b00d4b7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_heart|tee|pair": {
+  "id": "6ae6ce16f0cc71d31d0953da",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_heart|tee|portrait": {
+  "id": "6ae6ce1878892803fa02e7a4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "great_dane|geo_heart|tee|pocket": {
+  "id": "6ae6ce1b05f6dc952a0e8cd8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_classic|tee|pair": {
+  "id": "6ae6ce1e5d17aa531b00d4be",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_classic|tee|portrait": {
+  "id": "6ae6ce205d17aa531b00d4c1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_classic|tee|pocket": {
+  "id": "6ae6ce23f0cc71d31d0953e9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_cool|tee|pair": {
+  "id": "6ae6ce26f0cc71d31d0953eb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_cool|tee|portrait": {
+  "id": "6ae6ce28bdc68f81c20f1e05",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_cool|tee|pocket": {
+  "id": "6ae6ce2b73cf98f4380671ca",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_heart|tee|pair": {
+  "id": "6ae6ce2e78892803fa02e7b3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_heart|tee|portrait": {
+  "id": "6ae6ce31f0cc71d31d0953f8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|line_heart|tee|pocket": {
+  "id": "6ae6ce33bdc68f81c20f1e0a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_classic|tee|pair": {
+  "id": "6ae6ce36f0cc71d31d095402",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_classic|tee|portrait": {
+  "id": "6ae6ce38f0cc71d31d095406",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_classic|tee|pocket": {
+  "id": "6ae6ce3b5d17aa531b00d4c9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_cool|tee|pair": {
+  "id": "6ae6ce3ef0cc71d31d09540b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_cool|tee|portrait": {
+  "id": "6ae6ce40340a0b43b901bda8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_cool|tee|pocket": {
+  "id": "6ae6ce43340a0b43b901bdaa",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_heart|tee|pair": {
+  "id": "6ae6ce4573cf98f4380671dc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_heart|tee|portrait": {
+  "id": "6ae6ce48bdc68f81c20f1e18",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "boston_terrier|geo_heart|tee|pocket": {
+  "id": "6ae6ce4b78892803fa02e7ca",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_classic|tee|pair": {
+  "id": "6ae6ce4e340a0b43b901bdb3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_classic|tee|portrait": {
+  "id": "6ae6ce50340a0b43b901bdb7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_classic|tee|pocket": {
+  "id": "6ae6ce5378892803fa02e7d0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_cool|tee|pair": {
+  "id": "6ae6ce56f0cc71d31d09541d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_cool|tee|portrait": {
+  "id": "6ae6ce58f0cc71d31d095421",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_cool|tee|pocket": {
+  "id": "6ae6ce5b5d17aa531b00d4da",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_heart|tee|pair": {
+  "id": "6ae6ce5ef0cc71d31d095426",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_heart|tee|portrait": {
+  "id": "6ae6ce6173cf98f4380671ee",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|line_heart|tee|pocket": {
+  "id": "6ae6ce64bdc68f81c20f1e2c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_classic|tee|pair": {
+  "id": "6ae6ce6673cf98f4380671ff",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_classic|tee|portrait": {
+  "id": "6ae6ce6978892803fa02e7e4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_classic|tee|pocket": {
+  "id": "6ae6ce6cbdc68f81c20f1e3a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_cool|tee|pair": {
+  "id": "6ae6ce6f78892803fa02e7e8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_cool|tee|portrait": {
+  "id": "6ae6ce71bdc68f81c20f1e3f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_cool|tee|pocket": {
+  "id": "6ae6ce7478892803fa02e7ee",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_heart|tee|pair": {
+  "id": "6ae6ce77340a0b43b901bdde",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_heart|tee|portrait": {
+  "id": "6ae6ce7abdc68f81c20f1e48",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "chihuahua|geo_heart|tee|pocket": {
+  "id": "6ae6ce7c78892803fa02e7f2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_classic|tee|pair": {
+  "id": "6ae6ce7fbdc68f81c20f1e4f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_classic|tee|portrait": {
+  "id": "6ae6ce82340a0b43b901bdeb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_classic|tee|pocket": {
+  "id": "6ae6ce8505f6dc952a0e8d0e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_cool|tee|pair": {
+  "id": "6ae6ce8773cf98f43806720f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_cool|tee|portrait": {
+  "id": "6ae6ce8abdc68f81c20f1e53",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_cool|tee|pocket": {
+  "id": "6ae6ce8d78892803fa02e7fc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_heart|tee|pair": {
+  "id": "6ae6ce905d17aa531b00d509",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_heart|tee|portrait": {
+  "id": "6ae6ce925d17aa531b00d50c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|line_heart|tee|pocket": {
+  "id": "6ae6ce9578892803fa02e807",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_classic|tee|pair": {
+  "id": "6ae6ce985d17aa531b00d51a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_classic|tee|portrait": {
+  "id": "6ae6ce9b5d17aa531b00d51c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_classic|tee|pocket": {
+  "id": "6ae6ce9d340a0b43b901be04",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_cool|tee|pair": {
+  "id": "6ae6cea05d17aa531b00d522",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_cool|tee|portrait": {
+  "id": "6ae6cea378892803fa02e80f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_cool|tee|pocket": {
+  "id": "6ae6cea65d17aa531b00d526",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_heart|tee|pair": {
+  "id": "6ae6cea95d17aa531b00d52c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_heart|tee|portrait": {
+  "id": "6ae6ceab73cf98f438067235",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "havanese|geo_heart|tee|pocket": {
+  "id": "6ae6ceaef0cc71d31d09545f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_classic|tee|pair": {
+  "id": "6ae6ceb1bdc68f81c20f1e70",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_classic|tee|portrait": {
+  "id": "6ae6ceb35d17aa531b00d545",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_classic|tee|pocket": {
+  "id": "6ae6ceb6f0cc71d31d095472",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_cool|tee|pair": {
+  "id": "6ae6ceb9340a0b43b901be21",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_cool|tee|portrait": {
+  "id": "6ae6cebcbdc68f81c20f1e7a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_cool|tee|pocket": {
+  "id": "6ae6cebe78892803fa02e82b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_heart|tee|pair": {
+  "id": "6ae6cec178892803fa02e82d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_heart|tee|portrait": {
+  "id": "6ae6cec4bdc68f81c20f1e7e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|line_heart|tee|pocket": {
+  "id": "6ae6cec7bdc68f81c20f1e82",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_classic|tee|pair": {
+  "id": "6ae6cec95d17aa531b00d56b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_classic|tee|portrait": {
+  "id": "6ae6ceccf0cc71d31d095488",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_classic|tee|pocket": {
+  "id": "6ae6cecf340a0b43b901be3f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_cool|tee|pair": {
+  "id": "6ae6ced15d17aa531b00d576",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_cool|tee|portrait": {
+  "id": "6ae6ced4bdc68f81c20f1e9e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_cool|tee|pocket": {
+  "id": "6ae6ced7340a0b43b901be49",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_heart|tee|pair": {
+  "id": "6ae6ceda73cf98f438067261",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_heart|tee|portrait": {
+  "id": "6ae6cedd5d17aa531b00d585",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "siberian_husky|geo_heart|tee|pocket": {
+  "id": "6ae6cedf73cf98f438067265",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_classic|tee|pair": {
+  "id": "6ae6cee2340a0b43b901be58",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_classic|tee|portrait": {
+  "id": "6ae6cee55d17aa531b00d58c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_classic|tee|pocket": {
+  "id": "6ae6cee705f6dc952a0e8d69",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_cool|tee|pair": {
+  "id": "6ae6ceea340a0b43b901be5f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_cool|tee|portrait": {
+  "id": "6ae6ceed340a0b43b901be61",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_cool|tee|pocket": {
+  "id": "6ae6cef0340a0b43b901be66",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_heart|tee|pair": {
+  "id": "6ae6cef25d17aa531b00d598",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_heart|tee|portrait": {
+  "id": "6ae6cef55d17aa531b00d59b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|line_heart|tee|pocket": {
+  "id": "6ae6cef75d17aa531b00d59f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_classic|tee|pair": {
+  "id": "6ae6cefa05f6dc952a0e8d75",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_classic|tee|portrait": {
+  "id": "6ae6cefd340a0b43b901be75",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_classic|tee|pocket": {
+  "id": "6ae6cf00340a0b43b901be7b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_cool|tee|pair": {
+  "id": "6ae6cf0205f6dc952a0e8d80",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_cool|tee|portrait": {
+  "id": "6ae6cf05340a0b43b901be85",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_cool|tee|pocket": {
+  "id": "6ae6cf08bdc68f81c20f1ed0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_heart|tee|pair": {
+  "id": "6ae6cf0a05f6dc952a0e8d89",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_heart|tee|portrait": {
+  "id": "6ae6cf0d340a0b43b901be8b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "pug|geo_heart|tee|pocket": {
+  "id": "6ae6cf1005f6dc952a0e8d8d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|tee|pair": {
+  "id": "6ae6cf135d17aa531b00d5b4",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|tee|portrait": {
+  "id": "6ae6cf1605f6dc952a0e8d97",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|tee|pocket": {
+  "id": "6ae6cf18340a0b43b901be90",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|tee|pair": {
+  "id": "6ae6cf1b05f6dc952a0e8d9c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|tee|portrait": {
+  "id": "6ae6cf1ef0cc71d31d0954ac",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|tee|pocket": {
+  "id": "6ae6cf2005f6dc952a0e8da1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|tee|pair": {
+  "id": "6ae6cf2305f6dc952a0e8da5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|tee|portrait": {
+  "id": "6ae6cf2605f6dc952a0e8da8",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|tee|pocket": {
+  "id": "6ae6cf29340a0b43b901be9c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|tee|pair": {
+  "id": "6ae6cf2b05f6dc952a0e8dad",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|tee|portrait": {
+  "id": "6ae6cf2e5d17aa531b00d5be",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|tee|pocket": {
+  "id": "6ae6cf31340a0b43b901bea1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|tee|pair": {
+  "id": "6ae6cf33340a0b43b901bea3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|tee|portrait": {
+  "id": "6ae6cf3673cf98f438067299",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|tee|pocket": {
+  "id": "6ae6cf3873cf98f43806729c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|tee|pair": {
+  "id": "6ae6cf3b73cf98f4380672a2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|tee|portrait": {
+  "id": "6ae6cf3e340a0b43b901bead",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|tee|pocket": {
+  "id": "6ae6cf4073cf98f4380672a5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_classic|tee|pair": {
+  "id": "6ae6cf4373cf98f4380672a7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_classic|tee|portrait": {
+  "id": "6ae6cf4605f6dc952a0e8db6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_classic|tee|pocket": {
+  "id": "6ae6cf4973cf98f4380672ae",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_cool|tee|pair": {
+  "id": "6ae6cf4b340a0b43b901bebc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_cool|tee|portrait": {
+  "id": "6ae6cf4e73cf98f4380672b9",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_cool|tee|pocket": {
+  "id": "6ae6cf51340a0b43b901bec2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_heart|tee|pair": {
+  "id": "6ae6cf535d17aa531b00d5dc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_heart|tee|portrait": {
+  "id": "6ae6cf565d17aa531b00d5e3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|line_heart|tee|pocket": {
+  "id": "6ae6cf5973cf98f4380672d2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_classic|tee|pair": {
+  "id": "6ae6cf5c05f6dc952a0e8dd0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_classic|tee|portrait": {
+  "id": "6ae6cf5f340a0b43b901bedd",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_classic|tee|pocket": {
+  "id": "6ae6cf615d17aa531b00d5ee",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_cool|tee|pair": {
+  "id": "6ae6cf64f0cc71d31d0954e0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_cool|tee|portrait": {
+  "id": "6ae6cf6773cf98f4380672ea",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_cool|tee|pocket": {
+  "id": "6ae6cf6af0cc71d31d0954e2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_heart|tee|pair": {
+  "id": "6ae6cf6c05f6dc952a0e8dd7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_heart|tee|portrait": {
+  "id": "6ae6cf6ff0cc71d31d0954e5",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "border_collie|geo_heart|tee|pocket": {
+  "id": "6ae6cf72f0cc71d31d0954e7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_classic|tee|pair": {
+  "id": "6ae6cf745d17aa531b00d5f6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_classic|tee|portrait": {
+  "id": "6ae6cf77bdc68f81c20f1f04",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_classic|tee|pocket": {
+  "id": "6ae6cf7af0cc71d31d0954f0",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_cool|tee|pair": {
+  "id": "6ae6cf7c78892803fa02e88a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_cool|tee|portrait": {
+  "id": "6ae6cf7f78892803fa02e88b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_cool|tee|pocket": {
+  "id": "6ae6cf81340a0b43b901bef3",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_heart|tee|pair": {
+  "id": "6ae6cf8478892803fa02e891",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_heart|tee|portrait": {
+  "id": "6ae6cf88bdc68f81c20f1f0b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|line_heart|tee|pocket": {
+  "id": "6ae6cf8a05f6dc952a0e8deb",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_classic|tee|pair": {
+  "id": "6ae6cf8d78892803fa02e898",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_classic|tee|portrait": {
+  "id": "6ae6cf90340a0b43b901befd",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_classic|tee|pocket": {
+  "id": "6ae6cf92bdc68f81c20f1f10",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_cool|tee|pair": {
+  "id": "6ae6cf95340a0b43b901bf01",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_cool|tee|portrait": {
+  "id": "6ae6cf98340a0b43b901bf05",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_cool|tee|pocket": {
+  "id": "6ae6cf9af0cc71d31d095512",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_heart|tee|pair": {
+  "id": "6ae6cf9d340a0b43b901bf0d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_heart|tee|portrait": {
+  "id": "6ae6cfa0f0cc71d31d09551a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "shiba_inu|geo_heart|tee|pocket": {
+  "id": "6ae6cfa2f0cc71d31d09551c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_classic|tee|pair": {
+  "id": "6ae6cfa5340a0b43b901bf16",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_classic|tee|portrait": {
+  "id": "6ae6cfa773cf98f438067310",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_classic|tee|pocket": {
+  "id": "6ae6cfaa73cf98f438067312",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_cool|tee|pair": {
+  "id": "6ae6cfadf0cc71d31d095523",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_cool|tee|portrait": {
+  "id": "6ae6cfb0bdc68f81c20f1f2c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_cool|tee|pocket": {
+  "id": "6ae6cfb273cf98f43806731b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_heart|tee|pair": {
+  "id": "6ae6cfb5bdc68f81c20f1f31",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_heart|tee|portrait": {
+  "id": "6ae6cfb8f0cc71d31d09552e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|line_heart|tee|pocket": {
+  "id": "6ae6cfbaf0cc71d31d095531",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_classic|tee|pair": {
+  "id": "6ae6cfbdf0cc71d31d095534",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_classic|tee|portrait": {
+  "id": "6ae6cfc0f0cc71d31d095539",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_classic|tee|pocket": {
+  "id": "6ae6cfc2bdc68f81c20f1f3e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_cool|tee|pair": {
+  "id": "6ae6cfc578892803fa02e8b1",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_cool|tee|portrait": {
+  "id": "6ae6cfc878892803fa02e8b6",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_cool|tee|pocket": {
+  "id": "6ae6cfcbf0cc71d31d09554a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_heart|tee|pair": {
+  "id": "6ae6cfcd5d17aa531b00d623",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_heart|tee|portrait": {
+  "id": "6ae6cfd005f6dc952a0e8e20",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "mini_poodle|geo_heart|tee|pocket": {
+  "id": "6ae6cfd373cf98f438067335",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_classic|tee|pair": {
+  "id": "6ae6cfd6340a0b43b901bf36",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_classic|tee|portrait": {
+  "id": "6ae6cfd85d17aa531b00d62a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_classic|tee|pocket": {
+  "id": "6ae6cfdb5d17aa531b00d62b",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_cool|tee|pair": {
+  "id": "6ae6cfdef0cc71d31d095559",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_cool|tee|portrait": {
+  "id": "6ae6cfe0f0cc71d31d09555d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_cool|tee|pocket": {
+  "id": "6ae6cfe45d17aa531b00d62f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_heart|tee|pair": {
+  "id": "6ae6cfe7f0cc71d31d095564",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_heart|tee|portrait": {
+  "id": "6ae6cfe9bdc68f81c20f1f64",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|line_heart|tee|pocket": {
+  "id": "6ae6cfec340a0b43b901bf3d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_classic|tee|pair": {
+  "id": "6ae6cfeff0cc71d31d095569",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_classic|tee|portrait": {
+  "id": "6ae6cff1f0cc71d31d09556d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_classic|tee|pocket": {
+  "id": "6ae6cff4bdc68f81c20f1f6a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_cool|tee|pair": {
+  "id": "6ae6cff7bdc68f81c20f1f6f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_cool|tee|portrait": {
+  "id": "6ae6cff9bdc68f81c20f1f71",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_cool|tee|pocket": {
+  "id": "6ae6cffc78892803fa02e8d7",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_heart|tee|pair": {
+  "id": "6ae6cfffbdc68f81c20f1f75",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_heart|tee|portrait": {
+  "id": "6ae6d00278892803fa02e8df",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "bichon_frise|geo_heart|tee|pocket": {
+  "id": "6ae6d00478892803fa02e8e2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_classic|tee|pair": {
+  "id": "6ae6d0075d17aa531b00d64c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_classic|tee|portrait": {
+  "id": "6ae6d00a05f6dc952a0e8e37",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_classic|tee|pocket": {
+  "id": "6ae6d00df0cc71d31d095583",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_cool|tee|pair": {
+  "id": "6ae6d00ff0cc71d31d095586",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_cool|tee|portrait": {
+  "id": "6ae6d01278892803fa02e8f2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_cool|tee|pocket": {
+  "id": "6ae6d01505f6dc952a0e8e3c",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_heart|tee|pair": {
+  "id": "6ae6d01805f6dc952a0e8e3e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_heart|tee|portrait": {
+  "id": "6ae6d01af0cc71d31d09558e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|line_heart|tee|pocket": {
+  "id": "6ae6d01df0cc71d31d09558f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_classic|tee|pair": {
+  "id": "6ae6d0205d17aa531b00d658",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_classic|tee|portrait": {
+  "id": "6ae6d02273cf98f43806734e",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_classic|tee|pocket": {
+  "id": "6ae6d02578892803fa02e8fc",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_cool|tee|pair": {
+  "id": "6ae6d02878892803fa02e8fd",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_cool|tee|portrait": {
+  "id": "6ae6d02af0cc71d31d095598",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_cool|tee|pocket": {
+  "id": "6ae6d02df0cc71d31d09559d",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_heart|tee|pair": {
+  "id": "6ae6d030f0cc71d31d09559f",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_heart|tee|portrait": {
+  "id": "6ae6d033f0cc71d31d0955a2",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
+ },
+ "maltese|geo_heart|tee|pocket": {
+  "id": "6ae6d03578892803fa02e90a",
+  "prod": "tee",
+  "enabled": 44,
+  "published": false
  }
 }
