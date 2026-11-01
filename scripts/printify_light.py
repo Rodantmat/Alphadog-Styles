@@ -93,7 +93,7 @@ if MODE not in("probe","fetch"):
                         elif q["position"]=="back": d_.update(fit("hoodie","back","back",*dims(im["id"])))
                         else: d_.update(x=im["x"],y=im["y"],scale=im["scale"])
                         ims.append(d_)
-                    phs.append({"position":q["position"],"images":ims})
+                    if ims: phs.append({"position":q["position"],"images":ims})
                 pas.append({"variant_ids":a_["variant_ids"],"placeholders":phs})
             call("PUT",f"/v1/shops/{SHOP}/products/{pid}.json",{"variants":vs,"print_areas":pas})
             LS[k]={"id":pid,"prod":"hoodie","enabled":sum(v["is_enabled"] for v in vs),"published":False}; save(); n+=1
