@@ -1,0 +1,4754 @@
+{
+ "french_bulldog|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_classic|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_classic|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_classic|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_cool|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_cool|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_cool|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_heart|hoodie|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_heart|hoodie|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_heart|hoodie|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "french_bulldog|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "labrador_retriever|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "golden_retriever|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shepherd|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "dachshund|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "poodle|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "beagle|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "rottweiler|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "german_shorthaired_pointer|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bulldog|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cane_corso|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "cavalier_king_charles_spaniel|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "yorkshire_terrier|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "australian_shepherd|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "doberman_pinscher|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pembroke_welsh_corgi|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "miniature_schnauzer|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boxer|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pomeranian|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bernese_mountain_dog|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shih_tzu|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "great_dane|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "boston_terrier|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "chihuahua|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "havanese|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "siberian_husky|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "pug|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "american_pit_bull_terrier|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "border_collie|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "shiba_inu|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "mini_poodle|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "bichon_frise|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|line_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_classic|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_classic|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_classic|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_cool|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_cool|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_cool|tee|pocket": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_heart|tee|pair": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_heart|tee|portrait": {
+  "ok": true,
+  "probs": []
+ },
+ "maltese|geo_heart|tee|pocket": {
+  "ok": true,
+  "probs": []
+ }
+}
