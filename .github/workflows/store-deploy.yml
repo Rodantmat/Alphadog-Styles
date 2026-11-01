@@ -35,6 +35,7 @@ jobs:
         run: |
           set -e
           npm install --silent
+          DATABASE_URL=$(printf '%s' "$DATABASE_URL" | tr -d '[:space:]'); export DATABASE_URL
           if [ -z "$DATABASE_URL" ]; then echo "DATABASE_URL secret is missing"; exit 1; fi
           [ -n "$MAIL_FROM_ADDR" ] && sed -i "s|^MAIL_FROM = .*|MAIL_FROM = \"$MAIL_FROM_ADDR\"|" wrangler.toml || true
           # DATABASE_URL = admin string from DigitalOcean. Create the separate store database, then point the Worker at it.
@@ -44,6 +45,6 @@ jobs:
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f schema.sql
           npx wrangler@4 deploy
           for v in DATABASE_URL ADMIN_TOKEN RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY; do
-            val="${!v}"; if [ -n "$val" ]; then printf '%s' "$val" | npx wrangler@4 secret put $v; fi
+            val=$(printf '%s' "${!v}" | tr -d '\r\n'); if [ -n "$val" ]; then printf '%s' "$val" | npx wrangler@4 secret put $v; fi
           done
           npx wrangler@4 deployments list | tail -5
