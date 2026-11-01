@@ -20,6 +20,7 @@ jobs:
           EXTRA: ${{ inputs.extra }}
           SHOP: "29546485"
           CHANNEL: tiktok
+          SKIP: wpolo
         run: python3 scripts/printify_extras.py
       - name: Commit state
         if: always()

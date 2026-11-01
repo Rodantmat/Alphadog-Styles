@@ -361,6 +361,12 @@
     "XL",
     "2XL",
     "3XL"
+   ],
+   "group": "tops",
+   "rule": "tee",
+   "sides": [
+    "front",
+    "back"
    ]
   },
   {
@@ -446,7 +452,445 @@
     "XL",
     "2XL",
     "3XL"
+   ],
+   "group": "tops",
+   "rule": "hoodie",
+   "sides": [
+    "front",
+    "back"
    ]
+  },
+  {
+   "id": "tank",
+   "name": "Tank Top",
+   "sub": "Bella+Canvas 3480 - soft jersey tank",
+   "blueprint": 39,
+   "provider": 99,
+   "price": {
+    "one": 2699,
+    "both": 3199
+   },
+   "sur": {
+    "2XL": 200
+   },
+   "colors": [
+    [
+     "White",
+     "#eaeaea",
+     1,
+     "white",
+     "White"
+    ],
+    [
+     "Athletic Heather",
+     "#a1a19f",
+     1,
+     "athletic-heather",
+     "Athletic Heather"
+    ]
+   ],
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+   ],
+   "area": {
+    "front": [
+     2920,
+     3504
+    ],
+    "back": [
+     2920,
+     3504
+    ]
+   },
+   "pos": {
+    "front": "front",
+    "back": "back"
+   },
+   "rule": "tee",
+   "group": "tops",
+   "sides": [
+    "front",
+    "back"
+   ]
+  },
+  {
+   "id": "wtank",
+   "name": "Women's Racerback Tank",
+   "sub": "Next Level 1533 - lightweight racerback",
+   "blueprint": 18,
+   "provider": 99,
+   "price": {
+    "one": 2599,
+    "both": 3099
+   },
+   "sur": {
+    "2XL": 200
+   },
+   "colors": [
+    [
+     "Solid White",
+     "#e7e7e7",
+     1,
+     "solid-white",
+     "White"
+    ],
+    [
+     "Heather Grey",
+     "#858583",
+     1,
+     "heather-grey",
+     "Heather Grey"
+    ],
+    [
+     "Solid Mint",
+     "#92d5a9",
+     1,
+     "solid-mint",
+     "Mint"
+    ],
+    [
+     "Solid Light Orange",
+     "#f38f78",
+     1,
+     "solid-light-orange",
+     "Light Orange"
+    ],
+    [
+     "Solid Tahiti Blue",
+     "#2ebac4",
+     1,
+     "solid-tahiti-blue",
+     "Tahiti Blue"
+    ]
+   ],
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL"
+   ],
+   "area": {
+    "front": [
+     3032,
+     3709
+    ],
+    "back": [
+     3033,
+     3451
+    ]
+   },
+   "pos": {
+    "front": "front",
+    "back": "back"
+   },
+   "rule": "tee",
+   "group": "tops",
+   "sides": [
+    "front",
+    "back"
+   ]
+  },
+  {
+   "id": "polo",
+   "name": "Polo Shirt",
+   "sub": "JERZEES 443M - classic piqu\u00e9, chest print",
+   "blueprint": 1402,
+   "provider": 99,
+   "price": {
+    "one": 3499
+   },
+   "sur": {
+    "2XL": 200,
+    "3XL": 400
+   },
+   "colors": [
+    [
+     "White",
+     "#ececee",
+     1,
+     "white",
+     "White"
+    ],
+    [
+     "Athletic Heather",
+     "#bfbdc2",
+     1,
+     "athletic-heather",
+     "Athletic Heather"
+    ]
+   ],
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL"
+   ],
+   "area": {
+    "front": [
+     1181,
+     1181
+    ]
+   },
+   "pos": {
+    "front": "left_chest"
+   },
+   "rule": "chest",
+   "group": "polos",
+   "sides": [
+    "front"
+   ],
+   "opts": {
+    "front": [
+     "head_s",
+     "body_s"
+    ]
+   }
+  },
+  {
+   "id": "wpolo",
+   "name": "Women's Polo",
+   "sub": "CORE365 Origin - performance piqu\u00e9, chest print",
+   "blueprint": 6488,
+   "provider": 99,
+   "price": {
+    "one": 3999
+   },
+   "sur": {
+    "2XL": 200,
+    "3XL": 400
+   },
+   "colors": [
+    [
+     "White",
+     "#ffffff",
+     1,
+     "white",
+     "White"
+    ],
+    [
+     "Platinum",
+     "#c1b2b5",
+     1,
+     "platinum",
+     "Platinum"
+    ],
+    [
+     "Charity Pink",
+     "#f9a4bb",
+     1,
+     "charity-pink",
+     "Charity Pink"
+    ]
+   ],
+   "sizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL"
+   ],
+   "area": {
+    "front": [
+     1200,
+     1050
+    ]
+   },
+   "pos": {
+    "front": "left_chest_dtf"
+   },
+   "rule": "chest",
+   "group": "polos",
+   "sides": [
+    "front"
+   ],
+   "opts": {
+    "front": [
+     "head_s",
+     "body_s"
+    ]
+   }
+  },
+  {
+   "id": "cap_dad",
+   "name": "Dad Hat",
+   "sub": "Yupoong 6245CM - soft, low profile",
+   "blueprint": 1447,
+   "provider": 99,
+   "price": {
+    "one": 2899
+   },
+   "sur": {},
+   "colors": [
+    [
+     "White",
+     "#f9f9f8",
+     1,
+     "white",
+     "White"
+    ],
+    [
+     "Stone",
+     "#d5c7bc",
+     1,
+     "stone",
+     "Stone"
+    ],
+    [
+     "Khaki",
+     "#bba478",
+     1,
+     "khaki",
+     "Khaki"
+    ],
+    [
+     "Light Blue",
+     "#c6d4e1",
+     1,
+     "light-blue",
+     "Light Blue"
+    ],
+    [
+     "Pink",
+     "#f9b7b8",
+     1,
+     "pink",
+     "Pink"
+    ]
+   ],
+   "sizes": [
+    "One size"
+   ],
+   "area": {
+    "front": [
+     1500,
+     600
+    ]
+   },
+   "pos": {
+    "front": "front_dtf"
+   },
+   "rule": "cap",
+   "group": "caps",
+   "sides": [
+    "front"
+   ],
+   "opts": {
+    "front": [
+     "head_s",
+     "body_s"
+    ]
+   }
+  },
+  {
+   "id": "cap_foam",
+   "name": "Foam Trucker Hat",
+   "sub": "OTTO 39-165 - retro foam front, mesh back",
+   "blueprint": 1735,
+   "provider": 99,
+   "price": {
+    "one": 2699
+   },
+   "sur": {},
+   "colors": [
+    [
+     "White",
+     "#f2f2f2",
+     1,
+     "white",
+     "White"
+    ],
+    [
+     "Light Pink/White",
+     "#f6c6d2",
+     1,
+     "light-pink-white",
+     "Pink Trim"
+    ],
+    [
+     "Blue/White",
+     "#33b5e8",
+     1,
+     "blue-white",
+     "Blue Trim"
+    ]
+   ],
+   "sizes": [
+    "One size"
+   ],
+   "area": {
+    "front": [
+     1650,
+     750
+    ]
+   },
+   "pos": {
+    "front": "front_dtf"
+   },
+   "rule": "cap",
+   "group": "caps",
+   "sides": [
+    "front"
+   ],
+   "opts": {
+    "front": [
+     "head_s",
+     "body_s"
+    ]
+   }
+  },
+  {
+   "id": "cap_mesh",
+   "name": "Mesh Trucker Cap",
+   "sub": "Yupoong 6006 - 5-panel, mesh back",
+   "blueprint": 1734,
+   "provider": 99,
+   "price": {
+    "one": 2699
+   },
+   "sur": {},
+   "colors": [
+    [
+     "White",
+     "#d3d3d3",
+     1,
+     "white",
+     "White"
+    ]
+   ],
+   "sizes": [
+    "One size"
+   ],
+   "area": {
+    "front": [
+     1650,
+     750
+    ]
+   },
+   "pos": {
+    "front": "front_dtf"
+   },
+   "rule": "cap",
+   "group": "caps",
+   "sides": [
+    "front"
+   ],
+   "opts": {
+    "front": [
+     "head_s",
+     "body_s"
+    ]
+   }
   }
  ],
  "shipping": {
@@ -496,6 +940,74 @@
     284.6
    ]
   },
-  "photo": 1200
+  "photo": 1200,
+  "tank": {
+   "front": [
+    440,
+    459,
+    320,
+    382
+   ],
+   "back": [
+    440,
+    355,
+    320,
+    383
+   ]
+  },
+  "wtank": {
+   "front": [
+    430,
+    464,
+    341,
+    416
+   ],
+   "back": [
+    438,
+    456,
+    330,
+    380
+   ]
+  },
+  "polo": {
+   "front": [
+    662,
+    318,
+    105,
+    106
+   ]
+  },
+  "wpolo": {
+   "front": [
+    679,
+    317,
+    141,
+    123
+   ]
+  },
+  "cap_dad": {
+   "front": [
+    314,
+    447,
+    572,
+    235
+   ]
+  },
+  "cap_foam": {
+   "front": [
+    289,
+    354,
+    624,
+    292
+   ]
+  },
+  "cap_mesh": {
+   "front": [
+    264,
+    419,
+    680,
+    308
+   ]
+  }
  }
 }

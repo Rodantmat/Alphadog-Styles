@@ -88,3 +88,12 @@ table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px s
 
 #lang{background:transparent;color:inherit;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font:inherit;font-size:.85rem;margin-left:6px;cursor:pointer}
 #lang option{color:#17171a}
+
+.glabel{font-size:.78rem;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.06em;margin:10px 0 6px}
+.garms{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px}
+.garms button{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 6px;border:1.5px solid var(--line);border-radius:14px;background:var(--card);color:inherit;cursor:pointer;font:600 .8rem var(--f2,inherit);min-height:44px;text-align:center;line-height:1.15}
+.garms button img{width:56px;height:56px;object-fit:contain;border-radius:10px;background:#fff}
+.garms button.on{border-color:var(--acc);box-shadow:0 0 0 2px rgba(255,106,61,.25)}
+.card .art.mock{background:#fff}.card .art.mock svg{width:100%;height:100%;display:block}
+.toast{opacity:0;visibility:hidden;transition:transform .3s,opacity .25s,visibility .25s}.toast.show{opacity:1;visibility:visible}
+.legal #lang{width:auto;display:inline-block;padding:4px 10px;border-radius:999px;color:#c9c5bb;background:transparent;border-color:#3a3a42}

@@ -95,7 +95,7 @@ function validItem(it){
   const p=cat.products.find(x=>x.id===it.prod); if(!p)return null;
   const c=p.colors.find(x=>x[0]===it.color&&x[2]); if(!c||!p.sizes.includes(it.size))return null;
   const qty=Math.max(1,Math.min(20,parseInt(it.qty)||1));
-  const side=(d,k)=>{ if(!d)return null; const o=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size); if(!o||!cat.breeds.some(b=>b.slug===d.breed)||!cat.themes.some(t=>t.id===d.theme)||!cat.styles.some(s=>s.id===d.style))return false; return {part:d.part,size:d.size,breed:d.breed,theme:d.theme,style:d.style}};
+  const side=(d,k)=>{ if(!d)return null; if(!(p.sides||["front","back"]).includes(k))return false; const al=p.opts&&p.opts[k]; const o=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); if(!o||!cat.breeds.some(b=>b.slug===d.breed)||!cat.themes.some(t=>t.id===d.theme)||!cat.styles.some(s=>s.id===d.style))return false; return {part:d.part,size:d.size,breed:d.breed,theme:d.theme,style:d.style}};
   const front=side(it.front,"front"),back=side(it.back,"back"); if(front===false||back===false||(!front&&!back))return null;
   return {prod:it.prod,color:it.color,size:it.size,qty,front,back};
 }
@@ -160,7 +160,7 @@ export default {
     await DB.prepare("INSERT INTO orders(id,email,data,total,status,created,updated) VALUES(?,?,?,?,?,?,?)").bind(id,email,JSON.stringify(data),total,"reserved",now(),now()).run();
     if(env.STRIPE_SECRET_KEY){
       try{
-        const li={};items.forEach((i,n)=>{li[n]={quantity:i.qty,price_data:{currency:"usd",unit_amount:priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size),product_data:{name:(i.prod==="tee"?"AlphaDog Premium Tee":"AlphaDog Heavy Hoodie")+" - "+i.color+" / "+i.size}}}});
+        const li={};items.forEach((i,n)=>{li[n]={quantity:i.qty,price_data:{currency:"usd",unit_amount:priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size),product_data:{name:"AlphaDog "+(cat.products.find(x=>x.id===i.prod)||{name:i.prod}).name+" - "+i.color+" / "+i.size}}}});
         if(ship)li[items.length]={quantity:1,price_data:{currency:"usd",unit_amount:ship,product_data:{name:"Shipping (US)"}}};
         const ss=await stripe(env,"POST","/checkout/sessions",{mode:"payment",customer_email:email,client_reference_id:id,locale:{es:"es",pt:"pt-BR",en:"en"}[data.lang],metadata:{order_id:id},line_items:li,
           success_url:u.origin+"/#/done/"+id+"?paid=1",cancel_url:u.origin+"/#/cart"});

@@ -22,14 +22,14 @@ os.makedirs("out/blanks3",exist_ok=True); man=[]; meta={}
 made={}
 for k,(bp,poss,cols,size) in P.items():
     vs=pf("GET",f"/v1/catalog/blueprints/{bp}/print_providers/99/variants.json")["variants"]
-    sel=[v for v in vs if v["options"].get("color") in cols and (v["options"].get("size") in (size,None) or size=="One size")]
+    sel=[v for v in vs if v["options"].get("color") in cols and (v["options"].get("size") in (size,None) or size=="One size")] or vs[:1]
     seen=set(); s2=[]
     for v in sel:
         c=v["options"].get("color")
         if c in seen: continue
         seen.add(c); s2.append(v)
     ids=[v["id"] for v in s2]; areas={ph["position"]:[ph["width"],ph["height"]] for ph in s2[0]["placeholders"]}
-    meta[k]={"bp":bp,"positions":poss,"areas":{p:areas[p] for p in poss},"colors":{str(v["id"]):v["options"].get("color") for v in s2},"missing":[c for c in cols if c not in seen]}
+    meta[k]={"bp":bp,"positions":poss,"areas":{p:areas[p] for p in poss},"colors":{str(v["id"]):v["options"].get("color") for v in s2},"missing":[]}
     marks={}
     for p in poss:
         W,H=areas[p]; marks[p]=up(f"mark_{k}_{p}.png",png(max(8,W//10),max(8,H//10),[255,0,255,255]))

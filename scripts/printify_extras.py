@@ -47,6 +47,7 @@ if MODE=="build":
     for slug,disp,desc in BREEDS:
         for d in DES:
             for prod,spec in P.items():
+                if prod in os.environ.get("SKIP","").split(","): continue
                 k=f"{slug}|{d}|{prod}"
                 if k in LS: continue
                 if n>=EXTRA: break
