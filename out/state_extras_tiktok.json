@@ -1,0 +1,37 @@
+{
+ "french_bulldog|line_classic|tank": {
+  "id": "6ae79c87cefd3023310975a4",
+  "prod": "tank",
+  "published": false
+ },
+ "french_bulldog|line_classic|wtank": {
+  "id": "6ae79c897861ac1c1c041ca7",
+  "prod": "wtank",
+  "published": false
+ },
+ "french_bulldog|line_classic|polo": {
+  "id": "6ae79c8bf9c00c9ec009f751",
+  "prod": "polo",
+  "published": false
+ },
+ "french_bulldog|line_classic|wpolo": {
+  "id": "6ae79c8d791767f4ef0c6080",
+  "prod": "wpolo",
+  "published": false
+ },
+ "french_bulldog|line_classic|cap_dad": {
+  "id": "6ae79c90f9c00c9ec009f759",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "french_bulldog|line_classic|cap_foam": {
+  "id": "6ae79c91a04ae2f1280ac394",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "french_bulldog|line_classic|cap_mesh": {
+  "id": "6ae79c94eff2af9b7c0be225",
+  "prod": "cap_mesh",
+  "published": false
+ }
+}
