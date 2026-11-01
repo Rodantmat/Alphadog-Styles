@@ -20,6 +20,9 @@ jobs:
           chk "designs needs login" "$(curl -s -o /dev/null -w '%{http_code}' $U/api/designs)" 401
           chk "internal forbidden" "$(curl -s -o /dev/null -w '%{http_code}' $U/api/internal/orders)" 403
           chk "bad order rejected" "$(curl -s -o /dev/null -w '%{http_code}' -XPOST $U/api/orders -d '{"items":[]}')" 400
+          chk "login email sends (Resend test inbox)" "$(curl -s -o /dev/null -w '%{http_code}' -XPOST $U/api/auth/request -d '{"email":"delivered@resend.dev","lang":"es"}')" 200
+          chk "Spanish page served" "$(curl -s $U/js/pages.js | grep -c 'Devoluciones y reembolsos')" 1
+          chk "www works" "$(curl -s -o /dev/null -w '%{http_code}' https://www.alphadogstyles.com/)" 200
           chk "webhook rejects unsigned" "$(curl -s -o /dev/null -w '%{http_code}' -XPOST $U/api/stripe/webhook -d '{}' -H 'stripe-signature: t=1,v1=00')" 400
           BODY='{"items":[{"prod":"tee","color":"White","size":"M","qty":1,"front":{"id":"head_s","name":"Head emblem","part":"head","size":"s","breed":"poodle","theme":"line","style":"classic"}}],"ship":{"name":"Smoke Test","a1":"1 Main St","city":"San Diego","st":"CA","zip":"92101"},"email":"smoke@example.com"}'
           R=$(curl -s -XPOST $U/api/orders -d "$BODY"); echo "$R" | sed 's/cs_test_[A-Za-z0-9]*/cs_test_X/g' | cut -c1-200
