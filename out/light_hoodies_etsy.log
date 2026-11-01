@@ -1,4 +1,4 @@
-HTTP 400 /v1/shops/29544854/products/6ae56abab3e56e7b5f092b0d.json {"status":"error","code":8150,"message":"Validation failed.","errors":{"reason":"print_areas.0.placeholders.2.images: The print_areas.0.placeholders.2.images field is required. | print_areas.0.placeholders.3.images: The print_areas.0.placeholders.3.images field is required. | print_areas.1.placeholders.2.images: The print_areas.1.placeholders.2.images field is required. | print_areas.1.placeholders.3.images: The print_areas.1.placeholders.3.images field is required.","code":8150}}
+HTTP 400 /v1/shops/29544854/products/6ae56abab3e56e7b5f092b0d.json {"status":"error","code":8253,"message":"Operation failed.","errors":{"reason":"Provided images do not exist","code":8253}}
 Traceback (most recent call last):
   File "/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/printify_light.py", line 98, in <module>
     call("PUT",f"/v1/shops/{SHOP}/products/{pid}.json",{"variants":vs,"print_areas":pas})
