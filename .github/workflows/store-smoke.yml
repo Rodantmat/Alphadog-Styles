@@ -2,16 +2,28 @@ name: store-smoke
 on:
   workflow_dispatch:
     inputs:
-      url: { default: "https://alphadog-store.rodolfoaamattos.workers.dev" }
+      url:
+        default: "https://alphadog-store.rodolfoaamattos.workers.dev"
 jobs:
   smoke:
     runs-on: ubuntu-latest
+    env:
+      ADM: ${{ secrets.STORE_ADMIN_TOKEN }}
     steps:
       - name: Smoke test
         run: |
-          U="${{ inputs.url }}"
-          for p in / /art/line_classic/poodle_front.svg /img/tee_white_front.webp /data/catalog.json /worker/index.js; do echo "$p -> $(curl -s -o /dev/null -w '%{http_code} %{content_type} %{size_download}B' $U$p)"; done
-          echo health: $(curl -s $U/api/health)
-          echo auth-check: $(curl -s -w ' [%{http_code}]' $U/api/designs -H 'authorization: Bearer test')
-          echo bad-order: $(curl -s -w ' [%{http_code}]' -XPOST $U/api/orders -d '{"items":[]}')
-          echo login-no-mail: $(curl -s -w ' [%{http_code}]' -XPOST $U/api/auth/request -d '{"email":"smoke@example.com"}')
+          U="${{ inputs.url }}"; F=0
+          chk(){ if [ "$2" = "$3" ]; then echo "ok   $1"; else echo "FAIL $1 (got $2, want $3)"; F=1; fi; }
+          for p in / /logo.png /art/line_classic/poodle_front.svg /img/tee_white_front.webp /data/catalog.json /js/app.js; do chk "GET $p" "$(curl -s -o /dev/null -w '%{http_code}' $U$p)" 200; done
+          for p in /worker/index.js /SETUP.md /worker/schema.sql; do c=$(curl -s $U$p | grep -c -E 'DATABASE_URL|CREATE TABLE|STRIPE_SECRET'); chk "no leak $p" "$c" 0; done
+          chk "health ok" "$(curl -s $U/api/health | grep -c '"ok":true')" 1
+          chk "designs needs login" "$(curl -s -o /dev/null -w '%{http_code}' $U/api/designs)" 401
+          chk "internal forbidden" "$(curl -s -o /dev/null -w '%{http_code}' $U/api/internal/orders)" 403
+          chk "bad order rejected" "$(curl -s -o /dev/null -w '%{http_code}' -XPOST $U/api/orders -d '{"items":[]}')" 400
+          chk "webhook rejects unsigned" "$(curl -s -o /dev/null -w '%{http_code}' -XPOST $U/api/stripe/webhook -d '{}' -H 'stripe-signature: t=1,v1=00')" 400
+          BODY='{"items":[{"prod":"tee","color":"White","size":"M","qty":1,"front":{"id":"head_s","name":"Head emblem","part":"head","size":"s","breed":"poodle","theme":"line","style":"classic"}}],"ship":{"name":"Smoke Test","a1":"1 Main St","city":"San Diego","st":"CA","zip":"92101"},"email":"smoke@example.com"}'
+          R=$(curl -s -XPOST $U/api/orders -d "$BODY"); echo "$R" | sed 's/cs_test_[A-Za-z0-9]*/cs_test_X/g' | cut -c1-200
+          chk "order returns Stripe test checkout url" "$(echo "$R" | grep -c 'https://checkout.stripe.com/c/pay/cs_test_')" 1
+          ID=$(echo "$R" | python3 -c "import sys,json;print(json.load(sys.stdin).get('id',''))")
+          [ -n "$ID" ] && curl -s -XPOST $U/api/internal/orders/$ID -H "x-admin-token: $ADM" -H 'content-type: application/json' -d '{"status":"smoke_test"}'
+          echo; exit $F
