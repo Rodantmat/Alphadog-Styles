@@ -165,6 +165,18 @@ if MODE=="fetch":
     for i,u in enumerate(os.environ["EXTRA"].split()):
         d=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"a"}),timeout=60).read()
         open(f"out/mock3/{i}.jpg","wb").write(d); print("saved",i,len(d),flush=True)
+if MODE=="sample":
+    os.makedirs("out/mock4",exist_ok=True)
+    ks=[k for k in LS if "#old" not in k]; n=int(EXTRA or 12); step=max(1,len(ks)//n); info=[]
+    for i,k in enumerate(ks[::step][:n]):
+        p=call("GET",f"/v1/shops/{SHOP}/products/{LS[k]['id']}.json")
+        for j,im in enumerate(p["images"][:6]):
+            try:
+                d=urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"}),timeout=60).read()
+                open(f"out/mock4/{CH}_{i:02d}_{j}.jpg","wb").write(d)
+            except Exception as e: print("ERR",e)
+        info.append(k); print("sampled",i,k,flush=True)
+    json.dump(info,open(f"out/mock4/{CH}_keys.json","w"))
 if MODE=="verify":
     res={}; bad=0
     for k,v in LS.items():
