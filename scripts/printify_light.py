@@ -73,7 +73,7 @@ if MODE!="probe":
             sync_wait()
         print("HOODIES DONE",n,flush=True)
     if MODE=="tees":
-        V=json.load(open("out/bella_variants.json")); maxn=int(EXTRA or 100000); n=0
+        V=call("GET","/v1/catalog/blueprints/12/print_providers/99/variants.json")["variants"]; maxn=int(EXTRA or 100000); n=0
         vs=[v for v in V if v["options"]["size"] in SIZES and v["options"]["color"] in BELLA_LIGHT]
         THEME={"line":"Continuous Line Art","geo":"Geometric"}; VAR={"classic":"Classic","cool":"Cool","heart":"Heart"}
         ids=[v["id"] for v in vs]; W,H=2767,3362; ASP={"front":1169/1200,"back":4471/5400}
