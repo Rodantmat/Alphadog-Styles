@@ -95,7 +95,9 @@ if MODE not in("probe","fetch"):
                         ims.append(d_)
                     if ims: phs.append({"position":q["position"],"images":ims})
                 pas.append({"variant_ids":a_["variant_ids"],"placeholders":phs})
-            call("PUT",f"/v1/shops/{SHOP}/products/{pid}.json",{"variants":vs,"print_areas":pas})
+            try: call("PUT",f"/v1/shops/{SHOP}/products/{pid}.json",{"variants":vs,"print_areas":pas},retry=1)
+            except Exception:
+                print("PAYLOAD",json.dumps(pas)[:1500]); print("ORIG",json.dumps([[ (q["position"],[(i["id"],i.get("type")) for i in q["images"]]) for q in a_["placeholders"]] for a_ in p["print_areas"]])[:1500]); raise
             LS[k]={"id":pid,"prod":"hoodie","enabled":sum(v["is_enabled"] for v in vs),"published":False}; save(); n+=1
             if n%25==0: print("hoodies",n,flush=True)
             sync_wait()
