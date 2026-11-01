@@ -92,7 +92,7 @@ export default {
  async fetch(req,env0,ctx){const box={};try{return await this.handle(req,env0,ctx,box)}finally{if(box.db&&box.db.close)ctx.waitUntil(box.db.close())}},
  async handle(req,env0,ctx,box){
   const u=new URL(req.url),path=u.pathname,m=req.method;
-  const env={...env0};if(path.startsWith("/api/")&&!path.startsWith("/api/health")){env._db=env0.DB||makeDB(env0.DATABASE_URL);box.db=env._db}const DB=env._db;
+  const env={...env0};if(path.startsWith("/api/")&&!path.startsWith("/api/health")){env._db=env0.DB||makeDB(env0.DATABASE_URL,env0.HYPERDRIVE);box.db=env._db}const DB=env._db;
   if(!path.startsWith("/api/"))return env0.ASSETS.fetch(req);
   let body={},raw="";if((m==="POST"||m==="PUT")&&!path.includes("/oauth/")){raw=await req.text();if(path!=="/api/stripe/webhook"){try{body=raw?JSON.parse(raw):{}}catch{return err("Bad JSON")}}}
   try{
@@ -185,7 +185,7 @@ export default {
   /* ----- internal (GitHub Actions fulfillment + payment hooks) ----- */
   if(path.startsWith("/api/internal/")){
     if(!env.ADMIN_TOKEN||req.headers.get("x-admin-token")!==env.ADMIN_TOKEN)return err("Forbidden",403);
-    if(path==="/api/internal/dbcheck"&&m==="GET"){try{return J(await diag(env0.DATABASE_URL))}catch(e){return J({error:String(e.message)},500)}}
+    if(path==="/api/internal/dbcheck"&&m==="GET"){try{return J(await diag(env0.DATABASE_URL,env0.HYPERDRIVE))}catch(e){return J({error:String(e.message)},500)}}
     if(path==="/api/internal/orders"&&m==="GET"){const st=u.searchParams.get("status")||"paid";const r=await DB.prepare("SELECT id,email,data,total,status,printify_id FROM orders WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))})}
     if((mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/))&&m==="POST"){
       const o=await DB.prepare("SELECT email FROM orders WHERE id=?").bind(mm[1]).first();if(!o)return err("No such order",404);

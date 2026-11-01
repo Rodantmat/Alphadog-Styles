@@ -44,6 +44,9 @@ jobs:
           DATABASE_URL=$(python3 -c "import os,urllib.parse as u;p=u.urlsplit(os.environ['DATABASE_URL']);print(u.urlunsplit(p._replace(path='/alphadog_store')))")
           export DATABASE_URL
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f schema.sql
+          # Workers cannot verify DigitalOcean's private CA directly; route through Cloudflare Hyperdrive (custom CA, caching off).
+          HDR=$(python3 ../../scripts/hyperdrive_setup.py | tail -1); echo "$HDR" | sed 's/HYPERDRIVE_ID=\(....\).*/HYPERDRIVE_ID=\1.../'
+          case "$HDR" in HYPERDRIVE_ID=*) printf '\n[[hyperdrive]]\nbinding = "HYPERDRIVE"\nid = "%s"\n' "${HDR#HYPERDRIVE_ID=}" >> wrangler.toml ;; esac
           npx wrangler@4 deploy
           for v in DATABASE_URL ADMIN_TOKEN STRIPE_SECRET_KEY RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY; do
             val=$(printf '%s' "${!v}" | tr -d '\r\n'); if [ -n "$val" ]; then printf '%s' "$val" | npx wrangler@4 secret put $v; fi
