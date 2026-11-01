@@ -1,0 +1,17 @@
+name: store-smoke
+on:
+  workflow_dispatch:
+    inputs:
+      url: { default: "https://alphadog-store.rodolfoaamattos.workers.dev" }
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Smoke test
+        run: |
+          U="${{ inputs.url }}"
+          for p in / /art/line_classic/poodle_front.svg /img/tee_white_front.webp /data/catalog.json /worker/index.js; do echo "$p -> $(curl -s -o /dev/null -w '%{http_code} %{content_type} %{size_download}B' $U$p)"; done
+          echo health: $(curl -s $U/api/health)
+          echo auth-check: $(curl -s -w ' [%{http_code}]' $U/api/designs -H 'authorization: Bearer test')
+          echo bad-order: $(curl -s -w ' [%{http_code}]' -XPOST $U/api/orders -d '{"items":[]}')
+          echo login-no-mail: $(curl -s -w ' [%{http_code}]' -XPOST $U/api/auth/request -d '{"email":"smoke@example.com"}')
