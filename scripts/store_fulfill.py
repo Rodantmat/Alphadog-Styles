@@ -17,17 +17,25 @@ def st(m,p,b=None):
     r=urllib.request.Request(STORE+p,data=json.dumps(b).encode() if b is not None else None,method=m,headers={"x-admin-token":ADM,"content-type":"application/json","User-Agent":"a"})
     return json.load(urllib.request.urlopen(r,timeout=60))
 AR={"tee":{"front":(2767,3362),"back":(2767,3362)},"hoodie":{"front":(3531,2352),"back":(3852,3210)}}; HB=0.77; BP={"tee":12,"hoodie":77}
+RULE={"tee":"tee","hoodie":"hoodie"}; POS={}
 cat=json.load(open("store/data/catalog.json"))
+for _p in cat["products"]:
+    BP[_p["id"]]=_p["blueprint"]
+    if _p.get("area"): AR[_p["id"]]={k:tuple(v) for k,v in _p["area"].items()}
+    if _p.get("rule"): RULE[_p["id"]]=_p["rule"]
+    POS[_p["id"]]=_p.get("pos") or {"front":"front","back":"back"}
 def fit(prod,side,size,a):  # identical to store/js/placement.js
-    W,H=AR[prod][side]; x=.5; y=.5
-    if side=="back":
+    W,H=AR[prod][side]; x=.5; y=.5; rule=RULE.get(prod,"tee")
+    if rule in("chest","cap"):
+        k=.92 if rule=="cap" else .9; w=min(k,k*H*a/W); h=w*W/a/H
+    elif side=="back":
         if size=="s": w=min(.32*3185/W,.30*H*a/W); h=w*W/a/H; y=.04+h/2
-        elif prod=="hoodie": w=min(.97,HB*H*a/W); h=w*W/a/H; y=1-h/2-.005
+        elif rule=="hoodie": w=min(.97,HB*H*a/W); h=w*W/a/H; y=1-h/2-.005
         else: w=min(.97,.97*H*a/W); h=w*W/a/H
     elif size=="s":
-        w=min((.30 if prod=="tee" else .26)*3185/W,.30*H*a/W); h=w*W/a/H; x=.76; y=.17 if prod=="tee" else .05+h/2
+        w=min((.26 if rule=="hoodie" else .30)*3185/W,.30*H*a/W); h=w*W/a/H; x=.76; y=.05+h/2 if rule=="hoodie" else .17
     else:
-        w=min(.75 if prod=="tee" else .58,.95*H*a/W); h=w*W/a/H; y=min(.5,.04+h/2)
+        w=min(.58 if rule=="hoodie" else .75,.95*H*a/W); h=w*W/a/H; y=min(.5,.04+h/2)
     return x,y,w,h
 def compose(prod,side,d):
     W,H=AR[prod][side]; svg=open(f"store/art/{d['theme']}_{d['style']}/{d['breed']}_{'front' if d['part']=='head' else 'back'}.svg").read()
@@ -53,8 +61,8 @@ def fulfil(o):
     for i,it in enumerate(o["data"]["items"]):
         pa={}
         for side in ("front","back"):
-            if it.get(side): pa[side]=upload(f"{o['id']}_{i}_{side}.png",compose(it["prod"],side,it[side]))
-        nu=neck_url(it["prod"])
+            if it.get(side): pa[POS[it["prod"]][side]]=upload(f"{o['id']}_{i}_{side}.png",compose(it["prod"],side,it[side]))
+        nu=neck_url(it["prod"]) if it["prod"] in ("tee","hoodie") else None
         if nu: pa["neck"]=nu
         items.append({"print_provider_id":99,"blueprint_id":BP[it["prod"]],"variant_id":variant(it["prod"],it["color"],it["size"]),"print_areas":pa,"quantity":it["qty"]})
     body={"external_id":o["id"],"label":o["id"],"line_items":items,"shipping_method":1,"is_printify_express":False,"send_shipping_notification":True,
