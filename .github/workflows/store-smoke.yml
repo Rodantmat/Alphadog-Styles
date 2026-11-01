@@ -12,7 +12,7 @@ jobs:
     steps:
       - name: Smoke test
         run: |
-          U="${{ inputs.url }}"; F=0
+          set +e; U="${{ inputs.url }}"; F=0
           chk(){ if [ "$2" = "$3" ]; then echo "ok   $1"; else echo "FAIL $1 (got $2, want $3)"; F=1; fi; }
           for p in / /logo.png /art/line_classic/poodle_front.svg /img/tee_white_front.webp /data/catalog.json /js/app.js; do chk "GET $p" "$(curl -s -o /dev/null -w '%{http_code}' $U$p)" 200; done
           for p in /worker/index.js /SETUP.md /worker/schema.sql; do c=$(curl -s $U$p | grep -c -E 'DATABASE_URL|CREATE TABLE|STRIPE_SECRET'); chk "no leak $p" "$c" 0; done
