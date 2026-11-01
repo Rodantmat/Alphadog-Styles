@@ -1,0 +1,252 @@
+{
+ "tank": {
+  "cal": {
+   "front": [
+    440,
+    459,
+    320,
+    382
+   ],
+   "back": [
+    440,
+    355,
+    320,
+    383
+   ]
+  },
+  "colors": {
+   "Athletic Heather": {
+    "hex": "#a1a19f",
+    "slug": "athletic-heather",
+    "sides": [
+     "front",
+     "back"
+    ]
+   },
+   "White": {
+    "hex": "#eaeaea",
+    "slug": "white",
+    "sides": [
+     "front",
+     "back"
+    ]
+   }
+  }
+ },
+ "wtank": {
+  "cal": {
+   "front": [
+    430,
+    464,
+    341,
+    416
+   ],
+   "back": [
+    438,
+    456,
+    330,
+    380
+   ]
+  },
+  "colors": {
+   "Heather Grey": {
+    "hex": "#858583",
+    "slug": "heather-grey",
+    "sides": [
+     "front",
+     "back"
+    ]
+   },
+   "Solid Light Orange": {
+    "hex": "#f38f78",
+    "slug": "solid-light-orange",
+    "sides": [
+     "front",
+     "back"
+    ]
+   },
+   "Solid Mint": {
+    "hex": "#92d5a9",
+    "slug": "solid-mint",
+    "sides": [
+     "front",
+     "back"
+    ]
+   },
+   "Solid Tahiti Blue": {
+    "hex": "#2ebac4",
+    "slug": "solid-tahiti-blue",
+    "sides": [
+     "front",
+     "back"
+    ]
+   },
+   "Solid White": {
+    "hex": "#e7e7e7",
+    "slug": "solid-white",
+    "sides": [
+     "front",
+     "back"
+    ]
+   }
+  }
+ },
+ "polo": {
+  "cal": {
+   "front": [
+    662,
+    318,
+    105,
+    106
+   ]
+  },
+  "colors": {
+   "Athletic Heather": {
+    "hex": "#bfbdc2",
+    "slug": "athletic-heather",
+    "sides": [
+     "front"
+    ]
+   },
+   "White": {
+    "hex": "#ececee",
+    "slug": "white",
+    "sides": [
+     "front"
+    ]
+   }
+  }
+ },
+ "wpolo": {
+  "cal": {
+   "front": [
+    679,
+    317,
+    141,
+    123
+   ]
+  },
+  "colors": {
+   "Charity Pink": {
+    "hex": "#f9a4bb",
+    "slug": "charity-pink",
+    "sides": [
+     "front"
+    ]
+   },
+   "Platinum": {
+    "hex": "#c1b2b5",
+    "slug": "platinum",
+    "sides": [
+     "front"
+    ]
+   },
+   "White": {
+    "hex": "#ffffff",
+    "slug": "white",
+    "sides": [
+     "front"
+    ]
+   }
+  }
+ },
+ "cap_dad": {
+  "cal": {
+   "front": [
+    314,
+    447,
+    572,
+    235
+   ]
+  },
+  "colors": {
+   "Khaki": {
+    "hex": "#bba478",
+    "slug": "khaki",
+    "sides": [
+     "front"
+    ]
+   },
+   "Light Blue": {
+    "hex": "#c6d4e1",
+    "slug": "light-blue",
+    "sides": [
+     "front"
+    ]
+   },
+   "Pink": {
+    "hex": "#f9b7b8",
+    "slug": "pink",
+    "sides": [
+     "front"
+    ]
+   },
+   "Stone": {
+    "hex": "#d5c7bc",
+    "slug": "stone",
+    "sides": [
+     "front"
+    ]
+   },
+   "White": {
+    "hex": "#f9f9f8",
+    "slug": "white",
+    "sides": [
+     "front"
+    ]
+   }
+  }
+ },
+ "cap_foam": {
+  "cal": {
+   "front": [
+    289,
+    354,
+    624,
+    292
+   ]
+  },
+  "colors": {
+   "Blue/White": {
+    "hex": "#f2f2f2",
+    "slug": "blue-white",
+    "sides": [
+     "front"
+    ]
+   },
+   "Light Pink/White": {
+    "hex": "#f2f2f2",
+    "slug": "light-pink-white",
+    "sides": [
+     "front"
+    ]
+   },
+   "White": {
+    "hex": "#f2f2f2",
+    "slug": "white",
+    "sides": [
+     "front"
+    ]
+   }
+  }
+ },
+ "cap_mesh": {
+  "cal": {
+   "front": [
+    264,
+    419,
+    680,
+    308
+   ]
+  },
+  "colors": {
+   "White": {
+    "hex": "#d3d3d3",
+    "slug": "white",
+    "sides": [
+     "front"
+    ]
+   }
+  }
+ }
+}
