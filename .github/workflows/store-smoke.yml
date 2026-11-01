@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       url:
-        default: "https://alphadog-store.rodolfoaamattos.workers.dev"
+        default: "https://alphadogstyles.com"
 jobs:
   smoke:
     runs-on: ubuntu-latest

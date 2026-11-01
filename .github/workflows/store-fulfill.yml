@@ -15,6 +15,6 @@ jobs:
         env:
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
           PRINTIFY_API_SHOP_ID: "29559517"
-          STORE_URL: "https://alphadog-store.rodolfoaamattos.workers.dev"
+          STORE_URL: "https://alphadogstyles.com"
           STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
         run: python3 scripts/store_fulfill.py

@@ -2,11 +2,16 @@ name = "alphadog-store"
 main = "index.js"
 compatibility_date = "2025-01-01"
 compatibility_flags = ["nodejs_compat"]
+routes = [
+  { pattern = "alphadogstyles.com", custom_domain = true },
+  { pattern = "www.alphadogstyles.com", custom_domain = true }
+]
 [assets]
 directory = "../"
 binding = "ASSETS"
 not_found_handling = "single-page-application"
 run_worker_first = ["/api/*"]
 [vars]
-MAIL_FROM = "AlphaDog Styles <orders@example.com>"
-SITE_URL = ""
+MAIL_FROM = "AlphaDog Styles <orders@alphadogstyles.com>"
+SITE_URL = "https://alphadogstyles.com"
+OWNER_EMAIL = "rodolfoaamattos@gmail.com"

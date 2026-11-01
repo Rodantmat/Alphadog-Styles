@@ -2,6 +2,7 @@
 import {priceCents} from "../js/placement.js";
 import {makeDB,diag} from "./db.js";
 import cat from "../data/catalog.json";
+const esc=x=>String(x).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const J=(o,s=200,h={})=>new Response(JSON.stringify(o),{status:s,headers:{"content-type":"application/json","cache-control":"no-store",...h}});
 const err=(m,s=400)=>J({error:m},s);
 const now=()=>Date.now();
@@ -9,13 +10,21 @@ const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join(
 const sha=async s=>hex(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)));
 const rnd=n=>hex(crypto.getRandomValues(new Uint8Array(n)));
 const okEmail=e=>typeof e==="string"&&e.length<255&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
-async function mail(env,to,subject,html){
+async function mail(env,to,subject,html,replyTo){
   if(env.RESEND_API_KEY){
-    const r=await fetch("https://api.resend.com/emails",{method:"POST",headers:{authorization:"Bearer "+env.RESEND_API_KEY,"content-type":"application/json"},body:JSON.stringify({from:env.MAIL_FROM,to:[to],subject,html})});
+    const body={from:env.MAIL_FROM,to:[to],subject,html};const rt=replyTo||env.OWNER_EMAIL;if(rt)body.reply_to=rt;
+    const r=await fetch("https://api.resend.com/emails",{method:"POST",headers:{authorization:"Bearer "+env.RESEND_API_KEY,"content-type":"application/json"},body:JSON.stringify(body)});
     return r.ok;
   }
   return false;
 }
+/* ---------- customer emails in the customer's language ---------- */
+const L=x=>["es","pt"].includes(x)?x:"en";
+const EM={
+ en:{code:"Your AlphaDog Styles login code",codeH:"Your code:",codeP:"It expires in 10 minutes. If you did not ask for it, ignore this email.",paidS:id=>`Order ${id} confirmed`,paidP:(id,tot)=>`Thank you! Payment received for order <b>${id}</b> ($${tot}). We are sending it to print now and will email tracking when it ships.`,shipS:id=>`Order ${id} has shipped`,shipP:"Your AlphaDog order is on its way.",track:"Track your package",resS:id=>`Order ${id} reserved`,resP:(id,tot)=>`Thanks for your order <b>${id}</b>. We will email you a secure payment link as soon as checkout opens.</p><p>Total: $${tot}`},
+ es:{code:"Tu código de acceso de AlphaDog Styles",codeH:"Tu código:",codeP:"Vence en 10 minutos. Si no lo pediste, ignora este correo.",paidS:id=>`Pedido ${id} confirmado`,paidP:(id,tot)=>`¡Gracias! Recibimos el pago del pedido <b>${id}</b> ($${tot}). Lo estamos enviando a impresión y te enviaremos el seguimiento cuando salga.`,shipS:id=>`Tu pedido ${id} ya fue enviado`,shipP:"Tu pedido de AlphaDog va en camino.",track:"Seguir tu paquete",resS:id=>`Pedido ${id} reservado`,resP:(id,tot)=>`Gracias por tu pedido <b>${id}</b>. Te enviaremos un enlace de pago seguro en cuanto se abra el pago.</p><p>Total: $${tot}`},
+ pt:{code:"Seu código de acesso da AlphaDog Styles",codeH:"Seu código:",codeP:"Expira em 10 minutos. Se você não pediu, ignore este e-mail.",paidS:id=>`Pedido ${id} confirmado`,paidP:(id,tot)=>`Obrigado! Recebemos o pagamento do pedido <b>${id}</b> ($${tot}). Estamos enviando para impressão e enviaremos o rastreamento quando sair.`,shipS:id=>`Seu pedido ${id} foi enviado`,shipP:"Seu pedido da AlphaDog está a caminho.",track:"Rastrear seu pacote",resS:id=>`Pedido ${id} reservado`,resP:(id,tot)=>`Obrigado pelo seu pedido <b>${id}</b>. Enviaremos um link de pagamento seguro por e-mail assim que o pagamento abrir.</p><p>Total: $${tot}`}
+};
 
 
 /* ---------- Stripe (Checkout Sessions via REST; no SDK) ---------- */
@@ -33,8 +42,10 @@ async function stripeVerify(raw,header,secret){
 }
 async function markPaid(DB,env,id,live){
   const r=await DB.prepare("UPDATE orders SET status=?,updated=? WHERE id=? AND status IN ('reserved','awaiting_payment')").bind(live?'paid':'paid_test',now(),id).run();
-  const o=await DB.prepare("SELECT email,total FROM orders WHERE id=?").bind(id).first();
-  if(o&&r.meta?.changes!==0)await mail(env,o.email,`Order ${id} confirmed`,`<p>Thank you! Payment received for order <b>${id}</b> ($${(o.total/100).toFixed(2)}). We are sending it to print now and will email tracking when it ships.</p>`);
+  const o=await DB.prepare("SELECT email,total,data FROM orders WHERE id=?").bind(id).first();
+  if(o&&r.meta?.changes!==0){const E=EM[L((JSON.parse(o.data)||{}).lang)],tot=(o.total/100).toFixed(2);
+    await mail(env,o.email,E.paidS(id),`<p>${E.paidP(id,tot)}</p>`);
+    if(env.OWNER_EMAIL)await mail(env,env.OWNER_EMAIL,`${live?"New order":"TEST order"} ${id} ($${tot})`,`<p>${live?"New paid order":"Stripe TEST order"} <b>${id}</b> from ${o.email}, total $${tot}. It is being sent to print automatically.</p>`,o.email);}
 }
 
 /* ---------- social login (Google / Facebook / Apple). Enabled when the matching secrets exist. ---------- */
@@ -103,7 +114,7 @@ export default {
     if(prev&&now()-prev.sent<45000)return err("Please wait a moment before requesting another code",429);
     const code=String(100000+(crypto.getRandomValues(new Uint32Array(1))[0]%900000));
     await DB.prepare("INSERT INTO codes(email,hash,exp,tries,sent) VALUES(?,?,?,?,?) ON CONFLICT(email) DO UPDATE SET hash=EXCLUDED.hash,exp=EXCLUDED.exp,tries=EXCLUDED.tries,sent=EXCLUDED.sent").bind(email,await sha(email+code),now()+10*60000,0,now()).run();
-    const sent=await mail(env,email,"Your AlphaDog Styles login code",`<div style="font-family:system-ui;max-width:420px;margin:auto"><h2>Your code: <b style="letter-spacing:4px">${code}</b></h2><p>It expires in 10 minutes. If you did not ask for it, ignore this email.</p></div>`);
+    const E=EM[L(body.lang)];const sent=await mail(env,email,E.code,`<div style="font-family:system-ui;max-width:420px;margin:auto"><h2>${E.codeH} <b style="letter-spacing:4px">${code}</b></h2><p>${E.codeP}</p></div>`);
     if(!sent&&env.DEV_MODE==="1")return J({ok:true,dev_code:code});
     if(!sent)return err("Email service is not configured yet",503);
     return J({ok:true});
@@ -136,7 +147,7 @@ export default {
     catch(e){return Response.redirect(u.origin+"/#/login?err="+encodeURIComponent(e.message),302)}
   }
   if(path==="/api/subscribe"&&m==="POST"){const e=String(body.email||"").toLowerCase();if(!okEmail(e))return err("Enter a valid email");await DB.prepare("INSERT INTO subs(email,created) VALUES(?,?) ON CONFLICT DO NOTHING").bind(e,now()).run();return J({ok:true})}
-  if(path==="/api/contact"&&m==="POST"){if(!okEmail(body.email)||!body.msg)return err("Email and message required");await DB.prepare("INSERT INTO msgs(email,body,created) VALUES(?,?,?)").bind(body.email,String(body.msg).slice(0,4000),now()).run();return J({ok:true})}
+  if(path==="/api/contact"&&m==="POST"){if(!okEmail(body.email)||!body.msg)return err("Email and message required");await DB.prepare("INSERT INTO msgs(email,body,created) VALUES(?,?,?)").bind(body.email,String(body.msg).slice(0,4000),now()).run();if(env.OWNER_EMAIL)await mail(env,env.OWNER_EMAIL,"AlphaDog Styles: new message from "+body.email,`<p><b>${esc(body.email)}</b> wrote:</p><p style="white-space:pre-wrap">${esc(String(body.msg).slice(0,4000))}</p>`,body.email);return J({ok:true})}
   if(path==="/api/orders"&&m==="POST"){
     const items=(Array.isArray(body.items)?body.items:[]).map(validItem);
     if(!items.length||items.length>30||items.includes(null))return err("Your cart has an invalid item");
@@ -145,19 +156,19 @@ export default {
     const sub=items.reduce((a,i)=>a+priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size)*i.qty,0);
     const ship=sub>=cat.shipping.free_over?0:cat.shipping.flat, total=sub+ship;
     const id="AD-"+rnd(4).toUpperCase(), email=String(body.email).toLowerCase();
-    const data={items,ship:{name:s.name,a1:s.a1,a2:s.a2||"",city:s.city,st:s.st,zip:s.zip,phone:s.phone||""},subtotal:sub,shipping:ship};
+    const data={lang:L(body.lang),items,ship:{name:s.name,a1:s.a1,a2:s.a2||"",city:s.city,st:s.st,zip:s.zip,phone:s.phone||""},subtotal:sub,shipping:ship};
     await DB.prepare("INSERT INTO orders(id,email,data,total,status,created,updated) VALUES(?,?,?,?,?,?,?)").bind(id,email,JSON.stringify(data),total,"reserved",now(),now()).run();
     if(env.STRIPE_SECRET_KEY){
       try{
         const li={};items.forEach((i,n)=>{li[n]={quantity:i.qty,price_data:{currency:"usd",unit_amount:priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size),product_data:{name:(i.prod==="tee"?"AlphaDog Premium Tee":"AlphaDog Heavy Hoodie")+" - "+i.color+" / "+i.size}}}});
         if(ship)li[items.length]={quantity:1,price_data:{currency:"usd",unit_amount:ship,product_data:{name:"Shipping (US)"}}};
-        const ss=await stripe(env,"POST","/checkout/sessions",{mode:"payment",customer_email:email,client_reference_id:id,metadata:{order_id:id},line_items:li,
-          success_url:u.origin+"/#/done/"+id+"?paid=1",cancel_url:u.origin+"/#/cart",payment_method_types:{0:"card"}});
+        const ss=await stripe(env,"POST","/checkout/sessions",{mode:"payment",customer_email:email,client_reference_id:id,locale:{es:"es",pt:"pt-BR",en:"en"}[data.lang],metadata:{order_id:id},line_items:li,
+          success_url:u.origin+"/#/done/"+id+"?paid=1",cancel_url:u.origin+"/#/cart"});
         await DB.prepare("UPDATE orders SET status='awaiting_payment',printify_id=NULL,tracking=NULL,data=? WHERE id=?").bind(JSON.stringify({...data,session:ss.id}),id).run();
         return J({id,total,url:ss.url});
       }catch(e){return err("Payment could not start: "+e.message,502)}
     }
-    await mail(env,email,`Order ${id} reserved`,`<p>Thanks for your order <b>${id}</b>. We will email you a secure payment link as soon as checkout opens.</p><p>Total: $${(total/100).toFixed(2)}</p>`);
+    {const E=EM[data.lang];await mail(env,email,E.resS(id),`<p>${E.resP(id,(total/100).toFixed(2))}</p>`)}
     return J({id,total});
   }
   if(path==="/api/orders/confirm"&&m==="POST"&&env.STRIPE_SECRET_KEY){
@@ -191,7 +202,7 @@ export default {
     if((mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/))&&m==="POST"){
       const o=await DB.prepare("SELECT email FROM orders WHERE id=?").bind(mm[1]).first();if(!o)return err("No such order",404);
       await DB.prepare("UPDATE orders SET status=COALESCE(?::text,status),printify_id=COALESCE(?::text,printify_id),tracking=COALESCE(?::text,tracking),updated=? WHERE id=?").bind(body.status||null,body.printify_id||null,body.tracking||null,now(),mm[1]).run();
-      if(body.status==="shipped")await mail(env,o.email,`Order ${mm[1]} has shipped`,`<p>Your AlphaDog order is on its way.</p>${body.tracking?`<p><a href="${body.tracking}">Track your package</a></p>`:""}`);
+      if(body.status==="shipped"){const od=await DB.prepare("SELECT data FROM orders WHERE id=?").bind(mm[1]).first();const E=EM[L(od&&JSON.parse(od.data).lang)];await mail(env,o.email,E.shipS(mm[1]),`<p>${E.shipP}</p>${body.tracking?`<p><a href="${body.tracking}">${E.track}</a></p>`:""}`)}
       return J({ok:true});
     }
   }
