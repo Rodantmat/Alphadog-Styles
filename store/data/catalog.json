@@ -656,72 +656,6 @@
    }
   },
   {
-   "id": "wpolo",
-   "name": "Women's Polo",
-   "sub": "CORE365 Origin - performance piqu\u00e9, chest print",
-   "blueprint": 6488,
-   "provider": 99,
-   "price": {
-    "one": 3999
-   },
-   "sur": {
-    "2XL": 200,
-    "3XL": 400
-   },
-   "colors": [
-    [
-     "White",
-     "#ffffff",
-     1,
-     "white",
-     "White"
-    ],
-    [
-     "Platinum",
-     "#c1b2b5",
-     1,
-     "platinum",
-     "Platinum"
-    ],
-    [
-     "Charity Pink",
-     "#f9a4bb",
-     1,
-     "charity-pink",
-     "Charity Pink"
-    ]
-   ],
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "2XL",
-    "3XL"
-   ],
-   "area": {
-    "front": [
-     1200,
-     1050
-    ]
-   },
-   "pos": {
-    "front": "left_chest_dtf"
-   },
-   "rule": "chest",
-   "group": "polos",
-   "sides": [
-    "front"
-   ],
-   "opts": {
-    "front": [
-     "head_s",
-     "body_s"
-    ]
-   }
-  },
-  {
    "id": "cap_dad",
    "name": "Dad Hat",
    "sub": "Yupoong 6245CM - soft, low profile",
@@ -975,14 +909,6 @@
     318,
     105,
     106
-   ]
-  },
-  "wpolo": {
-   "front": [
-    679,
-    317,
-    141,
-    123
    ]
   },
   "cap_dad": {

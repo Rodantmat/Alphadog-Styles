@@ -19,7 +19,7 @@ const colorLabel=(pid,c)=>{const x=(PROD(pid)?.colors||[]).find(k=>k[0]===c);ret
 const sidesOf=pid=>PROD(pid).sides||["front","back"];
 const optsOf=(pid,k)=>{const p=PROD(pid);const ids=p.opts&&p.opts[k];return cat[k+"_opts"].filter(o=>ids?ids.includes(o.id):true)};
 /* mixed merchandise for the design grid: every card shows the art on a different garment / color */
-const MIX=["hoodie","tee","tank","cap_dad","wtank","polo","cap_foam","tee","hoodie","wpolo","cap_mesh","tank","wtank","cap_dad","tee","hoodie"];
+const MIX=["hoodie","tee","tank","cap_dad","wtank","polo","cap_foam","tee","hoodie","polo","cap_mesh","tank","wtank","cap_dad","tee","hoodie"];
 function mixFor(i){const pid=MIX[i%MIX.length],p=PROD(pid);if(!p)return null;const ok=p.colors.filter(c=>c[2]);const col=ok[(Math.floor(i/MIX.length)*3+i)%ok.length];
   const part=(i>>1)%2?"body":"head",size=(p.rule==="chest"||p.rule==="cap")?"s":"l";return {pid,col,part,size}}
 const designLabel=d=>{if(!d)return "";const o=cat.front_opts.find(x=>x.part===d.part&&x.size===d.size);return `${breedName(d.breed)} · ${themeName(d.theme)} ${styleName(d.style)} · ${tn(o?o.name:"")}`};
