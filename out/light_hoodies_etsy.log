@@ -1,2 +1,25 @@
-hoodies 25
-HOODIES DONE 30
+HTTP 400 /v1/shops/29544854/products/6ae56abab3e56e7b5f092b0d.json {"status":"error","code":8150,"message":"Validation failed.","errors":{"reason":"print_areas.0.placeholders.2.images: The print_areas.0.placeholders.2.images field is required. | print_areas.0.placeholders.3.images: The print_areas.0.placeholders.3.images field is required. | print_areas.1.placeholders.2.images: The print_areas.1.placeholders.2.images field is required. | print_areas.1.placeholders.3.images: The print_areas.1.placeholders.3.images field is required.","code":8150}}
+Traceback (most recent call last):
+  File "/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/printify_light.py", line 98, in <module>
+    call("PUT",f"/v1/shops/{SHOP}/products/{pid}.json",{"variants":vs,"print_areas":pas})
+  File "/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/printify_light.py", line 8, in call
+    try: return json.load(urllib.request.urlopen(r,timeout=120))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
