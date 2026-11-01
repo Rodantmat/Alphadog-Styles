@@ -14,17 +14,26 @@ jobs:
       ACTION: ${{ inputs.action }}
       PAYLOAD: ${{ inputs.payload }}
     steps:
+      - uses: actions/checkout@v4
       - name: Run
         run: |
           python3 - <<'PY'
           import os,json,urllib.request,urllib.parse
           U=os.environ["U"]; H={"x-admin-token":os.environ["ADM"],"content-type":"application/json","User-Agent":"a"}; A=os.environ["ACTION"]; P=json.loads(os.environ.get("PAYLOAD") or "{}")
           def call(m,p,b=None): return json.load(urllib.request.urlopen(urllib.request.Request(U+p,data=json.dumps(b).encode() if b is not None else None,method=m,headers=H),timeout=60))
-          if A=="list": out=call("GET","/api/internal/support?status="+P.get("status","new"))
+          import sys; sys.path.insert(0,"scripts"); os.environ["STORE_ADMIN_TOKEN"]=os.environ["ADM"]
+          import mail_bridge
+          if A=="list":
+              try: print("synced from mailboxes:",mail_bridge.sync())
+              except Exception as e: print("mailbox sync skipped:",e)
+              out=call("GET","/api/internal/support?status="+P.get("status","new"))
           elif A=="orders": out=call("GET","/api/internal/orders?email="+urllib.parse.quote(P["email"])) if "@" in P.get("email","") else call("GET","/api/internal/orders?status="+P.get("status","paid"))
           elif A=="custom": out=call("GET","/api/internal/custom"+("?status="+P["status"] if P.get("status") else ""))
           elif A=="reply":
-              out=call("POST","/api/internal/send",{"to":P["to"],"subject":P["subject"],"html":P["html"],"mailbox":P.get("mailbox","support")})
+              sent=False
+              try: sent=mail_bridge.send(P.get("mailbox","support"),P["to"],P["subject"],P["html"],P.get("in_reply_to"))
+              except Exception as e: print("own-server send failed, using Resend:",e)
+              out={"ok":True,"via":"mailbox"} if sent else call("POST","/api/internal/send",{"to":P["to"],"subject":P["subject"],"html":P["html"],"mailbox":P.get("mailbox","support")})
               if P.get("id"): call("POST",f"/api/internal/support/{P['id']}",{"status":"handled","reply":P["html"][:4000]})
           elif A=="done": out=call("POST",f"/api/internal/support/{P['id']}",{"status":P.get("status","handled")})
           else: out={"error":"unknown action"}
