@@ -1,0 +1,27 @@
+name: printify-ebaystatus
+on:
+  workflow_dispatch:
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          T: ${{ secrets.PRINTIFY_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,collections
+          T=os.environ["T"]
+          def g(p): return json.load(urllib.request.urlopen(urllib.request.Request("https://api.printify.com"+p,headers={"Authorization":"Bearer "+T,"User-Agent":"a"}),timeout=60))
+          for shop,name in [(29545924,"ebay"),(29546485,"tiktok"),(29544854,"etsy")]:
+              c=collections.Counter(); ex=[]; page=1
+              while True:
+                  r=g(f"/v1/shops/{shop}/products.json?limit=50&page={page}")
+                  for p in r["data"]:
+                      e=p.get("external") or {}
+                      st="live" if e.get("id") else ("locked/publishing" if p.get("is_locked") else "draft/unsynced")
+                      c[st]+=1
+                      if e.get("handle") and len(ex)<3: ex.append(e.get("handle"))
+                  if page>=r.get("last_page",1) or page>=60: break
+                  page+=1
+              print("SHOP",name,dict(c),"examples",ex)
+          PY
