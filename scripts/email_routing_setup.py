@@ -12,13 +12,13 @@ def cf(m,p,b=None):
 z=cf("GET","/zones?name="+DOM); zid=(z.get("result") or [{}])[0].get("id")
 if not zid: print("EMAIL_ROUTING=zone lookup failed"); raise SystemExit
 s=cf("GET",f"/zones/{zid}/email/routing")
-if not s.get("success"): print("EMAIL_ROUTING=no permission (add Zone > Email Routing Rules > Edit and Account > Email Routing Addresses > Edit to the API token)",s.get("errors")); raise SystemExit
-if not s["result"].get("enabled"):
+print("settings:",s.get("success"),s.get("code"),(s.get("result") or {}).get("enabled"),(s.get("result") or {}).get("status"))
+if s.get("success") and not s["result"].get("enabled"):
     e=cf("POST",f"/zones/{zid}/email/routing/enable",{}); print("enable:",e.get("success"),e.get("errors"))
-a=cf("GET",f"/accounts/{ACC}/email/routing/addresses")
+a=cf("GET",f"/accounts/{ACC}/email/routing/addresses"); print("addresses:",a.get("success"),a.get("code"),a.get("errors"))
 if a.get("success") and not any(x["email"].lower()==OWNER.lower() for x in a["result"]):
     c=cf("POST",f"/accounts/{ACC}/email/routing/addresses",{"email":OWNER}); print("destination added (owner must click the verification email):",c.get("success"),c.get("errors"))
-rules=cf("GET",f"/zones/{zid}/email/routing/rules").get("result") or []
+rr=cf("GET",f"/zones/{zid}/email/routing/rules"); print("rules list:",rr.get("success"),rr.get("code"),rr.get("errors")); rules=rr.get("result") or []
 for box in ("support","customization"):
     addr=f"{box}@{DOM}"
     if any(any(mt.get("value")==addr for mt in r.get("matchers",[])) for r in rules): continue

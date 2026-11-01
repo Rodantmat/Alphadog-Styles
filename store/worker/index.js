@@ -189,7 +189,7 @@ export default {
     const r=await DB.prepare("SELECT id,status,quote,note,data,created FROM custom_requests WHERE id=? AND token=?").bind(cm[1],u.searchParams.get("k")||"").first();
     if(!r)return err("Not found",404);
     const art=(await DB.prepare("SELECT part FROM custom_art WHERE req_id=?").bind(cm[1]).all()).results.map(x=>x.part);
-    const d=JSON.parse(r.data);return J({id:r.id,status:r.status,quote:r.quote,note:r.note,products:d.products,style:d.style,dog:{name:d.dog.name},art,created:r.created});
+    const d=JSON.parse(r.data);const paidBefore=await DB.prepare("SELECT 1 FROM orders WHERE data LIKE ? AND status IN ('paid','in_production','shipped') LIMIT 1").bind('%"custom":"'+r.id+'"%').first();return J({id:r.id,status:r.status,quote:r.quote,fee_due:paidBefore?0:(r.quote||0),note:r.note,products:d.products,style:d.style,dog:{name:d.dog.name},art,created:r.created});
   }
   if((cm=path.match(/^\/api\/custom\/(CU-[\w]+)\/art\/(head|body)$/))&&m==="GET"){
     const r=await DB.prepare("SELECT 1 FROM custom_requests WHERE id=? AND token=?").bind(cm[1],u.searchParams.get("k")||"").first();if(!r)return err("Not found",404);
@@ -207,7 +207,8 @@ export default {
     const s=body.ship||{};for(const k of["name","a1","city","st","zip"])if(!s[k]||String(s[k]).length>120)return err("Please complete the shipping address");
     if(!/^\d{5}(-\d{4})?$/.test(s.zip))return err("Enter a valid US ZIP code"); if(!okEmail(body.email))return err("Enter a valid email");
     const sub=items.reduce((a,i)=>a+priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size)*i.qty,0);
-    const fee=cust?(cust.quote||0):0;
+    let fee=cust?(cust.quote||0):0;
+    if(cust&&fee){const prev=await DB.prepare("SELECT 1 FROM orders WHERE data LIKE ? AND status IN ('paid','in_production','shipped') LIMIT 1").bind('%"custom":"'+cust.id+'"%').first();if(prev)fee=0}
     const ship=sub>=cat.shipping.free_over?0:cat.shipping.flat, total=sub+ship+fee;
     const id="AD-"+rnd(4).toUpperCase(), email=String(body.email).toLowerCase();
     const data={lang:L(body.lang),items,ship:{name:s.name,a1:s.a1,a2:s.a2||"",city:s.city,st:s.st,zip:s.zip,phone:s.phone||""},subtotal:sub,shipping:ship,design_fee:fee,custom:cust?cust.id:null};

@@ -211,4 +211,6 @@ add("Custom design (one-time)","Diseño personalizado (pago único)","Design per
 add("Support","Soporte","Suporte");
 add("Email us any time at","Escríbenos cuando quieras a","Escreva para nós quando quiser em");
 add("Questions about an order, a missing breed or anything else? Send us a message and we will reply by email, usually within 1 to 2 business days. Please include your order number if you have one.","¿Dudas sobre un pedido, una raza que falta o cualquier otra cosa? Envíanos un mensaje y te responderemos por correo, normalmente en 1 a 2 días hábiles. Incluye tu número de pedido si lo tienes.","Dúvidas sobre um pedido, uma raça que falta ou qualquer outra coisa? Envie uma mensagem e responderemos por e-mail, normalmente em 1 a 2 dias úteis. Inclua o número do pedido, se tiver.");
+add("One-time design fee: {0}","Tarifa única de diseño: {0}","Taxa única de design: {0}");
+add("Pay it once, then put your dog on any product at regular prices, as often as you like.","La pagas una vez y luego pones a tu perro en cualquier producto a precio normal, cuantas veces quieras.","Você paga uma vez e depois coloca seu cachorro em qualquer produto pelo preço normal, quantas vezes quiser.");
 export const STATUS=s=>t(s);

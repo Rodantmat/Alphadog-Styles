@@ -172,7 +172,7 @@ async function custom(q,[id]){
   app.dataset.title="Custom design";const photos=[];
   const prodBoxes=cat.products.map(p=>`<label class="pick"><input type="checkbox" name="prod" value="${p.id}"><span>${prodName(p.id)}</span></label>`).join("");
   app.innerHTML=`<div class="wrap narrow2"><span class="eyebrow">${t("Custom design")}</span><h1 style="font-size:clamp(2rem,4vw,3rem)">${t("Your dog, drawn just for you")}</h1>
-  <p style="color:var(--mut)">${t("Tell us about your dog and send photos. We reply by email with a preview on your products and a quote. You only pay if you love it.")}</p>
+  <p style="color:var(--mut)">${t("Tell us about your dog and send photos. We reply by email with a preview on your products and a quote. You only pay if you love it.")}</p><div class="notice"><b>${t("One-time design fee: {0}",money(cat.custom_fee||2499))}</b> ${t("Pay it once, then put your dog on any product at regular prices, as often as you like.")}</div>
   <div class="panel tips"><h3>${t("Photo checklist (at least 5)")}</h3><ol><li>${t("Full body, standing, seen from the side")}</li><li>${t("Sitting, facing the camera")}</li><li>${t("A sharp close-up of the face, straight on")}</li><li>${t("The face from the side or at an angle")}</li><li>${t("Any favorite photo that shows their personality")}</li></ol><p>${t("Use bright, natural light, no filters, and let your dog fill the frame with the eyes clearly visible.")}</p></div>
   <form class="form" id="cuf">
    <div class="panel form"><h3>${t("You")}</h3><div class="row"><label>${t("Your name")}<input name="name" required autocomplete="name"></label><label>${t("Email")}<input name="email" type="email" required autocomplete="email" value="${esc(user?.email||"")}"></label></div></div>
@@ -198,7 +198,7 @@ async function custom(q,[id]){
 async function customStatus(q,id){
   app.dataset.title="Custom design";let r;
   try{r=await api(`/api/custom/${id}?k=${encodeURIComponent(q.k||"")}`)}catch(x){app.innerHTML=`<div class="wrap narrow"><h1>${t("Lost dog?")}</h1><p>${t("We could not find that request. Check the link in your email.")}</p></div>`;return}
-  ls.set("ad_cfee",{...ls.get("ad_cfee",{}),[id]:r.quote||0});
+  ls.set("ad_cfee",{...ls.get("ad_cfee",{}),[id]:r.fee_due??r.quote??0});
   const ready=["quoted","approved","paid"].includes(r.status)&&r.art.length;
   const steps=[["new",t("Request received")],["in_review",t("Our artist is drawing")],["quoted",t("Preview ready")],["paid",t("Ordered")]];const si=Math.max(0,steps.findIndex(s=>s[0]===(r.status==="approved"?"quoted":r.status)));
   app.innerHTML=`<div class="wrap narrow2"><span class="eyebrow">${t("Custom design")} · ${esc(id)}</span><h1 style="font-size:clamp(2rem,4vw,3rem)">${q.new?t("Thank you! Request sent."):esc(r.dog.name||t("Your custom design"))}</h1>
@@ -227,7 +227,7 @@ async function admin(q,[sec]){
       $("#adet").innerHTML=`<div class="panel"><h3>${esc(x.id)} · ${esc(x.name||"")} &lt;${esc(x.email)}&gt; · ${esc(x.lang)}</h3><p><b>Dog:</b> ${esc(JSON.stringify(d.dog))}</p><p><b>Style:</b> ${esc(d.style.theme||"any")} / ${esc(d.style.style||"any")} · <b>Products:</b> ${esc(d.products.join(", "))} · <b>Qty:</b> ${esc(d.qty||"")}</p><p><b>Notes:</b> ${esc(d.notes||"")}</p>
        <div class="thumbs" id="aph"></div>
        <form class="form" id="aart"><div class="row"><label>Head art (SVG or PNG)<input type="file" name="head" accept=".svg,image/svg+xml,image/png"></label><label>Full body art (SVG or PNG)<input type="file" name="body" accept=".svg,image/svg+xml,image/png"></label></div>
-       <div class="row"><label>Design fee (USD)<input name="quote" inputmode="decimal" value="${x.quote!=null?(x.quote/100).toFixed(2):"19.00"}"></label><label>Status<select name="status">${["new","in_review","quoted","approved","paid","declined"].map(s=>`<option ${s===x.status?"selected":""}>${s}</option>`).join("")}</select></label></div>
+       <div class="row"><label>Design fee (USD)<input name="quote" inputmode="decimal" value="${x.quote!=null?(x.quote/100).toFixed(2):((cat.custom_fee||2499)/100).toFixed(2)}"></label><label>Status<select name="status">${["new","in_review","quoted","approved","paid","declined"].map(s=>`<option ${s===x.status?"selected":""}>${s}</option>`).join("")}</select></label></div>
        <label>Note to customer<textarea name="note" rows="2">${esc(x.note||"")}</textarea></label><div style="display:flex;gap:10px;flex-wrap:wrap"><button class="btn" name="save">Save</button><button class="btn ghost" name="send" type="button" id="asend">Save + send preview to customer</button><a class="btn ghost" target="_blank" href="#/custom/${x.id}?k=${x.token}">Customer view</a></div></form></div>`;
       for(let i=0;i<x.photos;i++){const r=await fetch(`/api/internal/custom/${x.id}/photo/${i}`,{headers:{"x-admin-token":tok}});if(r.ok){const u=URL.createObjectURL(await r.blob());$("#aph").insertAdjacentHTML("beforeend",`<a class="thumb" href="${u}" target="_blank"><img src="${u}" alt="photo ${i+1}"></a>`)}}
       const save=async notify=>{const f=$("#aart"),fd=new FormData(f),art={};
