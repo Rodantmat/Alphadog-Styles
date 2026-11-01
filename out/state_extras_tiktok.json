@@ -33,5 +33,5915 @@
   "id": "6ae79c94eff2af9b7c0be225",
   "prod": "cap_mesh",
   "published": false
+ },
+ "french_bulldog|line_cool|tank": {
+  "id": "6ae79e907861ac1c1c041efd",
+  "prod": "tank",
+  "published": false
+ },
+ "french_bulldog|line_cool|wtank": {
+  "id": "6ae79e91e8a14b46b70e9c1c",
+  "prod": "wtank",
+  "published": false
+ },
+ "french_bulldog|line_cool|polo": {
+  "id": "6ae79e94a895c5bd4e00ad11",
+  "prod": "polo",
+  "published": false
+ },
+ "french_bulldog|line_cool|cap_dad": {
+  "id": "6ae79e967861ac1c1c041f03",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "french_bulldog|line_cool|cap_foam": {
+  "id": "6ae79e97a895c5bd4e00ad14",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "french_bulldog|line_cool|cap_mesh": {
+  "id": "6ae79e99e8a14b46b70e9c20",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "french_bulldog|line_heart|tank": {
+  "id": "6ae79e9bf5f22e3bbd0855bc",
+  "prod": "tank",
+  "published": false
+ },
+ "french_bulldog|line_heart|wtank": {
+  "id": "6ae79e9c7861ac1c1c041f05",
+  "prod": "wtank",
+  "published": false
+ },
+ "french_bulldog|line_heart|polo": {
+  "id": "6ae79e9e7861ac1c1c041f07",
+  "prod": "polo",
+  "published": false
+ },
+ "french_bulldog|line_heart|cap_dad": {
+  "id": "6ae79ea0a895c5bd4e00ad1a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "french_bulldog|line_heart|cap_foam": {
+  "id": "6ae79ea2e9fcc76a2908f4c8",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "french_bulldog|line_heart|cap_mesh": {
+  "id": "6ae79ea38e070d8cc20b60bc",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "french_bulldog|geo_classic|tank": {
+  "id": "6ae79ea4f9c00c9ec009f9b6",
+  "prod": "tank",
+  "published": false
+ },
+ "french_bulldog|geo_classic|wtank": {
+  "id": "6ae79ea6e8a14b46b70e9c29",
+  "prod": "wtank",
+  "published": false
+ },
+ "french_bulldog|geo_classic|polo": {
+  "id": "6ae79ea88e070d8cc20b60c0",
+  "prod": "polo",
+  "published": false
+ },
+ "french_bulldog|geo_classic|cap_dad": {
+  "id": "6ae79eaae8a14b46b70e9c2c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "french_bulldog|geo_classic|cap_foam": {
+  "id": "6ae79eab7861ac1c1c041f11",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "french_bulldog|geo_classic|cap_mesh": {
+  "id": "6ae79eade8a14b46b70e9c30",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "french_bulldog|geo_cool|tank": {
+  "id": "6ae79eaea895c5bd4e00ad24",
+  "prod": "tank",
+  "published": false
+ },
+ "french_bulldog|geo_cool|wtank": {
+  "id": "6ae79eb0d037ed7f1f02dad7",
+  "prod": "wtank",
+  "published": false
+ },
+ "french_bulldog|geo_cool|polo": {
+  "id": "6ae79eb28e070d8cc20b60c3",
+  "prod": "polo",
+  "published": false
+ },
+ "french_bulldog|geo_cool|cap_dad": {
+  "id": "6ae79eb4a04ae2f1280ac5da",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "french_bulldog|geo_cool|cap_foam": {
+  "id": "6ae79eb5e8a14b46b70e9c3f",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "french_bulldog|geo_cool|cap_mesh": {
+  "id": "6ae79eb7e9fcc76a2908f4d5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "french_bulldog|geo_heart|tank": {
+  "id": "6ae79eb9f9c00c9ec009f9be",
+  "prod": "tank",
+  "published": false
+ },
+ "french_bulldog|geo_heart|wtank": {
+  "id": "6ae79ebad037ed7f1f02dadd",
+  "prod": "wtank",
+  "published": false
+ },
+ "french_bulldog|geo_heart|polo": {
+  "id": "6ae79ebce8a14b46b70e9c47",
+  "prod": "polo",
+  "published": false
+ },
+ "french_bulldog|geo_heart|cap_dad": {
+  "id": "6ae79ebe8e070d8cc20b60ca",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "french_bulldog|geo_heart|cap_foam": {
+  "id": "6ae79ebfe8a14b46b70e9c4b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "french_bulldog|geo_heart|cap_mesh": {
+  "id": "6ae79ec16aa5485ffc09fdeb",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "labrador_retriever|line_classic|tank": {
+  "id": "6ae79ec2d037ed7f1f02dae1",
+  "prod": "tank",
+  "published": false
+ },
+ "labrador_retriever|line_classic|wtank": {
+  "id": "6ae79ec4e8a14b46b70e9c4c",
+  "prod": "wtank",
+  "published": false
+ },
+ "labrador_retriever|line_classic|polo": {
+  "id": "6ae79ec6f9c00c9ec009f9c6",
+  "prod": "polo",
+  "published": false
+ },
+ "labrador_retriever|line_classic|cap_dad": {
+  "id": "6ae79ec7f9c00c9ec009f9ca",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "labrador_retriever|line_classic|cap_foam": {
+  "id": "6ae79ec9d037ed7f1f02dae4",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "labrador_retriever|line_classic|cap_mesh": {
+  "id": "6ae79ecaa895c5bd4e00ad38",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "labrador_retriever|line_cool|tank": {
+  "id": "6ae79eccd037ed7f1f02dae6",
+  "prod": "tank",
+  "published": false
+ },
+ "labrador_retriever|line_cool|wtank": {
+  "id": "6ae79ecef5f22e3bbd0855d4",
+  "prod": "wtank",
+  "published": false
+ },
+ "labrador_retriever|line_cool|polo": {
+  "id": "6ae79ed0a895c5bd4e00ad41",
+  "prod": "polo",
+  "published": false
+ },
+ "labrador_retriever|line_cool|cap_dad": {
+  "id": "6ae79ed1a895c5bd4e00ad42",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "labrador_retriever|line_cool|cap_foam": {
+  "id": "6ae79ed37861ac1c1c041f2c",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "labrador_retriever|line_cool|cap_mesh": {
+  "id": "6ae79ed48e070d8cc20b60eb",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "labrador_retriever|line_heart|tank": {
+  "id": "6ae79ed68e070d8cc20b60f0",
+  "prod": "tank",
+  "published": false
+ },
+ "labrador_retriever|line_heart|wtank": {
+  "id": "6ae79ed77861ac1c1c041f36",
+  "prod": "wtank",
+  "published": false
+ },
+ "labrador_retriever|line_heart|polo": {
+  "id": "6ae79ed98e070d8cc20b60f5",
+  "prod": "polo",
+  "published": false
+ },
+ "labrador_retriever|line_heart|cap_dad": {
+  "id": "6ae79edba895c5bd4e00ad54",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "labrador_retriever|line_heart|cap_foam": {
+  "id": "6ae79edca895c5bd4e00ad58",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "labrador_retriever|line_heart|cap_mesh": {
+  "id": "6ae79ede8e070d8cc20b60fd",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "labrador_retriever|geo_classic|tank": {
+  "id": "6ae79edfcefd302331097849",
+  "prod": "tank",
+  "published": false
+ },
+ "labrador_retriever|geo_classic|wtank": {
+  "id": "6ae79ee16aa5485ffc09fe09",
+  "prod": "wtank",
+  "published": false
+ },
+ "labrador_retriever|geo_classic|polo": {
+  "id": "6ae79ee3cefd30233109784b",
+  "prod": "polo",
+  "published": false
+ },
+ "labrador_retriever|geo_classic|cap_dad": {
+  "id": "6ae79ee5e8a14b46b70e9c72",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "labrador_retriever|geo_classic|cap_foam": {
+  "id": "6ae79ee6f5f22e3bbd0855ec",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "labrador_retriever|geo_classic|cap_mesh": {
+  "id": "6ae79ee86aa5485ffc09fe0e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "labrador_retriever|geo_cool|tank": {
+  "id": "6ae79ee9eff2af9b7c0be427",
+  "prod": "tank",
+  "published": false
+ },
+ "labrador_retriever|geo_cool|wtank": {
+  "id": "6ae79eeba895c5bd4e00ad6a",
+  "prod": "wtank",
+  "published": false
+ },
+ "labrador_retriever|geo_cool|polo": {
+  "id": "6ae79eec6aa5485ffc09fe12",
+  "prod": "polo",
+  "published": false
+ },
+ "labrador_retriever|geo_cool|cap_dad": {
+  "id": "6ae79eeecefd302331097854",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "labrador_retriever|geo_cool|cap_foam": {
+  "id": "6ae79ef07861ac1c1c041f49",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "labrador_retriever|geo_cool|cap_mesh": {
+  "id": "6ae79ef2a895c5bd4e00ad73",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "labrador_retriever|geo_heart|tank": {
+  "id": "6ae79ef46aa5485ffc09fe1b",
+  "prod": "tank",
+  "published": false
+ },
+ "labrador_retriever|geo_heart|wtank": {
+  "id": "6ae79ef5d037ed7f1f02db0a",
+  "prod": "wtank",
+  "published": false
+ },
+ "labrador_retriever|geo_heart|polo": {
+  "id": "6ae79ef7d037ed7f1f02db0b",
+  "prod": "polo",
+  "published": false
+ },
+ "labrador_retriever|geo_heart|cap_dad": {
+  "id": "6ae79ef97861ac1c1c041f56",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "labrador_retriever|geo_heart|cap_foam": {
+  "id": "6ae79efbeff2af9b7c0be433",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "labrador_retriever|geo_heart|cap_mesh": {
+  "id": "6ae79efccefd302331097865",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "golden_retriever|line_classic|tank": {
+  "id": "6ae79efef9c00c9ec009f9fc",
+  "prod": "tank",
+  "published": false
+ },
+ "golden_retriever|line_classic|wtank": {
+  "id": "6ae79f01cefd302331097871",
+  "prod": "wtank",
+  "published": false
+ },
+ "golden_retriever|line_classic|polo": {
+  "id": "6ae79f037861ac1c1c041f67",
+  "prod": "polo",
+  "published": false
+ },
+ "golden_retriever|line_classic|cap_dad": {
+  "id": "6ae79f048e070d8cc20b6131",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "golden_retriever|line_classic|cap_foam": {
+  "id": "6ae79f068e070d8cc20b6133",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "golden_retriever|line_classic|cap_mesh": {
+  "id": "6ae79f07d037ed7f1f02db2e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "golden_retriever|line_cool|tank": {
+  "id": "6ae79f09cefd302331097881",
+  "prod": "tank",
+  "published": false
+ },
+ "golden_retriever|line_cool|wtank": {
+  "id": "6ae79f0bcefd302331097885",
+  "prod": "wtank",
+  "published": false
+ },
+ "golden_retriever|line_cool|polo": {
+  "id": "6ae79f0cf9c00c9ec009fa15",
+  "prod": "polo",
+  "published": false
+ },
+ "golden_retriever|line_cool|cap_dad": {
+  "id": "6ae79f0ee8a14b46b70e9ca1",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "golden_retriever|line_cool|cap_foam": {
+  "id": "6ae79f10e9fcc76a2908f532",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "golden_retriever|line_cool|cap_mesh": {
+  "id": "6ae79f11d037ed7f1f02db35",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "golden_retriever|line_heart|tank": {
+  "id": "6ae79f12e8a14b46b70e9ca7",
+  "prod": "tank",
+  "published": false
+ },
+ "golden_retriever|line_heart|wtank": {
+  "id": "6ae79f14cefd302331097892",
+  "prod": "wtank",
+  "published": false
+ },
+ "golden_retriever|line_heart|polo": {
+  "id": "6ae79f16f9c00c9ec009fa1c",
+  "prod": "polo",
+  "published": false
+ },
+ "golden_retriever|line_heart|cap_dad": {
+  "id": "6ae79f177861ac1c1c041f7a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "golden_retriever|line_heart|cap_foam": {
+  "id": "6ae79f198e070d8cc20b6144",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "golden_retriever|line_heart|cap_mesh": {
+  "id": "6ae79f1be8a14b46b70e9cac",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "golden_retriever|geo_classic|tank": {
+  "id": "6ae79f1ccefd3023310978a2",
+  "prod": "tank",
+  "published": false
+ },
+ "golden_retriever|geo_classic|wtank": {
+  "id": "6ae79f1ecefd3023310978a4",
+  "prod": "wtank",
+  "published": false
+ },
+ "golden_retriever|geo_classic|polo": {
+  "id": "6ae79f208e070d8cc20b614c",
+  "prod": "polo",
+  "published": false
+ },
+ "golden_retriever|geo_classic|cap_dad": {
+  "id": "6ae79f218e070d8cc20b614e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "golden_retriever|geo_classic|cap_foam": {
+  "id": "6ae79f237861ac1c1c041f87",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "golden_retriever|geo_classic|cap_mesh": {
+  "id": "6ae79f24a04ae2f1280ac637",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "golden_retriever|geo_cool|tank": {
+  "id": "6ae79f26eff2af9b7c0be465",
+  "prod": "tank",
+  "published": false
+ },
+ "golden_retriever|geo_cool|wtank": {
+  "id": "6ae79f27eff2af9b7c0be467",
+  "prod": "wtank",
+  "published": false
+ },
+ "golden_retriever|geo_cool|polo": {
+  "id": "6ae79f296aa5485ffc09fe58",
+  "prod": "polo",
+  "published": false
+ },
+ "golden_retriever|geo_cool|cap_dad": {
+  "id": "6ae79f2be8a14b46b70e9cba",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "golden_retriever|geo_cool|cap_foam": {
+  "id": "6ae79f2c6aa5485ffc09fe5b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "golden_retriever|geo_cool|cap_mesh": {
+  "id": "6ae79f2eeff2af9b7c0be46f",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "golden_retriever|geo_heart|tank": {
+  "id": "6ae79f308e070d8cc20b615a",
+  "prod": "tank",
+  "published": false
+ },
+ "golden_retriever|geo_heart|wtank": {
+  "id": "6ae79f316aa5485ffc09fe5f",
+  "prod": "wtank",
+  "published": false
+ },
+ "golden_retriever|geo_heart|polo": {
+  "id": "6ae79f337861ac1c1c041f96",
+  "prod": "polo",
+  "published": false
+ },
+ "golden_retriever|geo_heart|cap_dad": {
+  "id": "6ae79f35f9c00c9ec009fa3d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "golden_retriever|geo_heart|cap_foam": {
+  "id": "6ae79f367861ac1c1c041f9d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "golden_retriever|geo_heart|cap_mesh": {
+  "id": "6ae79f388e070d8cc20b6164",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shepherd|line_classic|tank": {
+  "id": "6ae79f3af9c00c9ec009fa42",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shepherd|line_classic|wtank": {
+  "id": "6ae79f3ca895c5bd4e00adbd",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shepherd|line_classic|polo": {
+  "id": "6ae79f3e7861ac1c1c041faa",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shepherd|line_classic|cap_dad": {
+  "id": "6ae79f407861ac1c1c041fae",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shepherd|line_classic|cap_foam": {
+  "id": "6ae79f418e070d8cc20b616e",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shepherd|line_classic|cap_mesh": {
+  "id": "6ae79f438e070d8cc20b6171",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shepherd|line_cool|tank": {
+  "id": "6ae79f448e070d8cc20b6174",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shepherd|line_cool|wtank": {
+  "id": "6ae79f466aa5485ffc09fe87",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shepherd|line_cool|polo": {
+  "id": "6ae79f48f9c00c9ec009fa53",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shepherd|line_cool|cap_dad": {
+  "id": "6ae79f49f9c00c9ec009fa59",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shepherd|line_cool|cap_foam": {
+  "id": "6ae79f4b7861ac1c1c041fc5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shepherd|line_cool|cap_mesh": {
+  "id": "6ae79f4d8e070d8cc20b6192",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shepherd|line_heart|tank": {
+  "id": "6ae79f4f7861ac1c1c041fd3",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shepherd|line_heart|wtank": {
+  "id": "6ae79f508e070d8cc20b61a2",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shepherd|line_heart|polo": {
+  "id": "6ae79f52f5f22e3bbd085669",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shepherd|line_heart|cap_dad": {
+  "id": "6ae79f548e070d8cc20b61af",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shepherd|line_heart|cap_foam": {
+  "id": "6ae79f56f9c00c9ec009fa78",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shepherd|line_heart|cap_mesh": {
+  "id": "6ae79f58d037ed7f1f02db86",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shepherd|geo_classic|tank": {
+  "id": "6ae79f598e070d8cc20b61c7",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shepherd|geo_classic|wtank": {
+  "id": "6ae79f5ba04ae2f1280ac673",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shepherd|geo_classic|polo": {
+  "id": "6ae79f5d8e070d8cc20b61cf",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shepherd|geo_classic|cap_dad": {
+  "id": "6ae79f5fd037ed7f1f02db92",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shepherd|geo_classic|cap_foam": {
+  "id": "6ae79f61a895c5bd4e00ae0d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shepherd|geo_classic|cap_mesh": {
+  "id": "6ae79f628e070d8cc20b61d9",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shepherd|geo_cool|tank": {
+  "id": "6ae79f648e070d8cc20b61da",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shepherd|geo_cool|wtank": {
+  "id": "6ae79f65d037ed7f1f02db9d",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shepherd|geo_cool|polo": {
+  "id": "6ae79f67f5f22e3bbd08568b",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shepherd|geo_cool|cap_dad": {
+  "id": "6ae79f697861ac1c1c041ffa",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shepherd|geo_cool|cap_foam": {
+  "id": "6ae79f6bd037ed7f1f02db9e",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shepherd|geo_cool|cap_mesh": {
+  "id": "6ae79f6ccefd30233109790f",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shepherd|geo_heart|tank": {
+  "id": "6ae79f6ef9c00c9ec009fa96",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shepherd|geo_heart|wtank": {
+  "id": "6ae79f6fa895c5bd4e00ae17",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shepherd|geo_heart|polo": {
+  "id": "6ae79f717861ac1c1c041ffc",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shepherd|geo_heart|cap_dad": {
+  "id": "6ae79f73f9c00c9ec009fa9b",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shepherd|geo_heart|cap_foam": {
+  "id": "6ae79f75a895c5bd4e00ae1a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shepherd|geo_heart|cap_mesh": {
+  "id": "6ae79f76f5f22e3bbd085693",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "dachshund|line_classic|tank": {
+  "id": "6ae79f78a04ae2f1280ac688",
+  "prod": "tank",
+  "published": false
+ },
+ "dachshund|line_classic|wtank": {
+  "id": "6ae79f7c7861ac1c1c042001",
+  "prod": "wtank",
+  "published": false
+ },
+ "dachshund|line_classic|polo": {
+  "id": "6ae79f7e6aa5485ffc09febe",
+  "prod": "polo",
+  "published": false
+ },
+ "dachshund|line_classic|cap_dad": {
+  "id": "6ae79f7ff9c00c9ec009faaa",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "dachshund|line_classic|cap_foam": {
+  "id": "6ae79f81eff2af9b7c0be4bd",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "dachshund|line_classic|cap_mesh": {
+  "id": "6ae79f82f9c00c9ec009fab2",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "dachshund|line_cool|tank": {
+  "id": "6ae79f84e9fcc76a2908f5b7",
+  "prod": "tank",
+  "published": false
+ },
+ "dachshund|line_cool|wtank": {
+  "id": "6ae79f86eff2af9b7c0be4c1",
+  "prod": "wtank",
+  "published": false
+ },
+ "dachshund|line_cool|polo": {
+  "id": "6ae79f88e9fcc76a2908f5bc",
+  "prod": "polo",
+  "published": false
+ },
+ "dachshund|line_cool|cap_dad": {
+  "id": "6ae79f897861ac1c1c04201a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "dachshund|line_cool|cap_foam": {
+  "id": "6ae79f8b6aa5485ffc09fed0",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "dachshund|line_cool|cap_mesh": {
+  "id": "6ae79f8cf5f22e3bbd0856ad",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "dachshund|line_heart|tank": {
+  "id": "6ae79f8ef5f22e3bbd0856ae",
+  "prod": "tank",
+  "published": false
+ },
+ "dachshund|line_heart|wtank": {
+  "id": "6ae79f8fa04ae2f1280ac698",
+  "prod": "wtank",
+  "published": false
+ },
+ "dachshund|line_heart|polo": {
+  "id": "6ae79f91e9fcc76a2908f5c5",
+  "prod": "polo",
+  "published": false
+ },
+ "dachshund|line_heart|cap_dad": {
+  "id": "6ae79f937861ac1c1c042026",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "dachshund|line_heart|cap_foam": {
+  "id": "6ae79f946aa5485ffc09fedd",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "dachshund|line_heart|cap_mesh": {
+  "id": "6ae79f96d037ed7f1f02dbc7",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "dachshund|geo_classic|tank": {
+  "id": "6ae79f98f9c00c9ec009facf",
+  "prod": "tank",
+  "published": false
+ },
+ "dachshund|geo_classic|wtank": {
+  "id": "6ae79f99e9fcc76a2908f5d3",
+  "prod": "wtank",
+  "published": false
+ },
+ "dachshund|geo_classic|polo": {
+  "id": "6ae79f9bf9c00c9ec009fad2",
+  "prod": "polo",
+  "published": false
+ },
+ "dachshund|geo_classic|cap_dad": {
+  "id": "6ae79f9df9c00c9ec009fad4",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "dachshund|geo_classic|cap_foam": {
+  "id": "6ae79f9fe9fcc76a2908f5d9",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "dachshund|geo_classic|cap_mesh": {
+  "id": "6ae79fa0e9fcc76a2908f5dd",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "dachshund|geo_cool|tank": {
+  "id": "6ae79fa2e9fcc76a2908f5df",
+  "prod": "tank",
+  "published": false
+ },
+ "dachshund|geo_cool|wtank": {
+  "id": "6ae79fa36aa5485ffc09feea",
+  "prod": "wtank",
+  "published": false
+ },
+ "dachshund|geo_cool|polo": {
+  "id": "6ae79fa5e8a14b46b70e9d2f",
+  "prod": "polo",
+  "published": false
+ },
+ "dachshund|geo_cool|cap_dad": {
+  "id": "6ae79fa7d037ed7f1f02dbd2",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "dachshund|geo_cool|cap_foam": {
+  "id": "6ae79fa9e9fcc76a2908f5f1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "dachshund|geo_cool|cap_mesh": {
+  "id": "6ae79fab6aa5485ffc09fef1",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "dachshund|geo_heart|tank": {
+  "id": "6ae79fadf9c00c9ec009faec",
+  "prod": "tank",
+  "published": false
+ },
+ "dachshund|geo_heart|wtank": {
+  "id": "6ae79faef9c00c9ec009faef",
+  "prod": "wtank",
+  "published": false
+ },
+ "dachshund|geo_heart|polo": {
+  "id": "6ae79fb16aa5485ffc09fef9",
+  "prod": "polo",
+  "published": false
+ },
+ "dachshund|geo_heart|cap_dad": {
+  "id": "6ae79fb36aa5485ffc09fefe",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "dachshund|geo_heart|cap_foam": {
+  "id": "6ae79fb46aa5485ffc09ff00",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "dachshund|geo_heart|cap_mesh": {
+  "id": "6ae79fb6a895c5bd4e00ae55",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "poodle|line_classic|tank": {
+  "id": "6ae79fb7eff2af9b7c0be4ed",
+  "prod": "tank",
+  "published": false
+ },
+ "poodle|line_classic|wtank": {
+  "id": "6ae79fbaf5f22e3bbd0856eb",
+  "prod": "wtank",
+  "published": false
+ },
+ "poodle|line_classic|polo": {
+  "id": "6ae79fbceff2af9b7c0be4f2",
+  "prod": "polo",
+  "published": false
+ },
+ "poodle|line_classic|cap_dad": {
+  "id": "6ae79fbd6aa5485ffc09ff07",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "poodle|line_classic|cap_foam": {
+  "id": "6ae79fbfe9fcc76a2908f618",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "poodle|line_classic|cap_mesh": {
+  "id": "6ae79fc1f9c00c9ec009fb06",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "poodle|line_cool|tank": {
+  "id": "6ae79fc2f5f22e3bbd0856f1",
+  "prod": "tank",
+  "published": false
+ },
+ "poodle|line_cool|wtank": {
+  "id": "6ae79fc4eff2af9b7c0be4fa",
+  "prod": "wtank",
+  "published": false
+ },
+ "poodle|line_cool|polo": {
+  "id": "6ae79fc6f9c00c9ec009fb0c",
+  "prod": "polo",
+  "published": false
+ },
+ "poodle|line_cool|cap_dad": {
+  "id": "6ae79fc8f5f22e3bbd0856ff",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "poodle|line_cool|cap_foam": {
+  "id": "6ae79fc96aa5485ffc09ff22",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "poodle|line_cool|cap_mesh": {
+  "id": "6ae79fcb6aa5485ffc09ff2b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "poodle|line_heart|tank": {
+  "id": "6ae79fcdf5f22e3bbd085717",
+  "prod": "tank",
+  "published": false
+ },
+ "poodle|line_heart|wtank": {
+  "id": "6ae79fcff5f22e3bbd085722",
+  "prod": "wtank",
+  "published": false
+ },
+ "poodle|line_heart|polo": {
+  "id": "6ae79fd28e070d8cc20b6241",
+  "prod": "polo",
+  "published": false
+ },
+ "poodle|line_heart|cap_dad": {
+  "id": "6ae79fd38e070d8cc20b6246",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "poodle|line_heart|cap_foam": {
+  "id": "6ae79fdf7861ac1c1c042091",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "poodle|line_heart|cap_mesh": {
+  "id": "6ae79fe17861ac1c1c0420a0",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "poodle|geo_classic|tank": {
+  "id": "6ae79fe2a04ae2f1280ac711",
+  "prod": "tank",
+  "published": false
+ },
+ "poodle|geo_classic|wtank": {
+  "id": "6ae79fe47861ac1c1c0420b5",
+  "prod": "wtank",
+  "published": false
+ },
+ "poodle|geo_classic|polo": {
+  "id": "6ae79fe6a895c5bd4e00aebe",
+  "prod": "polo",
+  "published": false
+ },
+ "poodle|geo_classic|cap_dad": {
+  "id": "6ae79fe87861ac1c1c0420d6",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "poodle|geo_classic|cap_foam": {
+  "id": "6ae79feaf5f22e3bbd085780",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "poodle|geo_classic|cap_mesh": {
+  "id": "6ae79fec6aa5485ffc09ffa5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "poodle|geo_cool|tank": {
+  "id": "6ae79feed037ed7f1f02dc74",
+  "prod": "tank",
+  "published": false
+ },
+ "poodle|geo_cool|wtank": {
+  "id": "6ae79fefe8a14b46b70e9def",
+  "prod": "wtank",
+  "published": false
+ },
+ "poodle|geo_cool|polo": {
+  "id": "6ae79ff1a895c5bd4e00aef4",
+  "prod": "polo",
+  "published": false
+ },
+ "poodle|geo_cool|cap_dad": {
+  "id": "6ae79ff3e8a14b46b70e9e09",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "poodle|geo_cool|cap_foam": {
+  "id": "6ae79ff57861ac1c1c042120",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "poodle|geo_cool|cap_mesh": {
+  "id": "6ae79ff87861ac1c1c04212b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "poodle|geo_heart|tank": {
+  "id": "6ae79ff9e9fcc76a2908f6e5",
+  "prod": "tank",
+  "published": false
+ },
+ "poodle|geo_heart|wtank": {
+  "id": "6ae79ffbcefd302331097a30",
+  "prod": "wtank",
+  "published": false
+ },
+ "poodle|geo_heart|polo": {
+  "id": "6ae79ffdf9c00c9ec009fbdc",
+  "prod": "polo",
+  "published": false
+ },
+ "poodle|geo_heart|cap_dad": {
+  "id": "6ae79ffea895c5bd4e00af2d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "poodle|geo_heart|cap_foam": {
+  "id": "6ae7a000cefd302331097a45",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "poodle|geo_heart|cap_mesh": {
+  "id": "6ae7a0028e070d8cc20b62fe",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "beagle|line_classic|tank": {
+  "id": "6ae7a003eff2af9b7c0be5f6",
+  "prod": "tank",
+  "published": false
+ },
+ "beagle|line_classic|wtank": {
+  "id": "6ae7a005eff2af9b7c0be5ff",
+  "prod": "wtank",
+  "published": false
+ },
+ "beagle|line_classic|polo": {
+  "id": "6ae7a007cefd302331097a68",
+  "prod": "polo",
+  "published": false
+ },
+ "beagle|line_classic|cap_dad": {
+  "id": "6ae7a009eff2af9b7c0be614",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "beagle|line_classic|cap_foam": {
+  "id": "6ae7a00aeff2af9b7c0be61c",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "beagle|line_classic|cap_mesh": {
+  "id": "6ae7a00c7861ac1c1c042187",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "beagle|line_cool|tank": {
+  "id": "6ae7a00eeff2af9b7c0be62c",
+  "prod": "tank",
+  "published": false
+ },
+ "beagle|line_cool|wtank": {
+  "id": "6ae7a010d037ed7f1f02dd0a",
+  "prod": "wtank",
+  "published": false
+ },
+ "beagle|line_cool|polo": {
+  "id": "6ae7a012eff2af9b7c0be634",
+  "prod": "polo",
+  "published": false
+ },
+ "beagle|line_cool|cap_dad": {
+  "id": "6ae7a013d037ed7f1f02dd0c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "beagle|line_cool|cap_foam": {
+  "id": "6ae7a015e8a14b46b70e9e7e",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "beagle|line_cool|cap_mesh": {
+  "id": "6ae7a017d037ed7f1f02dd14",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "beagle|line_heart|tank": {
+  "id": "6ae7a018eff2af9b7c0be63c",
+  "prod": "tank",
+  "published": false
+ },
+ "beagle|line_heart|wtank": {
+  "id": "6ae7a01acefd302331097a9b",
+  "prod": "wtank",
+  "published": false
+ },
+ "beagle|line_heart|polo": {
+  "id": "6ae7a01ca04ae2f1280ac7f3",
+  "prod": "polo",
+  "published": false
+ },
+ "beagle|line_heart|cap_dad": {
+  "id": "6ae7a01ed037ed7f1f02dd1d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "beagle|line_heart|cap_foam": {
+  "id": "6ae7a0208e070d8cc20b634f",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "beagle|line_heart|cap_mesh": {
+  "id": "6ae7a022d037ed7f1f02dd25",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "beagle|geo_classic|tank": {
+  "id": "6ae7a0236aa5485ffc0a007d",
+  "prod": "tank",
+  "published": false
+ },
+ "beagle|geo_classic|wtank": {
+  "id": "6ae7a025a895c5bd4e00afa2",
+  "prod": "wtank",
+  "published": false
+ },
+ "beagle|geo_classic|polo": {
+  "id": "6ae7a027cefd302331097aaa",
+  "prod": "polo",
+  "published": false
+ },
+ "beagle|geo_classic|cap_dad": {
+  "id": "6ae7a029cefd302331097aad",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "beagle|geo_classic|cap_foam": {
+  "id": "6ae7a02ad037ed7f1f02dd3a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "beagle|geo_classic|cap_mesh": {
+  "id": "6ae7a02cd037ed7f1f02dd3d",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "beagle|geo_cool|tank": {
+  "id": "6ae7a02dd037ed7f1f02dd40",
+  "prod": "tank",
+  "published": false
+ },
+ "beagle|geo_cool|wtank": {
+  "id": "6ae7a02fe9fcc76a2908f75e",
+  "prod": "wtank",
+  "published": false
+ },
+ "beagle|geo_cool|polo": {
+  "id": "6ae7a0316aa5485ffc0a008b",
+  "prod": "polo",
+  "published": false
+ },
+ "beagle|geo_cool|cap_dad": {
+  "id": "6ae7a032e9fcc76a2908f760",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "beagle|geo_cool|cap_foam": {
+  "id": "6ae7a034e8a14b46b70e9ead",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "beagle|geo_cool|cap_mesh": {
+  "id": "6ae7a035cefd302331097abb",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "beagle|geo_heart|tank": {
+  "id": "6ae7a037e8a14b46b70e9eb1",
+  "prod": "tank",
+  "published": false
+ },
+ "beagle|geo_heart|wtank": {
+  "id": "6ae7a039e9fcc76a2908f76a",
+  "prod": "wtank",
+  "published": false
+ },
+ "beagle|geo_heart|polo": {
+  "id": "6ae7a03be8a14b46b70e9eb6",
+  "prod": "polo",
+  "published": false
+ },
+ "beagle|geo_heart|cap_dad": {
+  "id": "6ae7a03c6aa5485ffc0a0097",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "beagle|geo_heart|cap_foam": {
+  "id": "6ae7a03ed037ed7f1f02dd53",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "beagle|geo_heart|cap_mesh": {
+  "id": "6ae7a03fe9fcc76a2908f776",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "rottweiler|line_classic|tank": {
+  "id": "6ae7a041d037ed7f1f02dd57",
+  "prod": "tank",
+  "published": false
+ },
+ "rottweiler|line_classic|wtank": {
+  "id": "6ae7a043a895c5bd4e00afc4",
+  "prod": "wtank",
+  "published": false
+ },
+ "rottweiler|line_classic|polo": {
+  "id": "6ae7a044d037ed7f1f02dd61",
+  "prod": "polo",
+  "published": false
+ },
+ "rottweiler|line_classic|cap_dad": {
+  "id": "6ae7a046e8a14b46b70e9ecf",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "rottweiler|line_classic|cap_foam": {
+  "id": "6ae7a048a895c5bd4e00afca",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "rottweiler|line_classic|cap_mesh": {
+  "id": "6ae7a0497861ac1c1c0421ce",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "rottweiler|line_cool|tank": {
+  "id": "6ae7a04b6aa5485ffc0a00a7",
+  "prod": "tank",
+  "published": false
+ },
+ "rottweiler|line_cool|wtank": {
+  "id": "6ae7a04cf5f22e3bbd08583e",
+  "prod": "wtank",
+  "published": false
+ },
+ "rottweiler|line_cool|polo": {
+  "id": "6ae7a04ee9fcc76a2908f784",
+  "prod": "polo",
+  "published": false
+ },
+ "rottweiler|line_cool|cap_dad": {
+  "id": "6ae7a050a895c5bd4e00afda",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "rottweiler|line_cool|cap_foam": {
+  "id": "6ae7a052e8a14b46b70e9edd",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "rottweiler|line_cool|cap_mesh": {
+  "id": "6ae7a0537861ac1c1c0421db",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "rottweiler|line_heart|tank": {
+  "id": "6ae7a055e8a14b46b70e9edf",
+  "prod": "tank",
+  "published": false
+ },
+ "rottweiler|line_heart|wtank": {
+  "id": "6ae7a056f5f22e3bbd085847",
+  "prod": "wtank",
+  "published": false
+ },
+ "rottweiler|line_heart|polo": {
+  "id": "6ae7a058f5f22e3bbd085848",
+  "prod": "polo",
+  "published": false
+ },
+ "rottweiler|line_heart|cap_dad": {
+  "id": "6ae7a05af5f22e3bbd08584a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "rottweiler|line_heart|cap_foam": {
+  "id": "6ae7a05c6aa5485ffc0a00be",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "rottweiler|line_heart|cap_mesh": {
+  "id": "6ae7a05ea04ae2f1280ac83e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "rottweiler|geo_classic|tank": {
+  "id": "6ae7a060e9fcc76a2908f796",
+  "prod": "tank",
+  "published": false
+ },
+ "rottweiler|geo_classic|wtank": {
+  "id": "6ae7a061a04ae2f1280ac841",
+  "prod": "wtank",
+  "published": false
+ },
+ "rottweiler|geo_classic|polo": {
+  "id": "6ae7a063a895c5bd4e00afee",
+  "prod": "polo",
+  "published": false
+ },
+ "rottweiler|geo_classic|cap_dad": {
+  "id": "6ae7a065f9c00c9ec009fc83",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "rottweiler|geo_classic|cap_foam": {
+  "id": "6ae7a066a04ae2f1280ac849",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "rottweiler|geo_classic|cap_mesh": {
+  "id": "6ae7a068f5f22e3bbd085861",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "rottweiler|geo_cool|tank": {
+  "id": "6ae7a069eff2af9b7c0be676",
+  "prod": "tank",
+  "published": false
+ },
+ "rottweiler|geo_cool|wtank": {
+  "id": "6ae7a06ba04ae2f1280ac851",
+  "prod": "wtank",
+  "published": false
+ },
+ "rottweiler|geo_cool|polo": {
+  "id": "6ae7a06d6aa5485ffc0a00d2",
+  "prod": "polo",
+  "published": false
+ },
+ "rottweiler|geo_cool|cap_dad": {
+  "id": "6ae7a06ef9c00c9ec009fc8d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "rottweiler|geo_cool|cap_foam": {
+  "id": "6ae7a0706aa5485ffc0a00d8",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "rottweiler|geo_cool|cap_mesh": {
+  "id": "6ae7a071f5f22e3bbd085869",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "rottweiler|geo_heart|tank": {
+  "id": "6ae7a073f5f22e3bbd08586a",
+  "prod": "tank",
+  "published": false
+ },
+ "rottweiler|geo_heart|wtank": {
+  "id": "6ae7a075f5f22e3bbd08586b",
+  "prod": "wtank",
+  "published": false
+ },
+ "rottweiler|geo_heart|polo": {
+  "id": "6ae7a076f5f22e3bbd08586d",
+  "prod": "polo",
+  "published": false
+ },
+ "rottweiler|geo_heart|cap_dad": {
+  "id": "6ae7a078a04ae2f1280ac864",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "rottweiler|geo_heart|cap_foam": {
+  "id": "6ae7a079e8a14b46b70e9f07",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "rottweiler|geo_heart|cap_mesh": {
+  "id": "6ae7a07beff2af9b7c0be683",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|tank": {
+  "id": "6ae7a07d6aa5485ffc0a00de",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|wtank": {
+  "id": "6ae7a07e7861ac1c1c0421fb",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|polo": {
+  "id": "6ae7a080a04ae2f1280ac868",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|cap_dad": {
+  "id": "6ae7a0817861ac1c1c0421fe",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|cap_foam": {
+  "id": "6ae7a0836aa5485ffc0a00e3",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|cap_mesh": {
+  "id": "6ae7a085d037ed7f1f02dd95",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|tank": {
+  "id": "6ae7a086f9c00c9ec009fc9f",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|wtank": {
+  "id": "6ae7a088cefd302331097b13",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|polo": {
+  "id": "6ae7a0896aa5485ffc0a00e9",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|cap_dad": {
+  "id": "6ae7a08b6aa5485ffc0a00ed",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|cap_foam": {
+  "id": "6ae7a08d6aa5485ffc0a00ef",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|cap_mesh": {
+  "id": "6ae7a08ea895c5bd4e00b019",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|tank": {
+  "id": "6ae7a08f6aa5485ffc0a00f3",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|wtank": {
+  "id": "6ae7a091e9fcc76a2908f7b3",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|polo": {
+  "id": "6ae7a093e9fcc76a2908f7b5",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|cap_dad": {
+  "id": "6ae7a094f5f22e3bbd085881",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|cap_foam": {
+  "id": "6ae7a096e9fcc76a2908f7b8",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|cap_mesh": {
+  "id": "6ae7a0986aa5485ffc0a00ff",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|tank": {
+  "id": "6ae7a099a895c5bd4e00b01e",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|wtank": {
+  "id": "6ae7a09b6aa5485ffc0a0105",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|polo": {
+  "id": "6ae7a09de9fcc76a2908f7be",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|cap_dad": {
+  "id": "6ae7a09ef5f22e3bbd08588a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|cap_foam": {
+  "id": "6ae7a0a0e8a14b46b70e9f15",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_classic|cap_mesh": {
+  "id": "6ae7a0a27861ac1c1c042207",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|tank": {
+  "id": "6ae7a0a36aa5485ffc0a010c",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|wtank": {
+  "id": "6ae7a0a5f5f22e3bbd085893",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|polo": {
+  "id": "6ae7a0a76aa5485ffc0a0110",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|cap_dad": {
+  "id": "6ae7a0a8cefd302331097b21",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|cap_foam": {
+  "id": "6ae7a0aa6aa5485ffc0a0119",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_cool|cap_mesh": {
+  "id": "6ae7a0ab6aa5485ffc0a011c",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|tank": {
+  "id": "6ae7a0ade8a14b46b70e9f27",
+  "prod": "tank",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|wtank": {
+  "id": "6ae7a0afe9fcc76a2908f7da",
+  "prod": "wtank",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|polo": {
+  "id": "6ae7a0b0cefd302331097b3b",
+  "prod": "polo",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|cap_dad": {
+  "id": "6ae7a0b26aa5485ffc0a0132",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|cap_foam": {
+  "id": "6ae7a0b4f5f22e3bbd0858c1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "german_shorthaired_pointer|geo_heart|cap_mesh": {
+  "id": "6ae7a0b58e070d8cc20b63e8",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bulldog|line_classic|tank": {
+  "id": "6ae7a0b7d037ed7f1f02ddc7",
+  "prod": "tank",
+  "published": false
+ },
+ "bulldog|line_classic|wtank": {
+  "id": "6ae7a0b9a895c5bd4e00b046",
+  "prod": "wtank",
+  "published": false
+ },
+ "bulldog|line_classic|polo": {
+  "id": "6ae7a0bbcefd302331097b49",
+  "prod": "polo",
+  "published": false
+ },
+ "bulldog|line_classic|cap_dad": {
+  "id": "6ae7a0bc6aa5485ffc0a0149",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bulldog|line_classic|cap_foam": {
+  "id": "6ae7a0becefd302331097b4e",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bulldog|line_classic|cap_mesh": {
+  "id": "6ae7a0c0d037ed7f1f02ddd3",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bulldog|line_cool|tank": {
+  "id": "6ae7a0c16aa5485ffc0a014b",
+  "prod": "tank",
+  "published": false
+ },
+ "bulldog|line_cool|wtank": {
+  "id": "6ae7a0c3e9fcc76a2908f7f3",
+  "prod": "wtank",
+  "published": false
+ },
+ "bulldog|line_cool|polo": {
+  "id": "6ae7a0c4cefd302331097b58",
+  "prod": "polo",
+  "published": false
+ },
+ "bulldog|line_cool|cap_dad": {
+  "id": "6ae7a0c6e8a14b46b70e9f5b",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bulldog|line_cool|cap_foam": {
+  "id": "6ae7a0c8a895c5bd4e00b059",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bulldog|line_cool|cap_mesh": {
+  "id": "6ae7a0c98e070d8cc20b63f5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bulldog|line_heart|tank": {
+  "id": "6ae7a0cacefd302331097b5f",
+  "prod": "tank",
+  "published": false
+ },
+ "bulldog|line_heart|wtank": {
+  "id": "6ae7a0cc7861ac1c1c042249",
+  "prod": "wtank",
+  "published": false
+ },
+ "bulldog|line_heart|polo": {
+  "id": "6ae7a0cee8a14b46b70e9f68",
+  "prod": "polo",
+  "published": false
+ },
+ "bulldog|line_heart|cap_dad": {
+  "id": "6ae7a0d06aa5485ffc0a0155",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bulldog|line_heart|cap_foam": {
+  "id": "6ae7a0d2e8a14b46b70e9f6c",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bulldog|line_heart|cap_mesh": {
+  "id": "6ae7a0d4e8a14b46b70e9f6e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bulldog|geo_classic|tank": {
+  "id": "6ae7a0d5cefd302331097b6a",
+  "prod": "tank",
+  "published": false
+ },
+ "bulldog|geo_classic|wtank": {
+  "id": "6ae7a0d7e9fcc76a2908f809",
+  "prod": "wtank",
+  "published": false
+ },
+ "bulldog|geo_classic|polo": {
+  "id": "6ae7a0d9f5f22e3bbd0858db",
+  "prod": "polo",
+  "published": false
+ },
+ "bulldog|geo_classic|cap_dad": {
+  "id": "6ae7a0dbe8a14b46b70e9f75",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bulldog|geo_classic|cap_foam": {
+  "id": "6ae7a0dda895c5bd4e00b079",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bulldog|geo_classic|cap_mesh": {
+  "id": "6ae7a0dea04ae2f1280ac8a4",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bulldog|geo_cool|tank": {
+  "id": "6ae7a0e0e9fcc76a2908f812",
+  "prod": "tank",
+  "published": false
+ },
+ "bulldog|geo_cool|wtank": {
+  "id": "6ae7a0e1a895c5bd4e00b07c",
+  "prod": "wtank",
+  "published": false
+ },
+ "bulldog|geo_cool|polo": {
+  "id": "6ae7a0e3cefd302331097b75",
+  "prod": "polo",
+  "published": false
+ },
+ "bulldog|geo_cool|cap_dad": {
+  "id": "6ae7a0e5f5f22e3bbd0858e3",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bulldog|geo_cool|cap_foam": {
+  "id": "6ae7a0e6eff2af9b7c0be6cc",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bulldog|geo_cool|cap_mesh": {
+  "id": "6ae7a0e9f5f22e3bbd0858e8",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bulldog|geo_heart|tank": {
+  "id": "6ae7a0ea6aa5485ffc0a015e",
+  "prod": "tank",
+  "published": false
+ },
+ "bulldog|geo_heart|wtank": {
+  "id": "6ae7a0ece9fcc76a2908f81f",
+  "prod": "wtank",
+  "published": false
+ },
+ "bulldog|geo_heart|polo": {
+  "id": "6ae7a0eef9c00c9ec009fcf7",
+  "prod": "polo",
+  "published": false
+ },
+ "bulldog|geo_heart|cap_dad": {
+  "id": "6ae7a0f0eff2af9b7c0be6d8",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bulldog|geo_heart|cap_foam": {
+  "id": "6ae7a0f1f9c00c9ec009fcf9",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bulldog|geo_heart|cap_mesh": {
+  "id": "6ae7a0f3e8a14b46b70e9f89",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cane_corso|line_classic|tank": {
+  "id": "6ae7a0f4cefd302331097b8d",
+  "prod": "tank",
+  "published": false
+ },
+ "cane_corso|line_classic|wtank": {
+  "id": "6ae7a0f66aa5485ffc0a016d",
+  "prod": "wtank",
+  "published": false
+ },
+ "cane_corso|line_classic|polo": {
+  "id": "6ae7a0f87861ac1c1c042261",
+  "prod": "polo",
+  "published": false
+ },
+ "cane_corso|line_classic|cap_dad": {
+  "id": "6ae7a0f9f9c00c9ec009fd03",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cane_corso|line_classic|cap_foam": {
+  "id": "6ae7a0fbf9c00c9ec009fd04",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cane_corso|line_classic|cap_mesh": {
+  "id": "6ae7a0fde8a14b46b70e9f9b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cane_corso|line_cool|tank": {
+  "id": "6ae7a0fecefd302331097b96",
+  "prod": "tank",
+  "published": false
+ },
+ "cane_corso|line_cool|wtank": {
+  "id": "6ae7a100eff2af9b7c0be6f0",
+  "prod": "wtank",
+  "published": false
+ },
+ "cane_corso|line_cool|polo": {
+  "id": "6ae7a102e9fcc76a2908f83c",
+  "prod": "polo",
+  "published": false
+ },
+ "cane_corso|line_cool|cap_dad": {
+  "id": "6ae7a103f9c00c9ec009fd12",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cane_corso|line_cool|cap_foam": {
+  "id": "6ae7a105cefd302331097ba9",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cane_corso|line_cool|cap_mesh": {
+  "id": "6ae7a106e9fcc76a2908f843",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cane_corso|line_heart|tank": {
+  "id": "6ae7a108d037ed7f1f02de04",
+  "prod": "tank",
+  "published": false
+ },
+ "cane_corso|line_heart|wtank": {
+  "id": "6ae7a10ad037ed7f1f02de07",
+  "prod": "wtank",
+  "published": false
+ },
+ "cane_corso|line_heart|polo": {
+  "id": "6ae7a10ce9fcc76a2908f846",
+  "prod": "polo",
+  "published": false
+ },
+ "cane_corso|line_heart|cap_dad": {
+  "id": "6ae7a10e6aa5485ffc0a0191",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cane_corso|line_heart|cap_foam": {
+  "id": "6ae7a110cefd302331097bae",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cane_corso|line_heart|cap_mesh": {
+  "id": "6ae7a111d037ed7f1f02de0b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cane_corso|geo_classic|tank": {
+  "id": "6ae7a113f9c00c9ec009fd1a",
+  "prod": "tank",
+  "published": false
+ },
+ "cane_corso|geo_classic|wtank": {
+  "id": "6ae7a114e9fcc76a2908f84c",
+  "prod": "wtank",
+  "published": false
+ },
+ "cane_corso|geo_classic|polo": {
+  "id": "6ae7a116d037ed7f1f02de0d",
+  "prod": "polo",
+  "published": false
+ },
+ "cane_corso|geo_classic|cap_dad": {
+  "id": "6ae7a118e8a14b46b70e9fb1",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cane_corso|geo_classic|cap_foam": {
+  "id": "6ae7a119a895c5bd4e00b095",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cane_corso|geo_classic|cap_mesh": {
+  "id": "6ae7a11bcefd302331097bb2",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cane_corso|geo_cool|tank": {
+  "id": "6ae7a11c7861ac1c1c042276",
+  "prod": "tank",
+  "published": false
+ },
+ "cane_corso|geo_cool|wtank": {
+  "id": "6ae7a11ee9fcc76a2908f857",
+  "prod": "wtank",
+  "published": false
+ },
+ "cane_corso|geo_cool|polo": {
+  "id": "6ae7a120a895c5bd4e00b09d",
+  "prod": "polo",
+  "published": false
+ },
+ "cane_corso|geo_cool|cap_dad": {
+  "id": "6ae7a121a895c5bd4e00b09f",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cane_corso|geo_cool|cap_foam": {
+  "id": "6ae7a123e8a14b46b70e9fb6",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cane_corso|geo_cool|cap_mesh": {
+  "id": "6ae7a1247861ac1c1c04227e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cane_corso|geo_heart|tank": {
+  "id": "6ae7a126e9fcc76a2908f85b",
+  "prod": "tank",
+  "published": false
+ },
+ "cane_corso|geo_heart|wtank": {
+  "id": "6ae7a128e9fcc76a2908f85c",
+  "prod": "wtank",
+  "published": false
+ },
+ "cane_corso|geo_heart|polo": {
+  "id": "6ae7a129a895c5bd4e00b0a3",
+  "prod": "polo",
+  "published": false
+ },
+ "cane_corso|geo_heart|cap_dad": {
+  "id": "6ae7a12b8e070d8cc20b6434",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cane_corso|geo_heart|cap_foam": {
+  "id": "6ae7a12ca895c5bd4e00b0a5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cane_corso|geo_heart|cap_mesh": {
+  "id": "6ae7a12e7861ac1c1c042284",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|tank": {
+  "id": "6ae7a12fe9fcc76a2908f861",
+  "prod": "tank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|wtank": {
+  "id": "6ae7a1317861ac1c1c042286",
+  "prod": "wtank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|polo": {
+  "id": "6ae7a1337861ac1c1c042288",
+  "prod": "polo",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|cap_dad": {
+  "id": "6ae7a134a895c5bd4e00b0a8",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|cap_foam": {
+  "id": "6ae7a136d037ed7f1f02de20",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_classic|cap_mesh": {
+  "id": "6ae7a1378e070d8cc20b643b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|tank": {
+  "id": "6ae7a139d037ed7f1f02de25",
+  "prod": "tank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|wtank": {
+  "id": "6ae7a13b8e070d8cc20b6440",
+  "prod": "wtank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|polo": {
+  "id": "6ae7a13deff2af9b7c0be71c",
+  "prod": "polo",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|cap_dad": {
+  "id": "6ae7a13ea895c5bd4e00b0b1",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|cap_foam": {
+  "id": "6ae7a140eff2af9b7c0be723",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_cool|cap_mesh": {
+  "id": "6ae7a141d037ed7f1f02de2d",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|tank": {
+  "id": "6ae7a1436aa5485ffc0a01bb",
+  "prod": "tank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|wtank": {
+  "id": "6ae7a1447861ac1c1c0422a0",
+  "prod": "wtank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|polo": {
+  "id": "6ae7a146a04ae2f1280ac8ee",
+  "prod": "polo",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|cap_dad": {
+  "id": "6ae7a147a04ae2f1280ac8f0",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|cap_foam": {
+  "id": "6ae7a14aeff2af9b7c0be72c",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|line_heart|cap_mesh": {
+  "id": "6ae7a14cd037ed7f1f02de34",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|tank": {
+  "id": "6ae7a14ecefd302331097bd3",
+  "prod": "tank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|wtank": {
+  "id": "6ae7a1506aa5485ffc0a01c5",
+  "prod": "wtank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|polo": {
+  "id": "6ae7a152e8a14b46b70e9fd4",
+  "prod": "polo",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|cap_dad": {
+  "id": "6ae7a154eff2af9b7c0be734",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|cap_foam": {
+  "id": "6ae7a156e9fcc76a2908f888",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_classic|cap_mesh": {
+  "id": "6ae7a158e9fcc76a2908f88d",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tank": {
+  "id": "6ae7a159f5f22e3bbd08593a",
+  "prod": "tank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|wtank": {
+  "id": "6ae7a15bf9c00c9ec009fd4b",
+  "prod": "wtank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|polo": {
+  "id": "6ae7a15deff2af9b7c0be74e",
+  "prod": "polo",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|cap_dad": {
+  "id": "6ae7a15fe8a14b46b70e9fef",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|cap_foam": {
+  "id": "6ae7a160e9fcc76a2908f8ab",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_cool|cap_mesh": {
+  "id": "6ae7a1626aa5485ffc0a01e8",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|tank": {
+  "id": "6ae7a164f9c00c9ec009fd66",
+  "prod": "tank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|wtank": {
+  "id": "6ae7a1656aa5485ffc0a01ee",
+  "prod": "wtank",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|polo": {
+  "id": "6ae7a168f5f22e3bbd08595d",
+  "prod": "polo",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|cap_dad": {
+  "id": "6ae7a169cefd302331097c18",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|cap_foam": {
+  "id": "6ae7a16beff2af9b7c0be765",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "cavalier_king_charles_spaniel|geo_heart|cap_mesh": {
+  "id": "6ae7a16ceff2af9b7c0be767",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|tank": {
+  "id": "6ae7a16ee9fcc76a2908f8b9",
+  "prod": "tank",
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|wtank": {
+  "id": "6ae7a1706aa5485ffc0a01fc",
+  "prod": "wtank",
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|polo": {
+  "id": "6ae7a1726aa5485ffc0a01ff",
+  "prod": "polo",
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|cap_dad": {
+  "id": "6ae7a173a04ae2f1280ac930",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|cap_foam": {
+  "id": "6ae7a1756aa5485ffc0a0203",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "yorkshire_terrier|line_classic|cap_mesh": {
+  "id": "6ae7a176cefd302331097c1e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|tank": {
+  "id": "6ae7a178eff2af9b7c0be773",
+  "prod": "tank",
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|wtank": {
+  "id": "6ae7a1797861ac1c1c0422ec",
+  "prod": "wtank",
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|polo": {
+  "id": "6ae7a17beff2af9b7c0be778",
+  "prod": "polo",
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|cap_dad": {
+  "id": "6ae7a17de8a14b46b70ea021",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|cap_foam": {
+  "id": "6ae7a17e7861ac1c1c0422f1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "yorkshire_terrier|line_cool|cap_mesh": {
+  "id": "6ae7a180e8a14b46b70ea026",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|tank": {
+  "id": "6ae7a1816aa5485ffc0a0210",
+  "prod": "tank",
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|wtank": {
+  "id": "6ae7a1836aa5485ffc0a0211",
+  "prod": "wtank",
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|polo": {
+  "id": "6ae7a185eff2af9b7c0be784",
+  "prod": "polo",
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|cap_dad": {
+  "id": "6ae7a187f9c00c9ec009fd7b",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|cap_foam": {
+  "id": "6ae7a189e8a14b46b70ea031",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "yorkshire_terrier|line_heart|cap_mesh": {
+  "id": "6ae7a18aeff2af9b7c0be787",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|tank": {
+  "id": "6ae7a18ceff2af9b7c0be789",
+  "prod": "tank",
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|wtank": {
+  "id": "6ae7a18e7861ac1c1c0422f9",
+  "prod": "wtank",
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|polo": {
+  "id": "6ae7a18f8e070d8cc20b6498",
+  "prod": "polo",
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|cap_dad": {
+  "id": "6ae7a1917861ac1c1c0422ff",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|cap_foam": {
+  "id": "6ae7a192eff2af9b7c0be78d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "yorkshire_terrier|geo_classic|cap_mesh": {
+  "id": "6ae7a1948e070d8cc20b649b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|tank": {
+  "id": "6ae7a1957861ac1c1c042304",
+  "prod": "tank",
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|wtank": {
+  "id": "6ae7a197a04ae2f1280ac945",
+  "prod": "wtank",
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|polo": {
+  "id": "6ae7a199a04ae2f1280ac947",
+  "prod": "polo",
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|cap_dad": {
+  "id": "6ae7a19aa895c5bd4e00b108",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|cap_foam": {
+  "id": "6ae7a19ccefd302331097c41",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "yorkshire_terrier|geo_cool|cap_mesh": {
+  "id": "6ae7a19df5f22e3bbd08598c",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|tank": {
+  "id": "6ae7a19f8e070d8cc20b64b0",
+  "prod": "tank",
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|wtank": {
+  "id": "6ae7a1a18e070d8cc20b64b7",
+  "prod": "wtank",
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|polo": {
+  "id": "6ae7a1a36aa5485ffc0a022b",
+  "prod": "polo",
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|cap_dad": {
+  "id": "6ae7a1a4f9c00c9ec009fd9a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|cap_foam": {
+  "id": "6ae7a1a66aa5485ffc0a0232",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "yorkshire_terrier|geo_heart|cap_mesh": {
+  "id": "6ae7a1a7a04ae2f1280ac95b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "australian_shepherd|line_classic|tank": {
+  "id": "6ae7a1a9a04ae2f1280ac95e",
+  "prod": "tank",
+  "published": false
+ },
+ "australian_shepherd|line_classic|wtank": {
+  "id": "6ae7a1abf5f22e3bbd0859a9",
+  "prod": "wtank",
+  "published": false
+ },
+ "australian_shepherd|line_classic|polo": {
+  "id": "6ae7a1ad8e070d8cc20b64cd",
+  "prod": "polo",
+  "published": false
+ },
+ "australian_shepherd|line_classic|cap_dad": {
+  "id": "6ae7a1afa895c5bd4e00b12e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "australian_shepherd|line_classic|cap_foam": {
+  "id": "6ae7a1b0d037ed7f1f02dea4",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "australian_shepherd|line_classic|cap_mesh": {
+  "id": "6ae7a1b26aa5485ffc0a0241",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "australian_shepherd|line_cool|tank": {
+  "id": "6ae7a1b3a04ae2f1280ac979",
+  "prod": "tank",
+  "published": false
+ },
+ "australian_shepherd|line_cool|wtank": {
+  "id": "6ae7a1b5cefd302331097c71",
+  "prod": "wtank",
+  "published": false
+ },
+ "australian_shepherd|line_cool|polo": {
+  "id": "6ae7a1b7a04ae2f1280ac987",
+  "prod": "polo",
+  "published": false
+ },
+ "australian_shepherd|line_cool|cap_dad": {
+  "id": "6ae7a1b98e070d8cc20b64e7",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "australian_shepherd|line_cool|cap_foam": {
+  "id": "6ae7a1bae9fcc76a2908f8fe",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "australian_shepherd|line_cool|cap_mesh": {
+  "id": "6ae7a1bceff2af9b7c0be7d0",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "australian_shepherd|line_heart|tank": {
+  "id": "6ae7a1bda04ae2f1280ac995",
+  "prod": "tank",
+  "published": false
+ },
+ "australian_shepherd|line_heart|wtank": {
+  "id": "6ae7a1bfa895c5bd4e00b141",
+  "prod": "wtank",
+  "published": false
+ },
+ "australian_shepherd|line_heart|polo": {
+  "id": "6ae7a1c1eff2af9b7c0be7d3",
+  "prod": "polo",
+  "published": false
+ },
+ "australian_shepherd|line_heart|cap_dad": {
+  "id": "6ae7a1c3d037ed7f1f02dec4",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "australian_shepherd|line_heart|cap_foam": {
+  "id": "6ae7a1c4cefd302331097c83",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "australian_shepherd|line_heart|cap_mesh": {
+  "id": "6ae7a1c6d037ed7f1f02dec5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "australian_shepherd|geo_classic|tank": {
+  "id": "6ae7a1c78e070d8cc20b64f0",
+  "prod": "tank",
+  "published": false
+ },
+ "australian_shepherd|geo_classic|wtank": {
+  "id": "6ae7a1c96aa5485ffc0a0260",
+  "prod": "wtank",
+  "published": false
+ },
+ "australian_shepherd|geo_classic|polo": {
+  "id": "6ae7a1cbeff2af9b7c0be7d9",
+  "prod": "polo",
+  "published": false
+ },
+ "australian_shepherd|geo_classic|cap_dad": {
+  "id": "6ae7a1cd6aa5485ffc0a0263",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "australian_shepherd|geo_classic|cap_foam": {
+  "id": "6ae7a1ced037ed7f1f02dec9",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "australian_shepherd|geo_classic|cap_mesh": {
+  "id": "6ae7a1d07861ac1c1c042346",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "australian_shepherd|geo_cool|tank": {
+  "id": "6ae7a1d1a04ae2f1280ac9a7",
+  "prod": "tank",
+  "published": false
+ },
+ "australian_shepherd|geo_cool|wtank": {
+  "id": "6ae7a1d3e8a14b46b70ea094",
+  "prod": "wtank",
+  "published": false
+ },
+ "australian_shepherd|geo_cool|polo": {
+  "id": "6ae7a1d5a895c5bd4e00b149",
+  "prod": "polo",
+  "published": false
+ },
+ "australian_shepherd|geo_cool|cap_dad": {
+  "id": "6ae7a1d7a895c5bd4e00b14c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "australian_shepherd|geo_cool|cap_foam": {
+  "id": "6ae7a1d9e9fcc76a2908f90c",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "australian_shepherd|geo_cool|cap_mesh": {
+  "id": "6ae7a1daa895c5bd4e00b150",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "australian_shepherd|geo_heart|tank": {
+  "id": "6ae7a1dca895c5bd4e00b153",
+  "prod": "tank",
+  "published": false
+ },
+ "australian_shepherd|geo_heart|wtank": {
+  "id": "6ae7a1ddf5f22e3bbd0859d4",
+  "prod": "wtank",
+  "published": false
+ },
+ "australian_shepherd|geo_heart|polo": {
+  "id": "6ae7a1dfd037ed7f1f02ded4",
+  "prod": "polo",
+  "published": false
+ },
+ "australian_shepherd|geo_heart|cap_dad": {
+  "id": "6ae7a1e1e8a14b46b70ea09d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "australian_shepherd|geo_heart|cap_foam": {
+  "id": "6ae7a1e2f9c00c9ec009fdd3",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "australian_shepherd|geo_heart|cap_mesh": {
+  "id": "6ae7a1e4e8a14b46b70ea09f",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "doberman_pinscher|line_classic|tank": {
+  "id": "6ae7a1e6a895c5bd4e00b15c",
+  "prod": "tank",
+  "published": false
+ },
+ "doberman_pinscher|line_classic|wtank": {
+  "id": "6ae7a1e77861ac1c1c04234f",
+  "prod": "wtank",
+  "published": false
+ },
+ "doberman_pinscher|line_classic|polo": {
+  "id": "6ae7a1e9d037ed7f1f02ded6",
+  "prod": "polo",
+  "published": false
+ },
+ "doberman_pinscher|line_classic|cap_dad": {
+  "id": "6ae7a1ebd037ed7f1f02ded7",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "doberman_pinscher|line_classic|cap_foam": {
+  "id": "6ae7a1ecf9c00c9ec009fdd7",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "doberman_pinscher|line_classic|cap_mesh": {
+  "id": "6ae7a1eea04ae2f1280ac9b0",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "doberman_pinscher|line_cool|tank": {
+  "id": "6ae7a1f0d037ed7f1f02deda",
+  "prod": "tank",
+  "published": false
+ },
+ "doberman_pinscher|line_cool|wtank": {
+  "id": "6ae7a1f1a04ae2f1280ac9b6",
+  "prod": "wtank",
+  "published": false
+ },
+ "doberman_pinscher|line_cool|polo": {
+  "id": "6ae7a1f3f9c00c9ec009fddc",
+  "prod": "polo",
+  "published": false
+ },
+ "doberman_pinscher|line_cool|cap_dad": {
+  "id": "6ae7a1f5e8a14b46b70ea0aa",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "doberman_pinscher|line_cool|cap_foam": {
+  "id": "6ae7a1f6d037ed7f1f02dee3",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "doberman_pinscher|line_cool|cap_mesh": {
+  "id": "6ae7a1f8e8a14b46b70ea0ad",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "doberman_pinscher|line_heart|tank": {
+  "id": "6ae7a1f9f9c00c9ec009fde4",
+  "prod": "tank",
+  "published": false
+ },
+ "doberman_pinscher|line_heart|wtank": {
+  "id": "6ae7a1fbe9fcc76a2908f921",
+  "prod": "wtank",
+  "published": false
+ },
+ "doberman_pinscher|line_heart|polo": {
+  "id": "6ae7a1fde9fcc76a2908f922",
+  "prod": "polo",
+  "published": false
+ },
+ "doberman_pinscher|line_heart|cap_dad": {
+  "id": "6ae7a1ff8e070d8cc20b650e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "doberman_pinscher|line_heart|cap_foam": {
+  "id": "6ae7a201f9c00c9ec009fde7",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "doberman_pinscher|line_heart|cap_mesh": {
+  "id": "6ae7a2028e070d8cc20b6511",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|tank": {
+  "id": "6ae7a204e8a14b46b70ea0b3",
+  "prod": "tank",
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|wtank": {
+  "id": "6ae7a205f9c00c9ec009fdeb",
+  "prod": "wtank",
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|polo": {
+  "id": "6ae7a207e9fcc76a2908f92c",
+  "prod": "polo",
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|cap_dad": {
+  "id": "6ae7a2098e070d8cc20b6516",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|cap_foam": {
+  "id": "6ae7a20be9fcc76a2908f92f",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "doberman_pinscher|geo_classic|cap_mesh": {
+  "id": "6ae7a20cf9c00c9ec009fdf4",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|tank": {
+  "id": "6ae7a20e8e070d8cc20b651b",
+  "prod": "tank",
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|wtank": {
+  "id": "6ae7a210eff2af9b7c0be7ee",
+  "prod": "wtank",
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|polo": {
+  "id": "6ae7a2128e070d8cc20b651f",
+  "prod": "polo",
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|cap_dad": {
+  "id": "6ae7a213f9c00c9ec009fdfb",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|cap_foam": {
+  "id": "6ae7a215a04ae2f1280ac9d9",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "doberman_pinscher|geo_cool|cap_mesh": {
+  "id": "6ae7a216e9fcc76a2908f93a",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|tank": {
+  "id": "6ae7a218e9fcc76a2908f93c",
+  "prod": "tank",
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|wtank": {
+  "id": "6ae7a219cefd302331097cbc",
+  "prod": "wtank",
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|polo": {
+  "id": "6ae7a21bf9c00c9ec009fe04",
+  "prod": "polo",
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|cap_dad": {
+  "id": "6ae7a21df9c00c9ec009fe07",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|cap_foam": {
+  "id": "6ae7a21e8e070d8cc20b652d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "doberman_pinscher|geo_heart|cap_mesh": {
+  "id": "6ae7a220f9c00c9ec009fe0b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|tank": {
+  "id": "6ae7a2217861ac1c1c042378",
+  "prod": "tank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|wtank": {
+  "id": "6ae7a223a895c5bd4e00b17e",
+  "prod": "wtank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|polo": {
+  "id": "6ae7a225d037ed7f1f02defb",
+  "prod": "polo",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|cap_dad": {
+  "id": "6ae7a226f5f22e3bbd0859f2",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|cap_foam": {
+  "id": "6ae7a228eff2af9b7c0be800",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_classic|cap_mesh": {
+  "id": "6ae7a22ad037ed7f1f02deff",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|tank": {
+  "id": "6ae7a22bf9c00c9ec009fe1c",
+  "prod": "tank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|wtank": {
+  "id": "6ae7a22df9c00c9ec009fe20",
+  "prod": "wtank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|polo": {
+  "id": "6ae7a22f8e070d8cc20b6536",
+  "prod": "polo",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|cap_dad": {
+  "id": "6ae7a231f9c00c9ec009fe27",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|cap_foam": {
+  "id": "6ae7a233f9c00c9ec009fe2b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_cool|cap_mesh": {
+  "id": "6ae7a234e9fcc76a2908f952",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|tank": {
+  "id": "6ae7a236f9c00c9ec009fe2d",
+  "prod": "tank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|wtank": {
+  "id": "6ae7a237a04ae2f1280ac9f2",
+  "prod": "wtank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|polo": {
+  "id": "6ae7a2398e070d8cc20b653d",
+  "prod": "polo",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|cap_dad": {
+  "id": "6ae7a23bd037ed7f1f02df0c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|cap_foam": {
+  "id": "6ae7a23ca04ae2f1280ac9f7",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pembroke_welsh_corgi|line_heart|cap_mesh": {
+  "id": "6ae7a23e8e070d8cc20b653f",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|tank": {
+  "id": "6ae7a23f7861ac1c1c04238a",
+  "prod": "tank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|wtank": {
+  "id": "6ae7a2417861ac1c1c04238b",
+  "prod": "wtank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|polo": {
+  "id": "6ae7a243d037ed7f1f02df0d",
+  "prod": "polo",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|cap_dad": {
+  "id": "6ae7a2447861ac1c1c04238e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|cap_foam": {
+  "id": "6ae7a246f9c00c9ec009fe37",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_classic|cap_mesh": {
+  "id": "6ae7a247d037ed7f1f02df12",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|tank": {
+  "id": "6ae7a2498e070d8cc20b6541",
+  "prod": "tank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|wtank": {
+  "id": "6ae7a24a8e070d8cc20b6543",
+  "prod": "wtank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|polo": {
+  "id": "6ae7a24ca04ae2f1280aca01",
+  "prod": "polo",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|cap_dad": {
+  "id": "6ae7a24ed037ed7f1f02df1a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|cap_foam": {
+  "id": "6ae7a24f7861ac1c1c042395",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_cool|cap_mesh": {
+  "id": "6ae7a251a895c5bd4e00b198",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|tank": {
+  "id": "6ae7a252a895c5bd4e00b19c",
+  "prod": "tank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|wtank": {
+  "id": "6ae7a254d037ed7f1f02df25",
+  "prod": "wtank",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|polo": {
+  "id": "6ae7a256d037ed7f1f02df27",
+  "prod": "polo",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|cap_dad": {
+  "id": "6ae7a257eff2af9b7c0be80f",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|cap_foam": {
+  "id": "6ae7a259d037ed7f1f02df2e",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pembroke_welsh_corgi|geo_heart|cap_mesh": {
+  "id": "6ae7a25ae9fcc76a2908f96c",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|tank": {
+  "id": "6ae7a25c8e070d8cc20b6553",
+  "prod": "tank",
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|wtank": {
+  "id": "6ae7a25ed037ed7f1f02df30",
+  "prod": "wtank",
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|polo": {
+  "id": "6ae7a25fa04ae2f1280aca0a",
+  "prod": "polo",
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|cap_dad": {
+  "id": "6ae7a2617861ac1c1c0423a4",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|cap_foam": {
+  "id": "6ae7a263f5f22e3bbd085a19",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "miniature_schnauzer|line_classic|cap_mesh": {
+  "id": "6ae7a264a04ae2f1280aca0e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|tank": {
+  "id": "6ae7a266f5f22e3bbd085a1a",
+  "prod": "tank",
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|wtank": {
+  "id": "6ae7a2678e070d8cc20b655c",
+  "prod": "wtank",
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|polo": {
+  "id": "6ae7a269f5f22e3bbd085a1b",
+  "prod": "polo",
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|cap_dad": {
+  "id": "6ae7a26af5f22e3bbd085a1f",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|cap_foam": {
+  "id": "6ae7a26c6aa5485ffc0a02b6",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "miniature_schnauzer|line_cool|cap_mesh": {
+  "id": "6ae7a26d8e070d8cc20b6566",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|tank": {
+  "id": "6ae7a26feff2af9b7c0be81d",
+  "prod": "tank",
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|wtank": {
+  "id": "6ae7a271e9fcc76a2908f973",
+  "prod": "wtank",
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|polo": {
+  "id": "6ae7a2727861ac1c1c0423b0",
+  "prod": "polo",
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|cap_dad": {
+  "id": "6ae7a2746aa5485ffc0a02bc",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|cap_foam": {
+  "id": "6ae7a276cefd302331097ce1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "miniature_schnauzer|line_heart|cap_mesh": {
+  "id": "6ae7a278e9fcc76a2908f976",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|tank": {
+  "id": "6ae7a27aeff2af9b7c0be827",
+  "prod": "tank",
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|wtank": {
+  "id": "6ae7a27c7861ac1c1c0423b5",
+  "prod": "wtank",
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|polo": {
+  "id": "6ae7a27ee9fcc76a2908f97f",
+  "prod": "polo",
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|cap_dad": {
+  "id": "6ae7a27feff2af9b7c0be82b",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|cap_foam": {
+  "id": "6ae7a281f5f22e3bbd085a34",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "miniature_schnauzer|geo_classic|cap_mesh": {
+  "id": "6ae7a282a04ae2f1280aca1c",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|tank": {
+  "id": "6ae7a284f5f22e3bbd085a39",
+  "prod": "tank",
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|wtank": {
+  "id": "6ae7a285d037ed7f1f02df48",
+  "prod": "wtank",
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|polo": {
+  "id": "6ae7a2878e070d8cc20b657a",
+  "prod": "polo",
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|cap_dad": {
+  "id": "6ae7a289eff2af9b7c0be832",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|cap_foam": {
+  "id": "6ae7a28ae9fcc76a2908f988",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "miniature_schnauzer|geo_cool|cap_mesh": {
+  "id": "6ae7a28c8e070d8cc20b657e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|tank": {
+  "id": "6ae7a28de8a14b46b70ea0f6",
+  "prod": "tank",
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|wtank": {
+  "id": "6ae7a28ff5f22e3bbd085a44",
+  "prod": "wtank",
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|polo": {
+  "id": "6ae7a291f5f22e3bbd085a48",
+  "prod": "polo",
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|cap_dad": {
+  "id": "6ae7a292e8a14b46b70ea0fa",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|cap_foam": {
+  "id": "6ae7a294e9fcc76a2908f994",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "miniature_schnauzer|geo_heart|cap_mesh": {
+  "id": "6ae7a295eff2af9b7c0be83b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boxer|line_classic|tank": {
+  "id": "6ae7a297cefd302331097cf9",
+  "prod": "tank",
+  "published": false
+ },
+ "boxer|line_classic|wtank": {
+  "id": "6ae7a298eff2af9b7c0be83e",
+  "prod": "wtank",
+  "published": false
+ },
+ "boxer|line_classic|polo": {
+  "id": "6ae7a29ae8a14b46b70ea0fd",
+  "prod": "polo",
+  "published": false
+ },
+ "boxer|line_classic|cap_dad": {
+  "id": "6ae7a29ce9fcc76a2908f9a0",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boxer|line_classic|cap_foam": {
+  "id": "6ae7a29ee8a14b46b70ea100",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boxer|line_classic|cap_mesh": {
+  "id": "6ae7a29f7861ac1c1c0423c4",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boxer|line_cool|tank": {
+  "id": "6ae7a2a1cefd302331097d00",
+  "prod": "tank",
+  "published": false
+ },
+ "boxer|line_cool|wtank": {
+  "id": "6ae7a2a28e070d8cc20b658d",
+  "prod": "wtank",
+  "published": false
+ },
+ "boxer|line_cool|polo": {
+  "id": "6ae7a2a4e8a14b46b70ea106",
+  "prod": "polo",
+  "published": false
+ },
+ "boxer|line_cool|cap_dad": {
+  "id": "6ae7a2a6e9fcc76a2908f9a3",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boxer|line_cool|cap_foam": {
+  "id": "6ae7a2a7e9fcc76a2908f9a5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boxer|line_cool|cap_mesh": {
+  "id": "6ae7a2a9e9fcc76a2908f9a6",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boxer|line_heart|tank": {
+  "id": "6ae7a2aaa895c5bd4e00b1c7",
+  "prod": "tank",
+  "published": false
+ },
+ "boxer|line_heart|wtank": {
+  "id": "6ae7a2ac8e070d8cc20b6593",
+  "prod": "wtank",
+  "published": false
+ },
+ "boxer|line_heart|polo": {
+  "id": "6ae7a2aed037ed7f1f02df60",
+  "prod": "polo",
+  "published": false
+ },
+ "boxer|line_heart|cap_dad": {
+  "id": "6ae7a2af8e070d8cc20b6599",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boxer|line_heart|cap_foam": {
+  "id": "6ae7a2b1e8a14b46b70ea112",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boxer|line_heart|cap_mesh": {
+  "id": "6ae7a2b3e8a14b46b70ea114",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boxer|geo_classic|tank": {
+  "id": "6ae7a2b4e9fcc76a2908f9b3",
+  "prod": "tank",
+  "published": false
+ },
+ "boxer|geo_classic|wtank": {
+  "id": "6ae7a2b68e070d8cc20b659e",
+  "prod": "wtank",
+  "published": false
+ },
+ "boxer|geo_classic|polo": {
+  "id": "6ae7a2b8d037ed7f1f02df67",
+  "prod": "polo",
+  "published": false
+ },
+ "boxer|geo_classic|cap_dad": {
+  "id": "6ae7a2b9eff2af9b7c0be853",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boxer|geo_classic|cap_foam": {
+  "id": "6ae7a2bbcefd302331097d0a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boxer|geo_classic|cap_mesh": {
+  "id": "6ae7a2bce9fcc76a2908f9c2",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boxer|geo_cool|tank": {
+  "id": "6ae7a2be7861ac1c1c0423da",
+  "prod": "tank",
+  "published": false
+ },
+ "boxer|geo_cool|wtank": {
+  "id": "6ae7a2bfa04ae2f1280aca48",
+  "prod": "wtank",
+  "published": false
+ },
+ "boxer|geo_cool|polo": {
+  "id": "6ae7a2c1eff2af9b7c0be860",
+  "prod": "polo",
+  "published": false
+ },
+ "boxer|geo_cool|cap_dad": {
+  "id": "6ae7a2c3d037ed7f1f02df7f",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boxer|geo_cool|cap_foam": {
+  "id": "6ae7a2c4e8a14b46b70ea133",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boxer|geo_cool|cap_mesh": {
+  "id": "6ae7a2c6e8a14b46b70ea134",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boxer|geo_heart|tank": {
+  "id": "6ae7a2c8d037ed7f1f02df86",
+  "prod": "tank",
+  "published": false
+ },
+ "boxer|geo_heart|wtank": {
+  "id": "6ae7a2c98e070d8cc20b65b4",
+  "prod": "wtank",
+  "published": false
+ },
+ "boxer|geo_heart|polo": {
+  "id": "6ae7a2cbf9c00c9ec009fe7c",
+  "prod": "polo",
+  "published": false
+ },
+ "boxer|geo_heart|cap_dad": {
+  "id": "6ae7a2cde8a14b46b70ea13a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boxer|geo_heart|cap_foam": {
+  "id": "6ae7a2cecefd302331097d1d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boxer|geo_heart|cap_mesh": {
+  "id": "6ae7a2d0cefd302331097d1f",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pomeranian|line_classic|tank": {
+  "id": "6ae7a2d17861ac1c1c0423e8",
+  "prod": "tank",
+  "published": false
+ },
+ "pomeranian|line_classic|wtank": {
+  "id": "6ae7a2d3d037ed7f1f02df92",
+  "prod": "wtank",
+  "published": false
+ },
+ "pomeranian|line_classic|polo": {
+  "id": "6ae7a2d5d037ed7f1f02df94",
+  "prod": "polo",
+  "published": false
+ },
+ "pomeranian|line_classic|cap_dad": {
+  "id": "6ae7a2d6cefd302331097d25",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pomeranian|line_classic|cap_foam": {
+  "id": "6ae7a2d87861ac1c1c0423ef",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pomeranian|line_classic|cap_mesh": {
+  "id": "6ae7a2d9f9c00c9ec009fe84",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pomeranian|line_cool|tank": {
+  "id": "6ae7a2db8e070d8cc20b65be",
+  "prod": "tank",
+  "published": false
+ },
+ "pomeranian|line_cool|wtank": {
+  "id": "6ae7a2dce9fcc76a2908f9e7",
+  "prod": "wtank",
+  "published": false
+ },
+ "pomeranian|line_cool|polo": {
+  "id": "6ae7a2dee9fcc76a2908f9e9",
+  "prod": "polo",
+  "published": false
+ },
+ "pomeranian|line_cool|cap_dad": {
+  "id": "6ae7a2e08e070d8cc20b65c2",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pomeranian|line_cool|cap_foam": {
+  "id": "6ae7a2e18e070d8cc20b65c7",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pomeranian|line_cool|cap_mesh": {
+  "id": "6ae7a2e3f9c00c9ec009fe88",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pomeranian|line_heart|tank": {
+  "id": "6ae7a2e57861ac1c1c0423f5",
+  "prod": "tank",
+  "published": false
+ },
+ "pomeranian|line_heart|wtank": {
+  "id": "6ae7a2e6cefd302331097d2b",
+  "prod": "wtank",
+  "published": false
+ },
+ "pomeranian|line_heart|polo": {
+  "id": "6ae7a2e8f5f22e3bbd085a92",
+  "prod": "polo",
+  "published": false
+ },
+ "pomeranian|line_heart|cap_dad": {
+  "id": "6ae7a2eacefd302331097d30",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pomeranian|line_heart|cap_foam": {
+  "id": "6ae7a2ebf9c00c9ec009fe92",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pomeranian|line_heart|cap_mesh": {
+  "id": "6ae7a2ede9fcc76a2908f9fe",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pomeranian|geo_classic|tank": {
+  "id": "6ae7a2eee8a14b46b70ea144",
+  "prod": "tank",
+  "published": false
+ },
+ "pomeranian|geo_classic|wtank": {
+  "id": "6ae7a2f0e9fcc76a2908fa05",
+  "prod": "wtank",
+  "published": false
+ },
+ "pomeranian|geo_classic|polo": {
+  "id": "6ae7a2f2d037ed7f1f02dfb2",
+  "prod": "polo",
+  "published": false
+ },
+ "pomeranian|geo_classic|cap_dad": {
+  "id": "6ae7a2f4a895c5bd4e00b200",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pomeranian|geo_classic|cap_foam": {
+  "id": "6ae7a2f6a895c5bd4e00b202",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pomeranian|geo_classic|cap_mesh": {
+  "id": "6ae7a2f7d037ed7f1f02dfb5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pomeranian|geo_cool|tank": {
+  "id": "6ae7a2f9e9fcc76a2908fa0b",
+  "prod": "tank",
+  "published": false
+ },
+ "pomeranian|geo_cool|wtank": {
+  "id": "6ae7a2fa8e070d8cc20b65df",
+  "prod": "wtank",
+  "published": false
+ },
+ "pomeranian|geo_cool|polo": {
+  "id": "6ae7a2fca895c5bd4e00b20b",
+  "prod": "polo",
+  "published": false
+ },
+ "pomeranian|geo_cool|cap_dad": {
+  "id": "6ae7a2fea895c5bd4e00b20c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pomeranian|geo_cool|cap_foam": {
+  "id": "6ae7a2fff5f22e3bbd085a9a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pomeranian|geo_cool|cap_mesh": {
+  "id": "6ae7a301a04ae2f1280aca67",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pomeranian|geo_heart|tank": {
+  "id": "6ae7a302eff2af9b7c0be880",
+  "prod": "tank",
+  "published": false
+ },
+ "pomeranian|geo_heart|wtank": {
+  "id": "6ae7a3047861ac1c1c042407",
+  "prod": "wtank",
+  "published": false
+ },
+ "pomeranian|geo_heart|polo": {
+  "id": "6ae7a3067861ac1c1c04240a",
+  "prod": "polo",
+  "published": false
+ },
+ "pomeranian|geo_heart|cap_dad": {
+  "id": "6ae7a307e8a14b46b70ea14d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pomeranian|geo_heart|cap_foam": {
+  "id": "6ae7a309a895c5bd4e00b215",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pomeranian|geo_heart|cap_mesh": {
+  "id": "6ae7a30acefd302331097d43",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|tank": {
+  "id": "6ae7a30c7861ac1c1c04240e",
+  "prod": "tank",
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|wtank": {
+  "id": "6ae7a30de9fcc76a2908fa16",
+  "prod": "wtank",
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|polo": {
+  "id": "6ae7a30fe9fcc76a2908fa17",
+  "prod": "polo",
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|cap_dad": {
+  "id": "6ae7a311cefd302331097d46",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|cap_foam": {
+  "id": "6ae7a312e9fcc76a2908fa19",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bernese_mountain_dog|line_classic|cap_mesh": {
+  "id": "6ae7a314e8a14b46b70ea153",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|tank": {
+  "id": "6ae7a3157861ac1c1c042412",
+  "prod": "tank",
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|wtank": {
+  "id": "6ae7a317f9c00c9ec009feb1",
+  "prod": "wtank",
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|polo": {
+  "id": "6ae7a319cefd302331097d4c",
+  "prod": "polo",
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|cap_dad": {
+  "id": "6ae7a31ae9fcc76a2908fa1d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|cap_foam": {
+  "id": "6ae7a31cf9c00c9ec009feb5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bernese_mountain_dog|line_cool|cap_mesh": {
+  "id": "6ae7a31d7861ac1c1c04241a",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|tank": {
+  "id": "6ae7a31ff9c00c9ec009feb8",
+  "prod": "tank",
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|wtank": {
+  "id": "6ae7a320e9fcc76a2908fa26",
+  "prod": "wtank",
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|polo": {
+  "id": "6ae7a322cefd302331097d56",
+  "prod": "polo",
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|cap_dad": {
+  "id": "6ae7a324e9fcc76a2908fa2e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|cap_foam": {
+  "id": "6ae7a3258e070d8cc20b65ef",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bernese_mountain_dog|line_heart|cap_mesh": {
+  "id": "6ae7a327cefd302331097d59",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|tank": {
+  "id": "6ae7a328e9fcc76a2908fa33",
+  "prod": "tank",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|wtank": {
+  "id": "6ae7a32ae9fcc76a2908fa39",
+  "prod": "wtank",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|polo": {
+  "id": "6ae7a32c7861ac1c1c042427",
+  "prod": "polo",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|cap_dad": {
+  "id": "6ae7a32ef5f22e3bbd085ab5",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|cap_foam": {
+  "id": "6ae7a330f5f22e3bbd085ab6",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_classic|cap_mesh": {
+  "id": "6ae7a3316aa5485ffc0a0312",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|tank": {
+  "id": "6ae7a333f9c00c9ec009fed4",
+  "prod": "tank",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|wtank": {
+  "id": "6ae7a334cefd302331097d68",
+  "prod": "wtank",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|polo": {
+  "id": "6ae7a336f9c00c9ec009fed8",
+  "prod": "polo",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|cap_dad": {
+  "id": "6ae7a338f9c00c9ec009fed9",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|cap_foam": {
+  "id": "6ae7a339f9c00c9ec009fedc",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_cool|cap_mesh": {
+  "id": "6ae7a33b6aa5485ffc0a0318",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|tank": {
+  "id": "6ae7a33c6aa5485ffc0a031a",
+  "prod": "tank",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|wtank": {
+  "id": "6ae7a33ecefd302331097d73",
+  "prod": "wtank",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|polo": {
+  "id": "6ae7a340a895c5bd4e00b21e",
+  "prod": "polo",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|cap_dad": {
+  "id": "6ae7a343f5f22e3bbd085ac5",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|cap_foam": {
+  "id": "6ae7a344a895c5bd4e00b223",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bernese_mountain_dog|geo_heart|cap_mesh": {
+  "id": "6ae7a346cefd302331097d76",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shih_tzu|line_classic|tank": {
+  "id": "6ae7a3477861ac1c1c042436",
+  "prod": "tank",
+  "published": false
+ },
+ "shih_tzu|line_classic|wtank": {
+  "id": "6ae7a349d037ed7f1f02dfd1",
+  "prod": "wtank",
+  "published": false
+ },
+ "shih_tzu|line_classic|polo": {
+  "id": "6ae7a34ba04ae2f1280aca95",
+  "prod": "polo",
+  "published": false
+ },
+ "shih_tzu|line_classic|cap_dad": {
+  "id": "6ae7a34d7861ac1c1c04243a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shih_tzu|line_classic|cap_foam": {
+  "id": "6ae7a34ea04ae2f1280aca9c",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shih_tzu|line_classic|cap_mesh": {
+  "id": "6ae7a34f6aa5485ffc0a0322",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shih_tzu|line_cool|tank": {
+  "id": "6ae7a351a895c5bd4e00b22b",
+  "prod": "tank",
+  "published": false
+ },
+ "shih_tzu|line_cool|wtank": {
+  "id": "6ae7a352e8a14b46b70ea177",
+  "prod": "wtank",
+  "published": false
+ },
+ "shih_tzu|line_cool|polo": {
+  "id": "6ae7a3547861ac1c1c04243e",
+  "prod": "polo",
+  "published": false
+ },
+ "shih_tzu|line_cool|cap_dad": {
+  "id": "6ae7a3567861ac1c1c042441",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shih_tzu|line_cool|cap_foam": {
+  "id": "6ae7a358f5f22e3bbd085ad3",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shih_tzu|line_cool|cap_mesh": {
+  "id": "6ae7a359f5f22e3bbd085ad5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shih_tzu|line_heart|tank": {
+  "id": "6ae7a35bf5f22e3bbd085ad8",
+  "prod": "tank",
+  "published": false
+ },
+ "shih_tzu|line_heart|wtank": {
+  "id": "6ae7a35c6aa5485ffc0a032e",
+  "prod": "wtank",
+  "published": false
+ },
+ "shih_tzu|line_heart|polo": {
+  "id": "6ae7a35e6aa5485ffc0a0331",
+  "prod": "polo",
+  "published": false
+ },
+ "shih_tzu|line_heart|cap_dad": {
+  "id": "6ae7a360a895c5bd4e00b236",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shih_tzu|line_heart|cap_foam": {
+  "id": "6ae7a361d037ed7f1f02dfda",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shih_tzu|line_heart|cap_mesh": {
+  "id": "6ae7a363f9c00c9ec009fef3",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shih_tzu|geo_classic|tank": {
+  "id": "6ae7a364d037ed7f1f02dfdd",
+  "prod": "tank",
+  "published": false
+ },
+ "shih_tzu|geo_classic|wtank": {
+  "id": "6ae7a366e8a14b46b70ea188",
+  "prod": "wtank",
+  "published": false
+ },
+ "shih_tzu|geo_classic|polo": {
+  "id": "6ae7a3698e070d8cc20b660b",
+  "prod": "polo",
+  "published": false
+ },
+ "shih_tzu|geo_classic|cap_dad": {
+  "id": "6ae7a36aa04ae2f1280acac2",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shih_tzu|geo_classic|cap_foam": {
+  "id": "6ae7a36cf5f22e3bbd085ae1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shih_tzu|geo_classic|cap_mesh": {
+  "id": "6ae7a36d6aa5485ffc0a0340",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shih_tzu|geo_cool|tank": {
+  "id": "6ae7a36ff9c00c9ec009ff01",
+  "prod": "tank",
+  "published": false
+ },
+ "shih_tzu|geo_cool|wtank": {
+  "id": "6ae7a371cefd302331097d8a",
+  "prod": "wtank",
+  "published": false
+ },
+ "shih_tzu|geo_cool|polo": {
+  "id": "6ae7a3728e070d8cc20b6612",
+  "prod": "polo",
+  "published": false
+ },
+ "shih_tzu|geo_cool|cap_dad": {
+  "id": "6ae7a374eff2af9b7c0be8b2",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shih_tzu|geo_cool|cap_foam": {
+  "id": "6ae7a375eff2af9b7c0be8b6",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shih_tzu|geo_cool|cap_mesh": {
+  "id": "6ae7a377d037ed7f1f02dfe7",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shih_tzu|geo_heart|tank": {
+  "id": "6ae7a3797861ac1c1c042456",
+  "prod": "tank",
+  "published": false
+ },
+ "shih_tzu|geo_heart|wtank": {
+  "id": "6ae7a37ad037ed7f1f02dfec",
+  "prod": "wtank",
+  "published": false
+ },
+ "shih_tzu|geo_heart|polo": {
+  "id": "6ae7a37cf9c00c9ec009ff08",
+  "prod": "polo",
+  "published": false
+ },
+ "shih_tzu|geo_heart|cap_dad": {
+  "id": "6ae7a37ed037ed7f1f02dff3",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shih_tzu|geo_heart|cap_foam": {
+  "id": "6ae7a37fd037ed7f1f02dff9",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shih_tzu|geo_heart|cap_mesh": {
+  "id": "6ae7a381a04ae2f1280acac8",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "great_dane|line_classic|tank": {
+  "id": "6ae7a3836aa5485ffc0a0350",
+  "prod": "tank",
+  "published": false
+ },
+ "great_dane|line_classic|wtank": {
+  "id": "6ae7a3847861ac1c1c042462",
+  "prod": "wtank",
+  "published": false
+ },
+ "great_dane|line_classic|polo": {
+  "id": "6ae7a386f9c00c9ec009ff16",
+  "prod": "polo",
+  "published": false
+ },
+ "great_dane|line_classic|cap_dad": {
+  "id": "6ae7a388d037ed7f1f02e000",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "great_dane|line_classic|cap_foam": {
+  "id": "6ae7a389f5f22e3bbd085aec",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "great_dane|line_classic|cap_mesh": {
+  "id": "6ae7a38b6aa5485ffc0a0356",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "great_dane|line_cool|tank": {
+  "id": "6ae7a38ceff2af9b7c0be8c6",
+  "prod": "tank",
+  "published": false
+ },
+ "great_dane|line_cool|wtank": {
+  "id": "6ae7a38e8e070d8cc20b6624",
+  "prod": "wtank",
+  "published": false
+ },
+ "great_dane|line_cool|polo": {
+  "id": "6ae7a390f5f22e3bbd085af6",
+  "prod": "polo",
+  "published": false
+ },
+ "great_dane|line_cool|cap_dad": {
+  "id": "6ae7a392f9c00c9ec009ff21",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "great_dane|line_cool|cap_foam": {
+  "id": "6ae7a393d037ed7f1f02e00a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "great_dane|line_cool|cap_mesh": {
+  "id": "6ae7a395f5f22e3bbd085afa",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "great_dane|line_heart|tank": {
+  "id": "6ae7a396eff2af9b7c0be8cc",
+  "prod": "tank",
+  "published": false
+ },
+ "great_dane|line_heart|wtank": {
+  "id": "6ae7a398a04ae2f1280acad7",
+  "prod": "wtank",
+  "published": false
+ },
+ "great_dane|line_heart|polo": {
+  "id": "6ae7a39aeff2af9b7c0be8d0",
+  "prod": "polo",
+  "published": false
+ },
+ "great_dane|line_heart|cap_dad": {
+  "id": "6ae7a39b7861ac1c1c042477",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "great_dane|line_heart|cap_foam": {
+  "id": "6ae7a39df9c00c9ec009ff2b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "great_dane|line_heart|cap_mesh": {
+  "id": "6ae7a39ea04ae2f1280acade",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "great_dane|geo_classic|tank": {
+  "id": "6ae7a3a08e070d8cc20b6631",
+  "prod": "tank",
+  "published": false
+ },
+ "great_dane|geo_classic|wtank": {
+  "id": "6ae7a3a28e070d8cc20b6632",
+  "prod": "wtank",
+  "published": false
+ },
+ "great_dane|geo_classic|polo": {
+  "id": "6ae7a3a5d037ed7f1f02e015",
+  "prod": "polo",
+  "published": false
+ },
+ "great_dane|geo_classic|cap_dad": {
+  "id": "6ae7a3a6a04ae2f1280acae7",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "great_dane|geo_classic|cap_foam": {
+  "id": "6ae7a3a8a04ae2f1280acaea",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "great_dane|geo_classic|cap_mesh": {
+  "id": "6ae7a3aaa04ae2f1280acaef",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "great_dane|geo_cool|tank": {
+  "id": "6ae7a3abcefd302331097daf",
+  "prod": "tank",
+  "published": false
+ },
+ "great_dane|geo_cool|wtank": {
+  "id": "6ae7a3adf9c00c9ec009ff3d",
+  "prod": "wtank",
+  "published": false
+ },
+ "great_dane|geo_cool|polo": {
+  "id": "6ae7a3afe8a14b46b70ea1be",
+  "prod": "polo",
+  "published": false
+ },
+ "great_dane|geo_cool|cap_dad": {
+  "id": "6ae7a3b18e070d8cc20b6649",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "great_dane|geo_cool|cap_foam": {
+  "id": "6ae7a3b3f5f22e3bbd085b19",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "great_dane|geo_cool|cap_mesh": {
+  "id": "6ae7a3b4cefd302331097dc4",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "great_dane|geo_heart|tank": {
+  "id": "6ae7a3b68e070d8cc20b665c",
+  "prod": "tank",
+  "published": false
+ },
+ "great_dane|geo_heart|wtank": {
+  "id": "6ae7a3b88e070d8cc20b6660",
+  "prod": "wtank",
+  "published": false
+ },
+ "great_dane|geo_heart|polo": {
+  "id": "6ae7a3ba8e070d8cc20b6666",
+  "prod": "polo",
+  "published": false
+ },
+ "great_dane|geo_heart|cap_dad": {
+  "id": "6ae7a3bca895c5bd4e00b28f",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "great_dane|geo_heart|cap_foam": {
+  "id": "6ae7a3bda04ae2f1280acb2d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "great_dane|geo_heart|cap_mesh": {
+  "id": "6ae7a3bff5f22e3bbd085b2e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boston_terrier|line_classic|tank": {
+  "id": "6ae7a3c1a04ae2f1280acb32",
+  "prod": "tank",
+  "published": false
+ },
+ "boston_terrier|line_classic|wtank": {
+  "id": "6ae7a3c2e8a14b46b70ea1ec",
+  "prod": "wtank",
+  "published": false
+ },
+ "boston_terrier|line_classic|polo": {
+  "id": "6ae7a3c4a04ae2f1280acb36",
+  "prod": "polo",
+  "published": false
+ },
+ "boston_terrier|line_classic|cap_dad": {
+  "id": "6ae7a3c6f9c00c9ec009ff7c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boston_terrier|line_classic|cap_foam": {
+  "id": "6ae7a3c8f9c00c9ec009ff80",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boston_terrier|line_classic|cap_mesh": {
+  "id": "6ae7a3c9eff2af9b7c0be90b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boston_terrier|line_cool|tank": {
+  "id": "6ae7a3cba04ae2f1280acb3f",
+  "prod": "tank",
+  "published": false
+ },
+ "boston_terrier|line_cool|wtank": {
+  "id": "6ae7a3cd6aa5485ffc0a03a7",
+  "prod": "wtank",
+  "published": false
+ },
+ "boston_terrier|line_cool|polo": {
+  "id": "6ae7a3cef9c00c9ec009ff8e",
+  "prod": "polo",
+  "published": false
+ },
+ "boston_terrier|line_cool|cap_dad": {
+  "id": "6ae7a3d07861ac1c1c0424b2",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boston_terrier|line_cool|cap_foam": {
+  "id": "6ae7a3d27861ac1c1c0424b4",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boston_terrier|line_cool|cap_mesh": {
+  "id": "6ae7a3d4d037ed7f1f02e05e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boston_terrier|line_heart|tank": {
+  "id": "6ae7a3d5f9c00c9ec009ff96",
+  "prod": "tank",
+  "published": false
+ },
+ "boston_terrier|line_heart|wtank": {
+  "id": "6ae7a3d7e9fcc76a2908faa9",
+  "prod": "wtank",
+  "published": false
+ },
+ "boston_terrier|line_heart|polo": {
+  "id": "6ae7a3d9e8a14b46b70ea208",
+  "prod": "polo",
+  "published": false
+ },
+ "boston_terrier|line_heart|cap_dad": {
+  "id": "6ae7a3da7861ac1c1c0424bf",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boston_terrier|line_heart|cap_foam": {
+  "id": "6ae7a3dc7861ac1c1c0424c1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boston_terrier|line_heart|cap_mesh": {
+  "id": "6ae7a3dfeff2af9b7c0be914",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boston_terrier|geo_classic|tank": {
+  "id": "6ae7a3e18e070d8cc20b6688",
+  "prod": "tank",
+  "published": false
+ },
+ "boston_terrier|geo_classic|wtank": {
+  "id": "6ae7a3e2a04ae2f1280acb57",
+  "prod": "wtank",
+  "published": false
+ },
+ "boston_terrier|geo_classic|polo": {
+  "id": "6ae7a3e4a895c5bd4e00b2b1",
+  "prod": "polo",
+  "published": false
+ },
+ "boston_terrier|geo_classic|cap_dad": {
+  "id": "6ae7a3e6a04ae2f1280acb59",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boston_terrier|geo_classic|cap_foam": {
+  "id": "6ae7a3e8a895c5bd4e00b2b2",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boston_terrier|geo_classic|cap_mesh": {
+  "id": "6ae7a3e9a895c5bd4e00b2b3",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boston_terrier|geo_cool|tank": {
+  "id": "6ae7a3ebcefd302331097df4",
+  "prod": "tank",
+  "published": false
+ },
+ "boston_terrier|geo_cool|wtank": {
+  "id": "6ae7a3ece9fcc76a2908fab9",
+  "prod": "wtank",
+  "published": false
+ },
+ "boston_terrier|geo_cool|polo": {
+  "id": "6ae7a3eea895c5bd4e00b2b5",
+  "prod": "polo",
+  "published": false
+ },
+ "boston_terrier|geo_cool|cap_dad": {
+  "id": "6ae7a3f0e9fcc76a2908fabc",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boston_terrier|geo_cool|cap_foam": {
+  "id": "6ae7a3f1a895c5bd4e00b2b8",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boston_terrier|geo_cool|cap_mesh": {
+  "id": "6ae7a3f3f9c00c9ec009ffa9",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "boston_terrier|geo_heart|tank": {
+  "id": "6ae7a3f4e9fcc76a2908fac4",
+  "prod": "tank",
+  "published": false
+ },
+ "boston_terrier|geo_heart|wtank": {
+  "id": "6ae7a3f6f9c00c9ec009ffb0",
+  "prod": "wtank",
+  "published": false
+ },
+ "boston_terrier|geo_heart|polo": {
+  "id": "6ae7a3f86aa5485ffc0a03c8",
+  "prod": "polo",
+  "published": false
+ },
+ "boston_terrier|geo_heart|cap_dad": {
+  "id": "6ae7a3faa04ae2f1280acb72",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "boston_terrier|geo_heart|cap_foam": {
+  "id": "6ae7a3fbe9fcc76a2908fad5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "boston_terrier|geo_heart|cap_mesh": {
+  "id": "6ae7a3fda895c5bd4e00b2d6",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "chihuahua|line_classic|tank": {
+  "id": "6ae7a3ffa895c5bd4e00b2d9",
+  "prod": "tank",
+  "published": false
+ },
+ "chihuahua|line_classic|wtank": {
+  "id": "6ae7a400a04ae2f1280acb87",
+  "prod": "wtank",
+  "published": false
+ },
+ "chihuahua|line_classic|polo": {
+  "id": "6ae7a402f5f22e3bbd085b75",
+  "prod": "polo",
+  "published": false
+ },
+ "chihuahua|line_classic|cap_dad": {
+  "id": "6ae7a404e8a14b46b70ea249",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "chihuahua|line_classic|cap_foam": {
+  "id": "6ae7a405f9c00c9ec009ffe4",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "chihuahua|line_classic|cap_mesh": {
+  "id": "6ae7a407a895c5bd4e00b2ed",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "chihuahua|line_cool|tank": {
+  "id": "6ae7a4086aa5485ffc0a03f1",
+  "prod": "tank",
+  "published": false
+ },
+ "chihuahua|line_cool|wtank": {
+  "id": "6ae7a40a6aa5485ffc0a03f2",
+  "prod": "wtank",
+  "published": false
+ },
+ "chihuahua|line_cool|polo": {
+  "id": "6ae7a40ca895c5bd4e00b2f6",
+  "prod": "polo",
+  "published": false
+ },
+ "chihuahua|line_cool|cap_dad": {
+  "id": "6ae7a40df9c00c9ec009fff7",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "chihuahua|line_cool|cap_foam": {
+  "id": "6ae7a40f6aa5485ffc0a03f6",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "chihuahua|line_cool|cap_mesh": {
+  "id": "6ae7a411a04ae2f1280acba0",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "chihuahua|line_heart|tank": {
+  "id": "6ae7a412a04ae2f1280acba2",
+  "prod": "tank",
+  "published": false
+ },
+ "chihuahua|line_heart|wtank": {
+  "id": "6ae7a4146aa5485ffc0a03fa",
+  "prod": "wtank",
+  "published": false
+ },
+ "chihuahua|line_heart|polo": {
+  "id": "6ae7a416cefd302331097e30",
+  "prod": "polo",
+  "published": false
+ },
+ "chihuahua|line_heart|cap_dad": {
+  "id": "6ae7a417a895c5bd4e00b2ff",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "chihuahua|line_heart|cap_foam": {
+  "id": "6ae7a419eff2af9b7c0be94b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "chihuahua|line_heart|cap_mesh": {
+  "id": "6ae7a41de9fcc76a2908fb07",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "chihuahua|geo_classic|tank": {
+  "id": "6ae7a41fa895c5bd4e00b30a",
+  "prod": "tank",
+  "published": false
+ },
+ "chihuahua|geo_classic|wtank": {
+  "id": "6ae7a420a895c5bd4e00b30e",
+  "prod": "wtank",
+  "published": false
+ },
+ "chihuahua|geo_classic|polo": {
+  "id": "6ae7a422e9fcc76a2908fb0a",
+  "prod": "polo",
+  "published": false
+ },
+ "chihuahua|geo_classic|cap_dad": {
+  "id": "6ae7a424cefd302331097e36",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "chihuahua|geo_classic|cap_foam": {
+  "id": "6ae7a426a895c5bd4e00b313",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "chihuahua|geo_classic|cap_mesh": {
+  "id": "6ae7a427f5f22e3bbd085b86",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "chihuahua|geo_cool|tank": {
+  "id": "6ae7a429a04ae2f1280acbb6",
+  "prod": "tank",
+  "published": false
+ },
+ "chihuahua|geo_cool|wtank": {
+  "id": "6ae7a42ae9fcc76a2908fb11",
+  "prod": "wtank",
+  "published": false
+ },
+ "chihuahua|geo_cool|polo": {
+  "id": "6ae7a42c8e070d8cc20b66c7",
+  "prod": "polo",
+  "published": false
+ },
+ "chihuahua|geo_cool|cap_dad": {
+  "id": "6ae7a42e8e070d8cc20b66c9",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "chihuahua|geo_cool|cap_foam": {
+  "id": "6ae7a42feff2af9b7c0be95a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "chihuahua|geo_cool|cap_mesh": {
+  "id": "6ae7a431eff2af9b7c0be95d",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "chihuahua|geo_heart|tank": {
+  "id": "6ae7a4328e070d8cc20b66cb",
+  "prod": "tank",
+  "published": false
+ },
+ "chihuahua|geo_heart|wtank": {
+  "id": "6ae7a434d037ed7f1f02e0b6",
+  "prod": "wtank",
+  "published": false
+ },
+ "chihuahua|geo_heart|polo": {
+  "id": "6ae7a436a895c5bd4e00b31e",
+  "prod": "polo",
+  "published": false
+ },
+ "chihuahua|geo_heart|cap_dad": {
+  "id": "6ae7a437d037ed7f1f02e0ba",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "chihuahua|geo_heart|cap_foam": {
+  "id": "6ae7a439d037ed7f1f02e0bc",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "chihuahua|geo_heart|cap_mesh": {
+  "id": "6ae7a43aa04ae2f1280acbbd",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "havanese|line_classic|tank": {
+  "id": "6ae7a43ca895c5bd4e00b320",
+  "prod": "tank",
+  "published": false
+ },
+ "havanese|line_classic|wtank": {
+  "id": "6ae7a43ee9fcc76a2908fb20",
+  "prod": "wtank",
+  "published": false
+ },
+ "havanese|line_classic|polo": {
+  "id": "6ae7a440e9fcc76a2908fb21",
+  "prod": "polo",
+  "published": false
+ },
+ "havanese|line_classic|cap_dad": {
+  "id": "6ae7a441d037ed7f1f02e0c0",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "havanese|line_classic|cap_foam": {
+  "id": "6ae7a443a04ae2f1280acbc8",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "havanese|line_classic|cap_mesh": {
+  "id": "6ae7a444e9fcc76a2908fb25",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "havanese|line_cool|tank": {
+  "id": "6ae7a446a04ae2f1280acbcc",
+  "prod": "tank",
+  "published": false
+ },
+ "havanese|line_cool|wtank": {
+  "id": "6ae7a447cefd302331097e4e",
+  "prod": "wtank",
+  "published": false
+ },
+ "havanese|line_cool|polo": {
+  "id": "6ae7a4496aa5485ffc0a0420",
+  "prod": "polo",
+  "published": false
+ },
+ "havanese|line_cool|cap_dad": {
+  "id": "6ae7a44b6aa5485ffc0a0423",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "havanese|line_cool|cap_foam": {
+  "id": "6ae7a44ce8a14b46b70ea278",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "havanese|line_cool|cap_mesh": {
+  "id": "6ae7a44ea04ae2f1280acbd5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "havanese|line_heart|tank": {
+  "id": "6ae7a44fe8a14b46b70ea27d",
+  "prod": "tank",
+  "published": false
+ },
+ "havanese|line_heart|wtank": {
+  "id": "6ae7a4516aa5485ffc0a042b",
+  "prod": "wtank",
+  "published": false
+ },
+ "havanese|line_heart|polo": {
+  "id": "6ae7a4537861ac1c1c04251f",
+  "prod": "polo",
+  "published": false
+ },
+ "havanese|line_heart|cap_dad": {
+  "id": "6ae7a4546aa5485ffc0a0434",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "havanese|line_heart|cap_foam": {
+  "id": "6ae7a4567861ac1c1c042520",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "havanese|line_heart|cap_mesh": {
+  "id": "6ae7a458a895c5bd4e00b335",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "havanese|geo_classic|tank": {
+  "id": "6ae7a4596aa5485ffc0a043b",
+  "prod": "tank",
+  "published": false
+ },
+ "havanese|geo_classic|wtank": {
+  "id": "6ae7a45b6aa5485ffc0a043d",
+  "prod": "wtank",
+  "published": false
+ },
+ "havanese|geo_classic|polo": {
+  "id": "6ae7a45d6aa5485ffc0a043e",
+  "prod": "polo",
+  "published": false
+ },
+ "havanese|geo_classic|cap_dad": {
+  "id": "6ae7a45e6aa5485ffc0a0442",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "havanese|geo_classic|cap_foam": {
+  "id": "6ae7a4606aa5485ffc0a0444",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "havanese|geo_classic|cap_mesh": {
+  "id": "6ae7a4626aa5485ffc0a0446",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "havanese|geo_cool|tank": {
+  "id": "6ae7a464eff2af9b7c0be977",
+  "prod": "tank",
+  "published": false
+ },
+ "havanese|geo_cool|wtank": {
+  "id": "6ae7a465cefd302331097e66",
+  "prod": "wtank",
+  "published": false
+ },
+ "havanese|geo_cool|polo": {
+  "id": "6ae7a467e8a14b46b70ea291",
+  "prod": "polo",
+  "published": false
+ },
+ "havanese|geo_cool|cap_dad": {
+  "id": "6ae7a469cefd302331097e69",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "havanese|geo_cool|cap_foam": {
+  "id": "6ae7a46ae8a14b46b70ea294",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "havanese|geo_cool|cap_mesh": {
+  "id": "6ae7a46cf5f22e3bbd085ba5",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "havanese|geo_heart|tank": {
+  "id": "6ae7a46d6aa5485ffc0a044f",
+  "prod": "tank",
+  "published": false
+ },
+ "havanese|geo_heart|wtank": {
+  "id": "6ae7a46fe8a14b46b70ea296",
+  "prod": "wtank",
+  "published": false
+ },
+ "havanese|geo_heart|polo": {
+  "id": "6ae7a4716aa5485ffc0a0451",
+  "prod": "polo",
+  "published": false
+ },
+ "havanese|geo_heart|cap_dad": {
+  "id": "6ae7a473cefd302331097e6d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "havanese|geo_heart|cap_foam": {
+  "id": "6ae7a474f9c00c9ec00a002a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "havanese|geo_heart|cap_mesh": {
+  "id": "6ae7a476a04ae2f1280acbe0",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "siberian_husky|line_classic|tank": {
+  "id": "6ae7a477cefd302331097e71",
+  "prod": "tank",
+  "published": false
+ },
+ "siberian_husky|line_classic|wtank": {
+  "id": "6ae7a479a895c5bd4e00b350",
+  "prod": "wtank",
+  "published": false
+ },
+ "siberian_husky|line_classic|polo": {
+  "id": "6ae7a47ba895c5bd4e00b354",
+  "prod": "polo",
+  "published": false
+ },
+ "siberian_husky|line_classic|cap_dad": {
+  "id": "6ae7a47ccefd302331097e76",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "siberian_husky|line_classic|cap_foam": {
+  "id": "6ae7a47ecefd302331097e77",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "siberian_husky|line_classic|cap_mesh": {
+  "id": "6ae7a47f6aa5485ffc0a0456",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "siberian_husky|line_cool|tank": {
+  "id": "6ae7a4817861ac1c1c042536",
+  "prod": "tank",
+  "published": false
+ },
+ "siberian_husky|line_cool|wtank": {
+  "id": "6ae7a482cefd302331097e7a",
+  "prod": "wtank",
+  "published": false
+ },
+ "siberian_husky|line_cool|polo": {
+  "id": "6ae7a4846aa5485ffc0a045c",
+  "prod": "polo",
+  "published": false
+ },
+ "siberian_husky|line_cool|cap_dad": {
+  "id": "6ae7a486a895c5bd4e00b35c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "siberian_husky|line_cool|cap_foam": {
+  "id": "6ae7a4877861ac1c1c04253f",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "siberian_husky|line_cool|cap_mesh": {
+  "id": "6ae7a489f5f22e3bbd085bb3",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "siberian_husky|line_heart|tank": {
+  "id": "6ae7a48a7861ac1c1c042544",
+  "prod": "tank",
+  "published": false
+ },
+ "siberian_husky|line_heart|wtank": {
+  "id": "6ae7a48ccefd302331097e80",
+  "prod": "wtank",
+  "published": false
+ },
+ "siberian_husky|line_heart|polo": {
+  "id": "6ae7a48e7861ac1c1c042546",
+  "prod": "polo",
+  "published": false
+ },
+ "siberian_husky|line_heart|cap_dad": {
+  "id": "6ae7a48f7861ac1c1c042548",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "siberian_husky|line_heart|cap_foam": {
+  "id": "6ae7a491e8a14b46b70ea2b0",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "siberian_husky|line_heart|cap_mesh": {
+  "id": "6ae7a492cefd302331097e84",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "siberian_husky|geo_classic|tank": {
+  "id": "6ae7a494e8a14b46b70ea2b3",
+  "prod": "tank",
+  "published": false
+ },
+ "siberian_husky|geo_classic|wtank": {
+  "id": "6ae7a4968e070d8cc20b66fc",
+  "prod": "wtank",
+  "published": false
+ },
+ "siberian_husky|geo_classic|polo": {
+  "id": "6ae7a498e8a14b46b70ea2b9",
+  "prod": "polo",
+  "published": false
+ },
+ "siberian_husky|geo_classic|cap_dad": {
+  "id": "6ae7a499a04ae2f1280acbf9",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "siberian_husky|geo_classic|cap_foam": {
+  "id": "6ae7a49bcefd302331097e8b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "siberian_husky|geo_classic|cap_mesh": {
+  "id": "6ae7a49ca895c5bd4e00b371",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "siberian_husky|geo_cool|tank": {
+  "id": "6ae7a49ecefd302331097e8c",
+  "prod": "tank",
+  "published": false
+ },
+ "siberian_husky|geo_cool|wtank": {
+  "id": "6ae7a49fa895c5bd4e00b375",
+  "prod": "wtank",
+  "published": false
+ },
+ "siberian_husky|geo_cool|polo": {
+  "id": "6ae7a4a17861ac1c1c042558",
+  "prod": "polo",
+  "published": false
+ },
+ "siberian_husky|geo_cool|cap_dad": {
+  "id": "6ae7a4a3e8a14b46b70ea2c0",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "siberian_husky|geo_cool|cap_foam": {
+  "id": "6ae7a4a48e070d8cc20b6703",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "siberian_husky|geo_cool|cap_mesh": {
+  "id": "6ae7a4a6a04ae2f1280acc05",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "siberian_husky|geo_heart|tank": {
+  "id": "6ae7a4a7d037ed7f1f02e0f7",
+  "prod": "tank",
+  "published": false
+ },
+ "siberian_husky|geo_heart|wtank": {
+  "id": "6ae7a4a9a04ae2f1280acc0b",
+  "prod": "wtank",
+  "published": false
+ },
+ "siberian_husky|geo_heart|polo": {
+  "id": "6ae7a4abcefd302331097e97",
+  "prod": "polo",
+  "published": false
+ },
+ "siberian_husky|geo_heart|cap_dad": {
+  "id": "6ae7a4ac8e070d8cc20b670c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "siberian_husky|geo_heart|cap_foam": {
+  "id": "6ae7a4ae8e070d8cc20b670d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "siberian_husky|geo_heart|cap_mesh": {
+  "id": "6ae7a4afe8a14b46b70ea2cd",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pug|line_classic|tank": {
+  "id": "6ae7a4b1f9c00c9ec00a004e",
+  "prod": "tank",
+  "published": false
+ },
+ "pug|line_classic|wtank": {
+  "id": "6ae7a4b3e8a14b46b70ea2cf",
+  "prod": "wtank",
+  "published": false
+ },
+ "pug|line_classic|polo": {
+  "id": "6ae7a4b5e9fcc76a2908fb4b",
+  "prod": "polo",
+  "published": false
+ },
+ "pug|line_classic|cap_dad": {
+  "id": "6ae7a4b6e9fcc76a2908fb4d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pug|line_classic|cap_foam": {
+  "id": "6ae7a4b8cefd302331097ea1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pug|line_classic|cap_mesh": {
+  "id": "6ae7a4b9d037ed7f1f02e107",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pug|line_cool|tank": {
+  "id": "6ae7a4bbcefd302331097ea5",
+  "prod": "tank",
+  "published": false
+ },
+ "pug|line_cool|wtank": {
+  "id": "6ae7a4bccefd302331097ea7",
+  "prod": "wtank",
+  "published": false
+ },
+ "pug|line_cool|polo": {
+  "id": "6ae7a4bed037ed7f1f02e109",
+  "prod": "polo",
+  "published": false
+ },
+ "pug|line_cool|cap_dad": {
+  "id": "6ae7a4c0f9c00c9ec00a005e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pug|line_cool|cap_foam": {
+  "id": "6ae7a4c1d037ed7f1f02e10a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pug|line_cool|cap_mesh": {
+  "id": "6ae7a4c3e8a14b46b70ea2da",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pug|line_heart|tank": {
+  "id": "6ae7a4c4f9c00c9ec00a0064",
+  "prod": "tank",
+  "published": false
+ },
+ "pug|line_heart|wtank": {
+  "id": "6ae7a4c6a04ae2f1280acc25",
+  "prod": "wtank",
+  "published": false
+ },
+ "pug|line_heart|polo": {
+  "id": "6ae7a4c87861ac1c1c04257b",
+  "prod": "polo",
+  "published": false
+ },
+ "pug|line_heart|cap_dad": {
+  "id": "6ae7a4c9a04ae2f1280acc27",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pug|line_heart|cap_foam": {
+  "id": "6ae7a4cbd037ed7f1f02e111",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pug|line_heart|cap_mesh": {
+  "id": "6ae7a4cce8a14b46b70ea2e2",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pug|geo_classic|tank": {
+  "id": "6ae7a4cea04ae2f1280acc2b",
+  "prod": "tank",
+  "published": false
+ },
+ "pug|geo_classic|wtank": {
+  "id": "6ae7a4d0cefd302331097ebd",
+  "prod": "wtank",
+  "published": false
+ },
+ "pug|geo_classic|polo": {
+  "id": "6ae7a4d2eff2af9b7c0be9a4",
+  "prod": "polo",
+  "published": false
+ },
+ "pug|geo_classic|cap_dad": {
+  "id": "6ae7a4d4eff2af9b7c0be9a6",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pug|geo_classic|cap_foam": {
+  "id": "6ae7a4d5a04ae2f1280acc36",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pug|geo_classic|cap_mesh": {
+  "id": "6ae7a4d77861ac1c1c042592",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pug|geo_cool|tank": {
+  "id": "6ae7a4d87861ac1c1c042596",
+  "prod": "tank",
+  "published": false
+ },
+ "pug|geo_cool|wtank": {
+  "id": "6ae7a4da7861ac1c1c042598",
+  "prod": "wtank",
+  "published": false
+ },
+ "pug|geo_cool|polo": {
+  "id": "6ae7a4dc7861ac1c1c04259b",
+  "prod": "polo",
+  "published": false
+ },
+ "pug|geo_cool|cap_dad": {
+  "id": "6ae7a4def9c00c9ec00a0075",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pug|geo_cool|cap_foam": {
+  "id": "6ae7a4df6aa5485ffc0a0487",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pug|geo_cool|cap_mesh": {
+  "id": "6ae7a4e1a04ae2f1280acc3f",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "pug|geo_heart|tank": {
+  "id": "6ae7a4e2e8a14b46b70ea2ff",
+  "prod": "tank",
+  "published": false
+ },
+ "pug|geo_heart|wtank": {
+  "id": "6ae7a4e4eff2af9b7c0be9be",
+  "prod": "wtank",
+  "published": false
+ },
+ "pug|geo_heart|polo": {
+  "id": "6ae7a4e6e8a14b46b70ea300",
+  "prod": "polo",
+  "published": false
+ },
+ "pug|geo_heart|cap_dad": {
+  "id": "6ae7a4e76aa5485ffc0a048e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "pug|geo_heart|cap_foam": {
+  "id": "6ae7a4e9eff2af9b7c0be9c4",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "pug|geo_heart|cap_mesh": {
+  "id": "6ae7a4eaa895c5bd4e00b39d",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|tank": {
+  "id": "6ae7a4eca04ae2f1280acc48",
+  "prod": "tank",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|wtank": {
+  "id": "6ae7a4eeeff2af9b7c0be9cb",
+  "prod": "wtank",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|polo": {
+  "id": "6ae7a4f0e9fcc76a2908fb72",
+  "prod": "polo",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|cap_dad": {
+  "id": "6ae7a4f1eff2af9b7c0be9d0",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|cap_foam": {
+  "id": "6ae7a4f3a895c5bd4e00b3a1",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_classic|cap_mesh": {
+  "id": "6ae7a4f4a895c5bd4e00b3a2",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|tank": {
+  "id": "6ae7a4f6a895c5bd4e00b3a4",
+  "prod": "tank",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|wtank": {
+  "id": "6ae7a4f8f9c00c9ec00a008b",
+  "prod": "wtank",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|polo": {
+  "id": "6ae7a4f9f9c00c9ec00a008e",
+  "prod": "polo",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|cap_dad": {
+  "id": "6ae7a4fbf9c00c9ec00a0090",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|cap_foam": {
+  "id": "6ae7a4fdcefd302331097ed5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_cool|cap_mesh": {
+  "id": "6ae7a4fe6aa5485ffc0a049e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|tank": {
+  "id": "6ae7a4ff6aa5485ffc0a04a0",
+  "prod": "tank",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|wtank": {
+  "id": "6ae7a5016aa5485ffc0a04a2",
+  "prod": "wtank",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|polo": {
+  "id": "6ae7a503d037ed7f1f02e139",
+  "prod": "polo",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|cap_dad": {
+  "id": "6ae7a5056aa5485ffc0a04a6",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|cap_foam": {
+  "id": "6ae7a506e8a14b46b70ea311",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "american_pit_bull_terrier|line_heart|cap_mesh": {
+  "id": "6ae7a508e8a14b46b70ea313",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|tank": {
+  "id": "6ae7a509eff2af9b7c0be9d6",
+  "prod": "tank",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|wtank": {
+  "id": "6ae7a50ba04ae2f1280acc56",
+  "prod": "wtank",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|polo": {
+  "id": "6ae7a50e7861ac1c1c0425c4",
+  "prod": "polo",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|cap_dad": {
+  "id": "6ae7a50fa04ae2f1280acc57",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|cap_foam": {
+  "id": "6ae7a511e8a14b46b70ea321",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_classic|cap_mesh": {
+  "id": "6ae7a512f5f22e3bbd085be9",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|tank": {
+  "id": "6ae7a514e8a14b46b70ea323",
+  "prod": "tank",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|wtank": {
+  "id": "6ae7a516a895c5bd4e00b3bb",
+  "prod": "wtank",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|polo": {
+  "id": "6ae7a517f9c00c9ec00a0097",
+  "prod": "polo",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|cap_dad": {
+  "id": "6ae7a519f5f22e3bbd085bef",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|cap_foam": {
+  "id": "6ae7a51a8e070d8cc20b673b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_cool|cap_mesh": {
+  "id": "6ae7a51ccefd302331097ee3",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|tank": {
+  "id": "6ae7a51ea895c5bd4e00b3c0",
+  "prod": "tank",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|wtank": {
+  "id": "6ae7a51fa895c5bd4e00b3c5",
+  "prod": "wtank",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|polo": {
+  "id": "6ae7a521f9c00c9ec00a009c",
+  "prod": "polo",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|cap_dad": {
+  "id": "6ae7a5238e070d8cc20b6745",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|cap_foam": {
+  "id": "6ae7a5247861ac1c1c0425d2",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "american_pit_bull_terrier|geo_heart|cap_mesh": {
+  "id": "6ae7a526a04ae2f1280acc61",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "border_collie|line_classic|tank": {
+  "id": "6ae7a527f9c00c9ec00a00a2",
+  "prod": "tank",
+  "published": false
+ },
+ "border_collie|line_classic|wtank": {
+  "id": "6ae7a529a895c5bd4e00b3cd",
+  "prod": "wtank",
+  "published": false
+ },
+ "border_collie|line_classic|polo": {
+  "id": "6ae7a52ba895c5bd4e00b3cf",
+  "prod": "polo",
+  "published": false
+ },
+ "border_collie|line_classic|cap_dad": {
+  "id": "6ae7a52c8e070d8cc20b674a",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "border_collie|line_classic|cap_foam": {
+  "id": "6ae7a52ee8a14b46b70ea32b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "border_collie|line_classic|cap_mesh": {
+  "id": "6ae7a530a895c5bd4e00b3d3",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "border_collie|line_cool|tank": {
+  "id": "6ae7a531a04ae2f1280acc67",
+  "prod": "tank",
+  "published": false
+ },
+ "border_collie|line_cool|wtank": {
+  "id": "6ae7a533a895c5bd4e00b3d7",
+  "prod": "wtank",
+  "published": false
+ },
+ "border_collie|line_cool|polo": {
+  "id": "6ae7a535e8a14b46b70ea330",
+  "prod": "polo",
+  "published": false
+ },
+ "border_collie|line_cool|cap_dad": {
+  "id": "6ae7a536eff2af9b7c0be9e9",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "border_collie|line_cool|cap_foam": {
+  "id": "6ae7a538a895c5bd4e00b3da",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "border_collie|line_cool|cap_mesh": {
+  "id": "6ae7a5397861ac1c1c0425e1",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "border_collie|line_heart|tank": {
+  "id": "6ae7a53ba04ae2f1280acc6c",
+  "prod": "tank",
+  "published": false
+ },
+ "border_collie|line_heart|wtank": {
+  "id": "6ae7a53cd037ed7f1f02e14b",
+  "prod": "wtank",
+  "published": false
+ },
+ "border_collie|line_heart|polo": {
+  "id": "6ae7a53ea895c5bd4e00b3df",
+  "prod": "polo",
+  "published": false
+ },
+ "border_collie|line_heart|cap_dad": {
+  "id": "6ae7a540f5f22e3bbd085c0c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "border_collie|line_heart|cap_foam": {
+  "id": "6ae7a541f5f22e3bbd085c0d",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "border_collie|line_heart|cap_mesh": {
+  "id": "6ae7a543d037ed7f1f02e150",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "border_collie|geo_classic|tank": {
+  "id": "6ae7a5446aa5485ffc0a04bf",
+  "prod": "tank",
+  "published": false
+ },
+ "border_collie|geo_classic|wtank": {
+  "id": "6ae7a546e8a14b46b70ea342",
+  "prod": "wtank",
+  "published": false
+ },
+ "border_collie|geo_classic|polo": {
+  "id": "6ae7a548f5f22e3bbd085c0f",
+  "prod": "polo",
+  "published": false
+ },
+ "border_collie|geo_classic|cap_dad": {
+  "id": "6ae7a549f5f22e3bbd085c10",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "border_collie|geo_classic|cap_foam": {
+  "id": "6ae7a54b7861ac1c1c0425e6",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "border_collie|geo_classic|cap_mesh": {
+  "id": "6ae7a54df9c00c9ec00a00ae",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "border_collie|geo_cool|tank": {
+  "id": "6ae7a54ea04ae2f1280acc7d",
+  "prod": "tank",
+  "published": false
+ },
+ "border_collie|geo_cool|wtank": {
+  "id": "6ae7a550e9fcc76a2908fb91",
+  "prod": "wtank",
+  "published": false
+ },
+ "border_collie|geo_cool|polo": {
+  "id": "6ae7a552f5f22e3bbd085c17",
+  "prod": "polo",
+  "published": false
+ },
+ "border_collie|geo_cool|cap_dad": {
+  "id": "6ae7a553f9c00c9ec00a00b6",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "border_collie|geo_cool|cap_foam": {
+  "id": "6ae7a555a895c5bd4e00b3eb",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "border_collie|geo_cool|cap_mesh": {
+  "id": "6ae7a556e8a14b46b70ea349",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "border_collie|geo_heart|tank": {
+  "id": "6ae7a558e9fcc76a2908fb98",
+  "prod": "tank",
+  "published": false
+ },
+ "border_collie|geo_heart|wtank": {
+  "id": "6ae7a559a895c5bd4e00b3ee",
+  "prod": "wtank",
+  "published": false
+ },
+ "border_collie|geo_heart|polo": {
+  "id": "6ae7a55ba04ae2f1280acc83",
+  "prod": "polo",
+  "published": false
+ },
+ "border_collie|geo_heart|cap_dad": {
+  "id": "6ae7a55dcefd302331097efd",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "border_collie|geo_heart|cap_foam": {
+  "id": "6ae7a55ecefd302331097eff",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "border_collie|geo_heart|cap_mesh": {
+  "id": "6ae7a560a895c5bd4e00b3f4",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shiba_inu|line_classic|tank": {
+  "id": "6ae7a561a895c5bd4e00b3f6",
+  "prod": "tank",
+  "published": false
+ },
+ "shiba_inu|line_classic|wtank": {
+  "id": "6ae7a563a04ae2f1280acc8a",
+  "prod": "wtank",
+  "published": false
+ },
+ "shiba_inu|line_classic|polo": {
+  "id": "6ae7a565a04ae2f1280acc8d",
+  "prod": "polo",
+  "published": false
+ },
+ "shiba_inu|line_classic|cap_dad": {
+  "id": "6ae7a5667861ac1c1c0425fb",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shiba_inu|line_classic|cap_foam": {
+  "id": "6ae7a568f9c00c9ec00a00d3",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shiba_inu|line_classic|cap_mesh": {
+  "id": "6ae7a569a895c5bd4e00b404",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shiba_inu|line_cool|tank": {
+  "id": "6ae7a56bf9c00c9ec00a00d7",
+  "prod": "tank",
+  "published": false
+ },
+ "shiba_inu|line_cool|wtank": {
+  "id": "6ae7a56de9fcc76a2908fbab",
+  "prod": "wtank",
+  "published": false
+ },
+ "shiba_inu|line_cool|polo": {
+  "id": "6ae7a56fa04ae2f1280acc9a",
+  "prod": "polo",
+  "published": false
+ },
+ "shiba_inu|line_cool|cap_dad": {
+  "id": "6ae7a570f5f22e3bbd085c39",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shiba_inu|line_cool|cap_foam": {
+  "id": "6ae7a572e9fcc76a2908fbb3",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shiba_inu|line_cool|cap_mesh": {
+  "id": "6ae7a573d037ed7f1f02e169",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shiba_inu|line_heart|tank": {
+  "id": "6ae7a575d037ed7f1f02e16a",
+  "prod": "tank",
+  "published": false
+ },
+ "shiba_inu|line_heart|wtank": {
+  "id": "6ae7a577a04ae2f1280acca3",
+  "prod": "wtank",
+  "published": false
+ },
+ "shiba_inu|line_heart|polo": {
+  "id": "6ae7a578d037ed7f1f02e16e",
+  "prod": "polo",
+  "published": false
+ },
+ "shiba_inu|line_heart|cap_dad": {
+  "id": "6ae7a57aa04ae2f1280accab",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shiba_inu|line_heart|cap_foam": {
+  "id": "6ae7a57ca04ae2f1280accad",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shiba_inu|line_heart|cap_mesh": {
+  "id": "6ae7a57df5f22e3bbd085c44",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shiba_inu|geo_classic|tank": {
+  "id": "6ae7a57ed037ed7f1f02e173",
+  "prod": "tank",
+  "published": false
+ },
+ "shiba_inu|geo_classic|wtank": {
+  "id": "6ae7a580f9c00c9ec00a00e7",
+  "prod": "wtank",
+  "published": false
+ },
+ "shiba_inu|geo_classic|polo": {
+  "id": "6ae7a582e9fcc76a2908fbc1",
+  "prod": "polo",
+  "published": false
+ },
+ "shiba_inu|geo_classic|cap_dad": {
+  "id": "6ae7a584d037ed7f1f02e175",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shiba_inu|geo_classic|cap_foam": {
+  "id": "6ae7a5856aa5485ffc0a04f3",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shiba_inu|geo_classic|cap_mesh": {
+  "id": "6ae7a587d037ed7f1f02e179",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shiba_inu|geo_cool|tank": {
+  "id": "6ae7a5887861ac1c1c042614",
+  "prod": "tank",
+  "published": false
+ },
+ "shiba_inu|geo_cool|wtank": {
+  "id": "6ae7a58ae9fcc76a2908fbc5",
+  "prod": "wtank",
+  "published": false
+ },
+ "shiba_inu|geo_cool|polo": {
+  "id": "6ae7a58ceff2af9b7c0bea19",
+  "prod": "polo",
+  "published": false
+ },
+ "shiba_inu|geo_cool|cap_dad": {
+  "id": "6ae7a58ea895c5bd4e00b41c",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shiba_inu|geo_cool|cap_foam": {
+  "id": "6ae7a58fd037ed7f1f02e180",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shiba_inu|geo_cool|cap_mesh": {
+  "id": "6ae7a591eff2af9b7c0bea1d",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "shiba_inu|geo_heart|tank": {
+  "id": "6ae7a592a04ae2f1280accc5",
+  "prod": "tank",
+  "published": false
+ },
+ "shiba_inu|geo_heart|wtank": {
+  "id": "6ae7a5947861ac1c1c04261a",
+  "prod": "wtank",
+  "published": false
+ },
+ "shiba_inu|geo_heart|polo": {
+  "id": "6ae7a5967861ac1c1c04261b",
+  "prod": "polo",
+  "published": false
+ },
+ "shiba_inu|geo_heart|cap_dad": {
+  "id": "6ae7a597a895c5bd4e00b422",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "shiba_inu|geo_heart|cap_foam": {
+  "id": "6ae7a599eff2af9b7c0bea20",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "shiba_inu|geo_heart|cap_mesh": {
+  "id": "6ae7a59ca895c5bd4e00b424",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "mini_poodle|line_classic|tank": {
+  "id": "6ae7a59ea04ae2f1280acccc",
+  "prod": "tank",
+  "published": false
+ },
+ "mini_poodle|line_classic|wtank": {
+  "id": "6ae7a59f6aa5485ffc0a0503",
+  "prod": "wtank",
+  "published": false
+ },
+ "mini_poodle|line_classic|polo": {
+  "id": "6ae7a5a1f5f22e3bbd085c59",
+  "prod": "polo",
+  "published": false
+ },
+ "mini_poodle|line_classic|cap_dad": {
+  "id": "6ae7a5a3d037ed7f1f02e190",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "mini_poodle|line_classic|cap_foam": {
+  "id": "6ae7a5a56aa5485ffc0a0508",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "mini_poodle|line_classic|cap_mesh": {
+  "id": "6ae7a5a6f5f22e3bbd085c5e",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "mini_poodle|line_cool|tank": {
+  "id": "6ae7a5a8f5f22e3bbd085c5f",
+  "prod": "tank",
+  "published": false
+ },
+ "mini_poodle|line_cool|wtank": {
+  "id": "6ae7a5aacefd302331097f2b",
+  "prod": "wtank",
+  "published": false
+ },
+ "mini_poodle|line_cool|polo": {
+  "id": "6ae7a5aca04ae2f1280accd6",
+  "prod": "polo",
+  "published": false
+ },
+ "mini_poodle|line_cool|cap_dad": {
+  "id": "6ae7a5adf9c00c9ec00a00ff",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "mini_poodle|line_cool|cap_foam": {
+  "id": "6ae7a5afd037ed7f1f02e19b",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "mini_poodle|line_cool|cap_mesh": {
+  "id": "6ae7a5b0a04ae2f1280accd8",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "mini_poodle|line_heart|tank": {
+  "id": "6ae7a5b2f5f22e3bbd085c6b",
+  "prod": "tank",
+  "published": false
+ },
+ "mini_poodle|line_heart|wtank": {
+  "id": "6ae7a5b3cefd302331097f30",
+  "prod": "wtank",
+  "published": false
+ },
+ "mini_poodle|line_heart|polo": {
+  "id": "6ae7a5b56aa5485ffc0a050c",
+  "prod": "polo",
+  "published": false
+ },
+ "mini_poodle|line_heart|cap_dad": {
+  "id": "6ae7a5b7eff2af9b7c0bea2f",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "mini_poodle|line_heart|cap_foam": {
+  "id": "6ae7a5b98e070d8cc20b6789",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "mini_poodle|line_heart|cap_mesh": {
+  "id": "6ae7a5bae9fcc76a2908fbd8",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "mini_poodle|geo_classic|tank": {
+  "id": "6ae7a5bca04ae2f1280accdc",
+  "prod": "tank",
+  "published": false
+ },
+ "mini_poodle|geo_classic|wtank": {
+  "id": "6ae7a5beeff2af9b7c0bea34",
+  "prod": "wtank",
+  "published": false
+ },
+ "mini_poodle|geo_classic|polo": {
+  "id": "6ae7a5bfa04ae2f1280accdf",
+  "prod": "polo",
+  "published": false
+ },
+ "mini_poodle|geo_classic|cap_dad": {
+  "id": "6ae7a5c1eff2af9b7c0bea37",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "mini_poodle|geo_classic|cap_foam": {
+  "id": "6ae7a5c3cefd302331097f3a",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "mini_poodle|geo_classic|cap_mesh": {
+  "id": "6ae7a5c4cefd302331097f3b",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "mini_poodle|geo_cool|tank": {
+  "id": "6ae7a5c6d037ed7f1f02e1b0",
+  "prod": "tank",
+  "published": false
+ },
+ "mini_poodle|geo_cool|wtank": {
+  "id": "6ae7a5c7eff2af9b7c0bea3a",
+  "prod": "wtank",
+  "published": false
+ },
+ "mini_poodle|geo_cool|polo": {
+  "id": "6ae7a5c97861ac1c1c042633",
+  "prod": "polo",
+  "published": false
+ },
+ "mini_poodle|geo_cool|cap_dad": {
+  "id": "6ae7a5cbe8a14b46b70ea37d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "mini_poodle|geo_cool|cap_foam": {
+  "id": "6ae7a5cce8a14b46b70ea380",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "mini_poodle|geo_cool|cap_mesh": {
+  "id": "6ae7a5cee8a14b46b70ea382",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "mini_poodle|geo_heart|tank": {
+  "id": "6ae7a5cf7861ac1c1c042636",
+  "prod": "tank",
+  "published": false
+ },
+ "mini_poodle|geo_heart|wtank": {
+  "id": "6ae7a5d17861ac1c1c042638",
+  "prod": "wtank",
+  "published": false
+ },
+ "mini_poodle|geo_heart|polo": {
+  "id": "6ae7a5d3a04ae2f1280accef",
+  "prod": "polo",
+  "published": false
+ },
+ "mini_poodle|geo_heart|cap_dad": {
+  "id": "6ae7a5d4d037ed7f1f02e1c1",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "mini_poodle|geo_heart|cap_foam": {
+  "id": "6ae7a5d6cefd302331097f45",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "mini_poodle|geo_heart|cap_mesh": {
+  "id": "6ae7a5d76aa5485ffc0a052f",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bichon_frise|line_classic|tank": {
+  "id": "6ae7a5d98e070d8cc20b6792",
+  "prod": "tank",
+  "published": false
+ },
+ "bichon_frise|line_classic|wtank": {
+  "id": "6ae7a5dae9fcc76a2908fbec",
+  "prod": "wtank",
+  "published": false
+ },
+ "bichon_frise|line_classic|polo": {
+  "id": "6ae7a5dce8a14b46b70ea38a",
+  "prod": "polo",
+  "published": false
+ },
+ "bichon_frise|line_classic|cap_dad": {
+  "id": "6ae7a5deeff2af9b7c0bea43",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bichon_frise|line_classic|cap_foam": {
+  "id": "6ae7a5dfd037ed7f1f02e1c8",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bichon_frise|line_classic|cap_mesh": {
+  "id": "6ae7a5e1d037ed7f1f02e1ca",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bichon_frise|line_cool|tank": {
+  "id": "6ae7a5e2a895c5bd4e00b442",
+  "prod": "tank",
+  "published": false
+ },
+ "bichon_frise|line_cool|wtank": {
+  "id": "6ae7a5e46aa5485ffc0a053e",
+  "prod": "wtank",
+  "published": false
+ },
+ "bichon_frise|line_cool|polo": {
+  "id": "6ae7a5e58e070d8cc20b679b",
+  "prod": "polo",
+  "published": false
+ },
+ "bichon_frise|line_cool|cap_dad": {
+  "id": "6ae7a5e7e9fcc76a2908fbf9",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bichon_frise|line_cool|cap_foam": {
+  "id": "6ae7a5e96aa5485ffc0a0541",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bichon_frise|line_cool|cap_mesh": {
+  "id": "6ae7a5ead037ed7f1f02e1d1",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bichon_frise|line_heart|tank": {
+  "id": "6ae7a5ecd037ed7f1f02e1d2",
+  "prod": "tank",
+  "published": false
+ },
+ "bichon_frise|line_heart|wtank": {
+  "id": "6ae7a5edf5f22e3bbd085c9c",
+  "prod": "wtank",
+  "published": false
+ },
+ "bichon_frise|line_heart|polo": {
+  "id": "6ae7a5eff5f22e3bbd085c9f",
+  "prod": "polo",
+  "published": false
+ },
+ "bichon_frise|line_heart|cap_dad": {
+  "id": "6ae7a5f1f5f22e3bbd085ca1",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bichon_frise|line_heart|cap_foam": {
+  "id": "6ae7a5f2f5f22e3bbd085ca5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bichon_frise|line_heart|cap_mesh": {
+  "id": "6ae7a5f4d037ed7f1f02e1da",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bichon_frise|geo_classic|tank": {
+  "id": "6ae7a5f5cefd302331097f5c",
+  "prod": "tank",
+  "published": false
+ },
+ "bichon_frise|geo_classic|wtank": {
+  "id": "6ae7a5f78e070d8cc20b67ad",
+  "prod": "wtank",
+  "published": false
+ },
+ "bichon_frise|geo_classic|polo": {
+  "id": "6ae7a5f88e070d8cc20b67ae",
+  "prod": "polo",
+  "published": false
+ },
+ "bichon_frise|geo_classic|cap_dad": {
+  "id": "6ae7a5fa7861ac1c1c04264e",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bichon_frise|geo_classic|cap_foam": {
+  "id": "6ae7a5fce9fcc76a2908fc09",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bichon_frise|geo_classic|cap_mesh": {
+  "id": "6ae7a5fef5f22e3bbd085cb9",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bichon_frise|geo_cool|tank": {
+  "id": "6ae7a5ff6aa5485ffc0a054f",
+  "prod": "tank",
+  "published": false
+ },
+ "bichon_frise|geo_cool|wtank": {
+  "id": "6ae7a601e8a14b46b70ea39b",
+  "prod": "wtank",
+  "published": false
+ },
+ "bichon_frise|geo_cool|polo": {
+  "id": "6ae7a603d037ed7f1f02e1ec",
+  "prod": "polo",
+  "published": false
+ },
+ "bichon_frise|geo_cool|cap_dad": {
+  "id": "6ae7a605e8a14b46b70ea3a5",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bichon_frise|geo_cool|cap_foam": {
+  "id": "6ae7a607d037ed7f1f02e1fc",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bichon_frise|geo_cool|cap_mesh": {
+  "id": "6ae7a6097861ac1c1c042673",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "bichon_frise|geo_heart|tank": {
+  "id": "6ae7a60bf5f22e3bbd085cde",
+  "prod": "tank",
+  "published": false
+ },
+ "bichon_frise|geo_heart|wtank": {
+  "id": "6ae7a60da04ae2f1280acd2b",
+  "prod": "wtank",
+  "published": false
+ },
+ "bichon_frise|geo_heart|polo": {
+  "id": "6ae7a60fe9fcc76a2908fc35",
+  "prod": "polo",
+  "published": false
+ },
+ "bichon_frise|geo_heart|cap_dad": {
+  "id": "6ae7a611e9fcc76a2908fc3d",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "bichon_frise|geo_heart|cap_foam": {
+  "id": "6ae7a613e9fcc76a2908fc3f",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "bichon_frise|geo_heart|cap_mesh": {
+  "id": "6ae7a615cefd302331097f96",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "maltese|line_classic|tank": {
+  "id": "6ae7a617f5f22e3bbd085d00",
+  "prod": "tank",
+  "published": false
+ },
+ "maltese|line_classic|wtank": {
+  "id": "6ae7a6188e070d8cc20b6801",
+  "prod": "wtank",
+  "published": false
+ },
+ "maltese|line_classic|polo": {
+  "id": "6ae7a61ae8a14b46b70ea3e5",
+  "prod": "polo",
+  "published": false
+ },
+ "maltese|line_classic|cap_dad": {
+  "id": "6ae7a61cd037ed7f1f02e22f",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "maltese|line_classic|cap_foam": {
+  "id": "6ae7a61de8a14b46b70ea3ee",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "maltese|line_classic|cap_mesh": {
+  "id": "6ae7a61fd037ed7f1f02e235",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "maltese|line_cool|tank": {
+  "id": "6ae7a620cefd302331097fa8",
+  "prod": "tank",
+  "published": false
+ },
+ "maltese|line_cool|wtank": {
+  "id": "6ae7a622f5f22e3bbd085d19",
+  "prod": "wtank",
+  "published": false
+ },
+ "maltese|line_cool|polo": {
+  "id": "6ae7a624e9fcc76a2908fc5d",
+  "prod": "polo",
+  "published": false
+ },
+ "maltese|line_cool|cap_dad": {
+  "id": "6ae7a6257861ac1c1c0426b1",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "maltese|line_cool|cap_foam": {
+  "id": "6ae7a6277861ac1c1c0426b5",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "maltese|line_cool|cap_mesh": {
+  "id": "6ae7a628d037ed7f1f02e242",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "maltese|line_heart|tank": {
+  "id": "6ae7a62aa04ae2f1280acd5b",
+  "prod": "tank",
+  "published": false
+ },
+ "maltese|line_heart|wtank": {
+  "id": "6ae7a62ceff2af9b7c0bea99",
+  "prod": "wtank",
+  "published": false
+ },
+ "maltese|line_heart|polo": {
+  "id": "6ae7a62e6aa5485ffc0a059b",
+  "prod": "polo",
+  "published": false
+ },
+ "maltese|line_heart|cap_dad": {
+  "id": "6ae7a62fe8a14b46b70ea402",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "maltese|line_heart|cap_foam": {
+  "id": "6ae7a6318e070d8cc20b6814",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "maltese|line_heart|cap_mesh": {
+  "id": "6ae7a632e9fcc76a2908fc68",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "maltese|geo_classic|tank": {
+  "id": "6ae7a6347861ac1c1c0426c6",
+  "prod": "tank",
+  "published": false
+ },
+ "maltese|geo_classic|wtank": {
+  "id": "6ae7a635eff2af9b7c0bea9f",
+  "prod": "wtank",
+  "published": false
+ },
+ "maltese|geo_classic|polo": {
+  "id": "6ae7a637eff2af9b7c0beaa2",
+  "prod": "polo",
+  "published": false
+ },
+ "maltese|geo_classic|cap_dad": {
+  "id": "6ae7a6397861ac1c1c0426c9",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "maltese|geo_classic|cap_foam": {
+  "id": "6ae7a63beff2af9b7c0beaa8",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "maltese|geo_classic|cap_mesh": {
+  "id": "6ae7a63c7861ac1c1c0426cc",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "maltese|geo_cool|tank": {
+  "id": "6ae7a63e8e070d8cc20b681b",
+  "prod": "tank",
+  "published": false
+ },
+ "maltese|geo_cool|wtank": {
+  "id": "6ae7a640eff2af9b7c0beaae",
+  "prod": "wtank",
+  "published": false
+ },
+ "maltese|geo_cool|polo": {
+  "id": "6ae7a641a895c5bd4e00b4b2",
+  "prod": "polo",
+  "published": false
+ },
+ "maltese|geo_cool|cap_dad": {
+  "id": "6ae7a643a895c5bd4e00b4b3",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "maltese|geo_cool|cap_foam": {
+  "id": "6ae7a6458e070d8cc20b681f",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "maltese|geo_cool|cap_mesh": {
+  "id": "6ae7a6467861ac1c1c0426d9",
+  "prod": "cap_mesh",
+  "published": false
+ },
+ "maltese|geo_heart|tank": {
+  "id": "6ae7a648eff2af9b7c0beab3",
+  "prod": "tank",
+  "published": false
+ },
+ "maltese|geo_heart|wtank": {
+  "id": "6ae7a6497861ac1c1c0426dc",
+  "prod": "wtank",
+  "published": false
+ },
+ "maltese|geo_heart|polo": {
+  "id": "6ae7a64b7861ac1c1c0426df",
+  "prod": "polo",
+  "published": false
+ },
+ "maltese|geo_heart|cap_dad": {
+  "id": "6ae7a64ce9fcc76a2908fc7b",
+  "prod": "cap_dad",
+  "published": false
+ },
+ "maltese|geo_heart|cap_foam": {
+  "id": "6ae7a64eeff2af9b7c0beaba",
+  "prod": "cap_foam",
+  "published": false
+ },
+ "maltese|geo_heart|cap_mesh": {
+  "id": "6ae7a64f6aa5485ffc0a05b3",
+  "prod": "cap_mesh",
+  "published": false
  }
 }
