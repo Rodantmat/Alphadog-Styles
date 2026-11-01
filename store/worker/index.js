@@ -21,7 +21,7 @@ async function mail(env,to,subject,html){
 /* ---------- Stripe (Checkout Sessions via REST; no SDK) ---------- */
 const stripeEnc=(o,pre="",out=[])=>{for(const[k,v]of Object.entries(o)){const key=pre?`${pre}[${k}]`:k;if(v&&typeof v==="object")stripeEnc(v,key,out);else out.push(encodeURIComponent(key)+"="+encodeURIComponent(v))}return out};
 async function stripe(env,method,path,params){
-  const r=await fetch("https://api.stripe.com/v1"+path,{method,headers:{authorization:"Bearer "+env.STRIPE_SECRET_KEY,"content-type":"application/x-www-form-urlencoded"},body:method==="GET"?undefined:stripeEnc(params||{}).join("&")});
+  const r=await fetch((env.STRIPE_BASE||"https://api.stripe.com/v1")+path,{method,headers:{authorization:"Bearer "+env.STRIPE_SECRET_KEY,"content-type":"application/x-www-form-urlencoded"},body:method==="GET"?undefined:stripeEnc(params||{}).join("&")});
   const j=await r.json();if(!r.ok)throw new Error(j.error?.message||"Payment error");return j;
 }
 async function stripeVerify(raw,header,secret){
@@ -186,7 +186,7 @@ export default {
   if(path.startsWith("/api/internal/")){
     if(!env.ADMIN_TOKEN||req.headers.get("x-admin-token")!==env.ADMIN_TOKEN)return err("Forbidden",403);
     if(path==="/api/internal/orders"&&m==="GET"){const st=u.searchParams.get("status")||"paid";const r=await DB.prepare("SELECT id,email,data,total,status,printify_id FROM orders WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))})}
-    if(mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/)&&m==="POST"){
+    if((mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/))&&m==="POST"){
       const o=await DB.prepare("SELECT email FROM orders WHERE id=?").bind(mm[1]).first();if(!o)return err("No such order",404);
       await DB.prepare("UPDATE orders SET status=COALESCE(?::text,status),printify_id=COALESCE(?::text,printify_id),tracking=COALESCE(?::text,tracking),updated=? WHERE id=?").bind(body.status||null,body.printify_id||null,body.tracking||null,now(),mm[1]).run();
       if(body.status==="shipped")await mail(env,o.email,`Order ${mm[1]} has shipped`,`<p>Your AlphaDog order is on its way.</p>${body.tracking?`<p><a href="${body.tracking}">Track your package</a></p>`:""}`);
