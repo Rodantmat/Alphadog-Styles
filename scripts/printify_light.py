@@ -158,3 +158,25 @@ if MODE=="fetch":
     for i,u in enumerate(os.environ["EXTRA"].split()):
         d=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"a"}),timeout=60).read()
         open(f"out/mock3/{i}.jpg","wb").write(d); print("saved",i,len(d),flush=True)
+if MODE=="verify":
+    res={}; bad=0
+    for k,v in LS.items():
+        if "#old" in k: continue
+        p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json"); prod=v["prod"]; probs=[]
+        for a_ in p["print_areas"]:
+            for q in a_["placeholders"]:
+                if q["position"] not in("front","back"): continue
+                W,H=AREAS[prod][q["position"]]
+                for im in q["images"]:
+                    if im.get("type")!="image/png": continue
+                    iw,ih=dims(im["id"]); s=im["scale"]; h=s*W/(iw/ih)/H
+                    l,r=im["x"]-s/2,im["x"]+s/2; t,b=im["y"]-h/2,im["y"]+h/2
+                    if l<-0.005 or r>1.005 or t<-0.005 or b>1.005: probs.append(f'{q["position"]} out of window l={l:.2f} r={r:.2f} t={t:.2f} b={b:.2f}')
+        enabled=[x for x in p["variants"] if x["is_enabled"]]
+        if not enabled: probs.append("no enabled variants")
+        res[k]={"ok":not probs,"probs":probs}; bad+=bool(probs)
+        time.sleep(0.2)
+    json.dump(res,open(f"out/verify_{CH}.json","w"),indent=1)
+    print("VERIFIED",len(res),"BAD",bad,flush=True)
+    for k,r in res.items():
+        if not r["ok"]: print("BAD",k,r["probs"],flush=True)
