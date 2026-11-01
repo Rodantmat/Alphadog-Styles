@@ -591,463 +591,463 @@
   "id": "6ae58eb8c0e74489cc070fe1",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_classic|hoodie|pair": {
   "id": "6ae58a55949c1d10dd0bbe67",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_classic|hoodie|portrait": {
   "id": "6ae593600e146105c80c6e29",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_classic|hoodie|pocket": {
   "id": "6ae58ebd0e146105c80c653f",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_cool|hoodie|pair": {
   "id": "6ae58a5b949c1d10dd0bbe6d",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_cool|hoodie|portrait": {
   "id": "6ae593650e146105c80c6e2d",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_cool|hoodie|pocket": {
   "id": "6ae58ec2949c1d10dd0bc1c2",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_heart|hoodie|pair": {
   "id": "6ae58a600e146105c80c6251",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_heart|hoodie|portrait": {
   "id": "6ae5936a949c1d10dd0bcb56",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "poodle|geo_heart|hoodie|pocket": {
   "id": "6ae58ec7949c1d10dd0bc1c6",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_classic|hoodie|pair": {
   "id": "6ae58a660e146105c80c6255",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_classic|hoodie|portrait": {
   "id": "6ae5936fd07f87d6c70b40b8",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_classic|hoodie|pocket": {
   "id": "6ae58ecdc0e74489cc070fed",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_cool|hoodie|pair": {
   "id": "6ae58a6b0e146105c80c625a",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_cool|hoodie|portrait": {
   "id": "6ae59375949c1d10dd0bcb5d",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_cool|hoodie|pocket": {
   "id": "6ae58ed255e86fafe60aea78",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_heart|hoodie|pair": {
   "id": "6ae58a7090e00e273b0895d2",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_heart|hoodie|portrait": {
   "id": "6ae5937a5117207343033787",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|line_heart|hoodie|pocket": {
   "id": "6ae58ed743fcd2f3870b29b1",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_classic|hoodie|pair": {
   "id": "6ae58a750e146105c80c625e",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_classic|hoodie|portrait": {
   "id": "6ae5937f90e00e273b08a1d3",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_classic|hoodie|pocket": {
   "id": "6ae58edc949c1d10dd0bc1d6",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_cool|hoodie|pair": {
   "id": "6ae58a7ac0e74489cc070c8a",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_cool|hoodie|portrait": {
   "id": "6ae59385c0e74489cc0718fb",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_cool|hoodie|pocket": {
   "id": "6ae58ee20e146105c80c6552",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_heart|hoodie|pair": {
   "id": "6ae58a80c0e74489cc070c8d",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_heart|hoodie|portrait": {
   "id": "6ae5938a511720734303378d",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "beagle|geo_heart|hoodie|pocket": {
   "id": "6ae58ee7aa79725281069816",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_classic|hoodie|pair": {
   "id": "6ae58a860e146105c80c6263",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_classic|hoodie|portrait": {
   "id": "6ae5939190e00e273b08a1d9",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_classic|hoodie|pocket": {
   "id": "6ae58eecaa7972528106981b",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_cool|hoodie|pair": {
   "id": "6ae58a8b43fcd2f3870b26c9",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_cool|hoodie|portrait": {
   "id": "6ae593965117207343033795",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_cool|hoodie|pocket": {
   "id": "6ae58ef10e146105c80c6563",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_heart|hoodie|pair": {
   "id": "6ae58a9043fcd2f3870b26cd",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_heart|hoodie|portrait": {
   "id": "6ae5939b944026b113050f49",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|line_heart|hoodie|pocket": {
   "id": "6ae58ef6949c1d10dd0bc1ea",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_classic|hoodie|pair": {
   "id": "6ae58a9690e00e273b0895db",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_classic|hoodie|portrait": {
   "id": "6ae593a1d2194c8e730f3b38",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_classic|hoodie|pocket": {
   "id": "6ae58efcc0e74489cc07100f",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_cool|hoodie|pair": {
   "id": "6ae58a9b949c1d10dd0bbea2",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_cool|hoodie|portrait": {
   "id": "6ae593a690e00e273b08a1eb",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_cool|hoodie|pocket": {
   "id": "6ae58f0190e00e273b0898dc",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_heart|hoodie|pair": {
   "id": "6ae58aa190e00e273b0895ec",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_heart|hoodie|portrait": {
   "id": "6ae593acd2194c8e730f3b43",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "rottweiler|geo_heart|hoodie|pocket": {
   "id": "6ae58f06aa79725281069831",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_classic|hoodie|pair": {
   "id": "6ae58aa60e146105c80c6271",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_classic|hoodie|portrait": {
   "id": "6ae593b1aa7972528106a1dc",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_classic|hoodie|pocket": {
   "id": "6ae58f0cc0e74489cc07101f",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_cool|hoodie|pair": {
   "id": "6ae58aab49f7cb0d0b02f4cd",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_cool|hoodie|portrait": {
   "id": "6ae593b690e00e273b08a1f8",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_cool|hoodie|pocket": {
   "id": "6ae58f1143fcd2f3870b29d1",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_heart|hoodie|pair": {
   "id": "6ae58ab20e146105c80c627c",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_heart|hoodie|portrait": {
   "id": "6ae593bb944026b113050f61",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|line_heart|hoodie|pocket": {
   "id": "6ae58f16c0e74489cc071028",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_classic|hoodie|pair": {
   "id": "6ae58ab790e00e273b0895fd",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_classic|hoodie|portrait": {
   "id": "6ae593c090e00e273b08a1fa",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_classic|hoodie|pocket": {
   "id": "6ae58f1b55e86fafe60aea9f",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_cool|hoodie|pair": {
   "id": "6ae58abc0e146105c80c627f",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_cool|hoodie|portrait": {
   "id": "6ae593c50e146105c80c6e6b",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_cool|hoodie|pocket": {
   "id": "6ae58f5443fcd2f3870b2a0c",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_heart|hoodie|pair": {
   "id": "6ae58ac155e86fafe60ae7db",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_heart|hoodie|portrait": {
   "id": "6ae593ca90e00e273b08a1ff",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "german_shorthaired_pointer|geo_heart|hoodie|pocket": {
   "id": "6ae58f5a43fcd2f3870b2a11",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_classic|hoodie|pair": {
   "id": "6ae58ac755e86fafe60ae7dc",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_classic|hoodie|portrait": {
   "id": "6ae593d051172073430337b8",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_classic|hoodie|pocket": {
   "id": "6ae58f5f43fcd2f3870b2a12",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_cool|hoodie|pair": {
   "id": "6ae58accc0e74489cc070cbd",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_cool|hoodie|portrait": {
   "id": "6ae593d5c0e74489cc07192a",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_cool|hoodie|pocket": {
   "id": "6ae58f64aa79725281069877",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_heart|hoodie|pair": {
   "id": "6ae58ad10e146105c80c628a",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_heart|hoodie|portrait": {
   "id": "6ae593dbc0e74489cc07192f",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|line_heart|hoodie|pocket": {
   "id": "6ae58f6aaa7972528106987a",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|geo_classic|hoodie|pair": {
   "id": "6ae58ad643fcd2f3870b2703",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|geo_classic|hoodie|portrait": {
   "id": "6ae593e00e146105c80c6e81",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|geo_classic|hoodie|pocket": {
   "id": "6ae58f6f949c1d10dd0bc232",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|geo_cool|hoodie|pair": {
   "id": "6ae58adbc0e74489cc070cc2",
   "prod": "hoodie",
   "enabled": 42,
-  "published": false
+  "published": true
  },
  "bulldog|geo_cool|hoodie|portrait": {
   "id": "6ae593e50e146105c80c6e83",
