@@ -22,6 +22,15 @@ jobs:
         run: |
           mkdir -p out
           python3 scripts/printify_light.py 2>&1 | tee out/light_publish_tiktok.log
+      - name: Publish new product lines (tanks, polos, caps)
+        if: always()
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          MODE: publish
+          SHOP: "29546485"
+          CHANNEL: tiktok
+          EXTRA: "400"
+        run: python3 scripts/printify_extras.py 2>&1 | tail -3
       - name: Commit state
         if: always()
         run: |
