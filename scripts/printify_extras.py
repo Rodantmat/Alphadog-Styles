@@ -37,6 +37,14 @@ P={
  "cap_mesh":dict(bp=1734,pos="front_dtf",colors=["White"],sizes=None,price=2599,sur={},art="front",rule="fill",
              name="Mesh Trucker Cap",blank="Yupoong 6006 five-panel trucker cap with mesh back and snapback. Printed front."),
 }
+# brand logo / label (same AlphaDog logo as the tee & hoodie neck labels)
+NECK=json.load(open("out/neck_ids.json"))["blackink"]
+LABEL={"tank":("neck",dict(x=.5,y=.5,scale=1.0)),"wtank":("neck",dict(x=.5,y=.5,scale=1.0)),
+       "polo":("back",dict(x=.5,y=.07,scale=.15)),"wpolo":None,
+       "cap_dad":("back_hat_embroidery",dict(x=.5,y=.5,scale=.45)),"cap_foam":None,"cap_mesh":None}
+def label_ph(prod):
+    L=LABEL.get(prod)
+    return [{"position":L[0],"images":[dict(id=NECK,angle=0,**L[1])]}] if L else []
 def place(spec,area,iw,ih):
     W,H=area; a=iw/ih
     if spec["rule"]=="fill": k=.92; w=min(k,k*H*a/W); return dict(x=.5,y=.5,scale=round(w,3))
@@ -65,7 +73,7 @@ if MODE=="build":
                   "description":f"<p>{desc.capitalize()}: the {disp} in {THEME[th].lower()} artwork, {VAR[vr].lower()} style.</p><p>{spec['blank']}</p><p>Made to order by a Printify partner and shipped within the US.</p>",
                   "blueprint_id":spec["bp"],"print_provider_id":99,
                   "variants":[{"id":v["id"],"price":spec["price"]+spec["sur"].get(v["options"].get("size"),0),"is_enabled":True} for v in sel],
-                  "print_areas":[{"variant_ids":[v["id"] for v in sel],"placeholders":[{"position":spec["pos"],"images":[dict(id=img,angle=0,**place(spec,area,*dims(img)))]}]}],
+                  "print_areas":[{"variant_ids":[v["id"] for v in sel],"placeholders":[{"position":spec["pos"],"images":[dict(id=img,angle=0,**place(spec,area,*dims(img)))]}]+label_ph(prod)}],
                   "tags":[t[:20] for t in [disp.lower(),"dog lover gift","dog mom gift","dog dad gift","dog breed","line art dog" if th=="line" else "geometric dog","minimalist dog","pet lover gift",spec["name"].lower()[:20],"dog portrait","gift for dog lover","dog art"]][:13]}
                 p=call("POST",f"/v1/shops/{SHOP}/products.json",body)
                 LS[k]={"id":p["id"],"prod":prod,"published":False}; save(); n+=1
@@ -74,13 +82,37 @@ if MODE=="build":
     print("EXTRAS BUILD DONE",n,len(LS),flush=True)
 if MODE=="publish":  # published flags live in a separate file so the build job and the publish cron never edit the same file
     PF=f"out/state_extras_{CH}_pub.json"; PUB=json.load(open(PF)) if os.path.exists(PF) else {}
+    LF=f"out/state_extras_{CH}_label.json"; LAB=json.load(open(LF)) if os.path.exists(LF) else {}
     skip=os.environ.get("SKIP","").split(","); n=0
     for k,v in LS.items():
         if PUB.get(k) or v["prod"] in skip: continue
+        if LABEL.get(v["prod"]) and not LAB.get(k): continue   # wait until the logo label is on it
         if n>=EXTRA: break
         call("POST",f"/v1/shops/{SHOP}/products/{v['id']}/publish.json",{"title":True,"description":True,"images":True,"variants":True,"tags":True,"keyfeatures":True,"shipping_template":True})
         PUB[k]=True; json.dump(PUB,open(PF,"w")); n+=1; time.sleep(1.5)
     print("EXTRAS PUBLISH DONE",n,len(PUB),"/",len(LS),flush=True)
+if MODE=="relabel":  # add the AlphaDog logo label to products built before labels existed; re-publish ones already live
+    LF=f"out/state_extras_{CH}_label.json"; LAB=json.load(open(LF)) if os.path.exists(LF) else {}
+    PF=f"out/state_extras_{CH}_pub.json"; PUB=json.load(open(PF)) if os.path.exists(PF) else {}
+    n=0; fails=0
+    for k,v in LS.items():
+        if LAB.get(k) or not LABEL.get(v["prod"]): continue
+        if n>=EXTRA: break
+        try:
+            p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json"); pos=LABEL[v["prod"]][0]
+            pas=[]
+            for a in p["print_areas"]:
+                phs=[{"position":q["position"],"images":[{"id":i["id"],"x":i["x"],"y":i["y"],"scale":i["scale"],"angle":i.get("angle",0)} for i in q["images"]]} for q in a["placeholders"] if q["position"]!=pos]
+                pas.append({"variant_ids":a["variant_ids"],"placeholders":phs+label_ph(v["prod"])})
+            call("PUT",f"/v1/shops/{SHOP}/products/{v['id']}.json",{"print_areas":pas},retry=4)
+            if PUB.get(k): call("POST",f"/v1/shops/{SHOP}/products/{v['id']}/publish.json",{"title":True,"description":True,"images":True,"variants":True,"tags":True,"keyfeatures":True,"shipping_template":True})
+            LAB[k]=True; json.dump(LAB,open(LF,"w")); n+=1
+            if n%25==0: print("relabelled",n,flush=True)
+        except Exception as e:
+            fails+=1; print("RELABEL FAIL",k,str(e)[:200],flush=True)
+            if fails>20: break
+        time.sleep(0.5)
+    print("RELABEL DONE",n,"fails",fails,len(LAB),flush=True)
 if MODE=="check":
     os.makedirs("out/extras_check",exist_ok=True); n=0
     for k,v in list(LS.items())[:EXTRA]:
