@@ -25,7 +25,7 @@ if MODE=="probe":
     print(json.dumps({kk:p[kk] for kk in p if kk not in("variants","images","print_areas","options","description")})[:700])
     print("external",p.get("external"))
 
-if MODE!="probe":
+if MODE not in("probe","fetch"):
     import base64
     CH=os.environ["CHANNEL"]; SHOP=int(os.environ["SHOP"]); EXTRA=os.environ.get("EXTRA","")
     BREEDS=json.load(open("scripts/breeds25.json"))
@@ -122,3 +122,8 @@ if MODE!="probe":
             p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json")
             print(k,p["blueprint_id"],"enabled",sum(x["is_enabled"] for x in p["variants"]),"ext",p.get("external"),flush=True)
             for im in p["images"][:4]: print("  IMG",im["src"],im.get("variant_ids")[:1],flush=True)
+if MODE=="fetch":
+    os.makedirs("out/mock3",exist_ok=True)
+    for i,u in enumerate(os.environ["EXTRA"].split()):
+        d=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"a"}),timeout=60).read()
+        open(f"out/mock3/{i}.jpg","wb").write(d); print("saved",i,len(d),flush=True)
