@@ -31,8 +31,8 @@ async function stripeVerify(raw,header,secret){
   const sig=hex(await crypto.subtle.sign("HMAC",key,new TextEncoder().encode(p.t+"."+raw)));
   return sig.length===p.v1.length&&[...sig].reduce((a,c,i)=>a|(c.charCodeAt(0)^p.v1.charCodeAt(i)),0)===0;
 }
-async function markPaid(DB,env,id,sessionId){
-  const r=await DB.prepare("UPDATE orders SET status='paid',updated=? WHERE id=? AND status IN ('reserved','awaiting_payment')").bind(now(),id).run();
+async function markPaid(DB,env,id,live){
+  const r=await DB.prepare("UPDATE orders SET status=?,updated=? WHERE id=? AND status IN ('reserved','awaiting_payment')").bind(live?'paid':'paid_test',now(),id).run();
   const o=await DB.prepare("SELECT email,total FROM orders WHERE id=?").bind(id).first();
   if(o&&r.meta?.changes!==0)await mail(env,o.email,`Order ${id} confirmed`,`<p>Thank you! Payment received for order <b>${id}</b> ($${(o.total/100).toFixed(2)}). We are sending it to print now and will email tracking when it ships.</p>`);
 }
@@ -165,14 +165,14 @@ export default {
     if(o.status!=="awaiting_payment")return J({status:o.status});
     const sid=JSON.parse(o.data).session;if(!sid)return J({status:o.status});
     const ss=await stripe(env,"GET","/checkout/sessions/"+sid);
-    if(ss.payment_status==="paid"&&ss.client_reference_id===body.id){await markPaid(DB,env,body.id);return J({status:"paid"})}
+    if(ss.payment_status==="paid"&&ss.client_reference_id===body.id){await markPaid(DB,env,body.id,ss.livemode);return J({status:ss.livemode?"paid":"paid_test"})}
     return J({status:o.status});
   }
   if(path==="/api/stripe/webhook"&&m==="POST"){
     if(!env.STRIPE_WEBHOOK_SECRET)return err("not configured",503);
     if(!(await stripeVerify(raw,req.headers.get("stripe-signature"),env.STRIPE_WEBHOOK_SECRET)))return err("bad signature",400);
     const ev=JSON.parse(raw);
-    if(ev.type==="checkout.session.completed"||ev.type==="checkout.session.async_payment_succeeded"){const ss=ev.data.object;if(ss.payment_status==="paid"&&ss.client_reference_id)await markPaid(DB,env,ss.client_reference_id)}
+    if(ev.type==="checkout.session.completed"||ev.type==="checkout.session.async_payment_succeeded"){const ss=ev.data.object;if(ss.payment_status==="paid"&&ss.client_reference_id)await markPaid(DB,env,ss.client_reference_id,ss.livemode)}
     return J({received:true});
   }
   if(path==="/api/orders"&&m==="GET"){const e=await auth(req,env);if(!e)return err("Log in first",401);const r=await DB.prepare("SELECT id,status,total,tracking,created FROM orders WHERE email=? ORDER BY created DESC LIMIT 100").bind(e).all();return J({items:r.results})}

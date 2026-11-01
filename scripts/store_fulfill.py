@@ -62,6 +62,13 @@ def fulfil(o):
     r=pf("POST",f"/v1/shops/{SHOP}/orders.json",body)
     pf("POST",f"/v1/shops/{SHOP}/orders/{r['id']}/send_to_production.json",{})
     st("POST",f"/api/internal/orders/{o['id']}",{"status":"in_production","printify_id":r["id"]}); print("sent",o["id"],r["id"],flush=True)
+for o in st("GET","/api/internal/orders?status=paid_test")["items"]:  # Stripe TEST payments: build every print file to prove the pipeline, never touch Printify
+    try:
+        for i,it in enumerate(o["data"]["items"]):
+            for side in ("front","back"):
+                if it.get(side): assert len(compose(it["prod"],side,it[side]))>1000; variant(it["prod"],it["color"],it["size"])
+        st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_complete"}); print("test order verified",o["id"],flush=True)
+    except Exception as e: print("TEST FAILED",o["id"],e,flush=True); st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_failed"})
 for o in st("GET","/api/internal/orders?status=paid")["items"]:
     try: fulfil(o)
     except Exception as e: print("FAILED",o["id"],e,flush=True); st("POST",f"/api/internal/orders/{o['id']}",{"status":"needs_attention"})
