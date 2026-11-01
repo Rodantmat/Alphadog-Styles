@@ -73,7 +73,7 @@ if MODE not in("probe","fetch"):
         W,H=AREAS[prod][side]; a=iw/ih
         if kind=="back":
             if prod=="hoodie":  # hood covers the top of the window: smaller and bottom-aligned
-                hf=float(os.environ.get("HOODBACK","0.84")); w=min(0.97,hf*H*a/W); h=w*W/a/H
+                hf=float(os.environ.get("HOODBACK","0.77")); w=min(0.97,hf*H*a/W); h=w*W/a/H
                 return dict(x=0.5,y=round(1-h/2-0.005,3),scale=round(w,3))
             w=min(0.97,0.97*H*a/W); return dict(x=0.5,y=0.5,scale=round(w,3))
         if kind=="pocket":
@@ -189,7 +189,7 @@ if MODE=="verify":
         if not r["ok"]: print("BAD",k,r["probs"],flush=True)
 
 if MODE=="refit":
-    n=0; FITV="v3-"+os.environ.get("HOODBACK","0.84")
+    n=0; FITV="v3-"+os.environ.get("HOODBACK","0.77")
     for k,v in LS.items():
         if "#old" in k or v.get("fit")==FITV: continue
         prod=v["prod"]; lay=k.split("|")[3]
