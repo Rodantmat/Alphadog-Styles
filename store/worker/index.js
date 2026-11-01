@@ -185,6 +185,7 @@ export default {
   /* ----- internal (GitHub Actions fulfillment + payment hooks) ----- */
   if(path.startsWith("/api/internal/")){
     if(!env.ADMIN_TOKEN||req.headers.get("x-admin-token")!==env.ADMIN_TOKEN)return err("Forbidden",403);
+    if(path==="/api/internal/inbox"&&m==="GET"){const g=async q=>(await DB.prepare(q).all()).results;return J({messages:await g("SELECT email,body,created FROM msgs ORDER BY created DESC LIMIT 50"),subscribers:await g("SELECT email,created FROM subs ORDER BY created DESC LIMIT 200"),orders:await g("SELECT id,email,status,total,created FROM orders WHERE status NOT IN ('awaiting_payment','smoke_test') ORDER BY created DESC LIMIT 50")})}
     if(path==="/api/internal/dbcheck"&&m==="GET"){try{return J(await diag(env0.DATABASE_URL,env0.HYPERDRIVE))}catch(e){return J({error:String(e.message)},500)}}
     if(path==="/api/internal/orders"&&m==="GET"){const st=u.searchParams.get("status")||"paid";const r=await DB.prepare("SELECT id,email,data,total,status,printify_id FROM orders WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))})}
     if((mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/))&&m==="POST"){
