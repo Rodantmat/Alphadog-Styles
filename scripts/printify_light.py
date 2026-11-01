@@ -191,11 +191,20 @@ if MODE=="oldcheck":
             open(f"out/mock4/old_{j}.jpg","wb").write(urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"}),timeout=60).read())
 if MODE=="blanks":
     import io,base64
-    from PIL import Image
+    import zlib,struct
     os.makedirs("out/blanks",exist_ok=True)
     BS="out/blanks_state.json"; bst=json.load(open(BS)) if os.path.exists(BS) else {}
-    im=Image.new("RGBA",(800,800),(0,0,0,0)); im.putpixel((400,400),(0,0,0,2))
-    bio=io.BytesIO(); im.save(bio,"PNG")
+    def mkpng(w,h):
+        rows=bytearray()
+        for y in range(h):
+            rows+=b"\x00"+bytearray(4*w)
+        i=1+(h//2)*(4*w+1)-1+1+4*(w//2)  # centre pixel
+        rows[1+(h//2)*(4*w+1)+4*(w//2)+3]=2
+        def ch(t,d): c=struct.pack(">I",len(d))+t+d; return c+struct.pack(">I",zlib.crc32(t+d)&0xffffffff)
+        return b"\x89PNG\r\n\x1a\n"+ch(b"IHDR",struct.pack(">IIBBBBB",w,h,8,6,0,0,0))+ch(b"IDAT",zlib.compress(bytes(rows)))+ch(b"IEND",b"")
+    class _B: 
+        def getvalue(self): return mkpng(800,800)
+    bio=_B()
     if "img" not in bst:
         bst["img"]=call("POST","/v1/uploads/images.json",{"file_name":"blank_dot.png","contents":base64.b64encode(bio.getvalue()).decode()})["id"]; json.dump(bst,open(BS,"w"))
     cfgs={"tee":(12,[v for v in call("GET","/v1/catalog/blueprints/12/print_providers/99/variants.json")["variants"] if v["options"]["size"]=="M" and v["options"]["color"] in BELLA_LIGHT]),
