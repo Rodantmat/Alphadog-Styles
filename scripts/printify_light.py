@@ -68,14 +68,14 @@ if MODE not in("probe","fetch"):
         if i not in DIMS:
             r=call("GET",f"/v1/uploads/{i}.json"); DIMS[i]=[r["width"],r["height"]]; json.dump(DIMS,open(DIMF,"w"))
         return DIMS[i]
-    AREAS={"tee":{"front":(2767,3362),"back":(2767,3362)},"hoodie":{"front":(2919,1944),"back":(3033,2528)}}
+    AREAS={"tee":{"front":(2767,3362),"back":(2767,3362)},"hoodie":{"front":(3531,2352),"back":(3852,3210)}}
     def fit(prod,side,kind,iw,ih):
         W,H=AREAS[prod][side]; a=iw/ih
-        if kind=="back": w=min(0.95,0.94*H*a/W); return dict(x=0.5,y=0.5,scale=round(w,3))
+        if kind=="back": w=min(0.97,0.97*H*a/W); return dict(x=0.5,y=0.5,scale=round(w,3))
         if kind=="pocket":
             w=min((0.30*3185/W if prod=="tee" else 0.26),0.30*H*a/W); h=w*W/a/H
             return dict(x=0.76,y=round(0.05+h/2 if prod=="hoodie" else 0.17,3),scale=round(w,3))
-        w=min(0.75 if prod=="tee" else 0.58,0.9*H*a/W); h=w*W/a/H
+        w=min(0.75 if prod=="tee" else 0.58,0.95*H*a/W); h=w*W/a/H
         return dict(x=0.5,y=round(min(0.5,0.04+h/2),3),scale=round(w,3))
     def sync_wait(): time.sleep(0.35)
     if MODE=="hoodies":
@@ -183,3 +183,26 @@ if MODE=="verify":
     print("VERIFIED",len(res),"BAD",bad,flush=True)
     for k,r in res.items():
         if not r["ok"]: print("BAD",k,r["probs"],flush=True)
+
+if MODE=="refit":
+    n=0
+    for k,v in LS.items():
+        if "#old" in k: continue
+        prod=v["prod"]; lay=k.split("|")[3]
+        p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json"); pas=[]
+        for a_ in p["print_areas"]:
+            phs=[]
+            for q in a_["placeholders"]:
+                ims=[]
+                for im in q["images"]:
+                    if im.get("type")!="image/png": continue
+                    d_=dict(id=im["id"],angle=0)
+                    if q["position"]=="front": d_.update(fit(prod,"front","pocket" if lay in("pair","pocket") else "big",*dims(im["id"])))
+                    elif q["position"]=="back": d_.update(fit(prod,"back","back",*dims(im["id"])))
+                    else: d_.update(x=im["x"],y=im["y"],scale=im["scale"])
+                    ims.append(d_)
+                if ims: phs.append({"position":q["position"],"images":ims})
+            pas.append({"variant_ids":a_["variant_ids"],"placeholders":phs})
+        call("PUT",f"/v1/shops/{SHOP}/products/{v['id']}.json",{"print_areas":pas}); n+=1; time.sleep(0.6)
+        if n%20==0: print("refit",n,flush=True)
+    print("REFIT DONE",n,flush=True)
