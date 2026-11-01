@@ -216,7 +216,7 @@ if MODE=="refit":
     n=0; FITV="v3-"+os.environ.get("HOODBACK","0.77")
     for k,v in LS.items():
         if v.get("fit")==FITV: continue
-        prod=v["prod"]; lay=k.split("|")[3]
+        prod=v["prod"]; lay=k.split("|")[3].split("#")[0]
         p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json"); pas=[]
         for a_ in p["print_areas"]:
             phs=[]
