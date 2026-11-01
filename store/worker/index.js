@@ -1,6 +1,6 @@
 // AlphaDog Styles store backend. Secrets (set with wrangler secret put): ADMIN_TOKEN, RESEND_API_KEY (optional), STRIPE_* (later).
 import {priceCents} from "../js/placement.js";
-import {makeDB} from "./db.js";
+import {makeDB,diag} from "./db.js";
 import cat from "../data/catalog.json";
 const J=(o,s=200,h={})=>new Response(JSON.stringify(o),{status:s,headers:{"content-type":"application/json","cache-control":"no-store",...h}});
 const err=(m,s=400)=>J({error:m},s);
@@ -185,6 +185,7 @@ export default {
   /* ----- internal (GitHub Actions fulfillment + payment hooks) ----- */
   if(path.startsWith("/api/internal/")){
     if(!env.ADMIN_TOKEN||req.headers.get("x-admin-token")!==env.ADMIN_TOKEN)return err("Forbidden",403);
+    if(path==="/api/internal/dbcheck"&&m==="GET"){try{return J(await diag(env0.DATABASE_URL))}catch(e){return J({error:String(e.message)},500)}}
     if(path==="/api/internal/orders"&&m==="GET"){const st=u.searchParams.get("status")||"paid";const r=await DB.prepare("SELECT id,email,data,total,status,printify_id FROM orders WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))})}
     if((mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/))&&m==="POST"){
       const o=await DB.prepare("SELECT email FROM orders WHERE id=?").bind(mm[1]).first();if(!o)return err("No such order",404);

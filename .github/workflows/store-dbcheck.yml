@@ -1,0 +1,12 @@
+name: store-dbcheck
+on:
+  workflow_dispatch:
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    env:
+      ADM: ${{ secrets.STORE_ADMIN_TOKEN }}
+    steps:
+      - name: check
+        run: |
+          curl -s https://alphadog-store.rodolfoaamattos.workers.dev/api/internal/dbcheck -H "x-admin-token: $ADM" | python3 -m json.tool
