@@ -1,0 +1,30 @@
+n variants 989
+colors ['Aqua', 'Army', 'Ash', 'Asphalt', 'Athletic Heather', 'Autumn', 'Baby Blue', 'Berry', 'Black', 'Black Heather', 'Brown', 'Burnt Orange', 'Canvas Red', 'Cardinal', 'Charity Pink', 'Citron', 'Columbia Blue', 'Coral', 'Dark Grey', 'Dark Grey Heather', 'Dark Olive', 'Deep Heather', 'Deep Teal', 'Dusty Blue', 'Evergreen', 'Forest', 'Fuchsia', 'Gold', 'Heather Aqua', 'Heather Autumn', 'Heather Blue', 'Heather Blue Lagoon', 'Heather Brown', 'Heather Bubble Gum', 'Heather Cardinal', 'Heather Cement', 'Heather Charity Pink', 'Heather Clay', 'Heather Columbia Blue', 'Heather Cool Grey', 'Heather Deep Teal', 'Heather Dust', 'Heather Dusty Blue', 'Heather Forest', 'Heather Grass Green', 'Heather Green', 'Heather Ice Blue', 'Heather Kelly', 'Heather Maroon', 'Heather Mauve', 'Heather Midnight Navy', 'Heather Military Green', 'Heather Mint', 'Heather Mustard', 'Heather Navy', 'Heather Olive', 'Heather Orange', 'Heather Orchid', 'Heather Peach', 'Heather Prism Blue', 'Heather Prism Dusty Blue', 'Heather Prism Ice Blue', 'Heather Prism Lilac', 'Heather Prism Mint', 'Heather Prism Natural', 'Heather Prism Peach', 'Heather Prism Sunset', 'Heather Purple', 'Heather Raspberry', 'Heather Red', 'Heather Sand Dune', 'Heather Sea Green', 'Heather Slate', 'Heather Stone', 'Heather Storm', 'Heather Sunset', 'Heather Tan', 'Heather Team Purple', 'Heather True Royal', 'Heather Yellow Gold', 'Kelly', 'Lavender Blue', 'Leaf', 'Light Blue', 'Lilac', 'Maize Yellow', 'Maroon', 'Mauve', 'Military Green', 'Mint', 'Mustard', 'Natural', 'Navy', 'Ocean Blue', 'Olive', 'Orange', 'Orchid', 'Oxblood Black', 'Peach', 'Pebble Brown', 'Pink', 'Red', 'Rust', 'Sage', 'Sand Dune', 'Silver', 'Soft Cream', 'Soft Pink', 'Solid Athletic Grey', 'Solid Black Blend', 'Solid White Blend', 'Steel Blue', 'Storm', 'Sunset', 'Synthetic Green', 'Tan', 'Teal', 'Team Navy', 'Team Purple', 'True Royal', 'Turquoise', 'Vintage Black', 'Vintage White', 'White', 'Yellow']
+sizes ['2XL', '3XL', '4XL', '5XL', 'L', 'M', 'S', 'XL', 'XS']
+placeholders [{"position": "back", "decoration_method": "dtg", "width": 2767, "height": 3362}, {"position": "front", "decoration_method": "dtg", "width": 2767, "height": 3362}, {"position": "neck", "decoration_method": "dtf", "width": 750, "height": 750}, {"position": "left_sleeve", "decoration_method": "dtg", "width": 960, "height": 960}, {"position": "right_sleeve", "decoration_method": "dtg", "width": 960, "height": 960}]
+HTTP 429 /v1/catalog/blueprints/77/print_providers/99/variants.json {"error":"Too Many Attempts.","request_id":"1793503358@c250df96-51b2-42cc-a934-dace56749835"}
+Traceback (most recent call last):
+  File "/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/printify_light.py", line 20, in <module>
+    h=call("GET","/v1/catalog/blueprints/77/print_providers/99/variants.json")["variants"]
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/printify_light.py", line 8, in call
+    try: return json.load(urllib.request.urlopen(r,timeout=120))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 429: Too Many Requests
