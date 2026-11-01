@@ -1,14 +1,14 @@
 """Light-only launch helper. env: MODE (probe|hoodies|tees|publish), SHOP, CHANNEL, PRINTIFY_TOKEN, plus per-mode vars."""
 import os, json, time, urllib.request, urllib.error
 T=os.environ["PRINTIFY_TOKEN"]; MODE=os.environ.get("MODE","probe")
-def call(m,p,b=None,retry=4):
+def call(m,p,b=None,retry=8):
     for a in range(retry):
         d=json.dumps(b).encode() if b is not None else None
         r=urllib.request.Request("https://api.printify.com"+p,data=d,method=m,headers={"Authorization":"Bearer "+T,"Content-Type":"application/json","User-Agent":"a"})
         try: return json.load(urllib.request.urlopen(r,timeout=120))
         except urllib.error.HTTPError as e:
             msg=e.read().decode()[:600]
-            if e.code in (429,500,502,503,504) and a<retry-1: time.sleep(10*(a+1)); continue
+            if e.code in (429,500,502,503,504) and a<retry-1: time.sleep((40 if e.code==429 else 10)*(a+1)); continue
             print("HTTP",e.code,p,msg,flush=True); raise
 if MODE=="probe":
     r=call("GET","/v1/catalog/blueprints/12/print_providers/99/variants.json")
@@ -189,9 +189,9 @@ if MODE=="verify":
         if not r["ok"]: print("BAD",k,r["probs"],flush=True)
 
 if MODE=="refit":
-    n=0
+    n=0; FITV="v3-"+os.environ.get("HOODBACK","0.72")
     for k,v in LS.items():
-        if "#old" in k: continue
+        if "#old" in k or v.get("fit")==FITV: continue
         prod=v["prod"]; lay=k.split("|")[3]
         p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json"); pas=[]
         for a_ in p["print_areas"]:
@@ -207,6 +207,6 @@ if MODE=="refit":
                     ims.append(d_)
                 if ims: phs.append({"position":q["position"],"images":ims})
             pas.append({"variant_ids":a_["variant_ids"],"placeholders":phs})
-        call("PUT",f"/v1/shops/{SHOP}/products/{v['id']}.json",{"print_areas":pas}); n+=1; time.sleep(0.6)
+        call("PUT",f"/v1/shops/{SHOP}/products/{v['id']}.json",{"print_areas":pas}); v["fit"]=FITV; save(); n+=1; time.sleep(1.0)
         if n%20==0: print("refit",n,flush=True)
     print("REFIT DONE",n,flush=True)
