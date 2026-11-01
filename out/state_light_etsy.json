@@ -4,7 +4,8 @@
   "prod": "tee",
   "enabled": 30,
   "published": true,
-  "old": true
+  "old": true,
+  "fit": "v3-0.77"
  },
  "french_bulldog|line_classic|hoodie|pair": {
   "id": "6ae56abab3e56e7b5f092b0d",
