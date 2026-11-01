@@ -1,0 +1,30 @@
+name: tiktok-publish-cron
+# Keeps publishing the remaining TikTok listings in Printify-rate-limit-sized batches. Does nothing once everything is published (delete this file afterwards).
+on:
+  workflow_dispatch:
+  schedule: [{ cron: "7,37 * * * *" }]
+permissions:
+  contents: write
+concurrency: tiktok-publish
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - name: Publish next batch
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          MODE: publish
+          SHOP: "29546485"
+          CHANNEL: tiktok
+          EXTRA: "2000"
+        run: |
+          mkdir -p out
+          python3 scripts/printify_light.py 2>&1 | tee out/light_publish_tiktok.log
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -A out || true
+          git commit -m "tiktok publish batch" && git pull -q --rebase && git push || true
