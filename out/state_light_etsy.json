@@ -185,5 +185,11 @@
   "prod": "hoodie",
   "enabled": 24,
   "published": false
+ },
+ "french_bulldog|line_classic|tee|pair": {
+  "id": "6ae6aef96467c04b590d8961",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
  }
 }
