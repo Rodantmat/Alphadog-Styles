@@ -1,0 +1,223 @@
+{
+ "provider_countries": [
+  "AU",
+  "CA",
+  "CN",
+  "CZ",
+  "DE",
+  "ES",
+  "FR",
+  "GB",
+  "IN",
+  "LV",
+  "NL",
+  "PL",
+  "SI",
+  "US"
+ ],
+ "brazil_providers": [],
+ "used": [
+  [
+   12,
+   99
+  ],
+  [
+   77,
+   99
+  ],
+  [
+   145,
+   99
+  ],
+  [
+   175,
+   99
+  ],
+  [
+   528,
+   99
+  ],
+  [
+   696,
+   99
+  ],
+  [
+   706,
+   29
+  ],
+  [
+   1298,
+   29
+  ]
+ ],
+ "ship_to_BR": {
+  "12/99": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1039,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 400,
+      "currency": "USD"
+     }
+    }
+   ]
+  },
+  "77/99": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1559,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 1000,
+      "currency": "USD"
+     }
+    }
+   ]
+  },
+  "145/99": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1039,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 400,
+      "currency": "USD"
+     }
+    }
+   ]
+  },
+  "175/99": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1559,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 1000,
+      "currency": "USD"
+     }
+    }
+   ]
+  },
+  "528/99": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1559,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 1000,
+      "currency": "USD"
+     }
+    }
+   ]
+  },
+  "696/99": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1559,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 1000,
+      "currency": "USD"
+     }
+    }
+   ]
+  },
+  "706/29": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1039,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 400,
+      "currency": "USD"
+     }
+    }
+   ]
+  },
+  "1298/29": {
+   "handling": {
+    "value": 10,
+    "unit": "day"
+   },
+   "rows": [
+    {
+     "countries": [
+      "REST_OF_THE_WORLD"
+     ],
+     "first": {
+      "cost": 1559,
+      "currency": "USD"
+     },
+     "additional": {
+      "cost": 1000,
+      "currency": "USD"
+     }
+    }
+   ]
+  }
+ }
+}
