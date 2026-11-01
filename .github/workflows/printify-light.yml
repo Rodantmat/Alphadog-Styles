@@ -1,0 +1,32 @@
+name: printify-light
+on:
+  workflow_dispatch:
+    inputs:
+      mode: {required: true}
+      shop: {required: true}
+      channel: {required: true}
+      extra: {default: ""}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          MODE: ${{ inputs.mode }}
+          SHOP: ${{ inputs.shop }}
+          CHANNEL: ${{ inputs.channel }}
+          EXTRA: ${{ inputs.extra }}
+        run: |
+          mkdir -p out
+          python3 scripts/printify_light.py 2>&1 | tee out/light_${{ inputs.mode }}_${{ inputs.channel }}.log
+      - name: Commit state
+        if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/light_* out/bella_variants.json out/state_light_*.json 2>/dev/null
+          git commit -m "light ${{ inputs.mode }} ${{ inputs.channel }}" && git pull -q --rebase && git push
