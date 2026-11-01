@@ -30,6 +30,7 @@ jobs:
           SHOP: "29546485"
           CHANNEL: tiktok
           EXTRA: "400"
+          SKIP: wpolo
         run: python3 scripts/printify_extras.py 2>&1 | tail -3
       - name: Commit state
         if: always()

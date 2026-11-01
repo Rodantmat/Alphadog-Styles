@@ -72,14 +72,15 @@ if MODE=="build":
                 if n%20==0: print("built",n,flush=True)
                 time.sleep(0.4)
     print("EXTRAS BUILD DONE",n,len(LS),flush=True)
-if MODE=="publish":
-    n=0
+if MODE=="publish":  # published flags live in a separate file so the build job and the publish cron never edit the same file
+    PF=f"out/state_extras_{CH}_pub.json"; PUB=json.load(open(PF)) if os.path.exists(PF) else {}
+    skip=os.environ.get("SKIP","").split(","); n=0
     for k,v in LS.items():
-        if v.get("published"): continue
+        if PUB.get(k) or v["prod"] in skip: continue
         if n>=EXTRA: break
         call("POST",f"/v1/shops/{SHOP}/products/{v['id']}/publish.json",{"title":True,"description":True,"images":True,"variants":True,"tags":True,"keyfeatures":True,"shipping_template":True})
-        v["published"]=True; save(); n+=1; time.sleep(1.5)
-    print("EXTRAS PUBLISH DONE",n,sum(1 for v in LS.values() if v.get("published")),"/",len(LS),flush=True)
+        PUB[k]=True; json.dump(PUB,open(PF,"w")); n+=1; time.sleep(1.5)
+    print("EXTRAS PUBLISH DONE",n,len(PUB),"/",len(LS),flush=True)
 if MODE=="check":
     os.makedirs("out/extras_check",exist_ok=True); n=0
     for k,v in list(LS.items())[:EXTRA]:
