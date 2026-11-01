@@ -71,7 +71,11 @@ if MODE not in("probe","fetch"):
     AREAS={"tee":{"front":(2767,3362),"back":(2767,3362)},"hoodie":{"front":(3531,2352),"back":(3852,3210)}}
     def fit(prod,side,kind,iw,ih):
         W,H=AREAS[prod][side]; a=iw/ih
-        if kind=="back": w=min(0.97,0.97*H*a/W); return dict(x=0.5,y=0.5,scale=round(w,3))
+        if kind=="back":
+            if prod=="hoodie":  # hood covers the top of the window: smaller and bottom-aligned
+                hf=float(os.environ.get("HOODBACK","0.72")); w=min(0.97,hf*H*a/W); h=w*W/a/H
+                return dict(x=0.5,y=round(1-h/2-0.005,3),scale=round(w,3))
+            w=min(0.97,0.97*H*a/W); return dict(x=0.5,y=0.5,scale=round(w,3))
         if kind=="pocket":
             w=min((0.30*3185/W if prod=="tee" else 0.26),0.30*H*a/W); h=w*W/a/H
             return dict(x=0.76,y=round(0.05+h/2 if prod=="hoodie" else 0.17,3),scale=round(w,3))
