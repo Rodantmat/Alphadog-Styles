@@ -1,0 +1,290 @@
+{
+ "french_bulldog|line_classic|hoodie|portrait": {
+  "id": "6ae5821790e00e273b088ffb",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "french_bulldog|line_cool|hoodie|portrait": {
+  "id": "6ae5822090e00e273b089000",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "french_bulldog|line_heart|hoodie|portrait": {
+  "id": "6ae5822949f7cb0d0b02ee26",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "french_bulldog|geo_classic|hoodie|portrait": {
+  "id": "6ae5823355e86fafe60ae200",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "french_bulldog|geo_cool|hoodie|portrait": {
+  "id": "6ae5724a55e86fafe60ad39a",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "french_bulldog|geo_heart|hoodie|portrait": {
+  "id": "6ae5823b0e146105c80c5c59",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "labrador_retriever|line_classic|hoodie|portrait": {
+  "id": "6ae5824549f7cb0d0b02ee2f",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "labrador_retriever|line_cool|hoodie|portrait": {
+  "id": "6ae5824e90e00e273b08900e",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "labrador_retriever|line_heart|hoodie|portrait": {
+  "id": "6ae5825749f7cb0d0b02ee44",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "labrador_retriever|geo_classic|hoodie|portrait": {
+  "id": "6ae5826049f7cb0d0b02ee4d",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "labrador_retriever|geo_cool|hoodie|portrait": {
+  "id": "6ae5826955e86fafe60ae214",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "labrador_retriever|geo_heart|hoodie|portrait": {
+  "id": "6ae582721db256d3020eb727",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "golden_retriever|line_classic|hoodie|portrait": {
+  "id": "6ae5827b197e2a8042027349",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "golden_retriever|line_cool|hoodie|portrait": {
+  "id": "6ae5828490e00e273b089024",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "golden_retriever|line_heart|hoodie|portrait": {
+  "id": "6ae5828d0e146105c80c5ca0",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "golden_retriever|geo_classic|hoodie|portrait": {
+  "id": "6ae5829690e00e273b08902f",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "golden_retriever|geo_cool|hoodie|portrait": {
+  "id": "6ae5829f1db256d3020eb73a",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "golden_retriever|geo_heart|hoodie|portrait": {
+  "id": "6ae582a890e00e273b089036",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "german_shepherd|line_classic|hoodie|portrait": {
+  "id": "6ae582b290e00e273b089043",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "german_shepherd|line_cool|hoodie|portrait": {
+  "id": "6ae582bc197e2a804202737b",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "german_shepherd|line_heart|hoodie|portrait": {
+  "id": "6ae582c590e00e273b08905b",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "german_shepherd|geo_classic|hoodie|portrait": {
+  "id": "6ae582cf49f7cb0d0b02ee93",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "german_shepherd|geo_cool|hoodie|portrait": {
+  "id": "6ae582d890e00e273b089069",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "german_shepherd|geo_heart|hoodie|portrait": {
+  "id": "6ae582e10e146105c80c5cda",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "dachshund|line_classic|hoodie|portrait": {
+  "id": "6ae582e955e86fafe60ae25b",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "dachshund|line_cool|hoodie|portrait": {
+  "id": "6ae582f1197e2a80420273ad",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "dachshund|line_heart|hoodie|portrait": {
+  "id": "6ae582fa55e86fafe60ae26c",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "dachshund|geo_classic|hoodie|portrait": {
+  "id": "6ae5830390e00e273b089080",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "dachshund|geo_cool|hoodie|portrait": {
+  "id": "6ae5830c0e146105c80c5cf8",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "dachshund|geo_heart|hoodie|portrait": {
+  "id": "6ae583150e146105c80c5cff",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "poodle|line_classic|hoodie|portrait": {
+  "id": "6ae5831e197e2a80420273c2",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "poodle|line_cool|hoodie|portrait": {
+  "id": "6ae583280e146105c80c5d0e",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "poodle|line_heart|hoodie|portrait": {
+  "id": "6ae583320e146105c80c5d17",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "poodle|geo_classic|hoodie|portrait": {
+  "id": "6ae5833c1db256d3020eb7a0",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "poodle|geo_cool|hoodie|portrait": {
+  "id": "6ae5834490e00e273b0890a5",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "poodle|geo_heart|hoodie|portrait": {
+  "id": "6ae5834d55e86fafe60ae2a6",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "beagle|line_classic|hoodie|portrait": {
+  "id": "6ae5835649f7cb0d0b02eef3",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "beagle|line_cool|hoodie|portrait": {
+  "id": "6ae5835e55e86fafe60ae2b1",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "beagle|line_heart|hoodie|portrait": {
+  "id": "6ae5836649f7cb0d0b02eefe",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "beagle|geo_classic|hoodie|portrait": {
+  "id": "6ae5836e1db256d3020eb7b5",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "beagle|geo_cool|hoodie|portrait": {
+  "id": "6ae5837790e00e273b0890c4",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "beagle|geo_heart|hoodie|portrait": {
+  "id": "6ae5837f1db256d3020eb7c3",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "rottweiler|line_classic|hoodie|portrait": {
+  "id": "6ae583880e146105c80c5d46",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "rottweiler|line_cool|hoodie|portrait": {
+  "id": "6ae583900e146105c80c5d49",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "rottweiler|line_heart|hoodie|portrait": {
+  "id": "6ae5839855e86fafe60ae2d2",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "rottweiler|geo_classic|hoodie|portrait": {
+  "id": "6ae583a190e00e273b0890dd",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "rottweiler|geo_cool|hoodie|portrait": {
+  "id": "6ae583aa0e146105c80c5d4e",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ },
+ "rottweiler|geo_heart|hoodie|portrait": {
+  "id": "6ae583b249f7cb0d0b02ef47",
+  "prod": "hoodie",
+  "enabled": 42,
+  "published": false
+ }
+}
