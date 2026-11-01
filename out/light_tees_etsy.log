@@ -1,5 +1,2 @@
-Traceback (most recent call last):
-  File "/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/printify_light.py", line 76, in <module>
-    V=json.load(open("out/bella_variants.json")); maxn=int(EXTRA or 100000); n=0
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-FileNotFoundError: [Errno 2] No such file or directory: 'out/bella_variants.json'
+OK french_bulldog|line_classic|tee|pair 6ae6acf8a91d5262ab0b31b9
+TEES DONE 1
