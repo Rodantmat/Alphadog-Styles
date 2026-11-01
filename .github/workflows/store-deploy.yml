@@ -1,6 +1,8 @@
 name: store-deploy
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '23 */2 * * *'
   push:
     paths: ["store/**"]
 jobs:
