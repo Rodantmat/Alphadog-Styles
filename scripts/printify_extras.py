@@ -8,7 +8,7 @@ def call(m,p,b=None,retry=8):
         r=urllib.request.Request("https://api.printify.com"+p,data=json.dumps(b).encode() if b is not None else None,method=m,headers={"Authorization":"Bearer "+T,"Content-Type":"application/json","User-Agent":"a"})
         try: return json.load(urllib.request.urlopen(r,timeout=120))
         except urllib.error.HTTPError as e:
-            msg=e.read().decode()[:300]
+            msg=e.read().decode()[:900]
             if e.code in(429,500,502,503,504) and a<retry-1: time.sleep(min(300,30*(a+1))); continue
             raise RuntimeError(f"{e.code} {p} {msg}")
 BREEDS=json.load(open("scripts/breeds25.json")); DES=["line_classic","line_cool","line_heart","geo_classic","geo_cool","geo_heart"]
@@ -109,8 +109,8 @@ if MODE=="relabel":  # add the AlphaDog logo label to products built before labe
             LAB[k]=True; json.dump(LAB,open(LF,"w")); n+=1
             if n%25==0: print("relabelled",n,flush=True)
         except Exception as e:
-            fails+=1; print("RELABEL FAIL",k,str(e)[:200],flush=True)
-            if fails>20: break
+            fails+=1; print("RELABEL FAIL",k,str(e)[:900],flush=True)
+            if fails>3: break
         time.sleep(0.5)
     print("RELABEL DONE",n,"fails",fails,len(LAB),flush=True)
 if MODE=="check":
