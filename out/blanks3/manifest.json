@@ -1,0 +1,343 @@
+{
+ "meta": {
+  "wpolo_6150": {
+   "bp": 6150,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "270131": "Atlantic Blue"
+   },
+   "missing": []
+  },
+  "wpolo_3912": {
+   "bp": 3912,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "213247": "White"
+   },
+   "missing": []
+  },
+  "wpolo_3383": {
+   "bp": 3383,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "191978": "Navy"
+   },
+   "missing": []
+  },
+  "wpolo_3894": {
+   "bp": 3894,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "212530": "Dress Blue Navy"
+   },
+   "missing": []
+  },
+  "wpolo_3393": {
+   "bp": 3393,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "192527": "White"
+   },
+   "missing": []
+  }
+ },
+ "images": [
+  {
+   "file": "out/blanks3/wpolo_6150_calib_00.jpg",
+   "prod": "wpolo_6150",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "Atlantic Blue"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks3/wpolo_6150_calib_01.jpg",
+   "prod": "wpolo_6150",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "Atlantic Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_6150_calib_02.jpg",
+   "prod": "wpolo_6150",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "Atlantic Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_6150_calib_03.jpg",
+   "prod": "wpolo_6150",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "Atlantic Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_6150_calib_04.jpg",
+   "prod": "wpolo_6150",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "Atlantic Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3912_calib_00.jpg",
+   "prod": "wpolo_3912",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks3/wpolo_3912_calib_01.jpg",
+   "prod": "wpolo_3912",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3912_calib_02.jpg",
+   "prod": "wpolo_3912",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3912_calib_03.jpg",
+   "prod": "wpolo_3912",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3912_calib_04.jpg",
+   "prod": "wpolo_3912",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3383_calib_00.jpg",
+   "prod": "wpolo_3383",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks3/wpolo_3383_calib_01.jpg",
+   "prod": "wpolo_3383",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3383_calib_02.jpg",
+   "prod": "wpolo_3383",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3383_calib_03.jpg",
+   "prod": "wpolo_3383",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3383_calib_04.jpg",
+   "prod": "wpolo_3383",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3894_calib_00.jpg",
+   "prod": "wpolo_3894",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "Dress Blue Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks3/wpolo_3894_calib_01.jpg",
+   "prod": "wpolo_3894",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "Dress Blue Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3894_calib_02.jpg",
+   "prod": "wpolo_3894",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "Dress Blue Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3894_calib_03.jpg",
+   "prod": "wpolo_3894",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "Dress Blue Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3894_calib_04.jpg",
+   "prod": "wpolo_3894",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "Dress Blue Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3393_calib_00.jpg",
+   "prod": "wpolo_3393",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks3/wpolo_3393_calib_01.jpg",
+   "prod": "wpolo_3393",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3393_calib_02.jpg",
+   "prod": "wpolo_3393",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3393_calib_03.jpg",
+   "prod": "wpolo_3393",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks3/wpolo_3393_calib_04.jpg",
+   "prod": "wpolo_3393",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  }
+ ],
+ "products": {
+  "wpolo_6150|calib": "6ae79e93f9c00c9ec009f9ab",
+  "wpolo_3912|calib": "6ae79e97f9c00c9ec009f9ad",
+  "wpolo_3383|calib": "6ae79e9bd037ed7f1f02dacd",
+  "wpolo_3894|calib": "6ae79e9ea895c5bd4e00ad19",
+  "wpolo_3393|calib": "6ae79ea2e8a14b46b70e9c25"
+ }
+}
