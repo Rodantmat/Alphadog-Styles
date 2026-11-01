@@ -72,6 +72,8 @@ for i in range(90):
     except Exception as e: pass
     time.sleep(15)
 else: print("MAIL STACK NOT READY"); raise SystemExit(1)
+if MODE=="exec":
+    r=ssh(os.environ["CMD"],timeout=600); print("EXIT",r.returncode); print(r.stdout[-4000:]); print(r.stderr[-2000:]); raise SystemExit(0)
 # --- mailboxes ---
 want_boxes=[x.strip() for x in os.environ.get("MAILBOXES","support,customization").split(",") if x.strip()]
 if MODE=="add": want_boxes=[os.environ["ADDR"].split("@")[0]]

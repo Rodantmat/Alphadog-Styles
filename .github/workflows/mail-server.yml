@@ -4,6 +4,7 @@ on:
     inputs:
       mode: { default: "provision" }
       addr: { default: "" }
+      cmd: { default: "" }
 permissions:
   contents: write
 concurrency: mail-server
@@ -21,6 +22,7 @@ jobs:
           STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
           MODE: ${{ inputs.mode }}
           ADDR: ${{ inputs.addr }}
+          CMD: ${{ inputs.cmd }}
           MAILBOXES: "support,customization"
         run: python3 scripts/mail_provision.py
       - name: Commit encrypted state

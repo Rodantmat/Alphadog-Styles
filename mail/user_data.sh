@@ -42,6 +42,7 @@ services:
       - ONE_DIR=1
       - PERMIT_DOCKER=none
       - TZ=America/Los_Angeles
+      - ENABLE_UPDATE_CHECK=0
     cap_add: ["NET_ADMIN"]
     restart: always
 YML
