@@ -1,0 +1,20 @@
+name: store-fulfill
+on:
+  workflow_dispatch:
+  schedule: [{ cron: "*/10 * * * *" }]
+concurrency: store-fulfill
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install cairosvg pillow
+      - name: Fulfil paid orders and update tracking
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          PRINTIFY_API_SHOP_ID: ${{ secrets.PRINTIFY_API_SHOP_ID }}
+          STORE_URL: ${{ vars.STORE_URL }}
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+        run: python3 scripts/store_fulfill.py

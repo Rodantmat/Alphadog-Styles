@@ -1,0 +1,45 @@
+name: store-deploy
+on:
+  workflow_dispatch:
+  push:
+    paths: ["store/**"]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Check credentials
+        run: |
+          if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then echo "Cloudflare secrets not set yet - skipping deploy"; echo "SKIP=1" >> $GITHUB_ENV; fi
+      - name: Create database and deploy
+        if: env.SKIP != '1'
+        working-directory: store/worker
+        env:
+          ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_FROM_ADDR: ${{ vars.MAIL_FROM }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          FACEBOOK_APP_ID: ${{ secrets.FACEBOOK_APP_ID }}
+          FACEBOOK_APP_SECRET: ${{ secrets.FACEBOOK_APP_SECRET }}
+          APPLE_CLIENT_ID: ${{ secrets.APPLE_CLIENT_ID }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          APPLE_KEY_ID: ${{ secrets.APPLE_KEY_ID }}
+          APPLE_PRIVATE_KEY: ${{ secrets.APPLE_PRIVATE_KEY }}
+        run: |
+          set -e
+          ID=$(npx wrangler@4 d1 list --json | python3 -c "import sys,json;print(next((d['uuid'] for d in json.load(sys.stdin) if d['name']=='alphadog-store'),''))")
+          if [ -z "$ID" ]; then npx wrangler@4 d1 create alphadog-store; ID=$(npx wrangler@4 d1 list --json | python3 -c "import sys,json;print(next(d['uuid'] for d in json.load(sys.stdin) if d['name']=='alphadog-store'))"); fi
+          sed -i "s/REPLACE_BY_DEPLOY_WORKFLOW/$ID/" wrangler.toml
+          [ -n "$MAIL_FROM_ADDR" ] && sed -i "s|^MAIL_FROM = .*|MAIL_FROM = \"$MAIL_FROM_ADDR\"|" wrangler.toml || true
+          npx wrangler@4 d1 execute alphadog-store --remote --file schema.sql
+          npx wrangler@4 deploy
+          for v in ADMIN_TOKEN RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY; do
+            val="${!v}"; if [ -n "$val" ]; then printf '%s' "$val" | npx wrangler@4 secret put $v; fi
+          done
+          npx wrangler@4 deployments list | tail -5

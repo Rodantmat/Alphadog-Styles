@@ -1,0 +1,15 @@
+name = "alphadog-store"
+main = "index.js"
+compatibility_date = "2025-01-01"
+[assets]
+directory = "../"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
+run_worker_first = ["/api/*"]
+[[d1_databases]]
+binding = "DB"
+database_name = "alphadog-store"
+database_id = "REPLACE_BY_DEPLOY_WORKFLOW"
+[vars]
+MAIL_FROM = "AlphaDog Styles <orders@example.com>"
+SITE_URL = ""

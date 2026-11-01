@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AlphaDog Styles - Wear your best friend</title>
+<meta name="description" content="Custom dog-breed tees and hoodies. Pick your breed, art style and placement, we print it to order and ship it across the US.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="promo" id="promo">Free US shipping on orders over $75 &nbsp;·&nbsp; Made to order, printed just for you</div>
+<header class="nav">
+  <a class="brand" href="#/"><img src="logo.png" alt="" width="40" height="40"><span>AlphaDog <b>Styles</b></span></a>
+  <nav class="links" id="links">
+    <a href="#/shop">Shop</a><a href="#/design">Design yours</a><a href="#/page/about">Our story</a><a href="#/page/faq">Help</a>
+  </nav>
+  <div class="actions">
+    <a class="icon" href="#/account" id="acct" aria-label="Account"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.5-6.5 8-6.5s7 2 8 6.5"/></svg></a>
+    <a class="icon cartbtn" href="#/cart" aria-label="Cart"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1.2 12.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8L5 7z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><i id="cartn">0</i></a>
+    <button class="icon burger" id="burger" aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<main id="app"></main>
+<footer class="foot">
+  <div class="fgrid">
+    <div><a class="brand" href="#/"><img src="logo.png" alt="" width="36" height="36"><span>AlphaDog <b>Styles</b></span></a><p>Custom dog-breed apparel for people who think their dog is the best breed. (It is.)</p></div>
+    <div><h4>Shop</h4><a href="#/shop">All designs</a><a href="#/design">Design yours</a><a href="#/shop?theme=line">Continuous line</a><a href="#/shop?theme=geo">Geometric</a></div>
+    <div><h4>Help</h4><a href="#/page/faq">FAQ</a><a href="#/page/shipping">Shipping</a><a href="#/page/returns">Returns</a><a href="#/page/sizing">Size guide</a><a href="#/page/contact">Contact</a></div>
+    <div><h4>Stay in the pack</h4><form id="news" class="inline"><input type="email" required placeholder="you@email.com" aria-label="Email"><button class="btn sm">Join</button></form><small>New breeds and colors first. No spam.</small></div>
+  </div>
+  <div class="legal">© <span id="yr"></span> AlphaDog Styles · <a href="#/page/privacy">Privacy</a> · <a href="#/page/terms">Terms</a></div>
+</footer>
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
