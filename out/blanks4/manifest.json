@@ -1,0 +1,189 @@
+{
+ "meta": {
+  "wpolo_2026": {
+   "bp": 2026,
+   "positions": [
+    "front_left_chest"
+   ],
+   "areas": {
+    "front_left_chest": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "124472": "Aegean Blue Heather"
+   },
+   "missing": []
+  },
+  "wpolo_3874": {
+   "bp": 3874,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "211553": "White"
+   },
+   "missing": []
+  },
+  "wpolo_6519": {
+   "bp": 6519,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1050,
+     900
+    ]
+   },
+   "colors": {
+    "285753": "White"
+   },
+   "missing": []
+  }
+ },
+ "images": [
+  {
+   "file": "out/blanks4/wpolo_2026_calib_00.jpg",
+   "prod": "wpolo_2026",
+   "kind": "calib",
+   "position": "front_left_chest",
+   "colors": [
+    "Aegean Blue Heather"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks4/wpolo_2026_calib_01.jpg",
+   "prod": "wpolo_2026",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Aegean Blue Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_2026_calib_02.jpg",
+   "prod": "wpolo_2026",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Aegean Blue Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_3874_calib_00.jpg",
+   "prod": "wpolo_3874",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks4/wpolo_3874_calib_01.jpg",
+   "prod": "wpolo_3874",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_3874_calib_02.jpg",
+   "prod": "wpolo_3874",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_3874_calib_03.jpg",
+   "prod": "wpolo_3874",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_3874_calib_04.jpg",
+   "prod": "wpolo_3874",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_6519_calib_00.jpg",
+   "prod": "wpolo_6519",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks4/wpolo_6519_calib_01.jpg",
+   "prod": "wpolo_6519",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_6519_calib_02.jpg",
+   "prod": "wpolo_6519",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_6519_calib_03.jpg",
+   "prod": "wpolo_6519",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks4/wpolo_6519_calib_04.jpg",
+   "prod": "wpolo_6519",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  }
+ ],
+ "products": {
+  "wpolo_2026|calib": "6ae7a355a04ae2f1280acaa5",
+  "wpolo_3874|calib": "6ae7a3586aa5485ffc0a032d",
+  "wpolo_6519|calib": "6ae7a35ce8a14b46b70ea17e"
+ }
+}
