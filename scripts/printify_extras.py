@@ -102,7 +102,7 @@ if MODE=="relabel":  # add the AlphaDog logo label to products built before labe
             p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json"); pos=LABEL[v["prod"]][0]
             pas=[]
             for a in p["print_areas"]:
-                phs=[{"position":q["position"],"images":[{"id":i["id"],"x":i["x"],"y":i["y"],"scale":i["scale"],"angle":i.get("angle",0)} for i in q["images"]]} for q in a["placeholders"] if q["position"]!=pos]
+                phs=[{"position":q["position"],"images":[{"id":i["id"],"x":i["x"],"y":i["y"],"scale":i["scale"],"angle":i.get("angle",0)} for i in q["images"]]} for q in a["placeholders"] if q["position"]!=pos and q.get("images")]
                 pas.append({"variant_ids":a["variant_ids"],"placeholders":phs+label_ph(v["prod"])})
             call("PUT",f"/v1/shops/{SHOP}/products/{v['id']}.json",{"print_areas":pas},retry=4)
             if PUB.get(k): call("POST",f"/v1/shops/{SHOP}/products/{v['id']}/publish.json",{"title":True,"description":True,"images":True,"variants":True,"tags":True,"keyfeatures":True,"shipping_template":True})
@@ -110,7 +110,7 @@ if MODE=="relabel":  # add the AlphaDog logo label to products built before labe
             if n%25==0: print("relabelled",n,flush=True)
         except Exception as e:
             fails+=1; print("RELABEL FAIL",k,str(e)[:900],flush=True)
-            if fails>3: break
+            if fails>20: break
         time.sleep(0.5)
     print("RELABEL DONE",n,"fails",fails,len(LAB),flush=True)
 if MODE=="check":
