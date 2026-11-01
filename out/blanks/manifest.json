@@ -1,0 +1,524 @@
+[
+ {
+  "file": "out/blanks/tee_00.jpg",
+  "prod": "tee",
+  "position": "front",
+  "colors": [
+   "White"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/tee_01.jpg",
+  "prod": "tee",
+  "position": "back",
+  "colors": [
+   "White"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_02.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "White"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_03.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "White"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_04.jpg",
+  "prod": "tee",
+  "position": "front",
+  "colors": [
+   "Soft Pink"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/tee_05.jpg",
+  "prod": "tee",
+  "position": "back",
+  "colors": [
+   "Soft Pink"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_06.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Soft Pink"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_07.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Soft Pink"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_08.jpg",
+  "prod": "tee",
+  "position": "front",
+  "colors": [
+   "Ash"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/tee_09.jpg",
+  "prod": "tee",
+  "position": "back",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_10.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_11.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_12.jpg",
+  "prod": "tee",
+  "position": "front",
+  "colors": [
+   "Natural"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/tee_13.jpg",
+  "prod": "tee",
+  "position": "back",
+  "colors": [
+   "Natural"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_14.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Natural"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_15.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Natural"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_16.jpg",
+  "prod": "tee",
+  "position": "front",
+  "colors": [
+   "Soft Cream"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/tee_17.jpg",
+  "prod": "tee",
+  "position": "back",
+  "colors": [
+   "Soft Cream"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_18.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Soft Cream"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_19.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Soft Cream"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_20.jpg",
+  "prod": "tee",
+  "position": "front",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/tee_21.jpg",
+  "prod": "tee",
+  "position": "back",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_22.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_23.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_24.jpg",
+  "prod": "tee",
+  "position": "front",
+  "colors": [
+   "Athletic Heather"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/tee_25.jpg",
+  "prod": "tee",
+  "position": "back",
+  "colors": [
+   "Athletic Heather"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_26.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Athletic Heather"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_27.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Athletic Heather"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/tee_28.jpg",
+  "prod": "tee",
+  "position": "other",
+  "colors": [
+   "Athletic Heather"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_00.jpg",
+  "prod": "hoodie",
+  "position": "front",
+  "colors": [
+   "White"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/hoodie_01.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "White"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_02.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "White"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_03.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "White"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_04.jpg",
+  "prod": "hoodie",
+  "position": "front",
+  "colors": [
+   "Ash"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/hoodie_05.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_06.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_07.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_08.jpg",
+  "prod": "hoodie",
+  "position": "front",
+  "colors": [
+   "Ash"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/hoodie_09.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_10.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_11.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "Ash"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_12.jpg",
+  "prod": "hoodie",
+  "position": "front",
+  "colors": [
+   "Sand"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/hoodie_13.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Sand"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_14.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Sand"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_15.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "Sand"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_16.jpg",
+  "prod": "hoodie",
+  "position": "front",
+  "colors": [
+   "Sport Grey"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/hoodie_17.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Sport Grey"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_18.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Sport Grey"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_19.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "Sport Grey"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_20.jpg",
+  "prod": "hoodie",
+  "position": "front",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/hoodie_21.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_22.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_23.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "Light Blue"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_24.jpg",
+  "prod": "hoodie",
+  "position": "front",
+  "colors": [
+   "Light Pink"
+  ],
+  "default": true
+ },
+ {
+  "file": "out/blanks/hoodie_25.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Light Pink"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_26.jpg",
+  "prod": "hoodie",
+  "position": "back",
+  "colors": [
+   "Light Pink"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_27.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "Light Pink"
+  ],
+  "default": false
+ },
+ {
+  "file": "out/blanks/hoodie_28.jpg",
+  "prod": "hoodie",
+  "position": "other",
+  "colors": [
+   "Light Pink"
+  ],
+  "default": false
+ }
+]
