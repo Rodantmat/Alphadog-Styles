@@ -5,6 +5,7 @@ jobs:
   go:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
       - env:
           T: ${{ secrets.PRINTIFY_TOKEN }}
         run: |
@@ -12,7 +13,11 @@ jobs:
           import os,json,urllib.request,collections
           T=os.environ["T"]
           def g(p): return json.load(urllib.request.urlopen(urllib.request.Request("https://api.printify.com"+p,headers={"Authorization":"Bearer "+T,"User-Agent":"a"}),timeout=60))
-          for shop,name in [(29545924,"ebay"),(29546485,"tiktok"),(29544854,"etsy")]:
+          st=json.load(open("out/state_light_ebay.json")); k=list(st)[20]; pid=st[k]["id"]
+          p=g(f"/v1/shops/29545924/products/{pid}.json")
+          print("SAMPLE",k,json.dumps({kk:vv for kk,vv in p.items() if kk not in("variants","images","print_areas","description","options")})[:1500])
+          print("SAMPLE_VARIANTS_ENABLED",sum(v["is_enabled"] for v in p["variants"]),"of",len(p["variants"]),"prices",sorted({v["price"] for v in p["variants"] if v["is_enabled"]})[:5])
+          for shop,name in []:
               c=collections.Counter(); ex=[]; page=1
               while True:
                   r=g(f"/v1/shops/{shop}/products.json?limit=50&page={page}")
