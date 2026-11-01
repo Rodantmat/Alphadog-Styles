@@ -1,0 +1,7 @@
+name: printify-shops
+on: workflow_dispatch
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -s -H "Authorization: Bearer ${{ secrets.PRINTIFY_TOKEN }}" https://api.printify.com/v1/shops.json | python3 -c "import sys,json;[print('SHOP',s['id'],s['title'],s['sales_channel']) for s in json.load(sys.stdin)]"
