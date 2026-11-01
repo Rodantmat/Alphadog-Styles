@@ -191,5 +191,179 @@
   "prod": "tee",
   "enabled": 30,
   "published": false
+ },
+ "french_bulldog|line_cool|tee|pair": {
+  "id": "6ae6af887dd4238ec10a8ae4",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "french_bulldog|line_heart|tee|pair": {
+  "id": "6ae6af8b4b3ee39eb3069ff9",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "labrador_retriever|line_classic|tee|pair": {
+  "id": "6ae6af8d4b3ee39eb3069ffd",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "labrador_retriever|line_cool|tee|pair": {
+  "id": "6ae6af90a91d5262ab0b33a1",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "labrador_retriever|line_heart|tee|pair": {
+  "id": "6ae6af92a91d5262ab0b33a7",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "golden_retriever|line_classic|tee|pair": {
+  "id": "6ae6af95a91d5262ab0b33aa",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "golden_retriever|line_cool|tee|pair": {
+  "id": "6ae6af976467c04b590d8a1e",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "golden_retriever|line_heart|tee|pair": {
+  "id": "6ae6af9a6467c04b590d8a20",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "german_shepherd|line_classic|tee|pair": {
+  "id": "6ae6af9ca91d5262ab0b33b6",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "german_shepherd|line_cool|tee|pair": {
+  "id": "6ae6af9f4b3ee39eb306a021",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "german_shepherd|line_heart|tee|pair": {
+  "id": "6ae6afa187339eeceb0266a6",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "dachshund|line_classic|tee|pair": {
+  "id": "6ae6afa44b3ee39eb306a026",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "dachshund|line_cool|tee|pair": {
+  "id": "6ae6afa7ba6e72afd20e49de",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "dachshund|line_heart|tee|pair": {
+  "id": "6ae6afa97dd4238ec10a8af9",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "poodle|line_classic|tee|pair": {
+  "id": "6ae6afabba6e72afd20e49e3",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "poodle|line_cool|tee|pair": {
+  "id": "6ae6afae6467c04b590d8a31",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "poodle|line_heart|tee|pair": {
+  "id": "6ae6afb16467c04b590d8a32",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "beagle|line_classic|tee|pair": {
+  "id": "6ae6afb3cfc3507f2f0f8a47",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "beagle|line_cool|tee|pair": {
+  "id": "6ae6afb6cfc3507f2f0f8a48",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "beagle|line_heart|tee|pair": {
+  "id": "6ae6afb84b3ee39eb306a02d",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "rottweiler|line_classic|tee|pair": {
+  "id": "6ae6afbba91d5262ab0b33d5",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "rottweiler|line_cool|tee|pair": {
+  "id": "6ae6afbd7dd4238ec10a8b0d",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "rottweiler|line_heart|tee|pair": {
+  "id": "6ae6afc087339eeceb0266d0",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_classic|tee|pair": {
+  "id": "6ae6afc2a91d5262ab0b33df",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_cool|tee|pair": {
+  "id": "6ae6afc58529cb3b0e01b9c9",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "german_shorthaired_pointer|line_heart|tee|pair": {
+  "id": "6ae6afc7cfc3507f2f0f8a54",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "bulldog|line_classic|tee|pair": {
+  "id": "6ae6afcaa91d5262ab0b33e8",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "bulldog|line_cool|tee|pair": {
+  "id": "6ae6afcc8529cb3b0e01b9d5",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
+ },
+ "bulldog|line_heart|tee|pair": {
+  "id": "6ae6afcf4b3ee39eb306a041",
+  "prod": "tee",
+  "enabled": 30,
+  "published": false
  }
 }
