@@ -117,8 +117,8 @@ if MODE=="check":
     os.makedirs("out/extras_check",exist_ok=True); n=0
     for k,v in list(LS.items())[:EXTRA]:
         p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json")
-        for j,im in enumerate([i for i in p["images"] if i.get("is_default")][:1]+p["images"][:2]):
-            fn=f"out/extras_check/{k.replace('|','_')}_{j}.jpg"
+        for j,im in enumerate(p["images"][:10]):
+            fn=f"out/extras_check/{k.replace('|','_')}_{j}_{im.get('position')}.jpg"
             try: open(fn,"wb").write(urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"}),timeout=60).read()); n+=1
             except Exception as e: print("ERR",e)
     print("CHECK DONE",n)
