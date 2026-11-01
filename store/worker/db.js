@@ -6,7 +6,7 @@ export function makeDB(url){
   let client=null,ready=null;
   const get=()=>ready||(ready=(async()=>{client=new pg.Client({connectionString:url,ssl:/sslmode=disable/.test(url)?false:{rejectUnauthorized:false}});await client.connect();return client})());
   const q=async(text,params)=>{const c=await get();let i=0;const r=await c.query(text.replace(/\?/g,()=>"$"+(++i)),params);return r};
-  const db={prepare(text){let b=[];const o={bind(...a){b=a;return o},async first(){return (await q(text,b)).rows[0]||null},async run(){await q(text,b);return {}},async all(){return {results:(await q(text,b)).rows}}};return o},
+  const db={prepare(text){let b=[];const o={bind(...a){b=a;return o},async first(){return (await q(text,b)).rows[0]||null},async run(){const r=await q(text,b);return {meta:{changes:r.rowCount}}},async all(){return {results:(await q(text,b)).rows}}};return o},
     async close(){if(client){await client.end()}}};
   return db;
 }

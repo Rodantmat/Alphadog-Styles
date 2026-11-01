@@ -17,6 +17,26 @@ async function mail(env,to,subject,html){
   return false;
 }
 
+
+/* ---------- Stripe (Checkout Sessions via REST; no SDK) ---------- */
+const stripeEnc=(o,pre="",out=[])=>{for(const[k,v]of Object.entries(o)){const key=pre?`${pre}[${k}]`:k;if(v&&typeof v==="object")stripeEnc(v,key,out);else out.push(encodeURIComponent(key)+"="+encodeURIComponent(v))}return out};
+async function stripe(env,method,path,params){
+  const r=await fetch("https://api.stripe.com/v1"+path,{method,headers:{authorization:"Bearer "+env.STRIPE_SECRET_KEY,"content-type":"application/x-www-form-urlencoded"},body:method==="GET"?undefined:stripeEnc(params||{}).join("&")});
+  const j=await r.json();if(!r.ok)throw new Error(j.error?.message||"Payment error");return j;
+}
+async function stripeVerify(raw,header,secret){
+  const p=Object.fromEntries((header||"").split(",").map(x=>x.split("=")));if(!p.t||!p.v1)return false;
+  if(Math.abs(Date.now()/1000-Number(p.t))>600)return false;
+  const key=await crypto.subtle.importKey("raw",new TextEncoder().encode(secret),{name:"HMAC",hash:"SHA-256"},false,["sign"]);
+  const sig=hex(await crypto.subtle.sign("HMAC",key,new TextEncoder().encode(p.t+"."+raw)));
+  return sig.length===p.v1.length&&[...sig].reduce((a,c,i)=>a|(c.charCodeAt(0)^p.v1.charCodeAt(i)),0)===0;
+}
+async function markPaid(DB,env,id,sessionId){
+  const r=await DB.prepare("UPDATE orders SET status='paid',updated=? WHERE id=? AND status IN ('reserved','awaiting_payment')").bind(now(),id).run();
+  const o=await DB.prepare("SELECT email,total FROM orders WHERE id=?").bind(id).first();
+  if(o&&r.meta?.changes!==0)await mail(env,o.email,`Order ${id} confirmed`,`<p>Thank you! Payment received for order <b>${id}</b> ($${(o.total/100).toFixed(2)}). We are sending it to print now and will email tracking when it ships.</p>`);
+}
+
 /* ---------- social login (Google / Facebook / Apple). Enabled when the matching secrets exist. ---------- */
 const b64u=b=>btoa(String.fromCharCode(...new Uint8Array(b))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"");
 const b64uJ=o=>b64u(new TextEncoder().encode(JSON.stringify(o)));
@@ -74,7 +94,7 @@ export default {
   const u=new URL(req.url),path=u.pathname,m=req.method;
   const env={...env0};if(path.startsWith("/api/")&&!path.startsWith("/api/health")){env._db=env0.DB||makeDB(env0.DATABASE_URL);box.db=env._db}const DB=env._db;
   if(!path.startsWith("/api/"))return env0.ASSETS.fetch(req);
-  let body={};if((m==="POST"||m==="PUT")&&!path.includes("/oauth/")){try{body=await req.json()}catch{return err("Bad JSON")}}
+  let body={},raw="";if((m==="POST"||m==="PUT")&&!path.includes("/oauth/")){raw=await req.text();if(path!=="/api/stripe/webhook"){try{body=raw?JSON.parse(raw):{}}catch{return err("Bad JSON")}}}
   try{
   if(path==="/api/health")return J({ok:true,mail:!!env.RESEND_API_KEY||env.DEV_MODE==="1",providers:providers(env)});
   if(path==="/api/auth/request"&&m==="POST"){
@@ -127,8 +147,33 @@ export default {
     const id="AD-"+rnd(4).toUpperCase(), email=String(body.email).toLowerCase();
     const data={items,ship:{name:s.name,a1:s.a1,a2:s.a2||"",city:s.city,st:s.st,zip:s.zip,phone:s.phone||""},subtotal:sub,shipping:ship};
     await DB.prepare("INSERT INTO orders(id,email,data,total,status,created,updated) VALUES(?,?,?,?,?,?,?)").bind(id,email,JSON.stringify(data),total,"reserved",now(),now()).run();
+    if(env.STRIPE_SECRET_KEY){
+      try{
+        const li={};items.forEach((i,n)=>{li[n]={quantity:i.qty,price_data:{currency:"usd",unit_amount:priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size),product_data:{name:(i.prod==="tee"?"AlphaDog Premium Tee":"AlphaDog Heavy Hoodie")+" - "+i.color+" / "+i.size}}}});
+        if(ship)li[items.length]={quantity:1,price_data:{currency:"usd",unit_amount:ship,product_data:{name:"Shipping (US)"}}};
+        const ss=await stripe(env,"POST","/checkout/sessions",{mode:"payment",customer_email:email,client_reference_id:id,metadata:{order_id:id},line_items:li,
+          success_url:u.origin+"/#/done/"+id+"?paid=1",cancel_url:u.origin+"/#/cart",payment_method_types:{0:"card"}});
+        await DB.prepare("UPDATE orders SET status='awaiting_payment',printify_id=NULL,tracking=NULL,data=? WHERE id=?").bind(JSON.stringify({...data,session:ss.id}),id).run();
+        return J({id,total,url:ss.url});
+      }catch(e){return err("Payment could not start: "+e.message,502)}
+    }
     await mail(env,email,`Order ${id} reserved`,`<p>Thanks for your order <b>${id}</b>. We will email you a secure payment link as soon as checkout opens.</p><p>Total: $${(total/100).toFixed(2)}</p>`);
     return J({id,total});
+  }
+  if(path==="/api/orders/confirm"&&m==="POST"&&env.STRIPE_SECRET_KEY){
+    const o=await DB.prepare("SELECT data,status FROM orders WHERE id=?").bind(String(body.id||"")).first();if(!o)return err("Order not found",404);
+    if(o.status!=="awaiting_payment")return J({status:o.status});
+    const sid=JSON.parse(o.data).session;if(!sid)return J({status:o.status});
+    const ss=await stripe(env,"GET","/checkout/sessions/"+sid);
+    if(ss.payment_status==="paid"&&ss.client_reference_id===body.id){await markPaid(DB,env,body.id);return J({status:"paid"})}
+    return J({status:o.status});
+  }
+  if(path==="/api/stripe/webhook"&&m==="POST"){
+    if(!env.STRIPE_WEBHOOK_SECRET)return err("not configured",503);
+    if(!(await stripeVerify(raw,req.headers.get("stripe-signature"),env.STRIPE_WEBHOOK_SECRET)))return err("bad signature",400);
+    const ev=JSON.parse(raw);
+    if(ev.type==="checkout.session.completed"||ev.type==="checkout.session.async_payment_succeeded"){const ss=ev.data.object;if(ss.payment_status==="paid"&&ss.client_reference_id)await markPaid(DB,env,ss.client_reference_id)}
+    return J({received:true});
   }
   if(path==="/api/orders"&&m==="GET"){const e=await auth(req,env);if(!e)return err("Log in first",401);const r=await DB.prepare("SELECT id,status,total,tracking,created FROM orders WHERE email=? ORDER BY created DESC LIMIT 100").bind(e).all();return J({items:r.results})}
   if(path==="/api/designs"){

@@ -23,6 +23,7 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
           MAIL_FROM_ADDR: ${{ vars.MAIL_FROM }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
@@ -44,7 +45,17 @@ jobs:
           export DATABASE_URL
           psql "$DATABASE_URL" -v ON_ERROR_STOP=1 -f schema.sql
           npx wrangler@4 deploy
-          for v in DATABASE_URL ADMIN_TOKEN RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY; do
+          for v in DATABASE_URL ADMIN_TOKEN STRIPE_SECRET_KEY RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY; do
             val=$(printf '%s' "${!v}" | tr -d '\r\n'); if [ -n "$val" ]; then printf '%s' "$val" | npx wrangler@4 secret put $v; fi
           done
+          # Stripe webhook: create once for this URL (secret is only returned at creation), store it as a Worker secret.
+          SK=$(printf '%s' "$STRIPE_SECRET_KEY" | tr -d '[:space:]')
+          if [ -n "$SK" ]; then
+            WH="https://alphadog-store.rodolfoaamattos.workers.dev/api/stripe/webhook"
+            if ! curl -s -u "$SK:" "https://api.stripe.com/v1/webhook_endpoints?limit=100" | grep -q "$WH"; then
+              RES=$(curl -s -u "$SK:" https://api.stripe.com/v1/webhook_endpoints -d url="$WH" -d "enabled_events[]=checkout.session.completed" -d "enabled_events[]=checkout.session.async_payment_succeeded")
+              WS=$(printf '%s' "$RES" | python3 -c "import sys,json;print(json.load(sys.stdin).get('secret',''))")
+              if [ -n "$WS" ]; then printf '%s' "$WS" | npx wrangler@4 secret put STRIPE_WEBHOOK_SECRET; echo "webhook created"; else echo "webhook create failed"; fi
+            else echo "webhook exists"; fi
+          fi
           npx wrangler@4 deployments list | tail -5
