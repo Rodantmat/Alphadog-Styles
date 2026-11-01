@@ -1,0 +1,18 @@
+name: store-tlscheck
+on:
+  workflow_dispatch:
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    env:
+      DBU: ${{ secrets.DATABASE_URL }}
+    steps:
+      - name: chain
+        run: |
+          DBU=$(printf '%s' "$DBU" | tr -d '[:space:]')
+          HP=$(python3 -c "import os,urllib.parse as u;p=u.urlsplit(os.environ['DBU']);print(p.hostname+':'+str(p.port))")
+          echo "target host:port = $HP"
+          echo | openssl s_client -starttls postgres -connect "$HP" -showcerts 2>/dev/null > chain.txt || true
+          grep -E "^ *[0-9] s:|^ *i:|Verify return|verify error|Certificate chain" chain.txt
+          awk '/BEGIN CERT/{n++} {print > "c" n ".pem"}' chain.txt || true
+          for f in c*.pem; do openssl x509 -in $f -noout -subject -issuer -dates 2>/dev/null | tr '\n' ' '; echo " [$f]"; done
