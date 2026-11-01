@@ -88,6 +88,7 @@ if MODE not in("probe","fetch"):
                 for q in a_["placeholders"]:
                     ims=[]
                     for im in q["images"]:
+                        if im.get("type")!="image/png": continue
                         d_=dict(id=im["id"],angle=0)
                         if q["position"]=="front": d_.update(fit("hoodie","front","pocket" if lay in("pair","pocket") else "big",*dims(im["id"])))
                         elif q["position"]=="back": d_.update(fit("hoodie","back","back",*dims(im["id"])))
