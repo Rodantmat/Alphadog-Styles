@@ -1,0 +1,2480 @@
+{
+ "meta": {
+  "tank": {
+   "bp": 39,
+   "positions": [
+    "front",
+    "back"
+   ],
+   "areas": {
+    "front": [
+     2920,
+     3504
+    ],
+    "back": [
+     2920,
+     3504
+    ]
+   },
+   "colors": {
+    "24622": "Athletic Heather",
+    "24829": "White"
+   },
+   "missing": []
+  },
+  "wtank": {
+   "bp": 18,
+   "positions": [
+    "front",
+    "back"
+   ],
+   "areas": {
+    "front": [
+     3032,
+     3709
+    ],
+    "back": [
+     3033,
+     3451
+    ]
+   },
+   "colors": {
+    "19318": "Solid Light Orange",
+    "19338": "Solid Mint",
+    "19368": "Solid Tahiti Blue",
+    "19383": "Solid White",
+    "25940": "Heather Grey"
+   },
+   "missing": [
+    "Solid Warm Gray"
+   ]
+  },
+  "polo": {
+   "bp": 1402,
+   "positions": [
+    "left_chest"
+   ],
+   "areas": {
+    "left_chest": [
+     1181,
+     1181
+    ]
+   },
+   "colors": {
+    "104618": "Athletic Heather",
+    "104648": "White"
+   },
+   "missing": []
+  },
+  "wpolo": {
+   "bp": 6488,
+   "positions": [
+    "left_chest_dtf"
+   ],
+   "areas": {
+    "left_chest_dtf": [
+     1200,
+     1050
+    ]
+   },
+   "colors": {
+    "284159": "Charity Pink",
+    "284216": "Platinum",
+    "284306": "White"
+   },
+   "missing": []
+  },
+  "cap_dad": {
+   "bp": 1447,
+   "positions": [
+    "front_dtf"
+   ],
+   "areas": {
+    "front_dtf": [
+     1500,
+     600
+    ]
+   },
+   "colors": {
+    "105375": "Khaki",
+    "105376": "Light Blue",
+    "105378": "Pink",
+    "105380": "Stone",
+    "105381": "White"
+   },
+   "missing": []
+  },
+  "cap_foam": {
+   "bp": 1735,
+   "positions": [
+    "front_dtf"
+   ],
+   "areas": {
+    "front_dtf": [
+     1650,
+     750
+    ]
+   },
+   "colors": {
+    "118549": "White",
+    "118553": "Light Pink/White",
+    "118554": "Blue/White"
+   },
+   "missing": []
+  },
+  "cap_mesh": {
+   "bp": 1734,
+   "positions": [
+    "front_dtf"
+   ],
+   "areas": {
+    "front_dtf": [
+     1650,
+     750
+    ]
+   },
+   "colors": {
+    "118545": "White"
+   },
+   "missing": []
+  }
+ },
+ "images": [
+  {
+   "file": "out/blanks2/tank_blank_00.jpg",
+   "prod": "tank",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/tank_blank_01.jpg",
+   "prod": "tank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/tank_blank_02.jpg",
+   "prod": "tank",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/tank_blank_03.jpg",
+   "prod": "tank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/tank_blank_04.jpg",
+   "prod": "tank",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/tank_calib_00.jpg",
+   "prod": "tank",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/tank_calib_01.jpg",
+   "prod": "tank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/tank_calib_02.jpg",
+   "prod": "tank",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/tank_calib_03.jpg",
+   "prod": "tank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/tank_calib_04.jpg",
+   "prod": "tank",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_00.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Solid White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_blank_01.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Solid White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_02.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_03.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_04.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_blank_05.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_06.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_07.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_08.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_blank_09.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_10.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_11.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_12.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_blank_13.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_14.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_15.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_16.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_blank_17.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_18.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_19.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_blank_20.jpg",
+   "prod": "wtank",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_00.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Solid White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_calib_01.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Solid White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_02.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_03.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_04.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_calib_05.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_06.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_07.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid Light Orange"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_08.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_calib_09.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_10.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_11.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Heather Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_12.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_calib_13.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_14.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_15.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid Mint"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_16.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wtank_calib_17.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_18.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_19.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wtank_calib_20.jpg",
+   "prod": "wtank",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Solid Tahiti Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_00.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/polo_blank_01.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_02.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_03.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_04.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_05.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/polo_blank_06.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "back",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_07.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_08.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_blank_09.jpg",
+   "prod": "polo",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_00.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/polo_calib_01.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_02.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_03.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_04.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_05.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/polo_calib_06.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "back",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_07.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_08.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/polo_calib_09.jpg",
+   "prod": "polo",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Athletic Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_00.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "left_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_01.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "right_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_02.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "back_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_03.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_04.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_05.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "left_chest_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_06.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "right_chest_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_07.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "back_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_08.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_09.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_10.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "left_chest_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_11.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "right_chest_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_12.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "back_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_13.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_blank_14.jpg",
+   "prod": "wpolo",
+   "kind": "blank",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_00.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_01.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_02.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_03.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_04.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_05.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_06.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_07.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_08.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_09.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "Charity Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_10.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "left_chest_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_11.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "right_chest_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_12.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "back_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_13.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "left_sleeve_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/wpolo_calib_14.jpg",
+   "prod": "wpolo",
+   "kind": "calib",
+   "position": "right_sleeve_dtf",
+   "colors": [
+    "Platinum"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_00.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "front_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_01.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_02.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_03.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_04.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_05.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_06.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_07.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_08.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "front_dtf",
+   "colors": [
+    "Stone"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_09.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_10.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_11.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_12.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_13.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_14.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_15.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_16.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "front_dtf",
+   "colors": [
+    "Khaki"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_17.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_18.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_19.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_20.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_21.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_22.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_23.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_24.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "front_dtf",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_25.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_26.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_27.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_28.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_29.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_30.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_31.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_32.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "front_dtf",
+   "colors": [
+    "Pink"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_33.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_34.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_35.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_36.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_37.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_38.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_39.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_blank_40.jpg",
+   "prod": "cap_dad",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_00.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "front_dtf",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_01.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_02.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_03.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_04.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_05.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_06.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_07.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_08.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "front_dtf",
+   "colors": [
+    "Stone"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_09.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_10.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_11.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_12.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_13.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_14.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_15.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Stone"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_16.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "front_dtf",
+   "colors": [
+    "Khaki"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_17.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_18.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_19.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_20.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_21.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_22.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_23.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Khaki"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_24.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "front_dtf",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_25.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_26.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_27.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_28.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_29.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_30.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_31.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Blue"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_32.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "front_dtf",
+   "colors": [
+    "Pink"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_33.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_34.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_35.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_36.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_37.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_38.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_39.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_dad_calib_40.jpg",
+   "prod": "cap_dad",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Pink"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_00.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_01.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_02.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_03.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_04.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_05.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_06.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_07.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_08.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_09.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_10.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_11.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_12.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_13.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_14.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_15.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_16.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_blank_17.jpg",
+   "prod": "cap_foam",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_00.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_01.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_02.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_03.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_04.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_05.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Blue/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_06.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_07.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_08.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_09.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_10.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_11.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "Light Pink/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_12.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_13.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_14.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_15.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_16.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_foam_calib_17.jpg",
+   "prod": "cap_foam",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_blank_00.jpg",
+   "prod": "cap_mesh",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_mesh_blank_01.jpg",
+   "prod": "cap_mesh",
+   "kind": "blank",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_blank_02.jpg",
+   "prod": "cap_mesh",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_blank_03.jpg",
+   "prod": "cap_mesh",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_blank_04.jpg",
+   "prod": "cap_mesh",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_blank_05.jpg",
+   "prod": "cap_mesh",
+   "kind": "blank",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_calib_00.jpg",
+   "prod": "cap_mesh",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks2/cap_mesh_calib_01.jpg",
+   "prod": "cap_mesh",
+   "kind": "calib",
+   "position": "other",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_calib_02.jpg",
+   "prod": "cap_mesh",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_calib_03.jpg",
+   "prod": "cap_mesh",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_calib_04.jpg",
+   "prod": "cap_mesh",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks2/cap_mesh_calib_05.jpg",
+   "prod": "cap_mesh",
+   "kind": "calib",
+   "position": "front",
+   "colors": [
+    "White"
+   ],
+   "default": false
+  }
+ ],
+ "products": {
+  "tank|blank": "6ae798d1a895c5bd4e00a689",
+  "tank|calib": "6ae798d4a04ae2f1280abf16",
+  "wtank|blank": "6ae798d8eff2af9b7c0bddcb",
+  "wtank|calib": "6ae798dbd037ed7f1f02d3d5",
+  "polo|blank": "6ae798dea04ae2f1280abf2d",
+  "polo|calib": "6ae798eca04ae2f1280abf39",
+  "wpolo|blank": "6ae798efe9fcc76a2908ee2c",
+  "wpolo|calib": "6ae798f2e9fcc76a2908ee31",
+  "cap_dad|blank": "6ae798f6257006b8260d649b",
+  "cap_dad|calib": "6ae798f9257006b8260d64a5",
+  "cap_foam|blank": "6ae798fdf5f22e3bbd084f94",
+  "cap_foam|calib": "6ae79900257006b8260d64ad",
+  "cap_mesh|blank": "6ae799049b2487c21005c678",
+  "cap_mesh|calib": "6ae79907257006b8260d64b3"
+ }
+}
