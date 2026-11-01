@@ -37,9 +37,24 @@ def fit(prod,side,size,a):  # identical to store/js/placement.js
     else:
         w=min(.58 if rule=="hoodie" else .75,.95*H*a/W); h=w*W/a/H; y=min(.5,.04+h/2)
     return x,y,w,h
+def custom_art(d):  # owner-uploaded custom art (SVG text or PNG) from the store
+    r=urllib.request.Request(STORE+f"/api/internal/custom/{d['custom']}/art/{d['part']}",headers={"x-admin-token":ADM,"User-Agent":"a"})
+    resp=urllib.request.urlopen(r,timeout=60); return resp.headers.get("content-type",""),resp.read()
 def compose(prod,side,d):
-    W,H=AR[prod][side]; svg=open(f"store/art/{d['theme']}_{d['style']}/{d['breed']}_{'front' if d['part']=='head' else 'back'}.svg").read()
-    m=re.search(r'viewBox="0 0 ([\d.]+) ([\d.]+)"',svg); a=float(m[1])/float(m[2]); x,y,w,h=fit(prod,side,d["size"],a)
+    W,H=AR[prod][side]
+    if d.get("custom"):
+        ct,raw=custom_art(d)
+        if "svg" in ct: svg=raw.decode()
+        else:
+            src=Image.open(io.BytesIO(raw)).convert("RGBA"); a=src.width/src.height; x,y,w,h=fit(prod,side,d["size"],a)
+            pw=int(w*W); ph=int(pw/a); art=src.resize((pw,ph),Image.LANCZOS); can=Image.new("RGBA",(W,H),(0,0,0,0))
+            can.paste(art,(int(x*W-pw/2),int(y*H-ph/2)),art); o=io.BytesIO(); can.save(o,"PNG",optimize=True); return o.getvalue()
+    else: svg=open(f"store/art/{d['theme']}_{d['style']}/{d['breed']}_{'front' if d['part']=='head' else 'back'}.svg").read()
+    m=re.search(r'viewBox="[\d.\-]+ [\d.\-]+ ([\d.]+) ([\d.]+)"',svg)
+    if m: a=float(m[1])/float(m[2])
+    else:
+        mw=re.search(r'<svg[^>]*\swidth="([\d.]+)',svg); mh=re.search(r'<svg[^>]*\sheight="([\d.]+)',svg); a=float(mw[1])/float(mh[1])
+    x,y,w,h=fit(prod,side,d["size"],a)
     pw=int(w*W); ph=int(pw/a); png=cairosvg.svg2png(bytestring=svg.encode(),output_width=pw,output_height=ph)
     art=Image.open(io.BytesIO(png)).convert("RGBA"); can=Image.new("RGBA",(W,H),(0,0,0,0))
     can.paste(art,(int(x*W-pw/2),int(y*H-ph/2)),art); o=io.BytesIO(); can.save(o,"PNG",optimize=True)
@@ -56,14 +71,20 @@ neck=json.load(open("out/neck_ids.json")) if os.path.exists("out/neck_ids.json")
 def neck_url(prod):
     try: return pf("GET",f"/v1/uploads/{neck['blackink']}.json")["preview_url"]
     except Exception: return None
+PRODS={p["id"]:p for p in cat["products"]}; _lab={}
+def label_url(prod,lab):  # AlphaDog logo label: full-size canvas for the label area with the logo placed like the product listings
+    if prod in _lab: return _lab[prod]
+    W,H=lab["area"]; logo=Image.open("shop/brand/neck_blackink.png").convert("RGBA"); w=int(lab["scale"]*W); logo=logo.resize((w,int(w*logo.height/logo.width)),Image.LANCZOS)
+    can=Image.new("RGBA",(W,H),(0,0,0,0)); can.paste(logo,(int(lab["x"]*W-logo.width/2),int(lab["y"]*H-logo.height/2)),logo)
+    o=io.BytesIO(); can.save(o,"PNG"); _lab[prod]=upload(f"label_{prod}.png",o.getvalue()); return _lab[prod]
 def fulfil(o):
     items=[]; d=o["data"]; s=d["ship"]; nm=s["name"].split(" ",1)
     for i,it in enumerate(o["data"]["items"]):
         pa={}
         for side in ("front","back"):
             if it.get(side): pa[POS[it["prod"]][side]]=upload(f"{o['id']}_{i}_{side}.png",compose(it["prod"],side,it[side]))
-        nu=neck_url(it["prod"]) if it["prod"] in ("tee","hoodie") else None
-        if nu: pa["neck"]=nu
+        lab=PRODS[it["prod"]].get("label")
+        if lab: pa[lab["pos"]]=label_url(it["prod"],lab)
         items.append({"print_provider_id":99,"blueprint_id":BP[it["prod"]],"variant_id":variant(it["prod"],it["color"],it["size"]),"print_areas":pa,"quantity":it["qty"]})
     body={"external_id":o["id"],"label":o["id"],"line_items":items,"shipping_method":1,"is_printify_express":False,"send_shipping_notification":True,
       "address_to":{"first_name":nm[0],"last_name":nm[1] if len(nm)>1 else ".","email":o["email"],"phone":s.get("phone") or "","country":"US","region":s["st"],"address1":s["a1"],"address2":s.get("a2",""),"city":s["city"],"zip":s["zip"]}}
@@ -75,6 +96,7 @@ for o in st("GET","/api/internal/orders?status=paid_test")["items"]:  # Stripe T
         for i,it in enumerate(o["data"]["items"]):
             for side in ("front","back"):
                 if it.get(side): assert len(compose(it["prod"],side,it[side]))>1000; variant(it["prod"],it["color"],it["size"])
+            assert it["prod"] in PRODS
         st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_complete"}); print("test order verified",o["id"],flush=True)
     except Exception as e: print("TEST FAILED",o["id"],e,flush=True); st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_failed"})
 for o in st("GET","/api/internal/orders?status=paid")["items"]:

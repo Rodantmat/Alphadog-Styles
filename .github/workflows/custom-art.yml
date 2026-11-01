@@ -1,0 +1,25 @@
+name: custom-art
+# Drafts art for new custom-design requests every 30 minutes (2 image generations max per request).
+on:
+  workflow_dispatch:
+    inputs:
+      only: { default: "" }
+  schedule: [{ cron: "11,41 * * * *" }]
+concurrency: custom-art
+jobs:
+  draft:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q cairosvg pillow numpy scipy opencv-python-headless potracer
+      - name: Draft
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          STORE_URL: "https://alphadogstyles.com"
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+          ONLY: ${{ inputs.only }}
+        run: python3 scripts/custom_art.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: custom-art, path: out/custom, if-no-files-found: ignore, retention-days: 14 }

@@ -367,7 +367,17 @@
    "sides": [
     "front",
     "back"
-   ]
+   ],
+   "label": {
+    "pos": "neck",
+    "area": [
+     750,
+     750
+    ],
+    "x": 0.5,
+    "y": 0.5,
+    "scale": 1.0
+   }
   },
   {
    "id": "hoodie",
@@ -458,7 +468,17 @@
    "sides": [
     "front",
     "back"
-   ]
+   ],
+   "label": {
+    "pos": "neck",
+    "area": [
+     750,
+     750
+    ],
+    "x": 0.5,
+    "y": 0.5,
+    "scale": 1.0
+   }
   },
   {
    "id": "tank",
@@ -516,7 +536,17 @@
    "sides": [
     "front",
     "back"
-   ]
+   ],
+   "label": {
+    "pos": "neck",
+    "area": [
+     632,
+     632
+    ],
+    "x": 0.5,
+    "y": 0.5,
+    "scale": 1.0
+   }
   },
   {
    "id": "wtank",
@@ -595,7 +625,17 @@
    "sides": [
     "front",
     "back"
-   ]
+   ],
+   "label": {
+    "pos": "neck",
+    "area": [
+     756,
+     756
+    ],
+    "x": 0.5,
+    "y": 0.5,
+    "scale": 1.0
+   }
   },
   {
    "id": "polo",
@@ -653,6 +693,16 @@
      "head_s",
      "body_s"
     ]
+   },
+   "label": {
+    "pos": "back",
+    "area": [
+     3461,
+     3955
+    ],
+    "x": 0.5,
+    "y": 0.07,
+    "scale": 0.15
    }
   },
   {
@@ -724,6 +774,16 @@
      "head_s",
      "body_s"
     ]
+   },
+   "label": {
+    "pos": "back_hat_embroidery",
+    "area": [
+     600,
+     300
+    ],
+    "x": 0.5,
+    "y": 0.5,
+    "scale": 0.45
    }
   },
   {

@@ -1,6 +1,7 @@
 // AlphaDog Styles store backend. Secrets (set with wrangler secret put): ADMIN_TOKEN, RESEND_API_KEY (optional), STRIPE_* (later).
 import {priceCents} from "../js/placement.js";
 import {makeDB,diag} from "./db.js";
+import PostalMime from "postal-mime";
 import cat from "../data/catalog.json";
 const esc=x=>String(x).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const J=(o,s=200,h={})=>new Response(JSON.stringify(o),{status:s,headers:{"content-type":"application/json","cache-control":"no-store",...h}});
@@ -10,14 +11,19 @@ const hex=b=>[...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,"0")).join(
 const sha=async s=>hex(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(s)));
 const rnd=n=>hex(crypto.getRandomValues(new Uint8Array(n)));
 const okEmail=e=>typeof e==="string"&&e.length<255&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
-async function mail(env,to,subject,html,replyTo){
+async function mail(env,to,subject,html,replyTo,from){
   if(env.RESEND_API_KEY){
-    const body={from:env.MAIL_FROM,to:[to],subject,html};const rt=replyTo||env.OWNER_EMAIL;if(rt)body.reply_to=rt;
+    const body={from:from||env.MAIL_FROM,to:[to],subject,html};const rt=replyTo||env.OWNER_EMAIL;if(rt)body.reply_to=rt;
     const r=await fetch("https://api.resend.com/emails",{method:"POST",headers:{authorization:"Bearer "+env.RESEND_API_KEY,"content-type":"application/json"},body:JSON.stringify(body)});
     return r.ok;
   }
   return false;
 }
+const SUPPORT_FROM="AlphaDog Support <support@alphadogstyles.com>", CUSTOM_FROM="AlphaDog Custom <customization@alphadogstyles.com>";
+const CUSTOM_EM={
+ en:{gotS:id=>`We got your custom design request (${id})`,gotP:n=>`Thanks! We received your photos${n?" of "+n:""}. Our artist will review them and email you a preview and a quote, usually within 2 to 4 business days.`,view:"View your request",readyS:id=>`Your custom design preview is ready (${id})`,readyP:"Good news: your dog's custom design is ready. Open the link to see it on your products, check the quote and order."},
+ es:{gotS:id=>`Recibimos tu solicitud de diseño personalizado (${id})`,gotP:n=>`¡Gracias! Recibimos tus fotos${n?" de "+n:""}. Nuestro artista las revisará y te enviará una vista previa y una cotización, normalmente en 2 a 4 días hábiles.`,view:"Ver tu solicitud",readyS:id=>`La vista previa de tu diseño está lista (${id})`,readyP:"Buenas noticias: el diseño personalizado de tu perro está listo. Abre el enlace para verlo en tus productos, revisar la cotización y pedir."},
+ pt:{gotS:id=>`Recebemos seu pedido de design personalizado (${id})`,gotP:n=>`Obrigado! Recebemos suas fotos${n?" de "+n:""}. Nosso artista vai analisar e enviar uma prévia e um orçamento por e-mail, normalmente em 2 a 4 dias úteis.`,view:"Ver seu pedido",readyS:id=>`A prévia do seu design está pronta (${id})`,readyP:"Boa notícia: o design personalizado do seu cachorro está pronto. Abra o link para ver nos produtos, conferir o orçamento e fazer o pedido."}};
 /* ---------- customer emails in the customer's language ---------- */
 const L=x=>["es","pt"].includes(x)?x:"en";
 const EM={
@@ -91,15 +97,27 @@ async function auth(req,env){const DB=env._db;
   const r=await DB.prepare("SELECT email,exp FROM sessions WHERE hash=?").bind(await sha(t)).first();
   return r&&r.exp>now()?r.email:null;
 }
-function validItem(it){
+function validItem(it,custId){
   const p=cat.products.find(x=>x.id===it.prod); if(!p)return null;
   const c=p.colors.find(x=>x[0]===it.color&&x[2]); if(!c||!p.sizes.includes(it.size))return null;
   const qty=Math.max(1,Math.min(20,parseInt(it.qty)||1));
-  const side=(d,k)=>{ if(!d)return null; if(!(p.sides||["front","back"]).includes(k))return false; const al=p.opts&&p.opts[k]; const o=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); if(!o||!cat.breeds.some(b=>b.slug===d.breed)||!cat.themes.some(t=>t.id===d.theme)||!cat.styles.some(s=>s.id===d.style))return false; return {part:d.part,size:d.size,breed:d.breed,theme:d.theme,style:d.style}};
+  const side=(d,k)=>{ if(!d)return null; if(!(p.sides||["front","back"]).includes(k))return false; const al=p.opts&&p.opts[k];
+    if(d.custom){ if(!custId)return false; const oc=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); return oc?{part:d.part,size:d.size,custom:custId}:false } const o=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); if(!o||!cat.breeds.some(b=>b.slug===d.breed)||!cat.themes.some(t=>t.id===d.theme)||!cat.styles.some(s=>s.id===d.style))return false; return {part:d.part,size:d.size,breed:d.breed,theme:d.theme,style:d.style}};
   const front=side(it.front,"front"),back=side(it.back,"back"); if(front===false||back===false||(!front&&!back))return null;
   return {prod:it.prod,color:it.color,size:it.size,qty,front,back};
 }
 export default {
+ // Inbound email (Cloudflare Email Routing -> this Worker): support@ and customization@ land in support_inbox for the scheduled support assistant.
+ async email(message,env,ctx){
+   const db=env.DB||makeDB(env.DATABASE_URL,env.HYPERDRIVE);
+   try{
+     const raw=await new Response(message.raw).arrayBuffer(); const mail_=await PostalMime.parse(raw);
+     const to=String(message.to||"").toLowerCase(), box=to.startsWith("customization")?"custom":"support";
+     const text=(mail_.text||String(mail_.html||"").replace(/<[^>]+>/g," ")).slice(0,20000);
+     await db.prepare("INSERT INTO support_inbox(mailbox,from_addr,subject,body,raw_size,created) VALUES(?,?,?,?,?,?)").bind(box,String(message.from||"").toLowerCase(),String(mail_.subject||"").slice(0,300),text,raw.byteLength,Date.now()).run();
+   }finally{ if(db.close)ctx.waitUntil(db.close()) }
+   if(env.OWNER_EMAIL){try{await message.forward(env.OWNER_EMAIL)}catch(e){}}
+ },
  async fetch(req,env0,ctx){const box={};try{return await this.handle(req,env0,ctx,box)}finally{if(box.db&&box.db.close)ctx.waitUntil(box.db.close())}},
  async handle(req,env0,ctx,box){
   const u=new URL(req.url),path=u.pathname,m=req.method;
@@ -147,21 +165,58 @@ export default {
     catch(e){return Response.redirect(u.origin+"/#/login?err="+encodeURIComponent(e.message),302)}
   }
   if(path==="/api/subscribe"&&m==="POST"){const e=String(body.email||"").toLowerCase();if(!okEmail(e))return err("Enter a valid email");await DB.prepare("INSERT INTO subs(email,created) VALUES(?,?) ON CONFLICT DO NOTHING").bind(e,now()).run();return J({ok:true})}
+  /* ----- custom design requests ----- */
+  if(path==="/api/custom"&&m==="POST"){
+    const e=String(body.email||"").trim().toLowerCase(); if(!okEmail(e))return err("Enter a valid email");
+    const ph=Array.isArray(body.photos)?body.photos:[];
+    if(ph.length<5)return err("Please add at least 5 photos of your dog");
+    if(ph.length>12)return err("Please send 12 photos or fewer");
+    for(const x of ph){if(!/^image\/(jpeg|png|webp)$/.test(x.mime||"")||typeof x.b64!=="string"||x.b64.length>2800000)return err("One of the photos could not be used. Please use JPG or PNG photos.")}
+    const clean=v=>String(v||"").slice(0,1500);
+    const dog=body.dog||{}, data={dog:{name:clean(dog.name),breed:clean(dog.breed),colors:clean(dog.colors),markings:clean(dog.markings),ears:clean(dog.ears),tail:clean(dog.tail),details:clean(dog.details)},
+      style:{theme:clean(body.style?.theme),style:clean(body.style?.style)},products:(Array.isArray(body.products)?body.products:[]).filter(x=>cat.products.some(p=>p.id===x)),qty:clean(body.qty),notes:clean(body.notes)};
+    if(!data.products.length)return err("Choose at least one product");
+    const id="CU-"+rnd(3).toUpperCase(), tok=rnd(12), lang=L(body.lang);
+    await DB.prepare("INSERT INTO custom_requests(id,token,email,name,lang,data,status,created,updated) VALUES(?,?,?,?,?,?,?,?,?)").bind(id,tok,e,clean(body.name),lang,JSON.stringify(data),"new",now(),now()).run();
+    let i=0;for(const x of ph){await DB.prepare("INSERT INTO custom_photos(req_id,idx,mime,b64,created) VALUES(?,?,?,?,?)").bind(id,i++,x.mime,x.b64,now()).run()}
+    const link=(env.SITE_URL||u.origin)+"/#/custom/"+id+"?k="+tok, CE=CUSTOM_EM[lang];
+    await mail(env,e,CE.gotS(id),`<p>${CE.gotP(esc(data.dog.name||""))}</p><p><a href="${link}">${CE.view}</a></p>`,"customization@alphadogstyles.com",CUSTOM_FROM);
+    if(env.OWNER_EMAIL)await mail(env,env.OWNER_EMAIL,`New custom design request ${id}`,`<p><b>${esc(e)}</b> asked for a custom design (${ph.length} photos).</p><pre style="white-space:pre-wrap">${esc(JSON.stringify(data,null,1))}</pre>`,e,CUSTOM_FROM);
+    return J({id,k:tok});
+  }
+  let cm;
+  if((cm=path.match(/^\/api\/custom\/(CU-[\w]+)$/))&&m==="GET"){
+    const r=await DB.prepare("SELECT id,status,quote,note,data,created FROM custom_requests WHERE id=? AND token=?").bind(cm[1],u.searchParams.get("k")||"").first();
+    if(!r)return err("Not found",404);
+    const art=(await DB.prepare("SELECT part FROM custom_art WHERE req_id=?").bind(cm[1]).all()).results.map(x=>x.part);
+    const d=JSON.parse(r.data);return J({id:r.id,status:r.status,quote:r.quote,note:r.note,products:d.products,style:d.style,dog:{name:d.dog.name},art,created:r.created});
+  }
+  if((cm=path.match(/^\/api\/custom\/(CU-[\w]+)\/art\/(head|body)$/))&&m==="GET"){
+    const r=await DB.prepare("SELECT 1 FROM custom_requests WHERE id=? AND token=?").bind(cm[1],u.searchParams.get("k")||"").first();if(!r)return err("Not found",404);
+    const a=await DB.prepare("SELECT mime,body FROM custom_art WHERE req_id=? AND part=?").bind(cm[1],cm[2]).first();if(!a)return err("Not found",404);
+    return new Response(a.mime==="image/svg+xml"?a.body:Uint8Array.from(atob(a.body),c=>c.charCodeAt(0)),{headers:{"content-type":a.mime,"cache-control":"private, max-age=300"}});
+  }
   if(path==="/api/contact"&&m==="POST"){if(!okEmail(body.email)||!body.msg)return err("Email and message required");await DB.prepare("INSERT INTO msgs(email,body,created) VALUES(?,?,?)").bind(body.email,String(body.msg).slice(0,4000),now()).run();if(env.OWNER_EMAIL)await mail(env,env.OWNER_EMAIL,"AlphaDog Styles: new message from "+body.email,`<p><b>${esc(body.email)}</b> wrote:</p><p style="white-space:pre-wrap">${esc(String(body.msg).slice(0,4000))}</p>`,body.email);return J({ok:true})}
   if(path==="/api/orders"&&m==="POST"){
-    const items=(Array.isArray(body.items)?body.items:[]).map(validItem);
+    let cust=null;
+    if(body.custom){cust=await DB.prepare("SELECT id,quote,status FROM custom_requests WHERE id=? AND token=?").bind(String(body.custom.id||""),String(body.custom.k||"")).first();
+      if(!cust||!["quoted","approved"].includes(cust.status))return err("This custom design is not ready to order yet")}
+    const items=(Array.isArray(body.items)?body.items:[]).map(it=>validItem(it,cust&&cust.id));
+    if(cust){const parts=(await DB.prepare("SELECT part FROM custom_art WHERE req_id=?").bind(cust.id).all()).results.map(x=>x.part);if(items.some(i=>i&&[i.front,i.back].some(d=>d&&d.custom&&!parts.includes(d.part))))return err("Your cart has an invalid item")}
     if(!items.length||items.length>30||items.includes(null))return err("Your cart has an invalid item");
     const s=body.ship||{};for(const k of["name","a1","city","st","zip"])if(!s[k]||String(s[k]).length>120)return err("Please complete the shipping address");
     if(!/^\d{5}(-\d{4})?$/.test(s.zip))return err("Enter a valid US ZIP code"); if(!okEmail(body.email))return err("Enter a valid email");
     const sub=items.reduce((a,i)=>a+priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size)*i.qty,0);
-    const ship=sub>=cat.shipping.free_over?0:cat.shipping.flat, total=sub+ship;
+    const fee=cust?(cust.quote||0):0;
+    const ship=sub>=cat.shipping.free_over?0:cat.shipping.flat, total=sub+ship+fee;
     const id="AD-"+rnd(4).toUpperCase(), email=String(body.email).toLowerCase();
-    const data={lang:L(body.lang),items,ship:{name:s.name,a1:s.a1,a2:s.a2||"",city:s.city,st:s.st,zip:s.zip,phone:s.phone||""},subtotal:sub,shipping:ship};
+    const data={lang:L(body.lang),items,ship:{name:s.name,a1:s.a1,a2:s.a2||"",city:s.city,st:s.st,zip:s.zip,phone:s.phone||""},subtotal:sub,shipping:ship,design_fee:fee,custom:cust?cust.id:null};
     await DB.prepare("INSERT INTO orders(id,email,data,total,status,created,updated) VALUES(?,?,?,?,?,?,?)").bind(id,email,JSON.stringify(data),total,"reserved",now(),now()).run();
     if(env.STRIPE_SECRET_KEY){
       try{
         const li={};items.forEach((i,n)=>{li[n]={quantity:i.qty,price_data:{currency:"usd",unit_amount:priceCents(cat,i.prod,(i.front?1:0)+(i.back?1:0),i.size),product_data:{name:"AlphaDog "+(cat.products.find(x=>x.id===i.prod)||{name:i.prod}).name+" - "+i.color+" / "+i.size}}}});
         if(ship)li[items.length]={quantity:1,price_data:{currency:"usd",unit_amount:ship,product_data:{name:"Shipping (US)"}}};
+        if(fee)li[items.length+1]={quantity:1,price_data:{currency:"usd",unit_amount:fee,product_data:{name:"Custom dog design (one-time)"}}};
         const ss=await stripe(env,"POST","/checkout/sessions",{mode:"payment",customer_email:email,client_reference_id:id,locale:{es:"es",pt:"pt-BR",en:"en"}[data.lang],metadata:{order_id:id},line_items:li,
           success_url:u.origin+"/#/done/"+id+"?paid=1",cancel_url:u.origin+"/#/cart"});
         await DB.prepare("UPDATE orders SET status='awaiting_payment',printify_id=NULL,tracking=NULL,data=? WHERE id=?").bind(JSON.stringify({...data,session:ss.id}),id).run();
@@ -196,8 +251,29 @@ export default {
   /* ----- internal (GitHub Actions fulfillment + payment hooks) ----- */
   if(path.startsWith("/api/internal/")){
     if(!env.ADMIN_TOKEN||req.headers.get("x-admin-token")!==env.ADMIN_TOKEN)return err("Forbidden",403);
+    if(path==="/api/internal/custom"&&m==="GET"){const st=u.searchParams.get("status");const r=await DB.prepare("SELECT id,token,email,name,lang,status,quote,note,data,created,updated FROM custom_requests"+(st?" WHERE status=?":"")+" ORDER BY created DESC LIMIT 100").bind(...(st?[st]:[])).all();
+      const out=[];for(const x of r.results){const n=await DB.prepare("SELECT count(*)::int AS n FROM custom_photos WHERE req_id=?").bind(x.id).first();const a=(await DB.prepare("SELECT part FROM custom_art WHERE req_id=?").bind(x.id).all()).results.map(y=>y.part);out.push({...x,data:JSON.parse(x.data),photos:n.n,art:a})}return J({items:out})}
+    let im;
+    if((im=path.match(/^\/api\/internal\/custom\/(CU-[\w]+)\/photo\/(\d+)$/))&&m==="GET"){const p=await DB.prepare("SELECT mime,b64 FROM custom_photos WHERE req_id=? AND idx=?").bind(im[1],+im[2]).first();if(!p)return err("Not found",404);return new Response(Uint8Array.from(atob(p.b64),c=>c.charCodeAt(0)),{headers:{"content-type":p.mime}})}
+    if((im=path.match(/^\/api\/internal\/custom\/(CU-[\w]+)\/art\/(head|body)$/))&&m==="GET"){const a=await DB.prepare("SELECT mime,body FROM custom_art WHERE req_id=? AND part=?").bind(im[1],im[2]).first();if(!a)return err("Not found",404);return new Response(a.mime==="image/svg+xml"?a.body:Uint8Array.from(atob(a.body),c=>c.charCodeAt(0)),{headers:{"content-type":a.mime}})}
+    if((im=path.match(/^\/api\/internal\/custom\/(CU-[\w]+)$/))&&m==="POST"){
+      const r=await DB.prepare("SELECT email,lang,token,status FROM custom_requests WHERE id=?").bind(im[1]).first();if(!r)return err("No such request",404);
+      for(const part of ["head","body"]){const a=body.art&&body.art[part];if(a&&a.body&&/^image\/(svg\+xml|png)$/.test(a.mime||"")){if(a.mime==="image/svg+xml"&&!/^\s*(<\?xml[^>]*>\s*)?<svg[\s>]/i.test(a.body))return err("Art must be an SVG or PNG");if(a.body.length>6000000)return err("Art file too large");
+        await DB.prepare("INSERT INTO custom_art(req_id,part,mime,body,created) VALUES(?,?,?,?,?) ON CONFLICT(req_id,part) DO UPDATE SET mime=EXCLUDED.mime,body=EXCLUDED.body,created=EXCLUDED.created").bind(im[1],part,a.mime,a.body,now()).run()}}
+      const q=body.quote!=null?Math.max(0,Math.min(50000,parseInt(body.quote)||0)):null;
+      await DB.prepare("UPDATE custom_requests SET status=COALESCE(?::text,status),quote=COALESCE(?::int,quote),note=COALESCE(?::text,note),updated=? WHERE id=?").bind(body.status||null,q,body.note!=null?String(body.note).slice(0,3000):null,now(),im[1]).run();
+      if(body.notify&&(body.status||r.status)==="quoted"){const CE=CUSTOM_EM[L(r.lang)],link=(env.SITE_URL||u.origin)+"/#/custom/"+im[1]+"?k="+r.token;await mail(env,r.email,CE.readyS(im[1]),`<p>${CE.readyP}</p><p><a href="${link}">${CE.view}</a></p>`,"customization@alphadogstyles.com",CUSTOM_FROM)}
+      return J({ok:true});
+    }
+    if(path==="/api/internal/send"&&m==="POST"){if(!okEmail(body.to)||!body.subject||!body.html)return err("to, subject, html required");
+      const from=body.mailbox==="custom"?CUSTOM_FROM:SUPPORT_FROM,rt=body.mailbox==="custom"?"customization@alphadogstyles.com":"support@alphadogstyles.com";
+      const ok=await mail(env,body.to,String(body.subject).slice(0,200),String(body.html).slice(0,20000),rt,from);return J({ok})}
+    if(path==="/api/internal/support"&&m==="GET"){const st=u.searchParams.get("status")||"new";const r=await DB.prepare("SELECT id,mailbox,from_addr,subject,body,status,created,reply FROM support_inbox WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results})}
+    if((im=path.match(/^\/api\/internal\/support\/(\d+)$/))&&m==="POST"){await DB.prepare("UPDATE support_inbox SET status=COALESCE(?::text,status),reply=COALESCE(?::text,reply),handled=? WHERE id=?").bind(body.status||null,body.reply||null,now(),+im[1]).run();return J({ok:true})}
+    if(path==="/api/internal/support"&&m==="POST"){await DB.prepare("INSERT INTO support_inbox(mailbox,from_addr,subject,body,raw_size,created) VALUES(?,?,?,?,?,?)").bind(String(body.mailbox||"support"),String(body.from||""),String(body.subject||"").slice(0,300),String(body.body||"").slice(0,20000),0,now()).run();return J({ok:true})}
     if(path==="/api/internal/inbox"&&m==="GET"){const g=async q=>(await DB.prepare(q).all()).results;return J({messages:await g("SELECT email,body,created FROM msgs ORDER BY created DESC LIMIT 50"),subscribers:await g("SELECT email,created FROM subs ORDER BY created DESC LIMIT 200"),orders:await g("SELECT id,email,status,total,created FROM orders WHERE status NOT IN ('awaiting_payment','smoke_test') ORDER BY created DESC LIMIT 50")})}
     if(path==="/api/internal/dbcheck"&&m==="GET"){try{return J(await diag(env0.DATABASE_URL,env0.HYPERDRIVE))}catch(e){return J({error:String(e.message)},500)}}
+    if(path==="/api/internal/orders"&&m==="GET"&&u.searchParams.get("email")){const r=await DB.prepare("SELECT id,email,data,total,status,printify_id,tracking,created FROM orders WHERE email=? ORDER BY created DESC LIMIT 20").bind(u.searchParams.get("email").toLowerCase()).all();return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))})}
     if(path==="/api/internal/orders"&&m==="GET"){const st=u.searchParams.get("status")||"paid";const r=await DB.prepare("SELECT id,email,data,total,status,printify_id FROM orders WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))})}
     if((mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/))&&m==="POST"){
       const o=await DB.prepare("SELECT email FROM orders WHERE id=?").bind(mm[1]).first();if(!o)return err("No such order",404);

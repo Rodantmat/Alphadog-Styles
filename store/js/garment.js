@@ -4,7 +4,7 @@ export const setCal=c=>{CAL=c};
 export function isDark(hex){const n=parseInt(hex.slice(1),16);return (0.299*(n>>16)+0.587*((n>>8)&255)+0.114*(n&255))<110}
 const aspects={};
 export function aspect(url){return aspects[url]?Promise.resolve(aspects[url]):new Promise(res=>{const i=new Image();i.onload=()=>{aspects[url]=i.naturalWidth/i.naturalHeight||1;res(aspects[url])};i.onerror=()=>res(1);i.src=url})}
-export function artUrl(d){return `art/${d.theme}_${d.style}/${d.breed}_${d.part==="head"?"front":"back"}.svg`}
+export function artUrl(d){return d.custom?`api/custom/${d.custom}/art/${d.part}?k=${encodeURIComponent(d.k||"")}`:`art/${d.theme}_${d.style}/${d.breed}_${d.part==="head"?"front":"back"}.svg`}
 export const photoUrl=(prod,slug,side)=>`img/${prod}_${slug}_${side}.webp`;
 // d = {part,size,breed,theme,style} or null ; color = [name,hex,ok,slug]
 export async function renderSVG(prod,side,color,d){

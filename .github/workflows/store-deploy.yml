@@ -66,4 +66,5 @@ jobs:
             else echo "webhook exists"; fi
           fi
           python3 ../../scripts/resend_setup.py || true
+          python3 ../../scripts/email_routing_setup.py || true
           npx wrangler@4 deployments list | tail -5
