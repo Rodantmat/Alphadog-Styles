@@ -150,7 +150,7 @@ if MODE not in("probe","fetch"):
     if MODE=="publish":
         cnt=int(EXTRA or 1); n=0
         for k,v in LS.items():
-            if v.get("published"): continue
+            if v.get("published") or "#old" in k: continue
             if n>=cnt: break
             call("POST",f"/v1/shops/{SHOP}/products/{v['id']}/publish.json",{"title":True,"description":True,"images":True,"variants":True,"tags":True,"keyfeatures":True,"shipping_template":True})
             v["published"]=True; save(); n+=1; print("PUBLISHED",k,v["id"],flush=True); time.sleep(1.5)
@@ -177,6 +177,18 @@ if MODE=="sample":
             except Exception as e: print("ERR",e)
         info.append(k); print("sampled",i,k,flush=True)
     json.dump(info,open(f"out/mock4/{CH}_keys.json","w"))
+if MODE=="oldcheck":
+    os.makedirs("out/mock4",exist_ok=True)
+    for k,v in LS.items():
+        if "#old" not in k: continue
+        p=call("GET",f"/v1/shops/{SHOP}/products/{v['id']}.json")
+        print("OLD",k,p["title"],"external",p.get("external"),"visible",p.get("visible"),flush=True)
+        for a_ in p["print_areas"]:
+            for q in a_["placeholders"]:
+                for im in q["images"]:
+                    print(" ",q["position"],im.get("type"),im.get("scale"),im.get("x"),im.get("y"),flush=True)
+        for j,im in enumerate(p["images"][:4]):
+            open(f"out/mock4/old_{j}.jpg","wb").write(urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"}),timeout=60).read())
 if MODE=="verify":
     res={}; bad=0
     for k,v in LS.items():
