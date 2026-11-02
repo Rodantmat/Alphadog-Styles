@@ -6,16 +6,16 @@ sys.path.insert(0,os.path.dirname(os.path.abspath(__file__)))
 import market_text as T
 from market_plan import sku,price,short
 ROOT=T.ROOT; plan=T.plan; imgs=json.load(open(f"{ROOT}/store/data/market_images.json")); SITE="https://alphadogstyles.com/mk/"
-DS={"1":"Line+Back","2":"Geo Shades","3":"Heart+Back","4":"Geo+Back","5":"Line Shades","6":"Geo Heart"}
+DS={"1":"Line Art Chest+Back","2":"Geometric Shades Front","3":"Line Heart Chest+Back","4":"Geometric Chest+Back","5":"Line Shades Front","6":"Geometric Heart Front"}
 CS={"Soft Cream":"Cream","Athletic Heather":"Heather","Light Blue":"Lt Blue","Soft Pink":"Pink","Sport Grey":"Grey","Light Pink":"Pink",
     "Heather Grey":"Grey","Solid Tahiti Blue":"Blue","Solid Mint":"Mint","Solid Light Orange":"Peach","Solid White":"White"}
 WEIGHT={"tee":0.4,"hoodie":1.3,"wtank":0.3,"tank":0.35,"polo":0.6,"cap":0.4}   # lb, packed
 DIM={"tee":(10,8,1),"hoodie":(12,10,3),"wtank":(10,8,1),"tank":(10,8,1),"polo":(11,9,2),"cap":(10,8,5)}  # inches
 def tier1(L,b,dc,cc,cap):
     P=plan["products"][L["prod"]]; C={c["code"]:c for c in P["colors"]}
-    nm=short(b) if len(short(b))<=14 else short(b)[:14]
-    v=f"{nm} · {DS.get(dc,dc)}" if cap else f"{nm} · {DS.get(dc,dc)} · {CS.get(C[cc]['color'],C[cc]['color'])}"
-    return v[:35]
+    P2=plan["products"][L["prod"]]; dn=DS.get(dc,dc) if L["prod"] not in("cap","polo") else next(d["name"] for d in P2["designs"] if d["code"]==dc)
+    parts=([] if len(L["breeds"])==1 else [short(b)])+[dn]+([] if cap else [CS.get(C[cc]['color'],C[cc]['color'])])
+    return " · ".join(parts)[:80]
 def build():
     out=[]
     for L in [l for l in plan["listings"] if l["plat"]=="tiktok"]:
