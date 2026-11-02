@@ -23,7 +23,7 @@ jobs:
         with: { python-version: "3.12" }
       - name: Render marketplace listing photos (store/mk, not committed)
         if: env.SKIP != '1'
-        run: pip install -q cairosvg pillow numpy && python3 scripts/market_plan.py | tail -1 && python3 scripts/market_images.py | tail -2
+        run: pip install -q cairosvg pillow numpy && python3 scripts/market_plan.py | tail -1 && python3 scripts/market_images.py | tail -2 && python3 scripts/ebay_csv.py && python3 scripts/ebay_csv.py --limit 1
       - name: Create database and deploy
         if: env.SKIP != '1'
         working-directory: store/worker
