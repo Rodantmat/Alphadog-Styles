@@ -62,7 +62,7 @@ def inventory(L,readiness):
                     if readiness: off["readiness_state_id"]=readiness
                     prods.append({"sku":sku(L["prod"],b,dc,cc,s),"property_values":pv,"offerings":[off]})
     allp=[513,514] if cap else [513,514,516]
-    return {"products":prods,"price_on_property":[514] if cap else [516],"quantity_on_property":[],"sku_on_property":allp,
+    return {"products":prods,"price_on_property":([513,514] if cap else [513,514,516]),"quantity_on_property":[],"sku_on_property":allp,
             "readiness_state_on_property":[]},(2 if cap else 3)
 def sync_one(L,lid,full):
     sid=E.shop_id(); log={}
