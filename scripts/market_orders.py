@@ -132,7 +132,7 @@ def gmail_poll():
     seen=set((E.store("GET","/api/internal/kv/gmail_seen").get("v") or [])[-2000:])
     M=imaplib.IMAP4_SSL("imap.gmail.com",993,ssl_context=ssl.create_default_context()); M.login(user,pw)
     M.select("INBOX",readonly=True)
-    import datetime; since=(datetime.date.today()-datetime.timedelta(days=3)).strftime("%d-%b-%Y")
+    import datetime; since=(datetime.date.today()-datetime.timedelta(days=int(os.environ.get("GMAIL_DAYS","3")))).strftime("%d-%b-%Y")
     typ,data=M.search(None,f'(SINCE {since} FROM "ebay" SUBJECT "made the sale")'); n=0; new=[]
     for num in (data[0].split() if data and data[0] else []):
         msg=email.message_from_bytes(M.fetch(num,"(BODY.PEEK[])")[1][0][1]); mid=msg.get("Message-ID","") or num.decode()

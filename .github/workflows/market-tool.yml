@@ -23,6 +23,7 @@ jobs:
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
           FLIPPING_GMAIL_APP_PASSWORD: ${{ secrets.FLIPPING_GMAIL_APP_PASSWORD }}
           CMD: ${{ inputs.cmd }}
+          GMAIL_DAYS: "10"
           ARG: ${{ inputs.arg }}
         run: python3 scripts/market_tool.py
       - name: keep outputs
