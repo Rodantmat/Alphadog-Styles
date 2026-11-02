@@ -70,6 +70,462 @@
    "inventory": 210,
    "images": 7,
    "var_images": 6
+  },
+  "etsy-tee-02": {
+   "listing": 4607388289,
+   "t": 1793592268,
+   "update": "ok",
+   "inventory": 210,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-tee-03": {
+   "listing": 4607409130,
+   "t": 1793592278,
+   "update": "ok",
+   "inventory": 210,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-tee-04": {
+   "listing": 4607388429,
+   "t": 1793592290,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tee-05": {
+   "listing": 4607388513,
+   "t": 1793592302,
+   "update": "ok",
+   "inventory": 210,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-tee-06": {
+   "listing": 4607388589,
+   "t": 1793592314,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tee-07": {
+   "listing": 4607388647,
+   "t": 1793592325,
+   "update": "ok",
+   "inventory": 360,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-tee-08": {
+   "listing": 4607388717,
+   "t": 1793592337,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tee-09": {
+   "listing": 4607409588,
+   "t": 1793592349,
+   "update": "ok",
+   "inventory": 360,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-hoodie-01": {
+   "listing": 4607387419,
+   "t": 1793592358,
+   "update": "ok",
+   "inventory": 180,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-hoodie-02": {
+   "listing": 4607387491,
+   "t": 1793592366,
+   "update": "ok",
+   "inventory": 180,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-hoodie-03": {
+   "listing": 4607408328,
+   "t": 1793592375,
+   "update": "ok",
+   "inventory": 180,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-hoodie-04": {
+   "listing": 4607387669,
+   "t": 1793592385,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-hoodie-05": {
+   "listing": 4607408484,
+   "t": 1793592393,
+   "update": "ok",
+   "inventory": 180,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-hoodie-06": {
+   "listing": 4607408562,
+   "t": 1793592404,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-hoodie-07": {
+   "listing": 4607408648,
+   "t": 1793592414,
+   "update": "ok",
+   "inventory": 360,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-hoodie-08": {
+   "listing": 4607388019,
+   "t": 1793592423,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-hoodie-09": {
+   "listing": 4607408908,
+   "t": 1793592433,
+   "update": "ok",
+   "inventory": 360,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tee-10": {
+   "listing": 4607388819,
+   "t": 1793592444,
+   "update": "ok",
+   "inventory": 360,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-tee-11": {
+   "listing": 4607409544,
+   "t": 1793592457,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tee-12": {
+   "listing": 4607388773,
+   "t": 1793592469,
+   "update": "ok",
+   "inventory": 360,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-tee-13": {
+   "listing": 4607388757,
+   "t": 1793592481,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-hoodie-10": {
+   "listing": 4607408884,
+   "t": 1793592491,
+   "update": "ok",
+   "inventory": 360,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-hoodie-11": {
+   "listing": 4607388103,
+   "t": 1793592501,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-hoodie-12": {
+   "listing": 4607408816,
+   "t": 1793592510,
+   "update": "ok",
+   "inventory": 360,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-hoodie-13": {
+   "listing": 4607388063,
+   "t": 1793592522,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-wtank-01": {
+   "listing": 4607408962,
+   "t": 1793592533,
+   "update": "ok",
+   "inventory": 150,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-wtank-02": {
+   "listing": 4607409098,
+   "t": 1793592544,
+   "update": "ok",
+   "inventory": 300,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-wtank-03": {
+   "listing": 4607388407,
+   "t": 1793592556,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-wtank-04": {
+   "listing": 4607409484,
+   "t": 1793592566,
+   "update": "ok",
+   "inventory": 360,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-wtank-05": {
+   "listing": 4607409302,
+   "t": 1793592579,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-wtank-06": {
+   "listing": 4607409446,
+   "t": 1793592593,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tank-01": {
+   "listing": 4607388179,
+   "t": 1793592603,
+   "update": "ok",
+   "inventory": 60,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-tank-02": {
+   "listing": 4607388271,
+   "t": 1793592612,
+   "update": "ok",
+   "inventory": 60,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-tank-03": {
+   "listing": 4607409062,
+   "t": 1793592622,
+   "update": "ok",
+   "inventory": 60,
+   "images": 7,
+   "var_images": 6
+  },
+  "etsy-tank-04": {
+   "listing": 4607388385,
+   "t": 1793592632,
+   "update": "ok",
+   "inventory": 240,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tank-05": {
+   "listing": 4607388625,
+   "t": 1793592644,
+   "update": "ok",
+   "inventory": 300,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tank-06": {
+   "listing": 4607409288,
+   "t": 1793592655,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tank-07": {
+   "listing": 4607388671,
+   "t": 1793592665,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-polo-01": {
+   "listing": 4607387391,
+   "t": 1793592672,
+   "update": "ok",
+   "inventory": 40,
+   "images": 5,
+   "var_images": 4
+  },
+  "etsy-polo-02": {
+   "listing": 4607409010,
+   "t": 1793592680,
+   "update": "ok",
+   "inventory": 40,
+   "images": 5,
+   "var_images": 4
+  },
+  "etsy-polo-03": {
+   "listing": 4607387541,
+   "t": 1793592686,
+   "update": "ok",
+   "inventory": 40,
+   "images": 5,
+   "var_images": 4
+  },
+  "etsy-polo-04": {
+   "listing": 4607387637,
+   "t": 1793592694,
+   "update": "ok",
+   "inventory": 160,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-polo-05": {
+   "listing": 4607388607,
+   "t": 1793592707,
+   "update": "ok",
+   "inventory": 200,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-polo-06": {
+   "listing": 4607387829,
+   "t": 1793592718,
+   "update": "ok",
+   "inventory": 320,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-polo-07": {
+   "listing": 4607387993,
+   "t": 1793592727,
+   "update": "ok",
+   "inventory": 320,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-cap-04": {
+   "listing": 4607387605,
+   "t": 1793592737,
+   "update": "ok",
+   "inventory": 144,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-cap-05": {
+   "listing": 4607388481,
+   "t": 1793592749,
+   "update": "ok",
+   "inventory": 180,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-cap-06": {
+   "listing": 4607408510,
+   "t": 1793592760,
+   "update": "ok",
+   "inventory": 288,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-cap-07": {
+   "listing": 4607387955,
+   "t": 1793592770,
+   "update": "ok",
+   "inventory": 288,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-wtank-07": {
+   "listing": 4607388453,
+   "t": 1793592780,
+   "update": "ok",
+   "inventory": 360,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-wtank-08": {
+   "listing": 4607408758,
+   "t": 1793592789,
+   "update": "ok",
+   "inventory": 300,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-wtank-09": {
+   "listing": 4607387919,
+   "t": 1793592798,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-wtank-10": {
+   "listing": 4607408586,
+   "t": 1793592807,
+   "update": "ok",
+   "inventory": 300,
+   "images": 8,
+   "var_images": 7
+  },
+  "etsy-wtank-11": {
+   "listing": 4607408456,
+   "t": 1793592816,
+   "update": "ok",
+   "inventory": 400,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-tank-08": {
+   "listing": 4607408410,
+   "t": 1793592828,
+   "update": "ok",
+   "inventory": 300,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-polo-08": {
+   "listing": 4607408228,
+   "t": 1793592837,
+   "update": "ok",
+   "inventory": 200,
+   "images": 9,
+   "var_images": 8
+  },
+  "etsy-cap-08": {
+   "listing": 4607344487,
+   "t": 1793592847,
+   "update": "ok",
+   "inventory": 180,
+   "images": 9,
+   "var_images": 8
   }
  },
  "failed": {
@@ -77,6 +533,18 @@
    "update": "ok",
    "inventory": 400,
    "inventory_msg": "{\"error\":\"price_on_property: unsupported number of property IDs. Supports only zero or all 3 variation properties, as at least one `*_on_property` field is linked to all 3 properties.\"}\n"
+  },
+  "etsy-cap-01": {
+   "update": 400,
+   "update_msg": "{\"error\":\"There was a problem with \\/title\\/0 : & can only be use once\"}\n"
+  },
+  "etsy-cap-02": {
+   "update": 400,
+   "update_msg": "{\"error\":\"There was a problem with \\/title\\/0 : & can only be use once\"}\n"
+  },
+  "etsy-cap-03": {
+   "update": 400,
+   "update_msg": "{\"error\":\"There was a problem with \\/title\\/0 : & can only be use once\"}\n"
   }
  }
 }
