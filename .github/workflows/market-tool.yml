@@ -12,6 +12,8 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install -q cairosvg pillow numpy
+      - if: startsWith(inputs.cmd, 'etsy-sync')
+        run: python3 scripts/market_images.py | tail -1
       - env:
           STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
           ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
@@ -24,5 +26,5 @@ jobs:
         if: always()
         run: |
           git config user.name "market-bot"; git config user.email "bot@alphadogstyles.com"
-          git add out/market_*.json 2>/dev/null || true
+          git add -f out/market_*.json 2>/dev/null || true
           git commit -qm "market-tool output" && git pull -q --rebase && git push -q || true
