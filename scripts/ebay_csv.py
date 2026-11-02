@@ -57,11 +57,12 @@ def rows(L):
                     out.append(r)
     return out
 if __name__=="__main__":
+    skip=set(x.upper() for x in sys.argv[sys.argv.index("--skip")+1].split(",")) if "--skip" in sys.argv else set()
     only=sys.argv[sys.argv.index("--only")+1] if "--only" in sys.argv else None
     lim=int(sys.argv[sys.argv.index("--limit")+1]) if "--limit" in sys.argv else None
-    Ls=[l for l in plan["listings"] if l["plat"]=="ebay" and (not only or l["id"]==only)][:lim]
+    Ls=[l for l in plan["listings"] if l["plat"]=="ebay" and (not only or l["id"]==only) and l["id"].upper() not in skip][:lim]
     os.makedirs(f"{ROOT}/store/mk/feeds",exist_ok=True)
-    name="ebay_listings.csv" if not (only or lim) else f"ebay_listings_{only or lim}.csv"
+    name="ebay_listings.csv" if not (only or lim or skip) else (f"ebay_listings_{only or lim}.csv" if (only or lim) else "ebay_listings_rest.csv")
     with open(f"{ROOT}/store/mk/feeds/{name}","w",newline="",encoding="utf-8") as fh:
         w=csv.DictWriter(fh,fieldnames=HDR); w.writeheader(); n=0
         for L in Ls:
