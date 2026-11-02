@@ -124,7 +124,7 @@ def title(plat,pk,br,fam):
     if plat!="ebay":
         al=ALIAS.get(br[0]) if len(br)==1 else None
         if al and al.lower() in t.lower(): al=None
-        kind={"tee":"T-Shirt","hoodie":"Sweatshirt","wtank":"Racerback Tank","tank":"Tank","polo":"Polo","cap":"Dad Hat & Trucker Cap"}[pk]
+        kind={"tee":"T-Shirt","hoodie":"Sweatshirt","wtank":"Racerback Tank","tank":"Tank","polo":"Polo","cap":"Dad Hat, Trucker Cap"}[pk]
         for tail in [f" | {al+' ' if al else ''}Line Art & Geometric Dog {kind}, Dog Mom Dad Gift", f" | Line Art Dog {kind}, Dog Lover Gift", " - Dog Lover Gift", ""]:
             if len(t+tail)<=lim: return t+tail
         return t[:lim]
