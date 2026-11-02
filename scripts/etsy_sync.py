@@ -120,8 +120,9 @@ def main(arg="dry"):
     for pid,lid in m.items(): print(f"  {pid:16} -> {lid} | {byid.get(lid,{}).get('title','?')[:70]}")
     if arg=="dry": return
     todo=[p for p in m if p not in st["done"]]
+    if arg=="redo": todo=list(m)
     if arg=="one": todo=todo[:1]
-    elif arg not in("all",): todo=[arg] if arg in m else []
+    elif arg not in("all","redo"): todo=[arg] if arg in m else []
     for pid in todo:
         lid=m[pid]; full=byid.get(lid) or E.call("GET",f"/listings/{lid}")
         t0=time.time(); log=sync_one(P[pid],lid,full); print(pid,lid,json.dumps(log),f"{time.time()-t0:.0f}s",flush=True)

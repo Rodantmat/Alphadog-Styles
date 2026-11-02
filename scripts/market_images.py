@@ -89,11 +89,18 @@ def lineup(path,prod_colors,breed,d,label):
     if im.height!=PH: im=im.resize((PH,PH),Image.LANCZOS) if rows*cell<PH*1.2 else im
     os.makedirs(os.path.dirname(full),exist_ok=True); im.save(full,"JPEG",quality=84,optimize=True); return path
 def plan_jobs(only=None):
-    jobs={}; meta={}
+    jobs={}; meta={}; seen={}
+    def hero_color(L,C):
+        # main-photo color: the color this platform has shown least so far for this product (all colors take turns, white included),
+        # so a storefront looks mixed instead of mostly white. Every color stays a buyable option.
+        k=(L["plat"],L["prod"]); use=seen.setdefault(k,{})
+        isw=lambda c:"white" in C[c]["color"].lower() and "/" not in C[c]["color"]
+        c=min(L["colors"],key=lambda c:(use.get(c,0)+(0.5 if isw(c) else 0),L["colors"].index(c)))
+        use[c]=use.get(c,0)+1; return c
     for L in plan["listings"]:
         if only and L["id"]!=only: continue
         P=plan["products"][L["prod"]]; D={d["code"]:d for d in P["designs"]}; C={c["code"]:c for c in P["colors"]}
-        hero_c=C[L["colors"][0]]; m={"hero":[],"bd":{},"bdc":{},"lineup":None}
+        hero_c=C[hero_color(L,C)]; m={"hero":[],"bd":{},"bdc":{},"lineup":None}
         def key(b,dc,cc):
             c=C[cc]; return f"{c['prod']}/{b}/{dc}{cc}.jpg",(c["prod"],c["color"],b,D[dc])
         for b in L["breeds"]:
