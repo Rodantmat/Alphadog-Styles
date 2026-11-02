@@ -39,12 +39,14 @@ def assign(existing):
             hit=next((i for i,x in free.items() if rule(l,x)),None)
             if hit: m[l["id"]]=hit; free.pop(hit)
     st["map"]=m; save(); return m
+MID={"Line Art · Emblem + Back":"Line Art: Chest + Back","Geometric Sunglasses · Big Front":"Geometric Shades: Big Front",
+ "Line Art Heart · Emblem + Back":"Line Heart: Chest + Back","Geometric · Emblem + Back":"Geometric: Chest + Back",
+ "Line Art Sunglasses · Big Front":"Line Shades: Big Front","Geometric Heart · Big Front":"Geometric Heart: Big Front"}
 def style_val(b,d):
-    v=f"{T.BR[b]} - {d['name']}"
-    if len(v)>45: v=f"{T.BR[b]} - {d['short']}"
-    if len(v)>45:
-        from market_plan import short
-        v=f"{short(b)} - {d['short']}"
+    from market_plan import short
+    lab=MID.get(d["name"],d["name"])
+    v=f"{T.BR[b]} - {lab}"
+    if len(v)>45: v=f"{short(b)} - {lab}"
     return v[:45]
 def inventory(L,readiness):
     P=plan["products"][L["prod"]]; D={d["code"]:d for d in P["designs"]}; C={c["code"]:c for c in P["colors"]}
