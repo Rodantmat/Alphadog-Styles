@@ -32,7 +32,7 @@ def rows(L):
     CAPST={"cap_dad":"Dad Hat","cap_foam":"Trucker Hat","cap_mesh":"Mesh Trucker Hat"}
     cstyle=lambda c: CAPST[C[c]["prod"]]; ccolor=lambda c: C[c]["name"].split(" ",2)[-1] if C[c]["prod"]=="cap_dad" else C[c]["name"].replace("Foam Trucker ","").replace("Mesh Trucker ","")
     specs+=[("Design",[dname(D[d]) for d in L["designs"]])]
-    if cap: specs+=[("Style",list(dict.fromkeys(cstyle(c) for c in L["colors"]))),("Color",list(dict.fromkeys(ccolor(c) for c in L["colors"])))]
+    if cap: specs+=[("Hat Type",list(dict.fromkeys(cstyle(c) for c in L["colors"]))),("Color",list(dict.fromkeys(ccolor(c) for c in L["colors"])))]
     else: specs.append(("Color",[C[c]["name"] for c in L["colors"]]))
     if not cap: specs.append(("Size",L["sizes"]))
     parent={h:"" for h in HDR}
@@ -40,7 +40,7 @@ def rows(L):
       "RelationshipDetails":"|".join(f"{n}="+";".join(v) for n,v in specs),"*ConditionID":1000,
       "PicURL":"|".join(SITE+f for f in (m["hero"][:10]+[m["lineup"]])[:12]),"*Description":html(L),"*Format":"FixedPrice","*Duration":"GTC",
       "*Location":"San Diego, CA",**POL,"C:Brand":"AlphaDog Styles","C:Department":DEPT[L["prod"]],"C:Type":TYPE[L["prod"]],
-      "C:Style":"Graphic Tee" if L["prod"]=="tee" else ("Pullover" if L["prod"]=="hoodie" else ("Polo" if L["prod"]=="polo" else ("Tank Top" if L["prod"] in("tank","wtank") else ""))),"C:Size Type":"" if cap else "Regular","C:Size":"One Size" if cap else "","C:Theme":"Animals, Dogs",
+      "C:Style":"Graphic Tee" if L["prod"]=="tee" else ("Pullover" if L["prod"]=="hoodie" else ("Polo" if L["prod"]=="polo" else ("Tank Top" if L["prod"] in("tank","wtank") else "Baseball Cap"))),"C:Size Type":"" if cap else "Regular","C:Size":"One Size" if cap else "","C:Theme":"Animals, Dogs",
       "C:Material":"Cotton" if L["prod"] in("tee","tank") else ("Cotton Blend" if L["prod"]!="cap" else "Cotton"),
       "C:Sleeve Length":{"tee":"Short Sleeve","hoodie":"Long Sleeve","wtank":"Sleeveless","tank":"Sleeveless","polo":"Short Sleeve"}.get(L["prod"],""),
       "C:Neckline":{"tee":"Crew Neck","tank":"Scoop Neck","wtank":"Scoop Neck","polo":"Collared"}.get(L["prod"],""),
@@ -53,7 +53,7 @@ def rows(L):
                     r={h:"" for h in HDR}; det=[]
                     if multi: det.append(f"Dog Breed={bname(b)}")
                     det.append(f"Design={dname(D[dc])}")
-                    if cap: det+= [f"Style={cstyle(cc)}",f"Color={ccolor(cc)}"]
+                    if cap: det+= [f"Hat Type={cstyle(cc)}",f"Color={ccolor(cc)}"]
                     else: det.append("Color="+C[cc]["name"])
                     if not cap: det.append(f"Size={s}")
                     r.update({"CustomLabel":sku(L["prod"],b,dc,cc,s),"Relationship":"Variation","RelationshipDetails":"|".join(det),
