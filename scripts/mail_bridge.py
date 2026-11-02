@@ -26,6 +26,7 @@ def text_of(msg):
 def sync():
     n=0
     for addr,pw in creds().items():
+        if addr.startswith("orders@"): continue   # marketplace sale notifications: handled by market_orders.py
         box="custom" if addr.startswith("customization") else "support"
         try:
             M=imaplib.IMAP4_SSL(HOST,993,ssl_context=ssl.create_default_context()); M.login(addr,pw); M.select("INBOX")

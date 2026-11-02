@@ -19,3 +19,7 @@ elif cmd=="test-order":
     r=E.store("POST","/api/internal/market/order",{"plat":"etsy","ext_id":"TEST"+str(int(time.time())),"email":"orders@alphadogstyles.com","test":True,
         "ship":{"name":"Test Buyer","a1":"123 Test St","city":"San Diego","st":"CA","zip":"92101","country":"US"},"items":[{"sku":s,"qty":1} for s in skus]})
     print("ORDER:",r)
+elif cmd=="orders-peek":
+    import market_orders; market_orders.mail_peek()
+elif cmd=="orders-poll":
+    import market_orders; print(market_orders.mail_poll())
