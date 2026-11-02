@@ -62,7 +62,16 @@
   "etsy-polo-08": 4607408228,
   "etsy-cap-08": 4607344487
  },
- "done": {},
+ "done": {
+  "etsy-tee-01": {
+   "listing": 4607408990,
+   "t": 1793591862,
+   "update": "ok",
+   "inventory": 210,
+   "images": 7,
+   "var_images": 6
+  }
+ },
  "failed": {
   "etsy-tee-01": {
    "update": "ok",
