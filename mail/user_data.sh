@@ -35,7 +35,7 @@ services:
       - ENABLE_FAIL2BAN=1
       - ENABLE_MANAGESIEVE=1
       - POSTMASTER_ADDRESS=support@alphadogstyles.com
-      - DEFAULT_RELAY_HOST=[smtp.resend.com]:587
+      - DEFAULT_RELAY_HOST=[smtp.resend.com]:2587
       - RELAY_USER=resend
       - RELAY_PASSWORD=__RESEND_KEY__
       - SPOOF_PROTECTION=1
