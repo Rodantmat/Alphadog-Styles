@@ -23,3 +23,5 @@ elif cmd=="orders-peek":
     import market_orders; market_orders.mail_peek()
 elif cmd=="orders-poll":
     import market_orders; print(market_orders.mail_poll())
+elif cmd=="gmail-poll":
+    import market_orders; print(market_orders.gmail_poll())

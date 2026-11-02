@@ -124,6 +124,30 @@ def mail_peek(q="code"):
         t=_mail_text(msg); m=re.search(r"(?:code|código)[^0-9]{0,40}(\d{6,10})",t,re.I)
         print("MAIL",uid.decode(),subj[:90],"| CODE:",m.group(1) if m else "-")
     M.logout()
+# ---------------- read sale emails straight from the seller Gmail (IMAP + app password; read-only, nothing is marked or moved) -------------
+def gmail_poll():
+    pw=os.environ.get("FLIPPING_GMAIL_APP_PASSWORD","").replace(" ","").strip(); user=os.environ.get("FLIPPING_GMAIL_USER","flippingmagic.sales@gmail.com")
+    if not pw: print("gmail: no app password"); return 0
+    import etsy_api as E
+    seen=set((E.store("GET","/api/internal/kv/gmail_seen").get("v") or [])[-2000:])
+    M=imaplib.IMAP4_SSL("imap.gmail.com",993,ssl_context=ssl.create_default_context()); M.login(user,pw)
+    M.select("INBOX",readonly=True)
+    import datetime; since=(datetime.date.today()-datetime.timedelta(days=3)).strftime("%d-%b-%Y")
+    typ,data=M.search(None,f'(SINCE {since} FROM "ebay" SUBJECT "made the sale")'); n=0; new=[]
+    for num in (data[0].split() if data and data[0] else []):
+        msg=email.message_from_bytes(M.fetch(num,"(BODY.PEEK[])")[1][0][1]); mid=msg.get("Message-ID","") or num.decode()
+        if mid in seen: continue
+        p=parse_ebay(_mail_text(msg)); res="unparsed"
+        if p:
+            sku,why=ebay_sku(p)
+            if why=="not ours": res="not ours"
+            else:
+                items=[{"sku":sku,"qty":p["qty"],"title":p["title"]}] if sku else [{"sku":"","qty":p["qty"],"title":p["title"]+" | "+json.dumps(p["spec"])}]
+                res=E.store("POST","/api/internal/market/order",{"plat":"ebay","ext_id":p["order"] or mid,"ship":p["ship"],"items":items}); n+=0 if res.get("dup") else 1
+        print("gmail",str(make_header(decode_header(msg.get("Subject",""))))[:70],"->",res); new.append(mid)
+    M.logout()
+    if new: E.store("POST","/api/internal/kv/gmail_seen",{"v":(list(seen)+new)[-2000:]})
+    return n
 
 if __name__=="__main__":
     n=0
@@ -132,4 +156,6 @@ if __name__=="__main__":
     except Exception as e: print("etsy poll error",e)
     try: n+=mail_poll()
     except Exception as e: print("mail poll error",e)
+    try: n+=gmail_poll()
+    except Exception as e: print("gmail poll error",e)
     print("new marketplace orders:",n)

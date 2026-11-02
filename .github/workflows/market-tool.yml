@@ -21,6 +21,7 @@ jobs:
           ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
           ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          FLIPPING_GMAIL_APP_PASSWORD: ${{ secrets.FLIPPING_GMAIL_APP_PASSWORD }}
           CMD: ${{ inputs.cmd }}
           ARG: ${{ inputs.arg }}
         run: python3 scripts/market_tool.py
