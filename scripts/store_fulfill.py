@@ -86,8 +86,8 @@ def fulfil(o):
         lab=PRODS[it["prod"]].get("label")
         if lab: pa[lab["pos"]]=label_url(it["prod"],lab)
         items.append({"print_provider_id":99,"blueprint_id":BP[it["prod"]],"variant_id":variant(it["prod"],it["color"],it["size"]),"print_areas":pa,"quantity":it["qty"]})
-    body={"external_id":o["id"],"label":o["id"],"line_items":items,"shipping_method":1,"is_printify_express":False,"send_shipping_notification":True,
-      "address_to":{"first_name":nm[0],"last_name":nm[1] if len(nm)>1 else ".","email":o["email"],"phone":s.get("phone") or "","country":"US","region":s["st"],"address1":s["a1"],"address2":s.get("a2",""),"city":s["city"],"zip":s["zip"]}}
+    body={"external_id":o["id"],"label":o["id"],"line_items":items,"shipping_method":1,"is_printify_express":False,"send_shipping_notification":not d.get("source"),
+      "address_to":{"first_name":nm[0],"last_name":nm[1] if len(nm)>1 else ".","email":o["email"] or "orders@alphadogstyles.com","phone":s.get("phone") or "","country":"US","region":s["st"],"address1":s["a1"],"address2":s.get("a2",""),"city":s["city"],"zip":s["zip"]}}
     r=pf("POST",f"/v1/shops/{SHOP}/orders.json",body)
     pf("POST",f"/v1/shops/{SHOP}/orders/{r['id']}/send_to_production.json",{})
     st("POST",f"/api/internal/orders/{o['id']}",{"status":"in_production","printify_id":r["id"]}); print("sent",o["id"],r["id"],flush=True)
@@ -105,6 +105,12 @@ for o in st("GET","/api/internal/orders?status=paid")["items"]:
 for o in st("GET","/api/internal/orders?status=in_production")["items"]:
     try:
         p=pf("GET",f"/v1/shops/{SHOP}/orders/{o['printify_id']}.json"); sh=p.get("shipments") or []
-        if sh and sh[0].get("url"): st("POST",f"/api/internal/orders/{o['id']}",{"status":"shipped","tracking":sh[0]["url"]}); print("shipped",o["id"])
+        if sh and sh[0].get("url"):
+            st("POST",f"/api/internal/orders/{o['id']}",{"status":"shipped","tracking":sh[0]["url"]}); print("shipped",o["id"])
+            src=(o.get("data") or {}).get("source")
+            if src:  # marketplace order: give the buyer's marketplace the tracking number
+                try:
+                    import market_orders; print("marketplace tracking",market_orders.push_tracking(src["plat"],src["ext_id"],sh[0].get("carrier",""),sh[0].get("number","")))
+                except Exception as e: print("marketplace tracking error",o["id"],e)
     except Exception as e: print("track error",o["id"],e)
 print("DONE")

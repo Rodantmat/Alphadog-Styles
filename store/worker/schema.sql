@@ -16,3 +16,4 @@ CREATE INDEX IF NOT EXISTS ix_custom_photos_req ON custom_photos(req_id);
 CREATE TABLE IF NOT EXISTS custom_art(req_id TEXT, part TEXT, mime TEXT, body TEXT, created BIGINT, PRIMARY KEY(req_id,part));
 CREATE TABLE IF NOT EXISTS support_inbox(id BIGSERIAL PRIMARY KEY, mailbox TEXT, from_addr TEXT, subject TEXT, body TEXT, raw_size INTEGER, status TEXT DEFAULT 'new', created BIGINT, handled BIGINT, reply TEXT);
 CREATE INDEX IF NOT EXISTS ix_support_status ON support_inbox(status);
+CREATE TABLE IF NOT EXISTS kv(k TEXT PRIMARY KEY, v TEXT, updated BIGINT);

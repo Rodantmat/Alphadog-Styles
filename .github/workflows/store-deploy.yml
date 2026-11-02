@@ -18,6 +18,12 @@ jobs:
       - name: Check credentials
         run: |
           if [ -z "$CLOUDFLARE_API_TOKEN" ] || [ -z "$CLOUDFLARE_ACCOUNT_ID" ]; then echo "Cloudflare secrets not set yet - skipping deploy"; echo "SKIP=1" >> $GITHUB_ENV; fi
+      - uses: actions/setup-python@v5
+        if: env.SKIP != '1'
+        with: { python-version: "3.12" }
+      - name: Render marketplace listing photos (store/mk, not committed)
+        if: env.SKIP != '1'
+        run: pip install -q cairosvg pillow numpy && python3 scripts/market_plan.py | tail -1 && python3 scripts/market_images.py | tail -2
       - name: Create database and deploy
         if: env.SKIP != '1'
         working-directory: store/worker
@@ -35,6 +41,7 @@ jobs:
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
           APPLE_KEY_ID: ${{ secrets.APPLE_KEY_ID }}
           APPLE_PRIVATE_KEY: ${{ secrets.APPLE_PRIVATE_KEY }}
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
         run: |
           set -e
           npm install --silent
@@ -50,7 +57,7 @@ jobs:
           HDR=$(python3 ../../scripts/hyperdrive_setup.py | tail -1); echo "$HDR" | sed 's/HYPERDRIVE_ID=\(....\).*/HYPERDRIVE_ID=\1.../'
           case "$HDR" in HYPERDRIVE_ID=*) printf '\n[[hyperdrive]]\nbinding = "HYPERDRIVE"\nid = "%s"\n' "${HDR#HYPERDRIVE_ID=}" >> wrangler.toml ;; esac
           npx wrangler@4 deploy
-          for v in DATABASE_URL ADMIN_TOKEN STRIPE_SECRET_KEY RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY; do
+          for v in DATABASE_URL ADMIN_TOKEN STRIPE_SECRET_KEY RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY ETSY_KEYSTRING; do
             val=$(printf '%s' "${!v}" | tr -d '\r\n'); if [ -n "$val" ]; then printf '%s' "$val" | npx wrangler@4 secret put $v; fi
           done
           # Stripe webhook: one endpoint for the live domain (secret is only returned at creation); remove old endpoints for other URLs.

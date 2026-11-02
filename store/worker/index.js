@@ -3,6 +3,7 @@ import {priceCents} from "../js/placement.js";
 import {makeDB,diag} from "./db.js";
 import PostalMime from "postal-mime";
 import cat from "../data/catalog.json";
+import MPLAN from "../data/market_plan.json";
 const esc=x=>String(x).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const J=(o,s=200,h={})=>new Response(JSON.stringify(o),{status:s,headers:{"content-type":"application/json","cache-control":"no-store",...h}});
 const err=(m,s=400)=>J({error:m},s);
@@ -106,6 +107,18 @@ function validItem(it,custId){
   const front=side(it.front,"front"),back=side(it.back,"back"); if(front===false||back===false||(!front&&!back))return null;
   return {prod:it.prod,color:it.color,size:it.size,qty,front,back};
 }
+
+/* ---------- marketplaces (consolidated listings, not linked to Printify): SKU -> store order item ---------- */
+function marketItem(sku,qty){
+  const m=String(sku||"").trim().toUpperCase().match(/^([A-Z])-([A-Z]{2})-(\d)-([A-Z]{2})(?:-(\w+))?$/); if(!m)return null;
+  const pk=Object.keys(MPLAN.products).find(k=>MPLAN.products[k].L===m[1]); if(!pk)return null; const P=MPLAN.products[pk];
+  const breed=Object.keys(MPLAN.codes.breed).find(k=>MPLAN.codes.breed[k]===m[2]); const d=P.designs.find(x=>x.code===m[3]); const c=P.colors.find(x=>x.code===m[4]);
+  if(!breed||!d||!c)return null; const [theme,style]=d.art.split("_");
+  const side=o=>o?{part:o.startsWith("head")?"head":"body",size:o.slice(-1),breed,theme,style}:null;
+  return validItem({prod:c.prod,color:c.color,size:m[5]||"One size",qty,front:side(d.front),back:side(d.back)});
+}
+async function kvGet(DB,k){const r=await DB.prepare("SELECT v FROM kv WHERE k=?").bind(k).first();return r?JSON.parse(r.v):null}
+async function kvSet(DB,k,v){await DB.prepare("INSERT INTO kv(k,v,updated) VALUES(?,?,?) ON CONFLICT(k) DO UPDATE SET v=EXCLUDED.v,updated=EXCLUDED.updated").bind(k,JSON.stringify(v),Date.now()).run()}
 export default {
  // Inbound email (Cloudflare Email Routing -> this Worker): support@ and customization@ land in support_inbox for the scheduled support assistant.
  async email(message,env,ctx){
@@ -250,9 +263,44 @@ export default {
     if(m==="POST"){const id=String(body.id||rnd(6));await DB.prepare("INSERT INTO designs(id,email,data,created) VALUES(?,?,?,?) ON CONFLICT(id) DO UPDATE SET data=EXCLUDED.data,created=EXCLUDED.created WHERE designs.email=EXCLUDED.email").bind(id,e,JSON.stringify(body.s||{}).slice(0,6000),now()).run();return J({id})}
   }
   let mm;if((mm=path.match(/^\/api\/designs\/([\w-]+)$/))&&m==="DELETE"){const e=await auth(req,env);if(!e)return err("Log in first",401);await DB.prepare("DELETE FROM designs WHERE id=? AND email=?").bind(mm[1],e).run();return J({ok:true})}
+  /* ----- Etsy OAuth (owner connects the shop once): /api/market/etsy/connect?t=ADMIN_TOKEN ----- */
+  if(path==="/api/market/etsy/connect"&&m==="GET"){
+    if(!env.ADMIN_TOKEN||u.searchParams.get("t")!==env.ADMIN_TOKEN)return err("Forbidden",403);
+    if(!env.ETSY_KEYSTRING)return err("ETSY_KEYSTRING missing",500);
+    const ver=rnd(32),state=rnd(16),ch=b64u(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(ver)));
+    await DB.prepare("INSERT INTO oauth_states(state,prov,next,exp) VALUES(?,?,?,?)").bind(state,"etsy",ver,now()+15*60000).run();
+    const q=new URLSearchParams({response_type:"code",client_id:env.ETSY_KEYSTRING,redirect_uri:env.SITE_URL+"/api/market/etsy/callback",scope:"listings_r listings_w listings_d transactions_r transactions_w shops_r shops_w profile_r email_r",state,code_challenge:ch,code_challenge_method:"S256"});
+    return Response.redirect("https://www.etsy.com/oauth/connect?"+q,302);
+  }
+  if(path==="/api/market/etsy/callback"&&m==="GET"){
+    const st=await DB.prepare("SELECT next,exp FROM oauth_states WHERE state=? AND prov='etsy'").bind(u.searchParams.get("state")||"").first();
+    await DB.prepare("DELETE FROM oauth_states WHERE state=?").bind(u.searchParams.get("state")||"").run();
+    if(!st||st.exp<now())return new Response("Link expired - start again.",{status:400});
+    const r=await fetch("https://api.etsy.com/v3/public/oauth/token",{method:"POST",headers:{"content-type":"application/x-www-form-urlencoded"},body:new URLSearchParams({grant_type:"authorization_code",client_id:env.ETSY_KEYSTRING,redirect_uri:env.SITE_URL+"/api/market/etsy/callback",code:u.searchParams.get("code")||"",code_verifier:st.next})});
+    const j=await r.json().catch(()=>({}));
+    if(!j.access_token)return new Response("Etsy did not return a token: "+JSON.stringify(j).slice(0,300),{status:400});
+    await kvSet(DB,"etsy_token",{...j,obtained:now()});
+    return new Response("<h2 style='font-family:system-ui'>Etsy connected to AlphaDog Styles. You can close this tab.</h2>",{headers:{"content-type":"text/html"}});
+  }
   /* ----- internal (GitHub Actions fulfillment + payment hooks) ----- */
   if(path.startsWith("/api/internal/")){
     if(!env.ADMIN_TOKEN||req.headers.get("x-admin-token")!==env.ADMIN_TOKEN)return err("Forbidden",403);
+    let km;if((km=path.match(/^\/api\/internal\/kv\/([\w.-]+)$/))){if(m==="GET")return J({v:await kvGet(DB,km[1])});if(m==="POST"){await kvSet(DB,km[1],body.v);return J({ok:true})}}
+    if(path==="/api/internal/market/decode"&&m==="POST")return J({items:(body.skus||[]).map(s=>({sku:s,item:marketItem(s,1)}))});
+    if(path==="/api/internal/market/order"&&m==="POST"){
+      // body: {plat, ext_id, email, ship:{name,a1,a2,city,st,zip,phone}, items:[{sku,qty,title}], test}
+      const plat=String(body.plat||"").replace(/[^a-z]/g,""),ext=String(body.ext_id||"").slice(0,80); if(!plat||!ext)return err("plat/ext_id required");
+      const id=("MK-"+plat.slice(0,2)+"-"+ext).toUpperCase().replace(/[^A-Z0-9-]/g,"").slice(0,40);
+      const ex=await DB.prepare("SELECT id,status FROM orders WHERE id=?").bind(id).first(); if(ex)return J({ok:true,dup:true,id,status:ex.status});
+      const items=[],bad=[];for(const x of body.items||[]){const it=marketItem(x.sku,x.qty||1);if(it)items.push(it);else bad.push(x)}
+      const s=body.ship||{}; const shipOk=s.name&&s.a1&&s.city&&s.st&&s.zip;
+      const status=bad.length||!items.length||!shipOk?"needs_attention":(body.test?"paid_test":"paid");
+      const data={items,ship:{name:s.name||"",a1:s.a1||"",a2:s.a2||"",city:s.city||"",st:s.st||"",zip:s.zip||"",phone:s.phone||""},source:{plat,ext_id:ext,bad,titles:(body.items||[]).map(x=>x.title||"")}};
+      await DB.prepare("INSERT INTO orders(id,email,data,total,status,created,updated) VALUES(?,?,?,?,?,?,?)").bind(id,String(body.email||"").toLowerCase(),JSON.stringify(data),parseInt(body.total)||0,status,now(),now()).run();
+      const lines=items.map(i=>`${i.qty} x ${i.prod} ${i.color} ${i.size} ${(i.front||i.back||{}).breed||""}`).join("<br>");
+      await mail(env,env.OWNER_EMAIL,`${status==="needs_attention"?"ACTION NEEDED: ":""}New ${plat} order ${ext}`,`<p>${plat} order <b>${ext}</b> - status <b>${status}</b>.</p><p>${lines||"(no decodable items)"}</p>${bad.length?`<p>Could not decode: ${bad.map(b=>b.sku||b.title).join(", ")}</p>`:""}${shipOk?"":"<p>Shipping address missing.</p>"}`);
+      return J({ok:true,id,status,bad});
+    }
     if(path==="/api/internal/custom"&&m==="GET"){const st=u.searchParams.get("status");const r=await DB.prepare("SELECT id,token,email,name,lang,status,quote,note,data,created,updated FROM custom_requests"+(st?" WHERE status=?":"")+" ORDER BY created DESC LIMIT 100").bind(...(st?[st]:[])).all();
       const out=[];for(const x of r.results){const n=await DB.prepare("SELECT count(*)::int AS n FROM custom_photos WHERE req_id=?").bind(x.id).first();const a=(await DB.prepare("SELECT part FROM custom_art WHERE req_id=?").bind(x.id).all()).results.map(y=>y.part);out.push({...x,data:JSON.parse(x.data),photos:n.n,art:a})}return J({items:out})}
     let im;

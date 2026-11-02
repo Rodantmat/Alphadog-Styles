@@ -11,8 +11,16 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
       - run: pip install cairosvg pillow
+      - name: Pull marketplace orders (Etsy / eBay / TikTok consolidated listings)
+        env:
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
+        run: python3 scripts/market_orders.py || true
       - name: Fulfil paid orders and update tracking
         env:
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
           PRINTIFY_API_SHOP_ID: "29559517"
           STORE_URL: "https://alphadogstyles.com"
