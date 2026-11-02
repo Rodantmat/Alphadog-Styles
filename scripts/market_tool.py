@@ -25,3 +25,14 @@ elif cmd=="orders-poll":
     import market_orders; print(market_orders.mail_poll())
 elif cmd=="gmail-poll":
     import market_orders; print(market_orders.gmail_poll())
+elif cmd=="tiktok-list":
+    import urllib.request,json,os,time
+    T=os.environ["PRINTIFY_TOKEN"]; out=[]; page=1
+    while True:
+        r=json.load(urllib.request.urlopen(urllib.request.Request(f"https://api.printify.com/v1/shops/29546485/products.json?limit=50&page={page}",headers={"Authorization":"Bearer "+T,"User-Agent":"a"}),timeout=120))
+        for p in r["data"]:
+            ext=(p.get("external") or {}).get("id")
+            if ext: out.append({"pid":p["id"],"tt":str(ext),"title":p["title"]})
+        if page>=r.get("last_page",1): break
+        page+=1
+    os.makedirs("out",exist_ok=True); json.dump(out,open("out/market_tiktok_live.json","w"),indent=0); print("TIKTOK LIVE",len(out))
