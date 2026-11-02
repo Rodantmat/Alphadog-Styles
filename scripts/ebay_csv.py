@@ -29,14 +29,18 @@ def rows(L):
     bname=lambda b: T.BR[b] if len(T.BR[b])<=30 else short(b)
     dname=lambda d: d["name"].replace("·","-")
     specs=[("Dog Breed",[bname(b) for b in L["breeds"]])] if multi else []
-    specs+=[("Design",[dname(D[d]) for d in L["designs"]]),("Hat" if cap else "Color",[C[c]["name"] for c in L["colors"]])]
+    CAPST={"cap_dad":"Dad Hat","cap_foam":"Trucker Hat","cap_mesh":"Mesh Trucker Hat"}
+    cstyle=lambda c: CAPST[C[c]["prod"]]; ccolor=lambda c: C[c]["name"].split(" ",2)[-1] if C[c]["prod"]=="cap_dad" else C[c]["name"].replace("Foam Trucker ","").replace("Mesh Trucker ","")
+    specs+=[("Design",[dname(D[d]) for d in L["designs"]])]
+    if cap: specs+=[("Style",list(dict.fromkeys(cstyle(c) for c in L["colors"]))),("Color",list(dict.fromkeys(ccolor(c) for c in L["colors"])))]
+    else: specs.append(("Color",[C[c]["name"] for c in L["colors"]]))
     if not cap: specs.append(("Size",L["sizes"]))
     parent={h:"" for h in HDR}
     parent.update({HDR[0]:"Add","CustomLabel":L["id"].upper(),"*Category":CAT[L["prod"]],"*Title":L["title"][:80],
       "RelationshipDetails":"|".join(f"{n}="+";".join(v) for n,v in specs),"*ConditionID":1000,
       "PicURL":"|".join(SITE+f for f in (m["hero"][:10]+[m["lineup"]])[:12]),"*Description":html(L),"*Format":"FixedPrice","*Duration":"GTC",
       "*Location":"San Diego, CA",**POL,"C:Brand":"AlphaDog Styles","C:Department":DEPT[L["prod"]],"C:Type":TYPE[L["prod"]],
-      "C:Style":"Graphic Tee" if L["prod"]=="tee" else ("Pullover" if L["prod"]=="hoodie" else ""),"C:Size Type":"" if cap else "Regular","C:Theme":"Animals, Dogs",
+      "C:Style":"Graphic Tee" if L["prod"]=="tee" else ("Pullover" if L["prod"]=="hoodie" else ("Polo" if L["prod"]=="polo" else ("Tank Top" if L["prod"] in("tank","wtank") else ""))),"C:Size Type":"" if cap else "Regular","C:Size":"One Size" if cap else "","C:Theme":"Animals, Dogs",
       "C:Material":"Cotton" if L["prod"] in("tee","tank") else ("Cotton Blend" if L["prod"]!="cap" else "Cotton"),
       "C:Sleeve Length":{"tee":"Short Sleeve","hoodie":"Long Sleeve","wtank":"Sleeveless","tank":"Sleeveless","polo":"Short Sleeve"}.get(L["prod"],""),
       "C:Neckline":{"tee":"Crew Neck","tank":"Scoop Neck","wtank":"Scoop Neck","polo":"Collared"}.get(L["prod"],""),
@@ -48,7 +52,9 @@ def rows(L):
                 for s in L["sizes"]:
                     r={h:"" for h in HDR}; det=[]
                     if multi: det.append(f"Dog Breed={bname(b)}")
-                    det.append(f"Design={dname(D[dc])}"); det.append(("Hat=" if cap else "Color=")+C[cc]["name"])
+                    det.append(f"Design={dname(D[dc])}")
+                    if cap: det+= [f"Style={cstyle(cc)}",f"Color={ccolor(cc)}"]
+                    else: det.append("Color="+C[cc]["name"])
                     if not cap: det.append(f"Size={s}")
                     r.update({"CustomLabel":sku(L["prod"],b,dc,cc,s),"Relationship":"Variation","RelationshipDetails":"|".join(det),
                               "*StartPrice":f"{price(C[cc]['prod'],s):.2f}","*Quantity":10})
@@ -60,7 +66,7 @@ if __name__=="__main__":
     skip=set(x.upper() for x in sys.argv[sys.argv.index("--skip")+1].split(",")) if "--skip" in sys.argv else set()
     only=sys.argv[sys.argv.index("--only")+1] if "--only" in sys.argv else None
     lim=int(sys.argv[sys.argv.index("--limit")+1]) if "--limit" in sys.argv else None
-    Ls=[l for l in plan["listings"] if l["plat"]=="ebay" and (not only or l["id"]==only) and l["id"].upper() not in skip][:lim]
+    Ls=[l for l in plan["listings"] if l["plat"]=="ebay" and (not only or l["id"]==only or l["id"].startswith(only+"-")) and l["id"].upper() not in skip][:lim]
     os.makedirs(f"{ROOT}/store/mk/feeds",exist_ok=True)
     name="ebay_listings.csv" if not (only or lim or skip) else (f"ebay_listings_{only or lim}.csv" if (only or lim) else "ebay_listings_rest.csv")
     with open(f"{ROOT}/store/mk/feeds/{name}","w",newline="",encoding="utf-8") as fh:
