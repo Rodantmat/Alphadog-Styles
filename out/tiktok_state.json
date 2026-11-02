@@ -1,0 +1,22 @@
+{
+ "pilot": "tiktok-tee-06",
+ "done": {
+  "tiktok-tee-06": "1732809962848555454",
+  "tiktok-tee-01": "1732809984836800958",
+  "tiktok-tee-02": "1732809987664613822",
+  "tiktok-tee-03": "1732809986685178302",
+  "tiktok-tee-04": "1732809988689269182",
+  "tiktok-tee-05": "1732809987484455358"
+ },
+ "notes": {
+  "tiktok-tee-01": "main photos m05,m06 missing (upload stalled) - add later",
+  "recheck_last_row_sku": [
+   "tiktok-tee-06",
+   "tiktok-tee-01",
+   "tiktok-tee-02",
+   "tiktok-tee-03",
+   "tiktok-tee-04"
+  ],
+  "why": "last row of each variation page (rows 50,100) SKU edit may not have committed before fixRows fix; verify after review"
+ }
+}
