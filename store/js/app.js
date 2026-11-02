@@ -62,11 +62,38 @@ async function home(){
   app.innerHTML=`<div class="wrap hero"><div><span class="eyebrow">${t("Made to order · Shipped across the US")}</span><h1>${t("Your best friend, on your best tee.")}</h1><p>${t("33 breeds, 2 art styles, 3 moods and every placement you can imagine. Design it your way, we print it just for you.")}</p><div class="cta"><a class="btn" href="#/design">${t("Design yours")}</a><a class="btn ghost" href="#/shop">${t("Browse designs")}</a></div></div><div class="stage" id="stage"><div class="blob" style="width:180px;height:180px;background:#ffd8a8;top:-40px;right:-30px"></div><div class="blob" style="width:120px;height:120px;background:#fff1d6;bottom:20px;left:-30px"></div></div></div>
   <div class="marquee"><span>${names}<em>✦</em>${names}<em>✦</em></span></div>
   <section class="sec"><div class="wrap"><div class="sh"><div><h2>${t("Fresh from the kennel")}</h2><p>${t("Today's picks. Tap any design to make it yours.")}</p></div><a class="btn ghost sm" href="#/shop">${t("See all 198 designs")}</a></div><div class="grid">${feat}</div></div></section>
-  ${customBanner()}<section class="sec"><div class="wrap"><div class="sh"><div><h2>${t("Real garments, real art")}</h2><p>${t("Premium tees and hoodies, printed to order.")}</p></div><a class="btn ghost sm" href="#/design">${t("Design yours")}</a></div><div class="look">${[1,2,3,4,5,6].map(i=>`<a href="#/design"><img loading="lazy" alt="${esc(t("Printed tee mockup {0}",i))}" src="img/look-${i}.webp"></a>`).join("")}</div></div></section>
+  ${customBanner()}<section class="sec"><div class="wrap"><div class="sh"><div><h2>${t("Real garments, real art")}</h2><p>${t("Premium tees and hoodies, printed to order.")}</p></div><a class="btn ghost sm" href="#/design">${t("Design yours")}</a></div><div class="look">${[1,2,3,4,5,6].map(i=>`<a href="#/design" class="lk" data-k="${i}" aria-label="${esc(t("Printed tee mockup {0}",i))}"><img loading="lazy" alt="" src="img/look-${i}.webp"></a>`).join("")}</div></div></section>
   <section class="sec alt"><div class="wrap"><div class="sh"><div><h2>${t("Three simple steps")}</h2></div></div><div class="steps"><div class="step"><i>1</i><h3>${t("Pick your pup")}</h3><p>${t("Choose from 33 breeds, in continuous line or geometric art, in Classic, Cool or Heart.")}</p></div><div class="step"><i>2</i><h3>${t("Make it yours")}</h3><p>${t("Front, back or both. Head or full body, small emblem or big statement. Different dogs on each side? Go for it.")}</p></div><div class="step"><i>3</i><h3>${t("We print and ship")}</h3><p>${t("Every piece is printed to order on premium blanks and shipped to your door.")}</p></div></div></div></section>
   <section class="sec"><div class="wrap"><div class="feat"><div><h3>${t("Premium blanks")}</h3><p>${t("Soft Bella+Canvas tees and cozy heavyweight hoodies that survive wash after wash.")}</p></div><div><h3>${t("Truly custom")}</h3><p>${t("You choose breed, style, placement and color. No two combinations look the same.")}</p></div><div><h3>${t("Printed on demand")}</h3><p>${t("Nothing sits in a warehouse. Your order is made when you order it.")}</p></div><div><h3>${t("Easy help")}</h3><p>${t("Questions? We answer fast. See {0}.",`<a href="#/page/faq"><u>${t("FAQ")}</u></a>`)}</p></div></div></div></section>`;
   watchMocks();
-  const st=$("#stage"); st.insertAdjacentHTML("beforeend",await renderSVG("tee","front",cat.products[0].colors[1],{part:"head",size:"l",breed:"poodle",theme:"line",style:"classic"}));
+  heroCarousel($("#stage")); looksMix();
+}
+/* hero: auto-rotating showcase, no controls. Every slide is a different product, color, breed and design. */
+function randMock(prev){
+  const prods=cat.products.filter(p=>p.colors.some(c=>c[2]));let p,col,b,th,st,tries=0;
+  do{p=prods[Math.floor(Math.random()*prods.length)];const ok=p.colors.filter(c=>c[2]);col=ok[Math.floor(Math.random()*ok.length)];
+     b=cat.breeds[Math.floor(Math.random()*cat.breeds.length)].slug;th=cat.themes[Math.floor(Math.random()*cat.themes.length)].id;st=cat.styles[Math.floor(Math.random()*cat.styles.length)].id;tries++}
+  while(prev&&tries<30&&(p.id===prev.p||col[0]===prev.c||b===prev.b||th+st===prev.d||(/white/i.test(col[0])&&!/\//.test(col[0])&&Math.random()<.6)));
+  const small=p.rule==="chest"||p.rule==="cap";const part=small?"head":(Math.random()<.5?"head":"body");
+  return {p:p.id,c:col[0],b,d:th+st,col,args:{part,size:small?"s":"l",breed:b,theme:th,style:st}};
+}
+async function heroCarousel(stage){
+  if(!stage)return;const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;let prev=null,cur=null,busy=false;
+  const show=async()=>{if(busy||document.hidden||!document.body.contains(stage))return;busy=true;
+    try{const m=randMock(prev);prev=m;const svg=await renderSVG(m.p,"front",m.col,m.args);const el=document.createElement("div");el.className="slide";el.innerHTML=svg;
+      el.setAttribute("aria-label",`${breedName(m.b)} · ${prodName(m.p)} · ${colorLabel(m.p,m.c)}`);stage.appendChild(el);
+      await new Promise(r=>{const im=new Image();im.onload=im.onerror=r;im.src=photoUrlOf(m.p,m.col)});
+      requestAnimationFrame(()=>el.classList.add("on"));if(cur){const old=cur;old.classList.remove("on");setTimeout(()=>old.remove(),900)}cur=el}catch(e){}
+    busy=false};
+  await show();if(reduce)return;
+  const tick=setInterval(()=>{if(!document.body.contains(stage)){clearInterval(tick);return}if(!stage.matches(":hover"))show()},4000);
+}
+const photoUrlOf=(pid,col)=>`img/${pid}_${col[3]||"white"}_front.webp`;
+/* "Real garments" strip: every tile a different garment + color, no all-white row */
+async function looksMix(){
+  const tiles=$$(".look .lk");let prev=null;const used=new Set();
+  for(const a of tiles){let m;let n=0;do{m=randMock(prev);n++}while(n<20&&(used.has(m.p+m.c)||/^white$|^solid white$/i.test(m.c)));used.add(m.p+m.c);prev=m;
+    try{a.innerHTML=await renderSVG(m.p,"front",m.col,m.args);a.classList.add("mk")}catch(e){}}
 }
 function shop(q){
   app.dataset.title="Shop";
@@ -240,7 +267,7 @@ async function admin(q,[sec]){
 /* ---------- account ---------- */
 function auth(q){user={email:q.email,token:q.token};ls.set("ad_user",user);refreshAcct();toast(t("Welcome!"));const pend=ls.get("ad_pending",null);if(pend&&q.next==="design"){window.__edit=pend.s;try{localStorage.removeItem("ad_pending")}catch{}saveDesign(pend.s).then(()=>{location.hash="#/design"});return}location.hash="#/"+(q.next&&/^[\w/?=&-]+$/.test(q.next)?q.next:"account")}
 const SOC={google:["Google",'<svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.6 2.4 30.2 0 24 0 14.6 0 6.5 5.4 2.6 13.2l7.8 6.1C12.3 13.6 17.7 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17.5z"/><path fill="#FBBC05" d="M10.4 28.7A14.5 14.5 0 0 1 9.5 24c0-1.6.3-3.2.8-4.7l-7.8-6.1A24 24 0 0 0 0 24c0 3.9.9 7.5 2.6 10.8l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.5-5.8c-2.1 1.4-4.9 2.3-8.4 2.3-6.3 0-11.7-4.1-13.6-9.8l-7.8 6.1C6.5 42.6 14.6 48 24 48z"/></svg>'],facebook:["Facebook",'<svg viewBox="0 0 24 24"><path fill="#1877F2" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>'],apple:["Apple",'<svg viewBox="0 0 24 24"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>']};
-const socialBtns=(next)=>{const pv=cfg.providers||{};return `<div class="socials">${Object.keys(SOC).map(k=>pv[k]?`<a class="btn social" href="/api/auth/oauth/${k}/start?next=${next}">${SOC[k][1]}${t("Continue with {0}",SOC[k][0])}</a>`:`<button class="btn social off" type="button" data-soc="${k}" title="${t("Not connected yet")}">${SOC[k][1]}${t("Continue with {0}",SOC[k][0])}</button>`).join("")}<div class="or"><span>${t("or use your email")}</span></div></div>`};
+const socialBtns=(next)=>{const pv=cfg.providers||{};const on=Object.keys(SOC).filter(k=>pv[k]);if(!on.length)return "";return `<div class="socials">${on.map(k=>`<a class="btn social" href="/api/auth/oauth/${k}/start?next=${next}">${SOC[k][1]}${t("Continue with {0}",SOC[k][0])}</a>`).join("")}<div class="or"><span>${t("or use your email")}</span></div></div>`};
 function login(q){
   app.dataset.title="Log in";let step=1,email="";
   const draw=()=>{app.innerHTML=`<div class="wrap narrow"><h1 style="font-size:2.2rem">${t("Log in or sign up")}</h1><p style="color:var(--mut)">${t("No password needed.")}</p>${socialBtns(q.next||"account")}${cfg.api?"":`<div class="notice">${t("Preview mode: the email service is not connected yet, so use code")} <b>123456</b>.</div>`}<form class="form" id="lf">${step===1?`<label>${t("Email")}<input type="email" name="email" required autocomplete="email" value="${esc(email)}"></label><button class="btn">${t("Send my code")}</button>`:`<label>${esc(t("Code sent to {0}",email))}<input name="code" required inputmode="numeric" pattern="\\d{6}" maxlength="6" autocomplete="one-time-code"></label><button class="btn">${t("Log in")}</button><button type="button" class="chip" id="back">${t("Use a different email")}</button>`}</form></div>`;

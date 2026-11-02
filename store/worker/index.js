@@ -178,7 +178,15 @@ export default {
       return Response.redirect(u.origin+"/#/auth?token="+token+"&email="+encodeURIComponent(email.toLowerCase())+"&next="+st.next,302)}
     catch(e){return Response.redirect(u.origin+"/#/login?err="+encodeURIComponent(e.message),302)}
   }
-  if(path==="/api/subscribe"&&m==="POST"){const e=String(body.email||"").toLowerCase();if(!okEmail(e))return err("Enter a valid email");await DB.prepare("INSERT INTO subs(email,created) VALUES(?,?) ON CONFLICT DO NOTHING").bind(e,now()).run();return J({ok:true})}
+  if(path==="/api/subscribe"&&m==="POST"){const e=String(body.email||"").trim().toLowerCase();if(!okEmail(e))return err("Enter a valid email");
+    const lg=L(body.lang);const ex=await DB.prepare("SELECT email,unsub FROM subs WHERE email=?").bind(e).first();
+    await DB.prepare("INSERT INTO subs(email,created,lang,unsub) VALUES(?,?,?,NULL) ON CONFLICT(email) DO UPDATE SET unsub=NULL,lang=EXCLUDED.lang").bind(e,now(),lg).run();
+    if(!ex||ex.unsub){const k=(await sha(e+(env.ADMIN_TOKEN||"")+"unsub")).slice(0,24);const W={en:["Welcome to the pack!","You're on the AlphaDog Styles list. We'll email you first when new breeds, colors and drops arrive - no spam, ever.","Unsubscribe"],es:["¡Bienvenido a la manada!","Ya estás en la lista de AlphaDog Styles. Te avisaremos primero de nuevas razas, colores y lanzamientos - nunca spam.","Darse de baja"],pt:["Bem-vindo à matilha!","Você está na lista da AlphaDog Styles. Avisaremos primeiro sobre novas raças, cores e lançamentos - nunca spam.","Cancelar inscrição"]}[lg]||[];
+      try{await mail(env,e,W[0],`<div style="font-family:system-ui;max-width:480px;margin:auto"><h2>${W[0]}</h2><p>${W[1]}</p><p><a href="${env.SITE_URL}/#/shop">alphadogstyles.com</a></p><p style="font-size:12px;color:#888"><a href="${env.SITE_URL}/api/unsubscribe?e=${encodeURIComponent(e)}&k=${k}">${W[2]}</a></p></div>`)}catch(x){}}
+    return J({ok:true})}
+  if(path==="/api/unsubscribe"&&m==="GET"){const e=String(u.searchParams.get("e")||"").toLowerCase();const k=(await sha(e+(env.ADMIN_TOKEN||"")+"unsub")).slice(0,24);
+    if(u.searchParams.get("k")!==k)return new Response("Invalid link",{status:400});await DB.prepare("UPDATE subs SET unsub=? WHERE email=?").bind(now(),e).run();
+    return new Response("<h2 style='font-family:system-ui'>You're unsubscribed. Sorry to see you go!</h2>",{headers:{"content-type":"text/html"}})}
   /* ----- custom design requests ----- */
   if(path==="/api/custom"&&m==="POST"){
     const e=String(body.email||"").trim().toLowerCase(); if(!okEmail(e))return err("Enter a valid email");
