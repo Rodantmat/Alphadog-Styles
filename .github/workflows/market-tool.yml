@@ -1,0 +1,28 @@
+name: market-tool
+on:
+  workflow_dispatch:
+    inputs:
+      cmd: { description: "command", required: true, default: "etsy-link" }
+      arg: { description: "argument", required: false, default: "" }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q cairosvg pillow numpy
+      - env:
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+          ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
+          ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          CMD: ${{ inputs.cmd }}
+          ARG: ${{ inputs.arg }}
+        run: python3 scripts/market_tool.py
+      - name: keep outputs
+        if: always()
+        run: |
+          git config user.name "market-bot"; git config user.email "bot@alphadogstyles.com"
+          git add out/market_*.json 2>/dev/null || true
+          git commit -qm "market-tool output" && git pull -q --rebase && git push -q || true

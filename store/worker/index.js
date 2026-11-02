@@ -265,7 +265,9 @@ export default {
   let mm;if((mm=path.match(/^\/api\/designs\/([\w-]+)$/))&&m==="DELETE"){const e=await auth(req,env);if(!e)return err("Log in first",401);await DB.prepare("DELETE FROM designs WHERE id=? AND email=?").bind(mm[1],e).run();return J({ok:true})}
   /* ----- Etsy OAuth (owner connects the shop once): /api/market/etsy/connect?t=ADMIN_TOKEN ----- */
   if(path==="/api/market/etsy/connect"&&m==="GET"){
-    if(!env.ADMIN_TOKEN||u.searchParams.get("t")!==env.ADMIN_TOKEN)return err("Forbidden",403);
+    const nn=u.searchParams.get("n")||"";const nr=nn?await DB.prepare("SELECT exp FROM oauth_states WHERE state=? AND prov='etsylink'").bind(nn).first():null;
+    if(!(env.ADMIN_TOKEN&&u.searchParams.get("t")===env.ADMIN_TOKEN)&&!(nr&&nr.exp>now()))return err("Forbidden",403);
+    if(nn)await DB.prepare("DELETE FROM oauth_states WHERE state=?").bind(nn).run();
     if(!env.ETSY_KEYSTRING)return err("ETSY_KEYSTRING missing",500);
     const ver=rnd(32),state=rnd(16),ch=b64u(await crypto.subtle.digest("SHA-256",new TextEncoder().encode(ver)));
     await DB.prepare("INSERT INTO oauth_states(state,prov,next,exp) VALUES(?,?,?,?)").bind(state,"etsy",ver,now()+15*60000).run();
@@ -286,6 +288,7 @@ export default {
   if(path.startsWith("/api/internal/")){
     if(!env.ADMIN_TOKEN||req.headers.get("x-admin-token")!==env.ADMIN_TOKEN)return err("Forbidden",403);
     let km;if((km=path.match(/^\/api\/internal\/kv\/([\w.-]+)$/))){if(m==="GET")return J({v:await kvGet(DB,km[1])});if(m==="POST"){await kvSet(DB,km[1],body.v);return J({ok:true})}}
+    if(path==="/api/internal/market/etsy/link"&&m==="POST"){const n=rnd(16);await DB.prepare("INSERT INTO oauth_states(state,prov,next,exp) VALUES(?,?,?,?)").bind(n,"etsylink","",now()+60*60000).run();return J({url:env.SITE_URL+"/api/market/etsy/connect?n="+n})}
     if(path==="/api/internal/market/decode"&&m==="POST")return J({items:(body.skus||[]).map(s=>({sku:s,item:marketItem(s,1)}))});
     if(path==="/api/internal/market/order"&&m==="POST"){
       // body: {plat, ext_id, email, ship:{name,a1,a2,city,st,zip,phone}, items:[{sku,qty,title}], test}
