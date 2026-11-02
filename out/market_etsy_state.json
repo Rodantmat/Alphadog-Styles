@@ -62,5 +62,12 @@
   "etsy-polo-08": 4607408228,
   "etsy-cap-08": 4607344487
  },
- "done": {}
+ "done": {},
+ "failed": {
+  "etsy-tee-01": {
+   "update": "ok",
+   "inventory": 400,
+   "inventory_msg": "{\"error\":\"price_on_property: unsupported number of property IDs. Supports only zero or all 3 variation properties, as at least one `*_on_property` field is linked to all 3 properties.\"}\n"
+  }
+ }
 }
