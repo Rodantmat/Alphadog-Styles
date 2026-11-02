@@ -4,6 +4,8 @@ on:
     inputs:
       cmd: { description: "command", required: true, default: "etsy-link" }
       arg: { description: "argument", required: false, default: "" }
+permissions:
+  contents: write
 jobs:
   run:
     runs-on: ubuntu-latest

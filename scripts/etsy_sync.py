@@ -9,12 +9,15 @@ plan=T.plan; imgs=json.load(open(f"{ROOT}/store/data/market_images.json"))
 STATE=f"{ROOT}/out/market_etsy_state.json"; st=json.load(open(STATE)) if os.path.exists(STATE) else {"map":{},"done":{}}
 TAX_WORDS={"tee":["t-shirts"],"hoodie":["hoodies","sweatshirts"],"wtank":["tank tops"],"tank":["tank tops"],"polo":["polo"],"cap":["baseball","trucker","hats"]}
 def save(): os.makedirs(os.path.dirname(STATE),exist_ok=True); json.dump(st,open(STATE,"w"),indent=1)
-def taxonomy(pk,women=False):
+TAXPATH={"tee":["Gender-Neutral Adult Clothing > Tops & Tees > T-shirts"],"hoodie":["Gender-Neutral Adult Clothing > Hoodies & Sweatshirts > Hoodies"],
+ "tank":["Gender-Neutral Adult Clothing > Tops & Tees > Tanks"],"wtank":["Women's Clothing > Tops & Tees > Tank","Women's Clothing > Tops & Tees > Tanks"],
+ "polo":["Gender-Neutral Adult Clothing > Tops & Tees > Polos"],"cap":["Hats & Caps > Baseball","Hats & Caps > Trucker","Hats & Head Coverings > Hats & Caps"]}
+def taxonomy(pk):
     pr=json.load(open(f"{ROOT}/out/market_etsy_probe.json"))["taxonomy"]
-    cands=[(i,s) for i,s in pr if any(w in s.lower() for w in TAX_WORDS[pk])]
-    pref="women" if pk=="wtank" else ("unisex" if pk in("tee","hoodie","tank") else "men")
-    best=[c for c in cands if pref in c[1].lower()] or [c for c in cands if "clothing" in c[1].lower() or "hats" in c[1].lower()] or cands
-    return best[0][0] if best else None
+    for want in TAXPATH[pk]:
+        hit=[(i,s) for i,s in pr if want in s]
+        if hit: return sorted(hit,key=lambda x:len(x[1]))[0][0] if not want.endswith("Hats & Caps") else hit[0][0]
+    return None
 def kind_of(title):
     t=title.lower()
     if "hoodie" in t or "sweatshirt" in t: return "hoodie"
