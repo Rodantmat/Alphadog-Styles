@@ -19,8 +19,7 @@ def etsy_poll():
         if not ours: continue
         if len(ours)!=len(tr): print("etsy receipt",rc["receipt_id"],"mixes old Printify items - ours only")
         items=[{"sku":t["sku"],"qty":t.get("quantity",1),"title":t.get("title","")[:80]} for t in ours]
-        if rc.get("country_iso","US")!="US": items=[]  # store ships US only -> owner gets an ACTION NEEDED email
-        ship={"name":rc.get("name",""),"a1":rc.get("first_line",""),"a2":rc.get("second_line") or "","city":rc.get("city",""),"st":rc.get("state",""),"zip":rc.get("zip",""),"phone":""}
+        ship={"name":rc.get("name",""),"a1":rc.get("first_line",""),"a2":rc.get("second_line") or "","city":rc.get("city",""),"st":rc.get("state",""),"zip":rc.get("zip",""),"phone":"","country":rc.get("country_iso") or "US"}
         tot=rc.get("grandtotal") or {}; cents=int(round(tot.get("amount",0)*100/ (tot.get("divisor") or 100))) if tot else 0
         res=E.store("POST","/api/internal/market/order",{"plat":"etsy","ext_id":str(rc["receipt_id"]),"email":rc.get("buyer_email") or "","ship":ship,"items":items,"total":cents})
         print("etsy order",rc["receipt_id"],res); n+=0 if res.get("dup") else 1

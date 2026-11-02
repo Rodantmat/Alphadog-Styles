@@ -67,7 +67,8 @@ def inventory(L,readiness):
 def sync_one(L,lid,full):
     sid=E.shop_id(); log={}
     # 1) listing text + category
-    upd={"title":L["title"],"description":T.description(L),"tags":",".join(L["tags"]),"should_auto_renew":"true"}
+    upd={"title":L["title"],"description":T.description(L),"tags":",".join(L["tags"]),"should_auto_renew":"true",
+         "shipping_profile_id":319337860724 if L["prod"]=="hoodie" else 318773465927}
     if kind_of(full["title"])!=L["prod"] or L["prod"] in("wtank","polo"):
         tx=taxonomy(L["prod"])
         if tx: upd["taxonomy_id"]=tx

@@ -296,9 +296,9 @@ export default {
       const id=("MK-"+plat.slice(0,2)+"-"+ext).toUpperCase().replace(/[^A-Z0-9-]/g,"").slice(0,40);
       const ex=await DB.prepare("SELECT id,status FROM orders WHERE id=?").bind(id).first(); if(ex)return J({ok:true,dup:true,id,status:ex.status});
       const items=[],bad=[];for(const x of body.items||[]){const it=marketItem(x.sku,x.qty||1);if(it)items.push(it);else bad.push(x)}
-      const s=body.ship||{}; const shipOk=s.name&&s.a1&&s.city&&s.st&&s.zip;
+      const s=body.ship||{}; const shipOk=s.name&&s.a1&&s.city&&s.zip&&(s.st||String(s.country||"US").toUpperCase()!=="US");
       const status=bad.length||!items.length||!shipOk?"needs_attention":(body.test?"paid_test":"paid");
-      const data={items,ship:{name:s.name||"",a1:s.a1||"",a2:s.a2||"",city:s.city||"",st:s.st||"",zip:s.zip||"",phone:s.phone||""},source:{plat,ext_id:ext,bad,titles:(body.items||[]).map(x=>x.title||"")}};
+      const data={items,ship:{name:s.name||"",a1:s.a1||"",a2:s.a2||"",city:s.city||"",st:s.st||"",zip:s.zip||"",phone:s.phone||"",country:String(s.country||"US").toUpperCase().slice(0,2)},source:{plat,ext_id:ext,bad,titles:(body.items||[]).map(x=>x.title||"")}};
       await DB.prepare("INSERT INTO orders(id,email,data,total,status,created,updated) VALUES(?,?,?,?,?,?,?)").bind(id,String(body.email||"").toLowerCase(),JSON.stringify(data),parseInt(body.total)||0,status,now(),now()).run();
       const lines=items.map(i=>`${i.qty} x ${i.prod} ${i.color} ${i.size} ${(i.front||i.back||{}).breed||""}`).join("<br>");
       await mail(env,env.OWNER_EMAIL,`${status==="needs_attention"?"ACTION NEEDED: ":""}New ${plat} order ${ext}`,`<p>${plat} order <b>${ext}</b> - status <b>${status}</b>.</p><p>${lines||"(no decodable items)"}</p>${bad.length?`<p>Could not decode: ${bad.map(b=>b.sku||b.title).join(", ")}</p>`:""}${shipOk?"":"<p>Shipping address missing.</p>"}`);

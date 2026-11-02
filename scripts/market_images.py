@@ -106,7 +106,7 @@ def plan_jobs(only=None):
             for cc in L["colors"]:
                 p2,j2=key(L["breeds"][0],L["designs"][0],cc); jobs[p2]=(p2,)+j2; m["bdc"][f"{L['breeds'][0]}|{L['designs'][0]}|{cc}"]=p2
         # hero images: first breed x first 3 designs, then other breeds design 1
-        hero=[m["bd"][f"{L['breeds'][0]}|{dc}"] for dc in L["designs"][:3]]+[m["bd"][f"{b}|{L['designs'][0]}"] for b in L["breeds"][1:]]
+        hero=[m["bd"][f"{L['breeds'][0]}|{dc}"] for dc in L["designs"][:6]]+[m["bd"][f"{b}|{L['designs'][0]}"] for b in L["breeds"][1:]]
         m["hero"]=hero
         lp=f"lineup/{L['prod']}_{L['breeds'][0]}_{L['designs'][0]}_{''.join(L['colors'])}.jpg"
         m["lineup"]=(lp,[(C[c]["prod"],C[c]["color"],C[c]["name"]) for c in L["colors"]],L["breeds"][0],D[L["designs"][0]])
