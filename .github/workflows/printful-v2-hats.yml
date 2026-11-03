@@ -1,0 +1,12 @@
+name: printful-v2-hats
+on: workflow_dispatch
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: mkdir -p out && python3 scripts/printful_v2_hatplacements.py
+      - run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/printful_v2_hats.json && git commit -m "printful v2 hats" && git pull -q --rebase && git push || true
