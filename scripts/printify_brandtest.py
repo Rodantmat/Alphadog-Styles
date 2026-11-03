@@ -48,6 +48,12 @@ if MODE=="cap":
    "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":up["french_bulldog/line_classic/front_blackink"],"x":0.5,"y":0.5,"scale":0.55,"angle":0}]}]}]}
   mk("cap",src,["Khaki","Stone"],{"position":"back_hat_embroidery","images":[{"id":ids["capback_blackink"],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
   src2=json.loads(json.dumps(src)); mk("cap_noback",src2,["Khaki","Stone"],None)
+if MODE=="capfront":
+  fid=upl("shop/brand/capfront_fb_line_classic_test.png")
+  vs=[v for v in call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"] if v["options"].get("color") in ("Khaki","Stone")]
+  src={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in vs],
+   "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":fid,"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]}]}
+  mk("cap_frontbrand",src,["Khaki","Stone"],None)
 old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
 old.update(res);res=old
 json.dump(res,open("out/brandtest/result.json","w"),indent=1); print(json.dumps(res,indent=1))
