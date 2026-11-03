@@ -10,6 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - run: pip install -q pillow
       - env:
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
         run: mkdir -p out && MODE=${{ inputs.mode }} python3 scripts/printify_brandtest.py
