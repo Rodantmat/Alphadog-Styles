@@ -58,24 +58,25 @@ def cart_shard(qa, browser, p):
             i += 1
     qa.data["cart_plan_lines"] = len(plan)
 
-    badge = 0
-    for n, it in enumerate(plan):
-        qa.go(page, f"#/design?prod={it['prod']}&breed={it['bf']}&theme={it['th']}&style={it['st']}&qa={n}", wait="#pv svg", quiet=False)
-        click(f"#ctl .sw[data-color='{it['color']}']"); click(f"#ctl [data-size='{it['size']}']")
-        click(f"#ctl [data-k=front][data-opt='{it['fo']}']")
-        if it["bo"] is not None:
-            click(f"#ctl [data-k=back][data-opt='{it['bo']}']")
-            if it["bo"] != "none":
-                page.select_option("#ctl select[data-k=back]", it["bb"])
-                click(f"#ctl [data-k=back][data-f=theme][data-v='{it['thb']}']"); click(f"#ctl [data-k=back][data-f=style][data-v='{it['stb']}']")
-        for _ in range(it["qty"] - 1):
-            click("#ctl [data-q='1']")
-        page.click("#add")
-        page.wait_for_timeout(80)
-        badge += it["qty"]
-        tb = page.inner_text("#cartn")
-        qa.ok("add_to_cart", tb == str(badge) and page.inner_text("#toast") == T("Added to cart"), "Add to cart does not update badge / show toast", sev="high",
-              repro=f"#/design {it['prod']} {it['color']} {it['size']} front {it['fo']} back {it['bo']} -> Add to cart", expected=badge, actual=(tb, page.inner_text("#toast")), page=page)
+    def add_items(items):
+        badge = 0
+        for n, it in enumerate(items):
+            qa.go(page, f"#/design?prod={it['prod']}&breed={it['bf']}&theme={it['th']}&style={it['st']}&qa={n}", wait="#pv svg", quiet=False)
+            click(f"#ctl .sw[data-color='{it['color']}']"); click(f"#ctl [data-size='{it['size']}']")
+            click(f"#ctl [data-k=front][data-opt='{it['fo']}']")
+            if it["bo"] is not None:
+                click(f"#ctl [data-k=back][data-opt='{it['bo']}']")
+                if it["bo"] != "none":
+                    page.select_option("#ctl select[data-k=back]", it["bb"])
+                    click(f"#ctl [data-k=back][data-f=theme][data-v='{it['thb']}']"); click(f"#ctl [data-k=back][data-f=style][data-v='{it['stb']}']")
+            for _ in range(it["qty"] - 1):
+                click("#ctl [data-q='1']")
+            page.click("#add")
+            page.wait_for_timeout(80)
+            badge += it["qty"]
+            tb = page.inner_text("#cartn")
+            qa.ok("add_to_cart", tb == str(badge) and page.inner_text("#toast") == T("Added to cart"), "Add to cart does not update badge / show toast", sev="high",
+                  repro=f"#/design {it['prod']} {it['color']} {it['size']} front {it['fo']} back {it['bo']} -> Add to cart", expected=badge, actual=(tb, page.inner_text("#toast")), page=page)
 
     def exp_label(side, it):
         o = (FO if side == "front" else BO)[it["fo"] if side == "front" else it["bo"]]
@@ -140,7 +141,18 @@ def cart_shard(qa, browser, p):
     def items_fee(items):
         return sum(x.get("fee", 0) for x in items[:1]) if any(x.get("fee") for x in items) else 0
 
-    lines, sub, ship = check_cart(plan, "full cart")
+    CH = 30
+    chunks = [plan[i:i + CH] for i in range(0, len(plan), CH)]
+    for ci, chunk in enumerate(chunks):
+        page.evaluate("localStorage.setItem('ad_cart','[]')"); page.reload(); page.wait_for_selector("#app > *")
+        add_items(chunk)
+        if len(chunk) == CH:
+            it = chunk[0]
+            qa.go(page, f"#/design?prod={it['prod']}&breed={it['bf']}", wait="#pv svg", quiet=False)
+            b0 = page.inner_text("#cartn"); page.click("#add"); page.wait_for_timeout(120)
+            qa.ok("add_to_cart", page.inner_text("#cartn") == b0 and "30" in page.inner_text("#toast"), "31st cart line not refused with a clear limit message", sev="medium", actual=(b0, page.inner_text("#cartn"), page.inner_text("#toast")), page=page)
+        lines, sub, ship = check_cart(chunk, f"cart chunk {ci + 1}/{len(chunks)}")
+    plan = chunks[-1]
     qa.shot(page, "cart_full", full=False)
     # complete the look
     look = page.evaluate("[...document.querySelectorAll('.wrap > .grid a.card .art')].map(e=>e.dataset.b)")
@@ -148,17 +160,6 @@ def cart_shard(qa, browser, p):
     # persistence
     page.reload(); page.wait_for_selector("#app h1"); qa.quiet(page)
     qa.ok("cart_misc", len(page.evaluate(LINES)) == len(plan), "Cart not persisted across reload", sev="high", actual=len(page.evaluate(LINES)))
-    # more than 30 lines vs backend limit
-    try:
-        wsrc = open(os.environ.get("QA_REPO", ".") + "/store/worker/index.js").read()
-        lim = re.search(r"items\.length>(\d+)", wsrc)
-        lim = int(lim.group(1)) if lim else None
-    except Exception:
-        lim = None
-    if lim and len(plan) > lim:
-        qa.defect("medium", "checkout", f"Cart accepts more than {lim} lines but the order API rejects >{lim} items with the misleading error 'Your cart has an invalid item'",
-                  repro=f"add {len(plan)} different lines to the cart, checkout, Pay securely (backend rule items.length>{lim} in store/worker/index.js)",
-                  expected="client caps lines or shows a clear limit message", actual=f"cart holds {len(plan)} lines with no warning")
     # every planned item must pass backend validation
     stored = page.evaluate("JSON.parse(localStorage.getItem('ad_cart'))")
     bad = [x for x in stored if not valid_item(cat, {k: v for k, v in x.items() if k != "_s"})]
@@ -220,7 +221,7 @@ def cart_shard(qa, browser, p):
     page.click("#pay"); page.wait_for_timeout(300)
     req = page.evaluate("[...document.querySelectorAll('#co [required]')].filter(e=>e.validity.valueMissing).map(e=>e.name)")
     qa.ok("checkout", not any(c["path"] == "/api/orders" for c in qa.api_calls[n0:]), "Empty checkout form submits an order", sev="critical")
-    qa.ok("checkout", set(req) == {"email", "fn", "ln", "a1", "city", "zip"}, "Checkout required fields wrong", expected=["email", "fn", "ln", "a1", "city", "zip"], actual=req)
+    qa.ok("checkout", set(req) == {"email", "fn", "ln", "a1", "city", "st", "zip"}, "Checkout required fields wrong", expected=["email", "fn", "ln", "a1", "city", "st", "zip"], actual=req)
     stv = page.evaluate("document.querySelector('#co [name=st]').value")
     if stv:
         qa.defect("low", "checkout", "State dropdown is pre-filled with 'AL' instead of an empty 'Select state' option",
@@ -269,6 +270,7 @@ def cart_shard(qa, browser, p):
     qa.go(page, "#/checkout", wait="#co")
     for k, v in fill.items():
         page.fill(f"#co [name={k}]", v)
+    page.select_option("#co [name=st]", "CA")
     qa.mock("POST", r"^/api/orders$", lambda r: (200, {"id": "QA-ORDER-2", "total": 1, "url": "https://checkout.stripe.com/c/pay/cs_test_QA"}, "application/json"))
     n0 = len(qa.api_calls)
     page.click("#pay")
@@ -354,6 +356,7 @@ def cart_shard(qa, browser, p):
     qa.go(page, "#/checkout", wait="#co")
     for k, v in fill.items():
         page.fill(f"#co [name={k}]", v)
+    page.select_option("#co [name=st]", "CA")
     n0 = len(qa.api_calls)
     page.click("#pay"); page.wait_for_timeout(800)
     calls = [c for c in qa.api_calls[n0:] if c["path"] == "/api/orders"]
