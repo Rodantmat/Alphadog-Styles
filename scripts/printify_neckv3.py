@@ -36,7 +36,7 @@ for s in call("GET","/v1/shops.json"):
                 if any(resolve(i)==i for i in ids): st["already"]+=1
                 else: st["other"]+=1; print("no brand neck image",SHOP,p["id"],ids,flush=True)
                 continue
-            new=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[{**{k:v for k,v in im.items() if k in("id","x","y","scale","angle")},**({"id":resolve(im["id"])} if q["position"]=="neck" and resolve(im["id"]) else {})} for im in q["images"]]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
+            new=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[({**{k:v for k,v in im.items() if k in("id","x","y","scale","angle")},"id":resolve(im["id"])} if q["position"]=="neck" and resolve(im["id"]) else dict(im)) for im in q["images"]]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
             if DRY: st["swapped"]+=1; continue
             try: call("PUT",f"/v1/shops/{SHOP}/products/{p['id']}.json",{"print_areas":new}); st["swapped"]+=1
             except Exception: st["failed"]+=1

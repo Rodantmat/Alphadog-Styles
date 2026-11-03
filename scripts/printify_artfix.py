@@ -35,7 +35,7 @@ for s in call("GET","/v1/shops.json"):
         for p in r["data"]:
             if not any(im["id"] in OLD for a in p["print_areas"] for q in a["placeholders"] for im in q["images"]): continue
             def fix(im):
-                d={k:v for k,v in im.items() if k in("id","x","y","scale","angle")}
+                d=dict(im) if im["id"] not in OLD else {k:v for k,v in im.items() if k in("id","x","y","scale","angle")}
                 if im["id"] in OLD:
                     nk,oa=OLD[im["id"]]; d["id"]=new[nk]; d["scale"]=round(im["scale"]*NA[nk]/oa,4)
                 return d
