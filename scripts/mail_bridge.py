@@ -2,7 +2,7 @@
 sync: copy new messages from support@ / customization@ into the store (flagged $AlphaSynced; your unread state is untouched).
 send: reply as the mailbox through our server (so it shows in the mailbox's Sent folder on your phone).
 Credentials come from mail/creds.enc (decrypted with STORE_ADMIN_TOKEN)."""
-import os,json,ssl,imaplib,smtplib,email,email.utils,subprocess,time,urllib.request
+import os,json,ssl,imaplib,smtplib,email,email.utils,subprocess,time,urllib.request,urllib.error
 from email.message import EmailMessage
 from email.header import decode_header,make_header
 HOST="mail.alphadogstyles.com"; U="https://alphadogstyles.com"; KP=os.environ["STORE_ADMIN_TOKEN"].strip()
@@ -34,9 +34,17 @@ def sync():
             for uid in (data[0].split() if data and data[0] else [])[-50:]:
                 typ,msgdata=M.uid("fetch",uid,"(BODY.PEEK[])")
                 msg=email.message_from_bytes(msgdata[0][1])
-                frm=email.utils.parseaddr(msg.get("From",""))[1].lower(); subj=str(make_header(decode_header(msg.get("Subject",""))))
-                store("POST","/api/internal/support",{"mailbox":box,"from":frm,"subject":subj+(" [msgid:"+msg.get("Message-ID","")+"]" if msg.get("Message-ID") else ""),"body":text_of(msg)[:20000]})
-                M.uid("store",uid,"+FLAGS","($AlphaSynced)"); n+=1
+                try:
+                    frm=email.utils.parseaddr(msg.get("From",""))[1].lower()
+                    try: subj=str(make_header(decode_header(msg.get("Subject",""))))
+                    except Exception: subj=str(msg.get("Subject",""))
+                    clean=lambda t: t.replace("\x00","").encode("utf-8","replace").decode("utf-8")  # Postgres TEXT rejects NUL / lone surrogates
+                    store("POST","/api/internal/support",{"mailbox":box,"from":clean(frm),"subject":clean(subj+(" [msgid:"+msg.get("Message-ID","")+"]" if msg.get("Message-ID") else "")),"body":clean(text_of(msg)[:20000])})
+                    M.uid("store",uid,"+FLAGS","($AlphaSynced)"); n+=1
+                except urllib.error.HTTPError as e:
+                    detail=e.read().decode("utf-8","replace")[:300]
+                    print("sync error",addr,"uid",uid.decode(),"HTTP",e.code,detail)   # skip this one message, keep syncing the rest
+                except Exception as e: print("sync error",addr,"uid",uid.decode(),type(e).__name__,str(e)[:200])
             M.logout()
         except Exception as e: print("sync error",addr,e)
     return n
