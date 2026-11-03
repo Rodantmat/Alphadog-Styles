@@ -1,0 +1,10 @@
+name: printful-hatlabels
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/printful_hatlabels.py
