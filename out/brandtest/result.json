@@ -233,5 +233,39 @@
    "left_hat_embroidery",
    "right_hat_embroidery"
   ]
+ },
+ "SIDE2_left_low": {
+  "id": "6ae993ca76dc38811905d60e",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2900
+  ],
+  "positions": [
+   "back_hat_embroidery",
+   "front",
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ]
+ },
+ "SIDE2_right_low": {
+  "id": "6ae993ebf27579a0a706369b",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2900
+  ],
+  "positions": [
+   "back_hat_embroidery",
+   "front",
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ]
  }
 }
