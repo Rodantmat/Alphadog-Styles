@@ -17,6 +17,49 @@ jobs:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_REFRESH_TOKEN: ${{ secrets.EBAY_REFRESH_TOKEN }}
+          AMZ_REFRESH: ${{ secrets.AMZ_REFRESH }}
+          AMZ_TOKEN: ${{ secrets.AMZ_TOKEN }}
+          AMZ_RT: ${{ secrets.AMZ_RT }}
+          AMZ_REFRESHTOKEN: ${{ secrets.AMZ_REFRESHTOKEN }}
+          AMZ_AUTH_TOKEN: ${{ secrets.AMZ_AUTH_TOKEN }}
+          AMZ_SP_REFRESH: ${{ secrets.AMZ_SP_REFRESH }}
+          AMZ_SP_REFRESH_TOKEN: ${{ secrets.AMZ_SP_REFRESH_TOKEN }}
+          AMZ_SP_TOKEN: ${{ secrets.AMZ_SP_TOKEN }}
+          AMZ_SP_RT: ${{ secrets.AMZ_SP_RT }}
+          AMZ_SP_REFRESHTOKEN: ${{ secrets.AMZ_SP_REFRESHTOKEN }}
+          AMZ_SP_AUTH_TOKEN: ${{ secrets.AMZ_SP_AUTH_TOKEN }}
+          AMZ_SPAPI_REFRESH: ${{ secrets.AMZ_SPAPI_REFRESH }}
+          AMZ_SPAPI_REFRESH_TOKEN: ${{ secrets.AMZ_SPAPI_REFRESH_TOKEN }}
+          AMZ_SPAPI_TOKEN: ${{ secrets.AMZ_SPAPI_TOKEN }}
+          AMZ_SPAPI_RT: ${{ secrets.AMZ_SPAPI_RT }}
+          AMZ_SPAPI_REFRESHTOKEN: ${{ secrets.AMZ_SPAPI_REFRESHTOKEN }}
+          AMZ_SPAPI_AUTH_TOKEN: ${{ secrets.AMZ_SPAPI_AUTH_TOKEN }}
+          AMZ_SP_API_REFRESH: ${{ secrets.AMZ_SP_API_REFRESH }}
+          AMZ_SP_API_TOKEN: ${{ secrets.AMZ_SP_API_TOKEN }}
+          AMZ_SP_API_RT: ${{ secrets.AMZ_SP_API_RT }}
+          AMZ_SP_API_REFRESHTOKEN: ${{ secrets.AMZ_SP_API_REFRESHTOKEN }}
+          AMZ_SP_API_AUTH_TOKEN: ${{ secrets.AMZ_SP_API_AUTH_TOKEN }}
+          AMZ_SELLER_REFRESH: ${{ secrets.AMZ_SELLER_REFRESH }}
+          AMZ_SELLER_REFRESH_TOKEN: ${{ secrets.AMZ_SELLER_REFRESH_TOKEN }}
+          AMZ_SELLER_TOKEN: ${{ secrets.AMZ_SELLER_TOKEN }}
+          AMZ_SELLER_RT: ${{ secrets.AMZ_SELLER_RT }}
+          AMZ_SELLER_REFRESHTOKEN: ${{ secrets.AMZ_SELLER_REFRESHTOKEN }}
+          AMZ_SELLER_AUTH_TOKEN: ${{ secrets.AMZ_SELLER_AUTH_TOKEN }}
+          AMZ_LWA_REFRESH: ${{ secrets.AMZ_LWA_REFRESH }}
+          AMZ_LWA_TOKEN: ${{ secrets.AMZ_LWA_TOKEN }}
+          AMZ_LWA_RT: ${{ secrets.AMZ_LWA_RT }}
+          AMZ_LWA_REFRESHTOKEN: ${{ secrets.AMZ_LWA_REFRESHTOKEN }}
+          AMZ_LWA_AUTH_TOKEN: ${{ secrets.AMZ_LWA_AUTH_TOKEN }}
+          AMZ_APP_REFRESH: ${{ secrets.AMZ_APP_REFRESH }}
+          AMZ_APP_REFRESH_TOKEN: ${{ secrets.AMZ_APP_REFRESH_TOKEN }}
+          AMZ_APP_TOKEN: ${{ secrets.AMZ_APP_TOKEN }}
+          AMZ_APP_RT: ${{ secrets.AMZ_APP_RT }}
+          AMZ_APP_REFRESHTOKEN: ${{ secrets.AMZ_APP_REFRESHTOKEN }}
+          AMZ_APP_AUTH_TOKEN: ${{ secrets.AMZ_APP_AUTH_TOKEN }}
+          AMZ_MERCHANT_ID: ${{ secrets.AMZ_MERCHANT_ID }}
+          AMZ_ROLE_ARN: ${{ secrets.AMZ_ROLE_ARN }}
+          AMZ_AWS_ACCESS_KEY: ${{ secrets.AMZ_AWS_ACCESS_KEY }}
+          AMZ_AWS_SECRET_KEY: ${{ secrets.AMZ_AWS_SECRET_KEY }}
           AMAZON_APP_ID: ${{ secrets.AMAZON_APP_ID }}
           AMAZON_CLIENT_ID: ${{ secrets.AMAZON_CLIENT_ID }}
           AMAZON_CLIENT_SECRET: ${{ secrets.AMAZON_CLIENT_SECRET }}
@@ -178,7 +221,7 @@ jobs:
                   return None, None
               cn, cid = bysuf("CLIENT_ID") if not pick("SP_API_CLIENT_ID")[0] else pick("SP_API_CLIENT_ID")
               sn, csec = bysuf("CLIENT_SECRET")
-              rn, rt = bysuf("REFRESH_TOKEN")
+              rn, rt = next(((k,S[k]) for k in sorted(S) if k.startswith("AMZ") and ("REFRESH" in k or k.endswith("TOKEN") or k.endswith("_RT"))), bysuf("REFRESH_TOKEN"))
               _unused = pick("SP_API_CLIENT_ID", "SPAPI_CLIENT_ID", "AMAZON_CLIENT_ID", "AMAZON_LWA_CLIENT_ID", "LWA_CLIENT_ID", "AMAZON_SP_CLIENT_ID", "SP_API_LWA_CLIENT_ID")
               _u2 = pick("SP_API_CLIENT_SECRET", "SPAPI_CLIENT_SECRET", "AMAZON_CLIENT_SECRET", "AMAZON_LWA_CLIENT_SECRET", "LWA_CLIENT_SECRET", "AMAZON_SP_CLIENT_SECRET", "SP_API_LWA_CLIENT_SECRET")
               _u3 = pick("SP_API_REFRESH_TOKEN", "SPAPI_REFRESH_TOKEN", "AMAZON_REFRESH_TOKEN", "AMAZON_LWA_REFRESH_TOKEN", "LWA_REFRESH_TOKEN", "AMAZON_SP_REFRESH_TOKEN")
