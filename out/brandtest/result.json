@@ -169,5 +169,18 @@
   "positions": [
    "front_dtf"
   ]
+ },
+ "SAMPLE_cap_khaki_minipoodle_geoheart_head": {
+  "id": "6ae98f949c3c654b4c0fa76f",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
  }
 }
