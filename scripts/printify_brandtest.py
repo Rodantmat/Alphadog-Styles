@@ -54,15 +54,15 @@ if MODE=="capfront":
   src={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in vs],
    "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":fid,"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]}]}
   mk("cap_frontbrand",src,["Khaki","Stone"],None)
-if MODE=="capopts":
+if MODE in ("capopts","capopts2"):
   up=json.load(open("out/uploads.json"))
   def dims(i): u=call("GET",f"/v1/uploads/{i}.json"); return u["width"],u["height"]
   cv=call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"]; W,H=next((q["width"],q["height"]) for q in cv[0]["placeholders"] if q["position"]=="front_dtf")
   kv=[v for v in cv if v["options"].get("color")=="Khaki"]
-  for d in ["geo_classic","geo_cool","line_heart","line_classic"]:
-    cid=up[f"mini_poodle/{d}/front_blackink"]; iw,ih=dims(cid); w=min(.92,.92*H*(iw/ih)/W)
+  for d in (["geo_classic","geo_cool","line_heart","line_classic"] if MODE=="capopts" else ["geo_heart/frontbig","geo_heart/back"]):
+    cid=up[f"mini_poodle/{d}_blackink"] if "/" in d else up[f"mini_poodle/{d}/front_blackink"]; iw,ih=dims(cid); w=min(.92,.92*H*(iw/ih)/W)
     srcc={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in kv],"print_areas":[{"variant_ids":[v["id"] for v in kv],"placeholders":[{"position":"front_dtf","images":[{"id":cid,"x":.5,"y":.5,"scale":round(w,3),"angle":0}]}]}]}
-    mk(f"CAPOPT_{d}",srcc,["Khaki"],None)
+    mk(f"CAPOPT_{d.replace('/','_')}",srcc,["Khaki"],None)
 if MODE=="samples":
   up=json.load(open("out/uploads.json"))
   def dims(i): u=call("GET",f"/v1/uploads/{i}.json"); return u["width"],u["height"]
