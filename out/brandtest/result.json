@@ -318,5 +318,153 @@
    "left_hat_embroidery",
    "right_hat_embroidery"
   ]
+ },
+ "PF_6791_nobrand": {
+  "id": "6ae99b4576dc38811905e12b",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2303
+  ],
+  "positions": [
+   "back_dtf",
+   "front_left_dtf",
+   "front_right_dtf"
+  ]
+ },
+ "PF_6791_back_dtf": {
+  "id": "6ae99b61d63279f99608a7ce",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   3125
+  ],
+  "positions": [
+   "back_dtf",
+   "front_left_dtf",
+   "front_right_dtf"
+  ]
+ },
+ "PF_6143_nobrand": {
+  "id": "6ae99b7cd63279f99608a7de",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1842
+  ],
+  "positions": [
+   "back_dtf",
+   "front_dtf"
+  ]
+ },
+ "PF_6143_back_dtf": {
+  "id": "6ae99b97caf32b772f0468e5",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2664
+  ],
+  "positions": [
+   "back_dtf",
+   "front_dtf"
+  ]
+ },
+ "PF_5287_nobrand": {
+  "id": "6ae99bb3caf32b772f046904",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1903
+  ],
+  "positions": [
+   "front_dtf",
+   "left_dtf",
+   "right_dtf"
+  ]
+ },
+ "PF_5287_left_dtf": {
+  "id": "6ae99bcecaf32b772f046921",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2710
+  ],
+  "positions": [
+   "front_dtf",
+   "left_dtf",
+   "right_dtf"
+  ]
+ },
+ "PF_6036_nobrand": {
+  "id": "6ae99bea352f5fb5680c1294",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2854
+  ],
+  "positions": [
+   "front_dtf",
+   "left_dtf",
+   "right_dtf"
+  ]
+ },
+ "PF_6036_left_dtf": {
+  "id": "6ae99c059c3c654b4c0fb749",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   3676
+  ],
+  "positions": [
+   "front_dtf",
+   "left_dtf",
+   "right_dtf"
+  ]
+ },
+ "PF_5836_nobrand": {
+  "id": "6ae99c20eb5d7e24b80cb300",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   3525
+  ],
+  "positions": [
+   "front_dtf",
+   "left_dtf",
+   "right_dtf"
+  ]
+ },
+ "PF_5836_left_dtf": {
+  "id": "6ae99c3beb5d7e24b80cb30f",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   4344
+  ],
+  "positions": [
+   "front_dtf",
+   "left_dtf",
+   "right_dtf"
+  ]
  }
 }
