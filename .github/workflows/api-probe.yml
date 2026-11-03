@@ -228,6 +228,13 @@ jobs:
               print("using secrets:", cn, sn, rn)
               if not (cid and csec and rt):
                   print("Missing one of client id / client secret / refresh token")
+                  if cid and csec:
+                      st, body = req("https://api.amazon.com/auth/o2/token",
+                          urllib.parse.urlencode({"grant_type": "client_credentials", "scope": "sellingpartnerapi::notifications", "client_id": cid, "client_secret": csec}).encode(),
+                          {"Content-Type": "application/x-www-form-urlencoded"})
+                      j = json.loads(body)
+                      if j.get("access_token"): print(f"::add-mask::{j['access_token']}")
+                      print("client id/secret check (grantless token):", "OK - valid" if j.get("access_token") else f"FAIL {st} {j.get('error')} {j.get('error_description')}")
               else:
                   st, body = req("https://api.amazon.com/auth/o2/token",
                       urllib.parse.urlencode({"grant_type": "refresh_token", "refresh_token": rt, "client_id": cid, "client_secret": csec}).encode(),
