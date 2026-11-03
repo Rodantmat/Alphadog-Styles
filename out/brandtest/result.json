@@ -28,5 +28,18 @@
   "positions": [
    "front_dtf"
   ]
+ },
+ "cap_frontbrand": {
+  "id": "6ae9896e2d261a825f0464d5",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
  }
 }
