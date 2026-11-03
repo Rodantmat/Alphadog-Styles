@@ -108,6 +108,8 @@ def nav_shard(qa, browser, p):
         miss = [k for k in page.evaluate("[...window.__missing]") if not re.fullmatch(r"\d+|Not found|That code is not right|Enter a valid email", k)]
         if any(re.fullmatch(r"\d+", k) for k in page.evaluate("[...window.__missing]")):
             qa.data["data_i_collision"] = True
+            qa.defect("info", "i18n", "Language switch runs translation over design cards: their data-i index attribute collides with the i18n data-i hook (card art briefly replaced by digits until the page re-renders; digits logged as missing keys)",
+                      repro="open #/shop or #/ and change the footer language selector", expected="only [data-i] text nodes from index.html translated", actual="applyStatic() sets textContent of every [data-i] element incl. .art.mock cards")
         qa.data.setdefault("i18n_missing_keys", {})[l] = miss
         if l != "en":
             qa.ok("i18n", not miss, f"Untranslated UI strings in {l} (t() keys with no {l} entry)", sev="medium",

@@ -28,9 +28,36 @@ def config_shard(qa, browser, p):
     ST = [s["id"] for s in cat["styles"]]
     fopt = {o["id"]: o for o in cat["front_opts"]}
     bopt = {o["id"]: o for o in cat["back_opts"]}
-    qa.go(page, "#/design", wait="#pv svg")
+    page0 = page
     S = lambda: page.evaluate(STATE_JS)
     click = lambda sel: page.evaluate(CLICK, sel)
+    # ---------- out-of-order preview rendering (slow art response) - deterministic race repro
+    rctx = qa.context(browser, viewport={"width": 1280, "height": 900})
+    page = qa.watch(rctx.new_page())
+    qa.go(page, "#/design?prod=tee&breed=boxer&theme=line&style=cool&qa=race", wait="#pv svg")
+    page.wait_for_timeout(400)
+    held = []
+    rx = re.compile(r".*/art/geo_cool/boxer_front\.svg.*")
+    page.route(rx, lambda r: held.append(r))
+    click("#ctl [data-k=front][data-f=theme][data-v='geo']")
+    page.wait_for_timeout(300)
+    click("#ctl [data-k=front][data-f=theme][data-v='line']")
+    page.wait_for_timeout(600)
+    before = parse_svg(S()["pv"])[1]
+    for r in held:
+        r.continue_()
+    page.wait_for_timeout(1500)
+    s = S()
+    after = parse_svg(s["pv"])[1]
+    page.unroute(rx)
+    qa.ok("race", after == "art/line_cool/boxer_front.svg" and s["themeF"] == "line", "Preview can show a stale design: a slow earlier art load overwrites the newer selection", sev="medium",
+          repro="#/design?prod=tee&breed=boxer&theme=line&style=cool, click Geometric then quickly Continuous Line while the geo art is still loading (slow network)",
+          expected="preview art/line_cool/boxer_front.svg (matches highlighted 'Continuous Line')", actual=f"before slow load finished: {before}; after: {after}; highlighted theme: {s['themeF']}", page=page)
+    qa.data["race_held_requests"] = len(held)
+    rctx.close()
+    page = page0
+
+    qa.go(page, "#/design", wait="#pv svg")
     T = lambda s, *a: page.evaluate("async([s,a])=>(await import('./js/i18n.js')).t(s,...a)", [s, list(a)])
     t_ship, t_soon_toast = T("+ shipping"), T("Dark colors with white-ink art are coming soon")
     hrefs = set()
@@ -158,8 +185,13 @@ def config_shard(qa, browser, p):
     for k, part in (("front", "front"), ("back", "back")):
         for b in B:
             page.select_option(f"#ctl select[data-k={k}]", b)
+            ct = page.evaluate(f"[(document.querySelector('#ctl [data-k={k}][data-f=theme].on')||{{}}).dataset?.v,(document.querySelector('#ctl [data-k={k}][data-f=style].on')||{{}}).dataset?.v]")
+            page.evaluate(WAIT_JS, [f"img/tee_white_{k}.webp", f"art/{ct[0]}_{ct[1]}/{b}_{part}.svg"])
+            page.wait_for_timeout(30)
             for th in TH:
                 click(f"#ctl [data-k={k}][data-f=theme][data-v='{th}']")
+                cur_st = page.evaluate(f"(document.querySelector('#ctl [data-k={k}][data-f=style].on')||{{}}).dataset?.v")
+                page.evaluate(WAIT_JS, [f"img/tee_white_{k}.webp", f"art/{th}_{cur_st}/{b}_{part}.svg"])
                 for st in ST:
                     click(f"#ctl [data-k={k}][data-f=style][data-v='{st}']")
                     art = f"art/{th}_{st}/{b}_{part}.svg"
@@ -244,7 +276,7 @@ def config_shard(qa, browser, p):
         s = S()
         qa.ok("i18n", s["price"].startswith(money(price_cents(cat, "hoodie", 2, "M"))), f"Designer price differs in {l}", sev="high", actual=s["price"])
         chips = page.evaluate("[...document.querySelectorAll('#ctl .chips .chip, #ctl .seg button, #ctl h3')].map(e=>e.childNodes[0].textContent.trim())")
-        en = {"Front design", "Back design", "Garment", "Color", "Size", "Head emblem", "Big head", "Body emblem", "Big body", "Full body", "Nothing", "Continuous Line", "Geometric", "Classic", "Cool", "Heart"}
+        en = {"Front design", "Back design", "Garment", "Size", "Head emblem", "Big head", "Body emblem", "Big body", "Full body", "Nothing", "Continuous Line", "Geometric", "Classic", "Heart"}  # 'Color'/'Cool' are valid es/pt words
         left = [c for c in chips if c in en]
         qa.ok("i18n", not left, f"Designer labels left in English in {l}", sev="low", repro=f"language {l}, #/design", actual=left)
         qa.shot(page, f"designer_{l}", quality=45)
