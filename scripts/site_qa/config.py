@@ -69,7 +69,7 @@ def config_shard(qa, browser, p):
         qa.ok("designer", fo_ids == efo, f"{pid}: front options differ from catalog rules", repro=rep0, expected=efo, actual=fo_ids)
         qa.ok("designer", bo_ids == ebo, f"{pid}: back options shown/hidden incorrectly", repro=rep0, expected=ebo, actual=bo_ids)
         qa.ok("designer", s["backTabHidden"] == ("back" not in sides_of(cat, pid)), f"{pid}: Back preview tab visibility wrong", repro=rep0, actual=s["backTabHidden"])
-        fab = page.evaluate("[...document.querySelectorAll('#ctl details')].map(d=>d.querySelector('p').innerText)")
+        fab = page.evaluate("[...document.querySelectorAll('#ctl details')].map(d=>d.querySelector('p').textContent)")
         qa.ok("designer", fab and len(fab[0]) > 30 and "undefined" not in fab[0], f"{pid}: 'Fabric & fit' text missing", sev="medium", repro=rep0 + ", open 'Fabric & fit'", actual=fab[:1])
         qa.ok("designer", (T("Finished with the AlphaDog logo label.") in fab[0]) == bool(prod.get("label")), f"{pid}: logo-label sentence inconsistent with catalog", sev="low", repro=rep0, actual=fab[:1])
         thumbs = page.evaluate("[...document.querySelectorAll('#ctl [data-prod] img')].filter(i=>i.complete&&!i.naturalWidth).map(i=>i.getAttribute('src'))")
@@ -220,11 +220,15 @@ def config_shard(qa, browser, p):
             if s.get("themeF") not in TH or s.get("styleF") not in ST:
                 page.click("#add"); page.wait_for_timeout(200)
                 m2 = qa.mark()
-                qa.go(page, "#/cart")
+                try:
+                    qa.go(page, "#/cart")
+                except Exception:
+                    pass
+                page.wait_for_timeout(500)
                 pe = qa.errs_since(m2)["pageerror"]
                 qa.ok("url_params", not pe, "Cart page crashes after adding a design opened with an unknown theme/style URL", sev="medium",
                       repro=f"open {BASE}/{h}, Add to cart, open #/cart", expected="cart renders", actual=pe[:2], page=page)
-                page.evaluate("localStorage.removeItem('ad_cart')"); page.reload(); page.wait_for_selector("#app > *")
+                page.evaluate("localStorage.removeItem('ad_cart')"); page.goto(BASE + "/#/"); page.wait_for_selector("#app > *")
         else:
             qa.ok("url_params", act == exp and not e["pageerror"], f"Designer URL {h} not normalized", repro=f"open {BASE}/{h}", expected=exp, actual=[act, e["pageerror"][:1]], page=page)
 

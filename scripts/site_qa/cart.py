@@ -340,6 +340,16 @@ def cart_shard(qa, browser, p):
     qa.ok("custom", ln["smalls"][1:] == [f"Front: {T('Your custom design')} · Big head", f"Back: {T('Your custom design')} · Big body"] or ln["smalls"][1].startswith("Front: Your custom design"), "Custom cart labels wrong", sev="medium", actual=ln["smalls"])
     qa.ok("custom", s2.get("Custom design (one-time)") == "$19.99" and s2.get("Total") == money(tp + (0 if tp >= SHIP["free_over"] else SHIP["flat"]) + 1999), "Custom design fee not added once in cart", sev="high", actual=s2, page=page)
     qa.shot(page, "cart_custom")
+    page.evaluate("async()=>{for(const a of document.querySelectorAll('.wrap > .grid a.card')){a.scrollIntoView();await new Promise(r=>setTimeout(r,80))}}")
+    page.wait_for_timeout(1200)
+    look = page.evaluate("""async()=>{const cs=[...document.querySelectorAll('.wrap > .grid a.card')];const r=[];for(const a of cs){const u=[...a.querySelectorAll('img,image')].map(i=>i.getAttribute('src')||i.getAttribute('href'));
+      const bad=[];await Promise.all(u.map(x=>new Promise(res=>{const im=new Image();im.onload=()=>{if(!im.naturalWidth)bad.push(x);res()};im.onerror=()=>{bad.push(x);res()};im.src=x})));r.push({href:a.getAttribute('href'),name:a.querySelector('.meta b').innerText,bad})}return r}""")
+    badlook = [x for x in look if x["bad"] or "breed=custom" in x["href"]]
+    if not qa.ok("custom", not badlook, "Cart 'Complete the look' shows broken 'custom' cards when the first cart line is a custom design", sev="medium",
+                  repro="custom request status page -> 'Design your products' -> Add to cart -> #/cart, scroll to 'Complete the look'",
+                  expected="suggestions for a real breed (or section hidden)", actual=badlook[:3]):
+        page.locator(".wrap > .grid").scroll_into_view_if_needed()
+        qa.shot(page, "cart_custom_complete_the_look_broken")
     qa.mock("POST", r"^/api/orders$", lambda r: (200, {"id": "QA-ORDER-3", "total": 1}, "application/json"))
     qa.go(page, "#/checkout", wait="#co")
     for k, v in fill.items():

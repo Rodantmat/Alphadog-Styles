@@ -1,0 +1,58 @@
+name: site-qa
+# Functional + visual QA of the live storefront with Playwright (Chromium).
+# All /api/* calls except GET /api/health are intercepted and mocked in the browser: no orders, emails or requests reach the backend.
+on:
+  workflow_dispatch:
+    inputs:
+      base:
+        default: "https://alphadogstyles.com"
+permissions:
+  contents: write
+concurrency: site-qa
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [nav, shop, config, cart, art]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: pip install -q playwright==1.49.1 && python -m playwright install --with-deps chromium
+      - name: Run shard
+        env:
+          QA_BASE: ${{ inputs.base || 'https://alphadogstyles.com' }}
+          QA_OUT: out/site_qa
+          QA_REPO: .
+        run: python scripts/site_qa/${{ matrix.shard }}.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qa-${{ matrix.shard }}
+          path: out/site_qa
+          retention-days: 7
+  commit:
+    needs: qa
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: _qa
+          pattern: qa-*
+      - name: Merge
+        run: python3 scripts/site_qa/merge.py _qa out/site_qa && du -sh out/site_qa
+      - name: Commit results
+        run: |
+          git config user.name "site-qa-bot"
+          git config user.email "site-qa-bot@users.noreply.github.com"
+          git add -A out/site_qa
+          git commit -q -m "site-qa: results $(date -u +%FT%TZ)" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
