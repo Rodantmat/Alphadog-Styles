@@ -2,14 +2,14 @@
 Swaps old upload ids -> corrected art in every product of every shop. Keeps on-garment HEIGHT (scale adjusted by aspect)."""
 import os,json,base64,urllib.request,urllib.error,time
 T=os.environ["PRINTIFY_TOKEN"].strip();DRY=os.environ.get("DRY","1")=="1"
-def call(m,p,b=None,retry=4):
+def call(m,p,b=None,retry=9):
     for a in range(retry):
         d=json.dumps(b).encode() if b is not None else None
         r=urllib.request.Request("https://api.printify.com"+p,data=d,method=m,headers={"Authorization":"Bearer "+T,"Content-Type":"application/json","User-Agent":"a"})
         try: return json.load(urllib.request.urlopen(r,timeout=120))
         except urllib.error.HTTPError as e:
             msg=e.read().decode()[:400]
-            if e.code in (429,500,502,503,504) and a<retry-1: time.sleep(8*(a+1)); continue
+            if e.code in (429,500,502,503,504) and a<retry-1: time.sleep(20*(a+1)); continue
             print("HTTP",e.code,p,msg,flush=True); raise
 up=json.load(open("out/uploads.json")); B="mini_poodle/geo_heart/"
 new={}
