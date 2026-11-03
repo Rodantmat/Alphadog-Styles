@@ -1,0 +1,18 @@
+name: art-audit
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pillow
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: python3 scripts/art_audit_sheet.py
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/art_audit && git commit -m "art audit sheets" && git pull -q --rebase && git push
