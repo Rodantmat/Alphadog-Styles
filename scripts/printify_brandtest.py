@@ -148,6 +148,22 @@ if MODE=="pfhats":
       BW,BH=phs[bpos]; la=1056/201; sc=min(.9,.9*BH*la/BW)
       mk(f"PF_{bp}_{bpos}",srcc,[kv[0]["title"].split(" /")[0]],{"position":bpos,"images":[{"id":lid,"x":.5,"y":.5,"scale":round(sc,3),"angle":0}]})
     except Exception as e: print("FAIL",bp,e)
+if MODE=="frontbrand":
+  from PIL import Image
+  hid=upl("shop/brand/capfront_minipoodle_geoheart_head.png"); head=Image.open("shop/brand/capfront_minipoodle_geoheart_head.png"); ha=head.width/head.height
+  tid=upl("shop/brand/capside_blackink_tight.png"); ta=1056/201
+  cv=call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"]
+  W,H=next((q["width"],q["height"]) for q in cv[0]["placeholders"] if q["position"]=="front_dtf")
+  kv=[v for v in cv if v["options"].get("color")=="Khaki"]
+  for nm,bw in (("tiny",0.20),("small",0.26)):
+    bh=bw*W/ta/H                      # brand height as fraction of H
+    hh=1-bh-0.06                      # head height fraction
+    hs=min(.9,hh*H*ha/W); hy=hh/2
+    by=1-bh/2-0.005
+    print("FB",nm,"brand w px",round(bw*W),"h px",round(bh*H),"head h px",round(hh*H))
+    srcc={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in kv],
+      "print_areas":[{"variant_ids":[v["id"] for v in kv],"placeholders":[{"position":"front_dtf","images":[{"id":hid,"x":.5,"y":round(hy,3),"scale":round(hs,3),"angle":0},{"id":tid,"x":.5,"y":round(by,3),"scale":bw,"angle":0}]}]}]}
+    mk(f"FB_{nm}",srcc,["Khaki"],None)
 old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
 old.update(res);res=old
 json.dump(res,open("out/brandtest/result.json","w"),indent=1); print(json.dumps(res,indent=1))
