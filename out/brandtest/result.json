@@ -91,5 +91,57 @@
    "neck",
    "right_sleeve"
   ]
+ },
+ "CAPOPT_geo_classic": {
+  "id": "6ae98d026aadccfd9f08f34a",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
+ },
+ "CAPOPT_geo_cool": {
+  "id": "6ae98d2195419694150884b2",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
+ },
+ "CAPOPT_line_heart": {
+  "id": "6ae98d4060af2870da00d6e8",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
+ },
+ "CAPOPT_line_classic": {
+  "id": "6ae98d5fcaf32b772f045774",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
  }
 }
