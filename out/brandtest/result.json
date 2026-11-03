@@ -1,0 +1,32 @@
+{
+ "cap": {
+  "id": "6ae988868a21aae94b03c9bf",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2900
+  ],
+  "positions": [
+   "back_hat_embroidery",
+   "front",
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ]
+ },
+ "cap_noback": {
+  "id": "6ae988a8b0ca561ba70a1d82",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
+ }
+}
