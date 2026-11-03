@@ -31,9 +31,12 @@ for s in call("GET","/v1/shops.json"):
             if sum(v["swapped"] for v in stats.values())>=LIMIT: break
             ids=[im["id"] for a in p["print_areas"] for ph in a["placeholders"] if ph["position"]=="neck" for im in ph["images"]]
             if not ids: st["noneck"]+=1; continue
-            if all(i in MAP.values() for i in ids): st["already"]+=1; continue
-            if not all(resolve(i) for i in ids): st["other"]+=1; print("unknown neck image",SHOP,p["id"],ids,flush=True); continue
-            new=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[{**{k:v for k,v in im.items() if k in("id","x","y","scale","angle")},**({"id":resolve(im["id"])} if q["position"]=="neck" else {})} for im in q["images"]]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
+            todo=[i for i in ids if resolve(i) and resolve(i)!=i]
+            if not todo:
+                if any(resolve(i)==i for i in ids): st["already"]+=1
+                else: st["other"]+=1; print("no brand neck image",SHOP,p["id"],ids,flush=True)
+                continue
+            new=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[{**{k:v for k,v in im.items() if k in("id","x","y","scale","angle")},**({"id":resolve(im["id"])} if q["position"]=="neck" and resolve(im["id"]) else {})} for im in q["images"]]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
             if DRY: st["swapped"]+=1; continue
             try: call("PUT",f"/v1/shops/{SHOP}/products/{p['id']}.json",{"print_areas":new}); st["swapped"]+=1
             except Exception: st["failed"]+=1
