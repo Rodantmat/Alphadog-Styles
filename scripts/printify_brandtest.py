@@ -54,6 +54,16 @@ if MODE=="capfront":
   src={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in vs],
    "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":fid,"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]}]}
   mk("cap_frontbrand",src,["Khaki","Stone"],None)
+if MODE=="sidetest2":
+  from PIL import Image
+  t=Image.open("shop/brand/capside_blackink_tight.png"); tid=upl("shop/brand/capside_blackink_tight.png")
+  cv=call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"]; kv=[v for v in cv if v["options"].get("color")=="Stone"]
+  PW,PH=next((q["width"],q["height"]) for q in cv[0]["placeholders"] if q["position"]=="left_hat_embroidery")
+  hfrac=(PW/(t.width/t.height))/PH; y=round(1-hfrac/2-0.01,3); print("placeholder",PW,PH,"hfrac",hfrac,"y",y)
+  hid=upl("shop/brand/capfront_minipoodle_geoheart_head.png")
+  for nm,pos in [("left_low","left_hat_embroidery"),("right_low","right_hat_embroidery")]:
+    srcc={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in kv],"print_areas":[{"variant_ids":[v["id"] for v in kv],"placeholders":[{"position":"front_dtf","images":[{"id":hid,"x":.5,"y":.5,"scale":.35,"angle":0}]}]}]}
+    mk("SIDE2_"+nm,srcc,["Stone"],{"position":pos,"images":[{"id":tid,"x":.5,"y":y,"scale":1.0,"angle":0}]})
 if MODE=="sidetest":
   cv=call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"]; kv=[v for v in cv if v["options"].get("color")=="Stone"]
   hid=upl("shop/brand/capfront_minipoodle_geoheart_head.png")
