@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 scripts/printify_probe_imgs.py
+        env: { PRINTIFY_TOKEN: "${{ secrets.PRINTIFY_TOKEN }}" }
       - uses: actions/upload-artifact@v4
         with: { name: neck, path: neck_after.jpg, if-no-files-found: ignore }
-        env: { PRINTIFY_TOKEN: "${{ secrets.PRINTIFY_TOKEN }}" }
