@@ -54,6 +54,12 @@ if MODE=="capfront":
   src={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in vs],
    "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":fid,"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]}]}
   mk("cap_frontbrand",src,["Khaki","Stone"],None)
+if MODE=="sidetest":
+  cv=call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"]; kv=[v for v in cv if v["options"].get("color")=="Stone"]
+  hid=upl("shop/brand/capfront_minipoodle_geoheart_head.png")
+  for nm,pos,x,y,sc in [("left_center","left_hat_embroidery",.5,.5,1.0),("left_backlow","left_hat_embroidery",.85,.8,.6),("right_center","right_hat_embroidery",.5,.5,1.0)]:
+    srcc={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in kv],"print_areas":[{"variant_ids":[v["id"] for v in kv],"placeholders":[{"position":"front_dtf","images":[{"id":hid,"x":.5,"y":.5,"scale":.35,"angle":0}]}]}]}
+    mk("SIDE_"+nm,srcc,["Stone"],{"position":pos,"images":[{"id":ids["capback_blackink"],"x":x,"y":y,"scale":sc,"angle":0}]})
 if MODE=="capheart":
   from PIL import Image
   head=Image.open("shop/brand/capfront_minipoodle_geoheart_head.png")
