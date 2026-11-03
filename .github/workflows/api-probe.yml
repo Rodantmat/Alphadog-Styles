@@ -14,11 +14,33 @@ jobs:
     steps:
       - name: Probe
         env:
-          ALL_SECRETS: ${{ toJSON(secrets) }}
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+          EBAY_REFRESH_TOKEN: ${{ secrets.EBAY_REFRESH_TOKEN }}
+          SP_API_CLIENT_ID: ${{ secrets.SP_API_CLIENT_ID }}
+          SPAPI_CLIENT_ID: ${{ secrets.SPAPI_CLIENT_ID }}
+          AMAZON_CLIENT_ID: ${{ secrets.AMAZON_CLIENT_ID }}
+          AMAZON_LWA_CLIENT_ID: ${{ secrets.AMAZON_LWA_CLIENT_ID }}
+          LWA_CLIENT_ID: ${{ secrets.LWA_CLIENT_ID }}
+          AMAZON_SP_CLIENT_ID: ${{ secrets.AMAZON_SP_CLIENT_ID }}
+          SP_API_LWA_CLIENT_ID: ${{ secrets.SP_API_LWA_CLIENT_ID }}
+          SP_API_CLIENT_SECRET: ${{ secrets.SP_API_CLIENT_SECRET }}
+          SPAPI_CLIENT_SECRET: ${{ secrets.SPAPI_CLIENT_SECRET }}
+          AMAZON_CLIENT_SECRET: ${{ secrets.AMAZON_CLIENT_SECRET }}
+          AMAZON_LWA_CLIENT_SECRET: ${{ secrets.AMAZON_LWA_CLIENT_SECRET }}
+          LWA_CLIENT_SECRET: ${{ secrets.LWA_CLIENT_SECRET }}
+          AMAZON_SP_CLIENT_SECRET: ${{ secrets.AMAZON_SP_CLIENT_SECRET }}
+          SP_API_LWA_CLIENT_SECRET: ${{ secrets.SP_API_LWA_CLIENT_SECRET }}
+          SP_API_REFRESH_TOKEN: ${{ secrets.SP_API_REFRESH_TOKEN }}
+          SPAPI_REFRESH_TOKEN: ${{ secrets.SPAPI_REFRESH_TOKEN }}
+          AMAZON_REFRESH_TOKEN: ${{ secrets.AMAZON_REFRESH_TOKEN }}
+          AMAZON_LWA_REFRESH_TOKEN: ${{ secrets.AMAZON_LWA_REFRESH_TOKEN }}
+          LWA_REFRESH_TOKEN: ${{ secrets.LWA_REFRESH_TOKEN }}
+          AMAZON_SP_REFRESH_TOKEN: ${{ secrets.AMAZON_SP_REFRESH_TOKEN }}
         run: |
           python3 - <<'PY'
           import os, json, base64, urllib.request, urllib.parse, re
-          S = json.loads(os.environ.pop("ALL_SECRETS"))
+          S = {k: v for k, v in os.environ.items() if v and re.search(r"EBAY|AMAZON|SP_?API|LWA", k)}
           def req(url, data=None, headers=None, method=None):
               r = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
               try:
