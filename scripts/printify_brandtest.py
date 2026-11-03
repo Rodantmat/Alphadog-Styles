@@ -20,7 +20,7 @@ def pick(bp): return next(p for p in prods if p["blueprint_id"]==bp and not p["t
 res={};os.makedirs("out/brandtest",exist_ok=True)
 def mk(name,src,colors,extra):
     vs=[v for v in src["variants"] if v["is_enabled"]]
-    keep=[v for v in vs if any(c.lower() in v["title"].lower() for c in colors)][:4] or vs[:2]
+    keep=[v for v in vs if any(c.lower() in v["title"].lower() for c in colors)][:6] or vs[:2]
     kid=[v["id"] for v in keep]
     pa=[]
     for a in src["print_areas"]:
@@ -54,6 +54,27 @@ if MODE=="capfront":
   src={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in vs],
    "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":fid,"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]}]}
   mk("cap_frontbrand",src,["Khaki","Stone"],None)
+if MODE=="samples":
+  up=json.load(open("out/uploads.json"))
+  def dims(i): u=call("GET",f"/v1/uploads/{i}.json"); return u["width"],u["height"]
+  def ph(bp,pos):
+      v=call("GET",f"/v1/catalog/blueprints/{bp}/print_providers/99/variants.json")["variants"]
+      return v,next((q["width"],q["height"]) for q in v[0]["placeholders"] if q["position"]==pos)
+  # cap: khaki dad hat, mini poodle geo_heart front
+  cv,(W,H)=ph(1447,"front_dtf"); cid=up["mini_poodle/geo_heart/front_blackink"]; iw,ih=dims(cid); a=iw/ih; w=min(.92,.92*H*a/W)
+  kv=[v for v in cv if v["options"].get("color")=="Khaki"]
+  srcc={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in kv],
+    "print_areas":[{"variant_ids":[v["id"] for v in kv],"placeholders":[{"position":"front_dtf","images":[{"id":cid,"x":.5,"y":.5,"scale":round(w,3),"angle":0}]}]}]}
+  mk("SAMPLE_cap_khaki_minipoodle_geoheart",srcc,["Khaki"],None)
+  # tee: Bella 3001 Natural, front line_cool pocket head, back line_heart body, v3 neck
+  tv,(FW,FH)=ph(12,"front"); _,(BW,BH)=ph(12,"back")
+  fid=up["mini_poodle/line_cool/front_blackink"]; bid=up["mini_poodle/line_heart/back_blackink"]
+  fw=0.30*3185/FW; ba=(lambda d:d[0]/d[1])(dims(bid)); bw=min(.95*BH*ba/BW,.95)
+  nv=[v for v in tv if v["options"].get("color")=="Natural" and v["options"].get("size") in ("S","M","L","XL","2XL")]
+  srct={"id":"scratch","blueprint_id":12,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2999,"is_enabled":True,"cost":0} for v in nv],
+    "print_areas":[{"variant_ids":[v["id"] for v in nv],"placeholders":[{"position":"front","images":[{"id":fid,"x":.76,"y":.17,"scale":round(fw,3),"angle":0}]},
+      {"position":"back","images":[{"id":bid,"x":.5,"y":.5,"scale":round(bw,3),"angle":0}]}]}]}
+  mk("SAMPLE_tee_natural_minipoodle",srct,["Natural"],{"position":"neck","images":[{"id":ids["neck_blackink_v3"],"x":.5,"y":.5,"scale":1.0,"angle":0}]})
 old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
 old.update(res);res=old
 json.dump(res,open("out/brandtest/result.json","w"),indent=1); print(json.dumps(res,indent=1))
