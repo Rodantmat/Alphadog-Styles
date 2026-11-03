@@ -1,583 +1,69 @@
 {
  "shard": "cart",
  "base": "https://alphadogstyles.com",
- "secs": 304.5,
+ "secs": 129.3,
  "checks": {
   "add_to_cart": [
-   30,
-   14
+   45,
+   0
   ],
   "cart_lines": [
-   165,
-   1
+   226,
+   0
   ],
   "cart_price": [
-   32,
+   44,
    0
   ],
   "cart_thumbs": [
-   32,
+   44,
    0
   ],
   "cart_totals": [
-   15,
-   1
+   10,
+   0
   ],
   "cart_misc": [
    2,
-   1
+   0
   ],
   "checkout": [
-   49,
-   3
+   15,
+   0
   ],
   "i18n": [
    4,
-   0
-  ],
-  "cart_qty": [
-   4,
-   1
-  ],
-  "custom": [
-   14,
-   3
-  ],
-  "saved_designs": [
-   5,
    0
   ]
  },
  "defects": [
   {
-   "sev": "high",
-   "area": "add_to_cart",
-   "title": "Add to cart does not update badge / show toast",
-   "repro": "#/design wtank Solid White L front body_l back none -> Add to cart",
-   "expected": "37",
-   "actual": "('36', 'Your cart is full (30 items max). Please check out first.')",
-   "shot": "out/site_qa/shots/cart/defect_Add_to_cart_does_not_update_badge_show_toast.jpg",
-   "count": 14,
-   "examples": [
-    {
-     "repro": "#/design wtank Heather Grey M front none back head_l -> Add to cart",
-     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
-    },
-    {
-     "repro": "#/design wtank Solid Mint S front none back body_l -> Add to cart",
-     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
-    },
-    {
-     "repro": "#/design wtank Solid Light Orange XS front none back body_s -> Add to cart",
-     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
-    },
-    {
-     "repro": "#/design wtank Solid Tahiti Blue 2XL front none back head_s -> Add to cart",
-     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
-    },
-    {
-     "repro": "#/design wtank Solid White 2XL front body_l back head_l -> Add to cart",
-     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
-    },
-    {
-     "repro": "#/design polo White XL front head_s back None -> Add to cart",
-     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
-    }
-   ]
-  },
-  {
-   "sev": "high",
-   "area": "cart_lines",
-   "title": "Cart shows wrong number of lines (full cart)",
-   "repro": "",
-   "expected": "44",
-   "actual": "30",
-   "shot": "out/site_qa/shots/cart/defect_Cart_shows_wrong_number_of_lines_full_cart_.jpg",
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "medium",
-   "area": "cart_totals",
-   "title": "Cart badge wrong (full cart)",
-   "repro": "",
-   "expected": "52",
-   "actual": "36",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "high",
-   "area": "cart_misc",
-   "title": "Cart not persisted across reload",
+   "sev": "info",
+   "area": "harness",
+   "title": "QA harness crashed in shard cart: name 'badge' is not defined",
    "repro": "",
    "expected": "",
-   "actual": "30",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "medium",
-   "area": "checkout",
-   "title": "Cart accepts more than 30 lines but the order API rejects >30 items with the misleading error 'Your cart has an invalid item'",
-   "repro": "add 44 different lines to the cart, checkout, Pay securely (backend rule items.length>30 in store/worker/index.js)",
-   "expected": "client caps lines or shows a clear limit message",
-   "actual": "cart holds 44 lines with no warning",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "high",
-   "area": "cart_qty",
-   "title": "Cart + does not increase qty/badge",
-   "repro": "",
-   "expected": "",
-   "actual": "('2', '37')",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "medium",
-   "area": "checkout",
-   "title": "Checkout required fields wrong",
-   "repro": "",
-   "expected": "['email', 'fn', 'ln', 'a1', 'city', 'zip']",
-   "actual": "['email', 'fn', 'ln', 'a1', 'city', 'st', 'zip']",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "critical",
-   "area": "checkout",
-   "title": "Checkout does not redirect to the Stripe URL returned by the API",
-   "repro": "",
-   "expected": "",
-   "actual": "https://alphadogstyles.com/#/checkout",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "medium",
-   "area": "checkout",
-   "title": "Cart not cleared after redirect to Stripe",
-   "repro": "",
-   "expected": "",
-   "actual": "1",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "medium",
-   "area": "custom",
-   "title": "Custom cart labels wrong",
-   "repro": "",
-   "expected": "",
-   "actual": "['White · 3XL', 'Front: Pug · Continuous Line Cool · Big head', 'Back: Pug · Continuous Line Cool · Full body']",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "high",
-   "area": "custom",
-   "title": "Custom design fee not added once in cart",
-   "repro": "",
-   "expected": "",
-   "actual": "{'Subtotal': '$98.98', 'Shipping (US)': 'Free', 'Custom design (one-time)': '$19.99', 'Total': '$118.97', '_note': 'You unlocked free shipping!', '_badge': '2'}",
-   "shot": "out/site_qa/shots/cart/defect_Custom_design_fee_not_added_once_in_cart.jpg",
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "medium",
-   "area": "custom",
-   "title": "Custom order not posted",
-   "repro": "",
-   "expected": "",
-   "actual": "",
+   "actual": "Traceback (most recent call last):\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 238, in run\n    shard_fn(qa, browser, p)\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/cart.py\", line 182, in cart_shard\n    qa.ok(\"cart_qty\", line0()[\"qty\"] == str(q0 + 1) and page.inner_text(\"#cartn\") == str(badge + 1), \"Cart + does not increase qty/badge\", sev=\"high\", actual=(line0()[\"qty\"], page.inner_text(\"#cartn\")))\n                                                                                         ^^^^^\nNameError: name 'badge' is ",
    "shot": null,
    "count": 1,
    "examples": []
   }
  ],
- "notes": [
-  "Cart has no 'edit line' action (no UI to reopen a line in the designer); stored _s state is unused - not tested further."
- ],
+ "notes": [],
  "data": {
-  "cart_plan_lines": 44,
-  "cart_edit_supported": false,
-  "order_payload_sample": {
-   "email": "qa-test@example.com",
-   "ship": {
-    "name": "QA Tester",
-    "a1": "123 Test Street",
-    "a2": "",
-    "city": "San Diego",
-    "st": "CA",
-    "zip": "92101",
-    "phone": "5555550100"
-   },
-   "items": [
-    {
-     "id": "1793706334748",
-     "prod": "tee",
-     "color": "Soft Pink",
-     "size": "M",
-     "qty": 3,
-     "front": {
-      "part": "head",
-      "size": "l",
-      "breed": "beagle",
-      "theme": "geo",
-      "style": "heart"
-     },
-     "back": null
-    }
-   ],
-   "lang": "en",
-   "subtotal": 8397,
-   "shipping": 0,
-   "total": 8397
-  }
+  "cart_plan_lines": 44
  },
  "errors": {
-  "console": [
-   {
-    "at": "/checkout",
-    "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
-   }
-  ],
+  "console": [],
   "pageerror": [],
-  "http": [
-   {
-    "at": "/checkout",
-    "status": 400,
-    "url": "https://alphadogstyles.com/api/orders"
-   }
-  ],
+  "http": [],
   "failed": []
  },
  "error_counts": {
-  "console": 1,
+  "console": 0,
   "pageerror": 0,
-  "http": 1,
+  "http": 0,
   "failed": 0
  },
- "api_calls": [
-  {
-   "m": "POST",
-   "path": "/api/orders",
-   "q": "",
-   "body": {
-    "email": "qa-test@example.com",
-    "ship": {
-     "name": "QA Tester",
-     "a1": "123 Test Street",
-     "a2": "",
-     "city": "San Diego",
-     "st": "CA",
-     "zip": "92101",
-     "phone": "5555550100"
-    },
-    "items": [
-     {
-      "id": "1793706334748",
-      "prod": "tee",
-      "color": "Soft Pink",
-      "size": "M",
-      "qty": 3,
-      "front": {
-       "part": "head",
-       "size": "l",
-       "breed": "beagle",
-       "theme": "geo",
-       "style": "heart"
-      },
-      "back": null
-     }
-    ],
-    "lang": "en",
-    "subtotal": 8397,
-    "shipping": 0,
-    "total": 8397
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/orders",
-   "q": "",
-   "body": {
-    "email": "qa-test@example.com",
-    "ship": {
-     "name": "QA Tester",
-     "a1": "123 Test Street",
-     "a2": "",
-     "city": "San Diego",
-     "st": "CA",
-     "zip": "92101",
-     "phone": "5555550100"
-    },
-    "items": [
-     {
-      "id": "1793706334748",
-      "prod": "tee",
-      "color": "Soft Pink",
-      "size": "M",
-      "qty": 3,
-      "front": {
-       "part": "head",
-       "size": "l",
-       "breed": "beagle",
-       "theme": "geo",
-       "style": "heart"
-      },
-      "back": null
-     }
-    ],
-    "lang": "en",
-    "subtotal": 8397,
-    "shipping": 0,
-    "total": 8397
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/orders/confirm",
-   "q": "",
-   "body": {
-    "id": "QA-ORDER-1"
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/orders/confirm",
-   "q": "",
-   "body": {
-    "id": "QA-ORDER-1"
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/custom",
-   "q": "",
-   "body": {
-    "name": "QA Tester",
-    "email": "qa-test@example.com",
-    "lang": "en",
-    "dog": {
-     "name": "Rex",
-     "breed": "",
-     "colors": "",
-     "markings": "",
-     "ears": "",
-     "tail": "",
-     "details": ""
-    },
-    "style": {
-     "theme": "geo",
-     "style": ""
-    },
-    "products": [
-     "tee",
-     "cap_dad"
-    ],
-    "qty": "",
-    "notes": "",
-    "photos": [
-     {
-      "mime": "image/jpeg",
-      "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAYH/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AiwF6zkAAAAAAAAAAAAAAAB//2Q=="
-     },
-     {
-      "mime": "image/jpeg",
-      "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAUG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AmwFtnAAAAAAAAAAAAAAAAH//2Q=="
-     },
-     {
-      "mime": "image/jpeg",
-      "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AmgM6gAAAAAAAAAAAAAAAH//Z"
-     },
-     {
-      "mime": "image/jpeg",
-      "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAL/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAb/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCQEopQAAAAAAAAAAAAAAAH/9k="
-     },
-     {
-      "mime": "image/jpeg",
-      "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAf/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCgAmSlAAAAAAAAAAAAAAAAP//Z"
-     }
-    ]
-   },
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/custom/QAC1",
-   "q": "k=qak",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/custom/QAC1/art/head",
-   "q": "k=qak",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/custom/QAC1/art/head",
-   "q": "k=qak",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/custom/QAC1/art/head",
-   "q": "k=qak",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/custom/QAC1/art/head",
-   "q": "k=qak",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/designs",
-   "q": "",
-   "body": {
-    "id": "1793706469740",
-    "s": {
-     "prod": "hoodie",
-     "color": "Sand",
-     "size": "M",
-     "qty": 1,
-     "view": "front",
-     "front": {
-      "opt": "head_l",
-      "breed": "shiba_inu",
-      "theme": "geo",
-      "style": "heart"
-     },
-     "back": {
-      "opt": "body_l",
-      "breed": "shiba_inu",
-      "theme": "geo",
-      "style": "heart"
-     }
-    }
-   },
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/designs",
-   "q": "",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/orders",
-   "q": "",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/designs",
-   "q": "",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/orders",
-   "q": "",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "DELETE",
-   "path": "/api/designs/1793706469740",
-   "q": "",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/designs",
-   "q": "",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "GET",
-   "path": "/api/orders",
-   "q": "",
-   "body": null,
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/auth/request",
-   "q": "",
-   "body": {
-    "email": "qa-test@example.com",
-    "lang": "en"
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/auth/verify",
-   "q": "",
-   "body": {
-    "email": "qa-test@example.com",
-    "code": "123456"
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/designs",
-   "q": "",
-   "body": {
-    "id": "1793706496943",
-    "s": {
-     "prod": "tank",
-     "color": "White",
-     "size": "M",
-     "qty": 1,
-     "view": "front",
-     "front": {
-      "opt": "head_l",
-      "breed": "boxer",
-      "theme": "line",
-      "style": "heart"
-     },
-     "back": {
-      "opt": "body_l",
-      "breed": "boxer",
-      "theme": "line",
-      "style": "heart"
-     }
-    }
-   },
-   "hash": null
-  }
- ]
+ "api_calls": []
 }
