@@ -182,5 +182,56 @@
   "positions": [
    "front_dtf"
   ]
+ },
+ "SIDE_left_center": {
+  "id": "6ae992fdf27579a0a7063593",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2900
+  ],
+  "positions": [
+   "back_hat_embroidery",
+   "front",
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ]
+ },
+ "SIDE_left_backlow": {
+  "id": "6ae9931fcaf32b772f045cbf",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2900
+  ],
+  "positions": [
+   "back_hat_embroidery",
+   "front",
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ]
+ },
+ "SIDE_right_center": {
+  "id": "6ae99342caf32b772f045cd8",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2900
+  ],
+  "positions": [
+   "back_hat_embroidery",
+   "front",
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ]
  }
 }
