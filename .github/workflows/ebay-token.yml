@@ -1,0 +1,60 @@
+name: eBay token (code -> refresh token secret)
+
+# One-time / rare use. Paste the `code=` value from the eBay consent redirect
+# (alphadogstyles.com/ebay-ok?code=...) within 5 minutes. The refresh token is
+# saved straight into the EBAY_REFRESH_TOKEN repo secret and never printed.
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "code= value from the address bar after Agree (raw or URL-encoded)"
+        required: true
+
+permissions:
+  contents: read
+
+jobs:
+  exchange:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exchange code and store refresh token
+        env:
+          CODE_IN: ${{ inputs.code }}
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+          EBAY_RUNAME: ${{ secrets.EBAY_RUNAME }}
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          for v in EBAY_CLIENT_ID EBAY_CLIENT_SECRET EBAY_RUNAME GH_TOKEN; do
+            [ -n "${!v}" ] || { echo "Missing secret: $v"; exit 1; }
+          done
+          CODE=$(python3 -c 'import os,urllib.parse as u;c=os.environ["CODE_IN"].strip();c=c.split("code=",1)[-1].split("&",1)[0];print(u.unquote(c))')
+          echo "::add-mask::$CODE"
+          AUTH=$(printf '%s:%s' "$EBAY_CLIENT_ID" "$EBAY_CLIENT_SECRET" | base64 -w0)
+          RESP=$(curl -sS -X POST https://api.ebay.com/identity/v1/oauth2/token \
+            -H "Content-Type: application/x-www-form-urlencoded" \
+            -H "Authorization: Basic $AUTH" \
+            --data-urlencode "grant_type=authorization_code" \
+            --data-urlencode "code=$CODE" \
+            --data-urlencode "redirect_uri=$EBAY_RUNAME")
+          RT=$(printf '%s' "$RESP" | jq -r '.refresh_token // empty')
+          AT=$(printf '%s' "$RESP" | jq -r '.access_token // empty')
+          [ -n "$RT" ] && echo "::add-mask::$RT"
+          [ -n "$AT" ] && echo "::add-mask::$AT"
+          if [ -z "$RT" ]; then
+            echo "Exchange failed:"; printf '%s' "$RESP" | jq '{error, error_description}'; exit 1
+          fi
+          echo "Refresh token valid for $(printf '%s' "$RESP" | jq -r '.refresh_token_expires_in') seconds"
+          gh secret set EBAY_REFRESH_TOKEN --repo "$REPO" --body "$RT"
+          echo "Saved EBAY_REFRESH_TOKEN"
+
+      - name: Verify refresh token works
+        env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+        run: |
+          set -euo pipefail
+          echo "Secret list check:"; gh secret list --repo "${{ github.repository }}" | grep -c EBAY_REFRESH_TOKEN
