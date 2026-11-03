@@ -2,9 +2,13 @@
 import json, os, shutil, sys, glob
 
 src, dst = sys.argv[1], sys.argv[2]
-if os.path.isdir(dst):
-    shutil.rmtree(dst)
-os.makedirs(dst)
+# keep the hand-written REPORT.md and manual/ evidence; replace everything the shards produce
+os.makedirs(dst, exist_ok=True)
+for x in os.listdir(dst):
+    if x in ("REPORT.md", "manual"):
+        continue
+    pth = os.path.join(dst, x)
+    shutil.rmtree(pth) if os.path.isdir(pth) else os.remove(pth)
 for d in sorted(glob.glob(f"{src}/qa-*")):
     shutil.copytree(d, dst, dirs_exist_ok=True)
 res = {}
