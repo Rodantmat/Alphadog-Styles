@@ -30,6 +30,7 @@ jobs:
           for v in EBAY_CLIENT_ID EBAY_CLIENT_SECRET EBAY_RUNAME GH_TOKEN; do
             [ -n "${!v}" ] || { echo "Missing secret: $v"; exit 1; }
           done
+          case "$CODE_IN" in *oauth2/authorize*) echo "You pasted the sign-in LINK. Open it, click Agree, then paste the Thank You page address (it contains code=)."; exit 1;; esac
           CODE=$(python3 -c 'import os,urllib.parse as u;c=os.environ["CODE_IN"].strip();c=c.split("code=",1)[-1].split("&",1)[0];print(u.unquote(c))')
           echo "::add-mask::$CODE"
           AUTH=$(printf '%s:%s' "$EBAY_CLIENT_ID" "$EBAY_CLIENT_SECRET" | base64 -w0)
