@@ -55,20 +55,8 @@ if MODE=="capfront":
    "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":fid,"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]}]}
   mk("cap_frontbrand",src,["Khaki","Stone"],None)
 if MODE=="capheart":
-  import io
   from PIL import Image
-  up=json.load(open("out/uploads.json")); u=call("GET",f"/v1/uploads/{up['mini_poodle/geo_heart/back_blackink']}.json")
-  src_url=u.get("preview_url"); print("preview",u.get("width"),u.get("height"))
-  im=Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(src_url,headers={"User-Agent":"a"})).read())).convert("RGBA")
-  a=im.split()[3]; W0,H0=im.size; px=a.load()
-  cols=[any(px[x,y]>20 for y in range(0,H0,2)) for x in range(W0)]
-  bb=a.getbbox(); x=bb[0]
-  while x<bb[2] and cols[x]: x+=1
-  gap_start=x
-  while x<bb[2] and not cols[x]: x+=1
-  print("bbox",bb,"gap",gap_start,x)
-  head=im.crop((bb[0],bb[1],gap_start,bb[3])); head=head.crop(head.getbbox()); os.makedirs("shop/brand",exist_ok=True)
-  head.save("shop/brand/capfront_minipoodle_geoheart_head.png"); print("head",head.size)
+  head=Image.open("shop/brand/capfront_minipoodle_geoheart_head.png")
   hid=upl("shop/brand/capfront_minipoodle_geoheart_head.png")
   cv=call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"]; W,H=next((q["width"],q["height"]) for q in cv[0]["placeholders"] if q["position"]=="front_dtf")
   kv=[v for v in cv if v["options"].get("color")=="Khaki"]; w=min(.92,.92*H*(head.width/head.height)/W)
