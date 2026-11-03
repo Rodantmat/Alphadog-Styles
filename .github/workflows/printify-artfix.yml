@@ -3,6 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       dry: {default: "1"}
+      breed: {default: "mini_poodle"}
+      des: {default: "geo_heart"}
+      src: {default: ""}
 permissions:
   contents: write
 jobs:
@@ -15,6 +18,9 @@ jobs:
       - env:
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
           DRY: ${{ inputs.dry }}
+          BREED: ${{ inputs.breed }}
+          DES: ${{ inputs.des }}
+          SRC: ${{ inputs.src }}
         run: mkdir -p out && python3 scripts/printify_artfix.py
       - if: always()
         run: |

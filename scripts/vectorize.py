@@ -23,6 +23,16 @@ for _ in range(20):
     for k in (0, 1):
         if (asg == k).any(): c[k] = np.average(xs_[asg == k], weights=ar_[asg == k])
 front_ids = [i for i, a_ in zip(ids, asg) if a_ == 0]; back_ids = [i for i, a_ in zip(ids, asg) if a_ == 1]
+if os.environ.get("ASSIGN") == "near":   # reassign small parts to the figure whose main body is nearest (fixes tails/hearts split to the wrong side)
+    mainF = max(front_ids, key=lambda i: st[i, cv2.CC_STAT_AREA]); mainB = max(back_ids, key=lambda i: st[i, cv2.CC_STAT_AREA])
+    dF = cv2.distanceTransform((lab != mainF).astype(np.uint8), cv2.DIST_L2, 5); dB = cv2.distanceTransform((lab != mainB).astype(np.uint8), cv2.DIST_L2, 5)
+    newF, newB = [mainF], [mainB]
+    for i in ids:
+        if i in (mainF, mainB): continue
+        mk = lab == i
+        (newF if dF[mk].min() <= dB[mk].min() else newB).append(i)
+    moved = sorted(set(newF) ^ set(front_ids)); print("reassigned", len(moved), "parts", [(int(cen[i][0]), int(cen[i][1]), int(st[i, cv2.CC_STAT_AREA])) for i in moved])
+    front_ids, back_ids = newF, newB
 parts = {"front": np.isin(lab, front_ids), "back": np.isin(lab, back_ids)}
 def dark_garment_mask(m):
     """Naive inversion turns black eyes/noses/lenses into glowing white blobs. For dark shirts: solid blobs become
