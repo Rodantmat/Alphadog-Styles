@@ -1,0 +1,14 @@
+name: mk-keypair
+on: workflow_dispatch
+permissions: { contents: read }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+        run: |
+          set -e
+          openssl genpkey -algorithm RSA -pkeyopt rsa_keygen_bits:2048 -out k.pem 2>/dev/null
+          gh secret set DATA_PRIV_KEY --repo "${{ github.repository }}" < k.pem
+          openssl pkey -in k.pem -pubout

@@ -1,0 +1,18 @@
+name: printify-sample-order
+on:
+  workflow_dispatch:
+    inputs:
+      mode: { default: "calc" }
+      ship: { default: "economy" }
+permissions: { contents: read }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/printify_sample_order.py
+        env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          DATA_PRIV_KEY: ${{ secrets.DATA_PRIV_KEY }}
+          MODE: ${{ inputs.mode }}
+          SHIP_METHOD: ${{ inputs.ship }}
