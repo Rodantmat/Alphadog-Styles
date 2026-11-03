@@ -466,5 +466,31 @@
    "left_dtf",
    "right_dtf"
   ]
+ },
+ "FB_tiny": {
+  "id": "6ae99d10eb5d7e24b80cb3b2",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
+ },
+ "FB_small": {
+  "id": "6ae99d2fcaf32b772f046a31",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
  }
 }
