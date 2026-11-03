@@ -1,0 +1,9 @@
+name: printify-republish
+on: workflow_dispatch
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/printify_republish_imgs.py
+        env: { PRINTIFY_TOKEN: "${{ secrets.PRINTIFY_TOKEN }}" }
