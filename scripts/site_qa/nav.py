@@ -272,7 +272,11 @@ def nav_shard(qa, browser, p):
     # ---------- home widgets
     qa.go(page, "#/")
     page.mouse.move(5, 790)
-    scroll_all(page)
+    left = page.evaluate("""async(sel)=>{for(let pass=0;pass<6;pass++){const un=[...document.querySelectorAll(sel)].filter(e=>!e.classList.contains('on'));if(!un.length)return 0;
+  for(const e of un){e.scrollIntoView({block:'center'});await new Promise(r=>setTimeout(r,120))}await new Promise(r=>setTimeout(r,1500))}
+  return [...document.querySelectorAll(sel)].filter(e=>!e.classList.contains('on')).length}""", ".sec .grid .art.mock")
+    qa.ok("home", left == 0, "Home featured cards never render their mockup even when scrolled into view", sev="medium", actual=f"{left} unpainted", page=page)
+    page.evaluate("window.scrollTo(0,0)")
     page.wait_for_timeout(1500)
     qa.quiet(page)
     home = page.evaluate("""()=>({hero:document.querySelector('.hero p').innerText,seeall:[...document.querySelectorAll('.sec .sh a')].map(a=>a.innerText),

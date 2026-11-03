@@ -3,6 +3,9 @@ import re, os, sys, json, urllib.parse as up
 sys.path.insert(0, os.path.dirname(__file__))
 from common import *
 
+PAINT = """async(sel)=>{for(let pass=0;pass<6;pass++){const un=[...document.querySelectorAll(sel)].filter(e=>!e.classList.contains('on'));if(!un.length)return 0;
+  for(const e of un){e.scrollIntoView({block:'center'});await new Promise(r=>setTimeout(r,120))}await new Promise(r=>setTimeout(r,1500))}
+  return [...document.querySelectorAll(sel)].filter(e=>!e.classList.contains('on')).length}"""
 CARDS = """()=>[...document.querySelectorAll('#sg a.card')].map(a=>{const m=a.querySelector('.art');return {href:a.getAttribute('href'),b:m.dataset.b,t:m.dataset.t,s:m.dataset.s,on:m.classList.contains('on'),svg:m.innerHTML,img:(m.querySelector('img')||{}).getAttribute?.('src'),name:a.querySelector('.meta b').innerText,sub:a.querySelector('.meta span').innerText,aria:m.getAttribute('aria-label')}})"""
 STATE = """()=>{const q=s=>document.querySelector(s);return {prod:q('#ctl [data-prod].on')?.dataset.prod,color:q('#ctl .sw.on')?.dataset.color,
   fo:q('#ctl [data-k=front][data-opt].on')?.dataset.opt,bo:q('#ctl [data-k=back][data-opt].on')?.dataset.opt,
@@ -101,7 +104,8 @@ def shop_shard(qa, browser, p):
     # ---------- every card: preview + link
     qa.go(page, "#/shop", wait="#sg .card")
     page.evaluate("""async()=>{for(const a of document.querySelectorAll('#sg a.card')){a.scrollIntoView();await new Promise(r=>setTimeout(r,25))}window.scrollTo(0,0)}""")
-    page.wait_for_function("[...document.querySelectorAll('#sg .art.mock')].every(e=>e.classList.contains('on'))", timeout=60000)
+    left = page.evaluate(PAINT, "#sg .art.mock")
+    qa.ok("shop_cards", left == 0, "Some shop cards never render their garment mockup even when scrolled into view", sev="medium", repro="#/shop, scroll each card into view", actual=f"{left} unpainted")
     qa.quiet(page, 800, 30000)
     cs = cards()
     combos = {(c["b"], c["t"], c["s"]) for c in cs}
