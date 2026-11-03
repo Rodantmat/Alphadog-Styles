@@ -2,7 +2,7 @@
  "art": {
   "shard": "art",
   "base": "https://alphadogstyles.com",
-  "secs": 22.2,
+  "secs": 23.8,
   "checks": {
    "art_files": [
     1188,
@@ -36,73 +36,493 @@
  "cart": {
   "shard": "cart",
   "base": "https://alphadogstyles.com",
-  "secs": 129.3,
+  "secs": 302.0,
   "checks": {
    "add_to_cart": [
     45,
     0
    ],
    "cart_lines": [
-    226,
+    238,
     0
    ],
    "cart_price": [
-    44,
+    46,
     0
    ],
    "cart_thumbs": [
-    44,
+    46,
     0
    ],
    "cart_totals": [
-    10,
+    21,
     0
    ],
    "cart_misc": [
-    2,
+    3,
     0
    ],
    "checkout": [
-    15,
+    37,
     0
    ],
    "i18n": [
     4,
     0
+   ],
+   "cart_qty": [
+    5,
+    0
+   ],
+   "custom": [
+    18,
+    0
+   ],
+   "saved_designs": [
+    5,
+    0
    ]
   },
-  "defects": [
-   {
-    "sev": "info",
-    "area": "harness",
-    "title": "QA harness crashed in shard cart: name 'badge' is not defined",
-    "repro": "",
-    "expected": "",
-    "actual": "Traceback (most recent call last):\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 238, in run\n    shard_fn(qa, browser, p)\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/cart.py\", line 182, in cart_shard\n    qa.ok(\"cart_qty\", line0()[\"qty\"] == str(q0 + 1) and page.inner_text(\"#cartn\") == str(badge + 1), \"Cart + does not increase qty/badge\", sev=\"high\", actual=(line0()[\"qty\"], page.inner_text(\"#cartn\")))\n                                                                                         ^^^^^\nNameError: name 'badge' is ",
-    "shot": null,
-    "count": 1,
-    "examples": []
-   }
+  "defects": [],
+  "notes": [
+   "Cart has no 'edit line' action (no UI to reopen a line in the designer); stored _s state is unused - not tested further."
   ],
-  "notes": [],
   "errors": {
-   "console": [],
+   "console": [
+    {
+     "at": "/checkout",
+     "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+    }
+   ],
    "pageerror": [],
-   "http": [],
+   "http": [
+    {
+     "at": "/checkout",
+     "status": 400,
+     "url": "https://alphadogstyles.com/api/orders"
+    }
+   ],
    "failed": []
   },
   "error_counts": {
-   "console": 0,
+   "console": 1,
    "pageerror": 0,
-   "http": 0,
+   "http": 1,
    "failed": 0
   },
-  "api_calls": []
+  "api_calls": [
+   {
+    "m": "POST",
+    "path": "/api/orders",
+    "q": "",
+    "body": {
+     "email": "qa-test@example.com",
+     "ship": {
+      "name": "QA Tester",
+      "a1": "123 Test Street",
+      "a2": "",
+      "city": "San Diego",
+      "st": "CA",
+      "zip": "92101",
+      "phone": "5555550100"
+     },
+     "items": [
+      {
+       "id": "1793707450288",
+       "prod": "tee",
+       "color": "Soft Pink",
+       "size": "M",
+       "qty": 3,
+       "front": {
+        "part": "head",
+        "size": "l",
+        "breed": "beagle",
+        "theme": "geo",
+        "style": "heart"
+       },
+       "back": null
+      }
+     ],
+     "lang": "en",
+     "subtotal": 8397,
+     "shipping": 0,
+     "total": 8397
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/orders",
+    "q": "",
+    "body": {
+     "email": "qa-test@example.com",
+     "ship": {
+      "name": "QA Tester",
+      "a1": "123 Test Street",
+      "a2": "",
+      "city": "San Diego",
+      "st": "CA",
+      "zip": "92101",
+      "phone": "5555550100"
+     },
+     "items": [
+      {
+       "id": "1793707450288",
+       "prod": "tee",
+       "color": "Soft Pink",
+       "size": "M",
+       "qty": 3,
+       "front": {
+        "part": "head",
+        "size": "l",
+        "breed": "beagle",
+        "theme": "geo",
+        "style": "heart"
+       },
+       "back": null
+      }
+     ],
+     "lang": "en",
+     "subtotal": 8397,
+     "shipping": 0,
+     "total": 8397
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/orders/confirm",
+    "q": "",
+    "body": {
+     "id": "QA-ORDER-1"
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/orders/confirm",
+    "q": "",
+    "body": {
+     "id": "QA-ORDER-1"
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/orders",
+    "q": "",
+    "body": {
+     "email": "qa-test@example.com",
+     "ship": {
+      "name": "QA Tester",
+      "a1": "123 Test Street",
+      "a2": "",
+      "city": "San Diego",
+      "st": "CA",
+      "zip": "92101",
+      "phone": "5555550100"
+     },
+     "items": [
+      {
+       "id": "1793707517751",
+       "prod": "hoodie",
+       "color": "White",
+       "size": "3XL",
+       "qty": 1,
+       "front": {
+        "part": "head",
+        "size": "l",
+        "breed": "pug",
+        "theme": "line",
+        "style": "cool"
+       },
+       "back": {
+        "part": "body",
+        "size": "l",
+        "breed": "pug",
+        "theme": "line",
+        "style": "cool"
+       }
+      }
+     ],
+     "lang": "es",
+     "subtotal": 6599,
+     "shipping": 499,
+     "total": 7098
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/custom",
+    "q": "",
+    "body": {
+     "name": "QA Tester",
+     "email": "qa-test@example.com",
+     "lang": "en",
+     "dog": {
+      "name": "Rex",
+      "breed": "",
+      "colors": "",
+      "markings": "",
+      "ears": "",
+      "tail": "",
+      "details": ""
+     },
+     "style": {
+      "theme": "geo",
+      "style": ""
+     },
+     "products": [
+      "tee",
+      "cap_dad"
+     ],
+     "qty": "",
+     "notes": "",
+     "photos": [
+      {
+       "mime": "image/jpeg",
+       "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAYH/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AiwF6zkAAAAAAAAAAAAAAAB//2Q=="
+      },
+      {
+       "mime": "image/jpeg",
+       "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAUG/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AmwFtnAAAAAAAAAAAAAAAAH//2Q=="
+      },
+      {
+       "mime": "image/jpeg",
+       "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAIE/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8AmgM6gAAAAAAAAAAAAAAAH//Z"
+      },
+      {
+       "mime": "image/jpeg",
+       "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAL/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAb/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCQEopQAAAAAAAAAAAAAAAH/9k="
+      },
+      {
+       "mime": "image/jpeg",
+       "b64": "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAQDAwQDAwQEBAQFBQQFBwsHBwYGBw4KCggLEA4RERAOEA8SFBoWEhMYEw8QFh8XGBsbHR0dERYgIh8cIhocHRz/2wBDAQUFBQcGBw0HBw0cEhASHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBwcHBz/wAARCAAwADADASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAf/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCgAmSlAAAAAAAAAAAAAAAAP//Z"
+      }
+     ]
+    },
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/custom/QAC1",
+    "q": "k=qak",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/custom/QAC1/art/head",
+    "q": "k=qak",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/custom/QAC1/art/head",
+    "q": "k=qak",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/custom/QAC1/art/head",
+    "q": "k=qak",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/custom/QAC1/art/head",
+    "q": "k=qak",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/orders",
+    "q": "",
+    "body": {
+     "email": "qa-test@example.com",
+     "ship": {
+      "name": "QA Tester",
+      "a1": "123 Test Street",
+      "a2": "",
+      "city": "San Diego",
+      "st": "CA",
+      "zip": "92101",
+      "phone": "5555550100"
+     },
+     "items": [
+      {
+       "id": "1793707549892",
+       "prod": "tee",
+       "color": "White",
+       "size": "M",
+       "qty": 1,
+       "front": {
+        "part": "head",
+        "size": "l",
+        "custom": "QAC1",
+        "k": "qak",
+        "breed": "custom",
+        "theme": "custom",
+        "style": "custom"
+       },
+       "back": {
+        "part": "body",
+        "size": "l",
+        "custom": "QAC1",
+        "k": "qak",
+        "breed": "custom",
+        "theme": "custom",
+        "style": "custom"
+       }
+      }
+     ],
+     "lang": "en",
+     "subtotal": 3299,
+     "shipping": 499,
+     "total": 5797,
+     "custom": {
+      "id": "QAC1",
+      "k": "qak"
+     }
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/designs",
+    "q": "",
+    "body": {
+     "id": "1793707577108",
+     "s": {
+      "prod": "hoodie",
+      "color": "Sand",
+      "size": "M",
+      "qty": 1,
+      "view": "front",
+      "front": {
+       "opt": "head_l",
+       "breed": "shiba_inu",
+       "theme": "geo",
+       "style": "heart"
+      },
+      "back": {
+       "opt": "body_l",
+       "breed": "shiba_inu",
+       "theme": "geo",
+       "style": "heart"
+      }
+     }
+    },
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/designs",
+    "q": "",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/orders",
+    "q": "",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/designs",
+    "q": "",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/orders",
+    "q": "",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "DELETE",
+    "path": "/api/designs/1793707577108",
+    "q": "",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/designs",
+    "q": "",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "GET",
+    "path": "/api/orders",
+    "q": "",
+    "body": null,
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/auth/request",
+    "q": "",
+    "body": {
+     "email": "qa-test@example.com",
+     "lang": "en"
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/auth/verify",
+    "q": "",
+    "body": {
+     "email": "qa-test@example.com",
+     "code": "123456"
+    },
+    "hash": null
+   },
+   {
+    "m": "POST",
+    "path": "/api/designs",
+    "q": "",
+    "body": {
+     "id": "1793707604445",
+     "s": {
+      "prod": "tank",
+      "color": "White",
+      "size": "M",
+      "qty": 1,
+      "view": "front",
+      "front": {
+       "opt": "head_l",
+       "breed": "boxer",
+       "theme": "line",
+       "style": "heart"
+      },
+      "back": {
+       "opt": "body_l",
+       "breed": "boxer",
+       "theme": "line",
+       "style": "heart"
+      }
+     }
+    },
+    "hash": null
+   }
+  ]
  },
  "config": {
   "shard": "config",
   "base": "https://alphadogstyles.com",
-  "secs": 161.2,
+  "secs": 154.0,
   "checks": {
    "race": [
     1,
@@ -176,7 +596,7 @@
  "nav": {
   "shard": "nav",
   "base": "https://alphadogstyles.com",
-  "secs": 422.6,
+  "secs": 413.6,
   "checks": {
    "deploy": [
     1,
@@ -428,7 +848,7 @@
  "shop": {
   "shard": "shop",
   "base": "https://alphadogstyles.com",
-  "secs": 77.3,
+  "secs": 89.0,
   "checks": {
    "shop_filters": [
     30,
