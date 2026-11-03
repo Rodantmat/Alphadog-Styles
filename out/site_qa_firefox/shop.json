@@ -1,7 +1,7 @@
 {
  "shard": "shop",
  "base": "https://alphadogstyles.com",
- "secs": 89.0,
+ "secs": 37.1,
  "checks": {
   "shop_filters": [
    30,
@@ -16,11 +16,23 @@
    0
   ],
   "card_to_designer": [
-   916,
+   903,
    0
   ]
  },
- "defects": [],
+ "defects": [
+  {
+   "sev": "info",
+   "area": "harness",
+   "title": "QA harness crashed in shard shop: Page.evaluate: The operation is insecure.\n@debugger eval code line 291 > eval:1:87\nevaluate@debugger eval code:298:18\n@debugger eval code:1:44\n",
+   "repro": "",
+   "expected": "",
+   "actual": "y\", line 154, in go\n    page.evaluate(\"h=>{if(location.hash===h)window.dispatchEvent(new HashChangeEvent('hashchange'));else location.hash=h}\", h)\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 8531, in evaluate\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/playwright/_impl/_page.py\", line 468, in eval",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  }
+ ],
  "notes": [],
  "data": {
   "translated_breed_names_es": 20,
@@ -61,8 +73,7 @@
    "wtank|Solid Tahiti Blue": 5,
    "wtank|Solid White": 5
   },
-  "adjacent_same_garment_color": 0,
-  "cards_clicked_through": 198
+  "adjacent_same_garment_color": 0
  },
  "errors": {
   "console": [],

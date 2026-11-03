@@ -1,7 +1,7 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 413.6,
+ "secs": 394.8,
  "checks": {
   "deploy": [
    1,
@@ -154,8 +154,6 @@
     "#/": [
      "Beagle",
      "Chihuahua",
-     "English",
-     "Português",
      "Shiba Inu"
     ],
     "#/shop": [
@@ -165,10 +163,8 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
@@ -180,10 +176,8 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
@@ -195,10 +189,8 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
@@ -210,112 +202,25 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
     ],
     "#/design": [
-     "Beagle",
-     "Border Collie",
-     "Boston Terrier",
-     "Cane Corso",
-     "Cavalier King Charles Spaniel",
-     "Chihuahua",
-     "Color",
-     "English",
-     "Golden Retriever",
-     "Labrador Retriever",
-     "Português",
-     "Rottweiler",
-     "Shiba Inu",
-     "Yorkshire Terrier"
-    ],
-    "#/cart": [
-     "English",
-     "Português"
-    ],
-    "#/checkout": [
-     "English",
-     "Português"
-    ],
-    "#/custom": [
-     "English",
-     "Português"
-    ],
-    "#/login": [
-     "English",
-     "Português"
-    ],
-    "#/account": [
-     "English",
-     "Português"
+     "Color"
     ],
     "#/admin": [
      "Admin",
      "Admin token",
-     "English",
-     "Enter",
-     "Português"
-    ],
-    "#/done/QA-TEST-ORDER": [
-     "English",
-     "Português"
-    ],
-    "#/custom/QA-NOPE?k=x": [
-     "English",
-     "Português"
-    ],
-    "#/page/about": [
-     "English",
-     "Português"
-    ],
-    "#/page/faq": [
-     "English",
-     "Português"
-    ],
-    "#/page/shipping": [
-     "English",
-     "Português"
-    ],
-    "#/page/returns": [
-     "English",
-     "Português"
-    ],
-    "#/page/sizing": [
-     "English",
-     "Português"
-    ],
-    "#/page/contact": [
-     "English",
-     "Português"
-    ],
-    "#/page/privacy": [
-     "English",
-     "Português"
-    ],
-    "#/page/terms": [
-     "English",
-     "Português"
-    ],
-    "#/page/does-not-exist": [
-     "English",
-     "Português"
-    ],
-    "#/no-such-route": [
-     "English",
-     "Português"
+     "Enter"
     ]
    },
    "pt": {
     "#/": [
      "Beagle",
      "Chihuahua",
-     "English",
-     "Português",
      "Shiba Inu"
     ],
     "#/shop": [
@@ -326,10 +231,8 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
@@ -342,10 +245,8 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
@@ -358,10 +259,8 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
@@ -374,104 +273,16 @@
      "Cane Corso",
      "Cavalier King Charles Spaniel",
      "Chihuahua",
-     "English",
      "Golden Retriever",
      "Labrador Retriever",
-     "Português",
      "Rottweiler",
      "Shiba Inu",
      "Yorkshire Terrier"
-    ],
-    "#/design": [
-     "Beagle",
-     "Border Collie",
-     "Boston Terrier",
-     "Boxer",
-     "Cane Corso",
-     "Cavalier King Charles Spaniel",
-     "Chihuahua",
-     "English",
-     "Golden Retriever",
-     "Labrador Retriever",
-     "Português",
-     "Rottweiler",
-     "Shiba Inu",
-     "Yorkshire Terrier"
-    ],
-    "#/cart": [
-     "English",
-     "Português"
-    ],
-    "#/checkout": [
-     "English",
-     "Português"
-    ],
-    "#/custom": [
-     "English",
-     "Português"
-    ],
-    "#/login": [
-     "English",
-     "Português"
-    ],
-    "#/account": [
-     "English",
-     "Português"
     ],
     "#/admin": [
      "Admin",
      "Admin token",
-     "English",
-     "Enter",
-     "Português"
-    ],
-    "#/done/QA-TEST-ORDER": [
-     "English",
-     "Português"
-    ],
-    "#/custom/QA-NOPE?k=x": [
-     "English",
-     "Português"
-    ],
-    "#/page/about": [
-     "English",
-     "Português"
-    ],
-    "#/page/faq": [
-     "English",
-     "Português"
-    ],
-    "#/page/shipping": [
-     "English",
-     "Português"
-    ],
-    "#/page/returns": [
-     "English",
-     "Português"
-    ],
-    "#/page/sizing": [
-     "English",
-     "Português"
-    ],
-    "#/page/contact": [
-     "English",
-     "Português"
-    ],
-    "#/page/privacy": [
-     "English",
-     "Português"
-    ],
-    "#/page/terms": [
-     "English",
-     "Português"
-    ],
-    "#/page/does-not-exist": [
-     "English",
-     "Português"
-    ],
-    "#/no-such-route": [
-     "English",
-     "Português"
+     "Enter"
     ]
    }
   },
