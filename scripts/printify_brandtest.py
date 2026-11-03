@@ -36,8 +36,9 @@ def mk(name,src,colors,extra):
        "positions":sorted({ph["position"] for a in p["print_areas"] for ph in a["placeholders"]})}
     seen=set()
     for im in p["images"]:
-        if im["position"] in seen: continue
-        seen.add(im["position"]); d=urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"})).read(); open(f"out/brandtest/{name}_{im['position']}.jpg","wb").write(d)
+        key=im["position"]+("_"+im["src"].split("camera_label=")[-1].split("&")[0] if "camera_label=" in im["src"] else "")
+        if key in seen: continue
+        seen.add(key); im["position"]=key; d=urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"})).read(); open(f"out/brandtest/{name}_{im['position']}.jpg","wb").write(d)
 MODE=os.environ.get("MODE","cap")
 if MODE=="tee": mk("tee",pick(145),["White"],{"position":"neck","images":[{"id":ids["neck_blackink_v3"],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
 if MODE=="cap":
@@ -110,6 +111,22 @@ if MODE=="samples":
     "print_areas":[{"variant_ids":[v["id"] for v in nv],"placeholders":[{"position":"front","images":[{"id":fid,"x":.76,"y":.17,"scale":round(fw,3),"angle":0}]},
       {"position":"back","images":[{"id":bid,"x":.5,"y":.5,"scale":round(bw,3),"angle":0}]}]}]}
   mk("SAMPLE_tee_natural_minipoodle",srct,["Natural"],{"position":"neck","images":[{"id":ids["neck_blackink_v3"],"x":.5,"y":.5,"scale":1.0,"angle":0}]})
+if MODE=="final":
+  cv=call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"]
+  print("PLACEHOLDERS",json.dumps(cv[0].get("placeholders")),json.dumps({k:v for k,v in cv[0].items() if k!="placeholders"}))
+  from PIL import Image
+  head=Image.open("shop/brand/capfront_minipoodle_geoheart_head.png"); hid=upl("shop/brand/capfront_minipoodle_geoheart_head.png")
+  W,H=next((q["width"],q["height"]) for q in cv[0]["placeholders"] if q["position"]=="front_dtf")
+  kv=[v for v in cv if v["options"].get("color")=="Khaki"]; w=min(.92,.92*H*(head.width/head.height)/W)
+  srcc={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in kv],"print_areas":[{"variant_ids":[v["id"] for v in kv],"placeholders":[{"position":"front_dtf","images":[{"id":hid,"x":.5,"y":.5,"scale":round(w,3),"angle":0}]}]}]}
+  mk("FINAL_cap_khaki_minipoodle_geoheart_backbrand",srcc,["Khaki"],{"position":"back_hat_embroidery","images":[{"id":ids["capback_blackink"],"x":.5,"y":.5,"scale":1.0,"angle":0}]})
+  t=call("GET",f"/v1/shops/{SHOP}/products/6ae98c3776dc38811905cf5a.json")
+  seen=set()
+  for im in t["images"]:
+    key=im["position"]+("_"+im["src"].split("camera_label=")[-1].split("&")[0] if "camera_label=" in im["src"] else "")
+    if key in seen: continue
+    seen.add(key); open(f"out/brandtest/FINAL_tee_{key}.jpg","wb").write(urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"})).read())
+  print("TEE", [(ph["position"],[(i.get("x"),i.get("y"),i.get("scale")) for i in ph["images"]]) for a in t["print_areas"][:1] for ph in a["placeholders"]])
 old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
 old.update(res);res=old
 json.dump(res,open("out/brandtest/result.json","w"),indent=1); print(json.dumps(res,indent=1))
