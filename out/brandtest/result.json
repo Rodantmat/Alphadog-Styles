@@ -41,5 +41,24 @@
   "positions": [
    "front_dtf"
   ]
+ },
+ "tee": {
+  "id": "6ae989e32d261a825f04654d",
+  "src": "6ae56c121db256d3020e9fe6",
+  "src_cost": [
+   1673,
+   1818,
+   1954
+  ],
+  "new_cost": [
+   1673,
+   1818,
+   1954
+  ],
+  "positions": [
+   "back",
+   "front",
+   "neck"
+  ]
  }
 }
