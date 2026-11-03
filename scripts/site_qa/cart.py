@@ -75,7 +75,7 @@ def cart_shard(qa, browser, p):
             page.wait_for_timeout(80)
             badge += it["qty"]
             tb = page.inner_text("#cartn")
-            qa.ok("add_to_cart", tb == str(badge) and page.inner_text("#toast") == T("Added to cart"), "Add to cart does not update badge / show toast", sev="high",
+            qa.ok("add_to_cart", tb == str(badge) and (page.text_content("#toast") or "").strip() == T("Added to cart"), "Add to cart does not update badge / show toast", sev="high",
                   repro=f"#/design {it['prod']} {it['color']} {it['size']} front {it['fo']} back {it['bo']} -> Add to cart", expected=badge, actual=(tb, page.inner_text("#toast")), page=page)
 
     def exp_label(side, it):
