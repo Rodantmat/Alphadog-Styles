@@ -129,7 +129,7 @@ if MODE=="final":
   print("TEE", [(ph["position"],[(i.get("x"),i.get("y"),i.get("scale")) for i in ph["images"]]) for a in t["print_areas"][:1] for ph in a["placeholders"]])
 if MODE=="ship":
   for bp in (1447,12):
-    print("SHIP",bp,json.dumps(call("GET",f"/v1/catalog/blueprints/{bp}/print_providers/99/shipping.json"))[:3000])
+    r=call("GET",f"/v1/catalog/blueprints/{bp}/print_providers/99/shipping.json"); print("SHIP",bp,[(pr["countries"],pr["first_item"],pr["additional_items"],len(pr["variant_ids"]),(18100 in pr["variant_ids"] or 105377 in pr["variant_ids"])) for pr in r["profiles"] if "US" in pr["countries"]]); print("SHIPV2",bp,json.dumps(call("GET",f"/v2/catalog/blueprints/{bp}/print_providers/99/shipping.json"))[:1500])
   for pid in ("6ae996c2985328babd0caec9","6ae98c3776dc38811905cf5a"):
     t=call("GET",f"/v1/shops/{SHOP}/products/{pid}.json"); print("COST",pid,[(v["title"],v["cost"]) for v in t["variants"] if v["is_enabled"]])
 old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
