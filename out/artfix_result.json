@@ -1,0 +1,172 @@
+{
+ "stats": {
+  "29544854 AlphaDog Styles": {
+   "fixed": 3,
+   "failed": 0
+  },
+  "29545924 AlphaDog Styles eBay": {
+   "fixed": 6,
+   "failed": 0
+  },
+  "29546485 AlphaDog Styles TikTok": {
+   "fixed": 15,
+   "failed": 0
+  },
+  "29559517 AlphaDog Store": {
+   "fixed": 0,
+   "failed": 0
+  }
+ },
+ "touched": [
+  [
+   29544854,
+   "6ae98de368f9892da9072ff0",
+   "BRAND TEST CAPOPT_geo_heart_back (draft, delete me)",
+   1447
+  ],
+  [
+   29544854,
+   "6ae98dc368f9892da9072fb3",
+   "BRAND TEST CAPOPT_geo_heart_frontbig (draft, delete me)",
+   1447
+  ],
+  [
+   29544854,
+   "6ae98c17eb5d7e24b80c9f67",
+   "BRAND TEST SAMPLE_cap_khaki_minipoodle_geoheart (draft, delete me)",
+   1447
+  ],
+  [
+   29545924,
+   "6ae588ecc0e74489cc070b2a",
+   "Mini Poodle Hoodie Dog Lover Geometric Heart Big Portrait",
+   77
+  ],
+  [
+   29545924,
+   "6ae588ea90e00e273b0894da",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Big Portrait",
+   145
+  ],
+  [
+   29545924,
+   "6ae581c7197e2a80420272ab",
+   "Mini Poodle Hoodie Dog Lover Geometric Heart Pocket Print",
+   77
+  ],
+  [
+   29545924,
+   "6ae581c455e86fafe60ae18c",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Pocket Print",
+   145
+  ],
+  [
+   29545924,
+   "6ae57c8f499964581706fe21",
+   "Mini Poodle Hoodie Dog Lover Geometric Heart Front & Back",
+   77
+  ],
+  [
+   29545924,
+   "6ae57c8c90e00e273b088bba",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Front & Back",
+   145
+  ],
+  [
+   29546485,
+   "6ae7a5d76aa5485ffc0a052f",
+   "Mini Poodle Mesh Trucker Cap Dog Lover Geometric Heart",
+   1734
+  ],
+  [
+   29546485,
+   "6ae7a5d6cefd302331097f45",
+   "Mini Poodle Foam Trucker Hat Dog Lover Geometric Heart",
+   1735
+  ],
+  [
+   29546485,
+   "6ae7a5d4d037ed7f1f02e1c1",
+   "Mini Poodle Dad Hat Dog Lover Geometric Heart",
+   1447
+  ],
+  [
+   29546485,
+   "6ae7a5d3a04ae2f1280accef",
+   "Mini Poodle Polo Shirt Dog Lover Geometric Heart",
+   1402
+  ],
+  [
+   29546485,
+   "6ae7a5d17861ac1c1c042638",
+   "Mini Poodle Women's Racerback Tank Dog Lover Geometric Heart",
+   18
+  ],
+  [
+   29546485,
+   "6ae7a5cf7861ac1c1c042636",
+   "Mini Poodle Tank Top Dog Lover Geometric Heart",
+   39
+  ],
+  [
+   29546485,
+   "6ae6cfd373cf98f438067335",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Pocket Print",
+   12
+  ],
+  [
+   29546485,
+   "6ae6cfd005f6dc952a0e8e20",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Big Portrait",
+   12
+  ],
+  [
+   29546485,
+   "6ae6cfcd5d17aa531b00d623",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Front & Back",
+   12
+  ],
+  [
+   29546485,
+   "6ae59a0d0e146105c80c73b1",
+   "Mini Poodle Hoodie Dog Lover Geometric Heart Big Portrait",
+   77
+  ],
+  [
+   29546485,
+   "6ae59a0b944026b11305136d",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Big Portrait",
+   145
+  ],
+  [
+   29546485,
+   "6ae5925e0e146105c80c6879",
+   "Mini Poodle Hoodie Dog Lover Geometric Heart Pocket Print",
+   77
+  ],
+  [
+   29546485,
+   "6ae5925ac0e74489cc071375",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Pocket Print",
+   145
+  ],
+  [
+   29546485,
+   "6ae58dc1aa79725281069762",
+   "Mini Poodle Hoodie Dog Lover Geometric Heart Front & Back",
+   77
+  ],
+  [
+   29546485,
+   "6ae58dbec0e74489cc070f62",
+   "Mini Poodle T-Shirt Dog Lover Geometric Heart Front & Back",
+   145
+  ]
+ ],
+ "new_ids": {
+  "front_blackink": "NEW_front_blackink",
+  "front_whiteink": "NEW_front_whiteink",
+  "back_blackink": "NEW_back_blackink",
+  "back_whiteink": "NEW_back_whiteink"
+ }
+}
