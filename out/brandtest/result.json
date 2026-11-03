@@ -60,5 +60,36 @@
    "front",
    "neck"
   ]
+ },
+ "SAMPLE_cap_khaki_minipoodle_geoheart": {
+  "id": "6ae98c17eb5d7e24b80c9f67",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1612
+  ],
+  "positions": [
+   "front_dtf"
+  ]
+ },
+ "SAMPLE_tee_natural_minipoodle": {
+  "id": "6ae98c3776dc38811905cf5a",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   1796,
+   2047
+  ],
+  "positions": [
+   "back",
+   "front",
+   "left_sleeve",
+   "neck",
+   "right_sleeve"
+  ]
  }
 }
