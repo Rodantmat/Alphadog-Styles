@@ -1,0 +1,49 @@
+TOTAL 22547 checks passed, 0 failed; shards: ['art', 'cart', 'config', 'nav', 'shop']
+== art: 2435 checks passed, 0 failed, 0 distinct defects, 23.8s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
+   art_files: 1188 pass / 0 fail
+   art_render: 1188 pass / 0 fail
+   photos: 59 pass / 0 fail
+== cart: 468 checks passed, 0 failed, 0 distinct defects, 302.0s, errors {'console': 1, 'pageerror': 0, 'http': 1, 'failed': 0}
+   add_to_cart: 45 pass / 0 fail
+   cart_lines: 238 pass / 0 fail
+   cart_misc: 3 pass / 0 fail
+   cart_price: 46 pass / 0 fail
+   cart_qty: 5 pass / 0 fail
+   cart_thumbs: 46 pass / 0 fail
+   cart_totals: 21 pass / 0 fail
+   checkout: 37 pass / 0 fail
+   custom: 18 pass / 0 fail
+   i18n: 4 pass / 0 fail
+   saved_designs: 5 pass / 0 fail
+== config: 15572 checks passed, 0 failed, 0 distinct defects, 154.0s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
+   art_combos: 794 pass / 0 fail
+   carry_over: 8 pass / 0 fail
+   colors_disabled: 8 pass / 0 fail
+   designer: 122 pass / 0 fail
+   designer_price: 3042 pass / 0 fail
+   designer_states: 9126 pass / 0 fail
+   i18n: 4 pass / 0 fail
+   placement: 2442 pass / 0 fail
+   qty: 3 pass / 0 fail
+   race: 1 pass / 0 fail
+   save_design: 1 pass / 0 fail
+   url_params: 9 pass / 0 fail
+   view_tabs: 12 pass / 0 fail
+== nav: 1557 checks passed, 0 failed, 0 distinct defects, 413.6s, errors {'console': 5, 'pageerror': 0, 'http': 5, 'failed': 0}
+   admin: 2 pass / 0 fail
+   clicks: 22 pass / 0 fail
+   deploy: 1 pass / 0 fail
+   forms: 12 pass / 0 fail
+   home: 16 pass / 0 fail
+   i18n: 10 pass / 0 fail
+   links: 939 pass / 0 fail
+   login: 10 pass / 0 fail
+   mobile: 35 pass / 0 fail
+   routes_en: 170 pass / 0 fail
+   routes_es: 170 pass / 0 fail
+   routes_pt: 170 pass / 0 fail
+== shop: 2515 checks passed, 0 failed, 0 distinct defects, 89.0s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
+   card_to_designer: 916 pass / 0 fail
+   shop_cards: 1395 pass / 0 fail
+   shop_filters: 30 pass / 0 fail
+   shop_search: 174 pass / 0 fail

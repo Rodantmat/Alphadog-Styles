@@ -1,0 +1,79 @@
+{
+ "shard": "config",
+ "base": "https://alphadogstyles.com",
+ "secs": 154.0,
+ "checks": {
+  "race": [
+   1,
+   0
+  ],
+  "designer": [
+   122,
+   0
+  ],
+  "colors_disabled": [
+   8,
+   0
+  ],
+  "designer_states": [
+   9126,
+   0
+  ],
+  "designer_price": [
+   3042,
+   0
+  ],
+  "placement": [
+   2442,
+   0
+  ],
+  "view_tabs": [
+   12,
+   0
+  ],
+  "qty": [
+   3,
+   0
+  ],
+  "art_combos": [
+   794,
+   0
+  ],
+  "carry_over": [
+   8,
+   0
+  ],
+  "url_params": [
+   9,
+   0
+  ],
+  "save_design": [
+   1,
+   0
+  ],
+  "i18n": [
+   4,
+   0
+  ]
+ },
+ "defects": [],
+ "notes": [],
+ "data": {
+  "race_held_requests": 1,
+  "designer_states_checked": 3042,
+  "art_combos_checked": 396
+ },
+ "errors": {
+  "console": [],
+  "pageerror": [],
+  "http": [],
+  "failed": []
+ },
+ "error_counts": {
+  "console": 0,
+  "pageerror": 0,
+  "http": 0,
+  "failed": 0
+ },
+ "api_calls": []
+}

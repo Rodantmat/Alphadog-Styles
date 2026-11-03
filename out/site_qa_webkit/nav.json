@@ -1,0 +1,733 @@
+{
+ "shard": "nav",
+ "base": "https://alphadogstyles.com",
+ "secs": 413.6,
+ "checks": {
+  "deploy": [
+   1,
+   0
+  ],
+  "i18n": [
+   10,
+   0
+  ],
+  "routes_en": [
+   170,
+   0
+  ],
+  "routes_es": [
+   170,
+   0
+  ],
+  "routes_pt": [
+   170,
+   0
+  ],
+  "links": [
+   939,
+   0
+  ],
+  "clicks": [
+   22,
+   0
+  ],
+  "forms": [
+   12,
+   0
+  ],
+  "login": [
+   10,
+   0
+  ],
+  "admin": [
+   2,
+   0
+  ],
+  "home": [
+   16,
+   0
+  ],
+  "mobile": [
+   35,
+   0
+  ]
+ },
+ "defects": [],
+ "notes": [],
+ "data": {
+  "catalog_counts": {
+   "breeds": 33,
+   "themes": 2,
+   "styles": 3,
+   "products": 8
+  },
+  "deploy_drift": {
+   "index.html": {
+    "same": true,
+    "live": "b179f08ebd",
+    "repo": "b179f08ebd"
+   },
+   "js/app.js": {
+    "same": true,
+    "live": "b95d916884",
+    "repo": "b95d916884"
+   },
+   "js/garment.js": {
+    "same": true,
+    "live": "503f913149",
+    "repo": "503f913149"
+   },
+   "js/placement.js": {
+    "same": true,
+    "live": "812fc08ee9",
+    "repo": "812fc08ee9"
+   },
+   "js/i18n.js": {
+    "same": true,
+    "live": "76751f56fc",
+    "repo": "76751f56fc"
+   },
+   "js/pages.js": {
+    "same": true,
+    "live": "453a86e7fb",
+    "repo": "453a86e7fb"
+   },
+   "data/catalog.json": {
+    "same": true,
+    "live": "426c62a501",
+    "repo": "426c62a501"
+   },
+   "css/style.css": {
+    "same": true,
+    "live": "569415956f",
+    "repo": "569415956f"
+   }
+  },
+  "health": {
+   "ok": true,
+   "mail": true,
+   "providers": {
+    "google": false,
+    "facebook": false,
+    "apple": false
+   }
+  },
+  "page_ids": {
+   "en": [
+    "about",
+    "faq",
+    "shipping",
+    "returns",
+    "sizing",
+    "contact",
+    "privacy",
+    "terms"
+   ],
+   "es": [
+    "about",
+    "faq",
+    "shipping",
+    "returns",
+    "sizing",
+    "contact",
+    "privacy",
+    "terms"
+   ],
+   "pt": [
+    "about",
+    "faq",
+    "shipping",
+    "returns",
+    "sizing",
+    "contact",
+    "privacy",
+    "terms"
+   ]
+  },
+  "i18n_missing_keys": {
+   "en": [],
+   "es": [],
+   "pt": []
+  },
+  "possibly_untranslated": {
+   "es": {
+    "#/": [
+     "Beagle",
+     "Chihuahua",
+     "English",
+     "Português",
+     "Shiba Inu"
+    ],
+    "#/shop": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/shop?theme=line": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/shop?theme=geo": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/shop?style=heart": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/design": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "Color",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/cart": [
+     "English",
+     "Português"
+    ],
+    "#/checkout": [
+     "English",
+     "Português"
+    ],
+    "#/custom": [
+     "English",
+     "Português"
+    ],
+    "#/login": [
+     "English",
+     "Português"
+    ],
+    "#/account": [
+     "English",
+     "Português"
+    ],
+    "#/admin": [
+     "Admin",
+     "Admin token",
+     "English",
+     "Enter",
+     "Português"
+    ],
+    "#/done/QA-TEST-ORDER": [
+     "English",
+     "Português"
+    ],
+    "#/custom/QA-NOPE?k=x": [
+     "English",
+     "Português"
+    ],
+    "#/page/about": [
+     "English",
+     "Português"
+    ],
+    "#/page/faq": [
+     "English",
+     "Português"
+    ],
+    "#/page/shipping": [
+     "English",
+     "Português"
+    ],
+    "#/page/returns": [
+     "English",
+     "Português"
+    ],
+    "#/page/sizing": [
+     "English",
+     "Português"
+    ],
+    "#/page/contact": [
+     "English",
+     "Português"
+    ],
+    "#/page/privacy": [
+     "English",
+     "Português"
+    ],
+    "#/page/terms": [
+     "English",
+     "Português"
+    ],
+    "#/page/does-not-exist": [
+     "English",
+     "Português"
+    ],
+    "#/no-such-route": [
+     "English",
+     "Português"
+    ]
+   },
+   "pt": {
+    "#/": [
+     "Beagle",
+     "Chihuahua",
+     "English",
+     "Português",
+     "Shiba Inu"
+    ],
+    "#/shop": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Boxer",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/shop?theme=line": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Boxer",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/shop?theme=geo": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Boxer",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/shop?style=heart": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Boxer",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/design": [
+     "Beagle",
+     "Border Collie",
+     "Boston Terrier",
+     "Boxer",
+     "Cane Corso",
+     "Cavalier King Charles Spaniel",
+     "Chihuahua",
+     "English",
+     "Golden Retriever",
+     "Labrador Retriever",
+     "Português",
+     "Rottweiler",
+     "Shiba Inu",
+     "Yorkshire Terrier"
+    ],
+    "#/cart": [
+     "English",
+     "Português"
+    ],
+    "#/checkout": [
+     "English",
+     "Português"
+    ],
+    "#/custom": [
+     "English",
+     "Português"
+    ],
+    "#/login": [
+     "English",
+     "Português"
+    ],
+    "#/account": [
+     "English",
+     "Português"
+    ],
+    "#/admin": [
+     "Admin",
+     "Admin token",
+     "English",
+     "Enter",
+     "Português"
+    ],
+    "#/done/QA-TEST-ORDER": [
+     "English",
+     "Português"
+    ],
+    "#/custom/QA-NOPE?k=x": [
+     "English",
+     "Português"
+    ],
+    "#/page/about": [
+     "English",
+     "Português"
+    ],
+    "#/page/faq": [
+     "English",
+     "Português"
+    ],
+    "#/page/shipping": [
+     "English",
+     "Português"
+    ],
+    "#/page/returns": [
+     "English",
+     "Português"
+    ],
+    "#/page/sizing": [
+     "English",
+     "Português"
+    ],
+    "#/page/contact": [
+     "English",
+     "Português"
+    ],
+    "#/page/privacy": [
+     "English",
+     "Português"
+    ],
+    "#/page/terms": [
+     "English",
+     "Português"
+    ],
+    "#/page/does-not-exist": [
+     "English",
+     "Português"
+    ],
+    "#/no-such-route": [
+     "English",
+     "Português"
+    ]
+   }
+  },
+  "links_found": 470,
+  "header_footer_clicks": 20,
+  "social_login_buttons": [],
+  "mobile": {
+   "#/": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/shop": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/design": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/cart": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/checkout": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/custom": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/page/faq": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/page/sizing": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/login": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   }
+  }
+ },
+ "errors": {
+  "console": [
+   {
+    "at": "/custom/QA-NOPE?k=x",
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+   },
+   {
+    "at": "/custom/QA-NOPE?k=x",
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+   },
+   {
+    "at": "/custom/QA-NOPE?k=x",
+    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
+   },
+   {
+    "at": "/",
+    "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+   },
+   {
+    "at": "/login",
+    "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+   }
+  ],
+  "pageerror": [],
+  "http": [
+   {
+    "at": "/custom/QA-NOPE?k=x",
+    "status": 404,
+    "url": "https://alphadogstyles.com/api/custom/QA-NOPE?k=x"
+   },
+   {
+    "at": "/custom/QA-NOPE?k=x",
+    "status": 404,
+    "url": "https://alphadogstyles.com/api/custom/QA-NOPE?k=x"
+   },
+   {
+    "at": "/custom/QA-NOPE?k=x",
+    "status": 404,
+    "url": "https://alphadogstyles.com/api/custom/QA-NOPE?k=x"
+   },
+   {
+    "at": "/",
+    "status": 400,
+    "url": "https://alphadogstyles.com/api/subscribe"
+   },
+   {
+    "at": "/login",
+    "status": 400,
+    "url": "https://alphadogstyles.com/api/auth/verify"
+   }
+  ],
+  "failed": []
+ },
+ "error_counts": {
+  "console": 5,
+  "pageerror": 0,
+  "http": 5,
+  "failed": 0
+ },
+ "api_calls": [
+  {
+   "m": "GET",
+   "path": "/api/custom/QA-NOPE",
+   "q": "k=x",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/custom/QA-NOPE",
+   "q": "k=x",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/custom/QA-NOPE",
+   "q": "k=x",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "POST",
+   "path": "/api/subscribe",
+   "q": "",
+   "body": {
+    "email": "qa-test@example.com",
+    "lang": "en"
+   },
+   "hash": null
+  },
+  {
+   "m": "POST",
+   "path": "/api/subscribe",
+   "q": "",
+   "body": {
+    "email": "qa-test2@example.com",
+    "lang": "en"
+   },
+   "hash": null
+  },
+  {
+   "m": "POST",
+   "path": "/api/contact",
+   "q": "",
+   "body": {
+    "email": "qa-test@example.com",
+    "msg": "QA automated test message - please ignore",
+    "lang": "en"
+   },
+   "hash": null
+  },
+  {
+   "m": "POST",
+   "path": "/api/auth/request",
+   "q": "",
+   "body": {
+    "email": "qa-test@example.com",
+    "lang": "en"
+   },
+   "hash": null
+  },
+  {
+   "m": "POST",
+   "path": "/api/auth/request",
+   "q": "",
+   "body": {
+    "email": "qa-test@example.com",
+    "lang": "en"
+   },
+   "hash": null
+  },
+  {
+   "m": "POST",
+   "path": "/api/auth/verify",
+   "q": "",
+   "body": {
+    "email": "qa-test@example.com",
+    "code": "000000"
+   },
+   "hash": null
+  },
+  {
+   "m": "POST",
+   "path": "/api/auth/verify",
+   "q": "",
+   "body": {
+    "email": "qa-test@example.com",
+    "code": "123456"
+   },
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/designs",
+   "q": "",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/orders",
+   "q": "",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/designs",
+   "q": "",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/orders",
+   "q": "",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/designs",
+   "q": "",
+   "body": null,
+   "hash": null
+  },
+  {
+   "m": "GET",
+   "path": "/api/orders",
+   "q": "",
+   "body": null,
+   "hash": null
+  }
+ ]
+}
