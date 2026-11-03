@@ -35,11 +35,11 @@ for s in call("GET","/v1/shops.json"):
         for p in r["data"]:
             if not any(im["id"] in OLD for a in p["print_areas"] for q in a["placeholders"] for im in q["images"]): continue
             def fix(im):
-                d=dict(im) if im["id"] not in OLD else {k:v for k,v in im.items() if k in("id","x","y","scale","angle")}
+                d={k:v for k,v in im.items() if k in("id","x","y","scale","angle")}
                 if im["id"] in OLD:
                     nk,oa=OLD[im["id"]]; d["id"]=new[nk]; d["scale"]=round(im["scale"]*NA[nk]/oa,4)
                 return d
-            pa=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[fix(im) for im in q["images"]]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
+            pa=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[fix(im) for im in q["images"] if im.get("type")!="text/plain"]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
             touched.append([SHOP,p["id"],p["title"][:70],p.get("blueprint_id")])
             if DRY: st["fixed"]+=1; continue
             try: call("PUT",f"/v1/shops/{SHOP}/products/{p['id']}.json",{"print_areas":pa}); st["fixed"]+=1
