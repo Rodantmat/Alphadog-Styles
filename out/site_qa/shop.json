@@ -1,0 +1,70 @@
+{
+ "shard": "shop",
+ "base": "https://alphadogstyles.com",
+ "secs": 110.8,
+ "checks": {
+  "shop_filters": [
+   28,
+   2
+  ],
+  "shop_search": [
+   174,
+   0
+  ]
+ },
+ "defects": [
+  {
+   "sev": "low",
+   "area": "shop_filters",
+   "title": "Shop with invalid URL filter (?theme=bogus) shows zero designs and no active chip",
+   "repro": "open https://alphadogstyles.com/#/shop?theme=bogus",
+   "expected": "ignore unknown filter and show all designs",
+   "actual": "0 cards, chips on=[None, ''], 'no designs' message shown=True",
+   "shot": "out/site_qa/shots/shop/defect_Shop_with_invalid_URL_filter_theme_bogus_shows_zer.jpg",
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "low",
+   "area": "shop_filters",
+   "title": "Shop with invalid URL filter (?style=bogus) shows zero designs and no active chip",
+   "repro": "open https://alphadogstyles.com/#/shop?style=bogus",
+   "expected": "ignore unknown filter and show all designs",
+   "actual": "0 cards, chips on=['', None], 'no designs' message shown=True",
+   "shot": "out/site_qa/shots/shop/defect_Shop_with_invalid_URL_filter_style_bogus_shows_zer.jpg",
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "info",
+   "area": "harness",
+   "title": "QA harness crashed in shard shop: Page.wait_for_function: Timeout 60000ms exceeded.",
+   "repro": "",
+   "expected": "",
+   "actual": "List.contains('on'))\", timeout=60000)\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 11541, in wait_for_function\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/_impl/_page.py\", line 1082, in wait_for_function\n    return await self._main_frame.wait_for_function(**locals_to_params(locals()))\n  ",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  }
+ ],
+ "notes": [],
+ "data": {
+  "translated_breed_names_es": 20,
+  "card_subtitle_es": "Línea Continua · Clásico · Sudadera Gruesa",
+  "translated_breed_names_pt": 19,
+  "card_subtitle_pt": "Linha Contínua · Clássico · Moletom Grosso"
+ },
+ "errors": {
+  "console": [],
+  "pageerror": [],
+  "http": [],
+  "failed": []
+ },
+ "error_counts": {
+  "console": 0,
+  "pageerror": 0,
+  "http": 0,
+  "failed": 0
+ },
+ "api_calls": []
+}
