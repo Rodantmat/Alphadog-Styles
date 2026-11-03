@@ -1,4 +1,4 @@
-TOTAL 20243 checks passed, 17 failed; shards: ['art', 'cart', 'config', 'nav', 'shop']
+TOTAL 22554 checks passed, 17 failed; shards: ['art', 'cart', 'config', 'nav', 'shop']
 == art: 2435 checks passed, 0 failed, 0 distinct defects, 61.1s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
    art_files: 1188 pass / 0 fail
    art_render: 1188 pass / 0 fail
@@ -57,9 +57,10 @@ TOTAL 20243 checks passed, 17 failed; shards: ['art', 'cart', 'config', 'nav', '
    [medium] Home featured card preview doesn't match its link (x4)
    [low] Tap targets smaller than 24px on mobile #/cart (x1)
    [info] Language switch runs translation over design cards: their data-i index attribute collides with the i18n data-i hook (card art briefly replaced by digits until the page re-renders; digits logged as missing keys) (x2)
-== shop: 202 checks passed, 2 failed, 3 distinct defects, 110.8s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
+== shop: 2513 checks passed, 2 failed, 2 distinct defects, 90.6s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
+   card_to_designer: 916 pass / 0 fail
+   shop_cards: 1395 pass / 0 fail
    shop_filters: 28 pass / 2 fail
    shop_search: 174 pass / 0 fail
    [low] Shop with invalid URL filter (?theme=bogus) shows zero designs and no active chip (x1)
    [low] Shop with invalid URL filter (?style=bogus) shows zero designs and no active chip (x1)
-   [info] QA harness crashed in shard shop: Page.wait_for_function: Timeout 60000ms exceeded. (x1)

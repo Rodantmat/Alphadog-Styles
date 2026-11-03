@@ -1,7 +1,7 @@
 {
  "shard": "shop",
  "base": "https://alphadogstyles.com",
- "secs": 110.8,
+ "secs": 90.6,
  "checks": {
   "shop_filters": [
    28,
@@ -9,6 +9,14 @@
   ],
   "shop_search": [
    174,
+   0
+  ],
+  "shop_cards": [
+   1395,
+   0
+  ],
+  "card_to_designer": [
+   916,
    0
   ]
  },
@@ -34,17 +42,6 @@
    "shot": "out/site_qa/shots/shop/defect_Shop_with_invalid_URL_filter_style_bogus_shows_zer.jpg",
    "count": 1,
    "examples": []
-  },
-  {
-   "sev": "info",
-   "area": "harness",
-   "title": "QA harness crashed in shard shop: Page.wait_for_function: Timeout 60000ms exceeded.",
-   "repro": "",
-   "expected": "",
-   "actual": "List.contains('on'))\", timeout=60000)\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 11541, in wait_for_function\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/_impl/_sync_base.py\", line 115, in _sync\n    return task.result()\n           ^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/_impl/_page.py\", line 1082, in wait_for_function\n    return await self._main_frame.wait_for_function(**locals_to_params(locals()))\n  ",
-   "shot": null,
-   "count": 1,
-   "examples": []
   }
  ],
  "notes": [],
@@ -52,7 +49,43 @@
   "translated_breed_names_es": 20,
   "card_subtitle_es": "Línea Continua · Clásico · Sudadera Gruesa",
   "translated_breed_names_pt": 19,
-  "card_subtitle_pt": "Linha Contínua · Clássico · Moletom Grosso"
+  "card_subtitle_pt": "Linha Contínua · Clássico · Moletom Grosso",
+  "shop_unique_images": 229,
+  "shop_card_product_color_mix": {
+   "cap_dad|Khaki": 5,
+   "cap_dad|Light Blue": 5,
+   "cap_dad|Pink": 5,
+   "cap_dad|Stone": 5,
+   "cap_dad|White": 5,
+   "cap_foam|Blue/White": 4,
+   "cap_foam|Light Pink/White": 4,
+   "cap_foam|White": 4,
+   "cap_mesh|White": 12,
+   "hoodie|Ash": 6,
+   "hoodie|Light Blue": 6,
+   "hoodie|Light Pink": 6,
+   "hoodie|Sand": 7,
+   "hoodie|Sport Grey": 6,
+   "hoodie|White": 6,
+   "polo|Athletic Heather": 21,
+   "polo|White": 4,
+   "tank|Athletic Heather": 21,
+   "tank|White": 4,
+   "tee|Ash": 5,
+   "tee|Athletic Heather": 6,
+   "tee|Light Blue": 5,
+   "tee|Natural": 6,
+   "tee|Soft Cream": 5,
+   "tee|Soft Pink": 5,
+   "tee|White": 5,
+   "wtank|Heather Grey": 5,
+   "wtank|Solid Light Orange": 5,
+   "wtank|Solid Mint": 5,
+   "wtank|Solid Tahiti Blue": 5,
+   "wtank|Solid White": 5
+  },
+  "adjacent_same_garment_color": 0,
+  "cards_clicked_through": 198
  },
  "errors": {
   "console": [],
