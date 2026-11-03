@@ -6,7 +6,7 @@ def call(m,p,b=None):
     try: return json.load(urllib.request.urlopen(r,timeout=120))
     except urllib.error.HTTPError as e: print("HTTP",e.code,e.read().decode()[:1500]); raise
 def upl(fn): return call("POST","/v1/uploads/images.json",{"file_name":"alphadog_"+os.path.basename(fn),"contents":base64.b64encode(open(fn,"rb").read()).decode()})["id"]
-ids={k:upl(f"shop/brand/{k}.png") for k in ["neck_blackink_v2","neck_whiteink_v2","capback_blackink","capback_whiteink"]}
+ids=json.load(open("out/brand_v2_ids.json")) if os.path.exists("out/brand_v2_ids.json") else {k:upl(f"shop/brand/{k}.png") for k in ["neck_blackink_v2","neck_whiteink_v2","capback_blackink","capback_whiteink"]}
 json.dump(ids,open("out/brand_v2_ids.json","w"))
 # find existing products to copy
 prods=[];pg=1
@@ -25,7 +25,8 @@ def mk(name,src,colors,extra):
         vids=[i for i in a["variant_ids"] if i in kid]
         if not vids: continue
         ph=[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"]]} for q in a["placeholders"] if q["images"] and q["position"]!="neck"]
-        ph.append(extra); pa.append({"variant_ids":vids,"placeholders":ph})
+        if extra: ph.append(extra)
+        pa.append({"variant_ids":vids,"placeholders":ph})
     body={"title":f"BRAND TEST {name} (draft, delete me)","description":"test","blueprint_id":src["blueprint_id"],"print_provider_id":src["print_provider_id"],
           "variants":[{"id":v["id"],"price":v["price"],"is_enabled":True} for v in keep],"print_areas":pa}
     p=call("POST",f"/v1/shops/{SHOP}/products.json",body); time.sleep(25); p=call("GET",f"/v1/shops/{SHOP}/products/{p['id']}.json")
@@ -35,6 +36,14 @@ def mk(name,src,colors,extra):
     for im in p["images"]:
         if im["position"] in seen: continue
         seen.add(im["position"]); d=urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"})).read(); open(f"out/brandtest/{name}_{im['position']}.jpg","wb").write(d)
-mk("tee",pick(145),["White"],{"position":"neck","images":[{"id":ids["neck_blackink_v2"],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
-mk("cap",pick(1447),["Khaki","Stone"],{"position":"back_hat_embroidery","images":[{"id":ids["capback_blackink"],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
+#mk("tee",pick(145),["White"],{"position":"neck","images":[{"id":ids["neck_blackink_v2"],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
+up=json.load(open("out/uploads.json"))
+vs=[v for v in call("GET","/v1/catalog/blueprints/1447/print_providers/99/variants.json")["variants"] if v["options"].get("color") in ("Khaki","Stone")]
+print("cap variants",[(v["id"],v["title"]) for v in vs])
+src={"id":"scratch","blueprint_id":1447,"print_provider_id":99,"variants":[{"id":v["id"],"title":v["title"],"price":2699,"is_enabled":True,"cost":0} for v in vs],
+ "print_areas":[{"variant_ids":[v["id"] for v in vs],"placeholders":[{"position":"front_dtf","images":[{"id":up["french_bulldog/line_classic/front_blackink"],"x":0.5,"y":0.5,"scale":0.55,"angle":0}]}]}]}
+mk("cap",src,["Khaki","Stone"],{"position":"back_hat_embroidery","images":[{"id":ids["capback_blackink"],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]})
+src2=json.loads(json.dumps(src)); mk("cap_noback",src2,["Khaki","Stone"],None)
+old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
+old.update(res);res=old
 json.dump(res,open("out/brandtest/result.json","w"),indent=1); print(json.dumps(res,indent=1))
