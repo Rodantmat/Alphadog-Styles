@@ -29,7 +29,7 @@ jobs:
           QA_BASE: ${{ inputs.base || 'https://alphadogstyles.com' }}
           QA_OUT: out/site_qa
           QA_REPO: .
-        run: python scripts/site_qa/${{ matrix.shard }}.py
+        run: rm -rf out/site_qa && python scripts/site_qa/${{ matrix.shard }}.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
