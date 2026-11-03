@@ -233,7 +233,7 @@ def parse_svg(html):
 def run(shard_fn, shard):
     qa = QA(shard)
     with sync_playwright() as p:
-        browser = p.chromium.launch()
+        browser = getattr(p, os.environ.get('QA_BROWSER','chromium')).launch()
         try:
             shard_fn(qa, browser, p)
         except Exception as e:

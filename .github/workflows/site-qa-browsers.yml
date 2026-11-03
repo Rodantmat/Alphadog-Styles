@@ -1,0 +1,40 @@
+name: site-qa-browsers
+# Functional + visual QA of the live storefront with Playwright (Chromium).
+# All /api/* calls except GET /api/health are intercepted and mocked in the browser: no orders, emails or requests reach the backend.
+on:
+  workflow_dispatch:
+    inputs:
+      base:
+        default: "https://alphadogstyles.com"
+permissions:
+  contents: write
+concurrency: site-qa-browsers
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [firefox, webkit]
+        shard: [nav, shop, config, cart, art]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Playwright
+        run: pip install -q playwright==1.49.1 && python -m playwright install --with-deps ${{ matrix.browser }}
+      - name: Run shard
+        env:
+          QA_BROWSER: ${{ matrix.browser }}
+          QA_BASE: ${{ inputs.base || 'https://alphadogstyles.com' }}
+          QA_OUT: out/site_qa
+          QA_REPO: .
+        run: rm -rf out/site_qa && python scripts/site_qa/${{ matrix.shard }}.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qa-${{ matrix.browser }}-${{ matrix.shard }}
+          path: out/site_qa
+          retention-days: 7
