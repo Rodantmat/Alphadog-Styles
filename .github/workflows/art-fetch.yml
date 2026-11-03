@@ -1,0 +1,14 @@
+name: art-fetch
+on: workflow_dispatch
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow -q && python3 scripts/art_fetch_uploads.py
+        env: { PRINTIFY_TOKEN: "${{ secrets.PRINTIFY_TOKEN }}" }
+      - run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/art_check && git commit -qm "art check fetch" && git pull -q --rebase && git push
