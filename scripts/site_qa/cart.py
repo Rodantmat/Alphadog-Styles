@@ -153,6 +153,7 @@ def cart_shard(qa, browser, p):
             qa.ok("add_to_cart", page.inner_text("#cartn") == b0 and "30" in page.inner_text("#toast"), "31st cart line not refused with a clear limit message", sev="medium", actual=(b0, page.inner_text("#cartn"), page.inner_text("#toast")), page=page)
         lines, sub, ship = check_cart(chunk, f"cart chunk {ci + 1}/{len(chunks)}")
     plan = chunks[-1]
+    badge = sum(x["qty"] for x in plan)
     qa.shot(page, "cart_full", full=False)
     # complete the look
     look = page.evaluate("[...document.querySelectorAll('.wrap > .grid a.card .art')].map(e=>e.dataset.b)")
