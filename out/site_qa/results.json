@@ -2,7 +2,7 @@
  "art": {
   "shard": "art",
   "base": "https://alphadogstyles.com",
-  "secs": 61.1,
+  "secs": 20.9,
   "checks": {
    "art_files": [
     1188,
@@ -36,7 +36,7 @@
  "cart": {
   "shard": "cart",
   "base": "https://alphadogstyles.com",
-  "secs": 306.7,
+  "secs": 305.3,
   "checks": {
    "add_to_cart": [
     44,
@@ -186,7 +186,7 @@
      },
      "items": [
       {
-       "id": "1793704114709",
+       "id": "1793705288254",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -225,7 +225,7 @@
      },
      "items": [
       {
-       "id": "1793704114709",
+       "id": "1793705288254",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -282,7 +282,7 @@
      },
      "items": [
       {
-       "id": "1793704182143",
+       "id": "1793705355606",
        "prod": "hoodie",
        "color": "White",
        "size": "3XL",
@@ -414,7 +414,7 @@
      },
      "items": [
       {
-       "id": "1793704214235",
+       "id": "1793705387657",
        "prod": "tee",
        "color": "White",
        "size": "M",
@@ -455,7 +455,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793704242135",
+     "id": "1793705415640",
      "s": {
       "prod": "hoodie",
       "color": "Sand",
@@ -508,7 +508,7 @@
    },
    {
     "m": "DELETE",
-    "path": "/api/designs/1793704242135",
+    "path": "/api/designs/1793705415640",
     "q": "",
     "body": null,
     "hash": null
@@ -552,7 +552,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793704269422",
+     "id": "1793705442944",
      "s": {
       "prod": "tank",
       "color": "White",
@@ -580,7 +580,7 @@
  "config": {
   "shard": "config",
   "base": "https://alphadogstyles.com",
-  "secs": 195.6,
+  "secs": 198.6,
   "checks": {
    "race": [
     0,
@@ -757,7 +757,7 @@
  "nav": {
   "shard": "nav",
   "base": "https://alphadogstyles.com",
-  "secs": 417.8,
+  "secs": 472.6,
   "checks": {
    "deploy": [
     1,
@@ -800,8 +800,8 @@
     0
    ],
    "home": [
-    11,
-    4
+    16,
+    0
    ],
    "mobile": [
     34,
@@ -822,30 +822,6 @@
      {
       "repro": "open #/shop or #/ and change the footer language selector",
       "actual": "applyStatic() sets textContent of every [data-i] element incl. .art.mock cards"
-     }
-    ]
-   },
-   {
-    "sev": "medium",
-    "area": "home",
-    "title": "Home featured card preview doesn't match its link",
-    "repro": "home page featured grid",
-    "expected": "#/design?breed=bichon_frise&theme=line&style=cool&prod=wtank&color=Heather%20Grey&part=head",
-    "actual": "None None",
-    "shot": "out/site_qa/shots/nav/defect_Home_featured_card_preview_doesn_t_match_its_link.jpg",
-    "count": 4,
-    "examples": [
-     {
-      "repro": "home page featured grid",
-      "actual": "None None"
-     },
-     {
-      "repro": "home page featured grid",
-      "actual": "None None"
-     },
-     {
-      "repro": "home page featured grid",
-      "actual": "None None"
      }
     ]
    },
@@ -1061,7 +1037,7 @@
  "shop": {
   "shard": "shop",
   "base": "https://alphadogstyles.com",
-  "secs": 90.6,
+  "secs": 87.6,
   "checks": {
    "shop_filters": [
     28,

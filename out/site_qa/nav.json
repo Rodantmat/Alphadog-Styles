@@ -1,7 +1,7 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 417.8,
+ "secs": 472.6,
  "checks": {
   "deploy": [
    1,
@@ -44,8 +44,8 @@
    0
   ],
   "home": [
-   11,
-   4
+   16,
+   0
   ],
   "mobile": [
    34,
@@ -66,30 +66,6 @@
     {
      "repro": "open #/shop or #/ and change the footer language selector",
      "actual": "applyStatic() sets textContent of every [data-i] element incl. .art.mock cards"
-    }
-   ]
-  },
-  {
-   "sev": "medium",
-   "area": "home",
-   "title": "Home featured card preview doesn't match its link",
-   "repro": "home page featured grid",
-   "expected": "#/design?breed=bichon_frise&theme=line&style=cool&prod=wtank&color=Heather%20Grey&part=head",
-   "actual": "None None",
-   "shot": "out/site_qa/shots/nav/defect_Home_featured_card_preview_doesn_t_match_its_link.jpg",
-   "count": 4,
-   "examples": [
-    {
-     "repro": "home page featured grid",
-     "actual": "None None"
-    },
-    {
-     "repro": "home page featured grid",
-     "actual": "None None"
-    },
-    {
-     "repro": "home page featured grid",
-     "actual": "None None"
     }
    ]
   },
