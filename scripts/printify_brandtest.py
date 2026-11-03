@@ -127,6 +127,11 @@ if MODE=="final":
     if key in seen: continue
     seen.add(key); open(f"out/brandtest/FINAL_tee_{key}.jpg","wb").write(urllib.request.urlopen(urllib.request.Request(im["src"],headers={"User-Agent":"a"})).read())
   print("TEE", [(ph["position"],[(i.get("x"),i.get("y"),i.get("scale")) for i in ph["images"]]) for a in t["print_areas"][:1] for ph in a["placeholders"]])
+if MODE=="ship":
+  for bp in (1447,12):
+    print("SHIP",bp,json.dumps(call("GET",f"/v1/catalog/blueprints/{bp}/print_providers/99/shipping.json"))[:3000])
+  for pid in ("6ae996c2985328babd0caec9","6ae98c3776dc38811905cf5a"):
+    t=call("GET",f"/v1/shops/{SHOP}/products/{pid}.json"); print("COST",pid,[(v["title"],v["cost"]) for v in t["variants"] if v["is_enabled"]])
 old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
 old.update(res);res=old
 json.dump(res,open("out/brandtest/result.json","w"),indent=1); print(json.dumps(res,indent=1))
