@@ -1,0 +1,22 @@
+name: printify-artfix
+on:
+  workflow_dispatch:
+    inputs:
+      dry: {default: "1"}
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pillow
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          DRY: ${{ inputs.dry }}
+        run: mkdir -p out && python3 scripts/printify_artfix.py
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/artfix_result.json && git commit -m "artfix" && git pull -q --rebase && git push
