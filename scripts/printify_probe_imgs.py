@@ -8,7 +8,8 @@ SHOP,PID=29546485,"6ae6cfcd5d17aa531b00d623"
 p=call("GET",f"/v1/shops/{SHOP}/products/{PID}.json")
 for a in p["print_areas"][:1]:
     for ph in a["placeholders"]:
-        print("PH",ph["position"],json.dumps(ph["images"])[:700])
+        for im in ph["images"]:
+            if im.get("type")=="text/plain": print("TEXT",json.dumps(im))
 # test 1: PUT unchanged full objects
 pa=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":q["images"]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
-print("PUT unchanged:",json.dumps(call("PUT",f"/v1/shops/{SHOP}/products/{PID}.json",{"print_areas":pa}))[:300])
+#print("PUT unchanged:",json.dumps(call("PUT",f"/v1/shops/{SHOP}/products/{PID}.json",{"print_areas":pa}))[:300])
