@@ -11,7 +11,7 @@ permissions:
 concurrency: site-qa-browsers
 jobs:
   qa:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 50
     strategy:
       fail-fast: false
