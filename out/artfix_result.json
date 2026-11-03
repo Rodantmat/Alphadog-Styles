@@ -5,12 +5,12 @@
    "failed": 0
   },
   "29545924 AlphaDog Styles eBay": {
-   "fixed": 6,
-   "failed": 0
+   "fixed": 0,
+   "failed": 6
   },
   "29546485 AlphaDog Styles TikTok": {
-   "fixed": 15,
-   "failed": 0
+   "fixed": 10,
+   "failed": 5
   },
   "29559517 AlphaDog Store": {
    "fixed": 0,
@@ -164,9 +164,9 @@
   ]
  ],
  "new_ids": {
-  "front_blackink": "NEW_front_blackink",
-  "front_whiteink": "NEW_front_whiteink",
-  "back_blackink": "NEW_back_blackink",
-  "back_whiteink": "NEW_back_whiteink"
+  "front_blackink": "6ae98f92bc5e78d49d5c262b",
+  "front_whiteink": "6ae9a80f985f194a863b7e27",
+  "back_blackink": "6ae9a8100e02de73af0959e6",
+  "back_whiteink": "6ae9a812f1e469ae5e542e8b"
  }
 }
