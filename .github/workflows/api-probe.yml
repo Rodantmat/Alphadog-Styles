@@ -17,30 +17,112 @@ jobs:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_REFRESH_TOKEN: ${{ secrets.EBAY_REFRESH_TOKEN }}
-          SP_API_CLIENT_ID: ${{ secrets.SP_API_CLIENT_ID }}
-          SPAPI_CLIENT_ID: ${{ secrets.SPAPI_CLIENT_ID }}
+          AMAZON_APP_ID: ${{ secrets.AMAZON_APP_ID }}
           AMAZON_CLIENT_ID: ${{ secrets.AMAZON_CLIENT_ID }}
-          AMAZON_LWA_CLIENT_ID: ${{ secrets.AMAZON_LWA_CLIENT_ID }}
-          LWA_CLIENT_ID: ${{ secrets.LWA_CLIENT_ID }}
-          AMAZON_SP_CLIENT_ID: ${{ secrets.AMAZON_SP_CLIENT_ID }}
-          SP_API_LWA_CLIENT_ID: ${{ secrets.SP_API_LWA_CLIENT_ID }}
-          SP_API_CLIENT_SECRET: ${{ secrets.SP_API_CLIENT_SECRET }}
-          SPAPI_CLIENT_SECRET: ${{ secrets.SPAPI_CLIENT_SECRET }}
           AMAZON_CLIENT_SECRET: ${{ secrets.AMAZON_CLIENT_SECRET }}
+          AMAZON_LWA_APP_ID: ${{ secrets.AMAZON_LWA_APP_ID }}
+          AMAZON_LWA_CLIENT_ID: ${{ secrets.AMAZON_LWA_CLIENT_ID }}
           AMAZON_LWA_CLIENT_SECRET: ${{ secrets.AMAZON_LWA_CLIENT_SECRET }}
-          LWA_CLIENT_SECRET: ${{ secrets.LWA_CLIENT_SECRET }}
-          AMAZON_SP_CLIENT_SECRET: ${{ secrets.AMAZON_SP_CLIENT_SECRET }}
-          SP_API_LWA_CLIENT_SECRET: ${{ secrets.SP_API_LWA_CLIENT_SECRET }}
-          SP_API_REFRESH_TOKEN: ${{ secrets.SP_API_REFRESH_TOKEN }}
-          SPAPI_REFRESH_TOKEN: ${{ secrets.SPAPI_REFRESH_TOKEN }}
-          AMAZON_REFRESH_TOKEN: ${{ secrets.AMAZON_REFRESH_TOKEN }}
+          AMAZON_LWA_MARKETPLACE_ID: ${{ secrets.AMAZON_LWA_MARKETPLACE_ID }}
           AMAZON_LWA_REFRESH_TOKEN: ${{ secrets.AMAZON_LWA_REFRESH_TOKEN }}
-          LWA_REFRESH_TOKEN: ${{ secrets.LWA_REFRESH_TOKEN }}
+          AMAZON_LWA_SELLER_ID: ${{ secrets.AMAZON_LWA_SELLER_ID }}
+          AMAZON_MARKETPLACE_ID: ${{ secrets.AMAZON_MARKETPLACE_ID }}
+          AMAZON_REFRESH_TOKEN: ${{ secrets.AMAZON_REFRESH_TOKEN }}
+          AMAZON_SELLER_APP_ID: ${{ secrets.AMAZON_SELLER_APP_ID }}
+          AMAZON_SELLER_CLIENT_ID: ${{ secrets.AMAZON_SELLER_CLIENT_ID }}
+          AMAZON_SELLER_CLIENT_SECRET: ${{ secrets.AMAZON_SELLER_CLIENT_SECRET }}
+          AMAZON_SELLER_ID: ${{ secrets.AMAZON_SELLER_ID }}
+          AMAZON_SELLER_MARKETPLACE_ID: ${{ secrets.AMAZON_SELLER_MARKETPLACE_ID }}
+          AMAZON_SELLER_REFRESH_TOKEN: ${{ secrets.AMAZON_SELLER_REFRESH_TOKEN }}
+          AMAZON_SELLER_SELLER_ID: ${{ secrets.AMAZON_SELLER_SELLER_ID }}
+          AMAZON_SPAPI_APP_ID: ${{ secrets.AMAZON_SPAPI_APP_ID }}
+          AMAZON_SPAPI_CLIENT_ID: ${{ secrets.AMAZON_SPAPI_CLIENT_ID }}
+          AMAZON_SPAPI_CLIENT_SECRET: ${{ secrets.AMAZON_SPAPI_CLIENT_SECRET }}
+          AMAZON_SPAPI_MARKETPLACE_ID: ${{ secrets.AMAZON_SPAPI_MARKETPLACE_ID }}
+          AMAZON_SPAPI_REFRESH_TOKEN: ${{ secrets.AMAZON_SPAPI_REFRESH_TOKEN }}
+          AMAZON_SPAPI_SELLER_ID: ${{ secrets.AMAZON_SPAPI_SELLER_ID }}
+          AMAZON_SP_API_APP_ID: ${{ secrets.AMAZON_SP_API_APP_ID }}
+          AMAZON_SP_API_CLIENT_ID: ${{ secrets.AMAZON_SP_API_CLIENT_ID }}
+          AMAZON_SP_API_CLIENT_SECRET: ${{ secrets.AMAZON_SP_API_CLIENT_SECRET }}
+          AMAZON_SP_API_LWA_APP_ID: ${{ secrets.AMAZON_SP_API_LWA_APP_ID }}
+          AMAZON_SP_API_LWA_CLIENT_ID: ${{ secrets.AMAZON_SP_API_LWA_CLIENT_ID }}
+          AMAZON_SP_API_LWA_CLIENT_SECRET: ${{ secrets.AMAZON_SP_API_LWA_CLIENT_SECRET }}
+          AMAZON_SP_API_LWA_MARKETPLACE_ID: ${{ secrets.AMAZON_SP_API_LWA_MARKETPLACE_ID }}
+          AMAZON_SP_API_LWA_REFRESH_TOKEN: ${{ secrets.AMAZON_SP_API_LWA_REFRESH_TOKEN }}
+          AMAZON_SP_API_LWA_SELLER_ID: ${{ secrets.AMAZON_SP_API_LWA_SELLER_ID }}
+          AMAZON_SP_API_MARKETPLACE_ID: ${{ secrets.AMAZON_SP_API_MARKETPLACE_ID }}
+          AMAZON_SP_API_REFRESH_TOKEN: ${{ secrets.AMAZON_SP_API_REFRESH_TOKEN }}
+          AMAZON_SP_API_SELLER_ID: ${{ secrets.AMAZON_SP_API_SELLER_ID }}
+          AMAZON_SP_APP_ID: ${{ secrets.AMAZON_SP_APP_ID }}
+          AMAZON_SP_CLIENT_ID: ${{ secrets.AMAZON_SP_CLIENT_ID }}
+          AMAZON_SP_CLIENT_SECRET: ${{ secrets.AMAZON_SP_CLIENT_SECRET }}
+          AMAZON_SP_MARKETPLACE_ID: ${{ secrets.AMAZON_SP_MARKETPLACE_ID }}
           AMAZON_SP_REFRESH_TOKEN: ${{ secrets.AMAZON_SP_REFRESH_TOKEN }}
+          AMAZON_SP_SELLER_ID: ${{ secrets.AMAZON_SP_SELLER_ID }}
+          AMZN_APP_ID: ${{ secrets.AMZN_APP_ID }}
+          AMZN_CLIENT_ID: ${{ secrets.AMZN_CLIENT_ID }}
+          AMZN_CLIENT_SECRET: ${{ secrets.AMZN_CLIENT_SECRET }}
+          AMZN_MARKETPLACE_ID: ${{ secrets.AMZN_MARKETPLACE_ID }}
+          AMZN_REFRESH_TOKEN: ${{ secrets.AMZN_REFRESH_TOKEN }}
+          AMZN_SELLER_ID: ${{ secrets.AMZN_SELLER_ID }}
+          AMZ_APP_ID: ${{ secrets.AMZ_APP_ID }}
+          AMZ_CLIENT_ID: ${{ secrets.AMZ_CLIENT_ID }}
+          AMZ_CLIENT_SECRET: ${{ secrets.AMZ_CLIENT_SECRET }}
+          AMZ_LWA_APP_ID: ${{ secrets.AMZ_LWA_APP_ID }}
+          AMZ_LWA_CLIENT_ID: ${{ secrets.AMZ_LWA_CLIENT_ID }}
+          AMZ_LWA_CLIENT_SECRET: ${{ secrets.AMZ_LWA_CLIENT_SECRET }}
+          AMZ_LWA_MARKETPLACE_ID: ${{ secrets.AMZ_LWA_MARKETPLACE_ID }}
+          AMZ_LWA_REFRESH_TOKEN: ${{ secrets.AMZ_LWA_REFRESH_TOKEN }}
+          AMZ_LWA_SELLER_ID: ${{ secrets.AMZ_LWA_SELLER_ID }}
+          AMZ_MARKETPLACE_ID: ${{ secrets.AMZ_MARKETPLACE_ID }}
+          AMZ_REFRESH_TOKEN: ${{ secrets.AMZ_REFRESH_TOKEN }}
+          AMZ_SELLER_ID: ${{ secrets.AMZ_SELLER_ID }}
+          AMZ_SP_API_APP_ID: ${{ secrets.AMZ_SP_API_APP_ID }}
+          AMZ_SP_API_CLIENT_ID: ${{ secrets.AMZ_SP_API_CLIENT_ID }}
+          AMZ_SP_API_CLIENT_SECRET: ${{ secrets.AMZ_SP_API_CLIENT_SECRET }}
+          AMZ_SP_API_MARKETPLACE_ID: ${{ secrets.AMZ_SP_API_MARKETPLACE_ID }}
+          AMZ_SP_API_REFRESH_TOKEN: ${{ secrets.AMZ_SP_API_REFRESH_TOKEN }}
+          AMZ_SP_API_SELLER_ID: ${{ secrets.AMZ_SP_API_SELLER_ID }}
+          LWA_APP_ID: ${{ secrets.LWA_APP_ID }}
+          LWA_CLIENT_ID: ${{ secrets.LWA_CLIENT_ID }}
+          LWA_CLIENT_SECRET: ${{ secrets.LWA_CLIENT_SECRET }}
+          LWA_MARKETPLACE_ID: ${{ secrets.LWA_MARKETPLACE_ID }}
+          LWA_REFRESH_TOKEN: ${{ secrets.LWA_REFRESH_TOKEN }}
+          LWA_SELLER_ID: ${{ secrets.LWA_SELLER_ID }}
+          SELLER_API_APP_ID: ${{ secrets.SELLER_API_APP_ID }}
+          SELLER_API_CLIENT_ID: ${{ secrets.SELLER_API_CLIENT_ID }}
+          SELLER_API_CLIENT_SECRET: ${{ secrets.SELLER_API_CLIENT_SECRET }}
+          SELLER_API_MARKETPLACE_ID: ${{ secrets.SELLER_API_MARKETPLACE_ID }}
+          SELLER_API_REFRESH_TOKEN: ${{ secrets.SELLER_API_REFRESH_TOKEN }}
+          SELLER_API_SELLER_ID: ${{ secrets.SELLER_API_SELLER_ID }}
+          SPAPI_APP_ID: ${{ secrets.SPAPI_APP_ID }}
+          SPAPI_CLIENT_ID: ${{ secrets.SPAPI_CLIENT_ID }}
+          SPAPI_CLIENT_SECRET: ${{ secrets.SPAPI_CLIENT_SECRET }}
+          SPAPI_LWA_APP_ID: ${{ secrets.SPAPI_LWA_APP_ID }}
+          SPAPI_LWA_CLIENT_ID: ${{ secrets.SPAPI_LWA_CLIENT_ID }}
+          SPAPI_LWA_CLIENT_SECRET: ${{ secrets.SPAPI_LWA_CLIENT_SECRET }}
+          SPAPI_LWA_MARKETPLACE_ID: ${{ secrets.SPAPI_LWA_MARKETPLACE_ID }}
+          SPAPI_LWA_REFRESH_TOKEN: ${{ secrets.SPAPI_LWA_REFRESH_TOKEN }}
+          SPAPI_LWA_SELLER_ID: ${{ secrets.SPAPI_LWA_SELLER_ID }}
+          SPAPI_MARKETPLACE_ID: ${{ secrets.SPAPI_MARKETPLACE_ID }}
+          SPAPI_REFRESH_TOKEN: ${{ secrets.SPAPI_REFRESH_TOKEN }}
+          SPAPI_SELLER_ID: ${{ secrets.SPAPI_SELLER_ID }}
+          SP_API_APP_ID: ${{ secrets.SP_API_APP_ID }}
+          SP_API_CLIENT_ID: ${{ secrets.SP_API_CLIENT_ID }}
+          SP_API_CLIENT_SECRET: ${{ secrets.SP_API_CLIENT_SECRET }}
+          SP_API_LWA_APP_ID: ${{ secrets.SP_API_LWA_APP_ID }}
+          SP_API_LWA_CLIENT_ID: ${{ secrets.SP_API_LWA_CLIENT_ID }}
+          SP_API_LWA_CLIENT_SECRET: ${{ secrets.SP_API_LWA_CLIENT_SECRET }}
+          SP_API_LWA_MARKETPLACE_ID: ${{ secrets.SP_API_LWA_MARKETPLACE_ID }}
+          SP_API_LWA_REFRESH_TOKEN: ${{ secrets.SP_API_LWA_REFRESH_TOKEN }}
+          SP_API_LWA_SELLER_ID: ${{ secrets.SP_API_LWA_SELLER_ID }}
+          SP_API_MARKETPLACE_ID: ${{ secrets.SP_API_MARKETPLACE_ID }}
+          SP_API_REFRESH_TOKEN: ${{ secrets.SP_API_REFRESH_TOKEN }}
+          SP_API_SELLER_ID: ${{ secrets.SP_API_SELLER_ID }}
         run: |
           python3 - <<'PY'
           import os, json, base64, urllib.request, urllib.parse, re
-          S = {k: v for k, v in os.environ.items() if v and re.search(r"EBAY|AMAZON|SP_?API|LWA", k)}
+          S = {k: v for k, v in os.environ.items() if v and re.search(r"EBAY|AMAZON|AMZ|SP_?API|LWA|SELLER", k)}
           def req(url, data=None, headers=None, method=None):
               r = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
               try:
@@ -90,9 +172,16 @@ jobs:
           # ---------------- Amazon SP-API ----------------
           print("\n== Amazon SP-API ==")
           try:
-              cn, cid = pick("SP_API_CLIENT_ID", "SPAPI_CLIENT_ID", "AMAZON_CLIENT_ID", "AMAZON_LWA_CLIENT_ID", "LWA_CLIENT_ID", "AMAZON_SP_CLIENT_ID", "SP_API_LWA_CLIENT_ID")
-              sn, csec = pick("SP_API_CLIENT_SECRET", "SPAPI_CLIENT_SECRET", "AMAZON_CLIENT_SECRET", "AMAZON_LWA_CLIENT_SECRET", "LWA_CLIENT_SECRET", "AMAZON_SP_CLIENT_SECRET", "SP_API_LWA_CLIENT_SECRET")
-              rn, rt = pick("SP_API_REFRESH_TOKEN", "SPAPI_REFRESH_TOKEN", "AMAZON_REFRESH_TOKEN", "AMAZON_LWA_REFRESH_TOKEN", "LWA_REFRESH_TOKEN", "AMAZON_SP_REFRESH_TOKEN")
+              def bysuf(suf):
+                  for k in sorted(S):
+                      if "EBAY" not in k and k.endswith(suf): return k, S[k]
+                  return None, None
+              cn, cid = bysuf("CLIENT_ID") if not pick("SP_API_CLIENT_ID")[0] else pick("SP_API_CLIENT_ID")
+              sn, csec = bysuf("CLIENT_SECRET")
+              rn, rt = bysuf("REFRESH_TOKEN")
+              _unused = pick("SP_API_CLIENT_ID", "SPAPI_CLIENT_ID", "AMAZON_CLIENT_ID", "AMAZON_LWA_CLIENT_ID", "LWA_CLIENT_ID", "AMAZON_SP_CLIENT_ID", "SP_API_LWA_CLIENT_ID")
+              _u2 = pick("SP_API_CLIENT_SECRET", "SPAPI_CLIENT_SECRET", "AMAZON_CLIENT_SECRET", "AMAZON_LWA_CLIENT_SECRET", "LWA_CLIENT_SECRET", "AMAZON_SP_CLIENT_SECRET", "SP_API_LWA_CLIENT_SECRET")
+              _u3 = pick("SP_API_REFRESH_TOKEN", "SPAPI_REFRESH_TOKEN", "AMAZON_REFRESH_TOKEN", "AMAZON_LWA_REFRESH_TOKEN", "LWA_REFRESH_TOKEN", "AMAZON_SP_REFRESH_TOKEN")
               print("using secrets:", cn, sn, rn)
               if not (cid and csec and rt):
                   print("Missing one of client id / client secret / refresh token")
