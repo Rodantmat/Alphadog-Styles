@@ -5,11 +5,11 @@
    "failed": 0
   },
   "29545924 AlphaDog Styles eBay": {
-   "fixed": 6,
+   "fixed": 7,
    "failed": 0
   },
   "29546485 AlphaDog Styles TikTok": {
-   "fixed": 5,
+   "fixed": 15,
    "failed": 0
   },
   "29559517 AlphaDog Store": {
@@ -20,75 +20,143 @@
  "touched": [
   [
    29545924,
-   "6ae588ecc0e74489cc070b2a",
-   "Mini Poodle Hoodie Dog Lover Geometric Heart Big Portrait",
+   "6ae6bcbd5d17aa531b00c1e2",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Big Por",
+   12
+  ],
+  [
+   29545924,
+   "6ae5847f43fcd2f3870b231e",
+   "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Big Port",
    77
   ],
   [
    29545924,
-   "6ae588ea90e00e273b0894da",
-   "Mini Poodle T-Shirt Dog Lover Geometric Heart Big Portrait",
+   "6ae5847c43fcd2f3870b2313",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Big Por",
    145
   ],
   [
    29545924,
-   "6ae581c7197e2a80420272ab",
-   "Mini Poodle Hoodie Dog Lover Geometric Heart Pocket Print",
+   "6ae57ee61db256d3020eb44f",
+   "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Pocket P",
    77
   ],
   [
    29545924,
-   "6ae581c455e86fafe60ae18c",
-   "Mini Poodle T-Shirt Dog Lover Geometric Heart Pocket Print",
+   "6ae57ee31db256d3020eb44e",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Pocket ",
    145
   ],
   [
    29545924,
-   "6ae57c8f499964581706fe21",
-   "Mini Poodle Hoodie Dog Lover Geometric Heart Front & Back",
+   "6ae575b1d9d5b70e2704f3af",
+   "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Front & ",
    77
   ],
   [
    29545924,
-   "6ae57c8c90e00e273b088bba",
-   "Mini Poodle T-Shirt Dog Lover Geometric Heart Front & Back",
+   "6ae575ae1db256d3020eaaef",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Front &",
    145
   ],
   [
    29546485,
-   "6ae7a5d17861ac1c1c042638",
-   "Mini Poodle Women's Racerback Tank Dog Lover Geometric Heart",
+   "6ae7a14cd037ed7f1f02de34",
+   "Cavalier King Charles Spaniel Mesh Trucker Cap Dog Lover Line Art Hear",
+   1734
+  ],
+  [
+   29546485,
+   "6ae7a14aeff2af9b7c0be72c",
+   "Cavalier King Charles Spaniel Foam Trucker Hat Dog Lover Line Art Hear",
+   1735
+  ],
+  [
+   29546485,
+   "6ae7a147a04ae2f1280ac8f0",
+   "Cavalier King Charles Spaniel Dad Hat Dog Lover Line Art Heart",
+   1447
+  ],
+  [
+   29546485,
+   "6ae7a146a04ae2f1280ac8ee",
+   "Cavalier King Charles Spaniel Polo Shirt Dog Lover Line Art Heart",
+   1402
+  ],
+  [
+   29546485,
+   "6ae7a1447861ac1c1c0422a0",
+   "Cavalier King Charles Spaniel Women's Racerback Tank Dog Lover Line Ar",
    18
   ],
   [
    29546485,
-   "6ae7a5cf7861ac1c1c042636",
-   "Mini Poodle Tank Top Dog Lover Geometric Heart",
+   "6ae7a1436aa5485ffc0a01bb",
+   "Cavalier King Charles Spaniel Tank Top Dog Lover Line Art Heart",
    39
   ],
   [
    29546485,
-   "6ae6cfd373cf98f438067335",
-   "Mini Poodle T-Shirt Dog Lover Geometric Heart Pocket Print",
+   "6ae6cc18340a0b43b901bbfa",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Pocket ",
    12
   ],
   [
    29546485,
-   "6ae6cfd005f6dc952a0e8e20",
-   "Mini Poodle T-Shirt Dog Lover Geometric Heart Big Portrait",
+   "6ae6cc15b4536cb10309acd0",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Big Por",
    12
   ],
   [
    29546485,
-   "6ae6cfcd5d17aa531b00d623",
-   "Mini Poodle T-Shirt Dog Lover Geometric Heart Front & Back",
+   "6ae6cc1378892803fa02e638",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Front &",
    12
+  ],
+  [
+   29546485,
+   "6ae594190e146105c80c6e9c",
+   "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Big Port",
+   77
+  ],
+  [
+   29546485,
+   "6ae59416aa7972528106a202",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Big Por",
+   145
+  ],
+  [
+   29546485,
+   "6ae58fac949c1d10dd0bc251",
+   "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Pocket P",
+   77
+  ],
+  [
+   29546485,
+   "6ae58fa943fcd2f3870b2a43",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Pocket ",
+   145
+  ],
+  [
+   29546485,
+   "6ae58b11c0e74489cc070ce4",
+   "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Front & ",
+   77
+  ],
+  [
+   29546485,
+   "6ae58b0f0e146105c80c62a7",
+   "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Heart Front &",
+   145
   ]
  ],
  "new_ids": {
-  "front_blackink": "6ae98f92bc5e78d49d5c262b",
-  "front_whiteink": "6ae9a80f985f194a863b7e27",
-  "back_blackink": "6ae9a8100e02de73af0959e6",
-  "back_whiteink": "6ae9a812f1e469ae5e542e8b"
+  "front_blackink": "6ae9caf03c889ca0d7054ac2",
+  "front_whiteink": "6ae9caf1d4af78b95b78da0c",
+  "back_blackink": "6ae9caf2eadfdb473610132b",
+  "back_whiteink": "6ae9caf359f5b682d533c64d",
+  "frontbig_blackink": "6ae9caf4e1aff16b67b26e5f",
+  "frontbig_whiteink": "6ae9caf6e5c32efbef9e6bc3"
  }
 }
