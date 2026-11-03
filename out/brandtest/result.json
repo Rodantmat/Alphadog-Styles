@@ -301,5 +301,22 @@
    "left_hat_embroidery",
    "right_hat_embroidery"
   ]
+ },
+ "FINAL_cap_khaki_minipoodle_geoheart_backbrand": {
+  "id": "6ae996c2985328babd0caec9",
+  "src": "scratch",
+  "src_cost": [
+   0
+  ],
+  "new_cost": [
+   2900
+  ],
+  "positions": [
+   "back_hat_embroidery",
+   "front",
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ]
  }
 }
