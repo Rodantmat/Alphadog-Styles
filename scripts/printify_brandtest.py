@@ -132,6 +132,22 @@ if MODE=="ship":
     r=call("GET",f"/v1/catalog/blueprints/{bp}/print_providers/99/shipping.json"); print("SHIP",bp,[(pr["countries"],pr["first_item"],pr["additional_items"],len(pr["variant_ids"]),(18100 in pr["variant_ids"] or 105377 in pr["variant_ids"])) for pr in r["profiles"] if "US" in pr["countries"]]); print("SHIPV2",bp,json.dumps(call("GET",f"/v2/catalog/blueprints/{bp}/print_providers/99/shipping.json"))[:1500])
   for pid in ("6ae996c2985328babd0caec9","6ae98c3776dc38811905cf5a"):
     t=call("GET",f"/v1/shops/{SHOP}/products/{pid}.json"); print("COST",pid,[(v["title"],v["cost"]) for v in t["variants"] if v["is_enabled"]])
+if MODE=="pfhats":
+  from PIL import Image
+  hid=upl("shop/brand/capfront_minipoodle_geoheart_head.png"); head=Image.open("shop/brand/capfront_minipoodle_geoheart_head.png"); ha=head.width/head.height
+  lid=ids["capback_blackink"]
+  for bp,pp,fpos,bpos in [(6791,217,"front_left_dtf","back_dtf"),(6143,217,"front_dtf","back_dtf"),(5287,217,"front_dtf","left_dtf"),(6036,217,"front_dtf","left_dtf"),(5836,217,"front_dtf","left_dtf")]:
+    try:
+      cv=call("GET",f"/v1/catalog/blueprints/{bp}/print_providers/{pp}/variants.json")["variants"]
+      phs={q["position"]:(q["width"],q["height"]) for q in cv[0]["placeholders"]}; print("PH",bp,phs,[v["title"] for v in cv][:12])
+      if fpos not in phs: fpos=[k for k in phs if "front" in k][0]
+      W,H=phs[fpos]; w=min(.9,.9*H*ha/W)
+      kv=[v for v in cv if any(c in v["title"] for c in ("Khaki","Stone","Tan","Natural","Sand","Beige"))][:3] or cv[:2]
+      srcc={"id":"scratch","blueprint_id":bp,"print_provider_id":pp,"variants":[{"id":v["id"],"title":v["title"],"price":2999,"is_enabled":True,"cost":0} for v in kv],"print_areas":[{"variant_ids":[v["id"] for v in kv],"placeholders":[{"position":fpos,"images":[{"id":hid,"x":.5,"y":.5,"scale":round(w,3),"angle":0}]}]}]}
+      mk(f"PF_{bp}_nobrand",json.loads(json.dumps(srcc)),[kv[0]["title"].split(" /")[0]],None)
+      BW,BH=phs[bpos]; la=1056/201; sc=min(.9,.9*BH*la/BW)
+      mk(f"PF_{bp}_{bpos}",srcc,[kv[0]["title"].split(" /")[0]],{"position":bpos,"images":[{"id":lid,"x":.5,"y":.5,"scale":round(sc,3),"angle":0}]})
+    except Exception as e: print("FAIL",bp,e)
 old=json.load(open("out/brandtest/result.json")) if os.path.exists("out/brandtest/result.json") else {}
 old.update(res);res=old
 json.dump(res,open("out/brandtest/result.json","w"),indent=1); print(json.dumps(res,indent=1))
