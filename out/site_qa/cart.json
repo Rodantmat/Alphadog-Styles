@@ -1,47 +1,47 @@
 {
  "shard": "cart",
  "base": "https://alphadogstyles.com",
- "secs": 305.3,
+ "secs": 304.5,
  "checks": {
   "add_to_cart": [
-   44,
-   0
+   30,
+   14
   ],
   "cart_lines": [
-   237,
-   0
+   165,
+   1
   ],
   "cart_price": [
-   46,
+   32,
    0
   ],
   "cart_thumbs": [
-   46,
+   32,
    0
   ],
   "cart_totals": [
-   16,
-   0
+   15,
+   1
   ],
   "cart_misc": [
-   3,
-   0
+   2,
+   1
   ],
   "checkout": [
-   67,
-   0
+   49,
+   3
   ],
   "i18n": [
    4,
    0
   ],
   "cart_qty": [
-   5,
-   0
+   4,
+   1
   ],
   "custom": [
-   17,
-   1
+   14,
+   3
   ],
   "saved_designs": [
    5,
@@ -50,28 +50,73 @@
  },
  "defects": [
   {
-   "sev": "low",
-   "area": "cart_lines",
-   "title": "Cart/checkout names the back placement with the front-option name (e.g. 'Full body' shows as 'Big body')",
-   "repro": "full cart: add tee Light Blue 2XL x1 front=none (poodle geo heart) back=body_l (poodle line cool), open #/cart",
-   "expected": "Back: Standard Poodle · Continuous Line Cool · Full body",
-   "actual": "Back: Standard Poodle · Continuous Line Cool · Big body",
-   "shot": null,
-   "count": 4,
+   "sev": "high",
+   "area": "add_to_cart",
+   "title": "Add to cart does not update badge / show toast",
+   "repro": "#/design wtank Solid White L front body_l back none -> Add to cart",
+   "expected": "37",
+   "actual": "('36', 'Your cart is full (30 items max). Please check out first.')",
+   "shot": "out/site_qa/shots/cart/defect_Add_to_cart_does_not_update_badge_show_toast.jpg",
+   "count": 14,
    "examples": [
     {
-     "repro": "full cart: add hoodie Sport Grey 3XL x2 front=none (doberman_pinscher line heart) back=body_l (golden_retriever geo cool), open #/cart",
-     "actual": "Back: Golden Retriever · Geometric Cool · Big body"
+     "repro": "#/design wtank Heather Grey M front none back head_l -> Add to cart",
+     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
     },
     {
-     "repro": "full cart: add tank Athletic Heather XL x1 front=none (chihuahua geo heart) back=body_l (maltese line cool), open #/cart",
-     "actual": "Back: Maltese · Continuous Line Cool · Big body"
+     "repro": "#/design wtank Solid Mint S front none back body_l -> Add to cart",
+     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
     },
     {
-     "repro": "full cart: add wtank Solid Mint S x1 front=none (maltese line heart) back=body_l (shiba_inu geo cool), open #/cart",
-     "actual": "Back: Shiba Inu · Geometric Cool · Big body"
+     "repro": "#/design wtank Solid Light Orange XS front none back body_s -> Add to cart",
+     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
+    },
+    {
+     "repro": "#/design wtank Solid Tahiti Blue 2XL front none back head_s -> Add to cart",
+     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
+    },
+    {
+     "repro": "#/design wtank Solid White 2XL front body_l back head_l -> Add to cart",
+     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
+    },
+    {
+     "repro": "#/design polo White XL front head_s back None -> Add to cart",
+     "actual": "('36', 'Your cart is full (30 items max). Please check out first.')"
     }
    ]
+  },
+  {
+   "sev": "high",
+   "area": "cart_lines",
+   "title": "Cart shows wrong number of lines (full cart)",
+   "repro": "",
+   "expected": "44",
+   "actual": "30",
+   "shot": "out/site_qa/shots/cart/defect_Cart_shows_wrong_number_of_lines_full_cart_.jpg",
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "medium",
+   "area": "cart_totals",
+   "title": "Cart badge wrong (full cart)",
+   "repro": "",
+   "expected": "52",
+   "actual": "36",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "high",
+   "area": "cart_misc",
+   "title": "Cart not persisted across reload",
+   "repro": "",
+   "expected": "",
+   "actual": "30",
+   "shot": null,
+   "count": 1,
+   "examples": []
   },
   {
    "sev": "medium",
@@ -85,12 +130,45 @@
    "examples": []
   },
   {
-   "sev": "low",
+   "sev": "high",
+   "area": "cart_qty",
+   "title": "Cart + does not increase qty/badge",
+   "repro": "",
+   "expected": "",
+   "actual": "('2', '37')",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "medium",
    "area": "checkout",
-   "title": "State dropdown is pre-filled with 'AL' instead of an empty 'Select state' option",
-   "repro": "#/checkout with any cart; leave State untouched",
-   "expected": "State required with no default, so a customer cannot accidentally ship to Alabama",
-   "actual": "default value 'AL' passes validation",
+   "title": "Checkout required fields wrong",
+   "repro": "",
+   "expected": "['email', 'fn', 'ln', 'a1', 'city', 'zip']",
+   "actual": "['email', 'fn', 'ln', 'a1', 'city', 'st', 'zip']",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "critical",
+   "area": "checkout",
+   "title": "Checkout does not redirect to the Stripe URL returned by the API",
+   "repro": "",
+   "expected": "",
+   "actual": "https://alphadogstyles.com/#/checkout",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "medium",
+   "area": "checkout",
+   "title": "Cart not cleared after redirect to Stripe",
+   "repro": "",
+   "expected": "",
+   "actual": "1",
    "shot": null,
    "count": 1,
    "examples": []
@@ -98,10 +176,32 @@
   {
    "sev": "medium",
    "area": "custom",
-   "title": "Cart 'Complete the look' shows broken 'custom' cards when the first cart line is a custom design",
-   "repro": "custom request status page -> 'Design your products' -> Add to cart -> #/cart, scroll to 'Complete the look'",
-   "expected": "suggestions for a real breed (or section hidden)",
-   "actual": "[{'href': '#/design?breed=custom&theme=line&style=classic&prod=hoodie&color=Sand&part=head', 'name': 'custom', 'bad': ['art/line_classic/custom_front.svg']}, {'href': '#/design?breed=custom&theme=line&style=cool&prod=tee&color=Natural&part=head', 'name': 'custom', 'bad': ['art/line_cool/custom_front.svg']}, {'href': '#/design?breed=custom&theme=line&style=heart&prod=tank&color=Athletic%20Heather&part=body', 'name': 'custom', 'bad': ['art/line_heart/custom_back.svg']}]",
+   "title": "Custom cart labels wrong",
+   "repro": "",
+   "expected": "",
+   "actual": "['White · 3XL', 'Front: Pug · Continuous Line Cool · Big head', 'Back: Pug · Continuous Line Cool · Full body']",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "high",
+   "area": "custom",
+   "title": "Custom design fee not added once in cart",
+   "repro": "",
+   "expected": "",
+   "actual": "{'Subtotal': '$98.98', 'Shipping (US)': 'Free', 'Custom design (one-time)': '$19.99', 'Total': '$118.97', '_note': 'You unlocked free shipping!', '_badge': '2'}",
+   "shot": "out/site_qa/shots/cart/defect_Custom_design_fee_not_added_once_in_cart.jpg",
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "medium",
+   "area": "custom",
+   "title": "Custom order not posted",
+   "repro": "",
+   "expected": "",
+   "actual": "",
    "shot": null,
    "count": 1,
    "examples": []
@@ -126,7 +226,7 @@
    },
    "items": [
     {
-     "id": "1793705288254",
+     "id": "1793706334748",
      "prod": "tee",
      "color": "Soft Pink",
      "size": "M",
@@ -188,7 +288,7 @@
     },
     "items": [
      {
-      "id": "1793705288254",
+      "id": "1793706334748",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -227,7 +327,7 @@
     },
     "items": [
      {
-      "id": "1793705288254",
+      "id": "1793706334748",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -264,51 +364,6 @@
    "q": "",
    "body": {
     "id": "QA-ORDER-1"
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
-   "path": "/api/orders",
-   "q": "",
-   "body": {
-    "email": "qa-test@example.com",
-    "ship": {
-     "name": "QA Tester",
-     "a1": "123 Test Street",
-     "a2": "",
-     "city": "San Diego",
-     "st": "AL",
-     "zip": "92101",
-     "phone": "5555550100"
-    },
-    "items": [
-     {
-      "id": "1793705355606",
-      "prod": "hoodie",
-      "color": "White",
-      "size": "3XL",
-      "qty": 1,
-      "front": {
-       "part": "head",
-       "size": "l",
-       "breed": "pug",
-       "theme": "line",
-       "style": "cool"
-      },
-      "back": {
-       "part": "body",
-       "size": "l",
-       "breed": "pug",
-       "theme": "line",
-       "style": "cool"
-      }
-     }
-    ],
-    "lang": "es",
-    "subtotal": 6599,
-    "shipping": 499,
-    "total": 7098
    },
    "hash": null
   },
@@ -401,63 +456,10 @@
   },
   {
    "m": "POST",
-   "path": "/api/orders",
-   "q": "",
-   "body": {
-    "email": "qa-test@example.com",
-    "ship": {
-     "name": "QA Tester",
-     "a1": "123 Test Street",
-     "a2": "",
-     "city": "San Diego",
-     "st": "AL",
-     "zip": "92101",
-     "phone": "5555550100"
-    },
-    "items": [
-     {
-      "id": "1793705387657",
-      "prod": "tee",
-      "color": "White",
-      "size": "M",
-      "qty": 1,
-      "front": {
-       "part": "head",
-       "size": "l",
-       "custom": "QAC1",
-       "k": "qak",
-       "breed": "custom",
-       "theme": "custom",
-       "style": "custom"
-      },
-      "back": {
-       "part": "body",
-       "size": "l",
-       "custom": "QAC1",
-       "k": "qak",
-       "breed": "custom",
-       "theme": "custom",
-       "style": "custom"
-      }
-     }
-    ],
-    "lang": "en",
-    "subtotal": 3299,
-    "shipping": 499,
-    "total": 5797,
-    "custom": {
-     "id": "QAC1",
-     "k": "qak"
-    }
-   },
-   "hash": null
-  },
-  {
-   "m": "POST",
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793705415640",
+    "id": "1793706469740",
     "s": {
      "prod": "hoodie",
      "color": "Sand",
@@ -510,7 +512,7 @@
   },
   {
    "m": "DELETE",
-   "path": "/api/designs/1793705415640",
+   "path": "/api/designs/1793706469740",
    "q": "",
    "body": null,
    "hash": null
@@ -554,7 +556,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793705442944",
+    "id": "1793706496943",
     "s": {
      "prod": "tank",
      "color": "White",

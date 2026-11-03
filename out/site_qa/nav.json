@@ -1,7 +1,7 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 472.6,
+ "secs": 466.1,
  "checks": {
   "deploy": [
    1,
@@ -48,39 +48,11 @@
    0
   ],
   "mobile": [
-   34,
-   1
+   35,
+   0
   ]
  },
- "defects": [
-  {
-   "sev": "info",
-   "area": "i18n",
-   "title": "Language switch runs translation over design cards: their data-i index attribute collides with the i18n data-i hook (card art briefly replaced by digits until the page re-renders; digits logged as missing keys)",
-   "repro": "open #/shop or #/ and change the footer language selector",
-   "expected": "only [data-i] text nodes from index.html translated",
-   "actual": "applyStatic() sets textContent of every [data-i] element incl. .art.mock cards",
-   "shot": null,
-   "count": 2,
-   "examples": [
-    {
-     "repro": "open #/shop or #/ and change the footer language selector",
-     "actual": "applyStatic() sets textContent of every [data-i] element incl. .art.mock cards"
-    }
-   ]
-  },
-  {
-   "sev": "low",
-   "area": "mobile",
-   "title": "Tap targets smaller than 24px on mobile #/cart",
-   "repro": "iPhone 13 viewport (390x844), open https://alphadogstyles.com/#/cart",
-   "expected": ">=24x24 CSS px (WCAG 2.2 AA)",
-   "actual": "['button.x \"Remove\" 50x15']",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  }
- ],
+ "defects": [],
  "notes": [],
  "data": {
   "catalog_counts": {
@@ -97,8 +69,8 @@
    },
    "js/app.js": {
     "same": true,
-    "live": "8825d85332",
-    "repo": "8825d85332"
+    "live": "b95d916884",
+    "repo": "b95d916884"
    },
    "js/garment.js": {
     "same": true,
@@ -112,8 +84,8 @@
    },
    "js/i18n.js": {
     "same": true,
-    "live": "507546ad62",
-    "repo": "507546ad62"
+    "live": "76751f56fc",
+    "repo": "76751f56fc"
    },
    "js/pages.js": {
     "same": true,
@@ -255,7 +227,6 @@
      "Chihuahua",
      "Color",
      "English",
-     "Full body",
      "Golden Retriever",
      "Labrador Retriever",
      "Português",
@@ -420,7 +391,6 @@
      "Cavalier King Charles Spaniel",
      "Chihuahua",
      "English",
-     "Full body",
      "Golden Retriever",
      "Labrador Retriever",
      "Português",
@@ -505,7 +475,6 @@
     ]
    }
   },
-  "data_i_collision": true,
   "links_found": 470,
   "header_footer_clicks": 20,
   "social_login_buttons": [],
@@ -532,9 +501,7 @@
     "sw": 390,
     "W": 390,
     "off": [],
-    "small": [
-     "button.x \"Remove\" 50x15"
-    ]
+    "small": []
    },
    "#/checkout": {
     "sw": 390,

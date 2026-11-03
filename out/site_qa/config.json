@@ -1,11 +1,11 @@
 {
  "shard": "config",
  "base": "https://alphadogstyles.com",
- "secs": 198.6,
+ "secs": 91.1,
  "checks": {
   "race": [
-   0,
-   1
+   1,
+   0
   ],
   "designer": [
    122,
@@ -40,141 +40,38 @@
    0
   ],
   "carry_over": [
-   6,
-   2
+   8,
+   0
   ],
   "url_params": [
-   7,
-   4
+   9,
+   0
   ],
   "save_design": [
    1,
    0
   ],
   "i18n": [
-   2,
-   2
+   4,
+   0
   ]
  },
- "defects": [
-  {
-   "sev": "medium",
-   "area": "race",
-   "title": "Preview can show a stale design: a slow earlier art load overwrites the newer selection",
-   "repro": "#/design?prod=tee&breed=boxer&theme=line&style=cool, click Geometric then quickly Continuous Line while the geo art is still loading (slow network)",
-   "expected": "preview art/line_cool/boxer_front.svg (matches highlighted 'Continuous Line')",
-   "actual": "before slow load finished: art/line_cool/boxer_front.svg; after: art/geo_cool/boxer_front.svg; highlighted theme: line",
-   "shot": "out/site_qa/shots/config/defect_Preview_can_show_a_stale_design_a_slow_earlier_art.jpg",
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "low",
-   "area": "carry_over",
-   "title": "Switching garment turns a chosen full-body front into a head emblem",
-   "repro": "#/design tee, front 'Big body', then click Polo",
-   "expected": "body_s (Body emblem, closest allowed option)",
-   "actual": "head_s",
-   "shot": "out/site_qa/shots/config/defect_Switching_garment_turns_a_chosen_full_body_front_i.jpg",
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "low",
-   "area": "carry_over",
-   "title": "Front 'Big body' not restored after returning from a front-only garment",
-   "repro": "tee front 'Big body' -> Polo -> Tee",
-   "expected": "body_l",
-   "actual": "head_s",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "low",
-   "area": "url_params",
-   "title": "Designer accepts unknown theme from URL (broken preview art, invalid cart line)",
-   "repro": "open https://alphadogstyles.com/#/design?theme=bogus",
-   "expected": "fallback to a valid theme/style",
-   "actual": "no theme/style highlighted; preview art art/bogus_classic/french_bulldog_front.svg; http errors []",
-   "shot": "out/site_qa/shots/config/defect_Designer_accepts_unknown_theme_from_URL_broken_pre.jpg",
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "medium",
-   "area": "url_params",
-   "title": "Cart page crashes after adding a design opened with an unknown theme/style URL",
-   "repro": "open https://alphadogstyles.com/#/design?theme=bogus, Add to cart, open #/cart",
-   "expected": "cart renders",
-   "actual": "[{'at': '/cart', 'text': \"Cannot read properties of undefined (reading 'name')\"}]",
-   "shot": "out/site_qa/shots/config/defect_Cart_page_crashes_after_adding_a_design_opened_wit.jpg",
-   "count": 2,
-   "examples": [
-    {
-     "repro": "open https://alphadogstyles.com/#/design?style=bogus, Add to cart, open #/cart",
-     "actual": "[{'at': '/cart', 'text': \"Cannot read properties of undefined (reading 'name')\"}]"
-    }
-   ]
-  },
-  {
-   "sev": "low",
-   "area": "url_params",
-   "title": "Designer accepts unknown style from URL (broken preview art, invalid cart line)",
-   "repro": "open https://alphadogstyles.com/#/design?style=bogus",
-   "expected": "fallback to a valid theme/style",
-   "actual": "no theme/style highlighted; preview art art/line_bogus/french_bulldog_front.svg; http errors []",
-   "shot": "out/site_qa/shots/config/defect_Designer_accepts_unknown_style_from_URL_broken_pre.jpg",
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "low",
-   "area": "i18n",
-   "title": "Designer labels left in English in es",
-   "repro": "language es, #/design",
-   "expected": "",
-   "actual": "['Full body']",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "low",
-   "area": "i18n",
-   "title": "Designer labels left in English in pt",
-   "repro": "language pt, #/design",
-   "expected": "",
-   "actual": "['Full body']",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  }
- ],
+ "defects": [],
  "notes": [],
  "data": {
-  "race_held_requests": 2,
+  "race_held_requests": 1,
   "designer_states_checked": 3042,
   "art_combos_checked": 396
  },
  "errors": {
   "console": [],
-  "pageerror": [
-   {
-    "at": "/cart",
-    "text": "Cannot read properties of undefined (reading 'name')"
-   },
-   {
-    "at": "/cart",
-    "text": "Cannot read properties of undefined (reading 'name')"
-   }
-  ],
+  "pageerror": [],
   "http": [],
   "failed": []
  },
  "error_counts": {
   "console": 0,
-  "pageerror": 2,
+  "pageerror": 0,
   "http": 0,
   "failed": 0
  },
