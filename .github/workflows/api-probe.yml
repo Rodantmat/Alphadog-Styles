@@ -1,0 +1,95 @@
+name: API probe (eBay + Amazon, read-only)
+
+# Read-only access check. Prints only counts / marketplace names - never tokens,
+# keys, emails or addresses (this repo is public, logs are public).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Probe
+        env:
+          ALL_SECRETS: ${{ toJSON(secrets) }}
+        run: |
+          python3 - <<'PY'
+          import os, json, base64, urllib.request, urllib.parse, re
+          S = json.loads(os.environ.pop("ALL_SECRETS"))
+          def req(url, data=None, headers=None, method=None):
+              r = urllib.request.Request(url, data=data, headers=headers or {}, method=method)
+              try:
+                  with urllib.request.urlopen(r, timeout=40) as f:
+                      return f.status, f.read().decode()
+              except urllib.error.HTTPError as e:
+                  return e.code, e.read().decode()
+          def pick(*names):
+              for n in names:
+                  if S.get(n): return n, S[n]
+              return None, None
+
+          print("== Secret names present (names only) ==")
+          print(", ".join(sorted(k for k in S if re.search(r"EBAY|AMAZON|SP_?API|LWA|SELLER|AWS", k))))
+
+          # ---------------- eBay ----------------
+          print("\n== eBay ==")
+          try:
+              auth = base64.b64encode(f"{S['EBAY_CLIENT_ID']}:{S['EBAY_CLIENT_SECRET']}".encode()).decode()
+              scopes = " ".join("https://api.ebay.com/oauth/api_scope" + s for s in
+                  ["", "/sell.inventory.readonly", "/sell.account.readonly", "/commerce.identity.readonly", "/sell.fulfillment.readonly"])
+              st, body = req("https://api.ebay.com/identity/v1/oauth2/token",
+                  urllib.parse.urlencode({"grant_type": "refresh_token", "refresh_token": S["EBAY_REFRESH_TOKEN"], "scope": scopes}).encode(),
+                  {"Authorization": "Basic " + auth, "Content-Type": "application/x-www-form-urlencoded"})
+              tok = json.loads(body).get("access_token")
+              print("refresh -> access token:", "OK" if tok else f"FAIL {st} {json.loads(body).get('error_description')}")
+              if tok:
+                  print(f"::add-mask::{tok}")
+                  H = {"Authorization": "Bearer " + tok}
+                  st, b = req("https://apiz.ebay.com/commerce/identity/v1/user/", headers=H)
+                  print("identity:", st, json.loads(b).get("username") if st == 200 else b[:200])
+                  st, b = req("https://api.ebay.com/sell/account/v1/privilege", headers=H)
+                  print("selling privileges:", st, "sellerRegistrationCompleted=%s" % json.loads(b).get("sellerRegistrationCompleted") if st == 200 else b[:200])
+                  st, b = req("https://api.ebay.com/sell/fulfillment/v1/order?limit=1", headers=H)
+                  print("orders total:", st, json.loads(b).get("total") if st == 200 else b[:200])
+                  xml = ('<?xml version="1.0" encoding="utf-8"?><GetMyeBaySellingRequest xmlns="urn:ebay:apis:eBLBaseComponents">'
+                         '<ActiveList><Include>true</Include><Pagination><EntriesPerPage>1</EntriesPerPage></Pagination></ActiveList>'
+                         '<DetailLevel>ReturnSummary</DetailLevel></GetMyeBaySellingRequest>')
+                  st, b = req("https://api.ebay.com/ws/api.dll", xml.encode(), {
+                      "X-EBAY-API-IAF-TOKEN": tok, "X-EBAY-API-CALL-NAME": "GetMyeBaySelling",
+                      "X-EBAY-API-SITEID": "0", "X-EBAY-API-COMPATIBILITY-LEVEL": "1193", "Content-Type": "text/xml"})
+                  ack = re.search(r"<Ack>(\w+)</Ack>", b); n = re.search(r"<ActiveList>.*?<TotalNumberOfEntries>(\d+)", b, re.S)
+                  print("active listings (Trading API):", st, ack and ack.group(1), n and n.group(1))
+          except Exception as e:
+              print("eBay error:", type(e).__name__, str(e)[:200])
+
+          # ---------------- Amazon SP-API ----------------
+          print("\n== Amazon SP-API ==")
+          try:
+              cn, cid = pick("SP_API_CLIENT_ID", "SPAPI_CLIENT_ID", "AMAZON_CLIENT_ID", "AMAZON_LWA_CLIENT_ID", "LWA_CLIENT_ID", "AMAZON_SP_CLIENT_ID", "SP_API_LWA_CLIENT_ID")
+              sn, csec = pick("SP_API_CLIENT_SECRET", "SPAPI_CLIENT_SECRET", "AMAZON_CLIENT_SECRET", "AMAZON_LWA_CLIENT_SECRET", "LWA_CLIENT_SECRET", "AMAZON_SP_CLIENT_SECRET", "SP_API_LWA_CLIENT_SECRET")
+              rn, rt = pick("SP_API_REFRESH_TOKEN", "SPAPI_REFRESH_TOKEN", "AMAZON_REFRESH_TOKEN", "AMAZON_LWA_REFRESH_TOKEN", "LWA_REFRESH_TOKEN", "AMAZON_SP_REFRESH_TOKEN")
+              print("using secrets:", cn, sn, rn)
+              if not (cid and csec and rt):
+                  print("Missing one of client id / client secret / refresh token")
+              else:
+                  st, body = req("https://api.amazon.com/auth/o2/token",
+                      urllib.parse.urlencode({"grant_type": "refresh_token", "refresh_token": rt, "client_id": cid, "client_secret": csec}).encode(),
+                      {"Content-Type": "application/x-www-form-urlencoded"})
+                  j = json.loads(body); tok = j.get("access_token")
+                  print("LWA token:", "OK" if tok else f"FAIL {st} {j.get('error')} {j.get('error_description')}")
+                  if tok:
+                      print(f"::add-mask::{tok}")
+                      H = {"x-amz-access-token": tok, "user-agent": "AlphaDogStyles-probe/1.0"}
+                      st, b = req("https://sellingpartnerapi-na.amazon.com/sellers/v1/marketplaceParticipations", headers=H)
+                      if st == 200:
+                          for p in json.loads(b).get("payload", []):
+                              m, pa = p["marketplace"], p["participation"]
+                              print(f"  {m['id']} {m['countryCode']} {m['name']}: participating={pa['isParticipating']} suspended={pa['hasSuspendedListings']}")
+                      else:
+                          print("marketplaceParticipations:", st, b[:300])
+          except Exception as e:
+              print("Amazon error:", type(e).__name__, str(e)[:200])
+          PY
