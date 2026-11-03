@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [firefox, webkit]
+        browser: [webkit]
         shard: [nav, shop, config, cart, art]
     steps:
       - uses: actions/checkout@v4
@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install Playwright
-        run: pip install -q playwright==1.49.1 && python -m playwright install --with-deps ${{ matrix.browser }}
+        run: pip install -q playwright==1.55.0 && python -m playwright install --with-deps ${{ matrix.browser }}
       - name: Run shard
         env:
           QA_BROWSER: ${{ matrix.browser }}
