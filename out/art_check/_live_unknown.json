@@ -1,0 +1,306 @@
+[
+ {
+  "id": "6ae98f92bc5e78d49d5c262b",
+  "file_name": "mini_poodle_geo_heart_fixed_front_blackink.png",
+  "pos": [
+   "front",
+   "front_dtf",
+   "front_left_dtf",
+   "left_chest"
+  ],
+  "n": 44,
+  "example": "BRAND TEST FB_small (draft, delete me)",
+  "img": "out/art_check/_live_6ae98f92bc5e78d49d5c262b.png"
+ },
+ {
+  "id": "6ae993c81ce8f096c65f996b",
+  "file_name": "alphadog_capside_blackink_tight.png",
+  "pos": [
+   "front_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ],
+  "n": 6,
+  "example": "BRAND TEST FB_small (draft, delete me)",
+  "img": "out/art_check/_live_6ae993c81ce8f096c65f996b.png"
+ },
+ {
+  "id": "6ae987027f381071c07cf6a5",
+  "file_name": "alphadog_capback_blackink.png",
+  "pos": [
+   "back_dtf",
+   "back_hat_embroidery",
+   "left_dtf",
+   "left_hat_embroidery",
+   "right_hat_embroidery"
+  ],
+  "n": 10,
+  "example": "BRAND TEST PF_5836_left_dtf (draft, delete me)",
+  "img": "out/art_check/_live_6ae987027f381071c07cf6a5.png"
+ },
+ {
+  "id": "6ae9a8100e02de73af0959e6",
+  "file_name": "mini_poodle_geo_heart_fixed_back_blackink.png",
+  "pos": [
+   "back",
+   "front_dtf"
+  ],
+  "n": 6,
+  "example": "BRAND TEST CAPOPT_geo_heart_back (draft, delete me)",
+  "img": "out/art_check/_live_6ae9a8100e02de73af0959e6.png"
+ },
+ {
+  "id": "6ae98955c557736bb884d1ac",
+  "file_name": "alphadog_neck_blackink_v3.png",
+  "pos": [
+   "neck"
+  ],
+  "n": 2424,
+  "example": "BRAND TEST SAMPLE_tee_natural_minipoodle (draft, delete me)",
+  "img": "out/art_check/_live_6ae98955c557736bb884d1ac.png"
+ },
+ {
+  "id": "5941187eb8e7e37b3f0e62e5",
+  "file_name": null,
+  "pos": [
+   "neck"
+  ],
+  "n": 3675,
+  "example": "BRAND TEST SAMPLE_tee_natural_minipoodle (draft, delete me)",
+  "img": "ERR"
+ },
+ {
+  "id": "6ae9896d5a99742bf1baeef7",
+  "file_name": "alphadog_capfront_fb_line_classic_test.png",
+  "pos": [
+   "front_dtf"
+  ],
+  "n": 1,
+  "example": "BRAND TEST cap_frontbrand (draft, delete me)",
+  "img": "out/art_check/_live_6ae9896d5a99742bf1baeef7.png"
+ },
+ {
+  "id": "6ae9895691ba40481b3dc486",
+  "file_name": "alphadog_neck_whiteink_v3.png",
+  "pos": [
+   "neck"
+  ],
+  "n": 1250,
+  "example": "NECK LABEL TEST hoodie (draft, delete me)",
+  "img": "out/art_check/_live_6ae9895691ba40481b3dc486.png"
+ },
+ {
+  "id": "6ae6fc3bf4cbbaabdb24e732",
+  "file_name": "blank_dot.png",
+  "pos": [
+   "back",
+   "front"
+  ],
+  "n": 4,
+  "example": "BLANK mockup source - do not publish hoodie",
+  "img": "out/art_check/_live_6ae6fc3bf4cbbaabdb24e732.png"
+ },
+ {
+  "id": "6ae9caf4e1aff16b67b26e5f",
+  "file_name": "cavalier_king_charles_spaniel_line_heart_fixed_frontbig_blackink.png",
+  "pos": [
+   "front"
+  ],
+  "n": 8,
+  "example": "Cavalier King Charles Spaniel T-Shirt Dog Lover Line Art Hea",
+  "img": "out/art_check/_live_6ae9caf4e1aff16b67b26e5f.png"
+ },
+ {
+  "id": "6ae9a80f985f194a863b7e27",
+  "file_name": "mini_poodle_geo_heart_fixed_front_whiteink.png",
+  "pos": [
+   "front"
+  ],
+  "n": 12,
+  "example": "Mini Poodle Hoodie Dog Lover Geometric Heart Big Portrait",
+  "img": "out/art_check/_live_6ae9a80f985f194a863b7e27.png"
+ },
+ {
+  "id": "6ae9caf6e5c32efbef9e6bc3",
+  "file_name": "cavalier_king_charles_spaniel_line_heart_fixed_frontbig_whiteink.png",
+  "pos": [
+   "front"
+  ],
+  "n": 4,
+  "example": "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Hear",
+  "img": "out/art_check/_live_6ae9caf6e5c32efbef9e6bc3.png"
+ },
+ {
+  "id": "6ae9caf03c889ca0d7054ac2",
+  "file_name": "cavalier_king_charles_spaniel_line_heart_fixed_front_blackink.png",
+  "pos": [
+   "front",
+   "front_dtf",
+   "left_chest"
+  ],
+  "n": 14,
+  "example": "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Hear",
+  "img": "out/art_check/_live_6ae9caf03c889ca0d7054ac2.png"
+ },
+ {
+  "id": "6ae9caf1d4af78b95b78da0c",
+  "file_name": "cavalier_king_charles_spaniel_line_heart_fixed_front_whiteink.png",
+  "pos": [
+   "front"
+  ],
+  "n": 8,
+  "example": "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Hear",
+  "img": "out/art_check/_live_6ae9caf1d4af78b95b78da0c.png"
+ },
+ {
+  "id": "6ae9a812f1e469ae5e542e8b",
+  "file_name": "mini_poodle_geo_heart_fixed_back_whiteink.png",
+  "pos": [
+   "back"
+  ],
+  "n": 4,
+  "example": "Mini Poodle Hoodie Dog Lover Geometric Heart Front & Back",
+  "img": "out/art_check/_live_6ae9a812f1e469ae5e542e8b.png"
+ },
+ {
+  "id": "6ae9caf2eadfdb473610132b",
+  "file_name": "cavalier_king_charles_spaniel_line_heart_fixed_back_blackink.png",
+  "pos": [
+   "back"
+  ],
+  "n": 5,
+  "example": "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Hear",
+  "img": "out/art_check/_live_6ae9caf2eadfdb473610132b.png"
+ },
+ {
+  "id": "6ae9caf359f5b682d533c64d",
+  "file_name": "cavalier_king_charles_spaniel_line_heart_fixed_back_whiteink.png",
+  "pos": [
+   "back"
+  ],
+  "n": 4,
+  "example": "Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Hear",
+  "img": "out/art_check/_live_6ae9caf359f5b682d533c64d.png"
+ },
+ {
+  "id": "6ae638b642ccd775a0a50e47",
+  "file_name": "alphadog_neck_blackink.png",
+  "pos": [
+   "back",
+   "back_hat_embroidery"
+  ],
+  "n": 396,
+  "example": "Maltese Dad Hat Dog Lover Geometric Heart",
+  "img": "out/art_check/_live_6ae638b642ccd775a0a50e47.png"
+ },
+ {
+  "id": "6ae7a35b33bf68cfe9605ddf",
+  "file_name": "mark_wpolo_6519_left_chest_dtf.png",
+  "pos": [
+   "left_chest_dtf"
+  ],
+  "n": 1,
+  "example": "BLANK mockup source - do not publish wpolo_6519 calib",
+  "img": "out/art_check/_live_6ae7a35b33bf68cfe9605ddf.png"
+ },
+ {
+  "id": "6ae798eedcaa29021e6c3752",
+  "file_name": "mark_wpolo_3874_left_chest_dtf.png",
+  "pos": [
+   "front_left_chest",
+   "left_chest_dtf"
+  ],
+  "n": 8,
+  "example": "BLANK mockup source - do not publish wpolo_3874 calib",
+  "img": "out/art_check/_live_6ae798eedcaa29021e6c3752.png"
+ },
+ {
+  "id": "6ae798fc9c4bf462e7a450b7",
+  "file_name": "mark_cap_mesh_front_dtf.png",
+  "pos": [
+   "front_dtf"
+  ],
+  "n": 2,
+  "example": "BLANK mockup source - do not publish cap_mesh calib",
+  "img": "out/art_check/_live_6ae798fc9c4bf462e7a450b7.png"
+ },
+ {
+  "id": "6ae798cf00ad93fdd217a4dc",
+  "file_name": "dot.png",
+  "pos": [
+   "back",
+   "front",
+   "front_dtf",
+   "left_chest",
+   "left_chest_dtf"
+  ],
+  "n": 9,
+  "example": "BLANK mockup source - do not publish cap_mesh blank",
+  "img": "out/art_check/_live_6ae798cf00ad93fdd217a4dc.png"
+ },
+ {
+  "id": "6ae798f5baa6e9f9963c9342",
+  "file_name": "mark_cap_dad_front_dtf.png",
+  "pos": [
+   "front_dtf"
+  ],
+  "n": 1,
+  "example": "BLANK mockup source - do not publish cap_dad calib",
+  "img": "out/art_check/_live_6ae798f5baa6e9f9963c9342.png"
+ },
+ {
+  "id": "6ae798dea2e919369e49c423",
+  "file_name": "mark_polo_left_chest.png",
+  "pos": [
+   "left_chest"
+  ],
+  "n": 1,
+  "example": "BLANK mockup source - do not publish polo calib",
+  "img": "out/art_check/_live_6ae798dea2e919369e49c423.png"
+ },
+ {
+  "id": "6ae798d7a04a46655ce6708f",
+  "file_name": "mark_wtank_front.png",
+  "pos": [
+   "front"
+  ],
+  "n": 1,
+  "example": "BLANK mockup source - do not publish wtank calib",
+  "img": "out/art_check/_live_6ae798d7a04a46655ce6708f.png"
+ },
+ {
+  "id": "6ae798d7104ad26201934386",
+  "file_name": "mark_wtank_back.png",
+  "pos": [
+   "back"
+  ],
+  "n": 1,
+  "example": "BLANK mockup source - do not publish wtank calib",
+  "img": "out/art_check/_live_6ae798d7104ad26201934386.png"
+ },
+ {
+  "id": "6ae798d0ca9288dd1b90e0bf",
+  "file_name": "mark_tank_back.png",
+  "pos": [
+   "back",
+   "front"
+  ],
+  "n": 2,
+  "example": "BLANK mockup source - do not publish tank calib",
+  "img": "out/art_check/_live_6ae798d0ca9288dd1b90e0bf.png"
+ },
+ {
+  "id": "6ae79719aff1377ece5d8cef",
+  "file_name": "probe.png",
+  "pos": [
+   "front",
+   "front_dtf",
+   "front_dtg",
+   "left_chest",
+   "left_chest_dtf"
+  ],
+  "n": 13,
+  "example": "COST PROBE - do not publish cap_mid_31069",
+  "img": "out/art_check/_live_6ae79719aff1377ece5d8cef.png"
+ }
+]
