@@ -12,7 +12,16 @@ def call(m,p,b=None,retry=4):
             print("HTTP",e.code,p,msg,flush=True); raise
 old=json.load(open("out/neck_ids.json")); v3=json.load(open("out/brand_v2_ids.json"))
 MAP={old["blackink"]:v3["neck_blackink_v3"],old["whiteink"]:v3["neck_whiteink_v3"]}
-stats={}
+stats={};CACHE={}
+def resolve(i):
+    if i in MAP: return MAP[i]
+    if i in MAP.values(): return i
+    if i not in CACHE:
+        try: fn=call("GET",f"/v1/uploads/{i}.json").get("file_name","")
+        except Exception: fn=""
+        CACHE[i]=v3["neck_whiteink_v3"] if "neck_whiteink" in fn and "v3" not in fn else v3["neck_blackink_v3"] if "neck_blackink" in fn and "v3" not in fn else None
+        print("upload",i,fn,"->",CACHE[i],flush=True)
+    return CACHE[i]
 for s in call("GET","/v1/shops.json"):
     SHOP=s["id"]; st=stats.setdefault(f'{SHOP} {s.get("title")} {s.get("sales_channel")}',{"swapped":0,"already":0,"noneck":0,"other":0,"failed":0})
     page=1
@@ -23,8 +32,8 @@ for s in call("GET","/v1/shops.json"):
             ids=[im["id"] for a in p["print_areas"] for ph in a["placeholders"] if ph["position"]=="neck" for im in ph["images"]]
             if not ids: st["noneck"]+=1; continue
             if all(i in MAP.values() for i in ids): st["already"]+=1; continue
-            if not all(i in MAP for i in ids): st["other"]+=1; print("unknown neck image",SHOP,p["id"],flush=True); continue
-            new=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[{**{k:v for k,v in im.items() if k in("id","x","y","scale","angle")},**({"id":MAP[im["id"]]} if q["position"]=="neck" else {})} for im in q["images"]]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
+            if not all(resolve(i) for i in ids): st["other"]+=1; print("unknown neck image",SHOP,p["id"],ids,flush=True); continue
+            new=[{"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[{**{k:v for k,v in im.items() if k in("id","x","y","scale","angle")},**({"id":resolve(im["id"])} if q["position"]=="neck" else {})} for im in q["images"]]} for q in a["placeholders"] if q["images"]]} for a in p["print_areas"]]
             if DRY: st["swapped"]+=1; continue
             try: call("PUT",f"/v1/shops/{SHOP}/products/{p['id']}.json",{"print_areas":new}); st["swapped"]+=1
             except Exception: st["failed"]+=1
