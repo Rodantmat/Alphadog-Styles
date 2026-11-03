@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [webkit]
+        browser: [firefox, webkit]
         shard: [nav, shop, config, cart, art]
     steps:
       - uses: actions/checkout@v4
@@ -38,3 +38,29 @@ jobs:
           name: qa-${{ matrix.browser }}-${{ matrix.shard }}
           path: out/site_qa
           retention-days: 7
+  commit:
+    needs: qa
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          path: _all
+          pattern: qa-*
+      - name: Merge per browser
+        run: |
+          for b in firefox webkit; do
+            mkdir -p _q_$b
+            for d in _all/qa-$b-*; do [ -d "$d" ] && cp -r "$d" "_q_$b/qa-${d##*qa-$b-}"; done
+            [ -d "_q_$b" ] && python3 scripts/site_qa/merge.py _q_$b out/site_qa_$b || true
+            rm -rf out/site_qa_$b/shots out/site_qa_$b/sheets
+          done
+      - name: Commit results
+        run: |
+          git config user.name "site-qa-bot"
+          git config user.email "site-qa-bot@users.noreply.github.com"
+          git add -A out/site_qa_firefox out/site_qa_webkit
+          git commit -q -m "site-qa browsers: results $(date -u +%FT%TZ)" || exit 0
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep 5; done
+          exit 1
