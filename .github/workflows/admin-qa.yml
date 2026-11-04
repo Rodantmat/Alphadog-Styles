@@ -41,7 +41,7 @@ jobs:
           npx esbuild index.js --bundle --platform=node --format=esm --outfile=/tmp/worker.mjs --log-level=warning --banner:js="import{createRequire as __cr}from'module';const require=__cr(import.meta.url);"
           PGPASSWORD=pw psql -h localhost -U postgres -d store -v ON_ERROR_STOP=1 -f schema.sql
       - name: Playwright
-        run: pip install -q playwright==1.49.1 && python -m playwright install --with-deps ${{ matrix.b }}
+        run: pip install -q playwright==1.55.0 && python -m playwright install --with-deps ${{ matrix.b }}
       - name: Start rig
         run: |
           nohup node scripts/admin_qa/server.mjs /tmp/worker.mjs store > /tmp/rig.log 2>&1 &

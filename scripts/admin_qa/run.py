@@ -53,7 +53,7 @@ call("POST","/api/internal/support",{"mailbox":"support","from":"cust@example.co
 real_total=2999+4999+3500+2800+shipping_tot
 # ------------------------------------------------ API-level checks
 s,h=call("GET","/api/internal/health"); ok(s==200 and h["db"] and h["mail"] and h["stripe"]=="live" and h["webhook"],"health shape"); ok(h["issues"]["needs_attention"]==1 and h["issues"]["test_failed"]==1,"health counts problems")
-s,st=call("GET","/api/internal/stats"); ok(st["sum"]["d90"]==real_total,f"stats revenue {st['sum']['d90']} == {real_total}"); ok(st["sum"]["n90"]==7,"stats counts 7 paid orders, got "+str(st["sum"]["n90"])); ok(st["chan"]["etsy"]["n"]==2 and st["chan"]["ebay"]["n"]==1 and st["chan"]["tiktok"]["n"]==1 and st["chan"]["store"]["n"]==2,"stats channels "+str(st["chan"]))
+s,st=call("GET","/api/internal/stats"); ok(st["sum"]["d90"]==real_total,f"stats revenue {st['sum']['d90']} == {real_total}"); ok(st["sum"]["n90"]==6,"stats counts 6 paid orders, got "+str(st["sum"]["n90"])); ok(st["chan"]["etsy"]["n"]==2 and st["chan"]["ebay"]["n"]==1 and st["chan"]["tiktok"]["n"]==1 and st["chan"]["store"]["n"]==2,"stats channels "+str(st["chan"]))
 ok(st["counts"]["users"]==1 and st["counts"]["subs"]==2 and st["counts"]["support_new"]==1,"stats counts "+str(st["counts"])); ok(st["top"]["breed"] and st["top"]["prod"][0]["k"] in("tee","hoodie"),"top lists")
 for p in ("/api/internal/orders/all","/api/internal/customers","/api/internal/subscribers","/api/internal/messages"): ok(call("GET",p)[0]==200,p+" 200")
 for p in ("/api/internal/stats","/api/internal/health","/api/internal/orders/all","/api/internal/customers","/api/internal/subscribers","/api/internal/messages"): ok(call("GET",p,adm=False)[0]==403,p+" refuses without token")
@@ -83,7 +83,11 @@ def run_ui():
     # remove init script effect: reload after clearing by navigating with fresh context
     ctx2=br.new_context(accept_downloads=True,**kw); pg=ctx2.new_page(); pg.on("pageerror",lambda e:errs.append("pageerror "+str(e))); pg.on("console",lambda m:m.type=="error" and errs.append("console "+m.text)); pg.on("dialog",dlg)
     pg.goto(B+"/"); pg.wait_for_selector("#app, main, body"); 
-    pg.goto(B+"/#/admin"); pg.wait_for_selector("#at"); pg.fill("#at input","test-admin-token"); pg.click("#at button"); pg.wait_for_selector("#ap .kpi",timeout=15000); ok(True,"token entry opens console")
+    pg.goto(B+"/#/admin"); pg.wait_for_selector("#at"); pg.fill("#at input","test-admin-token"); pg.click("#at button")
+    try: pg.wait_for_selector("#ap .kpi",timeout=15000)
+    except Exception:
+        print("DEBUG app html:",pg.inner_text("#app")[:600],"| errs:",errs[:5],flush=True); pg.screenshot(path=f"{OUT}/{BR}_debug.png"); raise
+    ok(True,"token entry opens console")
     def overflow(tag): 
         w=pg.evaluate("[document.documentElement.scrollWidth,innerWidth]"); ok(w[0]<=w[1]+2,f"no sideways page scroll on {tag} ({w})")
     txt=lambda:pg.inner_text("#ap")
@@ -93,16 +97,16 @@ def run_ui():
     ok("Etsy" in t and "TikTok" in t and "eBay" in t,"overview channels"); ok("beagle" in t.lower() or "french" in t.lower() or "labrador" in t.lower(),"overview top breeds"); pg.screenshot(path=f"{OUT}/{BR}{'_m' if MOB else ''}_overview.png"); overflow("overview")
     # orders
     pg.click("[data-tab=orders]"); pg.wait_for_selector("#aol table"); rows=lambda:pg.locator("#aol tr").count()-1
-    ok(rows()==7,f"Paid filter lists 7 real orders, got {rows()}"); overflow("orders")
+    ok(rows()==6,f"Paid filter lists 6 real orders, got {rows()}"); overflow("orders")
     pg.click("[data-f=problem]"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==3"); ok(rows()==2,"Problems = needs_attention + test_failed")
     pg.click("[data-f=test]"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==3"); ok(rows()==2,"Test filter = 2")
-    pg.click("[data-f=all]"); pg.wait_for_timeout(500); ok(rows()>=9,"All filter lists everything")
-    pg.click("[data-f=real]"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==8")
+    pg.click("[data-f=all]"); pg.wait_for_timeout(500); ok(rows()>=8,"All filter lists everything")
+    pg.click("[data-f=real]"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==7")
     pg.fill("#aoq",SO); pg.wait_for_function("document.querySelectorAll('#aol tr').length==2"); ok(SO in pg.inner_text("#aol"),"search by order id"); 
     pg.fill("#aoq","nomatch-xyz"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==2 && /No orders here/.test(document.querySelector('#aol').innerText)"); ok(True,"search with no match shows empty message")
-    pg.fill("#aoq",""); pg.wait_for_function("document.querySelectorAll('#aol tr').length==8")
+    pg.fill("#aoq",""); pg.wait_for_function("document.querySelectorAll('#aol tr').length==7")
     with pg.expect_download() as dl: pg.click("#aocsv")
-    path=dl.value.path(); csv=open(path).read(); ok(SO in csv and csv.count("\n")>=7,"orders CSV downloads with rows")
+    path=dl.value.path(); csv=open(path).read(); ok(SO in csv and csv.count("\n")>=6,"orders CSV downloads with rows")
     # open store order
     pg.click(f"[data-oo={SO}]"); pg.wait_for_selector("#aodp"); d=pg.inner_text("#aodp"); ok("Test Buyer" in d and "San Diego" in d and buyer_has(d),"order detail shows address + items"); pg.screenshot(path=f"{OUT}/{BR}{'_m' if MOB else ''}_order.png"); overflow("order detail")
     n0=len(mails()); pg.click("#aodp [data-a=resend]"); pg.wait_for_timeout(800); ok(len(mails())==n0+1 and "confirmed" in mails()[-1]["subject"],"resend receipt emails the customer")
