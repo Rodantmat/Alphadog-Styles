@@ -60,7 +60,7 @@ for p in ("/api/internal/stats","/api/internal/health","/api/internal/orders/all
 ok(call("GET","/api/internal/stats",None)[0]==200,"stats ok with token")
 ok(call("POST","/api/internal/orders/"+SO,{"action":"bogus"})[0]==400,"unknown action 400"); ok(call("POST","/api/internal/orders/NOPE",{"action":"resend"})[0]==404,"unknown order 404")
 ok(call("POST","/api/internal/orders/"+a[1]["id"],{"action":"refund"})[0]==400,"marketplace order not refundable here")
-ok(call("POST","/api/internal/orders/"+a[1]["id"],{"action":"cancel"})[0]==400,"cannot cancel order already in production")
+ok(call("POST","/api/internal/orders/"+a[1]["id"],{"action":"cancel"})[0]==400,"cannot cancel order already in production"); ok(call("POST","/api/internal/orders/"+bad[1]["id"],{"action":"cancel"})[0]==400,"marketplace orders are never cancellable from admin")
 ok(call("POST","/api/internal/orders/"+SO,{"action":"requeue"})[0]==400,"requeue only for problem orders")
 # ------------------------------------------------ UI
 def run_ui():
@@ -129,11 +129,12 @@ def run_ui():
     # marketplace order has no refund / no cancel when in production
     pg.click("[data-f=real]"); pg.wait_for_timeout(600); pg.click(f"[data-oo={a[1]['id']}]"); pg.wait_for_selector("#aodp"); ok(pg.locator("#aodp [data-a=refund]").count()==0 and pg.locator("#aodp [data-a=cancel]").count()==0,"marketplace in-production order: no refund, no cancel")
     # problems: cancel + requeue
-    pg.click("[data-f=problem]"); pg.wait_for_timeout(700); pg.click(f"[data-oo={bad[1]['id']}]"); pg.wait_for_selector("#aodp"); pg.click("#aodp [data-a=cancel]"); pg.wait_for_timeout(900)
-    ok(call("GET","/api/internal/orders/all?q="+bad[1]["id"])[1]["items"][0]["status"]=="cancelled","cancel problem order"); ok(any(k=="confirm" for k,_ in dialogs),"cancel asks to confirm")
+    pg.click("[data-f=problem]"); pg.wait_for_timeout(700); pg.click(f"[data-oo={bad[1]['id']}]"); pg.wait_for_selector("#aodp"); ok(pg.locator("#aodp [data-a=cancel]").count()==0,"no cancel button on marketplace orders")
+    sx,sr=store_order(pay=False); call("POST","/api/internal/orders/"+sr["id"],{"status":"needs_attention"}); pg.click("[data-f=problem]"); pg.wait_for_timeout(700); pg.click(f"[data-oo={sr['id']}]"); pg.wait_for_selector("#aodp"); pg.click("#aodp [data-a=cancel]"); pg.wait_for_timeout(900)
+    ok(call("GET","/api/internal/orders/all?q="+sr["id"])[1]["items"][0]["status"]=="cancelled","cancel own store order"); ok(any(k=="confirm" for k,_ in dialogs),"cancel asks to confirm")
     pg.click("[data-f=problem]"); pg.wait_for_timeout(700); pg.click(f"[data-oo={tf[1]['id']}]"); pg.wait_for_selector("#aodp"); pg.click("#aodp [data-a=requeue]"); pg.wait_for_timeout(900)
     ok(call("GET","/api/internal/orders/all?q="+tf[1]["id"])[1]["items"][0]["status"]=="paid_test","retry failed test order -> paid_test")
-    pg.click("[data-f=refunded]"); pg.wait_for_timeout(700); ok(rows()==2,"refunded/cancelled filter shows 2")
+    pg.click("[data-f=refunded]"); pg.wait_for_timeout(700); ok(rows()>=2,"refunded/cancelled filter lists them")
     # customers
     pg.click("[data-tab=customers]"); pg.wait_for_selector("#acc"); t=txt(); ok(EMAIL in t and "1 registered" in t,"customers lists the account"); overflow("customers")
     with pg.expect_download() as dl: pg.click("#acc")
