@@ -1,0 +1,13 @@
+name: picsum
+on: { workflow_dispatch: {} }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pillow
+      - run: python3 scripts/video/picsum.py
+      - run: |
+          git config user.name "alphadog-bot"; git config user.email "bot@users.noreply.github.com"
+          git add out/scenery && git commit -m "scenery sheets" && git push || true
