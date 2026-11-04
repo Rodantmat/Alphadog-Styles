@@ -104,12 +104,12 @@ for o in st("GET","/api/internal/orders?status=paid_test")["items"]:  # Stripe T
             b=build({**o,"data":{**o["data"],"source":o["data"].get("source") or {"test":1}}}); q=pf("POST",f"/v1/shops/{SHOP}/orders/shipping.json",{"line_items":b["line_items"],"address_to":b["address_to"]}); assert q, "empty shipping quote"; print("printify quote ok",o["id"],json.dumps(q)[:160],flush=True)
         st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_complete"}); print("test order verified",o["id"],flush=True)
     except Exception as e: print("TEST FAILED",o["id"],e,flush=True); st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_failed"})
-PAUSED=st("GET","/api/internal/kv/fulfil_paused").get("v")=="1"
+PAUSED=st("GET","/api/internal/kv/fulfil_paused").get("v")=="1" or os.environ.get("ONLY_TEST")=="1"
 if PAUSED: print("fulfilment PAUSED by owner - paid orders wait",flush=True)
 for o in ([] if PAUSED else st("GET","/api/internal/orders?status=paid")["items"]):
     try: fulfil(o)
     except Exception as e: print("FAILED",o["id"],e,flush=True); st("POST",f"/api/internal/orders/{o['id']}",{"status":"needs_attention"})
-for o in st("GET","/api/internal/orders?status=in_production")["items"]:
+for o in ([] if os.environ.get("ONLY_TEST")=="1" else st("GET","/api/internal/orders?status=in_production")["items"]):
     try:
         p=pf("GET",f"/v1/shops/{SHOP}/orders/{o['printify_id']}.json"); sh=p.get("shipments") or []
         if sh and sh[0].get("url"):

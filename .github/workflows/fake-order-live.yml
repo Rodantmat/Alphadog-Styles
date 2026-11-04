@@ -1,0 +1,44 @@
+name: fake-order-live
+# SAFE fake order on the live store. The order is flagged test (status paid_test): it is never counted as revenue and the
+# fulfilment robot is run in ONLY_TEST mode, which never creates a Printify order (it only builds print files and asks Printify for a shipping QUOTE).
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency: store-fulfill
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install cairosvg pillow
+      - name: Create the fake order + read-check every admin endpoint
+        env:
+          STORE_URL: https://alphadogstyles.com
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+        run: python3 scripts/live_fake_order.py
+      - name: Run fulfilment in TEST-ONLY mode (no Printify order can be created)
+        env:
+          ONLY_TEST: "1"
+          DRY_PRINTIFY: "1"
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          PRINTIFY_API_SHOP_ID: "29559517"
+          STORE_URL: https://alphadogstyles.com
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+        run: python3 scripts/store_fulfill.py | tee /tmp/fulfil.log
+      - name: Verify the fake order reached test_complete
+        env:
+          STORE_URL: https://alphadogstyles.com
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request
+          oid=open("fake_order_id.txt").read().strip()
+          r=urllib.request.Request(os.environ["STORE_URL"]+"/api/internal/orders/all?q="+oid,headers={"x-admin-token":os.environ["STORE_ADMIN_TOKEN"],"User-Agent":"a"})
+          o=json.load(urllib.request.urlopen(r))["items"][0]; print(o["id"],o["status"],"printify_id=",o["printify_id"])
+          assert o["status"]=="test_complete" and not o["printify_id"], "fake order did not complete the safe pipeline"
+          PY
+          grep "printify quote ok" /tmp/fulfil.log
+          ! grep -E "^sent " /tmp/fulfil.log
