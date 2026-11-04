@@ -24,6 +24,22 @@ def etsy_poll():
         res=E.store("POST","/api/internal/market/order",{"plat":"etsy","ext_id":str(rc["receipt_id"]),"email":rc.get("buyer_email") or "","ship":ship,"items":items,"total":cents})
         print("etsy order",rc["receipt_id"],res); n+=0 if res.get("dup") else 1
     return n
+def ebay_poll():
+    """eBay Sell Fulfillment API: paid, not-yet-shipped orders whose line SKUs are ours -> store bridge (dedupes on order id)."""
+    import ebay_api as EB, etsy_api as E
+    if not (EB.ID and EB.RT): print("ebay api: no keys"); return 0
+    n=0
+    for o in EB.open_orders(30):
+        if o.get("orderPaymentStatus")!="PAID": continue
+        lis=o.get("lineItems",[]); ours=[x for x in lis if SKU.match((x.get("sku") or "").upper())]
+        if not ours: continue
+        if len(ours)!=len(lis): print("ebay order",o["orderId"],"mixes other items - ours only")
+        st=(((o.get("fulfillmentStartInstructions") or [{}])[0].get("shippingStep") or {}).get("shipTo")) or {}; ad=st.get("contactAddress") or {}
+        ship={"name":st.get("fullName",""),"a1":ad.get("addressLine1",""),"a2":ad.get("addressLine2",""),"city":ad.get("city",""),"st":ad.get("stateOrProvince",""),"zip":ad.get("postalCode",""),"phone":((st.get("primaryPhone") or {}).get("phoneNumber") or ""),"country":ad.get("countryCode") or "US"}
+        cents=int(round(float((o.get("pricingSummary",{}).get("total") or {}).get("value") or 0)*100))
+        res=E.store("POST","/api/internal/market/order",{"plat":"ebay","ext_id":o["orderId"],"email":st.get("email",""),"ship":ship,"items":[{"sku":x["sku"],"qty":x.get("quantity",1),"title":(x.get("title") or "")[:80]} for x in ours],"total":cents})
+        print("ebay order",o["orderId"],res); n+=0 if res.get("dup") else 1
+    return n
 CARRIER={"usps":"usps","ups":"ups","fedex":"fedex","dhl":"dhl"}
 def push_tracking(plat,ext,carrier,number):
     if not number: return "no tracking number yet"
@@ -31,6 +47,9 @@ def push_tracking(plat,ext,carrier,number):
         import etsy_api as E
         c=next((v for k,v in CARRIER.items() if k in (carrier or "").lower()),carrier or "other")
         return E.call("POST",f"/shops/{E.shop_id()}/receipts/{ext}/tracking",form={"tracking_code":number,"carrier_name":c,"send_bcc":"false"})
+    if plat=="ebay":
+        import ebay_api as EB
+        r=EB.add_tracking(ext,carrier,number); return r
     return f"{plat}: tracking push not available yet"
 
 # ---------------- eBay / TikTok sale emails (forwarded from the seller Gmail to orders@alphadogstyles.com) ----------------
@@ -154,6 +173,9 @@ if __name__=="__main__":
     try: n+=etsy_poll()
     except SystemExit as e: print(e)
     except Exception as e: print("etsy poll error",e)
+    try: n+=ebay_poll()
+    except SystemExit as e: print(e)
+    except Exception as e: print("ebay poll error",e)
     try: n+=mail_poll()
     except Exception as e: print("mail poll error",e)
     try: n+=gmail_poll()
