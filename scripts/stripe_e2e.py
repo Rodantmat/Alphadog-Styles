@@ -24,13 +24,14 @@ with sync_playwright() as p:
     page.wait_for_url(re.compile(r"checkout\.stripe\.com"), timeout=60000)
     print("stripe url host ok; livemode hint:", "cs_test_" in page.url)
     page.wait_for_timeout(4000)
-    for how in ("radio-first","role","label"):
+    for sel in ("[data-testid=card-accordion-item-button]","[data-testid=card-accordion-item]","button:has-text('Card')","[role=button]:has-text('Card')"):
         try:
-            if how=="radio-first": page.locator("input[type=radio]").first.check(force=True, timeout=6000)
-            elif how=="role": page.get_by_role("radio", name=re.compile("Card")).first.check(force=True, timeout=6000)
-            else: page.locator("label:has-text('Card')").first.click(timeout=6000)
-            if page.locator("#cardNumber").count(): break
-        except Exception as e: print("card via", how, "failed", str(e)[:120])
+            if page.locator(sel).count(): page.locator(sel).first.click(timeout=5000); print("clicked", sel)
+        except Exception as e: print("sel failed", sel, str(e)[:80])
+        if page.locator("#cardNumber").count(): break
+    if not page.locator("#cardNumber").count():
+        page.mouse.click(780, 345); page.wait_for_timeout(2500); print("coordinate click")
+    print("TESTIDS", page.evaluate("[...document.querySelectorAll('[data-testid]')].map(e=>e.dataset.testid).slice(0,25)"))
     print("RADIOS", page.locator("input[type=radio]").count(), "cardNumber", page.locator("#cardNumber").count())
     page.wait_for_selector("#cardNumber", timeout=30000)
     shot(page, "2_stripe")
