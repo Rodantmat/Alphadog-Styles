@@ -2,7 +2,7 @@
  "art": {
   "shard": "art",
   "base": "https://alphadogstyles.com",
-  "secs": 34.4,
+  "secs": 18.4,
   "checks": {
    "art_files": [
     1188,
@@ -36,7 +36,7 @@
  "cart": {
   "shard": "cart",
   "base": "https://alphadogstyles.com",
-  "secs": 301.1,
+  "secs": 295.2,
   "checks": {
    "add_to_cart": [
     45,
@@ -100,57 +100,27 @@
    "failed": [
     {
      "at": "/cart",
-     "url": "https://alphadogstyles.com/art/line_classic/mini_poodle_front.svg",
+     "url": "https://alphadogstyles.com/img/tank_white_front.webp",
      "err": "NS_BINDING_ABORTED"
     },
     {
      "at": "/cart",
-     "url": "https://alphadogstyles.com/art/geo_heart/mini_poodle_front.svg",
+     "url": "https://alphadogstyles.com/img/tee_light-blue_front.webp",
      "err": "NS_BINDING_ABORTED"
     },
     {
      "at": "/cart",
-     "url": "https://alphadogstyles.com/art/geo_cool/mini_poodle_back.svg",
+     "url": "https://alphadogstyles.com/img/hoodie_ash_front.webp",
      "err": "NS_BINDING_ABORTED"
     },
     {
      "at": "/cart",
-     "url": "https://alphadogstyles.com/art/geo_classic/mini_poodle_back.svg",
+     "url": "https://alphadogstyles.com/img/tee_soft-cream_front.webp",
      "err": "NS_BINDING_ABORTED"
     },
     {
      "at": "/cart",
-     "url": "https://alphadogstyles.com/art/geo_classic/mini_poodle_front.svg",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/art/geo_cool/mini_poodle_front.svg",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/art/geo_heart/mini_poodle_back.svg",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/art/line_heart/mini_poodle_back.svg",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/art/line_heart/mini_poodle_front.svg",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/art/line_cool/mini_poodle_back.svg",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/art/line_cool/mini_poodle_front.svg",
+     "url": "https://alphadogstyles.com/img/hoodie_white_front.webp",
      "err": "NS_BINDING_ABORTED"
     }
    ]
@@ -159,7 +129,7 @@
    "console": 0,
    "pageerror": 0,
    "http": 1,
-   "failed": 11
+   "failed": 5
   },
   "api_calls": [
    {
@@ -179,7 +149,7 @@
      },
      "items": [
       {
-       "id": "1793720171494",
+       "id": "1793768561282",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -218,7 +188,7 @@
      },
      "items": [
       {
-       "id": "1793720171494",
+       "id": "1793768561282",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -275,7 +245,7 @@
      },
      "items": [
       {
-       "id": "1793720239297",
+       "id": "1793768628926",
        "prod": "hoodie",
        "color": "White",
        "size": "3XL",
@@ -386,7 +356,7 @@
      },
      "items": [
       {
-       "id": "1793720271914",
+       "id": "1793768660376",
        "prod": "tee",
        "color": "White",
        "size": "M",
@@ -427,7 +397,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793720300831",
+     "id": "1793768688051",
      "s": {
       "prod": "hoodie",
       "color": "Sand",
@@ -480,7 +450,7 @@
    },
    {
     "m": "DELETE",
-    "path": "/api/designs/1793720300831",
+    "path": "/api/designs/1793768688051",
     "q": "",
     "body": null,
     "hash": null
@@ -524,7 +494,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793720329083",
+     "id": "1793768715548",
      "s": {
       "prod": "tank",
       "color": "White",
@@ -552,7 +522,7 @@
  "config": {
   "shard": "config",
   "base": "https://alphadogstyles.com",
-  "secs": 92.6,
+  "secs": 76.7,
   "checks": {
    "race": [
     1,
@@ -626,11 +596,11 @@
  "nav": {
   "shard": "nav",
   "base": "https://alphadogstyles.com",
-  "secs": 382.3,
+  "secs": 351.1,
   "checks": {
    "deploy": [
-    1,
-    0
+    0,
+    1
    ],
    "i18n": [
     10,
@@ -649,7 +619,7 @@
     0
    ],
    "links": [
-    939,
+    937,
     0
    ],
    "clicks": [
@@ -676,17 +646,31 @@
   "defects": [
    {
     "sev": "info",
+    "area": "deploy",
+    "title": "Live site files differ from repo main (deploy drift)",
+    "repro": "",
+    "expected": "live == repo store/",
+    "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
+    "shot": null,
+    "count": 1,
+    "examples": []
+   },
+   {
+    "sev": "info",
     "area": "harness",
     "title": "QA harness crashed in shard nav: Browser.new_context: options.isMobile is not supported in Firefox",
     "repro": "",
     "expected": "",
-    "actual": "File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/nav.py\", line 308, in nav_shard\n    mctx = qa.context(browser, **dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 103, in context\n    ctx = browser.new_context(**kw)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 13969, in new_context\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/playwrig",
+    "actual": "File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/nav.py\", line 308, in nav_shard\n    mctx = qa.context(browser, **dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 103, in context\n    ctx = browser.new_context(**kw)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 13969, in new_context\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwrig",
     "shot": null,
     "count": 1,
     "examples": []
    }
   ],
-  "notes": [],
+  "notes": [
+   "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
+   "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
+  ],
   "errors": {
    "console": [],
    "pageerror": [],

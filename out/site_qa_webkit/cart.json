@@ -1,11 +1,11 @@
 {
  "shard": "cart",
  "base": "https://alphadogstyles.com",
- "secs": 75.6,
+ "secs": 75.4,
  "checks": {
   "add_to_cart": [
-   44,
-   1
+   45,
+   0
   ],
   "cart_lines": [
    238,
@@ -48,19 +48,7 @@
    0
   ]
  },
- "defects": [
-  {
-   "sev": "high",
-   "area": "add_to_cart",
-   "title": "Add to cart does not update badge / show toast",
-   "repro": "#/design tee White 3XL front head_s back none -> Add to cart",
-   "expected": "1",
-   "actual": "('1', '')",
-   "shot": "out/site_qa/shots/cart/defect_Add_to_cart_does_not_update_badge_show_toast.jpg",
-   "count": 1,
-   "examples": []
-  }
- ],
+ "defects": [],
  "notes": [
   "Cart has no 'edit line' action (no UI to reopen a line in the designer); stored _s state is unused - not tested further."
  ],
@@ -80,7 +68,7 @@
    },
    "items": [
     {
-     "id": "1793720080492",
+     "id": "1793768482392",
      "prod": "tee",
      "color": "Soft Pink",
      "size": "M",
@@ -106,10 +94,6 @@
    {
     "at": "/checkout",
     "text": "Failed to load resource: the server responded with a status of 400 (Bad Request)"
-   },
-   {
-    "at": "/done/QA-ORDER-3",
-    "text": "Failed to load resource: the server responded with a status of 404 (Not Found)"
    }
   ],
   "pageerror": [],
@@ -118,39 +102,9 @@
     "at": "/checkout",
     "status": 400,
     "url": "https://alphadogstyles.com/api/orders"
-   },
-   {
-    "at": "/done/QA-ORDER-3",
-    "status": 404,
-    "url": "https://alphadogstyles.com/cdn-cgi/rum?"
    }
   ],
   "failed": [
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/wtank_solid-tahiti-blue_front.webp",
-    "err": "Load request cancelled"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/tee_soft-cream_front.webp",
-    "err": "Load request cancelled"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/tank_white_front.webp",
-    "err": "Load request cancelled"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/art/geo_cool/mini_poodle_back.svg",
-    "err": "Load request cancelled"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/hoodie_ash_front.webp",
-    "err": "Load request cancelled"
-   },
    {
     "at": "/cart",
     "url": "https://alphadogstyles.com/img/hoodie_white_front.webp",
@@ -159,10 +113,10 @@
   ]
  },
  "error_counts": {
-  "console": 2,
+  "console": 1,
   "pageerror": 0,
-  "http": 2,
-  "failed": 6
+  "http": 1,
+  "failed": 1
  },
  "api_calls": [
   {
@@ -182,7 +136,7 @@
     },
     "items": [
      {
-      "id": "1793720080492",
+      "id": "1793768482392",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -221,7 +175,7 @@
     },
     "items": [
      {
-      "id": "1793720080492",
+      "id": "1793768482392",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -278,7 +232,7 @@
     },
     "items": [
      {
-      "id": "1793720089213",
+      "id": "1793768490949",
       "prod": "hoodie",
       "color": "White",
       "size": "3XL",
@@ -389,7 +343,7 @@
     },
     "items": [
      {
-      "id": "1793720098660",
+      "id": "1793768500902",
       "prod": "tee",
       "color": "White",
       "size": "M",
@@ -430,7 +384,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793720105678",
+    "id": "1793768505686",
     "s": {
      "prod": "hoodie",
      "color": "Sand",
@@ -483,7 +437,7 @@
   },
   {
    "m": "DELETE",
-   "path": "/api/designs/1793720105678",
+   "path": "/api/designs/1793768505686",
    "q": "",
    "body": null,
    "hash": null
@@ -527,7 +481,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793720111659",
+    "id": "1793768511376",
     "s": {
      "prod": "tank",
      "color": "White",

@@ -1,11 +1,11 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 382.3,
+ "secs": 351.1,
  "checks": {
   "deploy": [
-   1,
-   0
+   0,
+   1
   ],
   "i18n": [
    10,
@@ -24,7 +24,7 @@
    0
   ],
   "links": [
-   939,
+   937,
    0
   ],
   "clicks": [
@@ -51,17 +51,31 @@
  "defects": [
   {
    "sev": "info",
+   "area": "deploy",
+   "title": "Live site files differ from repo main (deploy drift)",
+   "repro": "",
+   "expected": "live == repo store/",
+   "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "info",
    "area": "harness",
    "title": "QA harness crashed in shard nav: Browser.new_context: options.isMobile is not supported in Firefox",
    "repro": "",
    "expected": "",
-   "actual": "File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/nav.py\", line 308, in nav_shard\n    mctx = qa.context(browser, **dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 103, in context\n    ctx = browser.new_context(**kw)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 13969, in new_context\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.16/x64/lib/python3.12/site-packages/playwrig",
+   "actual": "File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/nav.py\", line 308, in nav_shard\n    mctx = qa.context(browser, **dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 103, in context\n    ctx = browser.new_context(**kw)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 13969, in new_context\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwrig",
    "shot": null,
    "count": 1,
    "examples": []
   }
  ],
- "notes": [],
+ "notes": [
+  "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
+  "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
+ ],
  "data": {
   "catalog_counts": {
    "breeds": 33,
@@ -76,9 +90,9 @@
     "repo": "b179f08ebd"
    },
    "js/app.js": {
-    "same": true,
-    "live": "b95d916884",
-    "repo": "b95d916884"
+    "same": false,
+    "live": "1e99dd7893",
+    "repo": "65b149bf51"
    },
    "js/garment.js": {
     "same": true,
@@ -115,8 +129,8 @@
    "ok": true,
    "mail": true,
    "providers": {
-    "google": false,
-    "facebook": false,
+    "google": true,
+    "facebook": true,
     "apple": false
    }
   },
@@ -160,8 +174,9 @@
   "possibly_untranslated": {
    "es": {
     "#/": [
-     "Beagle",
-     "Chihuahua",
+     "Border Collie",
+     "Boston Terrier",
+     "Cane Corso",
      "Shiba Inu"
     ],
     "#/shop": [
@@ -227,8 +242,10 @@
    },
    "pt": {
     "#/": [
-     "Beagle",
-     "Chihuahua",
+     "Border Collie",
+     "Boston Terrier",
+     "Boxer",
+     "Cane Corso",
      "Shiba Inu"
     ],
     "#/shop": [
@@ -294,9 +311,12 @@
     ]
    }
   },
-  "links_found": 470,
+  "links_found": 471,
   "header_footer_clicks": 20,
-  "social_login_buttons": []
+  "social_login_buttons": [
+   "/api/auth/oauth/google/start?next=account",
+   "/api/auth/oauth/facebook/start?next=account"
+  ]
  },
  "errors": {
   "console": [],

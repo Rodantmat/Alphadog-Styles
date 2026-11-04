@@ -1,7 +1,7 @@
 {
  "shard": "cart",
  "base": "https://alphadogstyles.com",
- "secs": 301.1,
+ "secs": 295.2,
  "checks": {
   "add_to_cart": [
    45,
@@ -68,7 +68,7 @@
    },
    "items": [
     {
-     "id": "1793720171494",
+     "id": "1793768561282",
      "prod": "tee",
      "color": "Soft Pink",
      "size": "M",
@@ -102,57 +102,27 @@
   "failed": [
    {
     "at": "/cart",
-    "url": "https://alphadogstyles.com/art/line_classic/mini_poodle_front.svg",
+    "url": "https://alphadogstyles.com/img/tank_white_front.webp",
     "err": "NS_BINDING_ABORTED"
    },
    {
     "at": "/cart",
-    "url": "https://alphadogstyles.com/art/geo_heart/mini_poodle_front.svg",
+    "url": "https://alphadogstyles.com/img/tee_light-blue_front.webp",
     "err": "NS_BINDING_ABORTED"
    },
    {
     "at": "/cart",
-    "url": "https://alphadogstyles.com/art/geo_cool/mini_poodle_back.svg",
+    "url": "https://alphadogstyles.com/img/hoodie_ash_front.webp",
     "err": "NS_BINDING_ABORTED"
    },
    {
     "at": "/cart",
-    "url": "https://alphadogstyles.com/art/geo_classic/mini_poodle_back.svg",
+    "url": "https://alphadogstyles.com/img/tee_soft-cream_front.webp",
     "err": "NS_BINDING_ABORTED"
    },
    {
     "at": "/cart",
-    "url": "https://alphadogstyles.com/art/geo_classic/mini_poodle_front.svg",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/art/geo_cool/mini_poodle_front.svg",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/art/geo_heart/mini_poodle_back.svg",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/art/line_heart/mini_poodle_back.svg",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/art/line_heart/mini_poodle_front.svg",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/art/line_cool/mini_poodle_back.svg",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/art/line_cool/mini_poodle_front.svg",
+    "url": "https://alphadogstyles.com/img/hoodie_white_front.webp",
     "err": "NS_BINDING_ABORTED"
    }
   ]
@@ -161,7 +131,7 @@
   "console": 0,
   "pageerror": 0,
   "http": 1,
-  "failed": 11
+  "failed": 5
  },
  "api_calls": [
   {
@@ -181,7 +151,7 @@
     },
     "items": [
      {
-      "id": "1793720171494",
+      "id": "1793768561282",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -220,7 +190,7 @@
     },
     "items": [
      {
-      "id": "1793720171494",
+      "id": "1793768561282",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -277,7 +247,7 @@
     },
     "items": [
      {
-      "id": "1793720239297",
+      "id": "1793768628926",
       "prod": "hoodie",
       "color": "White",
       "size": "3XL",
@@ -388,7 +358,7 @@
     },
     "items": [
      {
-      "id": "1793720271914",
+      "id": "1793768660376",
       "prod": "tee",
       "color": "White",
       "size": "M",
@@ -429,7 +399,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793720300831",
+    "id": "1793768688051",
     "s": {
      "prod": "hoodie",
      "color": "Sand",
@@ -482,7 +452,7 @@
   },
   {
    "m": "DELETE",
-   "path": "/api/designs/1793720300831",
+   "path": "/api/designs/1793768688051",
    "q": "",
    "body": null,
    "hash": null
@@ -526,7 +496,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793720329083",
+    "id": "1793768715548",
     "s": {
      "prod": "tank",
      "color": "White",
