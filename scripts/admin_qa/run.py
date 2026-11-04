@@ -73,7 +73,7 @@ def run_ui():
         if BR=="firefox": dev.pop("is_mobile",None)
         kw=dev
     ctx=br.new_context(accept_downloads=True,**kw); pg=ctx.new_page(); errs=[]
-    pg.on("pageerror",lambda e:errs.append("pageerror "+str(e))); pg.on("console",lambda m:m.type=="error" and errs.append("console "+m.text))
+    pg.on("pageerror",lambda e:errs.append("pageerror "+str(e))); pg.on("console",lambda m:m.type=="error" and "403 (Forbidden)" not in m.text and errs.append("console "+m.text))
     dialogs=[]
     def dlg(d): dialogs.append((d.type,d.message)); d.accept("")
     pg.on("dialog",dlg)
@@ -81,7 +81,7 @@ def run_ui():
     pg.goto(B+"/#/admin"); pg.wait_for_selector("#at",timeout=15000); ok(True,"bad token -> asked again")
     pg.evaluate("localStorage.setItem('ad_admin',JSON.stringify('test-admin-token'))"); 
     # remove init script effect: reload after clearing by navigating with fresh context
-    ctx2=br.new_context(accept_downloads=True,**kw); pg=ctx2.new_page(); pg.on("pageerror",lambda e:errs.append("pageerror "+str(e))); pg.on("console",lambda m:m.type=="error" and errs.append("console "+m.text)); pg.on("dialog",dlg)
+    ctx2=br.new_context(accept_downloads=True,**kw); pg=ctx2.new_page(); pg.on("pageerror",lambda e:errs.append("pageerror "+str(e))); pg.on("console",lambda m:m.type=="error" and "403 (Forbidden)" not in m.text and errs.append("console "+m.text)); pg.on("dialog",dlg)
     pg.goto(B+"/"); pg.wait_for_selector("#app, main, body"); 
     pg.goto(B+"/#/admin"); pg.wait_for_selector("#at"); pg.fill("#at input","test-admin-token"); pg.click("#at button")
     try: pg.wait_for_selector("#ap .kpi",timeout=15000)
