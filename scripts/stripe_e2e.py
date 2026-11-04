@@ -11,7 +11,8 @@ def shot(p, n):
 with sync_playwright() as p:
     b = p.chromium.launch(); ctx = b.new_context(viewport={"width": 1280, "height": 900}); page = ctx.new_page()
     page.goto(BASE + "/#/shop"); page.wait_for_selector("#app > *")
-    page.evaluate("l=>localStorage.setItem('ad_cart',JSON.stringify([l]))", line); page.reload(); page.wait_for_selector("#app > *")
+    page.goto(BASE + "/#/design?prod=tee&breed=beagle&theme=geo&style=heart&color=Soft%20Pink"); page.wait_for_selector("#pv svg", timeout=30000)
+    page.click("#ctl [data-k=front][data-opt='head_l']"); page.click("#ctl [data-k=back][data-opt='none']"); page.click("#add"); page.wait_for_timeout(500)
     page.goto(BASE + "/#/checkout"); page.wait_for_selector("#co", timeout=20000)
     page.fill("#co [name=email]", EMAIL); page.fill("#co [name=fn]", "Test"); page.fill("#co [name=ln]", "Order")
     page.fill("#co [name=a1]", "123 Test St"); page.fill("#co [name=city]", "San Diego"); page.select_option("#co [name=st]", "CA"); page.fill("#co [name=zip]", "92101")
