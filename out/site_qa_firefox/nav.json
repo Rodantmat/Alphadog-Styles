@@ -1,11 +1,11 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 351.1,
+ "secs": 380.1,
  "checks": {
   "deploy": [
-   0,
-   1
+   1,
+   0
   ],
   "i18n": [
    10,
@@ -46,34 +46,14 @@
   "home": [
    16,
    0
+  ],
+  "mobile": [
+   35,
+   0
   ]
  },
- "defects": [
-  {
-   "sev": "info",
-   "area": "deploy",
-   "title": "Live site files differ from repo main (deploy drift)",
-   "repro": "",
-   "expected": "live == repo store/",
-   "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  },
-  {
-   "sev": "info",
-   "area": "harness",
-   "title": "QA harness crashed in shard nav: Browser.new_context: options.isMobile is not supported in Firefox",
-   "repro": "",
-   "expected": "",
-   "actual": "File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/nav.py\", line 308, in nav_shard\n    mctx = qa.context(browser, **dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 103, in context\n    ctx = browser.new_context(**kw)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 13969, in new_context\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwrig",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  }
- ],
+ "defects": [],
  "notes": [
-  "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
   "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
  ],
  "data": {
@@ -90,8 +70,8 @@
     "repo": "b179f08ebd"
    },
    "js/app.js": {
-    "same": false,
-    "live": "1e99dd7893",
+    "same": true,
+    "live": "65b149bf51",
     "repo": "65b149bf51"
    },
    "js/garment.js": {
@@ -311,12 +291,67 @@
     ]
    }
   },
-  "links_found": 471,
+  "links_found": 470,
   "header_footer_clicks": 20,
   "social_login_buttons": [
-   "/api/auth/oauth/google/start?next=account",
-   "/api/auth/oauth/facebook/start?next=account"
-  ]
+   "/api/auth/oauth/google/start?next=account"
+  ],
+  "mobile": {
+   "#/": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/shop": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/design": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/cart": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/checkout": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/custom": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/page/faq": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/page/sizing": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   },
+   "#/login": {
+    "sw": 390,
+    "W": 390,
+    "off": [],
+    "small": []
+   }
+  }
  },
  "errors": {
   "console": [],

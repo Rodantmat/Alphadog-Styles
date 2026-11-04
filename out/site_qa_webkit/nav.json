@@ -1,11 +1,11 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 411.1,
+ "secs": 406.6,
  "checks": {
   "deploy": [
-   0,
-   1
+   1,
+   0
   ],
   "i18n": [
    10,
@@ -52,21 +52,8 @@
    0
   ]
  },
- "defects": [
-  {
-   "sev": "info",
-   "area": "deploy",
-   "title": "Live site files differ from repo main (deploy drift)",
-   "repro": "",
-   "expected": "live == repo store/",
-   "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
-   "shot": null,
-   "count": 1,
-   "examples": []
-  }
- ],
+ "defects": [],
  "notes": [
-  "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
   "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
  ],
  "data": {
@@ -83,8 +70,8 @@
     "repo": "b179f08ebd"
    },
    "js/app.js": {
-    "same": false,
-    "live": "1e99dd7893",
+    "same": true,
+    "live": "65b149bf51",
     "repo": "65b149bf51"
    },
    "js/garment.js": {
@@ -304,11 +291,10 @@
     ]
    }
   },
-  "links_found": 471,
+  "links_found": 470,
   "header_footer_clicks": 20,
   "social_login_buttons": [
-   "/api/auth/oauth/google/start?next=account",
-   "/api/auth/oauth/facebook/start?next=account"
+   "/api/auth/oauth/google/start?next=account"
   ],
   "mobile": {
    "#/": {

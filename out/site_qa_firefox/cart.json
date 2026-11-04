@@ -1,7 +1,7 @@
 {
  "shard": "cart",
  "base": "https://alphadogstyles.com",
- "secs": 295.2,
+ "secs": 299.3,
  "checks": {
   "add_to_cart": [
    45,
@@ -68,7 +68,7 @@
    },
    "items": [
     {
-     "id": "1793768561282",
+     "id": "1793769165263",
      "prod": "tee",
      "color": "Soft Pink",
      "size": "M",
@@ -99,39 +99,13 @@
     "url": "https://alphadogstyles.com/api/orders"
    }
   ],
-  "failed": [
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/tank_white_front.webp",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/tee_light-blue_front.webp",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/hoodie_ash_front.webp",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/tee_soft-cream_front.webp",
-    "err": "NS_BINDING_ABORTED"
-   },
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/hoodie_white_front.webp",
-    "err": "NS_BINDING_ABORTED"
-   }
-  ]
+  "failed": []
  },
  "error_counts": {
   "console": 0,
   "pageerror": 0,
   "http": 1,
-  "failed": 5
+  "failed": 0
  },
  "api_calls": [
   {
@@ -151,7 +125,7 @@
     },
     "items": [
      {
-      "id": "1793768561282",
+      "id": "1793769165263",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -190,7 +164,7 @@
     },
     "items": [
      {
-      "id": "1793768561282",
+      "id": "1793769165263",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -247,7 +221,7 @@
     },
     "items": [
      {
-      "id": "1793768628926",
+      "id": "1793769232722",
       "prod": "hoodie",
       "color": "White",
       "size": "3XL",
@@ -358,7 +332,7 @@
     },
     "items": [
      {
-      "id": "1793768660376",
+      "id": "1793769264663",
       "prod": "tee",
       "color": "White",
       "size": "M",
@@ -399,7 +373,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793768688051",
+    "id": "1793769292161",
     "s": {
      "prod": "hoodie",
      "color": "Sand",
@@ -452,7 +426,7 @@
   },
   {
    "m": "DELETE",
-   "path": "/api/designs/1793768688051",
+   "path": "/api/designs/1793769292161",
    "q": "",
    "body": null,
    "hash": null
@@ -496,7 +470,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793768715548",
+    "id": "1793769319473",
     "s": {
      "prod": "tank",
      "color": "White",

@@ -2,7 +2,7 @@
  "art": {
   "shard": "art",
   "base": "https://alphadogstyles.com",
-  "secs": 18.4,
+  "secs": 21.1,
   "checks": {
    "art_files": [
     1188,
@@ -36,7 +36,7 @@
  "cart": {
   "shard": "cart",
   "base": "https://alphadogstyles.com",
-  "secs": 295.2,
+  "secs": 299.3,
   "checks": {
    "add_to_cart": [
     45,
@@ -97,39 +97,13 @@
      "url": "https://alphadogstyles.com/api/orders"
     }
    ],
-   "failed": [
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/img/tank_white_front.webp",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/img/tee_light-blue_front.webp",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/img/hoodie_ash_front.webp",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/img/tee_soft-cream_front.webp",
-     "err": "NS_BINDING_ABORTED"
-    },
-    {
-     "at": "/cart",
-     "url": "https://alphadogstyles.com/img/hoodie_white_front.webp",
-     "err": "NS_BINDING_ABORTED"
-    }
-   ]
+   "failed": []
   },
   "error_counts": {
    "console": 0,
    "pageerror": 0,
    "http": 1,
-   "failed": 5
+   "failed": 0
   },
   "api_calls": [
    {
@@ -149,7 +123,7 @@
      },
      "items": [
       {
-       "id": "1793768561282",
+       "id": "1793769165263",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -188,7 +162,7 @@
      },
      "items": [
       {
-       "id": "1793768561282",
+       "id": "1793769165263",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -245,7 +219,7 @@
      },
      "items": [
       {
-       "id": "1793768628926",
+       "id": "1793769232722",
        "prod": "hoodie",
        "color": "White",
        "size": "3XL",
@@ -356,7 +330,7 @@
      },
      "items": [
       {
-       "id": "1793768660376",
+       "id": "1793769264663",
        "prod": "tee",
        "color": "White",
        "size": "M",
@@ -397,7 +371,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793768688051",
+     "id": "1793769292161",
      "s": {
       "prod": "hoodie",
       "color": "Sand",
@@ -450,7 +424,7 @@
    },
    {
     "m": "DELETE",
-    "path": "/api/designs/1793768688051",
+    "path": "/api/designs/1793769292161",
     "q": "",
     "body": null,
     "hash": null
@@ -494,7 +468,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793768715548",
+     "id": "1793769319473",
      "s": {
       "prod": "tank",
       "color": "White",
@@ -522,7 +496,7 @@
  "config": {
   "shard": "config",
   "base": "https://alphadogstyles.com",
-  "secs": 76.7,
+  "secs": 81.1,
   "checks": {
    "race": [
     1,
@@ -596,11 +570,11 @@
  "nav": {
   "shard": "nav",
   "base": "https://alphadogstyles.com",
-  "secs": 351.1,
+  "secs": 380.1,
   "checks": {
    "deploy": [
-    0,
-    1
+    1,
+    0
    ],
    "i18n": [
     10,
@@ -641,34 +615,14 @@
    "home": [
     16,
     0
+   ],
+   "mobile": [
+    35,
+    0
    ]
   },
-  "defects": [
-   {
-    "sev": "info",
-    "area": "deploy",
-    "title": "Live site files differ from repo main (deploy drift)",
-    "repro": "",
-    "expected": "live == repo store/",
-    "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
-    "shot": null,
-    "count": 1,
-    "examples": []
-   },
-   {
-    "sev": "info",
-    "area": "harness",
-    "title": "QA harness crashed in shard nav: Browser.new_context: options.isMobile is not supported in Firefox",
-    "repro": "",
-    "expected": "",
-    "actual": "File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/nav.py\", line 308, in nav_shard\n    mctx = qa.context(browser, **dev)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/runner/work/Alphadog-Styles/Alphadog-Styles/scripts/site_qa/common.py\", line 103, in context\n    ctx = browser.new_context(**kw)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwright/sync_api/_generated.py\", line 13969, in new_context\n    self._sync(\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/site-packages/playwrig",
-    "shot": null,
-    "count": 1,
-    "examples": []
-   }
-  ],
+  "defects": [],
   "notes": [
-   "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
    "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
   ],
   "errors": {
@@ -849,7 +803,7 @@
  "shop": {
   "shard": "shop",
   "base": "https://alphadogstyles.com",
-  "secs": 37.1,
+  "secs": 36.1,
   "checks": {
    "shop_filters": [
     30,

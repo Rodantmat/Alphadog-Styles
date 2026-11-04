@@ -1,7 +1,7 @@
 {
  "shard": "cart",
  "base": "https://alphadogstyles.com",
- "secs": 75.4,
+ "secs": 72.5,
  "checks": {
   "add_to_cart": [
    45,
@@ -68,7 +68,7 @@
    },
    "items": [
     {
-     "id": "1793768482392",
+     "id": "1793769101221",
      "prod": "tee",
      "color": "Soft Pink",
      "size": "M",
@@ -104,19 +104,13 @@
     "url": "https://alphadogstyles.com/api/orders"
    }
   ],
-  "failed": [
-   {
-    "at": "/cart",
-    "url": "https://alphadogstyles.com/img/hoodie_white_front.webp",
-    "err": "Load request cancelled"
-   }
-  ]
+  "failed": []
  },
  "error_counts": {
   "console": 1,
   "pageerror": 0,
   "http": 1,
-  "failed": 1
+  "failed": 0
  },
  "api_calls": [
   {
@@ -136,7 +130,7 @@
     },
     "items": [
      {
-      "id": "1793768482392",
+      "id": "1793769101221",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -175,7 +169,7 @@
     },
     "items": [
      {
-      "id": "1793768482392",
+      "id": "1793769101221",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -232,7 +226,7 @@
     },
     "items": [
      {
-      "id": "1793768490949",
+      "id": "1793769108751",
       "prod": "hoodie",
       "color": "White",
       "size": "3XL",
@@ -343,7 +337,7 @@
     },
     "items": [
      {
-      "id": "1793768500902",
+      "id": "1793769117812",
       "prod": "tee",
       "color": "White",
       "size": "M",
@@ -384,7 +378,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793768505686",
+    "id": "1793769122583",
     "s": {
      "prod": "hoodie",
      "color": "Sand",
@@ -437,7 +431,7 @@
   },
   {
    "m": "DELETE",
-   "path": "/api/designs/1793768505686",
+   "path": "/api/designs/1793769122583",
    "q": "",
    "body": null,
    "hash": null
@@ -481,7 +475,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793768511376",
+    "id": "1793769127704",
     "s": {
      "prod": "tank",
      "color": "White",

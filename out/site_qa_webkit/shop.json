@@ -1,7 +1,7 @@
 {
  "shard": "shop",
  "base": "https://alphadogstyles.com",
- "secs": 50.5,
+ "secs": 42.0,
  "checks": {
   "shop_filters": [
    30,
