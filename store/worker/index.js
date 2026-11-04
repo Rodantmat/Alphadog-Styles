@@ -331,7 +331,7 @@ export default {
       const tz=d=>new Date(d).toLocaleDateString("en-CA",{timeZone:"America/Los_Angeles"});
       const rows=(await DB.prepare("SELECT id,email,data,total,status,created FROM orders WHERE created>? AND status NOT IN ('reserved','smoke_test') ORDER BY created DESC LIMIT 3000").bind(now()-90*864e5).all()).results;
       const REAL=["paid","in_production","shipped"],byStatus={},days={},chan={},prod={},breed={},color={};
-      for(let i=29;i>=0;i--)days[tz(now()-i*864e5)]={rev:0,n:0};
+      {const [y,mo,dd]=tz(now()).split("-").map(Number);for(let i=29;i>=0;i--)days[new Date(Date.UTC(y,mo-1,dd-i,12)).toISOString().slice(0,10)]={rev:0,n:0}}  // calendar walk: immune to DST days having 23/25 hours
       const sum={today:0,d7:0,d30:0,d90:0,n7:0,n30:0,n90:0,nToday:0};let real=0;
       const T=now(),day0=tz(T);
       for(const r of rows){byStatus[r.status]=(byStatus[r.status]||0)+1;if(!REAL.includes(r.status))continue;real++;
