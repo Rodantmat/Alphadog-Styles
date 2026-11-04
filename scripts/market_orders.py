@@ -144,6 +144,8 @@ def mail_peek(q="code"):
         print("MAIL",uid.decode(),subj[:90],"| CODE:",m.group(1) if m else "-")
     M.logout()
 # ---------------- read sale emails straight from the seller Gmail (IMAP + app password; read-only, nothing is marked or moved) -------------
+TT_ORDER=re.compile(r"new order|you have an order|order received|order placed|ready to ship|ship (?:by|within)|buyer.*order|order confirmation",re.I)
+TT_NOT=re.compile(r"first sale|get \d|training|incentive|welcome|setup|listing|settlement|webinar|survey",re.I)
 def gmail_poll():
     pw=os.environ.get("FLIPPING_GMAIL_APP_PASSWORD","").replace(" ","").strip(); user=os.environ.get("FLIPPING_GMAIL_USER","flippingmagic.sales@gmail.com")
     if not pw: print("gmail: no app password"); return 0
@@ -164,6 +166,16 @@ def gmail_poll():
                 items=[{"sku":sku,"qty":p["qty"],"title":p["title"]}] if sku else [{"sku":"","qty":p["qty"],"title":p["title"]+" | "+json.dumps(p["spec"])}]
                 res=E.store("POST","/api/internal/market/order",{"plat":"ebay","ext_id":p["order"] or mid,"ship":p["ship"],"items":items}); n+=0 if res.get("dup") else 1
         print("gmail",str(make_header(decode_header(msg.get("Subject",""))))[:70],"->",res); new.append(mid)
+    # TikTok Shop: its order-email format has never been seen (no sale yet), so nothing is guessed or auto-printed.
+    # Any TikTok message that looks like a new order becomes a NEEDS-ATTENTION order + an alert email to the owner (never lost, never mis-printed).
+    typ,data=M.search(None,f'(SINCE {since} FROM "tiktok")')
+    for num in (data[0].split() if data and data[0] else []):
+        msg=email.message_from_bytes(M.fetch(num,"(BODY.PEEK[HEADER])")[1][0][1]); mid=msg.get("Message-ID","") or num.decode()
+        subj=str(make_header(decode_header(msg.get("Subject",""))))
+        if mid in seen or not TT_ORDER.search(subj) or TT_NOT.search(subj): continue
+        import hashlib; ext="G"+hashlib.sha1(mid.encode()).hexdigest()[:10]
+        res=E.store("POST","/api/internal/market/order",{"plat":"tiktok","ext_id":ext,"email":"","ship":{},"items":[{"sku":"","qty":1,"title":"TikTok email: "+subj[:120]}]})
+        print("tiktok order-like email ->",subj[:70],res); new.append(mid); n+=0 if res.get("dup") else 1
     M.logout()
     if new: E.store("POST","/api/internal/kv/gmail_seen",{"v":(list(seen)+new)[-2000:]})
     return n
