@@ -135,13 +135,13 @@ def run_ui():
     ok(call("GET","/api/internal/orders/all?q="+tf[1]["id"])[1]["items"][0]["status"]=="paid_test","retry failed test order -> paid_test")
     pg.click("[data-f=refunded]"); pg.wait_for_timeout(700); ok(rows()==2,"refunded/cancelled filter shows 2")
     # customers
-    pg.click("[data-tab=customers]"); pg.wait_for_selector("#ap table"); t=txt(); ok(EMAIL in t and "1 registered" in t,"customers lists the account"); overflow("customers")
+    pg.click("[data-tab=customers]"); pg.wait_for_selector("#acc"); t=txt(); ok(EMAIL in t and "1 registered" in t,"customers lists the account"); overflow("customers")
     with pg.expect_download() as dl: pg.click("#acc")
     ok(EMAIL in open(dl.value.path()).read(),"customers CSV")
-    pg.click("[data-tab=subs]"); pg.wait_for_selector("#ap table"); t=txt(); ok("s1@example.com" in t and "s2@example.com" in t and "2 active" in t,"subscribers list"); 
+    pg.click("[data-tab=subs]"); pg.wait_for_selector("#asc"); t=txt(); ok("s1@example.com" in t and "s2@example.com" in t and "2 active" in t,"subscribers list"); 
     with pg.expect_download() as dl: pg.click("#asc")
     ok("s2@example.com" in open(dl.value.path()).read(),"subscribers CSV")
-    pg.click("[data-tab=custom]"); pg.wait_for_selector("#ap table"); ok("No requests yet" in txt(),"custom tab renders (empty)")
+    pg.click("[data-tab=custom]"); pg.wait_for_selector("#adet",state="attached"); ok("No requests yet" in txt(),"custom tab renders (empty)")
     pg.click("[data-tab=inbox]"); pg.wait_for_selector("[data-done]"); t=txt(); ok("Where is my order" in t and "ship to Canada" in t,"inbox shows support + contact messages"); pg.click("[data-done]"); pg.wait_for_timeout(1000); ok("Where is my order" not in txt(),"mark support handled")
     # system
     pg.click("[data-tab=system]"); pg.wait_for_selector("[data-k=checkout_paused]"); t=txt(); ok("LIVE mode" in t and "Database" in t,"system health"); overflow("system")
