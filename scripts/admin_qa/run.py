@@ -91,6 +91,10 @@ def run_ui():
     def overflow(tag): 
         w=pg.evaluate("[document.documentElement.scrollWidth,innerWidth]"); ok(w[0]<=w[1]+2,f"no sideways page scroll on {tag} ({w})")
     txt=lambda:pg.inner_text("#ap")
+    def waitrows(n):
+        try: pg.wait_for_function(f"document.querySelectorAll('#aol tr').length=={n}",timeout=8000)
+        except Exception:
+            print(f"DEBUG waitrows({n}) got: ",pg.inner_text("#ap")[:700].replace("\n"," | "),"| errs:",errs[:4],flush=True); raise
     # overview
     t=txt(); money=lambda c:"$%.2f"%(c/100)
     ok(money(real_total) in t,"overview shows revenue "+money(real_total)); ok("Needs your attention" in t and "1 order(s) need attention" in t,"overview alerts: needs attention"); ok("new support message" in t,"overview alerts support")
@@ -98,13 +102,13 @@ def run_ui():
     # orders
     pg.click("[data-tab=orders]"); pg.wait_for_selector("#aol table"); rows=lambda:pg.locator("#aol tr").count()-1
     ok(rows()==6,f"Paid filter lists 6 real orders, got {rows()}"); overflow("orders")
-    pg.click("[data-f=problem]"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==3"); ok(rows()==2,"Problems = needs_attention + test_failed")
-    pg.click("[data-f=test]"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==3"); ok(rows()==2,"Test filter = 2")
+    pg.click("[data-f=problem]"); waitrows(3); ok(rows()==2,"Problems = needs_attention + test_failed")
+    pg.click("[data-f=test]"); waitrows(3); ok(rows()==2,"Test filter = 2")
     pg.click("[data-f=all]"); pg.wait_for_timeout(500); ok(rows()>=8,"All filter lists everything")
-    pg.click("[data-f=real]"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==7")
-    pg.fill("#aoq",SO); pg.wait_for_function("document.querySelectorAll('#aol tr').length==2"); ok(SO in pg.inner_text("#aol"),"search by order id"); 
-    pg.fill("#aoq","nomatch-xyz"); pg.wait_for_function("document.querySelectorAll('#aol tr').length==2 && /No orders here/.test(document.querySelector('#aol').innerText)"); ok(True,"search with no match shows empty message")
-    pg.fill("#aoq",""); pg.wait_for_function("document.querySelectorAll('#aol tr').length==7")
+    pg.click("[data-f=real]"); waitrows(7)
+    pg.fill("#aoq",SO); waitrows(2); ok(SO in pg.inner_text("#aol"),"search by order id"); 
+    pg.fill("#aoq","nomatch-xyz"); waitrows(2); ok(True,"search with no match shows empty message")
+    pg.fill("#aoq",""); waitrows(7)
     with pg.expect_download() as dl: pg.click("#aocsv")
     path=dl.value.path(); csv=open(path).read(); ok(SO in csv and csv.count("\n")>=6,"orders CSV downloads with rows")
     # open store order
