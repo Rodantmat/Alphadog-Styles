@@ -1,0 +1,24 @@
+name: stripe-check
+on: workflow_dispatch
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          K: ${{ secrets.STRIPE_SECRET_KEY }}
+        run: |
+          if [ -z "$K" ]; then echo "SECRET EMPTY"; exit 0; fi
+          echo "key type: ${K%%_*}_$(echo "$K" | cut -d_ -f2)_"
+          curl -s -u "$K:" https://api.stripe.com/v1/account -o /tmp/a.json -w "account HTTP %{http_code}\n"
+          python3 - <<'P'
+          import json
+          a=json.load(open('/tmp/a.json'))
+          print({k:a.get(k) for k in ('charges_enabled','payouts_enabled','details_submitted','country','default_currency')}, a.get('error',{}).get('message'))
+          P
+          curl -s -u "$K:" "https://api.stripe.com/v1/webhook_endpoints?limit=20" -o /tmp/w.json
+          python3 - <<'P'
+          import json
+          w=json.load(open('/tmp/w.json'))
+          for e in w.get('data',[]): print('webhook',e['url'],e['status'],len(e['enabled_events']),'events livemode',e['livemode'])
+          print('webhooks:',len(w.get('data',[])), w.get('error',{}).get('message'))
+          P
