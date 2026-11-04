@@ -1,0 +1,14 @@
+name: video-probe
+on: { workflow_dispatch: {} }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/video/probe.py
+      - run: |
+          rm -f out/video_proto/src/*.mp4.big
+          git config user.name "alphadog-bot"; git config user.email "bot@users.noreply.github.com"
+          find out/video_proto/src -size +9M -delete
+          git add out/video_proto && git commit -m "video probe" && git push || true
