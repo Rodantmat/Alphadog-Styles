@@ -25,5 +25,11 @@ jobs:
           if "access_token" in t:
               H={"Authorization":"Bearer "+t["access_token"]}
               o=go(urllib.request.Request("https://api.ebay.com/sell/fulfillment/v1/order?limit=5",headers=H)); print("orders api:", o.get("total", o))
+              tr=urllib.request.Request("https://api.ebay.com/ws/api.dll",("""<?xml version="1.0" encoding="utf-8"?><GetMyeBaySellingRequest xmlns="urn:ebay:apis:eBLBaseComponents"><ActiveList><Include>true</Include><Pagination><EntriesPerPage>1</EntriesPerPage></Pagination></ActiveList><SoldList><Include>true</Include><DurationInDays>60</DurationInDays><Pagination><EntriesPerPage>5</EntriesPerPage></Pagination></SoldList></GetMyeBaySellingRequest>""").encode(),{"X-EBAY-API-IAF-TOKEN":t["access_token"],"X-EBAY-API-SITEID":"0","X-EBAY-API-COMPATIBILITY-LEVEL":"1193","X-EBAY-API-CALL-NAME":"GetMyeBaySelling","Content-Type":"text/xml"})
+              try:
+                  x=urllib.request.urlopen(tr,timeout=60).read().decode()
+              except urllib.error.HTTPError as e: x=e.read().decode()
+              import re
+              print("TRADING ack:",re.findall(r"<Ack>(\w+)</Ack>",x),"active total:",re.findall(r"<ActiveList>.*?<TotalNumberOfEntries>(\d+)</TotalNumberOfEntries>",x,re.S),"sold:",re.findall(r"<SoldList>.*?<TotalNumberOfEntries>(\d+)</TotalNumberOfEntries>",x,re.S),"err:",re.findall(r"<ShortMessage>(.*?)</ShortMessage>",x)[:2])
               i=go(urllib.request.Request("https://api.ebay.com/sell/inventory/v1/offer?limit=1",headers=H)); print("inventory api:", i.get("total", i))
           PY
