@@ -1,0 +1,29 @@
+name: ebay-check
+on: { workflow_dispatch: {} }
+permissions: { contents: read }
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - env:
+          ID: ${{ secrets.EBAY_CLIENT_ID }}
+          SEC: ${{ secrets.EBAY_CLIENT_SECRET }}
+          RT: ${{ secrets.EBAY_REFRESH_TOKEN }}
+          RU: ${{ secrets.EBAY_RUNAME }}
+        run: |
+          python3 - <<'PY'
+          import os,base64,json,urllib.request,urllib.parse,urllib.error
+          for k in ("ID","SEC","RT","RU"): print(k,"set" if os.environ.get(k) else "MISSING")
+          if not (os.environ.get("ID") and os.environ.get("RT")): raise SystemExit("eBay refresh token missing -> consent step not done")
+          b=base64.b64encode(f"{os.environ['ID']}:{os.environ['SEC']}".encode()).decode()
+          d=urllib.parse.urlencode({"grant_type":"refresh_token","refresh_token":os.environ["RT"],"scope":"https://api.ebay.com/oauth/api_scope/sell.fulfillment https://api.ebay.com/oauth/api_scope/sell.inventory"}).encode()
+          def go(r):
+              try: return json.load(urllib.request.urlopen(r,timeout=60))
+              except urllib.error.HTTPError as e: return {"_err":e.code,"body":e.read().decode()[:300]}
+          t=go(urllib.request.Request("https://api.ebay.com/identity/v1/oauth2/token",d,{"Authorization":"Basic "+b,"Content-Type":"application/x-www-form-urlencoded"}))
+          print("token:", "OK" if "access_token" in t else t)
+          if "access_token" in t:
+              H={"Authorization":"Bearer "+t["access_token"]}
+              o=go(urllib.request.Request("https://api.ebay.com/sell/fulfillment/v1/order?limit=5",headers=H)); print("orders api:", o.get("total", o))
+              i=go(urllib.request.Request("https://api.ebay.com/sell/inventory/v1/offer?limit=1",headers=H)); print("inventory api:", i.get("total", i))
+          PY
