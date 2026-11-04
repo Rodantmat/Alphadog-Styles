@@ -304,7 +304,9 @@ def nav_shard(qa, browser, p):
     qa.shot(page, "en_home_after_carousel")
 
     # ---------- mobile pass (iPhone 13)
-    dev = p.devices["iPhone 13"]
+    dev = dict(p.devices["iPhone 13"])
+    if browser.browser_type.name == "firefox":
+        dev.pop("is_mobile", None)  # Firefox cannot emulate isMobile; viewport + UA + touch still apply
     mctx = qa.context(browser, **dev)
     mp = qa.watch(mctx.new_page())
     MOB = """()=>{const W=window.innerWidth;const off=[...document.querySelectorAll('body *')].filter(e=>{const r=e.getBoundingClientRect();return r.width>0&&r.right>W+1&&getComputedStyle(e).position!=='fixed'&&!e.closest('.marquee')&&!e.closest('#stage')}).slice(0,8).map(e=>e.tagName.toLowerCase()+(e.id?'#'+e.id:'')+(e.className&&typeof e.className==='string'?'.'+e.className.split(' ').join('.'):'')+' r='+Math.round(e.getBoundingClientRect().right));
