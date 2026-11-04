@@ -36,3 +36,5 @@ if __name__=="__main__":
         for o in open_orders(60):
             print("EBAY ORDER",o["orderId"],o.get("creationDate","")[:10],o.get("orderPaymentStatus"),o.get("orderFulfillmentStatus"),"skus:",[x.get("sku") for x in o.get("lineItems",[])],"total:",(o.get("pricingSummary",{}).get("total") or {}).get("value"))
         print("peek done")
+    if sys.argv[1:]==["probe"]:  # harmless: tracking call against an order id that does not exist -> must answer "not found", proving auth + scope + endpoint
+        print("PROBE", json.dumps(add_tracking("00-00000-00000","USPS","9400000000000000000000"))[:300])

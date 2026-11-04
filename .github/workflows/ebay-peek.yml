@@ -12,4 +12,4 @@ jobs:
           EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
           EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
           EBAY_REFRESH_TOKEN: ${{ secrets.EBAY_REFRESH_TOKEN }}
-        run: python3 scripts/ebay_api.py peek
+        run: python3 scripts/ebay_api.py peek && python3 scripts/ebay_api.py probe

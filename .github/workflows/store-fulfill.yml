@@ -14,12 +14,18 @@ jobs:
       - name: Pull marketplace orders (Etsy / eBay / TikTok consolidated listings)
         env:
           STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+          EBAY_REFRESH_TOKEN: ${{ secrets.EBAY_REFRESH_TOKEN }}
           ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
           ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
           FLIPPING_GMAIL_APP_PASSWORD: ${{ secrets.FLIPPING_GMAIL_APP_PASSWORD }}
         run: python3 scripts/market_orders.py || true
       - name: Fulfil paid orders and update tracking
         env:
+          EBAY_CLIENT_ID: ${{ secrets.EBAY_CLIENT_ID }}
+          EBAY_CLIENT_SECRET: ${{ secrets.EBAY_CLIENT_SECRET }}
+          EBAY_REFRESH_TOKEN: ${{ secrets.EBAY_REFRESH_TOKEN }}
           ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
           ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
