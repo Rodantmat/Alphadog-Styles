@@ -1,0 +1,9 @@
+name: oauth-check
+on: workflow_dispatch
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -s https://alphadogstyles.com/api/health; echo
+          for p in google facebook apple; do echo "== $p"; curl -s -o /dev/null -D - "https://alphadogstyles.com/api/auth/oauth/$p/start" | grep -iE "^HTTP|^location" | sed -E 's/(client_id=)[^&]*/\1<id>/; s/(state=)[^&]*/\1<s>/'| cut -c1-300; done
