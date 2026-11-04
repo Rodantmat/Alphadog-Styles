@@ -77,7 +77,7 @@ def label_url(prod,lab):  # AlphaDog logo label: full-size canvas for the label 
     W,H=lab["area"]; logo=Image.open("shop/brand/neck_blackink.png").convert("RGBA"); w=int(lab["scale"]*W); logo=logo.resize((w,int(w*logo.height/logo.width)),Image.LANCZOS)
     can=Image.new("RGBA",(W,H),(0,0,0,0)); can.paste(logo,(int(lab["x"]*W-logo.width/2),int(lab["y"]*H-logo.height/2)),logo)
     o=io.BytesIO(); can.save(o,"PNG"); _lab[prod]=upload(f"label_{prod}.png",o.getvalue()); return _lab[prod]
-def fulfil(o):
+def build(o):
     items=[]; d=o["data"]; s=d["ship"]; nm=s["name"].split(" ",1)
     for i,it in enumerate(o["data"]["items"]):
         pa={}
@@ -88,6 +88,9 @@ def fulfil(o):
         items.append({"print_provider_id":99,"blueprint_id":BP[it["prod"]],"variant_id":variant(it["prod"],it["color"],it["size"]),"print_areas":pa,"quantity":it["qty"]})
     body={"external_id":o["id"],"label":o["id"],"line_items":items,"shipping_method":1,"is_printify_express":False,"send_shipping_notification":not d.get("source"),
       "address_to":{"first_name":nm[0],"last_name":nm[1] if len(nm)>1 else ".","email":o["email"] or "orders@alphadogstyles.com","phone":s.get("phone") or "","country":s.get("country") or "US","region":s.get("st") or "","address1":s["a1"],"address2":s.get("a2",""),"city":s["city"],"zip":s["zip"]}}
+    return body
+def fulfil(o):
+    body=build(o)
     r=pf("POST",f"/v1/shops/{SHOP}/orders.json",body)
     pf("POST",f"/v1/shops/{SHOP}/orders/{r['id']}/send_to_production.json",{})
     st("POST",f"/api/internal/orders/{o['id']}",{"status":"in_production","printify_id":r["id"]}); print("sent",o["id"],r["id"],flush=True)
@@ -97,9 +100,13 @@ for o in st("GET","/api/internal/orders?status=paid_test")["items"]:  # Stripe T
             for side in ("front","back"):
                 if it.get(side): assert len(compose(it["prod"],side,it[side]))>1000; variant(it["prod"],it["color"],it["size"])
             assert it["prod"] in PRODS
+        if os.environ.get("DRY_PRINTIFY","1")=="1":  # full payload incl. uploaded print files, priced by Printify's shipping quote: creates NO order, NO charge
+            b=build({**o,"data":{**o["data"],"source":o["data"].get("source") or {"test":1}}}); q=pf("POST",f"/v1/shops/{SHOP}/orders/shipping.json",{"line_items":b["line_items"],"address_to":b["address_to"]}); assert q, "empty shipping quote"; print("printify quote ok",o["id"],json.dumps(q)[:160],flush=True)
         st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_complete"}); print("test order verified",o["id"],flush=True)
     except Exception as e: print("TEST FAILED",o["id"],e,flush=True); st("POST",f"/api/internal/orders/{o['id']}",{"status":"test_failed"})
-for o in st("GET","/api/internal/orders?status=paid")["items"]:
+PAUSED=st("GET","/api/internal/kv/fulfil_paused").get("v")=="1"
+if PAUSED: print("fulfilment PAUSED by owner - paid orders wait",flush=True)
+for o in ([] if PAUSED else st("GET","/api/internal/orders?status=paid")["items"]):
     try: fulfil(o)
     except Exception as e: print("FAILED",o["id"],e,flush=True); st("POST",f"/api/internal/orders/{o['id']}",{"status":"needs_attention"})
 for o in st("GET","/api/internal/orders?status=in_production")["items"]:
@@ -113,4 +120,5 @@ for o in st("GET","/api/internal/orders?status=in_production")["items"]:
                     import market_orders; print("marketplace tracking",market_orders.push_tracking(src["plat"],src["ext_id"],sh[0].get("carrier",""),sh[0].get("number","")))
                 except Exception as e: print("marketplace tracking error",o["id"],e)
     except Exception as e: print("track error",o["id"],e)
+st("POST","/api/internal/kv/fulfil_last",{"v":int(time.time()*1000)})
 print("DONE")

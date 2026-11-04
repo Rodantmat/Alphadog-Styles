@@ -15,7 +15,7 @@ const okEmail=e=>typeof e==="string"&&e.length<255&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/
 async function mail(env,to,subject,html,replyTo,from){
   if(env.RESEND_API_KEY){
     const body={from:from||env.MAIL_FROM,to:[to],subject,html};const rt=replyTo||env.OWNER_EMAIL;if(rt)body.reply_to=rt;
-    const r=await fetch("https://api.resend.com/emails",{method:"POST",headers:{authorization:"Bearer "+env.RESEND_API_KEY,"content-type":"application/json"},body:JSON.stringify(body)});
+    const r=await fetch((env.MAIL_BASE||"https://api.resend.com")+"/emails",{method:"POST",headers:{authorization:"Bearer "+env.RESEND_API_KEY,"content-type":"application/json"},body:JSON.stringify(body)});
     return r.ok;
   }
   return false;
@@ -220,6 +220,7 @@ export default {
   }
   if(path==="/api/contact"&&m==="POST"){if(!okEmail(body.email)||!body.msg)return err("Email and message required");await DB.prepare("INSERT INTO msgs(email,body,created) VALUES(?,?,?)").bind(body.email,String(body.msg).slice(0,4000),now()).run();if(env.OWNER_EMAIL)await mail(env,env.OWNER_EMAIL,"AlphaDog Styles: new message from "+body.email,`<p><b>${esc(body.email)}</b> wrote:</p><p style="white-space:pre-wrap">${esc(String(body.msg).slice(0,4000))}</p>`,body.email);return J({ok:true})}
   if(path==="/api/orders"&&m==="POST"){
+    if((await kvGet(DB,"checkout_paused"))==="1")return err("Checkout is paused for a short while. Please try again soon.",503);
     let cust=null;
     if(body.custom){cust=await DB.prepare("SELECT id,quote,status FROM custom_requests WHERE id=? AND token=?").bind(String(body.custom.id||""),String(body.custom.k||"")).first();
       if(!cust||!["quoted","approved"].includes(cust.status))return err("This custom design is not ready to order yet")}
@@ -326,6 +327,45 @@ export default {
       if(body.notify&&(body.status||r.status)==="quoted"){const CE=CUSTOM_EM[L(r.lang)],link=(env.SITE_URL||u.origin)+"/#/custom/"+im[1]+"?k="+r.token;await mail(env,r.email,CE.readyS(im[1]),`<p>${CE.readyP}</p><p><a href="${link}">${CE.view}</a></p>`,"customization@alphadogstyles.com",CUSTOM_FROM)}
       return J({ok:true});
     }
+    if(path==="/api/internal/stats"&&m==="GET"){
+      const tz=d=>new Date(d).toLocaleDateString("en-CA",{timeZone:"America/Los_Angeles"});
+      const rows=(await DB.prepare("SELECT id,email,data,total,status,created FROM orders WHERE created>? AND status NOT IN ('reserved','smoke_test') ORDER BY created DESC LIMIT 3000").bind(now()-90*864e5).all()).results;
+      const REAL=["paid","in_production","shipped"],byStatus={},days={},chan={},prod={},breed={},color={};
+      for(let i=29;i>=0;i--)days[tz(now()-i*864e5)]={rev:0,n:0};
+      const sum={today:0,d7:0,d30:0,d90:0,n7:0,n30:0,n90:0,nToday:0};let real=0;
+      const T=now(),day0=tz(T);
+      for(const r of rows){byStatus[r.status]=(byStatus[r.status]||0)+1;if(!REAL.includes(r.status))continue;real++;
+        const age=T-r.created,dk=tz(r.created),c=r.id.startsWith("MK-ET")?"etsy":r.id.startsWith("MK-EB")?"ebay":r.id.startsWith("MK-TI")?"tiktok":"store";
+        sum.d90+=r.total;sum.n90++;if(age<30*864e5){sum.d30+=r.total;sum.n30++;if(days[dk]){days[dk].rev+=r.total;days[dk].n++}}
+        if(age<7*864e5){sum.d7+=r.total;sum.n7++}if(dk===day0){sum.today+=r.total;sum.nToday++}
+        chan[c]=chan[c]||{n:0,rev:0};chan[c].n++;chan[c].rev+=r.total;
+        let d={};try{d=JSON.parse(r.data)}catch{}
+        for(const it of d.items||[]){const q=it.qty||1;prod[it.prod]=(prod[it.prod]||0)+q;const b=(it.front||it.back||{}).breed;if(b)breed[b]=(breed[b]||0)+q;if(it.color)color[it.color]=(color[it.color]||0)+q}}
+      const top=o=>Object.entries(o).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([k,v])=>({k,v}));
+      const cnt=async q=>(await DB.prepare(q).first()).n;
+      const abandoned=await cnt("SELECT count(*)::int AS n FROM orders WHERE status='awaiting_payment' AND created>"+(now()-7*864e5));
+      return J({sum,aov:real?Math.round(sum.d90/real):0,byStatus,days:Object.entries(days).map(([d,v])=>({d,...v})),chan,top:{prod:top(prod),breed:top(breed),color:top(color)},
+        counts:{users:await cnt("SELECT count(*)::int AS n FROM users"),subs:await cnt("SELECT count(*)::int AS n FROM subs WHERE unsub IS NULL"),custom_open:await cnt("SELECT count(*)::int AS n FROM custom_requests WHERE status IN ('new','in_review')"),support_new:await cnt("SELECT count(*)::int AS n FROM support_inbox WHERE status='new'"),msgs:await cnt("SELECT count(*)::int AS n FROM msgs"),abandoned}});
+    }
+    if(path==="/api/internal/orders/all"&&m==="GET"){
+      const G={real:["paid","in_production","shipped"],test:["paid_test","test_complete","test_failed"],problem:["needs_attention","test_failed"],open:["reserved","awaiting_payment"],done:["shipped"],refunded:["refunded","cancelled"]};
+      const g=u.searchParams.get("g"),qq=(u.searchParams.get("q")||"").trim().toLowerCase().slice(0,80),st=u.searchParams.get("status");
+      const w=[],bind=[];if(st){w.push("status=?");bind.push(st)}else if(G[g]){w.push("status IN ("+G[g].map(()=>"?").join(",")+")");bind.push(...G[g])}
+      if(qq){w.push("(lower(id) LIKE ? OR lower(email) LIKE ?)");bind.push("%"+qq+"%","%"+qq+"%")}
+      const r=await DB.prepare("SELECT id,email,data,total,status,printify_id,tracking,created,updated FROM orders"+(w.length?" WHERE "+w.join(" AND "):"")+" ORDER BY created DESC LIMIT 200").bind(...bind).all();
+      return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))});
+    }
+    if(path==="/api/internal/customers"&&m==="GET"){const r=await DB.prepare("SELECT u.email,u.created,(SELECT count(*)::int FROM orders o WHERE o.email=u.email AND o.status IN ('paid','in_production','shipped')) AS orders,(SELECT COALESCE(sum(o.total),0)::int FROM orders o WHERE o.email=u.email AND o.status IN ('paid','in_production','shipped')) AS spent,(SELECT count(*)::int FROM designs d WHERE d.email=u.email) AS designs FROM users u ORDER BY u.created DESC LIMIT 500").all();return J({items:r.results})}
+    if(path==="/api/internal/subscribers"&&m==="GET"){const r=await DB.prepare("SELECT email,created,lang,unsub FROM subs ORDER BY created DESC LIMIT 5000").all();return J({items:r.results})}
+    if(path==="/api/internal/messages"&&m==="GET"){const r=await DB.prepare("SELECT id,email,body,created FROM msgs ORDER BY created DESC LIMIT 100").all();return J({items:r.results})}
+    if(path==="/api/internal/health"&&m==="GET"){
+      const cnt=async q=>(await DB.prepare(q).first()).n,T=now();let db=true;try{await cnt("SELECT 1::int AS n")}catch{db=false}
+      const key=env.STRIPE_SECRET_KEY||"",fl=await kvGet(DB,"fulfil_last").catch(()=>null);
+      const issues={paid_stuck:await cnt("SELECT count(*)::int AS n FROM orders WHERE status='paid' AND updated<"+(T-30*60000)),needs_attention:await cnt("SELECT count(*)::int AS n FROM orders WHERE status='needs_attention'"),
+        in_production_old:await cnt("SELECT count(*)::int AS n FROM orders WHERE status='in_production' AND updated<"+(T-14*864e5)),unpaid_old:await cnt("SELECT count(*)::int AS n FROM orders WHERE status='awaiting_payment' AND created<"+(T-2*3600000)+" AND created>"+(T-7*864e5)),test_failed:await cnt("SELECT count(*)::int AS n FROM orders WHERE status='test_failed'")};
+      return J({db,mail:!!env.RESEND_API_KEY,providers:providers(env),stripe:key?(/^(sk|rk)_live/.test(key)?"live":"test"):"off",webhook:!!env.STRIPE_WEBHOOK_SECRET,owner_email:!!env.OWNER_EMAIL,
+        fulfil_last:fl,fulfil_age_min:fl?Math.round((T-fl)/60000):null,checkout_paused:(await kvGet(DB,"checkout_paused"))==="1",fulfil_paused:(await kvGet(DB,"fulfil_paused"))==="1",issues,server_time:T});
+    }
     if(path==="/api/internal/send"&&m==="POST"){if(!okEmail(body.to)||!body.subject||!body.html)return err("to, subject, html required");
       const from=body.mailbox==="custom"?CUSTOM_FROM:SUPPORT_FROM,rt=body.mailbox==="custom"?"customization@alphadogstyles.com":"support@alphadogstyles.com";
       const ok=await mail(env,body.to,String(body.subject).slice(0,200),String(body.html).slice(0,20000),rt,from);return J({ok})}
@@ -338,6 +378,27 @@ export default {
     if(path==="/api/internal/orders"&&m==="GET"){const st=u.searchParams.get("status")||"paid";const r=await DB.prepare("SELECT id,email,data,total,status,printify_id FROM orders WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results.map(x=>({...x,data:JSON.parse(x.data)}))})}
     if((mm=path.match(/^\/api\/internal\/orders\/([\w-]+)$/))&&m==="POST"){
       const o=await DB.prepare("SELECT email FROM orders WHERE id=?").bind(mm[1]).first();if(!o)return err("No such order",404);
+      if(body.action){
+        const full=await DB.prepare("SELECT email,total,status,data FROM orders WHERE id=?").bind(mm[1]).first(),od=JSON.parse(full.data||"{}"),E=EM[L(od.lang)];
+        if(body.action==="resend"){if(!["paid","paid_test","in_production","shipped","test_complete"].includes(full.status))return err("Order is not paid");await mail(env,full.email,E.paidS(mm[1]),`<p>${E.paidP(mm[1],(full.total/100).toFixed(2))}</p>`);return J({ok:true})}
+        if(body.action==="requeue"){const to=full.status==="test_failed"?"paid_test":"paid";if(!["needs_attention","test_failed"].includes(full.status))return err("Only problem orders can be retried");await DB.prepare("UPDATE orders SET status=?,updated=? WHERE id=?").bind(to,now(),mm[1]).run();return J({ok:true,status:to})}
+        if(body.action==="cancel"){if(!["needs_attention","reserved","awaiting_payment","paid"].includes(full.status))return err("Too late to cancel here (already in production or finished)");await DB.prepare("UPDATE orders SET status='cancelled',updated=? WHERE id=?").bind(now(),mm[1]).run();return J({ok:true,status:"cancelled"})}
+        if(body.action==="note"){const n=String(body.note||"").trim().slice(0,1000);if(!n)return err("Note is empty");od.notes=[...(od.notes||[]),{t:now(),n}].slice(-30);await DB.prepare("UPDATE orders SET data=?,updated=? WHERE id=?").bind(JSON.stringify(od),now(),mm[1]).run();return J({ok:true,notes:od.notes})}
+        if(body.action==="refund"){
+          if(!["paid","paid_test","in_production","shipped","test_complete","needs_attention"].includes(full.status))return err("Order is not refundable");
+          if(!od.session)return err("No card payment on this order (marketplace orders are refunded on the marketplace)");
+          try{const ss=await stripe(env,"GET","/checkout/sessions/"+od.session);if(!ss.payment_intent)return err("Stripe has no payment for this order");
+            const amt=body.amount!=null?Math.max(1,Math.min(full.total,parseInt(body.amount)||0)):null;
+            const rf=await stripe(env,"POST","/refunds",{payment_intent:ss.payment_intent,...(amt?{amount:amt}:{})});
+            const partial=amt&&amt<full.total;if(!partial)await DB.prepare("UPDATE orders SET status='refunded',updated=? WHERE id=?").bind(now(),mm[1]).run();
+            od.refunds=[...(od.refunds||[]),{t:now(),id:rf.id,amount:rf.amount}];await DB.prepare("UPDATE orders SET data=?,updated=? WHERE id=?").bind(JSON.stringify(od),now(),mm[1]).run();
+            const R={en:["refunded","We refunded","to your original payment method. It can take 5-10 business days to appear."],es:["reembolsado","Reembolsamos","a tu método de pago original. Puede tardar 5-10 días hábiles en aparecer."],pt:["reembolsado","Reembolsamos","para o seu meio de pagamento original. Pode levar 5-10 dias úteis para aparecer."]}[L(od.lang)];
+            await mail(env,full.email,`Order ${mm[1]} ${R[0]}`,`<p>${R[1]} $${(rf.amount/100).toFixed(2)} ${R[2]}</p>`);
+            return J({ok:true,refund:rf.id,amount:rf.amount,status:partial?full.status:"refunded"});
+          }catch(e){return err("Refund failed: "+e.message,502)}
+        }
+        return err("Unknown action");
+      }
       await DB.prepare("UPDATE orders SET status=COALESCE(?::text,status),printify_id=COALESCE(?::text,printify_id),tracking=COALESCE(?::text,tracking),updated=? WHERE id=?").bind(body.status||null,body.printify_id||null,body.tracking||null,now(),mm[1]).run();
       if(body.status==="shipped"){const od=await DB.prepare("SELECT data FROM orders WHERE id=?").bind(mm[1]).first();const E=EM[L(od&&JSON.parse(od.data).lang)];await mail(env,o.email,E.shipS(mm[1]),`<p>${E.shipP}</p>${body.tracking?`<p><a href="${body.tracking}">${E.track}</a></p>`:""}`)}
       return J({ok:true});

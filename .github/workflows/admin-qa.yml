@@ -1,0 +1,63 @@
+name: admin-qa
+# Full admin-console + order-lifecycle test on an ISOLATED rig: the real worker code, a throwaway Postgres, a MOCK Stripe and a MOCK email service.
+# Nothing here can reach production, real Stripe, Printify or any customer.
+on:
+  workflow_dispatch:
+  push:
+    paths: ["scripts/admin_qa/**", ".github/workflows/admin-qa.yml"]
+permissions:
+  contents: write
+concurrency: admin-qa
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - { b: chromium, m: "0" }
+          - { b: firefox, m: "0" }
+          - { b: webkit, m: "0" }
+          - { b: chromium, m: "1" }
+          - { b: webkit, m: "1" }
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_PASSWORD: pw, POSTGRES_DB: store }
+        ports: ["5432:5432"]
+        options: --health-cmd pg_isready --health-interval 5s --health-timeout 5s --health-retries 10
+    env:
+      DATABASE_URL: postgres://postgres:pw@localhost:5432/store?sslmode=disable
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Build the real worker + schema
+        run: |
+          cd store/worker && npm install --no-audit --no-fund && npm install --no-save --no-audit --no-fund esbuild@0.24.0
+          npx esbuild index.js --bundle --platform=node --format=esm --outfile=/tmp/worker.mjs --log-level=warning --banner:js="import{createRequire as __cr}from'module';const require=__cr(import.meta.url);"
+          PGPASSWORD=pw psql -h localhost -U postgres -d store -v ON_ERROR_STOP=1 -f schema.sql
+      - name: Playwright
+        run: pip install -q playwright==1.49.1 && python -m playwright install --with-deps ${{ matrix.b }}
+      - name: Start rig
+        run: |
+          nohup node scripts/admin_qa/server.mjs /tmp/worker.mjs store > /tmp/rig.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf localhost:8787/api/health && break; sleep 1; done; cat /tmp/rig.log
+      - name: Run admin QA
+        env:
+          QA_BROWSER: ${{ matrix.b }}
+          QA_MOBILE: ${{ matrix.m }}
+          QA_OUT: out/admin_qa
+        run: python scripts/admin_qa/run.py
+      - name: Rig log
+        if: always()
+        run: tail -40 /tmp/rig.log
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: adminqa-${{ matrix.b }}-${{ matrix.m }}
+          path: out/admin_qa
+          retention-days: 7
