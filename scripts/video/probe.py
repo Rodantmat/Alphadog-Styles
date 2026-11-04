@@ -14,6 +14,12 @@ def get(i):
 for i in IDS:
     p,res=get(i)
     if not p: continue
-    pr=json.loads(subprocess.check_output(["ffprobe","-v","error","-select_streams","v:0","-show_entries","stream=width,height,r_frame_rate,duration","-of","json",p]))["streams"][0]
-    print(i,res,pr,os.path.getsize(p)//1024,"KB")
-    subprocess.run(["ffmpeg","-y","-v","error","-i",p,"-vf","fps=1/1.5,scale=240:-2,tile=6x1","-frames:v","1",f"out/video_proto/sheet_{i}.jpg"])
+    import cv2
+    cap=cv2.VideoCapture(p); n=int(cap.get(7)); fps=cap.get(5); w=int(cap.get(3)); h=int(cap.get(4))
+    print(i,res,f"{w}x{h} {fps:.1f}fps {n/fps:.1f}s",os.path.getsize(p)//1024,"KB")
+    tiles=[]
+    for k in range(6):
+        cap.set(1,int(n*(k+0.5)/6)); ok,f=cap.read()
+        if ok: tiles.append(cv2.resize(f,(240,int(240*h/w))))
+    import numpy as np
+    if tiles: cv2.imwrite(f"out/video_proto/sheet_{i}.jpg",np.hstack(tiles))
