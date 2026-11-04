@@ -2,7 +2,7 @@
  "art": {
   "shard": "art",
   "base": "https://alphadogstyles.com",
-  "secs": 23.8,
+  "secs": 24.0,
   "checks": {
    "art_files": [
     1188,
@@ -36,7 +36,7 @@
  "cart": {
   "shard": "cart",
   "base": "https://alphadogstyles.com",
-  "secs": 302.0,
+  "secs": 298.9,
   "checks": {
    "add_to_cart": [
     45,
@@ -128,7 +128,7 @@
      },
      "items": [
       {
-       "id": "1793707450288",
+       "id": "1793768570854",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -167,7 +167,7 @@
      },
      "items": [
       {
-       "id": "1793707450288",
+       "id": "1793768570854",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -224,7 +224,7 @@
      },
      "items": [
       {
-       "id": "1793707517751",
+       "id": "1793768638216",
        "prod": "hoodie",
        "color": "White",
        "size": "3XL",
@@ -356,7 +356,7 @@
      },
      "items": [
       {
-       "id": "1793707549892",
+       "id": "1793768670260",
        "prod": "tee",
        "color": "White",
        "size": "M",
@@ -397,7 +397,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793707577108",
+     "id": "1793768697475",
      "s": {
       "prod": "hoodie",
       "color": "Sand",
@@ -450,7 +450,7 @@
    },
    {
     "m": "DELETE",
-    "path": "/api/designs/1793707577108",
+    "path": "/api/designs/1793768697475",
     "q": "",
     "body": null,
     "hash": null
@@ -494,7 +494,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793707604445",
+     "id": "1793768724795",
      "s": {
       "prod": "tank",
       "color": "White",
@@ -522,7 +522,7 @@
  "config": {
   "shard": "config",
   "base": "https://alphadogstyles.com",
-  "secs": 154.0,
+  "secs": 92.8,
   "checks": {
    "race": [
     1,
@@ -596,11 +596,11 @@
  "nav": {
   "shard": "nav",
   "base": "https://alphadogstyles.com",
-  "secs": 413.6,
+  "secs": 402.4,
   "checks": {
    "deploy": [
-    1,
-    0
+    0,
+    1
    ],
    "i18n": [
     10,
@@ -619,7 +619,7 @@
     0
    ],
    "links": [
-    939,
+    937,
     0
    ],
    "clicks": [
@@ -647,8 +647,23 @@
     0
    ]
   },
-  "defects": [],
-  "notes": [],
+  "defects": [
+   {
+    "sev": "info",
+    "area": "deploy",
+    "title": "Live site files differ from repo main (deploy drift)",
+    "repro": "",
+    "expected": "live == repo store/",
+    "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
+    "shot": null,
+    "count": 1,
+    "examples": []
+   }
+  ],
+  "notes": [
+   "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
+   "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
+  ],
   "errors": {
    "console": [
     {
@@ -848,7 +863,7 @@
  "shop": {
   "shard": "shop",
   "base": "https://alphadogstyles.com",
-  "secs": 89.0,
+  "secs": 91.2,
   "checks": {
    "shop_filters": [
     30,

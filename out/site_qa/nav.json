@@ -1,11 +1,11 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 413.6,
+ "secs": 402.4,
  "checks": {
   "deploy": [
-   1,
-   0
+   0,
+   1
   ],
   "i18n": [
    10,
@@ -24,7 +24,7 @@
    0
   ],
   "links": [
-   939,
+   937,
    0
   ],
   "clicks": [
@@ -52,8 +52,23 @@
    0
   ]
  },
- "defects": [],
- "notes": [],
+ "defects": [
+  {
+   "sev": "info",
+   "area": "deploy",
+   "title": "Live site files differ from repo main (deploy drift)",
+   "repro": "",
+   "expected": "live == repo store/",
+   "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  }
+ ],
+ "notes": [
+  "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
+  "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
+ ],
  "data": {
   "catalog_counts": {
    "breeds": 33,
@@ -68,9 +83,9 @@
     "repo": "b179f08ebd"
    },
    "js/app.js": {
-    "same": true,
-    "live": "b95d916884",
-    "repo": "b95d916884"
+    "same": false,
+    "live": "1e99dd7893",
+    "repo": "65b149bf51"
    },
    "js/garment.js": {
     "same": true,
@@ -107,8 +122,8 @@
    "ok": true,
    "mail": true,
    "providers": {
-    "google": false,
-    "facebook": false,
+    "google": true,
+    "facebook": true,
     "apple": false
    }
   },
@@ -152,8 +167,9 @@
   "possibly_untranslated": {
    "es": {
     "#/": [
-     "Beagle",
-     "Chihuahua",
+     "Border Collie",
+     "Boston Terrier",
+     "Cane Corso",
      "English",
      "Português",
      "Shiba Inu"
@@ -312,8 +328,10 @@
    },
    "pt": {
     "#/": [
-     "Beagle",
-     "Chihuahua",
+     "Border Collie",
+     "Boston Terrier",
+     "Boxer",
+     "Cane Corso",
      "English",
      "Português",
      "Shiba Inu"
@@ -475,9 +493,12 @@
     ]
    }
   },
-  "links_found": 470,
+  "links_found": 471,
   "header_footer_clicks": 20,
-  "social_login_buttons": [],
+  "social_login_buttons": [
+   "/api/auth/oauth/google/start?next=account",
+   "/api/auth/oauth/facebook/start?next=account"
+  ],
   "mobile": {
    "#/": {
     "sw": 390,
