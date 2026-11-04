@@ -86,7 +86,7 @@ def run_ui():
     pg.goto(B+"/#/admin"); pg.wait_for_selector("#at"); pg.fill("#at input","test-admin-token"); pg.click("#at button")
     try: pg.wait_for_selector("#ap .kpi",timeout=15000)
     except Exception:
-        print("DEBUG app html:",pg.inner_text("#app")[:600],"| errs:",errs[:5],flush=True); pg.screenshot(path=f"{OUT}/{BR}_debug.png"); raise
+        print("DEBUG app html:",pg.inner_html("#app")[:1800],"| TEXT:",pg.inner_text("#app")[:300],"| errs:",errs[:5],flush=True); pg.screenshot(path=f"{OUT}/{BR}_debug.png"); raise
     ok(True,"token entry opens console")
     def overflow(tag): 
         w=pg.evaluate("[document.documentElement.scrollWidth,innerWidth]"); ok(w[0]<=w[1]+2,f"no sideways page scroll on {tag} ({w})")
