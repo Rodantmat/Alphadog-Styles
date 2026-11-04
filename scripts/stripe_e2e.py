@@ -24,8 +24,14 @@ with sync_playwright() as p:
     page.wait_for_url(re.compile(r"checkout\.stripe\.com"), timeout=60000)
     print("stripe url host ok; livemode hint:", "cs_test_" in page.url)
     page.wait_for_timeout(4000)
-    try: page.get_by_text("Card", exact=True).first.click(timeout=8000)
-    except Exception as e: print("card click", e)
+    for how in ("radio-first","role","label"):
+        try:
+            if how=="radio-first": page.locator("input[type=radio]").first.check(force=True, timeout=6000)
+            elif how=="role": page.get_by_role("radio", name=re.compile("Card")).first.check(force=True, timeout=6000)
+            else: page.locator("label:has-text('Card')").first.click(timeout=6000)
+            if page.locator("#cardNumber").count(): break
+        except Exception as e: print("card via", how, "failed", str(e)[:120])
+    print("RADIOS", page.locator("input[type=radio]").count(), "cardNumber", page.locator("#cardNumber").count())
     page.wait_for_selector("#cardNumber", timeout=30000)
     shot(page, "2_stripe")
     page.fill("#cardNumber", "4242424242424242"); page.fill("#cardExpiry", "1233"); page.fill("#cardCvc", "123")
