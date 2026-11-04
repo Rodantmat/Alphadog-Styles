@@ -31,7 +31,7 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_SECRET_KEY }}
+          STRIPE_SECRET_KEY: ${{ secrets.STRIPE_LIVE_SECRET_KEY || secrets.STRIPE_SECRET_KEY }}
           MAIL_FROM_ADDR: ${{ vars.MAIL_FROM }}
           GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
           GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}

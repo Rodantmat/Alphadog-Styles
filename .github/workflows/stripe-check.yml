@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - env:
-          K: ${{ secrets.STRIPE_SECRET_KEY }}
+          K: ${{ secrets.STRIPE_LIVE_SECRET_KEY || secrets.STRIPE_SECRET_KEY }}
         run: |
           if [ -z "$K" ]; then echo "SECRET EMPTY"; exit 0; fi
           echo "key type: ${K%%_*}_$(echo "$K" | cut -d_ -f2)_"
