@@ -1,0 +1,2307 @@
+{
+ "tee": {
+  "Aqua": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Army": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Asphalt": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Athletic Heather": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Baby Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Berry": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Black": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Burnt Orange": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Canvas Red": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Cardinal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Coral": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Dark Grey": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Dark Grey Heather": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Deep Heather": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Deep Teal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Evergreen": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Forest": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Gold": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Brown": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Cardinal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Deep Teal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Forest": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Kelly": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Midnight Navy": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Mint": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Navy": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Orange": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Raspberry": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Red": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Tan": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Team Purple": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather True Royal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Yellow Gold": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Kelly": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Leaf": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Light Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Maize Yellow": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Maroon": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Mint": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Natural": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Navy": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Ocean Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Olive": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Orange": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Pebble Brown": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Pink": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Red": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Silver": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Soft Cream": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Soft Pink": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Black Blend": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid White Blend": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Steel Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Teal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Team Purple": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "True Royal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Turquoise": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Vintage Black": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "White": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Yellow": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Ash": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Stone": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Rust": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Peach": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Sea Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Slate": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Aqua": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Clay": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Columbia Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Ice Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Black Heather": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Maroon": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Olive": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Brown": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Mauve": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Dusty Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Sunset": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Dark Olive": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Military Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Sunset": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Vintage White": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Columbia Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Charity Pink": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Mustard": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Fuchsia": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Grass Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Lilac": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Mauve": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Storm": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Tan": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Orchid": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Autumn": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Dusty Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Orchid": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Prism Dusty Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Prism Ice Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Prism Lilac": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Prism Mint": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Prism Natural": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Prism Peach": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Prism Sunset": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Storm": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Oxblood Black": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Poppy": [
+   "XS"
+  ],
+  "Sand Dune": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "XL",
+   "XS"
+  ],
+  "Synthetic Green": [
+   "2XL",
+   "3XL",
+   "4XL"
+  ],
+  "Heather Dust": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Cool Grey": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Atlantic": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Strobe": [
+   "XS"
+  ],
+  "Heather Mustard": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Sand Dune": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Sage": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Autumn": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Military Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Lavender Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Lavender Dust": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Citron": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Blue Lagoon": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Bubble Gum": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Cement": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Charity Pink": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Prism Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Heather Purple": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Athletic Grey": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Team Navy": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Peach": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Spring Green": [
+   "XS"
+  ],
+  "Terracotta": [
+   "XS"
+  ],
+  "Royal Purple": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Toast": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Dark Lavender": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Chestnut": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Carolina Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Cool Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Vintage Navy": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Electric Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Marine": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Dust": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Clay": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Pine": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Slate": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Blue Storm": [
+   "2XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Cocoa": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Hunter Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Light Violet": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Pink Gravel": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Purple Storm": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Thyme": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Vintage Brown": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Vintage Denim": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Vintage Red": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "XS"
+  ]
+ },
+ "hoodie": {
+  "Ash": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Dark Heather": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Maroon": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Navy": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Sport Grey": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "White": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Black": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Carolina Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heliconia": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Irish Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Purple": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Red": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Royal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Safety Orange": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Cardinal Red": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Forest Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Military Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Light Pink": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Orange": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Sand": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Antique Sapphire": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Antique Cherry Red": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Charcoal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Dark Chocolate": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Garnet": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Light Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Violet": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Cherry Red": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Gold": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Indigo Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Sapphire": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Azalea": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Graphite Heather": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "5XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Navy": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Safety Pink": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Mint Green": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Old Gold": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Orchid": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Sport Dark Navy": [
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Sport Royal": [
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Deep Royal": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Dark Green": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Dark Navy": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Dark Maroon": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Heather Scarlet Red": [
+   "S"
+  ],
+  "Fan Charcoal Heather": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Fan Dark Green": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Fan Deep Royal": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Neon Blue": [
+   "2XL",
+   "3XL",
+   "4XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ]
+ },
+ "tank": {
+  "Athletic Heather": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Black": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Dark Grey": [
+   "M",
+   "XL",
+   "XS"
+  ],
+  "Kelly": [
+   "XS"
+  ],
+  "Leaf": [
+   "XS"
+  ],
+  "Red": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "True Royal": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "White": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Navy": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ]
+ },
+ "wtank": {
+  "Solid Black": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Dark Gray": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Solid Hot Pink": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Indigo": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Kelly Green": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Light Orange": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Solid Midnight Navy": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Military Green": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Mint": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Purple Rush": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Red": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Royal": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Tahiti Blue": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid White": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Warm Gray": [
+   "XS"
+  ],
+  "Heather Grey": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ],
+  "Solid Cardinal Red": [
+   "2XL",
+   "L",
+   "M",
+   "S",
+   "XL",
+   "XS"
+  ]
+ },
+ "polo": {
+  "Athletic Heather": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Black": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "J. Navy": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "Royal": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "True Red": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ],
+  "White": [
+   "2XL",
+   "3XL",
+   "L",
+   "M",
+   "S",
+   "XL"
+  ]
+ },
+ "cap_dad": {
+  "Black": [
+   "One size"
+  ],
+  "Dark Grey": [
+   "One size"
+  ],
+  "Green Camo": [
+   "One size"
+  ],
+  "Khaki": [
+   "One size"
+  ],
+  "Light Blue": [
+   "One size"
+  ],
+  "Navy": [
+   "One size"
+  ],
+  "Pink": [
+   "One size"
+  ],
+  "Spruce": [
+   "One size"
+  ],
+  "Stone": [
+   "One size"
+  ],
+  "White": [
+   "One size"
+  ],
+  "Cranberry": [
+   "One size"
+  ]
+ },
+ "cap_foam": {
+  "Black": [
+   "One size"
+  ],
+  "White": [
+   "One size"
+  ],
+  "Red": [
+   "One size"
+  ],
+  "Dark Navy": [
+   "One size"
+  ],
+  "Black/White": [
+   "One size"
+  ],
+  "Light Pink/White": [
+   "One size"
+  ],
+  "Blue/White": [
+   "One size"
+  ],
+  "Royal / White / Royal": [
+   "One size"
+  ],
+  "Navy / White / Navy": [
+   "One size"
+  ],
+  "Dark Green / White / Dark Green": [
+   "One size"
+  ],
+  "Hot Pink/ White/ Hot Pink": [
+   "One size"
+  ],
+  "Kelly/ White/ Kelly": [
+   "One size"
+  ],
+  "Red / White / Royal": [
+   "One size"
+  ]
+ },
+ "cap_mesh": {
+  "Black/Silver": [
+   "One size"
+  ],
+  "Navy": [
+   "One size"
+  ],
+  "White": [
+   "One size"
+  ],
+  "Black": [
+   "One size"
+  ],
+  "Charcoal": [
+   "One size"
+  ],
+  "Black/White": [
+   "One size"
+  ],
+  "Black/White/Black": [
+   "One size"
+  ],
+  "Navy/White": [
+   "One size"
+  ],
+  "Navy/White/Navy": [
+   "One size"
+  ],
+  "Red/White/Red": [
+   "One size"
+  ],
+  "Royal/White/Royal": [
+   "One size"
+  ],
+  "Charcoal/White": [
+   "One size"
+  ]
+ }
+}
