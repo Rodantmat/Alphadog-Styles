@@ -28,10 +28,14 @@ def fit(prod,side,size,a):
         w=min(.58 if rule=="hoodie" else .75,.95*H*a/W); h=w*W/a/H; y=min(.5,.04+h/2)
     return x,y,w,h
 _art={}
-def art(theme_style,breed,part,wpx):
-    k=(theme_style,breed,part,wpx)
+def is_dark(h):
+    n=int(h.lstrip('#')[:6],16); return (0.299*(n>>16)+0.587*((n>>8)&255)+0.114*(n&255))<110
+def cdark(prod,color):
+    return is_dark(next(c[1] for c in PROD[prod]["colors"] if c[0]==color))
+def art(theme_style,breed,part,wpx,dark=False):
+    k=(theme_style,breed,part,wpx,dark)
     if k not in _art:
-        svg=open(f"{ROOT}/store/art/{theme_style}/{breed}_{'front' if part=='head' else 'back'}.svg","rb").read()
+        svg=open(f"{ROOT}/store/{'art_w' if dark else 'art'}/{theme_style}/{breed}_{'front' if part=='head' else 'back'}.svg","rb").read()
         im=Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg,output_width=wpx))).convert("RGBA"); _art[k]=im
     return _art[k]
 def slug_of(prod,color): return next(c[3] for c in PROD[prod]["colors"] if c[0]==color)
@@ -40,13 +44,16 @@ def side_img(prod,color,side,d):
     base=Image.open(f"{ROOT}/store/img/{prod}_{slug_of(prod,color)}_{side}.webp").convert("RGB")
     if base.size!=(PH,PH): base=base.resize((PH,PH),Image.LANCZOS)
     if d:
+        dark=cdark(prod,color)
         svg=open(f"{ROOT}/store/art/{d['art']}/{d['breed']}_{'front' if d['part']=='head' else 'back'}.svg","rb").read()
         probe=Image.open(io.BytesIO(cairosvg.svg2png(bytestring=svg,output_width=64))); a=probe.width/probe.height
         ax,ay,aw,ah=CAL[prod][side]; x,y,w,h=fit(prod,side,d["size"],a)
         wpx=max(8,round(w*aw)); hpx=max(8,round(wpx/a)); cx=ax+x*aw; cy=ay+y*ah
-        im=art(d["art"],d["breed"],d["part"],wpx).resize((wpx,hpx),Image.LANCZOS)
+        im=art(d["art"],d["breed"],d["part"],wpx,dark).resize((wpx,hpx),Image.LANCZOS)
         x0,y0=round(cx-wpx/2),round(cy-hpx/2)
         region=base.crop((x0,y0,x0+wpx,y0+hpx)).convert("RGB")
+        if dark:  # white ink, normal blend (matches store/js/garment.js)
+            base.paste(Image.composite(Image.new("RGB",(wpx,hpx),(255,255,255)),region,im.getchannel("A").point(lambda v:int(v*.96))),(x0,y0)); return base
         r=Image.new("RGB",(wpx,hpx),(255,255,255)); r.paste(im,(0,0),im)
         mult=Image.composite(Image.fromarray(__import__("numpy").uint8(__import__("numpy").asarray(region,dtype="float32")*__import__("numpy").asarray(r,dtype="float32")/255)),region,im.getchannel("A").point(lambda v:int(v*.93)))
         base.paste(mult,(x0,y0))

@@ -61,18 +61,20 @@ CHEST=[("1","line_classic","head_s",None,"Line Art Emblem","Line"),("2","geo_cla
        ("3","line_heart","head_s",None,"Line Art Heart Emblem","Heart"),("4","geo_cool","head_s",None,"Geometric Sunglasses Emblem","Geo Cool")]
 CAPD=[("1","line_classic","head_s",None,"Line Art","Line"),("2","geo_cool","head_s",None,"Geometric Sunglasses","Geo Cool"),
       ("3","line_heart","head_s",None,"Line Art Heart","Heart"),("4","geo_classic","head_s",None,"Geometric","Geo")]
-def cols(pid,order,codes):
+def cols(pid,pairs):
+    """pairs = [(printify color, 2-letter code)] in marketplace priority order (first ones go live first; ALL stay decodable)."""
     p=next(x for x in cat["products"] if x["id"]==pid); ok={c[0]:c for c in p["colors"] if c[2]}
-    return [(codes[i],pid,c,(ok[c][4] if len(ok[c])>4 and ok[c][4] else c)) for i,c in enumerate(order) if c in ok]
+    return [(code,pid,c,(ok[c][4] if len(ok[c])>4 and ok[c][4] else c)) for c,code in pairs if c in ok]
 # product families as listed on marketplaces. colors: (code, store product id, printify color, display)
+# Priority = bestseller colors first (white, black, navy ...). Dark colors print WHITE lines, light colors BLACK lines.
 PRODUCTS={
- "tee":   {"L":"T","name":"T-Shirt","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("tee",["White","Soft Cream","Ash","Light Blue","Soft Pink","Athletic Heather","Natural"],["WH","CR","AS","LB","PK","HE","NA"])},
- "hoodie":{"L":"H","name":"Hoodie","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("hoodie",["White","Sport Grey","Sand","Light Blue","Light Pink","Ash"],["WH","GR","SA","LB","PK","AS"])},
- "wtank": {"L":"W","name":"Women's Racerback Tank","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("wtank",["Solid White","Heather Grey","Solid Tahiti Blue","Solid Mint","Solid Light Orange"],["WH","HG","TB","MI","LO"])},
- "tank":  {"L":"K","name":"Tank Top","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("tank",["White","Athletic Heather"],["WH","HE"])},
- "polo":  {"L":"P","name":"Polo Shirt","designs":CHEST,"sizes":["S","M","L","XL","2XL"],"colors":cols("polo",["White","Athletic Heather"],["WH","HE"])},
+ "tee":   {"L":"T","name":"T-Shirt","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("tee",[("White","WH"),("Black","BK"),("Navy","NV"),("Ash","AS"),("Dark Grey Heather","DG"),("Light Blue","LB"),("Athletic Heather","HE"),("Soft Pink","PK"),("Soft Cream","CR"),("Natural","NA"),("Asphalt","AP"),("Forest","FO"),("Maroon","MR"),("Red","RD")])},
+ "hoodie":{"L":"H","name":"Hoodie","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("hoodie",[("White","WH"),("Black","BK"),("Navy","NV"),("Sport Grey","GR"),("Charcoal","CH"),("Sand","SA"),("Light Blue","LB"),("Light Pink","PK"),("Ash","AS"),("Forest Green","FG"),("Maroon","MR"),("Dark Heather","DH")])},
+ "wtank": {"L":"W","name":"Women's Racerback Tank","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("wtank",[("Solid White","WH"),("Solid Black","BK"),("Solid Midnight Navy","NV"),("Heather Grey","HG"),("Solid Tahiti Blue","TB"),("Solid Mint","MI"),("Solid Light Orange","LO"),("Solid Military Green","MG"),("Solid Indigo","IN")])},
+ "tank":  {"L":"K","name":"Tank Top","designs":TOPS,"sizes":["S","M","L","XL","2XL"],"colors":cols("tank",[("White","WH"),("Black","BK"),("Navy","NV"),("Athletic Heather","HE")])},
+ "polo":  {"L":"P","name":"Polo Shirt","designs":CHEST,"sizes":["S","M","L","XL","2XL"],"colors":cols("polo",[("White","WH"),("Black","BK"),("J. Navy","NV"),("Athletic Heather","HE")])},
  "cap":   {"L":"C","name":"Hat","designs":CAPD,"sizes":["One size"],
-           "colors":cols("cap_dad",["White","Stone","Khaki","Light Blue","Pink"],["DW","DS","DK","DB","DP"])+cols("cap_foam",["White","Light Pink/White","Blue/White"],["FW","FP","FB"])+cols("cap_mesh",["White"],["MW"])},
+           "colors":cols("cap_dad",[("White","DW"),("Black","DL"),("Navy","DN"),("Stone","DS"),("Khaki","DK"),("Light Blue","DB"),("Pink","DP"),("Dark Grey","DG"),("Spruce","DR"),("Green Camo","DC")])+cols("cap_foam",[("White","FW"),("Black","FK"),("Dark Navy","FN"),("Light Pink/White","FP"),("Blue/White","FB")])+cols("cap_mesh",[("White","MW"),("Black","MK"),("Navy","MN"),("Charcoal","MC")])},
 }
 CAPLABEL={"cap_dad":"Dad Hat","cap_foam":"Foam Trucker","cap_mesh":"Mesh Trucker"}
 COUNTS={"etsy":{"tee":13,"hoodie":13,"wtank":11,"tank":8,"polo":8,"cap":8},
