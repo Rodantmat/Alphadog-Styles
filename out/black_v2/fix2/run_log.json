@@ -1,0 +1,650 @@
+[
+ {
+  "id": "FIX_27_pug__line_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 775,
+   "candidatesTokenCount": 1339,
+   "totalTokenCount": 2330,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 259
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 216,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_27_pug__line_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 775,
+   "candidatesTokenCount": 1331,
+   "totalTokenCount": 2349,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 259
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 243,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_31_mini_poodle__geo_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 796,
+   "candidatesTokenCount": 1322,
+   "totalTokenCount": 2311,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 280
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 193,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_31_mini_poodle__geo_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 796,
+   "candidatesTokenCount": 1282,
+   "totalTokenCount": 2281,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 280
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 203,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_32_bichon_frise__geo_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 785,
+   "candidatesTokenCount": 1288,
+   "totalTokenCount": 2317,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 244,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_32_bichon_frise__geo_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 785,
+   "candidatesTokenCount": 1301,
+   "totalTokenCount": 2335,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 249,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_32_bichon_frise__geo_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 802,
+   "candidatesTokenCount": 1360,
+   "totalTokenCount": 2451,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 286
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 289,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_32_bichon_frise__geo_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 802,
+   "candidatesTokenCount": 1339,
+   "totalTokenCount": 2378,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 286
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 237,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_32_bichon_frise__line_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 779,
+   "candidatesTokenCount": 1298,
+   "totalTokenCount": 2271,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 263
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 194,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_32_bichon_frise__line_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 779,
+   "candidatesTokenCount": 1308,
+   "totalTokenCount": 2367,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 263
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 280,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_33_maltese__geo_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 795,
+   "candidatesTokenCount": 1318,
+   "totalTokenCount": 2393,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 279
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 280,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_33_maltese__geo_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 795,
+   "candidatesTokenCount": 1392,
+   "totalTokenCount": 2437,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 279
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 250,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_33_maltese__geo_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 743,
+   "candidatesTokenCount": 1272,
+   "totalTokenCount": 2228,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 227
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 213,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX_33_maltese__geo_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 743,
+   "candidatesTokenCount": 1317,
+   "totalTokenCount": 2298,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 227
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 238,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_13_yorkshire_terrier__geo_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 686,
+   "candidatesTokenCount": 1334,
+   "totalTokenCount": 2245,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 170
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 225,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_13_yorkshire_terrier__geo_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 403,
+   "candidatesTokenCount": 1299,
+   "totalTokenCount": 1896,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 145
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 194,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_21_shih_tzu__line_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 681,
+   "candidatesTokenCount": 1276,
+   "totalTokenCount": 2146,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 165
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 189,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_25_havanese__line_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 952,
+   "candidatesTokenCount": 1339,
+   "totalTokenCount": 2530,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 178
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 774
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 239,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_25_havanese__geo_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 668,
+   "candidatesTokenCount": 1337,
+   "totalTokenCount": 2265,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 152
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 260,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_13_yorkshire_terrier__geo_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 686,
+   "candidatesTokenCount": 1325,
+   "totalTokenCount": 2253,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 170
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 242,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_13_yorkshire_terrier__geo_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 403,
+   "candidatesTokenCount": 1292,
+   "totalTokenCount": 1937,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 145
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 242,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_21_shih_tzu__line_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 681,
+   "candidatesTokenCount": 1293,
+   "totalTokenCount": 2250,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 165
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 276,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_25_havanese__line_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 952,
+   "candidatesTokenCount": 1339,
+   "totalTokenCount": 2513,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 178
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 774
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 222,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX2_25_havanese__geo_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 668,
+   "candidatesTokenCount": 1293,
+   "totalTokenCount": 2181,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 152
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 220,
+   "serviceTier": "standard"
+  }
+ }
+]
