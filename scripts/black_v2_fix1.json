@@ -1,0 +1,293 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "FIX_13_yorkshire_terrier__geo_heart__a",
+   "refs": [
+    "out/black_v2/gen1/BLK_13_yorkshire_terrier__geo_heart.jpg",
+    "out/black_v2/gen1/BLK_13_yorkshire_terrier__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a yorkshire terrier: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: redraw the MOUTH, muzzle and chin of both dogs exactly like image 2 (same shape, same lines); the current mouth looks wrong. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_13_yorkshire_terrier__geo_heart__b",
+   "refs": [
+    "out/black_v2/gen1/BLK_13_yorkshire_terrier__geo_heart.jpg",
+    "out/black_v2/gen1/BLK_13_yorkshire_terrier__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a yorkshire terrier: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: redraw the MOUTH, muzzle and chin of both dogs exactly like image 2 (same shape, same lines); the current mouth looks wrong. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_13_yorkshire_terrier__geo_cool__a",
+   "refs": [
+    "out/black_v2/refs/13_yorkshire_terrier__geo_cool.png",
+    "out/black_v2/gen1/BLK_13_yorkshire_terrier__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a yorkshire terrier: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: redraw the MOUTH, muzzle and chin of both dogs exactly like image 2 (same shape, same lines); the current mouth looks wrong. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_13_yorkshire_terrier__geo_cool__b",
+   "refs": [
+    "out/black_v2/refs/13_yorkshire_terrier__geo_cool.png",
+    "out/black_v2/gen1/BLK_13_yorkshire_terrier__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a yorkshire terrier: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: redraw the MOUTH, muzzle and chin of both dogs exactly like image 2 (same shape, same lines); the current mouth looks wrong. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_19_pomeranian__geo_heart__a",
+   "refs": [
+    "out/black_v2/gen1/BLK_19_pomeranian__geo_heart.jpg",
+    "out/black_v2/gen1/BLK_19_pomeranian__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a pomeranian: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the face and the full-body dog currently have fewer lines than image 2. Redraw both so they have the SAME facets, the same face lines, the same chest lines and the same fur/ruff lines as image 2, and give the nose NOSTRILS exactly like image 2. Keep only the heart frame and little heart that belong to this version. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_19_pomeranian__geo_heart__b",
+   "refs": [
+    "out/black_v2/gen1/BLK_19_pomeranian__geo_heart.jpg",
+    "out/black_v2/gen1/BLK_19_pomeranian__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a pomeranian: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the face and the full-body dog currently have fewer lines than image 2. Redraw both so they have the SAME facets, the same face lines, the same chest lines and the same fur/ruff lines as image 2, and give the nose NOSTRILS exactly like image 2. Keep only the heart frame and little heart that belong to this version. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_21_shih_tzu__line_classic__a",
+   "refs": [
+    "out/black_v2/gen1/BLK_21_shih_tzu__line_classic.jpg",
+    "out/black_v2/gen1/BLK_21_shih_tzu__line_heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a shih tzu: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the eyes of both dogs: the pupil/iris is currently only a thin line. Draw the iris/pupil as a SOLID WHITE filled disc (all white, no black centre), with the thin white eye outline around it, exactly as the eyes look in image 2. Everything else stays identical. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_21_shih_tzu__line_classic__b",
+   "refs": [
+    "out/black_v2/gen1/BLK_21_shih_tzu__line_classic.jpg",
+    "out/black_v2/gen1/BLK_21_shih_tzu__line_heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a shih tzu: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the eyes of both dogs: the pupil/iris is currently only a thin line. Draw the iris/pupil as a SOLID WHITE filled disc (all white, no black centre), with the thin white eye outline around it, exactly as the eyes look in image 2. Everything else stays identical. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_21_shih_tzu__geo_cool__a",
+   "refs": [
+    "out/black_v2/refs/21_shih_tzu__geo_cool.png",
+    "out/black_v2/gen1/BLK_21_shih_tzu__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a shih tzu: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: add the NOSTRILS to the nose exactly like image 2, and make the face lines and body lines/hair match image 2's level of detail. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_21_shih_tzu__geo_cool__b",
+   "refs": [
+    "out/black_v2/refs/21_shih_tzu__geo_cool.png",
+    "out/black_v2/gen1/BLK_21_shih_tzu__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a shih tzu: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: add the NOSTRILS to the nose exactly like image 2, and make the face lines and body lines/hair match image 2's level of detail. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_21_shih_tzu__geo_heart__a",
+   "refs": [
+    "out/black_v2/gen1/BLK_21_shih_tzu__geo_heart.jpg",
+    "out/black_v2/gen1/BLK_21_shih_tzu__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a shih tzu: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the face and the full-body dog currently look very different from image 2 (body shape, lines, hair, eyes, nostrils). Redraw both so they look like the same design as image 2: same face facets, same body shape, same hair lines, same chest lines, nostrils on the nose exactly like image 2. Keep only the heart frame and little heart that belong to this version. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_21_shih_tzu__geo_heart__b",
+   "refs": [
+    "out/black_v2/gen1/BLK_21_shih_tzu__geo_heart.jpg",
+    "out/black_v2/gen1/BLK_21_shih_tzu__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a shih tzu: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the face and the full-body dog currently look very different from image 2 (body shape, lines, hair, eyes, nostrils). Redraw both so they look like the same design as image 2: same face facets, same body shape, same hair lines, same chest lines, nostrils on the nose exactly like image 2. Keep only the heart frame and little heart that belong to this version. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_25_havanese__line_cool__a",
+   "refs": [
+    "out/black_v2/refs/25_havanese__line_cool.png",
+    "out/black_v2/gen2/BLK_25_havanese__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a havanese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the fur is currently less hairy than image 2. Redraw both dogs with the same hairy, silky long-coat line style and the same amount of hair strands as image 2. Keep the sunglasses. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_25_havanese__line_cool__b",
+   "refs": [
+    "out/black_v2/refs/25_havanese__line_cool.png",
+    "out/black_v2/gen2/BLK_25_havanese__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a havanese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the fur is currently less hairy than image 2. Redraw both dogs with the same hairy, silky long-coat line style and the same amount of hair strands as image 2. Keep the sunglasses. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_25_havanese__line_heart__a",
+   "refs": [
+    "out/black_v2/gen2/BLK_25_havanese__line_heart.jpg",
+    "out/black_v2/gen2/BLK_25_havanese__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a havanese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the fur is currently far too hairy compared with image 2. Redraw both dogs with the same hairy, silky long-coat line style and the same amount of hair strands as image 2 (no more, no less). Keep the heart frame and little heart. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_25_havanese__line_heart__b",
+   "refs": [
+    "out/black_v2/gen2/BLK_25_havanese__line_heart.jpg",
+    "out/black_v2/gen2/BLK_25_havanese__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a havanese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the fur is currently far too hairy compared with image 2. Redraw both dogs with the same hairy, silky long-coat line style and the same amount of hair strands as image 2 (no more, no less). Keep the heart frame and little heart. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_27_pug__line_cool__a",
+   "refs": [
+    "out/black_v2/refs/27_pug__line_cool.png",
+    "out/black_v2/gen2/BLK_27_pug__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a pug: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: add the chest line that gives depth, exactly like image 2, and redraw the SNOUT (muzzle, nose, mouth wrinkles) of both dogs like image 2: the current snout looks like a moustache. Keep the sunglasses. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_27_pug__line_cool__b",
+   "refs": [
+    "out/black_v2/refs/27_pug__line_cool.png",
+    "out/black_v2/gen2/BLK_27_pug__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a pug: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: add the chest line that gives depth, exactly like image 2, and redraw the SNOUT (muzzle, nose, mouth wrinkles) of both dogs like image 2: the current snout looks like a moustache. Keep the sunglasses. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_27_pug__line_heart__a",
+   "refs": [
+    "out/black_v2/gen2/BLK_27_pug__line_heart.jpg",
+    "out/black_v2/gen2/BLK_27_pug__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a pug: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: add the chest line that gives depth on the full-body dog, exactly like image 2, and make the snout/muzzle lines match image 2. Keep the heart frame and little heart. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_27_pug__line_heart__b",
+   "refs": [
+    "out/black_v2/gen2/BLK_27_pug__line_heart.jpg",
+    "out/black_v2/gen2/BLK_27_pug__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a pug: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: add the chest line that gives depth on the full-body dog, exactly like image 2, and make the snout/muzzle lines match image 2. Keep the heart frame and little heart. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_31_mini_poodle__geo_classic__a",
+   "refs": [
+    "out/black_v2/gen2/BLK_31_mini_poodle__geo_classic.jpg",
+    "out/black_v2/refs/31_mini_poodle__geo_cool.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a mini poodle: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the head currently has a big bare forehead and NO EYEBROWS. Add the same eyebrow facets/lines above the eyes as image 2 has, on both the head and the full-body dog, and match its forehead hair. Do not add sunglasses (keep the open eyes of image 1). Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_31_mini_poodle__geo_classic__b",
+   "refs": [
+    "out/black_v2/gen2/BLK_31_mini_poodle__geo_classic.jpg",
+    "out/black_v2/refs/31_mini_poodle__geo_cool.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a mini poodle: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the head currently has a big bare forehead and NO EYEBROWS. Add the same eyebrow facets/lines above the eyes as image 2 has, on both the head and the full-body dog, and match its forehead hair. Do not add sunglasses (keep the open eyes of image 1). Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_32_bichon_frise__geo_classic__a",
+   "refs": [
+    "out/black_v2/gen2/BLK_32_bichon_frise__geo_classic.jpg",
+    "out/black_v2/refs/32_bichon_frise__geo_cool.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a bichon frise: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: image 1 has TOO MANY lines. Simplify the head and especially the full-body dog to the same amount of lines and the same hair/fur facets as image 2. Keep the open eyes of image 1 (no sunglasses). Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_32_bichon_frise__geo_classic__b",
+   "refs": [
+    "out/black_v2/gen2/BLK_32_bichon_frise__geo_classic.jpg",
+    "out/black_v2/refs/32_bichon_frise__geo_cool.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a bichon frise: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: image 1 has TOO MANY lines. Simplify the head and especially the full-body dog to the same amount of lines and the same hair/fur facets as image 2. Keep the open eyes of image 1 (no sunglasses). Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_32_bichon_frise__geo_heart__a",
+   "refs": [
+    "out/black_v2/gen2/BLK_32_bichon_frise__geo_heart.jpg",
+    "out/black_v2/refs/32_bichon_frise__geo_cool.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a bichon frise: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: image 1 has too many lines and no eyebrows. Redraw head and full body with the same amount of lines and the same fluffy hair facets as image 2, and ADD eyebrows above the eyes like image 2. Keep the open eyes of image 1 (no sunglasses) and the heart frame and little heart. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_32_bichon_frise__geo_heart__b",
+   "refs": [
+    "out/black_v2/gen2/BLK_32_bichon_frise__geo_heart.jpg",
+    "out/black_v2/refs/32_bichon_frise__geo_cool.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a bichon frise: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: image 1 has too many lines and no eyebrows. Redraw head and full body with the same amount of lines and the same fluffy hair facets as image 2, and ADD eyebrows above the eyes like image 2. Keep the open eyes of image 1 (no sunglasses) and the heart frame and little heart. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_32_bichon_frise__line_heart__a",
+   "refs": [
+    "out/black_v2/gen2/BLK_32_bichon_frise__line_heart.jpg",
+    "out/black_v2/gen2/BLK_32_bichon_frise__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a bichon frise: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the face has no eyebrows. ADD the eyebrow lines above the eyes on both the head and the full-body dog, in the same line style as image 2. Keep the heart frame and little heart. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_32_bichon_frise__line_heart__b",
+   "refs": [
+    "out/black_v2/gen2/BLK_32_bichon_frise__line_heart.jpg",
+    "out/black_v2/gen2/BLK_32_bichon_frise__line_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a bichon frise: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (continuous line style). The owner likes image 2 better. CHANGE: the face has no eyebrows. ADD the eyebrow lines above the eyes on both the head and the full-body dog, in the same line style as image 2. Keep the heart frame and little heart. Keep from image 1: its style family (continuous line), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_33_maltese__geo_heart__a",
+   "refs": [
+    "out/black_v2/gen2/BLK_33_maltese__geo_heart.jpg",
+    "out/black_v2/gen2/BLK_33_maltese__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a maltese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the full-body dog's FACE is very different from image 2. Redraw the full-body dog's face (and the head too if needed) so it matches image 2 exactly in shape, facets, eyes, nose and mouth. Keep the heart frame and little heart. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_33_maltese__geo_heart__b",
+   "refs": [
+    "out/black_v2/gen2/BLK_33_maltese__geo_heart.jpg",
+    "out/black_v2/gen2/BLK_33_maltese__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a maltese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the full-body dog's FACE is very different from image 2. Redraw the full-body dog's face (and the head too if needed) so it matches image 2 exactly in shape, facets, eyes, nose and mouth. Keep the heart frame and little heart. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the eye style (thin white eye outline, black inside, one small white iris ring and one tiny highlight, open and identical on both eyes, on the head AND the full-body dog). Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_33_maltese__geo_cool__a",
+   "refs": [
+    "out/black_v2/refs/33_maltese__geo_cool.png",
+    "out/black_v2/gen2/BLK_33_maltese__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a maltese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the full-body dog's HAIR is completely different from image 2. Redraw the full-body dog's hair/fur facets so they match image 2 exactly. Keep the sunglasses. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  },
+  {
+   "id": "FIX_33_maltese__geo_cool__b",
+   "refs": [
+    "out/black_v2/refs/33_maltese__geo_cool.png",
+    "out/black_v2/gen2/BLK_33_maltese__geo_classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is the CURRENT design (pure WHITE lines on pure BLACK background, for a black shirt) of a maltese: a front head on the left and a matching full-body sitting dog on the right. Image 2 is the PREFERRED version of the SAME breed from the same product set (geometric polygon style). The owner likes image 2 better. CHANGE: the full-body dog's HAIR is completely different from image 2. Redraw the full-body dog's hair/fur facets so they match image 2 exactly. Keep the sunglasses. Keep from image 1: its style family (geometric polygon), the layout (head left, full body right), the poses, the sizes and positions, the line weight (print safe, never thinner than the thinnest lines in image 1), and the sunglasses exactly as drawn. Pure white lines only on pure black, the dogs' bodies stay BLACK (never fill anything with white), no gray, no gradients, no text, nothing cut off. Both dogs complete and clearly the same breed and clearly the same design family as image 2."
+  }
+ ]
+}
