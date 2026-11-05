@@ -2,7 +2,7 @@ import re,sys,json,os,urllib.request,subprocess
 UA={'User-Agent':'Mozilla/5.0'}
 def get(u,b=False):
     r=urllib.request.urlopen(urllib.request.Request(u,headers=UA),timeout=60).read();return r if b else r.decode('utf8','ignore')
-mode=sys.argv[1]
+mode=sys.argv[1];os.makedirs('out/footage',exist_ok=True)
 if mode=='list':
     out={}
     for cat in ['dog','pug','french-bulldog','husky','puppy','corgi','golden-retriever','labrador','dachshund','poodle','chihuahua','beagle','bulldog']:
