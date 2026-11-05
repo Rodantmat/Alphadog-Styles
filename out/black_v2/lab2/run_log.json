@@ -1,0 +1,218 @@
+[
+ {
+  "id": "BLK2_labrador_retriever__line_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1302,
+   "totalTokenCount": 2107,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 279,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK2_labrador_retriever__line_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1311,
+   "totalTokenCount": 2050,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 213,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK2_labrador_retriever__line_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1292,
+   "totalTokenCount": 2048,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 230,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK2_labrador_retriever__line_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1297,
+   "totalTokenCount": 2117,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 294,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK2_labrador_retriever__geo_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1321,
+   "totalTokenCount": 2083,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 237,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK2_labrador_retriever__geo_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1353,
+   "totalTokenCount": 2086,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 208,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK2_labrador_retriever__geo_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1277,
+   "totalTokenCount": 1986,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 184,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK2_labrador_retriever__geo_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1307,
+   "totalTokenCount": 2015,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 183,
+   "serviceTier": "standard"
+  }
+ }
+]
