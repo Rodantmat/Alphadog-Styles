@@ -1,1000 +1,1230 @@
 {
- "brand": {
-  "name": "AlphaDog Styles",
-  "tag": "Wear your best friend."
- },
- "breeds": [
-  {
-   "slug": "french_bulldog",
-   "name": "French Bulldog",
-   "desc": "bat-like erect ears, flat wrinkled face, compact body"
-  },
-  {
-   "slug": "labrador_retriever",
-   "name": "Labrador Retriever",
-   "desc": "short dense coat, broad head, medium floppy ears, thick otter tail"
-  },
-  {
-   "slug": "golden_retriever",
-   "name": "Golden Retriever",
-   "desc": "feathered medium-long coat, friendly face, floppy ears, plumed tail"
-  },
-  {
-   "slug": "german_shepherd",
-   "name": "German Shepherd",
-   "desc": "tall erect pointed ears, long muzzle, sloping back, bushy tail"
-  },
-  {
-   "slug": "dachshund",
-   "name": "Dachshund",
-   "desc": "very long low body, short legs, long drooping ears, smooth coat"
-  },
-  {
-   "slug": "poodle",
-   "name": "Standard Poodle",
-   "desc": "curly topknot, long drop ears with curly fur, long muzzle, curly coat"
-  },
-  {
-   "slug": "beagle",
-   "name": "Beagle",
-   "desc": "long drop ears, domed head, soft expression, white-tipped upright tail"
-  },
-  {
-   "slug": "rottweiler",
-   "name": "Rottweiler",
-   "desc": "broad powerful head, short coat, drop ears, muscular chest, stocky body"
-  },
-  {
-   "slug": "german_shorthaired_pointer",
-   "name": "German Shorthaired Pointer",
-   "desc": "sleek short coat, long drop ears, long muzzle, athletic lean body"
-  },
-  {
-   "slug": "bulldog",
-   "name": "English Bulldog",
-   "desc": "heavy wrinkled pushed-in face, rose ears, jowls, wide stocky body"
-  },
-  {
-   "slug": "cane_corso",
-   "name": "Cane Corso",
-   "desc": "large mastiff head, heavy muzzle, loose jowls, drop ears, muscular body"
-  },
-  {
-   "slug": "cavalier_king_charles_spaniel",
-   "name": "Cavalier King Charles Spaniel",
-   "desc": "long silky feathered drop ears, large round eyes, small body, feathered tail"
-  },
-  {
-   "slug": "yorkshire_terrier",
-   "name": "Yorkshire Terrier",
-   "desc": "tiny dog, long silky straight coat, small erect V ears, topknot"
-  },
-  {
-   "slug": "australian_shepherd",
-   "name": "Australian Shepherd",
-   "desc": "medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail"
-  },
-  {
-   "slug": "doberman_pinscher",
-   "name": "Doberman Pinscher",
-   "desc": "sleek short coat, erect pointed ears, long narrow muzzle, athletic body"
-  },
-  {
-   "slug": "pembroke_welsh_corgi",
-   "name": "Pembroke Welsh Corgi",
-   "desc": "large erect ears, fox-like face, short legs, long body, no tail"
-  },
-  {
-   "slug": "miniature_schnauzer",
-   "name": "Miniature Schnauzer",
-   "desc": "bushy eyebrows, beard and mustache, folded ears, wiry coat"
-  },
-  {
-   "slug": "boxer",
-   "name": "Boxer",
-   "desc": "square muzzle, short coat, folded ears, wrinkled forehead, muscular body"
-  },
-  {
-   "slug": "pomeranian",
-   "name": "Pomeranian",
-   "desc": "tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back"
-  },
-  {
-   "slug": "bernese_mountain_dog",
-   "name": "Bernese Mountain Dog",
-   "desc": "big fluffy thick coat, drop ears, gentle face, bushy tail"
-  },
-  {
-   "slug": "shih_tzu",
-   "name": "Shih Tzu",
-   "desc": "long flowing coat, flat short muzzle, drop ears, topknot"
-  },
-  {
-   "slug": "great_dane",
-   "name": "Great Dane",
-   "desc": "very tall, long deep muzzle, folded drop ears, deep chest, long legs"
-  },
-  {
-   "slug": "boston_terrier",
-   "name": "Boston Terrier",
-   "desc": "erect bat ears, square flat face, short muzzle, compact body"
-  },
-  {
-   "slug": "chihuahua",
-   "name": "Chihuahua",
-   "desc": "tiny dog, very large erect ears, apple-shaped head, big round eyes"
-  },
-  {
-   "slug": "havanese",
-   "name": "Havanese",
-   "desc": "silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back"
-  },
-  {
-   "slug": "siberian_husky",
-   "name": "Siberian Husky",
-   "desc": "erect triangular ears, thick double coat"
-  },
-  {
-   "slug": "pug",
-   "name": "Pug",
-   "desc": "wrinkled flat face, curled tail"
-  },
-  {
-   "slug": "american_pit_bull_terrier",
-   "name": "American Pit Bull Terrier",
-   "desc": "muscular, blocky head"
-  },
-  {
-   "slug": "border_collie",
-   "name": "Border Collie",
-   "desc": "feathered coat, semi-erect ears"
-  },
-  {
-   "slug": "shiba_inu",
-   "name": "Shiba Inu",
-   "desc": "fox-like, curled tail"
-  },
-  {
-   "slug": "mini_poodle",
-   "name": "Mini Poodle",
-   "desc": "small, mid-length curly coat"
-  },
-  {
-   "slug": "bichon_frise",
-   "name": "Bichon Frise",
-   "desc": "round powder-puff"
-  },
-  {
-   "slug": "maltese",
-   "name": "Maltese",
-   "desc": "long silky coat"
-  }
- ],
- "themes": [
-  {
-   "id": "line",
-   "name": "Continuous Line",
-   "blurb": "One flowing line, pure and elegant."
-  },
-  {
-   "id": "geo",
-   "name": "Geometric",
-   "blurb": "Sharp facets, bold modern attitude."
-  }
- ],
- "styles": [
-  {
-   "id": "classic",
-   "name": "Classic",
-   "blurb": "The timeless portrait."
-  },
-  {
-   "id": "cool",
-   "name": "Cool",
-   "blurb": "Aviator sunglasses, zero worries."
-  },
-  {
-   "id": "heart",
-   "name": "Heart",
-   "blurb": "Framed in a heart, made with love."
-  }
- ],
- "parts": [
-  {
-   "id": "head",
-   "name": "Head",
-   "file": "front"
-  },
-  {
-   "id": "body",
-   "name": "Full Body",
-   "file": "back"
-  }
- ],
- "front_opts": [
-  {
-   "id": "none",
-   "name": "Nothing"
-  },
-  {
-   "id": "head_s",
-   "name": "Head emblem",
-   "part": "head",
-   "size": "s"
-  },
-  {
-   "id": "head_l",
-   "name": "Big head",
-   "part": "head",
-   "size": "l"
-  },
-  {
-   "id": "body_s",
-   "name": "Body emblem",
-   "part": "body",
-   "size": "s"
-  },
-  {
-   "id": "body_l",
-   "name": "Big body",
-   "part": "body",
-   "size": "l"
-  }
- ],
- "back_opts": [
-  {
-   "id": "none",
-   "name": "Nothing"
-  },
-  {
-   "id": "head_l",
-   "name": "Big head",
-   "part": "head",
-   "size": "l"
-  },
-  {
-   "id": "body_l",
-   "name": "Full body",
-   "part": "body",
-   "size": "l"
-  },
-  {
-   "id": "body_s",
-   "name": "Body emblem",
-   "part": "body",
-   "size": "s"
-  },
-  {
-   "id": "head_s",
-   "name": "Head emblem",
-   "part": "head",
-   "size": "s"
-  }
- ],
- "products": [
-  {
-   "id": "tee",
-   "name": "Premium Tee",
-   "sub": "Bella+Canvas 3001 - soft Airlume cotton",
-   "blueprint": 12,
-   "provider": 99,
-   "price": {
-    "one": 2799,
-    "both": 3299
-   },
-   "sur": {
-    "2XL": 200,
-    "3XL": 400
-   },
-   "colors": [
-    [
-     "White",
-     "#f3f4f4",
-     1,
-     "white"
-    ],
-    [
-     "Natural",
-     "#f6f0e2",
-     1,
-     "natural"
-    ],
-    [
-     "Soft Cream",
-     "#f0ddcc",
-     1,
-     "soft-cream"
-    ],
-    [
-     "Ash",
-     "#ebeceb",
-     1,
-     "ash"
-    ],
-    [
-     "Athletic Heather",
-     "#a8a8a6",
-     1,
-     "athletic-heather"
-    ],
-    [
-     "Light Blue",
-     "#b4bec8",
-     1,
-     "light-blue"
-    ],
-    [
-     "Soft Pink",
-     "#f7e2dd",
-     1,
-     "soft-pink"
-    ],
-    [
-     "Black",
-     "#16161A",
-     0,
-     "black"
-    ],
-    [
-     "Navy",
-     "#1F2A44",
-     0,
-     "navy"
-    ],
-    [
-     "Forest",
-     "#24402F",
-     0,
-     "forest"
-    ],
-    [
-     "Maroon",
-     "#5A1E2B",
-     0,
-     "maroon"
-    ]
-   ],
-   "sizes": [
-    "S",
-    "M",
-    "L",
-    "XL",
-    "2XL",
-    "3XL"
-   ],
-   "group": "tops",
-   "rule": "tee",
-   "sides": [
-    "front",
-    "back"
-   ],
-   "label": {
-    "pos": "neck",
-    "area": [
-     750,
-     750
-    ],
-    "x": 0.5,
-    "y": 0.5,
-    "scale": 1.0
-   }
-  },
-  {
-   "id": "hoodie",
-   "name": "Heavy Hoodie",
-   "sub": "Gildan 18500 - cozy heavy blend",
-   "blueprint": 77,
-   "provider": 99,
-   "price": {
-    "one": 4999,
-    "both": 5799
-   },
-   "sur": {
-    "2XL": 400,
-    "3XL": 800
-   },
-   "colors": [
-    [
-     "White",
-     "#eaebeb",
-     1,
-     "white"
-    ],
-    [
-     "Sand",
-     "#d0c3af",
-     1,
-     "sand"
-    ],
-    [
-     "Sport Grey",
-     "#a2a3a4",
-     1,
-     "sport-grey"
-    ],
-    [
-     "Light Blue",
-     "#c7d8eb",
-     1,
-     "light-blue"
-    ],
-    [
-     "Light Pink",
-     "#efd1dd",
-     1,
-     "light-pink"
-    ],
-    [
-     "Ash",
-     "#d5d5d5",
-     1,
-     "ash"
-    ],
-    [
-     "Black",
-     "#17171B",
-     0,
-     "black"
-    ],
-    [
-     "Navy",
-     "#1E2A47",
-     0,
-     "navy"
-    ],
-    [
-     "Forest",
-     "#23402F",
-     0,
-     "forest"
-    ],
-    [
-     "Maroon",
-     "#5B1F2C",
-     0,
-     "maroon"
-    ]
-   ],
-   "sizes": [
-    "S",
-    "M",
-    "L",
-    "XL",
-    "2XL",
-    "3XL"
-   ],
-   "group": "tops",
-   "rule": "hoodie",
-   "sides": [
-    "front",
-    "back"
-   ],
-   "label": {
-    "pos": "neck",
-    "area": [
-     750,
-     750
-    ],
-    "x": 0.5,
-    "y": 0.5,
-    "scale": 1.0
-   }
-  },
-  {
-   "id": "tank",
-   "name": "Tank Top",
-   "sub": "Bella+Canvas 3480 - soft jersey tank",
-   "blueprint": 39,
-   "provider": 99,
-   "price": {
-    "one": 2699,
-    "both": 3199
-   },
-   "sur": {
-    "2XL": 200
-   },
-   "colors": [
-    [
-     "White",
-     "#eaeaea",
-     1,
-     "white",
-     "White"
-    ],
-    [
-     "Athletic Heather",
-     "#a1a19f",
-     1,
-     "athletic-heather",
-     "Athletic Heather"
-    ]
-   ],
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "2XL"
-   ],
-   "area": {
-    "front": [
-     2920,
-     3504
-    ],
-    "back": [
-     2920,
-     3504
-    ]
-   },
-   "pos": {
-    "front": "front",
-    "back": "back"
-   },
-   "rule": "tee",
-   "group": "tops",
-   "sides": [
-    "front",
-    "back"
-   ],
-   "label": {
-    "pos": "neck",
-    "area": [
-     632,
-     632
-    ],
-    "x": 0.5,
-    "y": 0.5,
-    "scale": 1.0
-   }
-  },
-  {
-   "id": "wtank",
-   "name": "Women's Racerback Tank",
-   "sub": "Next Level 1533 - lightweight racerback",
-   "blueprint": 18,
-   "provider": 99,
-   "price": {
-    "one": 2599,
-    "both": 3099
-   },
-   "sur": {
-    "2XL": 200
-   },
-   "colors": [
-    [
-     "Solid White",
-     "#e7e7e7",
-     1,
-     "solid-white",
-     "White"
-    ],
-    [
-     "Heather Grey",
-     "#858583",
-     1,
-     "heather-grey",
-     "Heather Grey"
-    ],
-    [
-     "Solid Mint",
-     "#92d5a9",
-     1,
-     "solid-mint",
-     "Mint"
-    ],
-    [
-     "Solid Light Orange",
-     "#f38f78",
-     1,
-     "solid-light-orange",
-     "Light Orange"
-    ],
-    [
-     "Solid Tahiti Blue",
-     "#2ebac4",
-     1,
-     "solid-tahiti-blue",
-     "Tahiti Blue"
-    ]
-   ],
-   "sizes": [
-    "XS",
-    "S",
-    "M",
-    "L",
-    "XL",
-    "2XL"
-   ],
-   "area": {
-    "front": [
-     3032,
-     3709
-    ],
-    "back": [
-     3033,
-     3451
-    ]
-   },
-   "pos": {
-    "front": "front",
-    "back": "back"
-   },
-   "rule": "tee",
-   "group": "tops",
-   "sides": [
-    "front",
-    "back"
-   ],
-   "label": {
-    "pos": "neck",
-    "area": [
-     756,
-     756
-    ],
-    "x": 0.5,
-    "y": 0.5,
-    "scale": 1.0
-   }
-  },
-  {
-   "id": "polo",
-   "name": "Polo Shirt",
-   "sub": "JERZEES 443M - classic piqu\u00e9, chest print",
-   "blueprint": 1402,
-   "provider": 99,
-   "price": {
-    "one": 3499
-   },
-   "sur": {
-    "2XL": 200,
-    "3XL": 400
-   },
-   "colors": [
-    [
-     "White",
-     "#ececee",
-     1,
-     "white",
-     "White"
-    ],
-    [
-     "Athletic Heather",
-     "#bfbdc2",
-     1,
-     "athletic-heather",
-     "Athletic Heather"
-    ]
-   ],
-   "sizes": [
-    "S",
-    "M",
-    "L",
-    "XL",
-    "2XL",
-    "3XL"
-   ],
-   "area": {
-    "front": [
-     1181,
-     1181
-    ]
-   },
-   "pos": {
-    "front": "left_chest"
-   },
-   "rule": "chest",
-   "group": "polos",
-   "sides": [
-    "front"
-   ],
-   "opts": {
-    "front": [
-     "head_s",
-     "body_s"
-    ]
-   },
-   "label": {
-    "pos": "back",
-    "area": [
-     3461,
-     3955
-    ],
-    "x": 0.5,
-    "y": 0.07,
-    "scale": 0.15
-   }
-  },
-  {
-   "id": "cap_dad",
-   "name": "Dad Hat",
-   "sub": "Yupoong 6245CM - soft, low profile",
-   "blueprint": 1447,
-   "provider": 99,
-   "price": {
-    "one": 2899
-   },
-   "sur": {},
-   "colors": [
-    [
-     "White",
-     "#f9f9f8",
-     1,
-     "white",
-     "White"
-    ],
-    [
-     "Stone",
-     "#d5c7bc",
-     1,
-     "stone",
-     "Stone"
-    ],
-    [
-     "Khaki",
-     "#bba478",
-     1,
-     "khaki",
-     "Khaki"
-    ],
-    [
-     "Light Blue",
-     "#c6d4e1",
-     1,
-     "light-blue",
-     "Light Blue"
-    ],
-    [
-     "Pink",
-     "#f9b7b8",
-     1,
-     "pink",
-     "Pink"
-    ]
-   ],
-   "sizes": [
-    "One size"
-   ],
-   "area": {
-    "front": [
-     1500,
-     600
-    ]
-   },
-   "pos": {
-    "front": "front_dtf"
-   },
-   "rule": "cap",
-   "group": "caps",
-   "sides": [
-    "front"
-   ],
-   "opts": {
-    "front": [
-     "head_s",
-     "body_s"
-    ]
-   },
-   "label": {
-    "pos": "back_hat_embroidery",
-    "area": [
-     600,
-     300
-    ],
-    "x": 0.5,
-    "y": 0.5,
-    "scale": 0.45
-   }
-  },
-  {
-   "id": "cap_foam",
-   "name": "Foam Trucker Hat",
-   "sub": "OTTO 39-165 - retro foam front, mesh back",
-   "blueprint": 1735,
-   "provider": 99,
-   "price": {
-    "one": 2699
-   },
-   "sur": {},
-   "colors": [
-    [
-     "White",
-     "#f2f2f2",
-     1,
-     "white",
-     "White"
-    ],
-    [
-     "Light Pink/White",
-     "#f6c6d2",
-     1,
-     "light-pink-white",
-     "Pink Trim"
-    ],
-    [
-     "Blue/White",
-     "#33b5e8",
-     1,
-     "blue-white",
-     "Blue Trim"
-    ]
-   ],
-   "sizes": [
-    "One size"
-   ],
-   "area": {
-    "front": [
-     1650,
-     750
-    ]
-   },
-   "pos": {
-    "front": "front_dtf"
-   },
-   "rule": "cap",
-   "group": "caps",
-   "sides": [
-    "front"
-   ],
-   "opts": {
-    "front": [
-     "head_s",
-     "body_s"
-    ]
-   }
-  },
-  {
-   "id": "cap_mesh",
-   "name": "Mesh Trucker Cap",
-   "sub": "Yupoong 6006 - 5-panel, mesh back",
-   "blueprint": 1734,
-   "provider": 99,
-   "price": {
-    "one": 2699
-   },
-   "sur": {},
-   "colors": [
-    [
-     "White",
-     "#d3d3d3",
-     1,
-     "white",
-     "White"
-    ]
-   ],
-   "sizes": [
-    "One size"
-   ],
-   "area": {
-    "front": [
-     1650,
-     750
-    ]
-   },
-   "pos": {
-    "front": "front_dtf"
-   },
-   "rule": "cap",
-   "group": "caps",
-   "sides": [
-    "front"
-   ],
-   "opts": {
-    "front": [
-     "head_s",
-     "body_s"
-    ]
-   }
-  }
- ],
- "shipping": {
-  "flat": 499,
-  "free_over": 7500
- },
- "area": {
-  "tee": {
-   "w": 2767,
-   "h": 3362
-  },
-  "hoodie_front": {
-   "w": 3531,
-   "h": 2352
-  },
-  "hoodie_back": {
-   "w": 3852,
-   "h": 3210
-  }
- },
- "cal": {
-  "tee": {
-   "front": [
-    387.6,
-    373.0,
-    424.2,
-    515.4
-   ],
-   "back": [
-    403.5,
-    303.2,
-    409.5,
-    497.6
-   ]
-  },
-  "hoodie": {
-   "front": [
-    424.5,
-    395.1,
-    334.0,
-    222.7
-   ],
-   "back": [
-    441.7,
-    368.9,
-    341.6,
-    284.6
-   ]
-  },
-  "photo": 1200,
-  "tank": {
-   "front": [
-    440,
-    459,
-    320,
-    382
-   ],
-   "back": [
-    440,
-    355,
-    320,
-    383
-   ]
-  },
-  "wtank": {
-   "front": [
-    430,
-    464,
-    341,
-    416
-   ],
-   "back": [
-    438,
-    456,
-    330,
-    380
-   ]
-  },
-  "polo": {
-   "front": [
-    662,
-    318,
-    105,
-    106
-   ]
-  },
-  "cap_dad": {
-   "front": [
-    314,
-    447,
-    572,
-    235
-   ]
-  },
-  "cap_foam": {
-   "front": [
-    289,
-    354,
-    624,
-    292
-   ]
-  },
-  "cap_mesh": {
-   "front": [
-    264,
-    419,
-    680,
-    308
-   ]
-  }
- },
- "custom_fee": 1999
+"brand": {
+"name": "AlphaDog Styles",
+"tag": "Wear your best friend."
+},
+"breeds": [
+{
+"slug": "french_bulldog",
+"name": "French Bulldog",
+"desc": "bat-like erect ears, flat wrinkled face, compact body"
+},
+{
+"slug": "labrador_retriever",
+"name": "Labrador Retriever",
+"desc": "short dense coat, broad head, medium floppy ears, thick otter tail"
+},
+{
+"slug": "golden_retriever",
+"name": "Golden Retriever",
+"desc": "feathered medium-long coat, friendly face, floppy ears, plumed tail"
+},
+{
+"slug": "german_shepherd",
+"name": "German Shepherd",
+"desc": "tall erect pointed ears, long muzzle, sloping back, bushy tail"
+},
+{
+"slug": "dachshund",
+"name": "Dachshund",
+"desc": "very long low body, short legs, long drooping ears, smooth coat"
+},
+{
+"slug": "poodle",
+"name": "Standard Poodle",
+"desc": "curly topknot, long drop ears with curly fur, long muzzle, curly coat"
+},
+{
+"slug": "beagle",
+"name": "Beagle",
+"desc": "long drop ears, domed head, soft expression, white-tipped upright tail"
+},
+{
+"slug": "rottweiler",
+"name": "Rottweiler",
+"desc": "broad powerful head, short coat, drop ears, muscular chest, stocky body"
+},
+{
+"slug": "german_shorthaired_pointer",
+"name": "German Shorthaired Pointer",
+"desc": "sleek short coat, long drop ears, long muzzle, athletic lean body"
+},
+{
+"slug": "bulldog",
+"name": "English Bulldog",
+"desc": "heavy wrinkled pushed-in face, rose ears, jowls, wide stocky body"
+},
+{
+"slug": "cane_corso",
+"name": "Cane Corso",
+"desc": "large mastiff head, heavy muzzle, loose jowls, drop ears, muscular body"
+},
+{
+"slug": "cavalier_king_charles_spaniel",
+"name": "Cavalier King Charles Spaniel",
+"desc": "long silky feathered drop ears, large round eyes, small body, feathered tail"
+},
+{
+"slug": "yorkshire_terrier",
+"name": "Yorkshire Terrier",
+"desc": "tiny dog, long silky straight coat, small erect V ears, topknot"
+},
+{
+"slug": "australian_shepherd",
+"name": "Australian Shepherd",
+"desc": "medium-long fluffy coat, semi-drop ears, bright eyes, bobbed tail"
+},
+{
+"slug": "doberman_pinscher",
+"name": "Doberman Pinscher",
+"desc": "sleek short coat, erect pointed ears, long narrow muzzle, athletic body"
+},
+{
+"slug": "pembroke_welsh_corgi",
+"name": "Pembroke Welsh Corgi",
+"desc": "large erect ears, fox-like face, short legs, long body, no tail"
+},
+{
+"slug": "miniature_schnauzer",
+"name": "Miniature Schnauzer",
+"desc": "bushy eyebrows, beard and mustache, folded ears, wiry coat"
+},
+{
+"slug": "boxer",
+"name": "Boxer",
+"desc": "square muzzle, short coat, folded ears, wrinkled forehead, muscular body"
+},
+{
+"slug": "pomeranian",
+"name": "Pomeranian",
+"desc": "tiny fluffy dog, thick ruff of fur, fox face, small pointed ears, plumed tail curled over back"
+},
+{
+"slug": "bernese_mountain_dog",
+"name": "Bernese Mountain Dog",
+"desc": "big fluffy thick coat, drop ears, gentle face, bushy tail"
+},
+{
+"slug": "shih_tzu",
+"name": "Shih Tzu",
+"desc": "long flowing coat, flat short muzzle, drop ears, topknot"
+},
+{
+"slug": "great_dane",
+"name": "Great Dane",
+"desc": "very tall, long deep muzzle, folded drop ears, deep chest, long legs"
+},
+{
+"slug": "boston_terrier",
+"name": "Boston Terrier",
+"desc": "erect bat ears, square flat face, short muzzle, compact body"
+},
+{
+"slug": "chihuahua",
+"name": "Chihuahua",
+"desc": "tiny dog, very large erect ears, apple-shaped head, big round eyes"
+},
+{
+"slug": "havanese",
+"name": "Havanese",
+"desc": "silky wavy long coat, drop ears, small sturdy body, plumed tail curled over back"
+},
+{
+"slug": "siberian_husky",
+"name": "Siberian Husky",
+"desc": "erect triangular ears, thick double coat"
+},
+{
+"slug": "pug",
+"name": "Pug",
+"desc": "wrinkled flat face, curled tail"
+},
+{
+"slug": "american_pit_bull_terrier",
+"name": "American Pit Bull Terrier",
+"desc": "muscular, blocky head"
+},
+{
+"slug": "border_collie",
+"name": "Border Collie",
+"desc": "feathered coat, semi-erect ears"
+},
+{
+"slug": "shiba_inu",
+"name": "Shiba Inu",
+"desc": "fox-like, curled tail"
+},
+{
+"slug": "mini_poodle",
+"name": "Mini Poodle",
+"desc": "small, mid-length curly coat"
+},
+{
+"slug": "bichon_frise",
+"name": "Bichon Frise",
+"desc": "round powder-puff"
+},
+{
+"slug": "maltese",
+"name": "Maltese",
+"desc": "long silky coat"
+}
+],
+"themes": [
+{
+"id": "line",
+"name": "Continuous Line",
+"blurb": "One flowing line, pure and elegant."
+},
+{
+"id": "geo",
+"name": "Geometric",
+"blurb": "Sharp facets, bold modern attitude."
+}
+],
+"styles": [
+{
+"id": "classic",
+"name": "Classic",
+"blurb": "The timeless portrait."
+},
+{
+"id": "cool",
+"name": "Cool",
+"blurb": "Aviator sunglasses, zero worries."
+},
+{
+"id": "heart",
+"name": "Heart",
+"blurb": "Framed in a heart, made with love."
+}
+],
+"parts": [
+{
+"id": "head",
+"name": "Head",
+"file": "front"
+},
+{
+"id": "body",
+"name": "Full Body",
+"file": "back"
+}
+],
+"front_opts": [
+{
+"id": "none",
+"name": "Nothing"
+},
+{
+"id": "head_s",
+"name": "Head emblem",
+"part": "head",
+"size": "s"
+},
+{
+"id": "head_l",
+"name": "Big head",
+"part": "head",
+"size": "l"
+},
+{
+"id": "body_s",
+"name": "Body emblem",
+"part": "body",
+"size": "s"
+},
+{
+"id": "body_l",
+"name": "Big body",
+"part": "body",
+"size": "l"
+}
+],
+"back_opts": [
+{
+"id": "none",
+"name": "Nothing"
+},
+{
+"id": "head_l",
+"name": "Big head",
+"part": "head",
+"size": "l"
+},
+{
+"id": "body_l",
+"name": "Full body",
+"part": "body",
+"size": "l"
+},
+{
+"id": "body_s",
+"name": "Body emblem",
+"part": "body",
+"size": "s"
+},
+{
+"id": "head_s",
+"name": "Head emblem",
+"part": "head",
+"size": "s"
+}
+],
+"products": [
+{
+"id": "tee",
+"name": "Premium Tee",
+"sub": "Bella+Canvas 3001 - soft Airlume cotton",
+"blueprint": 12,
+"provider": 99,
+"price": {
+"one": 2799,
+"both": 3299
+},
+"sur": {
+"2XL": 200,
+"3XL": 400
+},
+"colors": [
+[
+"White",
+"#f3f4f4",
+1,
+"white"
+],
+[
+"Natural",
+"#f6f0e2",
+1,
+"natural"
+],
+[
+"Soft Cream",
+"#f0ddcc",
+1,
+"soft-cream"
+],
+[
+"Ash",
+"#ebeceb",
+1,
+"ash"
+],
+[
+"Athletic Heather",
+"#a8a8a6",
+1,
+"athletic-heather"
+],
+[
+"Light Blue",
+"#b4bec8",
+1,
+"light-blue"
+],
+[
+"Soft Pink",
+"#f7e2dd",
+1,
+"soft-pink"
+],
+[
+"Black",
+"#212222",
+1,
+"black",
+"Black"
+],
+[
+"Dark Grey Heather",
+"#2f2f2f",
+1,
+"dark-grey-heather",
+"Dark Grey Heather"
+],
+[
+"Navy",
+"#23283c",
+1,
+"navy",
+"Navy"
+],
+[
+"Asphalt",
+"#525355",
+1,
+"asphalt",
+"Asphalt"
+],
+[
+"Forest",
+"#283c35",
+1,
+"forest",
+"Forest"
+],
+[
+"Maroon",
+"#57282e",
+1,
+"maroon",
+"Maroon"
+],
+[
+"Red",
+"#b12629",
+1,
+"red",
+"Red"
+]
+],
+"sizes": [
+"S",
+"M",
+"L",
+"XL",
+"2XL",
+"3XL"
+],
+"group": "tops",
+"rule": "tee",
+"sides": [
+"front",
+"back"
+],
+"label": {
+"pos": "neck",
+"area": [
+750,
+750
+],
+"x": 0.5,
+"y": 0.5,
+"scale": 1.0
+}
+},
+{
+"id": "hoodie",
+"name": "Heavy Hoodie",
+"sub": "Gildan 18500 - cozy heavy blend",
+"blueprint": 77,
+"provider": 99,
+"price": {
+"one": 4999,
+"both": 5799
+},
+"sur": {
+"2XL": 400,
+"3XL": 800
+},
+"colors": [
+[
+"White",
+"#eaebeb",
+1,
+"white"
+],
+[
+"Sand",
+"#d0c3af",
+1,
+"sand"
+],
+[
+"Sport Grey",
+"#a2a3a4",
+1,
+"sport-grey"
+],
+[
+"Light Blue",
+"#c7d8eb",
+1,
+"light-blue"
+],
+[
+"Light Pink",
+"#efd1dd",
+1,
+"light-pink"
+],
+[
+"Ash",
+"#d5d5d5",
+1,
+"ash"
+],
+[
+"Black",
+"#1f1f1f",
+1,
+"black",
+"Black"
+],
+[
+"Navy",
+"#20273a",
+1,
+"navy",
+"Navy"
+],
+[
+"Charcoal",
+"#535154",
+1,
+"charcoal",
+"Charcoal"
+],
+[
+"Forest Green",
+"#273c29",
+1,
+"forest-green",
+"Forest Green"
+],
+[
+"Maroon",
+"#5e2836",
+1,
+"maroon",
+"Maroon"
+],
+[
+"Dark Heather",
+"#424242",
+1,
+"dark-heather",
+"Dark Heather"
+]
+],
+"sizes": [
+"S",
+"M",
+"L",
+"XL",
+"2XL",
+"3XL"
+],
+"group": "tops",
+"rule": "hoodie",
+"sides": [
+"front",
+"back"
+],
+"label": {
+"pos": "neck",
+"area": [
+750,
+750
+],
+"x": 0.5,
+"y": 0.5,
+"scale": 1.0
+}
+},
+{
+"id": "tank",
+"name": "Tank Top",
+"sub": "Bella+Canvas 3480 - soft jersey tank",
+"blueprint": 39,
+"provider": 99,
+"price": {
+"one": 2699,
+"both": 3199
+},
+"sur": {
+"2XL": 200
+},
+"colors": [
+[
+"White",
+"#eaeaea",
+1,
+"white",
+"White"
+],
+[
+"Athletic Heather",
+"#a1a19f",
+1,
+"athletic-heather",
+"Athletic Heather"
+],
+[
+"Black",
+"#191919",
+1,
+"black",
+"Black"
+],
+[
+"Navy",
+"#1d2031",
+1,
+"navy",
+"Navy"
+]
+],
+"sizes": [
+"XS",
+"S",
+"M",
+"L",
+"XL",
+"2XL"
+],
+"area": {
+"front": [
+2920,
+3504
+],
+"back": [
+2920,
+3504
+]
+},
+"pos": {
+"front": "front",
+"back": "back"
+},
+"rule": "tee",
+"group": "tops",
+"sides": [
+"front",
+"back"
+],
+"label": {
+"pos": "neck",
+"area": [
+632,
+632
+],
+"x": 0.5,
+"y": 0.5,
+"scale": 1.0
+}
+},
+{
+"id": "wtank",
+"name": "Women's Racerback Tank",
+"sub": "Next Level 1533 - lightweight racerback",
+"blueprint": 18,
+"provider": 99,
+"price": {
+"one": 2599,
+"both": 3099
+},
+"sur": {
+"2XL": 200
+},
+"colors": [
+[
+"Solid White",
+"#e7e7e7",
+1,
+"solid-white",
+"White"
+],
+[
+"Heather Grey",
+"#858583",
+1,
+"heather-grey",
+"Heather Grey"
+],
+[
+"Solid Mint",
+"#92d5a9",
+1,
+"solid-mint",
+"Mint"
+],
+[
+"Solid Light Orange",
+"#f38f78",
+1,
+"solid-light-orange",
+"Light Orange"
+],
+[
+"Solid Tahiti Blue",
+"#2ebac4",
+1,
+"solid-tahiti-blue",
+"Tahiti Blue"
+],
+[
+"Solid Black",
+"#1d1d1d",
+1,
+"solid-black",
+"Black"
+],
+[
+"Solid Midnight Navy",
+"#142330",
+1,
+"solid-midnight-navy",
+"Midnight Navy"
+],
+[
+"Solid Military Green",
+"#3c4228",
+1,
+"solid-military-green",
+"Military Green"
+],
+[
+"Solid Indigo",
+"#2f3843",
+1,
+"solid-indigo",
+"Indigo"
+]
+],
+"sizes": [
+"XS",
+"S",
+"M",
+"L",
+"XL",
+"2XL"
+],
+"area": {
+"front": [
+3032,
+3709
+],
+"back": [
+3033,
+3451
+]
+},
+"pos": {
+"front": "front",
+"back": "back"
+},
+"rule": "tee",
+"group": "tops",
+"sides": [
+"front",
+"back"
+],
+"label": {
+"pos": "neck",
+"area": [
+756,
+756
+],
+"x": 0.5,
+"y": 0.5,
+"scale": 1.0
+}
+},
+{
+"id": "polo",
+"name": "Polo Shirt",
+"sub": "JERZEES 443M - classic piqué, chest print",
+"blueprint": 1402,
+"provider": 99,
+"price": {
+"one": 3499
+},
+"sur": {
+"2XL": 200,
+"3XL": 400
+},
+"colors": [
+[
+"White",
+"#ececee",
+1,
+"white",
+"White"
+],
+[
+"Athletic Heather",
+"#bfbdc2",
+1,
+"athletic-heather",
+"Athletic Heather"
+],
+[
+"Black",
+"#232325",
+1,
+"black",
+"Black"
+],
+[
+"J. Navy",
+"#14203a",
+1,
+"j-navy",
+"Navy"
+]
+],
+"sizes": [
+"S",
+"M",
+"L",
+"XL",
+"2XL",
+"3XL"
+],
+"area": {
+"front": [
+1181,
+1181
+]
+},
+"pos": {
+"front": "left_chest"
+},
+"rule": "chest",
+"group": "polos",
+"sides": [
+"front"
+],
+"opts": {
+"front": [
+"head_s",
+"body_s"
+]
+},
+"label": {
+"pos": "back",
+"area": [
+3461,
+3955
+],
+"x": 0.5,
+"y": 0.07,
+"scale": 0.15
+}
+},
+{
+"id": "cap_dad",
+"name": "Dad Hat",
+"sub": "Yupoong 6245CM - soft, low profile",
+"blueprint": 1447,
+"provider": 99,
+"price": {
+"one": 2899
+},
+"sur": {},
+"colors": [
+[
+"White",
+"#f9f9f8",
+1,
+"white",
+"White"
+],
+[
+"Stone",
+"#d5c7bc",
+1,
+"stone",
+"Stone"
+],
+[
+"Khaki",
+"#bba478",
+1,
+"khaki",
+"Khaki"
+],
+[
+"Light Blue",
+"#c6d4e1",
+1,
+"light-blue",
+"Light Blue"
+],
+[
+"Pink",
+"#f9b7b8",
+1,
+"pink",
+"Pink"
+],
+[
+"Black",
+"#2b262b",
+1,
+"black",
+"Black"
+],
+[
+"Navy",
+"#393e49",
+1,
+"navy",
+"Navy"
+],
+[
+"Dark Grey",
+"#5b5555",
+1,
+"dark-grey",
+"Dark Grey"
+],
+[
+"Spruce",
+"#355341",
+1,
+"spruce",
+"Spruce"
+],
+[
+"Green Camo",
+"#383328",
+1,
+"green-camo",
+"Green Camo"
+]
+],
+"sizes": [
+"One size"
+],
+"area": {
+"front": [
+1500,
+600
+]
+},
+"pos": {
+"front": "front_dtf"
+},
+"rule": "cap",
+"group": "caps",
+"sides": [
+"front"
+],
+"opts": {
+"front": [
+"head_s",
+"body_s"
+]
+},
+"label": {
+"pos": "back_hat_embroidery",
+"area": [
+600,
+300
+],
+"x": 0.5,
+"y": 0.5,
+"scale": 0.45
+}
+},
+{
+"id": "cap_foam",
+"name": "Foam Trucker Hat",
+"sub": "OTTO 39-165 - retro foam front, mesh back",
+"blueprint": 1735,
+"provider": 99,
+"price": {
+"one": 2699
+},
+"sur": {},
+"colors": [
+[
+"White",
+"#f2f2f2",
+1,
+"white",
+"White"
+],
+[
+"Light Pink/White",
+"#f6c6d2",
+1,
+"light-pink-white",
+"Pink Trim"
+],
+[
+"Blue/White",
+"#33b5e8",
+1,
+"blue-white",
+"Blue Trim"
+],
+[
+"Black",
+"#2a2a2a",
+1,
+"black",
+"Black"
+],
+[
+"Dark Navy",
+"#2c2e43",
+1,
+"dark-navy",
+"Dark Navy"
+],
+[
+"Black/White",
+"#f2f2f2",
+1,
+"black-white",
+"Black Trim"
+]
+],
+"sizes": [
+"One size"
+],
+"area": {
+"front": [
+1650,
+750
+]
+},
+"pos": {
+"front": "front_dtf"
+},
+"rule": "cap",
+"group": "caps",
+"sides": [
+"front"
+],
+"opts": {
+"front": [
+"head_s",
+"body_s"
+]
+}
+},
+{
+"id": "cap_mesh",
+"name": "Mesh Trucker Cap",
+"sub": "Yupoong 6006 - 5-panel, mesh back",
+"blueprint": 1734,
+"provider": 99,
+"price": {
+"one": 2699
+},
+"sur": {},
+"colors": [
+[
+"White",
+"#d3d3d3",
+1,
+"white",
+"White"
+],
+[
+"Black",
+"#171717",
+1,
+"black",
+"Black"
+],
+[
+"Navy",
+"#26313d",
+1,
+"navy",
+"Navy"
+],
+[
+"Charcoal",
+"#2f312e",
+1,
+"charcoal",
+"Charcoal"
+]
+],
+"sizes": [
+"One size"
+],
+"area": {
+"front": [
+1650,
+750
+]
+},
+"pos": {
+"front": "front_dtf"
+},
+"rule": "cap",
+"group": "caps",
+"sides": [
+"front"
+],
+"opts": {
+"front": [
+"head_s",
+"body_s"
+]
+}
+}
+],
+"shipping": {
+"flat": 499,
+"free_over": 7500
+},
+"area": {
+"tee": {
+"w": 2767,
+"h": 3362
+},
+"hoodie_front": {
+"w": 3531,
+"h": 2352
+},
+"hoodie_back": {
+"w": 3852,
+"h": 3210
+}
+},
+"cal": {
+"tee": {
+"front": [
+387.6,
+373.0,
+424.2,
+515.4
+],
+"back": [
+403.5,
+303.2,
+409.5,
+497.6
+]
+},
+"hoodie": {
+"front": [
+424.5,
+395.1,
+334.0,
+222.7
+],
+"back": [
+441.7,
+368.9,
+341.6,
+284.6
+]
+},
+"photo": 1200,
+"tank": {
+"front": [
+440,
+459,
+320,
+382
+],
+"back": [
+440,
+355,
+320,
+383
+]
+},
+"wtank": {
+"front": [
+430,
+464,
+341,
+416
+],
+"back": [
+438,
+456,
+330,
+380
+]
+},
+"polo": {
+"front": [
+662,
+318,
+105,
+106
+]
+},
+"cap_dad": {
+"front": [
+314,
+447,
+572,
+235
+]
+},
+"cap_foam": {
+"front": [
+289,
+354,
+624,
+292
+]
+},
+"cap_mesh": {
+"front": [
+264,
+419,
+680,
+308
+]
+}
+},
+"custom_fee": 1999,
+"inks": {
+"light": [
+[
+"Black",
+"#000000"
+],
+[
+"Navy",
+"#1f2a44"
+],
+[
+"Dark Gray",
+"#4a4a4a"
+],
+[
+"Red",
+"#c1272d"
+],
+[
+"Forest Green",
+"#24402f"
+],
+[
+"Burgundy",
+"#6d1f2f"
+]
+],
+"dark": [
+[
+"White",
+"#ffffff"
+],
+[
+"Light Blue",
+"#a9d6f5"
+],
+[
+"Light Yellow",
+"#fff0a3"
+],
+[
+"Light Gray",
+"#cfd2d6"
+],
+[
+"Soft Pink",
+"#ffc2d4"
+],
+[
+"Mint",
+"#b6f0d2"
+]
+]
+}
 }
