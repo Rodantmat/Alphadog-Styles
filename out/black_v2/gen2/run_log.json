@@ -1,0 +1,1190 @@
+[
+ {
+  "id": "BLK_23_boston_terrier__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1296,
+   "totalTokenCount": 2049,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 227,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_23_boston_terrier__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1301,
+   "totalTokenCount": 2039,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 212,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_23_boston_terrier__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1329,
+   "totalTokenCount": 2137,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 283,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_23_boston_terrier__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1299,
+   "totalTokenCount": 2039,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 215,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_24_chihuahua__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1302,
+   "totalTokenCount": 2044,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 217,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_24_chihuahua__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1301,
+   "totalTokenCount": 2050,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 224,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_24_chihuahua__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 524,
+   "candidatesTokenCount": 1330,
+   "totalTokenCount": 2075,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 266
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 221,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_24_chihuahua__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 524,
+   "candidatesTokenCount": 1339,
+   "totalTokenCount": 2167,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 266
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 304,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_25_havanese__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1301,
+   "totalTokenCount": 2050,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 222,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_25_havanese__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1314,
+   "totalTokenCount": 2092,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 251,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_25_havanese__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1306,
+   "totalTokenCount": 2102,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 270,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_25_havanese__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1317,
+   "totalTokenCount": 2102,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 259,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_26_siberian_husky__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1289,
+   "totalTokenCount": 2049,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 232,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_26_siberian_husky__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1296,
+   "totalTokenCount": 2023,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 199,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_26_siberian_husky__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1298,
+   "totalTokenCount": 2037,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 212,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_26_siberian_husky__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1343,
+   "totalTokenCount": 2120,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 250,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_27_pug__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1316,
+   "totalTokenCount": 2083,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 242,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_27_pug__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 2067,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 252,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_27_pug__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 524,
+   "candidatesTokenCount": 1320,
+   "totalTokenCount": 2075,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 266
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 231,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_27_pug__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 524,
+   "candidatesTokenCount": 1320,
+   "totalTokenCount": 2125,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 266
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 281,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_28_american_pit_bull_terrier__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1317,
+   "totalTokenCount": 2028,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 183,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_28_american_pit_bull_terrier__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1321,
+   "totalTokenCount": 2084,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 235,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_28_american_pit_bull_terrier__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1280,
+   "totalTokenCount": 2037,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 230,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_28_american_pit_bull_terrier__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1282,
+   "totalTokenCount": 2023,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 214,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_29_border_collie__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1281,
+   "totalTokenCount": 2056,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 249,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_29_border_collie__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1302,
+   "totalTokenCount": 2010,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 182,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_29_border_collie__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1321,
+   "totalTokenCount": 2088,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 242,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_29_border_collie__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1284,
+   "totalTokenCount": 2062,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 253,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_30_shiba_inu__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1296,
+   "totalTokenCount": 2037,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 213,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_30_shiba_inu__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1297,
+   "totalTokenCount": 2051,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 226,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_30_shiba_inu__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1291,
+   "totalTokenCount": 2060,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 242,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_30_shiba_inu__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1277,
+   "totalTokenCount": 2039,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 235,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_31_mini_poodle__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1297,
+   "totalTokenCount": 2060,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 237,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_31_mini_poodle__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1306,
+   "totalTokenCount": 2058,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 226,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_31_mini_poodle__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1304,
+   "totalTokenCount": 2020,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 191,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_31_mini_poodle__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1330,
+   "totalTokenCount": 2159,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 304,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_32_bichon_frise__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1268,
+   "totalTokenCount": 2021,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 225,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_32_bichon_frise__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 528,
+   "candidatesTokenCount": 1284,
+   "totalTokenCount": 2014,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 270
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 202,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_32_bichon_frise__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 2031,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 214,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_32_bichon_frise__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 527,
+   "candidatesTokenCount": 1330,
+   "totalTokenCount": 2133,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 269
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 276,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_33_maltese__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1324,
+   "totalTokenCount": 2093,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 243,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_33_maltese__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 526,
+   "candidatesTokenCount": 1306,
+   "totalTokenCount": 2043,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 268
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 211,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_33_maltese__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1311,
+   "totalTokenCount": 2093,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 257,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_33_maltese__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 525,
+   "candidatesTokenCount": 1293,
+   "totalTokenCount": 2010,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 267
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 192,
+   "serviceTier": "standard"
+  }
+ }
+]
