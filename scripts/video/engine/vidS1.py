@@ -29,27 +29,29 @@ def photo(id_,fx,fy,chf):
 # id, breed, name, face fx,fy, crop-height frac
 S=[('4588005','shiba_inu','SHIBA INU',.47,.60,.52),
    ('14160090','german_shepherd','GERMAN SHEPHERD',.40,.42,.55),
+   ('17880526','pomeranian','POMERANIAN',.49,.45,.85),
    ('13867936','siberian_husky','HUSKY',.44,.45,.58),
-   ('17742008','french_bulldog','FRENCH BULLDOG',.50,.42,.55),
-   ('31280056','yorkshire_terrier','YORKIE',.62,.55,.50),
    ('17613872','pembroke_welsh_corgi','CORGI',.50,.38,1.0),
-   ('36762252','golden_retriever','GOLDEN RETRIEVER',.48,.40,.55),
-   ('18124743','doberman_pinscher','DOBERMAN',.52,.38,.50)]
-END=['dachshund','pomeranian','border_collie']
+   ('7752789','golden_retriever','GOLDEN RETRIEVER',.48,.24,.50),
+   ('17489774','shih_tzu','SHIH TZU',.55,.45,.88),
+   ('30560156','labrador_retriever','LABRADOR',.50,.37,.62),
+   ('31280056','yorkshire_terrier','YORKIE',.62,.55,.50)]
+END=['dachshund','border_collie','rottweiler']
 USED=set()
-def cands(breed,prev,kinds):
+def cands(breed,prev,kinds,strict=True):
     for k in kinds:
         d=f'/home/claude/alphadog-styles/store/mk/{k}/{breed}'
         if not os.path.isdir(d): continue
         for c in sorted(os.listdir(d)):
             c=c[:-4]
-            if c[0] in '25' and c[1:] not in ('WH','AS') and c[1:] not in USED and (not prev or (c[0]!=prev[2][0] and c[1:]!=prev[2][1:] and k!=prev[0])): yield (k,breed,c)
+            if c[0] in '25' and c[1:] not in ('WH','AS') and (not strict or c[1:] not in USED) and (not prev or (c[0]!=prev[2][0] and c[1:]!=prev[2][1:] and k!=prev[0])): yield (k,breed,c)
 def build(breed,prev,box,start):
     kinds=['tee','hoodie','tank','cap_dad','polo','wtank']
     order=kinds[start:]+kinds[:start]
-    for r in cands(breed,prev,order):
-        try: m=apparel(*r,box);USED.add(r[2][1:]);return r,m
-        except BaseException as e: print('skip',r,repr(e)[:60])
+    for strict in (True,False):
+        for r in cands(breed,prev,order,strict):
+            try: m=apparel(*r,box);USED.add(r[2][1:]);return r,m
+            except BaseException as e: print('skip',r,repr(e)[:60])
     raise RuntimeError(breed)
 sel=[];MP=[];prev=None
 for i,s in enumerate(S):
@@ -59,7 +61,7 @@ EP=[]
 for i,b in enumerate(END):
     r,m=build(b,prev,(330,430),(i+2)%6);EP.append(m);prev=r;print('end',r)
 PH=[photo(s[0],*s[3:]) for s in S]
-TINT=[(236,225,255),(214,236,255),(222,246,226),(255,236,214),(240,255,255),(226,232,255),(212,243,255),(235,226,250)]
+TINT=[(236,225,255),(214,236,255),(222,246,226),(255,236,214),(240,255,255),(226,232,255),(212,243,255),(235,226,250),(255,240,226)]
 def mcard(item,tint):
     c=np.zeros((CHT,CWD,3),np.float32);yy=np.linspace(0,1,CHT)[:,None,None];t=np.array(tint[::-1],np.float32)
     c[:]=t*(0.96+0.04*yy)+8;return c
