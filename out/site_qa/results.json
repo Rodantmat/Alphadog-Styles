@@ -2,7 +2,7 @@
  "art": {
   "shard": "art",
   "base": "https://alphadogstyles.com",
-  "secs": 24.0,
+  "secs": 20.9,
   "checks": {
    "art_files": [
     1188,
@@ -13,7 +13,7 @@
     0
    ],
    "photos": [
-    59,
+    110,
     0
    ]
   },
@@ -36,7 +36,7 @@
  "cart": {
   "shard": "cart",
   "base": "https://alphadogstyles.com",
-  "secs": 298.9,
+  "secs": 306.4,
   "checks": {
    "add_to_cart": [
     45,
@@ -51,8 +51,8 @@
     0
    ],
    "cart_thumbs": [
-    46,
-    0
+    27,
+    19
    ],
    "cart_totals": [
     21,
@@ -63,8 +63,8 @@
     0
    ],
    "checkout": [
-    37,
-    0
+    36,
+    1
    ],
    "i18n": [
     4,
@@ -83,7 +83,55 @@
     0
    ]
   },
-  "defects": [],
+  "defects": [
+   {
+    "sev": "medium",
+    "area": "cart_thumbs",
+    "title": "Cart thumbnail does not match the line",
+    "repro": "cart chunk 1/2: add tee Black 3XL x1 front=none (rottweiler geo cool) back=head_s (bernese_mountain_dog line classic), open #/cart",
+    "expected": "('img/tee_black_back.webp', 'art/line_classic/bernese_mountain_dog_front.svg')",
+    "actual": "('img/tee_black_back.webp', 'art_w/line_classic/bernese_mountain_dog_front.svg')",
+    "shot": null,
+    "count": 19,
+    "examples": [
+     {
+      "repro": "cart chunk 1/2: add tee Dark Grey Heather M x1 front=body_l (german_shorthaired_pointer line heart) back=head_l (pug geo cool), open #/cart",
+      "actual": "('img/tee_dark-grey-heather_front.webp', 'art_w/line_heart/german_shorthaired_pointer_back.svg')"
+     },
+     {
+      "repro": "cart chunk 1/2: add hoodie Forest Green S x2 front=head_s (bulldog geo classic) back=none (french_bulldog line heart), open #/cart",
+      "actual": "('img/hoodie_forest-green_front.webp', 'art_w/geo_classic/bulldog_front.svg')"
+     },
+     {
+      "repro": "cart chunk 1/2: add hoodie Maroon 3XL x1 front=head_l (cane_corso line cool) back=none (rottweiler geo classic), open #/cart",
+      "actual": "('img/hoodie_maroon_front.webp', 'art_w/line_cool/cane_corso_front.svg')"
+     },
+     {
+      "repro": "cart chunk 1/2: add hoodie Dark Heather 2XL x1 front=body_s (cavalier_king_charles_spaniel geo heart) back=none (doberman_pinscher line cool), open #/cart",
+      "actual": "('img/hoodie_dark-heather_front.webp', 'art_w/geo_heart/cavalier_king_charles_spaniel_back.svg')"
+     },
+     {
+      "repro": "cart chunk 1/2: add tank Black L x1 front=head_s (pomeranian line classic) back=none (mini_poodle geo heart), open #/cart",
+      "actual": "('img/tank_black_front.webp', 'art_w/line_classic/pomeranian_front.svg')"
+     },
+     {
+      "repro": "cart chunk 1/2: add tank Navy M x2 front=head_l (bernese_mountain_dog geo cool) back=none (dachshund line classic), open #/cart",
+      "actual": "('img/tank_navy_front.webp', 'art_w/geo_cool/bernese_mountain_dog_front.svg')"
+     }
+    ]
+   },
+   {
+    "sev": "critical",
+    "area": "checkout",
+    "title": "Order payload item wrong / would be rejected by backend",
+    "repro": "",
+    "expected": "",
+    "actual": "{'id': '1793869142952', 'prod': 'tee', 'color': 'Soft Pink', 'size': 'M', 'qty': 3, 'front': {'part': 'head', 'size': 'l', 'breed': 'beagle', 'theme': 'geo', 'style': 'heart', 'ink': '#000000'}, 'back': None}",
+    "shot": null,
+    "count": 1,
+    "examples": []
+   }
+  ],
   "notes": [
    "Cart has no 'edit line' action (no UI to reopen a line in the designer); stored _s state is unused - not tested further."
   ],
@@ -102,13 +150,24 @@
      "url": "https://alphadogstyles.com/api/orders"
     }
    ],
-   "failed": []
+   "failed": [
+    {
+     "at": "/cart",
+     "url": "https://alphadogstyles.com/art_w/line_classic/mini_poodle_back.svg",
+     "err": "net::ERR_ABORTED"
+    },
+    {
+     "at": "/cart",
+     "url": "https://alphadogstyles.com/art_w/geo_heart/mini_poodle_back.svg",
+     "err": "net::ERR_ABORTED"
+    }
+   ]
   },
   "error_counts": {
    "console": 1,
    "pageerror": 0,
    "http": 1,
-   "failed": 0
+   "failed": 2
   },
   "api_calls": [
    {
@@ -128,7 +187,7 @@
      },
      "items": [
       {
-       "id": "1793768570854",
+       "id": "1793869142952",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -138,7 +197,8 @@
         "size": "l",
         "breed": "beagle",
         "theme": "geo",
-        "style": "heart"
+        "style": "heart",
+        "ink": "#000000"
        },
        "back": null
       }
@@ -167,7 +227,7 @@
      },
      "items": [
       {
-       "id": "1793768570854",
+       "id": "1793869142952",
        "prod": "tee",
        "color": "Soft Pink",
        "size": "M",
@@ -177,7 +237,8 @@
         "size": "l",
         "breed": "beagle",
         "theme": "geo",
-        "style": "heart"
+        "style": "heart",
+        "ink": "#000000"
        },
        "back": null
       }
@@ -224,7 +285,7 @@
      },
      "items": [
       {
-       "id": "1793768638216",
+       "id": "1793869210389",
        "prod": "hoodie",
        "color": "White",
        "size": "3XL",
@@ -234,14 +295,16 @@
         "size": "l",
         "breed": "pug",
         "theme": "line",
-        "style": "cool"
+        "style": "cool",
+        "ink": "#000000"
        },
        "back": {
         "part": "body",
         "size": "l",
         "breed": "pug",
         "theme": "line",
-        "style": "cool"
+        "style": "cool",
+        "ink": "#000000"
        }
       }
      ],
@@ -356,7 +419,7 @@
      },
      "items": [
       {
-       "id": "1793768670260",
+       "id": "1793869242469",
        "prod": "tee",
        "color": "White",
        "size": "M",
@@ -397,7 +460,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793768697475",
+     "id": "1793869269702",
      "s": {
       "prod": "hoodie",
       "color": "Sand",
@@ -415,7 +478,8 @@
        "breed": "shiba_inu",
        "theme": "geo",
        "style": "heart"
-      }
+      },
+      "ink": "#000000"
      }
     },
     "hash": null
@@ -450,7 +514,7 @@
    },
    {
     "m": "DELETE",
-    "path": "/api/designs/1793768697475",
+    "path": "/api/designs/1793869269702",
     "q": "",
     "body": null,
     "hash": null
@@ -494,7 +558,7 @@
     "path": "/api/designs",
     "q": "",
     "body": {
-     "id": "1793768724795",
+     "id": "1793869296970",
      "s": {
       "prod": "tank",
       "color": "White",
@@ -512,99 +576,26 @@
        "breed": "boxer",
        "theme": "line",
        "style": "heart"
-      }
+      },
+      "ink": "#000000"
      }
     },
     "hash": null
    }
   ]
  },
- "config": {
-  "shard": "config",
-  "base": "https://alphadogstyles.com",
-  "secs": 92.8,
-  "checks": {
-   "race": [
-    1,
-    0
-   ],
-   "designer": [
-    122,
-    0
-   ],
-   "colors_disabled": [
-    8,
-    0
-   ],
-   "designer_states": [
-    9126,
-    0
-   ],
-   "designer_price": [
-    3042,
-    0
-   ],
-   "placement": [
-    2442,
-    0
-   ],
-   "view_tabs": [
-    12,
-    0
-   ],
-   "qty": [
-    3,
-    0
-   ],
-   "art_combos": [
-    794,
-    0
-   ],
-   "carry_over": [
-    8,
-    0
-   ],
-   "url_params": [
-    9,
-    0
-   ],
-   "save_design": [
-    1,
-    0
-   ],
-   "i18n": [
-    4,
-    0
-   ]
-  },
-  "defects": [],
-  "notes": [],
-  "errors": {
-   "console": [],
-   "pageerror": [],
-   "http": [],
-   "failed": []
-  },
-  "error_counts": {
-   "console": 0,
-   "pageerror": 0,
-   "http": 0,
-   "failed": 0
-  },
-  "api_calls": []
- },
  "nav": {
   "shard": "nav",
   "base": "https://alphadogstyles.com",
-  "secs": 402.4,
+  "secs": 438.5,
   "checks": {
    "deploy": [
-    0,
-    1
+    1,
+    0
    ],
    "i18n": [
-    10,
-    0
+    8,
+    2
    ],
    "routes_en": [
     170,
@@ -619,7 +610,7 @@
     0
    ],
    "links": [
-    937,
+    975,
     0
    ],
    "clicks": [
@@ -639,8 +630,8 @@
     0
    ],
    "home": [
-    16,
-    0
+    12,
+    4
    ],
    "mobile": [
     35,
@@ -649,19 +640,53 @@
   },
   "defects": [
    {
-    "sev": "info",
-    "area": "deploy",
-    "title": "Live site files differ from repo main (deploy drift)",
-    "repro": "",
-    "expected": "live == repo store/",
-    "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
+    "sev": "medium",
+    "area": "i18n",
+    "title": "Untranslated UI strings in es (t() keys with no es entry)",
+    "repro": "switch language to es, visit all routes",
+    "expected": "0 missing",
+    "actual": "['Line color']",
     "shot": null,
     "count": 1,
     "examples": []
+   },
+   {
+    "sev": "medium",
+    "area": "i18n",
+    "title": "Untranslated UI strings in pt (t() keys with no pt entry)",
+    "repro": "switch language to pt, visit all routes",
+    "expected": "0 missing",
+    "actual": "['Line color']",
+    "shot": null,
+    "count": 1,
+    "examples": []
+   },
+   {
+    "sev": "medium",
+    "area": "home",
+    "title": "Home featured card preview doesn't match its link",
+    "repro": "home page featured grid",
+    "expected": "#/design?breed=bulldog&theme=line&style=heart&prod=hoodie&color=Black&part=head",
+    "actual": "img/hoodie_black_front.webp art_w/line_heart/bulldog_front.svg",
+    "shot": "out/site_qa/shots/nav/defect_Home_featured_card_preview_doesn_t_match_its_link.jpg",
+    "count": 4,
+    "examples": [
+     {
+      "repro": "home page featured grid",
+      "actual": "img/cap_mesh_black_front.webp art_w/line_cool/bernese_mountain_dog_back.svg"
+     },
+     {
+      "repro": "home page featured grid",
+      "actual": "img/wtank_solid-midnight-navy_front.webp art_w/line_classic/maltese_front.svg"
+     },
+     {
+      "repro": "home page featured grid",
+      "actual": "img/tee_black_front.webp art_w/line_heart/german_shepherd_back.svg"
+     }
+    ]
    }
   ],
   "notes": [
-   "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
    "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
   ],
   "errors": {
@@ -863,7 +888,7 @@
  "shop": {
   "shard": "shop",
   "base": "https://alphadogstyles.com",
-  "secs": 91.2,
+  "secs": 99.2,
   "checks": {
    "shop_filters": [
     30,
@@ -874,15 +899,52 @@
     0
    ],
    "shop_cards": [
-    1395,
-    0
+    1299,
+    96
    ],
    "card_to_designer": [
     916,
     0
    ]
   },
-  "defects": [],
+  "defects": [
+   {
+    "sev": "high",
+    "area": "shop_cards",
+    "title": "Shop card preview art differs from its breed/theme/style/part",
+    "repro": "#/shop card #9 (Labrador Retriever Continuous Line · Heart · Heavy Hoodie)",
+    "expected": "art/line_heart/labrador_retriever_front.svg",
+    "actual": "art_w/line_heart/labrador_retriever_front.svg",
+    "shot": "out/site_qa/shots/shop/defect_Shop_card_preview_art_differs_from_its_breed_theme.jpg",
+    "count": 96,
+    "examples": [
+     {
+      "repro": "#/shop card #11 (Labrador Retriever Geometric · Cool · Mesh Trucker Cap)",
+      "actual": "art_w/geo_cool/labrador_retriever_back.svg"
+     },
+     {
+      "repro": "#/shop card #13 (Golden Retriever Continuous Line · Classic · Women's Racerback Tank)",
+      "actual": "art_w/line_classic/golden_retriever_front.svg"
+     },
+     {
+      "repro": "#/shop card #15 (Golden Retriever Continuous Line · Heart · Premium Tee)",
+      "actual": "art_w/line_heart/golden_retriever_back.svg"
+     },
+     {
+      "repro": "#/shop card #16 (Golden Retriever Geometric · Classic · Heavy Hoodie)",
+      "actual": "art_w/geo_classic/golden_retriever_back.svg"
+     },
+     {
+      "repro": "#/shop card #18 (Golden Retriever Geometric · Heart · Premium Tee)",
+      "actual": "art_w/geo_heart/golden_retriever_front.svg"
+     },
+     {
+      "repro": "#/shop card #19 (German Shepherd Continuous Line · Classic · Tank Top)",
+      "actual": "art_w/line_classic/german_shepherd_back.svg"
+     }
+    ]
+   }
+  ],
   "notes": [],
   "errors": {
    "console": [],

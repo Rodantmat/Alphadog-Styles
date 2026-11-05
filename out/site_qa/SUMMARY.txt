@@ -1,50 +1,41 @@
-TOTAL 22544 checks passed, 1 failed; shards: ['art', 'cart', 'config', 'nav', 'shop']
-== art: 2435 checks passed, 0 failed, 0 distinct defects, 24.0s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
+TOTAL 6940 checks passed, 122 failed; shards: ['art', 'cart', 'nav', 'shop']
+== art: 2486 checks passed, 0 failed, 0 distinct defects, 20.9s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
    art_files: 1188 pass / 0 fail
    art_render: 1188 pass / 0 fail
-   photos: 59 pass / 0 fail
-== cart: 468 checks passed, 0 failed, 0 distinct defects, 298.9s, errors {'console': 1, 'pageerror': 0, 'http': 1, 'failed': 0}
+   photos: 110 pass / 0 fail
+== cart: 448 checks passed, 20 failed, 2 distinct defects, 306.4s, errors {'console': 1, 'pageerror': 0, 'http': 1, 'failed': 2}
    add_to_cart: 45 pass / 0 fail
    cart_lines: 238 pass / 0 fail
    cart_misc: 3 pass / 0 fail
    cart_price: 46 pass / 0 fail
    cart_qty: 5 pass / 0 fail
-   cart_thumbs: 46 pass / 0 fail
+   cart_thumbs: 27 pass / 19 fail
    cart_totals: 21 pass / 0 fail
-   checkout: 37 pass / 0 fail
+   checkout: 36 pass / 1 fail
    custom: 18 pass / 0 fail
    i18n: 4 pass / 0 fail
    saved_designs: 5 pass / 0 fail
-== config: 15572 checks passed, 0 failed, 0 distinct defects, 92.8s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
-   art_combos: 794 pass / 0 fail
-   carry_over: 8 pass / 0 fail
-   colors_disabled: 8 pass / 0 fail
-   designer: 122 pass / 0 fail
-   designer_price: 3042 pass / 0 fail
-   designer_states: 9126 pass / 0 fail
-   i18n: 4 pass / 0 fail
-   placement: 2442 pass / 0 fail
-   qty: 3 pass / 0 fail
-   race: 1 pass / 0 fail
-   save_design: 1 pass / 0 fail
-   url_params: 9 pass / 0 fail
-   view_tabs: 12 pass / 0 fail
-== nav: 1554 checks passed, 1 failed, 1 distinct defects, 402.4s, errors {'console': 5, 'pageerror': 0, 'http': 5, 'failed': 0}
+   [critical] Order payload item wrong / would be rejected by backend (x1)
+   [medium] Cart thumbnail does not match the line (x19)
+== nav: 1587 checks passed, 6 failed, 3 distinct defects, 438.5s, errors {'console': 5, 'pageerror': 0, 'http': 5, 'failed': 0}
    admin: 2 pass / 0 fail
    clicks: 22 pass / 0 fail
-   deploy: 0 pass / 1 fail
+   deploy: 1 pass / 0 fail
    forms: 12 pass / 0 fail
-   home: 16 pass / 0 fail
-   i18n: 10 pass / 0 fail
-   links: 937 pass / 0 fail
+   home: 12 pass / 4 fail
+   i18n: 8 pass / 2 fail
+   links: 975 pass / 0 fail
    login: 10 pass / 0 fail
    mobile: 35 pass / 0 fail
    routes_en: 170 pass / 0 fail
    routes_es: 170 pass / 0 fail
    routes_pt: 170 pass / 0 fail
-   [info] Live site files differ from repo main (deploy drift) (x1)
-== shop: 2515 checks passed, 0 failed, 0 distinct defects, 91.2s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
+   [medium] Untranslated UI strings in es (t() keys with no es entry) (x1)
+   [medium] Untranslated UI strings in pt (t() keys with no pt entry) (x1)
+   [medium] Home featured card preview doesn't match its link (x4)
+== shop: 2419 checks passed, 96 failed, 1 distinct defects, 99.2s, errors {'console': 0, 'pageerror': 0, 'http': 0, 'failed': 0}
    card_to_designer: 916 pass / 0 fail
-   shop_cards: 1395 pass / 0 fail
+   shop_cards: 1299 pass / 96 fail
    shop_filters: 30 pass / 0 fail
    shop_search: 174 pass / 0 fail
+   [high] Shop card preview art differs from its breed/theme/style/part (x96)

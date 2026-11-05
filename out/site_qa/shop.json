@@ -1,7 +1,7 @@
 {
  "shard": "shop",
  "base": "https://alphadogstyles.com",
- "secs": 91.2,
+ "secs": 99.2,
  "checks": {
   "shop_filters": [
    30,
@@ -12,54 +12,123 @@
    0
   ],
   "shop_cards": [
-   1395,
-   0
+   1299,
+   96
   ],
   "card_to_designer": [
    916,
    0
   ]
  },
- "defects": [],
+ "defects": [
+  {
+   "sev": "high",
+   "area": "shop_cards",
+   "title": "Shop card preview art differs from its breed/theme/style/part",
+   "repro": "#/shop card #9 (Labrador Retriever Continuous Line · Heart · Heavy Hoodie)",
+   "expected": "art/line_heart/labrador_retriever_front.svg",
+   "actual": "art_w/line_heart/labrador_retriever_front.svg",
+   "shot": "out/site_qa/shots/shop/defect_Shop_card_preview_art_differs_from_its_breed_theme.jpg",
+   "count": 96,
+   "examples": [
+    {
+     "repro": "#/shop card #11 (Labrador Retriever Geometric · Cool · Mesh Trucker Cap)",
+     "actual": "art_w/geo_cool/labrador_retriever_back.svg"
+    },
+    {
+     "repro": "#/shop card #13 (Golden Retriever Continuous Line · Classic · Women's Racerback Tank)",
+     "actual": "art_w/line_classic/golden_retriever_front.svg"
+    },
+    {
+     "repro": "#/shop card #15 (Golden Retriever Continuous Line · Heart · Premium Tee)",
+     "actual": "art_w/line_heart/golden_retriever_back.svg"
+    },
+    {
+     "repro": "#/shop card #16 (Golden Retriever Geometric · Classic · Heavy Hoodie)",
+     "actual": "art_w/geo_classic/golden_retriever_back.svg"
+    },
+    {
+     "repro": "#/shop card #18 (Golden Retriever Geometric · Heart · Premium Tee)",
+     "actual": "art_w/geo_heart/golden_retriever_front.svg"
+    },
+    {
+     "repro": "#/shop card #19 (German Shepherd Continuous Line · Classic · Tank Top)",
+     "actual": "art_w/line_classic/german_shepherd_back.svg"
+    }
+   ]
+  }
+ ],
  "notes": [],
  "data": {
   "translated_breed_names_es": 20,
   "card_subtitle_es": "Línea Continua · Clásico · Sudadera Gruesa",
   "translated_breed_names_pt": 19,
   "card_subtitle_pt": "Linha Contínua · Clássico · Moletom Grosso",
-  "shop_unique_images": 229,
+  "shop_unique_images": 261,
   "shop_card_product_color_mix": {
-   "cap_dad|Khaki": 5,
-   "cap_dad|Light Blue": 5,
-   "cap_dad|Pink": 5,
-   "cap_dad|Stone": 5,
-   "cap_dad|White": 5,
-   "cap_foam|Blue/White": 4,
-   "cap_foam|Light Pink/White": 4,
-   "cap_foam|White": 4,
-   "cap_mesh|White": 12,
-   "hoodie|Ash": 6,
-   "hoodie|Light Blue": 6,
-   "hoodie|Light Pink": 6,
-   "hoodie|Sand": 7,
-   "hoodie|Sport Grey": 6,
-   "hoodie|White": 6,
-   "polo|Athletic Heather": 21,
-   "polo|White": 4,
-   "tank|Athletic Heather": 21,
-   "tank|White": 4,
-   "tee|Ash": 5,
-   "tee|Athletic Heather": 6,
-   "tee|Light Blue": 5,
-   "tee|Natural": 6,
-   "tee|Soft Cream": 5,
-   "tee|Soft Pink": 5,
-   "tee|White": 5,
-   "wtank|Heather Grey": 5,
-   "wtank|Solid Light Orange": 5,
-   "wtank|Solid Mint": 5,
-   "wtank|Solid Tahiti Blue": 5,
-   "wtank|Solid White": 5
+   "cap_dad|Black": 2,
+   "cap_dad|Dark Grey": 3,
+   "cap_dad|Green Camo": 2,
+   "cap_dad|Khaki": 2,
+   "cap_dad|Light Blue": 3,
+   "cap_dad|Navy": 2,
+   "cap_dad|Pink": 3,
+   "cap_dad|Spruce": 2,
+   "cap_dad|Stone": 3,
+   "cap_dad|White": 3,
+   "cap_foam|Black": 2,
+   "cap_foam|Black/White": 2,
+   "cap_foam|Blue/White": 2,
+   "cap_foam|Dark Navy": 2,
+   "cap_foam|Light Pink/White": 2,
+   "cap_foam|White": 2,
+   "cap_mesh|Black": 3,
+   "cap_mesh|Charcoal": 3,
+   "cap_mesh|Navy": 3,
+   "cap_mesh|White": 3,
+   "hoodie|Ash": 3,
+   "hoodie|Black": 3,
+   "hoodie|Charcoal": 3,
+   "hoodie|Dark Heather": 3,
+   "hoodie|Forest Green": 3,
+   "hoodie|Light Blue": 3,
+   "hoodie|Light Pink": 3,
+   "hoodie|Maroon": 3,
+   "hoodie|Navy": 3,
+   "hoodie|Sand": 4,
+   "hoodie|Sport Grey": 3,
+   "hoodie|White": 3,
+   "polo|Athletic Heather": 7,
+   "polo|Black": 6,
+   "polo|J. Navy": 6,
+   "polo|White": 6,
+   "tank|Athletic Heather": 7,
+   "tank|Black": 6,
+   "tank|Navy": 6,
+   "tank|White": 6,
+   "tee|Ash": 2,
+   "tee|Asphalt": 3,
+   "tee|Athletic Heather": 3,
+   "tee|Black": 3,
+   "tee|Dark Grey Heather": 3,
+   "tee|Forest": 3,
+   "tee|Light Blue": 3,
+   "tee|Maroon": 2,
+   "tee|Natural": 3,
+   "tee|Navy": 2,
+   "tee|Red": 3,
+   "tee|Soft Cream": 3,
+   "tee|Soft Pink": 2,
+   "tee|White": 2,
+   "wtank|Heather Grey": 3,
+   "wtank|Solid Black": 2,
+   "wtank|Solid Indigo": 3,
+   "wtank|Solid Light Orange": 3,
+   "wtank|Solid Midnight Navy": 3,
+   "wtank|Solid Military Green": 3,
+   "wtank|Solid Mint": 3,
+   "wtank|Solid Tahiti Blue": 3,
+   "wtank|Solid White": 2
   },
   "adjacent_same_garment_color": 0,
   "cards_clicked_through": 198

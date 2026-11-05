@@ -1,15 +1,15 @@
 {
  "shard": "nav",
  "base": "https://alphadogstyles.com",
- "secs": 402.4,
+ "secs": 438.5,
  "checks": {
   "deploy": [
-   0,
-   1
+   1,
+   0
   ],
   "i18n": [
-   10,
-   0
+   8,
+   2
   ],
   "routes_en": [
    170,
@@ -24,7 +24,7 @@
    0
   ],
   "links": [
-   937,
+   975,
    0
   ],
   "clicks": [
@@ -44,8 +44,8 @@
    0
   ],
   "home": [
-   16,
-   0
+   12,
+   4
   ],
   "mobile": [
    35,
@@ -54,19 +54,53 @@
  },
  "defects": [
   {
-   "sev": "info",
-   "area": "deploy",
-   "title": "Live site files differ from repo main (deploy drift)",
-   "repro": "",
-   "expected": "live == repo store/",
-   "actual": "{\"js/app.js\": {\"same\": false, \"live\": \"1e99dd7893\", \"repo\": \"65b149bf51\"}}",
+   "sev": "medium",
+   "area": "i18n",
+   "title": "Untranslated UI strings in es (t() keys with no es entry)",
+   "repro": "switch language to es, visit all routes",
+   "expected": "0 missing",
+   "actual": "['Line color']",
    "shot": null,
    "count": 1,
    "examples": []
+  },
+  {
+   "sev": "medium",
+   "area": "i18n",
+   "title": "Untranslated UI strings in pt (t() keys with no pt entry)",
+   "repro": "switch language to pt, visit all routes",
+   "expected": "0 missing",
+   "actual": "['Line color']",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  },
+  {
+   "sev": "medium",
+   "area": "home",
+   "title": "Home featured card preview doesn't match its link",
+   "repro": "home page featured grid",
+   "expected": "#/design?breed=bulldog&theme=line&style=heart&prod=hoodie&color=Black&part=head",
+   "actual": "img/hoodie_black_front.webp art_w/line_heart/bulldog_front.svg",
+   "shot": "out/site_qa/shots/nav/defect_Home_featured_card_preview_doesn_t_match_its_link.jpg",
+   "count": 4,
+   "examples": [
+    {
+     "repro": "home page featured grid",
+     "actual": "img/cap_mesh_black_front.webp art_w/line_cool/bernese_mountain_dog_back.svg"
+    },
+    {
+     "repro": "home page featured grid",
+     "actual": "img/wtank_solid-midnight-navy_front.webp art_w/line_classic/maltese_front.svg"
+    },
+    {
+     "repro": "home page featured grid",
+     "actual": "img/tee_black_front.webp art_w/line_heart/german_shepherd_back.svg"
+    }
+   ]
   }
  ],
  "notes": [
-  "API link not followed (would start OAuth): /api/auth/oauth/facebook/start?next=account",
   "API link not followed (would start OAuth): /api/auth/oauth/google/start?next=account"
  ],
  "data": {
@@ -79,18 +113,18 @@
   "deploy_drift": {
    "index.html": {
     "same": true,
-    "live": "b179f08ebd",
-    "repo": "b179f08ebd"
+    "live": "309e07d894",
+    "repo": "309e07d894"
    },
    "js/app.js": {
-    "same": false,
-    "live": "1e99dd7893",
-    "repo": "65b149bf51"
+    "same": true,
+    "live": "a4e4dcdeea",
+    "repo": "a4e4dcdeea"
    },
    "js/garment.js": {
     "same": true,
-    "live": "503f913149",
-    "repo": "503f913149"
+    "live": "d0e482787d",
+    "repo": "d0e482787d"
    },
    "js/placement.js": {
     "same": true,
@@ -109,13 +143,13 @@
    },
    "data/catalog.json": {
     "same": true,
-    "live": "426c62a501",
-    "repo": "426c62a501"
+    "live": "d12ac6708c",
+    "repo": "d12ac6708c"
    },
    "css/style.css": {
     "same": true,
-    "live": "569415956f",
-    "repo": "569415956f"
+    "live": "24083a1e80",
+    "repo": "24083a1e80"
    }
   },
   "health": {
@@ -161,18 +195,18 @@
   },
   "i18n_missing_keys": {
    "en": [],
-   "es": [],
-   "pt": []
+   "es": [
+    "Line color"
+   ],
+   "pt": [
+    "Line color"
+   ]
   },
   "possibly_untranslated": {
    "es": {
     "#/": [
-     "Border Collie",
-     "Boston Terrier",
-     "Cane Corso",
      "English",
-     "Português",
-     "Shiba Inu"
+     "Português"
     ],
     "#/shop": [
      "Beagle",
@@ -245,6 +279,7 @@
      "English",
      "Golden Retriever",
      "Labrador Retriever",
+     "Line color",
      "Português",
      "Rottweiler",
      "Shiba Inu",
@@ -328,13 +363,9 @@
    },
    "pt": {
     "#/": [
-     "Border Collie",
-     "Boston Terrier",
-     "Boxer",
-     "Cane Corso",
      "English",
      "Português",
-     "Shiba Inu"
+     "Rottweiler"
     ],
     "#/shop": [
      "Beagle",
@@ -411,6 +442,7 @@
      "English",
      "Golden Retriever",
      "Labrador Retriever",
+     "Line color",
      "Português",
      "Rottweiler",
      "Shiba Inu",
@@ -493,11 +525,10 @@
     ]
    }
   },
-  "links_found": 471,
+  "links_found": 489,
   "header_footer_clicks": 20,
   "social_login_buttons": [
-   "/api/auth/oauth/google/start?next=account",
-   "/api/auth/oauth/facebook/start?next=account"
+   "/api/auth/oauth/google/start?next=account"
   ],
   "mobile": {
    "#/": {

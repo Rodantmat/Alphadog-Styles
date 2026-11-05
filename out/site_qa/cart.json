@@ -1,7 +1,7 @@
 {
  "shard": "cart",
  "base": "https://alphadogstyles.com",
- "secs": 298.9,
+ "secs": 306.4,
  "checks": {
   "add_to_cart": [
    45,
@@ -16,8 +16,8 @@
    0
   ],
   "cart_thumbs": [
-   46,
-   0
+   27,
+   19
   ],
   "cart_totals": [
    21,
@@ -28,8 +28,8 @@
    0
   ],
   "checkout": [
-   37,
-   0
+   36,
+   1
   ],
   "i18n": [
    4,
@@ -48,7 +48,55 @@
    0
   ]
  },
- "defects": [],
+ "defects": [
+  {
+   "sev": "medium",
+   "area": "cart_thumbs",
+   "title": "Cart thumbnail does not match the line",
+   "repro": "cart chunk 1/2: add tee Black 3XL x1 front=none (rottweiler geo cool) back=head_s (bernese_mountain_dog line classic), open #/cart",
+   "expected": "('img/tee_black_back.webp', 'art/line_classic/bernese_mountain_dog_front.svg')",
+   "actual": "('img/tee_black_back.webp', 'art_w/line_classic/bernese_mountain_dog_front.svg')",
+   "shot": null,
+   "count": 19,
+   "examples": [
+    {
+     "repro": "cart chunk 1/2: add tee Dark Grey Heather M x1 front=body_l (german_shorthaired_pointer line heart) back=head_l (pug geo cool), open #/cart",
+     "actual": "('img/tee_dark-grey-heather_front.webp', 'art_w/line_heart/german_shorthaired_pointer_back.svg')"
+    },
+    {
+     "repro": "cart chunk 1/2: add hoodie Forest Green S x2 front=head_s (bulldog geo classic) back=none (french_bulldog line heart), open #/cart",
+     "actual": "('img/hoodie_forest-green_front.webp', 'art_w/geo_classic/bulldog_front.svg')"
+    },
+    {
+     "repro": "cart chunk 1/2: add hoodie Maroon 3XL x1 front=head_l (cane_corso line cool) back=none (rottweiler geo classic), open #/cart",
+     "actual": "('img/hoodie_maroon_front.webp', 'art_w/line_cool/cane_corso_front.svg')"
+    },
+    {
+     "repro": "cart chunk 1/2: add hoodie Dark Heather 2XL x1 front=body_s (cavalier_king_charles_spaniel geo heart) back=none (doberman_pinscher line cool), open #/cart",
+     "actual": "('img/hoodie_dark-heather_front.webp', 'art_w/geo_heart/cavalier_king_charles_spaniel_back.svg')"
+    },
+    {
+     "repro": "cart chunk 1/2: add tank Black L x1 front=head_s (pomeranian line classic) back=none (mini_poodle geo heart), open #/cart",
+     "actual": "('img/tank_black_front.webp', 'art_w/line_classic/pomeranian_front.svg')"
+    },
+    {
+     "repro": "cart chunk 1/2: add tank Navy M x2 front=head_l (bernese_mountain_dog geo cool) back=none (dachshund line classic), open #/cart",
+     "actual": "('img/tank_navy_front.webp', 'art_w/geo_cool/bernese_mountain_dog_front.svg')"
+    }
+   ]
+  },
+  {
+   "sev": "critical",
+   "area": "checkout",
+   "title": "Order payload item wrong / would be rejected by backend",
+   "repro": "",
+   "expected": "",
+   "actual": "{'id': '1793869142952', 'prod': 'tee', 'color': 'Soft Pink', 'size': 'M', 'qty': 3, 'front': {'part': 'head', 'size': 'l', 'breed': 'beagle', 'theme': 'geo', 'style': 'heart', 'ink': '#000000'}, 'back': None}",
+   "shot": null,
+   "count": 1,
+   "examples": []
+  }
+ ],
  "notes": [
   "Cart has no 'edit line' action (no UI to reopen a line in the designer); stored _s state is unused - not tested further."
  ],
@@ -68,7 +116,7 @@
    },
    "items": [
     {
-     "id": "1793768570854",
+     "id": "1793869142952",
      "prod": "tee",
      "color": "Soft Pink",
      "size": "M",
@@ -78,7 +126,8 @@
       "size": "l",
       "breed": "beagle",
       "theme": "geo",
-      "style": "heart"
+      "style": "heart",
+      "ink": "#000000"
      },
      "back": null
     }
@@ -104,13 +153,24 @@
     "url": "https://alphadogstyles.com/api/orders"
    }
   ],
-  "failed": []
+  "failed": [
+   {
+    "at": "/cart",
+    "url": "https://alphadogstyles.com/art_w/line_classic/mini_poodle_back.svg",
+    "err": "net::ERR_ABORTED"
+   },
+   {
+    "at": "/cart",
+    "url": "https://alphadogstyles.com/art_w/geo_heart/mini_poodle_back.svg",
+    "err": "net::ERR_ABORTED"
+   }
+  ]
  },
  "error_counts": {
   "console": 1,
   "pageerror": 0,
   "http": 1,
-  "failed": 0
+  "failed": 2
  },
  "api_calls": [
   {
@@ -130,7 +190,7 @@
     },
     "items": [
      {
-      "id": "1793768570854",
+      "id": "1793869142952",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -140,7 +200,8 @@
        "size": "l",
        "breed": "beagle",
        "theme": "geo",
-       "style": "heart"
+       "style": "heart",
+       "ink": "#000000"
       },
       "back": null
      }
@@ -169,7 +230,7 @@
     },
     "items": [
      {
-      "id": "1793768570854",
+      "id": "1793869142952",
       "prod": "tee",
       "color": "Soft Pink",
       "size": "M",
@@ -179,7 +240,8 @@
        "size": "l",
        "breed": "beagle",
        "theme": "geo",
-       "style": "heart"
+       "style": "heart",
+       "ink": "#000000"
       },
       "back": null
      }
@@ -226,7 +288,7 @@
     },
     "items": [
      {
-      "id": "1793768638216",
+      "id": "1793869210389",
       "prod": "hoodie",
       "color": "White",
       "size": "3XL",
@@ -236,14 +298,16 @@
        "size": "l",
        "breed": "pug",
        "theme": "line",
-       "style": "cool"
+       "style": "cool",
+       "ink": "#000000"
       },
       "back": {
        "part": "body",
        "size": "l",
        "breed": "pug",
        "theme": "line",
-       "style": "cool"
+       "style": "cool",
+       "ink": "#000000"
       }
      }
     ],
@@ -358,7 +422,7 @@
     },
     "items": [
      {
-      "id": "1793768670260",
+      "id": "1793869242469",
       "prod": "tee",
       "color": "White",
       "size": "M",
@@ -399,7 +463,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793768697475",
+    "id": "1793869269702",
     "s": {
      "prod": "hoodie",
      "color": "Sand",
@@ -417,7 +481,8 @@
       "breed": "shiba_inu",
       "theme": "geo",
       "style": "heart"
-     }
+     },
+     "ink": "#000000"
     }
    },
    "hash": null
@@ -452,7 +517,7 @@
   },
   {
    "m": "DELETE",
-   "path": "/api/designs/1793768697475",
+   "path": "/api/designs/1793869269702",
    "q": "",
    "body": null,
    "hash": null
@@ -496,7 +561,7 @@
    "path": "/api/designs",
    "q": "",
    "body": {
-    "id": "1793768724795",
+    "id": "1793869296970",
     "s": {
      "prod": "tank",
      "color": "White",
@@ -514,7 +579,8 @@
       "breed": "boxer",
       "theme": "line",
       "style": "heart"
-     }
+     },
+     "ink": "#000000"
     }
    },
    "hash": null
