@@ -14,3 +14,4 @@
 - Concept X (neon sign, v2 with print-match transition): "Night Sky Hip Hop" (Michael Ramir C., Mixkit) - prototype, awaiting approval
 - Concept F1 (Boston terrier snack gag): "Funkee Monkeee" (Mixkit) - prototype
 - Concept F2 (funny breed compilation): "Dirty Thinkin'" (Mixkit) - prototype
+- Concept S1 (real dog in shades vs our design): "Island Beat" (Mixkit) - prototype
