@@ -1,0 +1,4343 @@
+{
+ "meta": {
+  "tee": {
+   "bp": 12,
+   "colors": {
+    "18069": "Asphalt",
+    "18101": "Black",
+    "18149": "Dark Grey Heather",
+    "18181": "Forest",
+    "18373": "Maroon",
+    "18397": "Navy",
+    "18445": "Red"
+   },
+   "missing": [],
+   "sizes": {
+    "Black": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Dark Grey Heather": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Navy": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Asphalt": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Forest": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Maroon": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Red": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ]
+   }
+  },
+  "hoodie": {
+   "bp": 77,
+   "colors": {
+    "32879": "Dark Heather",
+    "32887": "Maroon",
+    "32895": "Navy",
+    "32919": "Black",
+    "33418": "Forest Green",
+    "42212": "Charcoal"
+   },
+   "missing": [],
+   "sizes": {
+    "Black": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ],
+    "Navy": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ],
+    "Charcoal": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ],
+    "Forest Green": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ],
+    "Maroon": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ],
+    "Dark Heather": [
+     "2XL",
+     "3XL",
+     "4XL",
+     "5XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ]
+   }
+  },
+  "tank": {
+   "bp": 39,
+   "colors": {
+    "24640": "Black",
+    "24670": "Dark Grey",
+    "32416": "Navy"
+   },
+   "missing": [],
+   "sizes": {
+    "Black": [
+     "2XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Dark Grey": [
+     "M",
+     "XL",
+     "XS"
+    ],
+    "Navy": [
+     "2XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ]
+   }
+  },
+  "wtank": {
+   "bp": 18,
+   "colors": {
+    "19288": "Solid Black",
+    "19298": "Solid Dark Gray",
+    "19308": "Solid Indigo",
+    "19328": "Solid Midnight Navy",
+    "19333": "Solid Military Green"
+   },
+   "missing": [],
+   "sizes": {
+    "Solid Black": [
+     "2XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Solid Dark Gray": [
+     "2XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ],
+    "Solid Midnight Navy": [
+     "2XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Solid Military Green": [
+     "2XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ],
+    "Solid Indigo": [
+     "2XL",
+     "L",
+     "M",
+     "S",
+     "XL",
+     "XS"
+    ]
+   }
+  },
+  "polo": {
+   "bp": 1402,
+   "colors": {
+    "104624": "Black",
+    "104630": "J. Navy"
+   },
+   "missing": [],
+   "sizes": {
+    "Black": [
+     "2XL",
+     "3XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ],
+    "J. Navy": [
+     "2XL",
+     "3XL",
+     "L",
+     "M",
+     "S",
+     "XL"
+    ]
+   }
+  },
+  "cap_dad": {
+   "bp": 1447,
+   "colors": {
+    "105372": "Black",
+    "105373": "Dark Grey",
+    "105374": "Green Camo",
+    "105377": "Navy",
+    "105379": "Spruce"
+   },
+   "missing": [],
+   "sizes": {
+    "Black": [
+     "One size"
+    ],
+    "Navy": [
+     "One size"
+    ],
+    "Dark Grey": [
+     "One size"
+    ],
+    "Spruce": [
+     "One size"
+    ],
+    "Green Camo": [
+     "One size"
+    ]
+   }
+  },
+  "cap_foam": {
+   "bp": 1735,
+   "colors": {
+    "118542": "Black",
+    "118551": "Dark Navy",
+    "118552": "Black/White"
+   },
+   "missing": [],
+   "sizes": {
+    "Black": [
+     "One size"
+    ],
+    "Dark Navy": [
+     "One size"
+    ],
+    "Black/White": [
+     "One size"
+    ]
+   }
+  },
+  "cap_mesh": {
+   "bp": 1734,
+   "colors": {
+    "118544": "Navy",
+    "118546": "Black",
+    "118547": "Charcoal"
+   },
+   "missing": [],
+   "sizes": {
+    "Black": [
+     "One size"
+    ],
+    "Navy": [
+     "One size"
+    ],
+    "Charcoal": [
+     "One size"
+    ]
+   }
+  }
+ },
+ "images": [
+  {
+   "file": "out/blanks_dark/tee_00.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tee_01.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_02.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_03.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_04.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_05.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_06.jpg",
+   "prod": "tee",
+   "position": "neck",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_07.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_08.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_09.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_10.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_11.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_12.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_13.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_14.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_15.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_16.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_17.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_18.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_19.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_20.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_21.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_22.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_23.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_24.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_25.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_26.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_27.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_28.jpg",
+   "prod": "tee",
+   "position": "left_sleeve",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_29.jpg",
+   "prod": "tee",
+   "position": "right_sleeve",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_30.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_31.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_32.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Forest"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tee_33.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_34.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_35.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_36.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_37.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_38.jpg",
+   "prod": "tee",
+   "position": "neck",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_39.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_40.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_41.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_42.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_43.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_44.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_45.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_46.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_47.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_48.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_49.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_50.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_51.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_52.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_53.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_54.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_55.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_56.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_57.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_58.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_59.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_60.jpg",
+   "prod": "tee",
+   "position": "left_sleeve",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_61.jpg",
+   "prod": "tee",
+   "position": "right_sleeve",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_62.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_63.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Forest"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_64.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tee_65.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_66.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_67.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_68.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_69.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_70.jpg",
+   "prod": "tee",
+   "position": "neck",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_71.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_72.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_73.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_74.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_75.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_76.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_77.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_78.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_79.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_80.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_81.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_82.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_83.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_84.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_85.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_86.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_87.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_88.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_89.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_90.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_91.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_92.jpg",
+   "prod": "tee",
+   "position": "left_sleeve",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_93.jpg",
+   "prod": "tee",
+   "position": "right_sleeve",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_94.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_95.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Asphalt"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_96.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tee_97.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_98.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_99.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_100.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_101.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_102.jpg",
+   "prod": "tee",
+   "position": "neck",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_103.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_104.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_105.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_106.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_107.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_108.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_109.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_110.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_111.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_112.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_113.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_114.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_115.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_116.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_117.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_118.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_119.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_120.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_121.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_122.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_123.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_124.jpg",
+   "prod": "tee",
+   "position": "left_sleeve",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_125.jpg",
+   "prod": "tee",
+   "position": "right_sleeve",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_126.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_127.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Dark Grey Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_128.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tee_129.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_130.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_131.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_132.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_133.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_134.jpg",
+   "prod": "tee",
+   "position": "neck",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_135.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_136.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_137.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_138.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_139.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_140.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_141.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_142.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_143.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_144.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_145.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_146.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_147.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_148.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_149.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_150.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_151.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_152.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_153.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_154.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_155.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_156.jpg",
+   "prod": "tee",
+   "position": "left_sleeve",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_157.jpg",
+   "prod": "tee",
+   "position": "right_sleeve",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_158.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_159.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_160.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Maroon"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tee_161.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_162.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_163.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_164.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_165.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_166.jpg",
+   "prod": "tee",
+   "position": "neck",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_167.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_168.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_169.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_170.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_171.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_172.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_173.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_174.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_175.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_176.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_177.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_178.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_179.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_180.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_181.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_182.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_183.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_184.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_185.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_186.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_187.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_188.jpg",
+   "prod": "tee",
+   "position": "left_sleeve",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_189.jpg",
+   "prod": "tee",
+   "position": "right_sleeve",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_190.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_191.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_192.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Red"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tee_193.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_194.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_195.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_196.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_197.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_198.jpg",
+   "prod": "tee",
+   "position": "neck",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_199.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_200.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_201.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_202.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_203.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_204.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_205.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_206.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_207.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_208.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_209.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_210.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_211.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_212.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_213.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_214.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_215.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_216.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_217.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_218.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_219.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_220.jpg",
+   "prod": "tee",
+   "position": "left_sleeve",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_221.jpg",
+   "prod": "tee",
+   "position": "right_sleeve",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_222.jpg",
+   "prod": "tee",
+   "position": "front",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_223.jpg",
+   "prod": "tee",
+   "position": "back",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tee_224.jpg",
+   "prod": "tee",
+   "position": "other",
+   "colors": [
+    "Red"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_00.jpg",
+   "prod": "hoodie",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/hoodie_01.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_02.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_03.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_04.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_05.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_06.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_07.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_08.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_09.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_10.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_11.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_12.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_13.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_14.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_15.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_16.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_17.jpg",
+   "prod": "hoodie",
+   "position": "front",
+   "colors": [
+    "Maroon"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/hoodie_18.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_19.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_20.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_21.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_22.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_23.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_24.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_25.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_26.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_27.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_28.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_29.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_30.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_31.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_32.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_33.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Maroon"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_34.jpg",
+   "prod": "hoodie",
+   "position": "front",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/hoodie_35.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_36.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_37.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_38.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_39.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_40.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_41.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_42.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_43.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_44.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_45.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_46.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_47.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_48.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_49.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_50.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Forest Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_51.jpg",
+   "prod": "hoodie",
+   "position": "front",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/hoodie_52.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_53.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_54.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_55.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_56.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_57.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_58.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_59.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_60.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_61.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_62.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_63.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_64.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_65.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_66.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_67.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Dark Heather"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_68.jpg",
+   "prod": "hoodie",
+   "position": "front",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/hoodie_69.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_70.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_71.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_72.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_73.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_74.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_75.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_76.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_77.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_78.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_79.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_80.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_81.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_82.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_83.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_84.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_85.jpg",
+   "prod": "hoodie",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/hoodie_86.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_87.jpg",
+   "prod": "hoodie",
+   "position": "back",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_88.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_89.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_90.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_91.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_92.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_93.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_94.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_95.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_96.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_97.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_98.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_99.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_100.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_101.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/hoodie_102.jpg",
+   "prod": "hoodie",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tank_00.jpg",
+   "prod": "tank",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tank_01.jpg",
+   "prod": "tank",
+   "position": "back",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tank_02.jpg",
+   "prod": "tank",
+   "position": "front",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tank_03.jpg",
+   "prod": "tank",
+   "position": "back",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tank_04.jpg",
+   "prod": "tank",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/tank_05.jpg",
+   "prod": "tank",
+   "position": "back",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/tank_06.jpg",
+   "prod": "tank",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_00.jpg",
+   "prod": "wtank",
+   "position": "other",
+   "colors": [
+    "Solid Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/wtank_01.jpg",
+   "prod": "wtank",
+   "position": "front",
+   "colors": [
+    "Solid Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_02.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_03.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_04.jpg",
+   "prod": "wtank",
+   "position": "other",
+   "colors": [
+    "Solid Military Green"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/wtank_05.jpg",
+   "prod": "wtank",
+   "position": "front",
+   "colors": [
+    "Solid Military Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_06.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Military Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_07.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Military Green"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_08.jpg",
+   "prod": "wtank",
+   "position": "other",
+   "colors": [
+    "Solid Indigo"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/wtank_09.jpg",
+   "prod": "wtank",
+   "position": "front",
+   "colors": [
+    "Solid Indigo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_10.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Indigo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_11.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Indigo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_12.jpg",
+   "prod": "wtank",
+   "position": "other",
+   "colors": [
+    "Solid Midnight Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/wtank_13.jpg",
+   "prod": "wtank",
+   "position": "front",
+   "colors": [
+    "Solid Midnight Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_14.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Midnight Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_15.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Midnight Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_16.jpg",
+   "prod": "wtank",
+   "position": "other",
+   "colors": [
+    "Solid Dark Gray"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/wtank_17.jpg",
+   "prod": "wtank",
+   "position": "front",
+   "colors": [
+    "Solid Dark Gray"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_18.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Dark Gray"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_19.jpg",
+   "prod": "wtank",
+   "position": "back",
+   "colors": [
+    "Solid Dark Gray"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/wtank_20.jpg",
+   "prod": "wtank",
+   "position": "other",
+   "colors": [
+    "Solid Dark Gray"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_00.jpg",
+   "prod": "polo",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/polo_01.jpg",
+   "prod": "polo",
+   "position": "back",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_02.jpg",
+   "prod": "polo",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_03.jpg",
+   "prod": "polo",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_04.jpg",
+   "prod": "polo",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_05.jpg",
+   "prod": "polo",
+   "position": "front",
+   "colors": [
+    "J. Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/polo_06.jpg",
+   "prod": "polo",
+   "position": "back",
+   "colors": [
+    "J. Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_07.jpg",
+   "prod": "polo",
+   "position": "other",
+   "colors": [
+    "J. Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_08.jpg",
+   "prod": "polo",
+   "position": "other",
+   "colors": [
+    "J. Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/polo_09.jpg",
+   "prod": "polo",
+   "position": "other",
+   "colors": [
+    "J. Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_00.jpg",
+   "prod": "cap_dad",
+   "position": "front_dtf",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_01.jpg",
+   "prod": "cap_dad",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_02.jpg",
+   "prod": "cap_dad",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_03.jpg",
+   "prod": "cap_dad",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_04.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_05.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_06.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_07.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Green Camo"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_08.jpg",
+   "prod": "cap_dad",
+   "position": "front_dtf",
+   "colors": [
+    "Spruce"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_09.jpg",
+   "prod": "cap_dad",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Spruce"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_10.jpg",
+   "prod": "cap_dad",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Spruce"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_11.jpg",
+   "prod": "cap_dad",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Spruce"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_12.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Spruce"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_13.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Spruce"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_14.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Spruce"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_15.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Spruce"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_16.jpg",
+   "prod": "cap_dad",
+   "position": "front_dtf",
+   "colors": [
+    "Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_17.jpg",
+   "prod": "cap_dad",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_18.jpg",
+   "prod": "cap_dad",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_19.jpg",
+   "prod": "cap_dad",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_20.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_21.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_22.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_23.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_24.jpg",
+   "prod": "cap_dad",
+   "position": "front_dtf",
+   "colors": [
+    "Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_25.jpg",
+   "prod": "cap_dad",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_26.jpg",
+   "prod": "cap_dad",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_27.jpg",
+   "prod": "cap_dad",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_28.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_29.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_30.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_31.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_32.jpg",
+   "prod": "cap_dad",
+   "position": "front_dtf",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_33.jpg",
+   "prod": "cap_dad",
+   "position": "back_hat_embroidery",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_34.jpg",
+   "prod": "cap_dad",
+   "position": "left_hat_embroidery",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_35.jpg",
+   "prod": "cap_dad",
+   "position": "right_hat_embroidery",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_36.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_37.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_38.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_39.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_dad_40.jpg",
+   "prod": "cap_dad",
+   "position": "other",
+   "colors": [
+    "Dark Grey"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_00.jpg",
+   "prod": "cap_foam",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_01.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_02.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_03.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_04.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_05.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_06.jpg",
+   "prod": "cap_foam",
+   "position": "front",
+   "colors": [
+    "Dark Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_07.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Dark Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_08.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Dark Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_09.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Dark Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_10.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Dark Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_11.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Dark Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_12.jpg",
+   "prod": "cap_foam",
+   "position": "front",
+   "colors": [
+    "Black/White"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_13.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_14.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_15.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_16.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_foam_17.jpg",
+   "prod": "cap_foam",
+   "position": "other",
+   "colors": [
+    "Black/White"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_00.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_01.jpg",
+   "prod": "cap_mesh",
+   "position": "other",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_02.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_03.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_04.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_05.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Charcoal"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_06.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_07.jpg",
+   "prod": "cap_mesh",
+   "position": "other",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_08.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_09.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_10.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_11.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Navy"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_12.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": true
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_13.jpg",
+   "prod": "cap_mesh",
+   "position": "other",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_14.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_15.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_16.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  },
+  {
+   "file": "out/blanks_dark/cap_mesh_17.jpg",
+   "prod": "cap_mesh",
+   "position": "front",
+   "colors": [
+    "Black"
+   ],
+   "default": false
+  }
+ ],
+ "products": {
+  "tee": "6aec3a4408a3894dbd100578",
+  "hoodie": "6aec3a48ed16741eb3069eee",
+  "tank": "6aec3a4cb8f34bcfac0c589a",
+  "wtank": "6aec3a4f99ae9a907b0bfb75",
+  "polo": "6aec3a5208a3894dbd100582",
+  "cap_dad": "6aec3a55f84bfa2c2108aeba",
+  "cap_foam": "6aec3a58902ad8910b03ea85",
+  "cap_mesh": "6aec3a5b99ae9a907b0bfb84"
+ }
+}
