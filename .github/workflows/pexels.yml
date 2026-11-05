@@ -1,0 +1,14 @@
+name: pexels
+on:
+  workflow_dispatch:
+    inputs: { ids: {default: ""} }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/video/pexels.py "${{ inputs.ids }}"
+      - run: |
+          git config user.name "alphadog-bot"; git config user.email "bot@users.noreply.github.com"
+          git add out/pexels && git commit -m "photos" && git pull --rebase -q && git push || true
