@@ -12,3 +12,5 @@
 - 2026-11-04  Concept E "Did you know?" prototype: "Gimme that Groove!" - Michael Ramir C.
 
 - Concept X (neon sign, v2 with print-match transition): "Night Sky Hip Hop" (Michael Ramir C., Mixkit) - prototype, awaiting approval
+- Concept F1 (Boston terrier snack gag): "Funkee Monkeee" (Mixkit) - prototype
+- Concept F2 (funny breed compilation): "Dirty Thinkin'" (Mixkit) - prototype
