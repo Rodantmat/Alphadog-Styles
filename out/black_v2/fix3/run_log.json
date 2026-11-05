@@ -1,0 +1,272 @@
+[
+ {
+  "id": "FIX3_13_yorkshire_terrier__geo_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 980,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 2568,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 206
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 774
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 298,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_19_pomeranian__geo_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 660,
+   "candidatesTokenCount": 1268,
+   "totalTokenCount": 2175,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 144
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 247,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_27_pug__line_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 662,
+   "candidatesTokenCount": 1297,
+   "totalTokenCount": 2136,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 146
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 177,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_31_mini_poodle__geo_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 666,
+   "candidatesTokenCount": 1297,
+   "totalTokenCount": 2149,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 150
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 186,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_32_bichon_frise__geo_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 680,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 2190,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 164
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 220,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_13_yorkshire_terrier__geo_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 980,
+   "candidatesTokenCount": 1329,
+   "totalTokenCount": 2619,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 206
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 774
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 310,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_19_pomeranian__geo_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 660,
+   "candidatesTokenCount": 1293,
+   "totalTokenCount": 2176,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 144
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 223,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_27_pug__line_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 662,
+   "candidatesTokenCount": 1287,
+   "totalTokenCount": 2163,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 146
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 214,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_31_mini_poodle__geo_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 666,
+   "candidatesTokenCount": 1312,
+   "totalTokenCount": 2274,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 150
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 296,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "FIX3_32_bichon_frise__geo_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 680,
+   "candidatesTokenCount": 1294,
+   "totalTokenCount": 2205,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 164
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 516
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 231,
+   "serviceTier": "standard"
+  }
+ }
+]
