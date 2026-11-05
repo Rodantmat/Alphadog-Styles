@@ -1,0 +1,357 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "BLK_12_cavalier_king_charles_spaniel__line_classic",
+   "refs": [
+    "out/black_v2/refs/12_cavalier_king_charles_spaniel__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a cavalier king charles spaniel front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_12_cavalier_king_charles_spaniel__line_heart",
+   "refs": [
+    "out/black_v2/refs/12_cavalier_king_charles_spaniel__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a cavalier king charles spaniel front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_12_cavalier_king_charles_spaniel__geo_classic",
+   "refs": [
+    "out/black_v2/refs/12_cavalier_king_charles_spaniel__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a cavalier king charles spaniel front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_12_cavalier_king_charles_spaniel__geo_heart",
+   "refs": [
+    "out/black_v2/refs/12_cavalier_king_charles_spaniel__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a cavalier king charles spaniel front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_13_yorkshire_terrier__line_classic",
+   "refs": [
+    "out/black_v2/refs/13_yorkshire_terrier__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a yorkshire terrier front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_13_yorkshire_terrier__line_heart",
+   "refs": [
+    "out/black_v2/refs/13_yorkshire_terrier__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a yorkshire terrier front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_13_yorkshire_terrier__geo_classic",
+   "refs": [
+    "out/black_v2/refs/13_yorkshire_terrier__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a yorkshire terrier front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_13_yorkshire_terrier__geo_heart",
+   "refs": [
+    "out/black_v2/refs/13_yorkshire_terrier__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a yorkshire terrier front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_14_australian_shepherd__line_classic",
+   "refs": [
+    "out/black_v2/refs/14_australian_shepherd__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a australian shepherd front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_14_australian_shepherd__line_heart",
+   "refs": [
+    "out/black_v2/refs/14_australian_shepherd__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a australian shepherd front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_14_australian_shepherd__geo_classic",
+   "refs": [
+    "out/black_v2/refs/14_australian_shepherd__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a australian shepherd front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_14_australian_shepherd__geo_heart",
+   "refs": [
+    "out/black_v2/refs/14_australian_shepherd__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a australian shepherd front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_15_doberman_pinscher__line_classic",
+   "refs": [
+    "out/black_v2/refs/15_doberman_pinscher__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a doberman pinscher front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_15_doberman_pinscher__line_heart",
+   "refs": [
+    "out/black_v2/refs/15_doberman_pinscher__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a doberman pinscher front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_15_doberman_pinscher__geo_classic",
+   "refs": [
+    "out/black_v2/refs/15_doberman_pinscher__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a doberman pinscher front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_15_doberman_pinscher__geo_heart",
+   "refs": [
+    "out/black_v2/refs/15_doberman_pinscher__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a doberman pinscher front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_16_pembroke_welsh_corgi__line_classic",
+   "refs": [
+    "out/black_v2/refs/16_pembroke_welsh_corgi__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pembroke welsh corgi front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_16_pembroke_welsh_corgi__line_heart",
+   "refs": [
+    "out/black_v2/refs/16_pembroke_welsh_corgi__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pembroke welsh corgi front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_16_pembroke_welsh_corgi__geo_classic",
+   "refs": [
+    "out/black_v2/refs/16_pembroke_welsh_corgi__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pembroke welsh corgi front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_16_pembroke_welsh_corgi__geo_heart",
+   "refs": [
+    "out/black_v2/refs/16_pembroke_welsh_corgi__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pembroke welsh corgi front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_17_miniature_schnauzer__line_classic",
+   "refs": [
+    "out/black_v2/refs/17_miniature_schnauzer__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a miniature schnauzer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_17_miniature_schnauzer__line_heart",
+   "refs": [
+    "out/black_v2/refs/17_miniature_schnauzer__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a miniature schnauzer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_17_miniature_schnauzer__geo_classic",
+   "refs": [
+    "out/black_v2/refs/17_miniature_schnauzer__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a miniature schnauzer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_17_miniature_schnauzer__geo_heart",
+   "refs": [
+    "out/black_v2/refs/17_miniature_schnauzer__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a miniature schnauzer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_18_boxer__line_classic",
+   "refs": [
+    "out/black_v2/refs/18_boxer__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a boxer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_18_boxer__line_heart",
+   "refs": [
+    "out/black_v2/refs/18_boxer__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a boxer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_18_boxer__geo_classic",
+   "refs": [
+    "out/black_v2/refs/18_boxer__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a boxer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_18_boxer__geo_heart",
+   "refs": [
+    "out/black_v2/refs/18_boxer__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a boxer front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_19_pomeranian__line_classic",
+   "refs": [
+    "out/black_v2/refs/19_pomeranian__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pomeranian front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_19_pomeranian__line_heart",
+   "refs": [
+    "out/black_v2/refs/19_pomeranian__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pomeranian front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_19_pomeranian__geo_classic",
+   "refs": [
+    "out/black_v2/refs/19_pomeranian__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pomeranian front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_19_pomeranian__geo_heart",
+   "refs": [
+    "out/black_v2/refs/19_pomeranian__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a pomeranian front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_20_bernese_mountain_dog__line_classic",
+   "refs": [
+    "out/black_v2/refs/20_bernese_mountain_dog__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a bernese mountain dog front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_20_bernese_mountain_dog__line_heart",
+   "refs": [
+    "out/black_v2/refs/20_bernese_mountain_dog__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a bernese mountain dog front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_20_bernese_mountain_dog__geo_classic",
+   "refs": [
+    "out/black_v2/refs/20_bernese_mountain_dog__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a bernese mountain dog front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_20_bernese_mountain_dog__geo_heart",
+   "refs": [
+    "out/black_v2/refs/20_bernese_mountain_dog__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a bernese mountain dog front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_21_shih_tzu__line_classic",
+   "refs": [
+    "out/black_v2/refs/21_shih_tzu__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a shih tzu front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_21_shih_tzu__line_heart",
+   "refs": [
+    "out/black_v2/refs/21_shih_tzu__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a shih tzu front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_21_shih_tzu__geo_classic",
+   "refs": [
+    "out/black_v2/refs/21_shih_tzu__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a shih tzu front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_21_shih_tzu__geo_heart",
+   "refs": [
+    "out/black_v2/refs/21_shih_tzu__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a shih tzu front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_22_great_dane__line_classic",
+   "refs": [
+    "out/black_v2/refs/22_great_dane__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a great dane front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_22_great_dane__line_heart",
+   "refs": [
+    "out/black_v2/refs/22_great_dane__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a great dane front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a thin smooth WHITE outline of the eye, the inside of the eye BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_22_great_dane__geo_classic",
+   "refs": [
+    "out/black_v2/refs/22_great_dane__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a great dane front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  },
+  {
+   "id": "BLK_22_great_dane__geo_heart",
+   "refs": [
+    "out/black_v2/refs/22_great_dane__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set for a BLACK shirt: a great dane front head (left) and matching full-body sitting dog (right), drawn as pure WHITE lines on a pure BLACK background. The dogs' bodies and heads are BLACK (empty) exactly like the background; ONLY the outlines are white. Keep EVERYTHING in image 1 identical: every line, its weight, position, the layout, both dogs, the nose, ears, paws, tail, the background. The ONLY thing to change is the EYES of both dogs (head and full body): the current eyes are bad solid white blobs and thick rings. Redraw each eye as a clean geometric almond drawn with a thin WHITE outline, the inside BLACK (empty, no white fill), one small white iris ring with one tiny white highlight dot. Both eyes of a dog must be open and identical in size and style, looking the same direction toward the viewer with a calm friendly expression; the same eye style on the head and on the full-body dog. White lines of the eyes must be smooth and not thinner than the thinnest lines already in image 1 (print safe). Do NOT fill any part of the dog with white. Do NOT add gray, gradients, texture, text or anything new. Output pure white on pure black."
+  }
+ ]
+}
