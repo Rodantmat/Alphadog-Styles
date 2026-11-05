@@ -1,0 +1,110 @@
+[
+ {
+  "id": "BLK_labrador_retriever__line_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 569,
+   "candidatesTokenCount": 1302,
+   "totalTokenCount": 2116,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 311
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 245,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_labrador_retriever__line_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 569,
+   "candidatesTokenCount": 1336,
+   "totalTokenCount": 2160,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 311
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 255,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_labrador_retriever__geo_classic",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 556,
+   "candidatesTokenCount": 1342,
+   "totalTokenCount": 2113,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 298
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 215,
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "BLK_labrador_retriever__geo_heart",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 556,
+   "candidatesTokenCount": 1322,
+   "totalTokenCount": 2131,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 298
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1120
+    }
+   ],
+   "thoughtsTokenCount": 253,
+   "serviceTier": "standard"
+  }
+ }
+]
