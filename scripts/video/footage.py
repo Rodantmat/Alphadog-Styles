@@ -16,8 +16,8 @@ if mode=='list':
 else:
     ids=sys.argv[2].split(',')
     for i in ids:
-        for q in ('1080','720','360'):
+        for q in ('720','1080','360'):
             try:
-                b=get(f'https://assets.mixkit.co/videos/{i}/{i}-{q}.mp4',True);open(f'out/footage/{i}.mp4','wb').write(b);print(i,q,len(b));break
+                b=get(f'https://assets.mixkit.co/videos/{i}/{i}-{q}.mp4',True);open(f'/tmp/{i}.mp4','wb').write(b);subprocess.run(['ffmpeg','-y','-v','error','-i',f'/tmp/{i}.mp4','-t','9','-vf','scale=-2:min(ih\\,720)','-an','-c:v','libx264','-crf','23',f'out/footage/{i}.mp4']);print(i,q,len(b),os.path.getsize(f'out/footage/{i}.mp4'));break
             except Exception as e: pass
         else: print(i,'FAILED')
