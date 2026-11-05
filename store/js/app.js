@@ -57,7 +57,7 @@ function pick(arr,n,seed){let a=[...arr],r=seed;const o=[];while(o.length<n&&a.l
 /* ---------- pages ---------- */
 async function home(){
   app.dataset.title="Wear your best friend";
-  const day=Math.floor(Date.now()/864e5), feat=pick(cat.breeds,8,day).map((b,i)=>designCard(b.slug,cat.themes[i%2].id,cat.styles[(i+day)%3].id,i+day%5)).join("");
+  const day=1+Math.floor(Math.random()*200000), off=Math.floor(Math.random()*16), feat=pick(cat.breeds,8,day).map((b,i)=>designCard(b.slug,cat.themes[(i+day)%2].id,cat.styles[(i+day)%3].id,i+off)).join("");
   const names=cat.breeds.map(b=>tn(b.name)).join(`<em>✦</em>`);
   app.innerHTML=`<div class="wrap hero"><div><span class="eyebrow">${t("Made to order · Shipped across the US")}</span><h1>${t("Your best friend, on your best tee.")}</h1><p>${t("33 breeds, 2 art styles, 3 moods and every placement you can imagine. Design it your way, we print it just for you.")}</p><div class="cta"><a class="btn" href="#/design">${t("Design yours")}</a><a class="btn ghost" href="#/shop">${t("Browse designs")}</a></div></div><div class="stage" id="stage"><div class="blob" style="width:180px;height:180px;background:#ffd8a8;top:-40px;right:-30px"></div><div class="blob" style="width:120px;height:120px;background:#fff1d6;bottom:20px;left:-30px"></div></div></div>
   <div class="marquee"><span>${names}<em>✦</em>${names}<em>✦</em></span></div>
@@ -77,23 +77,24 @@ function randMock(prev){
   const small=p.rule==="chest"||p.rule==="cap";const part=small?"head":(Math.random()<.5?"head":"body");
   return {p:p.id,c:col[0],b,d:th+st,col,args:{part,size:small?"s":"l",breed:b,theme:th,style:st}};
 }
+const designHref=m=>`#/design?breed=${m.args.breed}&theme=${m.args.theme}&style=${m.args.style}&prod=${m.p}&color=${encodeURIComponent(m.c)}&part=${m.args.part}`;
 async function heroCarousel(stage){
   if(!stage)return;const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;let prev=null,cur=null,busy=false;
   const show=async()=>{if(busy||document.hidden||!document.body.contains(stage))return;busy=true;
-    try{const m=randMock(prev);prev=m;const svg=await renderSVG(m.p,"front",m.col,m.args);const el=document.createElement("div");el.className="slide";el.innerHTML=svg;
+    try{const m=randMock(prev);prev=m;const svg=await renderSVG(m.p,"front",m.col,m.args);const el=document.createElement("a");el.className="slide";el.href=designHref(m);el.innerHTML=svg;
       el.setAttribute("aria-label",`${breedName(m.b)} · ${prodName(m.p)} · ${colorLabel(m.p,m.c)}`);stage.appendChild(el);
       await new Promise(r=>{const im=new Image();im.onload=im.onerror=r;im.src=photoUrlOf(m.p,m.col)});
-      requestAnimationFrame(()=>el.classList.add("on"));if(cur){const old=cur;old.classList.remove("on");setTimeout(()=>old.remove(),900)}cur=el}catch(e){}
+      requestAnimationFrame(()=>el.classList.add("on"));if(cur){const old=cur;old.classList.remove("on");setTimeout(()=>old.remove(),500)}cur=el}catch(e){}
     busy=false};
   await show();if(reduce)return;
-  const tick=setInterval(()=>{if(!document.body.contains(stage)){clearInterval(tick);return}if(!stage.matches(":hover"))show()},4000);
+  const tick=setInterval(()=>{if(!document.body.contains(stage)){clearInterval(tick);return}if(!stage.matches(":hover"))show()},2000);
 }
 const photoUrlOf=(pid,col)=>`img/${pid}_${col[3]||"white"}_front.webp`;
 /* "Real garments" strip: every tile a different garment + color, no all-white row */
 async function looksMix(){
   const tiles=$$(".look .lk");let prev=null;const used=new Set();
   for(const a of tiles){let m;let n=0;do{m=randMock(prev);n++}while(n<20&&(used.has(m.p+m.c)||/^white$|^solid white$/i.test(m.c)));used.add(m.p+m.c);prev=m;
-    try{a.innerHTML=await renderSVG(m.p,"front",m.col,m.args);a.classList.add("mk")}catch(e){}}
+    try{a.innerHTML=await renderSVG(m.p,"front",m.col,m.args);a.href=designHref(m);a.classList.add("mk")}catch(e){}}
 }
 function shop(q){
   app.dataset.title="Shop";
