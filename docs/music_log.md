@@ -6,3 +6,7 @@
 - 2026-11-04  Concept A v2 "Line by line + hoodie": "Pop Track 03" - Lily J (clip 0:16)
 - 2026-11-04  Concept B v2 "Comment your breed": "What About Action?" - Diego Nava (clip 0:14)
 - (Retired/unused from earlier: "Dance with Me", "BRIDGE N° 98", "Tears of Joy" - do not reuse on new posts that already carried them)
+- 2026-11-04  APPROVED by owner: Video 2 "Karma" (Michael Ramir C.); Concept A "Pop Track 03" (Lily J); Concept B "What About Action?" (Diego Nava)
+- 2026-11-04  Concept C "A day on the trail" prototype: "Feeling Happy" - Ahjay Stelino
+- 2026-11-04  Concept D "Gift ideas" prototype: "Happy Home" - Michael Ramir C.
+- 2026-11-04  Concept E "Did you know?" prototype: "Gimme that Groove!" - Michael Ramir C.
