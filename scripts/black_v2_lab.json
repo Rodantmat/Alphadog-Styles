@@ -1,0 +1,37 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "BLK_labrador_retriever__line_classic",
+   "refs": [
+    "out/black_v2/refs/labrador_retriever__line_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set (black lines on white) of a labrador retriever: a front head on the left and a matching full-body sitting dog on the right. Recreate THIS EXACT design for printing on a BLACK shirt: the same two dogs, same breed likeness, same poses, same layout, sizes and positions, same drawing style and level of detail, same line weights (white lines must NOT be thinner than the lines in image 1 so they print safely), but drawn as pure WHITE on pure BLACK. Do not invert the picture mechanically: redraw every part so it looks good as white ink on black. EYES (most important): every eye must be drawn like a professional white-line tattoo/screenprint on a dark shirt: a thin smooth WHITE outline of the eye shape with the inside of the eye left BLACK (empty, no white fill), ONE small round white iris ring, and ONE tiny white highlight dot. NEVER a solid white filled eye, never a thick white blob, never a closed or squinting eye. Both eyes of a dog open, identical in style and size, looking the same direction slightly toward the viewer, calm friendly expression. Apply the same eye style to BOTH the front head and the full-body dog. All outlines smooth and clean, no thick white patches anywhere, no stray marks, nothing cut off. Pure white lines and shapes on a flat pure solid black background (#000000), no gray, no gradients, no texture, no shading, no text."
+  },
+  {
+   "id": "BLK_labrador_retriever__line_heart",
+   "refs": [
+    "out/black_v2/refs/labrador_retriever__line_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set (black lines on white) of a labrador retriever: a front head on the left and a matching full-body sitting dog on the right. Recreate THIS EXACT design for printing on a BLACK shirt: the same two dogs, same breed likeness, same poses, same layout, sizes and positions, same drawing style and level of detail, same line weights (white lines must NOT be thinner than the lines in image 1 so they print safely), but drawn as pure WHITE on pure BLACK. Do not invert the picture mechanically: redraw every part so it looks good as white ink on black. EYES (most important): every eye must be drawn like a professional white-line tattoo/screenprint on a dark shirt: a thin smooth WHITE outline of the eye shape with the inside of the eye left BLACK (empty, no white fill), ONE small round white iris ring, and ONE tiny white highlight dot. NEVER a solid white filled eye, never a thick white blob, never a closed or squinting eye. Both eyes of a dog open, identical in style and size, looking the same direction slightly toward the viewer, calm friendly expression. Apply the same eye style to BOTH the front head and the full-body dog. All outlines smooth and clean, no thick white patches anywhere, no stray marks, nothing cut off. Pure white lines and shapes on a flat pure solid black background (#000000), no gray, no gradients, no texture, no shading, no text."
+  },
+  {
+   "id": "BLK_labrador_retriever__geo_classic",
+   "refs": [
+    "out/black_v2/refs/labrador_retriever__geo_classic.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set (black lines on white) of a labrador retriever: a front head on the left and a matching full-body sitting dog on the right. Recreate THIS EXACT design for printing on a BLACK shirt: the same two dogs, same breed likeness, same poses, same layout, sizes and positions, same drawing style and level of detail, same line weights (white lines must NOT be thinner than the lines in image 1 so they print safely), but drawn as pure WHITE on pure BLACK. Do not invert the picture mechanically: redraw every part so it looks good as white ink on black. EYES (most important): every eye must be a clean geometric almond/polygon drawn with a thin WHITE outline (not thicker than the thinnest lines elsewhere in the design), the inside left BLACK (empty, no white fill), with ONE small round white iris ring and ONE tiny white highlight dot. NEVER a solid white filled eye or a thick white blob. Both eyes of a dog open, identical in style and size, looking the same direction, gentle friendly expression, not a stare. Apply the same eye style to BOTH the front head and the full-body dog. All outlines smooth and clean, no thick white patches anywhere, no stray marks, nothing cut off. Pure white lines and shapes on a flat pure solid black background (#000000), no gray, no gradients, no texture, no shading, no text."
+  },
+  {
+   "id": "BLK_labrador_retriever__geo_heart",
+   "refs": [
+    "out/black_v2/refs/labrador_retriever__geo_heart.png"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set (black lines on white) of a labrador retriever: a front head on the left and a matching full-body sitting dog on the right. Recreate THIS EXACT design for printing on a BLACK shirt: the same two dogs, same breed likeness, same poses, same layout, sizes and positions, same drawing style and level of detail, same line weights (white lines must NOT be thinner than the lines in image 1 so they print safely), but drawn as pure WHITE on pure BLACK. Do not invert the picture mechanically: redraw every part so it looks good as white ink on black. EYES (most important): every eye must be a clean geometric almond/polygon drawn with a thin WHITE outline (not thicker than the thinnest lines elsewhere in the design), the inside left BLACK (empty, no white fill), with ONE small round white iris ring and ONE tiny white highlight dot. NEVER a solid white filled eye or a thick white blob. Both eyes of a dog open, identical in style and size, looking the same direction, gentle friendly expression, not a stare. Apply the same eye style to BOTH the front head and the full-body dog. All outlines smooth and clean, no thick white patches anywhere, no stray marks, nothing cut off. Pure white lines and shapes on a flat pure solid black background (#000000), no gray, no gradients, no texture, no shading, no text."
+  }
+ ]
+}
