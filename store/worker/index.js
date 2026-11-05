@@ -98,12 +98,13 @@ async function auth(req,env){const DB=env._db;
   const r=await DB.prepare("SELECT email,exp FROM sessions WHERE hash=?").bind(await sha(t)).first();
   return r&&r.exp>now()?r.email:null;
 }
+function isDarkHex(h){const n=parseInt(String(h).slice(1),16);return (0.299*(n>>16)+0.587*((n>>8)&255)+0.114*(n&255))<110}
 function validItem(it,custId){
   const p=cat.products.find(x=>x.id===it.prod); if(!p)return null;
   const c=p.colors.find(x=>x[0]===it.color&&x[2]); if(!c||!p.sizes.includes(it.size))return null;
   const qty=Math.max(1,Math.min(20,parseInt(it.qty)||1));
   const side=(d,k)=>{ if(!d)return null; if(!(p.sides||["front","back"]).includes(k))return false; const al=p.opts&&p.opts[k];
-    if(d.custom){ if(!custId)return false; const oc=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); return oc?{part:d.part,size:d.size,custom:custId}:false } const o=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); if(!o||!cat.breeds.some(b=>b.slug===d.breed)||!cat.themes.some(t=>t.id===d.theme)||!cat.styles.some(s=>s.id===d.style))return false; return {part:d.part,size:d.size,breed:d.breed,theme:d.theme,style:d.style}};
+    if(d.custom){ if(!custId)return false; const oc=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); return oc?{part:d.part,size:d.size,custom:custId}:false } const o=cat[k+"_opts"].find(x=>x.part===d.part&&x.size===d.size&&(!al||al.includes(x.id))); if(!o||!cat.breeds.some(b=>b.slug===d.breed)||!cat.themes.some(t=>t.id===d.theme)||!cat.styles.some(s=>s.id===d.style))return false; const out={part:d.part,size:d.size,breed:d.breed,theme:d.theme,style:d.style}; const dk=isDarkHex(c[1]),ik=String(d.ink||'').toLowerCase(); if(ik&&(cat.inks||{})[dk?'dark':'light']?.some(i=>i[1].toLowerCase()===ik))out.ink=ik; return out};
   const front=side(it.front,"front"),back=side(it.back,"back"); if(front===false||back===false||(!front&&!back))return null;
   return {prod:it.prod,color:it.color,size:it.size,qty,front,back};
 }

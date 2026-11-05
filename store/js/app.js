@@ -1,4 +1,4 @@
-import {renderSVG,artUrl,setCal} from "./garment.js";
+import {renderSVG,artUrl,setCal,isDark} from "./garment.js";
 import {priceCents,registerProducts} from "./placement.js";
 import {t,tn,lang,setLang,missing} from "./i18n.js";
 import {PAGES as ALLPAGES} from "./pages.js";
@@ -33,7 +33,7 @@ async function api(path,body,method){
 }
 /* ---------- design model ---------- */
 const newSide=(opt,b)=>({opt,breed:b||"french_bulldog",theme:"line",style:"classic"});
-function toDesign(side,kind,S0){const o=cat[kind+"_opts"].find(x=>x.id===side.opt);if(!o||!o.part)return null;const c=(S0||curS||{}).custom;return c?{part:o.part,size:o.size,custom:c.id,k:c.k,breed:"custom",theme:"custom",style:"custom"}:{part:o.part,size:o.size,breed:side.breed,theme:side.theme,style:side.style}}
+function toDesign(side,kind,S0){const o=cat[kind+"_opts"].find(x=>x.id===side.opt);if(!o||!o.part)return null;const c=(S0||curS||{}).custom;return c?{part:o.part,size:o.size,custom:c.id,k:c.k,breed:"custom",theme:"custom",style:"custom"}:{part:o.part,size:o.size,breed:side.breed,theme:side.theme,style:side.style,ink:(S0||curS||{}).ink}}
 let curS=null;
 const custOf=()=>{for(const l of cart)for(const d of[l.front,l.back])if(d&&d.custom)return {id:d.custom,k:d.k,fee:(ls.get("ad_cfee",{})[d.custom])||0};return null};
 function priceOf(l){return priceCents(cat,l.prod,(l.front?1:0)+(l.back?1:0),l.size)}
@@ -75,9 +75,10 @@ function randMock(prev){
      b=cat.breeds[Math.floor(Math.random()*cat.breeds.length)].slug;th=cat.themes[Math.floor(Math.random()*cat.themes.length)].id;st=cat.styles[Math.floor(Math.random()*cat.styles.length)].id;tries++}
   while(prev&&tries<30&&(p.id===prev.p||col[0]===prev.c||b===prev.b||th+st===prev.d||(/white/i.test(col[0])&&!/\//.test(col[0])&&Math.random()<.6)));
   const small=p.rule==="chest"||p.rule==="cap";const part=small?"head":(Math.random()<.5?"head":"body");
-  return {p:p.id,c:col[0],b,d:th+st,col,args:{part,size:small?"s":"l",breed:b,theme:th,style:st}};
+  const pal=cat.inks[isDark(col[1])?"dark":"light"],ink=Math.random()<.35?pal[1+Math.floor(Math.random()*(pal.length-1))][1]:pal[0][1];
+  return {p:p.id,c:col[0],b,d:th+st,col,args:{part,size:small?"s":"l",breed:b,theme:th,style:st,ink}};
 }
-const designHref=m=>`#/design?breed=${m.args.breed}&theme=${m.args.theme}&style=${m.args.style}&prod=${m.p}&color=${encodeURIComponent(m.c)}&part=${m.args.part}`;
+const designHref=m=>`#/design?breed=${m.args.breed}&theme=${m.args.theme}&style=${m.args.style}&prod=${m.p}&color=${encodeURIComponent(m.c)}&part=${m.args.part}&ink=${m.args.ink.slice(1)}`;
 async function heroCarousel(stage){
   if(!stage)return;const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;let prev=null,cur=null,busy=false;
   const show=async()=>{if(busy||document.hidden||!document.body.contains(stage))return;busy=true;
@@ -115,13 +116,15 @@ async function design(q){
   let S=window.__edit||null; window.__edit=null;
   if(!S){const b=q.breed&&cat.breeds.some(x=>x.slug===q.breed)?q.breed:"french_bulldog";S={prod:"tee",color:"White",size:"M",qty:1,view:"front",front:newSide("head_s",b),back:newSide("body_l",b)};if(q.theme&&cat.themes.some(x=>x.id===q.theme)){S.front.theme=S.back.theme=q.theme}if(q.style&&cat.styles.some(x=>x.id===q.style)){S.front.style=S.back.style=q.style}
     if(q.custom){S.custom={id:q.custom,k:q.k||""};S.front.opt="head_l";S.back.opt="body_l"}
-    if(q.prod&&PROD(q.prod)){S.prod=q.prod;if(q.color)S.color=q.color;const big=PROD(q.prod).rule==="chest"||PROD(q.prod).rule==="cap"?"_s":"_l";S.front.opt=(q.part==="body"?"body":"head")+big}}
+    if(q.prod&&PROD(q.prod)){S.prod=q.prod;if(q.color)S.color=q.color;if(q.ink)S.ink="#"+String(q.ink).replace(/[^0-9a-fA-F]/g,"");const big=PROD(q.prod).rule==="chest"||PROD(q.prod).rule==="cap"?"_s":"_l";S.front.opt=(q.part==="body"?"body":"head")+big}}
 
   curS=S;const P=()=>cat.products.find(p=>p.id===S.prod);
   const hex=()=>(P().colors.find(c=>c[0]===S.color)||P().colors[0]);
+  const inks=()=>cat.inks[isDark(hex()[1])?"dark":"light"];
   const norm=()=>{const p=P();if(!p.colors.some(c=>c[0]===S.color&&c[2]))S.color=p.colors.find(c=>c[2])[0];if(!p.sizes.includes(S.size))S.size=p.sizes.includes("M")?"M":p.sizes[0];
     for(const k of["front","back"]){if(!sidesOf(S.prod).includes(k)){if(S[k].opt!=="none")S[k].saved=S[k].opt;S[k].opt="none";continue}if(S[k].opt==="none"&&S[k].saved){S[k].opt=S[k].saved;delete S[k].saved}const ids=optsOf(S.prod,k).map(o=>o.id);if(!ids.includes(S[k].opt)){if(S[k].opt!=="none")S[k].want=S[k].opt;const part=(S[k].want||S[k].opt).split("_")[0];S[k].opt=ids.includes(part+"_s")?part+"_s":ids.includes("head_s")&&k==="front"?"head_s":ids[0]}else if(S[k].want&&ids.includes(S[k].want)&&S[k].opt!==S[k].want&&S[k].opt.split("_")[0]===S[k].want.split("_")[0]){S[k].opt=S[k].want;delete S[k].want}}
-    if(!sidesOf(S.prod).includes(S.view))S.view="front"};
+    if(!sidesOf(S.prod).includes(S.view))S.view="front";
+    const pal=inks();if(!pal.some(i=>i[1].toLowerCase()===String(S.ink||"").toLowerCase()))S.ink=pal[0][1]};
   norm();
 
   app.innerHTML=`<div class="wrap"><p class="crumbs"><a href="#/shop">${t("Shop")}</a> / ${t("Design yours")}</p><div class="dz"><div class="pv"><div class="pvbox" id="pv"></div><div class="pvtabs"><button class="chip" data-v="front">${t("Front")}</button><button class="chip" data-v="back">${t("Back")}</button></div><p style="text-align:center;color:var(--mut);font-size:.85rem">${t("Preview is illustrative. Actual print is crisp on premium fabric.")}</p></div><div id="ctl"></div></div></div>`;
@@ -131,7 +134,8 @@ async function design(q){
     const p=P(),n=(S.front.opt!=="none")+(S.back.opt!=="none"),pr=n?priceCents(cat,S.prod,n,S.size):0;
     ctl.innerHTML=`<h1 style="font-size:clamp(1.8rem,3.4vw,2.6rem)">${t("Design yours")}</h1>
     <div class="panel"><h3>${t("Garment")} <small>${esc(tn(p.sub))}</small></h3>${["tops","polos","caps"].map(g=>`<div class="glabel">${t({tops:"Tees, hoodies & tanks",polos:"Polos",caps:"Caps"}[g])}</div><div class="garms">${cat.products.filter(x=>(x.group||"tops")===g).map(x=>`<button class="${S.prod===x.id?"on":""}" data-prod="${x.id}" aria-label="${esc(tn(x.name))}"><img src="img/${x.id}_${(x.colors.find(c=>c[2])||x.colors[0])[3]}_front.webp" alt="" loading="lazy" width="56" height="56"><span>${tn(x.name)}</span></button>`).join("")}</div>`).join("")}</div>
-    <div class="panel"><h3>${t("Color")} <small>${esc(colorLabel(S.prod,S.color))}</small></h3><div class="swatches">${p.colors.map(c=>`<button class="sw ${c[0]===S.color?"on":""} ${c[2]?"":"off"}" title="${esc(c[2]?tn(c[4]||c[0]):t("{0} - dark colors with white-ink art coming soon",tn(c[4]||c[0])))}" aria-label="${esc(tn(c[4]||c[0]))}" data-color="${c[0]}" data-ok="${c[2]}" style="background:${c[1]}"></button>`).join("")}</div><small style="color:var(--mut);display:block;margin-top:8px">${t("Dark colors with white-ink art are coming soon.")}</small></div>
+    <div class="panel"><h3>${t("Color")} <small>${esc(colorLabel(S.prod,S.color))}</small></h3><div class="swatches">${p.colors.map(c=>`<button class="sw ${c[0]===S.color?"on":""} ${c[2]?"":"off"}" title="${esc(c[2]?tn(c[4]||c[0]):t("{0} - dark colors with white-ink art coming soon",tn(c[4]||c[0])))}" aria-label="${esc(tn(c[4]||c[0]))}" data-color="${c[0]}" data-ok="${c[2]}" style="background:${c[1]}"></button>`).join("")}</div></div>
+    <div class="panel"><h3>${t("Line color")} <small>${esc(tn((inks().find(i=>i[1].toLowerCase()===String(S.ink).toLowerCase())||inks()[0])[0]))}</small></h3><div class="swatches">${inks().map(i=>`<button class="sw ink ${i[1].toLowerCase()===String(S.ink).toLowerCase()?"on":""}" title="${esc(tn(i[0]))}" aria-label="${esc(tn(i[0]))}" data-ink="${i[1]}" style="background:${i[1]}"></button>`).join("")}</div></div>
     ${sideUI("front")}${sideUI("back")}
     <div class="panel"><h3>${t("Size")} <small><a href="#/page/sizing"><u>${t("Size guide")}</u></a></small></h3><div class="sizes">${p.sizes.map(z=>`<button class="${z===S.size?"on":""}" data-size="${z}">${t(z)}</button>`).join("")}</div></div>
     <div class="buy"><div class="price">${n?money(pr):"—"} <small>${n?(S.qty>1?t("× {0} = {1}",S.qty,money(pr*S.qty)):t("+ shipping")):t("Add a front or back design")}</small></div></div>
@@ -145,7 +149,8 @@ async function design(q){
   let pvSeq=0;const pv=async()=>{const my=++pvSeq,k=S.view,d=toDesign(S[k],k);const html=await renderSVG(S.prod,k,hex(),d);if(my!==pvSeq)return;$("#pv").innerHTML=html;$$(".pvtabs .chip").forEach(c=>c.classList.toggle("on",c.dataset.v===k))};
   ctl.onclick=e=>{const bt=e.target.closest("button");if(!bt)return;const d=bt.dataset;
     if(d.prod){S.prod=d.prod;norm()}
-    else if(d.color){if(d.ok==="0"){toast(t("Dark colors with white-ink art are coming soon"));return}S.color=d.color}
+    else if(d.color){S.color=d.color;norm()}
+    else if(d.ink){S.ink=d.ink}
     else if(d.size)S.size=d.size;
     else if(d.q){S.qty=Math.max(1,Math.min(20,S.qty+ +d.q))}
     else if(d.opt){S[d.k].opt=d.opt;S.view=d.k}

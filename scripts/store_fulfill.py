@@ -40,16 +40,32 @@ def fit(prod,side,size,a):  # identical to store/js/placement.js
 def custom_art(d):  # owner-uploaded custom art (SVG text or PNG) from the store
     r=urllib.request.Request(STORE+f"/api/internal/custom/{d['custom']}/art/{d['part']}",headers={"x-admin-token":ADM,"User-Agent":"a"})
     resp=urllib.request.urlopen(r,timeout=60); return resp.headers.get("content-type",""),resp.read()
-def compose(prod,side,d):
+def is_dark(h):
+    n=int(h.lstrip('#')[:6],16); return (0.299*(n>>16)+0.587*((n>>8)&255)+0.114*(n&255))<110
+def cdark(prod,color):
+    for p in cat['products']:
+        if p['id']==prod:
+            for c in p['colors']:
+                if c[0]==color: return is_dark(c[1])
+    return False
+def compose(prod,side,d,dark=False):
     W,H=AR[prod][side]
     if d.get("custom"):
         ct,raw=custom_art(d)
-        if "svg" in ct: svg=raw.decode()
+        if "svg" in ct:
+            svg=raw.decode()
+            if dark: svg=re.sub(r'fill="(#000000|#000|black)"','fill="#ffffff"',svg)
         else:
-            src=Image.open(io.BytesIO(raw)).convert("RGBA"); a=src.width/src.height; x,y,w,h=fit(prod,side,d["size"],a)
+            src=Image.open(io.BytesIO(raw)).convert("RGBA")
+            if dark:
+                r_,g_,b_,a_=src.split(); src=Image.merge('RGBA',(a_.point(lambda v:255),a_.point(lambda v:255),a_.point(lambda v:255),a_))
+            a=src.width/src.height; x,y,w,h=fit(prod,side,d["size"],a)
             pw=int(w*W); ph=int(pw/a); art=src.resize((pw,ph),Image.LANCZOS); can=Image.new("RGBA",(W,H),(0,0,0,0))
             can.paste(art,(int(x*W-pw/2),int(y*H-ph/2)),art); o=io.BytesIO(); can.save(o,"PNG",optimize=True); return o.getvalue()
-    else: svg=open(f"store/art/{d['theme']}_{d['style']}/{d['breed']}_{'front' if d['part']=='head' else 'back'}.svg").read()
+    else:
+        svg=open(f"store/art{'_w' if dark else ''}/{d['theme']}_{d['style']}/{d['breed']}_{'front' if d['part']=='head' else 'back'}.svg").read()
+        ink=d.get('ink') or ('#ffffff' if dark else None)
+        if ink: svg=re.sub(r'fill="[^"]*"',f'fill="{ink}"',svg)
     m=re.search(r'viewBox="[\d.\-]+ [\d.\-]+ ([\d.]+) ([\d.]+)"',svg)
     if m: a=float(m[1])/float(m[2])
     else:
@@ -82,7 +98,7 @@ def build(o):
     for i,it in enumerate(o["data"]["items"]):
         pa={}
         for side in ("front","back"):
-            if it.get(side): pa[POS[it["prod"]][side]]=upload(f"{o['id']}_{i}_{side}.png",compose(it["prod"],side,it[side]))
+            if it.get(side): pa[POS[it["prod"]][side]]=upload(f"{o['id']}_{i}_{side}.png",compose(it["prod"],side,it[side],cdark(it["prod"],it["color"])))
         lab=PRODS[it["prod"]].get("label")
         if lab: pa[lab["pos"]]=label_url(it["prod"],lab)
         items.append({"print_provider_id":99,"blueprint_id":BP[it["prod"]],"variant_id":variant(it["prod"],it["color"],it["size"]),"print_areas":pa,"quantity":it["qty"]})
@@ -98,7 +114,7 @@ for o in st("GET","/api/internal/orders?status=paid_test")["items"]:  # Stripe T
     try:
         for i,it in enumerate(o["data"]["items"]):
             for side in ("front","back"):
-                if it.get(side): assert len(compose(it["prod"],side,it[side]))>1000; variant(it["prod"],it["color"],it["size"])
+                if it.get(side): assert len(compose(it["prod"],side,it[side],cdark(it["prod"],it["color"])))>1000; variant(it["prod"],it["color"],it["size"])
             assert it["prod"] in PRODS
         if os.environ.get("DRY_PRINTIFY","1")=="1":  # full payload incl. uploaded print files, priced by Printify's shipping quote: creates NO order, NO charge
             b=build({**o,"data":{**o["data"],"source":o["data"].get("source") or {"test":1}}}); q=pf("POST",f"/v1/shops/{SHOP}/orders/shipping.json",{"line_items":b["line_items"],"address_to":b["address_to"]}); assert q, "empty shipping quote"; print("printify quote ok",o["id"],json.dumps(q)[:160],flush=True)
