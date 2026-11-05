@@ -8,7 +8,7 @@ from market_plan import sku,price,short
 ROOT=T.ROOT; plan=T.plan; imgs=json.load(open(f"{ROOT}/store/data/market_images.json")); SITE="https://alphadogstyles.com/mk/"
 DS={"1":"Line Art Chest+Back","2":"Geometric Shades Front","3":"Line Heart Chest+Back","4":"Geometric Chest+Back","5":"Line Shades Front","6":"Geometric Heart Front"}
 CS={"Soft Cream":"Cream","Athletic Heather":"Heather","Light Blue":"Lt Blue","Soft Pink":"Pink","Sport Grey":"Grey","Light Pink":"Pink",
-    "Heather Grey":"Grey","Solid Tahiti Blue":"Blue","Solid Mint":"Mint","Solid Light Orange":"Peach","Solid White":"White"}
+    "Heather Grey":"Grey","Solid Tahiti Blue":"Blue","Solid Mint":"Mint","Solid Light Orange":"Peach","Solid White":"White","Solid Black":"Black","Solid Midnight Navy":"Navy","J. Navy":"Navy","Dark Grey Heather":"Dark Grey","Solid Military Green":"Military Green","Solid Light Orange":"Peach"}
 WEIGHT={"tee":0.4,"hoodie":1.3,"wtank":0.3,"tank":0.35,"polo":0.6,"cap":0.4}   # lb, packed
 DIM={"tee":(10,8,1),"hoodie":(12,10,3),"wtank":(10,8,1),"tank":(10,8,1),"polo":(11,9,2),"cap":(10,8,5)}  # inches
 def tier1(L,b,dc,cc,cap):
