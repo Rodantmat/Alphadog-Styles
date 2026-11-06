@@ -1,4 +1,729 @@
 {
+ "french_bulldog|line_classic|tee|pair#old": {
+  "id": "6ae6acf8a91d5262ab0b31b9",
+  "bp": 12,
+  "pp": 99,
+  "title": "French Bulldog Continuous Line Art Classic Dog Lover T-Shirt | Pocket ",
+  "cols": {
+   "White": 18541,
+   "Natural": 18391,
+   "Soft Cream": 18460,
+   "Ash": 38611,
+   "Athletic Heather": 18078
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "french_bulldog|line_classic|hoodie|pair": {
+  "id": "6ae56abab3e56e7b5f092b0d",
+  "bp": 77,
+  "pp": 99,
+  "title": "French Bulldog Continuous Line Art Classic Dog Lover Hoodie | Pocket P",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "french_bulldog|line_cool|hoodie|pair": {
+  "id": "6ae56b3b1db256d3020e9f10",
+  "bp": 77,
+  "pp": 99,
+  "title": "French Bulldog Continuous Line Art Cool Dog Lover Hoodie | Pocket Port",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "french_bulldog|line_heart|hoodie|pair": {
+  "id": "6ae56b42b3e56e7b5f092bbd",
+  "bp": 77,
+  "pp": 99,
+  "title": "French Bulldog Continuous Line Art Heart Dog Lover Hoodie | Pocket Por",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "labrador_retriever|line_classic|hoodie|pair": {
+  "id": "6ae56b4a93e71ab22e09ffd8",
+  "bp": 77,
+  "pp": 99,
+  "title": "Labrador Retriever Continuous Line Art Classic Dog Lover Hoodie | Pock",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "labrador_retriever|line_cool|hoodie|pair": {
+  "id": "6ae56b53d9d5b70e2704eac8",
+  "bp": 77,
+  "pp": 99,
+  "title": "Labrador Retriever Continuous Line Art Cool Dog Lover Hoodie | Pocket ",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "labrador_retriever|line_heart|hoodie|pair": {
+  "id": "6ae56b5b93e71ab22e09ffe5",
+  "bp": 77,
+  "pp": 99,
+  "title": "Labrador Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "golden_retriever|line_classic|hoodie|pair": {
+  "id": "6ae56b61d9d5b70e2704eadb",
+  "bp": 77,
+  "pp": 99,
+  "title": "Golden Retriever Continuous Line Art Classic Dog Lover Hoodie | Pocket",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "golden_retriever|line_cool|hoodie|pair": {
+  "id": "6ae56b6993e71ab22e09fff9",
+  "bp": 77,
+  "pp": 99,
+  "title": "Golden Retriever Continuous Line Art Cool Dog Lover Hoodie | Pocket Po",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "golden_retriever|line_heart|hoodie|pair": {
+  "id": "6ae56b7155e86fafe60acc99",
+  "bp": 77,
+  "pp": 99,
+  "title": "Golden Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket P",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "german_shepherd|line_classic|hoodie|pair": {
+  "id": "6ae56b7990e00e273b087b11",
+  "bp": 77,
+  "pp": 99,
+  "title": "German Shepherd Continuous Line Art Classic Dog Lover Hoodie | Pocket ",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "german_shepherd|line_cool|hoodie|pair": {
+  "id": "6ae56b8055e86fafe60accab",
+  "bp": 77,
+  "pp": 99,
+  "title": "German Shepherd Continuous Line Art Cool Dog Lover Hoodie | Pocket Por",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "german_shepherd|line_heart|hoodie|pair": {
+  "id": "6ae56b8990e00e273b087b18",
+  "bp": 77,
+  "pp": 99,
+  "title": "German Shepherd Continuous Line Art Heart Dog Lover Hoodie | Pocket Po",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "dachshund|line_classic|hoodie|pair": {
+  "id": "6ae56b919404229b2d0c3719",
+  "bp": 77,
+  "pp": 99,
+  "title": "Dachshund Continuous Line Art Classic Dog Lover Hoodie | Pocket Portra",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "dachshund|line_cool|hoodie|pair": {
+  "id": "6ae56b9955e86fafe60accc9",
+  "bp": 77,
+  "pp": 99,
+  "title": "Dachshund Continuous Line Art Cool Dog Lover Hoodie | Pocket Portrait ",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "dachshund|line_heart|hoodie|pair": {
+  "id": "6ae56ba055e86fafe60acccc",
+  "bp": 77,
+  "pp": 99,
+  "title": "Dachshund Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "poodle|line_classic|hoodie|pair": {
+  "id": "6ae56ba8e22d5a72000fcce9",
+  "bp": 77,
+  "pp": 99,
+  "title": "Standard Poodle Continuous Line Art Classic Dog Lover Hoodie | Pocket ",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "poodle|line_cool|hoodie|pair": {
+  "id": "6ae56bafe22d5a72000fccfb",
+  "bp": 77,
+  "pp": 99,
+  "title": "Standard Poodle Continuous Line Art Cool Dog Lover Hoodie | Pocket Por",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "poodle|line_heart|hoodie|pair": {
+  "id": "6ae56bb755e86fafe60acce5",
+  "bp": 77,
+  "pp": 99,
+  "title": "Standard Poodle Continuous Line Art Heart Dog Lover Hoodie | Pocket Po",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "beagle|line_classic|hoodie|pair": {
+  "id": "6ae56bbf7962d6e08000740b",
+  "bp": 77,
+  "pp": 99,
+  "title": "Beagle Continuous Line Art Classic Dog Lover Hoodie | Pocket Portrait ",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "beagle|line_cool|hoodie|pair": {
+  "id": "6ae56bc7d9d5b70e2704eb14",
+  "bp": 77,
+  "pp": 99,
+  "title": "Beagle Continuous Line Art Cool Dog Lover Hoodie | Pocket Portrait + F",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "beagle|line_heart|hoodie|pair": {
+  "id": "6ae56bceb3e56e7b5f092c34",
+  "bp": 77,
+  "pp": 99,
+  "title": "Beagle Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + ",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "rottweiler|line_classic|hoodie|pair": {
+  "id": "6ae56bd693e71ab22e0a004e",
+  "bp": 77,
+  "pp": 99,
+  "title": "Rottweiler Continuous Line Art Classic Dog Lover Hoodie | Pocket Portr",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "rottweiler|line_cool|hoodie|pair": {
+  "id": "6ae56bde55e86fafe60acd0a",
+  "bp": 77,
+  "pp": 99,
+  "title": "Rottweiler Continuous Line Art Cool Dog Lover Hoodie | Pocket Portrait",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "rottweiler|line_heart|hoodie|pair": {
+  "id": "6ae56be57962d6e080007426",
+  "bp": 77,
+  "pp": 99,
+  "title": "Rottweiler Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrai",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "bulldog|line_classic|hoodie|pair": {
+  "id": "6ae56c05663e719ab10874be",
+  "bp": 77,
+  "pp": 99,
+  "title": "English Bulldog Continuous Line Art Classic Dog Lover Hoodie | Pocket ",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "bulldog|line_cool|hoodie|pair": {
+  "id": "6ae56c0d93e71ab22e0a0097",
+  "bp": 77,
+  "pp": 99,
+  "title": "English Bulldog Continuous Line Art Cool Dog Lover Hoodie | Pocket Por",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "bulldog|line_heart|hoodie|pair": {
+  "id": "6ae56c147962d6e08000746c",
+  "bp": 77,
+  "pp": 99,
+  "title": "English Bulldog Continuous Line Art Heart Dog Lover Hoodie | Pocket Po",
+  "cols": {
+   "White": 32911,
+   "Sand": 42167,
+   "Sport Grey": 32903,
+   "Light Blue": 42237
+  },
+  "src": "out/state_light_etsy.json"
+ },
+ "french_bulldog|line_classic|tee|pair": {
+  "id": "6ae56ab79404229b2d0c3626",
+  "bp": 145,
+  "pp": 99,
+  "title": "French Bulldog Continuous Line Art Classic Dog Lover T-Shirt | Pocket ",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "french_bulldog|line_cool|tee|pair": {
+  "id": "6ae56b38b3e56e7b5f092bb1",
+  "bp": 145,
+  "pp": 99,
+  "title": "French Bulldog Continuous Line Art Cool Dog Lover T-Shirt | Pocket Por",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "french_bulldog|line_heart|tee|pair": {
+  "id": "6ae56b401db256d3020e9f19",
+  "bp": 145,
+  "pp": 99,
+  "title": "French Bulldog Continuous Line Art Heart Dog Lover T-Shirt | Pocket Po",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "labrador_retriever|line_classic|tee|pair": {
+  "id": "6ae56b489404229b2d0c36d0",
+  "bp": 145,
+  "pp": 99,
+  "title": "Labrador Retriever Continuous Line Art Classic Dog Lover T-Shirt | Poc",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "labrador_retriever|line_cool|tee|pair": {
+  "id": "6ae56b51d9d5b70e2704eac5",
+  "bp": 145,
+  "pp": 99,
+  "title": "Labrador Retriever Continuous Line Art Cool Dog Lover T-Shirt | Pocket",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "labrador_retriever|line_heart|tee|pair": {
+  "id": "6ae56b58e22d5a72000fccb4",
+  "bp": 145,
+  "pp": 99,
+  "title": "Labrador Retriever Continuous Line Art Heart Dog Lover T-Shirt | Pocke",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "golden_retriever|line_classic|tee|pair": {
+  "id": "6ae56b5e663e719ab1087435",
+  "bp": 145,
+  "pp": 99,
+  "title": "Golden Retriever Continuous Line Art Classic Dog Lover T-Shirt | Pocke",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "golden_retriever|line_cool|tee|pair": {
+  "id": "6ae56b6793e71ab22e09fff3",
+  "bp": 145,
+  "pp": 99,
+  "title": "Golden Retriever Continuous Line Art Cool Dog Lover T-Shirt | Pocket P",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "golden_retriever|line_heart|tee|pair": {
+  "id": "6ae56b6f55e86fafe60acc96",
+  "bp": 145,
+  "pp": 99,
+  "title": "Golden Retriever Continuous Line Art Heart Dog Lover T-Shirt | Pocket ",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "german_shepherd|line_classic|tee|pair": {
+  "id": "6ae56b771db256d3020e9f44",
+  "bp": 145,
+  "pp": 99,
+  "title": "German Shepherd Continuous Line Art Classic Dog Lover T-Shirt | Pocket",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "german_shepherd|line_cool|tee|pair": {
+  "id": "6ae56b7e8c5f774e6e0b36f4",
+  "bp": 145,
+  "pp": 99,
+  "title": "German Shepherd Continuous Line Art Cool Dog Lover T-Shirt | Pocket Po",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "german_shepherd|line_heart|tee|pair": {
+  "id": "6ae56b8655e86fafe60accb3",
+  "bp": 145,
+  "pp": 99,
+  "title": "German Shepherd Continuous Line Art Heart Dog Lover T-Shirt | Pocket P",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "dachshund|line_classic|tee|pair": {
+  "id": "6ae56b8ee22d5a72000fccdb",
+  "bp": 145,
+  "pp": 99,
+  "title": "Dachshund Continuous Line Art Classic Dog Lover T-Shirt | Pocket Portr",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "dachshund|line_cool|tee|pair": {
+  "id": "6ae56b969404229b2d0c371c",
+  "bp": 145,
+  "pp": 99,
+  "title": "Dachshund Continuous Line Art Cool Dog Lover T-Shirt | Pocket Portrait",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "dachshund|line_heart|tee|pair": {
+  "id": "6ae56b9eb3e56e7b5f092bff",
+  "bp": 145,
+  "pp": 99,
+  "title": "Dachshund Continuous Line Art Heart Dog Lover T-Shirt | Pocket Portrai",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "poodle|line_classic|tee|pair": {
+  "id": "6ae56ba555e86fafe60accd2",
+  "bp": 145,
+  "pp": 99,
+  "title": "Standard Poodle Continuous Line Art Classic Dog Lover T-Shirt | Pocket",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "poodle|line_cool|tee|pair": {
+  "id": "6ae56bad1db256d3020e9f7d",
+  "bp": 145,
+  "pp": 99,
+  "title": "Standard Poodle Continuous Line Art Cool Dog Lover T-Shirt | Pocket Po",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "poodle|line_heart|tee|pair": {
+  "id": "6ae56bb58c5f774e6e0b3727",
+  "bp": 145,
+  "pp": 99,
+  "title": "Standard Poodle Continuous Line Art Heart Dog Lover T-Shirt | Pocket P",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "beagle|line_classic|tee|pair": {
+  "id": "6ae56bbc8c5f774e6e0b372c",
+  "bp": 145,
+  "pp": 99,
+  "title": "Beagle Continuous Line Art Classic Dog Lover T-Shirt | Pocket Portrait",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "beagle|line_cool|tee|pair": {
+  "id": "6ae56bc590e00e273b087b46",
+  "bp": 145,
+  "pp": 99,
+  "title": "Beagle Continuous Line Art Cool Dog Lover T-Shirt | Pocket Portrait + ",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "beagle|line_heart|tee|pair": {
+  "id": "6ae56bcc8c5f774e6e0b373a",
+  "bp": 145,
+  "pp": 99,
+  "title": "Beagle Continuous Line Art Heart Dog Lover T-Shirt | Pocket Portrait +",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "rottweiler|line_classic|tee|pair": {
+  "id": "6ae56bd4b3e56e7b5f092c41",
+  "bp": 145,
+  "pp": 99,
+  "title": "Rottweiler Continuous Line Art Classic Dog Lover T-Shirt | Pocket Port",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "rottweiler|line_cool|tee|pair": {
+  "id": "6ae56bdce22d5a72000fcd21",
+  "bp": 145,
+  "pp": 99,
+  "title": "Rottweiler Continuous Line Art Cool Dog Lover T-Shirt | Pocket Portrai",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "rottweiler|line_heart|tee|pair": {
+  "id": "6ae56be393e71ab22e0a0056",
+  "bp": 145,
+  "pp": 99,
+  "title": "Rottweiler Continuous Line Art Heart Dog Lover T-Shirt | Pocket Portra",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
  "bulldog|line_classic|tee|pair": {
   "id": "6aed2ee9e7be4e1ecd0985e1",
   "bp": 12,
@@ -14,5 +739,35 @@
    "Asphalt": 18069
   },
   "src": "out/state_dark_tiktok.json"
+ },
+ "bulldog|line_cool|tee|pair": {
+  "id": "6ae56c0bd9d5b70e2704eb63",
+  "bp": 145,
+  "pp": 99,
+  "title": "English Bulldog Continuous Line Art Cool Dog Lover T-Shirt | Pocket Po",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
+ },
+ "bulldog|line_heart|tee|pair": {
+  "id": "6ae56c121db256d3020e9fe6",
+  "bp": 145,
+  "pp": 99,
+  "title": "English Bulldog Continuous Line Art Heart Dog Lover T-Shirt | Pocket P",
+  "cols": {
+   "2XL": 38221,
+   "3XL": 42123,
+   "M": 38179,
+   "L": 38193,
+   "S": 38165,
+   "XL": 38207
+  },
+  "src": "out/state_etsy.json"
  }
 }
