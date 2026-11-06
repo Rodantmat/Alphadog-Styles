@@ -9,10 +9,11 @@ import funny
 W,H=1080,1920;FPS=30
 FB=R+'out/footage/'
 # dogs (fixed across all weekly videos): video, crop keyframes [(src_t,cx,cy)], crop size, mode f=forward r=reversed, laugh-onset (source seconds)
-DOGS=[('out/footage2/7684117.mp4',[(0,650,330),(1.5,700,310),(3,650,320),(4.5,820,330),(5.5,660,370),(6.5,700,360),(7.5,780,380),(8.5,900,390)],640,'r',4.0),
- ('out/footage2/7802455.mp4',[(4,500,330),(6,640,310),(7,700,420),(8,500,420),(9,690,400),(10,700,360),(11,840,390)],620,'f',6.6),
- ('out/footage/1552.mp4',[(0,640,380),(9,640,380)],640,'f',1.8),
- ('out/footage/50667.mp4',[(0,690,330),(9,690,330)],600,'r',3.0)]
+DOGS=[('out/footage2/7684117.mp4',[(0,650,330),(1.5,700,310),(3,650,320),(4.5,820,330),(5.5,660,370),(6.5,700,360),(7.5,780,380),(8.5,900,390)],640,4.75,5.75,3.8),
+ ('out/footage2/7802455.mp4',[(4,500,330),(6,640,310),(7,700,420),(8,500,420),(9,690,400),(10,700,360),(11,840,390)],620,6.0,4.0,8.0),
+ ('out/footage/1552.mp4',[(0,640,380),(9,640,380)],640,1.0,0.0,2.8),
+ ('out/footage/50667.mp4',[(0,690,330),(9,690,330)],600,5.8,4.6,1.0)]   # (file, crop keyframes, size, calm_end, calm_far, laugh_peak) in source seconds
+TR=0.28  # seconds the face takes to snap from serious to full laugh
 LAUGH=2.0;SQ=400;GAP=20;CX=500  # phone-safe area: x 70-930, y 250-1500 (clear of app buttons/captions)
 def font(sz): return ImageFont.truetype('/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf',sz)
 def loadall(f,kf,sz):
@@ -24,11 +25,18 @@ def loadall(f,kf,sz):
         t=i/fps;i+=1;H0,W0=fr.shape[:2];cx=np.interp(t,kt,kx);cy=np.interp(t,kt,ky)
         x0=int(np.clip(cx-sz/2,0,W0-sz));y0=int(np.clip(cy-sz/2,0,H0-sz));out.append(cv2.resize(fr[y0:y0+sz,x0:x0+sz],(SQ,SQ),interpolation=cv2.INTER_AREA))
     return out,fps
-CLIPS=[loadall(f,kf,sz) for f,kf,sz,m,l in DOGS]
-def dogframe(i,p,lead):  # p = seconds since tile appeared; laugh onset at p=lead
-    fr,fps=CLIPS[i];m,Lon=DOGS[i][3],DOGS[i][4]
-    st=(Lon-lead+p) if m=='f' else (Lon+lead-p)
-    st=abs(st);idx=int(round(st*fps));return fr[min(max(idx,0),len(fr)-1)]
+CLIPS=[loadall(f,kf,sz) for f,kf,sz,a_,b_,c_ in DOGS]
+def tri(x,L):
+    if L<=0: return 0.0
+    x=x%(2*L);return x if x<=L else 2*L-x
+def dogframe(i,p,lead):  # p = seconds since tile appeared; the serious->laugh snap starts at p=lead (all four dogs together)
+    fr,fps=CLIPS[i];ce,cf,pk=DOGS[i][3],DOGS[i][4],DOGS[i][5];dur=len(fr)/fps
+    q=p-lead;d=1 if pk>ce else -1
+    if q<0: st=ce+(1 if cf>ce else -1)*tri(-q,abs(cf-ce))
+    elif q<TR: st=ce+(pk-ce)*(q/TR)
+    else: st=pk+d*(q-TR)
+    st=tri(st,dur-1/fps)
+    return fr[min(max(int(round(st*fps)),0),len(fr)-1)]
 def rmask(w,h,r):
     m=np.zeros((h,w),np.uint8);cv2.rectangle(m,(r,0),(w-r,h),255,-1);cv2.rectangle(m,(0,r),(w,h-r),255,-1)
     for x,y in((r,r),(w-r,r),(r,h-r),(w-r,h-r)): cv2.circle(m,(x,y),r,255,-1)
@@ -121,6 +129,6 @@ name=J['name'];out=R+f'out/laugh/{name}.mp4'
 L=R+'out/sfx/'+J.get('laugh','424')+'.mp3';M=R+'out/music2/'+J['music']
 dl=int(T_LAUGH*1000)
 subprocess.run(['ffmpeg','-y','-v','error','-i',R+'out/laugh/_v.mp4','-i',M,'-i',L,'-filter_complex',
- f'[1:a]atrim=0:{T_TOT},afade=t=in:d=0.6,afade=t=out:st={T_TOT-1.2}:d=1.2,volume=0.28[m];[2:a]atrim=0:{LAUGH+0.3},volume=1.7,adelay={dl}|{dl}[l];[m][l]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.95[a]',
+ f'[1:a]atrim=0:{T_TOT},afade=t=in:d=0.6,afade=t=out:st={T_TOT-1.2}:d=1.2,volume=0.28[m];[2:a]atrim=start=0.4:end={LAUGH+0.9},asetpts=PTS-STARTPTS,volume=1.9,adelay={dl}|{dl}[l];[m][l]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.95[a]',
  '-map','0:v','-map','[a]','-c:v','copy','-c:a','aac','-b:a','192k','-t',str(T_TOT),out],check=True)
 print(out,T_TOT)
