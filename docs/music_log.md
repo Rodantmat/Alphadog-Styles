@@ -17,3 +17,5 @@
 - Concept S1 (real dog in shades vs our design): "Island Beat" (Mixkit) - prototype
 
 - 2026-11-06  Post B library v2 music: b01 "Spanish Heart" (m05), b02 "One More Dance" (m01), b03 m03, b05 m06, b07 m09, b08 m15 (see out/music2/list.json). b01 (Fri 11/6 5pm PT) and b02 (Sat 11/7 4pm PT) scheduled via Buffer. Never reuse.
+
+- 2026-11-06  Post B extra variations: b09 m23, b10 m26, b12 m17 (b11 carousel no music). Post B slot moved to 8pm PT daily; b01 Fri 11/6 and b02 Sat 11/7 re-scheduled to 8pm PT on IG/TikTok/FB/Pinterest.
