@@ -6,7 +6,7 @@ os.environ.setdefault("MODE","status")
 MODE=os.environ["MODE"]
 import importlib.util
 src=open("scripts/tiktok_repurpose.py").read().split("n=0\nfor i,(ts,key)")[0]   # reuse helpers/constants only
-os.environ["MODE"]="helpers"; exec(src)
+M0=MODE; os.environ["MODE"]="helpers"; exec(src); MODE=M0
 ST="out/state_dark_tiktok.json"; S=json.load(open(ST)) if os.path.exists(ST) else {}
 def save(): json.dump(S,open(ST,"w"),indent=1)
 if MODE=="create":
