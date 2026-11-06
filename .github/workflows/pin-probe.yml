@@ -1,0 +1,14 @@
+name: pin-probe
+on: workflow_dispatch
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          for u in https://www.pinterest.com/AlphaDogStyles/alphadog-styles/ https://www.pinterest.com/AlphaDogStyles/ https://www.pinterest.com/AlphaDogStyles/_created/; do
+            echo "== $u"; curl -sL -A "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Safari/605.1.15" "$u" -o /tmp/p.html -w "%{http_code} %{size_download}\n"
+            grep -oE 'pinterest://board/[0-9]+|"board_id":"?[0-9]+|"boards?":\[?\{"id":"[0-9]+"|/board/[0-9]+|"id":"[0-9]{15,}","[a-z_]*name"' /tmp/p.html | sort -u | head -10
+            grep -oE '"type":"board","id":"[0-9]+"|"__typename":"Board","id":"[0-9]+"|"Board","id":"[0-9]+"' /tmp/p.html | sort -u | head
+          done
+          curl -sL "https://api.pinterest.com/v3/pidgets/users/AlphaDogStyles/pins/" | head -c 600
+          echo; curl -sL "https://widgets.pinterest.com/v3/pidgets/boards/AlphaDogStyles/alphadog-styles/pins/" | head -c 600
