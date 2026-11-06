@@ -17,6 +17,9 @@ if c == "channels": print(json.dumps(channels()))
 elif c == "types":
     for n in sys.argv[2:]:
         print("TYPE", n, json.dumps(gql('query($n:String!){__type(name:$n){kind enumValues{name} inputFields{name type{name kind ofType{name kind ofType{name kind}}}}}}', {"n": n})))
+elif c == "fields":
+    for n in sys.argv[2:]:
+        print("FIELDS", n, json.dumps(gql('query($n:String!){__type(name:$n){fields{name type{name kind ofType{name kind}}}}}', {"n": n})))
 elif c == "posts":
     q = 'query($o:OrganizationId!){posts(input:{organizationId:$o},first:100){edges{node{id status dueAt channelService text}}}}'
     for e in (gql(q, {"o": org()}).get("posts") or {}).get("edges") or []:
