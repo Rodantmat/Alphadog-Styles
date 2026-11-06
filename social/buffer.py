@@ -21,6 +21,12 @@ elif c == "posts":
     q = 'query($o:OrganizationId!){posts(input:{organizationId:$o},first:100){edges{node{id status dueAt channelService text}}}}'
     for e in (gql(q, {"o": org()}).get("posts") or {}).get("edges") or []:
         n = e["node"]; print("POST", n["id"], n["status"], n["dueAt"], n["channelService"], repr((n["text"] or "")[:50]))
+elif c == "delete":
+    ids=sys.argv[2:]
+    if ids==["ALL"]:
+        q = 'query($o:OrganizationId!){posts(input:{organizationId:$o},first:100){edges{node{id status}}}}'
+        ids=[e["node"]["id"] for e in (gql(q, {"o": org()}).get("posts") or {}).get("edges") or [] if e["node"]["status"] in ("scheduled","draft")]
+    for i in ids: print("DELETE", i, json.dumps(gql("mutation($i:DeletePostInput!){deletePost(input:$i){__typename ... on MutationError{message}}}", {"i": {"id": i}})))
 elif c == "plan":
     plan = json.load(open(sys.argv[2])); dry = "--dry" in sys.argv
     ch = {x["service"].lower(): x["id"] for x in channels()}
@@ -28,7 +34,7 @@ elif c == "plan":
         svc = p["service"]
         if svc not in ch: print("SKIP no channel", svc); continue
         inp = {"text": p["text"], "channelId": ch[svc], "schedulingType": "automatic", "mode": "customScheduled", "dueAt": p["due"],
-               "assets": [{"video": {"url": p["url"], "metadata": {"thumbnailOffset": 1200}}}]}
+               "assets": ([{"video": {"url": p["url"], "metadata": {"thumbnailOffset": 1200}}}] if p["url"].endswith(".mp4") else [{"image": {"url": u}} for u in p["url"].split("|")])}
         if p.get("metadata"): inp["metadata"] = p["metadata"]
         if dry: print("DRY", json.dumps(inp)[:300]); continue
         d = gql("mutation($input:CreatePostInput!){createPost(input:$input){... on PostActionSuccess{post{id dueAt status}} ... on MutationError{message}}}", {"input": inp})
