@@ -1,0 +1,114 @@
+{
+ "bulldog|line_classic|tee|pair": {
+  "id": "6aed2ee9e7be4e1ecd0985e1",
+  "slot": "629924364734",
+  "legacy": "french_bulldog|geo_classic|tee|pair",
+  "published": false,
+  "n": 42
+ },
+ "american_pit_bull_terrier|line_classic|tee|pair": {
+  "id": "6aed2eecc63b783dd60f9e10",
+  "slot": "630561505726",
+  "legacy": "french_bulldog|line_cool|tee|pocket",
+  "published": false,
+  "n": 42
+ },
+ "boxer|line_classic|tee|pair": {
+  "id": "6aed2ef0e7be4e1ecd0985e7",
+  "slot": "631113122238",
+  "legacy": "french_bulldog|geo_classic|tee|pocket",
+  "published": false,
+  "n": 42
+ },
+ "pug|line_classic|tee|pair": {
+  "id": "6aed2ef4c53c76c1630e5f09",
+  "slot": "639713870270",
+  "legacy": "french_bulldog|line_heart|tee|pocket",
+  "published": false,
+  "n": 42
+ },
+ "boston_terrier|line_classic|tee|pair": {
+  "id": "6aed2ef8e7be4e1ecd0985f3",
+  "slot": "639715115454",
+  "legacy": "french_bulldog|geo_cool|tee|portrait",
+  "published": false,
+  "n": 42
+ },
+ "yorkshire_terrier|line_classic|tee|pair": {
+  "id": "6aed2efbc53c76c1630e5f13",
+  "slot": "640287572414",
+  "legacy": "french_bulldog|line_classic|tee|pair",
+  "published": false,
+  "n": 42
+ },
+ "shih_tzu|line_classic|tee|pair": {
+  "id": "6aed2effe7be4e1ecd0985fc",
+  "slot": "649934275006",
+  "legacy": "french_bulldog|line_cool|tee|pair",
+  "published": false,
+  "n": 42
+ },
+ "australian_shepherd|line_classic|tee|pair": {
+  "id": "6aed2f03e7be4e1ecd098601",
+  "slot": "651522015678",
+  "legacy": "french_bulldog|line_heart|tee|pair",
+  "published": false,
+  "n": 42
+ },
+ "doberman_pinscher|geo_cool|tee|portrait": {
+  "id": "6aed2f07c63b783dd60f9e22",
+  "slot": "651566514622",
+  "legacy": "french_bulldog|geo_classic|tee|portrait",
+  "published": false,
+  "n": 42
+ },
+ "great_dane|geo_cool|tee|portrait": {
+  "id": "6aed2f0b7304d206f8079083",
+  "slot": "652510298558",
+  "legacy": "french_bulldog|line_classic|tee|pocket",
+  "published": false,
+  "n": 42
+ },
+ "pomeranian|geo_cool|tee|portrait": {
+  "id": "6aed2f0f32b1c0af69065135",
+  "slot": "653201768894",
+  "legacy": "french_bulldog|line_classic|tee|portrait",
+  "published": false,
+  "n": 42
+ },
+ "bernese_mountain_dog|geo_cool|tee|portrait": {
+  "id": "6aed2f12cf20bee54a07dcaf",
+  "slot": "653446480318",
+  "legacy": "french_bulldog|geo_heart|tee|pair",
+  "published": false,
+  "n": 42
+ },
+ "siberian_husky|geo_cool|tee|portrait": {
+  "id": "6aed2f16950d2791130f89bb",
+  "slot": "654581891518",
+  "legacy": "french_bulldog|geo_cool|tee|pocket",
+  "published": false,
+  "n": 42
+ },
+ "pembroke_welsh_corgi|geo_cool|tee|portrait": {
+  "id": "6aed2f1a32b1c0af69065143",
+  "slot": "663932240318",
+  "legacy": "french_bulldog|line_cool|tee|portrait",
+  "published": false,
+  "n": 42
+ },
+ "cavalier_king_charles_spaniel|geo_cool|tee|portrait": {
+  "id": "6aed2f1d7304d206f807909c",
+  "slot": "982061941182",
+  "legacy": "dachshund|geo_cool|tee|pair",
+  "published": false,
+  "n": 42
+ },
+ "miniature_schnauzer|geo_cool|tee|portrait": {
+  "id": "6aed2f21950d2791130f89c5",
+  "slot": "984248680894",
+  "legacy": "dachshund|line_classic|tee|pocket",
+  "published": false,
+  "n": 42
+ }
+}
