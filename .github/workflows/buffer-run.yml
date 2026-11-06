@@ -1,0 +1,17 @@
+name: buffer-run
+on:
+  workflow_dispatch:
+    inputs:
+      account: {description: "1=IG/Pin/TikTok, 2=Facebook", default: "1"}
+      args: {description: "buffer.py args", default: "channels"}
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          K1: ${{ secrets.BUFFER_API_KEY }}
+          K2: ${{ secrets.BUFFER_API_KEY_2 }}
+        run: |
+          if [ "${{ inputs.account }}" = "2" ]; then export KEY="$K2"; else export KEY="$K1"; fi
+          python3 social/buffer.py ${{ inputs.args }}
