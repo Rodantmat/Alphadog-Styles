@@ -1,0 +1,15 @@
+name: pxget
+on:
+  workflow_dispatch:
+    inputs: { ids: {default: ""} }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: which ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+      - run: mkdir -p out/footage2; python3 scripts/video/pxget.py "${{ inputs.ids }}" | tee out/footage2/log.txt
+      - run: |
+          git config user.name "alphadog-bot"; git config user.email "bot@users.noreply.github.com"
+          git add out/footage2 && git commit -m "pxget" && git pull --rebase -q && git push || true
