@@ -14,7 +14,7 @@ DOGS=[('out/footage2/7684117.mp4',[(0,650,330),(1.5,700,310),(3,650,320),(4.5,82
  ('out/footage/1552.mp4',[(0,640,380),(9,640,380)],640,1.0,0.0,2.8),
  ('out/footage/50667.mp4',[(0,690,330),(9,690,330)],600,5.8,4.6,1.0)]   # (file, crop keyframes, size, calm_end, calm_far, laugh_peak) in source seconds
 TR=0.28  # seconds the face takes to snap from serious to full laugh
-LAUGH=2.0;SQ=400;GAP=20;CX=500  # phone-safe area: x 70-930, y 250-1500 (clear of app buttons/captions)
+LAUGH=3.5;SQ=400;GAP=20;CX=500  # phone-safe area: x 70-930, y 250-1500 (clear of app buttons/captions)
 def font(sz): return ImageFont.truetype('/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf',sz)
 def loadall(f,kf,sz):
     cap=cv2.VideoCapture(R+f);fps=cap.get(cv2.CAP_PROP_FPS) or 30;out=[];i=0
@@ -32,7 +32,7 @@ def tri(x,L):
 def dogframe(i,p,lead):  # p = seconds since tile appeared; the serious->laugh snap starts at p=lead (all four dogs together)
     fr,fps=CLIPS[i];ce,cf,pk=DOGS[i][3],DOGS[i][4],DOGS[i][5];dur=len(fr)/fps
     q=p-lead;d=1 if pk>ce else -1
-    if q<0: st=ce+(1 if cf>ce else -1)*tri(-q,abs(cf-ce))
+    if q<0: st=ce+(1 if cf>ce else -1)*tri(-q*0.6,abs(cf-ce))
     elif q<TR: st=ce+(pk-ce)*(q/TR)
     else: st=pk+d*(q-TR)
     st=tri(st,dur-1/fps)
@@ -92,7 +92,7 @@ for k,(x,y,w,rot) in zip(J['merch'],POSM):
 Q=textlayer(J['q'],J.get('qsize',70),maxw=820);A=textlayer(J['a'],J.get('asize',78),color=(255,226,60),maxw=840)
 TOP=textlayer(J['top'],58,maxw=820);BOT=textlayer(J['bottom'],42,maxw=820)
 # timeline
-T_Q=2.6;T_FACE=T_Q;T_HOLD=T_FACE+2.2;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.4;T_M=T_CLR+0.15;STEP=0.42;T_TOT=T_M+len(MERCH)*STEP+2.4
+T_Q=3.6;T_FACE=T_Q;T_HOLD=T_FACE+3.7;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.6;T_TOT=T_M+len(MERCH)*STEP+3.4
 N=int(T_TOT*FPS)
 cmd=['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-an','-c:v','libx264','-preset','veryfast','-crf','17','-pix_fmt','yuv420p',R+'out/laugh/_v.mp4']
 pr=subprocess.Popen(cmd,stdin=subprocess.PIPE)
@@ -106,7 +106,7 @@ for n in range(N):
         qs=bounce(t/0.45)
         paste(cv,Q,CX,qy,scale=max(qs,0.01)*(0.92+0.08*clr)+0.0,alpha=clr)
         for i in range(4):
-            ti=T_FACE+i*0.3
+            ti=T_FACE+i*0.4
             if t>=ti:
                 fr=dogframe(i,t-ti,T_LAUGH-ti);tl=tile(fr,i+1);sc=bounce((t-ti)/0.4)
                 pulse=1;rot=0
