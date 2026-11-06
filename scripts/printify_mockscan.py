@@ -15,7 +15,7 @@ for key in ["french_bulldog|line_classic|tee|pair","french_bulldog|line_classic|
     var=[int(re.search(r"/mockup/[^/]+/(\d+)/",im["src"]).group(1)) for im in p["images"] if "/mockup/" in im["src"]][0]
     lo,hi=min(ids),max(ids); print("KEY",key,"bp",p["blueprint_id"],"var",var,"ids",sorted(set(ids)),flush=True)
     d=f"out/mockscan/{p['blueprint_id']}"; os.makedirs(d,exist_ok=True); seen={}
-    for i in range(lo-3,hi+24):
+    for i in sorted({j for b0 in set(ids) for j in range(b0-4,b0+12)}):
         time.sleep(1.2)
         try: b=urllib.request.urlopen(urllib.request.Request(f"https://images.printify.com/mockup/{pid}/{var}/{i}/x.jpg?camera_label=front",headers={"User-Agent":"Mozilla/5.0"}),timeout=30).read()
         except Exception as e: print("ERR",i,e,flush=True); continue
