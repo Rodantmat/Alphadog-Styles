@@ -8,3 +8,7 @@ Backgrounds (texture + colour) and music may repeat only after 2 months. Never t
 ## Assets
 Trimmed merch library: out/merch_lib/<cat>/<breed>/<code>.webp (RGBA, black-bg tested; code = design digit + colour). Builder scripts/video/merch_lib.py. Released as GitHub release asset merch-cutouts-v1 when complete.
 Laugh template config examples: social/laugh/j01_labrador.json, j02_pupperoni.json (bg via "seed" + "pal"{c1,c2,ink}).
+
+## Merch placement rule (owner, 2026-11-06)
+Every finale mixes placement/views: back print (library file <code>_back.webp = big full-dog back), big face on the front (designs 2 and 5), small chest emblem (designs 1,3,4), plus different product types, colours and designs. Backgrounds must be structurally different (social/laugh/bgs.py: sunburst, checker, dots, stripes, chevron, stars, hexes; paws only for laugh01), never just a recolour. Laugh track also changes (out/sfx: 424 used by 01, 422 by 02; others 423, 460, 512, 516).
+Layout: joke fixed on top the whole time, dog tiles centred below with wiggle space, answer under them, merch big (finale 4 corners + middle, ~2 s hold).

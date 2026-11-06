@@ -12,7 +12,7 @@ FB=R+'out/footage/'
 DOGS=[('out/footage3/chi.mp4',[(0,512,288),(9,512,288)],576,3.5,1.4,6.6),
  ('out/footage3/yorkie.mp4',[(0,235,665),(40,235,665)],460,13.0,11.0,13.8)]
 TR=0.28  # seconds the face takes to snap from serious to full laugh
-LAUGH=3.5;SQ=420;GAP=20;CX=500  # phone-safe area: x 70-930, y 250-1500 (clear of app buttons/captions)
+ANSY=1180;LAUGH=3.5;SQ=420;GAP=24;CX=500  # phone-safe area: x 70-930, y 250-1500 (clear of app buttons/captions)
 def font(sz): return ImageFont.truetype('/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf',sz)
 def loadall(f,kf,sz):
     cap=cv2.VideoCapture(R+f);fps=cap.get(cv2.CAP_PROP_FPS) or 30;out=[];i=0
@@ -40,8 +40,9 @@ def rmask(w,h,r):
     for x,y in((r,r),(w-r,r),(r,h-r),(w-r,h-r)): cv2.circle(m,(x,y),r,255,-1)
     return cv2.GaussianBlur(m,(0,0),0.8).astype(np.float32)/255
 SM=rmask(SQ,SQ,40);BW=10;SMi=rmask(SQ-2*BW,SQ-2*BW,32)
-bg=funny.paws(seed=J.get('seed',5),**J.get('pal',{})).astype(np.float32)
-POS=[(CX-SQ-GAP//2,640),(CX+GAP//2,640)]
+import bgs
+bg=(bgs.make(J['bgstyle'],J.get('seed',5),*J['bgcols']) if 'bgstyle' in J else funny.paws(seed=J.get('seed',5),**J.get('pal',{}))).astype(np.float32)
+POS=[(CX-SQ-GAP//2,560),(CX+GAP//2,560)]
 def sm(x): x=min(max(x,0),1);return x*x*(3-2*x)
 def bounce(t):
     if t<=0: return 0.0
@@ -84,13 +85,20 @@ def shadow(im,blur=22,off=16,op=0.45):
     s.paste(sh,(60,60+off),sh);s=s.filter(ImageFilter.GaussianBlur(blur));s.alpha_composite(im,(60,60));return s
 # merch
 MERCH=[]
-POSM=[(290,630,400,-6),(790,640,400,5),(790,1090,390,-4),(290,1090,400,4),(540,860,370,2)]
+POSM=[(300,650,430,-6),(700,660,430,5),(700,1110,420,-4),(300,1100,430,4),(500,880,400,2)]
+sys.path.insert(0,R+'scripts/video');import merch_lib as ML
+def ensure(k):
+    o=R+'out/merch_lib/'+k+'.webp'
+    if os.path.exists(o) or '/' not in k: return
+    back=k.endswith('_back');rel=k[:-5] if back else k;f=ML.SRC+rel+'.jpg'
+    r=ML.cut_back(f) if back else ML.cut(f);ML.save(r[0],o)
 for k,(x,y,w,rot) in zip(J['merch'],POSM):
+    ensure(k)
     im=Image.open(R+('out/merch_lib/'+k+'.webp' if '/' in k else 'out/laugh/cut/'+k+'.png')).convert('RGBA');im=im.crop(im.getbbox());im=im.resize((w,int(im.height*w/im.width)),Image.LANCZOS);MERCH.append((shadow(im),x,y,rot))
 Q=textlayer(J['q'],J.get('qsize',70),maxw=820);A=textlayer(J['a'],J.get('asize',78),color=(255,226,60),maxw=840)
 TOP=textlayer(J['top'],58,maxw=820);BOT=textlayer(J['bottom'],42,maxw=820)
 # timeline
-T_Q=3.6;T_FACE=T_Q;T_HOLD=T_FACE+3.7;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.6;T_TOT=T_M+len(MERCH)*STEP+2.2
+T_Q=0.3;T_FACE=2.6;T_HOLD=T_FACE+3.7;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.6;T_TOT=T_M+len(MERCH)*STEP+2.2
 N=int(T_TOT*FPS)
 cmd=['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-an','-c:v','libx264','-preset','veryfast','-crf','17','-pix_fmt','yuv420p',R+'out/laugh/_v.mp4']
 pr=subprocess.Popen(cmd,stdin=subprocess.PIPE)
@@ -100,8 +108,8 @@ for n in range(N):
     clr=1-sm((t-T_END-0.05)/0.3) if t<T_CLR else 0  # fade/scale out of dog scene
     if t<T_CLR:
         # question: centred then moves up
-        mv=sm((t-T_Q)/0.5);qy=(H/2-60)+(360-(H/2-60))*mv
-        qs=bounce(t/0.45)
+        mv=1;qy=330
+        qs=bounce((t-0.3)/0.45)
         paste(cv,Q,CX,qy,scale=max(qs,0.01)*(0.92+0.08*clr)+0.0,alpha=clr)
         for i in range(2):
             ti=T_FACE+i*0.4
@@ -111,7 +119,7 @@ for n in range(N):
                 if T_LAUGH<=t<T_END: q=t-T_LAUGH;pulse=1+0.05*abs(math.sin(2*math.pi*2.2*q));rot=3.0*math.sin(2*math.pi*4.4*q+i)
                 x,y=POS[i];paste(cv,tl,x+SQ/2,y+SQ/2,scale=max(sc,0.01)*(0.9+0.1*clr)*pulse,alpha=clr,rot=rot)
         if t>=T_LAUGH:
-            s=bounce((t-T_LAUGH)/0.35);paste(cv,A,CX,1440,scale=max(s,0.01)*(0.9+0.1*clr),alpha=clr)
+            s=bounce((t-T_LAUGH)/0.35);paste(cv,A,CX,ANSY,scale=max(s,0.01)*(0.9+0.1*clr),alpha=clr)
             # little shake while laughing
     else:
         paste(cv,TOP,CX,300,alpha=sm((t-T_M)/0.4))
@@ -127,6 +135,6 @@ name=J['name'];out=R+f'out/laugh/{name}.mp4'
 L=R+'out/sfx/'+J.get('laugh','424')+'.mp3';M=R+'out/music2/'+J['music']
 dl=int(T_LAUGH*1000)
 subprocess.run(['ffmpeg','-y','-v','error','-i',R+'out/laugh/_v.mp4','-i',M,'-i',L,'-filter_complex',
- f'[1:a]atrim=0:{T_TOT},afade=t=in:d=0.6,afade=t=out:st={T_TOT-1.2}:d=1.2,volume=0.28[m];[2:a]atrim=start=0.4:end={LAUGH+0.9},asetpts=PTS-STARTPTS,volume=1.9,adelay={dl}|{dl}[l];[m][l]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.95[a]',
+ f'[1:a]atrim=0:{T_TOT},afade=t=in:d=0.6,afade=t=out:st={T_TOT-1.2}:d=1.2,volume=0.28[m];[2:a]atrim=start={J.get('trim',0.4)}:end={LAUGH+0.9},asetpts=PTS-STARTPTS,volume=1.9,adelay={dl}|{dl}[l];[m][l]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.95[a]',
  '-map','0:v','-map','[a]','-c:v','copy','-c:a','aac','-b:a','192k','-t',str(T_TOT),out],check=True)
 print(out,T_TOT)

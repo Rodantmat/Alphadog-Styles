@@ -47,11 +47,11 @@ def fringe(im,alpha_hard):
     mc=im.min(2).astype(np.float32);gmed=np.median(mc[inner])
     if gmed>110: return 0.0,gmed   # light garment: cannot separate by colour
     return float((mc[ring]>232).mean()),gmed
-def cut(path):
+def cut(path,img=None):
     iscap='/cap_' in path
-    im=cv2.imread(path)
+    im=cv2.imread(path) if img is None else img
     if im is None: return None
-    inset=has_inset(im)
+    inset=has_inset(im) if img is None else False
     if inset: im=mirror_fill(im)
     a=rmask(im);d=cv2.GaussianBlur(np.abs(im.astype(np.float32)-255).sum(2),(0,0),1.0)
     rem=(a>0.5).astype(np.uint8)
@@ -68,8 +68,9 @@ def cut(path):
         shadow=(C>0)&(cv2.dilate(rem,np.ones((5,5),np.uint8))==0)&neutral
         hard=((C>0)&~shadow).astype(np.uint8)
     else: hard=C   # rembg lost a pale garment -> trust the white-background cut
-    if iscap and gm<200:   # soft grey floor shadow is bright + neutral; white print lines are enclosed and get refilled
-        nb2=((im.max(2).astype(int)-im.min(2))<14)&(im.min(2)>140)
+    sat=float(np.median((im.max(2).astype(int)-im.min(2))[rem>0])) if rem.sum() else 0
+    if iscap and (gm<200 or sat>16):   # soft grey floor shadow is bright + neutral; white print lines are enclosed and get refilled
+        nb2=((im.max(2).astype(int)-im.min(2))<14)&(im.min(2)>(70 if sat>16 else 140))
         hard=fillholes(largest(((hard>0)&~nb2).astype(np.uint8)))
     if iscap and rem.sum()>=0.5*C.sum(): hard=(hard&cv2.dilate(rem,np.ones((13,13),np.uint8))).astype(np.uint8)
     if gm<200 and not iscap:   # dark garment: strip bright backdrop remnants that touch the outline (printed art is enclosed)
@@ -77,6 +78,9 @@ def cut(path):
         out_d=cv2.distanceTransform(hard,cv2.DIST_L2,3);nbr=(out_d<=3)&(hard>0)
         n,l,_,_=cv2.connectedComponentsWithStats(br);seed=np.unique(l[(nbr)&(br>0)])
         bad=np.isin(l,seed[seed>0])|((br>0)&(out_d<=60));hard=((hard>0)&~cv2.dilate(bad.astype(np.uint8),np.ones((3,3),np.uint8)).astype(bool)).astype(np.uint8)
+    if sat>12 and not iscap and gm>=110 and rem.sum()>=0.6*C.sum():   # cream/peach/blue garments: neutral bright pixels touching the outside are backdrop
+        sp=(im.max(2).astype(int)-im.min(2));nb3=((im.min(2)>228)&(sp<9)).astype(np.uint8);n3,l3,_,_=cv2.connectedComponentsWithStats(nb3)
+        b3=np.isin(l3,list({l3[0,0],l3[0,-1],l3[-1,0],l3[-1,-1]}-{0})).astype(np.uint8);hard=(hard&(1-cv2.dilate(b3,np.ones((3,3),np.uint8)))).astype(np.uint8)
     hard=cv2.morphologyEx(hard,cv2.MORPH_CLOSE,np.ones((7,7),np.uint8));hard=fillholes(largest(hard))
     if gm<200 and not iscap: hard=fillholes(largest((hard>0)&~(cv2.dilate(bg,np.ones((3,3),np.uint8))>0))).astype(np.uint8) if False else (((hard>0)&~(cv2.dilate(bg,np.ones((3,3),np.uint8))>0)).astype(np.uint8))
     # drop thin slivers (soft shadow edges): opening then geodesic regrow by 3 px
@@ -90,8 +94,8 @@ def cut(path):
     if gm<200 and not iscap:   # final pass AFTER hole filling: enclosed slivers of backdrop (armpit slits)
         dd=cv2.distanceTransform(h2,cv2.DIST_L2,3);brt=((im.min(2)>max(120,gm+38))&(dd>0)&(dd<=60)).astype(np.uint8)
         h2=(h2&~cv2.dilate(brt,np.ones((3,3),np.uint8))).astype(np.uint8)
-    if inset:   # smooth the seam where the mirrored sleeve meets the real one
-        h2=(cv2.GaussianBlur(h2.astype(np.float32),(0,0),5)>0.5).astype(np.uint8)
+    if inset or img is not None:   # smooth seam / upscaled low-res back views
+        h2=(cv2.GaussianBlur(h2.astype(np.float32),(0,0),5 if inset else 4)>0.5).astype(np.uint8)
     al=cv2.GaussianBlur(h2.astype(np.float32),(0,0),1.0);al=np.clip((al-0.3)/0.5,0,1)
     col=im.astype(np.float32);aa=np.maximum(al[...,None],0.4);edge=((al>0)&(al<0.98))[...,None]
     dec=np.clip((col-(1-aa)*255)/aa,0,255);col=np.where(edge,dec,col)
@@ -116,5 +120,17 @@ if __name__=='__main__':
             r=cut(f)
             if r is None: continue
             out,meta=r;save(out,o);meta['f']=rel;log.write(json.dumps(meta)+'\n');log.flush();n+=1
+            if meta.get('inset'):
+                rb=cut_back(f)
+                if rb is not None:
+                    ob=o[:-5]+'_back.webp';save(rb[0],ob);mb=rb[1];mb['f']=rel+'#back';log.write(json.dumps(mb)+'\n');log.flush()
         except Exception as e: log.write(json.dumps({'f':rel,'err':repr(e)[:120]})+'\n');log.flush()
     print('done',shard,n)
+
+def cut_back(path):
+    """cut the inset (back-view) mockup of a front image into its own cutout"""
+    im=cv2.imread(path)
+    if im is None or not has_inset(im): return None
+    c=im[660:1172,660:1172].copy();w=(c.min(2)>236)&((c.max(2).astype(int)-c.min(2))<10);c[w]=255;c=cv2.resize(c,(1064,1064),interpolation=cv2.INTER_CUBIC)
+    canvas=np.full((1200,1200,3),255,np.uint8);canvas[68:1132,68:1132]=c
+    return cut(path,canvas)

@@ -2,33 +2,33 @@
  {
   "date": "2026-11-09",
   "type": "laugh4",
-  "name": "laugh01_labrador",
+  "name": "laugh01_labrador_v7",
   "bg": "paws blue seed5 (40,178,246)",
   "music": "m25",
   "laugh": "424",
   "joke": "magician dog / Labracadabrador",
   "merch": [
-   "cap_dad/labrador_retriever/4DK",
+   "tee/labrador_retriever/4BK_back",
    "hoodie/labrador_retriever/2NV",
-   "tank/labrador_retriever/1HE",
-   "tee/labrador_retriever/3CR",
-   "polo/labrador_retriever/3BK"
+   "tank/labrador_retriever/1HE_back",
+   "wtank/labrador_retriever/2TB",
+   "cap_foam/labrador_retriever/3FP"
   ]
  },
  {
   "date": "2026-11-12",
   "type": "laugh2",
-  "name": "laugh02_pupperoni",
-  "bg": "paws orange seed11 (255,160,70)",
+  "name": "laugh02_pupperoni_v2",
+  "bg": "dots pink halftone (250,90,160)",
   "music": "m12",
-  "laugh": "460",
+  "laugh": "422",
   "joke": "favorite pizza / Pupperoni",
   "merch": [
-   "tee/pug/1RD",
-   "hoodie/pembroke_welsh_corgi/3GR",
-   "tank/shiba_inu/4HE",
-   "wtank/poodle/6HG",
-   "cap_dad/beagle/1DK"
+   "tee/pembroke_welsh_corgi/3CR_back",
+   "hoodie/siberian_husky/3GR_back",
+   "tank/german_shepherd/2BK",
+   "wtank/boxer/2LO",
+   "cap_dad/shiba_inu/1DS"
   ]
  }
 ]
