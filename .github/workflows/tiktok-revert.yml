@@ -1,0 +1,16 @@
+name: tiktok-revert
+on:
+  workflow_dispatch:
+    inputs:
+      key: { description: "state key", required: true }
+permissions:
+  contents: read
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          KEY: ${{ inputs.key }}
+        run: python3 scripts/tiktok_revert.py
