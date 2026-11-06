@@ -1,0 +1,20 @@
+FAIL pexels smiling dog <HTTPError 403: 'Forbidden'>
+FAIL pixabay smiling dog <HTTPError 403: 'Forbidden'>
+OK vecteezy smiling dog 1371906 101 ['87461719', '71584915', '24696297', '73625835', '43400985', '59030483', '74961251', '87214141', '7423086', '1626634', '88190377', '50862458']
+OK coverr smiling dog 1950394 142 ['10340594', '34798222', '1020636487', '1012868366', '1009641959', '26688304', 'null', 'user-ai-generation-', 'dog-lying-on-the-floor-fdrv9wmxda', 'coverr-dog-lying-on-the-floor-3429', 'woman-and-dog-enjoy-playtime-on-the-beach-at-sunset', 'coverr-sunset-fetch-playtime-with-dog']
+FAIL pexels laughing dog <HTTPError 403: 'Forbidden'>
+FAIL pixabay laughing dog <HTTPError 403: 'Forbidden'>
+OK vecteezy laughing dog 1093235 51 ['87461719', '9676871', '74894124', '87242130', '87063251', '85798643', '83992962', '85990469', '84938280', '80970729', '52911626', '36493921']
+OK coverr laughing dog 1947387 143 ['10340594', '34798222', '1020636487', '1012868366', '1009641959', '26688304', 'dog-lying-on-the-floor-fdrv9wmxda', 'coverr-dog-lying-on-the-floor-3429', 'woman-and-dog-enjoy-playtime-on-the-beach-at-sunset', 'coverr-sunset-fetch-playtime-with-dog', 'joyful-bearded-man-laughing-on-street', 'coverr-temp-dopghomelessmanmp4-7020']
+FAIL pexels dog smile <HTTPError 403: 'Forbidden'>
+FAIL pixabay dog smile <HTTPError 403: 'Forbidden'>
+OK vecteezy dog smile 1379956 101 ['87461719', '9167550', '17747151', '4694352', '46488631', '74952343', '87214141', '88190377', '1622830', '50619905', '85798643', '3409110']
+OK coverr dog smile 1953168 143 ['10340594', '34798222', '1020636487', '1012868366', '1009641959', '26688304', 'dog-lying-on-the-floor-fdrv9wmxda', 'coverr-dog-lying-on-the-floor-3429', 'woman-and-dog-enjoy-playtime-on-the-beach-at-sunset', 'coverr-sunset-fetch-playtime-with-dog', 'joyful-bearded-man-laughing-on-street', 'coverr-temp-dopghomelessmanmp4-7020']
+FAIL pexels happy dog teeth <HTTPError 403: 'Forbidden'>
+FAIL pixabay happy dog teeth <HTTPError 403: 'Forbidden'>
+FAIL vecteezy happy dog teeth <HTTPError 404: 'Not Found'>
+OK coverr happy dog teeth 1953002 141 ['10340594', '34798222', '1020636487', '1012868366', '1009641959', '26688304', 'happy-diner-enjoying-a-burger', 'user-ai-generation-', 'null', 'dog-lying-on-the-floor-fdrv9wmxda', 'coverr-dog-lying-on-the-floor-3429', 'adorable-corgi-puppys-mystic-quest']
+FAIL pexels funny dog smile <HTTPError 403: 'Forbidden'>
+FAIL pixabay funny dog smile <HTTPError 403: 'Forbidden'>
+FAIL vecteezy funny dog smile <HTTPError 404: 'Not Found'>
+OK coverr funny dog smile 1947106 142 ['10340594', '34798222', '1020636487', '1012868366', '1009641959', '26688304', 'cozy-moments-friends-laughing-together-indoors', 'user-ai-generation-aqq', 'null', 'user-ai-generation-', 'dog-lying-on-the-floor-fdrv9wmxda', 'coverr-dog-lying-on-the-floor-3429']
