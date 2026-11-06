@@ -1,0 +1,15 @@
+name: buffer-probe
+on: workflow_dispatch
+jobs:
+  p:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          A: ${{ secrets.BUFFER_API_KEY }}
+          B: ${{ secrets.BUFFER_API_KEY_2 }}
+          C: ${{ secrets.BUFFER_API_KEY_FB }}
+          D: ${{ secrets.BUFFER_FB_API_KEY }}
+          E: ${{ secrets.BUFFER_API_KEY_FACEBOOK }}
+          F: ${{ secrets.BUFFER_API_KEY2 }}
+          G: ${{ secrets.BUFFER2_API_KEY }}
+        run: echo "LENS ${#A} ${#B} ${#C} ${#D} ${#E} ${#F} ${#G}"
