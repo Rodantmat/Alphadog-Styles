@@ -1,0 +1,34 @@
+[
+ {
+  "date": "2026-11-09",
+  "type": "laugh4",
+  "name": "laugh01_labrador",
+  "bg": "paws blue seed5 (40,178,246)",
+  "music": "m25",
+  "laugh": "424",
+  "joke": "magician dog / Labracadabrador",
+  "merch": [
+   "cap_dad/labrador_retriever/4DK",
+   "hoodie/labrador_retriever/2NV",
+   "tank/labrador_retriever/1HE",
+   "tee/labrador_retriever/3CR",
+   "polo/labrador_retriever/3BK"
+  ]
+ },
+ {
+  "date": "2026-11-12",
+  "type": "laugh2",
+  "name": "laugh02_pupperoni",
+  "bg": "paws orange seed11 (255,160,70)",
+  "music": "m12",
+  "laugh": "460",
+  "joke": "favorite pizza / Pupperoni",
+  "merch": [
+   "tee/pug/1RD",
+   "hoodie/pembroke_welsh_corgi/3GR",
+   "tank/shiba_inu/4HE",
+   "wtank/poodle/6HG",
+   "cap_dad/beagle/1DK"
+  ]
+ }
+]
