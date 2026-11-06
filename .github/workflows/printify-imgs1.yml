@@ -1,0 +1,16 @@
+name: printify-imgs1
+on:
+  workflow_dispatch:
+    inputs:
+      shop: {required: true}
+      pids: {required: true}
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          SHOP: ${{ inputs.shop }}
+          PIDS: ${{ inputs.pids }}
+        run: python3 scripts/printify_imgs1.py
