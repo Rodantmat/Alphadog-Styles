@@ -86,13 +86,13 @@ def shadow(im,blur=22,off=16,op=0.45):
     s.paste(sh,(60,60+off),sh);s=s.filter(ImageFilter.GaussianBlur(blur));s.alpha_composite(im,(60,60));return s
 # merch
 MERCH=[]
-POSM=[(330,575,460,-6),(665,715,490,5),(700,1085,400,-4),(345,1030,520,4)]
+POSM=[(290,630,400,-6),(790,640,400,5),(790,1090,390,-4),(290,1090,400,4),(540,860,370,2)]
 for k,(x,y,w,rot) in zip(J['merch'],POSM):
-    im=Image.open(R+'out/laugh/cut/'+k+'.png').convert('RGBA');im=im.resize((w,int(im.height*w/im.width)),Image.LANCZOS);MERCH.append((shadow(im),x,y,rot))
+    im=Image.open(R+('out/merch_lib/'+k+'.webp' if '/' in k else 'out/laugh/cut/'+k+'.png')).convert('RGBA');im=im.crop(im.getbbox());im=im.resize((w,int(im.height*w/im.width)),Image.LANCZOS);MERCH.append((shadow(im),x,y,rot))
 Q=textlayer(J['q'],J.get('qsize',70),maxw=820);A=textlayer(J['a'],J.get('asize',78),color=(255,226,60),maxw=840)
 TOP=textlayer(J['top'],58,maxw=820);BOT=textlayer(J['bottom'],42,maxw=820)
 # timeline
-T_Q=3.6;T_FACE=T_Q;T_HOLD=T_FACE+3.7;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.6;T_TOT=T_M+len(MERCH)*STEP+3.4
+T_Q=3.6;T_FACE=T_Q;T_HOLD=T_FACE+3.7;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.6;T_TOT=T_M+len(MERCH)*STEP+2.2
 N=int(T_TOT*FPS)
 cmd=['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-an','-c:v','libx264','-preset','veryfast','-crf','17','-pix_fmt','yuv420p',R+'out/laugh/_v.mp4']
 pr=subprocess.Popen(cmd,stdin=subprocess.PIPE)
@@ -121,7 +121,7 @@ for n in range(N):
             ti=T_M+j*STEP
             if t>=ti:
                 s=bounce((t-ti)/0.28);ox=(1-s)*(-1 if j%2 else 1)*160;paste(cv,im,x+ox,y,scale=max(0.4+0.6*s,0.05),alpha=min(1,(t-ti)/0.1),rot=rot)
-        paste(cv,BOT,CX,1440,alpha=sm((t-T_M-1.2)/0.5))
+        paste(cv,BOT,CX,1470,alpha=sm((t-T_M-1.2)/0.5))
     pr.stdin.write(np.array(cv.convert('RGB')).tobytes())
 pr.stdin.close();pr.wait()
 # audio
