@@ -1,0 +1,12 @@
+name: vprobe
+on: workflow_dispatch
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/video/vprobe.py | tee out_vprobe.txt; mkdir -p out/vprobe; cp out_vprobe.txt out/vprobe/log.txt
+      - run: |
+          git config user.name "alphadog-bot"; git config user.email "bot@users.noreply.github.com"
+          git add out/vprobe && git commit -m "vprobe" && git pull --rebase -q && git push || true
