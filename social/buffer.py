@@ -20,6 +20,10 @@ elif c == "types":
 elif c == "fields":
     for n in sys.argv[2:]:
         print("FIELDS", n, json.dumps(gql('query($n:String!){__type(name:$n){fields{name type{name kind ofType{name kind}}}}}', {"n": n})))
+elif c == "boards":
+    for ch in channels():
+        if ch["service"]=="pinterest":
+            print("BOARDS", json.dumps(gql('query($i:ChannelId!){channel(input:{id:$i}){metadata{... on PinterestMetadata{boards{id name serviceId}}}}}', {"i": ch["id"]})))
 elif c == "posts":
     q = 'query($o:OrganizationId!){posts(input:{organizationId:$o},first:100){edges{node{id status dueAt channelService text}}}}'
     for e in (gql(q, {"o": org()}).get("posts") or {}).get("edges") or []:
