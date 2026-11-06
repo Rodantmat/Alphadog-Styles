@@ -24,6 +24,10 @@ elif c == "boards":
     for ch in channels():
         if ch["service"]=="pinterest":
             print("BOARDS", json.dumps(gql('query($i:ChannelId!){channel(input:{id:$i}){metadata{... on PinterestMetadata{boards{id name serviceId}}}}}', {"i": ch["id"]})))
+elif c == "probe":
+    for ch in channels():
+        if ch["service"]=="pinterest":
+            print("PROBE", json.dumps(gql('query($i:ChannelId!){channel(input:{id:$i}){id name displayName descriptor externalLink isDisconnected isLocked isNew allowedActions metadata{__typename ... on PinterestMetadata{boards{id name serviceId url}}}}}', {"i": ch["id"]})))
 elif c == "posts":
     q = 'query($o:OrganizationId!){posts(input:{organizationId:$o},first:100){edges{node{id status dueAt channelService text}}}}'
     for e in (gql(q, {"o": org()}).get("posts") or {}).get("edges") or []:
