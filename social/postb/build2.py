@@ -6,7 +6,7 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 FB="/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf"; FR="/usr/share/fonts/truetype/google-fonts/Poppins-Regular.ttf"; FS="/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf"
 LOGO="store/logo.png"
-TR=["fade","smoothleft","dissolve","fadewhite","smoothright","fade","circleopen","dissolve"]
+TR=["fade","smoothleft","fadeblack","zoomin","smoothup","fade","fadewhite","circleopen","smoothright"]
 def fullscreen(path,W,H):
     im=Image.open(path).convert("RGB"); w,h=im.size
     edge=np.array(im.crop((0,h-6,w,h))).astype("float32")
@@ -51,7 +51,7 @@ def dress(can,y0,ih,title,sub,W,H,i):
     f3=ImageFont.truetype(FB,30); s="ALPHADOG STYLES"; w=d.textlength(s,font=f3); d.text(((W-w)/2,H-86),s,font=f3,fill=ink(botc))
     return can
 def build(pid,p):
-    od=f"out/postb2/{pid}"; os.makedirs(od,exist_ok=True); imgs=p["images"]; txt=p.get("texts") or [""]*len(imgs)
+    od=f"out/postb2/{pid}"; os.makedirs(od,exist_ok=True); imgs=p["images"]; txt=[""]*len(imgs)  # no per-frame labels
     if p["kind"]=="carousel":
         W,H=1080,1350
         for i,f in enumerate(imgs):
@@ -68,19 +68,19 @@ def build(pid,p):
     else:
         W,H=1080,1920; fr=[]
         for i,f in enumerate(imgs):
-            can,y0,ih=fullscreen(f,W,H); can=dress(can,y0,ih,p.get("title") if i==0 else "",txt[i],W,H,i); fn=f"{od}/f{i:02d}.png"; can.save(fn); fr.append(fn)
-        D=[1.7]*len(fr); X=0.5; ins=[]; filt=[]
+            can,y0,ih=fullscreen(f,W,H); can=can.filter(ImageFilter.UnsharpMask(2,60,2)); can=dress(can,y0,ih,p.get("title") if i==0 else "",txt[i],W,H,i); fn=f"{od}/f{i:02d}.png"; can.save(fn); fr.append(fn)
+        D=[1.85]*len(fr); X=0.7; ins=[]; filt=[]
         for i,f in enumerate(fr):
             ins+=["-loop","1","-t",f"{D[i]+X}","-i",f]
-            z="min(zoom+0.0006,1.06)" if i%2==0 else "if(eq(on,1),1.06,max(zoom-0.0006,1.0))"
-            filt.append(f"[{i}:v]scale=1188:2112,zoompan=z='{z}':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,setsar=1,format=yuv420p[v{i}]")
+            z="min(zoom+0.0005,1.07)" if i%2==0 else "if(eq(on,1),1.07,max(zoom-0.0005,1.0))"
+            filt.append(f"[{i}:v]scale=1700:3022:flags=lanczos,zoompan=z='{z}':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,setsar=1,unsharp=5:5:0.7:3:3:0.0,eq=contrast=1.05:saturation=1.1,format=yuv420p[v{i}]")
         cur="v0"; t=0
         for i in range(1,len(fr)):
             t+=D[i-1]-0.0; filt.append(f"[{cur}][v{i}]xfade=transition={TR[(i-1)%len(TR)]}:duration={X}:offset={t-X*(i-0)+X*(i-1) if False else t-(i)*0:.2f}[x{i}]"); cur=f"x{i}"
         total=sum(D)+X
         ins+=["-ss","0","-i",f"out/music2/{p['music']}"]
         filt.append(f"[{len(fr)}:a]atrim=0:{total:.2f},afade=t=in:d=0.6,afade=t=out:st={total-1.4:.2f}:d=1.4,volume=0.6[a]")
-        subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map",f"[{cur}]","-map","[a]","-t",f"{total:.2f}","-c:v","libx264","-preset","veryfast","-crf","19","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
+        subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map",f"[{cur}]","-map","[a]","-t",f"{total:.2f}","-c:v","libx264","-preset","veryfast","-crf","15","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
         for f in fr: os.remove(f)
     open(f"{od}/caption.txt","w").write(p["caption"]); print("BUILT",pid,p["kind"])
 if __name__=="__main__":
