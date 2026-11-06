@@ -71,7 +71,7 @@ def run(i,ts,key):
     if missing: print("variants not on product, will rebuild:",len(missing),flush=True)
     body={"title":title,"description":f"<p>The {disp} in {style} on a premium soft Bella+Canvas 3001 unisex tee, printed in white ink so it pops on dark colors.</p><p>Unisex fit, soft and comfortable. Made to order, ships in about 5-10 business days.</p>",
       "tags":[t[:20] for t in [disp.lower(),f"{disp.lower()} shirt","dog lover shirt","dog mom gift","dog dad gift","black dog shirt","dog breed shirt","minimalist dog","pet lover gift","dog owner gift","unisex t-shirt","dog art","gift for dog lover"]][:13],
-      "variants":allv,"print_areas":[{"variant_ids":sorted(enabled & {v["id"] for v in p["variants"]}),"placeholders":ph}]}
+      "variants":allv,"print_areas":[{"variant_ids":sorted(v["id"] for v in p["variants"]),"placeholders":ph}]}
     if missing:
         body["blueprint_id"]=12; body["print_provider_id"]=99
         print("ABORT: product lacks dark variants; cannot edit in place",flush=True); return False
