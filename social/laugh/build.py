@@ -8,18 +8,23 @@ cfgf=sys.argv[1];J=json.load(open(cfgf))
 import funny
 W,H=1080,1920;FPS=30
 FB=R+'out/footage/'
-# dogs (fixed across all weekly videos): file, crop centre (1280x720 src), size, mode f=forward r=reversed, laugh-onset (source seconds)
-DOGS=[('1552',(640,380),640,'f',1.5),('50667',(690,330),600,'r',3.5),('50652',(650,260),520,'f',2.0),('45834',(680,290),470,'f',4.5)]
+# dogs (fixed across all weekly videos): video, crop keyframes [(src_t,cx,cy)], crop size, mode f=forward r=reversed, laugh-onset (source seconds)
+DOGS=[('out/footage2/7684117.mp4',[(0,650,330),(1.5,700,310),(3,650,320),(4.5,820,330),(5.5,660,370),(6.5,700,360),(7.5,780,380),(8.5,900,390)],640,'r',4.0),
+ ('out/footage2/7802455.mp4',[(4,500,330),(6,640,310),(7,700,420),(8,500,420),(9,690,400),(10,700,360),(11,840,390)],620,'f',6.6),
+ ('out/footage/1552.mp4',[(0,640,380),(9,640,380)],640,'f',1.8),
+ ('out/footage/50667.mp4',[(0,690,330),(9,690,330)],600,'r',3.0)]
 LAUGH=2.0;SQ=400;GAP=20;CX=500  # phone-safe area: x 70-930, y 250-1500 (clear of app buttons/captions)
 def font(sz): return ImageFont.truetype('/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf',sz)
-def loadall(f,c,sz):
-    cap=cv2.VideoCapture(FB+f+'.mp4');fps=cap.get(cv2.CAP_PROP_FPS) or 30;out=[]
+def loadall(f,kf,sz):
+    cap=cv2.VideoCapture(R+f);fps=cap.get(cv2.CAP_PROP_FPS) or 30;out=[];i=0
+    kt=[k[0] for k in kf];kx=[k[1] for k in kf];ky=[k[2] for k in kf]
     while True:
         ok,fr=cap.read()
         if not ok: break
-        x0=int(np.clip(c[0]-sz/2,0,1280-sz));y0=int(np.clip(c[1]-sz/2,0,720-sz));out.append(cv2.resize(fr[y0:y0+sz,x0:x0+sz],(SQ,SQ),interpolation=cv2.INTER_AREA))
+        t=i/fps;i+=1;H0,W0=fr.shape[:2];cx=np.interp(t,kt,kx);cy=np.interp(t,kt,ky)
+        x0=int(np.clip(cx-sz/2,0,W0-sz));y0=int(np.clip(cy-sz/2,0,H0-sz));out.append(cv2.resize(fr[y0:y0+sz,x0:x0+sz],(SQ,SQ),interpolation=cv2.INTER_AREA))
     return out,fps
-CLIPS=[loadall(f,c,sz) for f,c,sz,m,l in DOGS]
+CLIPS=[loadall(f,kf,sz) for f,kf,sz,m,l in DOGS]
 def dogframe(i,p,lead):  # p = seconds since tile appeared; laugh onset at p=lead
     fr,fps=CLIPS[i];m,Lon=DOGS[i][3],DOGS[i][4]
     st=(Lon-lead+p) if m=='f' else (Lon+lead-p)
@@ -96,7 +101,9 @@ for n in range(N):
             ti=T_FACE+i*0.3
             if t>=ti:
                 fr=dogframe(i,t-ti,T_LAUGH-ti);tl=tile(fr,i+1);sc=bounce((t-ti)/0.4)
-                x,y=POS[i];paste(cv,tl,x+SQ/2,y+SQ/2,scale=max(sc,0.01)*(0.9+0.1*clr),alpha=clr)
+                pulse=1;rot=0
+                if T_LAUGH<=t<T_END: q=t-T_LAUGH;pulse=1+0.05*abs(math.sin(2*math.pi*2.2*q));rot=3.0*math.sin(2*math.pi*4.4*q+i)
+                x,y=POS[i];paste(cv,tl,x+SQ/2,y+SQ/2,scale=max(sc,0.01)*(0.9+0.1*clr)*pulse,alpha=clr,rot=rot)
         if t>=T_LAUGH:
             s=bounce((t-T_LAUGH)/0.35);paste(cv,A,CX,1440,scale=max(s,0.01)*(0.9+0.1*clr),alpha=clr)
             # little shake while laughing
