@@ -1,0 +1,17 @@
+name: printify-pmk
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: python3 scripts/printify_pmk.py
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -f out/pmk && git commit -qm pmk && git pull -q --rebase && git push -q
