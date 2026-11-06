@@ -9,6 +9,10 @@ LOGO="store/logo.png"
 TR=["fade","smoothleft","dissolve","fadewhite","smoothright","fade","circleopen","dissolve"]
 def fullscreen(path,W,H):
     im=Image.open(path).convert("RGB"); w,h=im.size
+    edge=np.array(im.crop((0,h-6,w,h))).astype("float32")
+    if edge.mean(axis=2).std()>22:  # busy edge (person/studio): true full-bleed cover crop
+        s=H/h; im2=im.resize((int(w*s),H),Image.LANCZOS); L=(im2.width-W)//2
+        return im2.crop((L,0,L+W,H)), 0, H
     s=W/w; im2=im.resize((W,int(h*s)),Image.LANCZOS)
     top=np.array(im2.crop((0,0,W,6))).mean(axis=(0,1)); bot=np.array(im2.crop((0,im2.height-6,W,im2.height))).mean(axis=(0,1))
     can=Image.new("RGB",(W,H)); a=np.zeros((H,W,3),dtype="float32")
@@ -23,6 +27,17 @@ def fullscreen(path,W,H):
 def lum(img,box):
     return np.array(img.crop(box).convert("L")).mean()
 def dress(can,y0,ih,title,sub,W,H,i):
+    if y0==0 and ih==H:  # full-bleed photo: bottom shade, light text at bottom only
+        g=np.array(can).astype("float32"); n=420
+        for k in range(n): g[H-n+k]*=1-0.62*(k/n)**1.4
+        can=Image.fromarray(g.astype("uint8")); d=ImageDraw.Draw(can); wh=(250,248,242)
+        if os.path.exists(LOGO):
+            lg=Image.open(LOGO).convert("RGBA"); lg.thumbnail((84,84)); can.paste(lg,(W-84-40,56),lg)
+        t=(title if i==0 and title else sub)
+        if t:
+            f=ImageFont.truetype(FS if i==0 and title else FR,56 if i==0 and title else 38); w=d.textlength(t,font=f); d.text(((W-w)/2,H-200),t,font=f,fill=wh)
+        f3=ImageFont.truetype(FB,30); s_="ALPHADOG STYLES"; w=d.textlength(s_,font=f3); d.text(((W-w)/2,H-96),s_,font=f3,fill=wh)
+        return can
     d=ImageDraw.Draw(can)
     topc=lum(can,(0,0,W,200)); botc=lum(can,(0,H-260,W,H)); 
     ink=lambda l:(24,24,28) if l>140 else (248,246,240)
@@ -42,11 +57,13 @@ def build(pid,p):
         for i,f in enumerate(imgs):
             im=Image.open(f).convert("RGB"); w,h=im.size; s=max(W/w,H/h); im=im.resize((int(w*s),int(h*s)),Image.LANCZOS)
             L=(im.width-W)//2; im=im.crop((L,(im.height-H)//2,L+W,(im.height-H)//2+H))
-            d=ImageDraw.Draw(im)
+            g=np.array(im).astype("float32")
+            for k in range(280): g[H-280+k]*=1-0.6*(k/280)**1.4
+            im=Image.fromarray(g.astype("uint8")); d=ImageDraw.Draw(im)
             if os.path.exists(LOGO):
                 lg=Image.open(LOGO).convert("RGBA"); lg.thumbnail((76,76)); im.paste(lg,(W-76-32,36),lg)
             if txt[i]:
-                f2=ImageFont.truetype(FS,46); w2=d.textlength(txt[i],font=f2); d.text(((W-w2)/2,H-110),txt[i],font=f2,fill=(24,24,28) if lum(im,(0,H-140,W,H))>140 else (248,246,240))
+                f2=ImageFont.truetype(FS,46); w2=d.textlength(txt[i],font=f2); d.text(((W-w2)/2,H-110),txt[i],font=f2,fill=(250,248,242))
             im.save(f"{od}/slide{i+1:02d}.jpg",quality=93)
     else:
         W,H=1080,1920; fr=[]
