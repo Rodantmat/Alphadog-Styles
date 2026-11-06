@@ -10,4 +10,4 @@ jobs:
       - run: python3 scripts/printify_mockget.py
       - run: |
           git config user.name bot && git config user.email bot@users.noreply.github.com
-          git add -f out/mockget && git commit -qm "mockget" && git pull -q --rebase && git push -q
+          git add -f out/mockget2 && git commit -qm "mockget" && git pull -q --rebase && git push -q
