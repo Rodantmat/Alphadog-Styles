@@ -26,3 +26,11 @@
 - Delete scratch: /tmp/kl/*.mp4 and *.jpg, out/laugh/_v.mp4 and *.png/*.jpg check images, out/postb2 temp files. Never commit out/backgrounds, out/merch_lib, out/footage (big libraries).
 - Keep in git only: final mp4s for days not yet aired plus the last 14 days; older finals may stay (they are the history). Never delete anything already posted or scheduled; never touch published posts.
 - Commit with git add on specific paths (docs social scripts out/postb2/<new>), never `git add -A`.
+
+## Music supply (never repeat music)
+- Tracks: out/music2/mNN.mp3, titles in out/music2/list.json (now 90, m00-m89; restored from prod-assets plus git for the new ones). Used tracks are in docs/music_log.md.
+- When fewer than 10 unused tracks remain: dispatch workflow music3.yml (inputs count=60) via gh REST; it appends new Mixkit tracks to out/music2 and commits them (cloud sandbox cannot reach Mixkit directly, GitHub Actions can). git pull afterwards.
+- If the generator reports "all tracks used", this is the fix; never reuse a track.
+
+## Generator log
+- social/GENLOG.md: every generator run appends start / restore / built / finish lines (or the exact error). Check it when a day is missing.
