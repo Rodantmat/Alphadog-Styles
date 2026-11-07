@@ -34,3 +34,8 @@
 
 ## Generator log
 - social/GENLOG.md: every generator run appends start / restore / built / finish lines (or the exact error). Check it when a day is missing.
+
+## Music library (300 tracks, themed) - supersedes the 60-track top-up above
+- out/music2/mNNN.mp3 (m00-m89 older 2-digit names, m090-m299 new), catalog out/music2/list.json with fields title, artist, theme, tag, bpm, energy, file. Built by scripts/video/music4.py (workflow music4.yml, input target; energy/tempo-filtered, theme-balanced, Mixkit licence = free commercial use, no attribution).
+- Themes: Electronic & House 64, Feel-good 53, Hip-hop & Trap 46, Rock & Guitar 40, Funk & Disco 37, Pop & Party 36, Chill & Lo-fi 21, Latin & Reggae 3.
+- Rotation rule: pick the unused track (not in docs/music_log.md) whose THEME differs from the previous day's and from the same-day sibling post; fit the mood to the concept (hip-hop/trap for laugh videos, funk/pop for fashion, etc.). Never reuse a track. When < 30 unused remain, run music4.yml with target = current total + 150.
