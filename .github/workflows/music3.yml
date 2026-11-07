@@ -1,0 +1,13 @@
+name: music3
+on: { workflow_dispatch: { inputs: { count: { default: "60" } } } }
+permissions: { contents: write }
+jobs:
+  run:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -q ffmpeg
+      - run: python3 scripts/video/music3.py ${{ inputs.count }}
+      - run: |
+          git config user.name "alphadog-bot"; git config user.email "bot@users.noreply.github.com"
+          git add out/music2 && git commit -m "music3: more tracks" && git pull --rebase -q && git push || true
