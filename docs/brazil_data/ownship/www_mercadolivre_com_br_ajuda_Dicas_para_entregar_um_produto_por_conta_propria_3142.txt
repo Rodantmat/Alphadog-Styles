@@ -1,0 +1,4 @@
+URL: https://www.mercadolivre.com.br/ajuda/Dicas-para-entregar-um-produto-por-conta-propria_3142
+ERROR: Page.goto: Navigation to "https://www.mercadolivre.com.br/ajuda/Dicas-para-entregar-um-produto-por-conta-propria_3142" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://www.mercadolivre.com.br/ajuda/Dicas-para-entregar-um-produto-por-conta-propria_3142", waiting until "domcontentloaded"

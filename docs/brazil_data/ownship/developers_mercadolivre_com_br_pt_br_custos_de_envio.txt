@@ -1,0 +1,945 @@
+URL: https://developers.mercadolivre.com.br/pt_br/custos-de-envio
+STATUS: 200
+TITLE: Custos de envio
+
+Developers
+API Docs
+Novidades
+Entrar
+API Docs
+Custos de envio
+
+Documentação do Mercado Livre
+
+Confira todas as informações necessárias sobre as APIs Mercado Livre.
+
+Documentação do
+
+Primeiros passos
+Crie uma aplicação no Mercado Livre
+Permissões funcionais
+Desenvolvimento seguro
+Recomendações de Autenticação e Token
+Práticas de CyberSecurity
+Validações e requisitos de segurança
+Gerencie seu aplicativo
+Autenticação e Autorização
+Realização de testes
+Validador de publicações
+Boas práticas para usar a plataforma
+Considerações de design
+Gerenciar IPs de um aplicativo
+Suporte para integradores
+Erro 403
+Desenvolvimento in-house Quick Start
+Recursos da API
+Usuários
+Usuários e Aplicativos
+Bloqueio de aplicações
+Consulta de usuários
+Endereços do usuário
+Perguntas frequentes sobre validação de dados
+Validar dados dos vendedores
+Favoritos
+Domínios e Categorias
+Localização e moedas
+Busca de itens
+Perguntas e Respostas
+Pedidos e opiniões
+Atributos
+Notificações
+Comunicações
+Moderações
+Gerenciar moderações
+Moderações com pausa
+Diagnóstico de imagens
+Moderações de imagens
+Brand Protection Program
+O que é Brand Protection Program?
+Membros do Programa
+Publicações denunciadas
+Guia para produtos
+Introdução
+Tipos de publicação
+Categorização
+Categorização de produtos
+Compatibilidades entre itens e produtos de Autopeças
+Referências de domínios, produtos e atributos para Autopeças
+Publicar produtos
+User Products
+User Products
+Preço por variação
+Estoque distribuído
+Estoque multi-origem
+Descrição de produtos
+Validações
+Preços e Custos
+Preços por quantidade
+Preços por quantidade B2C
+Preços por quantidade porcentagem B2B
+Preços por quantidade
+Preços Líquidos por quantidade
+Preços de produtos
+Custos por vender
+Referências de preços
+Automatizações de preços
+Imagens
+Identificadores de produtos
+Variações
+Republicar itens
+Kits virtuais
+Tabelas de Medidas
+Primeiros passos
+Gerenciar tabela de medidas
+Validação da tabela de medidas
+Sincronização e modificação de publicações
+Convivência Full e Flex
+Modos de Envios
+Gestão Mercado Envios
+Mercado Envios 1
+Mercado Envios 1
+Status de pedidos e rastreamento
+Frete dinâmico
+Mercado Envios 2
+Mercado Envios 2
+Custos de envio
+Envios em pontos facultativos
+Envios Coletas e Places
+Agrupamento de pacotes para a Coleta
+Envios Agora
+Envios Flex
+Envios Turbo
+Envios Fulfillment
+Planejamento de reposição para Fulfilment
+Envios Personalizados
+Catálogo
+O que é catálogo
+Elegibilidade
+Buscador de produtos
+Publicar no catálogo
+Publicações requeridas no catálogo
+Catálogo de recondicionados
+Competição
+Brand Central
+Central de promoções
+Gerenciar promoções
+Campanhas tradicionais
+Campanha com co-participação
+Campanhas de desconto por quantidade
+Desconto pré acordado por item e liquidação de estoque Full
+Desconto individual
+Ofertas do dia
+Ofertas relâmpago
+Campanhas do vendedor
+Co-participação automatizada e preços competitivos
+Cupons do vendedor
+Campanha co-participação para PIX
+Perguntas e respostas
+Gerencie vendas
+Orders
+Packs
+Envios
+Notas de Packs
+Pagamentos
+Feedback de uma venda
+Notas de orders
+Faturador Mercado Livre
+Emitindo Nota Fiscal pelo Mercado Livre
+Envio das Regras Tributárias
+Configurações de Composição de Base de Cálculo do ICMS e IPI
+Configurações de Composição de Base de Cálculo do PIS e COFINS
+Configuração do cálculo do diferencial de alíquota (DIFAL)
+Configurações do IBS e CBS
+Mensagens de operação
+Envio dos Dados Fiscais
+Envio de inscrições estaduais
+Notificações de invoices
+Gestão e Consulta de Notas Fiscais
+Mensagens adicionais
+Download em lote de documentos fiscais
+Tabela de processos Fulfillment
+Enviar Nota Fiscal
+Integração DCe
+Dados para emissão de Nota Fiscal
+Importar Nota Fiscal
+Anexar Nota Fiscal
+Relatórios de Faturamento
+Relatórios de Faturamento
+Boas Práticas para o Consumo das APIs de Relatórios de Faturamento
+Provisões
+Relatórios de Pagamentos
+Baixar documento legal
+Percepções
+Mensagens de pós-venda
+O que é mensageria
+Motivos para comunicar
+Gestão de mensagens pós-venda
+Mensagens pendentes
+Mensagens bloqueadas
+Métricas e Tendências
+Programa Decola e Benefício de Reputação
+Opiniões de produtos
+Reputação de vendedores
+Tendências
+Qualidade das publicações
+Experiência de compra
+Mais vendidos no Mercado Livre
+Visitas
+Carregar atributos
+Reclamações, Devoluções e Trocas
+Reclamações
+Gerenciar reclamações
+Gerenciar mensagem de uma reclamação
+Gerenciar resolução de reclamações
+Gerenciar evidências de reclamações
+Erros Reclamações
+Devoluções
+Trocas
+Mercado Líder e Lojas Oficiais
+Lojas Oficiais
+Pharma
+Pharma - Receitados
+Guia de Segurança
+Introdução
+Infraestrutura (Criptografia e TLS)
+Gestão de Identidades e Acessos (OAuth e Tokens)
+Autenticação Segura
+Controle de Acesso e Autorização
+Segurança de Aplicações
+Monitoramento
+Gestão de Incidentes
+Developer Partner Program
+Developer Partner Program
+Segurança - Desenvolvimento Seguro
+Guia para imóveis
+Introdução guia de imóveis
+Primeiros passos
+Configuração ou requisitos prévios
+Obtenção do Access Token
+Consulta de usuários
+Passos rápidos para publicar um imóvel de teste
+Categorias e atributos
+Categorias
+Atributos
+Localizar Imóveis
+Gerenciar pacotes de imóveis
+Contratação de pacotes de publicação
+Pacotes e permissões para projetos, desenvolvimentos ou empreendimentos imobiliários
+Publica Imóveis
+Publicações de Lojas Oficiais para Imóveis
+Atualiza tuas publicações
+Ciclo de vida das publicações de Imóveis
+Variações
+Atualização variação imóveis
+Qualidade das Publicações
+Desenvolvimentos imobiliários
+Leads
+Solicitação de visita
+Estatísticas de interações em Imóveis
+Experiência para imóveis
+Glossário
+Guia para automóveis
+Introdução
+Consulta de usuários
+Categorias e Atributos
+Localização de veículos
+Gerenciamento de pacotes de veículos
+Publicação de automóveis
+Sincronização de publicações (veículos)
+Gerenciamento de Perguntas e Contatos
+Pessoas interessadas
+Créditos pré-aprovados
+Qualidade das publicações (veículos)
+Guia para serviços
+Introdução
+Consulta de usuários
+Escolha o tipo de serviço
+Gerenciamento das áreas de cobertura
+Publicação de serviços
+Sincronização de publicações
+Consultas avançadas
+Guia para Mercado Ads
+Introdução ao Mercado Ads
+Brand Ads
+Display Ads
+Product Ads para Catálogo e User Products
+Bonificações para Product Ads
+MCP do Mercado Livre
+Mercado Livre MCP Server
+FAQs
+Perguntas Frequentes
+Rate limit / Erro 429
+Gestão de estoque multiorigem / User Products
+ME1 / ME2 e frete grátis
+Mercado Envios — Custos e cotações
+Faturamento / Billing info
+Imagens e moderações
+Promoções / Precificação
+Itens — Atributos de envio e dimensões
+Última atualização em 20/04/2026
+Custos de envio
+Importante:
+- Atualmente, todas as funcionalidades descritas na presente documentação estão disponíveis para os sites MLB, MLA, MLM, MLC, MCO, MPE, MLU e MEC.
+- Da mesma forma, todas as funcionalidades descritas são aplicáveis a todos os tipos de logística de ME2.
+
+
+A gestão de custos de envio implica dois aspectos muito relevantes: o primeiro ocorre no momento de publicar ou editar um anúncio, enquanto o segundo ocorre no momento da compra.
+
+
+
+Para a primeira fase, ou seja, no momento de publicar ou editar um anúncio, são necessários os seguintes endpoints:
+
+
+
+Consultar produtos com envios gratuitos
+
+O primeiro endpoint fornece as informações necessárias para verificar se o vendedor oferece envio gratuito em sua publicação.
+
+
+
+
+Chamada:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/$ITEM_ID
+Copiar
+
+Exemplo:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/MLA1122334488
+Copiar
+
+Resposta com free shipping opcional:
+
+
+    "shipping": {
+        "mode": "me2",
+        "methods": [],
+        "tags": [
+            "self_service_in"
+        ],
+        "dimensions": null,
+        "local_pick_up": false,
+        "free_shipping": true,
+        "logistic_type": "cross_docking",
+        "store_pick_up": false
+    }
+Copiar
+
+Lembre-se de que se a tag "mandatory_free_shipping" não estiver presente, o atributo "free_shipping" pode ser enviado como true ou false. Isso se deve ao fato de que o vendedor pode optar por oferecer ou não envios gratuitos de forma opcional.
+
+
+
+
+Resposta com free shipping obrigatório:
+
+
+    "shipping": {
+        "mode": "me2",
+        "methods": [],
+        "tags": [
+            "mandatory_free_shipping"
+        ],
+        "dimensions": null,
+        "local_pick_up": true,
+        "free_shipping": true,
+        "logistic_type": "xd_drop_off",
+        "store_pick_up": false
+    }
+Copiar
+A tag “mandatory_free_shipping” se aplica exclusivamente a envios realizados através do Mercado Envios 2 (ME2).
+Caso o parâmetro "mandatory_free_shipping" esteja presente, o requisito é obrigatório. É crucial aderir a este parâmetro quando o endpoint o fornecer.
+Para Envios Turbo, a opção de "mandatory_free_shipping" não estará disponível. Em seu lugar, o Mercado Livre oferecerá um desconto conforme necessário.
+
+Resposta com free shipping fora de ME2:
+
+
+   "shipping": {
+        "mode": "not_specified",
+        "methods": [],
+        "tags": [],
+        "dimensions": null,
+        "local_pick_up": true,
+        "free_shipping": true,
+        "logistic_type": "not_specified",
+        "store_pick_up": false
+    }
+Copiar
+
+Em modalidades de envio que não correspondem a ME2, os vendedores têm a liberdade de definir o custo de envio conforme suas preferências.
+
+
+
+Parâmetros de Resposta:
+shipping.mode: Modalidade de envio configurado para o item.
+shipping.tags: Tags de envio do item.
+Se indicar "mandatory_free_shipping" significa que o item superou o limite de preço estabelecido pelo Mercado Livre. Para esses produtos, o envio gratuito é uma obrigação. Os vendedores devem oferecer envios gratuitos ou descontos importantes no envio.
+Em contraste, para produtos com preço abaixo desse limite, o envio gratuito é opcional.
+shipping.dimensions: Dimensões do produto no formato: altura x largura x comprimento e peso.
+shipping.local_pick_u: Indicador booleano que mostra se a opção de retirada em pessoa está disponível.
+shipping.free_shipping: Indicador booleano que mostra se o envio é grátis.
+shipping.logistic_type: Tipo de logística do envio.
+shipping.store_pick_up: Indicador booleano que mostra se a opção de retirada na loja está disponível.
+
+Para obter uma visão mais detalhada sobre o limite de preços para envios gratuitos, convidamos você a consultar as seguintes páginas:
+
+Custos por oferecer envios gratuitos no Brasil
+Custos por oferecer envios gratuitos na Argentina
+Custos por oferecer envios gratuitos no México
+Custos por oferecer envios gratuitos no Chile
+Custos por oferecer envios gratuitos na Colômbia
+Custos por oferecer envios gratuitos no Peru
+Custos por oferecer envios gratuitos no Uruguai
+Custos por oferecer envios gratuitos no Equador
+
+
+Importante:
+Certifique-se de compreender os requisitos e as políticas do Mercado Livre relacionadas ao envio gratuito para poder implementar essa funcionalidade de maneira eficaz em sua plataforma de vendas.
+
+
+Consultar custos de envios de um item
+
+Este endpoint permite conhecer o preço aproximado que o vendedor pagará pelo envio de um determinado item. Pode ser utilizado também para simular custos de envios ao publicar ou editar um item.
+
+
+
+
+Chamada:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN'https://api.mercadolibre.com/users/$USER_ID/shipping_options/free?dimensions=$DIMENSIONS&verbose=$VERBOSE&item_price=$ITEM_PRICE&listing_type_id=$LISTING_TYPE&mode=$MODE&condition=$CONDITION&logistic_type=$LOGISTIC_TYPE&free_shipping=$FREE_SHIPPING
+Copiar
+
+Exemplo:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN'https://api.mercadolibre.com/users/244878077/shipping_options/free?dimensions=9x17x22,462&verbose=true&item_price=300&listing_type_id=gold_pro&mode=me2&condition=new&logistic_type=drop_off&free_shipping=True
+Copiar
+
+Parâmetros de consulta aceitáveis:
+
+Nome	Tipo	Descrição	Exemplo
+item_id	string	ID do item.	MLB23332
+dimensions	string	Dimensões do item (altura x largura x comprimento e peso).	60x364x63,661
+item_price	number	Preço unitário do item.	123
+verbose	bool	O verbose determina se o desconto para o envio está incluído ou não na resposta.	TRUE
+condition	string	Condição do item, pode ser usado ou novo.	new
+currency_id	string	Tipo de moeda oferecida para o item.	ARS
+category_id	string	Categoria do item.	MLB23332
+listing_type_id	string	Nível de publicação do item, determina nível de exposição e benefícios.	gold_special
+variation_id	number	Variação do item.	123213
+seller_status	string	Indica o nível das lojas Líderes (Platinum, Gold, Silver).	gold
+seller_type	string	Indica se se trata de uma loja oficial ou não.	normal
+reputation	string	Indica a reputação do vendedor (red, orange, yellow, light_green, green).	green
+mode	string	Modo de envio (me2, me1, custom, not specified).	me2
+logistic_type	string	Tipo de logística:
+
+CrossDocking = “cross_docking”
+
+DropShipping = “drop_off”
+
+Fulfillment = “fulfillment”
+
+XdDropOff = “xd_drop_off”
+
+Flex = “self_service”
+
+	self_service
+tags	string	Tags de informação geral do item. Permite determinar se o item tem Flex como logística.	self_service
+state_id	string	ID do estado de origem do envio.	BRL
+city_id	string	Cidade de origem do envio.	TUxDQ1BVRWRiYjBh
+zip_code	number	O CEP de origem do envio.	35519000
+free_shipping	bolean	Indica se o vendedor deseja oferecer envio grátis ou não.	True
+Nota:
+Tenha em mente que este endpoint fornece uma estimativa aproximada do valor com base nos parâmetros no momento da consulta e considerando apenas a quantidade de um único anúncio.
+Entre todos os parâmetros de consulta para utilizar este endpoint, é importante destacar que os obrigatórios são ITEM_ID ou DIMENSIONS. Isso significa que, ao fazer uso deste recurso, é essencial fornecer pelo menos um desses dois parâmetros na solicitação.
+Lembre-se de que, para utilizar o ITEM_ID, este deve ter sido criado previamente e estar ativo.
+Deverá ser enviado o novo parâmetro 'free_shipping' para obter a resposta correta do custo; com o valor True quando desejar oferecer frete grátis para o comprador e o valor False quando o frete ficar a cargo do comprador. Isso implica realizar a validação das duas formas para obter as duas opções de custos corretas e possíveis para o vendedor.
+
+Resposta:
+
+{
+"coverage": {
+    "all_country": {
+        "list_cost": 8106.49,
+        "currency_id": "ARS",
+        "billable_weight": 5828
+    }
+}
+}
+Copiar
+Parâmetros de resposta:
+coverage: Representa a cobertura de envio e contém informações sobre os custos e a moeda utilizada para o envio.
+coverage.all_country: Dentro de "coverage", "all_country" especifica que a informação se aplica a envios para todo o país.
+coverage.all_country.list_cost: Custo de envio oferecido ao vendedor.
+coverage.all_country.currency_id: Moeda utilizada para o custo de envio.
+coverage.all_country.billable_weight: Peso faturável do envio.
+coverage.discount: Informação sobre descontos aplicados ao envio.
+coverage.discount.rate: Taxa de desconto aplicada.
+coverage.discount.type: Descreve o tipo de desconto.
+coverage.discount.promoted_amount: Montante ou valor base sobre o qual se aplicará um certo percentual de desconto. Por exemplo, se temos um custo de envio de R$200 e se aplica um desconto de 40%, na resposta final obterá: list_cost = 120, rate: 0.4 e promoted_amount = 200.
+Códigos de estado de resposta:
+Código	Mensagem	Descrição	Recomendação
+200 - OK	-	Consulta realizada com sucesso.	-
+400 - Bad Request	seller_id must have a value!	O usuário não existe.	Validar o valor do seller_id.
+404 - Not Found	Item with id {itemID} not found	Item não encontrado.	Validar o valor do item_id.
+Nota:
+É importante destacar que o array 'discount' só estará presente na resposta se for oferecido algum desconto. Caso contrário, este array não estará incluído na resposta.
+Este endpoint tem um propósito específico e está desenhado para operar apenas com artigos que se encontram disponíveis no Marketplace da nossa plataforma.
+
+Para a segunda fase, ou o processo de compra de um anúncio, você deve utilizar os seguintes endpoints:
+
+
+
+Consultar custos de envios ao comprar em um anúncio
+
+Este endpoint proporciona uma visão detalhada das opções de envio disponíveis juntamente com seus custos no momento da compra de um anúncio, adaptando-se ao destino do comprador.
+
+Nota:
+ME1: Para anúncios de ME1 o valor de frete retornado nesta chamada será o valor da tabela de frete carregada como contingência para a integração de frete dinâmico, e não o valor da integração de cotação ao integrador, para evitar múltiplas chamadas à integração com outros parceiros.
+
+Chamada por CEP:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/$ITEM_ID/shipping_options?zip_code=$ZIP_CODE
+Copiar
+
+Exemplo por CEP:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/MLA1398714241/shipping_options?zip_code=1675
+Copiar
+
+Chamada por Cidade:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/$ITEM_ID/shipping_options?city_to=$CITY_TO
+Copiar
+
+Exemplo por Cidade:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/MLA1398714241/shipping_options?city_to=Q08tRENCb2dvdA
+Copiar
+
+Resposta:
+
+
+{
+"destination": {
+    "zip_code": "1675",
+    "city": {
+        "id": null,
+        "name": null
+    },
+    "state": {
+        "id": "AR-B",
+        "name": "Buenos Aires"
+    },
+    "country": {
+        "id": "AR",
+        "name": "Argentina"
+    }
+},
+"buyer": {
+    "id": 0,
+    "loyalty_level": 1,
+    "shipping_level": "1"
+},
+"options": [
+    {
+        "id": 3048556710,
+        "option_hash": "708dd0837f1b1b6468c85d7079091889",
+        "name": "Prioritario a domicilio",
+        "currency_id": "ARS",
+        "base_cost": 6023.99,
+        "cost": 6023.99,
+        "list_cost": 6023.99,
+        "display": "recommended",
+        "shipping_method_id": 510445,
+        "shipping_method_type": "next_day",
+        "shipping_option_type": "address",
+        "estimated_delivery_time": {
+            "type": "known",
+            "date": "2024-04-20T00:00:00-03:00",
+            "unit": "hour",
+            "offset": {
+                "date": null,
+                "shipping": null
+            },
+            "time_frame": {
+                "from": null,
+                "to": null
+            },
+            "pay_before": "2024-04-20T14:00:00-03:00",
+            "shipping": 0,
+            "handling": 0,
+            "schedule": null
+        },
+        "discount": {
+            "promoted_amount": 0,
+            "rate": 0,
+            "type": "none",
+            "show_loyal_benefit": false
+        }
+    },
+    {
+        "id": 1638980834,
+        "option_hash": "0f1d5344a6cded1656403bfb6b4dbf50",
+        "name": "Estándar a domicilio",
+        "currency_id": "ARS",
+        "base_cost": 6023.99,
+        "cost": 6023.99,
+        "list_cost": 6023.99,
+        "display": "always",
+        "shipping_method_id": 510645,
+        "shipping_method_type": "three_days",
+        "shipping_option_type": "address",
+        "estimated_delivery_time": {
+            "type": "known",
+            "date": "2024-04-22T00:00:00-03:00",
+            "unit": "hour",
+            "offset": {
+                "date": null,
+                "shipping": null
+            },
+            "time_frame": {
+                "from": null,
+                "to": null
+            },
+            "pay_before": "2024-04-22T16:00:00-03:00",
+            "shipping": 0,
+            "handling": 0,
+            "schedule": null
+        },
+        "discount": {
+            "promoted_amount": 0,
+            "rate": 0,
+            "type": "none",
+            "show_loyal_benefit": false
+        }
+    },
+    {
+        "id": 336095950,
+        "option_hash": "027577b20d617392425136c0528cfb74",
+        "name": "Estándar a sucursal de correo",
+        "currency_id": "ARS",
+        "base_cost": 10051.99,
+        "cost": 10051.99,
+        "list_cost": 10051.99,
+        "display": "always",
+        "shipping_method_id": 504345,
+        "shipping_method_type": "standard",
+        "shipping_option_type": "agency",
+        "estimated_delivery_time": {
+            "type": "known_frame",
+            "date": "2024-04-24T00:00:00-03:00",
+            "unit": "hour",
+            "offset": {
+                "date": "2024-04-29T00:00:00-03:00",
+                "shipping": 72
+            },
+            "time_frame": {
+                "from": null,
+                "to": null
+            },
+            "pay_before": "2024-04-20T00:00:00-03:00",
+            "shipping": 24,
+            "handling": 48,
+            "schedule": null
+        },
+        "discount": {
+            "promoted_amount": 0,
+            "rate": 0,
+            "type": "none",
+            "show_loyal_benefit": false
+        }
+    },
+    {
+        "id": 3594424224,
+        "option_hash": "6f2e2eb2926b9e6a11c45fe07e9b8803",
+        "name": "Estándar a domicilio",
+        "currency_id": "ARS",
+        "base_cost": 11409.99,
+        "cost": 11409.99,
+        "list_cost": 11409.99,
+        "display": "optional",
+        "shipping_method_id": 73328,
+        "shipping_method_type": "standard",
+        "shipping_option_type": "address",
+        "estimated_delivery_time": {
+            "type": "known_frame",
+            "date": "2024-04-24T00:00:00-03:00",
+            "unit": "hour",
+            "offset": {
+                "date": "2024-04-29T00:00:00-03:00",
+                "shipping": 72
+            },
+            "time_frame": {
+                "from": null,
+                "to": null
+            },
+            "pay_before": "2024-04-20T00:00:00-03:00",
+            "shipping": 24,
+            "handling": 48,
+            "schedule": null
+        },
+        "discount": {
+            "promoted_amount": 0,
+            "rate": 0,
+            "type": "none",
+            "show_loyal_benefit": false
+        }
+    }
+],
+"custom_message": {
+    "display_mode": null,
+    "reason": ""
+}
+}
+Copiar
+Parâmetros de resposta:
+destination: Informação sobre o destino do envio, incluindo o código postal, a cidade, o estado e o país.
+buyer: Informação do comprador, como sua identificação, nível de lealdade e envio.
+options: Informação das opções de envio.
+options.id: Identificador único da opção de envio.
+options.option_hash: Hash único que identifica a opção de envio.
+options.name: Nome ou alias do modo de envio.
+options.currency_id: Identificador da moeda utilizada para o custo do envio.
+options.base_cost: Custo base do envio.
+options.cost: Custo total do envio para o comprador, aplicando descontos.
+options.list_cost: Custo real do envio antes de aplicar descontos.
+options.display: Visualização da opção de envio, pode ter os valores “recommended” (recomendado), “always” (sempre) ou “optional” (opcional).
+options.shipping_method_id: Identificador do método de envio utilizado.
+options.shipping_method_type: Tipo de método de envio utilizado.
+options.shipping_option_type: Tipo de opção de envio utilizado: address (endereço), agency (agência) ou place (local).
+options.estimated_delivery_time: Informação sobre o tempo estimado de entrega, incluindo a data estimada e qualquer outra informação relevante.
+options.discount: Informação sobre desconto no envio.
+custom_message: Este campo é utilizado para devolver avisos especiais e questões externas ao Mercado Livre que possam afetar ou atrasar o envio.
+Códigos de estado de Resposta:
+Código	Mensagem	Descrição	Recomendação
+200 - OK	-	Consulta realizada com sucesso.	-
+400 - Bad Request	invalid_zip_code	Zip_code inválido.	Validar o zip_code.
+403 - Forbidden	items API error	Item inválido.	Validar o item associado.
+404 - Not Found	sla coverage not found	Área invalida para el envío.	Validar el área de envío.
+Nota:
+O parâmetro de consulta ZIP_CODE é utilizado para MLB, MLM e MLA, enquanto o parâmetro CITY é empregado para MCL, MCO, MPE e MLU.
+Tenha em mente que este endpoint fornece uma estimativa aproximada do valor com base nos parâmetros no momento da consulta e considerando apenas a quantidade de um único artigo.
+
+Resposta:
+
+
+{
+  "destination": {
+      "zip_code": "1675",
+      "city": {
+          "id": null,
+          "name": null
+      },
+      "state": {
+          "id": "AR-B",
+          "name": "Buenos Aires"
+      },
+      "country": {
+          "id": "AR",
+          "name": "Argentina"
+      }
+  },
+  "buyer": {
+      "id": 0,
+      "loyalty_level": 1,
+      "shipping_level": "1"
+  },
+  "options": [
+      {
+          "id": 3048556710,
+          "option_hash": "708dd0837f1b1b6468c85d7079091889",
+          "name": "Prioritario a domicilio",
+          "currency_id": "ARS",
+          "base_cost": 6023.99,
+          "cost": 6023.99,
+          "list_cost": 6023.99,
+          "display": "recommended",
+          "shipping_method_id": 510445,
+          "shipping_method_type": "next_day",
+          "shipping_option_type": "address",
+          "estimated_delivery_time": {
+              "type": "known",
+              "date": "2024-04-20T00:00:00-03:00",
+              "unit": "hour",
+              "offset": {
+                  "date": null,
+                  "shipping": null
+              },
+              "time_frame": {
+                  "from": null,
+                  "to": null
+              },
+              "pay_before": "2024-04-20T14:00:00-03:00",
+              "shipping": 0,
+              "handling": 0,
+              "schedule": null
+          },
+          "discount": {
+              "promoted_amount": 0,
+              "rate": 0,
+              "type": "none",
+              "show_loyal_benefit": false
+          }
+      },
+      {
+          "id": 1638980834,
+          "option_hash": "0f1d5344a6cded1656403bfb6b4dbf50",
+          "name": "Estándar a domicilio",
+          "currency_id": "ARS",
+          "base_cost": 6023.99,
+          "cost": 6023.99,
+          "list_cost": 6023.99,
+          "display": "always",
+          "shipping_method_id": 510645,
+          "shipping_method_type": "three_days",
+          "shipping_option_type": "address",
+          "estimated_delivery_time": {
+              "type": "known",
+              "date": "2024-04-22T00:00:00-03:00",
+              "unit": "hour",
+              "offset": {
+                  "date": null,
+                  "shipping": null
+              },
+              "time_frame": {
+                  "from": null,
+                  "to": null
+              },
+              "pay_before": "2024-04-22T16:00:00-03:00",
+              "shipping": 0,
+              "handling": 0,
+              "schedule": null
+          },
+          "discount": {
+              "promoted_amount": 0,
+              "rate": 0,
+              "type": "none",
+              "show_loyal_benefit": false
+          }
+      },
+      {
+          "id": 336095950,
+          "option_hash": "027577b20d617392425136c0528cfb74",
+          "name": "Estándar a sucursal de correo",
+          "currency_id": "ARS",
+          "base_cost": 10051.99,
+          "cost": 10051.99,
+          "list_cost": 10051.99,
+          "display": "always",
+          "shipping_method_id": 504345,
+          "shipping_method_type": "standard",
+          "shipping_option_type": "agency",
+          "estimated_delivery_time": {
+              "type": "known_frame",
+              "date": "2024-04-24T00:00:00-03:00",
+              "unit": "hour",
+              "offset": {
+                  "date": "2024-04-29T00:00:00-03:00",
+                  "shipping": 72
+              },
+              "time_frame": {
+                  "from": null,
+                  "to": null
+              },
+              "pay_before": "2024-04-20T00:00:00-03:00",
+              "shipping": 24,
+              "handling": 48,
+              "schedule": null
+          },
+          "discount": {
+              "promoted_amount": 0,
+              "rate": 0,
+              "type": "none",
+              "show_loyal_benefit": false
+          }
+      },
+      {
+          "id": 3594424224,
+          "option_hash": "6f2e2eb2926b9e6a11c45fe07e9b8803",
+          "name": "Estándar a domicilio",
+          "currency_id": "ARS",
+          "base_cost": 11409.99,
+          "cost": 11409.99,
+          "list_cost": 11409.99,
+          "display": "optional",
+          "shipping_method_id": 73328,
+          "shipping_method_type": "standard",
+          "shipping_option_type": "address",
+          "estimated_delivery_time": {
+              "type": "known_frame",
+              "date": "2024-04-24T00:00:00-03:00",
+              "unit": "hour",
+              "offset": {
+                  "date": "2024-04-29T00:00:00-03:00",
+                  "shipping": 72
+              },
+              "time_frame": {
+                  "from": null,
+                  "to": null
+              },
+              "pay_before": "2024-04-20T00:00:00-03:00",
+              "shipping": 24,
+              "handling": 48,
+              "schedule": null
+          },
+          "discount": {
+              "promoted_amount": 0,
+              "rate": 0,
+              "type": "none",
+              "show_loyal_benefit": false
+          }
+      }
+  ],
+  "custom_message": {
+      "display_mode": null,
+      "reason": ""
+  }
+}
+Copiar
+Parâmetros de resposta:
+destination: Informação sobre o destino do envio, incluindo o código postal, a cidade, o estado e o país.
+buyer: Informação do comprador, como sua identificação, nível de lealdade e nível de envio.
+options: Informação das opções de envio.
+options.id: Identificador único da opção de envio.
+options.option_hash: Hash único que identifica a opção de envio.
+options.name: Nome ou alias do modo de envio.
+options.currency_id: Identificador da moeda utilizada para o custo do envio.
+options.base_cost: Custo base do envio.
+options.cost: Custo total do envio para o comprador, aplicando descontos.
+options.list_cost: Custo real do envio antes de aplicar descontos.
+options.display: Visualização da opção de envio, pode ter os valores “recommended” (recomendado), “always” (sempre) ou “optional” (opcional).
+options.shipping_method_id: Identificador do método de envio utilizado.
+options.shipping_method_type: Tipo de método de envio utilizado.
+options.shipping_option_type: Tipo de opção de envio utilizado: address (endereço), agency (agência) ou place (local).
+options.estimated_delivery_time: Informação sobre o tempo estimado de entrega, incluindo a data estimada e qualquer outra informação relevante.
+options.discount: Informação sobre desconto no envio.
+custom_message: Este campo é utilizado para devolver avisos especiais e questões externas ao Mercado Livre que possam afetar ou atrasar o envio.
+Códigos de estado de Resposta:
+Código	Mensagem	Descrição	Recomendação
+200 - OK	-	Consulta realizada com sucesso.	-
+400 - Bad Request	invalid_zip_code	Zip_code inválido.	Validar o zip_code.
+403 - Forbidden	items API error	Item inválido.	Validar o item associado.
+404 - Not Found	sla coverage not found	Área inválida para o envio.	Validar a área de envio.
+Nota:
+O parâmetro de consulta ZIP_CODE é utilizado para MLB, MLM e MLA, enquanto o parâmetro CITY é empregado para MCL, MCO, MPE e MLU.
+Tenha em mente que este endpoint fornece uma estimativa aproximada do valor com base nos parâmetros no momento da consulta e considerando apenas a quantidade de um único artigo.
+
+Mais detalhes sobre Gerenciar Envios.
+Conteúdos
+Custos de envio
+Consultar produtos com envios gratuitos
+Consultar custos de envios de um item
+Consultar custos de envios ao comprar em um anúncio
+Denúncias
+Security Researchers
+Central de Parceiros
+
+Copyright © 2026 Mercado Livre Brasil Ltda.
+
+Termos e condições
+Como cuidamos da sua privacidade
+Developer Partner Program
+
+Usamos cookies para melhorar sua experiência no Mercado Livre. Consulte mais informações na nossa Central de privacidade.
+
+Aceitar cookies
+Configurar cookies

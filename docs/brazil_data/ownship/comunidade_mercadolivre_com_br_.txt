@@ -1,0 +1,4 @@
+URL: https://comunidade.mercadolivre.com.br/
+ERROR: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://comunidade.mercadolivre.com.br/
+Call log:
+  - navigating to "https://comunidade.mercadolivre.com.br/", waiting until "domcontentloaded"

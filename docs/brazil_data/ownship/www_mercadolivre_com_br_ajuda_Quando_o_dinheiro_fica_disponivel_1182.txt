@@ -1,0 +1,4 @@
+URL: https://www.mercadolivre.com.br/ajuda/Quando-o-dinheiro-fica-disponivel_1182
+ERROR: Page.goto: Navigation to "https://www.mercadolivre.com.br/ajuda/Quando-o-dinheiro-fica-disponivel_1182" is interrupted by another navigation to "https://www.mercadolivre.com.br/ajuda/Dicas-para-entregar-um-produto-por-conta-propria_3142"
+Call log:
+  - navigating to "https://www.mercadolivre.com.br/ajuda/Quando-o-dinheiro-fica-disponivel_1182", waiting until "domcontentloaded"
