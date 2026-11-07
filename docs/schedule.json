@@ -1,0 +1,188 @@
+{
+ "rules": "docs/VIDEO_RULES.md, docs/video_rotation.md, docs/style_registry.json, docs/music_log.md",
+ "lead_target_days": 7,
+ "days": [
+  {
+   "date": "2026-11-07",
+   "weekday": "Sat",
+   "A": {
+    "video": "social/videos/d4_line-art-hoodies.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b02",
+    "reel": "out/postb2/b02/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "scheduled"
+  },
+  {
+   "date": "2026-11-08",
+   "weekday": "Sun",
+   "A": {
+    "video": "social/videos/d3_scenery-tees_tiktok.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b03",
+    "reel": "out/postb2/b03/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "scheduled"
+  },
+  {
+   "date": "2026-11-09",
+   "weekday": "Mon",
+   "A": {
+    "video": "social/videos/laugh01_labrador_v7.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b05",
+    "reel": "out/postb2/b05/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "scheduled"
+  },
+  {
+   "date": "2026-11-10",
+   "weekday": "Tue",
+   "A": {
+    "video": "social/videos/d2_real-shades-vs-ours.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b07",
+    "reel": "out/postb2/b07/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "scheduled"
+  },
+  {
+   "date": "2026-11-11",
+   "weekday": "Wed",
+   "A": {
+    "video": "social/videos/d5_funny-breed-compilation.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b08",
+    "reel": "out/postb2/b08/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "A scheduled; B pending (Buffer limit)"
+  },
+  {
+   "date": "2026-11-12",
+   "weekday": "Thu",
+   "A": {
+    "video": "social/videos/laugh02_pupperoni_v3.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b09",
+    "reel": "out/postb2/b09/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "A scheduled (v3 replaced v2); B pending (Buffer limit)"
+  },
+  {
+   "date": "2026-11-13",
+   "weekday": "Fri",
+   "A": {
+    "video": "social/videos/d1b_drooling_ride.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b13",
+    "reel": "out/postb2/b13/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "built"
+  },
+  {
+   "date": "2026-11-14",
+   "weekday": "Sat",
+   "A": {
+    "video": "social/videos/d6b_neon_husky.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b14",
+    "reel": "out/postb2/b14/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "built"
+  },
+  {
+   "date": "2026-11-15",
+   "weekday": "Sun",
+   "A": {
+    "video": null,
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b15",
+    "reel": "out/postb2/b15/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "A TODO (d7 variant); B built"
+  },
+  {
+   "date": "2026-11-16",
+   "weekday": "Mon",
+   "A": {
+    "video": null,
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": "b16",
+    "reel": "out/postb2/b16/reel.mp4",
+    "slot": "20:00 PT"
+   },
+   "status": "A TODO (laugh01 4-dog, new joke via build.py); B built"
+  },
+  {
+   "date": "2026-11-17",
+   "weekday": "Tue",
+   "A": {
+    "video": null,
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": null,
+    "reel": null,
+    "slot": "20:00 PT"
+   },
+   "status": "TODO"
+  },
+  {
+   "date": "2026-11-18",
+   "weekday": "Wed",
+   "A": {
+    "video": null,
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": null,
+    "reel": null,
+    "slot": "20:00 PT"
+   },
+   "status": "TODO"
+  },
+  {
+   "date": "2026-11-19",
+   "weekday": "Thu",
+   "A": {
+    "video": null,
+    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+   },
+   "B": {
+    "id": null,
+    "reel": null,
+    "slot": "20:00 PT"
+   },
+   "status": "A TODO (laugh02 2-dog, new joke via build2.py)"
+  }
+ ]
+}
