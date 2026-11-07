@@ -1,0 +1,612 @@
+URL: https://montink.sak.com.br/integracao-da-montink-via-api
+STATUS: 200
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Ajuda Montink - Integração da Montink via API</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --normal-text-color: #212529;
+      --secondary-text-color: #6c757d;
+      --bg-color: #ffffff;
+      --color-destaque: #000000;
+      --color-secondary: #1db9b7;
+      --color-header-secondary: #f9f8f8;
+      --color-header-secondary-link: #000000;
+      --font-primary: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+      --back-to-top-bottom: 100px;
+    }
+
+    #box-article h1,
+    #box-article h1 span,
+    #box-article h1 p {
+      font-size: 2rem !important;
+      font-weight: bold !important;
+    }
+
+    #box-article h2,
+    #box-article h2 span,
+    #box-article h2 p {
+      font-size: 1.5rem !important;
+      font-weight: bold !important;
+    }
+
+    #box-article h3,
+    #box-article h3 span,
+    #box-article h3 p,
+    #box-article h4,
+    #box-article h4 span,
+    #box-article h4 p,
+    #box-article h5,
+    #box-article h5 span,
+    #box-article h5 p,
+    #box-article h6,
+    #box-article h6 span,
+    #box-article h6 p {
+      font-weight: bold !important;
+    }
+
+    #box-article aside a {
+      color: var(--normal-text-color);
+      border-radius: 4px;
+      padding: 0.5rem 0;
+      font-size: 0.9375rem;
+    }
+
+    #box-article aside a:hover {
+      color: var(--color-destaque);
+    }
+
+    #box-article aside {
+      padding-right: 20px;
+    }
+
+    #box-article iframe {
+      border: 0;
+      width: 100%;
+    }
+
+    #more-articles {
+      color: var(--color-destaque) !important;
+    }
+
+    #more-articles:hover {
+      color: var(--color-destaque) !important;
+      text-decoration: underline !important;
+    }
+
+    #box-article .active {
+      border-radius: 4px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    #box-article .active a {
+      color: var(--color-destaque);
+    }
+
+    #box-article article img {
+      cursor: pointer;
+      width: 100%;
+      display: block;
+      margin: 15px auto;
+      text-align: center;
+      outline: 0px;
+      box-sizing: border-box;
+      cursor: pointer;
+      padding: 0px 1px;
+      position: relative;
+      max-width: 100%;
+    }
+
+    #article-text p {
+      margin-bottom: 10px;
+    }
+
+    #article-text p,
+    #article-text span {
+      font-family: var(--font-primary);
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    #copy-share a {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 5px;
+    }
+
+    #avaliation-icons {
+      height: 40px;
+    }
+
+    #avaliation-icons img {
+      width: 40px;
+      margin: 0px 10px;
+    }
+
+    #avaliation-icons img:hover {
+      transform: scale(1.32);
+      cursor: pointer;
+    }
+
+    .input-question,
+    .content-single-question h2 {
+      display: none !important;
+    }
+
+    #avaliation-icons .content-single-question {
+      background-color: #ffffff !important;
+      padding: 0px !important;
+      margin: 0px !important;
+    }
+
+    .questions-items {
+      background-color: var(--bg-color) !important;
+    }
+
+    .fw-bold {
+      font-size: 1.125rem;
+    }
+
+    #related-articles a,
+    #visited-articles li a {
+      color: var(--normal-text-color);
+    }
+
+    #faq-link {
+      width: 75%;
+    }
+
+    @media (max-width: 1000px) {
+      .breadcrumb-header {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .breadcrumb-item+.breadcrumb-item::before {
+        float: none;
+      }
+
+      #visited-articles {
+        border-bottom: 1px solid var(--color-secondary);
+        padding-bottom: 1rem !important;
+        margin-bottom: 1rem !important;
+      }
+
+      #search-div,
+      #faq-link {
+        width: 100%;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://app.sak.com.br/css/templates-faq/simple-lightbox/simple-lightbox.min.css">
+  <link rel="stylesheet" href="https://app.sak.com.br/css/templates-faq/template1/template1.css">
+</head>
+
+<body>
+  <header class="mb-60 border-bottom">
+    <div class="w-100 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-between py-3">
+    <a href="https://montink.sak.com.br/" class="d-flex align-items-center mb-lg-0 me-lg-auto text-dark text-decoration-none">
+              <img class="" style="width: 40px; margin-right: 10px;" src="https://empreender.nyc3.digitaloceanspaces.com/wcr/anexos/17785040916a01d19b10e5f.png" alt="Central de Ajuda Montink">
+            <span class="fs-5">Central de Ajuda Montink</span>
+    </a>
+          <a href="javascript:sak_toggle_widget()" class="d-flex align-items-center text-decoration-none" id="link-contact-header">
+        <span id="contact-header">Entre em contato</span>
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" fill="#000000"></path>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" fill="#000000"></path>
+          </g>
+        </svg>
+      </a>
+      </div>
+    </div>
+    <div class="breadcrumb-search w-100">
+      <div class="container header2 d-flex flex-wrap justify-content-between align-items-center py-4">
+        <div class="d-flex align-items-center mb-lg-0 me-lg-auto text-dark text-decoration-none" id="faq-link">
+          <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+            <ol class="breadcrumb m-0 breadcrumb-header">
+              <li class="breadcrumb-item"><a href="https://montink.sak.com.br/">Início</a></li>
+              <li class="breadcrumb-item"><a href="https://montink.sak.com.br/categoria/integracoes31">Integrações</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Integração da Montink via API</li>
+            </ol>
+          </nav>
+        </div>
+        <div id="search-div">
+          <form action="https://montink.sak.com.br/pesquisa" method="GET">
+            <div class="input-group" id="search-header">
+              <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" class="search-icon" aria-hidden="true">
+                  <circle cx="4.5" cy="4.5" r="4" fill="none" stroke="currentColor"></circle>
+                  <path stroke="currentColor" stroke-linecap="round" d="M11 11L7.5 7.5"></path>
+                </svg></span>
+              <input type="text" name="q" class="form-control" placeholder="Faça a sua pesquisa" aria-label="Pesquisa" aria-describedby="basic-addon1">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="box-article" class="mb-60">
+      <div class="container">
+        <div class="row">
+          <aside class="col-md-3">
+            <nav class="navbar navbar-expand-sm navbar-dark flex-column">
+              <div class="d-flex mb-2 w-100 justify-content-between align-items-center aside-items">
+                <span class="fw-bold">Mais artigos sobre Integrações</span>
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#n_bar" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" focusable="false" viewBox="0 0 12 12" aria-hidden="true" class="collapsible-sidebar-toggle-icon chevron-icon">
+                    <path fill="none" stroke="currentColor" stroke-linecap="round" d="M3 4.5l2.6 2.6c.2.2.5.2.7 0L9 4.5">
+                    </path>
+                  </svg>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse w-100" id="n_bar">
+                <ul class="navbar-nav flex-column w-100">
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-a-montink-ao-ovni">
+                        Como Integrar a Montink ao Ovni                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-seu-catalogo-de-produtos-ao-pinterest">
+                        Como integrar seu catálogo de produtos ao Pinterest                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-sua-loja-com-o-replay">
+                        Como integrar sua loja com o Replay                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/integracao-com-mercado-livre-tudo-o-que-voce-precisa-saber">
+                        Integração com Mercado Livre: Tudo o que você precisa saber                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/tik-tok-shop-por-que-e-necessario-emitir-a-nota-fiscal-do-pedido">
+                        Tik Tok shop - Por que é necessário emitir a nota fiscal do pedido?                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-a-montink-com-a-nuvemshop-passo-a-passo-completo">
+                        Como Integrar a Montink com a Nuvemshop: Passo a Passo Completo                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-minha-loja-ao-catalogo-do-facebook">
+                        Como integrar minha loja ao catálogo do Facebook?                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-minha-loja-com-o-jivochat">
+                        Como integrar minha loja com o JivoChat?                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-a-montink-com-tiktok-shop-guia-rapido">
+                        Como integrar  a Montink com TikTok Shop: Guia Rápido                      </a>
+                    </li>
+                                      <li class="nav-item ">
+                      <a class="nav-link" href="https://montink.sak.com.br/como-integrar-a-lily">
+                        Como Integrar a Lily?                      </a>
+                    </li>
+                                    <li class="nav-item" id="more-articles">
+                    <a class="nav-link" href="https://montink.sak.com.br/categoria/integracoes31" id="more-articles">Ver todos os artigos sobre Integrações</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </aside>
+          <div class="col-md-9">
+            <article class="border-bottom pb-40">
+              <h1 class="mb-4">Integração da Montink via API</h1>
+              <div class="d-flex justify-content-between align-items-center mb-40">
+                                  <p class="m-0 article-date">Atualizado em 12/05/2026</p>
+                                <div id="icons-share">
+                  <div class="toast">
+                    <div class="toast-body">
+                      Link copiado!                    </div>
+                  </div>
+                  <div id="copy-share" class="d-flex">
+                    <a href="javascript:void(0)">
+                      <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m6 18h-3c-.48 0-1-.379-1-1v-14c0-.481.38-1 1-1h14c.621 0 1 .522 1 1v3h3c.621 0 1 .522 1 1v14c0 .621-.522 1-1 1h-14c-.48 0-1-.379-1-1zm1.5-10.5v13h13v-13zm9-1.5v-2.5h-13v13h2.5v-9.5c0-.481.38-1 1-1z" fill-rule="nonzero" fill="#212529" />
+                      </svg>
+                    </a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://wa.me/?text=https%3A%2F%2Fmontink.sak.com.br%2Fintegracao-da-montink-via-api">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" fill="#212529" />
+                      </svg>
+                    </a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fmontink.sak.com.br%2Fintegracao-da-montink-via-api">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" fill="#212529" />
+                      </svg>
+                    </a>
+                    <a target="_blank" rel="noreferrer noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fmontink.sak.com.br%2Fintegracao-da-montink-via-api">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" fill="#212529" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div id="article-text">
+                <p >&nbsp;</p><p data-end="798" data-start="579" >Para o <strong data-end="616" data-start="592" >token de autoriza&ccedil;&atilde;o</strong>, no menu lateral da sua dashboard, v&aacute; em <strong >Adicionar Apps&gt; API Montink, clique em Conectar, no modal aberto, clique em Gerar token de autoriza&ccedil;&atilde;o. </strong>Ap&oacute;s gerar o token, sua integra&ccedil;&atilde;o pode consumir os principais recursos da API para <strong data-end="701" data-start="682" >listar produtos</strong>, <strong data-end="721" data-start="703" >calcular frete</strong>, <strong data-end="740" data-start="723" >criar pedidos</strong> e <strong data-end="766" data-start="743" >acompanhar o status</strong> dos pedidos criados na Montink.</p><p data-end="936" data-start="800" >Este artigo apresenta, de forma simples, <strong data-end="878" data-start="841" >quais opera&ccedil;&otilde;es ficam dispon&iacute;veis</strong> e <strong data-end="935" data-start="881" >como elas se conectam em um fluxo t&iacute;pico de compra</strong>.</p><p data-end="936" data-start="800" ><strong >PS: &nbsp;Recomendamos que a utiliza&ccedil;&atilde;o da API seja feita ou supervisionada por um Desenvolvedor de sua confian&ccedil;a.</strong></p><hr data-start="938" data-end="941" ><h2 data-end="988" data-start="943"  id="h_01KFGY0M38W7BVJJ3SP4N5KMYB">&#9989; O que fica dispon&iacute;vel ap&oacute;s gerar o token</h2><p data-end="1050" data-start="990" >Com o token em m&atilde;os, voc&ecirc; pode realizar as opera&ccedil;&otilde;es abaixo:</p><h3 data-end="1071" data-start="1052"  id="h_01KFGY0M39FY2YT835KMQY41RV">1) Criar Pedido</h3><p data-end="1122" data-start="1072" >Permite <strong data-end="1110" data-start="1080" >criar um pedido na Montink</strong> informando:</p><ul data-end="1225" data-start="1123" >
+<li data-end="1145" data-list-item-id="ee5453d3807872564b72527ca160373f0" data-start="1123" ><p data-end="1145" data-start="1125" >dados do seu cliente</p></li>
+<li data-end="1225" data-list-item-id="e6edaf28c208e894363621396ba235817" data-start="1146" ><p data-end="1225" data-start="1148" >dados dos produtos consumidos (selecionados a partir da Listagem de Produtos)</p></li>
+</ul><blockquote data-end="1313" data-start="1227" ><p data-end="1313" data-start="1229" >Em geral, esse &eacute; o passo final do fluxo, ap&oacute;s o cliente escolher os itens e o frete.</p></blockquote><hr data-start="1315" data-end="1318" ><h3 data-end="1347" data-start="1320"  id="h_01KFGY0M3C0XWNE5AM9M0Q3QY1">2) Listagem de Produtos</h3><p data-end="1419" data-start="1348" >Exibe <strong data-end="1387" data-start="1354" >todos os produtos cadastrados</strong>, com os dados necess&aacute;rios para:</p><ul data-end="1521" data-start="1420" >
+<li data-end="1466" data-list-item-id="e5d52ce16a39d149a4f20d14e39f185c3" data-start="1420" ><p data-end="1466" data-start="1422" >renderiza&ccedil;&atilde;o (exibi&ccedil;&atilde;o no seu checkout/loja)</p></li>
+<li data-end="1521" data-list-item-id="e502399d8721c47b2b3e27e23469d5845" data-start="1467" ><p data-end="1521" data-start="1469" >compra (informa&ccedil;&otilde;es essenciais para montar o pedido)<br ><br >&nbsp;</p></li>
+</ul><hr data-start="1523" data-end="1526" ><h2  id="h_01KH99QG8VZWPWNRXDYWK3652S">3) Busca de produtos</h2><p >&nbsp;</p><ol >
+<li data-list-item-id="ea9d46b5ae61fe50c6bbaee4a60598f69" ><div >Par&acirc;metros de consulta (GET)<br >As consultas de produtos devem ser feitas <strong >sempre via m&eacute;todo GET</strong>, utilizando par&acirc;metros na URL para pagina&ccedil;&atilde;o, limite e filtros.<br >Pagina&ccedil;&atilde;o<br >Use o par&acirc;metro <code >pga</code> para navegar entre p&aacute;ginas:<br >&nbsp;</div></li>
+<li data-list-item-id="e8bae3bbd7781779f7b84c10639c18ba9" >
+<code >?pga=0</code> &rarr; <strong >primeira p&aacute;gina</strong> (sempre)</li>
+<li data-list-item-id="e8582ba1bbeed49da77f85cd39da1bea8" >
+<code >?pga=1</code> &rarr; segunda p&aacute;gina</li>
+<li data-list-item-id="eb3151a393c4b4d3419214b2f8d37ce20" >
+<code >?pga=2</code> &rarr; terceira p&aacute;gina, e assim por diante</li>
+<li data-list-item-id="e2c573dc415e03154dc7c8216d598233c" ><div >Exemplo:<br >&nbsp;<code >?pga=1</code><br >Limite de produtos por p&aacute;gina<br >Use o par&acirc;metro <code >pp</code> para definir quantos produtos retornam por p&aacute;gina:<br >&nbsp;</div></li>
+<li data-list-item-id="e46bde43f4f69694aae7e35f8707ae5e3" >
+<code >?pp=500</code> &rarr; retorna at&eacute; <strong >500 produtos por p&aacute;gina</strong>
+</li>
+<li data-list-item-id="ed577a8de93ea366dcc81ff7a3b30fad4" ><div >Exemplo:<br >&nbsp;<code >?pp=500</code><br ><br >GET<br >Voc&ecirc; pode combinar filtros na mesma URL.<br >Buscar por categoria<br ><code >?categoria=&quot;T-Shirt Classic&quot;</code><br >Buscar por Produto Base<br ><code >?produtoBase=ID_DO_PRODUTO_BASE</code><br >Buscar por cole&ccedil;&atilde;o<br ><code >?colecao=SLUG_COLECAO</code><br >Status<br >N&atilde;o existe par&acirc;metro de status &mdash; a API <strong >sempre retorna apenas produtos habilitados</strong>.<br ><br >Consulta de um produto espec&iacute;fico<br >Para consultar um produto espec&iacute;fico pelo ID, utilize:<br ><a  href="http://api.montink.com/product/ID_PRODUTO" rel="noopener noreferrer" target="_blank"><code >api.montink.com/product/ID_PRODUTO</code></a>
+</div></li>
+</ol><hr ><h3 data-end="1553" data-start="1528"  id="h_01KFGY0M3ETQGZWD4X0ZRPNDG7">4) Detalhes do Pedido</h3><p data-end="1628" data-start="1554" >Retorna um <strong data-end="1585" data-start="1565" >resumo detalhado</strong> de um pedido criado na Montink, incluindo:</p><ul data-end="1704" data-start="1629" >
+<li data-end="1653" data-list-item-id="e7b38b1ade8ae5150a3d2796eaf1c235f" data-start="1629" ><p data-end="1653" data-start="1631" >status atual do pedido</p></li>
+<li data-end="1704" data-list-item-id="e417412de6a72bed3a0456fa26ba2ebcd" data-start="1654" ><p data-end="1704" data-start="1656" >informa&ccedil;&otilde;es de acompanhamento do fluxo do pedido</p></li>
+</ul><hr data-start="1706" data-end="1709" ><h3 data-end="1737" data-start="1711"  id="h_01KFGY0M3HVAFYRQJZFWN4HB1Z">5) Listagem de Pedidos</h3><p data-end="1790" data-start="1738" >Exibe um <strong data-end="1777" data-start="1747" >resumo de todos os pedidos</strong>, permitindo:</p><ul data-end="1833" data-start="1791" >
+<li data-end="1812" data-list-item-id="e9a3125f00b94a7601756a1765b53032a" data-start="1791" ><p data-end="1812" data-start="1793" >filtrar por per&iacute;odo</p></li>
+<li data-end="1833" data-list-item-id="e4ba4fe3af828d3f6a1dc07feb00c83c2" data-start="1813" ><p data-end="1833" data-start="1815" >filtrar por status</p></li>
+</ul><p data-end="1907" data-start="1835" >Ideal para dashboards, &aacute;rea &ldquo;Meus pedidos&rdquo;, concilia&ccedil;&atilde;o e monitoramento.</p><hr data-start="1909" data-end="1912" ><h3 data-end="1937" data-start="1914"  id="h_01KFGY0M3KDWJD267DP8J7M3Y6">6) C&aacute;lculo de Frete</h3><p data-end="1992" data-start="1938" >Retorna as <strong data-end="1968" data-start="1949" >op&ccedil;&otilde;es de frete</strong> dispon&iacute;veis, incluindo:</p><ul data-end="2041" data-start="1993" >
+<li data-end="2015" data-list-item-id="e425eabf9b236f3caf046ef8715281887" data-start="1993" ><p data-end="2015" data-start="1995" >modalidades/servi&ccedil;os</p></li>
+<li data-end="2041" data-list-item-id="eff6441b32b5310c0d5c61f1ddc6c9e2a" data-start="2016" class="wysiwyg-list-bold" ><p data-end="2041" data-start="2018" ><strong data-end="2041" data-start="2018" >previs&atilde;o de entrega</strong></p></li>
+</ul><p data-end="2123" data-start="2043" >Esse recurso &eacute; recomendado para uso no checkout, antes da confirma&ccedil;&atilde;o da compra.</p><hr data-start="2125" data-end="2128" ><h2 data-end="2202" data-start="2130"  id="h_01KFGY0M3N07MZJAANTKTEFH3Q">&#128257; Fluxo recomendado de integra&ccedil;&atilde;o (do checkout at&eacute; o acompanhamento)</h2><p data-end="2266" data-start="2204" >Abaixo est&aacute; o fluxo mais comum para integra&ccedil;&otilde;es com a Montink:</p><h3 data-end="2309" data-start="2268"  id="h_01KFGY0M3PY51G44ETQ9WJ01BS">Etapa 1 &mdash; Exibir produtos para compra</h3><ol data-end="2414" data-start="2310" >
+<li data-end="2347" data-list-item-id="e7316dbceec3fd9a79db67a0af405f340" data-start="2310" ><p data-end="2347" data-start="2313" >Consuma a <strong data-end="2347" data-start="2323" >Listagem de Produtos</strong></p></li>
+<li data-end="2414" data-list-item-id="e00632a9484a2727ce20748353516f204" data-start="2348" ><p data-end="2414" data-start="2351" >Renderize os itens no seu checkout/loja com os dados retornados</p></li>
+</ol><p data-end="2499" data-start="2416" >&#9989; Resultado: o cliente consegue escolher o produto correto e varia&ccedil;&otilde;es dispon&iacute;veis.</p><hr data-start="2501" data-end="2504" ><h3 data-end="2542" data-start="2506"  id="h_01KFGY0M3R0TMSB8YQTYK2BWFX">Etapa 2 &mdash; Calcular frete e prazo</h3><ol data-end="2662" data-start="2543" >
+<li data-end="2622" data-list-item-id="e7a8c58c2e80a9dae12a513629ccd84d6" data-start="2543" ><p data-end="2622" data-start="2546" >Com os dados do carrinho e endere&ccedil;o do cliente, chame o <strong data-end="2622" data-start="2602" >C&aacute;lculo de Frete</strong></p></li>
+<li data-end="2662" data-list-item-id="e808eca14dfb015324aea07ea142af8d6" data-start="2623" ><p data-end="2662" data-start="2626" >Exiba as op&ccedil;&otilde;es e prazos no checkout</p></li>
+</ol><p data-end="2739" data-start="2664" >&#9989; Resultado: o cliente escolhe a melhor op&ccedil;&atilde;o de entrega com transpar&ecirc;ncia.</p><hr data-start="2741" data-end="2744" ><h3 data-end="2785" data-start="2746"  id="h_01KFGY0M3TZZ3WHJ3NNVYABE5W">Etapa 3 &mdash; Criar o pedido na Montink</h3><ol data-end="2987" data-start="2786" >
+<li data-end="2866" data-list-item-id="e35fd4079e72605828623a8e63757a02a" data-start="2786" ><p data-end="2866" data-start="2789" >Ap&oacute;s o pagamento/aprova&ccedil;&atilde;o no seu fluxo, envie os dados para <strong data-end="2866" data-start="2850" >Criar Pedido</strong></p></li>
+<li data-end="2987" data-list-item-id="eaa59d19df2589812675929ce45ea1680" data-start="2867" >
+<p data-end="2877" data-start="2870" >Inclua:</p>
+<ul data-end="2987" data-start="2881" >
+<li data-end="2899" data-list-item-id="e9add84a412c60105a9e61e7ea517e67d" data-start="2881" ><p data-end="2899" data-start="2883" >dados do cliente</p></li>
+<li data-end="2957" data-list-item-id="e6e56c82bc50d4ebf1828d5111427f3e1" data-start="2903" ><p data-end="2957" data-start="2905" >itens do carrinho (com base na listagem de produtos)</p></li>
+<li data-end="2987" data-list-item-id="ec609736c894604a79fdbbfe219f3efb3" data-start="2961" ><p data-end="2987" data-start="2963" >op&ccedil;&atilde;o de frete escolhida</p></li>
+</ul>
+</li>
+</ol><p data-end="3067" data-start="2989" >&#9989; Resultado: o pedido passa a existir na Montink e entra no fluxo operacional.</p><hr data-start="3069" data-end="3072" ><h3 data-end="3114" data-start="3074"  id="h_01KFGY0M3Y61K7GCE7N7D0ZJ8E">Etapa 4 &mdash; Consultar status do pedido</h3><ol data-end="3256" data-start="3115" >
+<li data-end="3192" data-list-item-id="ed2d2fc721f42b45bb408f277aa6cedec" data-start="3115" ><p data-end="3192" data-start="3118" >Use <strong data-end="3144" data-start="3122" >Detalhes do Pedido</strong> para consultar o pedido espec&iacute;fico e seu status</p></li>
+<li data-end="3256" data-list-item-id="e5fa9ae4eb6728a42b5f057b7e27bce05" data-start="3193" ><p data-end="3256" data-start="3196" >Se quiser listar v&aacute;rios pedidos, use <strong data-end="3256" data-start="3233" >Listagem de Pedidos</strong></p></li>
+</ol><p data-end="3361" data-start="3258" >&#9989; Resultado: voc&ecirc; consegue mostrar ao seu cliente o acompanhamento do pedido e manter controle interno.</p><hr data-start="3363" data-end="3366" ><h2 data-end="3400" data-start="3368"  id="h_01KFGY0M40XBCN9Q4FQMP07KY3">&#128270; Refer&ecirc;ncia da documenta&ccedil;&atilde;o</h2><p data-end="3541" data-start="3401" >A documenta&ccedil;&atilde;o completa est&aacute; no Postman:<br ><a  href="https://documenter.getpostman.com/view/32162527/2sAYkGJyWE#490574c9-02a1-49ea-a1f2-67b87135b93b" rel="noopener noreferrer" target="_blank">https://documenter.getpostman.com/view/32162527/2sAYkGJyWE#490574c9-02a1-49ea-a1f2-67b87135b93b</a></p><hr data-start="3543" data-end="3546" ><h2 data-end="3566" data-start="3548"  id="h_01KFGY0M40RHV1W95J5VF4X63K">&#129504; Dica pr&aacute;tica</h2><p data-end="3647" data-start="3567" >Se voc&ecirc; estiver montando a experi&ecirc;ncia do checkout, normalmente a ordem ideal &eacute;:</p><p data-end="3738" data-start="3649" ><strong data-end="3738" data-start="3649" >Listar Produtos &rarr; Calcular Frete &rarr; Criar Pedido &rarr; Consultar Detalhes / Listar Pedidos</strong></p><p data-end="3753" data-start="3740" >Isso garante:</p><ul data-end="3876" data-start="3754" >
+<li data-end="3783" data-list-item-id="e76e0e804f70ac998d53d106d32b2df43" data-start="3754" ><p data-end="3783" data-start="3756" >cat&aacute;logo sempre consistente</p></li>
+<li data-end="3822" data-list-item-id="ebd3b31842156ca0cd5ac7a8797485c09" data-start="3784" ><p data-end="3822" data-start="3786" >frete calculado antes da confirma&ccedil;&atilde;o</p></li>
+<li data-end="3876" data-list-item-id="ea9850b5cd25debd2e492fc7b234c4ccc" data-start="3823" ><p data-end="3876" data-start="3825" >pedido criado apenas quando a compra estiver pronta</p></li>
+</ul>              </div>
+            </article>
+            <div class="avaliation p-30 border-bottom">
+              <p class="text-center mb-3">O que achou da resposta?</p>
+              <div class="d-flex justify-content-center align-items-center" id="avaliation-icons">
+                <img onclick="vote(280540,3)" src="https://app.sak.com.br/assets/faq/widget/smiley.svg" alt="Ótima">
+                <img onclick="vote(280540,2)" src="https://app.sak.com.br/assets/faq/widget/neutral_face.svg" alt="Neutra">
+                <img onclick="vote(280540,1)" src="https://app.sak.com.br/assets/faq/widget/disappointed.svg" alt="Péssima">
+              </div>
+                              <p class="text-center mt-3">Não encontrou o que precisava? <a href="javascript:toggleSakWidget()">Entre em contato</a></p>
+                          </div>
+            <div class="row pt-20">
+              <div class="col-md-6">
+                <h3 class="fw-bold">Artigos visitados</h3>
+                <nav class="visited-articles">
+                  <ul class="navbar-nav flex-column" id="visited-articles">
+                  </ul>
+                </nav>
+              </div>
+              <div class="col-md-6">
+                <h3 class="fw-bold">Artigos relacionados</h3>
+                <nav class="visited-articles">
+                  <ul class="navbar-nav flex-column" id="related-articles">
+                                          <li class="nav-item">
+                        <a class="nav-link" href="https://montink.sak.com.br/como-integrar-a-montink-a-hotmart">
+                          Como Integrar a Montink a Hotmart ?                        </a>
+                      </li>
+                                          <li class="nav-item">
+                        <a class="nav-link" href="https://montink.sak.com.br/codigos-ncm-para-emissao-de-nota-fiscal-pelo-bling-na-montink">
+                          Códigos NCM para emissão de nota fiscal pelo Bling na Montink                        </a>
+                      </li>
+                                          <li class="nav-item">
+                        <a class="nav-link" href="https://montink.sak.com.br/como-integrar-minha-loja-com-o-bling">
+                          Como integrar minha loja com o Bling?                        </a>
+                      </li>
+                                          <li class="nav-item">
+                        <a class="nav-link" href="https://montink.sak.com.br/integracao-da-montink-via-api">
+                          Integração da Montink via API                        </a>
+                      </li>
+                                          <li class="nav-item">
+                        <a class="nav-link" href="https://montink.sak.com.br/fluxo-de-pedido-e-pagamento-montink-marketplaces">
+                          Fluxo de Pedido e Pagamento — Montink + Marketplaces                        </a>
+                      </li>
+                                      </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer class="py-3 my-4">
+    <ul class="nav justify-content-center">
+      <li class="nav-item"><a href="https://montink.sak.com.br/" class="nav-link">Início</a></li>
+              <li class="nav-item">
+          <a href="javascript:sak_toggle_widget()" class="nav-link">Entre em contato</a>
+        </li>
+          </ul>
+    <p class="text-center text-muted border-top">© 2026 Todos os direitos reservados</p>
+    <a class="back-to-top" onclick="window.scrollTo(0, 0);"><i class="arrow up"></i></a>
+  </footer>
+
+  <script>
+    const backToTopButton = document.querySelector('.back-to-top')
+
+    const backToTop = () => {
+      if (window.scrollY >= 100) {
+        backToTopButton.classList.add('show')
+      } else {
+        backToTopButton.classList.remove('show')
+      }
+    }
+
+    window.addEventListener('scroll', function() {
+      backToTop()
+    })
+  </script>
+
+      <script>
+      var sakw_custom_button_ativo = false
+    </script>
+    <script src="https://empreender.nyc3.digitaloceanspaces.com/wcr/user_wfaqjs/62d02bc786eff.js" defer></script>
+  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script>
+    //Copiar link
+    document.getElementById('copy-share').addEventListener('click', clipboardCopy);
+    async function clipboardCopy() {
+      let text = window.location.href;
+      await navigator.clipboard.writeText(text);
+      //alert('Link copiado!')
+      var toastElList = [].slice.call(document.querySelectorAll('.toast'))
+      var toastList = toastElList.map(function(toastEl) {
+        return new bootstrap.Toast(toastEl)
+      })
+      toastList.forEach(toast => toast.show())
+    }
+
+    // Função para salvar o artigo no LocalStorage
+    function saveArticle() {
+      const existingArticles = JSON.parse(localStorage.getItem('faq-sak--visited-articles')) || [];
+
+      const articleExists = existingArticles.some(article => article.page === "https://montink.sak.com.br/integracao-da-montink-via-api");
+
+      if (!articleExists) {
+
+        existingArticles.push({
+          name: "Integração da Montink via API",
+          page: "https://montink.sak.com.br/integracao-da-montink-via-api"
+        });
+
+        /* if (existingArticles.length > 5) {
+          existingArticles.shift();
+        } */
+
+        localStorage.setItem('faq-sak--visited-articles', JSON.stringify(existingArticles));
+      }
+    }
+
+    // Função para atualizar a lista de artigos na página
+    function updateArticleList() {
+      const articleListElement = document.getElementById('visited-articles');
+      articleListElement.innerHTML = '';
+
+      const existingArticles = JSON.parse(localStorage.getItem('faq-sak--visited-articles')) || [];
+
+      existingArticles.forEach(article => {
+        const listItem = document.createElement('li');
+        listItem.className = 'nav-item';
+
+        const link = document.createElement('a');
+        link.className = 'nav-link';
+        link.href = article.page;
+        link.textContent = article.name;
+
+        listItem.appendChild(link);
+        articleListElement.appendChild(listItem);
+      });
+    }
+
+    function vote(article, vote) {
+      var data = {
+        id_artigo: article,
+        voto: vote
+      };
+
+      fetch("https://montink.sak.com.br/voto-artigo/62d02bc786eff", {
+          method: "POST",
+          body: JSON.stringify(data)
+        })
+        .then(res => {
+          return res.text();
+        })
+        .then(html => {
+          document.getElementById('avaliation-icons').innerHTML = html;
+        });
+    }
+
+    function toggleSakWidget () {
+      if (typeof sak_toggle_widget === 'function') {
+        sak_toggle_widget();
+        return;
+      }
+
+      if (window.parent !== window) {
+        window.parent.postMessage('sak_toggle_widget', '*');
+        return;
+      }
+    }
+
+    window.addEventListener('load', function() {
+      saveArticle();
+      updateArticleList();
+    });
+  </script>
+
+  <script src="https://app.sak.com.br/css/templates-faq/simple-lightbox/simple-lightbox.min.js"></script>
+
+  <script>
+    window.addEventListener('load', function() {
+
+      wrapImagesInLinks(document.querySelector('article'));
+
+      var $gallery = new SimpleLightbox('.imagem-zoom', {
+        captions: false,
+        closeText: '<svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>',
+        showCounter: false,
+        enableZoom: true,
+        overlayOpacity: 0.95,
+        widthRatio: 0.85
+      });
+    });
+
+    function wrapImagesInLinks(articleElement) {
+      const images = articleElement.querySelectorAll('img');
+
+      images.forEach((image) => {
+        const parentLink = image.parentElement;
+
+        if (parentLink && parentLink.tagName === 'A') {
+          parentLink.removeAttribute('href');
+          parentLink.classList.remove('imagem-zoom');
+        }
+
+        const newLink = document.createElement('a');
+
+        newLink.href = image.src;
+        newLink.className = 'imagem-zoom';
+        image.parentNode.replaceChild(newLink, image);
+        newLink.appendChild(image);
+      });
+    }
+  </script>
+</body>
+
+</html>

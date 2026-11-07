@@ -1,0 +1,225 @@
+URL: https://documenter.getpostman.com/view/32162527/2sAYkGJyWE
+TITLE: API Pública Montink
+
+Public
+ENVIRONMENT
+No Environment
+LAYOUT
+Double Column
+LANGUAGE
+cURL - cURL
+API PÚBLICA MONTINK
+Introduction
+POST
+Criar Pedido
+GET
+Listagem de Pedidos
+GET
+Detalhes do Pedido
+GET
+Listagem de Produtos
+GET
+Calculo de Frete
+API Pública Montink
+POST
+Criar Pedido
+https://api.montink.com/create_order
+
+Endpoint responsável por gerar um pedido em sua plataforma. Seu pedido aparecerá diretamente em sua dashboard, na página de Pedidos Externos. Após importar o pedido, é necessário efetuar o pagamento utilizando o saldo de sua conta para pagar os custos do pedido, e enviá-lo a produção.
+
+View More
+Parâmetro	Descrição	Descrição Adicional
+customer_name (Obrigatório)	Nome Completo do Cliente Comprador	String
+customer_email (Obrigatório)	E-mail do Cliente Comprador	String - O e-mail será validado em nosso sistema, e caso seja inválido, não será importado.
+customer_document (Obrigatório)	Documento do Cliente Comprador	String - CPF ou CNPJ
+customer_name (Obrigatório)	Telefone do Cliente Comprador	String - Enviar de Preferência no Formato (DD) 90000-0000
+payment_method (Opcional)	Forma de Pagamento do Pedido	String - Todos os pedidos serão importados para pagamento via saldo. Outras formas de pagamentos disponíveis em breve.
+value_total (Obrigatório)	Valor Total do Pedido	Double - Valor demonstrativo do valor do pedido. Esse não será o valor final de compra pago via saldo, o valor será calculado pelo nosso sistema.
+external_order_id (Opcional)	ID do Pedido em Sua Plataforma	String - Utilizado para identificação de seu pedido em nossa plataforma
+shipping_id (Opcional)	ID da Transportadora de Envio	Integer - Para obter o ID da Transportadora, utilize o endpoint calculate_shipping. Caso o ID da Transportadora não seja enviado, selecionaremos a opção com menor preço.
+address[zipcode] (Obrigatório)	CEP do Endereço Entrega	O Cep informado será validado pelo nosso sistema. Não será possível importar pedidos com Ceps incorretos.
+address[street] (Obrigatório)	Logradouro do Endereço de Entrega	String
+address[number] (Obrigatório)	Número do Endereço de Entrega	String
+address[neighborhood] (Obrigatório)	Bairro do Endereço de Entrega	String
+address[city] (Obrigatório)	Cidade do Endereço de Entrega	String
+address[state] (Obrigatório)	UF do Endereço de Entrega	String - Apenas dois Dígitos. Ex: MG, SP, RJ, BA
+address[complement] (Opcional)	Complemento do Endereço	String
+products[] (Obrigatório)	Produtos do Pedido	Array - Combinação dos produtos com os dados obtidos pelo endpoint products ou product
+products[product_id] (Obrigatório)	ID do Produto criado na Montink	Integer
+products[sku] (Opcional)	SKU das Variações do Produto	String - Opcional caso não seja enviado os campos var1, var2 e var3 (var3 é opcional)
+products[quantity](Obrigatório)	Quantidade de Produtos	Integer
+products[var1](Opcional em alguns casos)	Variante 1, normalmente relacionada a tamanho	String - Caso o produto esteja nas categorias de Canecas, Bonés, Garrafas ou Copos, esse campo se torna opcional. Também é aceito o valor ÚNICO
+products[var2] (Obrigatório)	Variante 2, normalmente relacionada a cor	String
+products[var3] (Opcional)	Variante 3, normalmente relacionada a escolha do Papel	String - Caso o produto seja na categoria Posters, o campo é obrigatório
+products[price] (Obrigatório)	Preço demonstrativo do Produto	Double
+
+HEADERS
+Authorizationtoken
+
+TOKEN_ENVIADO
+
+Token de Autorização recebido pela equipe ou gerado na integração
+
+Body
+raw (json)
+View More
+json
+{
+    "customer_name": "Nome Completo",
+    "customer_email": "email@email.com",
+    "customer_document": "9999999999",
+    "customer_phone": "(11) 99999-9999",
+    "payment_method": "pix",
+    "value_total": 150.00,
+    "external_order_id": "123456789",
+    "shipping_id": 15,
+    "address": {
+        "zipcode": "00000-000",
+        "street": "Logradouro do Endereço",
+        "number": "100",
+        "neighborhood": "Bairro",
+        "city": "Cidade",
+        "state": "UF",
+        "complement": "Casa A"
+    },
+    "products": [
+        {
+            "product_id": 99999,
+            "sku": 999999999,
+            "quantity": 4,
+            "var1": "G",
+            "var2": "Branco",
+            "var3": null,
+            "price": 150.00
+        },
+        {
+            "product_id": 99999,
+            "sku": 999999999,
+            "quantity": 4,
+            "var1": "G",
+            "var2": "Branco",
+            "var3": null,
+            "price": 150.00
+        }
+    ]
+}
+Example Request
+Criar Pedido
+View More
+curl
+curl --location 'https://api.montink.com/create_order' \
+--header 'Authorizationtoken: TOKEN_ENVIADO' \
+--data-raw '{
+    "customer_name": "Nome Completo",
+    "customer_email": "email@email.com",
+    "customer_document": "9999999999",
+    "customer_phone": "(11) 99999-9999",
+    "payment_method": "pix",
+    "value_total": 150.00,
+    "external_order_id": "123456789",
+    "shipping_id": 15,
+    "address": {
+        "zipcode": "00000-000",
+        "street": "Logradouro do Endereço",
+        "number": "100",
+        "neighborhood": "Bairro",
+        "city": "Cidade",
+        "state": "UF",
+        "complement": "Casa A"
+    },
+    "products": [
+        {
+            "product_id": 99999,
+            "sku": 999999999,
+            "quantity": 4,
+            "var1": "G",
+            "var2": "Branco",
+            "var3": null,
+            "price": 150.00
+        },
+        {
+            "product_id": 99999,
+            "sku": 999999999,
+            "quantity": 4,
+            "var1": "G",
+            "var2": "Branco",
+            "var3": null,
+            "price": 150.00
+        }
+    ]
+}'
+Example Response
+Body
+Headers (0)
+No response body
+This request doesn't return any response body
+GET
+Listagem de Pedidos
+https://api.montink.com/orders
+
+Pedidos efetuados na plataforma.
+
+Filtro Disponível	Formato de Valor
+inicio	Data no Formato Y-m-d
+fim	Data no Formato Y-m-d
+filtro	Filtragem por Pagamentos. Valores aceitos: carrinho_abandonado, pedidos_pendentes, pedidos_pagos
+idPedido	ID específico do Pedido
+
+HEADERS
+Authorizationtoken
+
+TOKEN_ENVIADO
+
+Token de Autorização recebido pela equipe ou gerado na integração
+
+Example Request
+Listagem de Pedidos
+curl
+curl --location 'https://api.montink.com/orders' \
+--header 'Authorizationtoken: TOKEN_ENVIADO'
+Example Response
+Body
+Headers (0)
+No response body
+This request doesn't return any response body
+GET
+Detalhes do Pedido
+https://api.montink.com/order/{IDPEDIDO}
+HEADERS
+Authorizationtoken
+
+TOKEN_ENVIADO
+
+Token de Autorização recebido pela equipe ou gerado na integração
+
+Example Request
+Detalhes do Pedido
+curl
+curl --location -g 'https://api.montink.com/order/{IDPEDIDO}' \
+--header 'Authorizationtoken: TOKEN_ENVIADO'
+Example Response
+Body
+Headers (0)
+No response body
+This request doesn't return any response body
+GET
+Listagem de Produtos
+https://api.montink.com/product/5197425
+HEADERS
+Authorizationtoken
+
+eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6IjM5MDg0MiIsInNsdWciOiJqdXN0LWVub3VnaCIsImVtYWlsIjoiZmVyZnBuQGdtYWlsLmNvbSIsImluY2x1c2FvIjoiMTc2ODIyMjQzMiIsInRpbWUiOjE3NzA1NjM4ODYsImVuY3J5cHQiOiIyNjkwNjYyMDcxMTIyMGViNDE2MmY5NjYzNWVmIn0.WISqLKO3ki7apgI-MkV9EtFkXqHzcgScjLuvwtj2pCG4u49vqv4sMpBGxHvT1LvcU91wKtqgWgi6XO5rJcviKjf0EPZ-Hm_vv57YT4B-NKwASu_vUYfrZzoXwONCXH-Z8HeySwfuHJJRTT7MUuc9hNjUITUQM9ejtrcb6_dPsIs
+
+Token de Autorização recebido pela equipe ou gerado na integração
+
+Example Request
+Listagem de Produtos
+View More
+curl
+curl --location 'https://api.montink.com/product/5197425' \
+--header 'Authorizationtoken: eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6IjM5MDg0MiIsInNsdWciOiJqdXN0LWVub3VnaCIsImVtYWlsIjoiZmVyZnBuQGdtYWlsLmNvbSIsImluY2x1c2FvIjoiMTc2ODIyMjQzMiIsInRpbWUiOjE3NzA1NjM4ODYsImVuY3J5cHQiOiIyNjkwNjYyMDcxMTIyMGViNDE2MmY5NjYzNWVmIn0.WISqLKO3ki7apgI-MkV9EtFkXqHzcgScjLuvwtj2pCG4u49vqv4sMpBGxHvT1LvcU91wKtqgWgi6XO5rJcviKjf0EPZ-Hm_vv57YT4B-NKwASu_vUYfrZzoXwONCXH-Z8HeySwfuHJJRTT7MUuc9hNjUITUQM9ejtrcb6_dPsIs'
+Example Response
+Body
+Headers (0)
+No response body
+This request doesn't return any response body

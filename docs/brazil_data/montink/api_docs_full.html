@@ -1,0 +1,1108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documentação API Montink</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    :root {
+      --purple: #6B2DFF;
+      --purple-dark: #4C1D95;
+      --purple-soft: #F3EEFF;
+      --dark: #0F0F12;
+    }
+
+    body {
+      background: #f4f5f7;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #222;
+    }
+
+    .doc-wrapper {
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background: var(--dark);
+      color: #fff;
+      min-height: 100vh;
+      padding: 24px 16px;
+      position: sticky;
+      top: 0;
+    }
+
+    .brand {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      line-height: 1.3;
+    }
+
+    .brand span {
+      color: var(--purple);
+    }
+
+    .topic-btn {
+      width: 100%;
+      border: 0;
+      background: transparent;
+      color: #ccc;
+      text-align: left;
+      padding: 12px 14px;
+      border-radius: 6px;
+      margin-bottom: 6px;
+      cursor: pointer;
+      transition: .2s;
+    }
+
+    .topic-btn:hover,
+    .topic-btn.active {
+      background: rgba(107, 45, 255, .2);
+      color: #fff;
+      border-left: 4px solid var(--purple);
+    }
+
+    .content-area {
+      padding: 40px;
+      background: #fff;
+      min-height: 100vh;
+      border-right: 1px solid #e5e5e5;
+    }
+
+    .request-area {
+      padding: 40px 24px;
+      background: #101010;
+      color: #fff;
+      min-height: 100vh;
+      position: sticky;
+      top: 0;
+    }
+
+    .badge-method {
+      background: var(--purple);
+      color: #fff;
+      padding: 7px 12px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 13px;
+      margin-right: 6px;
+    }
+
+    .badge-get {
+      background: var(--purple-dark);
+    }
+
+    .badge-post {
+      background: var(--purple);
+    }
+
+    .endpoint-url {
+      background: #f1f1f1;
+      padding: 12px;
+      border-radius: 6px;
+      font-family: monospace;
+      margin: 16px 0;
+      border-left: 4px solid var(--purple);
+      word-break: break-all;
+    }
+
+    .section-title {
+      color: var(--dark);
+      font-weight: bold;
+      margin-bottom: 18px;
+    }
+
+    pre {
+      background: #1d1d1d;
+      color: #eaeaea;
+      padding: 18px;
+      border-radius: 8px;
+      font-size: 13px;
+      max-height: 520px;
+      overflow: auto;
+      border-left: 4px solid var(--purple);
+    }
+
+    code {
+      color: var(--purple-dark);
+    }
+
+    .request-area code,
+    pre code {
+      color: #C4B5FD;
+    }
+
+    .param-table th {
+      background: #f8f8f8;
+    }
+
+    .doc-content {
+      display: none;
+    }
+
+    .doc-content.active {
+      display: block;
+    }
+
+    .small-label {
+      color: #aaa;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .note {
+      background: var(--purple-soft);
+      border-left: 4px solid var(--purple);
+      padding: 10px 12px;
+      margin: 12px 0;
+    }
+
+    .ok {
+      background: var(--purple-soft);
+      border-left: 4px solid var(--purple);
+      padding: 10px 12px;
+      margin: 12px 0;
+    }
+
+    .flow-step {
+      border-left: 3px solid var(--purple);
+      padding-left: 12px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 991px) {
+      .sidebar,
+      .request-area {
+        min-height: auto;
+        position: relative;
+      }
+
+      .content-area,
+      .request-area {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="container-fluid doc-wrapper">
+  <div class="row">
+
+    <aside class="col-lg-2 sidebar">
+      <div class="brand">
+        API <span>Montink</span><br />
+        <small style="font-size:12px;color:#999;font-weight:normal">Integração via token</small>
+      </div>
+      <button class="topic-btn active" data-topic="intro">Introdução</button>
+      <button class="topic-btn" data-topic="auth">Autenticação</button>
+      <button class="topic-btn" data-topic="products">Listagem de produtos</button>
+      <button class="topic-btn" data-topic="product">Detalhe do produto</button>
+      <button class="topic-btn" data-topic="shipping">Cálculo de frete</button>
+      <button class="topic-btn" data-topic="createCart">Iniciar carrinho</button>
+      <button class="topic-btn" data-topic="createOrder">Criar pedido</button>
+      <button class="topic-btn" data-topic="orders">Listagem de pedidos</button>
+      <button class="topic-btn" data-topic="order">Detalhes do pedido</button>
+      <button class="topic-btn" data-topic="webhook">Cadastrar webhook</button>
+    </aside>
+
+    <main class="col-lg-6 content-area">
+
+      <section id="intro" class="doc-content active">
+        <h1 class="section-title">Introdução</h1>
+        <p>
+          Esta documentação descreve a <strong>API pública Montink</strong> (API parceiro),
+          que permite listar o catálogo da loja, calcular frete, importar pedidos para a
+          dashboard (Pedidos Externos) e acompanhar o status dos pedidos.
+        </p>
+        <p>
+          A API utiliza requisições HTTP com payloads em <code>JSON</code>. Em
+          <strong>todas</strong> as rotas é obrigatório enviar o header
+          <code>Authorizationtoken</code> com o token gerado na dashboard.
+        </p>
+
+        <div class="ok">
+          Gere o token em: Dashboard → <strong>Adicionar Apps → API Montink → Conectar → Gerar token de autorização</strong>.
+        </div>
+
+        <div class="endpoint-url">
+          Base URL: https://api.montink.com<br />
+          Exemplo: https://api.montink.com/products
+        </div>
+
+        <h5>Fluxo de compra (API parceiro)</h5>
+        <ol>
+          <li>Gere o token na dashboard e envie-o no header <code>Authorizationtoken</code> em todas as requisições.</li>
+          <li>Consulte a <strong>listagem de produtos</strong> para montar o catálogo no seu checkout/loja.</li>
+          <li>Consulte o <strong>detalhe do produto</strong> para variações, imagens, estoque e preço.</li>
+          <li>(Recomendado) Chame <strong>iniciar carrinho</strong> e guarde o <code>token</code>/<code>id</code> retornados.</li>
+          <li>Com CEP e quantidade, chame o <strong>cálculo de frete</strong> e exiba as opções ao cliente.</li>
+          <li>Envie o pedido em <strong>criar pedido</strong> (com <code>cart_token</code> se iniciou o carrinho antes) para gravar cliente, itens e frete.</li>
+          <li>Acompanhe com <strong>detalhes do pedido</strong> ou <strong>listagem de pedidos</strong>.</li>
+          <li>(Opcional) Cadastre uma <strong>URL de webhook</strong> para receber atualizações de status do pedido.</li>
+        </ol>
+
+        <h5>Pontos importantes</h5>
+        <ol>
+          <li>O pedido importado aparece em <strong>Pedidos Externos</strong> na dashboard Montink, com status inicial <code>waiting</code> (Aguardando Pagamento).</li>
+          <li>Formas de pagamento aceitas no <code>create_order</code>: <code>pix</code>, <code>saldo</code> e <code>boleto</code>.</li>
+          <li>O preço do item é o informado em <code>products[].price</code>. Se omitido, a API usa o preço do catálogo Montink. A API <strong>não</strong> recalcula lucro do lojista a partir desse valor na importação.</li>
+          <li>O <code>external_order_id</code> deve ser único por loja. Reenviar o mesmo ID retorna erro de pedido já importado.</li>
+          <li>Esta API <strong>não</strong> aplica cupom da loja Montink.</li>
+        </ol>
+
+        <p>
+          Referências:
+          <a href="https://montink.sak.com.br/integracao-da-montink-via-api" target="_blank" rel="noopener">Central de Ajuda</a>
+          ·
+          <a href="https://documenter.getpostman.com/view/32162527/2sAYkGJyWE" target="_blank" rel="noopener">Postman</a>
+        </p>
+        <p>Recomendamos que a integração seja feita ou supervisionada por um desenvolvedor.</p>
+      </section>
+
+      <section id="auth" class="doc-content">
+        <h1 class="section-title">Autenticação</h1>
+        <p>
+          Todas as rotas da API parceiro exigem o header abaixo. Sem ele, a API retorna
+          <code>Token de Autorização não enviado.</code>
+        </p>
+        <div class="endpoint-url">Authorizationtoken: TOKEN_GERADO_NA_DASHBOARD</div>
+
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Header</th><th>Obrigatório</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>Authorizationtoken</code></td>
+              <td>Sim</td>
+              <td>Token gerado em Adicionar Apps → API Montink. Validade de 1 ano; pode ser revalidado na dashboard.</td>
+            </tr>
+            <tr>
+              <td><code>Content-Type</code></td>
+              <td>Em POST</td>
+              <td>Use <code>application/json</code> no corpo do <code>create_order</code>.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h5>Erros comuns</h5>
+        <ul>
+          <li>Token ausente → <code>Token de Autorização não enviado.</code></li>
+          <li>Token inválido / vencido → <code>Token inválido</code> (ou mensagem equivalente).</li>
+          <li>Token válido, mas integração desativada → mensagem pedindo reativação na página de integrações.</li>
+        </ul>
+      </section>
+
+      <section id="products" class="doc-content">
+        <h1 class="section-title">Listagem de produtos</h1>
+        <p>
+          Endpoint com os produtos habilitados da loja autenticada. Use para renderizar o
+          catálogo e obter o <code>id</code> que será enviado em <code>create_order</code>
+          como <code>product_id</code>.
+        </p>
+        <p><span class="badge-method badge-get">GET</span> Listagem paginada</p>
+        <div class="endpoint-url">GET https://api.montink.com/products</div>
+
+        <h5>Parâmetros de consulta (query)</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>pga</code></td><td>integer</td><td>Página. Use <code>0</code> na primeira página, <code>1</code> na segunda, e assim por diante.</td></tr>
+            <tr><td><code>pp</code></td><td>integer</td><td>Itens por página. Padrão <code>50</code>. Ex.: <code>500</code>.</td></tr>
+            <tr><td><code>produto</code></td><td>string</td><td>Busca por nome do produto.</td></tr>
+            <tr><td><code>categoria</code></td><td>string</td><td>Filtro por categoria (ex.: <code>T-Shirt Classic</code>). Não use o valor especial <code>TODOS PRODUTOS</code>.</td></tr>
+            <tr><td><code>produtoBase</code></td><td>integer</td><td>ID do produto base (<code>app_products</code>).</td></tr>
+            <tr><td><code>colecao</code></td><td>string</td><td>Slug da coleção da loja.</td></tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          Não existe parâmetro de status. A API retorna <strong>apenas produtos habilitados</strong>.
+        </div>
+
+        <h5>Campos da resposta</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>success</code></td><td>boolean</td><td>Indica se a requisição foi bem-sucedida.</td></tr>
+            <tr><td><code>msg</code></td><td>string</td><td>Ex.: <code>Produtos listados com sucesso</code>.</td></tr>
+            <tr><td><code>produtos</code></td><td>array</td><td>Lista de produtos da página.</td></tr>
+            <tr><td><code>produtos[].id</code></td><td>string</td><td>ID do produto (<code>app_order_products</code>). Enviar como <code>product_id</code> no create_order.</td></tr>
+            <tr><td><code>produtos[].nomeShopify</code></td><td>string</td><td>Nome de exibição do produto.</td></tr>
+            <tr><td><code>produtos[].preco_final</code></td><td>string</td><td>Preço de venda (ex.: <code>90.45</code>).</td></tr>
+            <tr><td><code>produtos[].preco_formatado</code></td><td>string</td><td>Preço formatado (ex.: <code>R$ 90,45</code>).</td></tr>
+            <tr><td><code>produtos[].image_url</code></td><td>string (URL)</td><td>Imagem principal (primeira de <code>imgVariacoes</code>).</td></tr>
+            <tr><td><code>produtos[].imgVariacoes</code></td><td>string (JSON)</td><td>Mapa de imagens por cor em JSON string.</td></tr>
+            <tr><td><code>produtos[].categoria</code></td><td>string</td><td>Categoria do produto base (pode vir vazio).</td></tr>
+            <tr><td><code>produtos[].quantidadeVendas</code></td><td>integer</td><td>Quantidade de vendas do produto.</td></tr>
+            <tr><td><code>produtos[].permitir_visualizar</code></td><td>string</td><td>Flag de visualização (<code>0</code>/<code>1</code>).</td></tr>
+            <tr><td><code>categorias</code></td><td>array</td><td>Coleções da loja (<code>montink_categorias</code>: id_categoria, categoria, slug, …).</td></tr>
+            <tr><td><code>contPg</code></td><td>integer</td><td>Controle de paginação.</td></tr>
+            <tr><td><code>categoriasGerais</code></td><td>array</td><td>Categorias gerais ativas (<code>app_categories</code>: id, name).</td></tr>
+            <tr><td><code>produtosBase</code></td><td>array</td><td>Produtos base ativos (id, name).</td></tr>
+            <tr><td><code>categoriasProd</code></td><td>object</td><td>Mapa de coleções por produto: <code>{ productId: { categoriaId: nome } }</code>.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="product" class="doc-content">
+        <h1 class="section-title">Detalhe do produto</h1>
+        <p>
+          Retorna os dados necessários para montar a tela de produto: variações com estoque,
+          imagens, estampa e coleções. Use os valores de variação (ou SKU) depois no
+          <code>create_order</code>.
+        </p>
+        <p><span class="badge-method badge-get">GET</span> Produto por ID</p>
+        <div class="endpoint-url">GET https://api.montink.com/product/{ID_PRODUTO}</div>
+
+        <h5>Campos principais da resposta</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>dadosProduto</code></td><td>object</td><td>Dados cadastrais do produto (id, handle, nome, preço, cores, tamanhos, etc.).</td></tr>
+            <tr><td><code>dadosProduto.id</code></td><td>string</td><td>ID do produto — mesmo valor de <code>product_id</code> no create_order.</td></tr>
+            <tr><td><code>dadosProduto.nomeShopify</code></td><td>string</td><td>Nome de exibição.</td></tr>
+            <tr><td><code>dadosProduto.preco_final</code></td><td>string/number</td><td>Preço de venda base.</td></tr>
+            <tr><td><code>dadosProduto.handle</code></td><td>string</td><td>Slug do produto na loja.</td></tr>
+            <tr><td><code>dadosProduto.cores</code> / <code>tamanhos</code></td><td>string/JSON</td><td>Variações disponíveis (formato legado no cadastro).</td></tr>
+            <tr><td><code>imagens</code></td><td>array</td><td>Imagens cadastradas do produto.</td></tr>
+            <tr><td><code>variacoesEstoque</code></td><td>object</td><td>Mapa de variações com disponibilidade/estoque — use para montar seletores e validar a combinação enviada no pedido.</td></tr>
+            <tr><td><code>variacoesCor</code></td><td>object</td><td>Imagens por cor (<code>imgVariacoes</code> decodificado).</td></tr>
+            <tr><td><code>estampa</code></td><td>mixed</td><td>Referência da estampa (frente).</td></tr>
+            <tr><td><code>locaisEstampas</code></td><td>string</td><td>Descrição dos locais (ex.: Frente / Frente e Costas).</td></tr>
+            <tr><td><code>colecoes</code></td><td>array</td><td>Coleções da loja.</td></tr>
+            <tr><td><code>categoriasProduto</code></td><td>object</td><td>Coleções vinculadas ao produto.</td></tr>
+            <tr><td><code>produtos_relacionados</code></td><td>array</td><td>Produtos relacionados (quando existirem), com imagem.</td></tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          Flyers (produto base <code>46</code>): o endpoint retorna erro
+          <code>Flyers não podem ser editados.</code>
+        </div>
+      </section>
+
+      <section id="shipping" class="doc-content">
+        <h1 class="section-title">Cálculo de frete</h1>
+        <p>
+          Retorna as opções de frete disponíveis para o CEP e a quantidade informados.
+          Use no checkout <strong>antes</strong> de criar o pedido. O
+          <code>delivery_method_id</code> escolhido deve ser enviado como
+          <code>shipping_id</code> no <code>create_order</code>.
+        </p>
+        <p><span class="badge-method badge-get">GET</span> Calcular frete</p>
+        <div class="endpoint-url">GET https://api.montink.com/calculate_shipping/{CEP}/{QUANTIDADE}</div>
+
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Parâmetro (path)</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>CEP</code></td><td>string</td><td>CEP de destino (com ou sem hífen). Ex.: <code>01310100</code>.</td></tr>
+            <tr><td><code>QUANTIDADE</code></td><td>integer</td><td>Quantidade total de unidades do pedido. Exemplo: 2 camisetas + 1 moletom = <code>3</code>.</td></tr>
+          </tbody>
+        </table>
+
+        <h5>Campos da resposta</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>success</code></td><td>boolean</td><td><code>true</code> quando o cálculo foi executado.</td></tr>
+            <tr><td><code>msg</code></td><td>string</td><td>Mensagem (ex.: <code>Calculo de Frete executado com sucesso</code>).</td></tr>
+            <tr><td><code>shipping_options</code></td><td>object</td><td>Modalidades indexadas (<code>"1"</code>, <code>"2"</code>, …).</td></tr>
+            <tr><td><code>shipping_options.*.delivery_method_id</code></td><td>integer</td><td>ID da modalidade — envie como <code>shipping_id</code> no create_order.</td></tr>
+            <tr><td><code>shipping_options.*.name</code></td><td>string</td><td>Nome do serviço (ex.: J&amp;T Express, Correios PAC, Correios Sedex).</td></tr>
+            <tr><td><code>shipping_options.*.value</code></td><td>string</td><td>Valor do frete (ex.: <code>"29.44"</code>).</td></tr>
+            <tr><td><code>shipping_options.*.business_days</code></td><td>integer</td><td>Prazo estimado em dias úteis.</td></tr>
+            <tr><td><code>shipping_options.*.cnpj</code></td><td>string</td><td>CNPJ da transportadora, quando houver.</td></tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          Header obrigatório: <code>Authorizationtoken</code>.
+          Sem quantidade no path a rota não existe (404).
+        </div>
+
+        <div class="note">
+          No <code>create_order</code>, o frete é cotado novamente com o CEP do endereço;
+          use o <code>shipping_id</code> retornado aqui para manter a modalidade escolhida.
+          Se <code>shipping_id</code> não for enviado ou for inválido, a API usa a primeira opção disponível.
+        </div>
+      </section>
+
+      <section id="createCart" class="doc-content">
+        <h1 class="section-title">Iniciar carrinho</h1>
+        <p>
+          Cria um carrinho vazio na loja autenticada e devolve <code>id</code> + <code>token</code>.
+          Guarde esses valores e envie o <code>token</code> como <code>cart_token</code> no
+          <code>create_order</code> para sobrescrever esse mesmo carrinho com cliente, itens e frete.
+        </p>
+        <p><span class="badge-method badge-post">POST</span> Iniciar carrinho</p>
+        <div class="endpoint-url">POST https://api.montink.com/create_cart</div>
+
+        <p>Não exige body. Apenas o header <code>Authorizationtoken</code>.</p>
+
+        <div class="note">
+          Em produção, se a rota retornar <code>404 Page Not Found</code>, o endpoint ainda não está
+          publicado nesse ambiente. O contrato abaixo é o esperado quando a rota estiver ativa
+          (<code>success</code>, <code>msg</code>, <code>id</code>, <code>token</code>.
+          O <code>create_order</code> funciona sem <code>cart_token</code> (cria o carrinho na hora).
+        </div>
+
+        <h5>Campos da resposta</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>id</code></td><td>integer</td><td>ID do carrinho na Montink.</td></tr>
+            <tr><td><code>token</code></td><td>string</td><td>Token do carrinho — enviar como <code>cart_token</code> no create_order.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="createOrder" class="doc-content">
+        <h1 class="section-title">Criar pedido</h1>
+        <p>
+          Importa o pedido na Montink (Pedidos Externos).
+          Com <code>cart_token</code>: sobrescreve o carrinho já iniciado em <code>create_cart</code>.
+          Sem <code>cart_token</code>: cria o pedido (carrinho novo).
+        </p>
+        <p><span class="badge-method badge-post">POST</span> Criar / importar pedido</p>
+        <div class="endpoint-url">POST https://api.montink.com/create_order</div>
+
+        <h5>Corpo da requisição (JSON)</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Obrig.</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>cart_token</code></td><td>Não</td><td>string</td><td>Token retornado por <code>create_cart</code>. Se enviado, sobrescreve o que já existe nesse carrinho; se omitido, cria um novo.</td></tr>
+            <tr><td><code>customer_name</code></td><td>Sim</td><td>string</td><td>Nome completo do comprador (primeiro token = nome; restante = sobrenome).</td></tr>
+            <tr><td><code>customer_email</code></td><td>Sim</td><td>string</td><td>E-mail do comprador.</td></tr>
+            <tr><td><code>customer_document</code></td><td>Sim</td><td>string</td><td>CPF ou CNPJ (caracteres especiais são removidos).</td></tr>
+            <tr><td><code>customer_phone</code></td><td>Sim</td><td>string</td><td>Telefone. Preferência: <code>(11) 99999-9999</code>.</td></tr>
+            <tr><td><code>customer_birthday</code></td><td>Não</td><td>string</td><td>Data de nascimento em <code>Y-m-d</code> ou <code>d/m/Y</code>.</td></tr>
+            <tr><td><code>payment_method</code></td><td>Sim</td><td>string</td><td>Obrigatório. Valores aceitos: <code>pix</code>, <code>saldo</code> ou <code>boleto</code>. Qualquer outro valor (ou ausência) retorna erro.</td></tr>
+            <tr><td><code>external_order_id</code></td><td>Não</td><td>string</td><td>ID do pedido na sua plataforma. Deve ser único por loja; duplicado gera erro.</td></tr>
+            <tr><td><code>shipping_id</code></td><td>Não</td><td>integer</td><td><code>delivery_method_id</code> retornado em calculate_shipping. Se não for enviado ou for inválido, a API utiliza a primeira opção disponível do cálculo de frete.</td></tr>
+            <tr><td><code>address</code></td><td>Sim</td><td>object</td><td>Endereço de entrega.</td></tr>
+            <tr><td><code>address.zipcode</code></td><td>Sim</td><td>string</td><td>CEP. Obrigatório.</td></tr>
+            <tr><td><code>address.street</code></td><td>Sim</td><td>string</td><td>Logradouro.</td></tr>
+            <tr><td><code>address.number</code></td><td>Sim</td><td>string</td><td>Número.</td></tr>
+            <tr><td><code>address.neighborhood</code></td><td>Sim</td><td>string</td><td>Bairro.</td></tr>
+            <tr><td><code>address.city</code></td><td>Sim</td><td>string</td><td>Cidade.</td></tr>
+            <tr><td><code>address.state</code></td><td>Sim</td><td>string</td><td>UF (ex.: <code>SP</code>).</td></tr>
+            <tr><td><code>address.complement</code></td><td>Não</td><td>string</td><td>Complemento.</td></tr>
+            <tr><td><code>products</code></td><td>Sim</td><td>array</td><td>Itens do pedido. Pelo menos um produto válido.</td></tr>
+            <tr><td><code>products[].product_id</code></td><td>Sim</td><td>integer</td><td>ID do produto (listagem/detalhe). Deve pertencer à loja do token.</td></tr>
+            <tr><td><code>products[].quantity</code></td><td>Sim</td><td>integer</td><td>Quantidade. Mínimo <code>1</code>.</td></tr>
+            <tr><td><code>products[].price</code></td><td>Não</td><td>number</td><td>Preço unitário do item. Se informado, esse valor é gravado no pedido. Se omitido, a API usa o preço do catálogo Montink.</td></tr>
+            <tr><td><code>products[].sku</code></td><td>Não**</td><td>string</td><td>SKU da variação. Quando informado, a API identifica automaticamente as variações correspondentes (<code>var1</code>, <code>var2</code> e <code>var3</code>).</td></tr>
+            <tr><td><code>products[].var1</code></td><td>Não**</td><td>string</td><td>Primeira variação (ex.: tamanho). Obrigatório se não houver SKU.</td></tr>
+            <tr><td><code>products[].var2</code></td><td>Não**</td><td>string</td><td>Segunda variação (ex.: cor).</td></tr>
+            <tr><td><code>products[].var3</code></td><td>Não</td><td>string</td><td>Terceira variação (quando existir no produto).</td></tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          Observação: se a integração já validar o CEP antes da chamada da API, os campos
+          <code>street</code>, <code>neighborhood</code>, <code>city</code> e <code>state</code>
+          podem ser preenchidos automaticamente antes do envio da requisição.
+        </div>
+
+        <div class="note">
+          ** Em cada item: envie <code>sku</code> <em>ou</em> a combinação <code>var1</code>/<code>var2</code>/<code>var3</code>.
+          SKU inválido ou variações que não batem com o SKU do produto base geram erro.
+        </div>
+
+        <h5>SKU vs var1 / var2 / var3</h5>
+        <p>
+          <strong>Recomendação:</strong> utilize preferencialmente o <code>sku</code> da variação.
+          Quando o <code>sku</code> for informado, a API identifica automaticamente as variações
+          correspondentes (<code>var1</code>, <code>var2</code> e <code>var3</code>).
+          Utilize <code>var1</code> / <code>var2</code> / <code>var3</code> apenas quando sua
+          integração não possuir o SKU da variação.
+        </p>
+
+        <p><strong>Recomendado — com SKU</strong> (não precisa enviar var1/var2/var3):</p>
+        <div class="endpoint-url">
+<pre><code>{
+  "products": [
+    {
+      "product_id": 5180942,
+      "sku": "11003110111",
+      "quantity": 1,
+      "price": 89.90
+    }
+  ]
+}</code></pre>
+        </div>
+
+        <p><strong>Alternativa — com variações</strong> (quando não houver SKU):</p>
+        <div class="endpoint-url">
+<pre><code>{
+  "products": [
+    {
+      "product_id": 5180942,
+      "quantity": 1,
+      "var1": "G",
+      "var2": "Preto",
+      "var3": null,
+      "price": 89.90
+    }
+  ]
+}</code></pre>
+        </div>
+
+        <h5>Regras importantes</h5>
+        <ol>
+          <li>O produto precisa estar vinculado à loja do token.</li>
+          <li>Integração API Montink precisa estar ativa (token regenerado / app conectado).</li>
+          <li>Pedido inicia como <code>pagamento_status = waiting</code> / status “Aguardando Pagamento”.</li>
+          <li>O valor do pedido (<code>valor_venda</code>) é calculado pela API a partir de <code>products[].price</code> (ou preço do catálogo se omitido). Não há campo <code>value_total</code> no body.</li>
+          <li>No <code>create_order</code>, o frete é cotado novamente com o CEP; <code>shipping_id</code> seleciona a modalidade.</li>
+          <li>Resposta de sucesso inclui <code>id</code> (pedido Montink), <code>token</code> e <code>tracking_url</code>.</li>
+        </ol>
+      </section>
+
+      <section id="orders" class="doc-content">
+        <h1 class="section-title">Listagem de pedidos</h1>
+        <p>
+          Retorna um resumo dos pedidos da loja autenticada, com filtros por período e status.
+          Útil para dashboards, conciliação e área “Meus pedidos”.
+        </p>
+        <p><span class="badge-method badge-get">GET</span> Listagem</p>
+        <div class="endpoint-url">GET https://api.montink.com/orders</div>
+
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Query</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>inicio</code></td><td>string (<code>Y-m-d</code>)</td><td>Data inicial. Padrão: 180 dias atrás.</td></tr>
+            <tr><td><code>fim</code></td><td>string (<code>Y-m-d</code>)</td><td>Data final. Padrão: hoje.</td></tr>
+            <tr><td><code>periodo</code></td><td>string</td><td><code>hoje</code>, <code>7dias</code>, <code>30dias</code>, <code>180dias</code>. Sobrescreve inicio/fim.</td></tr>
+            <tr><td><code>filtro</code></td><td>string</td><td>Ex.: <code>carrinho_abandonado</code>, <code>pedidos_pendentes</code>, <code>pedidos_pagos</code>.</td></tr>
+            <tr><td><code>exibirProdutos</code></td><td>boolean/1</td><td>Quando informado, inclui itens dos pedidos.</td></tr>
+            <tr><td><code>origem</code></td><td>string</td><td>Filtro por origem do pedido.</td></tr>
+            <tr><td><code>buscaGeral</code></td><td>string</td><td>Busca textual.</td></tr>
+            <tr><td><code>pagina</code></td><td>integer</td><td>Offset/paginação (limite interno 30).</td></tr>
+          </tbody>
+        </table>
+
+        <h5>Campos úteis em cada pedido (<code>pedidos[]</code>)</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>referencia</code></td><td>ID do pedido (carrinho) na Montink — use em <code>GET /order/{id}</code>.</td></tr>
+            <tr><td><code>pedido_id_formatado</code></td><td>Ex.: <code>Pedido #1444914</code>.</td></tr>
+            <tr><td><code>status</code></td><td>Status operacional (ex.: <code>Pagamento cancelado</code>, <code>Em Transito</code>).</td></tr>
+            <tr><td><code>texto_status</code></td><td>Texto amigável (ex.: <code>Cancelado</code>).</td></tr>
+            <tr><td><code>pagamento_status</code> / <code>status_pagamento</code></td><td>Status de pagamento (ex.: <code>canceled</code>, <code>paid</code>).</td></tr>
+            <tr><td><code>forma_pagamento</code></td><td>Código (ex.: <code>pix</code>).</td></tr>
+            <tr><td><code>valor_venda</code> / <code>valor_venda_formatado</code></td><td>Valor do pedido.</td></tr>
+            <tr><td><code>nome_cliente</code></td><td>Nome completo.</td></tr>
+            <tr><td><code>nome</code> / <code>sobrenome</code> / <code>email</code> / <code>telefone</code></td><td>Dados do cliente.</td></tr>
+            <tr><td><code>data_pedido_realizado</code> / <code>data_pagamento_formatado</code></td><td>Datas do pedido.</td></tr>
+            <tr><td><code>lojista_lucro</code> / <code>valor_lucro_formatado</code> / <code>custo</code></td><td>Valores financeiros do lojista.</td></tr>
+          </tbody>
+        </table>
+
+        <div class="note">
+          Resposta raiz: <code>success</code>, <code>msg</code> (ex.: <code>Listagem bem sucedida</code>),
+          <code>pedidos</code>, <code>filtros</code> (eco dos parâmetros aplicados: inicio, fim, filtro, …).
+        </div>
+      </section>
+
+      <section id="order" class="doc-content">
+        <h1 class="section-title">Detalhes do pedido</h1>
+        <p>
+          Retorna o pedido no mesmo escopo da tela
+          <code>/pedidos/pedido/{id}</code>: cabeçalho, itens, resumo financeiro,
+          cliente, endereço e rastreio. Os nomes dos campos seguem o retorno atual da API (português).
+        </p>
+        <p><span class="badge-method badge-get">GET</span> Detalhe</p>
+        <div class="endpoint-url">GET https://api.montink.com/order/{ID_PEDIDO}</div>
+
+        <div class="note">
+          O pedido precisa pertencer à loja do token. Caso contrário:
+          <code>Pedido não pertence à loja.</code>
+        </div>
+
+        <h5>Resposta (raiz)</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>carrinho</code></td><td>object</td><td>Dados do pedido (cliente, endereço, valores, status).</td></tr>
+            <tr><td><code>carrinhoProdutos</code></td><td>array</td><td>Itens: cada um com <code>produto</code> + <code>carrinho_produto</code>.</td></tr>
+            <tr><td><code>forma_pagamento</code></td><td>string</td><td>Label da forma (Pix, Saldo, Boleto, Cartão de Crédito).</td></tr>
+            <tr><td><code>linkRastreio</code></td><td>string (URL)</td><td>URL de acompanhamento do pedido.</td></tr>
+            <tr><td><code>data_nascimento</code></td><td>string|null</td><td>Data de nascimento do cliente (também em <code>carrinho.data_nascimento</code>).</td></tr>
+          </tbody>
+        </table>
+
+        <h5><code>carrinho</code> — Cabeçalho / status</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>id</code></td><td>integer</td><td>ID do pedido — mesmo do <code>#1419645</code> na tela.</td></tr>
+            <tr><td><code>token</code></td><td>string</td><td>Token do carrinho.</td></tr>
+            <tr><td><code>status</code></td><td>string</td><td>Status do pedido / entrega.</td></tr>
+            <tr><td><code>pagamento_status</code></td><td>string</td><td>Status de pagamento (<code>paid</code>, <code>waiting</code>, etc.).</td></tr>
+            <tr><td><code>forma_pagamento</code></td><td>string</td><td>Código: <code>pix</code>, <code>saldo</code>, <code>boleto</code>, <code>cartao_credito</code>.</td></tr>
+            <tr><td><code>parcelas</code></td><td>integer</td><td>Parcelas (cartão).</td></tr>
+            <tr><td><code>created_at</code></td><td>string</td><td>Data de criação.</td></tr>
+            <tr><td><code>data_pedido_realizado</code></td><td>string|null</td><td>Data em que o pedido foi realizado.</td></tr>
+            <tr><td><code>plataforma_pedido_id</code></td><td>string|null</td><td>ID externo (<code>external_order_id</code> do create_order).</td></tr>
+            <tr><td><code>cupom</code></td><td>string|null</td><td>Cupom utilizado, se houver.</td></tr>
+          </tbody>
+        </table>
+
+        <h5><code>carrinho</code> — Cliente</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>nome</code></td><td>string</td><td>Nome.</td></tr>
+            <tr><td><code>sobrenome</code></td><td>string</td><td>Sobrenome.</td></tr>
+            <tr><td><code>email</code></td><td>string</td><td>E-mail.</td></tr>
+            <tr><td><code>telefone</code></td><td>string</td><td>Telefone / WhatsApp.</td></tr>
+            <tr><td><code>cpf</code></td><td>string</td><td>CPF ou CNPJ.</td></tr>
+            <tr><td><code>data_nascimento</code></td><td>string|null</td><td>Data de nascimento.</td></tr>
+          </tbody>
+        </table>
+
+        <h5><code>carrinho</code> — Endereço de entrega</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>cep</code></td><td>string</td><td>CEP.</td></tr>
+            <tr><td><code>endereco</code></td><td>string</td><td>Logradouro.</td></tr>
+            <tr><td><code>numero</code></td><td>string</td><td>Número.</td></tr>
+            <tr><td><code>bairro</code></td><td>string</td><td>Bairro.</td></tr>
+            <tr><td><code>cidade</code></td><td>string</td><td>Cidade.</td></tr>
+            <tr><td><code>estado</code></td><td>string</td><td>Estado (pode vir por extenso, ex.: <code>Rio Grande do Norte</code>).</td></tr>
+            <tr><td><code>complemento</code></td><td>string|null</td><td>Complemento.</td></tr>
+          </tbody>
+        </table>
+
+        <h5><code>carrinho</code> — Resumo financeiro / frete</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>valor_frete</code></td><td>string/number</td><td>Frete.</td></tr>
+            <tr><td><code>desconto</code></td><td>string/number</td><td>Descontos aplicados.</td></tr>
+            <tr><td><code>valor_venda</code></td><td>string/number</td><td>Total do pedido.</td></tr>
+            <tr><td><code>quantidade_total</code></td><td>string/integer</td><td>Quantidade total de itens.</td></tr>
+            <tr><td><code>frete_id</code></td><td>string/integer|null</td><td>Modalidade de frete (<code>shipping_id</code> / delivery_method_id).</td></tr>
+            <tr><td><code>lojista_lucro</code></td><td>string/number</td><td>Lucro do lojista.</td></tr>
+          </tbody>
+        </table>
+
+        <h5><code>carrinhoProdutos[]</code> — Itens no pedido</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>produto.nomeShopify</code></td><td>string</td><td>Nome do produto.</td></tr>
+            <tr><td><code>produto.img</code></td><td>string (URL)</td><td>Imagem do item (cor selecionada).</td></tr>
+            <tr><td><code>produto.product_id</code> / <code>preco_final</code> / <code>handle</code></td><td>—</td><td>ID base, preço e slug no catálogo.</td></tr>
+            <tr><td><code>carrinho_produto.produto_id</code></td><td>integer/string</td><td>ID do produto Montink.</td></tr>
+            <tr><td><code>carrinho_produto.quantidade</code></td><td>integer/string</td><td>Quantidade.</td></tr>
+            <tr><td><code>carrinho_produto.variant1</code></td><td>string</td><td>Variação 1 (ex.: tamanho).</td></tr>
+            <tr><td><code>carrinho_produto.variant2</code></td><td>string</td><td>Variação 2 (ex.: cor).</td></tr>
+            <tr><td><code>carrinho_produto.variant3</code></td><td>string|null</td><td>Variação 3, se houver.</td></tr>
+            <tr><td><code>carrinho_produto.variant_sku</code></td><td>string|null</td><td>SKU da variante, se houver.</td></tr>
+            <tr><td><code>carrinho_produto.valor</code> / <code>preco_venda</code></td><td>number</td><td>Preço unitário registrado no pedido.</td></tr>
+            <tr><td><code>carrinho_produto.desconto</code></td><td>number</td><td>Desconto do item.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="webhook" class="doc-content">
+        <h1 class="section-title">Cadastrar webhook</h1>
+        <p>
+          Registra a URL que a Montink usará para notificar atualizações de status do pedido
+          (ex.: pós-atualização do fornecedor). A URL é salva em
+          <code>dados_complementares.webhook_url</code> da integração API Montink.
+        </p>
+        <p><span class="badge-method badge-post">POST</span> Cadastrar URL de webhook</p>
+        <div class="endpoint-url">POST https://api.montink.com/webhook</div>
+
+        <h5>Header</h5>
+        <div class="endpoint-url">Authorizationtoken: TOKEN_GERADO_NA_DASHBOARD</div>
+
+        <h5>Body</h5>
+        <table class="table table-bordered param-table">
+          <thead>
+            <tr><th>Campo</th><th>Obrigatório</th><th>Tipo</th><th>Descrição</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>webhook_url</code></td>
+              <td>Sim</td>
+              <td>string (URL)</td>
+              <td>Endpoint HTTPS/HTTP que receberá o POST da Montink.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h5>Disparo</h5>
+        <p>
+          Quando o status do pedido for atualizado (webhook do fornecedor), a Montink faz
+          <strong>POST</strong> para essa URL com o payload do pedido (campo principal:
+          <code>order.status</code>) e o header <code>Authorizationtoken</code> com o mesmo
+          token da integração, para identificação.
+        </p>
+      </section>
+
+    </main>
+
+    <aside class="col-lg-4 request-area">
+      <span class="small-label">Exemplo de request</span>
+      <div id="request-example"></div>
+    </aside>
+  </div>
+</div>
+
+<script>
+  const examples = {
+    intro: `
+<span class="badge-method badge-get">GET</span>
+<pre><code>GET /products?pga=0&amp;pp=12 HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN</code></pre>
+<span class="small-label">Fluxo resumido</span>
+<pre><code>1. GET  /products
+2. GET  /product/{id}
+3. POST /create_cart
+4. GET  /calculate_shipping/{cep}/{qtd}
+5. POST /create_order  (com cart_token)
+6. GET  /order/{id}
+   GET  /orders
+7. POST /webhook  (opcional)</code></pre>`,
+
+    auth: `
+<span class="badge-method">HEADER</span>
+<pre><code>Authorizationtoken: eyJhbGciOi...
+Content-Type: application/json</code></pre>
+<span class="small-label">Erro sem token</span>
+<pre><code>{
+  "success": false,
+  "msg": "Token de Autorização não enviado."
+}</code></pre>`,
+
+    products: `
+<span class="badge-method badge-get">GET</span>
+<pre><code>GET /products?pga=0&amp;pp=2 HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN</code></pre>
+<span class="small-label">Resposta (trecho real)</span>
+<pre><code>{
+  "success": true,
+  "msg": "Produtos listados com sucesso",
+  "categorias": [
+    {
+      "id_categoria": "671453",
+      "categoria": "7 Pecados Matemáticos",
+      "slug": "7-pecados-matematicos"
+    }
+  ],
+  "produtos": [
+    {
+      "id": "5843690",
+      "nomeShopify": "Os Melhores Professores...",
+      "preco_final": "90.45",
+      "preco_formatado": "R$ 90,45",
+      "image_url": "https://r2.mont.ink/...",
+      "quantidadeVendas": 2
+    }
+  ],
+  "contPg": 10,
+  "categoriasGerais": [ { "id": "1", "name": "Camisetas" } ],
+  "produtosBase": [ ... ],
+  "categoriasProd": { "5843690": { "671453": "..." } }
+}</code></pre>`,
+
+    product: `
+<span class="badge-method badge-get">GET</span>
+<pre><code>GET /product/5843690 HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN</code></pre>
+<span class="small-label">Resposta (campos principais)</span>
+<pre><code>{
+  "success": true,
+  "msg": "Dados do Produto carregados",
+  "dadosProduto": {
+    "id": "5843690",
+    "nomeShopify": "...",
+    "preco_final": "90.45",
+    "handle": "..."
+  },
+  "variacoesEstoque": {
+    "Branco": { "P": 1000, "M": 1000, "G": 1000 }
+  },
+  "variacoesCor": { ... },
+  "imagens": [ ... ],
+  "colecoes": [ ... ],
+  "categoriasProduto": { ... },
+  "estampa": "...",
+  "locaisEstampas": "Frente"
+}</code></pre>`,
+
+    shipping: `
+<span class="badge-method badge-get">GET</span>
+<pre><code>GET /calculate_shipping/01310100/2 HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN</code></pre>
+<span class="small-label">Resposta</span>
+<pre><code>{
+  "success": true,
+  "msg": "Calculo de Frete executado com sucesso",
+  "shipping_options": {
+    "1": {
+      "name": "J&amp;T Express",
+      "value": "13.52",
+      "delivery_method_id": 16594,
+      "cnpj": "",
+      "business_days": 9
+    },
+    "2": {
+      "name": "Correios PAC",
+      "value": "29.44",
+      "delivery_method_id": 1,
+      "cnpj": "",
+      "business_days": 13
+    },
+    "3": {
+      "name": "Correios Sedex",
+      "value": "39.60",
+      "delivery_method_id": 2,
+      "cnpj": "",
+      "business_days": 9
+    }
+  }
+}</code></pre>`,
+
+    createCart: `
+<span class="badge-method badge-post">POST</span>
+<pre><code>POST /create_cart HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN</code></pre>
+<span class="small-label">Resposta</span>
+<pre><code>{
+  "success": true,
+  "msg": "Carrinho iniciado com sucesso",
+  "id": 123456,
+  "token": "a1b2c3d4e5f6..."
+}</code></pre>`,
+
+    createOrder: `
+<span class="badge-method badge-post">POST</span>
+<span class="small-label">Recomendado — com SKU + cart_token</span>
+<pre><code>POST /create_order HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN
+Content-Type: application/json
+
+{
+  "cart_token": "a1b2c3d4e5f6...",
+  "customer_name": "Nome Completo",
+  "customer_email": "email@email.com",
+  "customer_document": "00000000000",
+  "customer_phone": "(11) 99999-9999",
+  "payment_method": "saldo",
+  "external_order_id": "PED-1001",
+  "shipping_id": 15,
+  "address": {
+    "zipcode": "01310-100",
+    "street": "Av Paulista",
+    "number": "1000",
+    "neighborhood": "Bela Vista",
+    "city": "São Paulo",
+    "state": "SP",
+    "complement": ""
+  },
+  "products": [{
+    "product_id": 5180942,
+    "sku": "11003110111",
+    "quantity": 1,
+    "price": 89.90
+  }]
+}</code></pre>
+<span class="small-label">Alternativa — com var1/var2/var3</span>
+<pre><code>{
+  "products": [
+    {
+      "product_id": 5180942,
+      "quantity": 1,
+      "var1": "G",
+      "var2": "Preto",
+      "var3": null,
+      "price": 89.90
+    }
+  ]
+}</code></pre>
+<span class="small-label">Resposta</span>
+<pre><code>{
+  "success": true,
+  "msg": "Pedido Importado com Sucesso!",
+  "id": 123456,
+  "token": "...",
+  "tracking_url": "https://..."
+}</code></pre>`,
+
+    orders: `
+<span class="badge-method badge-get">GET</span>
+<pre><code>GET /orders?periodo=30dias HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN</code></pre>
+<span class="small-label">Resposta (trecho real)</span>
+<pre><code>{
+  "success": true,
+  "msg": "Listagem bem sucedida",
+  "pedidos": [
+    {
+      "referencia": "1444914",
+      "pedido_id_formatado": "Pedido #1444914",
+      "status": "Pagamento cancelado",
+      "texto_status": "Cancelado",
+      "pagamento_status": "canceled",
+      "forma_pagamento": "pix",
+      "valor_venda_formatado": "R$ 107,36",
+      "nome_cliente": "Compra de Teste",
+      "data_pagamento_formatado": "04/08 22:12"
+    }
+  ],
+  "filtros": { "inicio": "...", "fim": "...", "filtro": null }
+}</code></pre>`,
+
+    order: `
+<span class="badge-method badge-get">GET</span>
+<pre><code>GET /order/1444914 HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN</code></pre>
+<span class="small-label">Resposta (estrutura real)</span>
+<pre><code>{
+  "success": true,
+  "msg": "Pedido carregado com sucesso",
+  "forma_pagamento": "Pix",
+  "linkRastreio": "https://.../rastreio/...",
+  "data_nascimento": "1982-04-23",
+  "carrinho": {
+    "id": "1444914",
+    "token": "181a8b4f...",
+    "status": "Pagamento cancelado",
+    "pagamento_status": "canceled",
+    "forma_pagamento": "pix",
+    "parcelas": "0",
+    "created_at": "2026-08-04 17:46:04",
+    "data_pedido_realizado": "2026-08-04 17:46:47",
+    "cupom": null,
+    "nome": "Compra",
+    "sobrenome": "de Teste",
+    "email": "email@email.com",
+    "telefone": "(84) 98698-0526",
+    "cpf": "01076819435",
+    "cep": "59600445",
+    "endereco": "Rua ...",
+    "numero": "1342",
+    "bairro": "Belo Horizonte",
+    "cidade": "Mossoró",
+    "estado": "Rio Grande do Norte",
+    "valor_frete": "21.01",
+    "desconto": "5.65",
+    "valor_venda": "107.36",
+    "quantidade_total": "1",
+    "frete_id": "16594"
+  },
+  "carrinhoProdutos": [
+    {
+      "produto": {
+        "nomeShopify": "...",
+        "img": "https://...",
+        "product_id": "...",
+        "preco_final": "..."
+      },
+      "carrinho_produto": {
+        "produto_id": "...",
+        "quantidade": "1",
+        "variant1": "M",
+        "variant2": "Branco",
+        "variant_sku": null,
+        "valor": 91.99,
+        "preco_venda": 91.99,
+        "desconto": 5.65
+      }
+    }
+  ]
+}</code></pre>`,
+
+    webhook: `
+<span class="badge-method badge-post">POST</span>
+<pre><code>POST /webhook HTTP/1.1
+Host: api.montink.com
+Authorizationtoken: SEU_TOKEN
+Content-Type: application/json
+
+{
+  "webhook_url": "https://sua-loja.com/webhooks/montink"
+}</code></pre>
+<span class="small-label">Resposta</span>
+<pre><code>{
+  "success": true,
+  "msg": "Webhook cadastrado com sucesso",
+  "webhook_url": "https://sua-loja.com/webhooks/montink"
+}</code></pre>
+<span class="small-label">Payload enviado pela Montink (exemplo)</span>
+<pre><code>{
+  "event": "order/updated",
+  "order": {
+    "id": 123456,
+    "external_order_id": "PED-001",
+    "status": "Em Transito",
+    "financial_status": "paid",
+    "tracking_url": "https://..."
+  }
+}</code></pre>`
+  };
+
+  const buttons = document.querySelectorAll('.topic-btn');
+  const contents = document.querySelectorAll('.doc-content');
+  const requestExample = document.getElementById('request-example');
+
+  function setTopic(topic) {
+    buttons.forEach(b => b.classList.toggle('active', b.dataset.topic === topic));
+    contents.forEach(c => c.classList.toggle('active', c.id === topic));
+    requestExample.innerHTML = examples[topic] || '';
+  }
+
+  buttons.forEach(b => b.addEventListener('click', () => setTopic(b.dataset.topic)));
+  setTopic('intro');
+</script>
+</body>
+</html>
