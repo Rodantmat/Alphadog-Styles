@@ -18,3 +18,6 @@
 - All 4 channels are at 10/10 scheduled (Nov 7 18:00Z through Nov 12 17:00Z), so nothing could be added this run.
 - Still pending (limit): b08 (Nov 11 8pm PT) and b09 (Nov 12 8pm PT) on all 4 apps; plans ready in social/planB2_rest_ig_tt.json and social/planB2_rest_fbpin.json. Slots free after the Nov 7 18:00Z posts go out.
 - Tomorrow (Sun Nov 8): A d3 (18:00Z) and B b03 (Nov 9 04:00Z = 8pm PT Nov 8) both scheduled on all 4 apps. No ALERT.
+
+## 2026-11-07 (08:28Z) second check
+- Re-listed both accounts: all past posts sent; all 4 channels still 10/10 scheduled, so nothing added. b08/b09 remain pending (limit).
