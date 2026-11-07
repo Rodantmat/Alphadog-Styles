@@ -1,0 +1,191 @@
+URL: https://ajuda.amgestor.com.br/configuracoes/integracoes/integracao-com-o-mercado-livre
+STATUS: 200
+TITLE: Integração com o Mercado Livre | AM Gestor
+
+AM Gestor
+Ctrl
+K
+Bem vindo ao AM Gestor!
+PRIMEIROS PASSOS (EM VÍDEO)
+Configurando sua empresa
+Configuração do envio de e-mails e impressão
+Configuração das operações de vendas e cadastros
+Cadastro de clientes
+Cadastro de um produto simples
+Cadastro de produtos com variação
+Cadastros via importação de planilhas
+Criação de usuários e perfís de acesso
+CADASTROS
+Principais cadastros
+Tabelas auxiliares
+Operações
+GESTÃO DE VENDAS
+Orçamentos
+Pedidos de venda
+Devoluções
+Integrações
+Movimentações
+Operações
+OPERAÇÕES DA LOJA
+Como Acessar o Módulo Loja no AM Gestor
+Como Cadastrar um Orçamento no AM Gestor
+Como Aprovar um Orçamento e Transformá-lo em Pedido no AM Gestor
+Como Criar um Novo Pedido no Módulo Loja
+Como Identificar ou Cadastrar Cliente em Pedido ou Orçamento
+Como Marcar Itens para Entrega ou Retirada no Pedido
+OPERAÇÕES DO PDV
+Como Iniciar uma Nova Sessão no PDV
+Como Fazer Login em uma Sessão Já Iniciada no PDV
+Como Receber um Pedido de Pré-venda no PDV
+Como Incluir e Receber um Novo Pedido no PDV
+Como Receber Pedido em Carteira no PDV
+Como Liquidar Parcelas ou Pendências
+Como Realizar Sangria no PDV
+Como Finalizar uma Sessão no PDV
+GESTÃO DE COMPRAS
+Pedidos de compra
+NF de compras
+FINANCEIRO
+Contas a pagar
+Contas a receber
+Contas bancárias
+Movimento de caixa
+Sessões PDV
+Liberação de pedido
+Pedidos reprovados
+Pedido em carteira
+Comissões
+Operções
+SERVIÇOS
+Ordem de serviço
+Guia de serviço
+Fatura de serviço
+Assistência Técnica (RMA)
+Contratos
+PRODUÇÃO
+Ordens de produção
+ESTOQUE
+Inventário
+Configuração
+Manutenção de saldo
+Movimentações
+Localização
+Lotes
+Transferência de filiais
+Transferência de estoque
+Rupturas
+Pedidos com pendência
+Operações
+FISCAL
+NF-e
+METAS
+Metas de vendas
+Metas dos vendedores
+RELATÓRIOS
+Central de relatórios
+CONFIGURAÇÕES
+Dados da Empresa
+Integrações
+Configurar uma nova integração
+Integração com o Mercado Livre
+Integração com a Shopee
+Integração com a Magalu
+Powered by GitBook
+ON THIS PAGE
+Configurações do estoque
+Configurações dos pedidos
+Configurações de anúncios
+Conclusão da inclusão da integração
+Autorizando o AM Gestor para comunicar com a plataforma
+For the complete documentation index, see llms.txt. This page is also available as Markdown.
+Copy
+ConfiguraçõesIntegrações
+Integração com o Mercado Livre
+
+Para incluir uma nova integração com o Mercado Livre navegue até as configurações de integração do AM Gestor depois de localizar a integração do Mercado Livre, clique em Adicionar
+
+nova integração do mercado livre
+
+Em seguida no formulário, preencha a filial que deseja vincular á integração, o título e o status
+
+formulário de inclusão da integração do mercado livre
+Configurações do estoque
+
+Em configurações do estoque, preencha a origem da informação de estoque da integração
+
+configuração de estoque da integração
+Configurações dos pedidos
+
+Em configurações dos pedidos, preencha os parâmetros para configuração dos pedidos que serão lançados pela plataforma
+
+configuração dos pedidos da integração
+Configurações de anúncios
+
+Em configurações de anúncios detalhe as tarifas e parâmetros gerais para os anúncios da plataforma
+
+configurações dos anúncios da plataforma
+Configuração dos títulos
+
+Se desejar informe prefixos e sufixos que serão concatenados aos títulos dos anúncios na plataforma. Por exemplo: {prefixo} TITULO DO PRODUTO {sufixo}
+
+Configuração de preços
+
+O Mercado Livre cobra uma taxa fixa para vendas inferiores a R$ 79 preencha o valor da taxa que deseja repassar ao valor dos itens anunciados
+
+Nos campos de Markup, você precisa preencher um multiplicador para ser aplicado ao valor do produto, dessa forma você poderá compensar as taxas cobradas pelo marketplace, refletindo no preço dos produtos anunciados. Por exemplo: 
+
+Um Markup de 1,00 deixará o preço do marketplace identico ao do seu cadastro de produtos.
+
+Um Markup de 1,30 deixará o preço do marketplace 30% mais caro que seu cadastro de produtos*.
+
+Dessa forma os custos de venda no marketplace podem ser repassados ao seu valor.
+
+A opção de Somar frete grátis, quando ativa, vai consultar no Mercado Livre o valor do frete a ser pago pelo vendedor no caso de envios superiores a R$ 79  e adicionar ao valor do item anunciado.
+
+*No cadastro individual dos anuncios no AM Gestor, é possível definir o preço do anuncio de forma individual neste caso o resultado desses calculos serão sobrescritos com o valor informado no anúncio. Isto é util em casos onde queira realizar uma ação promocional sobre um item específico.
+
+Ativação na integração
+
+Esta opção define como o sistema irá tratar o envio de anúncios para o mercado livre:
+
+Desativado, devem ser enviados posteriormente (recomendado): Nesta opção os produtos não serão enviados para a plataforma de forma autônoma ao se salvar um produto que ainda não tenha sido integrado. Neste caso você terá de habilitar o item para venda no Mercado Livre.
+
+ Ativado, todos os novos anúncios serão enviados: Nesta opção o sistema irá enviar para o mercado livre, todos os produtos que forem alterados dentro do cadastro de produtos que tenham sido definidos para venda em marketplaces.
+
+Conclusão da inclusão da integração
+
+Após preencher todos os campos conforme desejado, clique no botão salvar
+
+Autorizando o AM Gestor para comunicar com a plataforma
+
+Antes de autorizar o AM Gestor para acessar sua conta do Mercado Livre, acesse o site do mercado livre e faça o login com a conta que deseja integrar.
+
+Depois de concluir o login volte no AM Gestor e acesse o Menu Vendas / Integrações
+
+menu vendas / integrações
+
+Na sessão Painel das integrações clique sobre a integração recém cadastrada, neste caso: Mercado Livre
+
+painel das integrações
+
+Na tela seguinte clique no botão para autorizar o acesso a sua conta
+
+autorização de acesso a conta
+
+Após clicar a seguinte tela será exibida, marque a opção de consentimento e clique em Continuar
+
+tela de consentimento
+
+Em seguida clique em Autorizar aplicativo
+
+autorizar aplicativo
+
+Feito isso o Mercado livre irá te redirecionar para a tela da integração no AM Gestor
+
+integração mercado livre
+Previous
+Configurar uma nova integração
+Next
+Integração com a Shopee
+
+Last updated 1 year ago

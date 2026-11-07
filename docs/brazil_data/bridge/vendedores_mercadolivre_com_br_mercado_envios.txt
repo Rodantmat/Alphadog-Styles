@@ -1,0 +1,4 @@
+URL: https://vendedores.mercadolivre.com.br/mercado-envios
+ERROR: Page.goto: Navigation to "https://vendedores.mercadolivre.com.br/mercado-envios" is interrupted by another navigation to "https://www.mercadolivre.com.br/ajuda"
+Call log:
+  - navigating to "https://vendedores.mercadolivre.com.br/mercado-envios", waiting until "domcontentloaded"

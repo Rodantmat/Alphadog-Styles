@@ -1,0 +1,4 @@
+URL: https://montink.com.br/marketplaces
+ERROR: Page.goto: Navigation to "https://montink.com.br/marketplaces" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://montink.com.br/marketplaces", waiting until "domcontentloaded"

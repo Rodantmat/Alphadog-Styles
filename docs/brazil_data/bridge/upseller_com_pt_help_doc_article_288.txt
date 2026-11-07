@@ -1,0 +1,231 @@
+URL: https://upseller.com/pt/help-doc-article-288
+STATUS: 200
+TITLE: Mercado Livre - Guia de Processamento de Pedidos - Central de Ajuda do UpSeller ERP
+
+Central de Ajuda
+Produtos
+Integrações
+Suporte
+Recursos
+Preços
+BR
+Login
+Cadastre-se Grátis
+Comece a usar
+Introdução aos Iniciantes
+Plataformas
+Primeiros Passos
+Vídeos Tutoriais
+Financeiro
+Integrações
+Produtos
+Pedidos
+Nota Fiscal
+Estoque
+Análises
+SAC
+Compras
+Configurações
+Segurança da Conta
+Webinars
+Arquivos de Ajuda
+Home
+Produtos
+Pedidos
+Notas Fiscais
+Controle de Estoque
+SAC
+Análises
+Financeiro
+Comprar
+Anúncios
+MCP+API
+Workspce de IA
+Armazém 3PL
+Logística 3PL
+Configurações
+Conta
+Integrações
+Migração de Dados
+Apps & Serviços
+App para Celular
+FAQs & Problemas Frequentes
+Produtos
+Introdução
+Pedidos
+Notas Fiscais
+Estoque
+Análises
+Financeiro
+SAC
+Integrações
+Configurações
+Conta
+APP
+Planos e Preços
+UpSeller
+Central de Ajuda
+Arquivos de Ajuda
+Pedidos
+Mercado Livre - Guia de Processamento de Pedidos
+Atualize no 12 Aug,2026
+Copiar Link
+
+Fluxo de processamento de pedidos de logística ME2 do Mercado Livre: Emitir Nota Fiscal >> Programar Envio >> Obter e Imprimir Etiqueta >> Mover Para Retirada >> Enviado
+Fluxo de processamento de pedidos de logística ME1 do Mercado Livre: Subir número de rastreamento >> Programar envio
+
+I. Passos para processar pedido do método de logística ME2
+
+Emitir nota fiscal >> Programar Envio( obter número de rastreio) >> Imprimir Etiqueta >> Para Retirada >> Enviado
+
+Psaaso 1. Selecione pedido >> Clique em Emitir NF-e
+
+1. Após a sincronização de novos pedidos que exigem emissão de nota fiscal no sistema, eles serão exibidos na lista Para Emitir.
+OBS: Caso a Dedução de Estoque esteja ativada, os pedidos com estoque insuficiente ou produtos sem vinculação aparecerão na lista Para Reservar. Para o fluxo de tratamento, consulte: Como processar pedidos no status [Para Reservar] >> [Não Mapeado] ?
+
+2. Ao clicar para emitir nota fiscal de um pedido novo, é necessário preencher as informação fiscal de produtos. Para o passo a passo completo, acesse: Como editar em massa as informações fiscais (como NCM) dos produtos ao emitir a nota fiscal?
+OBS: Produtos que já tiveram as informação fiscal cadastrados não necessitam de preenchimento repetido.
+
+
+
+
+3. Preenche as informações de produto, e depois UpSeller irá subir as notas fiscais para a plataforma Mercado Livre.
+Atenção: O sistema suporta emissão automática de NF-e. Clique para ver como configurar >> Como configurar a emissão automática da NF-e no UpSeller？
+
+
+
+Passo 2. Após a emissão, o pedido será transferido para o status Para Enviar, selecione o pedido >> clique em Programar Envio.
+
+
+
+Passo 3. A seguir, pedido mudará para o status Para Imprimir, selecione pedidos >> clique em imprimir individualmente ou em massa.
+
+
+
+Quando acabar de imprimir a Etiqueta, podem ser marcados como impressos para evitar a impressão repetida.
+
+
+
+Uma vez que etiqueta tenha sido impresso com sucesso, pode clicar em Mover pedido para [Para Retirada].
+
+
+
+Em Para Retirada, pode clique em Marcar como Enviado para mover pedido manualmente ao status de Enviado para evitar envios repetidos.
+
+
+Passo 4: Envio finalizado
+
+Após a transportadora realizar a coleta dos pacotes, quando o status do pedido na plataforma for alterado para Enviado, o sistema atualizará automaticamente o pedido para o estado Enviado. Nesse momento, todo o fluxo de expedição do pedido estará concluído.
+
+II. Passos para processar pedido do método de logística ME1
+
+Para Reservar (Alocar método de envio) >> Programar Envio (subir o número de rastreio) >> Enviado
+
+Os passos específicos:
+
+1. Selecionar o pedido >> Clicar em Alocar método de envio
+
+
+
+Selecionar obter número de rastreamento automaticamente ou subir número manualmente de acordo com a sua situação
+
+
+2. Selecionar o pedido >> Clicar em Programar Envio
+
+
+
+① Se selecionar obter número de rastreamento automaticamente no status Para Reservar, vai ser obtido e subido automaticamente o número quando clicar Programar Envio >> o pedido entrará no status Para Retirada
+
+② Se selecionar subir número de rastreamento manualmente no status Para Reservar, é preciso preencher o número e colocar a data para programar >> o pedido entrará no status Enviado
+
+
+
+③ Se selecionar o metódo de envio de Logística Offline(negociação de entrega com o comprador) quando criar o anúncio, é preciso marcar e deixar mensagem para programar >> o pedido entrará no status Enviado
+
+
+
+④ Após filtrar other logistics em Métodos de Envio, exceto a plataforma Mercado Livre, de modo geral, ao clicar em Programar Envio, é necessário informar o método de envio e o número de rastreio, conforme mostrado abaixo:
+
+
+III. Fluxo de processamento de pedidos com envio por logística offline
+1. Pedidos enviados via logística offline (Logística 3PL autorizada ou logística offline de armazém 3PL para enviar)
+
+Para envio por Logística 3PL autorizada: siga o fluxo de processamento de pedidos de Logística 3PL >> Guia de Processamento de Pedidos com Logística 3PL
+
+Para envio via logística offline de armazém 3PL configurado: siga o fluxo correspondente >> Guia de Processamento de Pedidos Logísticos Offline em Armazém 3PL
+
+2. Pedidos de envio offline (Subir manual de número de rastreamento)
+Passo 1: O pedido entra no status Para Reservar >> Logística Para Reservar >> Alocar Método de Envio >> Selecionar Subir número de rastreamento manualmente >> Salvar
+
+
+
+Passo 2: Acesse a lista Para Enviar >> clique em + Informação de Envio >> preencha o método de envio e o número de rastreio >> clique em Programar Envio.
+
+
+
+IV. Fluxo de processamento de pedidos retiradas pessoalmente e pedidos enviados por vendedor
+
+OBS: Pedidos retiradas pessoalmente e pedidos enviados por vendedor não podem ser enviados para armazéns 3PL. Caso necessite que um armazém 3PL realize o atendimento, é preciso primeiramente criar um pedido manual no sistema OMS para envio ao armazém 3PL. Depois, retorne ao UpSeller e altere o armazém para enviar do pedido para armazém próprio, depois seguir o fluxo abaixo e finalizar o envio.
+Passo a passo operacional: Acesse a lista Para Enviar >> clique em + Informação de Envio → marque a opção O comprador já está com ele em mãos >> clique em Programar Envio. O pedido será movido para o status Enviado.
+
+V. Fluxo de processamento de pedidos sem necessidade de envio
+
+Produtos virtuais, serviços e demais itens sem mercadoria física não presicam envio física. Quando esses pedidos chegarem ao status Para Enviar: Clique em + Informação de Envio, marque a opção Pedido concluído, insira uma observação complementar, e clique em Programar Envio. Após essa operação, o pedido será alterado para Enviado.
+
+Prévia:
+WooCommerce - Guia de Processamento de Pedidos
+Próximo:
+Mercado Livre - Guia de Processamento de Pedidos de Pré-Venda
+Esse conteúdo te ajudou？SimNão
+I. Passos para processar pedido do método de logística ME2
+II. Passos para processar pedido do método de logística ME1
+III. Fluxo de processamento de pedidos com envio por logística offline
+IV. Fluxo de processamento de pedidos retiradas pessoalmente e pedidos enviados por vendedor
+V. Fluxo de processamento de pedidos sem necessidade de envio
+ERP Integrado e Gratuito para E-commerce
+Produtos
+Omni-channel, Multi-lojas
+Integrações do Ecossistema
+Suporte Multidispositivo
+Análise de Negócio
+Gestão Financeira
+Nota Fiscal Eletrônica
+Sistema do Contador
+Publicações
+Cumprimento de Pedidos
+Compras e Inventário
+Gestão de Atendimento ao Cliente
+Gestão de Ads
+Funcionalidades de IA
+Integrações
+Mercado Livre
+TikTok Shop
+Shopee
+SHEIN
+Temu
+AliExpress
+Amazon
+Logística e Armazéns
+Integração com a Autoridade Tributária
+Mais
+Suporte
+Central de Ajuda
+Primeiros Passos
+Vídeos Tutoriais
+Arquivos de Ajuda
+Solicite Treinamento
+YouTube
+Fale conosco
+Grupo de WhatsApp
+Grupo de Telegram
+Recursos
+Blog
+Empresa
+Parceiros
+Recrutamento de Parceiros
+Baixe o App
+Baixar
+BR
+Termos de Serviço
+Política de Privacidade
+© 2026 UpSeller

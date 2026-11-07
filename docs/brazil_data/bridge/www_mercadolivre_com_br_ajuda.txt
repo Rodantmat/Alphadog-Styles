@@ -1,0 +1,4 @@
+URL: https://www.mercadolivre.com.br/ajuda
+ERROR: Page.goto: Navigation to "https://www.mercadolivre.com.br/ajuda" is interrupted by another navigation to "https://upseller.com/pt/mercado-integration/"
+Call log:
+  - navigating to "https://www.mercadolivre.com.br/ajuda", waiting until "domcontentloaded"
