@@ -1,0 +1,5 @@
+URL: https://api.montink.com/calculate_shipping/01310100/1
+STATUS: 200
+HEADERS: {'Date': 'Sat, 07 Nov 2026 22:50:27 GMT', 'Server': 'Apache', 'Expires': 'Thu, 19 Nov 1981 08:52:00 GMT', 'Cache-Control': 'no-store, no-cache, must-revalidate', 'Pragma': 'no-cache', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, POST, OPTIONS, PUT, DELETE', 'Access-Control-Allow-Headers': 'Content-Type, Content-Length, Accept-Encoding,Authorization,authorizationtoken,Referer', 'Content-Encoding': 'gzip', 'Vary': 'Accept-Encoding', 'Set-Cookie': 'PHPSESSID=13b0232976c257ce81de3c1672a63183d5faf119; expires=Sun, 08-Nov-2026 00:50:27 GMT; Max-Age=7200; path=/; domain=api.montink.com; HttpOnly', 'Keep-Alive': 'timeout=5, max=100', 'Connection': 'Keep-Alive', 'Transfer-Encoding': 'chunked', 'Content-Type': 'application/json'}
+
+{"success":false,"msg":"Token de Autoriza\u00e7\u00e3o n\u00e3o enviado."}
