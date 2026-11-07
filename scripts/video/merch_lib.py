@@ -70,10 +70,10 @@ def cut(path,img=None):
     else: hard=C   # rembg lost a pale garment -> trust the white-background cut
     sat=float(np.median((im.max(2).astype(int)-im.min(2))[rem>0])) if rem.sum() else 0
     if iscap and (gm<200 or sat>16):   # soft grey floor shadow is bright + neutral; white print lines are enclosed and get refilled
-        nb2=((im.max(2).astype(int)-im.min(2))<14)&(im.min(2)>(70 if sat>16 else 140))
+        nb2=((im.max(2).astype(int)-im.min(2))<14)&(im.min(2)>(70 if sat>16 else (gm+60 if gm<110 else 140)))
         hard=fillholes(largest(((hard>0)&~nb2).astype(np.uint8)))
     if iscap and rem.sum()>=0.5*C.sum(): hard=(hard&cv2.dilate(rem,np.ones((13,13),np.uint8))).astype(np.uint8)
-    if gm<200 and not iscap:   # dark garment: strip bright backdrop remnants that touch the outline (printed art is enclosed)
+    if gm<200 and not iscap and img is None:   # dark garment: strip bright backdrop remnants that touch the outline (printed art is enclosed)
         br=((im.min(2)>max(120,gm+55))&(hard>0)).astype(np.uint8)
         out_d=cv2.distanceTransform(hard,cv2.DIST_L2,3);nbr=(out_d<=3)&(hard>0)
         n,l,_,_=cv2.connectedComponentsWithStats(br);seed=np.unique(l[(nbr)&(br>0)])
@@ -82,7 +82,7 @@ def cut(path,img=None):
         sp=(im.max(2).astype(int)-im.min(2));nb3=((im.min(2)>228)&(sp<9)).astype(np.uint8);n3,l3,_,_=cv2.connectedComponentsWithStats(nb3)
         b3=np.isin(l3,list({l3[0,0],l3[0,-1],l3[-1,0],l3[-1,-1]}-{0})).astype(np.uint8);hard=(hard&(1-cv2.dilate(b3,np.ones((3,3),np.uint8)))).astype(np.uint8)
     hard=cv2.morphologyEx(hard,cv2.MORPH_CLOSE,np.ones((7,7),np.uint8));hard=fillholes(largest(hard))
-    if gm<200 and not iscap: hard=fillholes(largest((hard>0)&~(cv2.dilate(bg,np.ones((3,3),np.uint8))>0))).astype(np.uint8) if False else (((hard>0)&~(cv2.dilate(bg,np.ones((3,3),np.uint8))>0)).astype(np.uint8))
+    if gm<200 and not iscap and img is None: hard=fillholes(largest((hard>0)&~(cv2.dilate(bg,np.ones((3,3),np.uint8))>0))).astype(np.uint8) if False else (((hard>0)&~(cv2.dilate(bg,np.ones((3,3),np.uint8))>0)).astype(np.uint8))
     # drop thin slivers (soft shadow edges): opening then geodesic regrow by 3 px
     op=cv2.morphologyEx(hard,cv2.MORPH_OPEN,np.ones((9,9),np.uint8));hard=(hard&cv2.dilate(largest(op),np.ones((7,7),np.uint8))).astype(np.uint8)
     hard=fillholes(largest(hard))
@@ -91,7 +91,7 @@ def cut(path,img=None):
         h2=cv2.erode(hard,np.ones((2*er+1,2*er+1),np.uint8));f,g=fringe(im,h2);tries+=1
         if f<0.012 or er>=5: break
         er+=1
-    if gm<200 and not iscap:   # final pass AFTER hole filling: enclosed slivers of backdrop (armpit slits)
+    if gm<200 and not iscap and img is None:   # final pass AFTER hole filling: enclosed slivers of backdrop (armpit slits)
         dd=cv2.distanceTransform(h2,cv2.DIST_L2,3);brt=((im.min(2)>max(120,gm+38))&(dd>0)&(dd<=60)).astype(np.uint8)
         h2=(h2&~cv2.dilate(brt,np.ones((3,3),np.uint8))).astype(np.uint8)
     if inset or img is not None:   # smooth seam / upscaled low-res back views
@@ -106,6 +106,23 @@ def save(out,p):
     os.makedirs(os.path.dirname(p),exist_ok=True)
     # lossless-quality webp with alpha (RGBA); keep colours exact under alpha
     cv2.imwrite(p,out,[cv2.IMWRITE_WEBP_QUALITY,96])
+def cut_back(path):
+    """cut the inset (back-view) mockup of a front image into its own cutout"""
+    im=cv2.imread(path)
+    if im is None or not has_inset(im): return None
+    c=im[660:1166,660:1172].copy();sp=(c.max(2).astype(int)-c.min(2));nbm=((c.min(2)>=244)&(sp<8)).astype(np.uint8);nl,lab,_,_=cv2.connectedComponentsWithStats(nbm)
+    bl=set(np.unique(np.concatenate([lab[0],lab[-1],lab[:,0],lab[:,-1]])))-{0};bgm=np.isin(lab,list(bl)).astype(np.uint8)
+    grow=(cv2.dilate(bgm,np.ones((13,13),np.uint8))>0)&(c.min(2)>236)&(sp<10);c[(bgm>0)|grow]=255;c=cv2.resize(c,(1064,1056),interpolation=cv2.INTER_CUBIC)
+    canvas=np.full((1200,1200,3),255,np.uint8);canvas[72:1128,68:1132]=c
+    r=cut(path,canvas)
+    if r is None: return None
+    out,meta=r;hard=(out[...,3]>127).astype(np.uint8)
+    cs,_=cv2.findContours(hard,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_SIMPLE)
+    if not cs: return None
+    c=max(cs,key=cv2.contourArea);sol=cv2.contourArea(c)/max(1.0,cv2.contourArea(cv2.convexHull(c)))
+    meta['solidity']=round(float(sol),3)
+    if meta.get('gmed',0)>=225 or sol<0.8: meta['skipped']=True;return None   # white-on-white backs and broken silhouettes are not trusted
+    return out,meta
 if __name__=='__main__':
     args=sys.argv[1:];shard,ns=0,1
     if len(args)>=2 and args[0].isdigit() and args[1].isdigit(): shard,ns=int(args[0]),int(args[1]);args=args[2:]
@@ -115,7 +132,14 @@ if __name__=='__main__':
     files=files[shard::ns];log=open(OUT+f'log_{shard}.jsonl','a');n=0
     for f in files:
         rel=os.path.relpath(f,SRC);o=OUT+os.path.splitext(rel)[0]+'.webp'
-        if os.path.exists(o): continue
+        ob=o[:-5]+'_back.webp'
+        if os.path.exists(o):
+            if not os.path.exists(ob):
+                try:
+                    rb=cut_back(f)
+                    if rb is not None: save(rb[0],ob);mb=rb[1];mb['f']=rel+'#back';log.write(json.dumps(mb)+'\n');log.flush()
+                except Exception as e: log.write(json.dumps({'f':rel+'#back','err':repr(e)[:120]})+'\n');log.flush()
+            continue
         try:
             r=cut(f)
             if r is None: continue
@@ -126,11 +150,3 @@ if __name__=='__main__':
                     ob=o[:-5]+'_back.webp';save(rb[0],ob);mb=rb[1];mb['f']=rel+'#back';log.write(json.dumps(mb)+'\n');log.flush()
         except Exception as e: log.write(json.dumps({'f':rel,'err':repr(e)[:120]})+'\n');log.flush()
     print('done',shard,n)
-
-def cut_back(path):
-    """cut the inset (back-view) mockup of a front image into its own cutout"""
-    im=cv2.imread(path)
-    if im is None or not has_inset(im): return None
-    c=im[660:1172,660:1172].copy();w=(c.min(2)>236)&((c.max(2).astype(int)-c.min(2))<10);c[w]=255;c=cv2.resize(c,(1064,1064),interpolation=cv2.INTER_CUBIC)
-    canvas=np.full((1200,1200,3),255,np.uint8);canvas[68:1132,68:1132]=c
-    return cut(path,canvas)
