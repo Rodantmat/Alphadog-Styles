@@ -1,0 +1,182 @@
+URL: https://developers.reserva.ink/guias/comecando
+STATUS: 200
+TITLE: Começando | INK API
+
+Skip to content
+INK API
+Buscar
+K
+Main Navigation
+Guias
+Referência da API
+Changelog
+Sidebar Navigation
+Guias
+
+Visão geral
+
+Começando
+
+Autenticação
+
+Escopos
+
+Ciclo de vida da credencial
+
+Convenções da API
+
+Domínios
+
+Conciliação no ERP
+
+Webhooks
+
+Catálogo
+
+Agrupamento de estampas
+
+Promoções
+
+Trocas
+
+Reembolsos
+
+Simulação de frete
+
+Nesta página
+1. Habilite a API e gere sua credencial
+2. Sua primeira chamada (leitura)
+3. Sua primeira escrita (com Idempotency-Key)
+Próximos passos
+Começando
+​
+
+Este guia leva você da credencial gerada no painel à sua primeira chamada autenticada e à primeira escrita — o caminho mínimo para integrar sua loja Reserva INK pela API.
+
+Todos os exemplos usam o tier stores e a URL base https://api.reserva.ink.
+
+1. Habilite a API e gere sua credencial
+​
+
+A API está disponível em planos que incluem o recurso de integração. Com o plano certo, no painel da sua loja:
+
+Abra Credenciais da API e clique em Nova credencial.
+Escolha um nome e as permissões (escopos) que a integração vai usar.
+Copie o token exibido — ele aparece uma única vez.
+
+O passo a passo detalhado (e o que fazer se o plano ainda não tem a API) está em Autenticação e em Ciclo de vida da credencial.
+
+Guarde o token com cuidado
+
+O token dá acesso aos dados da sua loja. Mantenha-o só no back-end da sua integração — nunca em front-end, app ou repositório.
+
+2. Sua primeira chamada (leitura)
+​
+
+Envie o token no cabeçalho Authorization, como Bearer <token>. Vamos listar os pedidos da loja:
+
+bash
+curl https://api.reserva.ink/v1/stores/orders \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI"
+
+A resposta é um objeto com a lista em orders e os campos de paginação. Exemplo (campos recortados — a lista completa está na Referência):
+
+json
+{
+  "orders": [
+    {
+      "id": 12345,
+      "created_at": "2026-07-20T17:32:00Z",
+      "order_status": "awaiting_production",
+      "payment_status": "Pago",
+      "total_value": "159.80",
+      "buyer": {
+        "first_name": "Ana",
+        "last_name": "Souza",
+        "email": "ana@exemplo.com"
+      },
+      "items": [
+        { "quantity": 2, "unit_value": "79.90", "sku": "CAM-P-PRETA" }
+      ]
+    }
+  ],
+  "page": 1,
+  "per_page": 10,
+  "total_pages": 3,
+  "total_count": 24
+}
+
+Toda listagem segue esse envelope: os registros no campo do recurso (orders, products, …) mais page, per_page, total_pages e total_count. Use ?page=2&per_page=50 para paginar.
+
+Leitura exige o escopo .read
+
+Este endpoint requer store.orders.read. Se o token não tiver o escopo, a resposta é 403. Veja a lista em Escopos.
+
+3. Sua primeira escrita (com Idempotency-Key)
+​
+
+Escritas (POST/PATCH/DELETE) exigem o cabeçalho Idempotency-Key — uma chave única por operação que evita duplicar o recurso se a requisição for reenviada. Vamos criar um produto print-on-demand:
+
+bash
+curl -X POST https://api.reserva.ink/v1/stores/products \
+  -H "Authorization: Bearer SEU_TOKEN_AQUI" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: 5f3c9b2e-7a41-4e2b-9c6d-8f0a1b2c3d4e" \
+  -d '{
+        "product_type_id": 42,
+        "name": "Camiseta Coleção Verão",
+        "description": "Estampa exclusiva, tecido premium.",
+        "price": "79.90",
+        "visible_in_store": true,
+        "arts": [
+          {
+            "base_image_id": 10,
+            "art_url": "https://cdn.sualoja.com/artes/verao-frente.png"
+          }
+        ]
+      }'
+
+A arte de cada variante vem por art_url (URL pública https, baixada pela INK) ou por art_attachment (base64) — um ou outro, nunca os dois no mesmo item. O campo opcional main_image (image_url ou image_attachment) define a imagem de vitrine do produto; sem ele, a vitrine usa o mockup gerado da arte — detalhes no guia de catálogo.
+
+O produto é criado com approval_status: "waiting" (curadoria) e os mockups são gerados de forma assíncrona — a resposta 201 já traz o produto, mas a imagem final fica pronta depois (acompanhe pelo GET /v1/stores/products/{id}):
+
+json
+{
+  "status": 201,
+  "product": {
+    "id": 987,
+    "name": "Camiseta Coleção Verão",
+    "price": "79.90",
+    "visible_in_store": true,
+    "approval_status": "waiting",
+    "status": "not_published",
+    "product_variants": [
+      { "id": 5001, "sku": "CAM-P-PRETA", "color": "Preta", "size": "P" }
+    ]
+  }
+}
+
+Sobre a Idempotency-Key
+
+É obrigatória em toda escrita. Sem ela, a resposta é 400 com { "error": "...", "code": "idempotency_missing_key" }.
+Reenviar a mesma chave com o mesmo corpo devolve a resposta original (o recurso não é criado de novo) — seguro para retries.
+A mesma chave com um corpo diferente responde 409 Conflict.
+Use um valor único por operação (ex.: um UUID) e no máximo 255 caracteres.
+
+Escrita exige o escopo .write
+
+Criar produtos requer store.products.write. Um token só com store.products.read recebe 403 aqui.
+
+Próximos passos
+​
+Autenticação — respostas de erro, limite de requisições e boas práticas de segurança.
+Escopos — todas as permissões store.* e o que cada uma libera.
+Referência da API — todos os endpoints, parâmetros e formatos de resposta completos.
+
+Atualizado em: 05/11/2026, 21:16
+
+Pager
+Anterior
+Visão geral
+Próximo
+Autenticação

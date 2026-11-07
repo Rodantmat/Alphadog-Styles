@@ -1,0 +1,161 @@
+URL: https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/articles/1788186577-o-que-sao-a-api-ink-e-o-webhook
+STATUS: 200
+TITLE: O que são a API INK e o webhook | Central de Ajuda Reserva INK
+
+Central de Ajuda Reserva INK
+Sistema
+Principal
+API e Webhook
+O que são a API INK e o webhook
+O que são a API INK e o webhook
+Última atualização em Sep 03, 2026
+CATEGORIAS
+INKCon
+Começando sua Loja
+Criação de Estampas e Produtos
+Configuração e Aparência da Loja
+Perfil, Cadastro e Assinaturas
+Meu Lucro e Financeiro da Loja
+Troca e Devolução
+Entrega dos pedidos
+Marketing Digital
+Vendas, Clientes e Promoções
+Estoque de Matéria Prima e Produtos Disponíveis
+Operação Q4
+Integrações com outras plataformas
+INK Turbo
+Imersão Print on Demand
+Programa Experts
+Perguntas Frequentes e Eventos INK
+API e Webhook
+O que são a API INK e o webhook
+Como gerar e gerenciar a credencial de API INK
+Como cadastrar e gerenciar os webhooks da sua loja
+Cinco coisas para montar com a API INK e o webhook
+Visualizar tudo
+
+A API INK e o webhook servem para a sua loja conversar com outras ferramentas que você usa, como um CRM, uma ferramenta de dados, uma automação ou um sistema próprio. Em vez de você abrir o painel e conferir tudo na mão, o outro sistema consulta e recebe as informações direto da INK.
+
+São dois recursos técnicos. Para usá-los, alguém precisa configurar a conexão do outro lado: normalmente quem cuida da ferramenta que você usa, um integrador ou alguém do seu time que mexe com isso. Se você não usa nenhuma outra ferramenta hoje, não precisa de nenhum dos dois.
+
+A diferença entre eles em uma frase: o webhook avisa, a API executa.
+
+Os detalhes técnicos dos dois, com endereços, autenticação, formato dos dados e exemplos, ficam no portal de documentação em developers.reserva.ink. É a página para mandar para quem vai fazer a conexão.
+
+A API INK
+
+A API INK é o caminho para outro sistema ler e alterar os dados da sua loja sem passar pelo painel.
+
+O que dá para fazer por ela hoje:
+
+Consultar pedidos, com filtro por status de entrega
+
+Consultar clientes, contatos da newsletter e carrinhos abandonados
+
+Consultar o financeiro: saldo, extrato, saques e antecipações (só consulta, sem criar saque ou antecipação pela API)
+
+Criar, editar e excluir produtos, incluindo criar produto com arte por URL
+
+Criar, editar e excluir categorias e coleções, incluindo kits e vitrine
+
+Criar, editar e excluir promoções
+
+Consultar e criar trocas e reembolsos
+
+Como liberar o acesso
+
+No seu painel, clique em Credenciais de API.
+
+Gere uma credencial e escolha o que ela pode fazer, item por item: só consultar pedidos, criar produtos, e assim por diante.
+
+Guarde o código secreto que aparece na criação. Ele é exibido uma única vez. Se você perder, precisa gerar outra credencial.
+
+Entregue a credencial para quem vai fazer a conexão do outro lado.
+
+Na mesma tela você lista as credenciais que já criou, renomeia e revoga. Revogar corta o acesso na hora: as chamadas feitas com aquela credencial passam a ser recusadas.
+
+O que é bom saber antes
+
+A credencial só enxerga e altera dados da sua própria loja, nunca de outra.
+
+Cada credencial faz só o que os itens marcados na criação permitem.
+
+Existe um limite de chamadas por minuto. Se o outro sistema passar do limite, as chamadas são recusadas até o minuto seguinte. O número está no portal de documentação.
+
+API e Webhook estão disponíveis apenas para lojistas do plano Inkrível. Se você sair do Inkrível, as credenciais da loja são revogadas e a conexão para de funcionar.
+
+O webhook
+
+O webhook é o contrário da API: em vez de o outro sistema perguntar à INK se algo aconteceu, a INK avisa esse sistema na hora em que acontece.
+
+Você informa um endereço, escolhe os eventos que quer acompanhar e, a cada evento, a INK envia os dados daquele acontecimento para lá. Serve, por exemplo, para o seu sistema registrar a venda no momento em que o pagamento é confirmado, em vez de ficar consultando a lista de pedidos de tempo em tempo.
+
+Como cadastrar
+
+No seu painel, clique em Credenciais de Webhook.
+
+Cadastre um webhook.
+
+Informe o endereço que vai receber os avisos, o método e, se quiser, um código secreto para o seu sistema confirmar que o aviso veio mesmo da INK.
+
+Marque os eventos que você quer acompanhar. Eles aparecem agrupados por assunto.
+
+Salve. Cada evento marcado vira um webhook separado, com o mesmo endereço, método e código secreto.
+
+Eventos disponíveis hoje
+
+Pedido e pagamento:
+
+Pedido criado no checkout
+
+Pagamento confirmado
+
+Cartão não autorizado pela operadora
+
+Pix ou boleto expirado
+
+Pedido cancelado ou reembolsado
+
+Entrega:
+
+Pedido produzido, aguardando envio
+
+Pedido despachado
+
+Pedido em trânsito
+
+Pedido saiu para entrega
+
+Pedido entregue
+
+Falha na entrega
+
+Carrinho:
+
+Carrinho abandonado, com os itens do carrinho
+
+Cada aviso chega com os dados daquele acontecimento. No pagamento confirmado, por exemplo, vão a forma de pagamento, a previsão de entrega, a transportadora e o seu lucro naquele pedido.
+
+Qual dos dois eu uso?
+
+Quer que outro sistema puxe ou mude informação da loja quando ele quiser: API.
+
+Quer ser avisado no instante em que algo acontece na loja: webhook.
+
+Na maioria das integrações, os dois juntos.
+
+A API INK
+
+Como liberar o acesso
+
+O que é bom saber antes
+
+O webhook
+
+Como cadastrar
+
+Eventos disponíveis hoje
+
+Qual dos dois eu uso?
+
+Criado por Cloud Humans

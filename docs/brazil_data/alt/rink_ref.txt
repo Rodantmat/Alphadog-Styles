@@ -1,0 +1,229 @@
+URL: https://developers.reserva.ink/referencia/
+STATUS: 200
+TITLE: Referência da API | INK API
+
+Skip to content
+INK API
+Main Navigation
+Guias
+Referência da API
+Changelog
+Buscar
+Buscar
+KEYBOARD SHORTCUT:
+CONTROL
+⌃ K
+Introdução
+Carrinhos Abandonados
+Fechar grupo
+Lista os carrinhos abandonados da loja
+MÉTODO HTTP: 
+GET
+Financeiro
+Abrir grupo
+Categorias
+Abrir grupo
+Clientes
+Abrir grupo
+Trocas
+Abrir grupo
+Pedidos externos
+Abrir grupo
+Leads
+Abrir grupo
+Pedidos
+Abrir grupo
+Produtos
+Abrir grupo
+Tipos de Produto
+Abrir grupo
+Promoções
+Abrir grupo
+Frete
+Abrir grupo
+v1
+OpenAPI 3.0.1
+INK API
+Baixar documento OpenAPI
+Servidor
+Servidor:
+https://api.reserva.ink
+
+Produção
+
+Autenticação
+Select
+Auth Type
+No authentication selected
+Bibliotecas cliente
+Shell
+Ruby
+Node.js
+PHP
+Python
+Selecionar todas
+Shell Curl
+Carrinhos Abandonados ​
+Copiar link
+Carrinhos Abandonados
+Operações
+GET
+/v1/stores/abandoned_carts
+Lista os carrinhos abandonados da loja​
+Copiar link
+obrigatório
+
+Retorna os carrinhos abandonados da loja autenticada (com itens e sem atualização há mais de 30 minutos), do mais recente para o mais antigo, com paginação e filtros por data de criação/atualização e por contato permitido (contactable). Disponível apenas para planos que incluem o recurso de carrinhos abandonados. Requer o escopo store.abandoned_carts.read.
+
+Parâmetros de query
+created_begin_date
+Copiar link para
+tipo:
+string
+formato:
+date
+
+Data inicial de criação (formato ISO 8601, ex: 2024-01-01)
+
+created_end_date
+Copiar link para
+tipo:
+string
+formato:
+date
+
+Data final de criação (formato ISO 8601, ex: 2024-01-31)
+
+updated_begin_date
+Copiar link para
+tipo:
+string
+formato:
+date
+
+Data inicial de atualização (formato ISO 8601, ex: 2024-01-01)
+
+updated_end_date
+Copiar link para
+tipo:
+string
+formato:
+date
+
+Data final de atualização (formato ISO 8601, ex: 2024-01-31)
+
+contactable
+Copiar link para
+tipo:
+boolean
+
+Filtra por carrinhos cujo comprador aceitou contato de marketing e tem email ou telefone
+
+page
+Copiar link para
+tipo:
+integer
+padrão
+
+Número da página para paginação (padrão: 1)
+
+per_page
+Copiar link para
+tipo:
+integer
+padrão
+
+Quantidade de registros por página (padrão: 20, máximo: 100)
+
+Respostas
+200
+carrinhos abandonados retornados com sucesso
+application/json
+401
+não autorizado
+application/json
+403
+plano sem o recurso de carrinhos abandonados
+application/json
+404
+loja não encontrada
+application/json
+422
+parâmetros inválidos
+application/json
+Request Example for
+GET/v1/stores/abandoned_carts
+Shell Curl
+curl https://api.reserva.ink/v1/stores/abandoned_carts \
+  --header 'Authorization: Bearer YOUR_SECRET_TOKEN'
+
+Testar requisição
+(get /v1/stores/abandoned_carts)
+STATUS:
+200
+STATUS:
+401
+STATUS:
+403
+STATUS:
+404
+STATUS:
+422
+Mostrar schema
+{
+  "abandoned_carts": [
+    {
+      "id": 1,
+      "uuid": null,
+      "created_at": "2026-11-07T20:12:19.011Z",
+      "updated_at": "2026-11-07T20:12:19.011Z",
+      "items_count": 1,
+      "buyer": {
+        "type": "string",
+        "name": null,
+        "email": null,
+        "phone": null,
+        "marketing": true
+      },
+      "contactable": true,
+      "items": [
+        {
+          "product_variant_id": null,
+          "sku": null,
+          "quantity": 1,
+          "free_quantity": 1,
+          "unit_price": 1,
+          "total_price": 1,
+          "mockup_image_url": null,
+          "product_v2": {
+            "id": 1,
+            "name": null,
+            "slug": null,
+            "store_product_url": null,
+            "price": null,
+            "promotional_price": null,
+            "main_image_url": null,
+            "status": null
+          },
+          "product_variant": {
+            "id": 1,
+            "sku": null,
+            "color": null,
+            "hex_color": null,
+            "size": null,
+            "model": null,
+            "is_available": null
+          }
+        }
+      ]
+    }
+  ],
+  "page": 1,
+  "per_page": 1,
+  "total_pages": 1,
+  "total_count": 1
+}
+
+carrinhos abandonados retornados com sucesso
+
+Atualizado em: 05/11/2026, 21:16
