@@ -6,3 +6,9 @@
 5. Layout: phone-safe (nothing under app UI), joke fixed on top the whole time, dog tiles centred with wiggle space, answer under; text never covers merchandise (top text high, bottom text low); merch big; finale = 4 corners + middle, ~2 s hold; ideal length 8-10 s unless script needs more (laugh videos ~16 s approved).
 6. Merch cutouts: only from the trimmed library out/merch_lib (front <code>.webp, back view <code>_back.webp), tested on black: no white, no cut-off garment pieces. Review the finale frame before publishing.
 7. Never repeat music across posts. Verify every scheduled post actually went live; repost misses immediately. Videos seen and not corrected are approved. No real orders, no password entry, stay inside Cloudflare $5 / GitHub $4 plans, keep reports short.
+
+## Asset libraries (saved on Rodo's D: drive, NOT in the repo: too big for plan limits)
+Folder: D:\Rodo\Projects\AlphaDog Styles\merch_library\
+- merch_lib_v2.zip: 5,159 trimmed merch cutouts on transparency: <product>/<breed>/<code>.webp (+ <code>_back.webp = back view). docs/merch_lib_catalog.json lists product, breed, design, colour and view (front_small_emblem / front_big_head / back). Re-stage and unzip into out/merch_lib/ if the cloud workspace is fresh.
+- Trim QA: scripts/video/qa2.py (compares each cutout with its source mockup: lost pieces, bright/dark edge rim, symmetry), defringe.py (edge scrub), repair_lost.py. Run qa2 after ANY re-cut. Known gaps: cap_mesh not usable; no back views for white garments; tee/labrador_retriever/4NV_back removed (sleeve bite).
+- backgrounds_300.zip: 300 backgrounds 1080x1920 (bg_001..300_<family>.jpg), 36 structural families; docs/backgrounds_catalog.json; regenerate any with social/laugh/bg300.py. Pick by family: never reuse a background (or family back-to-back) within 2 months; log in docs/style_registry.json.

@@ -1,0 +1,2402 @@
+[
+ {
+  "id": 1,
+  "file": "bg_001_mesh.jpg",
+  "family": "mesh",
+  "seed": 1000,
+  "palette": "0b132b 1c2541 3a506b 5bc0be 6fffe9",
+  "mean_lum": 87.3
+ },
+ {
+  "id": 2,
+  "file": "bg_002_mesh.jpg",
+  "family": "mesh",
+  "seed": 1001,
+  "palette": "ff595e ffca3a 8ac926 1982c4 6a4c93",
+  "mean_lum": 144.8
+ },
+ {
+  "id": 3,
+  "file": "bg_003_mesh.jpg",
+  "family": "mesh",
+  "seed": 1002,
+  "palette": "10002b 240046 3c096c 5a189a 9d4edd",
+  "mean_lum": 49.6
+ },
+ {
+  "id": 4,
+  "file": "bg_004_mesh.jpg",
+  "family": "mesh",
+  "seed": 1003,
+  "palette": "233d4d fe7f2d fcca46 a1c181 619b8a",
+  "mean_lum": 113.6
+ },
+ {
+  "id": 5,
+  "file": "bg_005_mesh.jpg",
+  "family": "mesh",
+  "seed": 1004,
+  "palette": "f6bd60 f7ede2 f5cac3 84a59d f28482",
+  "mean_lum": 197.6
+ },
+ {
+  "id": 6,
+  "file": "bg_006_mesh.jpg",
+  "family": "mesh",
+  "seed": 1005,
+  "palette": "3a0ca3 4361ee 4cc9f0 f72585 fff3b0",
+  "mean_lum": 150.4
+ },
+ {
+  "id": 7,
+  "file": "bg_007_mesh.jpg",
+  "family": "mesh",
+  "seed": 1006,
+  "palette": "f72585 b5179e 7209b7 560bad 3a0ca3",
+  "mean_lum": 73.5
+ },
+ {
+  "id": 8,
+  "file": "bg_008_mesh.jpg",
+  "family": "mesh",
+  "seed": 1007,
+  "palette": "1b4332 2d6a4f 40916c 74c69d b7e4c7",
+  "mean_lum": 157.8
+ },
+ {
+  "id": 9,
+  "file": "bg_009_mesh.jpg",
+  "family": "mesh",
+  "seed": 1008,
+  "palette": "ff0a54 ff477e ff7096 ff85a1 fbb1bd",
+  "mean_lum": 139.7
+ },
+ {
+  "id": 10,
+  "file": "bg_010_aurora.jpg",
+  "family": "aurora",
+  "seed": 1100,
+  "palette": "010101 1a1a1a d4af37 f6e27a 8a6d1d",
+  "mean_lum": 49.9
+ },
+ {
+  "id": 11,
+  "file": "bg_011_aurora.jpg",
+  "family": "aurora",
+  "seed": 1101,
+  "palette": "0a0908 22333b eae0d5 c6ac8f 5e503f",
+  "mean_lum": 54.8
+ },
+ {
+  "id": 12,
+  "file": "bg_012_aurora.jpg",
+  "family": "aurora",
+  "seed": 1102,
+  "palette": "06d6a0 1b9aaa ef476f ffc43d 2b2d42",
+  "mean_lum": 87.0
+ },
+ {
+  "id": 13,
+  "file": "bg_013_aurora.jpg",
+  "family": "aurora",
+  "seed": 1103,
+  "palette": "0081a7 00afb9 fdfcdc fed9b7 f07167",
+  "mean_lum": 87.5
+ },
+ {
+  "id": 14,
+  "file": "bg_014_aurora.jpg",
+  "family": "aurora",
+  "seed": 1104,
+  "palette": "f2e9e4 c9ada7 9a8c98 4a4e69 22223b",
+  "mean_lum": 62.2
+ },
+ {
+  "id": 15,
+  "file": "bg_015_aurora.jpg",
+  "family": "aurora",
+  "seed": 1105,
+  "palette": "2b2d42 8d99ae edf2f4 ef233c d90429",
+  "mean_lum": 61.9
+ },
+ {
+  "id": 16,
+  "file": "bg_016_aurora.jpg",
+  "family": "aurora",
+  "seed": 1106,
+  "palette": "cdb4db ffc8dd ffafcc bde0fe a2d2ff",
+  "mean_lum": 144.6
+ },
+ {
+  "id": 17,
+  "file": "bg_017_aurora.jpg",
+  "family": "aurora",
+  "seed": 1107,
+  "palette": "6d597a b56576 e56b6f eaac8b 355070",
+  "mean_lum": 75.6
+ },
+ {
+  "id": 18,
+  "file": "bg_018_aurora.jpg",
+  "family": "aurora",
+  "seed": 1108,
+  "palette": "f0ead2 dde5b6 adc178 a98467 6c584c",
+  "mean_lum": 87.9
+ },
+ {
+  "id": 19,
+  "file": "bg_019_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1200,
+  "palette": "2d00f7 8900f5 e500a4 ff0069 ff8500",
+  "mean_lum": 132.8
+ },
+ {
+  "id": 20,
+  "file": "bg_020_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1201,
+  "palette": "ffffff 000000 ff0000 ffff00 0000ff",
+  "mean_lum": 37.0
+ },
+ {
+  "id": 21,
+  "file": "bg_021_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1202,
+  "palette": "9b5de5 f15bb5 fee440 00bbf9 00f5d4",
+  "mean_lum": 165.7
+ },
+ {
+  "id": 22,
+  "file": "bg_022_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1203,
+  "palette": "001d3d 003566 ffc300 ffd60a ffffff",
+  "mean_lum": 73.4
+ },
+ {
+  "id": 23,
+  "file": "bg_023_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1204,
+  "palette": "ffbe0b fb5607 ff006e 8338ec 3a86ff",
+  "mean_lum": 169.1
+ },
+ {
+  "id": 24,
+  "file": "bg_024_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1205,
+  "palette": "fdf0d5 c6d8d3 d81e5b 331832 f0544f",
+  "mean_lum": 215.4
+ },
+ {
+  "id": 25,
+  "file": "bg_025_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1206,
+  "palette": "001219 005f73 0a9396 94d2bd e9d8a6",
+  "mean_lum": 50.9
+ },
+ {
+  "id": 26,
+  "file": "bg_026_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1207,
+  "palette": "a8dadc f1faee e63946 457b9d 1d3557",
+  "mean_lum": 119.9
+ },
+ {
+  "id": 27,
+  "file": "bg_027_terrazzo.jpg",
+  "family": "terrazzo",
+  "seed": 1208,
+  "palette": "eaf4f4 cce3de a4c3b2 6b9080 3a5a40",
+  "mean_lum": 179.9
+ },
+ {
+  "id": 28,
+  "file": "bg_028_memphis.jpg",
+  "family": "memphis",
+  "seed": 1300,
+  "palette": "132a13 31572c 4f772d 90a955 ecf39e",
+  "mean_lum": 219.4
+ },
+ {
+  "id": 29,
+  "file": "bg_029_memphis.jpg",
+  "family": "memphis",
+  "seed": 1301,
+  "palette": "2e1f27 854d27 dd7230 f4c95d e7e393",
+  "mean_lum": 48.2
+ },
+ {
+  "id": 30,
+  "file": "bg_030_memphis.jpg",
+  "family": "memphis",
+  "seed": 1302,
+  "palette": "ffd6ff e7c6ff c8b6ff b8c0ff bbd0ff",
+  "mean_lum": 197.8
+ },
+ {
+  "id": 31,
+  "file": "bg_031_memphis.jpg",
+  "family": "memphis",
+  "seed": 1303,
+  "palette": "0b132b 1c2541 3a506b 5bc0be 6fffe9",
+  "mean_lum": 194.1
+ },
+ {
+  "id": 32,
+  "file": "bg_032_memphis.jpg",
+  "family": "memphis",
+  "seed": 1304,
+  "palette": "ff595e ffca3a 8ac926 1982c4 6a4c93",
+  "mean_lum": 110.0
+ },
+ {
+  "id": 33,
+  "file": "bg_033_memphis.jpg",
+  "family": "memphis",
+  "seed": 1305,
+  "palette": "10002b 240046 3c096c 5a189a 9d4edd",
+  "mean_lum": 107.2
+ },
+ {
+  "id": 34,
+  "file": "bg_034_memphis.jpg",
+  "family": "memphis",
+  "seed": 1306,
+  "palette": "233d4d fe7f2d fcca46 a1c181 619b8a",
+  "mean_lum": 136.7
+ },
+ {
+  "id": 35,
+  "file": "bg_035_memphis.jpg",
+  "family": "memphis",
+  "seed": 1307,
+  "palette": "f6bd60 f7ede2 f5cac3 84a59d f28482",
+  "mean_lum": 234.3
+ },
+ {
+  "id": 36,
+  "file": "bg_036_memphis.jpg",
+  "family": "memphis",
+  "seed": 1308,
+  "palette": "3a0ca3 4361ee 4cc9f0 f72585 fff3b0",
+  "mean_lum": 221.9
+ },
+ {
+  "id": 37,
+  "file": "bg_037_halftone.jpg",
+  "family": "halftone",
+  "seed": 1400,
+  "palette": "4a0e4e 81007f c200fb ec0868 fc2f00",
+  "mean_lum": 83.5
+ },
+ {
+  "id": 38,
+  "file": "bg_038_halftone.jpg",
+  "family": "halftone",
+  "seed": 1401,
+  "palette": "fcf6bd d0f4de a9def9 e4c1f9 ff99c8",
+  "mean_lum": 214.2
+ },
+ {
+  "id": 39,
+  "file": "bg_039_halftone.jpg",
+  "family": "halftone",
+  "seed": 1402,
+  "palette": "ff6d00 ff9e00 240046 5a189a 9d4edd",
+  "mean_lum": 92.0
+ },
+ {
+  "id": 40,
+  "file": "bg_040_halftone.jpg",
+  "family": "halftone",
+  "seed": 1403,
+  "palette": "010101 1a1a1a d4af37 f6e27a 8a6d1d",
+  "mean_lum": 90.7
+ },
+ {
+  "id": 41,
+  "file": "bg_041_halftone.jpg",
+  "family": "halftone",
+  "seed": 1404,
+  "palette": "0a0908 22333b eae0d5 c6ac8f 5e503f",
+  "mean_lum": 142.5
+ },
+ {
+  "id": 42,
+  "file": "bg_042_halftone.jpg",
+  "family": "halftone",
+  "seed": 1405,
+  "palette": "06d6a0 1b9aaa ef476f ffc43d 2b2d42",
+  "mean_lum": 101.3
+ },
+ {
+  "id": 43,
+  "file": "bg_043_halftone.jpg",
+  "family": "halftone",
+  "seed": 1406,
+  "palette": "0081a7 00afb9 fdfcdc fed9b7 f07167",
+  "mean_lum": 178.8
+ },
+ {
+  "id": 44,
+  "file": "bg_044_halftone.jpg",
+  "family": "halftone",
+  "seed": 1407,
+  "palette": "f2e9e4 c9ada7 9a8c98 4a4e69 22223b",
+  "mean_lum": 106.0
+ },
+ {
+  "id": 45,
+  "file": "bg_045_halftone.jpg",
+  "family": "halftone",
+  "seed": 1408,
+  "palette": "2b2d42 8d99ae edf2f4 ef233c d90429",
+  "mean_lum": 166.0
+ },
+ {
+  "id": 46,
+  "file": "bg_046_topo.jpg",
+  "family": "topo",
+  "seed": 1500,
+  "palette": "ff4d6d c9184a 800f2f 590d22 fff0f3",
+  "mean_lum": 66.7
+ },
+ {
+  "id": 47,
+  "file": "bg_047_topo.jpg",
+  "family": "topo",
+  "seed": 1501,
+  "palette": "ffb5a7 fcd5ce f8edeb f9e5d8 f9dcc4",
+  "mean_lum": 222.3
+ },
+ {
+  "id": 48,
+  "file": "bg_048_topo.jpg",
+  "family": "topo",
+  "seed": 1502,
+  "palette": "ff9f1c ffbf69 ffffff cbf3f0 2ec4b6",
+  "mean_lum": 181.5
+ },
+ {
+  "id": 49,
+  "file": "bg_049_topo.jpg",
+  "family": "topo",
+  "seed": 1503,
+  "palette": "2d00f7 8900f5 e500a4 ff0069 ff8500",
+  "mean_lum": 85.3
+ },
+ {
+  "id": 50,
+  "file": "bg_050_topo.jpg",
+  "family": "topo",
+  "seed": 1504,
+  "palette": "ffffff 000000 ff0000 ffff00 0000ff",
+  "mean_lum": 54.4
+ },
+ {
+  "id": 51,
+  "file": "bg_051_topo.jpg",
+  "family": "topo",
+  "seed": 1505,
+  "palette": "9b5de5 f15bb5 fee440 00bbf9 00f5d4",
+  "mean_lum": 145.8
+ },
+ {
+  "id": 52,
+  "file": "bg_052_topo.jpg",
+  "family": "topo",
+  "seed": 1506,
+  "palette": "001d3d 003566 ffc300 ffd60a ffffff",
+  "mean_lum": 91.3
+ },
+ {
+  "id": 53,
+  "file": "bg_053_topo.jpg",
+  "family": "topo",
+  "seed": 1507,
+  "palette": "ffbe0b fb5607 ff006e 8338ec 3a86ff",
+  "mean_lum": 110.3
+ },
+ {
+  "id": 54,
+  "file": "bg_054_topo.jpg",
+  "family": "topo",
+  "seed": 1508,
+  "palette": "fdf0d5 c6d8d3 d81e5b 331832 f0544f",
+  "mean_lum": 110.0
+ },
+ {
+  "id": 55,
+  "file": "bg_055_marble.jpg",
+  "family": "marble",
+  "seed": 1600,
+  "palette": "7f5539 9c6644 b08968 ddb892 e6ccb2",
+  "mean_lum": 105.7
+ },
+ {
+  "id": 56,
+  "file": "bg_056_marble.jpg",
+  "family": "marble",
+  "seed": 1601,
+  "palette": "ffcdb2 ffb4a2 e5989b b5838d 6d6875",
+  "mean_lum": 190.0
+ },
+ {
+  "id": 57,
+  "file": "bg_057_marble.jpg",
+  "family": "marble",
+  "seed": 1602,
+  "palette": "7400b8 6930c3 5e60ce 4ea8de 48bfe3",
+  "mean_lum": 75.2
+ },
+ {
+  "id": 58,
+  "file": "bg_058_marble.jpg",
+  "family": "marble",
+  "seed": 1603,
+  "palette": "132a13 31572c 4f772d 90a955 ecf39e",
+  "mean_lum": 179.7
+ },
+ {
+  "id": 59,
+  "file": "bg_059_marble.jpg",
+  "family": "marble",
+  "seed": 1604,
+  "palette": "2e1f27 854d27 dd7230 f4c95d e7e393",
+  "mean_lum": 178.0
+ },
+ {
+  "id": 60,
+  "file": "bg_060_marble.jpg",
+  "family": "marble",
+  "seed": 1605,
+  "palette": "ffd6ff e7c6ff c8b6ff b8c0ff bbd0ff",
+  "mean_lum": 222.2
+ },
+ {
+  "id": 61,
+  "file": "bg_061_marble.jpg",
+  "family": "marble",
+  "seed": 1606,
+  "palette": "0b132b 1c2541 3a506b 5bc0be 6fffe9",
+  "mean_lum": 162.5
+ },
+ {
+  "id": 62,
+  "file": "bg_062_marble.jpg",
+  "family": "marble",
+  "seed": 1607,
+  "palette": "ff595e ffca3a 8ac926 1982c4 6a4c93",
+  "mean_lum": 103.2
+ },
+ {
+  "id": 63,
+  "file": "bg_063_marble.jpg",
+  "family": "marble",
+  "seed": 1608,
+  "palette": "10002b 240046 3c096c 5a189a 9d4edd",
+  "mean_lum": 43.0
+ },
+ {
+  "id": 64,
+  "file": "bg_064_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1700,
+  "palette": "606c38 283618 fefae0 dda15e bc6c25",
+  "mean_lum": 155.0
+ },
+ {
+  "id": 65,
+  "file": "bg_065_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1701,
+  "palette": "003049 d62828 f77f00 fcbf49 eae2b7",
+  "mean_lum": 154.0
+ },
+ {
+  "id": 66,
+  "file": "bg_066_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1702,
+  "palette": "e0fbfc c2dfe3 9db4c0 5c6b73 253237",
+  "mean_lum": 170.2
+ },
+ {
+  "id": 67,
+  "file": "bg_067_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1703,
+  "palette": "4a0e4e 81007f c200fb ec0868 fc2f00",
+  "mean_lum": 124.8
+ },
+ {
+  "id": 68,
+  "file": "bg_068_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1704,
+  "palette": "fcf6bd d0f4de a9def9 e4c1f9 ff99c8",
+  "mean_lum": 201.5
+ },
+ {
+  "id": 69,
+  "file": "bg_069_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1705,
+  "palette": "ff6d00 ff9e00 240046 5a189a 9d4edd",
+  "mean_lum": 149.1
+ },
+ {
+  "id": 70,
+  "file": "bg_070_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1706,
+  "palette": "010101 1a1a1a d4af37 f6e27a 8a6d1d",
+  "mean_lum": 92.5
+ },
+ {
+  "id": 71,
+  "file": "bg_071_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1707,
+  "palette": "0a0908 22333b eae0d5 c6ac8f 5e503f",
+  "mean_lum": 171.6
+ },
+ {
+  "id": 72,
+  "file": "bg_072_watercolor.jpg",
+  "family": "watercolor",
+  "seed": 1708,
+  "palette": "06d6a0 1b9aaa ef476f ffc43d 2b2d42",
+  "mean_lum": 135.9
+ },
+ {
+  "id": 73,
+  "file": "bg_073_concrete.jpg",
+  "family": "concrete",
+  "seed": 1800,
+  "palette": "5f0f40 9a031e fb8b24 e36414 0f4c5c",
+  "mean_lum": 66.0
+ },
+ {
+  "id": 74,
+  "file": "bg_074_concrete.jpg",
+  "family": "concrete",
+  "seed": 1801,
+  "palette": "ff7b00 ff8800 ffa200 ffb700 ffd000",
+  "mean_lum": 98.6
+ },
+ {
+  "id": 75,
+  "file": "bg_075_concrete.jpg",
+  "family": "concrete",
+  "seed": 1802,
+  "palette": "3d5a80 98c1d9 e0fbfc ee6c4d 293241",
+  "mean_lum": 48.2
+ },
+ {
+  "id": 76,
+  "file": "bg_076_concrete.jpg",
+  "family": "concrete",
+  "seed": 1803,
+  "palette": "ff4d6d c9184a 800f2f 590d22 fff0f3",
+  "mean_lum": 71.6
+ },
+ {
+  "id": 77,
+  "file": "bg_077_concrete.jpg",
+  "family": "concrete",
+  "seed": 1804,
+  "palette": "ffb5a7 fcd5ce f8edeb f9e5d8 f9dcc4",
+  "mean_lum": 129.6
+ },
+ {
+  "id": 78,
+  "file": "bg_078_concrete.jpg",
+  "family": "concrete",
+  "seed": 1805,
+  "palette": "ff9f1c ffbf69 ffffff cbf3f0 2ec4b6",
+  "mean_lum": 130.0
+ },
+ {
+  "id": 79,
+  "file": "bg_079_concrete.jpg",
+  "family": "concrete",
+  "seed": 1806,
+  "palette": "2d00f7 8900f5 e500a4 ff0069 ff8500",
+  "mean_lum": 49.8
+ },
+ {
+  "id": 80,
+  "file": "bg_080_concrete.jpg",
+  "family": "concrete",
+  "seed": 1807,
+  "palette": "ffffff 000000 ff0000 ffff00 0000ff",
+  "mean_lum": 41.6
+ },
+ {
+  "id": 81,
+  "file": "bg_081_concrete.jpg",
+  "family": "concrete",
+  "seed": 1808,
+  "palette": "9b5de5 f15bb5 fee440 00bbf9 00f5d4",
+  "mean_lum": 92.8
+ },
+ {
+  "id": 82,
+  "file": "bg_082_weave.jpg",
+  "family": "weave",
+  "seed": 1900,
+  "palette": "fefae0 faedcd e9edc9 ccd5ae d4a373",
+  "mean_lum": 187.6
+ },
+ {
+  "id": 83,
+  "file": "bg_083_weave.jpg",
+  "family": "weave",
+  "seed": 1901,
+  "palette": "0f0e17 ff8906 f25f4c e53170 a7a9be",
+  "mean_lum": 137.4
+ },
+ {
+  "id": 84,
+  "file": "bg_084_weave.jpg",
+  "family": "weave",
+  "seed": 1902,
+  "palette": "11001c 220135 32013f 4d0f6b ff2e63",
+  "mean_lum": 45.8
+ },
+ {
+  "id": 85,
+  "file": "bg_085_weave.jpg",
+  "family": "weave",
+  "seed": 1903,
+  "palette": "7f5539 9c6644 b08968 ddb892 e6ccb2",
+  "mean_lum": 129.8
+ },
+ {
+  "id": 86,
+  "file": "bg_086_weave.jpg",
+  "family": "weave",
+  "seed": 1904,
+  "palette": "ffcdb2 ffb4a2 e5989b b5838d 6d6875",
+  "mean_lum": 174.2
+ },
+ {
+  "id": 87,
+  "file": "bg_087_weave.jpg",
+  "family": "weave",
+  "seed": 1905,
+  "palette": "7400b8 6930c3 5e60ce 4ea8de 48bfe3",
+  "mean_lum": 96.8
+ },
+ {
+  "id": 88,
+  "file": "bg_088_weave.jpg",
+  "family": "weave",
+  "seed": 1906,
+  "palette": "132a13 31572c 4f772d 90a955 ecf39e",
+  "mean_lum": 75.0
+ },
+ {
+  "id": 89,
+  "file": "bg_089_weave.jpg",
+  "family": "weave",
+  "seed": 1907,
+  "palette": "2e1f27 854d27 dd7230 f4c95d e7e393",
+  "mean_lum": 178.5
+ },
+ {
+  "id": 90,
+  "file": "bg_090_weave.jpg",
+  "family": "weave",
+  "seed": 1908,
+  "palette": "ffd6ff e7c6ff c8b6ff b8c0ff bbd0ff",
+  "mean_lum": 176.0
+ },
+ {
+  "id": 91,
+  "file": "bg_091_wood.jpg",
+  "family": "wood",
+  "seed": 2000,
+  "palette": "d8e2dc ffe5d9 ffcad4 f4acb7 9d8189",
+  "mean_lum": 213.8
+ },
+ {
+  "id": 92,
+  "file": "bg_092_wood.jpg",
+  "family": "wood",
+  "seed": 2001,
+  "palette": "231942 5e548e 9f86c0 be95c4 e0b1cb",
+  "mean_lum": 113.8
+ },
+ {
+  "id": 93,
+  "file": "bg_093_wood.jpg",
+  "family": "wood",
+  "seed": 2002,
+  "palette": "00f5d4 00bbf9 9b5de5 f15bb5 fee440",
+  "mean_lum": 152.3
+ },
+ {
+  "id": 94,
+  "file": "bg_094_wood.jpg",
+  "family": "wood",
+  "seed": 2003,
+  "palette": "606c38 283618 fefae0 dda15e bc6c25",
+  "mean_lum": 105.8
+ },
+ {
+  "id": 95,
+  "file": "bg_095_wood.jpg",
+  "family": "wood",
+  "seed": 2004,
+  "palette": "003049 d62828 f77f00 fcbf49 eae2b7",
+  "mean_lum": 108.2
+ },
+ {
+  "id": 96,
+  "file": "bg_096_wood.jpg",
+  "family": "wood",
+  "seed": 2005,
+  "palette": "e0fbfc c2dfe3 9db4c0 5c6b73 253237",
+  "mean_lum": 181.9
+ },
+ {
+  "id": 97,
+  "file": "bg_097_wood.jpg",
+  "family": "wood",
+  "seed": 2006,
+  "palette": "4a0e4e 81007f c200fb ec0868 fc2f00",
+  "mean_lum": 64.4
+ },
+ {
+  "id": 98,
+  "file": "bg_098_wood.jpg",
+  "family": "wood",
+  "seed": 2007,
+  "palette": "fcf6bd d0f4de a9def9 e4c1f9 ff99c8",
+  "mean_lum": 203.6
+ },
+ {
+  "id": 99,
+  "file": "bg_099_wood.jpg",
+  "family": "wood",
+  "seed": 2008,
+  "palette": "ff6d00 ff9e00 240046 5a189a 9d4edd",
+  "mean_lum": 123.5
+ },
+ {
+  "id": 100,
+  "file": "bg_100_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2100,
+  "palette": "582f0e 7f4f24 936639 b6ad90 c2c5aa",
+  "mean_lum": 126.8
+ },
+ {
+  "id": 101,
+  "file": "bg_101_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2101,
+  "palette": "e9ecef adb5bd 6c757d 343a40 ff6b6b",
+  "mean_lum": 131.4
+ },
+ {
+  "id": 102,
+  "file": "bg_102_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2102,
+  "palette": "03045e 0077b6 00b4d8 90e0ef caf0f8",
+  "mean_lum": 127.7
+ },
+ {
+  "id": 103,
+  "file": "bg_103_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2103,
+  "palette": "5f0f40 9a031e fb8b24 e36414 0f4c5c",
+  "mean_lum": 81.5
+ },
+ {
+  "id": 104,
+  "file": "bg_104_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2104,
+  "palette": "ff7b00 ff8800 ffa200 ffb700 ffd000",
+  "mean_lum": 173.5
+ },
+ {
+  "id": 105,
+  "file": "bg_105_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2105,
+  "palette": "3d5a80 98c1d9 e0fbfc ee6c4d 293241",
+  "mean_lum": 156.4
+ },
+ {
+  "id": 106,
+  "file": "bg_106_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2106,
+  "palette": "ff4d6d c9184a 800f2f 590d22 fff0f3",
+  "mean_lum": 117.3
+ },
+ {
+  "id": 107,
+  "file": "bg_107_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2107,
+  "palette": "ffb5a7 fcd5ce f8edeb f9e5d8 f9dcc4",
+  "mean_lum": 220.8
+ },
+ {
+  "id": 108,
+  "file": "bg_108_bauhaus.jpg",
+  "family": "bauhaus",
+  "seed": 2108,
+  "palette": "ff9f1c ffbf69 ffffff cbf3f0 2ec4b6",
+  "mean_lum": 214.0
+ },
+ {
+  "id": 109,
+  "file": "bg_109_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2200,
+  "palette": "1d1d1d f2c14e f78154 4d9078 b4436c",
+  "mean_lum": 134.4
+ },
+ {
+  "id": 110,
+  "file": "bg_110_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2201,
+  "palette": "264653 2a9d8f e9c46a f4a261 e76f51",
+  "mean_lum": 151.5
+ },
+ {
+  "id": 111,
+  "file": "bg_111_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2202,
+  "palette": "e63946 f1faee a8dadc 457b9d 1d3557",
+  "mean_lum": 188.8
+ },
+ {
+  "id": 112,
+  "file": "bg_112_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2203,
+  "palette": "fefae0 faedcd e9edc9 ccd5ae d4a373",
+  "mean_lum": 198.9
+ },
+ {
+  "id": 113,
+  "file": "bg_113_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2204,
+  "palette": "0f0e17 ff8906 f25f4c e53170 a7a9be",
+  "mean_lum": 147.0
+ },
+ {
+  "id": 114,
+  "file": "bg_114_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2205,
+  "palette": "11001c 220135 32013f 4d0f6b ff2e63",
+  "mean_lum": 50.0
+ },
+ {
+  "id": 115,
+  "file": "bg_115_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2206,
+  "palette": "7f5539 9c6644 b08968 ddb892 e6ccb2",
+  "mean_lum": 179.7
+ },
+ {
+  "id": 116,
+  "file": "bg_116_seigaiha.jpg",
+  "family": "seigaiha",
+  "seed": 2207,
+  "palette": "ffcdb2 ffb4a2 e5989b b5838d 6d6875",
+  "mean_lum": 184.7
+ },
+ {
+  "id": 117,
+  "file": "bg_117_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2300,
+  "palette": "0e6ba8 0a2472 a6e1fa dff6ff 001c55",
+  "mean_lum": 87.1
+ },
+ {
+  "id": 118,
+  "file": "bg_118_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2301,
+  "palette": "dad7cd a3b18a 588157 3a5a40 344e41",
+  "mean_lum": 96.1
+ },
+ {
+  "id": 119,
+  "file": "bg_119_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2302,
+  "palette": "f94144 f3722c f8961e f9c74f 90be6d",
+  "mean_lum": 138.5
+ },
+ {
+  "id": 120,
+  "file": "bg_120_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2303,
+  "palette": "d8e2dc ffe5d9 ffcad4 f4acb7 9d8189",
+  "mean_lum": 177.0
+ },
+ {
+  "id": 121,
+  "file": "bg_121_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2304,
+  "palette": "231942 5e548e 9f86c0 be95c4 e0b1cb",
+  "mean_lum": 137.4
+ },
+ {
+  "id": 122,
+  "file": "bg_122_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2305,
+  "palette": "00f5d4 00bbf9 9b5de5 f15bb5 fee440",
+  "mean_lum": 128.1
+ },
+ {
+  "id": 123,
+  "file": "bg_123_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2306,
+  "palette": "606c38 283618 fefae0 dda15e bc6c25",
+  "mean_lum": 140.9
+ },
+ {
+  "id": 124,
+  "file": "bg_124_isocubes.jpg",
+  "family": "isocubes",
+  "seed": 2307,
+  "palette": "003049 d62828 f77f00 fcbf49 eae2b7",
+  "mean_lum": 119.3
+ },
+ {
+  "id": 125,
+  "file": "bg_125_plaid.jpg",
+  "family": "plaid",
+  "seed": 2400,
+  "palette": "390099 9e0059 ff0054 ff5400 ffbd00",
+  "mean_lum": 112.6
+ },
+ {
+  "id": 126,
+  "file": "bg_126_plaid.jpg",
+  "family": "plaid",
+  "seed": 2401,
+  "palette": "f4f1de e07a5f 3d405b 81b29a f2cc8f",
+  "mean_lum": 152.6
+ },
+ {
+  "id": 127,
+  "file": "bg_127_plaid.jpg",
+  "family": "plaid",
+  "seed": 2402,
+  "palette": "1a1423 372549 774c60 b75d69 eacdc2",
+  "mean_lum": 107.0
+ },
+ {
+  "id": 128,
+  "file": "bg_128_plaid.jpg",
+  "family": "plaid",
+  "seed": 2403,
+  "palette": "582f0e 7f4f24 936639 b6ad90 c2c5aa",
+  "mean_lum": 121.8
+ },
+ {
+  "id": 129,
+  "file": "bg_129_plaid.jpg",
+  "family": "plaid",
+  "seed": 2404,
+  "palette": "e9ecef adb5bd 6c757d 343a40 ff6b6b",
+  "mean_lum": 148.2
+ },
+ {
+  "id": 130,
+  "file": "bg_130_plaid.jpg",
+  "family": "plaid",
+  "seed": 2405,
+  "palette": "03045e 0077b6 00b4d8 90e0ef caf0f8",
+  "mean_lum": 140.7
+ },
+ {
+  "id": 131,
+  "file": "bg_131_plaid.jpg",
+  "family": "plaid",
+  "seed": 2406,
+  "palette": "5f0f40 9a031e fb8b24 e36414 0f4c5c",
+  "mean_lum": 94.9
+ },
+ {
+  "id": 132,
+  "file": "bg_132_plaid.jpg",
+  "family": "plaid",
+  "seed": 2407,
+  "palette": "ff7b00 ff8800 ffa200 ffb700 ffd000",
+  "mean_lum": 164.8
+ },
+ {
+  "id": 133,
+  "file": "bg_133_rays.jpg",
+  "family": "rays",
+  "seed": 2500,
+  "palette": "ef476f ffd166 06d6a0 118ab2 073b4c",
+  "mean_lum": 171.2
+ },
+ {
+  "id": 134,
+  "file": "bg_134_rays.jpg",
+  "family": "rays",
+  "seed": 2501,
+  "palette": "8ecae6 219ebc 023047 ffb703 fb8500",
+  "mean_lum": 158.8
+ },
+ {
+  "id": 135,
+  "file": "bg_135_rays.jpg",
+  "family": "rays",
+  "seed": 2502,
+  "palette": "14213d fca311 e5e5e5 ffffff 000000",
+  "mean_lum": 208.5
+ },
+ {
+  "id": 136,
+  "file": "bg_136_rays.jpg",
+  "family": "rays",
+  "seed": 2503,
+  "palette": "1d1d1d f2c14e f78154 4d9078 b4436c",
+  "mean_lum": 154.6
+ },
+ {
+  "id": 137,
+  "file": "bg_137_rays.jpg",
+  "family": "rays",
+  "seed": 2504,
+  "palette": "264653 2a9d8f e9c46a f4a261 e76f51",
+  "mean_lum": 151.9
+ },
+ {
+  "id": 138,
+  "file": "bg_138_rays.jpg",
+  "family": "rays",
+  "seed": 2505,
+  "palette": "e63946 f1faee a8dadc 457b9d 1d3557",
+  "mean_lum": 180.6
+ },
+ {
+  "id": 139,
+  "file": "bg_139_rays.jpg",
+  "family": "rays",
+  "seed": 2506,
+  "palette": "fefae0 faedcd e9edc9 ccd5ae d4a373",
+  "mean_lum": 222.7
+ },
+ {
+  "id": 140,
+  "file": "bg_140_rays.jpg",
+  "family": "rays",
+  "seed": 2507,
+  "palette": "0f0e17 ff8906 f25f4c e53170 a7a9be",
+  "mean_lum": 129.7
+ },
+ {
+  "id": 141,
+  "file": "bg_141_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2600,
+  "palette": "ff0a54 ff477e ff7096 ff85a1 fbb1bd",
+  "mean_lum": 99.9
+ },
+ {
+  "id": 142,
+  "file": "bg_142_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2601,
+  "palette": "ffe74c ff5964 ffffff 38a3a5 4b88a2",
+  "mean_lum": 109.0
+ },
+ {
+  "id": 143,
+  "file": "bg_143_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2602,
+  "palette": "2c3e50 e74c3c ecf0f1 3498db 2980b9",
+  "mean_lum": 86.4
+ },
+ {
+  "id": 144,
+  "file": "bg_144_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2603,
+  "palette": "0e6ba8 0a2472 a6e1fa dff6ff 001c55",
+  "mean_lum": 59.6
+ },
+ {
+  "id": 145,
+  "file": "bg_145_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2604,
+  "palette": "dad7cd a3b18a 588157 3a5a40 344e41",
+  "mean_lum": 82.1
+ },
+ {
+  "id": 146,
+  "file": "bg_146_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2605,
+  "palette": "f94144 f3722c f8961e f9c74f 90be6d",
+  "mean_lum": 113.5
+ },
+ {
+  "id": 147,
+  "file": "bg_147_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2606,
+  "palette": "d8e2dc ffe5d9 ffcad4 f4acb7 9d8189",
+  "mean_lum": 135.6
+ },
+ {
+  "id": 148,
+  "file": "bg_148_synthwave.jpg",
+  "family": "synthwave",
+  "seed": 2607,
+  "palette": "231942 5e548e 9f86c0 be95c4 e0b1cb",
+  "mean_lum": 77.2
+ },
+ {
+  "id": 149,
+  "file": "bg_149_nebula.jpg",
+  "family": "nebula",
+  "seed": 2700,
+  "palette": "f0ead2 dde5b6 adc178 a98467 6c584c",
+  "mean_lum": 140.5
+ },
+ {
+  "id": 150,
+  "file": "bg_150_nebula.jpg",
+  "family": "nebula",
+  "seed": 2701,
+  "palette": "184e77 1e6091 1a759f 168aad 34a0a4",
+  "mean_lum": 69.9
+ },
+ {
+  "id": 151,
+  "file": "bg_151_nebula.jpg",
+  "family": "nebula",
+  "seed": 2702,
+  "palette": "212529 495057 ced4da f8f9fa e03131",
+  "mean_lum": 82.7
+ },
+ {
+  "id": 152,
+  "file": "bg_152_nebula.jpg",
+  "family": "nebula",
+  "seed": 2703,
+  "palette": "390099 9e0059 ff0054 ff5400 ffbd00",
+  "mean_lum": 126.6
+ },
+ {
+  "id": 153,
+  "file": "bg_153_nebula.jpg",
+  "family": "nebula",
+  "seed": 2704,
+  "palette": "f4f1de e07a5f 3d405b 81b29a f2cc8f",
+  "mean_lum": 130.6
+ },
+ {
+  "id": 154,
+  "file": "bg_154_nebula.jpg",
+  "family": "nebula",
+  "seed": 2705,
+  "palette": "1a1423 372549 774c60 b75d69 eacdc2",
+  "mean_lum": 92.7
+ },
+ {
+  "id": 155,
+  "file": "bg_155_nebula.jpg",
+  "family": "nebula",
+  "seed": 2706,
+  "palette": "582f0e 7f4f24 936639 b6ad90 c2c5aa",
+  "mean_lum": 113.1
+ },
+ {
+  "id": 156,
+  "file": "bg_156_nebula.jpg",
+  "family": "nebula",
+  "seed": 2707,
+  "palette": "e9ecef adb5bd 6c757d 343a40 ff6b6b",
+  "mean_lum": 88.1
+ },
+ {
+  "id": 157,
+  "file": "bg_157_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2800,
+  "palette": "eaf4f4 cce3de a4c3b2 6b9080 3a5a40",
+  "mean_lum": 133.2
+ },
+ {
+  "id": 158,
+  "file": "bg_158_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2801,
+  "palette": "0b3954 087e8b bfd7ea ff5a5f c81d25",
+  "mean_lum": 91.6
+ },
+ {
+  "id": 159,
+  "file": "bg_159_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2802,
+  "palette": "0d1b2a 1b263b 415a77 778da9 e0e1dd",
+  "mean_lum": 67.1
+ },
+ {
+  "id": 160,
+  "file": "bg_160_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2803,
+  "palette": "ef476f ffd166 06d6a0 118ab2 073b4c",
+  "mean_lum": 106.7
+ },
+ {
+  "id": 161,
+  "file": "bg_161_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2804,
+  "palette": "8ecae6 219ebc 023047 ffb703 fb8500",
+  "mean_lum": 113.4
+ },
+ {
+  "id": 162,
+  "file": "bg_162_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2805,
+  "palette": "14213d fca311 e5e5e5 ffffff 000000",
+  "mean_lum": 67.3
+ },
+ {
+  "id": 163,
+  "file": "bg_163_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2806,
+  "palette": "1d1d1d f2c14e f78154 4d9078 b4436c",
+  "mean_lum": 102.6
+ },
+ {
+  "id": 164,
+  "file": "bg_164_bokeh.jpg",
+  "family": "bokeh",
+  "seed": 2807,
+  "palette": "264653 2a9d8f e9c46a f4a261 e76f51",
+  "mean_lum": 116.4
+ },
+ {
+  "id": 165,
+  "file": "bg_165_confetti.jpg",
+  "family": "confetti",
+  "seed": 2900,
+  "palette": "3a0ca3 4361ee 4cc9f0 f72585 fff3b0",
+  "mean_lum": 228.7
+ },
+ {
+  "id": 166,
+  "file": "bg_166_confetti.jpg",
+  "family": "confetti",
+  "seed": 2901,
+  "palette": "f72585 b5179e 7209b7 560bad 3a0ca3",
+  "mean_lum": 106.9
+ },
+ {
+  "id": 167,
+  "file": "bg_167_confetti.jpg",
+  "family": "confetti",
+  "seed": 2902,
+  "palette": "1b4332 2d6a4f 40916c 74c69d b7e4c7",
+  "mean_lum": 61.3
+ },
+ {
+  "id": 168,
+  "file": "bg_168_confetti.jpg",
+  "family": "confetti",
+  "seed": 2903,
+  "palette": "ff0a54 ff477e ff7096 ff85a1 fbb1bd",
+  "mean_lum": 194.6
+ },
+ {
+  "id": 169,
+  "file": "bg_169_confetti.jpg",
+  "family": "confetti",
+  "seed": 2904,
+  "palette": "ffe74c ff5964 ffffff 38a3a5 4b88a2",
+  "mean_lum": 245.1
+ },
+ {
+  "id": 170,
+  "file": "bg_170_confetti.jpg",
+  "family": "confetti",
+  "seed": 2905,
+  "palette": "2c3e50 e74c3c ecf0f1 3498db 2980b9",
+  "mean_lum": 225.2
+ },
+ {
+  "id": 171,
+  "file": "bg_171_confetti.jpg",
+  "family": "confetti",
+  "seed": 2906,
+  "palette": "0e6ba8 0a2472 a6e1fa dff6ff 001c55",
+  "mean_lum": 48.9
+ },
+ {
+  "id": 172,
+  "file": "bg_172_confetti.jpg",
+  "family": "confetti",
+  "seed": 2907,
+  "palette": "dad7cd a3b18a 588157 3a5a40 344e41",
+  "mean_lum": 73.6
+ },
+ {
+  "id": 173,
+  "file": "bg_173_papercut.jpg",
+  "family": "papercut",
+  "seed": 3000,
+  "palette": "2b2d42 8d99ae edf2f4 ef233c d90429",
+  "mean_lum": 112.7
+ },
+ {
+  "id": 174,
+  "file": "bg_174_papercut.jpg",
+  "family": "papercut",
+  "seed": 3001,
+  "palette": "cdb4db ffc8dd ffafcc bde0fe a2d2ff",
+  "mean_lum": 205.3
+ },
+ {
+  "id": 175,
+  "file": "bg_175_papercut.jpg",
+  "family": "papercut",
+  "seed": 3002,
+  "palette": "6d597a b56576 e56b6f eaac8b 355070",
+  "mean_lum": 119.0
+ },
+ {
+  "id": 176,
+  "file": "bg_176_papercut.jpg",
+  "family": "papercut",
+  "seed": 3003,
+  "palette": "f0ead2 dde5b6 adc178 a98467 6c584c",
+  "mean_lum": 192.0
+ },
+ {
+  "id": 177,
+  "file": "bg_177_papercut.jpg",
+  "family": "papercut",
+  "seed": 3004,
+  "palette": "184e77 1e6091 1a759f 168aad 34a0a4",
+  "mean_lum": 89.6
+ },
+ {
+  "id": 178,
+  "file": "bg_178_papercut.jpg",
+  "family": "papercut",
+  "seed": 3005,
+  "palette": "212529 495057 ced4da f8f9fa e03131",
+  "mean_lum": 110.2
+ },
+ {
+  "id": 179,
+  "file": "bg_179_papercut.jpg",
+  "family": "papercut",
+  "seed": 3006,
+  "palette": "390099 9e0059 ff0054 ff5400 ffbd00",
+  "mean_lum": 94.5
+ },
+ {
+  "id": 180,
+  "file": "bg_180_papercut.jpg",
+  "family": "papercut",
+  "seed": 3007,
+  "palette": "f4f1de e07a5f 3d405b 81b29a f2cc8f",
+  "mean_lum": 165.2
+ },
+ {
+  "id": 181,
+  "file": "bg_181_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3100,
+  "palette": "fdf0d5 c6d8d3 d81e5b 331832 f0544f",
+  "mean_lum": 96.7
+ },
+ {
+  "id": 182,
+  "file": "bg_182_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3101,
+  "palette": "001219 005f73 0a9396 94d2bd e9d8a6",
+  "mean_lum": 102.0
+ },
+ {
+  "id": 183,
+  "file": "bg_183_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3102,
+  "palette": "a8dadc f1faee e63946 457b9d 1d3557",
+  "mean_lum": 126.1
+ },
+ {
+  "id": 184,
+  "file": "bg_184_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3103,
+  "palette": "eaf4f4 cce3de a4c3b2 6b9080 3a5a40",
+  "mean_lum": 112.6
+ },
+ {
+  "id": 185,
+  "file": "bg_185_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3104,
+  "palette": "0b3954 087e8b bfd7ea ff5a5f c81d25",
+  "mean_lum": 92.5
+ },
+ {
+  "id": 186,
+  "file": "bg_186_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3105,
+  "palette": "0d1b2a 1b263b 415a77 778da9 e0e1dd",
+  "mean_lum": 62.2
+ },
+ {
+  "id": 187,
+  "file": "bg_187_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3106,
+  "palette": "ef476f ffd166 06d6a0 118ab2 073b4c",
+  "mean_lum": 107.9
+ },
+ {
+  "id": 188,
+  "file": "bg_188_voronoi.jpg",
+  "family": "voronoi",
+  "seed": 3107,
+  "palette": "8ecae6 219ebc 023047 ffb703 fb8500",
+  "mean_lum": 98.8
+ },
+ {
+  "id": 189,
+  "file": "bg_189_moire.jpg",
+  "family": "moire",
+  "seed": 3200,
+  "palette": "10002b 240046 3c096c 5a189a 9d4edd",
+  "mean_lum": 49.7
+ },
+ {
+  "id": 190,
+  "file": "bg_190_moire.jpg",
+  "family": "moire",
+  "seed": 3201,
+  "palette": "233d4d fe7f2d fcca46 a1c181 619b8a",
+  "mean_lum": 141.6
+ },
+ {
+  "id": 191,
+  "file": "bg_191_moire.jpg",
+  "family": "moire",
+  "seed": 3202,
+  "palette": "f6bd60 f7ede2 f5cac3 84a59d f28482",
+  "mean_lum": 193.3
+ },
+ {
+  "id": 192,
+  "file": "bg_192_moire.jpg",
+  "family": "moire",
+  "seed": 3203,
+  "palette": "3a0ca3 4361ee 4cc9f0 f72585 fff3b0",
+  "mean_lum": 134.4
+ },
+ {
+  "id": 193,
+  "file": "bg_193_moire.jpg",
+  "family": "moire",
+  "seed": 3204,
+  "palette": "f72585 b5179e 7209b7 560bad 3a0ca3",
+  "mean_lum": 66.6
+ },
+ {
+  "id": 194,
+  "file": "bg_194_moire.jpg",
+  "family": "moire",
+  "seed": 3205,
+  "palette": "1b4332 2d6a4f 40916c 74c69d b7e4c7",
+  "mean_lum": 127.6
+ },
+ {
+  "id": 195,
+  "file": "bg_195_moire.jpg",
+  "family": "moire",
+  "seed": 3206,
+  "palette": "ff0a54 ff477e ff7096 ff85a1 fbb1bd",
+  "mean_lum": 149.3
+ },
+ {
+  "id": 196,
+  "file": "bg_196_moire.jpg",
+  "family": "moire",
+  "seed": 3207,
+  "palette": "ffe74c ff5964 ffffff 38a3a5 4b88a2",
+  "mean_lum": 176.3
+ },
+ {
+  "id": 197,
+  "file": "bg_197_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3300,
+  "palette": "06d6a0 1b9aaa ef476f ffc43d 2b2d42",
+  "mean_lum": 123.4
+ },
+ {
+  "id": 198,
+  "file": "bg_198_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3301,
+  "palette": "0081a7 00afb9 fdfcdc fed9b7 f07167",
+  "mean_lum": 135.0
+ },
+ {
+  "id": 199,
+  "file": "bg_199_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3302,
+  "palette": "f2e9e4 c9ada7 9a8c98 4a4e69 22223b",
+  "mean_lum": 97.8
+ },
+ {
+  "id": 200,
+  "file": "bg_200_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3303,
+  "palette": "2b2d42 8d99ae edf2f4 ef233c d90429",
+  "mean_lum": 91.3
+ },
+ {
+  "id": 201,
+  "file": "bg_201_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3304,
+  "palette": "cdb4db ffc8dd ffafcc bde0fe a2d2ff",
+  "mean_lum": 204.0
+ },
+ {
+  "id": 202,
+  "file": "bg_202_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3305,
+  "palette": "6d597a b56576 e56b6f eaac8b 355070",
+  "mean_lum": 112.2
+ },
+ {
+  "id": 203,
+  "file": "bg_203_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3306,
+  "palette": "f0ead2 dde5b6 adc178 a98467 6c584c",
+  "mean_lum": 138.8
+ },
+ {
+  "id": 204,
+  "file": "bg_204_mosaic.jpg",
+  "family": "mosaic",
+  "seed": 3307,
+  "palette": "184e77 1e6091 1a759f 168aad 34a0a4",
+  "mean_lum": 85.5
+ },
+ {
+  "id": 205,
+  "file": "bg_205_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3400,
+  "palette": "9b5de5 f15bb5 fee440 00bbf9 00f5d4",
+  "mean_lum": 166.1
+ },
+ {
+  "id": 206,
+  "file": "bg_206_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3401,
+  "palette": "001d3d 003566 ffc300 ffd60a ffffff",
+  "mean_lum": 205.9
+ },
+ {
+  "id": 207,
+  "file": "bg_207_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3402,
+  "palette": "ffbe0b fb5607 ff006e 8338ec 3a86ff",
+  "mean_lum": 140.9
+ },
+ {
+  "id": 208,
+  "file": "bg_208_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3403,
+  "palette": "fdf0d5 c6d8d3 d81e5b 331832 f0544f",
+  "mean_lum": 128.7
+ },
+ {
+  "id": 209,
+  "file": "bg_209_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3404,
+  "palette": "001219 005f73 0a9396 94d2bd e9d8a6",
+  "mean_lum": 68.8
+ },
+ {
+  "id": 210,
+  "file": "bg_210_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3405,
+  "palette": "a8dadc f1faee e63946 457b9d 1d3557",
+  "mean_lum": 137.0
+ },
+ {
+  "id": 211,
+  "file": "bg_211_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3406,
+  "palette": "eaf4f4 cce3de a4c3b2 6b9080 3a5a40",
+  "mean_lum": 130.5
+ },
+ {
+  "id": 212,
+  "file": "bg_212_graingrad.jpg",
+  "family": "graingrad",
+  "seed": 3407,
+  "palette": "0b3954 087e8b bfd7ea ff5a5f c81d25",
+  "mean_lum": 87.8
+ },
+ {
+  "id": 213,
+  "file": "bg_213_spots.jpg",
+  "family": "spots",
+  "seed": 3500,
+  "palette": "ffd6ff e7c6ff c8b6ff b8c0ff bbd0ff",
+  "mean_lum": 207.8
+ },
+ {
+  "id": 214,
+  "file": "bg_214_spots.jpg",
+  "family": "spots",
+  "seed": 3501,
+  "palette": "0b132b 1c2541 3a506b 5bc0be 6fffe9",
+  "mean_lum": 179.1
+ },
+ {
+  "id": 215,
+  "file": "bg_215_spots.jpg",
+  "family": "spots",
+  "seed": 3502,
+  "palette": "ff595e ffca3a 8ac926 1982c4 6a4c93",
+  "mean_lum": 141.1
+ },
+ {
+  "id": 216,
+  "file": "bg_216_spots.jpg",
+  "family": "spots",
+  "seed": 3503,
+  "palette": "10002b 240046 3c096c 5a189a 9d4edd",
+  "mean_lum": 59.6
+ },
+ {
+  "id": 217,
+  "file": "bg_217_spots.jpg",
+  "family": "spots",
+  "seed": 3504,
+  "palette": "233d4d fe7f2d fcca46 a1c181 619b8a",
+  "mean_lum": 142.6
+ },
+ {
+  "id": 218,
+  "file": "bg_218_spots.jpg",
+  "family": "spots",
+  "seed": 3505,
+  "palette": "f6bd60 f7ede2 f5cac3 84a59d f28482",
+  "mean_lum": 202.9
+ },
+ {
+  "id": 219,
+  "file": "bg_219_spots.jpg",
+  "family": "spots",
+  "seed": 3506,
+  "palette": "3a0ca3 4361ee 4cc9f0 f72585 fff3b0",
+  "mean_lum": 173.8
+ },
+ {
+  "id": 220,
+  "file": "bg_220_spots.jpg",
+  "family": "spots",
+  "seed": 3507,
+  "palette": "f72585 b5179e 7209b7 560bad 3a0ca3",
+  "mean_lum": 74.6
+ },
+ {
+  "id": 221,
+  "file": "bg_221_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3600,
+  "palette": "ff6d00 ff9e00 240046 5a189a 9d4edd",
+  "mean_lum": 56.9
+ },
+ {
+  "id": 222,
+  "file": "bg_222_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3601,
+  "palette": "010101 1a1a1a d4af37 f6e27a 8a6d1d",
+  "mean_lum": 188.8
+ },
+ {
+  "id": 223,
+  "file": "bg_223_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3602,
+  "palette": "0a0908 22333b eae0d5 c6ac8f 5e503f",
+  "mean_lum": 145.4
+ },
+ {
+  "id": 224,
+  "file": "bg_224_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3603,
+  "palette": "06d6a0 1b9aaa ef476f ffc43d 2b2d42",
+  "mean_lum": 111.6
+ },
+ {
+  "id": 225,
+  "file": "bg_225_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3604,
+  "palette": "0081a7 00afb9 fdfcdc fed9b7 f07167",
+  "mean_lum": 126.3
+ },
+ {
+  "id": 226,
+  "file": "bg_226_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3605,
+  "palette": "f2e9e4 c9ada7 9a8c98 4a4e69 22223b",
+  "mean_lum": 148.1
+ },
+ {
+  "id": 227,
+  "file": "bg_227_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3606,
+  "palette": "2b2d42 8d99ae edf2f4 ef233c d90429",
+  "mean_lum": 70.9
+ },
+ {
+  "id": 228,
+  "file": "bg_228_blueprint.jpg",
+  "family": "blueprint",
+  "seed": 3607,
+  "palette": "cdb4db ffc8dd ffafcc bde0fe a2d2ff",
+  "mean_lum": 221.0
+ },
+ {
+  "id": 229,
+  "file": "bg_229_lattice.jpg",
+  "family": "lattice",
+  "seed": 3700,
+  "palette": "ff9f1c ffbf69 ffffff cbf3f0 2ec4b6",
+  "mean_lum": 196.4
+ },
+ {
+  "id": 230,
+  "file": "bg_230_lattice.jpg",
+  "family": "lattice",
+  "seed": 3701,
+  "palette": "2d00f7 8900f5 e500a4 ff0069 ff8500",
+  "mean_lum": 71.0
+ },
+ {
+  "id": 231,
+  "file": "bg_231_lattice.jpg",
+  "family": "lattice",
+  "seed": 3702,
+  "palette": "ffffff 000000 ff0000 ffff00 0000ff",
+  "mean_lum": 76.7
+ },
+ {
+  "id": 232,
+  "file": "bg_232_lattice.jpg",
+  "family": "lattice",
+  "seed": 3703,
+  "palette": "9b5de5 f15bb5 fee440 00bbf9 00f5d4",
+  "mean_lum": 139.2
+ },
+ {
+  "id": 233,
+  "file": "bg_233_lattice.jpg",
+  "family": "lattice",
+  "seed": 3704,
+  "palette": "001d3d 003566 ffc300 ffd60a ffffff",
+  "mean_lum": 115.3
+ },
+ {
+  "id": 234,
+  "file": "bg_234_lattice.jpg",
+  "family": "lattice",
+  "seed": 3705,
+  "palette": "ffbe0b fb5607 ff006e 8338ec 3a86ff",
+  "mean_lum": 103.4
+ },
+ {
+  "id": 235,
+  "file": "bg_235_lattice.jpg",
+  "family": "lattice",
+  "seed": 3706,
+  "palette": "fdf0d5 c6d8d3 d81e5b 331832 f0544f",
+  "mean_lum": 134.5
+ },
+ {
+  "id": 236,
+  "file": "bg_236_lattice.jpg",
+  "family": "lattice",
+  "seed": 3707,
+  "palette": "001219 005f73 0a9396 94d2bd e9d8a6",
+  "mean_lum": 107.7
+ },
+ {
+  "id": 237,
+  "file": "bg_237_liquid.jpg",
+  "family": "liquid",
+  "seed": 3800,
+  "palette": "7400b8 6930c3 5e60ce 4ea8de 48bfe3",
+  "mean_lum": 110.0
+ },
+ {
+  "id": 238,
+  "file": "bg_238_liquid.jpg",
+  "family": "liquid",
+  "seed": 3801,
+  "palette": "132a13 31572c 4f772d 90a955 ecf39e",
+  "mean_lum": 115.0
+ },
+ {
+  "id": 239,
+  "file": "bg_239_liquid.jpg",
+  "family": "liquid",
+  "seed": 3802,
+  "palette": "2e1f27 854d27 dd7230 f4c95d e7e393",
+  "mean_lum": 136.0
+ },
+ {
+  "id": 240,
+  "file": "bg_240_liquid.jpg",
+  "family": "liquid",
+  "seed": 3803,
+  "palette": "ffd6ff e7c6ff c8b6ff b8c0ff bbd0ff",
+  "mean_lum": 205.3
+ },
+ {
+  "id": 241,
+  "file": "bg_241_liquid.jpg",
+  "family": "liquid",
+  "seed": 3804,
+  "palette": "0b132b 1c2541 3a506b 5bc0be 6fffe9",
+  "mean_lum": 101.2
+ },
+ {
+  "id": 242,
+  "file": "bg_242_liquid.jpg",
+  "family": "liquid",
+  "seed": 3805,
+  "palette": "ff595e ffca3a 8ac926 1982c4 6a4c93",
+  "mean_lum": 138.2
+ },
+ {
+  "id": 243,
+  "file": "bg_243_liquid.jpg",
+  "family": "liquid",
+  "seed": 3806,
+  "palette": "10002b 240046 3c096c 5a189a 9d4edd",
+  "mean_lum": 49.8
+ },
+ {
+  "id": 244,
+  "file": "bg_244_liquid.jpg",
+  "family": "liquid",
+  "seed": 3807,
+  "palette": "233d4d fe7f2d fcca46 a1c181 619b8a",
+  "mean_lum": 146.4
+ },
+ {
+  "id": 245,
+  "file": "bg_245_neon.jpg",
+  "family": "neon",
+  "seed": 3900,
+  "palette": "e0fbfc c2dfe3 9db4c0 5c6b73 253237",
+  "mean_lum": 73.4
+ },
+ {
+  "id": 246,
+  "file": "bg_246_neon.jpg",
+  "family": "neon",
+  "seed": 3901,
+  "palette": "4a0e4e 81007f c200fb ec0868 fc2f00",
+  "mean_lum": 48.5
+ },
+ {
+  "id": 247,
+  "file": "bg_247_neon.jpg",
+  "family": "neon",
+  "seed": 3902,
+  "palette": "fcf6bd d0f4de a9def9 e4c1f9 ff99c8",
+  "mean_lum": 95.9
+ },
+ {
+  "id": 248,
+  "file": "bg_248_neon.jpg",
+  "family": "neon",
+  "seed": 3903,
+  "palette": "ff6d00 ff9e00 240046 5a189a 9d4edd",
+  "mean_lum": 55.6
+ },
+ {
+  "id": 249,
+  "file": "bg_249_neon.jpg",
+  "family": "neon",
+  "seed": 3904,
+  "palette": "010101 1a1a1a d4af37 f6e27a 8a6d1d",
+  "mean_lum": 57.0
+ },
+ {
+  "id": 250,
+  "file": "bg_250_neon.jpg",
+  "family": "neon",
+  "seed": 3905,
+  "palette": "0a0908 22333b eae0d5 c6ac8f 5e503f",
+  "mean_lum": 85.1
+ },
+ {
+  "id": 251,
+  "file": "bg_251_neon.jpg",
+  "family": "neon",
+  "seed": 3906,
+  "palette": "06d6a0 1b9aaa ef476f ffc43d 2b2d42",
+  "mean_lum": 66.7
+ },
+ {
+  "id": 252,
+  "file": "bg_252_neon.jpg",
+  "family": "neon",
+  "seed": 3907,
+  "palette": "0081a7 00afb9 fdfcdc fed9b7 f07167",
+  "mean_lum": 94.0
+ },
+ {
+  "id": 253,
+  "file": "bg_253_ripples.jpg",
+  "family": "ripples",
+  "seed": 4000,
+  "palette": "3d5a80 98c1d9 e0fbfc ee6c4d 293241",
+  "mean_lum": 111.4
+ },
+ {
+  "id": 254,
+  "file": "bg_254_ripples.jpg",
+  "family": "ripples",
+  "seed": 4001,
+  "palette": "ff4d6d c9184a 800f2f 590d22 fff0f3",
+  "mean_lum": 66.5
+ },
+ {
+  "id": 255,
+  "file": "bg_255_ripples.jpg",
+  "family": "ripples",
+  "seed": 4002,
+  "palette": "ffb5a7 fcd5ce f8edeb f9e5d8 f9dcc4",
+  "mean_lum": 218.7
+ },
+ {
+  "id": 256,
+  "file": "bg_256_ripples.jpg",
+  "family": "ripples",
+  "seed": 4003,
+  "palette": "ff9f1c ffbf69 ffffff cbf3f0 2ec4b6",
+  "mean_lum": 181.4
+ },
+ {
+  "id": 257,
+  "file": "bg_257_ripples.jpg",
+  "family": "ripples",
+  "seed": 4004,
+  "palette": "2d00f7 8900f5 e500a4 ff0069 ff8500",
+  "mean_lum": 76.3
+ },
+ {
+  "id": 258,
+  "file": "bg_258_ripples.jpg",
+  "family": "ripples",
+  "seed": 4005,
+  "palette": "ffffff 000000 ff0000 ffff00 0000ff",
+  "mean_lum": 53.2
+ },
+ {
+  "id": 259,
+  "file": "bg_259_ripples.jpg",
+  "family": "ripples",
+  "seed": 4006,
+  "palette": "9b5de5 f15bb5 fee440 00bbf9 00f5d4",
+  "mean_lum": 138.3
+ },
+ {
+  "id": 260,
+  "file": "bg_260_ripples.jpg",
+  "family": "ripples",
+  "seed": 4007,
+  "palette": "001d3d 003566 ffc300 ffd60a ffffff",
+  "mean_lum": 113.6
+ },
+ {
+  "id": 261,
+  "file": "bg_261_fabric.jpg",
+  "family": "fabric",
+  "seed": 4100,
+  "palette": "11001c 220135 32013f 4d0f6b ff2e63",
+  "mean_lum": 45.1
+ },
+ {
+  "id": 262,
+  "file": "bg_262_fabric.jpg",
+  "family": "fabric",
+  "seed": 4101,
+  "palette": "7f5539 9c6644 b08968 ddb892 e6ccb2",
+  "mean_lum": 117.6
+ },
+ {
+  "id": 263,
+  "file": "bg_263_fabric.jpg",
+  "family": "fabric",
+  "seed": 4102,
+  "palette": "ffcdb2 ffb4a2 e5989b b5838d 6d6875",
+  "mean_lum": 152.1
+ },
+ {
+  "id": 264,
+  "file": "bg_264_fabric.jpg",
+  "family": "fabric",
+  "seed": 4103,
+  "palette": "7400b8 6930c3 5e60ce 4ea8de 48bfe3",
+  "mean_lum": 77.7
+ },
+ {
+  "id": 265,
+  "file": "bg_265_fabric.jpg",
+  "family": "fabric",
+  "seed": 4104,
+  "palette": "132a13 31572c 4f772d 90a955 ecf39e",
+  "mean_lum": 91.4
+ },
+ {
+  "id": 266,
+  "file": "bg_266_fabric.jpg",
+  "family": "fabric",
+  "seed": 4105,
+  "palette": "2e1f27 854d27 dd7230 f4c95d e7e393",
+  "mean_lum": 93.6
+ },
+ {
+  "id": 267,
+  "file": "bg_267_fabric.jpg",
+  "family": "fabric",
+  "seed": 4106,
+  "palette": "ffd6ff e7c6ff c8b6ff b8c0ff bbd0ff",
+  "mean_lum": 161.3
+ },
+ {
+  "id": 268,
+  "file": "bg_268_fabric.jpg",
+  "family": "fabric",
+  "seed": 4107,
+  "palette": "0b132b 1c2541 3a506b 5bc0be 6fffe9",
+  "mean_lum": 120.7
+ },
+ {
+  "id": 269,
+  "file": "bg_269_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4200,
+  "palette": "00f5d4 00bbf9 9b5de5 f15bb5 fee440",
+  "mean_lum": 158.1
+ },
+ {
+  "id": 270,
+  "file": "bg_270_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4201,
+  "palette": "606c38 283618 fefae0 dda15e bc6c25",
+  "mean_lum": 136.9
+ },
+ {
+  "id": 271,
+  "file": "bg_271_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4202,
+  "palette": "003049 d62828 f77f00 fcbf49 eae2b7",
+  "mean_lum": 133.5
+ },
+ {
+  "id": 272,
+  "file": "bg_272_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4203,
+  "palette": "e0fbfc c2dfe3 9db4c0 5c6b73 253237",
+  "mean_lum": 154.4
+ },
+ {
+  "id": 273,
+  "file": "bg_273_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4204,
+  "palette": "4a0e4e 81007f c200fb ec0868 fc2f00",
+  "mean_lum": 72.7
+ },
+ {
+  "id": 274,
+  "file": "bg_274_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4205,
+  "palette": "fcf6bd d0f4de a9def9 e4c1f9 ff99c8",
+  "mean_lum": 215.0
+ },
+ {
+  "id": 275,
+  "file": "bg_275_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4206,
+  "palette": "ff6d00 ff9e00 240046 5a189a 9d4edd",
+  "mean_lum": 100.6
+ },
+ {
+  "id": 276,
+  "file": "bg_276_zigzag.jpg",
+  "family": "zigzag",
+  "seed": 4207,
+  "palette": "010101 1a1a1a d4af37 f6e27a 8a6d1d",
+  "mean_lum": 104.7
+ },
+ {
+  "id": 277,
+  "file": "bg_277_popart.jpg",
+  "family": "popart",
+  "seed": 4300,
+  "palette": "03045e 0077b6 00b4d8 90e0ef caf0f8",
+  "mean_lum": 169.6
+ },
+ {
+  "id": 278,
+  "file": "bg_278_popart.jpg",
+  "family": "popart",
+  "seed": 4301,
+  "palette": "5f0f40 9a031e fb8b24 e36414 0f4c5c",
+  "mean_lum": 110.5
+ },
+ {
+  "id": 279,
+  "file": "bg_279_popart.jpg",
+  "family": "popart",
+  "seed": 4302,
+  "palette": "ff7b00 ff8800 ffa200 ffb700 ffd000",
+  "mean_lum": 177.6
+ },
+ {
+  "id": 280,
+  "file": "bg_280_popart.jpg",
+  "family": "popart",
+  "seed": 4303,
+  "palette": "3d5a80 98c1d9 e0fbfc ee6c4d 293241",
+  "mean_lum": 165.7
+ },
+ {
+  "id": 281,
+  "file": "bg_281_popart.jpg",
+  "family": "popart",
+  "seed": 4304,
+  "palette": "ff4d6d c9184a 800f2f 590d22 fff0f3",
+  "mean_lum": 137.8
+ },
+ {
+  "id": 282,
+  "file": "bg_282_popart.jpg",
+  "family": "popart",
+  "seed": 4305,
+  "palette": "ffb5a7 fcd5ce f8edeb f9e5d8 f9dcc4",
+  "mean_lum": 231.4
+ },
+ {
+  "id": 283,
+  "file": "bg_283_popart.jpg",
+  "family": "popart",
+  "seed": 4306,
+  "palette": "ff9f1c ffbf69 ffffff cbf3f0 2ec4b6",
+  "mean_lum": 216.0
+ },
+ {
+  "id": 284,
+  "file": "bg_284_popart.jpg",
+  "family": "popart",
+  "seed": 4307,
+  "palette": "2d00f7 8900f5 e500a4 ff0069 ff8500",
+  "mean_lum": 102.1
+ },
+ {
+  "id": 285,
+  "file": "bg_285_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4400,
+  "palette": "e63946 f1faee a8dadc 457b9d 1d3557",
+  "mean_lum": 142.1
+ },
+ {
+  "id": 286,
+  "file": "bg_286_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4401,
+  "palette": "fefae0 faedcd e9edc9 ccd5ae d4a373",
+  "mean_lum": 223.8
+ },
+ {
+  "id": 287,
+  "file": "bg_287_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4402,
+  "palette": "0f0e17 ff8906 f25f4c e53170 a7a9be",
+  "mean_lum": 121.9
+ },
+ {
+  "id": 288,
+  "file": "bg_288_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4403,
+  "palette": "11001c 220135 32013f 4d0f6b ff2e63",
+  "mean_lum": 49.0
+ },
+ {
+  "id": 289,
+  "file": "bg_289_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4404,
+  "palette": "7f5539 9c6644 b08968 ddb892 e6ccb2",
+  "mean_lum": 149.8
+ },
+ {
+  "id": 290,
+  "file": "bg_290_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4405,
+  "palette": "ffcdb2 ffb4a2 e5989b b5838d 6d6875",
+  "mean_lum": 169.9
+ },
+ {
+  "id": 291,
+  "file": "bg_291_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4406,
+  "palette": "7400b8 6930c3 5e60ce 4ea8de 48bfe3",
+  "mean_lum": 110.3
+ },
+ {
+  "id": 292,
+  "file": "bg_292_lowpoly.jpg",
+  "family": "lowpoly",
+  "seed": 4407,
+  "palette": "132a13 31572c 4f772d 90a955 ecf39e",
+  "mean_lum": 112.1
+ },
+ {
+  "id": 293,
+  "file": "bg_293_argyle.jpg",
+  "family": "argyle",
+  "seed": 4500,
+  "palette": "f94144 f3722c f8961e f9c74f 90be6d",
+  "mean_lum": 134.7
+ },
+ {
+  "id": 294,
+  "file": "bg_294_argyle.jpg",
+  "family": "argyle",
+  "seed": 4501,
+  "palette": "d8e2dc ffe5d9 ffcad4 f4acb7 9d8189",
+  "mean_lum": 181.0
+ },
+ {
+  "id": 295,
+  "file": "bg_295_argyle.jpg",
+  "family": "argyle",
+  "seed": 4502,
+  "palette": "231942 5e548e 9f86c0 be95c4 e0b1cb",
+  "mean_lum": 96.0
+ },
+ {
+  "id": 296,
+  "file": "bg_296_argyle.jpg",
+  "family": "argyle",
+  "seed": 4503,
+  "palette": "00f5d4 00bbf9 9b5de5 f15bb5 fee440",
+  "mean_lum": 164.3
+ },
+ {
+  "id": 297,
+  "file": "bg_297_argyle.jpg",
+  "family": "argyle",
+  "seed": 4504,
+  "palette": "606c38 283618 fefae0 dda15e bc6c25",
+  "mean_lum": 97.5
+ },
+ {
+  "id": 298,
+  "file": "bg_298_argyle.jpg",
+  "family": "argyle",
+  "seed": 4505,
+  "palette": "003049 d62828 f77f00 fcbf49 eae2b7",
+  "mean_lum": 134.8
+ },
+ {
+  "id": 299,
+  "file": "bg_299_argyle.jpg",
+  "family": "argyle",
+  "seed": 4506,
+  "palette": "e0fbfc c2dfe3 9db4c0 5c6b73 253237",
+  "mean_lum": 148.4
+ },
+ {
+  "id": 300,
+  "file": "bg_300_argyle.jpg",
+  "family": "argyle",
+  "seed": 4507,
+  "palette": "4a0e4e 81007f c200fb ec0868 fc2f00",
+  "mean_lum": 56.7
+ }
+]
