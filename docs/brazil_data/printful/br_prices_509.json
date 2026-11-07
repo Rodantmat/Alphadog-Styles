@@ -1,0 +1,386 @@
+{
+ "status": 200,
+ "body": {
+  "data": {
+   "currency": "USD",
+   "product": {
+    "id": 509,
+    "placements": [
+     {
+      "id": "front",
+      "title": "Front print",
+      "type": "DTG printing",
+      "technique_key": "dtg",
+      "placement_options": [],
+      "price": "6.75",
+      "discounted_price": "6.75",
+      "layers": [
+       {
+        "type": "file",
+        "additional_price": "0.00",
+        "layer_options": []
+       }
+      ]
+     },
+     {
+      "id": "back",
+      "title": "Back print",
+      "type": "DTG printing",
+      "technique_key": "dtg",
+      "placement_options": [],
+      "price": "6.75",
+      "discounted_price": "6.75",
+      "layers": [
+       {
+        "type": "file",
+        "additional_price": "0.00",
+        "layer_options": []
+       }
+      ]
+     },
+     {
+      "id": "label_outside",
+      "title": "Outside label",
+      "type": "DTG printing",
+      "technique_key": "dtg",
+      "placement_options": [],
+      "price": "2.75",
+      "discounted_price": "2.75",
+      "layers": [
+       {
+        "type": "file",
+        "additional_price": "0.00",
+        "layer_options": []
+       }
+      ]
+     },
+     {
+      "id": "label_inside",
+      "title": "Inside label",
+      "type": "DTG printing",
+      "technique_key": "dtg",
+      "placement_options": [
+       {
+        "name": "inside_label_type",
+        "type": "string",
+        "values": [
+         "native",
+         "custom"
+        ],
+        "description": "Type of inside label"
+       }
+      ],
+      "price": "2.75",
+      "discounted_price": "2.75",
+      "layers": [
+       {
+        "type": "file",
+        "additional_price": "0.00",
+        "layer_options": []
+       }
+      ]
+     },
+     {
+      "id": "sleeve_left",
+      "title": "Left sleeve",
+      "type": "DTG printing",
+      "technique_key": "dtg",
+      "placement_options": [],
+      "price": "2.75",
+      "discounted_price": "2.75",
+      "layers": [
+       {
+        "type": "file",
+        "additional_price": "0.00",
+        "layer_options": []
+       }
+      ]
+     },
+     {
+      "id": "sleeve_right",
+      "title": "Right sleeve",
+      "type": "DTG printing",
+      "technique_key": "dtg",
+      "placement_options": [],
+      "price": "2.75",
+      "discounted_price": "2.75",
+      "layers": [
+       {
+        "type": "file",
+        "additional_price": "0.00",
+        "layer_options": []
+       }
+      ]
+     }
+    ]
+   },
+   "variants": [
+    {
+     "id": 12804,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12805,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12806,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12807,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12808,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12809,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12810,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12811,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12812,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12813,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12814,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12815,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12816,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12817,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12818,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12819,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12820,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12821,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12822,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    },
+    {
+     "id": 12823,
+     "techniques": [
+      {
+       "technique_key": "dtg",
+       "technique_display_name": "DTG printing",
+       "price": "10.95",
+       "discounted_price": "10.95"
+      }
+     ]
+    }
+   ],
+   "discount_tiers": [
+    {
+     "quantity": 25,
+     "bulk_discount_percentage": 0.05
+    },
+    {
+     "quantity": 50,
+     "bulk_discount_percentage": 0.07
+    },
+    {
+     "quantity": 75,
+     "bulk_discount_percentage": 0.08
+    },
+    {
+     "quantity": 100,
+     "bulk_discount_percentage": 0.1
+    },
+    {
+     "quantity": 200,
+     "bulk_discount_percentage": 0.13
+    }
+   ]
+  },
+  "extra": [],
+  "paging": {
+   "total": 45,
+   "limit": 20,
+   "offset": 0
+  },
+  "_links": {
+   "self": {
+    "href": "https://api.printful.com/v2/catalog-products/509/prices?selling_region_name=brazil&limit=20"
+   },
+   "next": {
+    "href": "https://api.printful.com/v2/catalog-products/509/prices?selling_region_name=brazil&limit=20&offset=20"
+   },
+   "first": {
+    "href": "https://api.printful.com/v2/catalog-products/509/prices?selling_region_name=brazil&limit=20"
+   },
+   "last": {
+    "href": "https://api.printful.com/v2/catalog-products/509/prices?selling_region_name=brazil&limit=20&offset=40"
+   },
+   "product_details": {
+    "href": "https://api.printful.com/v2/catalog-products/509"
+   }
+  }
+ }
+}

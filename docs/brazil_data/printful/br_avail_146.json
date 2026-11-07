@@ -1,0 +1,845 @@
+{
+ "status": 200,
+ "body": {
+  "data": [
+   {
+    "catalog_variant_id": 20556,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20556"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 20559,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20559"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 20562,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20562"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 20565,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20565"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 20550,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20550"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 20547,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20547"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 20544,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20544"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 20553,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/20553"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5534,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5534"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5535,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5535"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5536,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5536"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5537,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5537"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5532,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5532"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5531,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5531"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5530,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": false
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5530"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5533,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5533"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 21639,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/21639"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 21640,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/21640"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 21641,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/21641"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 21642,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "not fulfillable",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/21642"
+     }
+    }
+   }
+  ],
+  "extra": [],
+  "paging": {
+   "total": 192,
+   "limit": 20,
+   "offset": 0
+  },
+  "_links": {
+   "self": {
+    "href": "https://api.printful.com/v2/catalog-products/146/availability?selling_region_name=brazil&limit=20"
+   },
+   "next": {
+    "href": "https://api.printful.com/v2/catalog-products/146/availability?selling_region_name=brazil&limit=20&offset=20"
+   },
+   "first": {
+    "href": "https://api.printful.com/v2/catalog-products/146/availability?selling_region_name=brazil&limit=20"
+   },
+   "last": {
+    "href": "https://api.printful.com/v2/catalog-products/146/availability?selling_region_name=brazil&limit=20&offset=180"
+   },
+   "product": {
+    "href": "https://api.printful.com/v2/catalog-products/146"
+   }
+  },
+  "filter_settings": [
+   {
+    "name": "id",
+    "value": "146"
+   },
+   {
+    "name": "selling_region_name",
+    "value": "brazil"
+   }
+  ]
+ }
+}

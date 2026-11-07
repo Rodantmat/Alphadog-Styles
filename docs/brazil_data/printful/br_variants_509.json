@@ -1,0 +1,10 @@
+{
+ "status": 404,
+ "body": {
+  "data": "Product 509 is not available in the selected selling region.",
+  "error": {
+   "reason": "NotFound",
+   "message": "Product 509 is not available in the selected selling region."
+  }
+ }
+}

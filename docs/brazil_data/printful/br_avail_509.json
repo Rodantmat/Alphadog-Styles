@@ -1,0 +1,440 @@
+{
+ "status": 200,
+ "body": {
+  "data": [
+   {
+    "catalog_variant_id": 12816,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12816"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12817,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12817"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12815,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12815"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12814,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12814"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12818,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12818"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12821,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12821"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12822,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12822"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12820,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12820"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12819,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12819"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12823,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12823"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12826,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12826"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12827,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12827"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12825,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12825"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12824,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12824"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12828,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12828"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12831,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12831"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12832,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12832"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12830,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12830"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12829,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12829"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 12833,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "brazil",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/12833"
+     }
+    }
+   }
+  ],
+  "extra": [],
+  "paging": {
+   "total": 45,
+   "limit": 20,
+   "offset": 0
+  },
+  "_links": {
+   "self": {
+    "href": "https://api.printful.com/v2/catalog-products/509/availability?selling_region_name=brazil&limit=20"
+   },
+   "next": {
+    "href": "https://api.printful.com/v2/catalog-products/509/availability?selling_region_name=brazil&limit=20&offset=20"
+   },
+   "first": {
+    "href": "https://api.printful.com/v2/catalog-products/509/availability?selling_region_name=brazil&limit=20"
+   },
+   "last": {
+    "href": "https://api.printful.com/v2/catalog-products/509/availability?selling_region_name=brazil&limit=20&offset=40"
+   },
+   "product": {
+    "href": "https://api.printful.com/v2/catalog-products/509"
+   }
+  },
+  "filter_settings": [
+   {
+    "name": "id",
+    "value": "509"
+   },
+   {
+    "name": "selling_region_name",
+    "value": "brazil"
+   }
+  ]
+ }
+}

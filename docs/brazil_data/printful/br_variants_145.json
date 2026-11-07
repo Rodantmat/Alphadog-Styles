@@ -1,0 +1,3310 @@
+{
+ "status": 200,
+ "body": {
+  "data": [
+   {
+    "id": 18759,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / 2XL)",
+    "size": "2XL",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18759"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18759/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18759/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18759/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 18760,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / 3XL)",
+    "size": "3XL",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18760"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18760/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18760/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18760/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 18761,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / 4XL)",
+    "size": "4XL",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18761"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18761/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18761/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18761/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 18762,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / 5XL)",
+    "size": "5XL",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18762"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18762/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18762/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18762/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 18757,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / L)",
+    "size": "L",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18757"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18757/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18757/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18757/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 18756,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / M)",
+    "size": "M",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18756"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18756/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18756/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18756/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 18755,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / S)",
+    "size": "S",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18755"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18755/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18755/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18755/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 18758,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Ash / XL)",
+    "size": "XL",
+    "color": "Ash",
+    "color_code": "#ededed",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/18755_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/18758"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/18758/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/18758/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/18758/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5438,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / 2XL)",
+    "size": "2XL",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5438"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5438/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5438/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5438/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5439,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / 3XL)",
+    "size": "3XL",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5439"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5439/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5439/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5439/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5440,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / 4XL)",
+    "size": "4XL",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5440"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5440/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5440/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5440/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5441,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / 5XL)",
+    "size": "5XL",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5441"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5441/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5441/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5441/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5436,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / L)",
+    "size": "L",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5436"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5436/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5436/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5436/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5435,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / M)",
+    "size": "M",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5435"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5435/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5435/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5435/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5434,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / S)",
+    "size": "S",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5434"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5434/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5434/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5434/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 5437,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Black / XL)",
+    "size": "XL",
+    "color": "Black",
+    "color_code": "#0b0b0b",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/5434_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/5437"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/5437/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/5437/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/5437/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 20598,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Carolina Blue / 2XL)",
+    "size": "2XL",
+    "color": "Carolina Blue",
+    "color_code": "#8DB7F6",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/20594_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/20598"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/20598/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/20598/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/20598/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 20599,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Carolina Blue / 3XL)",
+    "size": "3XL",
+    "color": "Carolina Blue",
+    "color_code": "#8DB7F6",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/20594_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/20599"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/20599/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/20599/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/20599/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 20596,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Carolina Blue / L)",
+    "size": "L",
+    "color": "Carolina Blue",
+    "color_code": "#8DB7F6",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/20594_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/20596"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/20596/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/20596/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/20596/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   },
+   {
+    "id": 20595,
+    "catalog_product_id": 145,
+    "name": "Gildan 18000 Unisex Heavy Blend Crewneck Sweatshirt (Carolina Blue / M)",
+    "size": "M",
+    "color": "Carolina Blue",
+    "color_code": "#8DB7F6",
+    "color_code2": null,
+    "image": "https://files.cdn.printful.com/products/145/20594_1793786394.jpg",
+    "_links": {
+     "self": {
+      "href": "https://api.printful.com/v2/catalog-variants/20595"
+     },
+     "product_details": {
+      "href": "https://api.printful.com/v2/catalog-products/145"
+     },
+     "product_variants": {
+      "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants"
+     },
+     "variant_prices": {
+      "href": "https://api.printful.com/v2/catalog-variants/20595/prices"
+     },
+     "variant_images": {
+      "href": "https://api.printful.com/v2/catalog-variants/20595/images"
+     },
+     "variant_availability": {
+      "href": "https://api.printful.com/v2/catalog-variants/20595/availability"
+     }
+    },
+    "placement_dimensions": [
+     {
+      "placement": "front",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_left",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_left",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "sleeve_right",
+      "height": 12.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_chest_center",
+      "height": 4.0,
+      "width": 4.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_outside",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_large_center",
+      "height": 6.0,
+      "width": 10.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 1.13,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "label_inside_dtf",
+      "height": 3.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_left",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_wrist_right",
+      "height": 3.0,
+      "width": 2.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "front_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_dtf",
+      "height": 16.0,
+      "width": 12.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_left_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "long_sleeve_right_dtf",
+      "height": 14.0,
+      "width": 3.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "back_large",
+      "height": 18.0,
+      "width": 15.0,
+      "orientation": "any"
+     },
+     {
+      "placement": "embroidery_neckline",
+      "height": 2.0,
+      "width": 4.0,
+      "orientation": "any"
+     }
+    ]
+   }
+  ],
+  "extra": [],
+  "paging": {
+   "total": 177,
+   "limit": 20,
+   "offset": 0
+  },
+  "_links": {
+   "self": {
+    "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants?limit=20"
+   },
+   "next": {
+    "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants?limit=20&offset=20"
+   },
+   "first": {
+    "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants?limit=20"
+   },
+   "last": {
+    "href": "https://api.printful.com/v2/catalog-products/145/catalog-variants?limit=20&offset=160"
+   },
+   "product_details": {
+    "href": "https://api.printful.com/v2/catalog-products/145"
+   }
+  }
+ }
+}
