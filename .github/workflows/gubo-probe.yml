@@ -1,0 +1,31 @@
+name: gubo-probe
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "basic"
+        required: true
+        default: basic
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GUBO_API_KEY: ${{ secrets.GUBO_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install requests
+      - run: python scripts/brazil/gubo_probe.py
+        continue-on-error: true
+      - name: Commit results
+        run: |
+          git config user.name "gubo-probe"
+          git config user.email "probe@users.noreply.github.com"
+          git add docs/brazil_data/gubo
+          git commit -m "gubo probe data" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 3; done
