@@ -49,3 +49,41 @@ Phase 1: Mercado Livre listings (ML API) + queue-first webhook receiver on Cloud
 Phase 2: own store (Nuvemshop API or our worker with Asaas/Mercado Pago Pix) + Shopee/Amazon BR; TikTok Shop after MEI.
 Phase 3: pt-BR social (Buffer: Instagram, TikTok, Facebook, Pinterest; Kwai U), breed set per section 4, calendar campaigns (Black Friday Nov 27 is too soon; target Dia das Maes 10 May 2027 and Dia do Vira-Lata 31 Jul).
 Colombia later: Mercado Libre CO (8M+ users, 73k sellers V), POD provider U.
+
+---
+# Update Nov 7 (Phase 0 research round 2). Sources: 4 research agents. ML and Dimona official pages were unreadable from the sandbox (proxy/robots/CAPTCHA); ML fee numbers below are SECONDARY (blogs, Oct 2026) unless marked.
+
+## A. ML <-> producer link (what is known)
+V (ML dev docs): shipping modes drop_off / xd_drop_off / cross_docking / self_service(Flex) / fulfillment; GET /shipment_labels (pdf|zpl2) only once shipment is ready_to_ship; MANUFACTURING_TIME max 45 days (category support must be checked via /categories/{id}/sale_terms; not for Flex/Full items); GET /orders/{id}/billing_info gives buyer CPF/CNPJ; POST /packs/{id}/fiscal_documents (PDF/XML); webhooks orders_v2, shipments, messages, claims, invoices, items, questions (200 in 500 ms); OAuth with offline_access, refresh token rotates every time; return flow via /post-purchase/v2/claims/{id}/returns.
+V (Dimona support/blog): API key, create_order/get_order/tracking via API (Perl client), order payload takes design+mock image URLs, address, shipping_speed; integrations listed: Montink, Loja Integrada, Nuvemshop, Shopify, Woo, spreadsheet. NO Mercado Livre connector found for Dimona (Montink page lists ML + TikTok Shop).
+UNVERIFIED BLOCKERS: (1) can Dimona ship under an ML-generated label / does ML accept a third-party shipment (label carries ML sender); (2) ML handling-time rule vs production time; (3) whether CPF sellers get ME2/drop_off; (4) whether ML requires NF-e from CPF sellers and accepts Dimona cost-value NF; (5) Dimona API base URL, auth header, freight endpoint, artwork specs, webhooks, lead time, freight prices. => needs ONE real test listing/order or direct Dimona/ML answer. Fully automated flow design: ML webhook -> worker -> Dimona create_order -> poll tracking -> update ML shipment/ send tracking.
+
+## B. Fees (BRL)
+ML (secondary): commission moda Classico ~14%, Premium ~19% (one blog says Premium 13-16%); no monthly fee; free shipping mandatory from R$79; fixed fee under R$79 since 2 Mar 2026 ~R$5.65-8.75 by price/weight (sources conflict, ~R$8 for a tee at R$49-78.99); seller shipping share (ML logistics, up to 0.3 kg): under 19: 5.65; 19-48.99: 6.55; 49-78.99: 7.75; 79-99.99: 12.35; 100-119.99: 14.35; 120-149.99: 16.45; 150-199.99: 18.45; 200+: 20.95 (0.5-1 kg 200+: 23.65; 1-2 kg 200+: 24.65). Reputation thermometer starts after 10 sales; green thresholds complaints<=2%, cancellations<=1.5%, late<=10% (last 60 sales).
+Shopee (secondary): 20% + R$4 up to R$79.99; 14% + R$16-26 above; CPF surcharge conflicting (R$3 or R$7). CPF limit ~R$81k/yr. Elo7 closed (May 2026, one source). Amazon BR apparel ~14%, individual R$2/item.
+Own site payments (vendor pages): Mercado Pago Pix 0.99%, card 4.98% instant / 4.48% 14d / 2.95% 30d; Asaas Pix R$1.59 (promo 0.79), card R$0.49+2.99%; Efi Pix 1.19%, card 3.49%, accepts CPF (Efi Pro); Stripe BR card 3.99%+R$0.39, CPF sole prop allowed. Webhook support on card side not confirmed for any.
+Fixed monthly: MEI DAS R$82.05 (commerce) V; Focus NFe Solo R$94.90 (100 docs) V or Asaas NF-e R$0.49/note; domain .com.br ~R$40/yr; Cloudflare/GitHub already paid; Nuvemshop optional R$0/69/164/449; Montink R$126.60-149/mo if used; ML ads suggested R$20-50/day (blog guidance, optional). Trademark INPI MEI price R$440 (+ same at registration step per table). IOF 3.5% on personal remittance (Safra, 2026), 1.10% investments; structure needs accountant.
+Taxes: MEI limit R$81k; over by <=20% pay difference, >20% retroactive to Simples. CPF habitual commerce vs carne-leao: UNVERIFIED, accountant.
+
+## C. Producer cost (Dimona catalog, ~2024) 
+Tee Classic R$36.90, Quality 41.90, Prime 49.90, Oversized 83.90, Pima 94.90; hoodie blusao 97, canguru 127, zip 127; extra print +R$18; so front+back tee Classic ~R$54.90, Prime ~R$67.90, canguru front+back ~R$145 (my arithmetic). Freight, lead time, label price, returns: UNVERIFIED. Gelato: API quote exists (v4 orders:quote), BR prices unknown. Printful: delivery to BR 10-25 business days, production 2-5, tee from $8.50, hoodie from $18.72; CPF mandatory. Montink: ~4 business days production.
+
+## D. Unit economics (my arithmetic from the secondary/V figures above; before Dimona freight, ads, DAS)
+| Case | Price | Fees | Product | Left |
+|---|---|---|---|---|
+| ML Classic, tee Classic print, R$149.90 | 149.90 | 14% 20.99 + ship share 16.45 | 54.90 | ~57.6 |
+| ML Premium, tee Prime print, R$149.90 | 149.90 | 19% 28.48 + 16.45 | 67.90 | ~37.1 |
+| ML Classic, R$89.90 tee Classic | 89.90 | 12.59 + 12.35 | 54.90 | ~10.1 |
+| ML, R$69.90 tee Classic (under 79) | 69.90 | 9.79 + fixed ~8 | 54.90 | ~-2.8 (buyer pays ship) |
+| Own site Pix, tee Prime R$149.90 | 149.90 | 1.48 | 67.90 | ~80.5 (buyer pays ship) |
+| ML Premium, hoodie canguru f+b R$279 | 279 | 53.01 + 24.65 | 145 | ~56.3 |
+Conclusion: ML only works above ~R$120; own site carries the highest margin; R$79 is the key price line.
+
+## E. 24-month units (ESTIMATES, unanchored: no verified sales counts; ML blocked automated reading and shows CAPTCHA) 
+Total units: conservative 380, base 1,164, optimistic 3,763 (ML + own site). Month table in agent output; shape: base ML 4/mo -> 35 (m12) -> 70 (m24), own site 1 -> 10 -> 25. Illustrative profit at R$37-80 left per unit: conservative R$14-30k, base R$43-93k, optimistic R$139-300k over 24 months, before ads/DAS/freight. Base year-2 turnover ~R$129k at R$150 avg exceeds the MEI R$81k limit -> ME needed in year 2. NEEDS recalibration with real 'vendidos' data (Nubimetrics-type tool, or official ML API with seller credentials, or owner pastes result pages).
+
+## F. Needed to close all questions before creating accounts
+1. Approve browser access to mercadolivre.com.br, dimona.com.br / camisadimona.com.br / api.camisadimona.com.br (CAPTCHA on ML may need the owner once), or paste those pages.
+2. Ask Dimona (suporte) in writing: ship under external ML label? freight table by CEP, lead time, returns, NF for CPF sellers, API webhooks.
+3. ML: one real CPF test listing (no sale) to see which shipping modes and NF rules appear; sale_terms for the apparel categories.
+4. Accountant: CPF vs MEI, CNAE, remittance.
