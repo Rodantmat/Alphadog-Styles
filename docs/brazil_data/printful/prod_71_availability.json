@@ -1,0 +1,936 @@
+{
+ "status": 200,
+ "body": {
+  "data": [
+   {
+    "catalog_variant_id": 4025,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4025"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5296,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5296"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 5311,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/5311"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 4023,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4023"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 4022,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4022"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 4021,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4021"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 4024,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4024"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8444,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8444"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8445,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8445"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8446,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8446"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8442,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8442"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8441,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8441"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8440,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8440"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8443,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8443"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 9562,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/9562"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 4030,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4030"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8447,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8447"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 8448,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/8448"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 4028,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4028"
+     }
+    }
+   },
+   {
+    "catalog_variant_id": 4027,
+    "techniques": [
+     {
+      "technique": "dtg",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     },
+     {
+      "technique": "embroidery",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": [
+         {
+          "option_name": "unlimited_color",
+          "available": true
+         }
+        ]
+       }
+      ]
+     },
+     {
+      "technique": "dtfilm",
+      "selling_regions": [
+       {
+        "name": "usa",
+        "availability": "in stock",
+        "placement_option_availability": []
+       }
+      ]
+     }
+    ],
+    "_links": {
+     "variant": {
+      "href": "https://api.printful.com/v2/catalog-variants/4027"
+     }
+    }
+   }
+  ],
+  "extra": [],
+  "paging": {
+   "total": 668,
+   "limit": 20,
+   "offset": 0
+  },
+  "_links": {
+   "self": {
+    "href": "https://api.printful.com/v2/catalog-products/71/availability?limit=20"
+   },
+   "next": {
+    "href": "https://api.printful.com/v2/catalog-products/71/availability?limit=20&offset=20"
+   },
+   "first": {
+    "href": "https://api.printful.com/v2/catalog-products/71/availability?limit=20"
+   },
+   "last": {
+    "href": "https://api.printful.com/v2/catalog-products/71/availability?limit=20&offset=660"
+   },
+   "product": {
+    "href": "https://api.printful.com/v2/catalog-products/71"
+   }
+  },
+  "filter_settings": [
+   {
+    "name": "id",
+    "value": "71"
+   }
+  ]
+ }
+}

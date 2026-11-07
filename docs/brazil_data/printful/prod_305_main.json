@@ -1,0 +1,235 @@
+{
+ "status": 200,
+ "body": {
+  "data": {
+   "id": 305,
+   "type": "T-SHIRT",
+   "main_category_id": 12,
+   "name": "Baby Staple Tee | Bella + Canvas 3001B",
+   "brand": "Bella + Canvas",
+   "model": "3001B",
+   "image": "https://files.cdn.printful.com/upload/product-catalog-img/d0/d0e9250b16c826e3974622a716253bd9_l",
+   "variant_count": 9,
+   "is_discontinued": false,
+   "description": "It's never too early to look great! So get your baby this short sleeve cotton jersey tee that's not only stylish, but also comfy, durable, and easy to clean. It's a classic that's bound to become the most loved item in your baby's wardrobe. \r\n\r\n• 100% combed ring-spun cotton\r\n• Heather colors are 52% combed ring-spun cotton, 48% polyester\r\n• Fabric weight: 4.2 oz/yd² (142 g/m²)\r\n• Pre-shrunk fabric\r\n• 32 singles\r\n• Relaxed fit\r\n• Side-seamed construction\r\n• Blank product sourced from Nicaragua, the US, or Honduras",
+   "sizes": [
+    "3-6m",
+    "6-12m",
+    "12-18m",
+    "18-24m"
+   ],
+   "colors": [
+    {
+     "name": "Black",
+     "value": "#141010"
+    },
+    {
+     "name": "Pink",
+     "value": "#ffd4db"
+    },
+    {
+     "name": "White",
+     "value": "#FFFFFF"
+    }
+   ],
+   "techniques": [
+    {
+     "key": "dtg",
+     "display_name": "DTG printing",
+     "is_default": true
+    },
+    {
+     "key": "embroidery",
+     "display_name": "Embroidery",
+     "is_default": false
+    }
+   ],
+   "placements": [
+    {
+     "placement": "embroidery_chest_center",
+     "technique": "embroidery",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": [
+        {
+         "name": "thread_colors",
+         "techniques": [
+          "embroidery"
+         ],
+         "type": "array",
+         "values": {
+          "#FFFFFF": "1801 White",
+          "#000000": "1800 Black",
+          "#96A1A8": "1718 Grey",
+          "#A67843": "1672 Old Gold",
+          "#FFCC00": "1951 Gold",
+          "#E25C27": "1987 Orange",
+          "#CC3366": "1910 Flamingo",
+          "#CC3333": "1839 Red",
+          "#660000": "1784 Maroon",
+          "#333366": "1966 Navy",
+          "#005397": "1842 Royal",
+          "#3399FF": "1695 Aqua/Teal",
+          "#6B5294": "1832 Purple",
+          "#01784E": "1751 Kelly Green",
+          "#7BA35A": "1848 Kiwi Green"
+         }
+        }
+       ]
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "embroidery_chest_left",
+      "embroidery_chest_right",
+      "embroidery_neckline"
+     ]
+    },
+    {
+     "placement": "front",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "front_large",
+      "front_dtf",
+      "front_dtfabric",
+      "chest_left_dtf",
+      "front_large_dtf"
+     ]
+    },
+    {
+     "placement": "back",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "label_outside",
+      "label_outside_dtf",
+      "back_dtf",
+      "back_large",
+      "back_large_dtf",
+      "back_dtfabric"
+     ]
+    },
+    {
+     "placement": "label_inside",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [
+      {
+       "name": "inside_label_type",
+       "techniques": [],
+       "type": "string",
+       "values": [
+        "native",
+        "custom"
+       ]
+      }
+     ],
+     "conflicting_placements": [
+      "label_outside",
+      "label_outside_dtf",
+      "label_inside_dtf"
+     ]
+    },
+    {
+     "placement": "mockup",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": []
+    }
+   ],
+   "product_options": [
+    {
+     "name": "lifelike",
+     "techniques": [
+      "dtg"
+     ],
+     "type": "bool",
+     "values": [
+      true,
+      false
+     ]
+    },
+    {
+     "name": "notes",
+     "techniques": [
+      "dtg",
+      "embroidery",
+      "sublimation",
+      "cut-sew",
+      "fabric"
+     ],
+     "type": "string",
+     "values": [
+      "A simple note"
+     ]
+    },
+    {
+     "name": "license_type",
+     "techniques": [],
+     "type": "array",
+     "values": {
+      "CLC": "Collegiate Licensing Company",
+      "AFFINITY": "Affinity",
+      "BR": "BR",
+      "EX": "EX",
+      "NCAA": "NCAA",
+      "FAN": "Fan",
+      "BCOMPLY": "BrandComply",
+      "TAG": "Tag",
+      "DLH": "DLH",
+      "CORE81": "Core81"
+     }
+    }
+   ],
+   "_links": {
+    "self": {
+     "href": "https://api.printful.com/v2/catalog-products/305"
+    },
+    "variants": {
+     "href": "https://api.printful.com/v2/catalog-products/305/catalog-variants"
+    },
+    "categories": {
+     "href": "https://api.printful.com/v2/catalog-products/305/catalog-categories"
+    },
+    "product_prices": {
+     "href": "https://api.printful.com/v2/catalog-products/305/prices"
+    },
+    "product_sizes": {
+     "href": "https://api.printful.com/v2/catalog-products/305/sizes"
+    },
+    "product_images": {
+     "href": "https://api.printful.com/v2/catalog-products/305/images"
+    },
+    "product_availability": {
+     "href": "https://api.printful.com/v2/catalog-products/305/availability"
+    }
+   }
+  },
+  "extra": []
+ }
+}

@@ -1,0 +1,56 @@
+{
+ "code": 200,
+ "result": {
+  "scopes": [
+   {
+    "scope": "orders/read",
+    "display_name": "View all orders"
+   },
+   {
+    "scope": "orders",
+    "display_name": "View and manage all orders"
+   },
+   {
+    "scope": "stores_list/read",
+    "display_name": "View all store information"
+   },
+   {
+    "scope": "stores_list",
+    "display_name": "View store information and manage store settings"
+   },
+   {
+    "scope": "sync_products/read",
+    "display_name": "View all store products"
+   },
+   {
+    "scope": "sync_products",
+    "display_name": "View and manage all store products"
+   },
+   {
+    "scope": "file_library/read",
+    "display_name": "View all store files"
+   },
+   {
+    "scope": "file_library",
+    "display_name": "View and manage all store files"
+   },
+   {
+    "scope": "webhooks/read",
+    "display_name": "View webhooks"
+   },
+   {
+    "scope": "webhooks",
+    "display_name": "View and manage webhooks"
+   },
+   {
+    "scope": "product_templates",
+    "display_name": "View and manage product templates"
+   },
+   {
+    "scope": "product_templates/read",
+    "display_name": "View product templates"
+   }
+  ]
+ },
+ "extra": []
+}

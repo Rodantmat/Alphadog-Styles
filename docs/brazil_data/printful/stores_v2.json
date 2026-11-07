@@ -1,0 +1,14 @@
+{
+ "data": [],
+ "extra": [],
+ "paging": {
+  "total": 0,
+  "limit": 20,
+  "offset": 0
+ },
+ "_links": {
+  "self": {
+   "href": "https://api.printful.com/v2/stores?limit=20"
+  }
+ }
+}

@@ -1,0 +1,610 @@
+{
+ "status": 200,
+ "body": {
+  "data": {
+   "id": 146,
+   "type": "T-SHIRT",
+   "main_category_id": 28,
+   "name": "Unisex Heavy Blend Hoodie | Gildan 18500",
+   "brand": "Gildan",
+   "model": "18500",
+   "image": "https://files.cdn.printful.com/upload/product-catalog-img/c6/c650a4604d04de3cedb2694e01920f60_l",
+   "variant_count": 192,
+   "is_discontinued": false,
+   "description": "Everyone needs a cozy go-to hoodie to curl up in, so go for one that's soft, smooth, and stylish. It's the perfect choice for cooler evenings!\n\n• 50% pre-shrunk cotton, 50% polyester\nHeather Sport Dark Navy is 40% cotton, 60% polyester\n• Fabric weight: 8.0 oz/yd² (271.25 g/m²)\n• Air-jet spun yarn with a soft feel and reduced pilling\n• Double-lined hood with matching drawcord\n• Quarter-turned body to avoid crease down the middle\n• 1 × 1 athletic rib-knit cuffs and waistband with spandex\n• Front pouch pocket\n• Double-needle stitched collar, shoulders, armholes, cuffs, and hem\n• Blank product sourced from Bangladesh, Nicaragua, Honduras or El Salvador\n\nDisclaimer: Due to the fabric properties, the White color variant may appear off-white rather than bright white.",
+   "sizes": [
+    "S",
+    "M",
+    "L",
+    "XL",
+    "2XL",
+    "3XL",
+    "4XL",
+    "5XL"
+   ],
+   "colors": [
+    {
+     "name": "Ash",
+     "value": "#dedede"
+    },
+    {
+     "name": "Azalea",
+     "value": "#ff9faf"
+    },
+    {
+     "name": "Black",
+     "value": "#0b0b0b"
+    },
+    {
+     "name": "Carolina Blue",
+     "value": "#8DB7F6"
+    },
+    {
+     "name": "Charcoal",
+     "value": "#534E4A"
+    },
+    {
+     "name": "Dark Chocolate",
+     "value": "#35241b"
+    },
+    {
+     "name": "Dark Heather",
+     "value": "#47484d"
+    },
+    {
+     "name": "Forest Green",
+     "value": "#222E1F"
+    },
+    {
+     "name": "Gold",
+     "value": "#FFAF24"
+    },
+    {
+     "name": "Graphite Heather",
+     "value": "#686868"
+    },
+    {
+     "name": "Heather Sport Dark Navy",
+     "value": "#515A6E"
+    },
+    {
+     "name": "Heliconia",
+     "value": "#F63880"
+    },
+    {
+     "name": "Indigo Blue",
+     "value": "#395d82"
+    },
+    {
+     "name": "Irish Green",
+     "value": "#1d9345"
+    },
+    {
+     "name": "Light Blue",
+     "value": "#a1c5e1"
+    },
+    {
+     "name": "Light Pink",
+     "value": "#f3d4e3"
+    },
+    {
+     "name": "Maroon",
+     "value": "#47171c"
+    },
+    {
+     "name": "Military Green",
+     "value": "#7e8560"
+    },
+    {
+     "name": "Navy",
+     "value": "#131928"
+    },
+    {
+     "name": "Orange",
+     "value": "#FF5723"
+    },
+    {
+     "name": "Purple",
+     "value": "#4A1C7D"
+    },
+    {
+     "name": "Red",
+     "value": "#da0a1a"
+    },
+    {
+     "name": "Royal",
+     "value": "#1D50A4"
+    },
+    {
+     "name": "Sand",
+     "value": "#e7d3b3"
+    },
+    {
+     "name": "Sport Grey",
+     "value": "#9b969c"
+    },
+    {
+     "name": "White",
+     "value": "#ffffff"
+    }
+   ],
+   "techniques": [
+    {
+     "key": "dtg",
+     "display_name": "DTG printing",
+     "is_default": true
+    },
+    {
+     "key": "embroidery",
+     "display_name": "Embroidery",
+     "is_default": false
+    },
+    {
+     "key": "dtfilm",
+     "display_name": "DTF printing",
+     "is_default": false
+    }
+   ],
+   "placements": [
+    {
+     "placement": "embroidery_chest_center",
+     "technique": "embroidery",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": [
+        {
+         "name": "thread_colors",
+         "techniques": [
+          "embroidery"
+         ],
+         "type": "array",
+         "values": {
+          "#FFFFFF": "1801 White",
+          "#000000": "1800 Black",
+          "#96A1A8": "1718 Grey",
+          "#A67843": "1672 Old Gold",
+          "#FFCC00": "1951 Gold",
+          "#E25C27": "1987 Orange",
+          "#CC3366": "1910 Flamingo",
+          "#CC3333": "1839 Red",
+          "#660000": "1784 Maroon",
+          "#333366": "1966 Navy",
+          "#005397": "1842 Royal",
+          "#3399FF": "1695 Aqua/Teal",
+          "#6B5294": "1832 Purple",
+          "#01784E": "1751 Kelly Green",
+          "#7BA35A": "1848 Kiwi Green"
+         }
+        }
+       ]
+      }
+     ],
+     "placement_options": [
+      {
+       "name": "unlimited_color",
+       "techniques": [
+        "embroidery"
+       ],
+       "type": "bool",
+       "values": [
+        true,
+        false
+       ]
+      }
+     ],
+     "conflicting_placements": [
+      "embroidery_chest_left",
+      "embroidery_chest_right",
+      "embroidery_neckline"
+     ]
+    },
+    {
+     "placement": "embroidery_chest_left",
+     "technique": "embroidery",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": [
+        {
+         "name": "thread_colors",
+         "techniques": [
+          "embroidery"
+         ],
+         "type": "array",
+         "values": {
+          "#FFFFFF": "1801 White",
+          "#000000": "1800 Black",
+          "#96A1A8": "1718 Grey",
+          "#A67843": "1672 Old Gold",
+          "#FFCC00": "1951 Gold",
+          "#E25C27": "1987 Orange",
+          "#CC3366": "1910 Flamingo",
+          "#CC3333": "1839 Red",
+          "#660000": "1784 Maroon",
+          "#333366": "1966 Navy",
+          "#005397": "1842 Royal",
+          "#3399FF": "1695 Aqua/Teal",
+          "#6B5294": "1832 Purple",
+          "#01784E": "1751 Kelly Green",
+          "#7BA35A": "1848 Kiwi Green"
+         }
+        }
+       ]
+      }
+     ],
+     "placement_options": [
+      {
+       "name": "unlimited_color",
+       "techniques": [
+        "embroidery"
+       ],
+       "type": "bool",
+       "values": [
+        true,
+        false
+       ]
+      }
+     ],
+     "conflicting_placements": [
+      "embroidery_chest_center",
+      "embroidery_chest_right",
+      "embroidery_neckline"
+     ]
+    },
+    {
+     "placement": "embroidery_wrist_left",
+     "technique": "embroidery",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": [
+        {
+         "name": "thread_colors",
+         "techniques": [
+          "embroidery"
+         ],
+         "type": "array",
+         "values": {
+          "#FFFFFF": "1801 White",
+          "#000000": "1800 Black",
+          "#96A1A8": "1718 Grey",
+          "#A67843": "1672 Old Gold",
+          "#FFCC00": "1951 Gold",
+          "#E25C27": "1987 Orange",
+          "#CC3366": "1910 Flamingo",
+          "#CC3333": "1839 Red",
+          "#660000": "1784 Maroon",
+          "#333366": "1966 Navy",
+          "#005397": "1842 Royal",
+          "#3399FF": "1695 Aqua/Teal",
+          "#6B5294": "1832 Purple",
+          "#01784E": "1751 Kelly Green",
+          "#7BA35A": "1848 Kiwi Green"
+         }
+        }
+       ]
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "sleeve_left",
+      "sleeve_right",
+      "long_sleeve_left_dtf",
+      "short_sleeve_left_dtf",
+      "embroidery_sleeve_left_top",
+      "embroidery_sleeve_right_top"
+     ]
+    },
+    {
+     "placement": "embroidery_wrist_right",
+     "technique": "embroidery",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": [
+        {
+         "name": "thread_colors",
+         "techniques": [
+          "embroidery"
+         ],
+         "type": "array",
+         "values": {
+          "#FFFFFF": "1801 White",
+          "#000000": "1800 Black",
+          "#96A1A8": "1718 Grey",
+          "#A67843": "1672 Old Gold",
+          "#FFCC00": "1951 Gold",
+          "#E25C27": "1987 Orange",
+          "#CC3366": "1910 Flamingo",
+          "#CC3333": "1839 Red",
+          "#660000": "1784 Maroon",
+          "#333366": "1966 Navy",
+          "#005397": "1842 Royal",
+          "#3399FF": "1695 Aqua/Teal",
+          "#6B5294": "1832 Purple",
+          "#01784E": "1751 Kelly Green",
+          "#7BA35A": "1848 Kiwi Green"
+         }
+        }
+       ]
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "sleeve_right",
+      "sleeve_left",
+      "long_sleeve_right_dtf",
+      "short_sleeve_right_dtf",
+      "embroidery_sleeve_left_top",
+      "embroidery_sleeve_right_top"
+     ]
+    },
+    {
+     "placement": "front",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "front_large",
+      "front_dtf",
+      "front_dtfabric",
+      "chest_left_dtf",
+      "front_large_dtf"
+     ]
+    },
+    {
+     "placement": "back",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "label_outside",
+      "label_outside_dtf",
+      "back_dtf",
+      "back_dtfabric"
+     ]
+    },
+    {
+     "placement": "label_outside",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "back",
+      "back_dtf",
+      "label_inside",
+      "label_inside_dtf",
+      "label_outside_dtfabric",
+      "label_outside_dtf"
+     ]
+    },
+    {
+     "placement": "sleeve_right",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "long_sleeve_right_dtf",
+      "short_sleeve_right_dtf",
+      "embroidery_wrist_right",
+      "embroidery_wrist_left",
+      "embroidery_sleeve_left_top",
+      "embroidery_sleeve_right_top",
+      "sleeve_right_dtfabric"
+     ]
+    },
+    {
+     "placement": "sleeve_left",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "long_sleeve_left_dtf",
+      "short_sleeve_left_dtf",
+      "embroidery_wrist_right",
+      "embroidery_wrist_left",
+      "embroidery_sleeve_left_top",
+      "embroidery_sleeve_right_top"
+     ]
+    },
+    {
+     "placement": "front_dtf",
+     "technique": "dtfilm",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "front",
+      "front_dtfabric",
+      "front_large",
+      "front_large_dtf",
+      "chest_left_dtf"
+     ]
+    },
+    {
+     "placement": "back_dtf",
+     "technique": "dtfilm",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "label_outside",
+      "label_outside_dtf",
+      "back",
+      "back_dtfabric"
+     ]
+    },
+    {
+     "placement": "label_inside_dtf",
+     "technique": "dtfilm",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [
+      {
+       "name": "inside_label_type",
+       "techniques": [],
+       "type": "string",
+       "values": [
+        "native",
+        "custom"
+       ]
+      }
+     ],
+     "conflicting_placements": [
+      "label_outside",
+      "label_outside_dtf",
+      "label_inside"
+     ]
+    },
+    {
+     "placement": "long_sleeve_right_dtf",
+     "technique": "dtfilm",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "sleeve_right",
+      "short_sleeve_right_dtf"
+     ]
+    },
+    {
+     "placement": "long_sleeve_left_dtf",
+     "technique": "dtfilm",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": [
+      "sleeve_left",
+      "short_sleeve_left_dtf"
+     ]
+    },
+    {
+     "placement": "mockup",
+     "technique": "dtg",
+     "layers": [
+      {
+       "type": "file",
+       "layer_options": []
+      }
+     ],
+     "placement_options": [],
+     "conflicting_placements": []
+    }
+   ],
+   "product_options": [
+    {
+     "name": "lifelike",
+     "techniques": [
+      "dtg"
+     ],
+     "type": "bool",
+     "values": [
+      true,
+      false
+     ]
+    },
+    {
+     "name": "notes",
+     "techniques": [
+      "dtg",
+      "embroidery",
+      "sublimation",
+      "cut-sew",
+      "fabric"
+     ],
+     "type": "string",
+     "values": [
+      "A simple note"
+     ]
+    },
+    {
+     "name": "license_type",
+     "techniques": [],
+     "type": "array",
+     "values": {
+      "CLC": "Collegiate Licensing Company",
+      "AFFINITY": "Affinity",
+      "BR": "BR",
+      "EX": "EX",
+      "NCAA": "NCAA",
+      "FAN": "Fan",
+      "BCOMPLY": "BrandComply",
+      "TAG": "Tag",
+      "DLH": "DLH",
+      "CORE81": "Core81"
+     }
+    }
+   ],
+   "_links": {
+    "self": {
+     "href": "https://api.printful.com/v2/catalog-products/146"
+    },
+    "variants": {
+     "href": "https://api.printful.com/v2/catalog-products/146/catalog-variants"
+    },
+    "categories": {
+     "href": "https://api.printful.com/v2/catalog-products/146/catalog-categories"
+    },
+    "product_prices": {
+     "href": "https://api.printful.com/v2/catalog-products/146/prices"
+    },
+    "product_sizes": {
+     "href": "https://api.printful.com/v2/catalog-products/146/sizes"
+    },
+    "product_images": {
+     "href": "https://api.printful.com/v2/catalog-products/146/images"
+    },
+    "product_availability": {
+     "href": "https://api.printful.com/v2/catalog-products/146/availability"
+    }
+   }
+  },
+  "extra": []
+ }
+}
