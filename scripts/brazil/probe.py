@@ -12,12 +12,186 @@ if task == "ml_api":
                 "https://api.mercadolibre.com/sites/MLB/listing_prices?price=60&category_id=MLB31447",
                 "https://api.mercadolibre.com/sites/MLB/domain_discovery/search?q=camiseta%20shih%20tzu"]:
         r = get(url)
-        log.append({"url": url, "status": r.status_code if r else None, "body": (r.text[:3000] if r else "")})
-        print(url, r.status_code if r else None, (r.text[:200] if r else ""))
+        log.append({"url": url, "status": r.status_code if r is not None else None, "body": (r.text[:3000] if r is not None else "")})
+        print(url, r.status_code if r is not None else None, (r.text[:200] if r is not None else ""))
     save("ml/api_probe.json", log)
     # try full search on all queries if works
-    if log[0]["status"] == 200:
+    if True:
         for q in QUERIES:
             r = get("https://api.mercadolibre.com/sites/MLB/search", params={"q": q, "limit": 50})
             if r is not None and r.status_code == 200:
                 save(f"ml/search_{q.replace(' ','_')}.json", r.text)
+
+PW_HELPER = None
+def pw_run(fn):
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA, locale="pt-BR", viewport={"width":1366,"height":900})
+        page = ctx.new_page()
+        try:
+            fn(page)
+        finally:
+            b.close()
+
+def grab(page, url, name, wait=2500, links=False):
+    try:
+        resp = page.goto(url, wait_until="domcontentloaded", timeout=40000)
+        page.wait_for_timeout(wait)
+        txt = page.inner_text("body")
+        save(name, f"URL: {url}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt}")
+        if links:
+            hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,100),e.href])")
+            save(name + ".links.json", hrefs)
+        return txt
+    except Exception as e:
+        print("PWERR", url, e)
+        save(name, f"URL: {url}\nERROR: {e}")
+        return ""
+
+if task == "ml_pw":
+    def run(page):
+        import urllib.parse
+        for q in QUERIES:
+            slug = q.replace(" ", "-")
+            url = f"https://lista.mercadolivre.com.br/{slug}"
+            try:
+                resp = page.goto(url, wait_until="domcontentloaded", timeout=40000)
+                page.wait_for_timeout(2500)
+                for _ in range(4):
+                    page.mouse.wheel(0, 2500); page.wait_for_timeout(500)
+                cards = page.eval_on_selector_all("li.ui-search-layout__item, div.ui-search-result, div.poly-card", """els=>els.map(e=>({text:e.innerText, href:(e.querySelector('a')||{}).href}))""")
+                save(f"ml/list_{slug}.json", {"url": url, "status": resp.status if resp else None, "title": page.title(), "n": len(cards), "cards": cards})
+                if not cards:
+                    save(f"ml/list_{slug}.body.txt", page.inner_text("body")[:5000])
+            except Exception as e:
+                print("PWERR", q, e)
+    pw_run(run)
+
+if task == "ml_items":
+    # a few item pages: take first N links from each saved listing
+    import glob
+    def run(page):
+        for f in glob.glob("docs/brazil_data/ml/list_*.json"):
+            d = json.load(open(f))
+            if not isinstance(d, dict): continue
+            for c in d.get("cards", [])[:3]:
+                if c.get("href"):
+                    slug = f.split("list_")[1][:-5]
+                    n = re.sub(r"\W+", "_", c["href"])[-40:]
+                    txt = grab(page, c["href"], f"ml/item_{slug}_{n}.txt", wait=1500)
+    pw_run(run)
+
+if task == "ml_help":
+    URLS = {
+     "custos": "https://www.mercadolivre.com.br/ajuda/Custos-para-vender_1044",
+     "tarifas": "https://vendedores.mercadolivre.com.br/custos/",
+     "tarifas2": "https://www.mercadolivre.com.br/ajuda/Tarifas-e-custos_1044",
+     "envio": "https://www.mercadolivre.com.br/ajuda/Como-funciona-o-envio_3375",
+     "nota_fiscal": "https://www.mercadolivre.com.br/ajuda/nota-fiscal_1187",
+     "pf": "https://www.mercadolivre.com.br/ajuda/Posso-vender-sem-CNPJ_1038",
+     "devolucoes": "https://www.mercadolivre.com.br/ajuda/devolucoes_1201",
+     "dev_shipments": "https://developers.mercadolivre.com.br/pt_br/envios",
+     "dev_invoices": "https://developers.mercadolivre.com.br/pt_br/notas-fiscais",
+     "dev_limits": "https://developers.mercadolivre.com.br/pt_br/limites-de-chamadas",
+     "dev_saleterms": "https://developers.mercadolivre.com.br/pt_br/condicoes-de-venda",
+     "dev_start": "https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br",
+     "seller_home": "https://vendedores.mercadolivre.com.br/",
+    }
+    def run(page):
+        for k, u in URLS.items():
+            grab(page, u, f"ml_help/{k}.txt", wait=3000, links=True)
+        # discover links to cost pages from seller home
+        try:
+            hrefs = json.load(open("docs/brazil_data/ml_help/seller_home.txt.links.json"))
+            keep = [h for t, h in hrefs if re.search(r"custo|tarifa|envio|nota|cnpj|devol|reputa|ajuda", h + t, re.I)][:25]
+            save("ml_help/discovered_links.json", keep)
+            for i, h in enumerate(keep[:12]):
+                grab(page, h, f"ml_help/disc_{i}.txt", wait=2500)
+        except Exception as e:
+            print("disc err", e)
+    pw_run(run)
+    # API fee data (public)
+    out = {}
+    for cat in ["MLB31447", "MLB1430", "MLB109027"]:
+        for lt in ["gold_special", "gold_pro", "free"]:
+            r = get(f"https://api.mercadolibre.com/sites/MLB/listing_prices?price=60&category_id={cat}&listing_type_id={lt}")
+            out[f"{cat}_{lt}"] = {"status": r.status_code if r is not None else None, "body": r.text[:1500] if r is not None else ""}
+    for u in ["https://api.mercadolibre.com/sites/MLB/listing_types", "https://api.mercadolibre.com/categories/MLB31447", "https://api.mercadolibre.com/sites/MLB"]:
+        r = get(u); out[u] = {"status": r.status_code if r is not None else None, "body": r.text[:4000] if r is not None else ""}
+    save("ml_help/api_fees.json", out)
+
+if task == "dimona":
+    URLS = {
+     "api_docs": "https://api.camisadimona.com.br/",
+     "api_docs2": "https://api.camisadimona.com.br/docs",
+     "api_swagger": "https://api.camisadimona.com.br/swagger",
+     "home": "https://www.camisadimona.com.br/",
+     "dropshipping": "https://www.camisadimona.com.br/dropshipping",
+     "dropshipping2": "https://www.camisadimona.com.br/dropshipping/",
+     "suporte": "https://suporte.camisadimona.com.br/",
+     "suporte_pt": "https://suporte.camisadimona.com.br/pt-BR",
+     "precos": "https://www.camisadimona.com.br/precos",
+     "frete": "https://www.camisadimona.com.br/frete",
+     "integracoes": "https://www.camisadimona.com.br/integracoes",
+    }
+    def run(page):
+        for k, u in URLS.items():
+            grab(page, u, f"dimona/{k}.txt", wait=4000, links=True)
+        found = set()
+        for k in URLS:
+            try:
+                for t, h in json.load(open(f"docs/brazil_data/dimona/{k}.txt.links.json")):
+                    if "dimona" in h and re.search(r"artigo|article|docs|api|frete|prazo|devol|troca|nota|pagament|integra|dropship|preco|tabela|arte|arquivo|marketplace|mercado|cancel", h + t, re.I):
+                        found.add(h)
+            except Exception: pass
+        found = sorted(found)[:40]
+        save("dimona/discovered_links.json", found)
+        for i, h in enumerate(found):
+            grab(page, h, f"dimona/disc_{i:02d}.txt", wait=2500)
+    pw_run(run)
+    for u in ["https://api.camisadimona.com.br/", "https://api.camisadimona.com.br/openapi.json", "https://api.camisadimona.com.br/swagger.json", "https://api.camisadimona.com.br/v1/docs"]:
+        r = get(u)
+        save("dimona/curl_" + re.sub(r"\W+", "_", u)[-40:] + ".txt", f"{u}\n{r.status_code if r is not None else None}\n{r.text[:6000] if r is not None else ''}")
+
+if task == "shipping":
+    URLS = {
+     "melhorenvio_home": "https://melhorenvio.com.br/",
+     "melhorenvio_docs": "https://docs.menv.io/",
+     "melhorenvio_api": "https://docs.melhorenvio.com.br/",
+     "melhorenvio_calc": "https://melhorenvio.com.br/calculadora-de-frete",
+     "melhorenvio_prices": "https://melhorenvio.com.br/planos",
+     "correios_tabela": "https://www.correios.com.br/enviar/precisa-de-ajuda/tabelas-de-precos-e-prazos",
+     "montink_home": "https://montink.com.br/",
+     "montink_precos": "https://montink.com.br/precos",
+     "montink_dropshipping": "https://montink.com.br/dropshipping",
+     "dropsimples": "https://www.dropsimples.com.br/",
+     "ra_dimona": "https://www.reclameaqui.com.br/empresa/camisa-dimona/",
+     "ra_montink": "https://www.reclameaqui.com.br/empresa/montink/",
+     "ra_dropsimples": "https://www.reclameaqui.com.br/empresa/dropsimples/",
+    }
+    def run(page):
+        for k, u in URLS.items():
+            grab(page, u, f"shipping/{k}.txt", wait=4000, links=True)
+        # Melhor Envio public calculator POST attempt via requests
+    pw_run(run)
+    for body in [{"from":{"postal_code":"01310100"},"to":{"postal_code":"20040020"},"products":[{"id":"1","width":20,"height":3,"length":25,"weight":0.3,"insurance_value":60,"quantity":1}]},
+                 {"from":{"postal_code":"01310100"},"to":{"postal_code":"69005040"},"products":[{"id":"1","width":20,"height":3,"length":25,"weight":0.3,"insurance_value":60,"quantity":1}]}]:
+        try:
+            r = requests.post("https://melhorenvio.com.br/api/v2/me/shipment/calculate", json=body, headers={"User-Agent": UA, "Accept":"application/json"}, timeout=25)
+            save("shipping/me_calc_%s.json" % body["to"]["postal_code"], f"{r.status_code}\n{r.text[:3000]}")
+        except Exception as e:
+            print("ERR", e)
+
+if task == "shopee":
+    URLS = {
+     "shopee_search": "https://shopee.com.br/search?keyword=camiseta%20shih%20tzu",
+     "shopee_api": "https://shopee.com.br/api/v4/search/search_items?by=relevancy&keyword=camiseta%20shih%20tzu&limit=20&newest=0&order=desc&page_type=search&version=2",
+     "amazon_search": "https://www.amazon.com.br/s?k=camiseta+shih+tzu",
+     "amazon_search2": "https://www.amazon.com.br/s?k=camiseta+vira-lata+caramelo",
+     "amazon_search3": "https://www.amazon.com.br/s?k=camiseta+mae+de+pet",
+    }
+    def run(page):
+        for k, u in URLS.items():
+            grab(page, u, f"shopee/{k}.txt", wait=5000)
+    pw_run(run)
