@@ -1,0 +1,734 @@
+URL: https://developers.mercadolivre.com.br/server-mcp
+STATUS: 200
+REQ_STATUS: 200
+TITLE: Mercado Livre MCP Server
+
+Developers
+API Docs
+Novidades
+Entrar
+API Docs
+Mercado Livre MCP Server
+
+Documentação do Mercado Livre
+
+Confira todas as informações necessárias sobre as APIs Mercado Livre.
+
+Documentação do
+
+Primeiros passos
+Crie uma aplicação no Mercado Livre
+Permissões funcionais
+Desenvolvimento seguro
+Recomendações de Autenticação e Token
+Práticas de CyberSecurity
+Validações e requisitos de segurança
+Gerencie seu aplicativo
+Autenticação e Autorização
+Realização de testes
+Validador de publicações
+Boas práticas para usar a plataforma
+Considerações de design
+Gerenciar IPs de um aplicativo
+Suporte para integradores
+Erro 403
+Desenvolvimento in-house Quick Start
+Recursos da API
+Usuários
+Usuários e Aplicativos
+Bloqueio de aplicações
+Consulta de usuários
+Endereços do usuário
+Perguntas frequentes sobre validação de dados
+Validar dados dos vendedores
+Favoritos
+Domínios e Categorias
+Localização e moedas
+Busca de itens
+Perguntas e Respostas
+Pedidos e opiniões
+Atributos
+Notificações
+Comunicações
+Moderações
+Gerenciar moderações
+Moderações com pausa
+Diagnóstico de imagens
+Moderações de imagens
+Brand Protection Program
+O que é Brand Protection Program?
+Membros do Programa
+Publicações denunciadas
+Guia para produtos
+Introdução
+Tipos de publicação
+Categorização
+Categorização de produtos
+Compatibilidades entre itens e produtos de Autopeças
+Referências de domínios, produtos e atributos para Autopeças
+Publicar produtos
+User Products
+User Products
+Preço por variação
+Estoque distribuído
+Estoque multi-origem
+Descrição de produtos
+Validações
+Preços e Custos
+Preços por quantidade
+Preços por quantidade B2C
+Preços por quantidade porcentagem B2B
+Preços por quantidade
+Preços Líquidos por quantidade
+Preços de produtos
+Custos por vender
+Referências de preços
+Automatizações de preços
+Imagens
+Identificadores de produtos
+Variações
+Republicar itens
+Kits virtuais
+Tabelas de Medidas
+Primeiros passos
+Gerenciar tabela de medidas
+Validação da tabela de medidas
+Sincronização e modificação de publicações
+Convivência Full e Flex
+Modos de Envios
+Gestão Mercado Envios
+Mercado Envios 1
+Mercado Envios 1
+Status de pedidos e rastreamento
+Frete dinâmico
+Mercado Envios 2
+Mercado Envios 2
+Custos de envio
+Envios em pontos facultativos
+Envios Coletas e Places
+Agrupamento de pacotes para a Coleta
+Envios Agora
+Envios Flex
+Envios Turbo
+Envios Fulfillment
+Planejamento de reposição para Fulfilment
+Envios Personalizados
+Catálogo
+O que é catálogo
+Elegibilidade
+Buscador de produtos
+Publicar no catálogo
+Publicações requeridas no catálogo
+Catálogo de recondicionados
+Competição
+Brand Central
+Central de promoções
+Gerenciar promoções
+Campanhas tradicionais
+Campanha com co-participação
+Campanhas de desconto por quantidade
+Desconto pré acordado por item e liquidação de estoque Full
+Desconto individual
+Ofertas do dia
+Ofertas relâmpago
+Campanhas do vendedor
+Co-participação automatizada e preços competitivos
+Cupons do vendedor
+Campanha co-participação para PIX
+Perguntas e respostas
+Gerencie vendas
+Orders
+Packs
+Envios
+Notas de Packs
+Pagamentos
+Feedback de uma venda
+Notas de orders
+Faturador Mercado Livre
+Emitindo Nota Fiscal pelo Mercado Livre
+Envio das Regras Tributárias
+Configurações de Composição de Base de Cálculo do ICMS e IPI
+Configurações de Composição de Base de Cálculo do PIS e COFINS
+Configuração do cálculo do diferencial de alíquota (DIFAL)
+Configurações do IBS e CBS
+Mensagens de operação
+Envio dos Dados Fiscais
+Envio de inscrições estaduais
+Notificações de invoices
+Gestão e Consulta de Notas Fiscais
+Mensagens adicionais
+Download em lote de documentos fiscais
+Tabela de processos Fulfillment
+Enviar Nota Fiscal
+Integração DCe
+Dados para emissão de Nota Fiscal
+Importar Nota Fiscal
+Anexar Nota Fiscal
+Relatórios de Faturamento
+Relatórios de Faturamento
+Boas Práticas para o Consumo das APIs de Relatórios de Faturamento
+Provisões
+Relatórios de Pagamentos
+Baixar documento legal
+Percepções
+Mensagens de pós-venda
+O que é mensageria
+Motivos para comunicar
+Gestão de mensagens pós-venda
+Mensagens pendentes
+Mensagens bloqueadas
+Métricas e Tendências
+Programa Decola e Benefício de Reputação
+Opiniões de produtos
+Reputação de vendedores
+Tendências
+Qualidade das publicações
+Experiência de compra
+Mais vendidos no Mercado Livre
+Visitas
+Carregar atributos
+Reclamações, Devoluções e Trocas
+Reclamações
+Gerenciar reclamações
+Gerenciar mensagem de uma reclamação
+Gerenciar resolução de reclamações
+Gerenciar evidências de reclamações
+Erros Reclamações
+Devoluções
+Trocas
+Mercado Líder e Lojas Oficiais
+Lojas Oficiais
+Pharma
+Pharma - Receitados
+Guia de Segurança
+Introdução
+Infraestrutura (Criptografia e TLS)
+Gestão de Identidades e Acessos (OAuth e Tokens)
+Autenticação Segura
+Controle de Acesso e Autorização
+Segurança de Aplicações
+Monitoramento
+Gestão de Incidentes
+Developer Partner Program
+Developer Partner Program
+Segurança - Desenvolvimento Seguro
+Guia para imóveis
+Introdução guia de imóveis
+Primeiros passos
+Configuração ou requisitos prévios
+Obtenção do Access Token
+Consulta de usuários
+Passos rápidos para publicar um imóvel de teste
+Categorias e atributos
+Categorias
+Atributos
+Localizar Imóveis
+Gerenciar pacotes de imóveis
+Contratação de pacotes de publicação
+Pacotes e permissões para projetos, desenvolvimentos ou empreendimentos imobiliários
+Publica Imóveis
+Publicações de Lojas Oficiais para Imóveis
+Atualiza tuas publicações
+Ciclo de vida das publicações de Imóveis
+Variações
+Atualização variação imóveis
+Qualidade das Publicações
+Desenvolvimentos imobiliários
+Leads
+Solicitação de visita
+Estatísticas de interações em Imóveis
+Experiência para imóveis
+Glossário
+Guia para automóveis
+Introdução
+Consulta de usuários
+Categorias e Atributos
+Localização de veículos
+Gerenciamento de pacotes de veículos
+Publicação de automóveis
+Sincronização de publicações (veículos)
+Gerenciamento de Perguntas e Contatos
+Pessoas interessadas
+Créditos pré-aprovados
+Qualidade das publicações (veículos)
+Guia para serviços
+Introdução
+Consulta de usuários
+Escolha o tipo de serviço
+Gerenciamento das áreas de cobertura
+Publicação de serviços
+Sincronização de publicações
+Consultas avançadas
+Guia para Mercado Ads
+Introdução ao Mercado Ads
+Brand Ads
+Display Ads
+Product Ads para Catálogo e User Products
+Bonificações para Product Ads
+MCP do Mercado Livre
+Mercado Livre MCP Server
+FAQs
+Perguntas Frequentes
+Rate limit / Erro 429
+Gestão de estoque multiorigem / User Products
+ME1 / ME2 e frete grátis
+Mercado Envios — Custos e cotações
+Faturamento / Billing info
+Imagens e moderações
+Promoções / Precificação
+Itens — Atributos de envio e dimensões
+Última atualização em 10/09/2026
+MCP Server do Mercado Livre
+
+O Model Context Protocol (MCP) é um protocolo aberto que padroniza a conexão de modelos de inteligência artificial com diferentes fontes de dados e ferramentas. O MCP Server do Mercado Livre oferece utilitários para que os desenvolvedores possam interagir facilmente com APIs e recursos do Mercado Livre usando linguagem natural, simplificando tarefas e integrações de produtos.
+
+
+
+Pré-requisitos
+
+Antes de começar, certifique-se de ter o seguinte ambiente:
+
+Requisito	Descrição
+Cliente MCP	Um cliente compatível (por exemplo, Cursor, Windsurf, Cline, Claude Desktop, ChatGPT, etc).
+Conta do Mercado Livre	Uma conta ativa no Mercado Livre. A autenticação é feita via OAuth 2.0 diretamente pelo cliente MCP.
+
+
+Autenticação
+
+O MCP Server do Mercado Livre utiliza OAuth 2.0 como método de autenticação e autorização. Esta abordagem está alinhada com os padrões da indústria e elimina a necessidade de gerenciar Access Tokens manualmente.
+
+Nota:
+Ao se conectar pela primeira vez, o aplicativo cliente (Cursor, Windsurf, Claude Desktop, etc.) iniciará automaticamente o fluxo de autenticação OAuth com o Mercado Livre, que consiste em abrir uma aba no seu navegador, selecionar o país, autorizar a integração, e ser redirecionado para o aplicativo. Uma vez autorizado, as credenciais são gerenciadas automaticamente.
+
+
+
+Instalação e configuração
+Claude
+
+Para conectar ao MCP DevSite do Mercado Livre no Claude, execute o seguinte comando:
+
+claude mcp add --transport http mercadolibre-devsite-mcp https://mcp.mercadolibre.com/devsite/v1/mcp -s user
+Copiar
+
+Você também pode configurá-lo manualmente no arquivo de configuração local ou do projeto. Adicione o seguinte bloco:
+
+JSON:
+
+{
+  "mcpServers": {
+    "mercadolibre-devsite-mcp": {
+      "type": "http",
+      "url": "https://mcp.mercadolibre.com/devsite/v1/mcp"
+    }
+  }
+}
+Copiar
+
+
+Codex
+
+Para conectar ao servidor MCP do Mercado Livre no Codex, adicione o seguinte bloco ao arquivo config.toml da configuração global ou do projeto:
+
+TOML:
+
+[mcp_servers.mercadolibre-mcp-server]
+url = "https://mcp.mercadolibre.com/devsite/v1/mcp"
+enabled = true
+Copiar
+
+
+Cursor
+
+Para conectar ao nosso MCP do Mercado Livre, primeiro é necessário realizar a conexão com o cliente que melhor se ajuste à sua integração. Verifique o passo a passo de acordo com o tipo de cliente.
+
+No Cursor, você pode clicar no botão abaixo ou seguir os passos manualmente.
+
+Para conectar ao servidor MCP do Mercado Livre no Cursor manualmente, siga estes passos:
+
+Cursor Settings > Tools & Integrations > New MCP Server
+Copiar
+
+Isso abrirá uma aba onde você poderá visualizar e configurar os servidores MCP disponíveis. Na configuração, certifique-se de incluir o seguinte bloco JSON para conectar ao servidor MCP:
+
+JSON:
+
+{
+  "mcpServers": {
+    "mercadolibre-mcp-server": {
+      "url": "https://mcp.mercadolibre.com/devsite/v1/mcp"
+    }
+  }
+}
+Copiar
+Nota:
+Ao salvar a configuração, o Cursor iniciará automaticamente o fluxo de autenticação OAuth com o Mercado Livre, que consiste em abrir uma aba no seu navegador, selecionar o país, autorizar a integração, e ser redirecionado ao Cursor. Não é necessário adicionar um token manualmente.
+
+
+Windsurf
+
+Para conectar ao servidor MCP do Mercado Livre no Windsurf, siga estes passos:
+
+Cascade > MCP Servers > Configure
+Copiar
+
+JSON:
+
+{
+  "mcpServers": {
+    "mercadolibre-mcp-server": {
+      "serverUrl": "https://mcp.mercadolibre.com/devsite/v1/mcp"
+    }
+  }
+}
+Copiar
+Nota:
+Ao salvar a configuração, o Windsurf iniciará automaticamente o fluxo de autenticação OAuth com o Mercado Livre, que consiste em abrir uma aba no seu navegador, selecionar o país, autorizar a integração, e ser redirecionado ao Windsurf. Não é necessário adicionar um token manualmente.
+
+
+
+Gemini
+
+Para conectar ao servidor MCP do Mercado Livre no Gemini, adicione o seguinte bloco ao arquivo settings.json da configuração global ou do projeto:
+
+JSON:
+
+{
+  "mcpServers": {
+    "mercadolibre-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.mercadolibre.com/devsite/v1/mcp"
+      ]
+    }
+  }
+}
+Copiar
+
+
+Outros IDEs
+
+Abra a configuração do IDE e procure o arquivo JSON referente aos servidores MCP.
+
+Nota:
+Ao salvar a configuração, o cliente iniciará automaticamente o fluxo de autenticação OAuth com o Mercado Livre, que consiste em abrir uma aba no seu navegador, selecionar o país, autorizar a integração, e ser redirecionado para o aplicativo. Não é necessário adicionar um token manualmente.
+
+JSON:
+
+{
+  "mcpServers": {
+    "mercadolibre-mcp-server": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://mcp.mercadolibre.com/devsite/v1/mcp"
+      ]
+    }
+  }
+}
+Copiar
+
+
+
+Conexão ao MCP Server
+Estabeleça a conexão remota pelo seu cliente preferido (exemplo: Cursor).
+Ao se conectar pela primeira vez, o fluxo de autenticação OAuth será aberto automaticamente no navegador. Faça login com sua conta do Mercado Livre e autorize o acesso.
+Certifique-se de que o servidor MCP esteja disponível e corretamente configurado no seu cliente.
+Se não aparecer, verifique a configuração e recarregue a lista de servidores MCP.
+
+
+
+Ferramentas disponíveis
+
+O MCP Server do Mercado Livre expõe ferramentas para facilitar a integração e consulta de informações relevantes.
+
+search_documentation
+
+Habilita a busca de termos específicos ou conceitos-chave em toda a documentação técnica para desenvolvedores do Mercado Livre.
+
+query: Palavras-chave que se deseja buscar na documentação (Obrigatório)
+language: Idioma da documentação a consultar (ex: en_us, es_ar, pt_br) (Obrigatório)
+siteId: ID do país para filtrar resultados (ex: MLA, MLB, MLM, etc) (Opcional)
+limit: Máximo de resultados a retornar (Opcional)
+offset: Número de resultados a omitir (Opcional)
+get_documentation_page
+
+Obtém o conteúdo completo de uma página específica da documentação, útil para acessar especificações ou casos de uso detalhados.
+
+path: Caminho da página a obter (Obrigatório)
+language: Idioma da documentação a consultar (ex: en_us, es_ar, pt_br) (Obrigatório)
+siteId: ID do país para filtrar resultados (ex: MLA, MLB, MLM, etc) (Opcional)
+
+
+Casos de uso
+Importante:
+Os exemplos desta seção utilizam o Cursor como cliente MCP, mas você pode utilizar qualquer cliente MCP de sua preferência.
+
+
+Buscar na documentação pelo seu IDE
+
+As ferramentas (tools) não são utilizadas diretamente pelo usuário ou desenvolvedor, mas pelo IDE Agêntico. Por exemplo:
+
+A ferramenta search_documentation permite ao IDE Agêntico buscar termos-chave em toda a documentação oficial do Mercado Livre e recuperar os endpoints ou rotas mais relevantes para o contexto consultado.
+
+Em seguida, com a ferramenta get_documentation_page, o IDE Agêntico acessa o conteúdo completo das rotas identificadas no passo anterior, permitindo obter informações específicas e casos de uso concretos diretamente da documentação.
+
+Dessa forma, o IDE automatiza a consulta e a navegação pela documentação, facilitando que o desenvolvedor receba respostas contextualizadas e precisas sem precisar buscar manualmente.
+
+Gerar código de integração
+
+Além de consultar a documentação, as tools do MCP são utilizadas pelo IDE Agêntico para gerar código e auxiliar na integração de produtos nos seus projetos.
+
+Por exemplo, você pode solicitar ao assistente que revise a documentação do produto que deseja integrar e identifique os passos necessários para concluir a integração. O MCP Server fornece o contexto relevante (incluindo exemplos de código e documentação técnica), que o IDE Agêntico usa para sugerir ou até aplicar diretamente as modificações necessárias no seu projeto.
+
+Dessa forma, o IDE automatiza a consulta, a análise e a implementação de integrações, facilitando o trabalho do desenvolvedor e acelerando o processo de desenvolvimento.
+
+Você pode solicitar recomendações para implementar integrações específicas, por exemplo:
+
+
+
+Erros e soluções
+Erro no fluxo de autenticação OAuth
+
+Se ao tentar se conectar, o aplicativo ficar no estado "Loading Tools" indefinidamente ou não conseguir estabelecer conexão com o servidor, é possível que haja um problema com o fluxo de autenticação.
+
+Possíveis causas:
+
+O fluxo OAuth não foi concluído corretamente (a janela do navegador foi fechada antes de autorizar).
+As credenciais da sessão expiraram.
+O cliente MCP não suporta o fluxo OAuth necessário. Certifique-se de usar uma versão atualizada do cliente.
+A URL do servidor MCP está mal configurada.
+
+Soluções sugeridas:
+
+Desconecte e reconecte o servidor MCP para reiniciar o fluxo de autenticação.
+Certifique-se de concluir o fluxo de autorização no navegador antes de fechar a janela.
+Verifique se a URL configurada é exatamente https://mcp.mercadolibre.com/devsite/v1/mcp.
+Atualize seu cliente MCP para a versão mais recente disponível.
+Conteúdos
+MCP Server do Mercado Livre
+Pré-requisitos
+Autenticação
+Instalação e configuração
+Conexão ao MCP Server
+Ferramentas disponíveis
+Casos de uso
+Erros e soluções
+Denúncias
+Security Researchers
+Central de Parceiros
+
+Copyright © 2026 Mercado Livre Brasil Ltda.
+
+Termos e condições
+Como cuidamos da sua privacidade
+Developer Partner Program
+
+Usamos cookies para melhorar sua experiência no Mercado Livre. Consulte mais informações na nossa Central de privacidade.
+
+Aceitar cookies
+Configurar cookies
+
+LINKS:
+Developers | https://developers.mercadolivre.com.br/pt_br
+API Docs | https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br
+Novidades | https://developers.mercadolivre.com.br/devcenter/news/
+Entrar | https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=ml&go=https://developers.mercadolivre.com.br/server-mcp
+API Docs | https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br
+Crie uma aplicação no Mercado Livre | https://developers.mercadolivre.com.br/crie-uma-aplicacao-no-mercado-livre
+Permissões funcionais | https://developers.mercadolivre.com.br/permissoes-funcionais
+Recomendações de Autenticação e Token | https://developers.mercadolivre.com.br/desenvolvimento-seguro
+Práticas de CyberSecurity | https://developers.mercadolivre.com.br/praticas-de-cybersecurity
+Validações e requisitos de segurança | https://developers.mercadolivre.com.br/validacoes-e-requisitos-de-seguranca
+Gerencie seu aplicativo | https://developers.mercadolivre.com.br/gerencie-seu-aplicativo
+Autenticação e Autorização | https://developers.mercadolivre.com.br/autenticacao-e-autorizacao
+Realização de testes | https://developers.mercadolivre.com.br/realizacao-de-testes
+Validador de publicações | https://developers.mercadolivre.com.br/validador-de-publicacoes
+Boas práticas para usar a plataforma | https://developers.mercadolivre.com.br/boas-praticas-para-usar-a-plataforma
+Considerações de design | https://developers.mercadolivre.com.br/consideracoes-de-design
+Gerenciar IPs de um aplicativo | https://developers.mercadolivre.com.br/gerenciar-ips-de-um-aplicativo
+Suporte para integradores | https://developers.mercadolivre.com.br/suporte-para-integradores
+Erro 403 | https://developers.mercadolivre.com.br/erro-403
+Desenvolvimento in-house Quick Start | https://developers.mercadolivre.com.br/desenvolvimento-in-house
+Usuários e Aplicativos | https://developers.mercadolivre.com.br/usuarios-e-aplicativos
+Bloqueio de aplicações | https://developers.mercadolivre.com.br/bloqueio-de-aplicacoes
+Consulta de usuários | https://developers.mercadolivre.com.br/consulta-de-usuarios
+Endereços do usuário | https://developers.mercadolivre.com.br/enderecos-do-usuario
+Perguntas frequentes sobre validação de dados | https://developers.mercadolivre.com.br/validacoes-de-dados
+Validar dados dos vendedores | https://developers.mercadolivre.com.br/validar-dados-de-vendedores
+Favoritos | https://developers.mercadolivre.com.br/favoritos
+Domínios e Categorias | https://developers.mercadolivre.com.br/categorias-e-publicacoes
+Localização e moedas | https://developers.mercadolivre.com.br/localizacao-e-moedas
+Busca de itens | https://developers.mercadolivre.com.br/itens-e-buscas
+Perguntas e Respostas | https://developers.mercadolivre.com.br/perguntas-e-respostas
+Pedidos e opiniões | https://developers.mercadolivre.com.br/pedidos-e-opinioes
+Atributos | https://developers.mercadolivre.com.br/atributos
+Notificações | https://developers.mercadolivre.com.br/produto-receba-notificacoes
+Comunicações | https://developers.mercadolivre.com.br/conheca-as-novidades-que-os-vendedores-recebem
+Gerenciar moderações | https://developers.mercadolivre.com.br/gerenciar-moderacoes
+Moderações com pausa | https://developers.mercadolivre.com.br/com-pausa
+Diagnóstico de imagens | https://developers.mercadolivre.com.br/diagnostico-de-imagens
+Moderações de imagens | https://developers.mercadolivre.com.br/moderacoes-de-imagens
+O que é Brand Protection Program? | https://developers.mercadolivre.com.br/o-que-e-brand-protection-program
+Membros do Programa | https://developers.mercadolivre.com.br/membros-do-programa
+Publicações denunciadas | https://developers.mercadolivre.com.br/publicacoes-denunciadas
+Introdução | https://developers.mercadolivre.com.br/guia-para-produtos
+Tipos de publicação | https://developers.mercadolivre.com.br/tutorial-tipos-de-publicacao-y-atualizacao-de-artigos
+Categorização de produtos | https://developers.mercadolivre.com.br/categorizacao-de-produtos
+Compatibilidades entre itens e produtos de Autopeças | https://developers.mercadolivre.com.br/compatibilidades-itens-e-produtos-de-autopecas
+Referências de domínios, produtos e atributos para Autopeças | https://developers.mercadolivre.com.br/referencias-de-dominios-produtos-e-atributos-para-autopecas
+Publicar produtos | https://developers.mercadolivre.com.br/publicacao-de-produtos
+User Products | https://developers.mercadolivre.com.br/user-products
+Preço por variação | https://developers.mercadolivre.com.br/preco-variacao
+Estoque distribuído | https://developers.mercadolivre.com.br/estoque-distribuido
+Estoque multi-origem | https://developers.mercadolivre.com.br/estoque-multi-origem
+Descrição de produtos | https://developers.mercadolivre.com.br/descricao-de-produtos
+Validações | https://developers.mercadolivre.com.br/validacoes
+Preços por quantidade B2C | https://developers.mercadolivre.com.br/preco-por-quantidade-b2c
+Preços por quantidade porcentagem B2B | https://developers.mercadolivre.com.br/pxq-porcentagem-b2b
+Preços por quantidade | https://developers.mercadolivre.com.br/precos-por-quantidade
+Preços Líquidos por quantidade | https://developers.mercadolivre.com.br/precos-liquidos
+Preços de produtos | https://developers.mercadolivre.com.br/api-de-precos
+Custos por vender | https://developers.mercadolivre.com.br/comissao-por-vender
+Referências de preços | https://developers.mercadolivre.com.br/referencias-de-precos
+Automatizações de preços | https://developers.mercadolivre.com.br/automatizacoes-de-precos
+Imagens | https://developers.mercadolivre.com.br/trabalhar-com-imagens
+Identificadores de produtos | https://developers.mercadolivre.com.br/identificadores-de-produtos
+Variações | https://developers.mercadolivre.com.br/variacoes
+Republicar itens | https://developers.mercadolivre.com.br/publique-seus-anuncios-novamente
+Kits virtuais | https://developers.mercadolivre.com.br/kits-virtuais
+Primeiros passos | https://developers.mercadolivre.com.br/primeiros-pasos
+Gerenciar tabela de medidas | https://developers.mercadolivre.com.br/gerenciar-tabela-de-medida
+Validação da tabela de medidas | https://developers.mercadolivre.com.br/validacao-tabela-de-medidas
+Sincronização e modificação de publicações | https://developers.mercadolivre.com.br/produto-sincronizacao-de-publicacoes
+Convivência Full e Flex | https://developers.mercadolivre.com.br/convivencia-full-e-flex
+Gestão Mercado Envios | https://developers.mercadolivre.com.br/mercado-envios
+Mercado Envios 1 | https://developers.mercadolivre.com.br/mercado-envios-1
+Status de pedidos e rastreamento | https://developers.mercadolivre.com.br/status-de-pedidos-rastreamento
+Frete dinâmico | https://developers.mercadolivre.com.br/frete-dinamico
+Mercado Envios 2 | https://developers.mercadolivre.com.br/mercado-envios-2
+Custos de envio | https://developers.mercadolivre.com.br/custos-de-envio
+Envios em pontos facultativos | https://developers.mercadolivre.com.br/envios-em-pontos-facultativos
+Envios Coletas e Places | https://developers.mercadolivre.com.br/envios-coletas-places
+Agrupamento de pacotes para a Coleta | https://developers.mercadolivre.com.br/agrupamento-de-pacotes-para-a-coleta
+Envios Agora | https://developers.mercadolivre.com.br/mercado-envios-agora
+Envios Flex | https://developers.mercadolivre.com.br/envios-flex
+Envios Turbo | https://developers.mercadolivre.com.br/envios-turbo
+Envios Fulfillment | https://developers.mercadolivre.com.br/envios-fulfillment
+Planejamento de reposição para Fulfilment | https://developers.mercadolivre.com.br/planejamento-de-reposicao-para-fulfilment
+Envios Personalizados | https://developers.mercadolivre.com.br/envios-personalizados
+O que é catálogo | https://developers.mercadolivre.com.br/o-catalogo-chegou-saiba-como-adaptar-sua-integracao
+Elegibilidade | https://developers.mercadolivre.com.br/elegibilidade-de-catalogo
+Buscador de produtos | https://developers.mercadolivre.com.br/buscador-de-produtos
+Publicar no catálogo | https://developers.mercadolivre.com.br/publicacao-no-catalogo
+Publicações requeridas no catálogo | https://developers.mercadolivre.com.br/publicacoes-necessarias-do-catalogo
+Catálogo de recondicionados | https://developers.mercadolivre.com.br/catalogo-recondicionados
+Competição | https://developers.mercadolivre.com.br/concorrencia-em-catalogo
+Brand Central | https://developers.mercadolivre.com.br/brand-central
+Gerenciar promoções | https://developers.mercadolivre.com.br/gerenciar-ofertas
+Campanhas tradicionais | https://developers.mercadolivre.com.br/campanhas-tradicionais
+Campanha com co-participação | https://developers.mercadolivre.com.br/campanha-com-co-participacao
+Campanhas de desconto por quantidade | https://developers.mercadolivre.com.br/campanhas-de-desconto-por-quantidade
+Desconto pré acordado por item e liquidação de estoque Full | https://developers.mercadolivre.com.br/desconto-pre-acordado-por-item
+Desconto individual | https://developers.mercadolivre.com.br/desconto-individua
+Ofertas do dia | https://developers.mercadolivre.com.br/ofertas-do-dia
+Ofertas relâmpago | https://developers.mercadolivre.com.br/ofertas-relampago
+Campanhas do vendedor | https://developers.mercadolivre.com.br/campanhas-do-vendedor
+Co-participação automatizada e preços competitivos | https://developers.mercadolivre.com.br/campanhas-smart-price-matching
+Cupons do vendedor | https://developers.mercadolivre.com.br/cupons-do-vendedor
+Campanha co-participação para PIX | https://developers.mercadolivre.com.br/campanha-co-participacao-para-pix
+Perguntas e respostas | https://developers.mercadolivre.com.br/gerenciamento-perguntas-respostas
+Orders | https://developers.mercadolivre.com.br/gerenciamento-de-vendas
+Packs | https://developers.mercadolivre.com.br/gestao-packs
+Envios | https://developers.mercadolivre.com.br/gerenciamento-de-envios
+Notas de Packs | https://developers.mercadolivre.com.br/notas-de-packs
+Pagamentos | https://developers.mercadolivre.com.br/gerenciamento-de-pagamentos
+Feedback de uma venda | https://developers.mercadolivre.com.br/feedback-de-uma-venda
+Notas de orders | https://developers.mercadolivre.com.br/notas-de-ordens
+Emitindo Nota Fiscal pelo Mercado Livre | https://developers.mercadolivre.com.br/api-fiscal-faturamento-de-venda
+Envio das Regras Tributárias | https://developers.mercadolivre.com.br/envio-regras-tributarias
+Configurações de Composição de Base de Cálculo do ICMS e IPI | https://developers.mercadolivre.com.br/configuracoes-de-composicao-de-base-de-calculo-do-icms-e-ipi
+Configurações de Composição de Base de Cálculo do PIS e COFINS | https://developers.mercadolivre.com.br/configuracoes-de-composicao-de-base-de-calculo-do-pis-e-cofins
+Configuração do cálculo do diferencial de alíquota (DIFAL) | https://developers.mercadolivre.com.br/configuracao-do-calculo-do-diferencial-de-aliquota-difal
+Configurações do IBS e CBS | https://developers.mercadolivre.com.br/configuracoesibscbs
+Mensagens de operação | https://developers.mercadolivre.com.br/envio-das-mensagens-de-operacao
+Envio dos Dados Fiscais | https://developers.mercadolivre.com.br/envio-dos-dados-fiscais
+Envio de inscrições estaduais | https://developers.mercadolivre.com.br/envio-de-inscricoes-estaduais
+Notificações de invoices | https://developers.mercadolivre.com.br/recebendo-notificacoes
+Gestão e Consulta de Notas Fiscais | https://developers.mercadolivre.com.br/obtendo-nota-fiscal
+Mensagens adicionais | https://developers.mercadolivre.com.br/mensagens-de-adicionais
+Download em lote de documentos fiscais | https://developers.mercadolivre.com.br/download-em-lote-de-documentos-fiscais
+Tabela de processos Fulfillment | https://developers.mercadolivre.com.br/tabela-de-processos-fulfillment
+Integração DCe | https://developers.mercadolivre.com.br/integracao-dce
+Dados para emissão de Nota Fiscal | https://developers.mercadolivre.com.br/faturamento
+Importar Nota Fiscal | https://developers.mercadolivre.com.br/importar-nota-fiscal
+Anexar Nota Fiscal | https://developers.mercadolivre.com.br/anexar-nota-fiscal
+Relatórios de Faturamento | https://developers.mercadolivre.com.br/relatorios-de-faturamento
+Boas Práticas para o Consumo das APIs de Relatórios de Faturamento | https://developers.mercadolivre.com.br/boas-praticas-para-o-consumo-das-apis-de-relatorios-de-faturamento
+Provisões | https://developers.mercadolivre.com.br/provisoes
+Relatórios de Pagamentos | https://developers.mercadolivre.com.br/pagamentos
+Baixar documento legal | https://developers.mercadolivre.com.br/baixar-documento-legal
+Percepções | https://developers.mercadolivre.com.br/percepcoes
+O que é mensageria | https://developers.mercadolivre.com.br/o-que-e-mensageria
+Motivos para comunicar | https://developers.mercadolivre.com.br/motivos-para-se-comunicar
+Gestão de mensagens pós-venda | https://developers.mercadolivre.com.br/mensagens-post-venda
+Mensagens pendentes | https://developers.mercadolivre.com.br/mensagens-pendentes
+Mensagens bloqueadas | https://developers.mercadolivre.com.br/mensagens-bloqueadas
+Programa Decola e Benefício de Reputação | https://developers.mercadolivre.com.br/recuperacao-de-reputacao
+Opiniões de produtos | https://developers.mercadolivre.com.br/opinioes-sobre-um-produto
+Reputação de vendedores | https://developers.mercadolivre.com.br/reputacao-de-vendedores
+Tendências | https://developers.mercadolivre.com.br/tendencias
+Qualidade das publicações | https://developers.mercadolivre.com.br/qualidade-das-publicacoes
+Experiência de compra | https://developers.mercadolivre.com.br/experiencia-de-compra
+Mais vendidos no Mercado Livre | https://developers.mercadolivre.com.br/mais-vendidos-no-mercado-livre
+Visitas | https://developers.mercadolivre.com.br/recurso-visits
+Carregar atributos | https://developers.mercadolivre.com.br/saiba-como-estao-seus-vendedores-em-relacao-carga-de-atributos
+Gerenciar reclamações | https://developers.mercadolivre.com.br/gerenciar-reclamacoes
+Gerenciar mensagem de uma reclamação | https://developers.mercadolivre.com.br/gerenciar-mensagem-de-uma-eclamacao
+Gerenciar resolução de reclamações | https://developers.mercadolivre.com.br/gerenciar-resolucao-de-reclamacoes
+Gerenciar evidências de reclamações | https://developers.mercadolivre.com.br/gerenciar-evidencias-de-reclamacoes
+Erros Reclamações | https://developers.mercadolivre.com.br/erros
+Devoluções | https://developers.mercadolivre.com.br/gerenciar-devolucoes
+Trocas | https://developers.mercadolivre.com.br/trocas-change
+Lojas Oficiais | https://developers.mercadolivre.com.br/loja-oficial
+Pharma - Receitados | https://developers.mercadolivre.com.br/pharma-receitados
+Introdução | https://developers.mercadolivre.com.br/introducao-segu
+Infraestrutura (Criptografia e TLS) | https://developers.mercadolivre.com.br/infraestrutura-criptografia-e-tls
+Gestão de Identidades e Acessos (OAuth e Tokens) | https://developers.mercadolivre.com.br/gestao-de-identidades-e-acessos-oauth-e-tokens
+Autenticação Segura | https://developers.mercadolivre.com.br/autenticacao-segura
+Controle de Acesso e Autorização | https://developers.mercadolivre.com.br/controle-de-acesso-e-autorizacao
+Segurança de Aplicações | https://developers.mercadolivre.com.br/seguranca-de-aplicacoes
+Monitoramento | https://developers.mercadolivre.com.br/monitoramento
+Gestão de Incidentes | https://developers.mercadolivre.com.br/gestao-de-incidentes
+Developer Partner Program | https://developers.mercadolivre.com.br/developer-partner-program
+Segurança - Desenvolvimento Seguro | https://developers.mercadolivre.com.br/seguranca-desenvolvimento-seguro
+Introdução guia de imóveis | https://developers.mercadolivre.com.br/introducao-guia-de-imoveis
+Primeiros passos | https://developers.mercadolivre.com.br/primeiros-passos-imoveis
+Configuração ou requisitos prévios | https://developers.mercadolivre.com.br/configuracao-ou-requisitos-previos
+Obtenção do Access Token | https://developers.mercadolivre.com.br/obtencao-do-access-token
+Consulta de usuários | https://developers.mercadolivre.com.br/consulta-de-usuarios-imoveis
+Passos rápidos para publicar um imóvel de teste | https://developers.mercadolivre.com.br/passos-rapidos-para-publicar-um-imovel-de-teste
+Categorias e atributos | https://developers.mercadolivre.com.br/categorias-e-atributos-imoveis
+Categorias | https://developers.mercadolivre.com.br/categorias
+Atributos | https://developers.mercadolivre.com.br/atributos-imoveis
+Localizar Imóveis | https://developers.mercadolivre.com.br/localizar-imoveis
+Gerenciar pacotes de imóveis | https://developers.mercadolivre.com.br/gerenciar-pacotes-de-imoveis
+Contratação de pacotes de publicação | https://developers.mercadolivre.com.br/contratacao-de-pacotes-de-publicacao
+Pacotes e permissões para projetos, desenvolvimentos ou empreendimentos imobiliá | https://developers.mercadolivre.com.br/pacotes-e-permissoes-para-projetos-desenvolvimentos-ou-empreendimentos-imobiliarios
+Publica Imóveis | https://developers.mercadolivre.com.br/publica-imoveis
+Publicações de Lojas Oficiais para Imóveis | https://developers.mercadolivre.com.br/publicacoes-de-lojas-oficiais-para-imoveis
+Atualiza tuas publicações | https://developers.mercadolivre.com.br/atualiza-tuas-publicacoes
+Ciclo de vida das publicações de Imóveis | https://developers.mercadolivre.com.br/ciclo-de-vida-das-publicacoes-de-imoveis
+Variações | https://developers.mercadolivre.com.br/variacoes-para-imoveis
+Atualização variação imóveis | https://developers.mercadolivre.com.br/atualizacao-variacao-imoveis
+Qualidade das Publicações | https://developers.mercadolivre.com.br/qualidade-das-publicacoes-de-imoveis
+Desenvolvimentos imobiliários | https://developers.mercadolivre.com.br/desenvolvimentos-imobiliarios
+Leads | https://developers.mercadolivre.com.br/leads
+Solicitação de visita | https://developers.mercadolivre.com.br/solicitacao-de-visita
+Estatísticas de interações em Imóveis | https://developers.mercadolivre.com.br/estatisticas-de-interacoes-em-imoveis
+Experiência para imóveis | https://developers.mercadolivre.com.br/experiencia-para-imoveis
+Glossário | https://developers.mercadolivre.com.br/glossario
+Introdução | https://developers.mercadolivre.com.br/guia-para-veiculos
+Consulta de usuários | https://developers.mercadolivre.com.br/automovel-consulta-de-usuarios

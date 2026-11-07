@@ -1,0 +1,4 @@
+URL: https://suporte.montink.com.br/
+ERROR: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://suporte.montink.com.br/
+Call log:
+  - navigating to "https://suporte.montink.com.br/", waiting until "domcontentloaded"

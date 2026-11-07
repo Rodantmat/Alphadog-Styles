@@ -1,0 +1,1040 @@
+URL: https://developers.printful.com/docs/v2-beta/
+STATUS: 200
+REQ_STATUS: 200
+TITLE: API Documentation | Printful
+
+About the Printful API
+Migration Guide
+Errors
+Use Cases
+Rate Limiting
+Localisation
+OAuth Scopes v2
+Catalog v2
+Orders v2
+Files v2
+Countries v2
+Shipping Rates v2
+Warehouse Products v2
+Mockup Generator v2
+Webhook v2
+Stores v2
+Approval Sheets v2
+Basic use cases
+Examples
+API docs by Redocly
+API Documentation v2 | Printful (2.0.0-beta)
+
+Download OpenAPI specification:Download
+
+URL: https://developers.printful.com/docs/#tag/Other-resources/Developer-support
+About the Printful API
+Welcome to API v2 BETA
+We’re excited to inform you that the new major version of our API just went live, and we want to invite you to participate in the Open Beta test. Please keep in mind that this release is still in BETA, although all presented endpoints can be used in a production environment. Since this is a BETA release, we are keen on adopting any changes to our API (which we encourage you to pass via this feedback form). We do not expect to introduce any breaking changes to the current form of endpoints, although the final form of each endpoint might slightly vary from the current version.
+
+
+
+How to use new endpoints? Create or use an already created private token for authorization. Unless it's stated otherwise, the v2 version of Printful API may be used like the v1 version. All v2 endpoints use /v2 prefix and the specifics of each endpoint are explained in a dedicated section.
+
+Test and provide feedback: Explore the new features, experiment with the enhancements, and share your feedback through our dedicated feedback form.
+
+What is new in the V2s
+The flexibility of order creation with itemized order building (read more).
+Simplifying embroidery orders: auto thread color detection as default, simplified thread colors definition on the layer level.
+New, powerful design creation with multiple design layers support and positioning for order items (read more).
+New, more secure Webhooks by enforcing HTTPS, added expiration date, and request signing.
+More flexibility in webhook per event configuration.
+New webhook events – a new event for catalog price change, and the stock update event is now real-time with a refresh rate every 5 minutes (previously every 24h).
+More information in the Catalog about the products (images, discounted pricing, placement information).
+More flexibility in the catalog (extensive filtering and sorting options, DSR support, pagination).
+More information on the order shipment level – more precise EDT, departure country, and shipment tracking events.
+Standardization of returned time in API – standardized format according to ISO 8601, UTC time zone.
+Standardization of returned price formats in API. Prices are displayed as a string with up to 2 decimal points.
+Uniform pagination parameters across all endpoints.
+Performance improvements for all endpoints.
+Postman Collection
+
+You can explore the API using the Postman collection:
+
+Download Postman Collection
+
+Migration Guide
+How to switch from V1 to V2 endpoints
+Update the Base URL: Ensure your requests use the updated V2 base path. For V2, endpoints include the prefix /v2 ( e.g., https://api.printful.com/v2/orders).
+Authentication: Both V1 and V2 use private tokens for authorization. Confirm your token is still valid and configured for your store. No major changes are required here.
+Leverage New Features: V2 introduces several enhancements, including:
+Improved order creation flexibility, allowing itemized order building.
+Simplified embroidery orders with features like auto thread color detection.
+New webhooks for real-time updates on events like stock changes.
+Standardized returned time (ISO 8601) and price formats.
+Handle Pagination and Rate Limiting: V2 implements uniform pagination parameters and adopts a leaky bucket algorithm for rate limiting. The X-Ratelimit-* headers indicate usage and reset times. Adjust your application to handle these changes effectively.
+Test the Endpoints: Create a separate store to test scenarios in production cautiously. Provide feedback on any anomalies using Printful’s feedback form linked in their documentation.
+Explore Documentation for Changes: Thoroughly review the updated API reference to understand the specifics of V2 endpoints, parameters, and expected responses. Adjust your code for endpoints where behavior or parameters have changed compared to V1.
+Errors
+
+The errors in the API are formatted following the RFC 9457: Problem Details for HTTP APIs. The content type of error responses is application/problem+json and the response is a JSON object with the members:
+
+type	string	A URL that identifies the type of error. The URL can be followed to get more information about the error in our documentation.
+status	integer	The status code of the response that returned the error.
+title	string	A short human-readable summary of the problem.
+detail	string	A human-readable explanation of the problem.
+instance	string	A unique identifier of a specific instance of the error. You can send it when you contact our support team so that it's easier for us to find the logs for your specific request.
+
+This member may not be present for all error types.
+
+Some error types may include some other additional information. For example, validation errors will contain the problem that was detected and a pointer to the invalid data.
+
+An example of a response would be:
+
+{
+    "type": "https://developers.printful.com/docs/v2-beta/#errors/not-found",
+    "status" : 404,
+    "title" : "Not Found",
+    "detail" : "The resource that you tried to access does not exist."
+}
+
+
+We introduced this format after we started working on V2, so it's not yet supported by all endpoints. These are the operations that are not supporting this format yet:
+
+List of operations not supporting these error format
+General Errors
+Internal Server Error
+
+This error is returned when the server encounters an unexpected problem to complete the requested operation. Since this is usually an error on our end, resending the request will probably result in getting the error again.
+
+You don't need to do any action to solve this since we are notified when this error happens. However, if you want, you can contact us through our support channels. If you decide to contact us, providing the returned instance will help us to identify the problem.
+
+Validation Errors
+
+This error is returned when the server encounters an unexpected or incorrect value provided by the user. Usually the request can be corrected by providing the correct values specified in valid_values property on an error.
+
+Retired Resources
+Sync endpoints and Product templates endpoints
+
+Product management, with sync products or product templates, is not available in version 2 of the API yet.
+
+FAQ
+How can I access the new API?
+
+To access the new API (V2), update your endpoint URLs to include the /v2 prefix ( e.g., https://api.printful.com/v2/orders). You’ll also need a valid private token for authorization. The V2 API supports the same authentication method as V1, so you can continue using your existing token unless it has expired. Ensure that your applications are updated to use the V2 endpoints, as these include several new features and enhancements.
+
+What happens if I don't migrate?
+
+While the V1 API will continue to function for now, it is essential to migrate to V2 to take advantage of new features and optimizations. V2 includes enhancements like real-time webhook updates, better performance, standardized formats, and improved functionalities. Staying on V1 means missing out on these improvements and could lead to challenges as support for V1 may be phased out in the future. It’s strongly recommended to migrate to ensure compatibility and optimal performance.
+
+How can I get help with my migration?
+
+For migration assistance, you can:
+
+Refer to the V2 API documentation, which provides detailed information about endpoints, parameters, and response formats.
+Contact Printful Customer Support at https://www.printful.com/contacts for specific questions or troubleshooting help.
+Are there any changes to API Rate Limits?
+
+Yes, there are changes to the rate-limiting mechanism in V2. Unlike the simple limit-reset system in V1, V2 implements a leaky bucket algorithm:
+
+The headers X-Ratelimit-Limit, X-Ratelimit-Remaining, X-Ratelimit-Reset, and X-Ratelimit-Policy provide detailed rate-limit information.
+V2 allows smoother traffic bursts by gradually refilling the bucket over time, improving performance and reducing the impact of hitting the limit.
+Default limits remain similar (120 requests per minute), but the reset mechanism is now more dynamic, reflecting the real-time refill process.
+These changes aim to provide more predictable behavior and better utilization of API resources. Adjust your application to handle the revised rate-limiting system effectively.
+Use Cases
+Order Management
+
+This section outlines practical use cases to help you estimate, create, update, and track orders effectively. Whether you're calculating shipment costs, determining potential custom fees, or leveraging webhooks for real-time updates, these use cases are designed to streamline your order workflows.
+
+Key topics include:
+
+Estimating Shipments: Learn how to estimate shipment costs, types, and determine whether custom fees will apply.
+Order Estimation: Understand how to calculate the costs and details of an order before placing it.
+Creating Orders from Catalog Source: Discover how to create new orders using items directly from the catalog.
+Order Modifications: Includes deleting individual order items and updating existing orders.
+Order Confirmation: How to confirm yout orders and initiate fulfillment.
+Order Updates and Tracking: Access tools for receiving updates via webhook events, retrieving detailed order information through the API, and tracking shipments with precise shipping details.
+
+These use cases are tailored to provide actionable insights for efficiently managing your Printful orders, ensuring a smooth integration experience.
+
+Estimating orders
+
+The cost of the order can be estimated before even placing the order by using the order estimation endpoint. The estimation is an asynchronous process so the response won’t contain the estimation data right away, but instead the task ID will be returned.
+
+{
+  "data": {
+    "id": "fc959efb-b3a0-4c12-9cc6-f54d3158291d",
+    "status": "pending",
+    "costs": null,
+    "retail_costs": null,
+    "failure_reasons": []
+  }
+}
+
+
+The task ID fc959efb-b3a0-4c12-9cc6-f54d3158291d can be then used to retrieve the result of the estimation with https://api.printful.com/v2/order-estimation-tasks?id=fc959efb-b3a0-4c12-9cc6-f54d3158291d.
+
+The estimation task has 3 different statuses:
+
+pending
+failed
+completed
+
+If the estimation fails the task status will be set to the failed and the reason will be included in the failure_reasons
+
+Estimating Shipments
+
+Shipping rates can be estimated by using the Estimating orders endpoint as it also returns the shipping cost.
+
+{
+  "data": {
+    "id": "fc959efb-b3a0-4c12-9cc6-f54d3158291d",
+    "status": "completed",
+    "costs": {
+      ...
+      "shipping": "4.79",
+      ...
+    }
+  }
+}
+
+
+That shipping cost however is always calculated for the standard shipping method.
+
+How to estimate the shipment cost and type
+
+To display the different shipping methods the shipping rates endpoint needs to be used. Three main things are required to correctly calculate the shipping costs:
+
+Recipient data
+Product variant + quantity
+Currency
+
+The response will contain all the available shipment methods:
+
+{
+  "data": [
+    {
+      "shipping": "STANDARD",
+      "shipping_method_name": "Flat Rate (Estimated delivery: May 19–24) ",
+      "rate": "13.60",
+      "currency": "EUR",
+      "min_delivery_days": 4,
+      "max_delivery_days": 7,
+      "min_delivery_date": "2022-10-17",
+      "max_delivery_date": "2022-10-20",
+      "shipments": [
+        {
+          "departure_country": "US",
+          "shipment_items": [
+            {
+              "catalog_variant_id": 4011,
+              "quantity": 3
+            }
+          ],
+          "customs_fees_possible": true
+        }
+      ]
+    }
+  ]
+}
+
+How to determine if the custom fees will be applied
+
+Depending on where the shipment is shipped from and where it will be shipped the additional taxes and duties might apply. To check if the custom fees might apply the customs_fees_possible parameter from the shipping rates endpoint can be used to determine that.
+
+{
+  "data": [
+    {
+      ...
+      "shipments": [
+        {
+          ...
+          "customs_fees_possible": true
+        }
+      ]
+    }
+  ]
+}
+
+Creating order from catalog source
+
+To create the order the recipient address and the catalog product with the designs needs to be specified. Order will be created with the draft status and the pending costs calculations.
+
+Orders with the draft status won’t be charged, and they won’t be picked up by our fulfillment facilities. In order to mark the order as ready for fulfillment the order confirmation endpoint needs to be used.
+
+Orders can be also created without specifying any items at first. In that case just the recipient address can be provided:
+
+{
+  "recipient": {
+    "name": "John Smith",
+    "address1": "19749 Dearborn St",
+    "city": "Chatsworth",
+    "country_code": "US",
+    "state_code": "CA",
+    "zip": "91311"
+  }
+}
+
+
+The item creation endpoint can be then used in such order to add different products that should be included in the order. This functionality might be useful when implementing a user cart.
+
+Deleting an order item
+
+Individual items can be removed from the order by using the delete order item endpoint but only if the order is in either draft or failed state.
+
+Updating an order
+
+Order can be updated only in the draft and failed state. An entire order can be updated or just a specific item.
+
+The updates in the V2 of the API use the PATCH method protocol. This means that only the values provided in the request will be updated. For example, sending a request with an empty body will not perform any changes to the order.
+
+Example of updating a recipient name: PATCH https://api.printful.com/v2/orders/{order_id}
+
+{
+  "recipient": {
+    "name": "John Smith"
+  }
+}
+
+
+Some values can’t be updated separately, attempting to update an array's values requires sending a whole array. For example updating just the item design placement is not possible and will result in an error.
+
+{
+  "items": [
+    {
+      "placements": [
+        {
+          "placement": "front"
+        }
+      ]
+    }
+  ]
+}
+
+
+In such case a whole valid design data needs to be provided:
+
+{
+  "items": [
+    {
+      "quantity": 1,
+      "catalog_variant_id": 4011,
+      "source": "catalog",
+      "placements": [
+        {
+          "placement": "front",
+          "technique": "dtg",
+          "layers": [
+            {
+              "type": "file",
+              "url": "{{image_url}}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
+Order Confirmation
+
+In V2 API the orders cannot be created immediately in a confirmed state. In order to confirm an order it first needs to be created in the draft state. Or if the order failed e.g. due to payment method missing it can be confirmed again.
+
+If the order cost calculations are still calculating or they have failed to calculate then the order won’t be possible to be confirmed.
+
+Example of order cost still calculating:
+
+...
+"costs": {
+            "calculation_status": "calculating",
+            "currency": null,
+            "subtotal": null,
+            "discount": null,
+            "shipping": null,
+            "digitization": null,
+            "additional_fee": null,
+            "fulfillment_fee": null,
+            "retail_delivery_fee": null,
+            "tax": null,
+            "vat": null,
+            "total": null
+        },
+...
+
+Webhook events
+
+To get the notifications about the order status, the webhook events endpoint can be used to subscribe to various webhook events e.g.:
+
+Order created
+Order updated
+Order failed
+Order cancelled
+Order put on hold
+Order put on hold approved
+Order removed from hold
+Order refunded
+Get endpoints
+
+The order list can be retrieved using the retrieve a list of orders endpoint. There is also an endpoint for retrieving the single order and the endpoint to retrieve a specific order item.
+
+Shipping information
+
+After an order is made it is split into shipments, meaning that a single order can have multiple shipments. You can retrieve the status of these shipments using the shipments endpoint.
+
+The main use case of this endpoint is in providing tracking details about each shipment. Providing information about the status of the shipment and what events have occurred so far.
+
+{
+  ...
+      "shipment_status": "canceled",
+      "shipped_at": "2023-06-15T16:35:35Z",
+      "delivery_status": "unknown",
+      "delivered_at": "2023-06-15T16:35:35Z",
+      "departure_address": {
+        "country_name": "United States",
+        "country_code": "US",
+        "state_code": "CA"
+      },
+      "tracking_url": "​https://myorders.com/tracking/39925631",
+      "tracking_events": [
+        {
+          "triggered_at": "2023-06-15T19:15:05Z",
+          "description": "Arrived At Destination"
+        }
+      ],
+...
+
+
+Another important usage of this endpoint is in providing delivery time estimates:
+
+{
+  ...
+  "estimated_delivery": {
+    "from_date": "2023-06-15",
+    "to_date": "2023-06-15",
+    "calculated_at": "2023-06-15T16:35:35Z"
+  },
+  ...
+}
+
+
+Given that not all orders can fit in a single shipment it may be necessary to indicate which shipment will contain which item. The shipments endpoint can be used to link ordered items back to physical items.
+
+{
+  ...
+  "shipment_items": [
+    {
+      "id": 10,
+      "order_item_id": 20,
+      "order_item_external_id": "item-external-id",
+      "order_item_name": "Item name",
+      "quantity": 1,
+      "_links": {
+        "order_item": {
+          "href": "​https://api.printful.com/v2/orders/2/order-items/20"
+        }
+      }
+    }
+  ],
+  ...
+}
+
+Building a product catalog
+Product options, placements and techniques
+
+In order to create order items and other designs it's important to know the specification of the product. The catalog products endpoints offers a way to expose these options so that designs can be created dynamically from blank Printful products.
+
+Displaying the product
+
+A request to https://api.printful.com/v2/catalog-products will provide a paged list of products along with descriptions and images of products to help users identify the product they would like.
+
+[
+  {
+    "id": 294,
+    "type": "T-SHIRT",
+    "main_category_id": 7,
+    "name": "Unisex Pullover Hoodie | Bella + Canvas 3719",
+    "brand": "Bella + Canvas",
+    "model": "3719",
+    "image": "https://s3-printful.stage.printful.dev/upload/product-catalog-img/35/352d4f3cc9fbac9ee9173467bc7f200e_l",
+    "variant_count": 20,
+    "is_discontinued": false,
+    "description": "A soft and comfy unisex hoodie that fits all your hoodie needs. The fleece fabric makes it a great partner all year round, be it a summer evening on the beach, or a Christmas dinner in a mountain cabin.\n\n• 52% airlume combed ring-spun cotton, 48% poly fleece\n• Heather colors are 60% airlume combed ring-spun cotton, 40% poly fleece\n• Fabric weight: 6.5 oz/yd² (220.4 g/m²)\n• Regular fit\n• Side-seamed construction\n• Blank product sourced from Honduras, Nicaragua or the US"
+  },
+  {
+    "id": 262,
+    "type": "CUT-SEW",
+    "main_category_id": 49,
+    "name": "All-Over Print Drawstring Bag",
+    "brand": null,
+    "model": null,
+    "image": "https://s3-printful.stage.printful.dev/upload/product-catalog-img/0f/0f04d73474287ef01d6f5541c3a63de2_l",
+    "variant_count": 1,
+    "is_discontinued": false,
+    "description": "Combine your love for vibrant prints and a sporty style with a cool drawstring bag. It's a must-have gym essential that can be worn as a backpack with drawstring closure at top, and narrow, contrasting shoulder straps. \n\n• 100% polyester\n• One size: 15″ × 17″ (38.1 cm × 43.2 cm)\n• Fabric weight (may vary by 5%): 6.64 oz/yd² (225 g/m²)\"\n• Maximum weight limit: 33 lbs (15 kg)\n• Twin cotton handles\n• Drawstring closure\n• Blank product components sourced from Israel",
+  }
+]
+
+Selecting the product and creating a design
+
+Once the product is selected additional information is needed in order to create a design with the blank product. The following is a valid item
+
+{
+  "quantity": 1,
+  "catalog_variant_id": 4011,
+  "source": "catalog",
+  "placements": [
+    {
+      "placement": "front",
+      "technique": "dtg",
+      "layers": [
+        {
+          "type": "file",
+          "url": "{{image_url}}"
+        }
+      ]
+    }
+  ]
+}
+
+
+A lot of the information in the above request depend on information taken from the catalog.
+
+https://api.printful.com/v2/catalog-products/294
+
+{
+  "id": 294,
+  "techniques": [
+    {
+      "key": "dtg",
+      "display_name": "DTG printing",
+      "is_default": true
+    },
+    {
+      "key": "embroidery",
+      "display_name": "Embroidery",
+      "is_default": false
+    }
+  ],
+  "placements": [
+    {
+      "placement": "embroidery_chest_left",
+      "technique": "embroidery",
+      "layers": [
+        {
+          "type": "file",
+          "layer_options": [
+            {
+              "name": "thread_colors",
+              "techniques": [
+                "embroidery"
+              ],
+              "type": "array",
+              "values": {
+                "#FFFFFF": "1801 White",
+                "#000000": "1800 Black",
+                "#96A1A8": "1718 Grey",
+                "#A67843": "1672 Old Gold",
+                "#FFCC00": "1951 Gold",
+                "#E25C27": "1987 Orange",
+                "#CC3366": "1910 Flamingo",
+                "#CC3333": "1839 Red",
+                "#660000": "1784 Maroon",
+                "#333366": "1966 Navy",
+                "#005397": "1842 Royal",
+                "#3399FF": "1695 Aqua/Teal",
+                "#6B5294": "1832 Purple",
+                "#01784E": "1751 Kelly Green",
+                "#7BA35A": "1848 Kiwi Green"
+              }
+            }
+          ]
+        }
+      ],
+      "placement_options": []
+    },
+    {
+      "placement": "front",
+      "technique": "dtg",
+      "layers": [
+        {
+          "type": "file",
+          "layer_options": []
+        }
+      ],
+      "placement_options": []
+    },
+    ...
+  ],
+  ...
+}
+
+
+The example above gives us most of the information necessary to design the item, it provides the techiques, placements and layers available for the product.
+
+Mapped onto an item these values would look like this:
+
+{
+  "placements": [
+    {
+      "placement": "front",
+      "technique": "dtg",
+      "layers": [
+        {
+          "type": "file",
+          "url": "{{image_url}}"
+        }
+      ]
+    }
+  ]
+}
+
+
+It also offers alternative options, for example the same product could use embroidery thread colors if embroidery placements are selected.
+
+{
+  "placements": [
+    {
+      "placement": "embroidery_chest_left",
+      "technique": "embroidery",
+      "layers": [
+        {
+          "type": "file",
+          "layer_options": [
+            {
+              "name": "thread_colors",
+              "value": [
+                "#FFFFFF",
+                "#000000"
+              ]
+            }
+          ],
+          "url": "{{image_url}}"
+        }
+      ]
+    }
+  ]
+}
+
+
+What's missing from this is the catalog_variant_id, the variant can be found using https://api.printful.com/v2/catalog-products/294/catalog-variants. Each variant is different in color and size and the user can view an image of each to help select their variant.
+
+[
+  {
+    "id": 9224,
+    "catalog_product_id": 294,
+    "name": "Bella + Canvas 3719 Unisex Fleece Pullover Hoodie (White / XL)",
+    "size": "XL",
+    "color": "White",
+    "color_code": "#ffffff",
+    "color_code2": null,
+    "image": "https://s3-printful.stage.printful.dev/products/294/9220_1526986863.jpg",
+    ...
+  },
+  ...
+]
+
+
+With the catalog variant selected the design can be finished, and creating an item is just a matter of selecting the quantity and source of the design.
+
+{
+  "quantity": 1,
+  "catalog_variant_id": 9224,
+  "source": "catalog",
+  "placements": [
+    {
+      "placement": "embroidery_chest_left",
+      "technique": "embroidery",
+      "layers": [
+        {
+          "type": "file",
+          "layer_options": [
+            {
+              "name": "thread_colors",
+              "value": [
+                "#FFFFFF",
+                "#000000"
+              ]
+            }
+          ],
+          "url": "{{image_url}}"
+        }
+      ]
+    }
+  ]
+}
+
+Getting the pricing information
+
+The catalog API can also be used to indicate to the end customer what the price of the product will be.
+
+https://api.printful.com/v2/catalog-variants/9224/prices
+
+{
+  "data": {
+    "currency": "EUR",
+    "product": {
+      "id": 294,
+      "placements": [
+        {
+          "id": "embroidery_chest_left",
+          "title": "Left chest",
+          "type": "Embroidery",
+          "technique_key": "embroidery",
+          "placement_options": [],
+          "price": "2.95",
+          "discounted_price": "2.95",
+          "layers": [
+            {
+              "type": "file",
+              "additional_price": "0.00",
+              "layer_options": []
+            }
+          ]
+        },
+        {
+          "id": "front",
+          "title": "Front print",
+          "type": "DTG printing",
+          "technique_key": "dtg",
+          "placement_options": [],
+          "price": "5.75",
+          "discounted_price": "5.75",
+          "layers": [
+            {
+              "type": "file",
+              "additional_price": "0.00",
+              "layer_options": []
+            }
+          ]
+        }
+      ]
+    },
+    "variant": {
+      "id": 9224,
+      "techniques": [
+        {
+          "technique_key": "dtg",
+          "technique_display_name": "DTG printing",
+          "price": "28.95",
+          "discounted_price": "28.95"
+        },
+        {
+          "technique_key": "embroidery",
+          "technique_display_name": "Embroidery",
+          "price": "30.75",
+          "discounted_price": "30.75"
+        }
+      ]
+    },
+    "discount_tiers": [
+      {
+        "quantity": 25,
+        "bulk_discount_percentage": 0.08
+      },
+      ...
+    ]
+  },
+}
+
+
+The price of the product will depend upon the technique, the variant, the placement and the quantity of the product ordered. Furthermore, the first placement will be discounted by the discounted_price.
+
+For more information on pricing please follow this link: https://www.printful.com/pricing
+
+Price changed webhook
+
+It may also be useful that a system can react to changes in product pricing, the Catalog Price Changed (catalog_price_changed) webhook can be used to handle this use case.
+
+Getting the images for the products
+
+The images provided in the catalog products and variants are only very simple. For more complex use cases where a larger variety of mockups of a single product may need to be displayed, the catalog product images and variant images endpoints can help. Note however, that these require additional work, Printful doesn't provide images for every color so most images on those endpoints are transparent and require the developer to overlay them on top of the color defined on the resource.
+
+Getting the availability of products (stock information)
+
+Stock of products changes daily at Printful so it's important to make sure to display this availability to the end customers.
+
+One way to make sure end customers only see the products available in their region is to filter by selling region https://api.printful.com/v2/catalog-products?selling_region_name=brazil.
+
+If more detailed availability information is needed it can be taken from the variant and product availability endpoints.
+
+https://api.printful.com/v2/catalog-products/294/availability
+
+{
+  "data": [
+    {
+      "catalog_variant_id": 9231,
+      "techniques": [
+        {
+          "technique": "dtg",
+          "selling_regions": [
+            {
+              "name": "usa",
+              "availability": "in stock",
+              "placement_option_availability": []
+            }
+          ]
+        },
+        {
+          "technique": "embroidery",
+          "selling_regions": [
+            {
+              "name": "usa",
+              "availability": "in stock",
+              "placement_option_availability": []
+            }
+          ]
+        }
+        ...
+      ]
+
+
+This may be important in cases where the stock availability of specific techniques is important.
+
+Stock updated webhook
+
+It may also be useful that a system can react to changes in product availability, the catalog stock updated (catalog_stock_updated) webhook can be used to handle this use case.~~
+
+How to create mockups
+Defining mockup styles
+
+When creating a mockup a style first needs to be selected for the given product.
+
+https://api.printful.com/v2/catalog-products/294/mockup-styles
+
+{
+  "data": [
+    {
+      "placement": "front",
+      "display_name": "Front print",
+      "technique": "dtg",
+      "print_area_width": 12.0,
+      "print_area_height": 12.0,
+      "print_area_type": "simple",
+      "dpi": 150,
+      "mockup_styles": [
+        {
+          "id": 16652,
+          "category_name": "Flat",
+          "view_name": "Front",
+          "restricted_to_variants": null
+        },
+        ...
+
+
+These styles contain a view and category and are limited by placement to help select the correct style.
+
+Creating mockups
+
+Once the style is retrieved creating a mockup is very similar to creating an order item. All of this data from the order item created above can be reused to create a mockup
+
+{
+  "source": "catalog",
+  "placements": [
+    {
+      "placement": "embroidery_chest_left",
+      "technique": "embroidery",
+      "layers": [
+        {
+          "type": "file",
+          "layer_options": [
+            {
+              "name": "thread_colors",
+              "value": [
+                "#FFFFFF",
+
+LINKS:
+ | https://developers.printful.com/docs/#tag/Other-resources/Developer-support
+API docs by Redocly | https://redocly.com/redoc/
+https://developers.printful.com/docs/#tag/Other-resources/Developer-support | https://developers.printful.com/docs/#tag/Other-resources/Developer-support
+ | https://developers.printful.com/docs/v2-beta/#section/About-the-Printful-API
+this feedback form | https://forms.gle/Yq4t1poQQR8Mwoyt5
+feedback form | https://forms.gle/Yq4t1poQQR8Mwoyt5
+(read more) | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2
+(read more) | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2
+ | https://developers.printful.com/docs/v2-beta/#section/About-the-Printful-API/Postman-Collection
+Download Postman Collection | https://developers.printful.com/docs/v2-beta/postman/printful_postman_collection.json
+ | https://developers.printful.com/docs/v2-beta/#section/Migration-Guide
+ | https://developers.printful.com/docs/v2-beta/#section/Migration-Guide/How-to-switch-from-V1-to-V2-endpoints
+https://api.printful.com/v2/orders | https://api.printful.com/v2/orders
+ | https://developers.printful.com/docs/v2-beta/#section/Errors
+RFC 9457: Problem Details for HTTP APIs | https://www.rfc-editor.org/rfc/rfc9457.html
+contact our support team | https://developers.printful.com/docs/#section/Developer-support
+ | https://developers.printful.com/docs/v2-beta/#operation/getProducts
+ | https://developers.printful.com/docs/v2-beta/#operation/getProductById
+ | https://developers.printful.com/docs/v2-beta/#operation/getVariantById
+ | https://developers.printful.com/docs/v2-beta/#operation/getProductVariantsById
+ | https://developers.printful.com/docs/v2-beta/#operation/getCategories
+ | https://developers.printful.com/docs/v2-beta/#operation/getCategoryById
+ | https://developers.printful.com/docs/v2-beta/#operation/getCategoriesByProductId
+ | https://developers.printful.com/docs/v2-beta/#operation/getProductSizeGuideById
+ | https://developers.printful.com/docs/v2-beta/#operation/getProductPricesById
+ | https://developers.printful.com/docs/v2-beta/#operation/getVariantPricesById
+ | https://developers.printful.com/docs/v2-beta/#operation/getProductImagesById
+ | https://developers.printful.com/docs/v2-beta/#operation/getVariantImagesById
+ | https://developers.printful.com/docs/v2-beta/#operation/getMockupTemplatesByProductId
+ | https://developers.printful.com/docs/v2-beta/#operation/getOrders
+ | https://developers.printful.com/docs/v2-beta/#operation/createOrder
+ | https://developers.printful.com/docs/v2-beta/#operation/updateOrder
+ | https://developers.printful.com/docs/v2-beta/#operation/getOrder
+ | https://developers.printful.com/docs/v2-beta/#operation/confirmOrder
+ | https://developers.printful.com/docs/v2-beta/#operation/getItemById
+ | https://developers.printful.com/docs/v2-beta/#operation/updateItem
+ | https://developers.printful.com/docs/v2-beta/#operation/deleteItemById
+ | https://developers.printful.com/docs/v2-beta/#operation/getItemsByOrderId
+ | https://developers.printful.com/docs/v2-beta/#operation/createItemByOrderId
+ | https://developers.printful.com/docs/v2-beta/#operation/getShipments
+ | https://developers.printful.com/docs/v2-beta/#operation/getWebhooks
+ | https://developers.printful.com/docs/v2-beta/#operation/createWebhook
+ | https://developers.printful.com/docs/v2-beta/#operation/disableWebhook
+ | https://developers.printful.com/docs/v2-beta/#operation/getWebhookEventConfiguration
+ | https://developers.printful.com/docs/v2-beta/#operation/createWebhookEventConfiguration
+ | https://developers.printful.com/docs/v2-beta/#operation/disableWebhookEvent
+ | https://developers.printful.com/docs/v2-beta/#section/Errors/General-Errors
+ | https://developers.printful.com/docs/v2-beta/#section/Errors/Validation-Errors
+ | https://developers.printful.com/docs/v2-beta/#section/Errors/Retired-Resources
+ | https://developers.printful.com/docs/v2-beta/#section/Errors/FAQ
+https://api.printful.com/v2/orders | https://api.printful.com/v2/orders
+https://www.printful.com/contacts | https://www.printful.com/contacts
+ | https://developers.printful.com/docs/v2-beta/#section/Use-Cases
+ | https://developers.printful.com/docs/v2-beta/#section/Use-Cases/Order-Management
+estimation endpoint | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/createOrderEstimationTask
+retrieve the result | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/getOrderEstimationTask
+Estimating orders endpoint | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/createOrderEstimationTask
+shipping rates endpoint | https://developers.printful.com/docs/v2-beta/#tag/Shipping-Rates-v2/operation/calculateShppingRates
+create the order | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/createOrder
+item creation endpoint | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/createItemByOrderId
+order item endpoint | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/deleteItemById
+An entire order can be updated | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/updateOrder
+just a specific item | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/updateItem
+created in the draft state | https://developers.printful.com/docs/v2-beta/#creating-order-from-catalog-source
+webhook events endpoint | https://developers.printful.com/docs/v2-beta/#tag/Webhook-v2
+list of orders endpoint | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/getOrders
+retrieving the single order | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/getOrder
+retrieve a specific order item | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/getItemById
+shipments endpoint | https://developers.printful.com/docs/v2-beta/#tag/Orders-v2/operation/getShipments
+ | https://developers.printful.com/docs/v2-beta/#section/Use-Cases/Building-a-product-catalog
+catalog products endpoints | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2
+https://www.printful.com/pricing | https://www.printful.com/pricing
+Catalog Price Changed | https://developers.printful.com/docs/v2-beta/#tag/Webhook-v2/operation/catalogStockUpdated
+products | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductById
+variants | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getVariantById
+product images | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductImagesById
+variant images | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getVariantImagesById
+overlay them on top of the color defined on the resource | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductImagesById
+filter by selling region | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProducts
+variant | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductStockAvailabilityById
+product | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductStockAvailabilityById
+catalog stock updated | https://developers.printful.com/docs/v2-beta/#tag/Webhook-v2/operation/catalogStockUpdated
+ | https://developers.printful.com/docs/v2-beta/#section/Use-Cases/How-to-create-mockups
+mockup a style | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/retrieveMockupStylesByProductId
+creating a mockup | https://developers.printful.com/docs/v2-beta/#tag/Mockup-Generator-v2/operation/createMockupGeneratorTasks
+Mockup task finished | https://developers.printful.com/docs/v2-beta/#tag/Webhook-v2/operation/mockupTaskFinished
+retrieve mockup tasks | https://developers.printful.com/docs/v2-beta/#tag/Mockup-Generator-v2/operation/getMockupGeneratorTasks
+ | https://developers.printful.com/docs/v2-beta/#tag/Rate-Limiting
+V1 Rate Limits | https://developers.printful.com/docs/v2-beta/#tag/Rate-Limiting
+Leaky Bucket | https://en.wikipedia.org/wiki/Leaky_bucket
+Token Bucket | https://en.wikipedia.org/wiki/Token_bucket
+RateLimit header fields for HTTP | https://www.ietf.org/archive/id/draft-ietf-httpapi-ratelimit-headers-07.html
+ | https://developers.printful.com/docs/v2-beta/#tag/Localisation
+ | https://developers.printful.com/docs/v2-beta/#tag/OAuth-Scopes-v2
+ | https://developers.printful.com/docs/v2-beta/#tag/OAuth-Scopes-v2/operation/getOAuthScopes
+https://api.printful.com/v2/oauth-scopes | https://api.printful.com/v2/oauth-scopes
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/What-is-a-catalog-product
+ | https://developers.printful.com/docs/v2-beta/images/catalog/catalog_product_diagram.png
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/What-is-a-catalog-variant
+ | https://developers.printful.com/docs/v2-beta/images/catalog/catalog_variant_diagram.png
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/Catalog-general-information
+Product Prices | https://developers.printful.com/docs/v2-beta/#operation/getProductPricesById
+Product Size Guides | https://developers.printful.com/docs/v2-beta/#operation/getProductSizeGuideById
+Product Images | https://developers.printful.com/docs/v2-beta/#operation/getProductImagesById
+ | https://developers.printful.com/docs/v2-beta/images/catalog/catalog_diagram.png
+Catalog variants | https://developers.printful.com/docs/v2-beta/#operation/getProductVariantsById
+Catalog products | https://developers.printful.com/docs/v2-beta/#operation/getProducts
+Catalog categories | https://developers.printful.com/docs/v2-beta/#operation/getCategories
+Catalog products | https://developers.printful.com/docs/v2-beta/#operation/getProducts
+Catalog products | https://developers.printful.com/docs/v2-beta/#operation/getProducts
+Catalog products | https://developers.printful.com/docs/v2-beta/#operation/getProducts
+Product Prices | https://developers.printful.com/docs/v2-beta/#operation/getProductPricesById
+ | https://developers.printful.com/docs/v2-beta/images/catalog/size_guides_diagram.png
+Get Product Size Guide | https://developers.printful.com/docs/v2-beta/#operation/getProductSizeGuideById
+See examples | https://developers.printful.com/docs/v2-beta/#tag/Examples/Catalog-API-examples/Using-size-guides
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/Categories
+see Filtering options | https://developers.printful.com/docs/v2-beta/#filtering-options
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProducts
+ | https://developers.printful.com/docs/v2-beta/images/catalog/design_data_diagram.png
+Get Categories | https://developers.printful.com/docs/v2-beta/#operation/getCategories
+here | https://developers.printful.com/docs/#tag/Common/Placements
+https://files.cdn.printful.com/products/12/product_1550594502.jpg | https://files.cdn.printful.com/products/12/product_1550594502.jpg
+https://api.printful.com/v2/catalog-products/71 | https://api.printful.com/v2/catalog-products/71
+https://api.printful.com/v2/catalog-products/71/catalog-variants | https://api.printful.com/v2/catalog-products/71/catalog-variants
+https://api.printful.com/v2/catalog-products/71/categories | https://api.printful.com/v2/catalog-products/71/categories
+https://api.printful.com/v2/catalog-products/71/prices | https://api.printful.com/v2/catalog-products/71/prices
+https://api.printful.com/v2/catalog-products/71/sizes | https://api.printful.com/v2/catalog-products/71/sizes
+https://api.printful.com/v2/catalog-products/71/images | https://api.printful.com/v2/catalog-products/71/images
+https://api.printful.com/v2/catalog-products/71/availability | https://api.printful.com/v2/catalog-products/71/availability
+https://api.printful.com/v2/catalog-products | https://api.printful.com/v2/catalog-products
+https://api.printful.com/v2/catalog-products?offset=20 | https://api.printful.com/v2/catalog-products?offset=20
+https://api.printful.com/v2/catalog-products | https://api.printful.com/v2/catalog-products
+https://api.printful.com/v2/catalog-products?offset=280 | https://api.printful.com/v2/catalog-products?offset=280
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductById
+See catalog product | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/What-is-a-catalog-product
+https://files.cdn.printful.com/products/12/product_1550594502.jpg | https://files.cdn.printful.com/products/12/product_1550594502.jpg
+https://api.printful.com/v2/catalog-products/71 | https://api.printful.com/v2/catalog-products/71
+https://api.printful.com/v2/catalog-products/71/catalog-variants | https://api.printful.com/v2/catalog-products/71/catalog-variants
+https://api.printful.com/v2/catalog-products/71/categories | https://api.printful.com/v2/catalog-products/71/categories
+https://api.printful.com/v2/catalog-products/71/prices | https://api.printful.com/v2/catalog-products/71/prices
+https://api.printful.com/v2/catalog-products/71/sizes | https://api.printful.com/v2/catalog-products/71/sizes
+https://api.printful.com/v2/catalog-products/71/images | https://api.printful.com/v2/catalog-products/71/images
+https://api.printful.com/v2/catalog-products/71/availability | https://api.printful.com/v2/catalog-products/71/availability
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getVariantById
+See catalog variant | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/What-is-a-catalog-variant
+https://files.cdn.printful.com/products/12/629_1517916489.jpg | https://files.cdn.printful.com/products/12/629_1517916489.jpg
+https://api.printful.com/v2/catalog-variants/100 | https://api.printful.com/v2/catalog-variants/100
+https://api.printful.com/v2/catalog-products/71 | https://api.printful.com/v2/catalog-products/71
+https://api.printful.com/v2/catalog-products/71/catalog-variants | https://api.printful.com/v2/catalog-products/71/catalog-variants
+https://api.printful.com/v2/catalog-variants/100/prices | https://api.printful.com/v2/catalog-variants/100/prices
+https://api.printful.com/v2/catalog-variants/100/images | https://api.printful.com/v2/catalog-variants/100/images
+https://api.printful.com/v2/catalog-variants/100/availability | https://api.printful.com/v2/catalog-variants/100/availability
+https://api.printful.com/v2/catalog-variants/100 | https://api.printful.com/v2/catalog-variants/100
+https://api.printful.com/v2/catalog-products/71/catalog-variants | https://api.printful.com/v2/catalog-products/71/catalog-variants
+https://api.printful.com/v2/catalog-products/71 | https://api.printful.com/v2/catalog-products/71
+https://api.printful.com/v2/catalog-variants/4011/prices | https://api.printful.com/v2/catalog-variants/4011/prices
+https://api.printful.com/v2/catalog-variant/4011/images | https://api.printful.com/v2/catalog-variant/4011/images
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductVariantsById
+See catalog variant | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/What-is-a-catalog-variant
+https://files.cdn.printful.com/products/12/629_1517916489.jpg | https://files.cdn.printful.com/products/12/629_1517916489.jpg
+https://api.printful.com/v2/catalog-variants/100 | https://api.printful.com/v2/catalog-variants/100
+https://api.printful.com/v2/catalog-products/71 | https://api.printful.com/v2/catalog-products/71
+https://api.printful.com/v2/catalog-products/71/catalog-variants | https://api.printful.com/v2/catalog-products/71/catalog-variants
+https://api.printful.com/v2/catalog-variants/100/prices | https://api.printful.com/v2/catalog-variants/100/prices
+https://api.printful.com/v2/catalog-variants/100/images | https://api.printful.com/v2/catalog-variants/100/images
+https://api.printful.com/v2/catalog-variants/100/availability | https://api.printful.com/v2/catalog-variants/100/availability
+https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset | https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset=40
+https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset | https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset=60
+https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset | https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset=20
+https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20 | https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20
+https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset | https://api.printful.com/v2/catalog-products/71/catalog-variants?limit=20&offset=100
+https://api.printful.com/v2/catalog-products/71 | https://api.printful.com/v2/catalog-products/71
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getCategories
+See categories_ids | https://developers.printful.com/docs/v2-beta/#operation/getProducts
+https://s3-printful.stage.printful.dev/upload/catalog_category/b1/b1513c82696405 | https://s3-printful.stage.printful.dev/upload/catalog_category/b1/b1513c82696405fcc316fc611c57f132_t?v=1646395980
+https://api.printful.com/v2/catalog-categories/1 | https://api.printful.com/v2/catalog-categories/1
+https://api.printful.com/v2/catalog-categories?limit=20&offset=0 | https://api.printful.com/v2/catalog-categories?limit=20&offset=0
+https://api.printful.com/v2/catalog-categories?limit=20&offset=20 | https://api.printful.com/v2/catalog-categories?limit=20&offset=20
+https://api.printful.com/v2/catalog-categories?limit=20&offset=40 | https://api.printful.com/v2/catalog-categories?limit=20&offset=40
+https://api.printful.com/v2/catalog-categories?limit=20 | https://api.printful.com/v2/catalog-categories?limit=20
+https://api.printful.com/v2/catalog-categories?limit=20&offset=90 | https://api.printful.com/v2/catalog-categories?limit=20&offset=90
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getCategoryById
+See categories_ids | https://developers.printful.com/docs/v2-beta/#operation/getProducts
+https://s3-printful.stage.printful.dev/upload/catalog_category/b1/b1513c82696405 | https://s3-printful.stage.printful.dev/upload/catalog_category/b1/b1513c82696405fcc316fc611c57f132_t?v=1646395980
+https://api.printful.com/v2/catalog-categories/1 | https://api.printful.com/v2/catalog-categories/1
+https://api.printful.com/v2/catalog-categories | https://api.printful.com/v2/catalog-categories
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getCategoriesByProductId
+https://s3-printful.stage.printful.dev/upload/catalog_category/b1/b1513c82696405 | https://s3-printful.stage.printful.dev/upload/catalog_category/b1/b1513c82696405fcc316fc611c57f132_t?v=1646395980
+https://api.printful.com/v2/catalog-categories/1 | https://api.printful.com/v2/catalog-categories/1
+https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offs | https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offset=40
+https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offs | https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offset=60
+https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offs | https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offset=20
+https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20 | https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20
+https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offs | https://api.printful.com/v2/catalog-products/71/catalog-categories?limit=20&offset=100
+https://api.printful.com/v2/catalog-categories | https://api.printful.com/v2/catalog-categories
+ | https://developers.printful.com/docs/v2-beta/#tag/Catalog-v2/operation/getProductSizeGuideById
+https://s3-printful.stage.printful.dev/upload/measure-yourself/6a/6a4fe322f592f2 | https://s3-printful.stage.printful.dev/upload/measure-yourself/6a/6a4fe322f592f2b91d5a735d7ff8d1c0_t?v=1652962720
+https://s3-printful.stage.printful.dev/upload/product-measure/85/857e7cc8b802da2 | https://s3-printful.stage.printful.dev/upload/product-measure/85/857e7cc8b802da216e7f1a6114075a72_t?v=1652962720
+https://s3-printful.stage.printful.dev/upload/measure-yourself/6a/6a4fe322f592f2 | https://s3-printful.stage.printful.dev/upload/measure-yourself/6a/6a4fe322f592f2b91d5a735d7ff8d1c0_t?v=1652962720

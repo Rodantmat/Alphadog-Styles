@@ -1,0 +1,4 @@
+URL: https://ajuda.montink.com.br/
+ERROR: Page.goto: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://ajuda.montink.com.br/
+Call log:
+  - navigating to "https://ajuda.montink.com.br/", waiting until "domcontentloaded"

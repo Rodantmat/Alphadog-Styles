@@ -1,0 +1,4 @@
+URL: https://developers.montink.com.br/
+ERROR: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://developers.montink.com.br/
+Call log:
+  - navigating to "https://developers.montink.com.br/", waiting until "domcontentloaded"

@@ -1,0 +1,4 @@
+URL: https://www.umapenca.com.br/api
+ERROR: Page.goto: net::ERR_CONNECTION_RESET at https://www.umapenca.com.br/api
+Call log:
+  - navigating to "https://www.umapenca.com.br/api", waiting until "domcontentloaded"

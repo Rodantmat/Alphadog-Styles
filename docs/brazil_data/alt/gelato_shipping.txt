@@ -1,0 +1,193 @@
+URL: https://support.gelato.com/en/articles/8996576-how-do-i-configure-notifications-webhooks
+STATUS: 200
+REQ_STATUS: 200
+TITLE: How do I configure notifications (webhooks)? | Gelato Create | Help Center
+
+Skip to main content
+Report order problem
+Gelato dashboard
+English
+Français
+Deutsch
+日本語
+Español
+Tiếng Việt
+English
+Search
+Ctrl K
+Getting started
+About Gelato
+Our products
+Grow your business
+Integrations
+Automations & Migrations
+Shopify
+Etsy
+TikTok
+Amazon
+WooCommerce
+Wix
+Squarespace
+BigCommerce
+Order Desk
+API Integration
+Getting Started with API Integration
+How do I add, remove, deactivate, or replace an API key?
+Do you have a sandbox environment?
+How do I configure notifications (webhooks)?
+Order issues
+All Collections
+Integrations
+API Integration
+How do I configure notifications (webhooks)?
+How do I configure notifications (webhooks)?
+
+Learn how to set up and manage webhooks in the Gelato API to receive real-time notifications for order events
+
+October 30, 2025
+Copy for LLM
+
+This article explains how to configure webhooks using the Gelato API to receive notifications in your application whenever an event occurs with your order.
+
+ 
+
+ 
+
+Webhook Configuration
+
+The Gelato API offers robust webhook functionality, allowing you to stay informed about critical events related to your orders. To configure your webhooks, follow these steps:
+
+Access the Gelato Dashboard and navigate to the Webhooks section. This dedicated area provides a centralized hub for managing your webhook configurations.
+
+ 
+
+ 
+
+Click on the "Add Webhook" button to initiate the creation of a new webhook. This action will present you with a configuration form where you can specify the details of your webhook.
+
+ 
+
+ 
+
+Provide the URL of the endpoint in your application that will receive the webhook notifications. Ensure that this URL is publicly accessible and properly configured to handle incoming HTTP requests. Select the HTTP method, either GET or POST, that aligns with your application's requirements. Choose the specific event types you want to subscribe to. Gelato offers a comprehensive list of event types, such as order creation, order updates, and shipment notifications, providing granular control over the notifications you receive. For detailed descriptions of each event type, refer to the API Documentation.
+
+ 
+
+ 
+
+Set up authorization for your webhook to enhance security and ensure that the notifications originate from a trusted source. Select the appropriate authorization type, such as HTTP headers or query parameters. Provide the necessary credentials, such as an API key or token, in the designated fields. To confirm your webhook configuration and ensure that notifications are delivered successfully, send a test notification to the specified endpoint. This step helps identify and resolve any potential issues before the webhook is deployed to a live environment.
+
+ 
+
+ 
+
+ 
+
+Managing Webhooks
+
+Once you have configured your webhooks, you can easily manage them from the Gelato Dashboard. The Webhooks section provides a comprehensive overview of all your webhooks, allowing you to perform actions such as:
+
+Editing existing webhooks: Modify the configuration of your webhooks at any time to align with your evolving needs. Update the notification URL, event subscriptions, or authorization details as required.
+
+Deleting webhooks: Remove webhooks that are no longer needed to maintain a clean and organized webhook configuration. Deleting a webhook will stop notifications from being sent to the associated endpoint.
+
+ 
+
+ 
+
+For a deeper understanding of the Gelato API, including detailed information on webhook events and payloads, please refer to our comprehensive technical documentation.
+
+ 
+
+To access the Webhooks section in your Gelato account, you can directly go to Developer > Webooks from the left menu.
+
+Did this answer your question?
+Disappointed Reaction
+Neutral Reaction
+Smiley Reaction
+Related Articles
+Getting started with Order Desk
+How do I check the order status in the Gelato Dashboard?
+Setting up automated file transfer and status updates with Make
+How do I connect my WooCommerce store to Gelato?
+Gelato WooCommerce app health status check and webhooks
+On this page
+Webhook Configuration
+Managing Webhooks
+We make global opportunity everyone's business
+
+Gelato
+
+About
+Blog
+Customer stories
+Sustainability
+Developer Hub
+
+Subscriptions
+
+Gelato+
+Platinum
+
+Contact
+
+Report order problem
+Chat (24/7)
+
+LINKS:
+Skip to main content | https://support.gelato.com/en/articles/8996576-how-do-i-configure-notifications-webhooks#docs-main
+ | https://support.gelato.com/en/
+Report order problem | https://dashboard.gelato.com/orders/issue?reportSourceType=help_center
+Gelato dashboard | https://dashboard.gelato.com/home/dashboard
+Getting started | https://support.gelato.com/en/collections/8521279-getting-started
+About Gelato | https://support.gelato.com/en/collections/8521294-about-gelato
+Our products | https://support.gelato.com/en/collections/8521391-our-products
+Grow your business | https://support.gelato.com/en/collections/8521408-grow-your-business
+Integrations | https://support.gelato.com/en/collections/8521535-integrations
+Automations & Migrations | https://support.gelato.com/en/collections/8521536-automations-migrations
+Shopify | https://support.gelato.com/en/collections/8521537-shopify
+Etsy | https://support.gelato.com/en/collections/8521538-etsy
+TikTok | https://support.gelato.com/en/collections/9428767-tiktok
+Amazon | https://support.gelato.com/en/collections/8521543-amazon
+WooCommerce | https://support.gelato.com/en/collections/8521544-woocommerce
+Wix | https://support.gelato.com/en/collections/8521546-wix
+Squarespace | https://support.gelato.com/en/collections/8521547-squarespace
+BigCommerce | https://support.gelato.com/en/collections/8521548-bigcommerce
+Order Desk | https://support.gelato.com/en/collections/8521549-order-desk
+API Integration | https://support.gelato.com/en/collections/8521550-api-integration
+Getting Started with API Integration | https://support.gelato.com/en/articles/8996572-getting-started-with-api-integration
+How do I add, remove, deactivate, or replace an API key? | https://support.gelato.com/en/articles/8996574-how-do-i-add-remove-deactivate-or-replace-an-api-key
+Do you have a sandbox environment? | https://support.gelato.com/en/articles/8996575-do-you-have-a-sandbox-environment
+How do I configure notifications (webhooks)? | https://support.gelato.com/en/articles/8996576-how-do-i-configure-notifications-webhooks
+Order issues | https://support.gelato.com/en/collections/8521552-order-issues
+All Collections | https://support.gelato.com/en/
+Integrations | https://support.gelato.com/en/collections/8521535-integrations
+API Integration | https://support.gelato.com/en/collections/8521550-api-integration
+ | https://gelato-create.intercom-attachments-7.com/i/o/973520820/cb690f119f5415f338959568/13478243867538?expires=1794083400&signature=767e81e51005a26d037480731afe71712497850086ccd2090deba0570ba93c84&req=fSckE8t%2BlYNfFb4f3HP0gGTycjgnvgHW1x9h3HfaJ8GeLJq7GWKlwzOpgZW3%0Ah8E%3D%0A
+ | https://downloads.intercomcdn.com/i/o/1060757114/043692898903759d786a1842/image.png?expires=1794083400&signature=12591dac5fb07ec32dd22167f350cf49b2c9e7c521f8891c6c9cb1269f320272&req=dSAhFs57moBeXfMW1HO4zUxWaQOo5oOqPRVTMcBrUHFZmqrHlW777jyd%2BkcW%0ALeeT%0A
+ | https://downloads.intercomcdn.com/i/o/1060757749/0f9c92c90a03cc93d8bc8789/image.png?expires=1794083400&signature=cdc29216e75dcd8b48c467231f6dfee9c54504c698d26dd860155344a9aa5fa6&req=dSAhFs57moZbUPMW1HO4zePSQ%2FuLLsnWjmcCpbIk294y9NIhCFiDDBJvi9bq%0AaKn5%0A
+ | https://gelato-create.intercom-attachments-7.com/i/o/973520821/86d9db7b36f4917c11c75858/13478313443602?expires=1794083400&signature=13b168eaa00b0123ee1151f5b3035a72ecd0102f2fa74431625ded88e6e5013d&req=fSckE8t%2BlYNeFb4f3HP0gEao1M260deQ1CTxpkZ%2BmhbFFrpvT43dLmYJiyjQ%0A3xY%3D%0A
+ | https://gelato-create.intercom-attachments-7.com/i/o/973520824/2ea333720fa205ea1add2b1b/13478335356434?expires=1794083400&signature=6bef2052b44516b439c9b83bf225b2db18a08460b5fcb16f6754e833773fe1f4&req=fSckE8t%2BlYNbFb4f3HP0gIRWBCFnocC%2BHdZtq67bXyp%2B3IkgRue%2FhYf8qIjG%0AdJM%3D%0A
+technical documentation | https://dashboard.gelato.com/docs/
+Developer > Webooks | https://dashboard.gelato.com/webhooks/manage
+Getting started with Order Desk | https://support.gelato.com/en/articles/8996027-getting-started-with-order-desk
+How do I check the order status in the Gelato Dashboard? | https://support.gelato.com/en/articles/8996047-how-do-i-check-the-order-status-in-the-gelato-dashboard
+Setting up automated file transfer and status updates with Make | https://support.gelato.com/en/articles/8996393-setting-up-automated-file-transfer-and-status-updates-with-make
+How do I connect my WooCommerce store to Gelato? | https://support.gelato.com/en/articles/8996500-how-do-i-connect-my-woocommerce-store-to-gelato
+Gelato WooCommerce app health status check and webhooks | https://support.gelato.com/en/articles/8996502-gelato-woocommerce-app-health-status-check-and-webhooks
+Webhook Configuration | https://support.gelato.com/en/articles/8996576-how-do-i-configure-notifications-webhooks#h_0580469664
+Managing Webhooks | https://support.gelato.com/en/articles/8996576-how-do-i-configure-notifications-webhooks#h_f51146e9cc
+ | https://support.gelato.com/en/
+ | https://www.instagram.com/gelato
+ | https://www.facebook.com/gelatoconnects
+ | https://www.linkedin.com/company/gelato
+ | https://www.youtube.com/channel/UCq8oDo3EFcx6qHu1v5YITqQ
+About | https://www.gelato.com/about-gelato
+Blog | https://www.gelato.com/blog
+Customer stories | https://www.gelato.com/customer-stories
+Sustainability | https://www.gelato.com/sustainability
+Developer Hub | https://dashboard.gelato.com/docs/
+Gelato+ | https://www.gelato.com/plus
+Platinum | https://www.gelato.com/platinum
+Report order problem | https://dashboard.gelato.com/orders/issue?reportSourceType=help_center
+Chat (24/7) | https://support.gelato.com/articles/8996073
