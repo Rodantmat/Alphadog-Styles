@@ -964,3 +964,26 @@ if task == "montink9":
                 save(f"montink/api_{k}.txt", f"URL: {u}\nTITLE: {pg.title()}\n\n{pg.inner_text('body')[:100000]}")
             except Exception as e: save(f"montink/api_{k}.txt", f"ERR {e}")
         b.close()
+
+if task == "montink10":
+    from bs4 import BeautifulSoup
+    import urllib.parse as up
+    base = "https://montink.sak.com.br/"
+    seen, queue = set(), [base, base + "categoria/integracoes31", "https://montink.sak.com.br/integracao-com-mercado-livre-tudo-o-que-voce-precisa-saber", "https://montink.sak.com.br/fluxo-de-pedido-e-pagamento-montink-marketplaces", "https://montink.sak.com.br/como-integrar-a-montink-com-tiktok-shop-guia-rapido", "https://montink.sak.com.br/tik-tok-shop-por-que-e-necessario-emitir-a-nota-fiscal-do-pedido"]
+    n = 0
+    while queue and n < 400:
+        u = queue.pop(0).split("#")[0]
+        if u in seen or not u.startswith(base): continue
+        seen.add(u)
+        r = get(u)
+        if r is None or r.status_code != 200: print("skip", u, r.status_code if r is not None else None); continue
+        n += 1
+        s = BeautifulSoup(r.text, "lxml")
+        title = s.title.get_text() if s.title else ""
+        art = s.select_one("article, .article, main, .content") or s.body
+        save("montink/sak/" + (re.sub(r"[^A-Za-z0-9]+", "_", u[len(base):]) or "home") + ".txt", f"URL: {u}\nTITLE: {title}\n\n{text_of_html(str(art))[:60000]}")
+        for a in s.find_all("a", href=True):
+            h = up.urljoin(u, a["href"]).split("#")[0]
+            if h.startswith(base) and h not in seen and "javascript" not in h: queue.append(h)
+        time.sleep(0.4)
+    print("crawled", n)
