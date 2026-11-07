@@ -1,0 +1,1154 @@
+URL: https://developers.mercadolivre.com.br/en_us/mercado-envios-flex
+STATUS: 200
+TITLE: Mercado Envíos Flex
+
+Developers
+About us
+API Docs
+Support
+News
+Login
+API Docs
+Mercado Envíos Flex
+
+Documentation Mercado Libre
+
+Check out all the necessary information about APIs Mercado Libre.
+
+Documentation
+
+Getting started
+Create an application on Mercado Libre
+Manage your applications
+Authentication and Authorization
+Start testing
+Listing validator
+Design considerations
+Support for Integrators
+API resources
+Attributes
+Domains and Categories
+Locations & Currencies
+Items & Searches
+Questions & Answers
+Orders & Feedback
+Metrics
+Notifications
+Sellers news
+Brand Protection Program
+Whats is Brand Protection Program?
+Member of the program
+Complained publications
+Guide for products
+Introduction
+User Products
+Products prices
+Categorization
+Set categories for your products
+Compatibility between items and vehicle accessories
+Validations
+Fees for listing
+Item description
+Variations
+Pictures
+Sync and moditify listings
+Size Guide
+First steps
+Manage size guide
+Size guide validations
+Full and Flex coexistence
+Sending tax data
+Listing types
+Shipping
+Mercado Envíos
+Custom shipping
+Sales management
+Shipments
+Payments
+Feedback on sale
+MercadoLíder & Official Stores
+Official Stores
+Guide for real estate
+Introduction
+Manage users
+Search for vehicles
+Manage packages (Real Estate)
+Categories and Attributes
+Locate properties
+List properties
+Sync listings
+Manage questions & contacts
+Subscribe to our feeds
+Real Estate developments
+Guide for vehicles
+Introduction
+Manage users
+Manage packages vehicles
+Categories & attributes
+List vehicles
+Sync listings
+Manage questions & contacts
+Subscribe to our feeds
+Security Guide
+Introduction
+Infrastructure (Encryption and TLS)
+Identity and Access Management (OAuth and Tokens)
+Secure Authentication
+Access Control and Authorization
+Application security
+Monitoring
+Incident management
+Guide for services
+Introduction
+Queries about the user
+Choose service type
+Manage coverage areas
+List services
+Sync listings
+Subscribe to our feeds
+Guide for Mercado Ads
+Brand Ads
+Product Ads
+FAQs
+Frequently Asked Questions
+Rate limit / 429 Error
+Multi-origin stock management / User Products
+ME1 / ME2 and free shipping
+Mercado Envios — Shipping costs and quotes
+Billing info
+Images and moderation
+Promotions / Pricing
+Items — Shipping attributes and dimensions
+Last update 22/12/2023
+Envios Flex
+Important:
+Currently, this shipping method is available to sellers in Argentina, Brazil, Mexico, Chile, Colombia, Uruguay, Peru and Ecuador.
+
+Envios Flex is a service that allows sellers to handle shipping on their own, seven days a week. It integrates same day or next day shipments to improve delivery deadlines and increase market penetration. With Envios Flex, sellers are able to have more control and tracking capabilities over their shipments, offering their customers a faster and more efficient service.
+Learn more about the benefits of Envios Flex, how Envios Flex works and how to activate Flex for sellers. In addition, if the seller also offers Full shipments, learn how to offer Flex and Full shipments in the same listing and about the Stock management for the coexistence of Full and Flex.
+
+
+
+Note:
+It is crucial to respect the 1000 rpm limit on all requests to Flex resources. Respecting that limit guarantees an efficient and equitable use of available resources.
+The Envios Flex app by Mercado Libre is necessary to scan the deliveries and complete the routes. However, it is not available for integrations, so logistics companies will have to adapt.
+Coverage areas by countries
+
+To be able to offer Envios Flex, the seller’s delivery address must be enabled for one of the coverage areas by country:
+
+Country	Coverage
+Argentina	
+- AMBA (Área Metropolitana de Buenos Aires)
+
+- Córdoba
+
+
+Brazil	
+- São Paulo
+
+- Rio de Janeiro
+
+- Brasília
+
+- Belo Horizonte
+
+- Porto Alegre
+
+- Salvador Bahia
+
+- Curitiba
+
+
+Mexico	
+- CDMX (Valle de México Metropolitan Area)
+
+- Mérida
+
+Chile	
+- Santiago (Metropolitan Area)
+
+- Valparaíso
+
+Colombia	
+- Bogotá
+
+- Medellín
+
+- Cali
+
+
+Uruguay	
+- Montevideo
+
+- Canelones
+
+Peru	- Lima (Metropolitan Area)
+Ecuador	- Quito
+
+
+
+Set up a test user
+
+To set up the Envios Flex functionality for test users, please consider the following:
+
+
+
+
+1. Log in to the account in which you want to enable Envios Flex.
+2. Make sure the account has listings active on ME2.
+3. Verify that your account has yellow or green reputation.
+4. Make sure you have a delivery address compatible with the coverage area of your country.
+5. Set up the delivery address according to the coverage areas in the corresponding countries.
+6. Activate Envios Flex for the account.
+
+
+
+
+Once you complete these steps, you should be able to use Envios Flex as a test user.
+
+Nota:
+It is recommended to create a new user test with the new configuration to test this updated flow.
+
+
+Check user's subscriptions
+
+This endpoint allows you to check the subscriptions a user has.
+
+If the user only activated Flex, they will have just one subscription.
+If the user also activated Turbo, they will have two subscriptions, since that, to be able to activate Turbo, the user must first have Flex active.
+Note:
+A subscription is created when a buyer starts using Envios Flex in any mode.
+In the context of subscriptions, each one of them has a unique identifier called service_id. This identifier is key to be able to access the subscription settings and make changes in it. For this case, the one that will be used will be the service_id of the Flex mode.
+
+Request:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/$SITE_ID/users/$USER_ID/subscriptions/v1
+Copy
+
+Example:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/MLA/users/1438865529/subscriptions/v1
+Copy
+
+Response:
+
+[
+    {
+        "id": 111181,
+        "site_id": "MLA",
+        "user_id": 1438865529,
+        "mode": "FLEX",
+        "configuration_type": {
+            "coverage": "zone",
+            "delivery": "custom"
+        },       
+        "service_id": 736230,
+        "status": {
+            "id": "in",
+        },
+        "creation_date": "2023-08-02T06:34:40Z"
+    },
+    {
+        "id": 111183,
+        "site_id": "MLA",
+        "user_id": 1438865529,
+        "mode": "TURBO",
+        "configuration_type": {
+            "coverage": "radius",
+            "delivery": "accurate" 
+        },  
+        "service_id": 738216,
+        "status": {
+            "id": "in",
+        },
+        "creation_date": "2023-08-02T06:35:30Z"
+    }
+]
+Copy
+Response parameters:
+
+id: unique subscription ID.
+site_id: country identifier.
+user_id: user ID.
+mode: type of subscription ("Flex" in this case).
+configuration_type: type of subscription settings ("Flex" in this case).
+configuration_type.coverage: type of coverage.
+configuration_type.delivery: type of delivery.
+service_id: ID of the service linked to the subscription.
+status: subscription status.
+status.id: types of subscription statuses:
+
+
+in: the subscription is active. In this status, the user can change their settings and receive delivery orders for the subscription mode.
+out: the subscription is not active. In this status, the user cannot change the settings.
+pending: the subscription is pending activation. In this status the user can change their settings although they will not receive orders to complete deliveries.
+creation_date: subscription creation date.
+
+
+
+
+Response status codes:
+Código	Message	Description	Recommendation
+200 - OK	-	The settings were successfully updated	-
+
+400 - Bad Request	empty site id	Empty site_id	Validate site_id.
+400 - Bad Request	invalid site_id	Invalid site_id	Validate if the site_id is enabled for Envios Flex.
+400 - Bad Request	can't access to resource	Invalid site_id	Validate if the site_id is enabled for Envios Flex.
+404 - Not Found	user not found	The user does not exist	Validate the user_id.
+
+
+
+Check the subscription settings
+
+This endpoint allows you to check the settings of the subscriptions that a user has, in this case for Flex.
+
+
+
+
+Request:
+
+curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/$SITE_ID/configuration/v3
+Copy
+
+Example:
+
+curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/MLA/configuration/v3
+
+{
+  "query": "{ configuration (user_id: 1438865529, service_id: 736230) { address { id address_line city { id name } zip_code } subscription { site_id user_id service_id status { id } creation_date training_times { original { value unit } remaining { value unit } activation_date } } delivery_window is_moderated delivery_ranges { week { capacity type processing_time from to et_hour calculated_cutoff } saturday { capacity type processing_time from to et_hour calculated_cutoff } sunday { capacity type processing_time from to et_hour calculated_cutoff } } working_days zones { enabled id is_mandatory label neighborhoods price { cents currency_id decimal_separator fraction symbol } selected } availables { cutoff apacity_range { from to } ranges } disabled_features } }"
+}
+Copy
+
+Response:
+
+
+{
+    "configuration": {
+        "address": {
+            "address_line": "Testing Street 1450",
+            "city": {
+                "id": "TUxBQlNBQTM3Mzda",
+                "name": "Saavedra"
+            },
+            "id": "1316123989",
+            "zip_code": "1430"
+        },
+        "availables": {
+          "capacity_range":  {
+            "from": 1,
+            "to": 50
+         },
+            "cutoff": [
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18
+            ],
+            "ranges": [
+                9,
+                10,
+                11,
+                12,
+                13,
+                14,
+                15,
+                16,
+                17,
+                18,
+                19,
+                20,
+                21
+            ]
+        },
+        "delivery_ranges": {
+            "saturday": null,
+            "sunday": null,
+            "week": [
+                {
+                    "calculated_cutoff": 14,
+                    "capacity": 30,
+                    "et_hour": 14,
+                    "from": 12,
+                    "processing_time": 0,
+                    "to": 21,
+                    "type": "cpt"
+                }
+            ]
+        },
+        "delivery_window": "same_day",
+        "disabled_features": [
+            "CUTOFF_BY_ZONE",
+            "CAPACITY_BY_DAY"
+        ],
+        "is_moderated": false,
+        "subscription": {
+            "creation_date": "2023-08-02T06:34:40Z",
+            "service_id": 736230,
+            "site_id": "MLA",
+            "status": {
+                "id": "in"
+            },
+            "training_times": null,
+            "user_id": 1438865529
+        },
+        "working_days": [
+            "week"
+        ],
+        "zones": [
+            {
+                "enabled": true,
+                "id": "Almirante_Brown",
+                "is_mandatory": false,
+                "label": "Almirante Brown",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Avellaneda",
+                "is_mandatory": false,
+                "label": "Avellaneda",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Berazategui",
+                "is_mandatory": false,
+                "label": "Berazategui",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "CABA",
+                "is_mandatory": false,
+                "label": "CABA",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1114",
+                    "symbol": "$"
+                },
+                "selected": true
+            },
+            {
+                "enabled": true,
+                "id": "Esteban_Echeverria",
+                "is_mandatory": false,
+                "label": "Esteban Echeverría",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Ezeiza",
+                "is_mandatory": false,
+                "label": "Ezeiza",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Florencio_Varela",
+                "is_mandatory": false,
+                "label": "Florencio Varela",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Hurlingham",
+                "is_mandatory": false,
+                "label": "Hurlingham",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Ituzaingo",
+                "is_mandatory": false,
+                "label": "Ituzaingó",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Jose_C_Paz",
+                "is_mandatory": false,
+                "label": "José C Paz",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Lanus",
+                "is_mandatory": false,
+                "label": "Lanús",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Lomas_de_Zamora",
+                "is_mandatory": false,
+                "label": "Lomas de Zamora",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Malvinas_Argentinas",
+                "is_mandatory": false,
+                "label": "Malvinas Argentinas",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "La_Matanza_1",
+                "is_mandatory": false,
+                "label": "La Matanza Norte",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "La_Matanza_2",
+                "is_mandatory": false,
+                "label": "La Matanza Sur",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Merlo",
+                "is_mandatory": false,
+                "label": "Merlo",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Moreno",
+                "is_mandatory": false,
+                "label": "Moreno",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Moron",
+                "is_mandatory": false,
+                "label": "Morón",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Quilmes",
+                "is_mandatory": false,
+                "label": "Quilmes",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "San_Fernando",
+                "is_mandatory": false,
+                "label": "San Fernando",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "San_Isidro",
+                "is_mandatory": false,
+                "label": "San Isidro",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "San_Martin",
+                "is_mandatory": false,
+                "label": "San Martín",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "San_Miguel",
+                "is_mandatory": false,
+                "label": "San Miguel",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Tigre",
+                "is_mandatory": false,
+                "label": "Tigre",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "2409",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Tres_De_Febrero",
+                "is_mandatory": false,
+                "label": "Tres de Febrero",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            },
+            {
+                "enabled": true,
+                "id": "Vicente_Lopez",
+                "is_mandatory": false,
+                "label": "Vicente López",
+                "neighborhoods": [],
+                "price": {
+                    "cents": "99",
+                    "currency_id": "ARS",
+                    "decimal_separator": ".",
+                    "fraction": "1769",
+                    "symbol": "$"
+                },
+                "selected": false
+            }
+        ]
+    }
+}
+
+
+Copy
+Response parameters:
+
+address: information about the user’s address.
+availables: contains information about the capacities, cut-offs and ranges available for service.
+
+
+availables.capacity_range: Range of values for capacity.
+availables.cutoff: details of the available cut-offs.
+availables.ranges: details of the available ranges.
+delivery_ranges: contains information about the capacities, cut-offs and ranges available for week days.
+
+delivery_ranges.saturday: delivery ranges and capacity for Saturdays.
+delivery_ranges.sunday: delivery ranges and capacity for Sundays.
+delivery_ranges.week: delivery ranges and capacity for week days.
+delivery_window: the type of service for the delivery. The possible values are same_day or next_day.
+
+
+disabled_features: characteristics disabled for the service, including CUTOFF_BY_ZONE and CAPACITY_BY_DAY..
+is_moderated: indicates if the service is moderated (true/false).
+subscription: information about the user’s subscription.
+working_days: available working days.
+zones: information about the areas available for the service.
+
+
+zones.selected: indicates if the area is selected (true/false).
+
+
+
+Response status codes:
+Código	Mensagem	Descrição	Recomendação
+200 - OK	-	The settings were successfully updated.	-
+
+400 - Bad Request	empty site id	Empty site_id.	Validate the site_id.
+400 - Bad Request	invalid site_id	Invalid site_id.	Validate if the site_id is enabled for Envios Flex.
+400 - Bad Request	can't access to resource	Invalid site_id.	Validate if the site_id is enabled for Envios Flex.
+400 - Bad Request	invalid JSON body	Invalid JSON.	Validate the query scheme in place.
+400 - Bad Request	failed to create schema in graphql operation	Invalid GraphQL for the defined scheme.	Validate the query scheme in place.
+400 - Bad Request	invalid query	Invalid GraphQL for the defined scheme.	Validate the query scheme in place.
+404 - Not Found	Invalid GraphQL for the defined scheme.	There is no subscription to Envios Flex for the combination of user_id and service_id sent.	Validate the user_id and service_id at the endpoint.
+404 - Not Found	user not found	The user does not exist.	Validate the user_id.
+
+
+
+Nota:
+This endpoint is used to validate the attributes with their possible values. If you wish to change or modify any of these attributes, it is recommended to use the endpoints described in Configure Delivery Time and Shipping Limit or Expand Flex Coverage Area.
+
+
+Set up deadline and shipping limit
+
+Through this endpoint, it is possible to set up different aspects for Envios Flex like:
+
+Delivery date window
+Delivery time ranges
+Cut-off time
+Shipping limits
+
+
+
+
+Request:
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/$SITE_ID/users/$USER_ID/services/$SERVICE_ID/configuration/delivery/custom/v3
+Copy
+
+Example:
+
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/MLA/users/1438865529/services/736230/configuration/delivery/custom/v3
+
+{
+        "delivery_window": "same_day",
+        "delivery_ranges": {
+            "week": [
+                {   
+                    "from": 12,
+                    "to": 21,
+                    "capacity": 44,
+                    "cutoff": 16
+                }
+            ],
+            "saturday": [
+                {
+                    "from": 12,
+                    "to": 21,
+                    "capacity": 33,
+                    "cutoff": 14
+                }
+            ],
+            "sunday": [
+                { 
+                    "from": 12,
+                    "to": 21,
+                    "capacity": 33,
+                    "cutoff": 14
+                }
+            ]
+        }
+}
+
+
+Copy
+Note:
+The delivery_window is always required when changing any settings.
+The Delivery Time Ranges for weekdays, Saturdays and Sundays indicate from what time (from) and to what time (to) shipments are made. These values must be sent in:
+
+- delivery_ranges.week.from and delivery_ranges.week.to
+- delivery_ranges.saturday.from and delivery_ranges.saturday.to (if working on Saturdays)
+- delivery_ranges.sunday.from and delivery_ranges.sunday.to (if working on Sundays)
+- The from and to are always required when changing any settings.
+
+
+
+The Capacity (delivery limit) value must be sent in:
+
+- delivery_ranges.week.capacity
+- delivery_ranges.saturday.capacity (if working on Saturdays)
+- delivery_ranges.sunday.capacity (if working on Sundays)
+- Currently, the API only supports the same value for the 3 cases.
+
+
+
+The General Cut-off value must be sent in:
+
+- delivery_ranges.week.cutoff
+- delivery_ranges.saturday.cutoff (if working on Saturdays)
+- delivery_ranges.sunday.cutoff (if working on Sundays)
+- The cut-off is always required when changing any settings.
+
+
+
+Response status codes:
+Código	Message	Description	Recommendation
+200 - OK	-	The settings were successfully updated.	-
+
+400 - Bad Request	invalid user_id	Invalid user_id.	Validate the user_id (must be an integer).
+400 - Bad Request	invalid service_id	Invalid service_id.	Validate the service_id (must be an integer).
+400 - Bad Request	invalid JSON body	Invalid JSON.	Validate the query scheme in place.
+404 - Not Found	can't update delivery custom	The settings update could not be completed because there is no subscription to Envios Flex for the combination of user_id and service_id sent.	Validate the user_id and service_id at the endpoint.
+
+
+
+Expand Flex coverage area
+
+This endpoint allows you to add more coverage areas for Envios Flex.
+
+Request:
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/$SITE_ID/users/$USER_ID/services/$SERVICE_ID/configuration/coverage/zone/v3
+Copy
+
+Example:
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipping/flex/sites/MLA/users/1438865529/services/736230/configuration/coverage/zone/v3
+
+{
+  "zones": [
+    {
+      "id": "Almirante_Brown"
+    },
+    {
+      "id": "Avellaneda"
+    },
+    {
+      "id": "CABA" 
+    }
+  ]
+}
+Copy
+Response status codes:
+Código	Message	Description	Recommendation
+200 - OK	-	The settings were successfully updated.	-
+400 - Bad Request	invalid user_id	Invalid user_id.	Validate the user_id (must be an integer).
+400 - Bad Request	invalid service_id	Invalid service_id.	Validate the service_id (must be an integer).
+400 - Bad Request	invalid JSON body	Invalid JSON.	Validate the query scheme in place.
+404 - Not Found	can't update delivery custom	The settings update could not be completed because there is no subscription to Envios Flex for the combination of user_id and service_id sent.	Validate the user_id and service_id at the endpoint.
+
+
+
+Note:
+To add or delete Flex zones, you must use the PUT method and send the corresponding list of zones.
+Check Flex in the item
+
+This endpoint allows you to check if the item is enabled for Envios Flex or not.
+
+
+
+
+Request:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites/$SITE_ID/shipping/selfservice/items/$ITEM_ID
+Copy
+
+Example:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites/MLB/shipping/selfservice/items/MLB1493119403
+Copy
+
+Response:
+
+Status: 204 No Content
+Copy
+Response status codes:
+Código	Message	Description	Recommendation
+204 - No Content	-	Item enabled for Envios Flex.	-
+403 - Forbidden	item down	Item does not offer Envios Flex.	Validate the shipping methods of the item.
+404 - Not Found	item not found	The country is disabled for Envios Flex.	Validate the countries with Envios Flex.
+
+
+
+Note:
+The /items endpoint provides relevant information about the item, such as:
+
+The tags attribute, which provides additional details about whether the item has Envios Flex active (self_service_in) or not (self_service_out).
+Activate Flex in the item
+
+This endpoint allows you to activate the option of Envios Flex for the item.
+
+Request:
+
+curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites/$SITE_ID/shipping/selfservice/items/$ITEM_ID
+Copy
+
+Example:
+
+curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites/MLB/shipping/selfservice/items/MLB1493119403
+Copy
+
+Response:
+
+Status: 204 No Content
+Copy
+Response status codes:
+Código	Message	Description	Recommendation
+204 - No Content	-	Item successfully updated to offer Envios Flex.	-
+400 - Bad Request	item is already in flex	Item already has Envios Flex.	-
+403 - Forbidden	item down	Item does not offer Envios Flex.	Validate the shipping methods of the item.
+404 - Not Found	item not found	Item not found.	Validate the countries with Envios Flex.
+
+
+
+Consult item status
+
+Before activating Flex on an item, you must perform a validation to ensure that the item is in 'active' status. This can be checked by the endpoint to get an item and then consulting the 'status' attribute.
+
+
+
+
+Request:
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN'https://api.mercadolibre.com/items?ids=$ITEM_ID&attributes=status
+Copy
+
+Example:
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN'https://api.mercadolibre.com/items?ids=MLA1136716168&attributes=status
+Copy
+
+Response:
+
+[
+...
+    "status": "active",
+...
+    ]
+Copy
+Note:
+This validation process is essential to ensure that "Flex" is active correctly when the item is in the right state.
+For further reference, see List products and Items and search.
+Deactivate Flex in the item
+
+This endpoint allows you to deactivate the Flex option in the item.
+
+Request:
+
+curl -X DELETE -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites/$SITE_ID/shipping/selfservice/items/$ITEM_ID
+Copy
+
+Example:
+
+curl -X DELETE -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites/MLB/shipping/selfservice/items/MLB1493119403
+Copy
+
+Response:
+
+Status: 204 No Content
+Copy
+Response status codes:
+Código	Message	Description	Recommendation
+204 - No Content	-	Item successfully updated to stop offering Envios Flex.	-
+400 - Bad Request	item is already in flex	Item no longer has Envios Flex.
+	-
+403 - Forbidden	item down	Item does not offer Envios Flex.	Validate the shipping methods of the item.
+404 - Not Found	item not found	Item not found.	Validate the countries with Envios Flex.
+
+
+
+Identify the driver’s code
+
+This endpoint allows the identification of the driver assigned to a shipment, which is useful to register changes of drivers along the delivery process.
+
+Request:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN'
+https://api.mercadolibre.com/flex/sites/$SITE_ID/shipments/$SHIPMENT_ID/assignment/v1
+Copy
+
+Example:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' 
+https://api.mercadolibre.com/flex/sites/MLA/shipments/40070866801/assignment/v1
+Copy
+
+Response:
+
+{
+    "driver_id": 1234
+}
+Copy
+Response status codes:
+Código	Mensagem	Description	Recommendation
+200 - OK	-	Driver assigned.	-
+404 - Not Found	shipment_id not found	Does not have a driver assigned or cannot find the open route (shipment pending delivery).
+
+Does not exist (non-existent shipment).
+	Validate the status of the shipment or shipment_id.
+
+
+
+Note:
+For Argentina, in case the collections are made outside the seller's address, the driver will have to enter the valid alphanumeric token that can be provided by the seller. To locate the code, the seller must access the Mercado Libre page of the user, go to Settings , Selling preferences and then click on Authorization codes.
+To receive notifications when package transactions are completed between drivers and when scanning for the first time, you can subscribe to the flex handshakes notifications.
+Contents
+Envios Flex
+Coverage areas by countries
+Set up a test user
+Check user's subscriptions
+Check the subscription settings
+Set up deadline and shipping limit
+Expand Flex coverage area
+Check Flex in the item
+Activate Flex in the item
+Consult item status
+Deactivate Flex in the item
+Identify the driver’s code
+Report
+Security Researchers
+Central de Parceiros
+
+Copyright © 2026 MercadoLibre S.R.L.
+
+Terms and Conditions
+How we take care of your privacy
+Developer Partner Program
+
+Usamos cookies para melhorar sua experiência no Mercado Livre. Consulte mais informações na nossa Central de privacidade.
+
+Aceitar cookies
+Configurar cookies
