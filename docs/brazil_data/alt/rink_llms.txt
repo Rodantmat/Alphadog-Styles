@@ -1,0 +1,40 @@
+URL: https://developers.reserva.ink/llms.txt
+STATUS: 200
+CT: text/plain
+
+# INK API
+
+> DocumentaÃ§Ã£o da INK API â integre sua loja Reserva INK. Tier `stores`: pedidos, catÃ¡logo, promoÃ§Ãµes, financeiro e pÃ³s-venda.
+
+Automatize pedidos, produtos e clientes da sua loja com a API pÃºblica e os webhooks da Reserva INK.
+
+## Table of Contents
+
+### Guias
+
+- [Guias](https://developers.reserva.ink/guias.md)
+- [ComeÃ§ando](https://developers.reserva.ink/guias/comecando.md)
+- [AutenticaÃ§Ã£o](https://developers.reserva.ink/guias/autenticacao.md)
+- [Escopos](https://developers.reserva.ink/guias/escopos.md)
+- [Ciclo de vida da credencial](https://developers.reserva.ink/guias/ciclo-de-vida-da-credencial.md)
+- [ConvenÃ§Ãµes da API](https://developers.reserva.ink/guias/convencoes.md)
+
+### DomÃ­nios
+
+- [ConciliaÃ§Ã£o no ERP](https://developers.reserva.ink/guias/conciliacao-erp.md)
+- [Webhooks](https://developers.reserva.ink/guias/webhooks.md)
+- [CatÃ¡logo](https://developers.reserva.ink/guias/catalogo.md)
+- [Agrupamento de estampas](https://developers.reserva.ink/guias/agrupamentos.md)
+- [PromoÃ§Ãµes](https://developers.reserva.ink/guias/promocoes.md)
+- [Trocas](https://developers.reserva.ink/guias/trocas.md)
+- [Reembolsos](https://developers.reserva.ink/guias/reembolsos.md)
+- [SimulaÃ§Ã£o de frete](https://developers.reserva.ink/guias/simulacao-de-frete.md)
+
+### Changelog
+
+- [Changelog](https://developers.reserva.ink/changelog.md)
+
+### ReferÃªncia da API
+
+- [ReferÃªncia da API](https://developers.reserva.ink/referencia.md): Contrato completo do tier `stores` â endpoints, parÃ¢metros, escopos exigidos e formatos de resposta.
+

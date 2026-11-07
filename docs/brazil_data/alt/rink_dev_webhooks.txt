@@ -1,0 +1,2067 @@
+URL: https://developers.reserva.ink/guias/webhooks
+STATUS: 200
+CT: text/html
+
+
+Webhooks | INK API
+Skip to content
+INK API
+Buscar
+K
+ Main Navigation 
+Guias
+ReferÃªncia da API
+Changelog
+AparÃªncia
+Menu
+Voltar ao topo
+ Sidebar Navigation 
+Guias
+VisÃ£o geral
+ComeÃ§ando
+AutenticaÃ§Ã£o
+Escopos
+Ciclo de vida da credencial
+ConvenÃ§Ãµes da API
+DomÃ­nios
+ConciliaÃ§Ã£o no ERP
+Webhooks
+CatÃ¡logo
+Agrupamento de estampas
+PromoÃ§Ãµes
+Trocas
+Reembolsos
+SimulaÃ§Ã£o de frete
+Nesta pÃ¡gina
+Are you an LLM? You can read better optimized documentation at /guias/webhooks.md for this page in Markdown format
+Webhooks 
+â
+Este guia cobre a forma 
+push
+ de integrar com a sua loja Reserva INK: em vez de consultar a API periodicamente, a plataforma chama o seu servidor no instante em que algo acontece â pedido criado, pagamento aprovado, troca solicitada, saque pedido. Vale para os dois tipos de loja: a 
+loja INK
+ (que vende pela vitrine Reserva INK) e a 
+loja de integraÃ§Ã£o
+ (que vende pelas plataformas parceiras).
+Webhooks nÃ£o exigem credencial nem escopo da API: o cadastro Ã© feito no painel da loja, e a entrega chega no endereÃ§o que vocÃª informar. A consulta por polling descrita em 
+ConciliaÃ§Ã£o no ERP
+ continua sendo a rede de seguranÃ§a â ver 
+Entrega e tentativas
+ para entender por quÃª.
+PrÃ©-requisitos 
+â
+Plano com webhooks.
+ Webhooks sÃ£o um recurso de planos superiores. Enquanto o plano da loja nÃ£o incluir o recurso, a tela de webhooks exibe um convite de upgrade e o cadastro fica bloqueado. Se o item 
+Webhooks
+ nÃ£o aparece no menu da sua loja, fale com o suporte.
+Um endpoint HTTP pÃºblico
+ que aceite 
+POST
+ com corpo JSON e responda 
+2xx
+ em menos de 5 segundos. Recomendamos HTTPS.
+Para testar antes de codar
+, um destino descartÃ¡vel como 
+Webhook.site
+ serve para ver o corpo real chegando.
+Cadastro no painel 
+â
+No painel, abra o 
+menu do usuÃ¡rio
+ (avatar no canto superior direito) e clique em 
+Webhooks
+.
+Clique em 
+Criar Webhook
+ e preencha:
+Campo
+O que informar
+URL de Destino
+O endereÃ§o do seu servidor, ex.: 
+https://api.sualoja.com.br/webhooks/ink
+.
+MÃ©todo HTTP
+POST
+.
+Eventos assinados
+Um ou mais eventos, agrupados pela entidade que os dispara. A lista traz sÃ³ os eventos do seu tipo de loja â ver 
+CatÃ¡logo de eventos
+.
+Status do Webhook
+Ativo
+ para comeÃ§ar a receber. 
+Registrado
+ guarda o cadastro sem entregar nada; 
+Desativado
+ pausa a entrega sem apagar o histÃ³rico.
+Secret
+Uma chave secreta definida por vocÃª, usada para assinar cada entrega. Opcional, mas 
+recomendado
+ â ver 
+Verificando a assinatura
+.
+Salve. Cada evento marcado vira 
+um webhook separado
+, todos com a mesma URL, mÃ©todo, status e secret â nÃ£o Ã© preciso repetir o formulÃ¡rio por evento. A criaÃ§Ã£o Ã© tudo-ou-nada: se algum dos eventos jÃ¡ estiver cadastrado para essa URL, nenhum Ã© criado e o formulÃ¡rio avisa.
+Depois de criado, cada webhook Ã© editado individualmente e assina um Ãºnico evento. Para parar de receber sem perder o histÃ³rico, mude o status para 
+Desativado
+; excluir apaga o webhook e o histÃ³rico de entregas junto.
+SÃ³ 
+Ativo
+ entrega
+Webhook com status 
+Registrado
+ ou 
+Desativado
+ nÃ£o recebe nada. Se o seu endpoint nÃ£o estÃ¡ sendo chamado, confira o status antes de investigar a rede.
+CatÃ¡logo de eventos 
+â
+O nome do evento segue o padrÃ£o 
+entidade.acao
+. A coluna 
+Loja
+ indica quem pode assinar: a loja INK e a loja de integraÃ§Ã£o tÃªm vocabulÃ¡rios de pedido diferentes e excludentes, e alguns domÃ­nios sÃ³ existem em uma delas.
+Entidade
+resource.type
+Loja
+Eventos
+Pedido
+order
+Vitrine
+19
+Pedido de integraÃ§Ã£o
+external_order
+IntegraÃ§Ã£o
+9
+Carrinho abandonado
+cart
+Vitrine
+1
+Troca
+exchange
+Ambas
+5
+Reembolso
+refund
+Vitrine
+3
+AvaliaÃ§Ã£o
+review
+ / 
+review_answer
+Vitrine
+2
+Financeiro
+withdraw
+ / 
+prepayment
+ / 
+export
+Ambas
+4
+Na coluna 
+resource.state
+ das tabelas abaixo estÃ£o as chaves que vÃªm no estado bruto do evento â ver 
+O envelope
+.
+Pedido 
+â
+Exclusivos da loja INK. 
+resource.state
+ traz sempre 
+order_status
+ e 
+payment_status
+ com os valores crus (
+awaiting_production
+, 
+paid
+, ...); a chave que nÃ£o disparou o evento leva o valor corrente naquele instante.
+event
+Quando dispara
+resource.state
+order.created
+pedido criado
+status do momento da criaÃ§Ã£o
+order.canceled
+pedido cancelado
+order_status: "canceled"
+payment.approved
+pagamento confirmado
+payment_status: "paid"
+payment.card_not_authorized
+cartÃ£o recusado pela adquirente
+payment_status: "not_authorized"
+payment.pix_boleto_expired
+Pix ou boleto venceu sem pagamento
+payment_status: "expired"
+payment.still_unpaid
+cobranÃ§a continua em aberto ao cruzar um marco de tempo
+status correntes e 
+milestone
+ (
+"1h"
+, 
+"6h"
+, 
+"24h"
+ ou 
+"48h"
+)
+payment.bank_slip_expiring
+boleto a menos de 24h do vencimento
+status correntes e 
+expires_at
+payment.disputed
+comprador abriu contestaÃ§Ã£o na bandeira
+payment_status: "dispute"
+payment.charged_back
+bandeira estornou o pagamento
+payment_status: "chargeback"
+order.customization_pending
+pedido entra em 
+awaiting_stamp
+ com estampa pendente de aprovaÃ§Ã£o
+order_status: "awaiting_stamp"
+, mais 
+changes
+order.items_changed
+item trocado de produto ou variante antes da produÃ§Ã£o
+status correntes, mais 
+changes
+order.shipping_address_changed
+endereÃ§o de entrega alterado
+status correntes, mais 
+changes
+shipping.waiting_to_be_sent
+produÃ§Ã£o concluÃ­da, aguardando coleta
+order_status: "waiting_to_be_sent"
+shipping.sent
+pedido despachado
+order_status: "sent"
+shipping.delivery_in_progress
+em transporte
+order_status: "delivery_in_progress"
+shipping.left_for_delivery
+saiu para entrega
+order_status: "left_for_delivery"
+shipping.delivered
+entregue
+order_status: "delivered"
+shipping.delivery_failure
+tentativa de entrega falhou
+order_status: "delivery_failure"
+order.review_eligible
+entregue 
+e
+ a loja pode receber avaliaÃ§Ã£o
+order_status: "delivered"
+TrÃªs observaÃ§Ãµes que costumam surpreender:
+payment.charged_back
+ nÃ£o Ã© reembolso.
+ Ã o estorno forÃ§ado pela bandeira do cartÃ£o, sem passar pela loja. O reembolso pedido pelo comprador ou pelo lojista tem eventos prÃ³prios â ver 
+Reembolso
+.
+payment.disputed
+ e 
+payment.charged_back
+ podem chegar em sequÃªncia
+ no mesmo pedido, e o chargeback tambÃ©m pode chegar sem disputa anterior.
+order.review_eligible
+ sai junto com 
+shipping.delivered
+, como um segundo evento, sÃ³ quando a loja estÃ¡ apta a receber avaliaÃ§Ã£o. Quem assina os dois recebe os dois.
+resource.number
+ Ã© o nÃºmero do pedido (
+INK12345
+).
+Pedido de integraÃ§Ã£o 
+â
+Exclusivos da loja de integraÃ§Ã£o. O pedido de integraÃ§Ã£o chega jÃ¡ pago, por isso nÃ£o hÃ¡ eventos de pagamento; o reembolso Ã© um status do prÃ³prio pedido.
+event
+Quando dispara
+resource.state
+external_order.created
+pedido criado pela API
+status do momento da criaÃ§Ã£o
+external_order.canceled
+pedido cancelado
+order_status: "canceled"
+external_order.refunded
+pedido reembolsado
+order_status: "refunded"
+external_order.waiting_to_be_sent
+produÃ§Ã£o concluÃ­da, aguardando coleta
+order_status: "waiting_to_be_sent"
+external_order.sent
+pedido despachado
+order_status: "sent"
+external_order.delivery_in_progress
+em transporte
+order_status: "delivery_in_progress"
+external_order.left_for_delivery
+saiu para entrega
+order_status: "left_for_delivery"
+external_order.delivered
+entregue
+order_status: "delivered"
+external_order.delivery_failure
+tentativa de entrega falhou
+order_status: "delivery_failure"
+Pedido de reposiÃ§Ã£o criado por uma troca emite 
+external_order.created
+ como qualquer outro; para distinguir, leia 
+data.is_exchange
+. 
+resource.number
+ Ã© o nÃºmero do pedido.
+Carrinho abandonado 
+â
+Exclusivo da loja INK.
+event
+Quando dispara
+resource.state
+cart.abandoned
+carrinho com itens e comprador identificado parado por 30 min, 8h, 16h ou 24h
+milestone
+ (
+"30min"
+, 
+"8h"
+, 
+"16h"
+ ou 
+"24h"
+)
+Um carrinho pode gerar atÃ© quatro eventos, um por marco cruzado. A varredura emite sÃ³ o marco mais alto alcanÃ§ado desde a Ãºltima rodada: carrinho parado hÃ¡ 25 horas gera um Ãºnico 
+24h
+, nÃ£o a escada inteira. Carrinho parado hÃ¡ mais de 48 horas nÃ£o emite mais nada. 
+resource.number
+ Ã© o 
+uuid
+ do carrinho, o mesmo do link de recuperaÃ§Ã£o.
+Troca 
+â
+DisponÃ­veis para os dois tipos de loja.
+event
+Quando dispara
+resource.state
+exchange.requested
+troca solicitada, por qualquer canal
+estado da troca na criaÃ§Ã£o
+exchange.approved
+troca aprovada â pelo lojista, ou liberada de imediato quando o pedido ainda nÃ£o entrou em produÃ§Ã£o
+estado corrente
+exchange.rejected
+lojista recusou a troca pendente
+estado corrente
+exchange.defect_review_approved
+suporte aprovou a troca por defeito
+support_review_status: "approved"
+exchange.defect_review_rejected
+suporte recusou a troca por defeito
+support_review_status: "refused"
+resource.state
+ traz 
+exchange_reason
+, 
+support_review_status
+, 
+is_courtesy_exchange
+ e o par de pedidos envolvido: 
+old_order_id
+ e 
+new_order_id
+ na loja INK, 
+old_external_order_id
+ e 
+new_external_order_id
+ na loja de integraÃ§Ã£o. 
+resource.number
+ Ã© o nÃºmero do 
+pedido de reposiÃ§Ã£o
+, nulo enquanto ele nÃ£o existir.
+exchange_reason
+ nÃ£o Ã© um enum fechado
+AlÃ©m das chaves documentadas em 
+Trocas
+, trocas abertas pelo suporte gravam texto livre em portuguÃªs. Trate valores desconhecidos com um caso padrÃ£o.
+Reembolso 
+â
+Exclusivos da loja INK. SÃ£o os reembolsos do guia de 
+Reembolsos
+: pedido de devoluÃ§Ã£o de dinheiro aberto pelo comprador, pelo lojista ou pela API.
+event
+Quando dispara
+resource.state
+refund.requested
+reembolso solicitado
+status: "awaiting_approval"
+, 
+order_id
+, 
+payment_method
+refund.approved
+estorno aprovado e processado
+status: "approved"
+, 
+order_id
+, 
+payment_method
+refund.rejected
+lojista recusou o reembolso
+status: "refused"
+, 
+order_id
+, 
+payment_method
+payment_method
+ Ã© a forma de pagamento original do pedido (
+credit_card
+, 
+pix
+), incluÃ­da de propÃ³sito: o prazo de estorno que o comprador espera muda entre cartÃ£o e Pix. Reembolso criado e aprovado no mesmo ato â cancelamento de pedido, 
+POST /v1/stores/orders/{order_id}/refunds
+ â entrega 
+dois
+ eventos, 
+refund.requested
+ seguido de 
+refund.approved
+, com o mesmo 
+resource.id
+. 
+resource.number
+ Ã© nulo.
+AvaliaÃ§Ã£o 
+â
+Exclusivos da loja INK.
+event
+Quando dispara
+resource.type
+resource.state
+review.created
+comprador avaliou o pedido
+review
+rate
+, 
+visible
+, 
+order_id
+review.replied
+lojista respondeu a avaliaÃ§Ã£o
+review_answer
+review_id
+, 
+order_id
+review.created
+nÃ£o
+ significa avaliaÃ§Ã£o publicada: avaliaÃ§Ã£o com imagem nasce com 
+visible: false
+ e espera moderaÃ§Ã£o. Em 
+review.replied
+, 
+resource.id
+ Ã© o id da 
+resposta
+; a avaliaÃ§Ã£o estÃ¡ em 
+resource.state.review_id
+ e inteira em 
+data
+. EdiÃ§Ã£o posterior da avaliaÃ§Ã£o ou da resposta nÃ£o emite nada. 
+resource.number
+ Ã© nulo nos dois.
+Financeiro 
+â
+DisponÃ­veis para os dois tipos de loja. SÃ£o os Ãºnicos eventos que saem com 
+data
+ vazio (
+{}
+): o que vocÃª precisa para reagir estÃ¡ em 
+resource.state
+, e o detalhe se busca na API.
+event
+Quando dispara
+resource.type
+resource.state
+withdrawal.requested
+saque solicitado e aceito pelo parceiro de pagamentos
+withdraw
+amount
+prepayment.available
+hÃ¡ valor elegÃ­vel para antecipaÃ§Ã£o
+prepayment
+â
+prepayment.simulation_requested
+lojista pediu uma simulaÃ§Ã£o de antecipaÃ§Ã£o no painel
+prepayment
+prepayment_id
+, 
+target_amount
+export.completed
+exportaÃ§Ã£o de relatÃ³rio concluÃ­da
+export
+kind
+, 
+delivery
+SÃ³ o saque aponta para um registro: 
+resource.id
+ Ã© o id do saque, o mesmo de 
+GET /v1/stores/withdraws
+. Nos outros trÃªs, 
+resource.id
+ e 
+resource.number
+ sÃ£o nulos. Em 
+export.completed
+, 
+kind
+ Ã© o relatÃ³rio (
+orders
+, 
+orders_nfe
+, 
+order_items
+, 
+balance_history
+, 
+abandoned_carts
+ ou 
+financial_history
+) e 
+delivery
+ diz como ele foi entregue (
+email_attachment
+ ou 
+download_link
+).
+O envelope 
+â
+Todo evento chega como 
+POST
+ com 
+Content-Type: application/json
+ e o mesmo envelope:
+Campo
+Tipo
+DescriÃ§Ã£o
+version
+string
+VersÃ£o do contrato. Hoje 
+"1"
+. Ã string, nÃ£o nÃºmero.
+event
+string
+Nome do evento, no padrÃ£o 
+entidade.acao
+.
+event_id
+string (UUID)
+Identifica o 
+fato
+. Todas as tentativas de entrega do mesmo fato levam o mesmo 
+event_id
+ â use-o para deduplicar.
+occurred_at
+string (ISO-8601)
+Instante em que o fato aconteceu, com milissegundos, no fuso de BrasÃ­lia (
+-03:00
+). Use-o para ordenar.
+store_id
+integer
+Id da sua loja.
+resource.type
+string
+Entidade, em minÃºsculas: 
+order
+, 
+exchange
+, 
+refund
+...
+resource.id
+integer ou 
+null
+Id da entidade na plataforma.
+resource.number
+string ou 
+null
+Identificador de negÃ³cio, quando existe (nÃºmero do pedido, 
+uuid
+ do carrinho).
+resource.state
+object
+Estado 
+bruto
+ da entidade no instante do evento. Chaves variam por entidade â ver o catÃ¡logo.
+data
+object
+RepresentaÃ§Ã£o completa da entidade, montada no momento da entrega â ver 
+O 
+data
+ de cada entidade
+.
+changes
+object
+SÃ³ nos trÃªs eventos de alteraÃ§Ã£o de pedido â ver 
+O bloco 
+changes
+. Ausente (nÃ£o 
+null
+) nos demais.
+resource.state
+ e 
+data
+ nÃ£o sÃ£o a mesma foto 
+â
+resource.state
+ Ã© capturado 
+no instante do evento
+; 
+data
+ Ã© montado 
+quando a entrega Ã© enviada
+, lendo a entidade de novo. Numa tentativa que chega minutos depois, os dois podem discordar: um 
+payment.approved
+ reentregue depois de o pedido ter avanÃ§ado traz 
+resource.state.payment_status: "paid"
+ e um 
+data
+ que jÃ¡ mostra o status mais recente. Regra prÃ¡tica: para saber 
+o que aconteceu
+, leia 
+event
+, 
+occurred_at
+ e 
+resource.state
+; para saber 
+como a entidade estÃ¡ agora
+, leia 
+data
+.
+Exemplo completo 
+â
+payment.approved
+ de um pedido pago no Pix. O 
+data
+ Ã© o mesmo objeto de 
+GET /v1/stores/orders/{id}
+:
+json
+{
+  "version"
+: 
+"1"
+,
+  "event"
+: 
+"payment.approved"
+,
+  "event_id"
+: 
+"3f1c9c1e-9d84-4f9e-8b1e-7f2c5d0a6b21"
+,
+  "occurred_at"
+: 
+"2026-08-21T14:32:11.482-03:00"
+,
+  "store_id"
+: 
+99
+,
+  "resource"
+: {
+    "type"
+: 
+"order"
+,
+    "id"
+: 
+12345
+,
+    "number"
+: 
+"INK12345"
+,
+    "state"
+: {
+      "order_status"
+: 
+"awaiting_production"
+,
+      "payment_status"
+: 
+"paid"
+    }
+  },
+  "data"
+: {
+    "id"
+: 
+12345
+,
+    "created_at"
+: 
+"2026-08-21T14:30:02.000-03:00"
+,
+    "rsv_factory_id"
+: 
+"INK12345"
+,
+    "order_status"
+: 
+"awaiting_production"
+,
+    "formatted_order_status"
+: 
+"Aguardando produÃ§Ã£o"
+,
+    "payment_method"
+: 
+"Pix"
+,
+    "payment_status"
+: 
+"Pago"
+,
+    "pix"
+: 
+null
+,
+    "is_exchange"
+: 
+false
+,
+    "exchangeable"
+: 
+false
+,
+    "items_editable"
+: 
+true
+,
+    "payment_discount_value"
+: 
+"0.0"
+,
+    "total_value"
+: 
+"159.8"
+,
+    "promotion_code"
+: 
+null
+,
+    "promotion_value"
+: 
+"0.0"
+,
+    "shipping_value"
+: 
+"19.9"
+,
+    "freight_value_difference"
+: 
+"0.0"
+,
+    "kickback_value"
+: 
+"42.0"
+,
+    "tracking_url"
+: 
+"https://status.ondeestameupedido.com/tracking/11011/INK12345"
+,
+    "delivery"
+: {
+      "carrier"
+: 
+null
+,
+      "delivery_method"
+: 
+"Entrega padrÃ£o"
+,
+      "shipping_type"
+: 
+"Entrega padrÃ£o"
+,
+      "tracking_code"
+: 
+null
+,
+      "current_status"
+: 
+null
+,
+      "production_deadline"
+: 
+"2026-08-26T14:30:02.000-03:00"
+,
+      "production_lead_time_days"
+: 
+3
+,
+      "production_delayed"
+: 
+false
+,
+      "estimated_delivery_date"
+: 
+"2026-09-01T14:30:02.000-03:00"
+,
+      "delivery_delayed"
+: 
+false
+,
+      "delivered_at"
+: 
+null
+,
+      "history"
+: []
+    },
+    "buyer"
+: {
+      "first_name"
+: 
+"Cliente"
+,
+      "last_name"
+: 
+"Exemplo"
+,
+      "email"
+: 
+"cliente@exemplo.com"
+,
+      "phone"
+: 
+"(11) 99999-9999"
+,
+      "document"
+: 
+"123.456.789-00"
+,
+      "accepts_marketing"
+: 
+false
+    },
+    "items"
+: [
+      {
+        "id"
+: 
+98765
+,
+        "quantity"
+: 
+2
+,
+        "unit_value"
+: 
+"69.95"
+,
+        "total_value"
+: 
+"139.9"
+,
+        "created_at"
+: 
+"2026-08-21T14:30:02.000-03:00"
+,
+        "produced_at"
+: 
+null
+,
+        "produced"
+: 
+false
+,
+        "counter_produce"
+: 
+0
+,
+        "sku"
+: 
+"CAMISETA-PRETA-M"
+,
+        "art_image_url"
+: 
+"https://cdn.exemplo.com/art.png"
+,
+        "mockup_image_url"
+: 
+"https://cdn.exemplo.com/mockup.png"
+,
+        "unit_ink_base_price"
+: 
+"39.0"
+,
+        "unit_additional_service_price"
+: 
+"0.0"
+,
+        "unit_kickback_without_promotion_value"
+: 
+"30.95"
+,
+        "free_quantity"
+: 
+0
+,
+        "refunded_quantity"
+: 
+0
+,
+        "product_variant"
+: {
+          "id"
+: 
+456
+,
+          "sku"
+: 
+"CAMISETA-PRETA-M"
+,
+          "color"
+: 
+"Preta"
+,
+          "hex_color"
+: 
+"000000"
+,
+          "size"
+: 
+"M"
+,
+          "model"
+: 
+"Masculino"
+,
+          "is_available"
+: 
+true
+,
+          "available_quantity"
+: 
+null
+,
+          "sales_count"
+: 
+12
+,
+          "created_at"
+: 
+"2026-07-02T10:15:00-03:00"
+        },
+        "product_v2"
+: {
+          "id"
+: 
+321
+,
+          "name"
+: 
+"Camiseta Preta"
+,
+          "slug"
+: 
+"camiseta-preta"
+,
+          "description"
+: 
+null
+,
+          "store_product_url"
+: 
+"https://reserva.ink/minha-loja/product/camiseta-preta"
+,
+          "visible_in_store"
+: 
+true
+,
+          "customizable_by_buyer"
+: 
+false
+,
+          "total_sales_count"
+: 
+12
+,
+          "product_cluster_id"
+: 
+null
+,
+          "price"
+: 
+"69.95"
+,
+          "promotional_price"
+: 
+null
+,
+          "tags"
+: [],
+          "main_image_url"
+: 
+"https://cdn.exemplo.com/camiseta-preta.jpg"
+,
+          "approval_status"
+: 
+"approved"
+,
+          "status"
+: 
+"published"
+,
+          "created_at"
+: 
+"2026-07-02T10:15:00-03:00"
+,
+          "updated_at"
+: 
+"2026-08-20T09:00:00-03:00"
+        }
+      }
+    ],
+    "shipping_address"
+: {
+      "state"
+: 
+"SP"
+,
+      "street"
+: 
+"Rua Exemplo"
+,
+      "number"
+: 
+"100"
+,
+      "complement"
+: 
+"apto 42"
+,
+      "city"
+: 
+"SÃ£o Paulo"
+,
+      "cep"
+: 
+"01310-100"
+,
+      "neighbourhood"
+: 
+"Bela Vista"
+,
+      "name"
+: 
+"Casa"
+    },
+    "billing_address"
+: {
+      "state"
+: 
+"SP"
+,
+      "street"
+: 
+"Rua Exemplo"
+,
+      "number"
+: 
+"100"
+,
+      "complement"
+: 
+"apto 42"
+,
+      "city"
+: 
+"SÃ£o Paulo"
+,
+      "cep"
+: 
+"01310-100"
+,
+      "neighbourhood"
+: 
+"Bela Vista"
+,
+      "name"
+: 
+"Casa"
+    }
+  }
+}
+Eventos de pedido ainda trazem algumas chaves a mais na raiz, fora do envelope â ver 
+Chaves legadas na raiz
+.
+O 
+data
+ de cada entidade 
+â
+Sempre que a entidade tem um recurso na API, 
+data
+ Ã© 
+exatamente
+ o objeto que o 
+GET
+ correspondente devolve â mesmo contrato, mesmas convenÃ§Ãµes (dinheiro como string decimal, datas em ISO-8601). A 
+ReferÃªncia da API
+ Ã© a fonte do shape; este guia nÃ£o a repete.
+Entidade
+data
+Pedido
+Objeto de 
+GET /v1/stores/orders/{id}
+Pedido de integraÃ§Ã£o
+Objeto de 
+GET /v1/stores/external_orders/{id}
+Carrinho abandonado
+Um item de 
+GET /v1/stores/abandoned_carts
+Troca
+Objeto de 
+GET /v1/stores/exchanges/{id}
+, com os pedidos de origem e reposiÃ§Ã£o aninhados por inteiro â Ã© o maior corpo do catÃ¡logo
+Reembolso
+Item de 
+GET /v1/stores/orders/{order_id}/refunds
+, mais um bloco 
+order
+ com 
+id
+, 
+rsv_factory_id
+, 
+order_status
+, 
+payment_status
+ e 
+payment_method
+ do pedido
+AvaliaÃ§Ã£o
+Contrato prÃ³prio, abaixo
+Financeiro
+{}
+ â consulte 
+GET /v1/stores/withdraws
+, 
+GET /v1/stores/prepayments
+ e 
+GET /v1/stores/balance_extract
+AvaliaÃ§Ã£o e resposta 
+â
+NÃ£o existe recurso de avaliaÃ§Ã£o na API, entÃ£o o 
+data
+ Ã© prÃ³prio do webhook. Em 
+review.created
+:
+json
+{
+  "id"
+: 
+91
+,
+  "rate"
+: 
+5
+,
+  "comment"
+: 
+"chegou rÃ¡pido e a estampa ficou perfeita"
+,
+  "visible"
+: 
+true
+,
+  "created_at"
+: 
+"2026-09-01T10:12:44-03:00"
+,
+  "updated_at"
+: 
+"2026-09-01T10:12:44-03:00"
+,
+  "buyer"
+: { 
+"name"
+: 
+"Ana Souza"
+, 
+"email"
+: 
+"ana@exemplo.com"
+ },
+  "order"
+: {
+    "id"
+: 
+4821
+,
+    "rsv_factory_id"
+: 
+"INK4821SR"
+,
+    "order_status"
+: 
+"delivered"
+,
+    "payment_status"
+: 
+"paid"
+  },
+  "images"
+: [
+"https://cdn.exemplo.com/review_image.png"
+],
+  "answer"
+: 
+null
+}
+rate
+ Ã© inteiro de 1 a 5.
+images
+ Ã© uma lista de URLs, vazia quando nÃ£o hÃ¡ imagem â nunca nula.
+answer
+ Ã© nulo atÃ© o lojista responder. Como 
+data
+ Ã© montado na entrega, um 
+review.created
+ reentregue tarde pode chegar com 
+answer
+ preenchido.
+Em 
+review.replied
+, 
+data
+ Ã© a resposta com a avaliaÃ§Ã£o aninhada:
+json
+{
+  "id"
+: 
+17
+,
+  "answer"
+: 
+"Obrigado, Ana! Volte sempre :)"
+,
+  "created_at"
+: 
+"2026-09-02T09:03:20-03:00"
+,
+  "review"
+: {
+    "id"
+: 
+91
+,
+    "rate"
+: 
+5
+,
+    "comment"
+: 
+"chegou rÃ¡pido e a estampa ficou perfeita"
+,
+    "visible"
+: 
+true
+,
+    "created_at"
+: 
+"2026-09-01T10:12:44-03:00"
+,
+    "updated_at"
+: 
+"2026-09-01T10:12:44-03:00"
+,
+    "buyer"
+: { 
+"name"
+: 
+"Ana Souza"
+, 
+"email"
+: 
+"ana@exemplo.com"
+ },
+    "order"
+: {
+      "id"
+: 
+4821
+,
+      "rsv_factory_id"
+: 
+"INK4821SR"
+,
+      "order_status"
+: 
+"delivered"
+,
+      "payment_status"
+: 
+"paid"
+    },
+    "images"
+: [
+"https://cdn.exemplo.com/review_image.png"
+],
+    "answer"
+: {
+      "id"
+: 
+17
+,
+      "answer"
+: 
+"Obrigado, Ana! Volte sempre :)"
+,
+      "created_at"
+: 
+"2026-09-02T09:03:20-03:00"
+    }
+  }
+}
+O bloco 
+changes
+â
+Nos trÃªs eventos de alteraÃ§Ã£o de pedido, o que interessa Ã© 
+o que mudou
+. O delta vem em 
+changes
+, na raiz do envelope, capturado no instante da alteraÃ§Ã£o. 
+resource.state
+ continua sendo sÃ³ o estado, e 
+data
+ jÃ¡ traz o resultado final.
+order.items_changed
+ â um evento 
+por item
+ alterado:
+json
+"changes"
+: {
+  "order_item_id"
+: 
+987
+,
+  "from"
+: {
+    "product_id"
+: 
+12
+, 
+"product_name"
+: 
+"Camiseta Classic"
+, 
+"variant_id"
+: 
+44
+,
+    "model"
+: 
+"Masculino"
+, 
+"color"
+: 
+"Preto"
+, 
+"size"
+: 
+"M"
+, 
+"sku"
+: 
+"153450190419"
+  },
+  "to"
+: {
+    "product_id"
+: 
+31
+, 
+"product_name"
+: 
+"Moletom Classic"
+, 
+"variant_id"
+: 
+77
+,
+    "model"
+: 
+"Masculino"
+, 
+"color"
+: 
+"Cinza"
+, 
+"size"
+: 
+"G"
+, 
+"sku"
+: 
+"845415534692"
+  }
+}
+order.shipping_address_changed
+:
+json
+"changes"
+: {
+  "from"
+: {
+    "name"
+: 
+"Cliente Exemplo"
+, 
+"street"
+: 
+"Rua Exemplo"
+, 
+"number"
+: 
+"100"
+, 
+"complement"
+: 
+"apto 12"
+,
+    "neighbourhood"
+: 
+"Centro"
+, 
+"cep"
+: 
+"01001-000"
+, 
+"city"
+: 
+"SÃ£o Paulo"
+, 
+"state"
+: 
+"SP"
+  },
+  "to"
+: {
+    "name"
+: 
+"Cliente Exemplo"
+, 
+"street"
+: 
+"Rua Exemplo"
+, 
+"number"
+: 
+"250"
+, 
+"complement"
+: 
+"casa"
+,
+    "neighbourhood"
+: 
+"Centro"
+, 
+"cep"
+: 
+"01001-000"
+, 
+"city"
+: 
+"SÃ£o Paulo"
+, 
+"state"
+: 
+"SP"
+  }
+}
+order.customization_pending
+ â dispara sempre que o pedido entra em 
+awaiting_stamp
+ com itens pendentes. No fluxo comum isso acontece na criaÃ§Ã£o, e o evento chega junto com 
+order.created
+; 
+stamp_status
+ Ã© 
+pending
+ ou 
+rejected
+:
+json
+"changes"
+: {
+  "pending_items"
+: [
+    { 
+"order_item_id"
+: 
+987
+, 
+"sku"
+: 
+"153450190419"
+, 
+"stamp_status"
+: 
+"pending"
+ }
+  ]
+}
+AlteraÃ§Ã£o que nÃ£o muda nada (mesmo produto, mesmo endereÃ§o) nÃ£o emite evento.
+Verificando a assinatura 
+â
+Cada entrega leva quatro cabeÃ§alhos alÃ©m do 
+Content-Type
+:
+Header
+ConteÃºdo
+X-Webhook-Event
+O mesmo valor de 
+event
+.
+X-Webhook-Version
+O mesmo valor de 
+version
+.
+X-Webhook-Event-Id
+O mesmo valor de 
+event_id
+.
+X-Webhook-Signature
+Assinatura HMAC-SHA256 do corpo. Presente sÃ³ quando o webhook tem 
+Secret
+.
+Os trÃªs primeiros existem para rotear e deduplicar sem parsear o corpo. Eles 
+nÃ£o sÃ£o assinados
+: a assinatura cobre sÃ³ o corpo, e o corpo Ã© a fonte autoritativa.
+A assinatura tem duas codificaÃ§Ãµes, nesta ordem
+Calcule o HMAC-SHA256 do corpo com o seu secret e obtenha o resultado em 
+hexadecimal
+ (64 caracteres).
+Codifique essa string hexadecimal em 
+Base64
+.
+O valor de 
+X-Webhook-Signature
+ Ã© o resultado do passo 2. Codificar o HMAC binÃ¡rio direto em Base64 produz outro valor e a verificaÃ§Ã£o falha sempre.
+Calcule sobre o 
+corpo cru
+, byte a byte como chegou. Se o seu framework faz o parse do JSON antes de vocÃª ver o corpo, reserializar muda a ordem das chaves e invalida a assinatura â leia o corpo bruto primeiro. Compare com uma funÃ§Ã£o de tempo constante.
+Node.js
+Ruby
+Python
+js
+import
+ express 
+from
+ "express"
+;
+import
+ { createHmac, timingSafeEqual } 
+from
+ "node:crypto"
+;
+const
+ app
+ =
+ express
+();
+const
+ secret
+ =
+ process.env.
+INK_WEBHOOK_SECRET
+;
+app.
+post
+(
+"/webhooks/ink"
+, express.
+raw
+({ type: 
+"application/json"
+ }), (
+req
+, 
+res
+) 
+=>
+ {
+  const
+ hex
+ =
+ createHmac
+(
+"sha256"
+, secret).
+update
+(req.body).
+digest
+(
+"hex"
+);
+  const
+ expected
+ =
+ Buffer.
+from
+(hex, 
+"utf8"
+).
+toString
+(
+"base64"
+);
+  const
+ received
+ =
+ req.
+get
+(
+"X-Webhook-Signature"
+) 
+??
+ ""
+;
+  const
+ a
+ =
+ Buffer.
+from
+(expected);
+  const
+ b
+ =
+ Buffer.
+from
+(received);
+  if
+ (a.
+length
+ !==
+ b.
+length
+ ||
+ !
+timingSafeEqual
+(a, b)) {
+    return
+ res.
+sendStatus
+(
+401
+);
+  }
+  res.
+sendStatus
+(
+200
+);
+  enqueue
+(
+JSON
+.
+parse
+(req.body.
+toString
+(
+"utf8"
+)));
+});
+ruby
+class
+ InkWebhooksController
+ <
+ ApplicationController
+  skip_forgery_protection
+  def
+ create
+    raw_body
+ = request.
+raw_post
+    digest
+ = 
+OpenSSL
+::
+HMAC
+.
+hexdigest
+(
+"sha256"
+, 
+ENV
+.
+fetch
+(
+"INK_WEBHOOK_SECRET"
+), raw_body)
+    expected
+ = 
+Base64
+.
+strict_encode64
+(digest)
+    received
+ = request.
+headers
+[
+"X-Webhook-Signature"
+].
+to_s
+    return
+ head 
+:unauthorized
+ unless
+ ActiveSupport
+::
+SecurityUtils
+.
+secure_compare
+(expected, received)
+    ProcessInkEventJob
+.
+perform_later
+(
+JSON
+.
+parse
+(raw_body))
+    head 
+:ok
+  end
+end
+python
+import
+ base64
+import
+ hashlib
+import
+ hmac
+import
+ os
+from
+ flask 
+import
+ Flask, abort, request
+app 
+=
+ Flask(
+__name__
+)
+SECRET
+ =
+ os.environ[
+"INK_WEBHOOK_SECRET"
+].encode()
+@app.post
+(
+"/webhooks/ink"
+)
+def
+ ink_webhook
+():
+    raw_body 
+=
+ request.get_data()
+    hex_digest 
+=
+ hmac.new(
+SECRET
+, raw_body, hashlib.sha256).hexdigest()
+    expected 
+=
+ base64.b64encode(hex_digest.encode()).decode()
+    received 
+=
+ request.headers.get(
+"X-Webhook-Signature"
+, 
+""
+)
+    if
+ not
+ hmac.compare_digest(expected, received):
+        abort(
+401
+)
+    enqueue(request.get_json())
+    return
+ ""
+, 
+200
+Sem 
+Secret
+ cadastrado o cabeÃ§alho nÃ£o Ã© enviado e qualquer um que descubra a URL consegue forjar eventos. Cadastre um secret longo e aleatÃ³rio e trate a ausÃªncia do cabeÃ§alho como falha.
+Entrega e tentativas 
+â
+Responda 
+2xx
+ rÃ¡pido e processe depois.
+ A plataforma espera no mÃ¡ximo 
+5 segundos
+ para conectar e 
+5 segundos
+ pela resposta. Qualquer status fora de 
+2xx
+, timeout ou erro de rede conta como falha â inclusive 
+3xx
+, porque redirecionamentos nÃ£o sÃ£o seguidos. Valide a assinatura, enfileire o evento e devolva 
+200
+; o processamento pesado fica para depois da resposta.
+Uma entrega que falha Ã© repetida com espera crescente:
+Tentativa
+Espera desde a anterior
+1Âª
+imediata
+2Âª
+~30 segundos
+3Âª
+~2 minutos
+4Âª
+~8 minutos
+5Âª
+~32 minutos
+Cada espera varia atÃ© 15% para cima, aleatoriamente. Do primeiro envio Ã  Ãºltima tentativa passam cerca de 
+45 minutos
+. Todas as tentativas do mesmo fato levam o mesmo 
+event_id
+.
+Depois da 5Âª tentativa nada Ã© reenviado sozinho
+Esgotadas as cinco tentativas, a entrega fica registrada como 
+Esgotada
+ no histÃ³rico do webhook, a plataforma 
+nÃ£o retenta
+ aquele evento por conta prÃ³pria, o webhook continua ativo e recebendo os prÃ³ximos, e o painel 
+nÃ£o notifica
+ a falha. VocÃª pode 
+reenviar a entrega manualmente
+, mas ninguÃ©m avisa que ela estÃ¡ lÃ¡: uma indisponibilidade do seu endpoint maior que ~45 minutos perde os eventos daquela janela atÃ© que alguÃ©m abra o histÃ³rico e clique. Por isso o fluxo de eventos nÃ£o deve ser a sua Ãºnica fonte: reconcilie periodicamente contra a API, com o polling incremental de 
+ConciliaÃ§Ã£o no ERP
+, para fechar buracos.
+HistÃ³rico de entregas e reenvio 
+â
+Toda tentativa de entrega fica registrada, e o histÃ³rico Ã© 
+por webhook
+ â como cada evento assinado vira um webhook separado, o que vocÃª vÃª Ã© sempre o histÃ³rico de um evento sÃ³, para uma URL sÃ³.
+Para abrir:
+No painel, abra o 
+menu do usuÃ¡rio
+ (avatar no canto superior direito) e clique em 
+Webhooks
+.
+Na linha do webhook que vocÃª quer investigar, clique na coluna 
+Ãltimo envio
+ ou no item 
+Entregas
+ do menu de aÃ§Ãµes, no fim da linha.
+A listagem traz uma linha por tentativa, da mais recente para a mais antiga, com 
+Tentativa
+ (
+3/5
+), 
+Evento
+, 
+Status
+, 
+HTTP
+, 
+Reenvio
+ e 
+Enviada em
+, dez por pÃ¡gina, filtrÃ¡vel por status e por perÃ­odo. As entregas esgotadas aparecem destacadas.
+Status
+O que significa
+Pendente
+Tentativa em voo, ainda sem desfecho.
+Entregue
+O seu servidor respondeu 
+2xx
+.
+Falhou
+O seu servidor recusou, mas ainda hÃ¡ tentativa pela frente.
+Esgotada
+As cinco tentativas falharam e nada serÃ¡ retentado sozinho.
+O que aconteceu em uma entrega 
+â
+Detalhes
+ abre a tentativa isolada, com o cÃ³digo HTTP, os horÃ¡rios e os dois corpos que importam: o 
+payload enviado
+ â o envelope exato que saiu â e a 
+resposta do seu servidor
+. Em timeout ou erro de rede o cÃ³digo HTTP fica vazio e o que aparece no lugar do corpo Ã© a mensagem de transporte. Ã aqui que se descobre por que o 
+POST
+ foi recusado: o 
+401
+ de um token que expirou do seu lado, o 
+500
+ de um parser que quebrou, o timeout de um handler que processa antes de responder.
+Reenviando uma entrega 
+â
+O botÃ£o 
+Reenviar
+ aparece nas entregas 
+Falhou
+ e 
+Esgotada
+ e abre uma 
+nova sequÃªncia de atÃ© 5 tentativas
+, com o mesmo intervalo crescente da tabela acima.
+O corpo vai congelado.
+ O reenvio manda exatamente o que foi gravado na entrega original â mesmo 
+event_id
+ e mesmo 
+data
+ do instante em que ela foi gerada, nÃ£o uma foto nova da entidade. A sua deduplicaÃ§Ã£o por 
+event_id
+ continua valendo (ver 
+IdempotÃªncia e ordem
+), e quem precisa do estado corrente do recurso consulta a API.
+A entrega de origem nÃ£o muda.
+ Ela continua 
+Falhou
+ ou 
+Esgotada
+ para sempre; as tentativas novas entram como linhas prÃ³prias, apontando para ela na coluna 
+Reenvio
+.
+O botÃ£o nÃ£o aparece â ou o reenvio Ã© recusado â nestes casos:
+O webhook nÃ£o estÃ¡ 
+Ativo
+.
+ Em 
+Registrado
+ ou 
+Desativado
+ nada Ã© entregue; ative na ediÃ§Ã£o antes de reenviar.
+A entrega estÃ¡ 
+Pendente
+.
+ Existe uma tentativa em voo; espere o desfecho.
+A entrega foi 
+Entregue
+.
+ O seu servidor aceitou aquele 
+POST
+ â o reenvio existe para recuperar falha de entrega, nÃ£o para reprocessar o que chegou.
+JÃ¡ existe um reenvio em andamento a partir daquela entrega.
+ A sequÃªncia nova retenta sozinha por atÃ© ~50 minutos; sÃ³ depois dela outro reenvio Ã© aceito.
+O histÃ³rico segue o webhook â e dura 90 dias
+Desativado
+ pausa a entrega e 
+preserva
+ o histÃ³rico; excluir o webhook apaga os dois. NÃ£o hÃ¡ como recuperar o histÃ³rico de um webhook excluÃ­do â se vocÃª pretende recriar o cadastro, investigue antes.
+Independente disso, cada tentativa fica guardada por 
+90 dias
+ e depois Ã© apagada, payload e resposta incluÃ­dos. Se vocÃª precisa de um registro mais longo do que foi entregue, guarde no seu lado no momento em que o evento chega.
+IdempotÃªncia e ordem 
+â
+A entrega Ã© at-least-once.
+ O mesmo fato pode chegar mais de uma vez: uma tentativa que o seu servidor processou mas nÃ£o respondeu a tempo Ã© repetida. 
+Deduplique por 
+event_id
+ antes de processar.
+Ordem nÃ£o Ã© garantida.
+ Dois eventos do mesmo pedido, disparados em sequÃªncia, podem chegar fora de ordem, porque cada entrega tem as prÃ³prias tentativas. Use 
+occurred_at
+ para ordenar e nunca presuma que o Ãºltimo a chegar Ã© o mais recente.
+RepetiÃ§Ã£o em rajada Ã© colapsada.
+ Se o mesmo evento da mesma entidade disparar de novo em menos de 60 segundos, a repetiÃ§Ã£o Ã© descartada. Isso corta ruÃ­do, mas nÃ£o garante entrega Ãºnica â a deduplicaÃ§Ã£o continua sendo sua.
+Nem todo fato gera entrega.
+ Entidade apagada entre o evento e o envio faz a entrega ser descartada silenciosamente; Ã© o caso tÃ­pico do carrinho limpo pela rotina de retenÃ§Ã£o.
+PolÃ­tica de compatibilidade 
+â
+O contrato evolui sem quebrar quem jÃ¡ integra, e a versÃ£o vai no corpo (
+version
+). O que muda 
+sem
+ aviso e sem novo nÃºmero de versÃ£o, e que o seu consumidor deve tolerar:
+chave nova no envelope, em 
+resource.state
+ ou em 
+data
+;
+tipo de evento novo no catÃ¡logo;
+valor novo em um campo de status.
+Ignore chaves e eventos que nÃ£o conhece.
+ Um 
+switch
+ sem caso padrÃ£o em 
+event
+ ou em um status quebra na primeira adiÃ§Ã£o.
+O que 
+sÃ³
+ acontece com um novo nÃºmero de 
+version
+, anunciado no 
+Changelog
+ antes de qualquer remoÃ§Ã£o: remover ou renomear chave, mudar o tipo de um valor, mudar o significado de um campo, tornar obrigatÃ³rio o que era nulÃ¡vel.
+Nunca Ã© garantido: ordem das chaves no JSON, ordem dos itens em listas (
+data.items
+, 
+data.delivery.history
+), tamanho do corpo, ordem de chegada entre eventos.
+Chaves legadas na raiz 
+â
+Os eventos de 
+pedido
+ ainda carregam, na raiz do JSON, as chaves do formato anterior ao envelope versionado. Elas estÃ£o 
+descontinuadas
+ e saem na prÃ³xima versÃ£o. IntegraÃ§Ã£o nova nÃ£o deve lÃª-las; se vocÃª integrou antes de agosto de 2026 e ainda depende delas, migre pelos pares abaixo:
+Chave legada
+Use no lugar
+event_type
+event
+order_id
+resource.id
+record_id
+resource.id
+record_type
+resource.type
+order_status
+resource.state.order_status
+payment_status
+resource.state.payment_status
+timestamp
+occurred_at
+order
+data
+Os eventos de pedido de integraÃ§Ã£o carregam sÃ³ as chaves de metadado (
+event_type
+, 
+record_id
+, 
+record_type
+, 
+order_status
+, 
+payment_status
+, 
+timestamp
+), tambÃ©m descontinuadas. Os demais eventos do catÃ¡logo jÃ¡ nascem sÃ³ com o envelope.
+PrÃ³ximos passos 
+â
+ConciliaÃ§Ã£o no ERP
+ â o polling incremental que complementa os webhooks como rede de reconciliaÃ§Ã£o.
+ReferÃªncia da API
+ â o contrato de cada recurso que aparece em 
+data
+.
+Changelog
+ â eventos novos e qualquer mudanÃ§a de versÃ£o do envelope sÃ£o anunciados lÃ¡.
+Atualizado em: 
+Pager
+Anterior
+ConciliaÃ§Ã£o no ERP
+PrÃ³ximo
+CatÃ¡logo
