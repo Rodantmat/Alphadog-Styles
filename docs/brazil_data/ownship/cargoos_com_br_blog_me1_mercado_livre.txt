@@ -1,0 +1,277 @@
+URL: https://cargoos.com.br/blog/me1-mercado-livre
+STATUS: 200
+TITLE: ME1 no Mercado Livre: o que é, como ativar e como funciona o frete
+
+Funcionalidades
+Extensão
+Preços
+Blog
+Entrar
+Criar conta grátis
+Dashboard
+Faturamento, lucro e pedidos
+Anúncios
+Margem real de cada anúncio
+DRE
+Resultado do mês, já com tarifas
+Publicidade (Ads)
+Lucro de cada campanha
+Estoque & Lotes
+Custo de cada lote, venda a venda
+MCP
+Sua operação no ChatGPT e Claude
+Início
+/
+Blog
+Reputação e operação
+ME1 no Mercado Livre: o que é, como ativar e como funciona o frete
+
+O que é o ME1 no Mercado Livre, quem pode usar, como ativar com um integrador certificado e como funcionam o frete dinâmico e a tabela de contingência.
+
+14 de outubro de 2026
+·
+10 min de leitura
+
+O essencial
+
+ME1 é o envio pela sua própria logística, com frete e prazo calculados no anúncio, para produtos que o Envios do Mercado Livre não atende, até 500 cm por lado e 500 kg
+Para ativar: reputação fora do vermelho, ME2 ativo, contrato com um integrador de frete dinâmico certificado e tabela de contingência revisada a cada 3 meses
+O integrador cota preço e prazo em menos de 400 ms; quando ele falha, o anúncio usa a tabela de contingência, uma planilha .xlsx de até 7 MB
+Produto elegível ao ME2 não pode ir para o ME1; com até 50 kg e 300 cm na soma dos lados, confira antes se ele pode migrar para Pesados e Volumosos
+
+Neste artigo
+
+O que é o ME1 no Mercado Livre?
+Qual a diferença entre ME1, ME2 e entrega a combinar?
+Quem pode usar o ME1 e quais produtos entram?
+Como ativar o ME1 no Mercado Livre?
+Como funciona o frete no ME1?
+Como enviar e acompanhar as vendas pelo ME1?
+Vale a pena trocar a entrega a combinar pelo ME1?
+O que é o ME1 no Mercado Livre?
+
+O ME1, ou Mercado Envios 1, é a forma de envio em que você cuida da entrega com a sua própria logística ou com uma transportadora contratada, mas o frete aparece no anúncio como em qualquer venda com envio. Quando o comprador informa o CEP, o valor e o prazo surgem na página do produto, sem troca de mensagens, segundo a nota da Central de Vendedores sobre o ME1.
+
+A modalidade existe para os produtos pesados ou volumosos que não entram no Mercado Envios 2, o ME2, que é a logística do próprio Mercado Livre com Coleta, agências, Flex e Full. A documentação de desenvolvedores do ME1, atualizada em fevereiro de 2026, descreve o ME1 como o caminho para vender esses itens com logística própria ou de terceiros.
+
+Para quem compra, muda bastante: a pessoa vê custo e prazo antes de comprar, paga produto e frete juntos no checkout do Mercado Pago e acompanha o envio pela plataforma. A página oficial do Mercado Envios 1 resume o recado ao vendedor sem rodeio: pare de usar a entrega a combinar e migre para o ME1.
+
+Qual a diferença entre ME1, ME2 e entrega a combinar?
+
+A diferença está em quem entrega e em quem calcula o frete. No ME2, o Mercado Livre gera a etiqueta, entrega e cobra o frete pela tabela oficial. No ME1, a entrega é sua, e o frete vem do seu integrador. Na entrega a combinar, o anúncio não mostra frete, e o comprador precisa chamar você para acertar tudo.
+
+Ponto	ME2 (Envios do Mercado Livre)	ME1	Entrega a combinar
+Quem entrega	A rede do Mercado Livre	Você ou a sua transportadora	Você, em mãos ou por transportadora
+Frete no anúncio	Calculado pelo Mercado Livre	Calculado pelo integrador ou pela tabela	Não aparece
+Rastreio para o comprador	Automático	Pelo integrador, com status na plataforma	Código que você compartilha
+Quando usar	Sempre que o produto for elegível	Produto fora do ME2	Produto fora do ME2, sem ME1 ativo
+
+O ME2 continua sendo a regra. A documentação de gestão do Mercado Envios explica que, numa conta com ME1 e ME2 ativos, o padrão é o ME2 obrigatório e o ME1 opcional, e que mudar essa configuração exige falar com o consultor comercial e justificar o pedido. Se o produto cabe na logística do Mercado Livre, ele não pode ser publicado no ME1. A tabela do ME2, faixa por faixa, está no guia de frete do Mercado Livre.
+
+Quem pode usar o ME1 e quais produtos entram?
+
+Entram no ME1 os anúncios em entrega a combinar, ou seja, produtos que não são elegíveis à logística do Mercado Livre. A maioria é de itens pesados e volumosos, como geladeiras, sofás e máquinas, mas a modalidade vale para qualquer anúncio nessa condição. Algumas categorias, pela natureza do produto, só aceitam entrega a combinar, segundo a ajuda sobre dimensões permitidas.
+
+Do lado da conta, a nota sobre como ativar o ME1 lista cinco requisitos:
+
+Não ter reputação vermelha
+Ter produtos em entrega a combinar, que não saem pelos envios do Mercado Livre
+Ter contrato ativo com um integrador de frete dinâmico certificado pelo Mercado Livre
+Ter um hub de integração para migrar os anúncios de entrega a combinar para o ME1
+Manter a tabela de contingência atualizada, com revisão recomendada a cada 3 meses
+
+A documentação técnica soma mais um: o ME2 precisa estar ativo na conta antes do ME1. Quanto ao tamanho, a landing promete “sem limite de medidas e peso”, mas a API recusa item com algum lado acima de 500 cm ou mais de 500 kg. Vale o teto da documentação.
+
+Antes de migrar, confira se o produto não cabe no ME2. A página do ME1 orienta quem tem itens de até 50 kg e 300 cm na soma dos lados a verificar se eles estão liberados para o Mercado Envios de Pesados e Volumosos, a mesma faixa da Coleta e das agências. Dentro desses limites, o ME2 entrega por você.
+
+Como ativar o ME1 no Mercado Livre?
+
+A ativação passa pelo integrador, não por um botão no painel de vendas. A página oficial descreve cinco passos:
+
+Confirme que você trabalha com um integrador certificado pelo Mercado Livre
+Avise o integrador que quer ativar o ME1; ele vai pedir os dados da sua operação
+Escolha as transportadoras disponíveis no integrador ou contrate as suas, e envie a tabela de contingência preenchida
+Aguarde: o integrador faz o pedido de ativação e avisa quando o ME1 estiver habilitado
+Com o ME1 habilitado, ative a modalidade nos anúncios pelo hub e cadastre as dimensões de cada produto
+
+Sobre o assessor comercial, as fontes divergem: a landing diz que ele não é necessário, e a documentação técnica o cita como um dos caminhos, ao lado da solicitação direta. Na prática, comece pelo integrador e acione o assessor se a sua conta tiver um.
+
+A página oficial cita dois tipos de parceiro. Os integradores logísticos, como Precode, Vtex e Anymarket, conectam a loja e cuidam da entrega. Os hubs de integração, como Sisfrete, Frenet, Freterápido e Intelipost, conectam os anúncios ao ME1 para quem prefere tocar a própria logística. A Central de Parceiros tem uma subcategoria própria, Logística ME1 (Envíos Bulky), dentro de gestão de e-commerce, e o guia de ERP para Mercado Livre mostra como comparar sistemas.
+
+Como funciona o frete no ME1?
+
+O frete do ME1 vem de uma cotação em tempo real, o frete dinâmico. O Mercado Livre envia ao integrador o item, a quantidade, as medidas, o peso e o CEP de destino, e o integrador devolve o preço, o tempo de preparação e o tempo de trânsito em dias úteis. A soma dos dois prazos vira a promessa de entrega que o comprador vê.
+
+A documentação do frete dinâmico, atualizada em setembro de 2026, exige que o integrador responda em menos de 400 ms. Quando ele falha, entra a tabela de contingência, também chamada de tarifário ou Tabela Axado: uma planilha em que você define o frete por faixa de CEP e por faixa de peso.
+
+O que acontece na cotação	O que o comprador vê
+O integrador responde a tempo	Preço e prazo calculados pelo integrador
+O integrador falha ou atrasa	Valores da tabela de contingência
+O CEP informado é inválido	Um erro e o pedido de um CEP válido
+O destino não tem cobertura	Nenhuma opção de entrega para aquele CEP
+O produto está sem estoque	Nenhuma cotação de frete
+
+A tabela tem regras rígidas: arquivo .xlsx no modelo oficial, até 7 MB, sem mexer em abas e cabeçalhos, sem linhas duplicadas e sem faixas de CEP ou de peso sobrepostas ou invertidas. Peso vai em quilos e medidas em centímetros. A atualização é em Preferências de venda, na seção Transportadoras, com os mesmos valores do integrador.
+
+Frete grátis também é possível: você configura por item ou por SKU no integrador e na tabela de contingência, segundo a página oficial. Nesse caso, o custo da transportadora sai da sua margem e precisa entrar no preço.
+
+Tabela de contingência desatualizada é frete errado no anúncio. Quando o integrador cai, é ela que cota: revise os valores a cada 3 meses ou sempre que a transportadora reajustar.
+Como enviar e acompanhar as vendas pelo ME1?
+
+Depois da venda, você despacha com a sua transportadora, e o integrador devolve ao Mercado Livre o status e o rastreio. Com os status integrados, a plataforma avisa o comprador do despacho, da entrega e da tentativa sem sucesso, sem ação extra sua, segundo a nota sobre a seção de envios ME1.
+
+Dois cuidados valem para toda venda. A nota fiscal pode ser carregada na venda para ficar disponível ao comprador. E pedido com alerta de fraude, a tag fraud_risk_detected, não deve ser enviado; o Mercado Livre avisa no painel e pela API.
+
+A seção Desempenho de envios reúne as métricas do ME1, atualizadas todo dia com os dados do dia anterior:
+
+Quantos envios chegaram na data prometida e em que dias a operação desandou
+Quanto tempo o integrador leva para mostrar preço e prazo, e quantas vezes ele falhou
+A experiência de envio, que mede a porcentagem de compradores que recebeu os avisos de despacho, entrega e tentativa sem sucesso
+
+A própria nota avisa que muitas entregas com atraso podem gerar mais reclamações, e reclamação pesa na reputação. O inverso também é sinal: muitas entregas antes da data indicam que a sua operação aguenta prometer menos dias no anúncio.
+
+Quanto ao dinheiro, a tabela oficial de liberação não tem linha para o ME1. Ela separa as vendas com Envios do Mercado Livre, liberadas de 8 a 12 dias após a entrega, das entregas em mãos ou por outro serviço, em que o prazo vai de imediato a 28 dias conforme o aviso de entrega e a confirmação do comprador. Confira a data no detalhe da venda e no guia de liberação do dinheiro.
+
+Vale a pena trocar a entrega a combinar pelo ME1?
+
+Para produto que não cabe no ME2, quase sempre vale. Na entrega a combinar, o comprador precisa perguntar quando o pedido chega, quanto custa o frete e se pode confiar no vendedor, as três dúvidas que a própria página do ME1 lista. Cada pergunta sem resposta rápida é uma venda que pode ir para o concorrente que mostra o frete na hora.
+
+O que pesa contra é o custo fixo. O integrador é um serviço contratado, a transportadora cobra por entrega e a comissão segue a do tipo de anúncio, em geral de 10% a 14% no Clássico e de 15% a 19% no Premium, como mostra o guia de taxas. Quem vende poucos itens grandes por mês precisa ver se a conversão extra paga o integrador.
+
+Se ficar na entrega a combinar, siga a ajuda sobre vendas com entrega a combinar: converse só pelas mensagens da venda, confira se o pedido está na sua lista, despache no nome do comprador e guarde o comprovante. Na entrega em mãos, colha um formulário com número da operação, data, nome, CPF e assinatura de quem recebeu; é o que garante a cobertura do Programa de Proteção ao Vendedor, segundo a ajuda sobre entregas pessoais.
+
+Regra prática: se o produto cabe no ME2, ele vai pelo ME2. O ME1 é para o que sobra, e ganha da entrega a combinar sempre que o volume de vendas paga o integrador.
+
+Em qualquer caso, faça a conta antes: rode o preço na calculadora da Cargoos com comissão, imposto e o frete que você paga no frete grátis, e veja se a margem fecha com o integrador rateado pelas vendas do mês.
+
+Fontes
+Central de Vendedores, o que é o Mercado Envios 1 · Você cuida da entrega e o frete aparece no anúncio quando o comprador informa o CEP
+Central de Vendedores, como ativar o ME1 · Os cinco requisitos e os passos de ativação pelo integrador certificado
+Mercado Livre, página do Mercado Envios 1 · Integradores, tabela de contingência, frete grátis por item ou SKU e a regra que barra produto elegível ao ME2
+Mercado Livre Developers, Mercado Envios 1 · ME2 ativo como pré-requisito, teto de 500 cm e 500 kg e alerta de fraude
+Mercado Livre Developers, frete dinâmico · Cotação em menos de 400 ms, erros por cenário e regras da tabela de contingência
+Mercado Livre Developers, gestão do Mercado Envios · Modalidades ME1, ME2, personalizado e a combinar, com o ME2 obrigatório por padrão
+Mercado Livre Developers, envios personalizados · Envio por tabela própria e anúncios criados no Envios, exceto em categorias que não o aceitam
+Central de Vendedores, seção de envios ME1 · Métricas de entrega no prazo, falhas do integrador e experiência de envio
+Mercado Livre, dimensões permitidas por serviço de envio · Coleta e agências até 50 kg e 300 cm, e categorias que só aceitam entrega a combinar
+Mercado Livre, vendas com entrega a combinar · Como entregar com segurança e marcar Avisar entrega para liberar o dinheiro
+Mercado Livre, entregas por conta própria · Formulário de entrega para ter a cobertura do Programa de Proteção ao Vendedor
+Mercado Livre, quando o dinheiro fica disponível · Prazos com Envios do Mercado Livre e com entrega própria ou por outro serviço
+Cargoos, calculadora de lucro do Mercado Livre · Simula comissão, frete e imposto para achar a margem por unidade
+Perguntas frequentes
+O ME1 tem custo no Mercado Livre?
+
+As páginas oficiais do ME1 não citam uma tarifa própria da modalidade. A venda paga a comissão normal do tipo de anúncio, e os custos extras ficam fora da plataforma: o integrador, a transportadora e a embalagem. Se você oferecer frete grátis, o frete também sai da sua margem.
+
+Posso usar o ME1 em produto que já vai pelo Full ou pela Coleta?
+
+Não. Se o produto é elegível à logística do Mercado Livre, seja Coleta, centros de envio, Flex ou Full, ele não pode ser enviado pelo ME1. A modalidade é só para anúncios que estão em entrega a combinar.
+
+O que acontece se o integrador do ME1 sair do ar?
+
+O anúncio passa a cotar o frete pela tabela de contingência, de forma automática, e por isso ela precisa estar atualizada. Se o CEP for inválido ou não tiver cobertura, não há plano B e a cotação não aparece.
+
+Como colocar frete a combinar no Mercado Livre?
+
+Só dá para usar em produtos que não são elegíveis ao Envios do Mercado Livre, pela categoria ou pelo tamanho e peso. Com o Envios ativo na conta, os anúncios são criados nele, exceto em categorias que não o aceitam. Para itens fora do Envios, o ME1 mostra frete e prazo no anúncio.
+
+Luiz Gasparetto
+
+CTO da Cargoos. Escreve sobre taxas, precificação e inteligência competitiva no Mercado Livre.
+
+#mercado-livre
+#me1
+#envios
+#logistica
+#frete
+Artigos relacionados
+Reputação e operação
+Brand Protection no Mercado Livre: como proteger sua marca e denunciar cópias
+
+Como funciona o Brand Protection do Mercado Livre: quem pode entrar, quanto custa registrar a marca no INPI, como denunciar anúncios que copiam sua marca e os prazos.
+
+19 de outubro de 2026
+·
+10 min de leitura
+
+Reputação e operação
+Consultoria para Mercado Livre: consultor certificado, preços e quando vale a pena
+
+Como achar uma consultoria certificada pelo Mercado Livre, o que as medalhas Silver, Gold e Platinum exigem, quanto custa a assessoria de publicidade oficial e como funciona o gerente de contas.
+
+15 de outubro de 2026
+·
+9 min de leitura
+
+Reputação e operação
+Coleta do Mercado Livre: como funciona, como ativar e quais os requisitos
+
+Coleta do Mercado Livre (Mercado Envios Coleta): como funciona, requisitos, como ativar, horário de corte, coleta de sábado, quanto custa, coleta do Full e o que fazer quando ela não passa.
+
+12 de outubro de 2026
+·
+10 min de leitura
+
+Chegou até aqui, né?
+Então teste logo na sua operação!
+Testar 7 dias grátis
+Instalar extensão
+
+PRODUTO
+
+Funcionalidades
+Extensão Chrome
+Diferenciais
+Como funciona
+MCP Cargoos
+Preços
+
+FERRAMENTAS
+
+Calculadora de lucro
+Instalar extensão
+
+EMPRESA
+
+Blog
+Perguntas frequentes
+Suporte no WhatsApp
+Contato
+
+ACESSO
+
+Entrar
+Começar agora
+
+LEGAL
+
+Política de Privacidade
+Termos de Uso
+Política de cookies
+Seus direitos na LGPD
+Assistentes de IA
+
+© 2026 Cargoos. Todos os direitos reservados.
+Gestão para vendedores do Mercado Livre: Analytics, DRE, Anúncios e Publicidade (Ads).
+
+Todos os sistemas operando
+
+Os usuários são aconselhados a ler a Política de Privacidade. Consulte as regras da conta, dos planos e do cancelamento nos Termos de Uso.
+
+A marca “Cargoos” e os domínios “cargoos.com.br” e “app.cargoos.com.br” representam o site, o painel web e a extensão para navegador da Cargoos, operados pela Understack Tecnologia LTDA no Brasil. A plataforma tem o plano gratuito Starter e os planos pagos Pro e Enterprise, com recursos adicionais. Para mais informações, fale com nossa equipe em contato@cargoos.com.br.
+
+A Cargoos é a plataforma de gestão para vendedores do Mercado Livre: painel web com lucro por pedido, DRE e Ads, extensão para Chrome e MCP para assistentes de IA. É uma plataforma de software independente. Mercado Livre e Mercado Pago são marcas de seus respectivos titulares. Ao conectar sua conta do Mercado Livre, a Cargoos lê, com a sua autorização, anúncios, pedidos, estoque, custos, campanhas de publicidade e reputação, para calcular vendas, lucro, margens e relatórios. Assistentes de IA conectados, como o ChatGPT e o Claude, só leem a sua própria conta, nunca a alteram, e a conexão pode ser revogada a qualquer momento.
+
+Tratamos seus dados conforme a Lei Geral de Proteção de Dados (LGPD). Você pode pedir acesso, correção, portabilidade ou eliminação dos seus dados pelo e-mail contato@cargoos.com.br, que também atende o Encarregado de Proteção de Dados (DPO). Cookies de marketing só rodam com o seu consentimento, revogável a qualquer momento nas configurações de cookies.
+
+Understack Tecnologia LTDA | CNPJ 65.203.063/0001-90
+
+Suporte Cargoos
+Fale conosco no WhatsApp
+
+Nós usamos cookies
+
+Utilizamos cookies para melhorar sua experiência. Leia nossa Política de Privacidade.
+
+Aceitar todos
+Somente essenciais
