@@ -1,0 +1,84 @@
+URL: https://gubo.com.br/docs-api/producao
+STATUS: 200
+TITLE: Ir para produção · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Guias
+Ir para produção
+Checklist e ativação da produção pela dona da loja.
+Copiar em Markdown
+
+A produção é ativada no Gubo Dev pela dona da loja, depois de uma lista curta de verificações. A URL não muda: troque a chave gubo_test_ por uma gubo_live_.
+
+Lista de ativação
+#
+
+O Gubo Dev confere sozinho os quatro primeiros itens:
+
+Item	Como cumprir
+Pedido de teste criado	Qualquer 201 em POST /pedidos/por-* com chave de teste
+Pedido de teste pago	Um pedido de teste em confirmado
+Acompanhamento definido	Um webhook de teste respondeu 2xx, ou a dona confirmou que vai acompanhar por consulta
+Carteira com saldo	Saldo real acima de zero
+Limites revisados	A dona confirma os limites diários de produção no painel
+Antes de ativar
+#
+[ ] A chave fica no servidor, em variável de ambiente ou cofre de segredos.
+[ ] Toda criação grava a Idempotency-Key antes de chamar e a reaproveita nas repetições.
+[ ] referencia é o número do pedido no seu sistema.
+[ ] O código trata aguardando_pagamento e confirmado como resultados normais da criação.
+[ ] Repete só 429, 5xx, 409 idempotencia_em_andamento e falhas de rede, respeitando Retry-After.
+[ ] O webhook verifica a assinatura, deduplica pelo id e usa versao.
+[ ] Há uma consulta periódica com atualizado_desde cobrindo eventos perdidos.
+[ ] Situações desconhecidas são tratadas como "em andamento".
+[ ] Os logs guardam o Gubo-Request-Id de cada chamada, para o suporte.
+Ao ativar
+#
+Crie a chave de produção, com IPs permitidos sempre que possível.
+Cadastre o webhook de produção. O segredo é diferente do de teste.
+Faça um primeiro pedido real pequeno e acompanhe pelo Registro de chamadas.
+Botão de emergência
+#
+
+Pausar criação, no topo do Gubo Dev, faz a API recusar novos pedidos com 423 conexao_pausada. Consultas e pagamentos continuam funcionando. Use quando o seu sistema estiver enviando algo errado.
+
+Anterior
+Modo teste
+Próxima
+Referência da API
+Atualizada em 11/10/2026

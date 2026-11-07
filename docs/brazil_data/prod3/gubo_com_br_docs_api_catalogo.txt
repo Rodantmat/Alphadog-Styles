@@ -1,0 +1,120 @@
+URL: https://gubo.com.br/docs-api/catalogo
+STATUS: 200
+TITLE: Catálogo e domínios · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Catálogo e domínios
+Produtos, variantes (SKU padrão e vinculado), cores e tamanhos válidos para criar pedidos.
+Copiar em Markdown
+
+A API lê os produtos da sua marca cadastrados em Meus produtos. Ela não cria nem altera produtos. Aparecem os produtos ativos que têm modelo definido. Um produto sem modelo fica fora do catálogo até o cadastro ser completado. Todas as rotas exigem catalogo:ler.
+
+Dica
+
+Sincronize uma vez por dia com GET /catalogo/variantes e guarde os SKUs no seu sistema. Não consulte o catálogo a cada pedido.
+
+GET
+/catalogo/produtos
+#
+Parâmetro	Descrição
+busca	Parte do nome ou do código
+situacao	ativo (padrão) ou todos
+limite, cursor	Paginação
+{
+  "objeto": "produto",
+  "codigo": "CFT01",
+  "nome": "Camiseta Folhas Tropicais",
+  "modelo": { "codigo": "camiseta-algodao", "nome": "Camiseta Algodão" },
+  "situacao": "ativo",
+  "imagem_url": "https://…/cft01.png",
+  "cores": [ { "codigo": "PT", "nome": "Preto" }, { "codigo": "OW", "nome": "Off-white" } ],
+  "tamanhos": ["P", "M", "G", "GG", "XGG"],
+  "atualizado_em": "2026-10-10T18:22:01Z"
+}
+codigo é o SKU do produto definido em Meus produtos, ou um código interno da Gubo quando não houver.
+cores traz só as cores liberadas do produto.
+GET
+/catalogo/produtos/{codigo}
+#
+
+Devolve o produto com variantes[]. O codigo não diferencia maiúsculas. Produto inexistente: 404 produto_nao_encontrado.
+
+GET
+/catalogo/variantes
+#
+Parâmetro	Descrição
+produto	Código do produto
+cor	Código da cor
+tamanho	Código do tamanho
+sku	Até 50 SKUs separados por vírgula
+disponivel	true para só as disponíveis
+limite, cursor	Paginação
+{
+  "objeto": "variante",
+  "sku": "CFT01-PT-M",
+  "sku_padrao": "CFT01-PT-M",
+  "produto": "CFT01",
+  "cor": { "codigo": "PT", "nome": "Preto" },
+  "tamanho": "M",
+  "disponivel": true,
+  "motivo_indisponivel": null,
+  "preco_unitario_centavos": 5990
+}
+sku é o SKU que você usa nos pedidos: o vinculado, se houver, ou o padrão. sku_padrao é sempre <produto>-<cor>-<tamanho>. Os dois são aceitos na criação de pedidos.
+No modo teste, sku mostra os vínculos feitos com chaves de teste.
+O filtro sku encontra a variante pelos dois.
+
+motivo_indisponivel: produto_inativo, cor_nao_liberada, tamanho_fora_de_linha ou variante_pausada. O preço é de referência. O valor cobrado é o do pedido.
+
+GET
+/dominios/cores
+#
+{ "objeto": "lista", "dados": [ { "objeto": "cor", "codigo": "PT", "nome": "Preto", "hex": "#1A1A1A" } ], "tem_mais": false, "proximo_cursor": null }
+GET
+/dominios/tamanhos
+#
+{ "objeto": "lista", "dados": [ { "objeto": "tamanho", "codigo": "P", "ordem": 2 } ], "tem_mais": false, "proximo_cursor": null }
+
+Os domínios valem para toda a Gubo. As cores e os tamanhos válidos para cada produto estão no próprio produto.
+
+Anterior
+Conexão
+Próxima
+Pedidos
+Atualizada em 11/10/2026

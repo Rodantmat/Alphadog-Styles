@@ -1,0 +1,175 @@
+URL: https://gubo.com.br/docs-api/webhooks
+STATUS: 200
+TITLE: Webhooks · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Guias
+Webhooks
+Eventos, formato, novas tentativas e verificação da assinatura.
+Copiar em Markdown
+
+A cada mudança relevante, a Gubo faz um POST HTTPS para a URL que você cadastrar no Gubo Dev, na aba Webhooks.
+
+Cadastrar
+#
+No Gubo Dev, escolha o modo (Teste ou Produção), abra Webhooks e clique em Adicionar endpoint.
+Informe a URL (só https://) e os eventos.
+Copie o segredo de assinatura (whsec_…).
+Clique em Enviar teste. A Gubo envia um ping e mostra o resultado na hora.
+
+Cada modo aceita até 3 endpoints. A URL não pode apontar para IP privado, localhost nem domínio da Gubo.
+
+Eventos
+#
+Tipo	Quando
+pedido.pendente	O pedido entrou em pendente ou mudou de pendência
+pedido.aguardando_pagamento	O pedido tem preço. valores preenchido
+pedido.confirmado	Pago
+pedido.em_producao	Entrou em produção
+pedido.enviado	Postado. envio.rastreio preenchido
+pedido.entregue	Entregue
+pedido.cancelado	Cancelado pela API ou no Studio
+pedido.recusado	Recusado. Veja motivo_recusa
+pagamento.recusado	O pagamento falhou. O pedido continua aguardando_pagamento
+carteira.saldo_baixo	O saldo ficou abaixo do alerta. No máximo um por dia
+conexao.pausada / conexao.reativada	A criação de pedidos foi pausada ou reativada
+chave.expirando	Uma chave expira em 7 dias
+ping	Envio de teste do painel
+
+Importante
+
+Novos tipos podem surgir. Responda 2xx a qualquer tipo que você não conheça.
+
+Formato
+#
+POST /webhooks/gubo HTTP/1.1
+Content-Type: application/json
+Gubo-Evento-Id: evt_01JA2Z4N8P2Q6R0S4T8V2X6Z0C
+Gubo-Evento-Tipo: pedido.confirmado
+Gubo-Assinatura: t=1760191385,v1=5f8a0c3e1b…
+{
+  "id": "evt_01JA2Z4N8P2Q6R0S4T8V2X6Z0C",
+  "objeto": "evento",
+  "tipo": "pedido.confirmado",
+  "modo": "producao",
+  "criado_em": "2026-10-11T14:03:05Z",
+  "dados": { "pedido": { "objeto": "pedido", "id": "ped_01JA2X8Q7M…", "referencia": "PED-10293", "situacao": "confirmado", "versao": 4 } }
+}
+
+Eventos de pedido trazem o objeto Pedido completo. carteira.saldo_baixo traz dados.carteira, conexao.* traz dados.conexao e chave.expirando traz dados.chave.
+
+Responder
+#
+Responda 2xx em até 10 segundos. Outro status, redirecionamento ou tempo esgotado conta como falha.
+Grave o evento numa fila sua, responda 200 e processe depois.
+Garantias
+#
+Pelo menos uma vez: o mesmo evento pode chegar duas vezes. Deduplique pelo id.
+Sem ordem garantida: use dados.pedido.versao e ignore versões que você já tem.
+Na dúvida, GET /pedidos/{id} sempre traz o estado atual.
+ao receber evento:
+  assinatura inválida                          → responda 400
+  já processou evento.id                       → responda 200
+  versao_local(pedido.id) >= pedido.versao     → registre o id e responda 200
+  atualize o pedido local e registre o id      → responda 200
+Novas tentativas
+#
+
+Depois de uma falha, a Gubo tenta de novo em 1 min, 5 min, 30 min, 2 h, 6 h, 12 h e 24 h, e depois uma vez por dia, até completar 3 dias. Se tudo falhar, o endpoint é desativado e a dona da conexão recebe e-mail.
+
+Testar e reativar, no endpoint, envia um ping e reativa o endpoint se o seu servidor responder 2xx.
+Pausar suspende o envio durante uma manutenção. Nada fica guardado para depois.
+Em ambos os casos, recupere o período com GET /pedidos?atualizado_desde=, ou reenvie entregas uma a uma no painel.
+Verificar a assinatura
+#
+
+O cabeçalho Gubo-Assinatura tem o formato t=<unix>,v1=<assinatura>.
+
+Separe t e todos os v1. Durante a troca do segredo chegam dois v1.
+Monte "<t>.<corpo bruto>", usando o corpo exatamente como recebido, antes de qualquer parse.
+Calcule HMAC-SHA256 com o segredo whsec_… inteiro, em hexadecimal minúsculo.
+Compare com cada v1 em tempo constante. Basta um bater.
+Recuse se t estiver a mais de 5 minutos do seu relógio.
+Node.js
+Python
+PHP
+import crypto from "node:crypto";
+import express from "express";
+
+const SEGREDO = process.env.GUBO_WEBHOOK_SECRET;
+const app = express();
+
+function assinaturaValida(corpoBruto, cabecalho, segredo, toleranciaSeg = 300) {
+  if (!cabecalho) return false;
+  const partes = cabecalho.split(",").map((p) => p.split("="));
+  const t = Number(partes.find(([k]) => k === "t")?.[1]);
+  const assinaturas = partes.filter(([k]) => k === "v1").map(([, v]) => v);
+  if (!t || assinaturas.length === 0) return false;
+  if (Math.abs(Date.now() / 1000 - t) > toleranciaSeg) return false;
+  const esperado = Buffer.from(
+    crypto.createHmac("sha256", segredo).update(`${t}.${corpoBruto}`).digest("hex"), "hex");
+  return assinaturas.some((v) => {
+    const recebido = Buffer.from(v, "hex");
+    return recebido.length === esperado.length && crypto.timingSafeEqual(esperado, recebido);
+  });
+}
+
+app.post("/webhooks/gubo", express.raw({ type: "application/json" }), async (req, res) => {
+  const corpo = req.body.toString("utf8");
+  if (!assinaturaValida(corpo, req.get("Gubo-Assinatura"), SEGREDO)) return res.sendStatus(400);
+  await fila.adicionar(JSON.parse(corpo)); // processe fora da requisição
+  res.sendStatus(200);
+});
+Sintoma	Causa
+A assinatura nunca bate	O framework fez parse e o JSON foi reserializado. Use o corpo bruto
+Bate em teste e falha em produção	Cada modo e cada endpoint têm o seu segredo
+Falha só às vezes	Relógio do servidor fora de hora. Sincronize por NTP
+Trocar o segredo
+#
+
+No endpoint, clique em Trocar segredo. Durante 24 horas, cada evento leva dois v1, um com o segredo antigo e outro com o novo. Atualize o seu sistema nesse intervalo.
+
+Dica
+
+Não confie no IP de origem. A Gubo não garante IPs fixos, e a assinatura é a garantia.
+
+Anterior
+Acompanhar pedidos
+Próxima
+Modo teste
+Atualizada em 11/10/2026

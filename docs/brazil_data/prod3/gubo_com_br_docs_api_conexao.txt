@@ -1,0 +1,81 @@
+URL: https://gubo.com.br/docs-api/conexao
+STATUS: 200
+TITLE: Conexão · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Conexão
+Loja, modo, escopos, limites e consumo da chave.
+Copiar em Markdown
+
+A conexão liga a sua loja à API. Cada loja tem uma, com configurações separadas para teste e produção.
+
+GET
+/conexao
+#
+
+Funciona com qualquer escopo. Use para verificar a chave e para mostrar limites no seu sistema.
+
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/conexao -H "Authorization: Bearer $GUBO_API_KEY"
+{
+  "objeto": "conexao",
+  "id": "con_01J9ZK2W4X…",
+  "loja": { "nome": "Folhas Tropicais" },
+  "modo": "producao",
+  "situacao": "ativa",
+  "pagamento": "aguardar",
+  "chave": { "nome": "ERP Bling", "prefixo": "gubo_live_4eC3", "escopos": ["pedidos:criar", "pedidos:ler", "catalogo:ler", "fretes:cotar"], "expira_em": null },
+  "limites": { "pedidos_por_dia": 200, "valor_pago_por_dia_centavos": 500000, "itens_por_pedido": 100,
+               "criar_por_minuto": 30, "pagar_por_minuto": 30, "leituras_por_minuto": 300,
+               "cotar_por_minuto": 30, "vincular_por_minuto": 20, "cotacoes_por_dia": 1000, "vinculos_por_dia": 5000,
+               "loja_por_minuto": { "criar": 60, "pagar": 60, "leituras": 600, "cotar": 60, "vincular": 40 },
+               "ip_por_minuto": { "chamadas": 600, "escritas": 120 } },
+  "consumo_hoje": { "pedidos": 12, "valor_pago_centavos": 81240, "cotacoes": 37, "vinculos": 0 }
+}
+Campo	Descrição
+modo	teste ou producao, conforme a chave
+situacao	ativa ou pausada. Pausada: a criação de pedidos está suspensa no Gubo Dev
+pagamento	automatico ou aguardar. Veja Pagar
+chave	A chave usada na chamada: nome, prefixo, escopos e expiração
+limites	Limites diários da conexão. Os campos *_por_minuto valem por chave; loja_por_minuto soma todas as chaves do modo; ip_por_minuto vale por IP de origem
+consumo_hoje	Consumo desde a meia-noite de São Paulo
+Anterior
+Erros
+Próxima
+Catálogo e domínios
+Atualizada em 11/10/2026

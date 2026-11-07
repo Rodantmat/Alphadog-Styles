@@ -1,0 +1,204 @@
+URL: https://gubo.com.br/docs-api/vinculos
+STATUS: 200
+TITLE: Vínculos de SKU · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Guias
+Vínculos de SKU
+Ligar o SKU da loja à variante da Gubo, em lotes, com roteiro para agentes de IA.
+Copiar em Markdown
+
+Ligue cada produto da sua loja virtual à variante da Gubo que ele representa. Depois do vínculo, você cria pedidos com o SKU da sua loja, sem tabela de conversão.
+
+Rota	Escopo	Para quê
+GET /vinculos	vinculos:ler	Lista as variantes da marca com o SKU vinculado de cada uma
+PUT /vinculos	vinculos:escrever	Grava, troca ou remove vínculos, até 100 por chamada
+A variante é sempre identificada pelo SKU padrão da Gubo: <produto>-<cor>-<tamanho>, como CFT01-PT-M.
+O SKU vinculado é o da sua loja, como CAMISETA-FOLHAS-PRETA-M. É o mesmo "SKU de integração" que aparece em Meus produtos.
+Cada variante tem no máximo um SKU vinculado. Cada SKU vinculado aponta para uma única variante.
+O SKU padrão continua funcionando nos pedidos depois do vínculo.
+
+Dica
+
+A chave com o atalho Vínculos (catalogo:ler, vinculos:ler, vinculos:escrever) é a ideal para um agente de IA: ela não cria nem paga pedidos.
+
+GET
+/vinculos
+#
+Parâmetro	Descrição
+situacao	sem_vinculo, vinculado, pendente ou falhou
+produto	Código do produto (CFT01)
+cor	Código ou nome da cor
+tamanho	Código do tamanho
+disponivel	true ou false
+busca	Parte do código do produto, do SKU ou do nome do produto
+limite, cursor	Paginação. limite de 1 a 100, padrão 20
+curl "https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/vinculos?situacao=sem_vinculo&limite=100" \
+  -H "Authorization: Bearer $GUBO_API_KEY"
+{
+  "objeto": "lista",
+  "dados": [
+    {
+      "objeto": "vinculo",
+      "variante": "CFT01-PT-M",
+      "produto": { "codigo": "CFT01", "nome": "Camiseta Folhas Tropicais" },
+      "cor": { "codigo": "PT", "nome": "Preto" },
+      "tamanho": "M",
+      "disponivel": true,
+      "sku": null,
+      "situacao": "sem_vinculo",
+      "pendente": null,
+      "erro": null,
+      "atualizado_em": null
+    }
+  ],
+  "tem_mais": true,
+  "proximo_cursor": "eyJ2IjoiQ0ZUMDEtUFQtTSJ9"
+}
+situacao	Significado
+sem_vinculo	Só o SKU padrão vale. sku é null
+vinculado	sku é o SKU da loja, já em uso nos pedidos
+pendente	Gravação em andamento. O pedido em pendente.sku entra em segundos
+falhou	A última gravação não entrou. O motivo está em erro e o vínculo anterior continua valendo
+
+A ordem é estável (pelo SKU padrão). Você pode parar e continuar depois pelo cursor.
+
+PUT
+/vinculos
+#
+{
+  "simular": false,
+  "itens": [
+    { "variante": "CFT01-PT-M", "sku": "CAMISETA-FOLHAS-PRETA-M" },
+    { "variante": "CFT01-PT-G", "sku": "CAMISETA-FOLHAS-PRETA-G" },
+    { "variante": "CFT01-OW-P", "sku": null }
+  ]
+}
+Campo	Descrição
+itens	1 a 100 itens. Obrigatório
+itens[].variante	SKU padrão da variante. Também aceita o SKU já vinculado
+itens[].sku	SKU da loja: 1 a 60 caracteres entre letras, números e . _ - /. null ou "" remove o vínculo
+simular	true valida tudo e não grava nada. Padrão false
+cURL
+Node.js
+Python
+curl -X PUT https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/vinculos \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{ "itens": [{ "variante": "CFT01-PT-M", "sku": "CAMISETA-FOLHAS-PRETA-M" }] }'
+
+Resposta 200, sempre com um resultado por item, na ordem enviada:
+
+{
+  "objeto": "lote_vinculos",
+  "simulacao": false,
+  "sandbox": false,
+  "resumo": { "recebidos": 3, "aceitos": 1, "inalterados": 1, "rejeitados": 1 },
+  "resultados": [
+    { "indice": 0, "variante": "CFT01-PT-M", "sku": "CAMISETA-FOLHAS-PRETA-M", "resultado": "aceito", "situacao": "pendente", "erro": null },
+    { "indice": 1, "variante": "CFT01-PT-G", "sku": "CAMISETA-FOLHAS-PRETA-G", "resultado": "inalterado", "situacao": "vinculado", "erro": null },
+    { "indice": 2, "variante": "CFT01-OW-P", "sku": null, "resultado": "rejeitado", "situacao": null,
+      "erro": { "codigo": "variante_desconhecida", "mensagem": "A variante não existe no catálogo da marca. Consulte GET /v1/vinculos.",
+                "sugestoes": ["CFT01-OF-P"] } }
+  ]
+}
+resultado	Significado
+aceito	Gravado. Em produção fica pendente por alguns segundos. No teste já vale
+valido	Só com simular: true: seria aceito
+inalterado	Já estava assim. Não conta no limite
+rejeitado	Nada foi gravado para este item. Veja erro.codigo
+
+Um item rejeitado não impede os outros. Corrija só os rejeitados e envie de novo.
+
+erro.codigo	O que fazer
+item_invalido	Envie só variante (texto) e sku (texto ou null)
+variante_desconhecida	Use um variante de GET /vinculos. Veja erro.sugestoes
+variante_ambigua	Envie o SKU padrão, não o SKU vinculado
+sku_invalido	Ajuste o SKU ao formato
+duplicado_no_lote	A variante apareceu duas vezes. erro.item indica a primeira
+sku_duplicado_no_lote	O mesmo SKU foi pedido para duas variantes. erro.item indica a primeira
+sku_em_uso	O SKU já é de outra variante (erro.variante_em_uso). Remova lá antes, ou troque as duas em chamadas separadas
+variante_invalida	A variante deixou de existir na Gubo (só em situacao: falhou)
+erro_gubo	A Gubo não conseguiu gravar (só em situacao: falhou). Envie de novo
+
+Erros do lote inteiro: 422 validacao (corpo, mais de 100 itens, simular não booleano), 403 escopo_insuficiente, 429 limite_requisicoes e 429 limite_vinculos_diario.
+
+Repetição: o PUT é idempotente pelo conteúdo. Repetir o mesmo lote devolve inalterado e não grava de novo. Idempotency-Key é opcional. Se enviada, a repetição devolve a mesma resposta.
+
+Produção e teste
+#
+	Produção	Teste
+Onde vale	Na sua marca, inclusive no Studio e nas outras integrações	Só nas chaves de teste
+Tempo	pendente por alguns segundos. Remoção pode levar até 30 s	Na hora
+Catálogo	GET /catalogo/variantes mostra o SKU depois de gravado	Mostra o SKU do teste na hora
+
+Use o modo teste para ensaiar o mapeamento inteiro sem mexer na loja. Os vínculos de teste são apagados por Limpar dados de teste no Gubo Dev.
+
+Limites
+#
+	Limite
+PUT /vinculos por minuto, por chave	20 (até 2.000 variantes por minuto)
+GET /vinculos por minuto, por chave	300 (o mesmo das leituras)
+Itens por chamada	100
+Vínculos aceitos por dia, por conexão	5.000
+
+Só aceito conta no limite diário. inalterado, rejeitado e simulações não contam. O consumo está em GET /conexao (consumo_hoje.vinculos).
+
+Vincular com um agente de IA
+#
+
+Um agente pode ligar centenas de produtos em minutos. O roteiro seguro:
+
+GET /vinculos?situacao=sem_vinculo&limite=100, página a página.
+Para cada variante, procure no catálogo da loja o produto com o mesmo modelo, cor e tamanho. Cor e tamanho chegam com código e nome.
+Na dúvida, não vincule. Liste para uma pessoa conferir.
+PUT /vinculos com "simular": true e o lote de até 100 pares.
+Corrija os rejeitados e envie o lote real, sem simular.
+GET /vinculos?situacao=pendente até esvaziar, depois ?situacao=falhou para conferir.
+
+Importante
+
+Um vínculo errado faz o pedido sair com a peça errada. Teste o roteiro com a chave de teste e revise uma amostra antes de rodar em produção.
+
+O prompt pronto para o agente está em Integrar com IA.
+
+Anterior
+Fretes
+Próxima
+Pagar
+Atualizada em 11/10/2026

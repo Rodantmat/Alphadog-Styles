@@ -1,0 +1,124 @@
+URL: https://gubo.com.br/docs-api/inicio-rapido
+STATUS: 200
+TITLE: Início rápido · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Começar
+Início rápido
+Primeiro pedido de teste, pago e entregue, em 10 minutos.
+Copiar em Markdown
+
+Em 10 minutos você confere a chave, cria um pedido de teste, paga e vê o pedido chegar a entregue. Nada disso gera pedido real nem usa saldo real.
+
+Antes de começar
+#
+
+No Gubo Dev, em modo Teste, crie uma chave com a permissão Pedidos completos. Ela começa com gubo_test_ e aparece uma única vez.
+
+export GUBO_API_KEY="gubo_test_..."   # nunca coloque a chave no código
+1. Confira a chave
+#
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/conexao \
+  -H "Authorization: Bearer $GUBO_API_KEY"
+
+A resposta traz "modo": "teste", a forma de pagamento da conexão e os seus limites.
+
+2. Escolha um SKU
+#
+curl "https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/catalogo/variantes?disponivel=true&limite=3" \
+  -H "Authorization: Bearer $GUBO_API_KEY"
+{ "objeto": "lista", "dados": [ { "objeto": "variante", "sku": "CFT01-PT-M", "disponivel": true, "preco_unitario_centavos": 5990 } ], "tem_mais": true, "proximo_cursor": "eyJrIjoi…" }
+3. Crie o pedido
+#
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/pedidos/por-variante \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: $(uuidgen)" \
+  -H "Prefer: wait=10" \
+  -d '{
+    "referencia": "TESTE-0001",
+    "itens": [{ "sku": "CFT01-PT-M", "quantidade": 2 }],
+    "destinatario": {
+      "nome": "Ana Souza",
+      "documento": "12345678909",
+      "endereco": { "cep": "01310-100", "logradouro": "Av. Paulista", "numero": "1000",
+                    "bairro": "Bela Vista", "cidade": "São Paulo", "uf": "SP" }
+    }
+  }'
+
+Resposta 201. Com Prefer: wait=10, o pedido já volta com preço e frete:
+
+{ "objeto": "pedido", "id": "ped_01JA2X8Q7M3K5V9R2T4W6Y8Z0B", "referencia": "TESTE-0001", "situacao": "aguardando_pagamento",
+  "valores": { "itens_centavos": 11980, "desconto_centavos": 0, "frete_centavos": 2110, "total_centavos": 14090 },
+  "frete": { "regra": "mais_barata", "prazo_dias_uteis": 14, "simulado": true, "…": "…" } }
+
+Sem entrega, a Gubo escolhe o frete mais barato. Para escolher a transportadora ou cotar antes, veja Fretes.
+
+Se a conexão estiver em pagamento automático, a situacao já vem confirmado. Pule o passo 4.
+
+4. Pague
+#
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/pedidos/ped_01JA2X8Q7M3K5V9R2T4W6Y8Z0B/pagar \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: pagar-ped_01JA2X8Q7M3K5V9R2T4W6Y8Z0B" \
+  -H "Prefer: wait=10" \
+  -d '{ "valor_esperado_centavos": 13970 }'
+
+A situacao vira confirmado. No teste, o débito sai de uma carteira fictícia de R$ 10.000,00.
+
+5. Leve o pedido até a entrega
+#
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/teste/pedidos/ped_01JA2X8Q7M3K5V9R2T4W6Y8Z0B/avancar \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: $(uuidgen)" \
+  -d '{ "para": "entregue" }'
+
+O pedido passa por em_producao, enviado e entregue. Se você cadastrou um webhook, recebe um evento a cada passo. Tudo aparece no Registro de chamadas do Gubo Dev.
+
+Próximos passos
+#
+Criar pedidos: as duas formas de informar itens e as regras de validação.
+Webhooks: receba as mudanças e verifique a assinatura.
+Ir para produção: checklist e ativação.
+Anterior
+Visão geral
+Próxima
+Autenticação
+Atualizada em 11/10/2026

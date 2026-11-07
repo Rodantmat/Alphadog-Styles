@@ -1,0 +1,115 @@
+URL: https://gubo.com.br/docs-api/acompanhar
+STATUS: 200
+TITLE: Acompanhar pedidos · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Guias
+Acompanhar pedidos
+Ciclo de vida, situações, pendências, consulta incremental e versão do pedido.
+Copiar em Markdown
+Ciclo de vida
+#
+recebido ─┬─▶ aguardando_pagamento ──▶ confirmado ──▶ em_producao ──▶ enviado ──▶ entregue
+          ├─▶ confirmado            (pagamento automático)
+          ├─▶ pendente ──▶ aguardando_pagamento
+          └─▶ recusado
+cancelado: a partir de recebido, pendente ou aguardando_pagamento
+situacao	Significa	O que você faz
+recebido	A Gubo está calculando preço e frete	Espere alguns segundos
+pendente	Algo impede seguir. Veja pendencias[]	Nada, a Gubo tenta resolver. Ou cancele
+aguardando_pagamento	Tem preço. valores preenchido	Pague
+confirmado	Pago	Nada
+em_producao	Em produção	Nada
+enviado	Postado. envio.rastreio preenchido	Avise o seu cliente
+entregue	Entregue	Fim
+cancelado	Cancelado por você ou no Studio	Fim
+recusado	A Gubo não conseguiu processar. Veja motivo_recusa	Corrija e crie de novo com outra referencia
+
+Importante
+
+Novas situações podem surgir. Trate qualquer valor desconhecido como "em andamento". Nunca quebre.
+
+Pendências (pendencias[].codigo):
+
+Código	Significado
+frete_indisponivel	Nenhuma transportadora atende o CEP e os itens
+servico_indisponivel	O entrega.servico escolhido não atende o CEP, e se_indisponivel era pendencia. Veja Fretes
+endereco_invalido	O endereço precisa de ajuste
+envio_indisponivel	A etiqueta não pôde ser gerada
+item_indisponivel	Um item deixou de estar disponível
+revisao_gubo	A equipe da Gubo está revisando o pedido
+
+Enquanto o frete não é escolhido, valores e frete são null.
+
+Webhook ou consulta
+#
+
+Use os dois: o webhook traz a mudança na hora, e a consulta periódica cobre qualquer evento perdido.
+
+Webhooks (recomendado): cadastre uma URL no Gubo Dev. Veja Webhooks.
+Consulta incremental: guarde o maior atualizado_em que você já viu e, a cada 5 minutos, chame:
+curl "https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/pedidos?atualizado_desde=2026-10-11T14:00:00Z&limite=100" \
+  -H "Authorization: Bearer $GUBO_API_KEY"
+
+Com atualizado_desde, a lista vem em ordem crescente de atualizado_em. Percorra as páginas até tem_mais = false. Não consulte pedido por pedido em laço.
+
+Descartar mudanças antigas
+#
+
+Cada pedido tem versao, que cresce a cada mudança. Se a versão que você já tem é maior ou igual à recebida, ignore a mudança. Isso resolve eventos fora de ordem e repetidos.
+
+Encontrar um pedido
+#
+Pelo id: GET /pedidos/{id}.
+Pela sua referência: GET /pedidos?referencia=PED-10293.
+Toda resposta e todo webhook trazem referencia e metadados.
+Cancelar
+#
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/pedidos/$ID/cancelar \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: cancelar-$ID" \
+  -d '{ "motivo": "Cliente desistiu" }'
+
+Só é possível cancelar em recebido, pendente e aguardando_pagamento. Depois do pagamento, a resposta é 409 pedido_nao_cancelavel, e o caminho é o suporte. Cancelar um pedido já cancelado responde 200.
+
+Anterior
+Pagar
+Próxima
+Webhooks
+Atualizada em 11/10/2026

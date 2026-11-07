@@ -1,0 +1,200 @@
+URL: https://gubo.com.br/docs-api/pedidos
+STATUS: 200
+TITLE: Pedidos · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Pedidos
+Objeto Pedido e rotas de consulta, lista, pagamento e cancelamento.
+Copiar em Markdown
+
+Como usar: Criar pedidos, Pagar e Acompanhar.
+
+Objeto Pedido
+#
+{
+  "objeto": "pedido",
+  "id": "ped_01JA2X8Q7M3K5V9R2T4W6Y8Z0B",
+  "modo": "producao",
+  "referencia": "PED-10293",
+  "numero": "V261010027",
+  "situacao": "aguardando_pagamento",
+  "versao": 3,
+  "pendencias": [],
+  "motivo_recusa": null,
+  "itens": [
+    { "sku": "CFT01-PT-M", "produto": "CFT01", "nome": "Camiseta Folhas Tropicais", "cor": { "codigo": "PT", "nome": "Preto" },
+      "tamanho": "M", "quantidade": 2, "preco_unitario_centavos": 5990, "subtotal_centavos": 11980 }
+  ],
+  "valores": { "itens_centavos": 11980, "desconto_centavos": 599, "frete_centavos": 1776, "total_centavos": 13157 },
+  "frete": { "servico": "Olist Envios Jadlog", "servico_codigo": "jadlog", "transportadora": "Jadlog", "prazo_dias_uteis": 12,
+             "previsao_entrega": "2026-10-27", "regra": "servico_definido", "prazo_em_risco": false, "simulado": false },
+  "entrega": { "prometida_ate": "2026-10-30", "servico": "jadlog", "se_indisponivel": "mais_barata" },
+  "pagamento": { "forma": "saldo", "situacao": "pendente", "pago_em": null, "motivo_recusa": null },
+  "envio": null,
+  "destinatario": { "nome": "Ana Souza", "documento": "12345678909", "endereco": { "cep": "01310100", "uf": "SP" } },
+  "observacao": null,
+  "metadados": { "id_erp": "88123" },
+  "criado_em": "2026-10-11T14:02:58Z",
+  "atualizado_em": "2026-10-11T14:03:04Z"
+}
+Campo	Descrição
+situacao	Veja o ciclo de vida
+versao	Cresce a cada mudança. Use para descartar webhooks antigos
+pendencias[]	{ codigo, mensagem, desde }. Vazio fora de pendente
+motivo_recusa	{ codigo, mensagem } quando recusado
+itens[].sku	O SKU da variante. Se a variante tem vínculo, é o SKU vinculado da sua loja
+valores	itens_centavos (soma bruta dos itens) − desconto_centavos (desconto do plano da marca) + frete_centavos = total_centavos. null até o frete ser escolhido
+frete	null até o frete ser escolhido. Veja os campos abaixo
+pagamento.situacao	pendente, processando, pago ou recusado
+envio	null até o envio. Depois: rastreio, url_rastreio, transportadora, enviado_em, entregue_em
+
+Campos de frete:
+
+Campo	Descrição
+servico, transportadora	Nome do serviço e da transportadora
+servico_codigo	Código do serviço usado. Se for diferente de entrega.servico, a Gubo aplicou se_indisponivel
+prazo_dias_uteis	Produção (7 dias úteis) + transporte
+previsao_entrega	Data prevista, contada do pagamento. Antes do pagamento, contada a partir de hoje
+regra	servico_definido, mais_barata, mais_rapida, mais_barata_no_prazo, prazo_em_risco ou manual (escolhido pela equipe no Studio)
+prazo_em_risco	true quando a previsão passa de entrega.prometida_ate
+simulado	true no modo teste sem cotação real
+
+Regras de escolha: Fretes.
+
+POST
+/pedidos/por-variante
+#
+
+Escopo pedidos:criar. Cabeçalhos: Idempotency-Key (obrigatório) e Prefer: wait=N (opcional, 1 a 15).
+
+Campo	Obrigatório	Regras
+referencia	sim	1 a 64 caracteres. Única por modo
+itens[].sku	sim	SKU padrão da variante ou SKU vinculado
+itens[].quantidade	sim	1 a 100
+destinatario.nome	sim	3 a 120 caracteres
+destinatario.documento	sim	CPF ou CNPJ válido. Pontuação aceita
+destinatario.email	não	E-mail válido
+destinatario.telefone	não	10 a 13 dígitos com DDD
+destinatario.endereco.cep	sim	8 dígitos. Hífen aceito
+destinatario.endereco.logradouro, numero, bairro, cidade	sim	numero aceita S/N
+destinatario.endereco.complemento	não	Até 60 caracteres
+destinatario.endereco.uf	sim	Sigla de 2 letras
+entrega.prometida_ate	não	AAAA-MM-DD, de hoje até 120 dias
+entrega.servico	não	Código de GET /fretes/servicos. Não combina com preferencia
+entrega.preferencia	não	mais_barata ou mais_rapida
+entrega.se_indisponivel	não	pendencia (padrão), mais_barata ou mais_rapida. Só com servico
+observacao	não	Até 500 caracteres. Aparece para a produção
+metadados	não	Até 20 chaves
+Status	Quando
+201	Criado. Corpo: objeto Pedido
+409	referencia_duplicada, idempotencia_conflito, idempotencia_em_andamento
+422	validacao ou itens_invalidos, com erro.detalhes[]. servico_desconhecido ou servico_inativo
+423	conexao_pausada
+429	limite_requisicoes, limite_pedidos_diario
+{
+  "erro": {
+    "codigo": "itens_invalidos",
+    "mensagem": "2 itens não puderam ser identificados no catálogo da sua marca.",
+    "detalhes": [
+      { "campo": "itens[0].sku", "codigo": "sku_desconhecido", "mensagem": "O SKU CFT01-PT-XG não existe no catálogo da sua marca.", "sugestoes": ["CFT01-PT-GG", "CFT01-PT-G"] },
+      { "campo": "itens[2].sku", "codigo": "variante_indisponivel", "mensagem": "A variante CMO02-AR-P está indisponível (cor_nao_liberada)." }
+    ],
+    "documentacao": "https://gubo.com.br/docs-api/erros#itens_invalidos"
+  },
+  "request_id": "req_01JA2Y0C4F…"
+}
+POST
+/pedidos/por-produto
+#
+
+Igual à rota anterior. Só muda o item:
+
+Campo	Obrigatório	Regras
+itens[].produto	sim	Código do produto
+itens[].cor	sim	Código (PT) ou nome (Preto)
+itens[].tamanho	sim	Código (M)
+itens[].quantidade	sim	1 a 100
+
+O pedido criado traz o sku resolvido de cada item.
+
+GET
+/pedidos
+#
+
+Escopo pedidos:ler.
+
+Parâmetro	Descrição
+situacao	Uma ou mais, separadas por vírgula
+referencia	Igualdade exata
+criado_desde, criado_ate	Data e hora
+atualizado_desde	Sincronização incremental. Ordena por atualizado_em crescente
+limite, cursor	Paginação
+
+Sem atualizado_desde, a ordem é criado_em decrescente.
+
+GET
+/pedidos/{id}
+#
+
+Escopo pedidos:ler. 404 pedido_nao_encontrado se o id não existe neste modo e nesta conexão.
+
+POST
+/pedidos/{id}/pagar
+#
+
+Escopo pedidos:pagar. Corpo: { "valor_esperado_centavos": 13157 } (recomendado) ou {}.
+
+Status	Quando
+202	Aceito. pagamento.situacao é processando, ou pago com Prefer: wait
+402	saldo_insuficiente
+409	pedido_nao_pagavel, pagamento_em_andamento, valor_divergente
+429	limite_valor_diario, limite_requisicoes
+POST
+/pedidos/{id}/cancelar
+#
+
+Escopo pedidos:cancelar. Corpo: { "motivo": "até 200 caracteres" } (opcional).
+
+200 com o pedido cancelado. 409 pedido_nao_cancelavel se a situação não permite. Cancelar de novo responde 200.
+
+Anterior
+Catálogo e domínios
+Próxima
+Carteira
+Atualizada em 11/10/2026

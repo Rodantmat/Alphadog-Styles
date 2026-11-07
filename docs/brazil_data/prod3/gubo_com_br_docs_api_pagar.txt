@@ -1,0 +1,96 @@
+URL: https://gubo.com.br/docs-api/pagar
+STATUS: 200
+TITLE: Pagar · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Guias
+Pagar
+Pagamento automático ou manual com o saldo, valor esperado e saldo insuficiente.
+Copiar em Markdown
+
+Todo pedido é pago com o saldo da carteira da marca. A recarga é feita no Studio, por Pix ou cartão.
+
+Forma de pagamento da conexão
+#
+
+A dona da loja escolhe no Gubo Dev, em Configurações. GET /conexao mostra a forma atual em pagamento.
+
+pagamento	O que acontece
+automatico	Assim que o pedido tem preço, a Gubo debita o saldo e o pedido vai para confirmado. Sem saldo, ele para em aguardando_pagamento
+aguardar	O pedido sempre para em aguardando_pagamento. Você confere o total e paga pela API, ou alguém paga no Studio
+
+O seu código deve funcionar nas duas formas: trate aguardando_pagamento e confirmado como resultados normais da criação.
+
+Pagar pela API
+#
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/pedidos/$ID/pagar \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: pagar-$ID" \
+  -H "Prefer: wait=10" \
+  -d '{ "valor_esperado_centavos": 13970 }'
+valor_esperado_centavos (recomendado): se o total mudou, a Gubo recusa com 409 valor_divergente em vez de cobrar.
+Idempotency-Key: pagar-<id>: duas tentativas de pagar o mesmo pedido nunca cobram duas vezes.
+Resposta 202. Com Prefer: wait, normalmente já volta pagamento.situacao = pago. Sem ele, volta processando.
+
+O pagamento termina quando chega pedido.confirmado (deu certo) ou pagamento.recusado (não deu, com o motivo em pagamento.motivo_recusa).
+
+Quando falta saldo
+#
+{ "erro": { "codigo": "saldo_insuficiente", "mensagem": "Saldo insuficiente para pagar este pedido. Faltam R$ 42,30.",
+  "detalhes": { "saldo_disponivel_centavos": 100000, "total_centavos": 104230, "falta_centavos": 4230 } } }
+
+Recarregue no Studio e chame de novo com a mesma Idempotency-Key. Um 402 não fica guardado pela idempotência, então a nova chamada executa de verdade.
+
+Consultar o saldo
+#
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/carteira -H "Authorization: Bearer $GUBO_API_KEY"
+{ "objeto": "carteira", "moeda": "BRL", "saldo_disponivel_centavos": 184250, "saldo_reservado_centavos": 14330, "atualizado_em": "2026-10-11T14:03:05Z" }
+
+saldo_reservado_centavos é o valor de pagamentos em andamento. Consulte antes de um lote grande. Para ser avisado, configure o alerta de saldo no Gubo Dev e receba o evento carteira.saldo_baixo.
+
+Limite de valor por dia
+#
+
+A conexão tem um teto de valor pago por dia (padrão R$ 5.000). Ele conta só os pagamentos feitos pela API (automáticos ou por /pagar). Ao estourar, a resposta é 429 limite_valor_diario, com erro.detalhes.disponivel_hoje_centavos. A dona pode reduzir o teto no Gubo Dev e pedir aumento à Gubo.
+
+Anterior
+Vínculos de SKU
+Próxima
+Acompanhar pedidos
+Atualizada em 11/10/2026

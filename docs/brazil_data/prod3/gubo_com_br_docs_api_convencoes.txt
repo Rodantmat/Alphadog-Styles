@@ -1,0 +1,147 @@
+URL: https://gubo.com.br/docs-api/convencoes
+STATUS: 200
+TITLE: Convenções · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Convenções
+Identificadores, dinheiro, datas, paginação, cabeçalhos, idempotência, limites e versões.
+Copiar em Markdown
+
+Regras que valem para todas as rotas.
+
+Identificadores
+#
+Prefixo	Objeto
+ped_	Pedido. Opaco e permanente. Use para consultar, pagar e cancelar
+evt_	Evento de webhook
+req_	Requisição. Vem no cabeçalho Gubo-Request-Id e no corpo dos erros
+referencia é o seu identificador do pedido: até 64 caracteres entre letras, números, -, _, ., / e #. Única por modo, para sempre.
+numero é o número do pedido no Studio. Pode vir null enquanto o pedido está recebido.
+Dinheiro
+#
+
+Todo valor é um inteiro em centavos de real, num campo terminado em _centavos. R$ 139,70 é 13970. Nunca use ponto flutuante para dinheiro.
+
+Datas
+#
+Data e hora: ISO 8601 em UTC, como 2026-10-11T14:03:22Z.
+Só data: AAAA-MM-DD, no fuso de São Paulo.
+Os limites diários viram à meia-noite de São Paulo.
+Paginação
+#
+GET /v1/pedidos?limite=50
+GET /v1/pedidos?limite=50&cursor=eyJ0IjoxNzI4…
+{ "objeto": "lista", "dados": [], "tem_mais": true, "proximo_cursor": "eyJ0IjoxNzI4…" }
+
+limite vai de 1 a 100 (padrão 20). Continue enquanto tem_mais for true. O cursor é opaco: não o monte nem o decodifique.
+
+Metadados
+#
+
+Pedidos aceitam metadados: até 20 pares de texto (chave até 40 caracteres, valor até 500). A Gubo devolve como recebeu, em toda resposta e webhook. Não coloque dados pessoais.
+
+Cabeçalhos
+#
+Cabeçalho	Direção	Uso
+Authorization: Bearer …	Envio	A chave
+Content-Type: application/json	Envio	Obrigatório em POST
+Idempotency-Key	Envio	Obrigatório ao criar, pagar e cancelar pedidos. Opcional em PUT /vinculos. Não usado em POST /fretes/cotacoes
+Prefer: wait=N	Envio	Em criação e pagamento: espera até N segundos (1 a 15) pelo resultado
+Gubo-Request-Id	Resposta	Id da requisição. Guarde nos seus logs
+Gubo-Modo	Resposta	teste ou producao
+Gubo-Idempotencia: repetida	Resposta	A resposta repete uma chamada anterior
+RateLimit-Limit, RateLimit-Remaining, RateLimit-Reset	Resposta	Limite por minuto da rota: a barreira mais apertada entre chave e loja
+Retry-After	Resposta	Em 429, 503 e 409 idempotencia_em_andamento: segundos para tentar de novo
+Idempotência
+#
+
+Repetir uma chamada nunca cria um segundo pedido nem cobra duas vezes.
+
+Criar, pagar e cancelar pedidos exigem Idempotency-Key, com 1 a 255 caracteres. Sem ele: 428 idempotencia_obrigatoria.
+POST /fretes/cotacoes não usa a chave: cotar não muda nada e cotações iguais são reaproveitadas.
+PUT /vinculos já é idempotente pelo conteúdo. A chave é opcional.
+A Gubo guarda a resposta da chave por 24 horas, separada por conexão e modo.
+Mesma chave e mesmo corpo: a mesma resposta, com Gubo-Idempotencia: repetida.
+Mesma chave e corpo diferente: 409 idempotencia_conflito.
+Primeira chamada ainda em andamento: 409 idempotencia_em_andamento com Retry-After: 1.
+402, 409 pagamento_em_andamento, 429 e 5xx não ficam guardados, porque nada aconteceu. Repetir depois deles executa de novo, com segurança.
+Chamada	Chave recomendada
+Criar pedido	Um UUID gerado e gravado com o pedido no seu banco, antes da chamada
+Pagar	pagar-<ped_id>
+Cancelar	cancelar-<ped_id>
+
+A referencia única completa a proteção: ela vale para sempre e evita o mesmo pedido enviado por dois caminhos (dois processos, uma reimportação). Nesse caso a resposta é 409 referencia_duplicada, com erro.detalhes.pedido_id.
+
+Limites
+#
+
+Cada chamada passa por três barreiras, nesta ordem: o IP de origem, a chave e a loja (todas as chaves do mesmo modo somadas). A barreira da loja só conta o que passou pela da chave, então uma chave descontrolada não esgota as outras.
+
+Por minuto	Por chave	Por loja
+Criar pedido	30	60
+Pagar e cancelar	30	60
+Cotar frete (POST /fretes/cotacoes)	30	60
+Gravar vínculos (PUT /vinculos, até 100 itens cada)	20	40
+Leituras (GET)	300	600
+Por conexão, por dia	Produção	Teste
+Pedidos criados	200	1.000
+Valor pago pela API	R$ 5.000	sem limite
+Itens por pedido	100	100
+Cotações de frete calculadas	1.000	300
+Itens por cotação	50	50
+Vínculos de SKU aceitos	5.000	5.000
+Por IP de origem	Regra
+Requisições	600 por minuto
+Escritas (POST e PUT)	120 por minuto
+Falhas de autenticação	10 em 10 minutos bloqueiam o IP por 15 minutos
+Tamanho do corpo	64 KB
+Em 429 limite_requisicoes, erro.detalhes.barreira diz qual barreira parou a chamada (ip, chave ou loja) e Retry-After diz quando tentar de novo.
+GET /conexao mostra os limites das três barreiras e o consumo do dia.
+A dona da loja pode reduzir os limites diários no Gubo Dev e pedir aumento à Gubo.
+Para importar muitos pedidos, mande em série ou no máximo 3 em paralelo, respeitando RateLimit-Remaining.
+Versões
+#
+
+A versão está na URL (/v1). Dentro dela, a Gubo só acrescenta: campos, rotas, eventos e valores novos. Ignore campos que você não conhece. Mudanças que quebram o contrato vão para /v2, com pelo menos 12 meses de convivência. Veja o Changelog.
+
+Anterior
+Referência da API
+Próxima
+Erros
+Atualizada em 11/10/2026

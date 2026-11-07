@@ -1,0 +1,213 @@
+URL: https://gubo.com.br/docs-api/fretes
+STATUS: 200
+TITLE: Fretes · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Guias
+Fretes
+Cotação com preço final, transportadora exata, mais barata ou mais rápida, prazos e limites.
+Copiar em Markdown
+
+Cote o frete antes de criar o pedido e escolha a transportadora: um serviço exato, o mais barato ou o mais rápido. Os preços já são os preços finais da Gubo, iguais aos cobrados no pedido.
+
+Rota	Escopo	Para quê
+GET /fretes/servicos	qualquer	Lista os serviços de transporte (códigos para entrega.servico)
+POST /fretes/cotacoes	fretes:cotar	Cota o frete para um CEP e uma lista de itens
+GET /fretes/cotacoes/{id}	fretes:cotar	Consulta uma cotação
+Como o frete é escolhido
+#
+
+O bloco entrega é o mesmo na cotação e no pedido. A cotação mostra a escolha que o pedido faria. Use um destes caminhos:
+
+Você envia	A Gubo escolhe	frete.regra
+"servico": "jadlog"	Exatamente esse serviço	servico_definido
+"preferencia": "mais_barata"	O menor preço	mais_barata
+"preferencia": "mais_rapida"	O menor prazo	mais_rapida
+"prometida_ate": "2026-10-30"	O mais barato que entrega até a data. Se nenhum chega, o mais rápido	mais_barata_no_prazo ou prazo_em_risco
+nada	O mais barato	mais_barata
+Empates: no mais barato vence o menor prazo. No mais rápido vence o menor preço.
+servico e preferencia não andam juntos (422 validacao, código conflito). Para dizer o que fazer se o serviço não estiver disponível, use se_indisponivel.
+prometida_ate pode acompanhar qualquer caminho. Com servico ou preferencia, ela só marca prazo_em_risco.
+Quando o serviço escolhido não atende o CEP
+#
+
+Nem todo serviço atende todo CEP ou todo pacote. se_indisponivel decide o que acontece:
+
+se_indisponivel	Resultado
+pendencia (padrão)	O pedido fica pendente com a pendência servico_indisponivel. Nada é cobrado
+mais_barata	A Gubo usa o mais barato. frete.regra = mais_barata
+mais_rapida	A Gubo usa o mais rápido. frete.regra = mais_rapida
+
+Para saber se houve troca, compare frete.servico_codigo com o entrega.servico que você enviou.
+
+"entrega": { "servico": "correios-sedex", "se_indisponivel": "mais_barata" }
+Prazos
+#
+
+prazo_total_dias_uteis = 7 dias úteis de produção + o prazo da transportadora. A previsao_entrega conta a partir de hoje, em dias úteis, no fuso de São Paulo. No pedido, a previsão conta a partir do pagamento.
+
+GET
+/fretes/servicos
+#
+
+Os serviços que a Gubo usa hoje. Guarde os códigos. Não é preciso consultar a cada pedido.
+
+{
+  "objeto": "lista",
+  "dados": [
+    { "objeto": "servico_frete", "codigo": "correios", "nome": "Olist Envios Correios PAC", "transportadora": "Correios", "modalidade": "PAC", "ativo": true },
+    { "objeto": "servico_frete", "codigo": "jadlog", "nome": "Olist Envios Jadlog", "transportadora": "Jadlog", "modalidade": "Normal", "ativo": true },
+    { "objeto": "servico_frete", "codigo": "pax", "nome": "Olist Envios Pax", "transportadora": "Pax", "modalidade": "Expresso", "ativo": true }
+  ],
+  "tem_mais": false,
+  "proximo_cursor": null
+}
+Hoje: correios, correios-sedex, jadlog, jet, loggi, pax, gfl e imile. A lista pode crescer. Use sempre o que a rota devolver.
+Serviço com ativo: false foi desativado pela Gubo. Enviá-lo devolve 422 servico_inativo.
+Código que não existe devolve 422 servico_desconhecido, com sugestões em erro.detalhes.sugestoes.
+No modo teste, sem serviços reais publicados, aparecem os serviços de exemplo gubo-teste-economico, gubo-teste-padrao e gubo-teste-expresso.
+POST
+/fretes/cotacoes
+#
+Campo	Tipo	Descrição
+cep	texto	CEP de destino, com ou sem hífen. Obrigatório
+itens	lista	1 a 50 itens, no mesmo formato da criação de pedidos: todos por sku ou todos por produto + cor + tamanho. Obrigatório
+entrega	objeto	servico, preferencia, se_indisponivel e prometida_ate, como acima. Opcional
+cURL
+Node.js
+Python
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/fretes/cotacoes \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "cep": "01310-100",
+    "itens": [{ "sku": "CFT01-PT-M", "quantidade": 2 }],
+    "entrega": { "preferencia": "mais_rapida" }
+  }'
+
+Resposta 201:
+
+{
+  "objeto": "cotacao_frete",
+  "id": "cot_01JA2M7Q…",
+  "situacao": "pronta",
+  "cep": "01310-100",
+  "simulada": false,
+  "valida_ate": "2026-10-11T15:42:10Z",
+  "pacote": { "pecas": 2, "peso_g": 380, "valor_declarado_centavos": 11980 },
+  "itens": [{ "sku": "CFT01-PT-M", "produto": "CFT01", "cor": "PT", "tamanho": "M", "quantidade": 2 }],
+  "entrega": { "preferencia": "mais_rapida" },
+  "opcoes": [
+    { "servico": "pax", "nome": "Olist Envios Pax", "transportadora": "Pax", "modalidade": "Expresso", "preco_centavos": 1282,
+      "prazo_transporte_dias_uteis": 1, "prazo_producao_dias_uteis": 7, "prazo_total_dias_uteis": 8,
+      "previsao_entrega": "2026-10-21", "dentro_do_prazo": null },
+    { "servico": "jadlog", "nome": "Olist Envios Jadlog", "transportadora": "Jadlog", "modalidade": "Normal", "preco_centavos": 1776,
+      "prazo_transporte_dias_uteis": 5, "prazo_producao_dias_uteis": 7, "prazo_total_dias_uteis": 12,
+      "previsao_entrega": "2026-10-27", "dentro_do_prazo": null }
+  ],
+  "recomendacoes": { "mais_barata": "pax", "mais_rapida": "pax", "mais_barata_no_prazo": null },
+  "escolha": { "servico": "pax", "regra": "mais_rapida", "prazo_em_risco": false, "preco_centavos": 1282, "previsao_entrega": "2026-10-21" },
+  "sem_escolha": null,
+  "erro": null,
+  "criado_em": "2026-10-11T15:12:10Z"
+}
+Campo	Descrição
+situacao	pronta, pendente (ainda calculando), falhou ou expirada
+valida_ate	30 minutos após o cálculo
+opcoes[]	Todas as opções disponíveis, com preço final e prazos
+recomendacoes	O serviço mais barato, o mais rápido e o mais barato que cumpre prometida_ate
+escolha	O que um pedido com esta mesma entrega usaria agora
+sem_escolha	Quando não há escolha: { codigo: "frete_indisponivel" | "servico_indisponivel", mensagem }
+dentro_do_prazo	Só com prometida_ate: true se a previsão cumpre a data
+simulada	true no modo teste com CEP de cenário
+
+Respostas:
+
+Status	Quando
+201	Cotação pronta (normalmente em 2 a 6 segundos)
+202	Ainda calculando depois de 20 s. Consulte Location respeitando Retry-After
+422	validacao, itens_invalidos, itens_misturados, servico_desconhecido, servico_inativo ou limite_itens_pedido
+429	limite_requisicoes ou limite_cotacoes_diario
+503 cotacao_indisponivel	A transportadora não respondeu. Tente de novo após Retry-After
+
+Dica
+
+A mesma loja, CEP e pacote (peças, peso e valor) reaproveitam a cotação válida mais recente. A resposta chega na hora e não conta no limite diário. Você não precisa guardar cache do seu lado.
+
+GET
+/fretes/cotacoes/{id}
+#
+
+Devolve a cotação no mesmo formato. Aceita Prefer: wait=N (até 10 s) enquanto estiver pendente. Cotação de outra conexão ou de outro modo: 404 cotacao_nao_encontrada.
+
+Cotação e pedido
+#
+
+O pedido usa o mesmo bloco entrega. Envie no pedido o que você enviou na cotação:
+
+"entrega": { "servico": "jadlog", "se_indisponivel": "mais_barata" }
+Produção: a cotação mostra o preço e o prazo para o seu cliente. O pedido cota de novo quando é processado e aplica a mesma regra. O valor costuma ser o mesmo. O que vale é o frete do pedido, antes do pagamento.
+Teste: se houver cotação válida para o mesmo CEP e os mesmos itens, o pedido usa exatamente as opções dela.
+O pedido criado traz o frete escolhido:
+"frete": {
+  "servico": "Olist Envios Jadlog", "servico_codigo": "jadlog", "transportadora": "Jadlog",
+  "prazo_dias_uteis": 12, "previsao_entrega": "2026-10-27",
+  "regra": "servico_definido", "prazo_em_risco": false, "simulado": false
+}
+
+Enquanto o frete não é escolhido, frete e valores são null. Veja Pedidos.
+
+Limites
+#
+	Produção	Teste
+Cotações por minuto, por chave	30	30
+Cotações calculadas por dia, por conexão	1.000	300
+Itens por cotação	50	50
+Validade	30 min	30 min
+
+Cotações reaproveitadas e simuladas não contam no limite diário. O consumo do dia está em GET /conexao (consumo_hoje.cotacoes).
+
+Modo teste
+#
+CEP comum: a cotação é real, com as transportadoras da Gubo. Nada é cobrado.
+CEP de cenário: cotação simulada na hora. 00000-100 devolve opcoes: [] e sem_escolha.codigo = frete_indisponivel.
+Anterior
+Criar pedidos
+Próxima
+Vínculos de SKU
+Atualizada em 11/10/2026

@@ -1,0 +1,78 @@
+URL: https://gubo.com.br/docs-api/referencia
+STATUS: 200
+TITLE: Referência da API · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Referência da API
+Todas as rotas, com escopo e link para o detalhe.
+Copiar em Markdown
+
+Base: https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1 · Formato: JSON UTF-8 · Autenticação: Authorization: Bearer <chave>
+
+O contrato de máquina completo está em openapi.yaml. Importe no Postman, Insomnia ou no gerador de cliente da sua linguagem.
+
+Método e rota	Escopo	Resumo
+GET /conexao	qualquer	Configuração, limites e consumo da conexão
+GET /catalogo/produtos	catalogo:ler	Lista os produtos da marca
+GET /catalogo/produtos/{codigo}	catalogo:ler	Um produto, com as variantes
+GET /catalogo/variantes	catalogo:ler	Lista as variantes (SKUs)
+GET /dominios/cores	catalogo:ler	Lista as cores
+GET /dominios/tamanhos	catalogo:ler	Lista os tamanhos
+POST /pedidos/por-variante	pedidos:criar	Cria um pedido pelo SKU da variante
+POST /pedidos/por-produto	pedidos:criar	Cria um pedido por produto, cor e tamanho
+GET /pedidos	pedidos:ler	Lista pedidos
+GET /pedidos/{id}	pedidos:ler	Consulta um pedido
+POST /pedidos/{id}/pagar	pedidos:pagar	Paga com o saldo da carteira
+POST /pedidos/{id}/cancelar	pedidos:cancelar	Cancela um pedido não pago
+GET /carteira	carteira:ler	Consulta o saldo
+GET /fretes/servicos	qualquer	Lista os serviços de transporte
+POST /fretes/cotacoes	fretes:cotar	Cota o frete e mostra a escolha
+GET /fretes/cotacoes/{id}	fretes:cotar	Consulta uma cotação
+GET /vinculos	vinculos:ler	Lista variantes com o SKU vinculado
+PUT /vinculos	vinculos:escrever	Grava ou remove vínculos de SKU, até 100 por chamada
+POST /teste/pedidos/{id}/avancar	qualquer, só teste	Avança um pedido de teste
+POST /teste/carteira	qualquer, só teste	Define o saldo da carteira de teste
+
+Regras que valem para todas as rotas: Convenções. Todos os códigos de erro: Erros.
+
+Anterior
+Ir para produção
+Próxima
+Convenções
+Atualizada em 11/10/2026

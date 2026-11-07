@@ -1,0 +1,92 @@
+URL: https://gubo.com.br/docs-api/visao-geral
+STATUS: 200
+TITLE: Visão geral · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Começar
+Visão geral
+O que a API faz, o fluxo de um pedido e as regras de ouro.
+Copiar em Markdown
+
+A API Gubo deixa o seu sistema cotar o frete, criar pedidos de produção na Gubo, pagar com o saldo da carteira e acompanhar cada pedido até a entrega, sem ninguém digitar nada no Studio.
+
+O que dá para fazer
+#
+Você quer	Use
+Saber quais produtos, cores e tamanhos a sua marca tem	GET /catalogo/variantes
+Ligar os SKUs da sua loja às variantes da Gubo	GET e PUT /vinculos (detalhes)
+Cotar o frete e escolher a transportadora	POST /fretes/cotacoes (detalhes)
+Criar um pedido	POST /pedidos/por-variante ou POST /pedidos/por-produto
+Pagar um pedido	POST /pedidos/{id}/pagar
+Consultar o saldo	GET /carteira
+Saber quando o pedido mudou	Webhooks ou GET /pedidos?atualizado_desde=
+Cancelar antes do pagamento	POST /pedidos/{id}/cancelar
+
+A API não cria produtos nem recarrega a carteira. Essas duas coisas continuam no Studio.
+
+Como funciona
+#
+Seu sistema ──1. cria o pedido──▶ API Gubo ──2. valida itens, endereço e limites na hora
+                                     │
+                                     ├─3. calcula preço e escolhe o frete (segundos)
+                                     ├─4. paga com o saldo (automático ou pela API)
+                                     └─5. produz e envia ──webhooks──▶ Seu sistema
+O básico
+#
+	
+URL base	https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1
+Formato	JSON em UTF-8, só HTTPS
+Autenticação	Authorization: Bearer <chave> (detalhes)
+Modos	A chave decide: gubo_test_… é teste, gubo_live_… é produção
+Dinheiro	Inteiro em centavos, campos terminam em _centavos
+Repetição segura	Criar, pagar e cancelar exigem Idempotency-Key (detalhes)
+Erros	Sempre { "erro": { "codigo", "mensagem", … } } (lista)
+Como liberar
+#
+A API está em piloto. A Gubo libera a sua marca na central de pilotos.
+No Studio, em Integrações, a dona da loja clica em Ativar API e escolhe como os pedidos serão pagos.
+O Gubo Dev abre em modo teste. Crie uma chave e siga o Início rápido.
+Com o teste completo, a dona ativa a produção no Gubo Dev.
+Onde está cada coisa
+#
+Esta documentação fica no Studio e abre sem login.
+O Gubo Dev (Studio › Integrações › API Gubo) gerencia chaves, webhooks, registro de chamadas e limites.
+Arquivos para máquinas (llms.txt, llms-full.txt, openapi.yaml) ficam em https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live. Veja Integrar com IA.
+Próxima
+Início rápido
+Atualizada em 11/10/2026

@@ -1,0 +1,113 @@
+URL: https://gubo.com.br/docs-api/autenticacao
+STATUS: 200
+TITLE: Autenticação · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Começar
+Autenticação
+Chaves, modos teste e produção, escopos, IPs, rotação e bloqueio por falhas.
+Copiar em Markdown
+
+Toda chamada leva uma chave secreta no cabeçalho Authorization.
+
+Authorization: Bearer gubo_live_…
+Chaves
+#
+Prefixo	Modo	Efeito
+gubo_test_	Teste	Pedidos simulados e carteira fictícia (Modo teste)
+gubo_live_	Produção	Pedidos reais e débito real na carteira
+A URL é a mesma nos dois modos. Quem decide é a chave. Toda resposta traz Gubo-Modo: teste ou Gubo-Modo: producao.
+A chave é de servidor. Nunca a coloque em aplicativo, site, front-end ou repositório.
+A chave aparece uma única vez, na criação. A Gubo guarda só um hash. Perdeu? Crie outra e revogue a antiga.
+São no máximo 3 chaves ativas por modo. Use uma chave por sistema.
+Permissões
+#
+Escopo	Permite
+catalogo:ler	Ler produtos, variantes, cores e tamanhos
+pedidos:ler	Consultar e listar pedidos
+pedidos:criar	Criar pedidos
+pedidos:pagar	Pagar com o saldo da carteira
+pedidos:cancelar	Cancelar pedidos não pagos
+carteira:ler	Consultar o saldo
+fretes:cotar	Cotar o frete e consultar cotações
+vinculos:ler	Listar os vínculos de SKU
+vinculos:escrever	Gravar e remover vínculos de SKU
+
+No Gubo Dev há quatro atalhos: Pedidos completos (todos), Somente leitura (catalogo:ler, pedidos:ler, carteira:ler, vinculos:ler), Vínculos (catalogo:ler, vinculos:ler, vinculos:escrever, ideal para um agente que liga os produtos) e Personalizado. GET /conexao e GET /fretes/servicos funcionam com qualquer escopo.
+
+Dica
+
+Separe quem cria de quem paga. O ERP cria pedidos com uma chave sem pedidos:pagar, e o financeiro paga com outra chave, restrita ao IP do escritório.
+
+IPs permitidos
+#
+
+Opcional. A chave só funciona a partir dos IPs ou faixas informados (IPv4, IPv6 ou CIDR, até 10). Chamadas de outro IP recebem 403 ip_nao_permitido, com o IP visto pela Gubo em erro.detalhes.ip. Recomendado em produção.
+
+Expiração e rotação
+#
+Ao criar a chave, escolha se ela expira: nunca, ou em 30, 90 ou 365 dias. Sete dias antes do vencimento chegam um e-mail e o evento chave.expirando.
+Rotacionar cria uma chave nova com as mesmas permissões e IPs. A antiga continua valendo por 1 h, 24 h ou 7 dias. Troque no seu sistema, confira o "Último uso" e deixe a antiga vencer.
+Revogar desliga a chave em até 5 segundos. Qualquer pessoa da loja pode revogar.
+Erros de acesso
+#
+Status	Código	O que fazer
+401	chave_ausente	Envie Authorization: Bearer …
+401	chave_invalida	Confira se copiou a chave inteira
+401	chave_revogada	Use outra chave
+401	chave_expirada	Rotacione ou crie outra
+403	escopo_insuficiente	Use uma chave com o escopo de erro.detalhes.escopo_necessario
+403	ip_nao_permitido	Inclua o IP na chave
+403	producao_nao_ativada	Ative a produção no Gubo Dev
+403	conexao_bloqueada	Fale com o suporte
+429	bloqueio_temporario	Corrija a chave e espere o Retry-After
+
+Importante
+
+10 falhas de autenticação em 10 minutos a partir do mesmo IP bloqueiam esse IP por 15 minutos. Se começar a receber 401, pare e corrija. Não repita em laço.
+
+Se a chave vazar
+#
+Revogue no Gubo Dev. Revogar vem antes de investigar.
+No Registro de chamadas, filtre pela chave e confira IPs e rotas.
+Crie uma chave nova, com IP restrito.
+Anterior
+Início rápido
+Próxima
+Criar pedidos
+Atualizada em 11/10/2026

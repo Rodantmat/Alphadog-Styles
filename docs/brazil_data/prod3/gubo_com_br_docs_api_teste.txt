@@ -1,0 +1,66 @@
+URL: https://gubo.com.br/docs-api/teste
+STATUS: 200
+TITLE: Rotas de teste · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Rotas de teste
+Rotas só do modo teste: avançar pedido e definir saldo.
+Copiar em Markdown
+
+Só funcionam com chave gubo_test_. Com chave de produção, a resposta é 403 modo_incompativel. Como usar: Modo teste.
+
+POST
+/teste/pedidos/{id}/avancar
+#
+
+Corpo: { "para": "em_producao" | "enviado" | "entregue" }.
+
+Avança o pedido passando pelas situações intermediárias e dispara um webhook para cada uma. O pedido precisa estar confirmado ou adiante. Se não estiver, ou se o destino ficar para trás, a resposta é 409 avanco_invalido, com detalhes.situacao.
+
+POST
+/teste/carteira
+#
+
+Corpo: { "saldo_centavos": 0 }. Define o saldo da carteira de teste, de 0 a 100.000.000.
+
+Anterior
+Carteira
+Próxima
+Exemplos
+Atualizada em 11/10/2026

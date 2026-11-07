@@ -1,0 +1,65 @@
+URL: https://gubo.com.br/docs-api/carteira
+STATUS: 200
+TITLE: Carteira · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Carteira
+Saldo disponível e reservado.
+Copiar em Markdown
+
+O saldo que paga os pedidos. A recarga é feita no Studio, por Pix ou cartão.
+
+GET
+/carteira
+#
+
+Escopo carteira:ler.
+
+{ "objeto": "carteira", "moeda": "BRL", "saldo_disponivel_centavos": 184250, "saldo_reservado_centavos": 14330, "atualizado_em": "2026-10-11T14:03:05Z" }
+Campo	Descrição
+saldo_disponivel_centavos	O que pode ser usado agora
+saldo_reservado_centavos	Pagamentos em andamento
+
+No modo teste, a carteira é fictícia e começa com R$ 10.000,00. Para ser avisado de saldo baixo, use o evento carteira.saldo_baixo.
+
+Anterior
+Pedidos
+Próxima
+Rotas de teste
+Atualizada em 11/10/2026

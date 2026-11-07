@@ -1,0 +1,88 @@
+URL: https://gubo.com.br/docs-api/changelog
+STATUS: 200
+TITLE: Changelog · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Ferramentas
+Changelog
+Política de versões e novidades.
+Copiar em Markdown
+Política
+#
+Dentro da /v1, a Gubo só acrescenta: campos, campos opcionais de envio, rotas, eventos, valores de enum e cabeçalhos. Ignore o que você não conhece.
+Mudança que quebra (remover ou renomear campo, mudar tipo ou significado, tornar obrigatório) só numa versão nova, com pelo menos 12 meses de convivência e aviso por e-mail e no Gubo Dev.
+Rotas em descontinuação respondem com os cabeçalhos Deprecation e Sunset.
+Mudanças nos limites padrão são avisadas com 30 dias de antecedência e nunca reduzem limites já configurados.
+v1.1.1 · Limites em três barreiras
+#
+Os limites por minuto passam a valer em três barreiras: IP de origem, chave e loja (todas as chaves do modo somadas, o dobro do limite por chave).
+429 limite_requisicoes traz detalhes.barreira (ip, chave ou loja) e detalhes.limite_por_minuto.
+GET /conexao ganhou limites.loja_por_minuto e limites.ip_por_minuto.
+Instabilidade momentânea responde 503 indisponivel_temporariamente com Retry-After: 1. Leituras repetem sozinhas antes de responder.
+GET /vinculos?busca= também encontra o SKU da loja vinculado no modo teste.
+v1.1.0 · Fretes e vínculos de SKU
+#
+GET /fretes/servicos, POST /fretes/cotacoes e GET /fretes/cotacoes/{id}: cotação com os preços finais da Gubo, opções, recomendações e a escolha que o pedido faria.
+entrega.servico escolhe a transportadora exata. entrega.se_indisponivel decide o que fazer se ela não atender o CEP.
+entrega.preferencia passa a aceitar mais_barata e mais_rapida.
+Nova pendência servico_indisponivel.
+frete ganhou servico_codigo, regra e prazo_em_risco. valores ganhou desconto_centavos.
+GET /vinculos e PUT /vinculos: ligam o SKU da sua loja à variante da Gubo, até 100 por chamada, com simulação.
+O SKU vinculado é aceito na criação de pedidos. GET /catalogo/variantes ganhou sku_padrao.
+Escopos fretes:cotar, vinculos:ler e vinculos:escrever, e o atalho Vínculos.
+Limites: 30 cotações por minuto, 20 gravações de vínculos por minuto, 1.000 cotações e 5.000 vínculos por dia.
+GET /conexao mostra os novos limites e o consumo de cotações e vínculos.
+v1.0.0 · Lançamento em piloto
+#
+Chaves com modos teste e produção, escopos, IPs permitidos, expiração e rotação.
+Catálogo: produtos, variantes, cores e tamanhos.
+Pedidos: criação por variante e por produto, consulta, lista com sincronização incremental, pagamento com saldo e cancelamento antes do pagamento.
+Carteira: saldo.
+Idempotência obrigatória, referencia única e Prefer: wait.
+Webhooks assinados, com novas tentativas por 3 dias.
+Modo teste com frete simulado, carteira fictícia, avanço manual e CEPs de cenário.
+llms.txt, llms-full.txt e openapi.yaml.
+Próximas, sem data
+#
+Extrato da carteira e recarga por Pix pela API.
+Cancelamento de pedido pago, com estorno para a carteira.
+Papel "Desenvolvedor" no Gubo Dev.
+SDKs oficiais para Node.js e Python e servidor MCP.
+Anterior
+Integrar com IA
+Atualizada em 11/10/2026

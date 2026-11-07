@@ -1,0 +1,169 @@
+URL: https://gubo.com.br/docs-api/erros
+STATUS: 200
+TITLE: Erros · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Referência
+Erros
+Todos os códigos de erro, o que fazer e se vale repetir.
+Copiar em Markdown
+
+Todo erro tem o mesmo envelope. Decida pelo erro.codigo, nunca pela mensagem.
+
+{
+  "erro": {
+    "codigo": "saldo_insuficiente",
+    "mensagem": "Saldo insuficiente para pagar este pedido. Faltam R$ 42,30.",
+    "campo": null,
+    "detalhes": { "saldo_disponivel_centavos": 100000, "total_centavos": 104230, "falta_centavos": 4230 },
+    "documentacao": "https://gubo.com.br/docs-api/erros#saldo_insuficiente"
+  },
+  "request_id": "req_01JA2Y0C4F8G…"
+}
+codigo é estável. A mensagem é para pessoas e pode mudar.
+detalhes é uma lista (erros de campo e de item) ou um objeto (dados do erro).
+documentacao leva direto à linha do código nesta página.
+
+Repetir? diz se vale repetir a mesma chamada, com a mesma Idempotency-Key.
+
+Requisição
+#
+Status	Código	Significa	O que fazer	Repetir?
+400	requisicao_invalida	JSON mal formado	Corrija o JSON	Não
+400	parametro_invalido	Parâmetro de consulta inválido. campo diz qual	Corrija	Não
+404	rota_inexistente	A rota não existe na v1	Confira o caminho e o /v1	Não
+405	metodo_nao_permitido	Método errado para a rota	Confira a referência	Não
+413	corpo_muito_grande	Corpo maior que 64 KB	Divida o pedido	Não
+415	tipo_conteudo_invalido	Falta Content-Type: application/json	Envie o cabeçalho	Não
+428	idempotencia_obrigatoria	Criação, pagamento ou cancelamento sem Idempotency-Key	Envie o cabeçalho	Não
+Acesso
+#
+Status	Código	Significa	O que fazer	Repetir?
+401	chave_ausente	Sem Authorization: Bearer	Envie a chave	Não
+401	chave_invalida	Chave inexistente ou incompleta	Confira se copiou inteira	Não
+401	chave_revogada	Revogada no painel	Use outra chave	Não
+401	chave_expirada	Passou da data	Rotacione ou crie outra	Não
+403	escopo_insuficiente	Falta permissão. detalhes.escopo_necessario	Use uma chave com o escopo	Não
+403	ip_nao_permitido	IP fora da lista. detalhes.ip	Inclua o IP na chave	Não
+403	acesso_nao_liberado	A API não está liberada para a marca	Fale com a Gubo	Não
+403	conexao_bloqueada	Bloqueada pela Gubo	Fale com o suporte	Não
+403	producao_nao_ativada	A produção não foi ativada	Ative no Gubo Dev	Não
+403	modo_incompativel	Rota /teste/* com chave de produção	Use chave de teste	Não
+404	pedido_nao_encontrado	Não existe neste modo e nesta conexão	Confira se não é um id de teste em produção	Não
+404	produto_nao_encontrado	Código de produto inexistente	Confira o catálogo	Não
+404	cotacao_nao_encontrada	A cotação não existe nesta conexão e neste modo	Faça uma nova cotação	Não
+Estado
+#
+Status	Código	Significa	O que fazer	Repetir?
+402	saldo_insuficiente	Falta saldo. detalhes.falta_centavos	Recarregue no Studio	Depois de recarregar
+409	referencia_duplicada	A referência já existe. detalhes.pedido_id	Use o pedido existente	Não
+409	idempotencia_conflito	Mesma chave com corpo diferente	Gere chave nova para conteúdo novo	Não
+409	idempotencia_em_andamento	A primeira chamada ainda está em andamento	Espere o Retry-After	Sim
+409	pedido_nao_pagavel	Não está aguardando_pagamento. detalhes.situacao	Consulte o pedido	Não
+409	pagamento_em_andamento	Já há um pagamento processando	Espere o webhook ou consulte	Não
+409	valor_divergente	O total mudou. detalhes.total_centavos	Revise e pague com o novo valor	Não
+409	pedido_nao_cancelavel	Já pago ou adiante	Fale com o suporte	Não
+409	avanco_invalido	Só teste: avanço antes de confirmado ou para trás	Pague o pedido de teste antes	Não
+423	conexao_pausada	Criação pausada no Gubo Dev	Reative no painel	Depois de reativar
+Frete
+#
+Status	Código	Significa	O que fazer	Repetir?
+422	servico_desconhecido	entrega.servico não existe. detalhes.sugestoes	Use um código de GET /fretes/servicos	Não
+422	servico_inativo	O serviço foi desativado pela Gubo	Escolha outro serviço	Não
+422	itens_misturados	Itens por sku e por produto no mesmo corpo	Use uma forma só	Não
+503	cotacao_indisponivel	A transportadora não respondeu. detalhes.cotacao_id	Espere o Retry-After e cote de novo	Sim
+
+Os erros por item de PUT /vinculos não são status HTTP: chegam em resultados[].erro. Veja Vínculos.
+
+Validação
+#
+
+422 com erro.codigo igual a validacao (campos) ou itens_invalidos (itens). Cada problema vem em erro.detalhes[], com campo, codigo e mensagem. Todos os problemas vêm de uma vez. Corrija e envie com nova Idempotency-Key.
+
+Código em detalhes[]	Significa
+campo_obrigatorio	Faltou o campo
+campo_desconhecido	O campo não existe no contrato, como um erro de digitação
+tipo_invalido	Tipo errado, como texto no lugar de número
+formato_invalido	Formato ou tamanho fora da regra
+documento_invalido	CPF ou CNPJ com dígito verificador inválido
+cep_invalido	CEP sem 8 dígitos
+uf_invalida	UF inexistente
+data_invalida	prometida_ate no passado ou depois de 120 dias
+sku_desconhecido	O SKU não existe na marca. Pode trazer sugestoes
+produto_desconhecido	O produto não existe. Pode trazer sugestoes
+cor_desconhecida	A cor não existe
+cor_nao_liberada	A cor não está liberada para o produto. Traz cores_liberadas
+tamanho_indisponivel	O tamanho não existe para o modelo. Traz tamanhos
+variante_indisponivel	A variante está indisponível. Traz motivo
+item_duplicado	O mesmo SKU aparece duas vezes. Some as quantidades
+quantidade_invalida	Fora de 1 a 100
+limite_itens_pedido	Mais itens que o limite da conexão
+conflito	Campos que não andam juntos, como entrega.servico com entrega.preferencia
+Limites
+#
+Status	Código	Significa	O que fazer	Repetir?
+429	limite_requisicoes	Limite por minuto do IP, da chave ou da loja. detalhes.barreira e detalhes.limite_por_minuto	Espere o Retry-After	Sim
+429	limite_pedidos_diario	Teto diário de pedidos	Espere o dia virar ou ajuste o limite	No dia seguinte
+429	limite_valor_diario	Teto diário de valor pago. detalhes.disponivel_hoje_centavos	Ajuste o limite ou espere	No dia seguinte
+429	limite_cotacoes_diario	Teto diário de cotações calculadas	Reaproveite cotações recentes	No dia seguinte
+429	limite_vinculos_diario	Teto diário de vínculos aceitos. detalhes.usado_hoje	Envie o restante amanhã	No dia seguinte
+429	bloqueio_temporario	IP bloqueado por falhas de autenticação	Corrija a chave e espere	Depois do prazo
+Falhas da Gubo
+#
+Status	Código	O que fazer	Repetir?
+500	erro_interno	Repita com espera crescente. Se persistir, envie o request_id ao suporte	Sim
+503	indisponivel_temporariamente	Manutenção ou instabilidade momentânea. Espere o Retry-After e repita com a mesma Idempotency-Key	Sim
+Motivos no pedido
+#
+
+Não são status HTTP: chegam no objeto Pedido e nos webhooks.
+
+Onde	Código	Significa
+pendencias[]	frete_indisponivel	Nenhuma transportadora atende agora. A Gubo tenta de novo
+pendencias[]	servico_indisponivel	O serviço de entrega.servico não atende o CEP
+pendencias[]	endereco_invalido	A transportadora recusou o endereço
+pendencias[]	envio_indisponivel	Não foi possível gerar o envio
+motivo_recusa	item_indisponivel	Um item ficou indisponível depois da criação
+motivo_recusa	processamento_falhou	Falha de processamento. O suporte é avisado
+pagamento.motivo_recusa	saldo_insuficiente	O saldo mudou entre o pedido de pagamento e o débito
+pagamento.motivo_recusa	conexao_bloqueada	A conexão foi bloqueada no meio do pagamento
+Anterior
+Convenções
+Próxima
+Conexão
+Atualizada em 11/10/2026

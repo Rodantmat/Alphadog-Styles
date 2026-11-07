@@ -1,0 +1,252 @@
+URL: https://gubo.com.br/docs-api/exemplos
+STATUS: 200
+TITLE: Exemplos · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Ferramentas
+Exemplos
+Fluxo completo em cURL e clientes prontos em Node.js, Python e PHP.
+Copiar em Markdown
+
+Clientes completos, sem dependências além do básico de cada linguagem. Eles já fazem autenticação, idempotência, repetição segura e tratamento de erro. Copie e adapte.
+
+Fluxo inteiro em cURL
+#
+export GUBO_API_KEY=gubo_test_...
+API=https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1
+
+# 1. conferir a chave
+curl -s $API/conexao -H "Authorization: Bearer $GUBO_API_KEY"
+
+# 2. cotar o frete e ver a escolha (opcional)
+curl -s $API/fretes/cotacoes \
+  -H "Authorization: Bearer $GUBO_API_KEY" -H "Content-Type: application/json" \
+  -d '{ "cep": "30140-071", "itens": [ { "produto": "CFT01", "cor": "PT", "tamanho": "G", "quantidade": 1 } ],
+        "entrega": { "preferencia": "mais_barata" } }'
+
+# 3. criar pedido por produto, cor e tamanho, com a mesma entrega da cotação
+curl -s $API/pedidos/por-produto \
+  -H "Authorization: Bearer $GUBO_API_KEY" -H "Content-Type: application/json" \
+  -H "Idempotency-Key: 3f1c9a52-6a0e-4c1e-9d7b-2b1f0d6c8e11" -H "Prefer: wait=10" \
+  -d '{
+    "referencia": "PED-10294",
+    "itens": [ { "produto": "CFT01", "cor": "PT", "tamanho": "G", "quantidade": 1 } ],
+    "destinatario": {
+      "nome": "Bruno Lima", "documento": "123.456.789-09",
+      "endereco": { "cep": "30140-071", "logradouro": "Rua da Bahia", "numero": "1148",
+                    "bairro": "Centro", "cidade": "Belo Horizonte", "uf": "MG" }
+    },
+    "entrega": { "preferencia": "mais_barata" }
+  }'
+
+# 4. pagar (conexão em "aguardar")
+curl -s $API/pedidos/ped_.../pagar \
+  -H "Authorization: Bearer $GUBO_API_KEY" -H "Content-Type: application/json" \
+  -H "Idempotency-Key: pagar-ped_..." -d '{ "valor_esperado_centavos": 7980 }'
+
+# 5. sincronizar mudanças
+curl -s "$API/pedidos?atualizado_desde=2026-10-11T00:00:00Z&limite=100" -H "Authorization: Bearer $GUBO_API_KEY"
+Cliente
+#
+
+O mesmo cliente em três linguagens. Todos repetem só o que é seguro repetir, respeitam Retry-After, reaproveitam a Idempotency-Key e tratam 409 referencia_duplicada como sucesso.
+
+Node.js
+Python
+PHP
+// gubo.js
+import crypto from "node:crypto";
+
+const BASE = "https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1";
+const REPETIVEIS = new Set(["limite_requisicoes", "idempotencia_em_andamento", "erro_interno", "indisponivel_temporariamente"]);
+
+export class GuboErro extends Error {
+  constructor(status, corpo) {
+    super(corpo?.erro?.mensagem ?? `HTTP ${status}`);
+    this.status = status;
+    this.codigo = corpo?.erro?.codigo;
+    this.detalhes = corpo?.erro?.detalhes;
+    this.requestId = corpo?.request_id;
+  }
+}
+
+export class Gubo {
+  constructor(chave = process.env.GUBO_API_KEY, { tentativas = 5, tempoLimiteMs = 30000 } = {}) {
+    if (!chave) throw new Error("Defina GUBO_API_KEY");
+    this.chave = chave; this.tentativas = tentativas; this.tempoLimiteMs = tempoLimiteMs;
+  }
+
+  async #chamar(metodo, rota, { corpo, idempotencia, espera } = {}) {
+    const cab = { Authorization: `Bearer ${this.chave}`, Accept: "application/json" };
+    if (corpo !== undefined) cab["Content-Type"] = "application/json";
+    if (metodo === "POST") cab["Idempotency-Key"] = idempotencia ?? crypto.randomUUID();
+    if (espera) cab["Prefer"] = `wait=${espera}`;
+
+    for (let t = 0; ; t++) {
+      let res;
+      try {
+        res = await fetch(BASE + rota, {
+          method: metodo, headers: cab,
+          body: corpo === undefined ? undefined : JSON.stringify(corpo),
+          signal: AbortSignal.timeout(this.tempoLimiteMs),
+        });
+      } catch (falhaDeRede) {
+        if (t + 1 >= this.tentativas) throw falhaDeRede;
+        await dormir(recuo(t)); continue;            // mesma Idempotency-Key
+      }
+      const json = await res.json().catch(() => null);
+      if (res.ok) return json;
+      const erro = new GuboErro(res.status, json);
+      const repetivel = res.status >= 500 || REPETIVEIS.has(erro.codigo);
+      if (!repetivel || t + 1 >= this.tentativas) throw erro;
+      const ra = Number(res.headers.get("Retry-After"));
+      await dormir(ra > 0 ? ra * 1000 : recuo(t));
+    }
+  }
+
+  conexao() { return this.#chamar("GET", "/conexao"); }
+  carteira() { return this.#chamar("GET", "/carteira"); }
+  pedido(id) { return this.#chamar("GET", `/pedidos/${id}`); }
+  listarPedidos(filtros = {}) { return this.#chamar("GET", `/pedidos?${new URLSearchParams(filtros)}`); }
+
+  async *todosOsPedidos(filtros = {}) {
+    let cursor;
+    do {
+      const pagina = await this.listarPedidos({ ...filtros, limite: 100, ...(cursor && { cursor }) });
+      yield* pagina.dados;
+      cursor = pagina.tem_mais ? pagina.proximo_cursor : null;
+    } while (cursor);
+  }
+
+  /** idempotencia: gere e GRAVE antes de chamar; reuse a mesma em toda repetição */
+  async criarPorVariante(pedido, idempotencia) {
+    try {
+      return await this.#chamar("POST", "/pedidos/por-variante", { corpo: pedido, idempotencia, espera: 10 });
+    } catch (e) {
+      if (e.codigo === "referencia_duplicada") return this.pedido(e.detalhes.pedido_id);
+      throw e;
+    }
+  }
+  criarPorProduto(pedido, idempotencia) {
+    return this.#chamar("POST", "/pedidos/por-produto", { corpo: pedido, idempotencia, espera: 10 });
+  }
+  pagar(id, valorEsperadoCentavos) {
+    return this.#chamar("POST", `/pedidos/${id}/pagar`, {
+      corpo: valorEsperadoCentavos ? { valor_esperado_centavos: valorEsperadoCentavos } : {},
+      idempotencia: `pagar-${id}`, espera: 10,
+    });
+  }
+  cancelar(id, motivo) {
+    return this.#chamar("POST", `/pedidos/${id}/cancelar`, { corpo: motivo ? { motivo } : {}, idempotencia: `cancelar-${id}` });
+  }
+
+  servicosDeFrete() { return this.#chamar("GET", "/fretes/servicos"); }
+  /** devolve a cotação pronta; espera enquanto estiver pendente */
+  async cotarFrete({ cep, itens, entrega }) {
+    let c = await this.#chamar("POST", "/fretes/cotacoes", { corpo: { cep, itens, ...(entrega && { entrega }) } });
+    while (c.situacao === "pendente") c = await this.#chamar("GET", `/fretes/cotacoes/${c.id}`, { espera: 5 });
+    return c;
+  }
+
+  async *todosOsVinculos(filtros = {}) {
+    let cursor;
+    do {
+      const pagina = await this.#chamar("GET", `/vinculos?${new URLSearchParams({ ...filtros, limite: 100, ...(cursor && { cursor }) })}`);
+      yield* pagina.dados;
+      cursor = pagina.tem_mais ? pagina.proximo_cursor : null;
+    } while (cursor);
+  }
+  /** itens: até 100 { variante, sku }; sku null remove o vínculo */
+  gravarVinculos(itens, simular = false) { return this.#chamar("PUT", "/vinculos", { corpo: { itens, simular } }); }
+}
+
+const dormir = (ms) => new Promise((r) => setTimeout(r, ms));
+const recuo = (t) => Math.min(2 ** t * 1000, 300000) * (0.5 + Math.random() / 2);
+
+Importante
+
+Em PHP, json_encode([]) gera []. A API espera um objeto ({}) no corpo de /pagar e /cancelar, por isso o cliente envia {} quando o corpo está vazio.
+
+Usando o cliente
+#
+// uso
+import { Gubo, GuboErro } from "./gubo.js";
+const gubo = new Gubo();
+
+const chave = await meuBanco.idempotenciaDoPedido("PED-10293"); // gerada e gravada antes
+try {
+  const p = await gubo.criarPorVariante({
+    referencia: "PED-10293",
+    itens: [{ sku: "CFT01-PT-M", quantidade: 2 }],
+    destinatario: { nome: "Ana Souza", documento: "12345678909",
+      endereco: { cep: "01310100", logradouro: "Av. Paulista", numero: "1000", bairro: "Bela Vista", cidade: "São Paulo", uf: "SP" } },
+  }, chave);
+
+  if (p.situacao === "aguardando_pagamento") await gubo.pagar(p.id, p.valores.total_centavos);
+} catch (e) {
+  if (e instanceof GuboErro && e.codigo === "itens_invalidos") {
+    for (const d of e.detalhes) console.warn(d.campo, d.codigo, d.sugestoes ?? "");
+  } else if (e instanceof GuboErro && e.codigo === "saldo_insuficiente") {
+    avisarFinanceiro(e.detalhes.falta_centavos);
+  } else throw e;
+}
+Vincular os SKUs da loja
+#
+// liga as variantes sem vínculo aos SKUs da loja, 100 por vez, simulando antes
+const pares = [];
+for await (const v of gubo.todosOsVinculos({ situacao: "sem_vinculo" })) {
+  const sku = minhaLoja.skuPara(v.produto.codigo, v.cor.codigo, v.tamanho); // a sua regra de correspondência
+  if (sku) pares.push({ variante: v.variante, sku });
+}
+for (let i = 0; i < pares.length; i += 100) {
+  const lote = pares.slice(i, i + 100);
+  const teste = await gubo.gravarVinculos(lote, true);
+  const ok = lote.filter((_, j) => teste.resultados[j].resultado === "valido");
+  teste.resultados.filter((r) => r.resultado === "rejeitado").forEach((r) => paraRevisar(r.variante, r.erro));
+  if (ok.length) await gubo.gravarVinculos(ok);
+}
+Postman e Insomnia
+#
+
+Importe o openapi.yaml. Crie a variável GUBO_API_KEY no ambiente e use autenticação Bearer com {{GUBO_API_KEY}}. Nos POST, gere o Idempotency-Key com {{$guid}} (Postman) ou {% uuid 'v4' %} (Insomnia).
+
+Anterior
+Rotas de teste
+Próxima
+Integrar com IA
+Atualizada em 11/10/2026

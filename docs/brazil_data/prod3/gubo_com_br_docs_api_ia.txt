@@ -1,0 +1,135 @@
+URL: https://gubo.com.br/docs-api/ia
+STATUS: 200
+TITLE: Integrar com IA · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Ferramentas
+Integrar com IA
+llms.txt, OpenAPI, prompt recomendado e erros comuns de código gerado.
+Copiar em Markdown
+
+Esta documentação também foi escrita para assistentes de código (Claude, ChatGPT, Cursor, Copilot) e para agentes.
+
+Arquivos para máquinas
+#
+Arquivo	Uso
+https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/llms.txt	Índice curto, no padrão llms.txt. O assistente descobre o que existe
+https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/llms-full.txt	Toda a documentação num arquivo só. Cole no contexto do assistente
+https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/openapi.yaml	Contrato OpenAPI 3.1. Gera cliente, valida chamadas e cria ferramentas para agentes
+https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/docs/<pagina>.md	Cada página desta documentação em Markdown puro
+
+Em toda página há o botão Copiar como Markdown.
+
+Prompt recomendado
+#
+
+Cole no assistente, junto com o llms-full.txt:
+
+Você vai integrar <NOME DO SISTEMA, linguagem e framework> com a API Gubo v1
+(https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1) para criar pedidos de produção e acompanhá-los até a entrega.
+Use somente o que está na documentação anexada. Não invente rotas, campos ou códigos.
+
+Requisitos:
+1. A chave vem da variável de ambiente GUBO_API_KEY. Nunca escreva a chave no código.
+2. Criar, pagar e cancelar enviam Idempotency-Key. Ao criar pedido, gere um UUID, grave no banco ANTES da
+   chamada e reuse a mesma chave em toda repetição.
+3. referencia = número do pedido no meu sistema.
+4. Repita só em 429, 5xx, falha de rede e 409 idempotencia_em_andamento, respeitando
+   Retry-After. Nunca repita outros 4xx sem corrigir.
+5. 409 referencia_duplicada é sucesso: use erro.detalhes.pedido_id.
+6. Dinheiro em centavos inteiros (*_centavos). Nunca use float.
+7. Situação desconhecida do pedido = "em andamento".
+8. Webhook: HMAC-SHA256 sobre "<t>.<corpo bruto>", comparação em tempo constante, tolerância de
+   5 min; deduplique por evento.id; ignore se pedido.versao <= versão local; responda 2xx rápido.
+9. Sincronize com GET /pedidos?atualizado_desde= a cada 5 minutos.
+10. Registre o request_id de toda resposta e ignore campos desconhecidos.
+
+Comece pelos testes, com uma chave gubo_test_ e os CEPs de cenário do modo teste.
+Erros comuns em código gerado
+#
+Errado	Certo
+Idempotency-Key nova a cada tentativa	A mesma chave em todas as repetições da mesma operação
+preco: 59.9	preco_unitario_centavos: 5990
+Inventar POST /pedidos	São duas rotas: /pedidos/por-variante e /pedidos/por-produto
+entrega.servico junto com entrega.preferencia	Use um dos dois. A alternativa ao serviço vai em se_indisponivel
+Inventar código de transportadora	Use os códigos de GET /fretes/servicos
+Enviar campos extras "por garantia"	Campo desconhecido gera 422 campo_desconhecido
+Repetir em 422 ou 401	Corrija. Repetir só leva a bloqueio de IP
+Assinar JSON.stringify(req.body)	Use o corpo bruto
+Chave na query string	Só Authorization: Bearer
+Consultar o pedido em laço logo após criar	Use Prefer: wait=10 ou webhooks
+Agentes que criam pedidos
+#
+Dê ao agente uma chave própria, com o menor escopo possível. Quem só cria pedidos não precisa de pedidos:pagar.
+Deixe a conexão em aguardar e pague por outro caminho, com revisão humana.
+Baixe os limites diários para o volume esperado. Eles são o freio de segurança.
+Peça ao agente que mostre valores.total_centavos e envie valor_esperado_centavos ao pagar.
+Exponha ao agente só as rotas de que ele precisa, geradas do openapi.yaml.
+Vincular produtos
+#
+
+Um agente pode ligar o catálogo da sua loja virtual às variantes da Gubo. Crie uma chave com o atalho Vínculos: ela não cria nem paga pedidos. Comece com a chave de teste.
+
+Você vai ligar os produtos da minha loja <NOME DA PLATAFORMA> às variantes da Gubo pela API Gubo v1
+(https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1), usando só o que está na documentação anexada (página Vínculos de SKU).
+
+Roteiro:
+1. Leia GET /vinculos?situacao=sem_vinculo&limite=100 e siga proximo_cursor até tem_mais = false.
+2. Para cada variante da Gubo, encontre na minha loja o produto do mesmo modelo, cor e tamanho.
+   Compare pelo nome do produto, cor (código e nome) e tamanho. Não use só semelhança de texto.
+3. Se houver dúvida ou mais de um candidato, NÃO vincule. Coloque numa lista "para revisar".
+4. Monte lotes de até 100 pares { variante, sku } e envie PUT /vinculos com "simular": true.
+5. Corrija os itens com resultado "rejeitado" pelo erro.codigo. Nunca troque o SKU de outra
+   variante para resolver sku_em_uso: coloque o caso na lista "para revisar".
+6. Envie os mesmos lotes sem "simular". Respeite RateLimit-Remaining e Retry-After.
+7. Consulte GET /vinculos?situacao=pendente até esvaziar e depois GET /vinculos?situacao=falhou.
+8. No fim, mostre: quantos vinculados, a lista "para revisar" e os que falharam.
+Revise uma amostra dos vínculos antes de rodar com a chave de produção. Vínculo errado faz o pedido sair com a peça errada.
+O agente pode refazer o roteiro quantas vezes quiser. Lotes repetidos voltam como inalterado e não contam no limite.
+Agentes que cotam o frete
+#
+Use POST /fretes/cotacoes para mostrar opções ao seu cliente e envie no pedido o mesmo bloco entrega da cotação.
+Peça ao agente que confira frete.servico_codigo e valores.total_centavos do pedido antes de pagar.
+
+Um servidor MCP oficial está previsto para a fase 2, com os mesmos escopos e limites da chave.
+
+Anterior
+Exemplos
+Próxima
+Changelog
+Atualizada em 11/10/2026

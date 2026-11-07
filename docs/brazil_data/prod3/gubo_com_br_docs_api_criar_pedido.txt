@@ -1,0 +1,130 @@
+URL: https://gubo.com.br/docs-api/criar-pedido
+STATUS: 200
+TITLE: Criar pedidos · API Gubo
+
+Pular para o conteúdo
+Catálogo
+Como funciona
+Preços
+Integrações
+Atacado
+Dúvidas
+Personalizar peça
+Entrar
+Criar conta
+Começar
+Visão geral
+Início rápido
+Autenticação
+Guias
+Criar pedidos
+Fretes
+Vínculos de SKU
+Pagar
+Acompanhar pedidos
+Webhooks
+Modo teste
+Ir para produção
+Referência
+Referência da API
+Convenções
+Erros
+Conexão
+Catálogo e domínios
+Pedidos
+Carteira
+Rotas de teste
+Ferramentas
+Exemplos
+Integrar com IA
+Changelog
+Guias
+Criar pedidos
+Criar pedidos por SKU da variante ou por produto, cor e tamanho, com entrega e frete.
+Copiar em Markdown
+
+Há duas rotas, uma para cada forma de identificar os itens. O resto do pedido é igual nas duas.
+
+Rota	Item	Quando usar
+POST /pedidos/por-variante	{ "sku": "CFT01-PT-M", "quantidade": 2 }	Seu sistema guarda o SKU de cada variante. Recomendada
+POST /pedidos/por-produto	{ "produto": "CFT01", "cor": "PT", "tamanho": "M", "quantidade": 2 }	Seu sistema guarda produto, cor e tamanho em campos separados
+Identificar os itens
+#
+SKU da variante: <produto>-<cor>-<tamanho>, como CFT01-PT-M. O código do produto é o "SKU do produto" definido em Meus produtos.
+SKU da sua loja: depois de vincular a variante, o SKU da sua loja também é aceito. Os dois funcionam.
+A comparação ignora maiúsculas, acentos e espaços nas pontas: cft01-pt-m encontra CFT01-PT-M.
+cor aceita o código (PT) ou o nome (Preto). Prefira o código, que nunca muda.
+Só são aceitas as cores liberadas do produto e as variantes disponíveis.
+As listas válidas estão em GET /catalogo/variantes, GET /dominios/cores e GET /dominios/tamanhos (Catálogo).
+
+Importante
+
+Item que não for reconhecido recusa o pedido inteiro com 422 itens_invalidos. A Gubo nunca troca um item por outro. Cada problema vem em erro.detalhes[], com sugestões quando houver.
+
+Exemplo
+#
+cURL
+Node.js
+Python
+curl https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1/pedidos/por-variante \
+  -H "Authorization: Bearer $GUBO_API_KEY" \
+  -H "Content-Type: application/json" \
+  -H "Idempotency-Key: 3f1c9a52-6a0e-4c1e-9d7b-2b1f0d6c8e11" \
+  -H "Prefer: wait=10" \
+  -d '{
+    "referencia": "PED-10293",
+    "itens": [{ "sku": "CFT01-PT-M", "quantidade": 2 }],
+    "destinatario": {
+      "nome": "Ana Souza", "documento": "12345678909", "email": "ana@exemplo.com.br",
+      "endereco": { "cep": "01310-100", "logradouro": "Av. Paulista", "numero": "1000",
+                    "complemento": "ap 12", "bairro": "Bela Vista", "cidade": "São Paulo", "uf": "SP" }
+    },
+    "entrega": { "prometida_ate": "2026-10-25" },
+    "metadados": { "id_erp": "88123" }
+  }'
+Tratar a resposta
+#
+Resposta	O que fazer
+201	Guarde id (ped_…) e situacao
+422 validacao, itens_invalidos, servico_desconhecido ou servico_inativo	Corrija os dados com base em erro.detalhes[] e envie com nova Idempotency-Key
+409 referencia_duplicada	O pedido já existe. Use erro.detalhes.pedido_id. Trate como sucesso
+423 conexao_pausada	A criação está pausada no Gubo Dev. Não repita até reativar
+429, 5xx ou falha de rede	Repita com a mesma Idempotency-Key, respeitando Retry-After
+
+A regra de ouro: chave nova só quando o conteúdo mudou. Repetição por falha técnica usa a mesma chave e nunca cria um segundo pedido.
+
+Resultado da criação
+#
+
+Sem Prefer: wait, a resposta volta na hora com situacao = recebido, e o preço chega em segundos (webhook ou consulta). Com Prefer: wait=10, a API espera até 10 s e normalmente devolve:
+
+aguardando_pagamento, quando a conexão paga sob comando ou falta saldo. Veja Pagar.
+confirmado, quando a conexão paga automaticamente.
+pendente, quando há algo a resolver, como frete indisponível para o CEP ou serviço escolhido indisponível. Veja Acompanhar.
+Entrega e frete
+#
+"entrega": { "servico": "jadlog", "se_indisponivel": "mais_barata", "prometida_ate": "2026-10-30" }
+
+Escolha uma forma:
+
+servico: a transportadora exata, por código de GET /fretes/servicos. Com se_indisponivel você decide o que acontece se ela não atender o CEP: pendencia (padrão), mais_barata ou mais_rapida.
+preferencia: mais_barata ou mais_rapida. A Gubo calcula todas as opções e devolve a escolhida.
+Nenhuma das duas: com prometida_ate, o frete mais barato que entrega até a data, já contando 7 dias úteis de produção. Sem data, o mais barato.
+
+O frete escolhido volta em frete, com servico_codigo, regra, prazo e previsao_entrega. Para mostrar preço e prazo ao seu cliente antes de criar o pedido, use a cotação de frete.
+
+Importante
+
+Com servico e sem se_indisponivel, um serviço que não atende o CEP deixa o pedido pendente com servico_indisponivel. Nada é cobrado. Cancele e crie outro, ou peça ajuste à Gubo.
+
+Boas práticas
+#
+referencia é o número do pedido no seu sistema. É única por modo, para sempre.
+Use metadados para guardar ids do seu sistema (até 20 chaves). Não coloque dados pessoais ali.
+Sincronize o catálogo uma vez por dia e confira os SKUs antes de enviar. Sem isso também funciona: a criação diz exatamente qual item falhou.
+Os campos completos estão na referência de Pedidos.
+Anterior
+Autenticação
+Próxima
+Fretes
+Atualizada em 11/10/2026
