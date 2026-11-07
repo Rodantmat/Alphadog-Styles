@@ -634,3 +634,84 @@ if task == "prod":
                     print("PWERR", u, e)
                     save(f"prod/{site}/{slug(u)}.txt", f"URL: {u}\nERROR: {e}")
     pw_run(run)
+
+if task == "montink3":
+    URLS = {
+     "nuvem_app": "https://www.nuvemshop.com.br/loja-aplicativos-nuvem/montink",
+     "siteconfiavel": "https://www.siteconfiavel.com.br/site/montink-com",
+     "ra_1": "https://www.reclameaqui.com.br/empresa/montink-com-br/",
+     "ra_2": "https://www.reclameaqui.com.br/empresa/montink-ltda/",
+     "ra_3": "https://www.reclameaqui.com.br/empresa/montink-com/",
+     "ra_search": "https://www.reclameaqui.com.br/busca/?q=montink",
+     "ra_ranking_ddg": "https://html.duckduckgo.com/html/?q=montink+reclame+aqui",
+     "tp_1": "https://br.trustpilot.com/review/montink.com",
+     "tp_2": "https://br.trustpilot.com/review/montink.com.br",
+     "ddg_ml": "https://html.duckduckgo.com/html/?q=montink+mercado+livre+integra%C3%A7%C3%A3o+pedidos",
+     "ddg_api": "https://html.duckduckgo.com/html/?q=montink+api+webhook+documenta%C3%A7%C3%A3o",
+     "ddg_review": "https://html.duckduckgo.com/html/?q=montink+print+on+demand+vale+a+pena+opini%C3%A3o+depoimento",
+     "ddg_ml2": "https://html.duckduckgo.com/html/?q=%22montink%22+%22mercado+livre%22+etiqueta+nota+fiscal",
+     "ddg_shopee": "https://html.duckduckgo.com/html/?q=montink+shopee+amazon+tiktok+shop+etiqueta",
+     "ddg_zendesk": "https://html.duckduckgo.com/html/?q=site%3Amontinkhelp.zendesk.com+mercado+livre",
+     "ddg_zendesk2": "https://html.duckduckgo.com/html/?q=site%3Amontinkhelp.zendesk.com+nota+fiscal",
+     "ddg_zendesk3": "https://html.duckduckgo.com/html/?q=site%3Amontinkhelp.zendesk.com+dropshipping",
+     "bing_ml": "https://www.bing.com/search?q=montink+mercado+livre+integra%C3%A7%C3%A3o+pedidos&setlang=pt-BR",
+     "bing_zd": "https://www.bing.com/search?q=site%3Amontinkhelp.zendesk.com+mercado+livre",
+     "bing_zd2": "https://www.bing.com/search?q=site%3Amontinkhelp.zendesk.com+etiqueta+nota+fiscal",
+     "bing_api": "https://www.bing.com/search?q=montink+api+github",
+     "gh_search": "https://github.com/search?q=montink+api&type=repositories",
+     "gh_api_search": "https://api.github.com/search/repositories?q=montink",
+     "gh_api_code": "https://api.github.com/search/repositories?q=montink+api+in:name,description,readme",
+     "npm_search": "https://registry.npmjs.org/-/v1/search?text=montink",
+     "pypi_montink": "https://pypi.org/pypi/montink/json",
+     "yt_search": "https://www.youtube.com/results?search_query=montink+mercado+livre",
+     "yt_search2": "https://www.youtube.com/results?search_query=montink+print+on+demand+review",
+     "dodrop": "https://dodropshipping.com/best-dropshipping-suppliers-in-brazil/",
+     "ecomprat": "https://ecommercenapratica.com/blog/plataformas-de-print-on-demand/",
+     "ecomprat_ml": "https://ecommercenapratica.com/blog/integracao-mercado-livre/",
+     "blog_planos": "https://blog.montink.com/?s=planos",
+     "blog_dropshipping": "https://blog.montink.com/?s=dropshipping",
+     "blog_nf": "https://blog.montink.com/?s=nota+fiscal",
+     "blog_dimona": "https://blog.montink.com/tag/dimona/",
+     "blog_marketplace": "https://blog.montink.com/?s=marketplace",
+     "blog_pet": "https://blog.montink.com/?s=pet",
+     "blog_prazo": "https://blog.montink.com/?s=prazo",
+     "blog_envio": "https://blog.montink.com/?s=envio",
+     "mk_planos": "https://montink.com/planos",
+     "mk_planos2": "https://sou.montink.com/planos-montink/",
+     "mk_termos": "https://montink.com/termos-e-condicoes-de-uso-do-site",
+     "mk_termos2": "https://sou.montink.com/termos-de-uso/",
+     "mk_trocas": "https://montink.com/politica-de-troca-e-devolucao",
+     "mk_pet": "https://montink.com.br/roupas-pet",
+     "mk_moletom": "https://montink.com.br/moletom",
+     "mk_admin": "https://admin.montink.com/",
+     "bling_montink": "https://ajuda.bling.com.br/hc/pt-br/search?query=montink",
+     "zapier_montink": "https://zapier.com/apps/montink/integrations",
+     "make_montink": "https://www.make.com/en/integrations/montink",
+     "pipedream": "https://pipedream.com/apps/montink",
+     "postman_montink": "https://www.postman.com/search?q=montink",
+     "reddit": "https://www.reddit.com/search/?q=montink",
+     "reddit_json": "https://www.reddit.com/search.json?q=montink",
+    }
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA, locale="pt-BR", viewport={"width":1366,"height":900})
+        for k, u in URLS.items():
+            try:
+                page = ctx.new_page()
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000)
+                page.wait_for_timeout(3500)
+                txt = page.inner_text("body")
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,100),e.href])")
+                save(f"montink/x_{k}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:40000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs[:150]))
+                page.close()
+            except Exception as e:
+                save(f"montink/x_{k}.txt", f"URL: {u}\nERROR: {e}")
+        b.close()
+
+if task == "montink3":
+    # Wayback CDX listing of the Cloudflare-protected Zendesk help center
+    for host in ["montinkhelp.zendesk.com/hc/pt-br/articles/*", "montinkhelp.zendesk.com/hc/pt-br/sections/*", "montinkhelp.zendesk.com/hc/pt-br/categories/*"]:
+        r = get("https://web.archive.org/cdx/search/cdx", params={"url": host, "output": "json", "fl": "original,timestamp,statuscode", "filter": "statuscode:200", "collapse": "urlkey", "limit": 2000})
+        print("cdx", host, r.status_code if r is not None else None, len(r.text) if r is not None else 0)
+        if r is not None and r.status_code == 200: save("montink/cdx_" + host.split("/hc/pt-br/")[1].replace("*", "all").replace("/", "") + ".json", r.text)
