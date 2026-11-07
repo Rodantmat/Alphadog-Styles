@@ -809,3 +809,31 @@ if task == "prod3":
             except Exception as e:
                 print("PWERR", u, e); save(f"prod3/{slug(u)}.txt", f"URL: {u}\nERROR: {str(e)[:300]}")
     pw_run(run)
+
+if task == "montink5":
+    import urllib.parse, time
+    rows = json.load(open("docs/brazil_data/montink/cdx_articlesall.json"))[1:]
+    best = {}
+    for u, ts, sc in rows:
+        m = re.search(r"/articles/(\d+)-?(.*)", u)
+        if not m: continue
+        aid = m.group(1)
+        if aid not in best or ts > best[aid][1]: best[aid] = (u, ts)
+    # priority ids first
+    PRI = "360061002992 360044800211 11744736872333 11744803516941 15817531924237 19664724876429 19664778327181 24686102864269 32453029703181 32074931212429 4410746892173 360061291991 24284669452045 360030748552 31843307039757 34064953815949 4406985212813 20983416895501 17814024693389 18077193367437 18077221908365 30984212852493 360060721312 360060721992 15850825702541 33272867318285 35786724961933 38899201237645 8593981857677 19022713404941 25367217450381 360044799331 360028221551 30901794559117 4404668353165 5804000027917 33158390645901 360060546911 22384865375373 4406992742285 4410741006221 360056712272 5803876142349 20916045636237 19664671915917 4402344115597 18077307956493 5857114041997 4410741053965 360060130132 25658491355533 26166903364621 4413347510413 4413347587725 4413347624077 4413333453709 360044799051 4406991113485 5681911165581".split()
+    order = [a for a in PRI if a in best] + [a for a in best if a not in PRI]
+    ok = 0
+    for aid in order:
+        u, ts = best[aid]
+        for url in (f"https://web.archive.org/web/{ts}id_/{u}", f"https://web.archive.org/web/2/{u}"):
+            r = get(url)
+            if r is not None and r.status_code == 200 and len(r.text) > 500:
+                from bs4 import BeautifulSoup
+                s = BeautifulSoup(r.text, "lxml")
+                art = s.select_one("article") or s.body or s
+                title = (s.title.get_text() if s.title else "")
+                save(f"montink/zd/{aid}.txt", f"URL: {u}\nARCHIVED: {ts}\nTITLE: {title}\n\n{text_of_html(str(art))[:30000]}")
+                ok += 1; break
+            time.sleep(1)
+        time.sleep(0.7)
+    print("fetched", ok, "of", len(order))
