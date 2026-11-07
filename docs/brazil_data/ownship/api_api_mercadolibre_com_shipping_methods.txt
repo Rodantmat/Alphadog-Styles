@@ -1,4 +1,4 @@
 URL: https://api.mercadolibre.com/shipping_methods
 STATUS: 403
 
-{"status":403,"message":"At least one policy returned UNAUTHORIZED.","code":"PA_UNAUTHORIZED_RESULT_FROM_POLICIES","blocked_by":"PolicyAgent"}
+{"blocked_by":"PolicyAgent","code":"PA_UNAUTHORIZED_RESULT_FROM_POLICIES","status":403,"message":"At least one policy returned UNAUTHORIZED."}

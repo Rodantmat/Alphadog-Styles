@@ -1,0 +1,4 @@
+URL: https://api.mercadolibre.com/sites/MLB/categories
+STATUS: 403
+
+{"code":"PA_UNAUTHORIZED_RESULT_FROM_POLICIES","blocked_by":"PolicyAgent","status":403,"message":"At least one policy returned UNAUTHORIZED."}
