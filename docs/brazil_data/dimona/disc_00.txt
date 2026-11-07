@@ -1,0 +1,187 @@
+URL: https://api.camisadimona.com.br/#intro
+STATUS: 200
+TITLE: Dimona API V2
+
+Public
+ENVIRONMENT
+No Environment
+LAYOUT
+Double Column
+LANGUAGE
+cURL - cURL
+DIMONA API V2
+Introduction
+Requests
+Webhook
+Dimona API V2
+
+API Dimona Digital.
+The easiest way to print and ship T-Shirts and Accessories. Shipping globally and printing locally in Brazil and in the US. 20000 sqf in Rio de Janeiro, Brazil and 7500 sqf in Dania Beach, Florida, and 10000 sqf in Elk Grove Village, IL.
+Api Base Domain: https://admin.camisadimona.com.br
+API KEY: create an account in camisadimona.com.br
+
+Requests
+Order
+POST
+Create Order
+{{api-domain}}/api/v2/order
+
+Items:
+Array of SKUs. You should use the field "name", but it's not mandatory.
+Delivery:
+shipping_speed: PAC or SEDEX delivery_method_id: optional. If you integrated with the Quote Endpoint, you can pass the delivery_method_id here. The shipping_speed field will be ignored
+
+HEADERS
+api-key
+
+{{api-key}}
+
+Accept
+
+application/json
+
+Content-Type
+
+application/json
+
+Body
+raw
+View More
+{
+    "shipping_speed": "pac",
+    "delivery_method_id": "177",
+    "order_id": "1794077022",
+    "customer_name": "Fulano da Silva",
+    "customer_document": "123.456.789-13",
+    "customer_email": "exemplo@gmail.com",
+    "webhook_url":"https://option_webhook_url.com",
+    "items": [
+        {
+            "name": "Camisa Polo P Branca",
+            "sku": "12345",
+            "qty": 2,
+            "dimona_sku_id": "010603110108",
+            "designs": [
+                "url_front",
+                "url_back"
+            ],
+            "mocks": [
+                "mock_front",
+                "mock_back"
+            ]
+        },
+        {
+            "name": "Camisa Polo M Branca",
+            "sku": "12346",
+            "qty": 2,
+            "dimona_sku_id": "010603110109",
+            "designs": [
+                "url_front",
+                "url_back"
+            ],
+            "mocks": [
+                "mock_front",
+                "mock_back"
+            ]
+        },
+        {
+            "name": "Camisa Polo G Branca",
+            "sku": "12347",
+            "qty": 2,
+            "dimona_sku_id": "010603110110",
+            "designs": [
+                "url_front",
+                "url_back"
+            ],
+            "mocks": [
+                "mock_front",
+                "mock_back"
+            ]
+        }
+    ],
+    "nfe": {
+        "chave": "chave_com_44_digitos",
+        "serie": "1",
+        "numero": "1234",
+        "link": "https://link_para_nfe"
+    },
+    "address": {
+        "name": "Receiver Name",
+        "street": "Rua Buenos Aires",
+        "number": "334",
+        "complement": "Loja",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "zipcode": "20061000",
+        "neighborhood": "Centro",
+        "phone": "21 21093661",
+        "country": "BR"
+    }
+}
+
+Example Request
+Erro: Pedido já existe
+View More
+curl
+curl --location -g '{{api-domain}}/api/v2/order' \
+--header 'api-key: {{api-key}}' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--data '{
+    "shipping_speed": "sedex",
+    "order_id": "1234",
+    "customer_name": "Fulano da Silva",
+    "items": [
+            {"name":"Camisa P Amarela", "sku":"12345", "qty":2},
+            {"name":"Camisa M Verde", "sku":"12346", "qty":1},
+            {"name":"Camisa G Vermelha", "sku":"12347", "qty":1}
+        ],
+	"address":
+		{
+			"street":"Rua Buenos Aires", 
+			"number":"334",
+			"complement":"Loja", 
+			"city":"Rio de Janeiro",
+			"state":"RJ",
+			"zipcode":"20061001",
+			"neighborhood":"Centro"
+		}
+}'
+422 UNPROCESSABLE ENTITY
+Example Response
+Body
+Headers (11)
+json
+"O pedido 1234 já existe"
+GET
+Show Orders
+{{api-domain}}/api/v2/orders
+
+List all orders
+
+HEADERS
+api-key
+
+{{api-key}}
+
+Accept
+
+application/json
+
+Content-Type
+
+application/json
+
+Example Request
+Show Orders
+curl
+curl --location -g '{{api-domain}}/api/v2/orders' \
+--header 'api-key: {{api-key}}' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--data ''
+Example Response
+Body
+Headers (0)
+No response body
+This request doesn't return any response body
