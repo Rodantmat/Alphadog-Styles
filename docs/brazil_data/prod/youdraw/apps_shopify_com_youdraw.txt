@@ -1,0 +1,4 @@
+URL: https://apps.shopify.com/youdraw
+ERROR: Page.goto: Navigation to "https://apps.shopify.com/youdraw" is interrupted by another navigation to "https://www.nuvemshop.com.br/loja-aplicativos-nuvem/b2-drop-dropshipping-nacional"
+Call log:
+  - navigating to "https://apps.shopify.com/youdraw", waiting until "domcontentloaded"

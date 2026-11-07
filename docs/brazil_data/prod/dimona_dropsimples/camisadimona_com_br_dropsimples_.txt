@@ -1,0 +1,4 @@
+URL: https://camisadimona.com.br/dropsimples/
+ERROR: Page.goto: Navigation to "https://camisadimona.com.br/dropsimples/" is interrupted by another navigation to "https://www.cloudprinter.com/print-on-demand-brazil"
+Call log:
+  - navigating to "https://camisadimona.com.br/dropsimples/", waiting until "domcontentloaded"

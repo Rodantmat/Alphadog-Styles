@@ -1,0 +1,4 @@
+URL: https://dropnacional.com.br/
+ERROR: Page.goto: Navigation to "https://dropnacional.com.br/" is interrupted by another navigation to "https://www.estampaja.com.br/"
+Call log:
+  - navigating to "https://dropnacional.com.br/", waiting until "domcontentloaded"

@@ -1,0 +1,4 @@
+URL: https://www.youdraw.com.br/
+ERROR: Page.goto: Navigation to "https://www.youdraw.com.br/" is interrupted by another navigation to "https://youdraw.com.br/"
+Call log:
+  - navigating to "https://www.youdraw.com.br/", waiting until "domcontentloaded"

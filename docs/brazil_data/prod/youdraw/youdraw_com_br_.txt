@@ -1,0 +1,4 @@
+URL: https://youdraw.com.br/
+ERROR: Page.goto: Navigation to "https://youdraw.com.br/" is interrupted by another navigation to "https://apps.shopify.com/youdraw?locale=pt-BR"
+Call log:
+  - navigating to "https://youdraw.com.br/", waiting until "domcontentloaded"

@@ -1,0 +1,4 @@
+URL: https://www.marcazo.com.br/
+ERROR: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://www.marcazo.com.br/
+Call log:
+  - navigating to "https://www.marcazo.com.br/", waiting until "domcontentloaded"

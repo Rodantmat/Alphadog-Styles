@@ -1,0 +1,4 @@
+URL: https://reserva.ink/site/print-on-demand
+ERROR: Page.goto: Navigation to "https://reserva.ink/site/print-on-demand" is interrupted by another navigation to "https://camisadimona.com.br/dropsimples/"
+Call log:
+  - navigating to "https://reserva.ink/site/print-on-demand", waiting until "domcontentloaded"

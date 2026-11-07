@@ -1,0 +1,4 @@
+URL: https://www.estampaja.com.br/
+ERROR: Page.goto: Navigation to "https://www.estampaja.com.br/" is interrupted by another navigation to "https://estampaja.com.br/"
+Call log:
+  - navigating to "https://www.estampaja.com.br/", waiting until "domcontentloaded"

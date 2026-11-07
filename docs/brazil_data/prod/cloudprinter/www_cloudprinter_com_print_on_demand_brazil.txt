@@ -1,0 +1,4 @@
+URL: https://www.cloudprinter.com/print-on-demand-brazil
+ERROR: Page.goto: Navigation to "https://www.cloudprinter.com/print-on-demand-brazil" is interrupted by another navigation to "https://www.cloudprinter.com/"
+Call log:
+  - navigating to "https://www.cloudprinter.com/print-on-demand-brazil", waiting until "domcontentloaded"

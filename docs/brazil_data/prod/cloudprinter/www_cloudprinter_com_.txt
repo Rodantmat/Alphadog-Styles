@@ -1,0 +1,4 @@
+URL: https://www.cloudprinter.com/
+ERROR: Page.goto: Navigation to "https://www.cloudprinter.com/" is interrupted by another navigation to "https://youdraw.com.br/"
+Call log:
+  - navigating to "https://www.cloudprinter.com/", waiting until "domcontentloaded"

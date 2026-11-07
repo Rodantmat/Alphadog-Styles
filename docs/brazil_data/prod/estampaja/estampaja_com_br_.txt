@@ -1,0 +1,4 @@
+URL: https://estampaja.com.br/
+ERROR: Page.goto: Navigation to "https://estampaja.com.br/" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://estampaja.com.br/", waiting until "domcontentloaded"

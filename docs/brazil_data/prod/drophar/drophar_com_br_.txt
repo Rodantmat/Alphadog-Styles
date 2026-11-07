@@ -1,0 +1,4 @@
+URL: https://drophar.com.br/
+ERROR: Page.goto: Navigation to "https://drophar.com.br/" is interrupted by another navigation to "https://dropnacional.com.br/"
+Call log:
+  - navigating to "https://drophar.com.br/", waiting until "domcontentloaded"
