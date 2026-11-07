@@ -84,5 +84,5 @@ def build(pid,p):
         for f in fr: os.remove(f)
     open(f"{od}/caption.txt","w").write(p["caption"]); print("BUILT",pid,p["kind"])
 if __name__=="__main__":
-    plan=json.load(open("social/postb/plan2.json"))
+    plan=json.load(open(os.environ.get("PLAN","social/postb/plan2.json")))
     for k in (sys.argv[1:] or plan): build(k,plan[k])

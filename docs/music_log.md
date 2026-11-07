@@ -21,3 +21,9 @@
 - 2026-11-06  Post B extra variations: b09 m23, b10 m26, b12 m17 (b11 carousel no music). Post B slot moved to 8pm PT daily; b01 Fri 11/6 and b02 Sat 11/7 re-scheduled to 8pm PT on IG/TikTok/FB/Pinterest.
 - 2026-11-06  Laugh video 01 (Labracadabrador): music "Funky Triplets" (m25); laugh track Mixkit "Crowd laugh" (out/sfx/424.mp3). Template social/laugh/build.py, weekly.
 - 2026-11-06  Laugh video clips switched to Pexels 7684117/7802455 + Mixkit 1552/50667 (free licence).
+
+## 2026-11-06 variation batch
+- d1b_drooling_ride (Fri Nov 13): m21
+- d6b_neon_husky (Sat Nov 14): m27 "Need for speed"
+- Post B b13: m07 "C.B.P.D", b14: m20, b15: m14 "Complicated", b16: m24
+- laugh02_pupperoni_v3 (replaces v2, Thu Nov 12): m00 (v2 may have shared m12 with d5)
