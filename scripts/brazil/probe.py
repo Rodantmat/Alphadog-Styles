@@ -319,3 +319,41 @@ if task == "alt":
             except Exception as e:
                 save(f"alt/{k}.txt", f"URL: {u}\nERROR: {e}")
         b.close()
+
+if task in ("fetchlist", "harvest"):
+    import hashlib
+    def slug(u):
+        return re.sub(r"[^A-Za-z0-9]+", "_", u.split("://",1)[-1])[:110]
+    def run(page):
+        if task == "harvest":
+            seeds = [l.strip() for l in open("scripts/brazil/harvest_seeds.txt") if l.strip()]
+            found = {}
+            for s in seeds:
+                try:
+                    page.goto(s, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(3500)
+                    hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,100),e.href])")
+                    found[s] = hrefs
+                    print("seed", s, len(hrefs))
+                except Exception as e:
+                    print("HERR", s, e)
+            save("bridge/harvest.json", found)
+            allu = []
+            for s, hs in found.items():
+                for t, h in hs:
+                    if re.search(r"ship|envio|enví|custom|label|etiq|track|rastre|flex|me1|me2|colect|coleta|fulfil|invoice|fiscal|factur", h + t, re.I) and "login" not in h and h not in allu:
+                        allu.append(h)
+            open("scripts/brazil/_harvested.txt", "w").write("\n".join(allu[:90]))
+            print("harvested", len(allu))
+            urls = allu[:90]
+        else:
+            urls = [l.strip() for l in open("scripts/brazil/bridge_urls.txt") if l.strip() and not l.startswith("#")]
+        for u in urls:
+            try:
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=45000)
+                page.wait_for_timeout(3500)
+                txt = page.inner_text("body")
+                save(f"bridge/{slug(u)}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:150000]}")
+            except Exception as e:
+                print("PWERR", u, e)
+                save(f"bridge/{slug(u)}.txt", f"URL: {u}\nERROR: {e}")
+    pw_run(run)

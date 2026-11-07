@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       task:
-        description: "ml_api | ml_pw | ml_help | dimona | shipping | shopee"
+        description: "fetchlist | harvest | ml_api | ml_pw | ml_help | dimona | shipping | shopee"
         required: true
         default: ml_api
 permissions:
