@@ -1,0 +1,4 @@
+URL: https://api.gubo.com.br/docs
+ERROR: Page.goto: Navigation to "https://api.gubo.com.br/docs" is interrupted by another navigation to "https://gubo.com.br/docs-api"
+Call log:
+  - navigating to "https://api.gubo.com.br/docs", waiting until "domcontentloaded"

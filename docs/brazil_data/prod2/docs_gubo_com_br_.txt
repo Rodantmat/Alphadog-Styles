@@ -1,0 +1,4 @@
+URL: https://docs.gubo.com.br/
+ERROR: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://docs.gubo.com.br/
+Call log:
+  - navigating to "https://docs.gubo.com.br/", waiting until "domcontentloaded"

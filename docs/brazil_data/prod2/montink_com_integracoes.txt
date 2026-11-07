@@ -1,0 +1,4 @@
+URL: https://montink.com/integracoes
+ERROR: Page.goto: Navigation to "https://montink.com/integracoes" is interrupted by another navigation to "https://www.estampaimpressa.com.br/"
+Call log:
+  - navigating to "https://montink.com/integracoes", waiting until "domcontentloaded"

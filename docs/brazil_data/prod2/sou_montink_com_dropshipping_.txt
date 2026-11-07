@@ -1,0 +1,4 @@
+URL: https://sou.montink.com/dropshipping/
+ERROR: Page.goto: Navigation to "https://sou.montink.com/dropshipping/" is interrupted by another navigation to "https://montink.com/?#"
+Call log:
+  - navigating to "https://sou.montink.com/dropshipping/", waiting until "domcontentloaded"

@@ -1,0 +1,4 @@
+URL: https://www.reclameaqui.com.br/empresa/gubo/
+ERROR: Page.goto: Timeout 40000ms exceeded.
+Call log:
+  - navigating to "https://www.reclameaqui.com.br/empresa/gubo/", waiting until "domcontentloaded"

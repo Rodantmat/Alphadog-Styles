@@ -1,0 +1,4 @@
+URL: https://www.estampaimpressa.com.br/
+ERROR: Page.goto: Navigation to "https://www.estampaimpressa.com.br/" is interrupted by another navigation to "https://gubo.com.br/blog"
+Call log:
+  - navigating to "https://www.estampaimpressa.com.br/", waiting until "domcontentloaded"

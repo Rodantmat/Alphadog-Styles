@@ -1,0 +1,4 @@
+URL: https://api.gubo.com.br/
+ERROR: Page.goto: Navigation to "https://api.gubo.com.br/" is interrupted by another navigation to "chrome-error://chromewebdata/"
+Call log:
+  - navigating to "https://api.gubo.com.br/", waiting until "domcontentloaded"

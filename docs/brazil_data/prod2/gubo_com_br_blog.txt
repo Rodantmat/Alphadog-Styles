@@ -1,0 +1,4 @@
+URL: https://gubo.com.br/blog
+ERROR: Page.goto: Navigation to "https://gubo.com.br/blog" is interrupted by another navigation to "https://studio.gubo.com.br/login"
+Call log:
+  - navigating to "https://gubo.com.br/blog", waiting until "domcontentloaded"

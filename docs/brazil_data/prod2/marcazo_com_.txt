@@ -1,0 +1,4 @@
+URL: https://marcazo.com/
+ERROR: Page.goto: Timeout 40000ms exceeded.
+Call log:
+  - navigating to "https://marcazo.com/", waiting until "domcontentloaded"
