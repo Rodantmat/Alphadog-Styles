@@ -1,0 +1,484 @@
+URL: https://developers.mercadolivre.com.br/pt_br/rate-limit-erro-429
+STATUS: 200
+TITLE: Rate limit / Erro 429
+
+Developers
+API Docs
+Novidades
+Entrar
+API Docs
+Rate limit / Erro 429
+
+Documentação do Mercado Livre
+
+Confira todas as informações necessárias sobre as APIs Mercado Livre.
+
+Documentação do
+
+Primeiros passos
+Crie uma aplicação no Mercado Livre
+Permissões funcionais
+Desenvolvimento seguro
+Recomendações de Autenticação e Token
+Práticas de CyberSecurity
+Validações e requisitos de segurança
+Gerencie seu aplicativo
+Autenticação e Autorização
+Realização de testes
+Validador de publicações
+Boas práticas para usar a plataforma
+Considerações de design
+Gerenciar IPs de um aplicativo
+Suporte para integradores
+Erro 403
+Desenvolvimento in-house Quick Start
+Recursos da API
+Usuários
+Usuários e Aplicativos
+Bloqueio de aplicações
+Consulta de usuários
+Endereços do usuário
+Perguntas frequentes sobre validação de dados
+Validar dados dos vendedores
+Favoritos
+Domínios e Categorias
+Localização e moedas
+Busca de itens
+Perguntas e Respostas
+Pedidos e opiniões
+Atributos
+Notificações
+Comunicações
+Moderações
+Gerenciar moderações
+Moderações com pausa
+Diagnóstico de imagens
+Moderações de imagens
+Brand Protection Program
+O que é Brand Protection Program?
+Membros do Programa
+Publicações denunciadas
+Guia para produtos
+Introdução
+Tipos de publicação
+Categorização
+Categorização de produtos
+Compatibilidades entre itens e produtos de Autopeças
+Referências de domínios, produtos e atributos para Autopeças
+Publicar produtos
+User Products
+User Products
+Preço por variação
+Estoque distribuído
+Estoque multi-origem
+Descrição de produtos
+Validações
+Preços e Custos
+Preços por quantidade
+Preços por quantidade B2C
+Preços por quantidade porcentagem B2B
+Preços por quantidade
+Preços Líquidos por quantidade
+Preços de produtos
+Custos por vender
+Referências de preços
+Automatizações de preços
+Imagens
+Identificadores de produtos
+Variações
+Republicar itens
+Kits virtuais
+Tabelas de Medidas
+Primeiros passos
+Gerenciar tabela de medidas
+Validação da tabela de medidas
+Sincronização e modificação de publicações
+Convivência Full e Flex
+Modos de Envios
+Gestão Mercado Envios
+Mercado Envios 1
+Mercado Envios 1
+Status de pedidos e rastreamento
+Frete dinâmico
+Mercado Envios 2
+Mercado Envios 2
+Custos de envio
+Envios em pontos facultativos
+Envios Coletas e Places
+Agrupamento de pacotes para a Coleta
+Envios Agora
+Envios Flex
+Envios Turbo
+Envios Fulfillment
+Planejamento de reposição para Fulfilment
+Envios Personalizados
+Catálogo
+O que é catálogo
+Elegibilidade
+Buscador de produtos
+Publicar no catálogo
+Publicações requeridas no catálogo
+Catálogo de recondicionados
+Competição
+Brand Central
+Central de promoções
+Gerenciar promoções
+Campanhas tradicionais
+Campanha com co-participação
+Campanhas de desconto por quantidade
+Desconto pré acordado por item e liquidação de estoque Full
+Desconto individual
+Ofertas do dia
+Ofertas relâmpago
+Campanhas do vendedor
+Co-participação automatizada e preços competitivos
+Cupons do vendedor
+Campanha co-participação para PIX
+Perguntas e respostas
+Gerencie vendas
+Orders
+Packs
+Envios
+Notas de Packs
+Pagamentos
+Feedback de uma venda
+Notas de orders
+Faturador Mercado Livre
+Emitindo Nota Fiscal pelo Mercado Livre
+Envio das Regras Tributárias
+Configurações de Composição de Base de Cálculo do ICMS e IPI
+Configurações de Composição de Base de Cálculo do PIS e COFINS
+Configuração do cálculo do diferencial de alíquota (DIFAL)
+Configurações do IBS e CBS
+Mensagens de operação
+Envio dos Dados Fiscais
+Envio de inscrições estaduais
+Notificações de invoices
+Gestão e Consulta de Notas Fiscais
+Mensagens adicionais
+Download em lote de documentos fiscais
+Tabela de processos Fulfillment
+Enviar Nota Fiscal
+Integração DCe
+Dados para emissão de Nota Fiscal
+Importar Nota Fiscal
+Anexar Nota Fiscal
+Relatórios de Faturamento
+Relatórios de Faturamento
+Boas Práticas para o Consumo das APIs de Relatórios de Faturamento
+Provisões
+Relatórios de Pagamentos
+Baixar documento legal
+Percepções
+Mensagens de pós-venda
+O que é mensageria
+Motivos para comunicar
+Gestão de mensagens pós-venda
+Mensagens pendentes
+Mensagens bloqueadas
+Métricas e Tendências
+Programa Decola e Benefício de Reputação
+Opiniões de produtos
+Reputação de vendedores
+Tendências
+Qualidade das publicações
+Experiência de compra
+Mais vendidos no Mercado Livre
+Visitas
+Carregar atributos
+Reclamações, Devoluções e Trocas
+Reclamações
+Gerenciar reclamações
+Gerenciar mensagem de uma reclamação
+Gerenciar resolução de reclamações
+Gerenciar evidências de reclamações
+Erros Reclamações
+Devoluções
+Trocas
+Mercado Líder e Lojas Oficiais
+Lojas Oficiais
+Pharma
+Pharma - Receitados
+Guia de Segurança
+Introdução
+Infraestrutura (Criptografia e TLS)
+Gestão de Identidades e Acessos (OAuth e Tokens)
+Autenticação Segura
+Controle de Acesso e Autorização
+Segurança de Aplicações
+Monitoramento
+Gestão de Incidentes
+Developer Partner Program
+Developer Partner Program
+Segurança - Desenvolvimento Seguro
+Guia para imóveis
+Introdução guia de imóveis
+Primeiros passos
+Configuração ou requisitos prévios
+Obtenção do Access Token
+Consulta de usuários
+Passos rápidos para publicar um imóvel de teste
+Categorias e atributos
+Categorias
+Atributos
+Localizar Imóveis
+Gerenciar pacotes de imóveis
+Contratação de pacotes de publicação
+Pacotes e permissões para projetos, desenvolvimentos ou empreendimentos imobiliários
+Publica Imóveis
+Publicações de Lojas Oficiais para Imóveis
+Atualiza tuas publicações
+Ciclo de vida das publicações de Imóveis
+Variações
+Atualização variação imóveis
+Qualidade das Publicações
+Desenvolvimentos imobiliários
+Leads
+Solicitação de visita
+Estatísticas de interações em Imóveis
+Experiência para imóveis
+Glossário
+Guia para automóveis
+Introdução
+Consulta de usuários
+Categorias e Atributos
+Localização de veículos
+Gerenciamento de pacotes de veículos
+Publicação de automóveis
+Sincronização de publicações (veículos)
+Gerenciamento de Perguntas e Contatos
+Pessoas interessadas
+Créditos pré-aprovados
+Qualidade das publicações (veículos)
+Guia para serviços
+Introdução
+Consulta de usuários
+Escolha o tipo de serviço
+Gerenciamento das áreas de cobertura
+Publicação de serviços
+Sincronização de publicações
+Consultas avançadas
+Guia para Mercado Ads
+Introdução ao Mercado Ads
+Brand Ads
+Display Ads
+Product Ads para Catálogo e User Products
+Bonificações para Product Ads
+MCP do Mercado Livre
+Mercado Livre MCP Server
+FAQs
+Perguntas Frequentes
+Rate limit / Erro 429
+Gestão de estoque multiorigem / User Products
+ME1 / ME2 e frete grátis
+Mercado Envios — Custos e cotações
+Faturamento / Billing info
+Imagens e moderações
+Promoções / Precificação
+Itens — Atributos de envio e dimensões
+Última atualização em 05/05/2026
+FAQs
+›
+Rate limit / Erro 429
+Rate limit / Erro 429 e solicitações de aumento de RL
+
+
+O que devo fazer quando a API retorna 429 Too Many Requests?
+
+429 indica excesso de requisições em um curto período. Implemente backoff e retries (pausas com jitter), distribua as requisições (evite picos), consuma o scroll completamente antes de expirar e valide que não haja retries massivos. Para operações em massa, use batching prudente e evite concorrência extrema.
+
+RECOMENDAÇÃO
+Aplique backoff exponencial com jitter, reduza a concorrência e consolide chamadas para minimizar a probabilidade de 429.
+A API de visitas ou de diagnóstico de imagens suporta multiget grande ou requisições em massa sem provocar 429?
+
+Muitas APIs não suportam multiget amplo; por exemplo, items/visits aceita apenas um product_id por consulta. Se for necessário reduzir chamadas, projete batching, use intervalos e limite o RPM; para diagnóstico de imagens não há multiget oficial, portanto limite o ritmo e considere requisições em massa somente se o endpoint suportar.
+
+RECOMENDAÇÃO
+Respeite as limitações de cada endpoint, implemente batching controlado e espaçe as requisições quando o endpoint não suportar multiget.
+O rate limit é aplicado por IP, por Client ID ou por usuário?
+
+O controle principal é aplicado por Client ID (aplicação) na maioria dos casos e por endpoint; o tamanho do payload não é considerado no cálculo do limite. É recomendável distribuir o consumo da aplicação e solicitar aumento de cota em casos de volume legítimo pelos canais correspondentes.
+
+RECOMENDAÇÃO
+Monitore o consumo por Client ID e solicite aumentos de cota com evidência de uso se precisar de maior RPM.
+Por que recebo 429 ao usar scroll_id em buscas e como evitá-lo?
+
+O scroll expira (tempo limitado) e o consumo repetido ou deixado aberto por muito tempo gera 429 (sobre cota). Consuma as páginas do scroll dentro do tempo de validade, reduza a concorrência e adicione backoff e retries com jitter para evitar picos.
+
+RECOMENDAÇÃO
+Processe o scroll de forma contínua dentro do tempo de vida e reduza chamadas concorrentes para evitar expirações e 429.
+Posso combinar offset/limit com scroll_id na mesma requisição?
+
+Não. Usar scroll_id junto com offset/limit ou parâmetros incompatíveis causará erros. Utilize o método de paginação adequado para cada endpoint e respeite o mecanismo escolhido (scroll ou offset).
+
+RECOMENDAÇÃO
+Não misture mecanismos de paginação; escolha scroll ou offset de acordo com a API e ajuste sua implementação em consequência.
+Existe forma de solicitar aumento de RPM para endpoints de estoque?
+
+Para necessidades de alto volume, entre em contato com a equipe de integrações comerciais com evidência de uso; enquanto isso, otimize chamadas (batching, consolidação por user_product) para reduzir RPM e evitar bloqueios.
+
+RECOMENDAÇÃO
+Otimize chamadas e consolide operações por user_product enquanto gerencia a solicitação de aumento de cota com a equipe comercial.
+Conteúdos
+Rate limit / Erro 429 e solicitações de aumento de RL
+Denúncias
+Security Researchers
+Central de Parceiros
+
+Copyright © 2026 Mercado Livre Brasil Ltda.
+
+Termos e condições
+Como cuidamos da sua privacidade
+Developer Partner Program
+
+LINKS:
+Developers | https://developers.mercadolivre.com.br/pt_br
+API Docs | https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br
+Novidades | https://developers.mercadolivre.com.br/devcenter/news/
+Entrar | https://www.mercadolibre.com/jms/mlb/lgz/login?platform_id=ml&go=https://developers.mercadolivre.com.br/pt_br/rate-limit-erro-429
+API Docs | https://developers.mercadolivre.com.br/pt_br/api-docs-pt-br
+Crie uma aplicação no Mercado Livre | https://developers.mercadolivre.com.br/pt_br/crie-uma-aplicacao-no-mercado-livre
+Permissões funcionais | https://developers.mercadolivre.com.br/pt_br/permissoes-funcionais
+Recomendações de Autenticação e Token | https://developers.mercadolivre.com.br/pt_br/desenvolvimento-seguro
+Práticas de CyberSecurity | https://developers.mercadolivre.com.br/pt_br/praticas-de-cybersecurity
+Validações e requisitos de segurança | https://developers.mercadolivre.com.br/pt_br/validacoes-e-requisitos-de-seguranca
+Gerencie seu aplicativo | https://developers.mercadolivre.com.br/pt_br/gerencie-seu-aplicativo
+Autenticação e Autorização | https://developers.mercadolivre.com.br/pt_br/autenticacao-e-autorizacao
+Realização de testes | https://developers.mercadolivre.com.br/pt_br/realizacao-de-testes
+Validador de publicações | https://developers.mercadolivre.com.br/pt_br/validador-de-publicacoes
+Boas práticas para usar a plataforma | https://developers.mercadolivre.com.br/pt_br/boas-praticas-para-usar-a-plataforma
+Considerações de design | https://developers.mercadolivre.com.br/pt_br/consideracoes-de-design
+Gerenciar IPs de um aplicativo | https://developers.mercadolivre.com.br/pt_br/gerenciar-ips-de-um-aplicativo
+Suporte para integradores | https://developers.mercadolivre.com.br/pt_br/suporte-para-integradores
+Erro 403 | https://developers.mercadolivre.com.br/pt_br/erro-403
+Desenvolvimento in-house Quick Start | https://developers.mercadolivre.com.br/pt_br/desenvolvimento-in-house
+Usuários e Aplicativos | https://developers.mercadolivre.com.br/pt_br/usuarios-e-aplicativos
+Bloqueio de aplicações | https://developers.mercadolivre.com.br/pt_br/bloqueio-de-aplicacoes
+Consulta de usuários | https://developers.mercadolivre.com.br/pt_br/consulta-de-usuarios
+Endereços do usuário | https://developers.mercadolivre.com.br/pt_br/enderecos-do-usuario
+Perguntas frequentes sobre validação de dados | https://developers.mercadolivre.com.br/pt_br/validacoes-de-dados
+Validar dados dos vendedores | https://developers.mercadolivre.com.br/pt_br/validar-dados-de-vendedores
+Favoritos | https://developers.mercadolivre.com.br/pt_br/favoritos
+Domínios e Categorias | https://developers.mercadolivre.com.br/pt_br/categorias-e-publicacoes
+Localização e moedas | https://developers.mercadolivre.com.br/pt_br/localizacao-e-moedas
+Busca de itens | https://developers.mercadolivre.com.br/pt_br/itens-e-buscas
+Perguntas e Respostas | https://developers.mercadolivre.com.br/pt_br/perguntas-e-respostas
+Pedidos e opiniões | https://developers.mercadolivre.com.br/pt_br/pedidos-e-opinioes
+Atributos | https://developers.mercadolivre.com.br/pt_br/atributos
+Notificações | https://developers.mercadolivre.com.br/pt_br/produto-receba-notificacoes
+Comunicações | https://developers.mercadolivre.com.br/pt_br/conheca-as-novidades-que-os-vendedores-recebem
+Gerenciar moderações | https://developers.mercadolivre.com.br/pt_br/gerenciar-moderacoes
+Moderações com pausa | https://developers.mercadolivre.com.br/pt_br/com-pausa
+Diagnóstico de imagens | https://developers.mercadolivre.com.br/pt_br/diagnostico-de-imagens
+Moderações de imagens | https://developers.mercadolivre.com.br/pt_br/moderacoes-de-imagens
+O que é Brand Protection Program? | https://developers.mercadolivre.com.br/pt_br/o-que-e-brand-protection-program
+Membros do Programa | https://developers.mercadolivre.com.br/pt_br/membros-do-programa
+Publicações denunciadas | https://developers.mercadolivre.com.br/pt_br/publicacoes-denunciadas
+Introdução | https://developers.mercadolivre.com.br/pt_br/guia-para-produtos
+Tipos de publicação | https://developers.mercadolivre.com.br/pt_br/tutorial-tipos-de-publicacao-y-atualizacao-de-artigos
+Categorização de produtos | https://developers.mercadolivre.com.br/pt_br/categorizacao-de-produtos
+Compatibilidades entre itens e produtos de Autopeças | https://developers.mercadolivre.com.br/pt_br/compatibilidades-itens-e-produtos-de-autopecas
+Referências de domínios, produtos e atributos para Autopeças | https://developers.mercadolivre.com.br/pt_br/referencias-de-dominios-produtos-e-atributos-para-autopecas
+Publicar produtos | https://developers.mercadolivre.com.br/pt_br/publicacao-de-produtos
+User Products | https://developers.mercadolivre.com.br/pt_br/user-products
+Preço por variação | https://developers.mercadolivre.com.br/pt_br/preco-variacao
+Estoque distribuído | https://developers.mercadolivre.com.br/pt_br/estoque-distribuido
+Estoque multi-origem | https://developers.mercadolivre.com.br/pt_br/estoque-multi-origem
+Descrição de produtos | https://developers.mercadolivre.com.br/pt_br/descricao-de-produtos
+Validações | https://developers.mercadolivre.com.br/pt_br/validacoes
+Preços por quantidade B2C | https://developers.mercadolivre.com.br/pt_br/preco-por-quantidade-b2c
+Preços por quantidade porcentagem B2B | https://developers.mercadolivre.com.br/pt_br/pxq-porcentagem-b2b
+Preços por quantidade | https://developers.mercadolivre.com.br/pt_br/precos-por-quantidade
+Preços Líquidos por quantidade | https://developers.mercadolivre.com.br/pt_br/precos-liquidos
+Preços de produtos | https://developers.mercadolivre.com.br/pt_br/api-de-precos
+Custos por vender | https://developers.mercadolivre.com.br/pt_br/comissao-por-vender
+Referências de preços | https://developers.mercadolivre.com.br/pt_br/referencias-de-precos
+Automatizações de preços | https://developers.mercadolivre.com.br/pt_br/automatizacoes-de-precos
+Imagens | https://developers.mercadolivre.com.br/pt_br/trabalhar-com-imagens
+Identificadores de produtos | https://developers.mercadolivre.com.br/pt_br/identificadores-de-produtos
+Variações | https://developers.mercadolivre.com.br/pt_br/variacoes
+Republicar itens | https://developers.mercadolivre.com.br/pt_br/publique-seus-anuncios-novamente
+Kits virtuais | https://developers.mercadolivre.com.br/pt_br/kits-virtuais
+Primeiros passos | https://developers.mercadolivre.com.br/pt_br/primeiros-pasos
+Gerenciar tabela de medidas | https://developers.mercadolivre.com.br/pt_br/gerenciar-tabela-de-medida
+Validação da tabela de medidas | https://developers.mercadolivre.com.br/pt_br/validacao-tabela-de-medidas
+Sincronização e modificação de publicações | https://developers.mercadolivre.com.br/pt_br/produto-sincronizacao-de-publicacoes
+Convivência Full e Flex | https://developers.mercadolivre.com.br/pt_br/convivencia-full-e-flex
+Gestão Mercado Envios | https://developers.mercadolivre.com.br/pt_br/mercado-envios
+Mercado Envios 1 | https://developers.mercadolivre.com.br/pt_br/mercado-envios-1
+Status de pedidos e rastreamento | https://developers.mercadolivre.com.br/pt_br/status-de-pedidos-rastreamento
+Frete dinâmico | https://developers.mercadolivre.com.br/pt_br/frete-dinamico
+Mercado Envios 2 | https://developers.mercadolivre.com.br/pt_br/mercado-envios-2
+Custos de envio | https://developers.mercadolivre.com.br/pt_br/custos-de-envio
+Envios em pontos facultativos | https://developers.mercadolivre.com.br/pt_br/envios-em-pontos-facultativos
+Envios Coletas e Places | https://developers.mercadolivre.com.br/pt_br/envios-coletas-places
+Agrupamento de pacotes para a Coleta | https://developers.mercadolivre.com.br/pt_br/agrupamento-de-pacotes-para-a-coleta
+Envios Agora | https://developers.mercadolivre.com.br/pt_br/mercado-envios-agora
+Envios Flex | https://developers.mercadolivre.com.br/pt_br/envios-flex
+Envios Turbo | https://developers.mercadolivre.com.br/pt_br/envios-turbo
+Envios Fulfillment | https://developers.mercadolivre.com.br/pt_br/envios-fulfillment
+Planejamento de reposição para Fulfilment | https://developers.mercadolivre.com.br/pt_br/planejamento-de-reposicao-para-fulfilment
+Envios Personalizados | https://developers.mercadolivre.com.br/pt_br/envios-personalizados
+O que é catálogo | https://developers.mercadolivre.com.br/pt_br/o-catalogo-chegou-saiba-como-adaptar-sua-integracao
+Elegibilidade | https://developers.mercadolivre.com.br/pt_br/elegibilidade-de-catalogo
+Buscador de produtos | https://developers.mercadolivre.com.br/pt_br/buscador-de-produtos
+Publicar no catálogo | https://developers.mercadolivre.com.br/pt_br/publicacao-no-catalogo
+Publicações requeridas no catálogo | https://developers.mercadolivre.com.br/pt_br/publicacoes-necessarias-do-catalogo
+Catálogo de recondicionados | https://developers.mercadolivre.com.br/pt_br/catalogo-recondicionados
+Competição | https://developers.mercadolivre.com.br/pt_br/concorrencia-em-catalogo
+Brand Central | https://developers.mercadolivre.com.br/pt_br/brand-central
+Gerenciar promoções | https://developers.mercadolivre.com.br/pt_br/gerenciar-ofertas
+Campanhas tradicionais | https://developers.mercadolivre.com.br/pt_br/campanhas-tradicionais
+Campanha com co-participação | https://developers.mercadolivre.com.br/pt_br/campanha-com-co-participacao
+Campanhas de desconto por quantidade | https://developers.mercadolivre.com.br/pt_br/campanhas-de-desconto-por-quantidade
+Desconto pré acordado por item e liquidação de estoque Full | https://developers.mercadolivre.com.br/pt_br/desconto-pre-acordado-por-item
+Desconto individual | https://developers.mercadolivre.com.br/pt_br/desconto-individua
+Ofertas do dia | https://developers.mercadolivre.com.br/pt_br/ofertas-do-dia
+Ofertas relâmpago | https://developers.mercadolivre.com.br/pt_br/ofertas-relampago
+Campanhas do vendedor | https://developers.mercadolivre.com.br/pt_br/campanhas-do-vendedor
+Co-participação automatizada e preços competitivos | https://developers.mercadolivre.com.br/pt_br/campanhas-smart-price-matching
+Cupons do vendedor | https://developers.mercadolivre.com.br/pt_br/cupons-do-vendedor
+Campanha co-participação para PIX | https://developers.mercadolivre.com.br/pt_br/campanha-co-participacao-para-pix
+Perguntas e respostas | https://developers.mercadolivre.com.br/pt_br/gerenciamento-perguntas-respostas
+Orders | https://developers.mercadolivre.com.br/pt_br/gerenciamento-de-vendas
+Packs | https://developers.mercadolivre.com.br/pt_br/gestao-packs
+Envios | https://developers.mercadolivre.com.br/pt_br/gerenciamento-de-envios
+Notas de Packs | https://developers.mercadolivre.com.br/pt_br/notas-de-packs
+Pagamentos | https://developers.mercadolivre.com.br/pt_br/gerenciamento-de-pagamentos
+Feedback de uma venda | https://developers.mercadolivre.com.br/pt_br/feedback-de-uma-venda
+Notas de orders | https://developers.mercadolivre.com.br/pt_br/notas-de-ordens
+Emitindo Nota Fiscal pelo Mercado Livre | https://developers.mercadolivre.com.br/pt_br/api-fiscal-faturamento-de-venda
+Envio das Regras Tributárias | https://developers.mercadolivre.com.br/pt_br/envio-regras-tributarias
+Configurações de Composição de Base de Cálculo do ICMS e IPI | https://developers.mercadolivre.com.br/pt_br/configuracoes-de-composicao-de-base-de-calculo-do-icms-e-ipi
+Configurações de Composição de Base de Cálculo do PIS e COFINS | https://developers.mercadolivre.com.br/pt_br/configuracoes-de-composicao-de-base-de-calculo-do-pis-e-cofins
+Configuração do cálculo do diferencial de alíquota (DIFAL) | https://developers.mercadolivre.com.br/pt_br/configuracao-do-calculo-do-diferencial-de-aliquota-difal
+Configurações do IBS e CBS | https://developers.mercadolivre.com.br/pt_br/configuracoesibscbs
+Mensagens de operação | https://developers.mercadolivre.com.br/pt_br/envio-das-mensagens-de-operacao
+Envio dos Dados Fiscais | https://developers.mercadolivre.com.br/pt_br/envio-dos-dados-fiscais
+Envio de inscrições estaduais | https://developers.mercadolivre.com.br/pt_br/envio-de-inscricoes-estaduais
+Notificações de invoices | https://developers.mercadolivre.com.br/pt_br/recebendo-notificacoes
+Gestão e Consulta de Notas Fiscais | https://developers.mercadolivre.com.br/pt_br/obtendo-nota-fiscal
+Mensagens adicionais | https://developers.mercadolivre.com.br/pt_br/mensagens-de-adicionais
+Download em lote de documentos fiscais | https://developers.mercadolivre.com.br/pt_br/download-em-lote-de-documentos-fiscais
+Tabela de processos Fulfillment | https://developers.mercadolivre.com.br/pt_br/tabela-de-processos-fulfillment
+Integração DCe | https://developers.mercadolivre.com.br/pt_br/integracao-dce
+Dados para emissão de Nota Fiscal | https://developers.mercadolivre.com.br/pt_br/faturamento
+Importar Nota Fiscal | https://developers.mercadolivre.com.br/pt_br/importar-nota-fiscal
+Anexar Nota Fiscal | https://developers.mercadolivre.com.br/pt_br/anexar-nota-fiscal
+Relatórios de Faturamento | https://developers.mercadolivre.com.br/pt_br/relatorios-de-faturamento
+Boas Práticas para o Consumo das APIs de Relatórios de Faturamento | https://developers.mercadolivre.com.br/pt_br/boas-praticas-para-o-consumo-das-apis-de-relatorios-de-faturamento
+Provisões | https://developers.mercadolivre.com.br/pt_br/provisoes
+Relatórios de Pagamentos | https://developers.mercadolivre.com.br/pt_br/pagamentos
+Baixar documento legal | https://developers.mercadolivre.com.br/pt_br/baixar-documento-legal
+Percepções | https://developers.mercadolivre.com.br/pt_br/percepcoes
+O que é mensageria | https://developers.mercadolivre.com.br/pt_br/o-que-e-mensageria
+Motivos para comunicar | https://developers.mercadolivre.com.br/pt_br/motivos-para-se-comunicar
+Gestão de mensagens pós-venda | https://developers.mercadolivre.com.br/pt_br/mensagens-post-venda
+Mensagens pendentes | https://developers.mercadolivre.com.br/pt_br/mensagens-pendentes
+Mensagens bloqueadas | https://developers.mercadolivre.com.br/pt_br/mensagens-bloqueadas
+Programa Decola e Benefício de Reputação | https://developers.mercadolivre.com.br/pt_br/recuperacao-de-reputacao
+Opiniões de produtos | https://developers.mercadolivre.com.br/pt_br/opinioes-sobre-um-produto
+Reputação de vendedores | https://developers.mercadolivre.com.br/pt_br/reputacao-de-vendedores
+Tendências | https://developers.mercadolivre.com.br/pt_br/tendencias
+Qualidade das publicações | https://developers.mercadolivre.com.br/pt_br/qualidade-das-publicacoes
+Experiência de compra | https://developers.mercadolivre.com.br/pt_br/experiencia-de-compra

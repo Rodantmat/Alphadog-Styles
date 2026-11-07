@@ -1,0 +1,823 @@
+URL: https://glama.ai/mcp/servers?query=mercado+livre
+STATUS: 200
+TITLE: mercado livre MCP Servers | Glama
+
+Skip to main content
+Glama
+Servers
+Connectors
+Tools
+Clients
+Inspector
+New Chat
+Sign In
+Sign Up
+Glama
+MCP
+Servers
+117,257 servers. Updated 2026-11-07 20:00
+Deep Search
+Search Relevance ↓
+Add Server
+Local
+89
+Python
+75
+Tools
+73
+Remote
+67
+TypeScript
+57
+App Automation
+32
+Resources
+31
+Prompts
+30
+Developer Tools
+23
+Finance
+22
+Audio Processing
+21
+Claimed
+18
+Multimedia Processing
+18
+E-commerce & Retail
+17
+Hybrid
+16
+Search
+15
+Workplace & Productivity
+15
+Design Tools
+12
+Payments & Billing
+11
+Communication
+10
+Entertainment & Media
+10
+Marketing
+8
+Open Data
+8
+Research & Data
+8
+Web Scraping
+8
+Autonomous Agents
+7
+Browser Automation
+7
+Customer Support
+7
+Documentation Access
+7
+Image & Video Processing
+7
+See all attributes
+
+Matching MCP tools:
+
+listar_vendas
+C
+
+Mercado Livre MCP Server
+
+convert_currency
+A
+
+MCP Mercado Livre
+
+get_fulfillment_stock
+A
+
+MCP Mercado Livre
+
+get_category_attributes
+A
+
+MCP Mercado Livre
+
+Matching MCP Connectors:
+
+Mercado Livre Vendedor
+
+io.github.mcp-dir
+
+Monitor de Preço Mercado Livre — Alerta de Queda e Estoque
+
+io.github.paulovitorti
+
+Monitor de Precios Mercado Libre — Alerta de Baja y Stock
+
+io.github.paulovitorti
+
+cloo.be: ofertas do Brasil
+
+be.cloo
+
+"mercado livre" matching MCP servers:
+GET /v1/servers
+– MCP directory API reference
+Mercado Livre Vendedor
+E-commerce & Retail
+Customer Support
+mcp-dir
+A
+license
+-
+Not graded
+quality
+C
+maintenance
+Enables read-only access to Mercado Livre seller data via the official API, including profile, reputation, listings, orders, questions, shipments, categories, and item visits through OAuth 2.0.
+Updated 2 months ago
+(2026-08-30 19:45 UTC)
+MIT
+MCP Mercado Livre
+E-commerce & Retail
+gustavossouza
+A
+license
+A
+quality
+B
+maintenance
+Enables LLMs to manage e-commerce seller workflows through natural language, including marketplace search, listing publication and updates, buyer questions, orders, shipping labels, messages, claims, reputation metrics, catalog, promotions, ads, and fulfillment operations. Provides 42 tools with OAuth authentication and a security layer.
+Updated a month ago
+(2026-09-30 20:05 UTC)
+42
+45 npm
+MIT
+Mercado Livre MCP Server
+Web Scraping
+E-commerce & Retail
+newerton
+A
+license
+C
+quality
+B
+maintenance
+Mercado Livre MCP Server: A Model Context Protocol (MCP) server for interacting with the Mercado Livre. Provides tools for fetching product data, such as prices and availability, with a layered architecture and data validation using Zod
+Updated 14 days ago
+(2026-10-25 01:53 UTC)
+1
+16
+MIT
+Mercado Livre MCP Server
+E-commerce & Retail
+File Systems
+rafaelprimeiro
+A
+license
+B
+quality
+D
+maintenance
+Integrates with the Mercado Livre API to enable management of sales, shipments, and shipping labels directly through Claude.
+Updated 8 months ago
+(2026-03-20 15:27 UTC)
+7
+1
+MIT
+brmarket-mcp
+E-commerce & Retail
+Payments & Billing
+Search
+thomenz
+A
+license
+A
+quality
+D
+maintenance
+MCP server for Brazilian marketplace product search across Mercado Livre, Shopee, and AliExpress, with automatic x402 micropayments.
+Updated 4 months ago
+(2026-07-18 19:53 UTC)
+4
+86 npm
+MIT
+mcp-brazil-marketplaces
+Web Scraping
+E-commerce & Retail
+rodrigopg
+A
+license
+A
+quality
+C
+maintenance
+MCP server to search and retrieve public ads from OLX Brasil and Mercado Livre Brasil with automatic anti-bot bypass.
+Updated 3 months ago
+(2026-08-03 12:59 UTC)
+4
+1
+MIT
+MCP Mercado Público
+Government Data
+Open Data
+NicolasAEV
+A
+license
+A
+quality
+D
+maintenance
+Allows AI assistants to query public procurement opportunities, purchase orders, and government entities from Chile's Mercado Público (ChileCompra) API in real time.
+Updated 7 months ago
+(2026-04-09 16:27 UTC)
+6
+12
+42 npm
+1
+MIT
+mercadolivre-mcp
+E-commerce & Retail
+Customer Support
+matuck40
+A
+license
+A
+quality
+B
+maintenance
+Enables MCP clients to read a Mercado Livre seller's account, listings, questions, orders and daily visits, and to perform a small set of changes such as updating a listing, uploading an image, or answering a buyer question. Write operations return a preview of the exact request unless explicitly confirmed.
+Updated 18 days ago
+(2026-10-21 03:46 UTC)
+10
+MIT
+mcp-mercado-bitcoin
+Finance
+Cryptocurrency
+Blockchain
+RodrigoFlorencio86
+A
+license
+A
+quality
+D
+maintenance
+MCP server for Mercado Bitcoin exchange that provides 31 tools for consulting prices, managing accounts, trading cryptocurrencies, and handling wallet operations via natural language.
+Updated 7 months ago
+(2026-04-08 20:34 UTC)
+20
+30 npm
+1
+MIT
+mercadolivre-mcp
+E-commerce & Retail
+Search
+romualdoag
+A
+license
+B
+quality
+C
+maintenance
+Enables searching Mercado Livre Brasil products and retrieving product details, item prices, seller profiles and listings, category trees, trending terms, and public Q&A through the MercadoLibre API. It also handles OAuth token refresh and optional proxy routing.
+Updated 5 days ago
+(2026-11-02 16:32 UTC)
+10
+MIT
+Mercado Pago MCP Server
+official
+Cloud Platforms
+API Testing
+Documentation Access
+mercadolibre
+A
+license
+B
+quality
+C
+maintenance
+Mercado Pago's Official MCP Server offers tools so that developers can easily interact with our API using natural language, which simplifies tasks and product integration. Remotely hosted by Mercadolibre supporting Streamable HTTP Transport. Details on how to connect: https://mcp.mercadopago.com/
+Updated 2 years ago
+(2025-04-30 22:21 UTC)
+1
+9
+Apache 2.0
+Mercado Pago MCP Server
+Payments & Billing
+Finance
+hdbookie
+A
+license
+C
+quality
+D
+maintenance
+Enables AI to process payments, manage subscriptions, detect fraud, and generate analytics through Mercado Pago API.
+Updated a year ago
+(2025-08-22 19:41 UTC)
+27
+MIT
+Mercado Libre MCP
+E-commerce & Retail
+Customer Support
+fedeclavero
+A
+license
+C
+quality
+C
+maintenance
+Enables Mercado Libre sellers to manage listings, catalog, stock, questions, and promotions through natural language using Codex and other MCP clients connected to the official API.
+Updated 5 days ago
+(2026-11-03 03:09 UTC)
+41
+MIT
+ar-agents
+official
+Payments & Billing
+Finance
+Communication
+ar-agents
+A
+license
+-
+Not graded
+quality
+C
+maintenance
+Agent Toolkit for Mercado Pago
+Updated 13 days ago
+(2026-10-26 07:39 UTC)
+2
+MIT
+mercadolivre-mcp
+E-commerce & Retail
+Finance
+maxwellmezadre
+A
+license
+-
+Not graded
+quality
+A
+maintenance
+Enables read-only access to your Mercado Livre buyer account, letting you query purchase history, products, payments, installments, sellers, and download NF-e invoices through natural language.
+Updated 5 days ago
+(2026-11-02 17:59 UTC)
+33 npm
+MIT
+Mexico Payments MCP
+Payments & Billing
+Finance
+junter1989k-ai
+A
+license
+-
+Not graded
+quality
+B
+maintenance
+Enables AI agents to accept payments in Mexico via Mercado Pago, including OXXO cash vouchers, SPEI bank transfers, cards, and Mercado Pago wallet, through a stateless hosted checkout.
+Updated 4 months ago
+(2026-07-11 05:47 UTC)
+MIT
+giz-livre
+Education & Learning Tools
+Design Tools
+Note Taking
+HeraldoAntunes
+A
+license
+-
+Not graded
+quality
+B
+maintenance
+Lets an AI agent prepare lessons in Giz Livre, a free offline digital whiteboard for teachers: create boards and add text, notes, shapes, LaTeX formulas and charts. It never deletes anything.
+Updated 2 days ago
+(2026-11-05 19:39 UTC)
+MIT
+Mercado Pago MCP
+Finance
+Payments & Billing
+mcp-dir
+A
+license
+-
+Not graded
+quality
+C
+maintenance
+Connects Mercado Pago accounts via Open Finance Brasil to AI assistants for read-only queries about balances, statements, credit card bills, and investments.
+Updated 2 months ago
+(2026-08-30 19:39 UTC)
+MIT
+Mercado Libre MCP Server
+E-commerce & Retail
+Documentation Access
+App Automation
+MarcosNahuel
+A
+license
+-
+Not graded
+quality
+C
+maintenance
+Enables sellers to read and write their Mercado Libre operations, including listing products, orders, questions, metrics, reputation, and competitor data, plus updating prices, stock, answers, and ads. It also proxies the official Mercado Libre MCP documentation tools and can query a configurable external knowledge base for reusable features and client context.
+Updated 7 days ago
+(2026-10-31 23:06 UTC)
+73 npm
+MIT
+AskOne: Live Q&A and Polls
+Communication
+Customer Support
+Search
+phuryn
+A
+license
+A
+quality
+A
+maintenance
+Run free live audience Q&A and polls from your agent: start an AskOne room, add and launch a poll, approve or hide questions and mark them answered, close the room, then read the questions as a FAQ draft and get the results. Free AI moderation. Uses an organization API token from askone.org
+Updated 6 days ago
+(2026-11-01 09:51 UTC)
+8
+11
+75 npm
+2
+MIT
+Serper Live
+Marketing
+Search
+Web Scraping
+serper-live
+A
+license
+A
+quality
+A
+maintenance
+Live Google search for AI agents: organic results with positions by country, language and device, plus People also ask questions and related searches; a domain's current rank for a keyword; the open markets with their default languages. Every search is fresh, usually 2–3 seconds per page. New accounts get 100 free searches.
+Updated 3 days ago
+(2026-11-04 10:19 UTC)
+10
+3
+93 npm
+1
+MIT
+mcp-ssh-live
+Shell Access
+Command Line
+pmboxbiz
+A
+license
+A
+quality
+D
+maintenance
+Interactive, streaming SSH tool for LLM agents that enables spawning long-running remote commands with live line-by-line output, signal handling, stdin input, and SFTP file transfer.
+Updated 6 months ago
+(2026-05-03 01:58 UTC)
+14
+MIT
+GATE — Live Agent Authority
+Autonomous Agents
+Security
+Projetxana
+A
+license
+A
+quality
+B
+maintenance
+GATE verifies whether an AI agent still has valid delegated authority at execution time. It provides live revocation checks, signed authority evidence, alternate delegation paths, and explicit ALLOW, DENY or UNKNOWN decisions. Integrates with MCP tools through a trusted effect-boundary guard. Open-source Developer Preview with Free sandbox and live network onboarding.
+Updated 18 hours ago
+(2026-11-07 02:31 UTC)
+2
+Apache 2.0
+GetABrain🧠 | Live Human-in
+AI & Machine Learning
+Developer Tools
+Research & Data
+Guitarmaniac24
+A
+license
+A
+quality
+C
+maintenance
+Real human judgment as agent tools -- an AI agent can ask a question and get back a structured, schema-validated JSON answer from a real quality-scored human. 16 response types (yes/no, ratings, rankings, A/B tests, sentiment, image/video/audio review, voice/video/photo capture). Fully programmatic signup with a $5 free trial credit, no card required.
+Updated 2 months ago
+(2026-09-12 02:57 UTC)
+7
+66 npm
+MIT
+mcp-live-telemetry
+Monitoring
+Observability
+Younes-Alaoui-Ismaili
+A
+license
+A
+quality
+C
+maintenance
+Exposes live industrial IoT telemetry to any MCP client, streaming simulated sensor data from a fleet of machines and detecting anomalies, with the ability to inject faults on demand.
+Updated 2 months ago
+(2026-09-21 00:53 UTC)
+4
+MIT
+Studio Live
+Developer Tools
+Code Execution
+Games & Gamification
+gurmyd
+A
+license
+A
+quality
+B
+maintenance
+Enables AI agents to drive a running Roblox Studio in real time over a single WebSocket, executing whole Luau programs, installing in-engine controllers, hot-patching scripts during live playtests, and receiving errors, assertions and other events as pushes. It also reaches Roblox Open Cloud for the open place and answers visual questions via a vision sidecar, exposing all of this through nine MCP tools.
+Updated 2 months ago
+(2026-09-14 22:25 UTC)
+9
+1
+MIT
+Cosmik — Live Space Data
+Aerospace & Astrodynamics
+Research & Data
+crashedfox
+A
+license
+A
+quality
+D
+maintenance
+Live space data for AI agents: upcoming rocket launches (SpaceX, NASA, Rocket Lab…), ISS pass predictions for any city or coordinates (live SGP4), and launch news in 7 languages. Read-only, no auth, no API key. Backed by gocosmik.com — the free real-time 3D satellite tracker.
+Updated 3 months ago
+(2026-07-24 07:44 UTC)
+3
+MIT
+Freestyle Libre MCP Server
+Health & Wellness
+Biology & Medicine
+jonnyhaynes
+A
+license
+A
+quality
+D
+maintenance
+Enables Claude to access Abbott Freestyle Libre CGM data from multiple providers (LibreView, Terra, Thryve) to retrieve current glucose, history, and summaries via natural language.
+Updated 4 months ago
+(2026-07-10 14:49 UTC)
+4
+2
+MIT
+elementor-live
+Content Management Systems
+Browser Automation
+Developer Tools
+ArchiDoxx
+A
+license
+A
+quality
+B
+maintenance
+Enables coding agents to work inside a live WordPress Elementor editor tab: reading the canvas skeleton and element settings, creating/updating/moving/deleting elements through Elementor's own command API as single undo steps, taking pixel-accurate screenshots, running design lint, and receiving prompts the user types in the editor with Alt+Space. A ghost cursor and overlay let you follow along, and nothing touches the database directly.
+Updated 12 days ago
+(2026-10-26 23:28 UTC)
+14
+MIT
+Aseprite Live MCP
+Design Tools
+Image & Video Processing
+yn1323
+A
+license
+A
+quality
+C
+maintenance
+Enables Codex to draw pixel art and edit layers, animations, tilemaps, and palettes in an open Aseprite document on macOS, then export GIFs, PNG spritesheets, and editable Aseprite copies for game development.
+Updated 2 months ago
+(2026-09-07 16:12 UTC)
+9
+MIT
+Load More
+Was this helpful?
+Yes
+No
+MCP
+MCP Servers
+MCP Connectors
+MCP Clients
+MCP Tools
+Best MCP Servers
+Products
+Chat
+MCP Directory API
+MCP Gateway
+MCP Hosting
+MCP Inspector
+Policies
+Terms of Service
+Privacy Policy
+VDP
+Resources
+Support
+Careers
+Blog
+Newsletter
+Advertise
+Glama – all-in-one AI workspace.
+All systems online
+Help
+
+LINKS:
+Skip to main content | https://glama.ai/mcp/servers?query=mercado+livre#main-content
+Glama | https://glama.ai/
+Servers | https://glama.ai/mcp/servers
+Connectors | https://glama.ai/mcp/connectors
+Tools | https://glama.ai/mcp/tools
+Clients | https://glama.ai/mcp/clients
+Inspector | https://glama.ai/mcp/inspector
+New Chat | https://glama.ai/chat
+ | https://glama.ai/discord
+Sign In | https://glama.ai/sign-in
+Glama | https://glama.ai/
+MCP | https://glama.ai/mcp
+Servers | https://glama.ai/mcp/servers
+Local
+89 | https://glama.ai/mcp/servers?attributes=hosting%3Alocal-only&query=mercado+livre
+Python
+75 | https://glama.ai/mcp/servers?attributes=language%3Apython&query=mercado+livre
+Tools
+73 | https://glama.ai/mcp/servers?attributes=capability%3Atools&query=mercado+livre
+Remote
+67 | https://glama.ai/mcp/servers?attributes=hosting%3Aremote-capable&query=mercado+livre
+TypeScript
+57 | https://glama.ai/mcp/servers?attributes=language%3Atypescript&query=mercado+livre
+App Automation
+32 | https://glama.ai/mcp/servers?attributes=category%3Aapp-automation&query=mercado+livre
+Resources
+31 | https://glama.ai/mcp/servers?attributes=capability%3Aresources&query=mercado+livre
+Prompts
+30 | https://glama.ai/mcp/servers?attributes=capability%3Aprompts&query=mercado+livre
+Developer Tools
+23 | https://glama.ai/mcp/servers?attributes=category%3Adeveloper-tools&query=mercado+livre
+Finance
+22 | https://glama.ai/mcp/servers?attributes=category%3Afinance&query=mercado+livre
+Audio Processing
+21 | https://glama.ai/mcp/servers?attributes=category%3Aaudio-processing&query=mercado+livre
+Claimed
+18 | https://glama.ai/mcp/servers?attributes=author%3Aclaimed&query=mercado+livre
+Multimedia Processing
+18 | https://glama.ai/mcp/servers?attributes=category%3Amultimedia-processing&query=mercado+livre
+E-commerce & Retail
+17 | https://glama.ai/mcp/servers?attributes=category%3Aecommerce-and-retail&query=mercado+livre
+Hybrid
+16 | https://glama.ai/mcp/servers?attributes=hosting%3Ahybrid&query=mercado+livre
+Search
+15 | https://glama.ai/mcp/servers?attributes=category%3Asearch&query=mercado+livre
+Workplace & Productivity
+15 | https://glama.ai/mcp/servers?attributes=category%3Aworkplace-and-productivity&query=mercado+livre
+Design Tools
+12 | https://glama.ai/mcp/servers?attributes=category%3Adesign-tools&query=mercado+livre
+Payments & Billing
+11 | https://glama.ai/mcp/servers?attributes=category%3Apayments-and-billing&query=mercado+livre
+Communication
+10 | https://glama.ai/mcp/servers?attributes=category%3Acommunication&query=mercado+livre
+Entertainment & Media
+10 | https://glama.ai/mcp/servers?attributes=category%3Aentertainment-and-media&query=mercado+livre
+Marketing
+8 | https://glama.ai/mcp/servers?attributes=category%3Amarketing&query=mercado+livre
+Open Data
+8 | https://glama.ai/mcp/servers?attributes=category%3Aopen-data&query=mercado+livre
+Research & Data
+8 | https://glama.ai/mcp/servers?attributes=category%3Aresearch-and-data&query=mercado+livre
+Web Scraping
+8 | https://glama.ai/mcp/servers?attributes=category%3Aweb-scraping&query=mercado+livre
+Autonomous Agents
+7 | https://glama.ai/mcp/servers?attributes=category%3Aautonomous-agents&query=mercado+livre
+Browser Automation
+7 | https://glama.ai/mcp/servers?attributes=category%3Abrowser-automation&query=mercado+livre
+Customer Support
+7 | https://glama.ai/mcp/servers?attributes=category%3Acustomer-support&query=mercado+livre
+Documentation Access
+7 | https://glama.ai/mcp/servers?attributes=category%3Adocumentation-access&query=mercado+livre
+Image & Video Processing
+7 | https://glama.ai/mcp/servers?attributes=category%3Aimage-and-video-processing&query=mercado+livre
+See all attributes | https://glama.ai/mcp/attributes
+MCP tools | https://glama.ai/mcp/tools?query=mercado+livre
+listar_vendas | https://glama.ai/mcp/servers/rafaelprimeiro/rg-mcp-mercadolivre/tools/listar_vendas
+Mercado Livre MCP Server | https://glama.ai/mcp/servers/rafaelprimeiro/rg-mcp-mercadolivre/tools/listar_vendas
+convert_currency | https://glama.ai/mcp/servers/gustavossouza/mcp_mercadolivre/tools/convert_currency
+MCP Mercado Livre | https://glama.ai/mcp/servers/gustavossouza/mcp_mercadolivre/tools/convert_currency
+get_fulfillment_stock | https://glama.ai/mcp/servers/gustavossouza/mcp_mercadolivre/tools/get_fulfillment_stock
+MCP Mercado Livre | https://glama.ai/mcp/servers/gustavossouza/mcp_mercadolivre/tools/get_fulfillment_stock
+get_category_attributes | https://glama.ai/mcp/servers/gustavossouza/mcp_mercadolivre/tools/get_category_attributes
+MCP Mercado Livre | https://glama.ai/mcp/servers/gustavossouza/mcp_mercadolivre/tools/get_category_attributes
+MCP Connectors | https://glama.ai/mcp/connectors?query=mercado+livre
+Mercado Livre Vendedor | https://glama.ai/mcp/connectors/io.github.mcp-dir/mercadolivre-mcp
+Monitor de Preço Mercado Livre — Alerta de Queda e Estoque | https://glama.ai/mcp/connectors/io.github.paulovitorti/mercado-livre-monitor-preco
+Monitor de Precios Mercado Libre — Alerta de Baja y Stock | https://glama.ai/mcp/connectors/io.github.paulovitorti/mercado-libre-monitor-precios
+cloo.be: ofertas do Brasil | https://glama.ai/mcp/connectors/be.cloo/ofertas
+GET /v1/servers
+– MCP directory API reference | https://glama.ai/mcp/reference
+Mercado Livre Vendedor | https://glama.ai/mcp/servers/mcp-dir/mercadolivre-mcp
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+Customer Support | https://glama.ai/mcp/categories/customer-support
+mcp-dir | https://glama.ai/mcp/servers?query=author%3Amcp-dir
+MCP Mercado Livre | https://glama.ai/mcp/servers/gustavossouza/mcp_mercadolivre
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+gustavossouza | https://glama.ai/mcp/servers?query=author%3Agustavossouza
+Mercado Livre MCP Server | https://glama.ai/mcp/servers/newerton/mcp-mercado-livre
+Web Scraping | https://glama.ai/mcp/categories/web-scraping
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+newerton | https://glama.ai/mcp/servers?query=author%3Anewerton
+Mercado Livre MCP Server | https://glama.ai/mcp/servers/rafaelprimeiro/rg-mcp-mercadolivre
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+File Systems | https://glama.ai/mcp/categories/file-systems
+rafaelprimeiro | https://glama.ai/mcp/servers?query=author%3Arafaelprimeiro
+brmarket-mcp | https://glama.ai/mcp/servers/thomenz/brmarket-mcp
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+Payments & Billing | https://glama.ai/mcp/categories/payments-and-billing
+Search | https://glama.ai/mcp/categories/search
+thomenz | https://glama.ai/mcp/servers?query=author%3Athomenz
+mcp-brazil-marketplaces | https://glama.ai/mcp/servers/rodrigopg/mcp-brazil-marketplaces
+Web Scraping | https://glama.ai/mcp/categories/web-scraping
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+rodrigopg | https://glama.ai/mcp/servers?query=author%3Arodrigopg
+MCP Mercado Público | https://glama.ai/mcp/servers/NicolasAEV/mcp-mercado-publico
+Government Data | https://glama.ai/mcp/categories/government-data
+Open Data | https://glama.ai/mcp/categories/open-data
+NicolasAEV | https://glama.ai/mcp/servers?query=author%3ANicolasAEV
+mercadolivre-mcp | https://glama.ai/mcp/servers/matuck40/mercadolivre-mcp
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+Customer Support | https://glama.ai/mcp/categories/customer-support
+matuck40 | https://glama.ai/mcp/servers?query=author%3Amatuck40
+mcp-mercado-bitcoin | https://glama.ai/mcp/servers/RodrigoFlorencio86/mcp-mercado-bitcoin
+Finance | https://glama.ai/mcp/categories/finance
+Cryptocurrency | https://glama.ai/mcp/categories/cryptocurrency
+Blockchain | https://glama.ai/mcp/categories/blockchain
+RodrigoFlorencio86 | https://glama.ai/mcp/servers?query=author%3ARodrigoFlorencio86
+mercadolivre-mcp | https://glama.ai/mcp/servers/romualdoag/mercadolivre-mcp
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+Search | https://glama.ai/mcp/categories/search
+romualdoag | https://glama.ai/mcp/servers?query=author%3Aromualdoag
+ | https://glama.ai/mcp/servers?query=author%3Amercadolibre
+Mercado Pago MCP Server | https://glama.ai/mcp/servers/mercadolibre/demo-mercadopago-mcp-server
+Cloud Platforms | https://glama.ai/mcp/categories/cloud-platforms
+API Testing | https://glama.ai/mcp/categories/api-testing
+Documentation Access | https://glama.ai/mcp/categories/documentation-access
+mercadolibre | https://glama.ai/mcp/servers?query=author%3Amercadolibre
+Mercado Pago MCP Server | https://glama.ai/mcp/servers/hdbookie/mercado-pago-mcp
+Payments & Billing | https://glama.ai/mcp/categories/payments-and-billing
+Finance | https://glama.ai/mcp/categories/finance
+hdbookie | https://glama.ai/mcp/servers?query=author%3Ahdbookie
+Mercado Libre MCP | https://glama.ai/mcp/servers/fedeclavero/mercadolibre-mcp
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+Customer Support | https://glama.ai/mcp/categories/customer-support
+fedeclavero | https://glama.ai/mcp/servers?query=author%3Afedeclavero
+ | https://glama.ai/mcp/servers?query=author%3Aar-agents
+ar-agents | https://glama.ai/mcp/servers/ar-agents/ar-agents
+Payments & Billing | https://glama.ai/mcp/categories/payments-and-billing
+Finance | https://glama.ai/mcp/categories/finance
+Communication | https://glama.ai/mcp/categories/communication
+ar-agents | https://glama.ai/mcp/servers?query=author%3Aar-agents
+mercadolivre-mcp | https://glama.ai/mcp/servers/maxwellmezadre/mercadolivre-mcp
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+Finance | https://glama.ai/mcp/categories/finance
+maxwellmezadre | https://glama.ai/mcp/servers?query=author%3Amaxwellmezadre
+Mexico Payments MCP | https://glama.ai/mcp/servers/junter1989k-ai/mexico-payments-mcp
+Payments & Billing | https://glama.ai/mcp/categories/payments-and-billing
+Finance | https://glama.ai/mcp/categories/finance
+junter1989k-ai | https://glama.ai/mcp/servers?query=author%3Ajunter1989k-ai
+giz-livre | https://glama.ai/mcp/servers/HeraldoAntunes/giz-livre
+Education & Learning Tools | https://glama.ai/mcp/categories/education-and-learning-tools
+Design Tools | https://glama.ai/mcp/categories/design-tools
+Note Taking | https://glama.ai/mcp/categories/note-taking
+HeraldoAntunes | https://glama.ai/mcp/servers?query=author%3AHeraldoAntunes
+Mercado Pago MCP | https://glama.ai/mcp/servers/mcp-dir/mercadopago-mcp
+Finance | https://glama.ai/mcp/categories/finance
+Payments & Billing | https://glama.ai/mcp/categories/payments-and-billing
+mcp-dir | https://glama.ai/mcp/servers?query=author%3Amcp-dir
+Mercado Libre MCP Server | https://glama.ai/mcp/servers/MarcosNahuel/mercadolibre-mcp
+E-commerce & Retail | https://glama.ai/mcp/categories/ecommerce-and-retail
+Documentation Access | https://glama.ai/mcp/categories/documentation-access
+App Automation | https://glama.ai/mcp/categories/app-automation
+MarcosNahuel | https://glama.ai/mcp/servers?query=author%3AMarcosNahuel
+AskOne: Live Q&A and Polls | https://glama.ai/mcp/servers/phuryn/askone
+Communication | https://glama.ai/mcp/categories/communication
+Customer Support | https://glama.ai/mcp/categories/customer-support
+Search | https://glama.ai/mcp/categories/search
+phuryn | https://glama.ai/mcp/servers?query=author%3Aphuryn
+ | https://glama.ai/mcp/servers?query=author%3Aserper-live
+Serper Live | https://glama.ai/mcp/servers/serper-live/serper-live-mcp
+Marketing | https://glama.ai/mcp/categories/marketing

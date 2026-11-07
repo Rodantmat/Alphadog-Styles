@@ -1,0 +1,378 @@
+URL: https://reserva.ink/site/api
+STATUS: 200
+TITLE: API INK e webhooks — Reserva INK
+
+BEST FRIDAY
+Até 66% OFF em novas assinaturas · Vale até 30/11
+a melhor oportunidade do ano
+Print on Demand
+Planos e Preços
+Produtos
+Cases
+Experts
+API
+Acessar minha loja
+Crie sua loja agora
+Novo: API INK e webhooks
+Conecte sua loja INK a qualquer sistema
+
+API e webhooks para automatizar pedidos, produtos, clientes e financeiro. Integre com seu ERP, CRM, BI ou com o fluxo que você já usa.
+
+Ver documentação
+Criar loja
+
+Disponível no plano INKrível.
+
+GET /v1/stores/orders
+curl https://api.reserva.ink/v1/stores/orders \
+  -H "Authorization: Bearer SEU_TOKEN"
+200 OK
+{
+  "orders": [{
+    "id": 12345,
+    "order_status": "awaiting_production",
+    "total_value": "159.80",
+    "buyer": { "first_name": "Ana" },
+    "items": [{ "sku": "CAM-P-PRETA", "quantity": 2 }]
+  }],
+  "page": 1,
+  "total_count": 24
+}
+
+Automatize a operação. Pedidos, pagamentos e entregas chegam em tempo real pelos webhooks e seguem sozinhos para os seus sistemas.
+
+Sem aprovação. Gere o token no painel, escolha só as permissões que a integração precisa e faça a primeira chamada no mesmo dia.
+
+Construa do seu jeito. API REST para pedidos, produtos, clientes, promoções, trocas e financeiro, com escopo por recurso.
+
+Feita para quem quer ir além do painel
+
+A mesma API atende quem tem a loja e quem trabalha para ela.
+
+PARA LOJISTAS
+
+Sua loja cresceu e o painel já não dá conta de tudo
+
+Leve pedidos, clientes e financeiro para o ERP, o CRM e o BI que você já usa. Automatize o que hoje é feito na mão, sem planilha no meio do caminho.
+
+PARA QUEM PRESTA SERVIÇO
+
+Você desenvolve para lojistas INK
+
+A documentação é aberta e você não precisa ser Expert INK. O lojista gera o token com as permissões que o projeto pede e você constrói a integração.
+
+5 coisas para montar com a API
+
+Integrações que lojistas já pedem, com o que cada uma usa e as ferramentas que funcionam bem com ela.
+
+Ver o passo a passo de cada uma
+01
+Comece por aqui
+
+Avisos de entrega por WhatsApp ou e-mail
+
+Avise o cliente quando o pedido sai, está a caminho e chega. Falha na entrega vai para o seu atendimento, não para uma mensagem automática.
+
+Webhook
+Take, Blip, Zenvia, Twilio
+02
+
+Recuperação de carrinho e pagamento
+
+Retome o contato com quem abandonou o carrinho, teve o cartão recusado ou deixou o Pix e o boleto expirarem.
+
+Webhook
+API
+Mailchimp, RD Station
+03
+
+Nota fiscal do lucro no Tiny
+
+Cada pagamento confirmado gera a nota do seu lucro no Olist Tiny, sem digitar pedido por pedido.
+
+Webhook
+API
+Olist Tiny
+04
+
+Dashboard de vendas no Looker Studio
+
+Troque o relatório semanal feito na mão por um painel que se atualiza sozinho: vendas por produto, coleção e promoção, conversão de carrinho e status de entrega.
+
+API
+Google Sheets, Looker Studio
+05
+
+Cadastro de produtos em massa
+
+Suba uma coleção inteira a partir de uma planilha, com categorias e promoções, em vez de cadastrar produto por produto.
+
+API
+n8n, Zapier, script
+O que a API cobre
+
+Consulte e altere os dados da loja pela API. Receba cada mudança em tempo real pelos webhooks.
+
+API REST
+
+leitura e escrita
+
+Pedidos
+read · write
+Pedidos externos
+read
+Produtos
+read · write
+Coleções e categorias
+read · write
+Promoções
+read · write
+Clientes
+read
+Carrinhos abandonados
+read
+Trocas
+read · write
+Reembolsos
+read
+Financeiro
+read
+Simulação de frete
+read
+Leads de newsletter
+read
+
+Financeiro inclui saldo, extrato, saques e antecipações.
+
+Ver todos os endpoints na referência
+
+Webhooks
+
+43 eventos
+
+eventos por grupo
+
+Pedido e pagamento
+13
+Envio
+6
+Pedidos externos
+9
+Carrinho
+1
+Trocas
+5
+Reembolsos
+3
+Avaliações
+2
+Financeiro
+4
+Ver os 43 eventos na documentação
+Para quem vai integrar
+
+O essencial em uma tela. Endpoints, parâmetros e exemplos de resposta estão na documentação.
+
+Abrir a referência da API
+
+REST e JSON
+
+Endpoints previsíveis, paginação por página e respostas em JSON.
+
+api.reserva.ink/v1/stores
+
+Token gerado no painel
+
+Sem aprovação e sem troca de client secret. O lojista gera a credencial e ela vale até ser revogada.
+
+Authorization: Bearer …
+
+Escopo por recurso
+
+Cada credencial recebe só as permissões de leitura ou escrita que a integração precisa.
+
+store.orders.read
+
+Webhooks assinados
+
+Cada entrega vem assinada para você confirmar que partiu da INK.
+
+X-Webhook-Signature
+
+100 requisições por minuto
+
+Limite por loja, compartilhado entre as credenciais. Acima disso a API responde 429.
+
+429 Too Many Requests
+
+Documentação pronta para IA
+
+Versão em texto puro para colar no Claude ou no ChatGPT e gerar fluxos no n8n ou scripts.
+
+llms-full.txt
+Como começar
+
+Da credencial à primeira chamada, sem esperar aprovação.
+
+1
+
+PASSO 1
+
+Assine o plano INKrível
+
+A API e os webhooks fazem parte do INKrível.
+
+2
+
+PASSO 2
+
+Gere a credencial
+
+No painel, em Credenciais de API, escolha só os escopos que a integração precisa. O token aparece uma única vez.
+
+3
+
+PASSO 3
+
+Cadastre os webhooks
+
+Se a integração reage a eventos, informe a URL que vai receber cada um deles.
+
+4
+
+PASSO 4
+
+Passe para quem vai integrar
+
+Envie o token e o link da documentação para o seu time ou para o profissional contratado.
+
+Ver documentação
+Conhecer o INKrível
+Fique por dentro das novidades!
+
+Receba novos recursos da API, eventos de webhook e guias de integração 🚀
+
+Deixe este campo em branco 
+E-mail *
+Quero me inscrever
+Concordo em receber comunicações da Reserva INK *
+Tire suas dúvidas
+Estou tendo problemas ao tentar assinar a Reserva INK
+
+Teve problemas ao tentar criar uma assinatura na Reserva INK? Responda o nosso formulário e o nosso time entrará em contato por email para te ajudar. Reporte o problema
+
+Preciso saber programar para usar a API?
+
+Não necessariamente. Ferramentas como n8n e Zapier recebem os webhooks e chamam a API sem código. A INK ainda não tem conector pronto nelas, então a configuração é feita com os blocos de webhook e requisição HTTP. Se preferir, cole a documentação em texto puro no Claude ou no ChatGPT e peça o fluxo.
+
+Não sou Expert INK. Posso integrar a loja de um cliente?
+
+Pode. A documentação é pública. O lojista gera uma credencial com os escopos que o projeto precisa e passa o token para você, junto com o link da documentação.
+
+Em qual plano a API está disponível?
+
+No plano INKrível. Se a loja mudar para um plano sem o recurso, as credenciais são revogadas automaticamente.
+
+O token expira?
+
+Não. Ele vale até ser revogado no painel. O token completo aparece uma única vez, logo depois de gerado: se perder, gere uma nova credencial e revogue a antiga. Os escopos também são fixos, então para mudar permissões basta gerar outra credencial.
+
+Existe limite de requisições?
+
+Sim, 100 requisições por minuto por loja, somando todas as credenciais. Acima disso a API responde 429 e a chamada deve ser repetida depois.
+
+Por onde é melhor começar?
+
+Pelo dashboard de vendas. Ele usa uma credencial só de leitura, então não há risco de alterar nada na loja enquanto você conhece a estrutura dos dados.
+
+Ver central de ajuda
+Comece a integrar hoje
+
+Gere a credencial no painel e faça a primeira chamada em minutos.
+
+Ver documentação
+Criar loja
+
+Somos o melhor lugar para quem quer criar a própria marca de camisetas e vender os próprios produtos.
+
+Rua Prefeito Olímpio de Melo, 1453
+CEP: 20930-004
+Arezzo Industrial e Comercio S.A.
+CNPJ: 16.590.234/0064-50
+
+
+RESERVA INK
+Planos e preços
+Entrar
+AJUDA E SUPORTE
+Fale conosco
+Central de ajuda
+EXPERTS
+Seja um parceiro
+Área do parceiro
+LEGAL
+Política de privacidade
+Termos de uso
+
+© 2023 Reserva INK, movido a pessoas incríveis.
+
+Teve problemas ao tentar assinar a Reserva INK?
+×
+
+LINKS:
+BEST FRIDAY
+Até 66% OFF em novas assinaturas · Vale até 30/11
+a melhor oportunid | https://reserva.ink/site/best-friday-26
+ | https://reserva.ink/site/
+Print on Demand | https://reserva.ink/site/print-on-demand
+Planos e Preços | https://reserva.ink/site/quanto-custa-reserva-ink
+Produtos | https://reserva.ink/site/produtos-fisicos
+ | https://www.youtube.com/watch?v=bFFjmwccJc4&list=PLrMW4sGPxhodMVvKhu6KIkTmqMBwu8WiP
+ | https://www.youtube.com/watch?v=fmXPmcTRTYs&list=PLrMW4sGPxhofqyTQuAMVmGkmKMo85DlvU
+Experts | https://reserva.ink/site/programa-de-experts-ink
+API | https://reserva.ink/site/api
+Acessar minha loja | https://reserva.ink/user/dashboard/ink_panel
+Crie sua loja agora | https://reserva.ink/site/quanto-custa-reserva-ink
+Print on Demand | https://reserva.ink/site/print-on-demand
+Planos e Preços | https://reserva.ink/site/quanto-custa-reserva-ink
+Produtos | https://reserva.ink/site/produtos-fisicos
+Cases Inkríveis | https://www.youtube.com/watch?v=bFFjmwccJc4&list=PLrMW4sGPxhodMVvKhu6KIkTmqMBwu8WiP
+Podcasts | https://www.youtube.com/watch?v=fmXPmcTRTYs&list=PLrMW4sGPxhofqyTQuAMVmGkmKMo85DlvU
+Experts | https://reserva.ink/site/programa-de-experts-ink
+API | https://reserva.ink/site/api
+Acessar minha loja | https://reserva.ink/user/dashboard/ink_panel
+Crie sua loja agora | https://reserva.ink/site/quanto-custa-reserva-ink
+Ver documentação | https://developers.reserva.ink/
+Criar loja | https://reserva.ink/site/quanto-custa-reserva-ink
+Ver o passo a passo de cada uma | https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/articles/1788457980-cinco-coisas-para-montar-com-a-api-ink-e-o-webhook
+Ver todos os endpoints na referência | https://developers.reserva.ink/referencia/
+Ver os 43 eventos na documentação | https://developers.reserva.ink/guias/webhooks#catalogo-de-eventos
+Abrir a referência da API | https://developers.reserva.ink/referencia/
+api.reserva.ink/v1/stores | https://developers.reserva.ink/referencia/
+Authorization: Bearer … | https://developers.reserva.ink/guias/autenticacao
+store.orders.read | https://developers.reserva.ink/guias/escopos
+X-Webhook-Signature | https://developers.reserva.ink/guias/webhooks
+429 Too Many Requests | https://developers.reserva.ink/guias/convencoes#limites-de-requisicao-rate-limits
+llms-full.txt | https://developers.reserva.ink/llms-full.txt
+Ver documentação | https://developers.reserva.ink/
+Conhecer o INKrível | https://reserva.ink/site/quanto-custa-reserva-ink
+Reporte o problema | https://tally.so/r/0V7eoZ
+Ver central de ajuda | https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/pt_BR/categories/api-e-webhook
+Ver documentação | https://developers.reserva.ink/
+Criar loja | https://reserva.ink/site/quanto-custa-reserva-ink
+ | https://www.youtube.com/channel/UCu5rdgsczoSv4opPUvV_vhQ
+ | https://www.instagram.com/reserva.ink/
+ | https://br.linkedin.com/company/reserva-ink
+ | https://www.facebook.com/reserva.ink/
+Planos e preços | https://reserva.ink/site/quanto-custa-reserva-ink
+Entrar | https://reserva.ink/user/dashboard/ink_panel
+Fale conosco | https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/pt_BR
+Central de ajuda | https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/pt_BR
+Seja um parceiro | https://reserva.ink/site/programa-de-experts-ink
+Área do parceiro | https://cloudchat3.cloudhumans.com/hc/experts-ink/pt_BR
+Política de privacidade | https://reserva.ink/site/politica-de-privacidade
+Termos de uso | https://reserva.ink/site/termos-de-uso
+Confirmar minha inscrição | https://chat.whatsapp.com/C6FXmNZ446hF1b5NpCWMtL?s=cl&p=i&mlu=4&ilr=4&iam=0
+Confirme sua inscrição | https://chat.whatsapp.com/CCiyQSomYFYJajG4tMKAzx?s=cl&p=i&mlu=4&ilr=4&iam=0
+Quero meu desconto | https://reserva.ink/site/best-friday-26
+Central de Ajuda | https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/pt_BR
