@@ -916,3 +916,31 @@ if task == "montink7":
             except Exception as e:
                 save(f"montink/z_{k}.txt", f"URL: {u}\nERROR: {e}")
         b.close()
+
+if task == "montink8":
+    H = {"Authorization": "Bearer " + os.environ.get("GH_TOKEN", ""), "User-Agent": "probe"}
+    FILES = ["MyBoxStorage/bravos:MONTINK_INTEGRATION_REPORT.md", "MyBoxStorage/bravos:MONTINK_SUPPORT_REQUEST_TEMPLATE.md", "MyBoxStorage/bravos:server/integrations/montink/client.ts", "MyBoxStorage/bravos:server/integrations/montink/orders.ts",
+             "brunoapolinariodev/montink_erp:internal/montink/client.go", "arthurreiscdg/BACKENDCDG:docs/sistema-montink.md",
+             "arthurreiscdg/CDGPRODUCAOBACK:CDGPRODUCAO/pedidosMontink/views/webhook_receber.py", "arthurreiscdg/CDGPRODUCAOBACK:CDGPRODUCAO/pedidosMontink/serializers/webhook_serializers.py", "arthurreiscdg/CDGPRODUCAOBACK:CDGPRODUCAO/pedidosMontink/services/webhook_service.py"]
+    for f in FILES:
+        repo, path = f.split(":", 1)
+        for br in ("HEAD", "main", "master"):
+            try:
+                r = requests.get(f"https://raw.githubusercontent.com/{repo}/{br}/{path}", headers=H, timeout=30)
+            except Exception as e:
+                print("ERR", e); continue
+            if r.status_code == 200:
+                save("montink/gh_ext/" + repo.replace("/", "__") + "__" + path.replace("/", "__"), r.text[:120000]); break
+        else: print("miss", f)
+    # more code search for api shape
+    for q in ['"Authorizationtoken" montink', 'montink create_order', 'montink calculate_shipping', '"api.montink.com"', 'montink linkRastreio', 'montink mercadolivre OR "mercado livre" pedido']:
+        try:
+            r = requests.get("https://api.github.com/search/code", headers={**H, "Accept": "application/vnd.github+json"}, params={"q": q, "per_page": 30}, timeout=30)
+            print(q, r.status_code)
+            if r.status_code == 200:
+                save("montink/ghs2_" + re.sub(r"[^a-z0-9]+", "_", q.lower())[:40] + ".json", {"total": r.json().get("total_count"), "items": [(i["repository"]["full_name"], i["path"], i["html_url"]) for i in r.json().get("items", [])]})
+        except Exception as e: print("ERR", e)
+        time.sleep(8)
+    for k, u in {"api_root": "https://api.montink.com/", "api_docs": "https://admin.montink.com/apiMontink/docs", "api_docs2": "https://admin.montink.com/apiMontink/docs/", "api_products": "https://api.montink.com/products", "api_shipping": "https://api.montink.com/calculate_shipping/01310100/1", "api_swagger": "https://api.montink.com/docs", "api_swagger2": "https://api.montink.com/swagger.json", "api_openapi": "https://api.montink.com/openapi.json"}.items():
+        r = get(u)
+        save(f"montink/api_{k}.txt", f"URL: {u}\nSTATUS: {r.status_code if r is not None else None}\nHEADERS: {dict(r.headers) if r is not None else ''}\n\n{(r.text[:20000] if r is not None else '')}")
