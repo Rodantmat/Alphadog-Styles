@@ -497,3 +497,37 @@ if task == "ownship":
                 print("PWERR", u, e)
                 save(f"ownship/{slug2(u)}.txt", f"URL: {u}\nERROR: {e}")
     pw_run(run)
+
+if task == "montink":
+    # Public pages / public Zendesk help-center JSON only. No login.
+    import urllib.parse
+    ZD = "https://montinkhelp.zendesk.com"
+    # 1) full dump of public help-center articles (JSON API is public for HC)
+    arts = []
+    url = f"{ZD}/api/v2/help_center/pt-br/articles.json?per_page=100"
+    for _ in range(30):
+        r = get(url)
+        if r is None or r.status_code != 200:
+            save("montink/zd_articles_error.txt", f"{url}\n{r.status_code if r is not None else None}\n{(r.text[:500] if r is not None else '')}")
+            break
+        j = r.json()
+        arts += j.get("articles", [])
+        url = j.get("next_page")
+        if not url: break
+    print("zendesk articles", len(arts))
+    index = []
+    for a in arts:
+        index.append({"id": a["id"], "title": a["title"], "url": a["html_url"], "updated": a.get("updated_at"), "section": a.get("section_id")})
+        save(f"montink/zd/{a['id']}.txt", f"URL: {a['html_url']}\nTITLE: {a['title']}\nUPDATED: {a.get('updated_at')}\n\n{text_of_html(a.get('body') or '')}")
+    save("montink/zd_index.json", index)
+    for kind in ("categories", "sections"):
+        r = get(f"{ZD}/api/v2/help_center/pt-br/{kind}.json?per_page=100")
+        if r is not None and r.status_code == 200: save(f"montink/zd_{kind}.json", r.text)
+    for q in ["mercado livre", "marketplace", "shopee", "amazon", "tiktok", "etiqueta", "nota fiscal", "NF-e", "API", "webhook", "dropshipping", "envio", "frete", "mercado envios", "plano", "taxa", "comissão", "prazo", "produção", "defeito", "cancelamento", "pedido mínimo", "integração", "bling", "nuvemshop", "shopify"]:
+        r = get(f"{ZD}/api/v2/help_center/articles/search.json?query={urllib.parse.quote(q)}&locale=pt-br&per_page=25")
+        if r is not None and r.status_code == 200:
+            hits = [(x["id"], x["title"], x["html_url"]) for x in r.json().get("results", [])]
+            save(f"montink/zd_search_{re.sub(r'[^a-z0-9]+','_',q.lower())}.json", hits)
+            print("search", q, len(hits))
+        else:
+            print("search fail", q, r.status_code if r is not None else None)
