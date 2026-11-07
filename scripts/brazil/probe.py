@@ -751,3 +751,41 @@ if task == "prod2":
                 print("PWERR", u, e)
                 save(f"prod2/{slug(u)}.txt", f"URL: {u}\nERROR: {str(e)[:300]}")
     pw_run(run)
+
+if task == "montink4":
+    URLS = {
+     "ra_faq": "https://www.reclameaqui.com.br/empresa/montink_190944/faq/o-que-e-como-funciona-a-montink_vFr4kWQeov5GYxYL/",
+     "ra_home": "https://www.reclameaqui.com.br/empresa/montink_190944/",
+     "ra_lista": "https://www.reclameaqui.com.br/empresa/montink_190944/lista-reclamacoes/",
+     "ra_sobre": "https://www.reclameaqui.com.br/empresa/montink_190944/sobre/",
+     "printiplus": "https://sou.montink.com/printiplus/",
+     "hotmart": "https://sou.montink.com/hotmart/",
+     "blog_cafe": "https://blog.montink.com/print-on-demand-aprenda-como-criar-produtos-personalizados-para-seu-canal-sobre-cafe/",
+     "blog_pet": "https://blog.montink.com/print-on-demand-com-foco-em-produtos-para-pets-oportunidade-subexplorada/",
+     "yt_channel": "https://www.youtube.com/@montinkoficial/videos",
+     "yt_search3": "https://www.youtube.com/results?search_query=montink+dropshipping+como+funciona",
+     "nuvem_ml": "https://www.nuvemshop.com.br/blog/nuvemshop-mercado-livre/",
+     "ecomprat_pod": "https://ecommercenapratica.com/blog/plataformas-de-print-on-demand/",
+     "ddg_ra": "https://html.duckduckgo.com/html/?q=reclameaqui+montink+reclama%C3%A7%C3%B5es+nota+reputa%C3%A7%C3%A3o",
+     "ddg_jc": "https://html.duckduckgo.com/html/?q=montink+%22mercado+livre%22+%22print+on+demand%22+como+vender",
+     "ddg_pet": "https://html.duckduckgo.com/html/?q=montink+prazo+de+produ%C3%A7%C3%A3o+dias+%C3%BAteis+dropshipping+defeito+troca",
+     "ddg_fire": "https://html.duckduckgo.com/html/?q=fire.montink.com",
+     "mk_fire": "https://fire.montink.com/6/fimdeanomontink",
+     "mk_cat": "https://montink.com.br/dropshipping",
+    }
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA, locale="pt-BR", viewport={"width":1366,"height":900})
+        for k, u in URLS.items():
+            try:
+                page = ctx.new_page()
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000)
+                page.wait_for_timeout(4500)
+                txt = page.inner_text("body")
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,100),e.href])")
+                save(f"montink/y_{k}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:40000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs[:150]))
+                page.close()
+            except Exception as e:
+                save(f"montink/y_{k}.txt", f"URL: {u}\nERROR: {e}")
+        b.close()
