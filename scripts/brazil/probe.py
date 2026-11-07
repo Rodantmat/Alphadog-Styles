@@ -475,7 +475,13 @@ if task == "ownship":
             "https://api.mercadolibre.com/categories/MLB1430/shipping_preferences",
             "https://api.mercadolibre.com/sites/MLB",
             "https://api.mercadolibre.com/shipping_methods",
-            "https://api.mercadolibre.com/sites/MLB/shipping_modes"]
+            "https://api.mercadolibre.com/sites/MLB/shipping_modes",
+            "https://api.mercadolibre.com/categories/MLB31447/attributes",
+            "https://api.mercadolibre.com/categories/MLB31447/sale_terms",
+            "https://api.mercadolibre.com/sites/MLB/categories",
+            "https://api.mercadolibre.com/categories/MLB1430",
+            "https://api.mercadolibre.com/categories/MLB264052",
+            "https://api.mercadolibre.com/categories/MLB1055"]
     for u in apis:
         r = get(u)
         save(f"ownship/api_{slug2(u)}.txt", f"URL: {u}\nSTATUS: {r.status_code if r is not None else None}\n\n" + (r.text[:20000] if r is not None else ""))
