@@ -118,7 +118,7 @@
    "date": "2026-11-15",
    "weekday": "Sun",
    "A": {
-    "video": null,
+    "video": "social/videos/d7b_which_back_edition.mp4",
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
@@ -126,13 +126,13 @@
     "reel": "out/postb2/b15/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A TODO (d7 variant); B built"
+   "status": "built"
   },
   {
    "date": "2026-11-16",
    "weekday": "Mon",
    "A": {
-    "video": null,
+    "video": "social/videos/laugh01_hotdog_v1.mp4",
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
@@ -140,7 +140,7 @@
     "reel": "out/postb2/b16/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A TODO (laugh01 4-dog, new joke via build.py); B built"
+   "status": "built"
   },
   {
    "date": "2026-11-17",
@@ -150,11 +150,11 @@
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
-    "id": null,
-    "reel": null,
+    "id": "b17",
+    "reel": "out/postb2/b17/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "TODO"
+   "status": "B built; A TODO (no unused music left)"
   },
   {
    "date": "2026-11-18",

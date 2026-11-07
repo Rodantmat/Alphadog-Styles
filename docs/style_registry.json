@@ -30,5 +30,34 @@
    "wtank/boxer/2LO",
    "cap_dad/shiba_inu/1DS"
   ]
+ },
+ {
+  "date": "2026-11-15",
+  "type": "d7b",
+  "name": "d7b_which_back_edition",
+  "bg": "bg_117 isocubes, bg_181 voronoi, bg_141 synthwave, bg_173 papercut",
+  "music": "m29",
+  "merch": [
+   "hoodie/german_shepherd/1SA_back",
+   "cap_foam/pembroke_welsh_corgi/2FP",
+   "wtank/french_bulldog/1MI_back",
+   "tee/rottweiler/5CR"
+  ]
+ },
+ {
+  "date": "2026-11-16",
+  "type": "laugh4",
+  "name": "laugh01_hotdog_v1",
+  "bg": "chevron navy seed7",
+  "music": "m02",
+  "laugh": "423",
+  "joke": "dog in shade / hot dog",
+  "merch": [
+   "tee/dachshund/4BK_back",
+   "hoodie/golden_retriever/3SA_back",
+   "tank/beagle/2HE",
+   "wtank/poodle/1TB",
+   "cap_dad/boxer/1DK"
+  ]
  }
 ]

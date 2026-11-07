@@ -27,3 +27,10 @@
 - d6b_neon_husky (Sat Nov 14): m27 "Need for speed"
 - Post B b13: m07 "C.B.P.D", b14: m20, b15: m14 "Complicated", b16: m24
 - laugh02_pupperoni_v3 (replaces v2, Thu Nov 12): m00 (v2 may have shared m12 with d5)
+
+## 2026-11-07 generator run
+- d7b_which_back_edition (Nov 15): m29 Midnight Funk
+- laugh01_hotdog_v1 (Mon Nov 16): m02 Deep Urban, laugh track 423
+- Post B b17 (Nov 17): m10 Autofahren
+- Post B b13/b15/b16 rebuilt (banned breeds removed, prints visible) with the same music as before (m07, m14, m24)
+- ALL 30 out/music2 tracks are now used; Mixkit download is blocked from the cloud (403). Owner must add new tracks (out/music2) for Tue Nov 17 A onward.
