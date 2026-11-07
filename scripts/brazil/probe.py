@@ -944,3 +944,23 @@ if task == "montink8":
     for k, u in {"api_root": "https://api.montink.com/", "api_docs": "https://admin.montink.com/apiMontink/docs", "api_docs2": "https://admin.montink.com/apiMontink/docs/", "api_products": "https://api.montink.com/products", "api_shipping": "https://api.montink.com/calculate_shipping/01310100/1", "api_swagger": "https://api.montink.com/docs", "api_swagger2": "https://api.montink.com/swagger.json", "api_openapi": "https://api.montink.com/openapi.json"}.items():
         r = get(u)
         save(f"montink/api_{k}.txt", f"URL: {u}\nSTATUS: {r.status_code if r is not None else None}\nHEADERS: {dict(r.headers) if r is not None else ''}\n\n{(r.text[:20000] if r is not None else '')}")
+
+if task == "montink9":
+    r = get("https://admin.montink.com/apiMontink/docs")
+    if r is not None: save("montink/api_docs_full.html", r.text)
+    for k, u in {"sak_api": "https://montink.sak.com.br/integracao-da-montink-via-api", "postman_view": "https://documenter.getpostman.com/view/32162527/2sAYkGJyWE"}.items():
+        r = get(u)
+        save(f"montink/api_{k}.html", f"URL: {u}\nSTATUS: {r.status_code if r is not None else None}\n\n{(r.text[:300000] if r is not None else '')}")
+    # Postman documenter public JSON
+    for u in ["https://documenter.gw.postman.com/api/collections/32162527/2sAYkGJyWE?segregateAuth=true&versionTag=latest", "https://documenter.getpostman.com/api/collections/32162527/2sAYkGJyWE"]:
+        r = get(u)
+        save("montink/api_postman_" + str(abs(hash(u)) % 1000) + ".json", f"URL: {u}\nSTATUS: {r.status_code if r is not None else None}\n\n{(r.text[:400000] if r is not None else '')}")
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch(); ctx = b.new_context(user_agent=UA, locale="pt-BR")
+        for k, u in {"postman_pw": "https://documenter.getpostman.com/view/32162527/2sAYkGJyWE", "sak_pw": "https://montink.sak.com.br/integracao-da-montink-via-api"}.items():
+            try:
+                pg = ctx.new_page(); pg.goto(u, wait_until="networkidle", timeout=60000); pg.wait_for_timeout(5000)
+                save(f"montink/api_{k}.txt", f"URL: {u}\nTITLE: {pg.title()}\n\n{pg.inner_text('body')[:100000]}")
+            except Exception as e: save(f"montink/api_{k}.txt", f"ERR {e}")
+        b.close()
