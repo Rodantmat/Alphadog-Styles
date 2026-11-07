@@ -263,3 +263,59 @@ if task == "dimona3":
                     save("dimona/catalog/" + re.sub(r"\W+", "_", h)[-60:] + ".html.txt", text_of_html(r.text)[:20000])
             except Exception as e:
                 print("ERR", h, e)
+
+if task == "alt":
+    # Alternatives research: fetch public pages with plain requests first, playwright fallback. Only public pages, no login.
+    URLS = {
+     "montink_home": "https://montink.com.br/",
+     "montink_drop": "https://montink.com.br/dropshipping",
+     "montink_integ": "https://montink.com.br/integracoes",
+     "montink_precos": "https://montink.com.br/precos",
+     "montink_api": "https://montink.com.br/api",
+     "montink_dev": "https://developers.montink.com.br/",
+     "montink_ajuda": "https://ajuda.montink.com.br/",
+     "montink_help": "https://suporte.montink.com.br/",
+     "montink_faq": "https://montink.com.br/faq",
+     "gelato_br": "https://www.gelato.com/print-on-demand/brazil",
+     "gelato_hook": "https://developers.gelato.com/docs/webhooks",
+     "gelato_orders": "https://developers.gelato.com/docs/orders/order_details/",
+     "gelato_dev": "https://developers.gelato.com/",
+     "gelato_pricing": "https://www.gelato.com/pricing",
+     "gelato_shipping": "https://support.gelato.com/en/articles/8996576-how-do-i-configure-notifications-webhooks",
+     "printful_v2": "https://developers.printful.com/docs/v2-beta/",
+     "printful_br": "https://www.printful.com/br",
+     "printify_br": "https://help.printify.com/hc/en-us/articles/4483619306513-Which-countries-does-Printify-ship-to",
+     "umapenca": "https://www.umapenca.com.br/",
+     "umapenca_api": "https://www.umapenca.com.br/api",
+     "reservaink": "https://www.reservaink.com.br/",
+     "hayamax": "https://www.hayamax.com.br/",
+     "dslite": "https://www.dslite.com.br/",
+     "printi": "https://www.printi.com.br/",
+     "camiseteria": "https://www.camiseteria.com.br/",
+     "estampaja": "https://www.estampaja.com.br/",
+     "ml_mcp_docs": "https://developers.mercadolivre.com.br/pt_br/server-mcp",
+     "ml_mcp_docs2": "https://developers.mercadolivre.com.br/server-mcp",
+     "ml_mcp_repo_readme": "https://raw.githubusercontent.com/mercadolibre/mercadolibre-mcp-server/main/README.md",
+     "newerton_readme": "https://raw.githubusercontent.com/newerton/mcp-mercado-livre/main/README.md",
+     "docker_ml_mcp": "https://hub.docker.com/mcp/server/mercado-libre/overview",
+     "smithery_ml": "https://smithery.ai/server/lumile/mercadolibre-mcp",
+    }
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA, locale="pt-BR", viewport={"width":1366,"height":900})
+        for k, u in URLS.items():
+            try:
+                r = get(u)
+                if r is not None and r.status_code == 200 and "raw.githubusercontent" in u:
+                    save(f"alt/{k}.txt", f"URL: {u}\nSTATUS: 200\n\n{r.text}"); continue
+                page = ctx.new_page()
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000)
+                page.wait_for_timeout(4000)
+                txt = page.inner_text("body")
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,80),e.href])")
+                save(f"alt/{k}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nREQ_STATUS: {r.status_code if r is not None else None}\nTITLE: {page.title()}\n\n{txt[:30000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs[:200]))
+                page.close()
+            except Exception as e:
+                save(f"alt/{k}.txt", f"URL: {u}\nERROR: {e}")
+        b.close()
