@@ -464,3 +464,30 @@ if task == "alt4":
             except Exception as e:
                 save(f"alt/{k}.txt", f"URL: {u}\nERROR: {e}")
         b.close()
+
+if task == "ownship":
+    def slug2(u):
+        return re.sub(r"[^A-Za-z0-9]+", "_", u.split("://",1)[-1])[:110]
+    apis = ["https://api.mercadolibre.com/sites/MLB/shipping_methods",
+            "https://api.mercadolibre.com/sites/MLB/shipping_options",
+            "https://api.mercadolibre.com/categories/MLB31447/shipping_preferences",
+            "https://api.mercadolibre.com/categories/MLB31447",
+            "https://api.mercadolibre.com/categories/MLB1430/shipping_preferences",
+            "https://api.mercadolibre.com/sites/MLB",
+            "https://api.mercadolibre.com/shipping_methods",
+            "https://api.mercadolibre.com/sites/MLB/shipping_modes"]
+    for u in apis:
+        r = get(u)
+        save(f"ownship/api_{slug2(u)}.txt", f"URL: {u}\nSTATUS: {r.status_code if r is not None else None}\n\n" + (r.text[:20000] if r is not None else ""))
+    def run(page):
+        urls = [l.strip() for l in open("scripts/brazil/ownship_urls.txt") if l.strip() and not l.startswith("#")]
+        for u in urls:
+            try:
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=45000)
+                page.wait_for_timeout(3500)
+                txt = page.inner_text("body")
+                save(f"ownship/{slug2(u)}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:150000]}")
+            except Exception as e:
+                print("PWERR", u, e)
+                save(f"ownship/{slug2(u)}.txt", f"URL: {u}\nERROR: {e}")
+    pw_run(run)
