@@ -411,3 +411,18 @@ if task == "alt2":
             except Exception as e:
                 save(f"alt/{k}.txt", f"URL: {u}\nERROR: {e}")
         b.close()
+
+if task == "alt3":
+    for k, u in {"rink_llms_full": "https://developers.reserva.ink/llms-full.txt",
+                 "rink_llms": "https://developers.reserva.ink/llms.txt",
+                 "rink_dev_home": "https://developers.reserva.ink/",
+                 "rink_dev_webhooks": "https://developers.reserva.ink/guias/webhooks",
+                 "rink_dev_ref": "https://developers.reserva.ink/referencia/",
+                 "printful_llms": "https://developers.printful.com/llms.txt",
+                 "gelato_llms": "https://dashboard.gelato.com/docs/llms.txt",
+                 }.items():
+        r = get(u)
+        if r is None:
+            save(f"alt/{k}.txt", f"URL: {u}\nERR"); continue
+        body = r.text if "html" not in r.headers.get("content-type", "") else text_of_html(r.text)
+        save(f"alt/{k}.txt", f"URL: {u}\nSTATUS: {r.status_code}\nCT: {r.headers.get('content-type')}\n\n{body[:900000]}")
