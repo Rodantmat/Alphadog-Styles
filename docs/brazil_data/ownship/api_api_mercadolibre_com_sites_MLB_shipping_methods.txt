@@ -1,0 +1,4 @@
+URL: https://api.mercadolibre.com/sites/MLB/shipping_methods
+STATUS: 403
+
+{"message":"At least one policy returned UNAUTHORIZED.","code":"PA_UNAUTHORIZED_RESULT_FROM_POLICIES","status":403,"blocked_by":"PolicyAgent"}

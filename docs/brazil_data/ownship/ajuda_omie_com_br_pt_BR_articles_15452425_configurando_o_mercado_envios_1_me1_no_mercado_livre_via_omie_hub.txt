@@ -1,0 +1,269 @@
+URL: https://ajuda.omie.com.br/pt-BR/articles/15452425-configurando-o-mercado-envios-1-me1-no-mercado-livre-via-omie-hub
+STATUS: 200
+TITLE: Configurando o Mercado Envios 1 (ME1) no Mercado Livre via Omie.HUB | Ajuda Omie
+
+Passar para o conteúdo principal
+Omie.CASH
+Omie.Store
+Para Desenvolvedores
+Pesquisar artigos...
+Todas as coleções
+Omie.HUB
+Marketplaces
+Mercado Livre
+Configurando o Mercado Envios 1 (ME1) no Mercado Livre via Omie.HUB
+Configurando o Mercado Envios 1 (ME1) no Mercado Livre via Omie.HUB
+
+Neste artigo, descubra como ativar e configurar o Mercado Envios 1 (ME1) no Omie.HUB.
+
+Escrito por Pedro Freitas
+11 de junho de 2026
+
+O Mercado Envios 1 (ME1) é uma modalidade logística do Mercado Livre em que o próprio vendedor é responsável pelo processo de envio dos pedidos. Nesse modelo, a empresa define como realizará as entregas, gerencia os códigos de rastreio e acompanha as movimentações logísticas até a conclusão da entrega.
+
+ 
+
+Para que a operação funcione corretamente, é necessário que os anúncios estejam configurados para utilizar o Mercado Envios 1 (ME1). Além disso, a integração deve estar preparada para comunicar ao Mercado Livre as informações de faturamento, rastreamento e status dos pedidos ao longo do fluxo de venda.
+
+ 
+
+Por meio do Omie.HUB, é possível ativar e gerenciar o Mercado Envios 1 (ME1) nos anúncios, configurar as etapas responsáveis pela atualização dos status logísticos e automatizar o envio de Notas Fiscais e códigos de rastreio para o Mercado Livre, centralizando o gerenciamento da operação em um único ambiente. 🚀
+
+ 
+
+Tópicos do Artigo: 
+
+Ativando o Mercado Envios 1 (ME1) no Anúncio
+
+Configurando as Etapas dos Pedidos e o Envio da NF-e
+
+Acompanhando o Envio da Nota Fiscal ao Mercado Livre
+
+ 
+
+ 
+
+Ativando o Mercado Envios 1 (ME1) no Anúncio
+
+ 
+
+Ao ativar o Mercado Envios 1 (ME1) pelo Omie.HUB, o anúncio passa a operar sob esta modalidade logística no Mercado Livre, habilitando o envio das dimensões do Produto para o cálculo correto de frete e permitindo o gerenciamento de toda a entrega diretamente pelo Omie.
+
+ 
+
+⚠️ Atenção às regras de elegibilidade da modalidade:
+
+Antes de iniciar a configuração do ME1 no Omie, é necessário garantir que o seu anúncio atenda aos critérios exigidos pelo Mercado Livre.
+
+O vendedor precisa possuir elegibilidade para envio via ME1.
+
+O item deve ser elegível para utilização dessa modalidade.
+
+O anúncio deve estar configurado com a modalidade de envio "Custom" ou "A combinar com o vendedor".
+
+O produto deve respeitar os limites máximos permitidos (Altura máxima de 500 cm, comprimento máximo de 500 cm, largura máxima de 500 cm e peso máximo de 500 kg).
+
+Anúncios elegíveis para Mercado Envios 2 (ME2) não podem ser ativados na modalidade ME1.
+
+ 
+
+1) Após efetuar o login no Omie.Hub, selecione a loja do Mercado Livre de interesse:
+
+ 
+
+ 
+
+2) Agora, no menu lateral esquerdo, clique em "Produtos" (1) e, em seguida, navegue até a aba "Publicados" (2):
+
+ 
+
+ 
+
+3) Para ajustar, selecione o item de interesse:
+
+ 
+
+ 
+
+4) Acesse a aba "Ações" (1) e clique em "Ativar e Reenviar Dimensões ME1" (2):
+
+ 
+
+ 
+
+5) Então será apresentada a seguinte mensagem em tela confirmando que o anúncio foi atualizado com sucesso para o Mercado Envios 1 (ME1):
+
+ 
+
+ 
+
+6) Pronto. O anúncio estará com a modalidade de envio (ME1) e as dimensões do item serão reenviadas automaticamente ao Mercado Livre. Agora, configure as Etapas dos Pedidos e o Envio da NF-e ao Mercado Livre. 🚀
+
+ 
+
+ 
+
+Configurando as Etapas dos Pedidos e o Envio da NF-e
+
+ 
+
+Essa configuração permite que o Mercado Livre e o cliente final sejam notificados sempre que o Omie.ERP registrar que um Pedido do ME1 foi despachado ou entregue. A Nota Fiscal da venda também é enviada automaticamente ao Mercado Livre, mantendo as informações da operação atualizadas e centralizadas.
+
+1) Após efetuar o login no Omie.Hub, selecione a loja do Mercado Livre de interesse:
+
+ 
+
+ 
+
+2) Agora, no menu lateral esquerdo, clique em "Lojas" (1) e clique em "Gerenciar" (2):
+
+ 
+
+ 
+
+3) Clique em "Editar" na opção correspondente à loja de interesse do Mercado Livre: 
+
+ 
+
+ 
+
+4) Então, preencha os campos Etapa do Pedido (Inclusão) (1), Etapa do Pedido (Enviado) (2) e Etapa do Pedido (Entregue) (3):
+
+ 
+
+⚠️ Preenchimento dos campos:
+
+ 
+
+Para realizar o preenchimento dos respectivos campos entre em contato com o Suporte do Omie.HUB.
+
+ 
+
+Entre em contato com o Suporte do Omie.Hub, através dos canais: 
+
+Telefone: 0800 942 7592 
+
+E-mail: omie.hub@omie.com.br 
+
+Através do chat do Omie.Hub
+
+ 
+
+ 
+
+ 5) Após o preenchimento dos campos, ao final da tela clique em "Salvar":
+
+ 
+
+ 
+
+6) Pronto. Após contar com o auxílio do time de Suporte para a configuração da funcionalidade, acompanhe o envio da Nota Fiscal ao Mercado Livre.
+
+ 
+
+ 
+
+Acompanhando o Envio da Nota Fiscal ao Mercado Livre
+
+ 
+
+Quando um Pedido de Venda do ME1 for faturado no Omie.ERP, a Nota Fiscal será transmitida automaticamente ao Mercado Livre pelo Omie.HUB. Para acompanhar o envio no Omie.HUB, acompanhe o status da NF-e nos detalhes do Pedido seguindo esses passos.
+
+ 
+
+⚠️Ponto de atenção para rastreio
+
+Para que ocorra a atualização do status de envio e a comunicação de "Despachado" (Shipped) com o Mercado Livre, é obrigatório que o Pedido possua um código de rastreio devidamente preenchido no Omie.ERP. Confira como realizar o preenchimento desse campo no artigo abaixo:
+
+ 
+
+Informando os Dados de Despacho no Pedido de Venda
+
+ 
+
+1) Após efetuar o login no Omie.Hub, selecione a loja do Mercado Livre de interesse:
+
+ 
+
+ 
+
+2) No menu lateral esquerdo, clique em "Pedidos" (1) e, em seguida, clique nos três pontinhos, em "Ações" (2):
+
+ 
+
+ 
+
+3) Então clique em "Visualizar" para abrir a tela de Detalhes do Pedido:
+
+ 
+
+ 
+
+4) Após o envio, o Pedido passará a exibir o status "Nota fiscal enviada para o Marketplace":
+
+ 
+
+ 
+
+5) No Omie.ERP, ao movimentar o pedido para a etapa configurada no campo Enviado, o Omie.HUB atualizará automaticamente a situação do pedido para Despachado (Shipped) no Mercado Livre. 
+
+ 
+
+Após a sincronização, o status "Despachado" será exibido nos detalhes do pedido:
+
+ 
+
+ 
+
+💡Etapa "Entregue"
+
+A configuração da etapa Entregue é opcional. Quando definida, sempre que o pedido for movimentado para essa etapa no Omie.ERP, o Omie.HUB atualizará automaticamente a situação do pedido para Pedido Entregue (Delivered) no Mercado Livre.
+
+ 
+
+6) Pronto. Seguindo esses passos, as etapas dos Pedidos terão sido configuradas no Omie.HUB, permitindo a atualização automática dos status de envio e entrega no Mercado Livre, além do envio da Nota Fiscal após o faturamento do Pedido de Venda no Omie.ERP. 🚀 
+
+ 
+
+📚 Artigos Relacionados:
+
+Coleção: Omie.Hub
+
+Configurando o Marketplace - Mercado Livre
+
+Migrando o Tipo de Envio do Anúncio do Mercado Livre via Omie.Hub
+
+ 
+
+Respondeu à sua pergunta?
+Reação de decepção
+😞
+Reação neutra
+😐
+Reação sorridente
+😃
+Tópicos do Artigo:
+Ativando o Mercado Envios 1 (ME1) no Anúncio
+Configurando as Etapas dos Pedidos e o Envio da NF-e
+Acompanhando o Envio da Nota Fiscal ao Mercado Livre
+Conheça as nossas redes sociais:
+
+Fale Conosco
+
+Suporte
+
+Acesse o Omie
+
+Meus Aplicativos
+Treinamentos
+
+Sobre nós
+
+Omie
+Quem somos
+Blog
+Segurança e Privacidade
+
+Educação Empreendedora
+
+Omie.Academy

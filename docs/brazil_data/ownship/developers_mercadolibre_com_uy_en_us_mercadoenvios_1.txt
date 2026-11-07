@@ -1,0 +1,855 @@
+URL: https://developers.mercadolibre.com.uy/en_us/mercadoenvios-1
+STATUS: 200
+TITLE: Mercado Envios 1
+
+Developers
+About us
+API Docs
+Support
+News
+Login
+API Docs
+Mercado Envios 1
+
+Documentation Mercado Libre
+
+Check out all the necessary information about APIs Mercado Libre.
+
+Documentation
+
+Mercado Libre MCP Server
+Getting started
+Create an application on Mercado Libre
+Secure development
+CyberSecurity Practices
+Validations and security requirements
+Authorization and Token Recommendations
+Manage your applications
+Authentication and Authorization
+Start testing
+Listing validator
+Validate seller's information
+Design considerations
+Manage an application IPs
+Support for Integrators
+Developer Partner Program
+Developer Partner Program
+API resources
+Users
+Users & Apps
+Manage users
+User´s addresess
+Bookmarks
+Attributes
+Domains and Categories
+Locations & Currencies
+Items & Searches
+Questions & Answers
+Orders & Feedback
+Metrics
+Shipping
+Notifications
+Sellers news
+Moderations
+Manage moderations
+Moderation with pause
+Image diagnostics
+Image Moderation
+Brand Protection Program
+Whats is Brand Protection Program?
+Member of the program
+Complained publications
+Guide for products
+Introduction
+Distributed Stock
+Multi-Origin Stock
+List products
+Products prices
+User Products
+Categorization
+Set categories for your products
+Compatibility between items and vehicle accessories
+Domains, products and attributes vehicle accessories references
+Validations
+Price per variation
+Fees for listing
+Item description
+Variations
+Pictures
+Relist items
+Virtual kits
+Sync and moditify listings
+Catalog
+What´s catalog?
+Catalog eligibility
+Products search
+Catalog required listings
+Catalog listing
+Catalog competition
+Brand Central
+Size Guide
+First steps
+Manage size guide
+Full and Flex coexistence
+Manage questions & answers
+Invoicing
+Billing data
+Upload invoices
+Billing Reports
+Listing types
+Sending tax data
+Shipping
+Mercado Envíos
+Mercado Envios 1
+Mercado Envios 1
+Order status and tracking
+Dynamic freight
+Mercado Envios 2
+Shipping Colecta and Places
+Mercado Envios 2
+Calculate shipping costs & handling time
+Optional holiday shipments
+Free shipping
+Mercado Envíos Flex
+Envíos Turbo
+Cross Docking
+Package grouping for Pickup
+Fulfillment
+Custom shipping
+Sales management
+Sales
+Packs
+Shipments
+Payments
+Feedback on sale
+Orders notes
+Manage Promotions
+Manage Promotions
+Traditional Campaigns
+Co-Funded Campaigns
+Volume discount campaigns
+Pre-negotiated per Item and Full stock sale
+Price Discount
+Daily Deal
+Lightning Deal
+Seller campaigns
+Automated co-participation and competitive pricing
+Campaigns with installments for Marketplace
+Seller coupon
+Post-sale messages
+What is messaging
+Reasons to communicate
+Messaging after sale
+Pending messages
+Blocked messages
+Claims & Returns
+Claims
+Returns
+Trends
+Products reviews
+Listings quality
+Trends
+Shopping experience
+Best sellers in Mercado Libre
+Sellers reputation
+Visits
+Despegue program and Reputation Benefit
+MercadoLíder & Official Stores
+Official Stores
+Guide for real estate
+Introduction
+Real estate experience
+Manage users
+Search for vehicles
+Manage packages (Real Estate)
+Categories and Attributes
+Locate properties
+List properties
+Sync listings
+Manage questions & contacts
+Subscribe to our feeds
+Real Estate developments
+Details about the Whatsapp field for classifieds item
+Credits pre-approved
+Guide for vehicles
+Introduction
+Manage users
+Manage packages vehicles
+Categories & attributes
+List vehicles
+Sync listings
+Manage questions & contacts
+Subscribe to our feeds
+Interested persons
+Credits pre-approved
+Security Guide
+Introduction
+Infrastructure (Encryption and TLS)
+Identity and Access Management (OAuth and Tokens)
+Secure Authentication
+Access Control and Authorization
+Application security
+Monitoring
+Incident management
+Guide for services
+Introduction
+Queries about the user
+Choose service type
+Manage coverage areas
+List services
+Sync listings
+Subscribe to our feeds
+Advanced queries
+Guide for Mercado Ads
+Mercado Ads introduction
+Brand Ads
+Display Ads
+Product Ads
+FAQs
+Frequently Asked Questions
+Rate limit / 429 Error
+Multi-origin stock management / User Products
+ME1 / ME2 and free shipping
+Mercado Envios — Shipping costs and quotes
+Billing info
+Images and moderation
+Promotions / Pricing
+Items — Shipping attributes and dimensions
+Last update 05/03/2024
+Mercado Envíos 1
+Important:
+Currently, this shipping method is available for sellers in Argentina, Brazil, Mexico, Chile, Colombia, Uruguay and Peru.
+
+Mercado Envíos 1 (ME1) is a shipping modality that enables sellers to sell heavy or bulky products through Mercado Libre. With this option, sellers can manage their own logistics or use third-party services to ship products that are not eligible for Mercado Envíos 2. This provides greater visibility to the buyer regarding costs, delivery times and coverage availability.
+
+Configure a test user
+
+To configure the Mercado Envíos 1 (ME1) shipping mode for test users, follow these steps:
+
+Login to the Mercado Libre developers page.
+Select the category to be consulted, in this case: “Configuraciones de test”.
+Drop down the “Configuración”section and choose "Activate ME1 to test account".
+Complete the required information about the test user.
+Submit the ME1 activation request for your testl user account.
+
+
+Country	Link
+Argentina	Request to activate ME1 to test account
+Brasil	Request to activate ME1 to test account
+México	Request to activate ME1 to test account
+Chile	Request to activate ME1 to test account
+Colombia	Request to activate ME1 to test account
+Uruguay	Request to activate ME1 to test account
+Perú	Request to activate ME1 to test account
+
+
+
+Note:
+It is important to remember that two test users are required to test the ME1 flow:
+- One user as a seller, who must have the ME1 mode activated in his test account.
+- Another user as buyer, for which it is not necessary to activate ME1.
+Please consider that the ME1 activation process for test users is 48 hours. For more details on how to create test users, please refer to the “Start testing” section.
+Activate ME1 to a seller
+
+The ME1 activation process involves the collaboration of the sales consultant or Key Account Manager (KAM) of the seller's account. The seller must follow these steps:
+
+Initially, the seller must complete the "The Contingency Table", which includes defining the shipping costs for ME1 and the geographic areas to which it plans to ship these orders.
+Once the table is complete, the seller should request ME1 activation from their consultant, including details of the dynamic freight integrator if one is available.
+The advisor manages the activation request to the internal team, taking into account that this process may take approximately 7 working days from the request.
+After this period, the seller can request the status of their application to confirm that the ME1 mode is active and ready for use.
+
+For more details, see the Contingencia Mercado Libre section.
+
+
+
+Note:
+- Mercado Envíos 1 is a modality that requires the support of a commercial advisor for an adequate management. In case the seller does not have a commercial advisor, can request support to provide the data of the referents for each country.
+- It is important to note that all Mercado Envíos 1 activations require that the seller has previously activated Mercado Envíos 2 (ME2). That is, both modes must be active in the seller's account. However, it is essential to understand that ME2 will always remain as the preferred shipping mode.
+Important:
+Before publishing or editing an item using the ME1 mode, it is important to take into account the following aspects:
+1. Verify that the seller has already activated the ME1 mode in his account.
+2. Verify that the item is eligible to be shipped by ME1.
+3. Verify that the item complies with at least one of the maximum dimensions established:
+
+Height: 500 cm
+Width: 500 cm
+Length: 500 cm
+Weight: 500000 gr = 500 kg
+4. Considerer that if an item has the ME2 mode available, it cannot be published by the ME1 mode.
+
+These steps ensure proper management of items in Mercado Libre and help to offer the best purchase experience for users.
+Publish an item with ME1
+
+This endpoint allows you to publish an item in Mercado Envíos 1.
+
+Request:
+
+curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/$ITEM_ID
+Copy
+
+Example:
+
+curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items
+[...]
+{
+  "shipping": {
+    "mode": "me1",
+    "local_pick_up": true,
+    "dimensions": "189x72x96,58000"
+  }
+}
+[...]
+
+Copy
+
+Response:
+
+{
+   "id": "MLA1644124644",
+   "site_id": "MLA",
+   "title": "Refrigeradora Samsung Side By Side 602lt Rs60t5200s9",
+   "subtitle": null,
+   "seller_id": 1459527474,
+   "category_id": "MLA9458",
+   "official_store_id": null,
+   "price": 567803,
+   "base_price": 567803,
+   "original_price": null,
+   "inventory_id": null,
+   "currency_id": "ARS",
+   "initial_quantity": 15,
+   "available_quantity": 12,
+   "sold_quantity": 3,
+   "sale_terms": [
+       {
+           "id": "WARRANTY_TYPE",
+           "name": "Tipo de garantía",
+           "value_id": "2230279",
+           "value_name": "Garantía de fábrica",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "2230279",
+                   "name": "Garantía de fábrica",
+                   "struct": null
+               }
+           ]
+       },
+       {
+           "id": "WARRANTY_TIME",
+           "name": "Tiempo de garantía",
+           "value_id": null,
+           "value_name": "6 meses",
+           "value_struct": {
+               "unit": "meses",
+               "number": 6
+           },
+           "values": [
+               {
+                   "id": null,
+                   "name": "6 meses",
+                   "struct": {
+                       "number": 6,
+                       "unit": "meses"
+                   }
+               }
+           ]
+       }
+   ],
+   "buying_mode": "buy_it_now",
+   "listing_type_id": "gold_special",
+   "start_time": "2020-09-16T15:06:56.000Z",
+   "stop_time": "2040-09-11T04:00:00.000Z",
+   "end_time": "2040-09-11T04:00:00.000Z",
+   "expiration_time": "2021-01-11T19:28:44.000Z",
+   "condition": "new",
+   "permalink": "http://articulo.mercadolibre.com.ar/MLA-879036495-test-no-comprar-aire-acondicionado-3000-frigorias-_JM",
+   "pictures": [
+       {
+           "id": "790234-MLA43483081743_092020",
+           "url": "http://mla-s2-p.mlstatic.com/790234-MLA43483081743_092020-O.jpg",
+           "secure_url": "https://mla-s2-p.mlstatic.com/790234-MLA43483081743_092020-O.jpg",
+           "size": "246x120",
+           "max_size": "246x120",
+           "quality": ""
+       }
+   ],
+   "video_id": null,
+   "descriptions": [],
+   "accepts_mercadopago": true,
+   "non_mercado_pago_payment_methods": [],
+   "shipping": {
+       "mode": "me1",
+       "local_pick_up": false,
+       "free_shipping": false,
+       "methods": [],
+       "dimensions": "189x72x96,58000",
+       "tags": [
+           "optional_me1_chosen"
+       ],
+       "logistic_type": "default",
+       "store_pick_up": false
+   },
+   "international_delivery_mode": "none",
+   "seller_address": {
+       "id": 1131257838,
+       "comment": "",
+       "address_line": "falsa 123",
+       "zip_code": "6000",
+       "city": {
+           "id": "",
+           "name": "junin"
+       },
+       "state": {
+           "id": "AR-B",
+           "name": "Buenos Aires"
+       },
+       "country": {
+           "id": "AR",
+           "name": "Argentina"
+       },
+       "latitude": -34.5885499,
+       "longitude": -60.94955400000001,
+       "search_location": {
+           "neighborhood": {
+               "id": "",
+               "name": ""
+           },
+           "city": {
+               "id": "TUxBQ0pVTjE5NjM",
+               "name": "Junín"
+           },
+           "state": {
+               "id": "TUxBUFpPTmFpbnRl",
+               "name": "Buenos Aires Interior"
+           }
+       }
+   },
+   "seller_contact": null,
+   "location": {},
+   "geolocation": {
+       "latitude": -34.5885499,
+       "longitude": -60.94955400000001
+   },
+   "coverage_areas": [],
+   "attributes": [
+       {
+           "id": "ENERGY_EFFICIENCY",
+           "name": "Eficiencia energética",
+           "value_id": "98473",
+           "value_name": "A",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "98473",
+                   "name": "A",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "AIR_CONDITIONER_TYPE",
+           "name": "Tipo de aire acondicionado",
+           "value_id": "290203",
+           "value_name": "Split",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "290203",
+                   "name": "Split",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "SEER",
+           "name": "SEER",
+           "value_id": "-1",
+           "value_name": null,
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "-1",
+                   "name": null,
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "COLOR",
+           "name": "Color",
+           "value_id": "52055",
+           "value_name": "Blanco",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "52055",
+                   "name": "Blanco",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "FRIGORIAS",
+           "name": "Frigorías",
+           "value_id": null,
+           "value_name": "3000 fg",
+           "value_struct": {
+               "unit": "fg",
+               "number": 3000
+           },
+           "values": [
+               {
+                   "id": null,
+                   "name": "3000 fg",
+                   "struct": {
+                       "number": 3000,
+                       "unit": "fg"
+                   }
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "ITEM_CONDITION",
+           "name": "Condición del ítem",
+           "value_id": "2230284",
+           "value_name": "Nuevo",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "2230284",
+                   "name": "Nuevo",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "COOLING_CAPACITY",
+           "name": "Capacidad de refrigeración",
+           "value_id": null,
+           "value_name": "3520 W",
+           "value_struct": {
+               "unit": "W",
+               "number": 3520
+           },
+           "values": [
+               {
+                   "id": null,
+                   "name": "3520 W",
+                   "struct": {
+                       "number": 3520,
+                       "unit": "W"
+                   }
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "INSTALLATION_PLACEMENTS",
+           "name": "Lugares de colocación",
+           "value_id": null,
+           "value_name": "Pared",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": null,
+                   "name": "Pared",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "HEATING_CAPACITY",
+           "name": "Capacidad de calefacción",
+           "value_id": null,
+           "value_name": "3520 W",
+           "value_struct": {
+               "unit": "W",
+               "number": 3520
+           },
+           "values": [
+               {
+                   "id": null,
+                   "name": "3520 W",
+                   "struct": {
+                       "number": 3520,
+                       "unit": "W"
+                   }
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "SELLER_SKU",
+           "name": "SKU",
+           "value_id": null,
+           "value_name": "116078",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": null,
+                   "name": "116078",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "MODEL",
+           "name": "Modelo",
+           "value_id": null,
+           "value_name": "F3000-T",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": null,
+                   "name": "F3000-T",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "BRAND",
+           "name": "Marca",
+           "value_id": "8039499",
+           "value_name": "Tedge",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "8039499",
+                   "name": "Tedge",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "GTIN",
+           "name": "Código universal de producto",
+           "value_id": null,
+           "value_name": "1234567890418",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": null,
+                   "name": "1234567890418",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       },
+       {
+           "id": "AIR_CONDITIONING_TYPE",
+           "name": "Tipo de climatización",
+           "value_id": "83445",
+           "value_name": "Frío/Calor",
+           "value_struct": null,
+           "values": [
+               {
+                   "id": "83445",
+                   "name": "Frío/Calor",
+                   "struct": null
+               }
+           ],
+           "attribute_group_id": "OTHERS",
+           "attribute_group_name": "Otros"
+       }
+   ],
+   "warnings": [],
+   "listing_source": "",
+   "variations": [],
+   "thumbnail_id": "790234-MLA43483081743_092020",
+   "thumbnail": "http://mla-s2-p.mlstatic.com/790234-MLA43483081743_092020-I.jpg",
+   "secure_thumbnail": "https://mla-s2-p.mlstatic.com/790234-MLA43483081743_092020-I.jpg",
+   "status": "active",
+   "sub_status": [],
+   "tags": [
+       "cart_eligible",
+       "immediate_payment",
+       "poor_quality_picture",
+       "test_item"
+   ],
+   "warranty": "Garantía de fábrica: 6 meses",
+   "catalog_product_id": null,
+   "domain_id": "MLA-AIR_CONDITIONERS",
+   "seller_custom_field": null,
+   "parent_item_id": null,
+   "differential_pricing": null,
+   "deal_ids": [],
+   "automatic_relist": false,
+   "date_created": "2020-09-16T15:06:56.000Z",
+   "last_updated": "2020-10-28T16:40:58.491Z",
+   "health": 0.83,
+   "catalog_listing": false,
+   "item_relations": []
+}
+Copy
+Activate ME1 on an item
+
+This endpoint allows you to activate ME1 for items that are configured in the "Custom" or “Acordar con el vendedor” shipping mode.
+
+Request:
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/$ITEM_ID
+Copy
+
+Example:
+
+curl -X PUT -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/MLA1644124644
+{
+  "shipping": {
+    "mode": "me1",
+    "local_pick_up": true,
+    "dimensions": "189x72x96,58000"
+  }
+}
+Copy
+Response status codes:
+
+The following table provides greater visibility into potential issues in the ME1 shipping configuration. Be sure to regularly review the recommendations to maintain an optimized process flow and provide a better experience for your customers.
+
+Parameter	Description	Recommendation
+
+4052
+	
+This suggestion will be activated when a ME1 shipment is available, but is lost due to dimensional problems. It will allow you to quickly identify cases where ME1 cannot be used due to size or weight restrictions.
+	
+Validate that at least one of the dimensions entered exceeds the ME1 threshold. Greater than 500 cm or 500 kg..
+
+
+4053
+	
+If a seller does not have the ME1 shipping option enabled in their shipping preferences, this suggestion will be activated. This way, you will be able to easily check if ME1 Shipping is available for the seller in question.
+	
+Validate the shipping methods active for the seller. If ME1 is not displayed, contact the Key Account Manager (KAM) assigned to the account.
+
+
+4054
+	
+This tsuggestion will alert you when a product does not have the ME1 shipping option enabled in the catalog preferences. With this information, you will be able to quickly identify products that are not eligible for Mercado Envíos ME1.
+	
+Validate the shipping modalities of the item, domain or category.
+
+
+
+Consult shipments with ME1
+
+This endpoint allows you to consult the seller's ME1 shipments.
+
+Request:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipments/$SHIPMENT_ID
+Copy
+
+Example:
+
+curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/shipments/12345678
+Copy
+
+Response:
+
+{
+[…]
+    "receiver_id": 0987654332,
+    "base_cost": 0,
+    "status_history": {
+        "date_shipped": "2024-02-02T16:31:31.184-04:00",
+        "date_returned": null,
+        "date_delivered": "2024-02-05T08:38:14.000-04:00",
+        "date_first_visit": "2024-02-05T08:38:14.000-04:00",
+        "date_not_delivered": null,
+        "date_cancelled": null,
+        "date_handling": null,
+        "date_ready_to_ship": null
+    },
+    "type": "forward",
+    "return_details": null,
+    "sender_id": 474415116,
+    "mode": "me1",
+    "order_cost": 1699999,
+    "priority_class": {
+        "id": null
+    },
+    "service_id": 154,
+    "shipping_items": [
+        {
+            "domain_id": null,
+            "quantity": 1,
+            "dimensions_source": {
+                "origin": "seller",
+                "id": "MLA1388902895__1"
+            },
+            "description": "Heladera Samsung Freezer Inf Multi Flow 400l Dispenser Inver",
+            "id": "MLA1388902895",
+            "user_product_id": null,
+            "sender_id": 11111111,
+            "dimensions": "180.0x76.0x77.0,84000.0"
+        }
+    ],
+    "tracking_number": "0999-111111111",
+    "cost_components": {
+        "loyal_discount": 0,
+        "special_discount": 0,
+        "compensation": 0,
+        "gap_discount": 0,
+        "ratio": 0
+    },
+[…]
+    "customer_id": null,
+    "order_id": 2000007511222222,
+    "quotation": null,
+    "status": "delivered",
+    "logistic_type": "default"
+}
+Copy
+Fraud alerts
+
+ME1 orders may also have fraud alerts. Check if the order has the fraud_risk_detected tag because in this case, the order should not be sent to the buyer. When we identify a suspicious sale, we alert the seller via front-end and API through the order feed. For more information, please see our order documentation.
+
+
+
+Note:
+It is possible to usar el recurso de Cargar factura to make the corresponding invoice available to the buyer.
+Contents
+Mercado Envíos 1
+Configure a test user
+Activate ME1 to a seller
+Publish an item with ME1
+Activate ME1 on an item
+Consult shipments with ME1
+Fraud alerts
+Report
+Security Researchers
+Centro de Partners
+
+Copyright © 2026 MercadoLibre S.R.L.
+
+Terms and Conditions
+How we take care of your privacy
+Developer Partner Program
+
+Usamos cookies para mejorar tu experiencia en Mercado Libre. Consultar más en nuestro Centro de Privacidad.
+
+Aceptar cookies
+Configurar cookies

@@ -1,0 +1,858 @@
+URL: https://developers.mercadolivre.com.br/en_us/ship-products
+STATUS: 200
+TITLE: Mercado Envíos
+
+Developers
+About us
+API Docs
+Support
+News
+Login
+API Docs
+Mercado Envíos
+
+Cross resources
+
+Explore the main resources of our APIs
+
+Documentation
+
+Getting started
+Create an application on Mercado Libre
+Manage your applications
+Authentication and Authorization
+Start testing
+Listing validator
+Design considerations
+Support for Integrators
+API resources
+Attributes
+Domains and Categories
+Locations & Currencies
+Items & Searches
+Questions & Answers
+Orders & Feedback
+Metrics
+Notifications
+Sellers news
+Brand Protection Program
+Whats is Brand Protection Program?
+Member of the program
+Complained publications
+Guide for products
+Introduction
+User Products
+Products prices
+Categorization
+Set categories for your products
+Compatibility between items and vehicle accessories
+Validations
+Fees for listing
+Item description
+Variations
+Pictures
+Sync and moditify listings
+Size Guide
+First steps
+Manage size guide
+Size guide validations
+Full and Flex coexistence
+Sending tax data
+Listing types
+Shipping
+Mercado Envíos
+Custom shipping
+Sales management
+Shipments
+Payments
+Feedback on sale
+MercadoLíder & Official Stores
+Official Stores
+Guide for real estate
+Introduction
+Manage users
+Search for vehicles
+Manage packages (Real Estate)
+Categories and Attributes
+Locate properties
+List properties
+Sync listings
+Manage questions & contacts
+Subscribe to our feeds
+Real Estate developments
+Guide for vehicles
+Introduction
+Manage users
+Manage packages vehicles
+Categories & attributes
+List vehicles
+Sync listings
+Manage questions & contacts
+Subscribe to our feeds
+Security Guide
+Introduction
+Infrastructure (Encryption and TLS)
+Identity and Access Management (OAuth and Tokens)
+Secure Authentication
+Access Control and Authorization
+Application security
+Monitoring
+Incident management
+Guide for services
+Introduction
+Queries about the user
+Choose service type
+Manage coverage areas
+List services
+Sync listings
+Subscribe to our feeds
+Guide for Mercado Ads
+Brand Ads
+Product Ads
+FAQs
+Frequently Asked Questions
+Rate limit / 429 Error
+Multi-origin stock management / User Products
+ME1 / ME2 and free shipping
+Mercado Envios — Shipping costs and quotes
+Billing info
+Images and moderation
+Promotions / Pricing
+Items — Shipping attributes and dimensions
+
+You can use this documentation for the following business units:
+
+Last update 13/04/2026
+Mercado Envíos Management
+Important:
+Currently, this shipping method is available for sellers in Argentina, Brazil, Mexico, Chile, Colombia, Uruguay, Peru and Ecuador.
+
+Mercado Envíos is a Mercado Libre services network that provides logistics solutions to improve the experience of sellers and buyers. In addition to coordinating with various industry operators, the Mercado Envíos logistics network includes its own storage and distribution centers, agencies, and a constantly growing ground and air fleet. Learn more about shipping for sellers and watch our webinar to integrate:
+
+
+
+
+
+Shipping Modes
+
+Mercado Envíos is divided into the following modes:
+
+Mercado Envíos 1 (ME1): is a shipping mode that allows sellers to sell through Mercado Libre using their own logistics or third-party services.
+Mercado Envíos 2 (ME2): is Mercado Libre's shipping mode, where all logistics are managed using various means such as postal services, agencies, among others. This mode is further divided into the following logistics types:
+Mercado Envíos Drop_off
+Mercado Envíos Colectas (cross_docking) and Places (xd_drop_off)
+Mercado Envíos Flex (self_service)
+Mercado Envíos Turbo (turbo)
+Mercado Envíos Full (fulfillment)
+Custom: is a shipping mode where the seller loads a table with shipping prices per region and handles the logistics.
+Not Specified: is a shipping mode where the seller does not specify any shipping price for their listings and must contact the buyer to coordinate shipping.
+Item Shipping Preferences
+
+To properly set up shipping preferences for an item in Mercado Libre, it is crucial to take into account the following points:
+
+
+
+
+
+
+Item management in Mercado Libre, whether through publishing, editing, or migration, is closely linked to the active shipping preferences of both the user and the item in question. These preferences determine which shipping modes are available and must be carefully reviewed.
+
+
+
+Available Shipping Services by Country
+
+To properly set up shipping preferences for an item in Mercado Libre, it is crucial to take into account the following points:
+
+
+
+
+Call:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/sites/$SITE_ID/shipping_methods
+
+Copy
+
+Response:
+
+    
+    {
+      {
+        "id": 73328,
+        "name": "Normal a domicilio",
+        "type": "standard",
+        "deliver_to": "address",
+        "status": "active",
+        "site_id": "MLA",
+        "free_options": [
+          "country"
+        ],
+        "shipping_modes": [
+          "me2"
+        ],
+        "company_id": 17500240,
+        "company_name": "OCA",
+        "min_time": 72,
+        "max_time": null,
+        "currency_id": "ARS"
+      },
+    ...
+    }
+
+
+Copy
+
+
+
+Response parameters:
+
+id: is a unique identifier for the shipping type.
+name: descriptive name of the shipping service.
+type: defines the type of shipping service.
+deliver_to: specifies the shipping destination. "address" indicates that the package will be delivered to a physical address.
+status: indicates the current status of the shipping service. "active" means the service is currently available and operational.
+site_id: country to which this shipping service applies.
+free_options: list of options in which the shipping service can be free. In this case, "country" indicates that shipping can be free at the national level.
+shipping_modes: indicates the compatible shipping modes.
+company_id: unique identifier of the logistics company that provides the shipping service.
+company_name: name of the logistics company that handles the shipment.
+min_time: the estimated minimum delivery time of the shipment in hours.
+max_time: the estimated maximum delivery time of the shipment in hours.
+currency_id: identifier of the currency used for any applicable fees for the shipping service.
+
+
+
+Response Status Codes:
+
+Code	Message	Description	Recommendation
+200 - OK	-	The current configuration was retrieved successfully.	-
+401 - Unauthorized	invalid access token	Invalid access token.	Validate the access_token.
+404 - Not Found	invalid_site_id	The site_id does not exist.	Validate the site_id.
+
+
+User Shipping Preferences
+
+This endpoint allows you to check the active shipping preferences for a user and pre-validate that the seller can publish or edit an item for shipping types according to their account.
+
+
+
+
+Call:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/users/$USER_ID/shipping_preferences
+
+Copy
+
+Example:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/users/12345678/shipping_preferences
+
+Copy
+
+Response:
+
+    
+
+{
+    "local_pick_up": false,
+    "modes": [
+      "custom",
+      "not_specified",
+      "me2",
+      "me1"
+    ],
+    "trusted_user": false,
+    "bulky": false,
+    "custom_calculator": "Axado",
+    "picking_type": null,
+    "thermal_printer": null,
+    "option": "in",
+    "tags": [
+      "optional_me1_allowed",
+      "turbo",
+      "flex2_migration"
+    ],
+    "me2_enablers": [],
+    "carrier_pickup": false,
+    "items_combination": "enabled",
+    "services": [
+      153,
+      154,
+      251,
+      422,
+      431,
+      742746,
+      742748
+    ],
+    "logistics": [
+      {
+        "mode": "me1",
+        "types": [
+          {
+            "type": "default",
+            "carrier_pickup": [],
+            "services": [
+              251,
+              153,
+              154
+            ],
+            "default": true,
+            "status": "active"
+          }
+        ]
+      },
+      {
+        "mode": "me2",
+        "types": [
+          {
+            "type": "drop_off",
+            "carrier_pickup": [],
+            "services": [
+              422,
+              431
+            ],
+            "default": true,
+            "status": "active"
+          },
+          {
+            "type": "self_service",
+            "carrier_pickup": [],
+            "services": [
+              742746,
+              742748
+            ],
+            "default": false,
+            "status": "active"
+          }
+        ]
+      },
+      {
+        "mode": "custom",
+        "types": [
+          {
+            "type": "custom",
+            "carrier_pickup": [],
+            "services": null,
+            "default": true,
+            "status": "active"
+          }
+        ]
+      },
+      {
+        "mode": "not_specified",
+        "types": [
+          {
+            "type": "not_specified",
+            "carrier_pickup": [],
+            "services": null,
+            "default": true,
+            "status": "active"
+          }
+        ]
+      }
+    ],
+    "label": {
+      "print_danfe": false,
+      "print_browser": false,
+      "print_voucher": false,
+      "print_summary": true,
+      "thermal_printer": null,
+      "page_size": "a4",
+      "page_format": "pdf"
+    },
+    "content_declaration_disabled": false,
+    "conciliation": {
+      "type": null
+    },
+    "mandatory_invoice_data": false,
+    "site_id": "MLA",
+    "free_configurations": [
+      {
+        "condition": {
+          "value": null,
+          "type": "all"
+        },
+        "rule": {
+          "default": true,
+          "free_mode": "country",
+          "value": null
+        }
+      }
+    ],
+    "mandatory_settings": {}
+  }
+
+
+Copy
+
+
+local_pick_up: indicates whether the buyer has the option to pick up the package at the seller's address. Possible values are:
+true: allows pickup.
+false: does not allow pickup.
+modes: list of shipping modes configured for the user. Possible values are:
+custom
+not_specified
+me2
+me1
+trusted_user: indicates whether the user is considered trusted to sell in restricted domains. Possible values are:
+true
+false
+custom_calculator: indicates whether the user has a contingency table in Mercado Libre. Possible values are:
+Axado: has ME1 active with contingency table.
+true: has ME1 active without contingency table.
+false: does not have ME1 active.
+CBT: CBT user.
+thermal_printer: indicates whether a thermal printer is being used.
+option: user's shipping configuration option. Possible values are:
+in: user has Mercado Envíos 2 active for all their listings.
+out: user previously had the Mercado Envíos 2 option enabled. However, this functionality is no longer active for their account.
+trial: user has Mercado Envíos 2 active for some listings.
+null: user never had Mercado Envíos 2 active.
+tags: list of additional tags related to the user's shipping configuration. Possible values are:
+optional_me1_allowed: me2 is the mandatory option, and me1 is the optional shipping preference.
+optional_me2_allowed: me1 is the default option, and me2 is the optional shipping preference.
+turbo: turbo logistics active for the user.
+me2_enablers: indicates the enablers configured for the seller. Possible values are:
+bulky_fulfilllment
+bulky_cross_docking
+bulky_drop_off
+pharma
+cbt_fulfillment
+among others.
+carrier_pickup: indicates whether a carrier is enabled for collections.
+items_combination: indicates whether cart combination is allowed.
+services: list of available service identifiers.
+logistics: detailed logistics configurations for different shipping modes, each with specific types and their attributes.
+label: configurations for label printing, including print options and page size/format.
+site_id: identifier of the user's country in Mercado Libre.
+
+Response Status Codes:
+
+Code	Message	Description	Recommendation
+200 - OK	-	The current configuration was retrieved successfully.	-
+401 - Unauthorized	authorization value not present	Access token is missing	Provide a valid access token
+401 - Unauthorized	invalid access token	The provided access token is invalid or expired	Provide a valid access token
+
+
+
+Considerations:
+
+The default configuration for a user with ME2 and ME1 active is with optional_me1_allowed. This means ME1 is enabled as an optional shipping mode, and ME2 is mandatory.
+If any modification to this configuration is desired, the seller must contact their commercial advisor, justifying the requested change.
+It is essential to validate the active shipping modes for each user, as this directly impacts how their product listings will be managed. The key attributes to consider are optional_me1_allowed and optional_me2_allowed.
+Remember that all sellers have custom and not_specified enabled by default.
+Query Shipping Modes for a Category
+
+This endpoint allows you to query the available shipping preferences for the category and serves to pre-identify the shipping options.
+
+
+
+
+Call:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/categories/$CATEGORY_ID/shipping_preferences
+
+Copy
+
+Example:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/categories/MLA418448/shipping_preferences
+
+Copy
+
+Response:
+
+    
+    {
+        "dimensions": {
+          "height": 5,
+          "width": 18,
+          "length": 25,
+          "weight": 650
+        },
+        "logistics": [
+          {
+            "types": [
+              "default"
+            ],
+            "mode": "me1"
+          },
+          {
+            "types": [
+              "drop_off",
+              "xd_drop_off",
+              "self_service",
+              "cross_docking",
+              "fulfillment"
+            ],
+            "mode": "me2"
+          },
+          {
+            "types": [
+              "not_specified"
+            ],
+            "mode": "not_specified"
+          },
+          {
+            "types": [
+              "custom"
+            ],
+            "mode": "custom"
+          }
+        ],
+        "me2_restrictions": null,
+        "restricted": false,
+        "source": {
+          "origin": "categories",
+          "identifier": "MLA418448"
+        },
+        "date_created": null,
+        "last_modified": null,
+        "category_id": "MLA418448"
+      }
+
+
+Copy
+
+
+
+Response parameters:
+
+dimensions: are the base (default) dimensions of the products in this category.
+logistics: shows the logistics types (mode and type) enabled for the category.
+me2_restrictions: if there is any restriction that does not allow me2, it will be identified. Possible values:
+fbm_non_totable
+flex_ne
+cbt_fulfillment
+bulky_drop_off
+farma
+fragile
+bulky_cross_docking
+bulky_fulfillment
+restricted: if there is a me2 restriction, it will be identified with true, otherwise it is false.
+
+
+
+Response Status Codes:
+
+Code	Message	Description	Recommendation
+200 - OK	-	The current configuration was retrieved successfully.	-
+404 - Not Found	Category not found	The category does not exist.	Validate the category_id.
+
+
+Query Shipping Attributes by Domain
+
+This endpoint allows you to query the shipping preference attributes by domain, to identify the required attributes for the shipping rules to ME2.
+
+Note:
+Note that the domain_id can be obtained both from /categories and from the listing in /items.
+
+
+
+Call:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' http://api.mercadolibre.com/catalog_domains/$DOMAIN_ID/shipping_attributes
+
+Copy
+
+Example:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/catalog_domains/MLA-AUTOMOTIVE_TIRES/shipping_attributes
+
+Copy
+
+Response:
+
+    
+
+{
+    "domain_id": "MLA-AUTOMOTIVE_TIRES",
+    "attributes": [
+      {
+        "id": "RIM_DIAMETER",
+        "type": "NUMBER_UNIT",
+        "unit": "\"",
+        "index": 1,
+        "ranges": null
+      },
+      {
+        "id": "TIRES_NUMBER",
+        "type": "INTEGER",
+        "unit": "",
+        "index": 2,
+        "ranges": null
+      },
+      {
+        "id": "SECTION_WIDTH",
+        "type": "NUMBER_UNIT",
+        "unit": "mm",
+        "index": 3,
+        "ranges": null
+      }
+    ],
+    "client_id": app_id,
+    "date_created": "2018-11-09T15:31:02.040-03:00",
+    "last_modified": "2023-09-11T15:59:30.175-03:00"
+  }
+
+
+Copy
+
+
+
+Response parameters:
+
+domain_id: ID of the queried domain.
+attributes: attributes that determine the shipping preference of an item.
+
+Response Status Codes:
+
+Code	Message	Description	Recommendation
+200 - OK	-	The current configuration was retrieved successfully.	-
+404 - Not Found	Domain does not exist	The domain does not exist.	Validate the domain_id.
+Query Shipping Modes for an Item for the User
+
+As an extra step, it is possible to perform a validation before executing the POST of the Item to identify and test whether the API allows the shipping mode you are trying to update. To do so, you must send the information below, focusing on the listing's attributes. Remember to check the catalog_domain/$ID/shipping_attributes resource to test with the attributes that are pointed out as necessary for updating to ME2.
+
+Call:
+
+
+
+    curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' 'x-multichannel: true' 'X-Format-New: true' -H "Content-Type: application/json" -d https://api.mercadolibre.com/users/$USER_ID/shipping_modes
+
+Copy
+
+Example:
+
+    curl -X POST -H 'Authorization: Bearer $ACCESS_TOKEN' 'x-multichannel: true' 'X-Format-New: true' -H "Content-Type: application/json" -d https://api.mercadolibre.com/users/123456789/shipping_modes
+
+Copy
+    {
+    "site_id": "MLB",
+    "item_id": "MLB3856335025",
+    "seller_id": 378277780,
+    "title": "Título de teste",
+    "item_price": 500,
+    "item_currency": "BRL",
+    "category_id": "MLB1626",
+"catalog": {
+    "domain_id": "MLB-WASHING_MACHINES",
+     "attributes": [ { "id": "BRAND", "name": "Marca", "value_name": "Electrolux", "value_id": "188" }, { "id": "COLOR", "name": "Cor", "value_name": "Branco", "value_id": "52055" }, { "id": "CONTROL_TYPES", "name": "Tipos de controle", "value_name": "Botões,Manípulos" }, { "id": "DEPTH", "name": "Profundidade", "value_name": "62 cm", "value_id": "908239" }, { "id": "DISPLAY_TYPE", "name": "Tipo de tela", "value_name": "Digital", "value_id": "102258" }, { "id": "DRUMS_NUMBER", "name": "Quantidade de cestos", "value_name": "1", "value_id": "9780701" }, { "id": "DRUM_MATERIAL", "name": "Material do cesto", "value_name": "Polipropileno", "value_id": "11131730" }, { "id": "ENERGY_EFFICIENCY", "name": "Eficiência energética", "value_name": "A", "value_id": "98473" }, { "id": "GTIN", "name": "Código universal de produto", "value_name": "7896584070767", "value_id": "7726347" }, { "id": "HEIGHT", "name": "Altura", "value_name": "1.06 m", "value_id": "8711782" }, { "id": "INTEGRATED_TECHNOLOGIES", "name": "Tecnologias integradas", "value_name": "Jet&Clean", "value_id": "8004426" }, { "id": "IS_INDUSTRIAL", "name": "É industrial", "value_name": "Não", "value_id": "242084" }, { "id": "IS_WASHER_AND_DRYER", "name": "É lavadora e secadora", "value_name": "Não", "value_id": "242084" }, { "id": "ITEM_CONDITION", "name": "Condição do item", "value_name": "Novo", "value_id": "2230284" }, { "id": "LINE", "name": "Linha", "value_name": "Turbo Economia", "value_id": "110721" }, { "id": "LOADING_TYPE", "name": "Tipo de carga", "value_name": "Superior", "value_id": "111016" }, { "id": "MAIN_COLOR", "name": "Cor principal", "value_name": "Branco", "value_id": "2450308" }, { "id": "MODEL", "name": "Modelo", "value_name": "LAC09", "value_id": "2269247" }, { "id": "MPN", "name": "MPN", "value_name": "21081JBA106,2001884" }, { "id": "SELLER_PACKAGE_HEIGHT", "name": "Altura da embalagem do vendor", "value_name": "105 cm" }, { "id": "SELLER_PACKAGE_LENGTH", "name": "Comprimento da embalagem do vendor", "value_name": "63 cm" }, { "id": "SELLER_PACKAGE_WEIGHT", "name": "Peso da embalagem do vendor", "value_name": "34400 g" }, { "id": "SELLER_PACKAGE_WIDTH", "name": "Largura da embalagem do vendor", "value_name": "57 cm" }, { "id": "SELLER_SKU", "name": "SKU", "value_name": "2001884" }, { "id": "SPIN_SPEED", "name": "Velocidade de rotação", "value_name": "660 rpm", "value_id": "1061038" }, { "id": "VOLTAGE", "name": "Voltagem", "value_name": "127V", "value_id": "39205162" }, { "id": "WASHING_MACHINE_CAPACITY", "name": "Capacidade da máquina de lavar", "value_name": "8.5 kg", "value_id": "440587" }, { "id": "WASHING_MACHINE_TYPE", "name": "Tipo de máquina de lavar", "value_name": "Automática", "value_id": "111101" }, { "id": "WASH_CYCLES_NUMBER", "name": "Quantidade de programas de lavagem", "value_name": "12", "value_id": "942738" }, { "id": "WASH_SYSTEM", "name": "Sistema de lavagem", "value_name": "Americano", "value_id": "6786680" }, { "id": "WATER_LEVELS", "name": "Níveis de água", "value_name": "4", "value_id": "942781" }, { "id": "WATER_LOAD_TYPES", "name": "Tipos de carga de água", "value_name": "Manual", "value_id": "11351063" }, { "id": "WATER_TEMPERATURE", "name": "Temperatura da água", "value_name": "Fria", "value_id": "364145" }, { "id": "WEIGHT", "name": "Peso", "value_name": "30.5 kg", "value_id": "8180925" }, { "id": "WIDTH", "name": "Largura", "value_name": "54 cm", "value_id": "908290" }, { "id": "WITH_ANTI_CREASE_FUNCTION", "name": "Com função antirrugas", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_DELAY_START", "name": "Com começo diferido", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_DISPLAY", "name": "Com tela", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_DOOR_SAFETY_BLOCK", "name": "Com bloqueio de segurança de porta", "value_name": "Sim", "value_id": "242085" }, { "id": "WITH_FILTER", "name": "Com filtro", "value_name": "Sim", "value_id": "242085" }, { "id": "WITH_FINISH_ALARM", "name": "Com alarme de finalização", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_INVERTER_TECHNOLOGY", "name": "Com tecnologia inverter", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_PANEL_BLOCK", "name": "Com bloqueio de painel", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_QUICK_WASH", "name": "Com lavagem rápida", "value_name": "Sim", "value_id": "242085" }, { "id": "WITH_SELF_ADAPTATIVE_LOAD", "name": "Com carga autoadaptable", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_SMARTPHONE_CONTROL_FUNCTION", "name": "Com função para controle de smartphone", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_SPIN", "name": "Com rotação", "value_name": "Sim", "value_id": "242085" }, { "id": "WITH_SPIN_AUTOBALANCE", "name": "Com rotação autobalance", "value_name": "Não", "value_id": "242084" }, { "id": "WITH_WI_FI_CONNECTION", "name": "Com conexão Wi-Fi", "value_name": "Não", "value_id": "242084" } ]
+    },
+    "sale_terms": [],
+    "listing_type_id": "gold_pro",
+    "buying_mode": "buy_it_now",
+    "condition": "new",
+    "channels": [
+        {
+            "id": "marketplace"
+        }
+    ],
+    "new_format": true,
+    "verbose": false
+}
+    
+
+Copy
+
+
+
+Response:
+
+    {
+    "channels": {
+        "marketplace": {
+            "available_modes": [
+                {
+                    "mode": "custom",
+                    "logistic_types": [
+                        {
+                            "type": "custom",
+                            "default": true,
+                            "attributes": {
+                                "dimensions": "optional",
+                                "costs": "required",
+                                "adoption": "not_required",
+                                "free_shipping": "not_allowed",
+                                "local_pick_up": "optional",
+                                "tags": []
+                            }
+                        }
+                    ],
+                    "shipping_attributes": {
+                        "dimensions": "optional",
+                        "costs": "required",
+                        "adoption": "not_required",
+                        "free_shipping": "not_allowed",
+                        "local_pick_up": "optional",
+                        "tags": []
+                    }
+                },
+                {
+                    "mode": "not_specified",
+                    "logistic_types": [
+                        {
+                            "type": "not_specified",
+                            "default": true,
+                            "attributes": {
+                                "dimensions": "optional",
+                                "costs": "not_allowed",
+                                "adoption": "not_required",
+                                "free_shipping": "optional",
+                                "local_pick_up": "optional",
+                                "tags": []
+                            }
+                        }
+                    ],
+                    "shipping_attributes": {
+                        "dimensions": "optional",
+                        "costs": "not_allowed",
+                        "adoption": "not_required",
+                        "free_shipping": "optional",
+                        "local_pick_up": "optional",
+                        "tags": []
+                    }
+                },
+                {
+                    "mode": "me2",
+                    "logistic_types": [
+                        {
+                            "type": "self_service",
+                            "default": true,
+                            "attributes": {
+                                "dimensions": "clear",
+                                "costs": "not_allowed",
+                                "adoption": "not_required",
+                                "free_shipping": "mandatory",
+                                "local_pick_up": "optional",
+                                "tags": []
+                            }
+                        }
+                    ],
+                    "shipping_attributes": {
+                        "dimensions": "clear",
+                        "costs": "not_allowed",
+                        "adoption": "not_required",
+                        "free_shipping": "mandatory",
+                        "local_pick_up": "optional",
+                        "tags": []
+                    }
+                }
+            ],
+            "warnings": null,
+            "channel_id": "marketplace"
+        }
+    }
+}
+
+
+Copy
+
+
+
+Response parameters:
+
+mode: allowed shipping modes.
+logistic_types
+type: logistics types according to each shipping mode.
+default: whether the logistics type is set by default.
+attributes:
+dimensions: if there is a default dimension, it is filled in.
+costs: rules related to shipping cost.
+adoption: indicates the configuration for activating me2 in the listing.
+free_shipping: whether free shipping is the default configuration.
+local_pick_up: indicates the configuration for the option to pick up the purchase from the seller.
+tags: internal tags related to the characteristics of each logistics type.
+
+
+Note:
+- If you want to validate an existing item, it is necessary to send the item_id attribute. If it is not present, the rules will be validated generically. Therefore, it is recommended to use at least the following attributes to get a more accurate response: item_id, seller_id, category_id, channels, catalog, domain, attributes, new_format, and verbose.
+- The attributes of some domains related to dimensions and weight, validated by the Query Shipping Attributes by Domain resource above, will have illustrative reference values (they are not restrictions).
+Query an Item
+
+It is also possible to validate certain information related to the listing's shipping by querying its details via the /Items API.
+
+
+
+
+Call:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/$ITEM_ID
+
+Copy
+
+Example:
+
+    curl -X GET -H 'Authorization: Bearer $ACCESS_TOKEN' https://api.mercadolibre.com/items/MLA1718222111
+
+Copy
+
+Response
+
+    
+
+{
+    "id": "MLA1718222111",
+    "site_id": "MLA",
+    "title": "Silla Director Coleman Sillon Plegable Acero Resistente 136k Color Rojo",
+    "seller_id": 309720111,
+    "category_id": "MLA79227",
+    "user_product_id": "MLAU255412797",
+    "official_store_id": 66111,
+    "price": 105622,
+    "base_price": 105622,
+    "original_price": 126900,
+    "currency_id": "ARS",
+    "initial_quantity": 4,
+    "available_quantity": 2,
+    "sold_quantity": 2,
+  ...
+    "shipping": {
+      "mode": "me2",
+      "methods": [],
+      "tags": [
+        "self_service_out",
+        "mandatory_free_shipping"
+      ],
+      "dimensions": null,
+      "local_pick_up": true,
+      "free_shipping": true,
+      "logistic_type": "cross_docking",
+      "store_pick_up": false
+    },
+  ...
+    }
+    
+
+Copy
+
+
+
+Now that you know how to pre-validate your seller's information, review the following documentation to learn how to manage listings:
+
+Mercado Envíos 1
+Mercado Envíos 2
+Custom Shipping
+Contents
+Mercado Envíos Management
+Shipping Modes
+Item Shipping Preferences
+Available Shipping Services by Country
+User Shipping Preferences
+Query Shipping Modes for a Category
+Query Shipping Attributes by Domain
+Query Shipping Modes for an Item for the User
+Query an Item
+Report
+Security Researchers
+Central de Parceiros
+
+Copyright © 2026 MercadoLibre S.R.L.
+
+Terms and Conditions
+How we take care of your privacy
+Developer Partner Program
+
+Usamos cookies para melhorar sua experiência no Mercado Livre. Consulte mais informações na nossa Central de privacidade.
+
+Aceitar cookies
+Configurar cookies
