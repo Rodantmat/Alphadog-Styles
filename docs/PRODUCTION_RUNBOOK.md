@@ -15,7 +15,9 @@
 - Code and catalogs: main branch (scripts/video, social/, docs/). Heavy libraries (not in main): branch prod-assets (split zips). Restore:
   git clone --depth 1 -b prod-assets https://github.com/Rodantmat/Alphadog-Styles.git /tmp/assets
   cd /tmp/assets && for z in merch_lib backgrounds kl_engine media_extra; do cat $z.zip.part_* > /tmp/$z.zip; done
-  cd <repo>/out && unzip -qo /tmp/merch_lib.zip /tmp/backgrounds.zip /tmp/media_extra.zip (one unzip per file); cd /tmp && unzip -qo /tmp/kl_engine.zip
+  cd /home/claude/alphadog-styles/out && for z in merch_lib backgrounds media_extra; do unzip -qo /tmp/$z.zip; done
+  cd /tmp && unzip -qo /tmp/kl_engine.zip   # creates /tmp/kl
+  The engine scripts hardcode /home/claude/alphadog-styles: the repo MUST be cloned at exactly that path. (Restore verified 2026-11-06: all zips pass integrity test.)
 - Owner's copy: D:\Rodo\Projects\AlphaDog Styles\merch_library\ (merch_lib_v2.zip, backgrounds_300.zip, catalogs). Catalogs in git: docs/merch_lib_catalog.json, docs/backgrounds_catalog.json.
 - Finished videos: social/videos/*.mp4 and out/postb2/bNN/{reel.mp4,caption.txt} (committed; Buffer reads raw.githubusercontent URLs). Music out/music2 (titles in list.json), laugh tracks out/sfx.
 - Source mockups: out/pmk/<breed>/<type>/<colour>/<id>.jpg, out/mockget2.
