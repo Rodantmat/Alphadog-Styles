@@ -715,3 +715,39 @@ if task == "montink3":
         r = get("https://web.archive.org/cdx/search/cdx", params={"url": host, "output": "json", "fl": "original,timestamp,statuscode", "filter": "statuscode:200", "collapse": "urlkey", "limit": 2000})
         print("cdx", host, r.status_code if r is not None else None, len(r.text) if r is not None else 0)
         if r is not None and r.status_code == 200: save("montink/cdx_" + host.split("/hc/pt-br/")[1].replace("*", "all").replace("/", "") + ".json", r.text)
+
+if task == "prod2":
+    import urllib.parse
+    def slug(u):
+        return re.sub(r"[^A-Za-z0-9]+", "_", u.split("://",1)[-1])[:100]
+    EXPAND = """() => { document.querySelectorAll('details').forEach(d=>d.open=true);
+      document.querySelectorAll('[aria-expanded="false"],button,summary').forEach(b=>{try{b.click()}catch(e){}}); }"""
+    URLS = [
+     "https://gubo.com.br/contato", "https://gubo.com.br/integracoes", "https://gubo.com.br/como-funciona", "https://gubo.com.br/atacado",
+     "https://gubo.com.br/sitemap.xml", "https://gubo.com.br/robots.txt", "https://gubo.com.br/api", "https://gubo.com.br/docs",
+     "https://docs.gubo.com.br/", "https://api.gubo.com.br/", "https://api.gubo.com.br/docs", "https://gubo.com.br/gubo-store",
+     "https://gubo.com.br/blog",
+     "https://www.estampaimpressa.com.br/", "https://montink.com/integracoes", "https://sou.montink.com/dropshipping/",
+     "https://www.reclameaqui.com.br/empresa/gubo/", "https://www.reclameaqui.com.br/empresa/montink/", "https://www.reclameaqui.com.br/empresa/uma-penca/",
+     "https://www.reclameaqui.com.br/empresa/camisa-dimona/", "https://www.reclameaqui.com.br/empresa/dimona/", "https://www.reclameaqui.com.br/empresa/reserva-ink/",
+     "https://www.reclameaqui.com.br/empresa/hotprinti/", "https://www.reclameaqui.com.br/empresa/estampa-impressa/", "https://www.reclameaqui.com.br/empresa/dropsimples/",
+     "https://www.reclameaqui.com.br/empresa/printful/", "https://www.reclameaqui.com.br/empresa/youdraw/",
+     "https://youdraw.com.br/", "https://cloudprinter.com/", "https://www.cloudprinter.com/print-on-demand-brazil",
+     "https://reserva.ink/", "https://camisadimona.com.br/", "https://dropnacional.com.br/", "https://drophar.com.br/",
+     "https://www.dslite.com.br/", "https://umapenca.com/historia", "https://umapenca.com/atacado",
+     "https://www.printi.com.br/camisetas", "https://estampaja.com.br/", "https://marcazo.com/",
+    ]
+    def run(page):
+        for u in URLS:
+            try:
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(3000)
+                try:
+                    page.evaluate(EXPAND); page.wait_for_timeout(800)
+                except Exception: pass
+                txt = page.inner_text("body")
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,80),e.href])")
+                save(f"prod2/{slug(u)}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:80000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs[:150]))
+            except Exception as e:
+                print("PWERR", u, e)
+                save(f"prod2/{slug(u)}.txt", f"URL: {u}\nERROR: {str(e)[:300]}")
+    pw_run(run)
