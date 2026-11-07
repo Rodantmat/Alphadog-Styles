@@ -531,3 +531,52 @@ if task == "montink":
             print("search", q, len(hits))
         else:
             print("search fail", q, r.status_code if r is not None else None)
+
+if task == "montink2":
+    import urllib.parse
+    ZD = "https://montinkhelp.zendesk.com"
+    for u in [f"{ZD}/api/v2/help_center/articles.json?per_page=100", f"{ZD}/api/v2/help_center/pt-br/categories.json", f"{ZD}/hc/api/internal/help_center_search.json", f"{ZD}/sitemap.xml", f"{ZD}/hc/sitemap.xml"]:
+        r = get(u); print(u, r.status_code if r is not None else None)
+        if r is not None and r.status_code == 200: save("montink/probe_" + re.sub(r"[^A-Za-z0-9]+", "_", u[-50:]) + ".txt", r.text[:200000])
+    TERMS = ["mercado livre", "marketplace", "shopee", "amazon", "tiktok shop", "etiqueta", "nota fiscal", "api", "webhook", "dropshipping", "mercado envios", "plano", "taxa", "prazo de produção", "defeito", "cancelamento", "integração", "pedido", "frete", "magalu", "shein", "bling"]
+    def run(page):
+        found = {}
+        for u in [ZD + "/hc/pt-br", ZD + "/hc/pt-br/categories", "https://sou.montink.com/", "https://sou.montink.com/planos/", "https://sou.montink.com/dropshipping/", "https://sou.montink.com/catalogo/"]:
+            try:
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(3000)
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,100),e.href])")
+                txt = page.inner_text("body")
+                save("montink/page_" + re.sub(r"[^A-Za-z0-9]+", "_", u[8:])[:80] + ".txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\n\n{txt[:30000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs))
+                for t, h in hrefs:
+                    if "/articles/" in h or "/sections/" in h or "/categories/" in h: found[h] = t
+            except Exception as e:
+                print("ERR", u, e)
+        for q in TERMS:
+            u = f"{ZD}/hc/pt-br/search?query={urllib.parse.quote(q)}"
+            try:
+                page.goto(u, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(3000)
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,150),e.href])")
+                hits = [(t, h) for t, h in hrefs if "/articles/" in h]
+                save("montink/zdq_" + re.sub(r"[^a-z0-9]+", "_", q.lower()) + ".json", hits)
+                for t, h in hits: found[h] = t
+                print("q", q, len(hits))
+            except Exception as e:
+                print("ERR", q, e)
+        # sections -> articles
+        for h in [h for h in list(found) if "/sections/" in h or "/categories/" in h][:60]:
+            try:
+                page.goto(h, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(2000)
+                for t, hh in page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,150),e.href])"):
+                    if "/articles/" in hh: found[hh] = t
+            except Exception as e: print("ERR", h, e)
+        arts = [h for h in found if "/articles/" in h]
+        print("articles", len(arts))
+        save("montink/zd_found.json", found)
+        for h in arts[:250]:
+            try:
+                resp = page.goto(h, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(1200)
+                txt = page.inner_text("main") if page.query_selector("main") else page.inner_text("body")
+                aid = re.search(r"/articles/(\d+)", h).group(1)
+                save(f"montink/zd/{aid}.txt", f"URL: {h}\nTITLE: {page.title()}\n\n{txt[:40000]}")
+            except Exception as e: print("ERR", h, e)
+    pw_run(run)
