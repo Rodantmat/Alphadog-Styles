@@ -868,3 +868,51 @@ if task == "montink6":
                     out = [(i.get("full_name") or (i["repository"]["full_name"] + ":" + i["path"]), i.get("html_url"), (i.get("description") or "")) for i in items]
                     save("montink/ghs_" + kind + "_" + re.sub(r"[^a-z0-9]+", "_", q.lower())[:40] + ".json", {"total": rr.json().get("total_count"), "items": out})
             time.sleep(7) if 'time' in globals() else None
+
+if task == "montink7":
+    URLS = {
+     "b_tiktok": "https://blog.montink.com/tiktok-shop-no-brasil/",
+     "b_pets": "https://blog.montink.com/print-on-demand-produtos-pets/",
+     "b_pets2": "https://blog.montink.com/print-on-demand-a-nova-oportunidade-de-negocio-para-quem-tem-um-canal-de-pets/",
+     "b_mkt": "https://blog.montink.com/destacar-loja-personalizada-marketplaces/",
+     "b_prod": "https://blog.montink.com/producao-print-on-demand/",
+     "b_modapet": "https://blog.montink.com/moda-pet/",
+     "b_plat": "https://blog.montink.com/plataformas-de-vendas-online/",
+     "b_dimona": "https://blog.montink.com/tag/dimona/",
+     "b_vale": "https://blog.montink.com/?s=vale+a+pena",
+     "b_frete": "https://blog.montink.com/?s=frete",
+     "b_prazo2": "https://blog.montink.com/?s=prazo+de+entrega",
+     "b_api": "https://blog.montink.com/?s=api",
+     "b_integr": "https://blog.montink.com/?s=integra%C3%A7%C3%A3o",
+     "emp_1": "https://empreender.com.br/loja-de-camisetas-personalizadas-print-on-demand/",
+     "emp_2": "https://empreender.com.br/?p=8003",
+     "emp_montink": "https://empreender.com.br/integracoes/montink/",
+     "emp_ml": "https://empreender.com.br/integracao-mercado-livre/",
+     "emp_home": "https://empreender.com.br/",
+     "dropsimples_ml": "https://www.dropsimples.com.br/",
+     "mk_home_pet": "https://montink.com/roupas-pet",
+     "sou_catalogo": "https://sou.montink.com/catalogo-de-produtos/",
+     "sou_afiliado": "https://sou.montink.com/",
+     "mk_embal": "https://sou.montink.com/pet/",
+     "mk_pet2": "https://montink.com/produtos/roupa-pet",
+     "mk_tarifas": "https://montink.com/termos-e-condicoes-de-uso-do-site",
+     "shopify_app": "https://apps.shopify.com/montink",
+     "shopify_app2": "https://apps.shopify.com/montink-print-on-demand",
+     "wc_montink": "https://wordpress.org/plugins/search/montink/",
+    }
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA, locale="pt-BR", viewport={"width":1366,"height":900})
+        for k, u in URLS.items():
+            try:
+                page = ctx.new_page()
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000)
+                page.wait_for_timeout(3500)
+                txt = page.inner_text("body")
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,100),e.href])")
+                save(f"montink/z_{k}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:40000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs[:120]))
+                page.close()
+            except Exception as e:
+                save(f"montink/z_{k}.txt", f"URL: {u}\nERROR: {e}")
+        b.close()
