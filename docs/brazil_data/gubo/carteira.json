@@ -1,0 +1,10 @@
+[
+ 200,
+ {
+  "objeto": "carteira",
+  "moeda": "BRL",
+  "saldo_disponivel_centavos": 1000000,
+  "saldo_reservado_centavos": 0,
+  "atualizado_em": "2026-11-07T23:49:26Z"
+ }
+]

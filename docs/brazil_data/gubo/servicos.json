@@ -1,0 +1,74 @@
+[
+ 200,
+ {
+  "objeto": "lista",
+  "dados": [
+   {
+    "objeto": "servico_frete",
+    "codigo": "correios",
+    "nome": "Olist Envios Correios PAC",
+    "transportadora": "Correios",
+    "modalidade": "PAC",
+    "ativo": true
+   },
+   {
+    "objeto": "servico_frete",
+    "codigo": "correios-sedex",
+    "nome": "Olist Envios Correios SEDEX",
+    "transportadora": "Correios",
+    "modalidade": "Sedex",
+    "ativo": true
+   },
+   {
+    "objeto": "servico_frete",
+    "codigo": "jet",
+    "nome": "Olist Envios J&T Express",
+    "transportadora": "J&T Express",
+    "modalidade": "Normal",
+    "ativo": true
+   },
+   {
+    "objeto": "servico_frete",
+    "codigo": "jadlog",
+    "nome": "Olist Envios Jadlog",
+    "transportadora": "Jadlog",
+    "modalidade": "Normal",
+    "ativo": true
+   },
+   {
+    "objeto": "servico_frete",
+    "codigo": "loggi",
+    "nome": "Olist Envios Loggi",
+    "transportadora": "Loggi",
+    "modalidade": "Expresso",
+    "ativo": true
+   },
+   {
+    "objeto": "servico_frete",
+    "codigo": "gfl",
+    "nome": "Olist Envios GFL",
+    "transportadora": "Magalog",
+    "modalidade": "Expresso",
+    "ativo": true
+   },
+   {
+    "objeto": "servico_frete",
+    "codigo": "pax",
+    "nome": "Olist Envios Pax",
+    "transportadora": "Pax",
+    "modalidade": "Expresso",
+    "ativo": true
+   },
+   {
+    "objeto": "servico_frete",
+    "codigo": "imile",
+    "nome": "Olist Envios IMile",
+    "transportadora": "iMile",
+    "modalidade": "Normal",
+    "ativo": true
+   }
+  ],
+  "tem_mais": false,
+  "proximo_cursor": null
+ }
+]

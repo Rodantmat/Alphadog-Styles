@@ -1,0 +1,55 @@
+{
+ "objeto": "conexao",
+ "id": "1794095361556x257087055236956160",
+ "loja": {
+  "nome": "Sem nome"
+ },
+ "modo": "teste",
+ "situacao": "ativa",
+ "pagamento": "aguardar",
+ "chave": {
+  "nome": "Alphadog",
+  "prefixo": "gubo_test_PxP0",
+  "escopos": [
+   "catalogo:ler",
+   "pedidos:ler",
+   "pedidos:criar",
+   "pedidos:pagar",
+   "pedidos:cancelar",
+   "carteira:ler",
+   "fretes:cotar",
+   "vinculos:ler",
+   "vinculos:escrever"
+  ],
+  "expira_em": null
+ },
+ "limites": {
+  "pedidos_por_dia": 1000,
+  "valor_pago_por_dia_centavos": null,
+  "itens_por_pedido": 5,
+  "criar_por_minuto": 30,
+  "pagar_por_minuto": 30,
+  "leituras_por_minuto": 300,
+  "cotar_por_minuto": 30,
+  "vincular_por_minuto": 20,
+  "cotacoes_por_dia": 300,
+  "vinculos_por_dia": 5000,
+  "loja_por_minuto": {
+   "criar": 60,
+   "pagar": 60,
+   "leituras": 600,
+   "cotar": 60,
+   "vincular": 40
+  },
+  "ip_por_minuto": {
+   "chamadas": 600,
+   "escritas": 120
+  }
+ },
+ "consumo_hoje": {
+  "pedidos": 0,
+  "valor_pago_centavos": 0,
+  "cotacoes": 0,
+  "vinculos": 0
+ }
+}
