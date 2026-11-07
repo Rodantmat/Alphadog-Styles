@@ -357,3 +357,57 @@ if task in ("fetchlist", "harvest"):
                 print("PWERR", u, e)
                 save(f"bridge/{slug(u)}.txt", f"URL: {u}\nERROR: {e}")
     pw_run(run)
+
+if task == "alt2":
+    URLS = {
+     "rink_api": "https://reserva.ink/site/api",
+     "rink_precos": "https://reserva.ink/site/quanto-custa-reserva-ink",
+     "rink_produtos": "https://reserva.ink/site/produtos-fisicos",
+     "rink_pod": "https://reserva.ink/site/print-on-demand",
+     "rink_help": "https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/pt_BR",
+     "montink_integ2": "https://sou.montink.com/integracoes-montink/",
+     "montink_sou": "https://sou.montink.com/",
+     "montink_catalogo": "https://montink.com.br/catalogo",
+     "ml_notif": "https://developers.mercadolivre.com.br/pt_br/produto-receba-notificacoes",
+     "ml_envios_custom": "https://developers.mercadolivre.com.br/pt_br/envios-personalizados",
+     "ml_anexar_nf": "https://developers.mercadolivre.com.br/pt_br/anexar-nota-fiscal",
+     "ml_importar_nf": "https://developers.mercadolivre.com.br/pt_br/importar-nota-fiscal",
+     "ml_enviar_nf": "https://developers.mercadolivre.com.br/pt_br/enviar-nota-fiscal",
+     "ml_me2": "https://developers.mercadolivre.com.br/pt_br/mercado-envios-2",
+     "ml_orders": "https://developers.mercadolivre.com.br/pt_br/gerenciamento-de-vendas",
+     "ml_perm": "https://developers.mercadolivre.com.br/pt_br/permissoes-funcionais",
+     "ml_dpp": "https://developers.mercadolivre.com.br/pt_br/developer-partner-program",
+     "ml_ratelimit": "https://developers.mercadolivre.com.br/pt_br/rate-limit-erro-429",
+     "printful_help_br": "https://www.printful.com/shipping",
+     "printful_br_po": "https://www.printful.com/print-on-demand-brazil",
+     "printful_webhooks": "https://developers.printful.com/docs/v2-beta/#tag/Webhook-API",
+     "gelato_apiprod": "https://dashboard.gelato.com/docs/",
+     "gelato_ship_br": "https://www.gelato.com/shipping-and-delivery",
+     "gelato_products_tshirt": "https://www.gelato.com/products/t-shirt",
+     "dslite_api": "https://www.dslite.com.br/api",
+     "ra_montink": "https://www.reclameaqui.com.br/empresa/montink/",
+     "ra_reservaink": "https://www.reclameaqui.com.br/empresa/reserva-ink/",
+     "ra_dimona": "https://www.reclameaqui.com.br/empresa/dimona/",
+     "ra_printful": "https://www.reclameaqui.com.br/empresa/printful/",
+     "tp_montink": "https://www.trustpilot.com/review/montink.com.br",
+     "n8n_ml": "https://n8n.io/integrations/mercado-libre/",
+     "make_ml": "https://www.make.com/en/integrations/mercadolibre",
+     "zapier_ml": "https://zapier.com/apps/mercado-libre/integrations",
+     "glama_ml": "https://glama.ai/mcp/servers?query=mercado+livre",
+    }
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA, locale="pt-BR", viewport={"width":1366,"height":900})
+        for k, u in URLS.items():
+            try:
+                page = ctx.new_page()
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000)
+                page.wait_for_timeout(4000)
+                txt = page.inner_text("body")
+                hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,80),e.href])")
+                save(f"alt/{k}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:40000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs[:150]))
+                page.close()
+            except Exception as e:
+                save(f"alt/{k}.txt", f"URL: {u}\nERROR: {e}")
+        b.close()
