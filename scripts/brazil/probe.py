@@ -789,3 +789,23 @@ if task == "montink4":
             except Exception as e:
                 save(f"montink/y_{k}.txt", f"URL: {u}\nERROR: {e}")
         b.close()
+
+if task == "prod3":
+    def slug(u):
+        return re.sub(r"[^A-Za-z0-9]+", "_", u.split("://",1)[-1])[:100]
+    G = "https://gubo.com.br/docs-api/"
+    URLS = [G + s for s in "visao-geral inicio-rapido autenticacao criar-pedido fretes vinculos pagar acompanhar webhooks modo-teste producao referencia convencoes erros conexao catalogo pedidos carteira teste exemplos ia changelog".split()]
+    URLS += ["https://gubo.com.br/blog/gubo-ou-uma-penca", "https://gubo.com.br/blog/print-on-demand-no-brasil", "https://gubo.com.br/sobre-nos", "https://gubo.com.br/termos", "https://gubo.com.br/loja-virtual",
+             "https://gubo.com.br/detalhe-produto/camiseta-padrao", "https://gubo.com.br/detalhe-produto/moletom-com-capuz",
+             "https://youdraw.com.br/integracoes", "https://youdraw.com.br/planos", "https://youdraw.com.br/faq", "https://youdraw.com.br/catalogo", "https://youdraw.com.br/como-funciona"]
+    def run(page):
+        for u in URLS:
+            try:
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(2500)
+                try:
+                    page.evaluate("() => { document.querySelectorAll('details').forEach(d=>d.open=true); }")
+                except Exception: pass
+                save(f"prod3/{slug(u)}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{page.inner_text('body')[:60000]}")
+            except Exception as e:
+                print("PWERR", u, e); save(f"prod3/{slug(u)}.txt", f"URL: {u}\nERROR: {str(e)[:300]}")
+    pw_run(run)
