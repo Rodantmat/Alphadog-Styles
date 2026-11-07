@@ -39,3 +39,9 @@
 - out/music2/mNNN.mp3 (m00-m89 older 2-digit names, m090-m299 new), catalog out/music2/list.json with fields title, artist, theme, tag, bpm, energy, file. Built by scripts/video/music4.py (workflow music4.yml, input target; energy/tempo-filtered, theme-balanced, Mixkit licence = free commercial use, no attribution).
 - Themes: Electronic & House 64, Feel-good 53, Hip-hop & Trap 46, Rock & Guitar 40, Funk & Disco 37, Pop & Party 36, Chill & Lo-fi 21, Latin & Reggae 3.
 - Rotation rule: pick the unused track (not in docs/music_log.md) whose THEME differs from the previous day's and from the same-day sibling post; fit the mood to the concept (hip-hop/trap for laugh videos, funk/pop for fashion, etc.). Never reuse a track. When < 30 unused remain, run music4.yml with target = current total + 150.
+
+## MUSIC ENFORCEMENT (mandatory, every build)
+1. Music is chosen ONLY with scripts/video/pick_music.py: `pick STYLE --prev-theme <previous day's theme> --sibling-theme <same-day A/B partner's theme>` returns style-matched, never-used candidates. Styles and their allowed themes/bpm are in docs/music_style_map.json (laugh4, laugh2, d1-d7, postB). A new video style must be added to that map before its first build.
+2. After the video is built and passes the frame check: `pick_music.py commit STYLE FILE DATE USE` (fails if the track was used or the theme is not allowed). This writes docs/music_used.json and docs/music_log.md. A build without a successful commit is not finished.
+3. `pick_music.py check` must pass before every push. Never copy a track by hand, never reuse a track, never pick outside the style's themes.
+4. Also register the theme of each day's A and B in docs/schedule.json (fields A.theme / B.theme) so the next day can avoid it.

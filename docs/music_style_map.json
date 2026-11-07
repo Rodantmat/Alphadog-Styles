@@ -1,0 +1,16 @@
+{
+ "_note": "ENFORCED by scripts/video/pick_music.py. Each video style may only use tracks whose theme is in 'themes' and whose bpm is within bpm. Hard rules: never reuse a track (docs/music_used.json), never the same theme as the previous day's post or the same-day sibling (A/B).",
+ "styles": {
+  "laugh4":  {"desc":"Mon 4-dog laugh video: comedic, bouncy, punchline pacing","themes":["Hip-hop & Trap","Pop & Party","Funk & Disco","Feel-good"],"bpm":[95,150]},
+  "laugh2":  {"desc":"Thu 2-dog laugh video","themes":["Hip-hop & Trap","Pop & Party","Funk & Disco","Feel-good"],"bpm":[95,150]},
+  "d1":      {"desc":"d1 snack/ride comedy gag","themes":["Funk & Disco","Feel-good","Pop & Party"],"bpm":[95,140]},
+  "d2":      {"desc":"d2 real shades vs ours: cool, confident","themes":["Hip-hop & Trap","Pop & Party","Funk & Disco"],"bpm":[90,140]},
+  "d3":      {"desc":"d3 scenery tees: airy, scenic, feel-good","themes":["Chill & Lo-fi","Feel-good","Latin & Reggae"],"bpm":[80,125]},
+  "d4":      {"desc":"d4 line-art hoodies: stylish, smooth","themes":["Chill & Lo-fi","Electronic & House","Feel-good"],"bpm":[85,125]},
+  "d5":      {"desc":"d5 funny breed compilation: playful, fast cuts","themes":["Pop & Party","Feel-good","Rock & Guitar","Funk & Disco"],"bpm":[100,150]},
+  "d6":      {"desc":"d6 neon sign: night, electric","themes":["Electronic & House","Hip-hop & Trap","Rock & Guitar"],"bpm":[95,140]},
+  "d7":      {"desc":"d7 which one is yours / which back: upbeat, interactive","themes":["Pop & Party","Funk & Disco","Feel-good"],"bpm":[100,135]},
+  "postB":   {"desc":"Post B Printify mockup reels: elegant, clean, appealing, never aggressive","themes":["Chill & Lo-fi","Electronic & House","Feel-good","Funk & Disco","Latin & Reggae"],"bpm":[80,128]}
+ },
+ "new_concept": "A brand-new video style must be added here (themes + bpm + desc) BEFORE its first build."
+}
