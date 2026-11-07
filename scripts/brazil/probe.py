@@ -195,3 +195,32 @@ if task == "shopee":
         for k, u in URLS.items():
             grab(page, u, f"shopee/{k}.txt", wait=5000)
     pw_run(run)
+
+if task == "dimona2":
+    # Zendesk Help Center public API (official) + Postman published docs JSON
+    allart = []
+    url = "https://suporte.camisadimona.com.br/api/v2/help_center/pt-br/articles.json?per_page=100"
+    pages = 0
+    while url and pages < 5:
+        r = get(url)
+        if r is None or r.status_code != 200:
+            save("dimona/zd_error.txt", f"{url}\n{r.status_code if r is not None else None}\n{r.text[:500] if r is not None else ''}")
+            break
+        j = r.json(); allart += j.get("articles", []); url = j.get("next_page"); pages += 1
+    print("articles", len(allart))
+    out = []
+    for a in allart:
+        out.append(f"# [{a['id']}] {a['title']}\nURL: {a['html_url']}\nsection: {a.get('section_id')} updated: {a.get('updated_at')}\n\n{text_of_html(a.get('body') or '')}\n\n{'='*60}\n")
+    save("dimona/zendesk_articles.txt", "\n".join(out))
+    for ep in ["sections", "categories"]:
+        r = get(f"https://suporte.camisadimona.com.br/api/v2/help_center/pt-br/{ep}.json?per_page=100")
+        if r is not None and r.status_code == 200: save(f"dimona/zd_{ep}.json", r.text)
+    for u in ["https://documenter.gw.postman.com/api/collections/111729/2sB2qdgLJQ?segregateAuth=true&versionTag=latest",
+              "https://api.camisadimona.com.br/view/metadata/2sB2qdgLJQ",
+              "https://documenter.gw.postman.com/view/metadata/2sB2qdgLJQ"]:
+        r = get(u)
+        save("dimona/postman_" + re.sub(r"\W+", "_", u)[-30:] + ".json", r.text if r is not None else "ERR")
+        print(u, r.status_code if r is not None else None, len(r.text) if r is not None else 0)
+
+if task == "amazon_parse":
+    pass
