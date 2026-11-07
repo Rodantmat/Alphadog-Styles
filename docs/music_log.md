@@ -34,3 +34,5 @@
 - Post B b17 (Nov 17): m10 Autofahren
 - Post B b13/b15/b16 rebuilt (banned breeds removed, prints visible) with the same music as before (m07, m14, m24)
 - ALL 30 out/music2 tracks are now used; Mixkit download is blocked from the cloud (403). Owner must add new tracks (out/music2) for Tue Nov 17 A onward.
+- 2026-11-17 d4b_golden_line_art: m220.mp3 "Funk Jazz" - Francisco Alvear [Feel-good, style d4]
+- 2026-11-18 b18: m160.mp3 "Groovy Jazz" - Francisco Alvear [Chill & Lo-fi, style postB]

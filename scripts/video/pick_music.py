@@ -35,5 +35,5 @@ def main():
     for x in c:
         if x["theme"] not in seen: seen.add(x["theme"]);out.append(x)
     out+= [x for x in c if x not in out]
-    print(json.dumps([{k:x[k] for k in("file","title","artist","theme","bpm","energy")} for x in out[:n]],indent=1))
+    print(json.dumps([{k:x.get(k) for k in("file","title","artist","theme","bpm","energy")} for x in out[:n]],indent=1))
 main()

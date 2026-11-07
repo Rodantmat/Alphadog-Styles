@@ -146,15 +146,17 @@
    "date": "2026-11-17",
    "weekday": "Tue",
    "A": {
-    "video": null,
-    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+    "video": "social/videos/d4b_golden_line_art.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Feel-good"
    },
    "B": {
     "id": "b17",
     "reel": "out/postb2/b17/reel.mp4",
-    "slot": "20:00 PT"
+    "slot": "20:00 PT",
+    "theme": "Electronic & House"
    },
-   "status": "B built; A TODO (music3 added tracks m30-m89)"
+   "status": "built"
   },
   {
    "date": "2026-11-18",
@@ -164,11 +166,12 @@
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
-    "id": null,
-    "reel": null,
-    "slot": "20:00 PT"
+    "id": "b18",
+    "reel": "out/postb2/b18/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Chill & Lo-fi"
    },
-   "status": "TODO"
+   "status": "B built; A TODO (d3 scenery tees re-creation)"
   },
   {
    "date": "2026-11-19",

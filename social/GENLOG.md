@@ -6,3 +6,5 @@
 2026-11-07T18:37Z checker run started
 2026-11-07T18:38Z checker: Sat Nov 7 10:00 PT slot A (d4 line-art hoodies, due 18:00Z) listed acct1+2: SENT on IG, TikTok, FB, Pinterest. Prior B (04:00Z) sent on all 4. No failed/stuck/missed items; nothing forced. Future items untouched. Result OK.
 2026-11-07T22:49:37Z generator run started
+2026-11-07T22:50:36Z assets restored OK
+2026-11-07T22:58:09Z built d4b_golden_line_art (Nov 17 A, m220 via pick_music), b18 (Nov 18 B, m160); frames checked OK. Note: media_extra.zip overwrites out/music2/list.json with old 30-track list (git checkout it after restore); 89 of 300 catalog tracks have no mp3 in git, pick only existing files. Nov 18 A, Nov 19 A+B still TODO. FINISHED

@@ -222,5 +222,19 @@
   "style": "legacy",
   "theme": "Pop & Party",
   "title": "Island Beat"
+ },
+ "m220.mp3": {
+  "date": "2026-11-17",
+  "use": "d4b_golden_line_art",
+  "style": "d4",
+  "theme": "Feel-good",
+  "title": "Funk Jazz"
+ },
+ "m160.mp3": {
+  "date": "2026-11-18",
+  "use": "b18",
+  "style": "postB",
+  "theme": "Chill & Lo-fi",
+  "title": "Groovy Jazz"
  }
 }
