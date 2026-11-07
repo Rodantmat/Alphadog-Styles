@@ -22,3 +22,8 @@
 ## 2026-11-07 (08:28Z) second check
 - Re-listed both accounts: all past posts sent; all 4 channels still 10/10 scheduled, so nothing added. b08/b09 remain pending (limit).
 2026-11-07T18:38Z checker: Sat Nov 7 10:00 PT slot A (d4 line-art hoodies, due 18:00Z) listed acct1+2: SENT on IG, TikTok, FB, Pinterest. Prior B (04:00Z) sent on all 4. No failed/stuck/missed items; nothing forced. Future items untouched. Result OK.
+
+## 2026-11-07 (20:15Z) Buffer fill run
+- Verified: every past post is `sent` on IG, TikTok, FB, Pinterest (Nov 6 17:00Z, Nov 7 04:00Z and 18:00Z). No misses.
+- Scheduled b08 (Nov 11 8pm PT = Nov 12 04:00Z) on all 4 apps via social/planB2_b08_*.json: IG 6aef874dd6bbae6fa1ab92ec, TikTok 6aef874e562f2e6de97ba625, FB 6aef8753004e4879a779f495, Pinterest 6aef8754229bf05daf70c98d. All 4 channels now 10/10.
+- Pending (limit): b09 (Nov 12 8pm PT) and the built Nov 13-16 items. Tomorrow (Nov 8) A and B are scheduled; no ALERT. Lead beyond Nov 17 A is thin (A TODO Nov 17-19).

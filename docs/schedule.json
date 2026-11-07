@@ -70,7 +70,7 @@
     "reel": "out/postb2/b08/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A scheduled; B pending (Buffer limit)"
+   "status": "A + B scheduled on all 4 apps"
   },
   {
    "date": "2026-11-12",
@@ -84,7 +84,7 @@
     "reel": "out/postb2/b09/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A scheduled (v3 replaced v2); B pending (Buffer limit)"
+   "status": "A scheduled (v3); B b09 pending (Buffer limit 10/10)"
   },
   {
    "date": "2026-11-13",
