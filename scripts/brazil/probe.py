@@ -1,3 +1,4 @@
+import time
 import sys, json, statistics as st
 sys.path.insert(0, "scripts/brazil")
 from common import *
@@ -837,3 +838,33 @@ if task == "montink5":
             time.sleep(1)
         time.sleep(0.7)
     print("fetched", ok, "of", len(order))
+
+if task == "montink6":
+    H = {"Authorization": "Bearer " + os.environ.get("GH_TOKEN", ""), "Accept": "application/vnd.github+json", "User-Agent": "probe"}
+    def gj(u, **kw):
+        try:
+            r = requests.get(u, headers=H, timeout=30, **kw); return r
+        except Exception as e:
+            print("ERR", u, e); return None
+    R = "noxsulivan/tshirtness-montink"
+    r = gj(f"https://api.github.com/repos/{R}")
+    print("repo", r.status_code if r is not None else None)
+    if r is not None and r.status_code == 200:
+        save("montink/gh_repo.json", r.text)
+        t = gj(f"https://api.github.com/repos/{R}/git/trees/HEAD?recursive=1")
+        tree = t.json().get("tree", []) if t is not None and t.status_code == 200 else []
+        save("montink/gh_tree.json", tree)
+        for x in tree:
+            if x["type"] == "blob" and x.get("size", 0) < 200000 and re.search(r"\.(php|md|json|js|py|txt|yml|yaml)$", x["path"], re.I) and "vendor/" not in x["path"] and "node_modules" not in x["path"]:
+                rr = gj(f"https://raw.githubusercontent.com/{R}/HEAD/{x['path']}")
+                if rr is not None and rr.status_code == 200: save("montink/gh_src/" + x["path"].replace("/", "__"), rr.text)
+    for q in ['"api.montink"', '"montink.com.br/api"', 'montink webhook', 'montink in:readme api dropshipping', '"montink" mercado livre', 'montink api token pedidos dropshipping']:
+        for kind in ("code", "repositories"):
+            rr = gj(f"https://api.github.com/search/{kind}", params={"q": q, "per_page": 30})
+            if rr is not None:
+                print(kind, q, rr.status_code)
+                if rr.status_code == 200:
+                    items = rr.json().get("items", [])
+                    out = [(i.get("full_name") or (i["repository"]["full_name"] + ":" + i["path"]), i.get("html_url"), (i.get("description") or "")) for i in items]
+                    save("montink/ghs_" + kind + "_" + re.sub(r"[^a-z0-9]+", "_", q.lower())[:40] + ".json", {"total": rr.json().get("total_count"), "items": out})
+            time.sleep(7) if 'time' in globals() else None
