@@ -1,0 +1,10 @@
+{
+ "status": 400,
+ "body": {
+  "data": "This endpoint requires `store_id`!",
+  "error": {
+   "reason": "BadRequest",
+   "message": "This endpoint requires `store_id`!"
+  }
+ }
+}
