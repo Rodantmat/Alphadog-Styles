@@ -21,3 +21,4 @@
 
 ## 2026-11-07 (08:28Z) second check
 - Re-listed both accounts: all past posts sent; all 4 channels still 10/10 scheduled, so nothing added. b08/b09 remain pending (limit).
+2026-11-07T18:38Z checker: Sat Nov 7 10:00 PT slot A (d4 line-art hoodies, due 18:00Z) listed acct1+2: SENT on IG, TikTok, FB, Pinterest. Prior B (04:00Z) sent on all 4. No failed/stuck/missed items; nothing forced. Future items untouched. Result OK.
