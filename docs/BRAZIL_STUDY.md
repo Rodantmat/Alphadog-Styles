@@ -96,3 +96,7 @@ cons orders/mo 0,1,2,4,8,14 -> net R$-730,-679,-627,-1,570(M4-6),-1,899(M7-12),-
 base 1,3,5,10,22,45 -> -679,-575,-472,-639,+2,360,+18,495; cumulative +18,490 (break-even cumulative ~M12)
 opt 3,8,14,30,70,140 -> -575,-317,-6,+2,378,+16,734,+65,845; cumulative +84,058 (becomes ME in year 2: revenue R$194k)
 Paid ads at R$600-5,000/mo make cons/base negative over 24 months (see agent run).
+
+---
+# Update Nov 7 (Printful via API, token PRINTFUL_API_TOKEN works; data in docs/brazil_data/printful/)
+V (API, Nov 7): Printful catalog has 49 products in selling region 'brazil' (of 569 US). Apparel fulfillable in Brazil (DTG, 'in stock'): Men's Fitted Straight Cut Tee (id 509) 20 variants; Crew Neck Sweatshirt Gildan 18000 (4 variants); Heavy Blend Hoodie Gildan 18500 (1 variant). Bella+Canvas 3001 (71), Gildan 64000 (12), BC 3413 (162): 'not fulfillable' in Brazil. Prices in USD: tee 509 base $10.95 + front print $6.75 = $17.70; sweatshirt 18000 base $20.25 + print; hoodie 18500 in-stock variant $24.25 + print $6.75. At an assumed R$5.5/USD tee ~R$97 vs Dimona R$36.90-41.90 -> Printful ~2.5x more expensive. Shipping rates need a store_id (no store created yet). Conclusion: Printful is not competitive on cost for Brazil; keep Dimona primary.
