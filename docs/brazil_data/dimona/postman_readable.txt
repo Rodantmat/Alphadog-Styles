@@ -1,0 +1,334 @@
+
+# Requests
+
+## Order
+
+##  POST {{api-domain}}/api/v2/order | Create Order
+DESC: <p><strong>Items:</strong><br />
+Array of SKUs. You should use the field "name", but it's not mandatory.<br />
+<strong>Delivery:</strong><br />
+shipping_speed: PAC or SEDEX 
+delivery_method_id: optional. If you integrated with the Quote Endpoint, you can pass the delivery_method_id here. The shipping_speed field will be ignored</p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+BODY: {
+    "shipping_speed": "pac",
+    "delivery_method_id": "177",
+    "order_id": "1794077217",
+    "customer_name": "Fulano da Silva",
+    "customer_document": "123.456.789-13",
+    "customer_email": "exemplo@gmail.com",
+    "webhook_url":"https://option_webhook_url.com",
+    "items": [
+        {
+            "name": "Camisa Polo P Branca",
+            "sku": "12345",
+            "qty": 2,
+            "dimona_sku_id": "010603110108",
+            "designs": [
+                "url_front",
+                "url_back"
+            ],
+            "mocks": [
+                "mock_front",
+                "mock_back"
+            ]
+        },
+        {
+            "name": "Camisa Polo M Branca",
+            "sku": "12346",
+            "qty": 2,
+            "dimona_sku_id": "010603110109",
+            "designs": [
+                "url_front",
+                "url_back"
+            ],
+            "mocks": [
+                "mock_front",
+                "mock_back"
+            ]
+        },
+        {
+            "name": "Camisa Polo G Branca",
+            "sku": "12347",
+            "qty": 2,
+            "dimona_sku_id": "010603110110",
+            "designs": [
+                "url_front",
+                "url_back"
+            ],
+            "mocks": [
+                "mock_front",
+                "mock_back"
+            ]
+        }
+    ],
+    "nfe": {
+        "chave": "chave_com_44_digitos",
+        "serie": "1",
+        "numero": "1234",
+        "link": "https://link_para_nfe"
+    },
+    "address": {
+        "name": "Receiver Name",
+        "street": "Rua Buenos Aires",
+        "number": "334",
+        "complement": "Loja",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "zipcode": "20061000",
+        "neighborhood": "Centro",
+        "phone": "21 21093661",
+        "country": "BR"
+    }
+}
+
+RESP 422 Erro: Pedido já existe "O pedido 1234 j\u00e1 existe"
+RESP 200 Pedido Criado com Sucesso {"order":"064-435-556"}
+
+##  GET {{api-domain}}/api/v2/orders | Show Orders
+DESC: <p>List all orders</p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+
+##  GET {{api-domain}}/api/v2/order/{{order-id}} | Show Order
+DESC: <p>Show one order</p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+RESP 200 Show Order {
+    "dimona_id": "123-123-123",
+    "seller_id": "abcd",
+    "status": "Aguardando Imagens",
+    "shipping_cost": 17.99,
+    "shipping_method_name": "Correios Sedex",
+    "total_value": 67.99,
+    "status_id": 18,
+    "created_at": "01/01/2000",
+    "tracking_url": "http://status.ondeestameupedido.com/tracking/1168/123123123",
+    "tracking_code": null
+}
+
+##  GET {{api-domain}}/api/v2/order/{{order-id}}/tracking | Show Order Tracking
+DESC: <p>Get tracking History of an Order</p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+RESP 200 Show Order Tracking [{"status_name":"Entregue","micro_status_name":"ENTREGUE NO LOCAL DE RETIRADA","micro_status_description":"A carga est\u00e1 em processo de transfer\u00eancia entre filiais.","message":"FL RIO DE JANEIRO","event_date":{"date":"2018-08-08 17:54:00.000000","timezone_type":3,"timezone":"America\/Sao_Paulo"},"created_at":"2018-08-09 14:33:57"}]
+
+##  GET {{api-domain}}/api/v2/order/{{order-id}}/timeline | Show Order Timeline
+DESC: <p>Get timeline history of an order. There are 4 different types of events:</p>
+<ul>
+<li>Order status update. In production, shipped, delivered, etc.</li>
+<li>Order item status update. Picked, packed, quality control, etc. Independent updates for each order item.</li>
+<li>Automatic actions. Invoice created, shipping label created, etc.</li>
+<li>Transaction. Order paid, boleto issued, etc</li>
+<li>Tracking updates. Carrier updates.</li>
+</ul>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+RESP 200 Show Order Timeline [
+    {
+        "icon": "glyphicon-check",
+        "title": "Alteração de Status",
+        "text": "Status alterado de Pagamento Aprovado para Cancelado",
+        "color": "warning",
+        "timestamp": "17/09/19 13:50:32"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Status da etiqueta 123456 alterado de Etiqueta Criada para Cancelada",
+        "color": "danger",
+        "timestamp": "17/09/19 13:50:32"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Status da etiqueta 123457 alterado de Etiqueta Criada para Cancelada",
+        "color": "danger",
+        "timestamp": "17/09/19 13:50:32"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Etiqueta 123456 criada.",
+        "color": "danger",
+        "timestamp": "17/09/19 13:49:56"
+    },
+    {
+        "icon": "glyphicon-check",
+        "title": "Alteração de Status",
+        "text": "Status alterado de Pagamento Pendente para Pagamento Aprovado",
+        "color": "warning",
+        "timestamp": "17/09/19 13:49:55"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Etiqueta 123457 criada.",
+        "color": "danger",
+        "timestamp": "17/09/19 13:49:55"
+    }
+]
+
+##  GET {{api-domain}}/api/v2/order/{{order-id}}/items | Show Order Items
+DESC: <p>Get timeline history of an order. There are 4 different types of events:</p>
+<ul>
+<li>Order status update. In production, shipped, delivered, etc.</li>
+<li>Order item status update. Picked, packed, quality control, etc. Independent updates for each order item.</li>
+<li>Automatic actions. Invoice created, shipping label created, etc.</li>
+<li>Transaction. Order paid, boleto issued, etc</li>
+<li>Tracking updates. Carrier updates.</li>
+</ul>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+RESP 200 Show Order Timeline [
+    {
+        "icon": "glyphicon-check",
+        "title": "Alteração de Status",
+        "text": "Status alterado de Pagamento Aprovado para Cancelado",
+        "color": "warning",
+        "timestamp": "17/09/19 13:50:32"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Status da etiqueta 123456 alterado de Etiqueta Criada para Cancelada",
+        "color": "danger",
+        "timestamp": "17/09/19 13:50:32"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Status da etiqueta 123457 alterado de Etiqueta Criada para Cancelada",
+        "color": "danger",
+        "timestamp": "17/09/19 13:50:32"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Etiqueta 123456 criada.",
+        "color": "danger",
+        "timestamp": "17/09/19 13:49:56"
+    },
+    {
+        "icon": "glyphicon-check",
+        "title": "Alteração de Status",
+        "text": "Status alterado de Pagamento Pendente para Pagamento Aprovado",
+        "color": "warning",
+        "timestamp": "17/09/19 13:49:55"
+    },
+    {
+        "icon": "glyphicon-circle-arrow-right",
+        "title": "Produção",
+        "text": "Etiqueta 123457 criada.",
+        "color": "danger",
+        "timestamp": "17/09/19 13:49:55"
+    }
+]
+
+##  POST {{api-domain}}/api/v2/order/{{order-id}}/nfe | Add NFE to Order
+DESC: <p><strong>Attention:</strong><br />
+Before using this endpoint send an email to <a href="mailto:api@dimona.com.br">api@dimona.com.br</a></p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+BODY: {
+    "chave": "33180513570097000110550010000166321270551123",
+    "serie": "1",
+    "numero": "1234",
+    "link": "https://link-para-pdf-danfe.com.br"
+}
+
+##  POST {{api-domain}}/api/v2/order/{{order-id}}/shippingLabel | Add Shipping Label to Order
+DESC: <p><strong>Attention:</strong><br />
+Before using this endpoint send an email to <a href="mailto:api@dimona.com.br">api@dimona.com.br</a></p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+BODY: {
+    "link": "link-to-label"
+}
+
+##  POST {{api-domain}}/api/v2/order/5846776585/shippingDocuments | Add Shipping Label and NFE to Order
+DESC: <p><strong>Attention:</strong><br />
+Before using this endpoint send an email to <a href="mailto:api@dimona.com.br">api@dimona.com.br</a></p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+BODY: {
+    "nfe": "https://s3-eu-west-1.amazonaws.com/printcloud.storage/edi/dev/edi/p5846776585_Invoice.pdf",
+    "label": "https://s3-eu-west-1.amazonaws.com/printcloud.storage/edi/dev/edi/p5846776585_DHLExpressBrazil.pdf"
+}
+
+##  POST {{api-domain}}/api/v3/order | Create Order - Named Attributes on Design
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+BODY: {
+    "shipping_speed": "pac",
+    "delivery_method_id": "177",
+    "order_id": "asdusahdksjah18y321831ad",
+    "customer_name": "Fulano da Silva",
+    "customer_document": "123.456.789-13",
+    "customer_email": "exemplo@gmail.com",
+    "items": [
+        {
+            "name": "Camisa Polo M Branca",
+            "sku": "12346",
+            "qty": 2,
+            "dimona_sku_id": "010603110109",
+            "designs": {
+                "front": "https://url-to-front",
+                "back": "https://url-to-back",
+                "left_sleeve": "https://url-to-left-sleeve",
+                "right_sleeve": "https://url-to-right-sleeve",
+                "inner_label": "https://url-to-inner-label",
+                "outer_label": "https://url-to-outer-label"
+            },
+            "mocks": {
+                "front": "https://url-to-front-mock",
+                "back": "https://url-to-back-mock",
+                "left_sleeve": "https://url-to-left-sleeve-mock",
+                "right_sleeve": "https://url-to-right-sleeve-mock",
+                "inner_label": "https://url-to-inner-label-mock",
+                "outer_label": "https://url-to-outer-label-mock"
+            }
+        }
+    ],
+    "nfe": { 
+        "chave": "chave_com_44_digitos",
+        "serie": "1",
+        "numero": "1234",
+        "link": "https://link_para_nfe"
+    },
+    "address": {
+        "street": "Rua Buenos Aires",
+        "number": "334",
+        "complement": "Loja",
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "zipcode": "20061000",
+        "neighborhood": "Centro",
+        "phone": "21 21093661",
+        "country": "BR"
+    }
+}
+RESP 200 Pedido Criado com Sucesso {"order":"064-435-556"}
+RESP 422 Erro: Pedido já existe "O pedido 1234 j\u00e1 existe"
+
+## Availability
+
+##  GET {{api-domain}}/api/v2/sku/{{sku_reference}}/availability | Check Availability by Reference
+DESC: <p>Expects a product ID. Returns an object {idCor: {idTamanho1: qty,idTamanho2:qty}}</p>
+
+HEADERS: [('Accept', 'application/json'), ('Content-Type', 'application/json'), ('api-key', '{{api-key}}')]
+
+## Shipping
+
+##  POST {{api-domain}}/api/v2/shipping | Quote Shipping
+DESC: <p>Create an Order</p>
+
+HEADERS: [('api-key', '{{api-key}}'), ('Accept', 'application/json'), ('Content-Type', 'application/json')]
+BODY: {
+    "zipcode": "20061001",
+    "quantity": "1"
+}
+RESP 200 Quote Result: Success [{"name":"Correios Sedex","value":10.34,"business_days":6,"delivery_method_id":2},{"name":"Jadlog Econ\u00f4mica","value":15.35,"business_days":10,"delivery_method_id":177},{"name":"Jadlog Express","value":15.57,"business_days":9,"delivery_method_id":176},{"name":"Buslog","value":24.32,"business_days":5,"delivery_method_id":780}]
+
+# Webhook
+INFO {"_postman_id": "39fc9be2-ce26-4932-8e44-e38e89efbd3d", "name": "Dimona API V2", "description": "<html><head></head><body><p>API Dimona Digital.<br>The easiest way to print and ship T-Shirts and Accessories. Shipping globally and printing locally in Brazil and in the US. 20000 sqf in Rio de Janeiro, Brazil and 7500 sqf in Dania Beach, Florida, and 10000 sqf in Elk Grove Village, IL.<br>Api Base Domain: <a href=\"https://camisadimona.com.br\">https://admin.camisadimona.com.br</a><br>API KEY: create an account in camisadimona.com.br</p>\n</body></html>", "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json", "toc": [], "owner": "111729", "collectionId": "39fc9be2-ce26-4932-8e44-e38e89efbd3d", "publishedId": "2sB2qdgLJQ", "public": true, "customColor": {"top-bar": "FFFFFF", "right-sidebar": "303030", "highlight": "0052eb"}, "publishDate": "2025-05-27T16:11:11.000Z"}

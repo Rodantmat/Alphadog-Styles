@@ -224,3 +224,42 @@ if task == "dimona2":
 
 if task == "amazon_parse":
     pass
+
+if task == "dimona3":
+    from bs4 import BeautifulSoup
+    ids = [14214044760468, 14819247754004, 14214172355348, 14207402191124, 20278295040532, 14214507814164, 14823773115028]
+    links = {}
+    for i in ids:
+        r = get(f"https://suporte.camisadimona.com.br/api/v2/help_center/pt-br/articles/{i}.json")
+        if r is None or r.status_code != 200: continue
+        a = r.json()["article"]
+        s = BeautifulSoup(a["body"], "lxml")
+        links[i] = [[x.get_text(strip=True), x["href"]] for x in s.find_all("a", href=True)]
+    save("dimona/article_links.json", links)
+    seen = set()
+    os.makedirs(OUT + "/dimona/catalog", exist_ok=True)
+    for i, ls in links.items():
+        for t, h in ls:
+            if h in seen or not h.startswith("http"): continue
+            if not re.search(r"drive\.google|docs\.google|\.xlsx|\.pdf|\.csv|dimona|zdassets|zendesk", h): continue
+            seen.add(h)
+            u = h
+            m = re.search(r"drive\.google\.com/file/d/([^/]+)", h)
+            if m: u = f"https://drive.google.com/uc?export=download&id={m.group(1)}"
+            m = re.search(r"docs\.google\.com/spreadsheets/d/([^/]+)", h)
+            if m: u = f"https://docs.google.com/spreadsheets/d/{m.group(1)}/export?format=csv"
+            try:
+                r = requests.get(u, headers={"User-Agent": UA}, timeout=30, allow_redirects=True)
+                ct = r.headers.get("content-type", "")
+                print(h, "->", r.status_code, ct, len(r.content))
+                if r.status_code == 200 and len(r.content) < 6_000_000 and "html" not in ct:
+                    fn = re.sub(r"\W+", "_", h)[-60:]
+                    ext = ".csv" if "csv" in ct else (".pdf" if "pdf" in ct else (".xlsx" if "sheet" in ct or "excel" in ct else ".bin"))
+                    open(f"{OUT}/dimona/catalog/{fn}{ext}", "wb").write(r.content)
+                    if ext == ".pdf":
+                        import subprocess
+                        subprocess.run(["pdftotext", "-layout", f"{OUT}/dimona/catalog/{fn}{ext}", f"{OUT}/dimona/catalog/{fn}.txt"])
+                elif r.status_code == 200 and "html" in ct:
+                    save("dimona/catalog/" + re.sub(r"\W+", "_", h)[-60:] + ".html.txt", text_of_html(r.text)[:20000])
+            except Exception as e:
+                print("ERR", h, e)
