@@ -1,13 +1,13 @@
 [
  {
   "url": "https://api.mercadolibre.com/sites/MLB/search?q=camiseta%20shih%20tzu&limit=50",
-  "status": null,
-  "body": ""
+  "status": 403,
+  "body": "{\"message\":\"forbidden\",\"error\":\"forbidden\",\"status\":403,\"cause\":[]}"
  },
  {
   "url": "https://api.mercadolibre.com/sites/MLB/categories",
-  "status": null,
-  "body": ""
+  "status": 403,
+  "body": "{\"blocked_by\":\"PolicyAgent\",\"code\":\"PA_UNAUTHORIZED_RESULT_FROM_POLICIES\",\"status\":403,\"message\":\"At least one policy returned UNAUTHORIZED.\"}\n"
  },
  {
   "url": "https://api.mercadolibre.com/categories/MLB1430",
@@ -16,8 +16,8 @@
  },
  {
   "url": "https://api.mercadolibre.com/sites/MLB/listing_prices?price=60&category_id=MLB31447",
-  "status": null,
-  "body": ""
+  "status": 403,
+  "body": "{\"message\":\"At least one policy returned UNAUTHORIZED.\",\"status\":403,\"code\":\"PA_UNAUTHORIZED_RESULT_FROM_POLICIES\",\"blocked_by\":\"PolicyAgent\"}\n"
  },
  {
   "url": "https://api.mercadolibre.com/sites/MLB/domain_discovery/search?q=camiseta%20shih%20tzu",
