@@ -1,0 +1,88 @@
+URL: https://montink.sak.com.br/como-integrar-a-montink-a-hotmart
+TITLE: Central de Ajuda Montink - Como Integrar a Montink a Hotmart ?
+
+
+Mais artigos sobre Integrações
+                        Como Integrar a Montink ao Ovni                      
+                        Como integrar seu catálogo de produtos ao Pinterest                      
+                        Como integrar sua loja com o Replay                      
+                        Integração com Mercado Livre: Tudo o que você precisa saber                      
+                        Tik Tok shop - Por que é necessário emitir a nota fiscal do pedido?                      
+                        Como Integrar a Montink com a Nuvemshop: Passo a Passo Completo                      
+                        Como integrar minha loja ao catálogo do Facebook?                      
+                        Como integrar minha loja com o JivoChat?                      
+                        Como integrar  a Montink com TikTok Shop: Guia Rápido                      
+                        Como Integrar a Lily?                      
+Ver todos os artigos sobre Integrações
+Como Integrar a Montink a Hotmart ?
+Atualizado em 31/08/2026
+                      Link copiado!                    
+Saiba como realizar a integração Hotmart e Montink para a venda dos seus produtos físicos na Hotmart:
+Realize a integração da sua conta na Hotmart à plataforma Montink e tenha à sua disposição uma fábrica de produtos físicos personalizados para sua marca. Concentre-se no que realmente importa: divulgar sua marca, atrair clientes e vender mais. Deixe a produção e a logística conosco e foque no crescimento do seu negócio!
+O primeiro passo é simples: 
+clique aqui
+e crie sua conta gratuita na Montink caso ainda não possua uma conta. Siga o passo a passo abaixo e assista ao nosso 
+vídeo completo
+ e saiba mais sobre como realizar a integração:
+Passo 1 – Introdução
+Na Montink acesse Adicionar App  → Hotmart→ Conectar
+Passo 2 – Criar credenciais na Hotmart
+Clique  
+aqui para criar suas credenciais.
+   2. Você será redirecionado ao site da Hotmart.
+   3. Clique em 
+copiar código
+.
+   4. Cole os dados na dashboard da Montink e clique em 
+validar configuração
+.
+Passo 3 – Configurar Webhook (opcional)
+ Caso você pretenda vender apenas produtos físicos, sem vincular seus produtos digitais na Hotmart, pule para a próxima etapa.
+Clique aqui para cadastrar um novo Webhook
+.
+Na Hotmart, clique em 
++Cadastrar Webhook
+.
+Preencha da seguinte forma:
+Nome da Configuração:
+ Montink
+Produto:
+ selecione um produto específico ou a opção 
+Todos os Produtos
+URL:
+ copie o endereço indicado na dashboard da Montink e cole no campo de URL da Hotmart
+Versão:
+ 2.0.0
+Eventos:
+ selecione 
+COMPRA APROVADA
+ e 
+COMPRA COMPLETA
+Aceite os termos de tratamento de dados
+ e clique em 
+Salvar
+.
+💡 Você pode enviar um 
+teste de configuração
+ para confirmar se tudo foi feito corretamente.
+Como exportar produtos da Montink para a Hotmart
+Na dashboard da Montink, acesse 
+Produtos → Meus Produtos
+. Caso ainda não tenha criado nenhum produto, acesse o 
+Como Criar Produtos? – Montink Hotmart
+ para entender sobre a criação dentro da Montink
+Escolha o produto que deseja integrar.
+Clique em 
+Integrações → Exportar Produto
+.
+Assim, o produto passa a ficar disponível também dentro da Hotmart para você vender diretamente por lá.
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Como Integrar a Montink a Hotmart ?                        
+                          Códigos NCM para emissão de nota fiscal pelo Bling na Montink                        
+                          Como integrar minha loja com o Bling?                        
+                          Integração da Montink via API                        
+                          Fluxo de Pedido e Pagamento — Montink + Marketplaces                        

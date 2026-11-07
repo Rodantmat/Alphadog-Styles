@@ -1,0 +1,182 @@
+URL: https://montink.sak.com.br/realizando-a-integracao-da-shopify-com-a-montink
+TITLE: Central de Ajuda Montink - Realizando a integração da Shopify com a Montink
+
+
+Mais artigos sobre Domínio
+                        Como configurar meu domínio no CloudFlare                      
+                        Como verificar o domínio no Facebook (Meta)?                      
+                        Como configurar um domínio na Hostinger?                      
+                        Como configurar um domínio no Registro.br?                      
+                        Meu domínio está como "não seguro".                      
+                        Como utilizar um Domínio Hostgator na Montink                      
+                        Como configurar um domínio na Godaddy?                      
+                        Realizando a integração da Shopify com a Montink                      
+                        Verificação de Propriedade de Domínio no Google Console Search                      
+Ver todos os artigos sobre Domínio
+Realizando a integração da Shopify com a Montink
+Atualizado em 01/06/2026
+                      Link copiado!                    
+Informações Importantes: Este artigo, ensina apenas a como integrar e exportar produtos, para entender o fluxo de pedidos, acesse o artigo 
+Fluxo de Pedido em MarketPlaces
+, 
+além disso, no plano básico da Shopify, não é enviado os dados do cliente,  sendo necessário o preenchimento manual na Montink.
+1. Iniciando a integração na Montink
+No menu lateral esquerdo da 
+Montink
+, clique em 
+Adicionar Apps
+.
+Na tela seguinte, localize a 
+Shopify
+ e clique em 
+Conectar
+.
+Escolha a opção que mais se adequa ao seu cenário:
+Já possuo uma loja na Shopify
+Ainda não possuo uma loja na Shopify
+2. Acessando a área de Apps na Shopify
+Na 
+Shopify
+, acesse o menu:
+Configurações → Apps → Desenvolver apps
+Você será direcionado para o 
+Dev Dashboard
+.
+Clique em 
+Desenvolver apps
+.
+💡 
+O Dev Dashboard
+ é a nova central de desenvolvimento de apps da Shopify, com mais funcionalidades do que os apps personalizados antigos.
+Configurações no Dev Dashboard
+3. Criando o App da Montink
+Clique no botão 
+Create app
+.
+No campo 
+App name
+, digite exatamente:
+Montink
+Clique em 
+Create
+ para confirmar.
+4. Configurações do App
+4.1 URLs
+Na seção 
+URLs
+, adicione:
+https://admin.montink.com
+4.2 Webhook
+Selecione o Webhook:
+2025-07
+5. Configurando os Scopes (Permissões)
+Na seção 
+Scopes
+, cole exatamente os escopos abaixo:
+read_all_orders,
+read_customers,
+write_customers,
+write_inventory,
+read_inventory,
+write_order_edits,
+read_order_edits,
+read_orders,
+write_orders,
+read_products,
+write_products,
+read_shipping,
+write_shipping,
+customer_write_customers,
+customer_read_customers,
+customer_read_orders,
+customer_write_orders,
+unauthenticated_write_customers,
+unauthenticated_read_customers,
+unauthenticated_read_product_inventory
+6. Redirect URL
+No campo 
+Redirect URLs
+, insira:
+https://admin.montink.com/Shopify/integrar
+Após inserir, clique em 
+Release
+.
+7. Publicando a versão do App
+No campo 
+Version Name
+, preencha com:
+Montink
+Clique novamente em 
+Release
+ para finalizar a publicação.
+8. Finalizando a integração
+Acesse a seção 
+Settings
+ do app criado.
+Copie os seguintes dados:
+Client ID
+Client Secret
+Cole essas informações nos campos correspondentes dentro da 
+Montink
+ para concluir a integração.
+Exportação de Produtos
+1. Acessando seus produtos na Montink
+No menu da Montink, vá até:
+Produtos → Meus Produtos
+Nessa tela, você verá a listagem de todos os produtos cadastrados.
+2. Exportando um produto individualmente
+Localize o produto que deseja exportar.
+Na coluna 
+Integrações
+, clique no ícone da 
+Shopify
+.
+Um modal será aberto.
+Abaixo do ícone da Shopify, clique em 
+Exportar
+.
+🔹Esse método exporta 
+apenas o produto selecionado
+.
+3. Exportação em massa (vários produtos)
+Marque a 
+caixa de seleção
+ ao lado de 
+Produtos
+(no topo da lista).
+Isso selecionará 
+todos os produtos exibidos na página
+.
+Com os produtos selecionados, o botão 
+Ações em massa
+ será habilitado.
+Clique em 
+Ações em massa
+.
+Selecione a opção 
+Exportar para integrações
+.
+4. Escolhendo a integração
+Será exibida a lista de integrações disponíveis para exportação.
+Selecione 
+Shopify
+.
+Aguarde o processo de exportação ser concluído.
+⏳ O tempo pode variar conforme a quantidade de produtos selecionados.
+5. Pronto!
+Após a finalização do processo:
+Os produtos exportados passarão a aparecer na sua loja 
+Shopify
+A estrutura, variações e informações serão sincronizadas conforme a integração ativa
+Para entender o Fluxo de Pedidos vindos da Shopify, acesse o artigo - 
+Central de Ajuda Montink - Fluxo de Pedido e Pagamento — Montink + Marketplaces
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Nova Linha de Estonadas Prime                        
+                          Como Integrar a Montink ao Ovni                        
+                          O que significa o status do meu pedido?                        
+                          Como Efetuar e Gerenciar Trocas e Devoluções                        
+                          Detalhes Sobre o Envio de Fotos para Troca ou Devolução                        

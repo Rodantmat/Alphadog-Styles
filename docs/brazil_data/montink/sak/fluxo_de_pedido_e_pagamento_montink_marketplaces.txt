@@ -1,0 +1,79 @@
+URL: https://montink.sak.com.br/fluxo-de-pedido-e-pagamento-montink-marketplaces
+TITLE: Central de Ajuda Montink - Fluxo de Pedido e Pagamento — Montink + Marketplaces
+
+
+Mais artigos sobre Integrações
+                        Como Integrar a Montink ao Ovni                      
+                        Como integrar seu catálogo de produtos ao Pinterest                      
+                        Como integrar sua loja com o Replay                      
+                        Integração com Mercado Livre: Tudo o que você precisa saber                      
+                        Tik Tok shop - Por que é necessário emitir a nota fiscal do pedido?                      
+                        Como Integrar a Montink com a Nuvemshop: Passo a Passo Completo                      
+                        Como integrar minha loja ao catálogo do Facebook?                      
+                        Como integrar minha loja com o JivoChat?                      
+                        Como integrar  a Montink com TikTok Shop: Guia Rápido                      
+                        Como Integrar a Lily?                      
+Ver todos os artigos sobre Integrações
+Fluxo de Pedido e Pagamento — Montink + Marketplaces
+Atualizado em 09/09/2026
+                      Link copiado!                    
+Este artigo explica o fluxo padrão de pedidos recebidos por integrações com marketplaces e
+plataformas externas.
+1. 
+O cliente compra na plataforma integrada
+O cliente conclui o pedido e faz o pagamento no checkout da plataforma externa. A Montink não processa esse pagamento.
+2. 
+O valor da venda entra no gateway do lojista
+Depois da aprovação, o lojista recebe o valor total da venda no gateway configurado na
+plataforma de origem. A partir daí, precisa liberar a produção na Montink pagando o custo aplicável.
+3. 
+O pedido é enviado à Montink
+Com a integração funcionando, o pedido é importado automaticamente. Se ele não aparecer, abra Adicionar Apps, clique em Configurar na integração correspondente e use a sincronização manual disponível.
+4. 
+Localize o pedido na nova área unificada
+ Na Dashboard Montink, clique em Pedidos.
+. Selecione a visão Pedidos externos.
+. Pesquise pelo número do pedido ou pelo cliente.
+Confira o custo do produto e o frete apresentado para a integração.
+5. 
+Pague o custo para iniciar a produção
+O pedido só entra em produção depois do pagamento do custo e, quando aplicável, do frete. Você pode usar o saldo da Carteira Montink ou adicionar saldo por Pix.
+Pela Carteira
+1. Abra Financeiro > Carteira.
+2. Clique em Adicionar saldo.
+3. Escolha o valor e a forma de pagamento.
+4. Volte a 
+Pedidos 
+> Filtro 
+Pedidos externos
+, selecione o pedido e clique em Realizar pagamento.
+Direto no Filtro Pedidos externos
+1. Marque um ou vários pedidos elegíveis.
+2. Confira o total no botão Realizar pagamento.
+3. Clique no botão e gere o QR Code Pix para o valor necessário.
+4. Depois da confirmação, o saldo é aplicado e os pedidos seguem para produção.
+O que acontece se o custo não for pago?
+• O pedido não entra em produção.
+• O produto não é enviado ao cliente.
+• O prazo de produção e entrega não começa.
+• O pedido permanece aguardando pagamento.
+Quem produz e envia?
+A Montink organiza a integração e repassa o pedido ao fornecedor parceiro. O fornecedor produz o item e o envia diretamente ao comprador final. O lojista não precisa manter estoque, imprimir, embalar ou postar.
+Pagamento automático
+1. Abra Conta e Acesso e Clique na opção Configurações.
+2. Escolha a opção Pagamentos
+3. Ative Cobrança automática de pedidos integrações.
+4. Mantenha saldo suficiente na Carteira Montink.
+Com a cobrança automática ativa, pedidos elegíveis são pagos com o saldo e liberados para produção sem ação manual, reduzindo atrasos e acúmulo de pendências.
+Quando a produção começa?
+A produção começa somente após a confirmação do pagamento do custo e do frete aplicável ao pedido.
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Como Integrar a Montink a Hotmart ?                        
+                          Códigos NCM para emissão de nota fiscal pelo Bling na Montink                        
+                          Como integrar minha loja com o Bling?                        
+                          Integração da Montink via API                        
+                          Fluxo de Pedido e Pagamento — Montink + Marketplaces                        

@@ -1,0 +1,61 @@
+URL: https://montink.sak.com.br/como-configurar-meu-dominio-no-cloudflare
+TITLE: Central de Ajuda Montink - Como configurar meu domínio no CloudFlare
+
+
+Mais artigos sobre Domínio
+                        Como configurar meu domínio no CloudFlare                      
+                        Como verificar o domínio no Facebook (Meta)?                      
+                        Como configurar um domínio na Hostinger?                      
+                        Como configurar um domínio no Registro.br?                      
+                        Meu domínio está como "não seguro".                      
+                        Como utilizar um Domínio Hostgator na Montink                      
+                        Como configurar um domínio na Godaddy?                      
+                        Realizando a integração da Shopify com a Montink                      
+                        Verificação de Propriedade de Domínio no Google Console Search                      
+Ver todos os artigos sobre Domínio
+Como configurar meu domínio no CloudFlare
+Atualizado em 12/05/2026
+                      Link copiado!                    
+Como se trata de uma configuração mais avançada, que não está inclusa nos serviços oferecidos pela Montink, é recomendado que faça com calma e bastante atenção ao destalhes.
+Quando você 
+vincula um domínio personalizado à sua loja Montink
+, ele passa a apontar para os servidores da Montink — isso é ótimo para o site, mas 
+faz com que você perca o controle das configurações de e-mail
+, como:
+Redirecionamento de e-mails (ex: 
+[email protected]
+)
+Uso do domínio em ferramentas de e-mail marketing (Mailchimp, Brevo, RD Station...)
+Configurações de SPF, DKIM e DMARC (importantes para evitar SPAM)
+Como uma alternativa, basta utilizar os serviços da Cloudflare : 
+Passo a passo:
+1 - Crie uma conta no
+ Cloudflare
+: 
+2 - Adicione o domínio da loja, e clique botão Continuar ( Não é necessário nenhuma alteração nesta página)
+3 - Escolha o plano gratuito
+4 - Clique em adicionar registro e adicione os registros abaixo:
+Tipo: CNAME
+Nome: @
+Conteúdo: cname.mont.ink
+Status do proxy: Somente DNS
+TTL: Auto
+Para o E-mail
+Tipo: MX
+Nome : @
+Servidor do E-mail: mail.seudomínio.com (Exemplo: mail.newsaga.shop)
+TTL: Auto
+Prioridade : 10
+5 - Retorne a dashboard da montink, clique em Minha Loja -> Domínio e insira seu domínio, escolhe a opção Domínio Principal (Não é necessário seguir os passos de alteração de DNS, já que fizemos no cloudflare)
+Agora, Basta aguardar a propagação!
+OBS: Não nos responsabilizamos por configuração de contas de e-mail, este tutorial serve apenas para funcionar domínio personalizado ou subdomínio, dando a liberdade ao Montinker de gerenciar o DNS na configuração do e-mail. 
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Nova Linha de Estonadas Prime                        
+                          Como Integrar a Montink ao Ovni                        
+                          O que significa o status do meu pedido?                        
+                          Como Efetuar e Gerenciar Trocas e Devoluções                        
+                          Detalhes Sobre o Envio de Fotos para Troca ou Devolução                        

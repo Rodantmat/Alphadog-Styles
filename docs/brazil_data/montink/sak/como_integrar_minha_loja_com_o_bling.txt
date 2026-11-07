@@ -1,0 +1,77 @@
+URL: https://montink.sak.com.br/como-integrar-minha-loja-com-o-bling
+TITLE: Central de Ajuda Montink - Como integrar minha loja com o Bling?
+
+
+Mais artigos sobre Integrações
+                        Como Integrar a Montink ao Ovni                      
+                        Como integrar seu catálogo de produtos ao Pinterest                      
+                        Como integrar sua loja com o Replay                      
+                        Integração com Mercado Livre: Tudo o que você precisa saber                      
+                        Tik Tok shop - Por que é necessário emitir a nota fiscal do pedido?                      
+                        Como Integrar a Montink com a Nuvemshop: Passo a Passo Completo                      
+                        Como integrar minha loja ao catálogo do Facebook?                      
+                        Como integrar minha loja com o JivoChat?                      
+                        Como integrar  a Montink com TikTok Shop: Guia Rápido                      
+                        Como Integrar a Lily?                      
+Ver todos os artigos sobre Integrações
+Como integrar minha loja com o Bling?
+Atualizado em 12/05/2026
+                      Link copiado!                    
+O Bling é o melhor software de gestão (ERP) online para quem quer poupar tempo e ganhar dinheiro, facilitando a emissão de notas fiscais. Com o Bling, você tem mais rapidez para emitir os três principais tipos de notas fiscais (NFe, NFSe e NFCe), não precisa informar os dados mais do que uma vez, os impostos são calculados automaticamente e muito mais!
+Neste tutorial, você aprenderá como integrar sua plataforma da Montink com o Bling.
+Antes de prosseguir com a integração, é importante cumprir alguns requisitos básicos:
+Ter um CNPJ válido e cadastrá-lo na Montink.
+Ter uma Inscrição Estadual. Se você não souber o número da sua IE, pode consultá-lo no 
+site da Sintegra
+.
+Possuir um Certificado Digital.
+Ter uma conta no Bling. Se ainda não tiver uma, 
+pode realizar o seu cadastro aqui
+Agora que você atendeu aos requisitos necessários, poderá prosseguir com a integração. Siga os seguintes passos:
+Acesse o menu lateral do seu dashboard da Montink e vá em 
+Adicionar app > Bling
+. 
+Clicar no botão para "
+Clique Aqui para autorizar o aplicativo Montink
+"
+Você será redirecionado para a página de autorização da Bling, caso não esteja logado, será direcionado para o login, e depois do login, vai cair na autorização:
+Só clicar em Autorizar, e pronto!
+⚠️ Já autorizei o meu aplicativo antes e não consigo autorizar novamente. O que fazer?
+Acesse a página de aplicativos da Montink 
+Adicionar app > Bling > Desativar.
+Acesse sua conta de Bling -> Na barra superior, no canto direito, clique no ícone de engrenagem -> Todas as configuracoes -> Integrações -> Aplicativos Autorizados -> Selecione o aplicativo da Montink -> 
+Clique em Revogar.
+Refaça
+ a integração com o Bling.
+Informações importantes sobre CFOP
+O que é CFOP?
+CFOP significa Código Fiscal de Operações e Prestações é um código obrigatório na nota fiscal. Ele identifica a operação realizada na nota fiscal e determina a tributação, movimentações financeiras (venda, retorno, compra, entre outras).
+Quais CFOPs podem ser utilizados nas operações fiscais da conta do Bling?
+1. CFOP 6120
+Descrição
+: Venda de mercadoria adquirida ou recebida de terceiros, entregue ao destinatário pelo vendedor remetente, em venda à ordem.
+2. CFOP 6108
+Descrição
+: Venda de mercadoria adquirida ou recebida de terceiros, destinada a não contribuinte.
+3. CFOP 6122
+Descrição
+: Venda de produção do estabelecimento remetida para industrialização, por conta e ordem do adquirente, sem transitar pelo estabelecimento do adquirente.
+Como funciona a nota de Remessa?
+Na nota de Remessa, utilizamos a CFOP 6923 para operações gerais. Para o estado do Rio de Janeiro, utilizamos a CFOP 5923.
+CFOP 5923
+Descrição
+: Remessa de mercadoria por conta e ordem de terceiros, em venda à ordem.
+⚠️ As informações sobre naturezas fiscais desse artigo são sugestões de como configurar sua conta no Bling, recomendamos consultar o seu contador de confiança para analisar as particularidades relacionadas ao cadastro de sua empresa.
+Esperamos que este artigo tenha sido útil e que você consiga integrar sua plataforma da Montink com o Bling. Reforçamos que todas as outras dúvidas sobre a ferramenta deverão ser sanadas através dos links abaixo:
+Central de Ajuda do Bling
+Canal do YouTube Bling
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Como Integrar a Montink a Hotmart ?                        
+                          Códigos NCM para emissão de nota fiscal pelo Bling na Montink                        
+                          Como integrar minha loja com o Bling?                        
+                          Integração da Montink via API                        
+                          Fluxo de Pedido e Pagamento — Montink + Marketplaces                        

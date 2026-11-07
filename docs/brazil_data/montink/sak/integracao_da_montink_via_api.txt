@@ -1,0 +1,163 @@
+URL: https://montink.sak.com.br/integracao-da-montink-via-api
+TITLE: Central de Ajuda Montink - Integração da Montink via API
+
+
+Mais artigos sobre Integrações
+                        Como Integrar a Montink ao Ovni                      
+                        Como integrar seu catálogo de produtos ao Pinterest                      
+                        Como integrar sua loja com o Replay                      
+                        Integração com Mercado Livre: Tudo o que você precisa saber                      
+                        Tik Tok shop - Por que é necessário emitir a nota fiscal do pedido?                      
+                        Como Integrar a Montink com a Nuvemshop: Passo a Passo Completo                      
+                        Como integrar minha loja ao catálogo do Facebook?                      
+                        Como integrar minha loja com o JivoChat?                      
+                        Como integrar  a Montink com TikTok Shop: Guia Rápido                      
+                        Como Integrar a Lily?                      
+Ver todos os artigos sobre Integrações
+Integração da Montink via API
+Atualizado em 12/05/2026
+                      Link copiado!                    
+Para o 
+token de autorização
+, no menu lateral da sua dashboard, vá em 
+Adicionar Apps> API Montink, clique em Conectar, no modal aberto, clique em Gerar token de autorização. 
+Após gerar o token, sua integração pode consumir os principais recursos da API para 
+listar produtos
+, 
+calcular frete
+, 
+criar pedidos
+ e 
+acompanhar o status
+ dos pedidos criados na Montink.
+Este artigo apresenta, de forma simples, 
+quais operações ficam disponíveis
+ e 
+como elas se conectam em um fluxo típico de compra
+.
+PS:  Recomendamos que a utilização da API seja feita ou supervisionada por um Desenvolvedor de sua confiança.
+✅ O que fica disponível após gerar o token
+Com o token em mãos, você pode realizar as operações abaixo:
+1) Criar Pedido
+Permite 
+criar um pedido na Montink
+ informando:
+dados do seu cliente
+dados dos produtos consumidos (selecionados a partir da Listagem de Produtos)
+Em geral, esse é o passo final do fluxo, após o cliente escolher os itens e o frete.
+2) Listagem de Produtos
+Exibe 
+todos os produtos cadastrados
+, com os dados necessários para:
+renderização (exibição no seu checkout/loja)
+compra (informações essenciais para montar o pedido)
+3) Busca de produtos
+Parâmetros de consulta (GET)
+As consultas de produtos devem ser feitas 
+sempre via método GET
+, utilizando parâmetros na URL para paginação, limite e filtros.
+Paginação
+Use o parâmetro 
+pga
+ para navegar entre páginas:
+?pga=0
+ → 
+primeira página
+ (sempre)
+?pga=1
+ → segunda página
+?pga=2
+ → terceira página, e assim por diante
+Exemplo:
+?pga=1
+Limite de produtos por página
+Use o parâmetro 
+pp
+ para definir quantos produtos retornam por página:
+?pp=500
+ → retorna até 
+500 produtos por página
+Exemplo:
+?pp=500
+GET
+Você pode combinar filtros na mesma URL.
+Buscar por categoria
+?categoria="T-Shirt Classic"
+Buscar por Produto Base
+?produtoBase=ID_DO_PRODUTO_BASE
+Buscar por coleção
+?colecao=SLUG_COLECAO
+Status
+Não existe parâmetro de status — a API 
+sempre retorna apenas produtos habilitados
+.
+Consulta de um produto específico
+Para consultar um produto específico pelo ID, utilize:
+api.montink.com/product/ID_PRODUTO
+4) Detalhes do Pedido
+Retorna um 
+resumo detalhado
+ de um pedido criado na Montink, incluindo:
+status atual do pedido
+informações de acompanhamento do fluxo do pedido
+5) Listagem de Pedidos
+Exibe um 
+resumo de todos os pedidos
+, permitindo:
+filtrar por período
+filtrar por status
+Ideal para dashboards, área “Meus pedidos”, conciliação e monitoramento.
+6) Cálculo de Frete
+Retorna as 
+opções de frete
+ disponíveis, incluindo:
+modalidades/serviços
+previsão de entrega
+Esse recurso é recomendado para uso no checkout, antes da confirmação da compra.
+🔁 Fluxo recomendado de integração (do checkout até o acompanhamento)
+Abaixo está o fluxo mais comum para integrações com a Montink:
+Etapa 1 — Exibir produtos para compra
+Consuma a 
+Listagem de Produtos
+Renderize os itens no seu checkout/loja com os dados retornados
+✅ Resultado: o cliente consegue escolher o produto correto e variações disponíveis.
+Etapa 2 — Calcular frete e prazo
+Com os dados do carrinho e endereço do cliente, chame o 
+Cálculo de Frete
+Exiba as opções e prazos no checkout
+✅ Resultado: o cliente escolhe a melhor opção de entrega com transparência.
+Etapa 3 — Criar o pedido na Montink
+Após o pagamento/aprovação no seu fluxo, envie os dados para 
+Criar Pedido
+Inclua:
+dados do cliente
+itens do carrinho (com base na listagem de produtos)
+opção de frete escolhida
+✅ Resultado: o pedido passa a existir na Montink e entra no fluxo operacional.
+Etapa 4 — Consultar status do pedido
+Use 
+Detalhes do Pedido
+ para consultar o pedido específico e seu status
+Se quiser listar vários pedidos, use 
+Listagem de Pedidos
+✅ Resultado: você consegue mostrar ao seu cliente o acompanhamento do pedido e manter controle interno.
+🔎 Referência da documentação
+A documentação completa está no Postman:
+https://documenter.getpostman.com/view/32162527/2sAYkGJyWE#490574c9-02a1-49ea-a1f2-67b87135b93b
+🧠 Dica prática
+Se você estiver montando a experiência do checkout, normalmente a ordem ideal é:
+Listar Produtos → Calcular Frete → Criar Pedido → Consultar Detalhes / Listar Pedidos
+Isso garante:
+catálogo sempre consistente
+frete calculado antes da confirmação
+pedido criado apenas quando a compra estiver pronta
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Como Integrar a Montink a Hotmart ?                        
+                          Códigos NCM para emissão de nota fiscal pelo Bling na Montink                        
+                          Como integrar minha loja com o Bling?                        
+                          Integração da Montink via API                        
+                          Fluxo de Pedido e Pagamento — Montink + Marketplaces                        

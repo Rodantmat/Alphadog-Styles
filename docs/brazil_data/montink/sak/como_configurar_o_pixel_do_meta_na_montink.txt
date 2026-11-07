@@ -1,0 +1,73 @@
+URL: https://montink.sak.com.br/como-configurar-o-pixel-do-meta-na-montink
+TITLE: Central de Ajuda Montink - Como Configurar o Pixel do Meta na Montink
+
+
+Mais artigos sobre Configurações de Plataforma
+                        Unificação da tela de configurações                      
+                        Como criar usuários adicionais a sua loja                      
+                        Como configurar o Google Analytics na minha loja?                      
+                        Como cancelar minha conta na Montink?                      
+                        Excluí minha loja. Posso habilitá-la novamente?                       
+                        Como alterar a senha de acesso da Montink                      
+                        Como Configurar o Google Tag Manager                      
+                        Guia de Integração da Montink com o Google Merchant                      
+                        Como Configurar o Pixel do Meta na Montink                      
+                        Como Obter o Catálogo XML do Facebook e Google Merchant?                      
+Ver todos os artigos sobre Configurações de Plataforma
+Como Configurar o Pixel do Meta na Montink
+Atualizado em 14/09/2026
+                      Link copiado!                    
+O que é o Pixel?
+O Pixel do Facebook é uma ferramenta analítica que permite rastrear a interação dos usuários com sua loja online. Ao instalar o pixel no seu site, você pode coletar dados sobre as ações dos visitantes, como visualizações de produtos, adição ao carrinho e finalização de compras. Essas informações são valiosas para entender o comportamento do cliente e otimizar suas campanhas publicitárias.
+Como obter o ID do Pixel?
+Vá em Gerenciador de Negócios do Meta (Business Manager):
+No menu ao lado esquerdo, encontre "Fonte de Dados"
+Encontre, Conjunto de Dados.
+Clique no Conjunto de Dados (Pixel) criado, abaixo tem o número de Identificação
+É uma sequência numérica única, que se parece com: 123456789012345.
+Clique em Copiar para armazenar o ID em sua área de transferência.
+Como Configurar o Pixel?
+Na sua dashboard dentro da Montink, no menu Lateral esquerdo, vá em 
+Conta e Acesso -> Configurações
+Domínio e Análise
+ , nesta tela, você percebe que pode fazer várias configurações relacionados a ferramentas analíticas, como o Google Analytics, Google Tag Manager e por fim o Pixel do Meta.
+Adicione o 
+ID
+ do pixel no seu local respectivo, posteriormente clique em 
+Atualizar Dados
+.
+Pronto, seu Pixel já está configurado e pronto para uso.
+Como Saber se meu Pixel está ativo? 
+Basta utilizar a extensão gratuita chamada 
+Meta Pixel Helper, 
+disponível para o navegador Google
+Chrome.
+Com o Meta Pixel Helper, você pode:
+Verificar se o Meta Pixel está instalado e ativo em sua página.
+Observar se os eventos estão sendo capturados corretamente, como visualizações de página, adições ao carrinho, compras, entre outros.
+Receber detalhes sobre cada evento disparado, facilitando a análise de dados. Sendo que cada evento é disparado em :
+Pagina Inicial -> 
+PageView
+Pagina de Produtos -> 
+ViewContent
+Carrinho -> 
+addCart
+Checkout -> 
+InitiateCheckout
+Adicionando Informações de Pagamento - 
+AddPaymentInfo
+Confirmação do Pagamento -> 
+Purchase
+Diagnosticar erros de configuração com mensagens detalhadas, permitindo que você corrija possíveis problemas rapidamente.
+Clique aqui para obter a extensão
+Importante: 
+Dentro da plataforma Montink, você deve inserir apenas o 
+ID do Pixel do Facebook
+. É importante ressaltar que a configuração completa do Pixel deve ser realizada diretamente na sua conta do Facebook Ads. A Montink apenas coleta o ID para que as informações sejam transmitidas corretamente, mas todas as definições e ajustes de campanhas devem ser feitos na interface do Facebook.
+Caso tenha dúvidas sobre como configurar seu Pixel no Facebook, consulte a documentação oficial do Facebook Ads ou entre em contato com o suporte.
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Posso criar meus produtos sem ter um computador?                        

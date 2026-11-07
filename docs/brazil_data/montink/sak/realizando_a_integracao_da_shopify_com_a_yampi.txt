@@ -1,0 +1,223 @@
+URL: https://montink.sak.com.br/realizando-a-integracao-da-shopify-com-a-yampi
+TITLE: Central de Ajuda Montink - Realizando a integração da Shopify com a Yampi
+
+
+Mais artigos sobre Todos os Artigos
+                        O que é um chargeback e como proceder?                      
+                        Instruções de montagem - Estampa de bolso                      
+                        Posso receber uma amostra das camisetas?                       
+                        Como vou saber se o produto serve em mim?                      
+                        Realizando a integração da Shopify com a Yampi                      
+                        Como integrar a Montink a Yampi?                      
+                        BlackPrint 2025 Montink! Tudo o que você precisa saber!                      
+Ver todos os artigos sobre Todos os Artigos
+Realizando a integração da Shopify com a Yampi
+Atualizado em 07/10/2026
+                      Link copiado!                    
+Integração do Checkout Yampi com Shopify
+Antes de começar
+⚠️ Importante: siga os passos na ordem indicada. Não exporte os produtos da Montink para a Shopify antes de configurar a integração da Yampi.
+1. Conecte a Yampi à Montink
+Na dashboard da Montink, acesse:
+Apps e Integrações → Yampi → Conectar
+Se você ainda não possui uma loja Yampi, clique em Não tenho uma loja.
+Caso já possua, clique em Sim, já tenho uma loja.
+Clique em Instalar.
+2-  Configurar o frete
+2. Configure o frete na Yampi
+Na Yampi, acesse 
+Logística → Novo Frete
+.
+Selecione 
+API
+ e:
+Ative a opção de frete.
+Informe o nome desejado.
+Copie a URL exibida pela Montink e cole no campo 
+URL
+.
+Em 
+Headers
+, clique em 
++ Novo Header
+.
+No campo 
+Chave
+, informe 
+muser
+.
+No campo 
+Valor
+, cole o valor 
+muser
+ fornecido pela Montink.
+ ⚠️ 
+Importante:
+ a integração de frete precisa estar ativa 
+antes da exportação dos produtos
+ da Montink para a Shopify. 
+3. Crie o aplicativo no Shopify
+Para conectar o Checkout Yampi à Shopify, é necessário criar um aplicativo no 
+Shopify Dev Dashboard
+.
+Acesse o Shopify Partners
+Entre no
+Shopify Partners
+ e clique em 
+Fazer Login
+.
+Se ainda não possui uma conta:
+Escolha 
+Criar e configurar uma nova organização Parceira
+.
+Em foco principal, selecione 
+Criação de Apps
+.
+Informe 
+Brazil
+ e seu estado.
+Preencha os dados da empresa.
+Clique em 
+Criar organização Parceira
+.
+Acesse o Dev Dashboard
+No Shopify Partners:
+Distribuição de apps → Todos os apps → Visitar o Dev Dashboard
+⚠️ É importante acessar o Dev Dashboard por esse caminho, pois outras formas de acesso podem não disponibilizar todas as opções necessárias.
+Crie o aplicativo
+No Dev Dashboard:
+Acesse 
+Apps → Criar app
+.
+Selecione 
+Começar pelo Dev Dashboard
+.
+Nomeie o aplicativo.
+Sugestão:
+Yampi – Checkout
+Em 
+URL do App
+, informe:
+https://app.yampi.com.br/config/app/shopifyapp
+Desative 
+Embed app in Shopify admin
+.
+Configure as permissões
+Em 
+Acesso → Escopos
+, cole: 
+read_assigned_fulfillment_orders,write_assigned_fulfillment_orders,read_custom_fulfillment_services,write_custom_fulfillment_services,read_price_rules,read_discounts,read_merchant_managed_fulfillment_orders,write_merchant_managed_fulfillment_orders,read_orders,write_orders,read_products,write_products,read_themes,write_themes,read_third_party_fulfillment_orders,write_third_party_fulfillment_orders
+⚠️ 
+Não altere as permissões acima.
+ Qualquer permissão faltante ou incorreta pode impedir a instalação.
+Clique em 
+Lançar
+ e confirme novamente.
+⚠️ 
+Não configure POS ou App Proxy.
+ Essas configurações podem impedir o funcionamento do aplicativo.
+4. Configure a distribuição do aplicativo
+No Dev Dashboard:
+Acesse o aplicativo criado.
+Entre em 
+Distribution
+.
+Clique em 
+Selecionar forma de distribuição
+.
+No Shopify Partners, escolha 
+Distribuição personalizada
+.
+Informe o domínio 
+.myshopify.com
+ da sua loja.
+Clique em 
+Gerar link
+.
+Copie o link gerado e abra-o em uma nova aba.
+Como encontrar seu domínio 
+.myshopify.com
+Na Shopify, acesse:
+Configurações → Domínios
+Copie o domínio original da Shopify, no formato:
+exemplo.myshopify.com
+⚠️ Use somente o domínio 
+.myshopify.com
+. Domínios personalizados ou outras variações não são aceitos nessa etapa.
+5. Instale o aplicativo e conecte à Yampi
+Abra o link gerado anteriormente.
+Selecione sua loja Shopify.
+Clique em 
+Instalar
+.
+Você será direcionado para a Yampi.
+Escolha a 
+Regra de estoque
+ desejada.
+Informe o 
+Client ID
+ e o 
+Secret
+.
+Para encontrar essas informações:
+Shopify Dev Dashboard → seu app → Configurações
+Copie:
+ID do cliente
+Chave secreta
+Cole cada informação no campo correspondente dentro da Yampi.
+⚠️ Confira se as chaves foram copiadas corretamente, sem espaços ou caracteres faltando.
+Clique em 
+Instalar
+.
+6. Revise as configurações do Checkout
+Na Yampi, confira as seguintes opções:
+Integração
+Mantenha a integração 
+Ativa
+.
+Pular carrinho
+Define se o cliente irá diretamente para o checkout ou passará pela página de carrinho.
+Ativado:
+ vai diretamente para o checkout.
+Desativado:
+ passa pelo carrinho.
+Carrinhos laterais, suspensos ou mini-carts do tema não são considerados a página de carrinho.
+Importar cupons da Shopify
+Quando ativado, os cupons cadastrados na Shopify podem ser utilizados no checkout da Yampi sem precisar recriá-los.
+Cupons cumulativos:
+ define se o cupom poderá ser utilizado junto com outras promoções.
+Regras de estoque
+Escolha uma das opções:
+Não dar baixa no estoque da Shopify
+ Não consulta nem altera o estoque da Shopify.
+Dar baixa no estoque, ignorando as regras
+ Permite a compra mesmo sem estoque disponível.
+Dar baixa no estoque, respeitando as regras
+ Permite a compra somente quando houver estoque disponível.
+7. Finalize a instalação
+Depois de revisar as configurações, salve as alterações.
+🎉 
+Pronto! O Checkout Yampi está configurado na sua loja Shopify.
+A integração pode levar 
+cerca de 1 hora
+ para ficar totalmente disponível.
+O checkout não está funcionando?
+Caso o Checkout Yampi esteja instalado, mas não funcione corretamente, o tema da Shopify pode ser incompatível.
+Nesse caso, entre em contato com o suporte da Yampi pelo e-mail 
+[email protected]
+.
+Ao abrir o chamado, envie:
+descrição do problema;
+prints dos erros;
+informações relevantes sobre a configuração.
+Isso ajuda o suporte a identificar o problema mais rapidamente.
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Nova Linha de Estonadas Prime                        
+                          Como Integrar a Montink ao Ovni                        
+                          O que significa o status do meu pedido?                        
+                          Como Efetuar e Gerenciar Trocas e Devoluções                        
+                          Detalhes Sobre o Envio de Fotos para Troca ou Devolução                        

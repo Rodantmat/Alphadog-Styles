@@ -1,0 +1,289 @@
+URL: https://montink.sak.com.br/orientacoes-para-criacao-de-livros-e-apostilas
+TITLE: Central de Ajuda Montink - Orientações para criação de Livros e Apostilas
+
+
+Mais artigos sobre Produtos
+                        Nova Linha de Estonadas Prime                      
+                        Aviso de disponibilidade de produto                      
+                        Orientações para Quadros                      
+                        Como Evitar a Perda de Vivacidade nas Estampas                      
+                        Formatos de arquivos                      
+                        Diferenças na impressão de camisetas coloridas e brancas                      
+                        Dicas para preservar suas camisetas                      
+                        Como Realizar o Upscale de Imagem                      
+                        Dúvidas sobre estampa, impressão e técnicas utilizadas                      
+                        Posso personalizar a embalagem dos meus produtos?                      
+Ver todos os artigos sobre Produtos
+Orientações para criação de Livros e Apostilas
+Atualizado em 12/05/2026
+                      Link copiado!                    
+Agora que a Montink permite criar livros e apostilas, é importante entender como preparar seus arquivos para garantir um resultado profissional na impressão.
+Neste artigo, você vai aprender:
+A diferença entre 
+CAPA
+ e 
+MIOLO
+Como configurar os arquivos para o editor de produtos
+O que são 
+lombada
+, 
+orelha de capa
+ e 
+acabamento
+Especificações técnicas dos modelos disponíveis hoje na Montink
+ISBN 
+O 
+ISBN (International Standard Book Number)
+ é um código internacional que identifica um livro de forma única. Ele funciona como um “documento oficial” da obra, reunindo informações como título, autor, editora e formato do livro. Cada versão de um mesmo livro (impresso, e-book, capa dura, etc.) deve possuir um ISBN diferente.
+ISBN é obrigatório?
+O ISBN 
+não é obrigatório em todos os casos
+. Ele pode ser dispensado quando o material é de uso interno, como apostilas, materiais educativos, brindes ou conteúdos que não serão comercializados oficialmente como livros.
+Por outro lado, o ISBN 
+se torna essencial
+ quando o objetivo é vender o livro em livrarias físicas ou online, marketplaces como Amazon e Mercado Livre, ou quando se deseja distribuir a obra de forma profissional e catalogada em bibliotecas. Em resumo: se a intenção é vender o material como livro, o ISBN é altamente recomendado — e, na prática, indispensável.
+Quem pode solicitar o ISBN?
+Tanto 
+autores independentes
+ quanto 
+editoras
+ podem solicitar o ISBN. Não é necessário possuir uma editora formal: pessoas físicas (CPF) também podem fazer a solicitação.
+Como obter o ISBN no Brasil?
+No Brasil, o ISBN é emitido pela 
+Agência Brasileira do ISBN
+, administrada pela 
+Câmara Brasileira do Livro (CBL)
+. O processo é simples:
+Cadastro no site da CBL
+Preenchimento dos dados da obra
+Pagamento da taxa
+Emissão do número ISBN
+Após a emissão, o ISBN deve constar na página de créditos do livro e, geralmente, também no código de barras da contracapa.
+Conclusão
+O ISBN é um elemento fundamental para quem deseja profissionalizar a publicação e venda de livros. Embora não seja obrigatório em todos os cenários, ele garante credibilidade, facilita a distribuição e amplia as possibilidades de comercialização da obra.
+1. Entendendo a estrutura do livro: Capa x Miolo
+Todo livro é composto por duas partes principais:
+MIOLO
+: é o conteúdo interno do livro, ou seja, todas as páginas que ficam entre as capas (texto, imagens, capítulos, exercícios, etc.).
+CAPA
+: é a parte externa, que envolve o miolo. Inclui capa da frente, lombada e contracapa — e, dependendo do produto, pode ter também 
+orelhas
+.
+Onde enviar cada arquivo no editor
+Acesse o painel da Montink em:
+Produtos → Criar produtos
+O 
+primeiro arquivo
+ que você deve subir é o 
+MIOLO
+, em 
+formato PDF
+.
+Depois que o miolo é enviado, o sistema 
+calcula automaticamente a lombada
+, de acordo com a quantidade de páginas do PDF.
+Em seguida, você configura e envia a 
+CAPA
+.
+2. O que é lombada, orelha e acabamento?
+Lombada
+É a “parte do livro que fica na prateleira”, ou seja, a lateral onde normalmente aparecem o título e o nome do autor.
+Na Montink, 
+a largura da lombada é calculada automaticamente
+, com base na quantidade de páginas do miolo.
+Orelha da capa
+A 
+orelha
+ é aquela parte dobrada para dentro, na capa e/ou contracapa, onde normalmente se colocam:
+Biografia do autor
+Foto
+Texto de apresentação
+Informações da obra
+Quando o produto permitir o uso de orelha, você verá essa opção nas configurações da capa.
+Acabamento da capa
+É o tratamento final aplicado sobre a capa, como:
+Laminação BOPP
+ (que protege e dá mais durabilidade)
+Tipo de papel utilizado
+Tipo de encadernação (espiral, colado, etc.)
+Esses acabamentos já vêm pré-definidos em cada tipo de produto que você escolhe no catálogo da Montink.
+3. Orientações para o MIOLO
+Margens recomendadas
+Para evitar que texto ou elementos importantes sejam cortados na impressão:
+1,5 cm
+ de margem na 
+borda de furo ou cola
+ (onde o miolo será preso)
+1 cm
+ de margem nas 
+demais bordas
+Evite colocar textos, números de página ou elementos importantes muito próximos das bordas.
+Como garantir uma boa impressão do miolo
+Use 
+arquivos em alta resolução
+Evite imagens pixeladas
+Sempre que possível, trabalhe em 
+padrão de cores CMYK
+Revise o conteúdo antes de exportar (erro de ortografia, quebra de página, etc.)
+Formato de arquivo do miolo
+ PDF
+4. Orientações para a CAPA
+A capa precisa considerar área de corte, lombada e possíveis orelhas (quando disponíveis).
+Margens recomendadas
+Assim como no miolo:
+1,5 cm
+ de margem na 
+borda de furo ou cola
+ (quando for espiral)
+1 cm
+ de margem nas 
+demais bordas
+Mantenha logos, textos e elementos importantes longe das bordas, para não correr risco de corte.
+Como garantir uma boa impressão da capa
+Utilize 
+imagens em alta resolução
+Evite fundos com arte estourada ou muito escura sem contraste
+Trabalhe, sempre que possível, em 
+CMYK
+Cuide da legibilidade: textos claros, fontes adequadas e contraste bom com o fundo
+Formato de arquivo da capa
+ PNG
+5. Guia visual no editor de produtos
+Para facilitar a criação, a Montink disponibiliza uma 
+guia específica no editor de produtos
+ para livros e apostilas.
+Ali você visualiza:
+Área de corte
+Área de segurança
+Posição da lombada
+Configurações de orelha (quando houver)
+Use essa guia como base para montar o arquivo da capa com segurança. 
+Não precisa baixar, é disponibilizado com maior qualidade no editor!
+6. Livros e apostilas disponíveis na Montink
+Abaixo, você encontra as especificações técnicas dos modelos disponíveis hoje.
+6.1 Apostila Colorida Tamanho A4
+Descrição:
+Formato final da apostila (refilado):
+ 204 x 284 mm
+Formato do arquivo:
+ 210 x 297 mm (com margem de corte)
+CAPA
+Tecnologia de impressão:
+ Laser colorida 1200 dpi
+Papel:
+ Supremo
+Gramatura:
+ 300 g/m²
+Cores:
+ 4x0 (frente colorida, verso em branco)
+Acabamento:
+ Laminação BOPP na frente
+MIOLO
+Tecnologia de impressão:
+ Jato de tinta 600 dpi
+Papel:
+ Offset
+Gramatura:
+ 75 g/m²
+Cores:
+ 4x4 (frente e verso coloridos)
+ACABAMENTO
+Encadernação:
+ Espiral plástico
+6.2 Apostila Preto e Branco Tamanho A4
+Descrição:
+Formato final da apostila (refilado):
+ 204 x 284 mm
+Formato do arquivo:
+ 210 x 297 mm (com margem de corte)
+CAPA
+Tecnologia de impressão:
+ Laser colorida 1200 dpi
+Papel:
+ Supremo
+Gramatura:
+ 300 g/m²
+Cores:
+ 4x0 (frente colorida, verso em branco)
+Acabamento:
+ Laminação BOPP na frente
+MIOLO
+Tecnologia de impressão:
+ Laser monocromática preta 600 dpi
+Papel:
+ Offset
+Gramatura:
+ 75 g/m²
+Cores:
+ 1x1 (frente e verso em preto)
+ACABAMENTO
+Encadernação:
+ Espiral plástico
+6.3 Livro 16 x 23 Colorido
+Descrição:
+Formato final do livro:
+ 160 x 230 mm.
+Formato do arquivo (arte base):
+ 210 x 297 mm (com margem de corte)
+CAPA
+Tecnologia de impressão:
+ Laser colorida 1200 dpi
+Papel:
+ Supremo
+Gramatura:
+ 300 g/m²
+Cores:
+ 4x0 (frente colorida, verso em branco)
+Acabamento:
+ Laminação BOPP na frente
+MIOLO
+Tecnologia de impressão:
+ Jato de tinta 600 dpi
+Papel:
+ Offset
+Gramatura:
+ 75 g/m²
+Cores:
+ 4x4 (frente e verso coloridos)
+ACABAMENTO
+Encadernação:
+ Colado com lombada quadrada
+6.4 Livro 16 x 23 Preto e Branco
+Descrição:
+Formato final do livro:
+ 160 x 230 mm.
+Formato do arquivo (arte base):
+ 210 x 297 mm (com margem de corte)
+CAPA
+Tecnologia de impressão:
+ Laser colorida 1200 dpi
+Papel:
+ Supremo
+Gramatura:
+ 300 g/m²
+Cores:
+ 4x0 (frente colorida, verso em branco)
+Acabamento:
+ Laminação BOPP na frente
+MIOLO
+Tecnologia de impressão:
+ Laser monocromática 600 dpi
+Papel:
+ Offset
+Gramatura:
+ 75 g/m²
+Cores:
+ 1x1 (frente e verso em preto)
+ACABAMENTO
+Encadernação:
+ Colado com lombada quadrada
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Produção Consciente: O que Tem por Trás da Sua Camiseta                        
+                          Gestão de Estoque dos Produtos Base: clareza total para criar seus produtos                        
+                          Como Garantir uma boa Impressão?                        
+                          Diferenças da impressão DTG e DTF                        
+                          Silk HD (DTG)                        

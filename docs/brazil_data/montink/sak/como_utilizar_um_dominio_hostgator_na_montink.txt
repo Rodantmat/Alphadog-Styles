@@ -1,0 +1,77 @@
+URL: https://montink.sak.com.br/como-utilizar-um-dominio-hostgator-na-montink
+TITLE: Central de Ajuda Montink - Como utilizar um Domínio Hostgator na Montink
+
+
+Mais artigos sobre Domínio
+                        Como configurar meu domínio no CloudFlare                      
+                        Como verificar o domínio no Facebook (Meta)?                      
+                        Como configurar um domínio na Hostinger?                      
+                        Como configurar um domínio no Registro.br?                      
+                        Meu domínio está como "não seguro".                      
+                        Como utilizar um Domínio Hostgator na Montink                      
+                        Como configurar um domínio na Godaddy?                      
+                        Realizando a integração da Shopify com a Montink                      
+                        Verificação de Propriedade de Domínio no Google Console Search                      
+Ver todos os artigos sobre Domínio
+Como utilizar um Domínio Hostgator na Montink
+Atualizado em 11/05/2026
+                      Link copiado!                    
+Recomendações importantes
+Antes de prosseguir, por questões de segurança a Montink não permite a inclusão ou alteração dos dados MX, TXT ou CNAME relacionados ao DNS de seu domínio, porém ainda assim é possível utilizar um e-mail personalizado do domínio    de sua loja.
+Para utilizar seu domínio personalizado em e-mails personalizados e mais customizações, por favor, siga o tutorial abaixo, para a utilização do Cloudflare, um serviço gratuito e seguro de gerenciamento de domínios: 
+Como configurar meu domínio no CloudFlare – Montink | Central de Ajuda
+Além disso, é de extrema importância que você adquira apenas domínios com os sufixos ".com" ou ".com.br", de modo a evitar conflitos na integração. Se for seu primeiro acesso para configurar seu domínio, acesse 
+este link
+ e adquira um domínio desejado.
+Ao comprar seu domínio, garanta que o mesmo não tenha nenhum tipo de acentuação, incluindo o "ç". Isso porque quando um domínio possui caracteres com acentuação, a ativação do SSL pode ser afetada, impedindo sua conclusão.
+Lembrando que você precisa adicionar o domínio primeiramente na sua loja da Montink, antes de cadastrar os nameservers no Hostinger. Além disso, a responsabilidade de configurar o domínio é do lojista. Esta configuração está separada em duas etapas, para realizá-las, basta segui-las abaixo:
+Inserindo o domínio na plataforma
+Primeiramente, você precisa inserir o domínio comprado, na plataforma da Montink, evitando assim o erro de ''Pesquisa recusada''
+, que acontece apenas quando não realizamos a pré-configuração do domínio no painel administrativo da loja.
+Apenas ao realizar esta configuração em sua loja é que poderá alterar os DNS de seu domínio diretamente onde o registrou:
+1. No painel da sua loja, no menu lateral acesse 
+Minha loja > Domínios
+ ou 
+clique aqui
+2. Acesse o botão Conectar Domínio e insira o domínio que você deseja conectar.
+Apontamento de DNS
+Agora que o domínio já foi inserido, é hora de configurar o DNS no site do Hostgator.
+1. Faça login sua conta da 
+Hostgator
+2. Ao fazer o login, no menu lateral esquerdo, 
+Procure por Domínios 
+3. Clique no Botão 
+Configurar Domínio
+, vinculado ao Domínio que deseja configurar.
+4. Clique no botão 
+Alterar Plataforma
+5. Ao carregar a nova tela, Escolha a opção 
+Outra forma de Hospedagem e clique em continuar
+6.Adicione os nameservers informados na plataforma
+Master/Servidor: 
+ns1.mont.ink
+Slave/Servidor 2 :
+ns2.mont.ink
+Clique em Configurar
+7. Retorne a Montink e clique em Avançar.
+O que é DNS no contexto de domínio?
+O DNS (Domain Name System) é um sistema que traduz os nomes de domínio que você digita em um navegador (como "
+www.seudominio.com
+") para endereços IP, que são usados para localizar e acessar o servidor onde o seu site está hospedado. Em outras palavras, o DNS é responsável por garantir que as pessoas possam acessar sua loja usando o nome de domínio escolhido, sem precisar lembrar de números ou endereços complicados.
+Ao configurar o DNS do seu domínio, você estará informando à internet onde encontrar seu site. Isso é feito por meio da atualização dos "nameservers", que são servidores que direcionam as solicitações para o local correto. Por exemplo, na Montink, os nameservers que você precisa adicionar na Hostinger
+Master/Servidor 1: 
+ns1.mont.ink
+Slave 1/Servidor 2: 
+ns2.mont.ink
+Esses nomes de servidor indicam onde sua loja estará hospedada, permitindo que ela seja acessada corretamente com o domínio personalizado que você comprou. A configuração do DNS é uma etapa essencial para garantir que sua loja funcione corretamente e seja acessada sem problemas pelos clientes.
+Informamos que a propagação do domínio pode levar até 3 dias úteis. Durante esse período, você pode notar que o acesso ao seu site pode estar "Fora do ar". Agradecemos a sua paciência enquanto trabalhamos para garantir que tudo esteja funcionando perfeitamente!
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Nova Linha de Estonadas Prime                        
+                          Como Integrar a Montink ao Ovni                        
+                          O que significa o status do meu pedido?                        
+                          Como Efetuar e Gerenciar Trocas e Devoluções                        
+                          Detalhes Sobre o Envio de Fotos para Troca ou Devolução                        

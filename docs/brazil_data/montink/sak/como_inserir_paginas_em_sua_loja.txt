@@ -1,0 +1,116 @@
+URL: https://montink.sak.com.br/como-inserir-paginas-em-sua-loja
+TITLE: Central de Ajuda Montink - Como adicionar novas páginas à sua loja Montink
+
+
+Mais artigos sobre Personalização de Loja
+                        Como configurar o Contador Regressivo na sua loja                      
+                        Como adicionar novas páginas à sua loja Montink                      
+                        O que é um mockup e como alterá-lo?                      
+                        Criando coleções  na sua loja                      
+                        Como alterar o nome da loja?                      
+                        Personalize Sua Loja e Deixe-a com a Cara da Sua Marca!                      
+                        Desvendando o Script Head: Como utilizar para personalizar sua Loja                      
+                        Como limpar o cache do navegador (computador e celular)                      
+                        🚨 Importante: o Tema 2 será desativado em breve                      
+Ver todos os artigos sobre Personalização de Loja
+Como adicionar novas páginas à sua loja Montink
+Atualizado em 01/06/2026
+                      Link copiado!                    
+Agora é possível criar novas páginas personalizadas para a sua loja na Montink.
+Essa funcionalidade é ideal para adicionar conteúdos extras à sua loja, como uma página contando a história da marca, uma página de avaliações, informações sobre trocas e devoluções, dúvidas frequentes, contato ou qualquer outro conteúdo que ajude seus clientes a conhecerem melhor o seu negócio.
+Como acessar a área de páginas
+Para começar, acesse a sua dashboard da Montink.
+No menu lateral, siga o caminho:
+Minha Loja > Páginas
+Ao carregar a tela, você verá que algumas páginas padrão já foram criadas automaticamente. Essas páginas podem ser editadas, mas não podem ser excluídas.
+Como criar uma nova página
+Para criar uma nova página, clique no botão 
+Adicionar Página
+.
+Você será redirecionado para uma nova tela, onde poderá configurar as informações da página.
+Nesta etapa, você poderá definir:
+Nome da página
+Conteúdo da página
+Visibilidade
+Formato da página
+A página pode ser configurada como uma página de 
+texto simples
+ ou como uma página com 
+formulário de contato
+.
+Depois de preencher as informações, revise o conteúdo e salve as alterações.
+Dica: como usar ChatGPT ou outras IAs para criar sua página
+Se você quiser criar uma página com um visual mais personalizado, pode utilizar ferramentas externas de inteligência artificial, como ChatGPT ou Claude, para gerar um código HTML.
+Esse código poderá ser colado no editor da página, usando a opção 
+Código-fonte (<>)
+ na barra de ferramentas.
+Importante: o código inserido em 
+Código-fonte
+ será renderizado na loja pública. Por isso, utilize scripts somente quando confiar na origem do código.
+Sugestão de prompt para gerar o código da página
+Você pode copiar o prompt abaixo e adaptar o tema da página conforme sua necessidade:
+Prompt sugerido:
+Crie o código HTML para uma página de 
+[ESCREVA O TEMA DA PÁGINA AQUI, EX: AVALIAÇÕES]
+.
+Importante: o código será colado dentro do editor de texto das configurações de páginas internas da minha loja na Montink, usando a opção 
+Código-fonte
+.
+Portanto, gere o código seguindo estritamente estas regras:
+Não inclua tags de estrutura como 
+<html>
+, 
+<head>
+ ou 
+<body>
+.
+Entregue apenas o miolo do HTML, pronto para colar no Código-fonte do editor.
+Prefira utilizar CSS inline.
+Se precisar de CSS mais complexo, use uma tag 
+<style>
+ dentro do próprio bloco de conteúdo.
+Use JavaScript apenas quando for indispensável.
+Caso utilize JavaScript, coloque a tag 
+<script>
+ no final do bloco.
+Evite depender de seletores frágeis por hierarquia.
+Garanta que o layout seja responsivo, funcionando bem em celulares e computadores.
+Use técnicas de layout fluido, como Flexbox, CSS Grid, porcentagens e funções como 
+clamp()
+, 
+min()
+ ou 
+max()
+.
+Como inserir a página no menu da loja
+Depois de criar a página, ela irá gerar uma URL própria.
+Para adicionar essa página ao menu da sua loja, siga o caminho:
+Minha Loja > Temas
+Em seguida, escolha a opção 
+Customizar
+ no tema que está ativo.
+Dentro da customização do tema, você poderá utilizar o link da nova página para adicioná-la ao menu da loja.
+Como adicionar a página no rodapé
+Você também pode utilizar o link da página nos 
+links úteis do rodapé
+ da sua loja.
+Essa é uma boa opção para páginas como:
+Sobre a loja
+Política de troca
+Avaliações
+Contato
+Dúvidas frequentes
+Informações adicionais
+Lembre-se de copiar a URL da página criada e inseri-la no local desejado dentro das configurações do tema.
+Pronto!
+Após salvar as alterações, acesse a loja pública para conferir se a nova página está aparecendo corretamente e se o conteúdo está funcionando bem tanto no computador quanto no celular.
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Nova Linha de Estonadas Prime                        
+                          Como Integrar a Montink ao Ovni                        
+                          O que significa o status do meu pedido?                        
+                          Como Efetuar e Gerenciar Trocas e Devoluções                        
+                          Detalhes Sobre o Envio de Fotos para Troca ou Devolução                        

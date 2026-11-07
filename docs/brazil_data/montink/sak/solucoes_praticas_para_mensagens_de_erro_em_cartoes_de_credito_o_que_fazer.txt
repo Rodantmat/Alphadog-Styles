@@ -1,0 +1,624 @@
+URL: https://montink.sak.com.br/solucoes-praticas-para-mensagens-de-erro-em-cartoes-de-credito-o-que-fazer
+TITLE: Central de Ajuda Montink - Soluções Práticas para Mensagens de Erro em Cartões de Crédito: O Que Fazer?
+
+
+Mais artigos sobre Marketing
+                        Área do Cliente! Uma nova visualização para seu cliente!                      
+                        Como criar lojas para clientes com o Montink Partner                      
+                        Soluções Práticas para Mensagens de Erro em Cartões de Crédito: O Que Fazer?                      
+                        Como abrir uma solicitação para o suporte Montink através do painel da sua loja                      
+                        Como criar cupons de desconto?                      
+                        Como configurar vale presente?                      
+                        Parcelamento 3 vezes sem juros na sua loja Montink: Prós e Contras                      
+                        Como acompanhar minhas vendas?                      
+                        Como Criar Cupom de Frete Grátis?                      
+                        Como alavancar minhas vendas?                      
+Ver todos os artigos sobre Marketing
+Soluções Práticas para Mensagens de Erro em Cartões de Crédito: O Que Fazer?
+Atualizado em 14/05/2026
+                      Link copiado!                    
+Fala, Montinkers! Sabe aquela sensação de frustração quando você está finalizando uma compra online e, de repente, surge uma mensagem de erro no cartão de crédito? Isso pode acontecer por vários motivos, e entender o que cada um significa é essencial para resolver o problema rapidamente. Neste artigo, vamos conversar sobre um erro específico que pode limitar suas tentativas de pagamento e compartilhar algumas dicas amigáveis para evitar que isso atrapalhe seu dia a dia. Além disso, preparei uma tabela que será sua aliada na identificação rápida de erros comuns. Vamos lá?
+Decifrando a Mensagem de Erro: O Limite de Tentativas de Pagamento
+Quando você encontra a mensagem que diz "Atenção: ao cadastrar o cartão de crédito será feito cinco (5) tentativas de pagamento...", você pode ficar confuso. Mas, na verdade, é um recurso para manter sua conta segura. Essa limitação de tentativas é uma prática padrão para evitar fraudes e erros sistêmicos, e é essencial conhecer as melhores práticas para lidar com essa situação.
+Como Evitar Alcançar o Limite de Tentativas
+Antes de chegarmos à temida marca de cinco tentativas sem sucesso, é melhor prevenir. Aqui estão algumas dicas amigáveis para manter tudo nos trilhos:
+Confirmação dos Dados:
+ Sempre verifique duas vezes as informações do seu cartão. Um dígito errado pode ser o culpado.
+Atenção ao Nome:
+ O nome do titular do cartão deve ser um espelho do que está impresso no plástico.
+Verificação de Limite:
+ Confira se o seu cartão ainda tem limite suficiente para a transação que você está tentando fazer.
+Verifique o Status do Cartão:
+ Um cartão vencido ou bloqueado pode ser facilmente esquecido. Mantenha-o atualizado!
+Aceitação do Cartão:
+ Nem todos os cartões são aceitos em todos os lugares. Verifique se o seu é compatível com o serviço que você está tentando usar.
+Ações Recomendadas Após Exceder as Tentativas
+Se você acidentalmente atingiu o limite de tentativas, não se preocupe. Aqui está o que você pode fazer:
+Contato com o Banco:
+ Uma ligação para o atendimento ao cliente pode esclarecer muita coisa e até resolver o seu problema.
+Aguarde o Próximo Mês:
+ A paciência é uma virtude, especialmente quando se trata de esperar o sistema liberar seu cartão para novas tentativas.
+Use um Cartão Alternativo:
+ Se a compra é urgente, talvez seja hora de usar aquele cartão reserva.
+Atualização de Informações:
+ Se você mudou de endereço ou qualquer outra informação relevante, atualize esses dados para evitar problemas futuros.
+E agora, para te ajudar ainda mais, confira a tabela abaixo com os erros mais comuns e suas soluções:
+LR
+Definição
+Ação
+Irreversível para as bandeiras
+ "0" 
+ Transação autorizada com sucesso.
+-
+-
+ "00" 
+ Transação autorizada com sucesso.
+-
+-
+ "1" 
+ Transação não autorizada. Referida (suspeita de fraude) pelo banco emissor.
+-
+Master
+ "2" 
+ Transação não autorizada. Referida (suspeita de fraude) pelo banco emissor.
+-
+-
+ "3" 
+ Não foi possível processar a transação. 
+ Entre com contato com a Loja Virtual.
+Master, Visa
+ "4" 
+ Transação não autorizada. Cartão bloqueado pelo banco emissor.
+-
+Master, Visa
+ "5" 
+ Transação não autorizada. Cartão inadimplente (Do not honor).
+-
+-
+ "6" 
+ Transação não autorizada. Cartão cancelado.
+-
+Visa
+ "7" 
+ Transação negada. 
+ Reter cartão condição especial
+Visa
+ "8" 
+ Transação não autorizada. Código de segurança inválido.
+-
+Amex
+ "9" 
+ Transação cancelada parcialmente com sucesso.
+-
+-
+ "11" 
+ Transação autorizada com sucesso para cartão emitido no exterior
+-
+-
+ "12" 
+ Transação inválida, erro no cartão.
+-
+Master, Visa, Elo
+ "13" 
+ Transação não permitida. Valor da transação Inválido.
+-
+Master, Visa, Elo, Amex
+ "14" 
+ Transação não autorizada. Cartão Inválido
+-
+Master, Elo
+ "15" 
+ Banco emissor indisponível ou inexistente.
+-
+Master, Visa
+ "19" 
+-
+ Refaça a transação ou tente novamente mais tarde.
+Visa, Elo
+ "21" 
+ Cancelamento não efetuado. Transação não localizada.
+-
+-
+ "22" 
+ Parcelamento inválido. Número de parcelas inválidas.
+-
+-
+ "23" 
+ Transação não autorizada. Valor da prestação inválido.
+-
+Elo
+ "24" 
+ Quantidade de parcelas inválido.
+-
+-
+ "25" 
+ Pedido de autorização não enviou número do cartão
+-
+Master
+ "28" 
+ Arquivo temporariamente indisponível.
+-
+Master
+ "30" 
+ Transação não autorizada. Decline Message
+-
+Master, Elo
+ "39" 
+ Transação não autorizada. Erro no banco emissor.
+-
+Master, Visa, Elo, Amex
+ "41" 
+ Transação não autorizada. Cartão bloqueado por perda.
+-
+Master, Visa, Elo
+ "43" 
+ Transação não autorizada. Cartão bloqueado por roubo.
+-
+Master, Visa, Elo
+"46"
+Conta encerrada
+-
+Visa
+ "51" 
+ Transação não autorizada. Limite excedido/sem saldo.
+-
+-
+ "52" 
+ Cartão com dígito de controle inválido.
+-
+Visa
+ "53" 
+ Transação não permitida. Cartão poupança inválido
+-
+Visa
+ "54" 
+ Transação não autorizada. Cartão vencido
+-
+Master
+ "55" 
+ Transação não autorizada. Senha inválida
+-
+-
+ "56" 
+ NÚMERO CARTÃO NÃO PERTENCE AO EMISSOR | NÚMERO CARTÃO INVÁLIDO
+-
+Elo
+ "57" 
+ Transação não permitida para o cartão
+-
+Master, Visa, Elo
+ "58" 
+ Transação não permitida. Opção de pagamento inválida.
+-
+Master, Visa, Elo
+ "59" 
+ Transação não autorizada. Suspeita de fraude.
+-
+-
+ "60" 
+ Transação não autorizada.
+-
+-
+ "61" 
+ Banco emissor indisponível.
+-
+-
+ "62" 
+ Transação não autorizada. Cartão restrito para uso doméstico
+-
+Master, Visa, Elo
+ "63" 
+ Transação não autorizada. Violação de segurança
+-
+Elo
+ "64" 
+ Transação não autorizada. Valor abaixo do mínimo exigido pelo banco emissor.
+-
+Visa, Elo
+ "65" 
+ Transação não autorizada. Excedida a quantidade de transações para o cartão.
+-
+-
+ "67" 
+ Transação não autorizada. Cartão bloqueado para compras hoje.
+-
+-
+ "70" 
+ Transação não autorizada. Limite excedido/sem saldo.
+-
+-
+ "72" 
+ Cancelamento não efetuado. Saldo disponível para cancelamento insuficiente.
+-
+-
+ "74" 
+ Transação não autorizada. A senha está vencida.
+-
+Visa, Elo
+ "75" 
+ Senha bloqueada. Excedeu tentativas de cartão.
+-
+Master, Visa, Elo, Amex
+ "76" 
+ Cancelamento não efetuado. Banco emissor não localizou a transação original
+-
+Visa
+ "77" 
+ Cancelamento não efetuado. Não foi localizado a transação original
+-
+Elo
+ "78" 
+ Transação não autorizada. Cartão bloqueado primeiro uso.
+-
+-
+ "79" 
+ Transação não autorizada. 
+ Entre em contato com o seu banco.
+Master, Visa, Elo, Amex
+ "80" 
+ Transação não autorizada. Divergência na data de transação/pagamento.
+-
+-
+ "81" 
+ Transação não autorizada. A senha está vencida.
+-
+Visa
+ "82" 
+ Transação não autorizada. Cartão inválido.
+-
+Visa, Elo
+ "83" 
+ Transação não autorizada. Erro no controle de senhas
+-
+-
+ "85" 
+ Transação não permitida. Falha da operação.
+-
+-
+ "86" 
+ Transação não permitida. Falha da operação.
+-
+-
+ "88" 
+ Falha na criptografia dos dados.
+-
+Master
+ "89" 
+ Erro na transação.
+-
+Elo
+ "90" 
+ Transação não permitida. Falha da operação.
+-
+-
+ "91" 
+ Transação não autorizada. Banco emissor temporariamente indisponível.
+-
+-
+ "92" 
+ Transação não autorizada. Tempo de comunicação excedido.
+-
+Master, Visa
+ "93" 
+ Transação não autorizada. Violação de regra, possível erro no cadastro.
+-
+Visa
+ "94" 
+ Transação duplicada.
+-
+Master
+ "96" 
+ Falha no processamento.
+-
+-
+ "97" 
+ Valor não permitido para essa transação.
+-
+-
+ "98" 
+ Sistema/comunicação indisponível.
+-
+-
+ "99" 
+ Sistema/comunicação indisponível.
+-
+Elo
+ "475" 
+ Timeout de Cancelamento
+-
+-
+ "999" 
+ Sistema/comunicação indisponível.
+-
+-
+"99A"
+Token não encontrado.
+-
+-
+"99B"
+SISTEMA INDISPONÍVEL/FALHA NA COMUNICAÇÃO
+-
+-
+ "A2" 
+ VERIFIQUE OS DADOS DO CARTÃO
+-
+Amex
+ "A3" 
+ ERRO NO CARTÃO 
+ NÃO TENTE NOVAMENTE
+Amex
+ "A5" 
+ TRANSAÇÃO NÃO PERMITIDA 
+ NÃO TENTE NOVAMENTE
+Amex
+ "A7" 
+ ERRO NO CARTÃO 
+ NÃO TENTE NOVAMENTE
+Amex
+ "AA" 
+ Tempo Excedido
+-
+-
+ "AB" 
+ FUNÇÃO INCORRETA (DÉBITO)
+-
+Elo
+ "AC" 
+ Transação não permitida. Cartão de débito sendo usado com crédito. 
+ Use a função débito.
+Elo
+ "AE" 
+ Tente Mais Tarde
+-
+-
+ "AF" 
+ Transação não permitida. Falha da operação.
+-
+-
+ "AG" 
+ Transação não permitida. Falha da operação.
+-
+-
+ "AH" 
+ Transação não permitida. Cartão de crédito sendo usado com débito. 
+ Use a função crédito.
+Visa
+ "AI" 
+ Transação não autorizada. Autenticação não foi realizada.
+-
+-
+ "AJ" 
+ Transação não permitida. Transação de crédito ou débito em uma operação que permite apenas Private Label. 
+ Tente novamente selecionando a opção Private Label.
+Visa, Elo
+ "AV" 
+ Transação não autorizada. Dados Inválidos
+-
+-
+ "BD" 
+ Transação não permitida. Falha da operação.
+-
+-
+ "BL" 
+ Transação não autorizada. Limite diário excedido.
+-
+-
+ "BM" 
+ Transação não autorizada. Cartão Inválido
+-
+-
+ "BN" 
+ Transação não autorizada. Cartão ou conta bloqueado.
+-
+-
+ "BO" 
+ Transação não permitida. Falha da operação.
+-
+-
+ "BP" 
+ Transação não autorizada. Conta corrente inexistente.
+-
+Master, Visa, Elo, Amex
+ "BP176" 
+ Transação não permitida.
+-
+-
+ "BV" 
+ Transação não autorizada. Cartão vencido
+-
+Amex
+ "CF" 
+ Transação não autorizada.C79:J79 Falha na validação dos dados.
+-
+-
+ "CG" 
+ Transação não autorizada. Falha na validação dos dados.
+-
+-
+ "DA" 
+ Transação não autorizada. Falha na validação dos dados.
+-
+Amex
+ "DF" 
+ Transação não permitida. Falha no cartão ou cartão inválido.
+-
+-
+ "DM" 
+ Transação não autorizada. Limite excedido/sem saldo.
+-
+-
+ "DQ" 
+ Transação não autorizada. Falha na validação dos dados.
+-
+-
+ "DS" 
+ Transação não permitida para o cartão
+-
+-
+ "EB" 
+ Transação não autorizada. Limite diário excedido.
+-
+-
+ "EE" 
+ Transação não permitida. Valor da parcela inferior ao mínimo permitido.
+-
+-
+ "EK" 
+ Transação não permitida para o cartão
+-
+-
+ "FA" 
+ Transação não autorizada.
+-
+-
+ "FC" 
+ Transação não autorizada. Ligue Emissor
+-
+-
+ "FD" 
+ Transação negada. Reter cartão condição especial
+-
+Amex
+ "FE" 
+ Transação não autorizada. Divergencia na data de transação/pagamento.
+-
+-
+ "FF" 
+ Cancelamento OK
+-
+-
+ "FG" 
+ Transação não autorizada. Ligue AmEx 08007285090.
+-
+-
+ "GA" 
+ Aguarde Contato
+-
+Master, Visa, Elo, Amex
+ "GD" 
+ Transação não permitida.
+-
+Master, Visa, Elo, Amex
+ "HJ" 
+ Transação não permitida. Código da operação inválido.
+-
+-
+ "IA" 
+ Transação não permitida. Indicador da operação inválido.
+-
+-
+ "JB" 
+ Transação não permitida. Valor da operação inválido.
+-
+Amex
+ "P5" 
+ TROCA DE SENHA / DESBLOQUEIO
+-
+Elo
+ "KA" 
+ Transação não permitida. Falha na validação dos dados.
+-
+-
+ "KB" 
+ Transação não permitida. Selecionado a opção incorrente.
+-
+-
+ "KE" 
+ Transação não autorizada. Falha na validação dos dados.
+-
+-
+ "N7" 
+ Transação não autorizada. Código de segurança inválido.
+-
+Master, Visa, Elo, Amex
+ "R0" 
+ SUSPENSÃO DE PAGAMENTO RECORRENTE PARA UM SERVIÇO
+-
+Visa
+ "R1" 
+ Transação não autorizada. Cartão inadimplente (Do not honor)
+-
+Visa
+ "R2" 
+ TRANSAÇÃO NÃO QUALIFICADA PARA VISA PIN
+-
+Visa
+ "R3" 
+ SUSPENSÃO DE TODAS AS ORDENS DE AUTORIZAÇÃO
+-
+Visa
+"RT"
+AF GETNET
+-
+-
+ "U3" 
+ Transação não permitida. Falha na validação dos dados.
+-
+-
+ "N3" 
+ SAQUE NÃO DISPONÍVEL
+-
+Visa
+ "N8" 
+ DIFERENÇA. PRÉ AUTORIZAÇÃO
+-
+Visa, Elo
+ "NR" 
+ Transação não permitida. 
+ Retentar a transação após 30 dias
+Visa, Elo, Amex
+ "RP" 
+ Transação não permitida. 
+ Retentar a transação após 72 horas
+-
+ "99A" 
+ Token não encontrado
+-
+-
+ "99B" 
+ Sistema indisponível/Falha na comunicação
+-
+-
+ "99C" 
+ Sistema indisponível/Exceção no processamento
+-
+-
+ "99Z" 
+ Sistema indisponível/Retorno desconhecido
+-
+-
+ "99TA" 
+ Timeout na requisição. O tempo para receber o retorno da requisição excedeu.
+-
+-
+ "AF01" 
+ Recusado manualmente em analise antifraude
+-
+-
+ "AF02" 
+ Recusado automaticamente em analise antifraude
+-
+-
+"AF03"
+Recusado pelo antifraude da adquirente de crédito
+Transação não permitida conforme análise de acusa por suspeita a fraude
+-
+ "126" 
+ A data de validade do cartão de crédito é inválida
+-
+-
+"RE"
+Trava por excesso de 'retentativas' de uma transação que já foi negada pelo emissor.
+Usar outro cartão ou outra forma de pagamento.
+-
+Lidar com erros de cartão de crédito não precisa ser um bicho de sete cabeças. Com as dicas e soluções que compartilhamos, esperamos que você se sinta mais preparado para enfrentar esses contratempos. Lembre-se de que entender a mensagem de erro e agir de acordo é a chave para uma resolução rápida e sem dor de cabeça. E não esqueça: manter a calma é essencial nesses momentos. Pronto para fazer suas compras online com mais confiança?
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Indique e Ganhe: descubra como se tornar parceiro da Montink                        
+                          CPF ou CNPJ no Rodapé: Entenda a Obrigação Legal para Sua Loja Montink                        
+                          Melhorando o ranqueamento da minha loja de forma orgânica                        
+                          Tudo que você precisa saber sobre o Montink Academy                        
+                          Como aumentar suas vendas com sugestões de produtos no carrinho                        

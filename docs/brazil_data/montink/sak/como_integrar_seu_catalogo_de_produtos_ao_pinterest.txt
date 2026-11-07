@@ -1,0 +1,117 @@
+URL: https://montink.sak.com.br/como-integrar-seu-catalogo-de-produtos-ao-pinterest
+TITLE: Central de Ajuda Montink - Como integrar seu catálogo de produtos ao Pinterest
+
+
+Mais artigos sobre Integrações
+                        Como Integrar a Montink ao Ovni                      
+                        Como integrar seu catálogo de produtos ao Pinterest                      
+                        Como integrar sua loja com o Replay                      
+                        Integração com Mercado Livre: Tudo o que você precisa saber                      
+                        Tik Tok shop - Por que é necessário emitir a nota fiscal do pedido?                      
+                        Como Integrar a Montink com a Nuvemshop: Passo a Passo Completo                      
+                        Como integrar minha loja ao catálogo do Facebook?                      
+                        Como integrar minha loja com o JivoChat?                      
+                        Como integrar  a Montink com TikTok Shop: Guia Rápido                      
+                        Como Integrar a Lily?                      
+Ver todos os artigos sobre Integrações
+Como integrar seu catálogo de produtos ao Pinterest
+Atualizado em 24/08/2026
+                      Link copiado!                    
+A integração com o Pinterest permite criar um catálogo de produtos da sua loja e utilizá-lo em campanhas, Pins de produtos e compras na plataforma.
+Importante:
+ Antes de iniciar a integração, é necessário que sua loja possua um 
+domínio próprio
+ vinculado à Montink.
+Iniciando a integração
+Na dashboard da Montink, acesse 
+Apps e Integrações
+, localize o 
+Pinterest
+ e clique em 
+Conectar
+.
+A partir daí, você poderá escolher entre duas formas de integração:
+Via API
+ (recomendado): permite escolher quais produtos serão enviados ao Pinterest.
+Via XML
+: exporta automaticamente todo o catálogo da loja por meio de um feed XML.
+Integração via API
+A integração via API oferece maior controle sobre os produtos enviados ao Pinterest.
+1. Autorize o aplicativo
+Na tela de configuração da integração, clique em 
+Autorizar aplicativo Pinterest
+.
+Na página seguinte, faça login (caso necessário) e conceda as permissões solicitadas para concluir a autorização.
+Após esse passo, sua loja já estará conectada ao Pinterest.
+2. Exporte os produtos
+Na dashboard da Montink, acesse:
+Produtos → Meus Produtos
+Ao lado de cada produto será exibido o ícone do Pinterest. Inicialmente ele aparecerá de forma opaca, indicando que o produto ainda não foi exportado.
+Clique sobre o ícone e, na tela exibida, selecione 
+Exportar
+.
+Repita esse processo para todos os produtos que desejar enviar ao Pinterest.
+3. Confirme a exportação
+Para verificar se a exportação foi realizada com sucesso, acesse a dashboard do Pinterest e navegue até:
+Catálogos → Produtos
+Os produtos exportados deverão aparecer nessa seção após o processamento da plataforma.
+Integração via XML
+Caso prefira enviar todo o catálogo automaticamente, utilize a integração via XML.
+1. Copie o XML da sua loja
+Na dashboard da Montink, acesse:
+Apps e Integrações → Pinterest → Configurar
+No mesmo local utilizado para a integração via API, será disponibilizado o 
+link XML
+ da sua loja. Basta copiá-lo.
+2. Adicione o XML ao Pinterest
+Na dashboard do Pinterest, acesse:
+Catálogos → Fontes de dados
+Clique em 
+Adicionar fonte de dados
+ e selecione a opção 
+Fornecer um link de URL
+.
+Cole o XML copiado da Montink, preencha as informações solicitadas e clique em 
+Carregar
+.
+Após a importação e processamento do feed, todos os produtos disponíveis no XML passarão a compor o catálogo do Pinterest.
+Processo de Exportação
+Ao realizar o processo de exportação 
+Via API
+, no Pinterest já é criado o pin/post no feed e você pode escolher em qual pasta(board) o pin será publicado 
+Pronto!
+Sua loja estará integrada ao Pinterest.
+Você pode escolher a forma de integração que melhor atende às suas necessidades:
+API:
+ ideal para quem deseja controlar exatamente quais produtos serão enviados ao Pinterest.
+XML:
+ recomendado para manter todo o catálogo sincronizado automaticamente por meio de um feed de produtos.
+O Pinterest possui um prazo de aproximadamente 24 horas para analisar e aprovar a integração.Para aumentar as chances de aprovação da integração, verifique os seguintes pontos:
+Todos os dados da loja estão preenchidos corretamente na Montink;
+As páginas que possuem relação com informações institucionais ou atendimento devem apresentar dados de contato, como e-mail e telefone;
+Se possível, informe também o horário de funcionamento da loja.
+Nossa recomendação
+Para garantir que essas informações estejam disponíveis de forma clara, recomendamos:
+1. Fale Conosco
+Acesse 
+Minha Loja > Páginas > Fale Conosco
+ e adicione, em texto:
+E-mail;
+Telefone;
+Endereço, se possuir;
+CNPJ, se possuir.
+2. Política de Troca
+Adicione o mesmo bloco de informações de contato utilizado na página Fale Conosco.
+3. Sobre Nós
+Também é recomendado incluir essas informações na página Sobre Nós, mantendo os dados de contato consistentes em diferentes áreas da loja.
+Manter essas informações completas e consistentes ajuda a demonstrar ao Pinterest que a loja possui identidade e canais de contato claros, contribuindo para o processo de aprovação da integração.
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Como Integrar a Montink a Hotmart ?                        
+                          Códigos NCM para emissão de nota fiscal pelo Bling na Montink                        
+                          Como integrar minha loja com o Bling?                        
+                          Integração da Montink via API                        
+                          Fluxo de Pedido e Pagamento — Montink + Marketplaces                        

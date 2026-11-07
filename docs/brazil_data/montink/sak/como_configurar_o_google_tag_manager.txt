@@ -1,0 +1,63 @@
+URL: https://montink.sak.com.br/como-configurar-o-google-tag-manager
+TITLE: Central de Ajuda Montink - Como Configurar o Google Tag Manager
+
+
+Mais artigos sobre Configurações de Plataforma
+                        Unificação da tela de configurações                      
+                        Como criar usuários adicionais a sua loja                      
+                        Como configurar o Google Analytics na minha loja?                      
+                        Como cancelar minha conta na Montink?                      
+                        Excluí minha loja. Posso habilitá-la novamente?                       
+                        Como alterar a senha de acesso da Montink                      
+                        Como Configurar o Google Tag Manager                      
+                        Guia de Integração da Montink com o Google Merchant                      
+                        Como Configurar o Pixel do Meta na Montink                      
+                        Como Obter o Catálogo XML do Facebook e Google Merchant?                      
+Ver todos os artigos sobre Configurações de Plataforma
+Como Configurar o Google Tag Manager
+Atualizado em 14/09/2026
+                      Link copiado!                    
+Para utilizar o Google Tag Manager na montink, é necessário copiar o códigos de instalação. Veja como fazer:
+Acesse o Google Tag Manager
+Entre em:
+👉 
+https://tagmanager.google.com
+Faça login com sua conta Google.
+Selecione a conta e o container
+Escolha a 
+Conta
+ correta
+Em seguida, selecione o 
+Container
+ do site desejado
+(normalmente o container tem o nome do domínio do site)
+Copie o código do Google Tag Manager
+O 
+ID do container
+ (exemplo: 
+GTM-XXXXXXX
+) é exibido no 
+canto superior direito da tela
+Copie esse código
+Cole o código na Montink
+Na Montink, siga o caminho:
+Conta e Acesso → Configurações → Domínio e Análise 
+→
+  Seção Código Google Tag Manager
+Cole o código do GTM no campo indicado
+Clique em 
+Salvar Alterações
+Inserindo Script
+Para inserir o Script Disponibilizado pelo google, primeiramente copie-o clicando sob o ID do GTM
+ Na Montink, acesse 
+Minha Loja → Temas → Editar Tema 
+No tema 2, clique na última opção chamada Configs e posteriormente em Editar Script Head, e cole naquela seção
+Para o Novo Tema, 
+clique na última opção chamada Configs e posteriormente em Scripts e Css Personalizados, e cole naquela de Scripts
+Importante : No novo tema, copie apenas o conteúdo dentro de <script></script
+O que achou da resposta?
+Não encontrou o que precisava? 
+Entre em contato
+Artigos visitados
+Artigos relacionados
+                          Posso criar meus produtos sem ter um computador?                        
