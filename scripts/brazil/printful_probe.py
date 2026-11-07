@@ -92,3 +92,25 @@ body={"recipient":{"address1":"Av Paulista 1000","city":"Sao Paulo","state_code"
       "currency":"BRL"}
 s_,j=post("https://api.printful.com/v2/shipping-rates",body)
 save("ship_rates_try1",{"status":s_,"body":j}); print("ship rates",s_,json.dumps(j)[:500])
+
+# round 3: detail for brazil-fulfillable apparel
+for pid in (509,146,145):
+    s_,av=get(f"https://api.printful.com/v2/catalog-products/{pid}/availability",params={"selling_region_name":"brazil"})
+    save(f"br_avail_{pid}",{"status":s_,"body":av})
+    ok=[]
+    if s_==200:
+        for v in av["data"]:
+            for t in v["techniques"]:
+                for r in t["selling_regions"]:
+                    if r["name"]=="brazil" and r["availability"]=="in stock": ok.append((v["catalog_variant_id"],t["technique"]))
+    print("pid",pid,"variants",len(av.get("data",[])) if s_==200 else s_,"in-stock brazil combos",len(ok))
+    s2,pr=get(f"https://api.printful.com/v2/catalog-products/{pid}/prices",params={"selling_region_name":"brazil"})
+    save(f"br_prices_{pid}",{"status":s2,"body":pr})
+    s3,vr=get(f"https://api.printful.com/v2/catalog-products/{pid}/catalog-variants")
+    save(f"br_variants_{pid}",{"status":s3,"body":vr})
+    # price for in-stock variants
+    if s2==200:
+        pm={v["id"]:v for v in pr["data"].get("variants",[])}
+        pl={p["id"]:p["price"] for p in pr["data"]["product"]["placements"]}
+        sample=[(vid,tech,[t["price"] for t in pm.get(vid,{}).get("techniques",[]) if t["technique_key"]==tech]) for vid,tech in ok[:6]]
+        print("  sample in-stock prices",sample,"front",pl.get("front"),pl.get("back"),"currency",pr["data"]["currency"])
