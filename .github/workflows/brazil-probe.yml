@@ -1,0 +1,33 @@
+name: brazil-probe
+on:
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "ml_api | ml_pw | ml_help | dimona | shipping | shopee"
+        required: true
+        default: ml_api
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          pip install playwright requests beautifulsoup4 lxml
+          playwright install --with-deps chromium
+      - name: Run probe
+        run: python scripts/brazil/probe.py "${{ github.event.inputs.task }}"
+        continue-on-error: true
+      - name: Commit results
+        run: |
+          git config user.name "brazil-probe"
+          git config user.email "probe@users.noreply.github.com"
+          git add docs/brazil_data
+          git commit -m "brazil probe data: ${{ github.event.inputs.task }}" || exit 0
+          for i in 1 2 3; do git pull --rebase origin main && git push && break || sleep 3; done
