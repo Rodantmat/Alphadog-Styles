@@ -1,3 +1,11 @@
 
 store/mk/
 __pycache__/
+
+# production libraries and scratch (live on branch prod-assets / D: drive)
+out/backgrounds/
+out/footage3/
+out/l2/
+out/laugh/*.png
+out/laugh/*.jpg
+out/laugh/*.mp4
