@@ -580,3 +580,57 @@ if task == "montink2":
                 save(f"montink/zd/{aid}.txt", f"URL: {h}\nTITLE: {page.title()}\n\n{txt[:40000]}")
             except Exception as e: print("ERR", h, e)
     pw_run(run)
+
+if task == "prod":
+    # Brazilian producers study (2026-11-07): public pages only, no logins. Fetch seeds + relevant second-level links.
+    SEEDS = {
+     "estampaimpressa": ["https://www.estampaimpressa.com.br/", "https://www.estampaimpressa.com.br/como-funciona-o-print-on-demand/", "https://www.estampaimpressa.com.br/details/78283127422201"],
+     "gubo": ["https://gubo.com.br/", "https://gubo.com.br/catalogo", "https://gubo.com.br/dropshipping", "https://gubo.com.br/planos"],
+     "umapenca": ["https://umapenca.com/", "https://umapenca.com/precos", "https://blog.umapenca.com/faq-print-on-demand-tudo-que-voce-precisa-saber-em-2025/"],
+     "montink": ["https://montink.com/", "https://montink.com/dropshipping", "https://montink.com/mercado-livre", "https://sou.montink.com/"],
+     "colab55": ["https://www.colab55.com/", "https://www.colab55.com/criar-camisetas-personalizadas"],
+     "hotprinti": ["https://hotprinti.com.br/", "https://www.hotprinti.com.br/"],
+     "goimage": ["https://www.goimage.com.br/"],
+     "printi": ["https://www.printi.com.br/camisetas-personalizadas", "https://www.printi.com.br/"],
+     "camisetasrapido": ["https://www.camisetasrapido.com.br/"],
+     "marcazo": ["https://marcazo.com/", "https://www.marcazo.com.br/"],
+     "estampaja": ["https://estampaja.com.br/", "https://www.estampaja.com.br/"],
+     "dropnacional": ["https://dropnacional.com.br/"],
+     "drophar": ["https://drophar.com.br/"],
+     "b2drop": ["https://www.nuvemshop.com.br/loja-aplicativos-nuvem/b2-drop-dropshipping-nacional"],
+     "youdraw": ["https://apps.shopify.com/youdraw", "https://youdraw.com.br/", "https://www.youdraw.com.br/"],
+     "cloudprinter": ["https://www.cloudprinter.com/", "https://www.cloudprinter.com/print-on-demand-brazil"],
+     "dimona_dropsimples": ["https://camisadimona.com.br/dropsimples/"],
+     "reservaink": ["https://reserva.ink/site/print-on-demand"],
+     "dslite": ["https://www.dslite.com.br/fornecedores-dropshipping/"],
+    }
+    KEY = re.compile(r"integra|api|prec|plano|faq|ajuda|duvida|mercado|nota|cnpj|dropship|catalogo|cat[aá]logo|contato|como-funciona|marketplace|shopee|etiqueta", re.I)
+    def slug(u):
+        return re.sub(r"[^A-Za-z0-9]+", "_", u.split("://",1)[-1])[:100]
+    def run(page):
+        for site, urls in SEEDS.items():
+            seen = set()
+            for u in urls:
+                try:
+                    resp = page.goto(u, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(3500)
+                    txt = page.inner_text("body")
+                    hrefs = page.eval_on_selector_all("a[href]", "els=>els.map(e=>[e.innerText.trim().slice(0,80),e.href])")
+                    save(f"prod/{site}/{slug(u)}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:60000]}\n\nLINKS:\n" + "\n".join(f"{a} | {h}" for a, h in hrefs[:250]))
+                    seen.add(u)
+                    # second level (same host, keyword) for first url only
+                    if u == urls[0] and resp and resp.status < 400:
+                        host = re.sub(r"^https?://([^/]+).*", r"\1", u)
+                        cand = []
+                        for t, h in hrefs:
+                            if host.replace("www.","") in h and KEY.search(h + " " + t) and h not in seen and h not in cand and not re.search(r"login|cadastr|signup|#", h):
+                                cand.append(h)
+                        for h in cand[:8]:
+                            try:
+                                r2 = page.goto(h, wait_until="domcontentloaded", timeout=40000); page.wait_for_timeout(2500)
+                                save(f"prod/{site}/{slug(h)}.txt", f"URL: {h}\nSTATUS: {r2.status if r2 else None}\nTITLE: {page.title()}\n\n{page.inner_text('body')[:40000]}")
+                            except Exception as e:
+                                print("ERR2", h, e)
+                except Exception as e:
+                    print("PWERR", u, e)
+                    save(f"prod/{site}/{slug(u)}.txt", f"URL: {u}\nERROR: {e}")
+    pw_run(run)
