@@ -426,3 +426,41 @@ if task == "alt3":
             save(f"alt/{k}.txt", f"URL: {u}\nERR"); continue
         body = r.text if "html" not in r.headers.get("content-type", "") else text_of_html(r.text)
         save(f"alt/{k}.txt", f"URL: {u}\nSTATUS: {r.status_code}\nCT: {r.headers.get('content-type')}\n\n{body[:900000]}")
+
+if task == "alt4":
+    B = "https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/articles/"
+    URLS = {
+     "rinkh_etiqueta": B + "1765291553-como-e-a-etiqueta-dos-produtos-e-a-embalagem",
+     "rinkh_frete": B + "1765285013-como-o-frete-e-calculado",
+     "rinkh_quempaga": B + "1765284976-quem-paga-pelo-frete",
+     "rinkh_integ": B + "1765381036-o-que-e-a-reserva-ink",
+     "rinkh_shopify": B + "1765381535-como-instalar-o-aplicativo-da-ink-na-shopify",
+     "rinkh_nuvem": B + "1765381490-como-instalar-o-aplicativo-da-ink-na-nuvemshop",
+     "rinkh_api": B + "1788186577-o-que-sao-a-api-ink-e-o-webhook",
+     "rinkh_cat_integ": "https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/pt_BR/categories/integraes-com-outras-plataformas",
+     "rinkh_planos": "https://cloudchat3.cloudhumans.com/hc/central-de-ajuda-reserva-ink/pt_BR",
+     "rink_ref": "https://developers.reserva.ink/referencia/",
+     "rink_guia_com": "https://developers.reserva.ink/guias/comecando",
+     "ra_reserva": "https://www.reclameaqui.com.br/empresa/reserva/",
+     "ra_reserva_ink2": "https://www.reclameaqui.com.br/empresa/reserva-ink-cloudhumans/",
+     "gelato_prod_tshirt": "https://www.gelato.com/products/t-shirt",
+     "gelato_support_ship": "https://support.gelato.com/en/articles/8996284-what-brands-of-clothing-do-you-offer",
+     "montink_ml_blog": "https://blog.montink.com/?s=mercado+livre",
+     "montink_faq_blog": "https://blog.montink.com/faq-esclareca-aqui-suas-duvidas-selecionamos-as-mais-frequentes/",
+     "dimona_api_postman": "https://documenter.getpostman.com/view/111729/2sB2qdgLJQ",
+    }
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        b = p.chromium.launch()
+        ctx = b.new_context(user_agent=UA, locale="pt-BR", viewport={"width":1366,"height":900})
+        for k, u in URLS.items():
+            try:
+                page = ctx.new_page()
+                resp = page.goto(u, wait_until="domcontentloaded", timeout=40000)
+                page.wait_for_timeout(4000)
+                txt = page.inner_text("body")
+                save(f"alt/{k}.txt", f"URL: {u}\nSTATUS: {resp.status if resp else None}\nTITLE: {page.title()}\n\n{txt[:30000]}")
+                page.close()
+            except Exception as e:
+                save(f"alt/{k}.txt", f"URL: {u}\nERROR: {e}")
+        b.close()
