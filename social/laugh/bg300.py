@@ -243,8 +243,8 @@ def fam_blueprint(r,P):
     if v==0: bg=full([20,70,130]);lc=np.array([220,235,255.])
     elif v==1: bg=full([245,240,215]);lc=np.array([90,150,120.])
     else: bg=full([28,50,44]);lc=np.array([230,235,230.])
-    if r.random()<.5: bg=bg*0.35+P[1]*0.65*(0.7 if v!=1 else 1.2)
-    cv=np.zeros((H,W),np.float32);s=r.choice([30,36,45])
+    bg=bg*0.25+P[1+int(r.integers(0,3))]*0.75;lc=lc*0.3+P[-1]*0.7
+    cv=np.zeros((H,W),np.float32);s=int(r.choice([24,30,36,45,60]))
     for x in range(0,W,s): cv[:,x:x+1]=.35 if (x//s)%5 else .9
     for y in range(0,H,s): cv[y:y+1,:]=np.maximum(cv[y:y+1,:],.35 if (y//s)%5 else .9)
     cv=cv2.GaussianBlur(cv,(0,0),.7);dd=np.zeros((H,W),np.uint8)
