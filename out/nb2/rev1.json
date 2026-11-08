@@ -1,0 +1,319 @@
+{
+ "M_geo_lhasa_apso_classic__d": {
+  "breed_identity": 8,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 9,
+  "completeness": 10,
+  "anatomy": 9,
+  "appeal": 8,
+  "sitting": false,
+  "problems": [
+   "The full-body dog is standing, not sitting",
+   "Coat does not quite reach the floor as paws are fully exposed"
+  ]
+ },
+ "M_geo_lhasa_apso_classic__b": {
+  "breed_identity": 8,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 10,
+  "completeness": 10,
+  "anatomy": 9,
+  "appeal": 8,
+  "sitting": false,
+  "problems": [
+   "The full-body dog is standing, not sitting",
+   "The coat on the full-body dog does not quite reach the floor to obscure the legs, which is typical for a standard Lhasa Apso"
+  ]
+ },
+ "M_geo_lhasa_apso_classic__c": {
+  "breed_identity": 8,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 10,
+  "completeness": 10,
+  "anatomy": 9,
+  "appeal": 9,
+  "sitting": false,
+  "problems": [
+   "The full-body dog is standing, not sitting as requested",
+   "The coat on the full-body dog does not quite reach the floor as is typical for a show-coat Lhasa Apso"
+  ]
+ },
+ "M_geo_miniature_pinscher_classic__c": {
+  "breed_identity": 5,
+  "looks_like": "Chihuahua mix or Manchester Terrier",
+  "head_back_match": 8,
+  "completeness": 10,
+  "anatomy": 7,
+  "appeal": 7,
+  "sitting": true,
+  "problems": [
+   "Ears are disproportionately large, resembling a Chihuahua",
+   "Eyes are too large and round for a Miniature Pinscher",
+   "Neck is too long and thick",
+   "Lacks the compact, square body typical of the breed, looking more like a small Doberman"
+  ]
+ },
+ "M_geo_miniature_pinscher_classic__a": {
+  "breed_identity": 6,
+  "looks_like": "Rat Terrier or Chihuahua mix",
+  "head_back_match": 5,
+  "completeness": 10,
+  "anatomy": 7,
+  "appeal": 7,
+  "sitting": true,
+  "problems": [
+   "Head emblem has much larger, rounder eyes than the full-body dog",
+   "Ears on the head emblem are disproportionately wide and large, resembling a Chihuahua",
+   "Neck on the full-body dog is slightly too long and slender for a compact Miniature Pinscher",
+   "Inconsistent facial proportions between the two illustrations"
+  ]
+ },
+ "M_geo_lhasa_apso_classic__a": {
+  "breed_identity": 9,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 10,
+  "completeness": 10,
+  "anatomy": 9,
+  "appeal": 8,
+  "sitting": false,
+  "problems": [
+   "The full-body dog is standing, not sitting as requested"
+  ]
+ },
+ "M_geo_miniature_pinscher_classic__b": {
+  "breed_identity": 5,
+  "looks_like": "Chihuahua",
+  "head_back_match": 7,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Large ears",
+   "Long neck",
+   "Ambiguous tail"
+  ]
+ },
+ "M_geo_vira_lata_classic__a": {
+  "breed_identity": 8,
+  "looks_like": "Vira-lata (Brazilian SRD caramel street dog)",
+  "head_back_match": 10,
+  "completeness": 10,
+  "anatomy": 9,
+  "appeal": 9,
+  "sitting": true,
+  "problems": []
+ },
+ "M_geo_vira_lata_classic__d": {
+  "breed_identity": 6,
+  "looks_like": "Jack Russell Terrier mix",
+  "head_back_match": 9,
+  "completeness": 10,
+  "anatomy": 9,
+  "appeal": 8,
+  "sitting": true,
+  "problems": [
+   "Ears are a bit too small and terrier-like for a typical Vira-lata",
+   "Muzzle is slightly short, resembling a Jack Russell",
+   "Overall build is a bit too compact and terrier-like"
+  ]
+ },
+ "M_geo_vira_lata_classic__b": {
+  "breed_identity": 4,
+  "looks_like": "Jack Russell Terrier",
+  "head_back_match": 6,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Looks like Jack Russell",
+   "Eye patches atypical"
+  ]
+ },
+ "M_geo_vira_lata_classic__c": {
+  "breed_identity": 6,
+  "looks_like": "Jack Russell Terrier mix",
+  "head_back_match": 6,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Slight Jack Russell look"
+  ]
+ },
+ "M_geo_miniature_pinscher_classic__d": {
+  "breed_identity": 5,
+  "looks_like": "Rat Terrier",
+  "head_back_match": 6,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Large ears",
+   "Thick neck",
+   "Ambiguous breed"
+  ]
+ },
+ "M_line_lhasa_apso_classic__a": {
+  "breed_identity": 6,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 7,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Simplified paws",
+   "Generic long-haired look"
+  ]
+ },
+ "M_line_lhasa_apso_classic__b": {
+  "breed_identity": 6,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 7,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Generic long-haired look",
+   "Simplified paws"
+  ]
+ },
+ "M_line_miniature_pinscher_classic__a": {
+  "breed_identity": 8,
+  "looks_like": "Miniature Pinscher",
+  "head_back_match": 9,
+  "completeness": 10,
+  "anatomy": 9,
+  "appeal": 9,
+  "sitting": true,
+  "problems": [
+   "muzzle slightly long for a Min Pin",
+   "ears slightly large, bordering on Chihuahua"
+  ]
+ },
+ "M_line_lhasa_apso_classic__c": {
+  "breed_identity": 6,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 7,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Coat could be longer",
+   "Slightly generic style"
+  ]
+ },
+ "M_line_lhasa_apso_classic__d": {
+  "breed_identity": 6,
+  "looks_like": "Lhasa Apso",
+  "head_back_match": 6,
+  "completeness": 6,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Generic long hair",
+   "Simplified paws"
+  ]
+ },
+ "M_line_miniature_pinscher_classic__b": {
+  "breed_identity": 4,
+  "looks_like": "Chihuahua or Italian Greyhound",
+  "head_back_match": 5,
+  "completeness": 6,
+  "anatomy": 5,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Neck too long",
+   "Head too round",
+   "Messy shoulder lines"
+  ]
+ },
+ "M_line_miniature_pinscher_classic__d": {
+  "breed_identity": 5,
+  "looks_like": "Chihuahua mix",
+  "head_back_match": 6,
+  "completeness": 6,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Oversized ears",
+   "Long neck"
+  ]
+ },
+ "M_line_miniature_pinscher_classic__c": {
+  "breed_identity": 4,
+  "looks_like": "Jack Russell and Podenco",
+  "head_back_match": 3,
+  "completeness": 7,
+  "anatomy": 5,
+  "appeal": 5,
+  "sitting": true,
+  "problems": [
+   "Mismatched ear types",
+   "Too leggy for breed",
+   "Left head resembles terrier"
+  ]
+ },
+ "M_line_vira_lata_classic__a": {
+  "breed_identity": 6,
+  "looks_like": "Vira-lata",
+  "head_back_match": 7,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Generic features",
+   "Minor line overlaps"
+  ]
+ },
+ "M_line_vira_lata_classic__b": {
+  "breed_identity": 6,
+  "looks_like": "Vira-lata",
+  "head_back_match": 7,
+  "completeness": 7,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Slightly whippet-like chest"
+  ]
+ },
+ "M_line_vira_lata_classic__c": {
+  "breed_identity": 6,
+  "looks_like": "Vira-lata mix",
+  "head_back_match": 7,
+  "completeness": 6,
+  "anatomy": 6,
+  "appeal": 6,
+  "sitting": true,
+  "problems": [
+   "Stylized paws",
+   "Generic appearance"
+  ]
+ },
+ "M_line_vira_lata_classic__d": [
+  {
+   "breed_identity": 6,
+   "looks_like": "Vira-lata or Jack Russell mix",
+   "head_back_match": 7,
+   "completeness": 7,
+   "anatomy": 6,
+   "appeal": 6,
+   "sitting": true,
+   "problems": [
+    "Generic look overlaps with terrier mixes",
+    "Simplified paw lines"
+   ]
+  }
+ ]
+}
