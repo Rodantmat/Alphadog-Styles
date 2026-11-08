@@ -1,0 +1,98 @@
+[
+ {
+  "id": "V_line_lhasa_apso_cool",
+  "refs": [
+   "out/nb2/master/line_lhasa_apso_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished continuous-line design of a Lhasa Apso: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add sunglasses to BOTH dogs (the front head and the full-body dog): classic aviator sunglasses drawn in the same thin continuous-line style: a thin frame with a nose bridge and thin temple arms, two teardrop-shaped lenses. The lenses must be COMPLETELY SOLID PURE BLACK fills (like black ink), fully opaque: nothing visible through them, no eyes, no highlights, no white inside the lenses. The sunglasses sit over the eyes exactly where the eyes were, the same style and size relation on both dogs. Erase the eyes (they are hidden behind the lenses). Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_line_lhasa_apso_heart",
+  "refs": [
+   "out/nb2/master/line_lhasa_apso_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished continuous-line design of a Lhasa Apso: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add the heart theme: (1) draw a large heart-shaped outline frame in one thin flowing continuous line that ends in a small loop at the bottom point and a tiny heart at the top surrounding the FRONT head so the head sits inside the heart (the heart must be clearly larger than the head and fully visible, not cut off); (2) give the FULL-BODY dog a thin collar line around its neck with one small heart-shaped tag. Keep both dogs' eyes exactly as in image 1. Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_line_miniature_pinscher_cool",
+  "refs": [
+   "out/nb2/master/line_miniature_pinscher_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished continuous-line design of a Miniature Pinscher: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add sunglasses to BOTH dogs (the front head and the full-body dog): classic aviator sunglasses drawn in the same thin continuous-line style: a thin frame with a nose bridge and thin temple arms, two teardrop-shaped lenses. The lenses must be COMPLETELY SOLID PURE BLACK fills (like black ink), fully opaque: nothing visible through them, no eyes, no highlights, no white inside the lenses. The sunglasses sit over the eyes exactly where the eyes were, the same style and size relation on both dogs. Erase the eyes (they are hidden behind the lenses). Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_line_miniature_pinscher_heart",
+  "refs": [
+   "out/nb2/master/line_miniature_pinscher_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished continuous-line design of a Miniature Pinscher: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add the heart theme: (1) draw a large heart-shaped outline frame in one thin flowing continuous line that ends in a small loop at the bottom point and a tiny heart at the top surrounding the FRONT head so the head sits inside the heart (the heart must be clearly larger than the head and fully visible, not cut off); (2) give the FULL-BODY dog a thin collar line around its neck with one small heart-shaped tag. Keep both dogs' eyes exactly as in image 1. Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_line_vira_lata_cool",
+  "refs": [
+   "out/nb2/master/line_vira_lata_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished continuous-line design of a Vira-lata: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add sunglasses to BOTH dogs (the front head and the full-body dog): classic aviator sunglasses drawn in the same thin continuous-line style: a thin frame with a nose bridge and thin temple arms, two teardrop-shaped lenses. The lenses must be COMPLETELY SOLID PURE BLACK fills (like black ink), fully opaque: nothing visible through them, no eyes, no highlights, no white inside the lenses. The sunglasses sit over the eyes exactly where the eyes were, the same style and size relation on both dogs. Erase the eyes (they are hidden behind the lenses). Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_line_vira_lata_heart",
+  "refs": [
+   "out/nb2/master/line_vira_lata_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished continuous-line design of a Vira-lata: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add the heart theme: (1) draw a large heart-shaped outline frame in one thin flowing continuous line that ends in a small loop at the bottom point and a tiny heart at the top surrounding the FRONT head so the head sits inside the heart (the heart must be clearly larger than the head and fully visible, not cut off); (2) give the FULL-BODY dog a thin collar line around its neck with one small heart-shaped tag. Keep both dogs' eyes exactly as in image 1. Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_geo_lhasa_apso_cool",
+  "refs": [
+   "out/nb2/master/geo_lhasa_apso_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished geometric design of a Lhasa Apso: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add sunglasses to BOTH dogs (the front head and the full-body dog): angular geometric aviator sunglasses made of straight polygon edges: a bold frame with a bridge and temple arms, two angular faceted lenses. The lenses must be COMPLETELY SOLID PURE BLACK fills (like black ink), fully opaque: nothing visible through them, no eyes, no highlights, no white inside the lenses. The sunglasses sit over the eyes exactly where the eyes were, the same style and size relation on both dogs. Erase the eyes (they are hidden behind the lenses). Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_geo_lhasa_apso_heart",
+  "refs": [
+   "out/nb2/master/geo_lhasa_apso_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished geometric design of a Lhasa Apso: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add the heart theme: (1) draw a large heart-shaped outline frame made of angular geometric facets (like a faceted gem heart) with a small faceted diamond-heart on top surrounding the FRONT head so the head sits inside the heart (the heart must be clearly larger than the head and fully visible, not cut off); (2) give the FULL-BODY dog a thin collar line around its neck with one small heart-shaped tag. Keep both dogs' eyes exactly as in image 1. Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_geo_miniature_pinscher_cool",
+  "refs": [
+   "out/nb2/master/geo_miniature_pinscher_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished geometric design of a Miniature Pinscher: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add sunglasses to BOTH dogs (the front head and the full-body dog): angular geometric aviator sunglasses made of straight polygon edges: a bold frame with a bridge and temple arms, two angular faceted lenses. The lenses must be COMPLETELY SOLID PURE BLACK fills (like black ink), fully opaque: nothing visible through them, no eyes, no highlights, no white inside the lenses. The sunglasses sit over the eyes exactly where the eyes were, the same style and size relation on both dogs. Erase the eyes (they are hidden behind the lenses). Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_geo_miniature_pinscher_heart",
+  "refs": [
+   "out/nb2/master/geo_miniature_pinscher_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished geometric design of a Miniature Pinscher: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add the heart theme: (1) draw a large heart-shaped outline frame made of angular geometric facets (like a faceted gem heart) with a small faceted diamond-heart on top surrounding the FRONT head so the head sits inside the heart (the heart must be clearly larger than the head and fully visible, not cut off); (2) give the FULL-BODY dog a thin collar line around its neck with one small heart-shaped tag. Keep both dogs' eyes exactly as in image 1. Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_geo_vira_lata_cool",
+  "refs": [
+   "out/nb2/master/geo_vira_lata_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished geometric design of a Vira-lata: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add sunglasses to BOTH dogs (the front head and the full-body dog): angular geometric aviator sunglasses made of straight polygon edges: a bold frame with a bridge and temple arms, two angular faceted lenses. The lenses must be COMPLETELY SOLID PURE BLACK fills (like black ink), fully opaque: nothing visible through them, no eyes, no highlights, no white inside the lenses. The sunglasses sit over the eyes exactly where the eyes were, the same style and size relation on both dogs. Erase the eyes (they are hidden behind the lenses). Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ },
+ {
+  "id": "V_geo_vira_lata_heart",
+  "refs": [
+   "out/nb2/master/geo_vira_lata_classic.png"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is a finished geometric design of a Vira-lata: front head emblem (left) and full-body sitting dog (right). Make an exact copy and ONLY add the heart theme: (1) draw a large heart-shaped outline frame made of angular geometric facets (like a faceted gem heart) with a small faceted diamond-heart on top surrounding the FRONT head so the head sits inside the heart (the heart must be clearly larger than the head and fully visible, not cut off); (2) give the FULL-BODY dog a thin collar line around its neck with one small heart-shaped tag. Keep both dogs' eyes exactly as in image 1. Everything else must stay IDENTICAL to image 1, line for line: same dog, same pose, same layout and positions, same hair/coat amount and line density, same eyebrows, nostrils, mouth, chest lines, tail, paws, same line weight. Pure black on flat pure white, no gray, no shading, no text, nothing cut off or touching the canvas edge."
+ }
+]
