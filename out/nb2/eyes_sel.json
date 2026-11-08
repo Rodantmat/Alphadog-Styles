@@ -1,0 +1,464 @@
+{
+ "out/nb2/sel/geo_lhasa_apso_cool.png": [],
+ "out/nb2/sel/geo_lhasa_apso_classic.png": [
+  {
+   "box_2d": [
+    349,
+    177,
+    413,
+    230
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    349,
+    308,
+    413,
+    361
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    218,
+    722,
+    268,
+    761
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    218,
+    809,
+    268,
+    848
+   ],
+   "which": "back"
+  }
+ ],
+ "out/nb2/sel/geo_lhasa_apso_heart.png": [
+  {
+   "box_2d": [
+    342,
+    174,
+    414,
+    235
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    342,
+    302,
+    414,
+    363
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    216,
+    719,
+    270,
+    764
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    216,
+    808,
+    270,
+    853
+   ],
+   "which": "back"
+  }
+ ],
+ "out/nb2/sel/geo_miniature_pinscher_classic.png": [
+  {
+   "box_2d": [
+    434,
+    188,
+    493,
+    236
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    434,
+    325,
+    493,
+    372
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    217,
+    625,
+    246,
+    643
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    217,
+    679,
+    246,
+    705
+   ],
+   "which": "back"
+  }
+ ],
+ "out/nb2/sel/geo_miniature_pinscher_cool.png": [],
+ "out/nb2/sel/geo_miniature_pinscher_heart.png": [
+  {
+   "box_2d": [
+    434,
+    189,
+    492,
+    235
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    434,
+    325,
+    492,
+    371
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    218,
+    625,
+    245,
+    643
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    218,
+    680,
+    245,
+    705
+   ],
+   "which": "back"
+  }
+ ],
+ "out/nb2/sel/geo_vira_lata_classic.png": [
+  {
+   "box_2d": [
+    161,
+    614,
+    214,
+    654
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    161,
+    708,
+    214,
+    748
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    409,
+    191,
+    477,
+    248
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    409,
+    350,
+    477,
+    408
+   ],
+   "which": "front"
+  }
+ ],
+ "out/nb2/sel/geo_vira_lata_cool.png": [],
+ "out/nb2/sel/geo_vira_lata_heart.png": [
+  {
+   "box_2d": [
+    409,
+    192,
+    476,
+    248
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    409,
+    351,
+    476,
+    407
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    176,
+    618,
+    213,
+    654
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    176,
+    709,
+    213,
+    745
+   ],
+   "which": "back"
+  }
+ ],
+ "out/nb2/sel/line_lhasa_apso_cool.png": [],
+ "out/nb2/sel/line_lhasa_apso_classic.png": [
+  {
+   "box_2d": [
+    403,
+    189,
+    464,
+    236
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    403,
+    288,
+    464,
+    335
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    238,
+    717,
+    288,
+    754
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    238,
+    792,
+    285,
+    829
+   ],
+   "which": "front"
+  }
+ ],
+ "out/nb2/sel/line_lhasa_apso_heart.png": [
+  {
+   "box_2d": [
+    403,
+    189,
+    464,
+    236
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    403,
+    288,
+    464,
+    335
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    238,
+    716,
+    288,
+    754
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    238,
+    792,
+    285,
+    830
+   ],
+   "which": "back"
+  }
+ ],
+ "out/nb2/sel/line_miniature_pinscher_classic.png": [
+  {
+   "box_2d": [
+    439,
+    196,
+    492,
+    234
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    439,
+    308,
+    492,
+    348
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    237,
+    714,
+    267,
+    736
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    237,
+    774,
+    267,
+    797
+   ],
+   "which": "front"
+  }
+ ],
+ "out/nb2/sel/line_miniature_pinscher_heart.png": [
+  {
+   "box_2d": [
+    229,
+    710,
+    291,
+    740
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    229,
+    770,
+    291,
+    800
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    424,
+    188,
+    538,
+    241
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    424,
+    301,
+    538,
+    354
+   ],
+   "which": "front"
+  }
+ ],
+ "out/nb2/sel/line_vira_lata_cool.png": [],
+ "out/nb2/sel/line_miniature_pinscher_cool.png": [],
+ "out/nb2/sel/line_vira_lata_classic.png": [
+  {
+   "box_2d": [
+    329,
+    196,
+    382,
+    239
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    329,
+    325,
+    382,
+    370
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    187,
+    714,
+    218,
+    740
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    187,
+    784,
+    218,
+    811
+   ],
+   "which": "back"
+  }
+ ],
+ "out/nb2/sel/line_vira_lata_heart.png": [
+  {
+   "box_2d": [
+    328,
+    196,
+    381,
+    240
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    328,
+    325,
+    381,
+    370
+   ],
+   "which": "front"
+  },
+  {
+   "box_2d": [
+    186,
+    711,
+    218,
+    740
+   ],
+   "which": "back"
+  },
+  {
+   "box_2d": [
+    188,
+    784,
+    218,
+    812
+   ],
+   "which": "back"
+  }
+ ]
+}
