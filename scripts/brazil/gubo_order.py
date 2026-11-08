@@ -3,8 +3,8 @@ KEY = os.environ["GUBO_API_KEY"]; B = "https://api.gubo.com.br/v1"
 OUT = "docs/brazil_data/gubo"; os.makedirs(OUT, exist_ok=True)
 H = {"Authorization": "Bearer " + KEY}
 def save(n, o): open(f"{OUT}/{n}.json", "w").write(json.dumps(o, ensure_ascii=False, indent=1)[:60000])
-def call(m, p, idem=False, **kw):
-    h = dict(H)
+def call(m, p, idem=False, extra=None, **kw):
+    h = dict(H); h.update(extra or {})
     if idem: h["Idempotency-Key"] = str(uuid.uuid4())
     r = requests.request(m, B + p, headers=h, timeout=90, **kw)
     try: b = r.json()
@@ -17,7 +17,7 @@ dest = {"nome": "Cliente Teste", "documento": "12345678909", "email": "teste@exa
 body = {"referencia": ref, "itens": [{"sku": "CAV01-PRET-M", "quantidade": 1}], "destinatario": dest,
         "entrega": {"preferencia": "mais_barata"}, "valor_venda_centavos": 8990,
         "metadados": {"canal": "teste"}}
-s, o = call("POST", "/pedidos/por-variante", idem=True, json=body, headers={"Prefer": "wait=10"}); print("create", s); save("pedido_create", [s, o])
+s, o = call("POST", "/pedidos/por-variante", idem=True, json=body, extra={"Prefer": "wait=10"}); print("create", s); save("pedido_create", [s, o])
 pid = o.get("id") if isinstance(o, dict) else None
 if not pid: raise SystemExit("no order id")
 time.sleep(3)
