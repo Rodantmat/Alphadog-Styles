@@ -71,5 +71,38 @@
    "hoodie/golden_retriever/2SA",
    "hoodie/golden_retriever/6LB"
   ]
+ },
+ {
+  "date": "2026-11-18",
+  "type": "d3b",
+  "name": "d3b_scenery_aurora",
+  "bg": "bg_012 aurora, bg_064 watercolor, bg_161 bokeh, bg_256 ripples, bg_152 nebula, bg_094 wood, bg_050 topo, bg_238 liquid",
+  "music": "m180",
+  "merch": [
+   "tee/german_shepherd/5CR",
+   "tee/boxer/2NV",
+   "tee/french_bulldog/1PK_back",
+   "tee/rottweiler/5AS",
+   "tee/dachshund/3LB_back",
+   "tee/great_dane/2BK",
+   "tee/pembroke_welsh_corgi/5WH",
+   "tee/labrador_retriever/1HE_back"
+  ]
+ },
+ {
+  "date": "2026-11-19",
+  "type": "laugh2",
+  "name": "laugh02_watchdog_v1",
+  "bg": "sunburst red/orange seed3",
+  "music": "m129",
+  "laugh": "460",
+  "joke": "dog that tells time / watch dog",
+  "merch": [
+   "tee/cavalier_king_charles_spaniel/3PK_back",
+   "hoodie/bernese_mountain_dog/4GR_back",
+   "tank/dachshund/2HE",
+   "wtank/doberman_pinscher/5TB",
+   "cap_foam/german_shepherd/2FP"
+  ]
  }
 ]

@@ -28,7 +28,7 @@ def main():
     arg=lambda k:(a[a.index(k)+1] if k in a else None)
     prev=arg("--prev-theme");sib=arg("--sibling-theme");n=int(arg("--n") or 3)
     usedi={idx(k) for k in used};lo,hi=mp[st]["bpm"]
-    c=[x for x in lst if idx(x["file"]) not in usedi and x["theme"] in mp[st]["themes"] and lo<=x.get("bpm",lo)<=hi and x["theme"] not in (prev,sib)]
+    c=[x for x in lst if idx(x["file"]) not in usedi and x["theme"] in mp[st]["themes"] and lo<=x.get("bpm",lo)<=hi and x["theme"] not in (prev,sib) and os.path.exists(R+"out/music2/"+x["file"])]
     c.sort(key=lambda x:-x.get("energy",0))
     # theme spread: best of each theme first
     seen=set();out=[]

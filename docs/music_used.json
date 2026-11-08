@@ -230,11 +230,32 @@
   "theme": "Feel-good",
   "title": "Funk Jazz"
  },
- "m160.mp3": {
+ "m131.mp3": {
   "date": "2026-11-18",
   "use": "b18",
   "style": "postB",
+  "theme": "Funk & Disco",
+  "title": "Dry Gin"
+ },
+ "m122.mp3": {
+  "date": "2026-11-19",
+  "use": "b19",
+  "style": "postB",
+  "theme": "Electronic & House",
+  "title": "House Fest"
+ },
+ "m180.mp3": {
+  "date": "2026-11-18",
+  "use": "d3b_scenery_aurora",
+  "style": "d3",
   "theme": "Chill & Lo-fi",
-  "title": "Groovy Jazz"
+  "title": "Slow Walk"
+ },
+ "m129.mp3": {
+  "date": "2026-11-19",
+  "use": "laugh02_watchdog_v1",
+  "style": "laugh2",
+  "theme": "Hip-hop & Trap",
+  "title": "Love Layout"
  }
 }

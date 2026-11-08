@@ -15,3 +15,6 @@
 2026-11-08T18:37:25Z checker run started
 2026-11-08T18:39:58Z checker: listed Buffer acct1+2; Nov8 A (10:00 PT, 18:00Z 'Same tee, new adventure') sent on IG, TikTok, FB, Pinterest; Nov7 B / Nov8 B also sent; remaining posts future-scheduled; nothing missed, nothing forced. FINISHED OK
 2026-11-08T22:49:23Z generator run started
+2026-11-08T22:49:55Z restoring assets
+2026-11-08T22:51:54Z music plan: b18 re-themed to Funk m131 (old m160 Chill clashed with d3 A needing Chill); d3 A18=m180; assets OK
+2026-11-08T23:00:05Z built d3b_scenery_aurora (Nov 18 A, m180), b18 rebuilt (m131), laugh02_watchdog_v1 (Nov 19 A, m129), b19 (Nov 19 B, m122); frames checked OK. Built lead now through Nov 19 (11 days). Note: laugh build needs pip cairosvg+pymatting and a stub rembg (PYTHONPATH=/tmp/stubs) and /home/claude/passive-income/brand/alphadog_logo.png copy of store/logo.png. FINISHED OK

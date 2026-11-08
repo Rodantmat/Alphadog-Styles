@@ -35,4 +35,8 @@
 - Post B b13/b15/b16 rebuilt (banned breeds removed, prints visible) with the same music as before (m07, m14, m24)
 - ALL 30 out/music2 tracks are now used; Mixkit download is blocked from the cloud (403). Owner must add new tracks (out/music2) for Tue Nov 17 A onward.
 - 2026-11-17 d4b_golden_line_art: m220.mp3 "Funk Jazz" - Francisco Alvear [Feel-good, style d4]
-- 2026-11-18 b18: m160.mp3 "Groovy Jazz" - Francisco Alvear [Chill & Lo-fi, style postB]
+- 2026-11-18 b18: m131.mp3 "Dry Gin" - Michael Ramir C. [Funk & Disco, style postB]
+- 2026-11-19 b19: m122.mp3 "House Fest" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
+- 2026-11-18 d3b_scenery_aurora: m180.mp3 "Slow Walk" - Michael Ramir C. [Chill & Lo-fi, style d3]
+- 2026-11-19 laugh02_watchdog_v1: m129.mp3 "Love Layout" - Diego Nava [Hip-hop & Trap, style laugh2]
+- 2026-11-18 b18 re-themed: m160 (Chill, released unused) replaced by m131 so d3b A could take Chill.

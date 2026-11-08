@@ -162,30 +162,33 @@
    "date": "2026-11-18",
    "weekday": "Wed",
    "A": {
-    "video": null,
-    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+    "video": "social/videos/d3b_scenery_aurora.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Chill & Lo-fi"
    },
    "B": {
     "id": "b18",
     "reel": "out/postb2/b18/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Chill & Lo-fi"
+    "theme": "Funk & Disco"
    },
-   "status": "B built; A TODO (d3 scenery tees re-creation)"
+   "status": "built (A d3b + B b18 re-themed)"
   },
   {
    "date": "2026-11-19",
    "weekday": "Thu",
    "A": {
-    "video": null,
-    "slot": "09:00 PT weekdays / 10:00 PT weekends"
+    "video": "social/videos/laugh02_watchdog_v1.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Hip-hop & Trap"
    },
    "B": {
-    "id": null,
-    "reel": null,
-    "slot": "20:00 PT"
+    "id": "b19",
+    "reel": "out/postb2/b19/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Electronic & House"
    },
-   "status": "A TODO (laugh02 2-dog, new joke via build2.py)"
+   "status": "built"
   }
  ]
 }
