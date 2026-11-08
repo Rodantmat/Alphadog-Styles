@@ -1,0 +1,85 @@
+# AlphaDog Styles Brasil (pt-BR) - discovery and architecture plan
+Date: 2026-11-07 (Pacific). Author: Claude. Branch: `br-site` in rodantmat/alphadog-styles (local commit, see status.md for push state).
+Legend: **V** = verified from a file/doc/test in the repo; **U** = unverified; **TODO-verify** = a fact or decision nobody has confirmed. Nothing below was bought, published, emailed or logged into.
+
+## 1. What exists today (discovery)
+**US store (V, read from the repo `store/`):**
+- Hosting: one **Cloudflare Worker** (`store/worker/index.js`, name `alphadog-store`, custom domains `alphadogstyles.com` + `www`) that serves the static SPA from `store/` (Workers Assets) and handles `/api/*`. Deploy = workflow `store-deploy.yml` (every 2 h, and on **any branch push touching `store/**`**, see risk R1). Database: DigitalOcean Postgres through Cloudflare Hyperdrive. Payments: Stripe Checkout (live account under Flipping Magic LLC, sandbox first). Email: Resend (`orders@`) + Cloudflare Email Routing -> Worker `email()` handler -> table `support_inbox`; an own mail server (docker-mailserver on DigitalOcean, `mail/`, workflow `mail-server.yml`) also exists with `scripts/mail_bridge.py` syncing IMAP -> support inbox. Login: email code + Google.
+- Storefront: hash-routed vanilla-JS SPA (`#/shop`, `#/design`, `#/cart`, `#/checkout`, `#/custom`, `#/account`, `#/page/*`). A **designer** (breed x theme x style x placement) rendered from SVG art, compositing print files for **Printify**. Already has a client-side `i18n.js` (en/es/pt by browser language, `localStorage`), including pt copy for pages and emails - but **no geo-detection**, USD only, US ZIP/state only, Printify only.
+- Automation: `store-fulfill.yml` every 10 min -> `scripts/store_fulfill.py` (paid -> Printify -> tracking); hourly scheduled task "AlphaDog support assistant" (`trig_013oh4T32RB5BZzhTxiMYK2r`) answers `support@`/`customization@` through `store-support.yml`; custom dog design flow (5-12 photos -> artist -> quote -> order).
+- Mailboxes in use: `support@`, `customization@`, `orders@` (marketplace sale notices; also the sender of order emails).
+
+**Brazil work so far (V):** `docs/BRAZIL_STUDY.md`, `docs/brazil_data/BR_PRODUCERS.md`, Gubo API docs (`brazil_data/prod3/gubo_com_br_docs_api_*.txt`, updated 2026-10-11), a **test-mode probe** (`brazil_data/gubo/*.json`): test key works, base URL that actually answered is `https://api.gubo.com.br/v1` (docs show a placeholder host), wallet balance R$9.932,65 (test), one test order created+paid+advanced, freight quotes SP/RJ/POA/Manaus real. Decision: Gubo is the producer.
+
+**Gubo facts that shape the design (V, docs + probe):** REST, Bearer key (`gubo_test_` vs `gubo_live_`), `Idempotency-Key` mandatory on create/pay/cancel, `referencia` unique per mode, SKU = `<produto>-<cor>-<tamanho>`, recipient **CPF/CNPJ required**, freight quote by CEP (`POST /fretes/cotacoes`, 30 min validity, 30/min, 1000/day prod), production **7 business days** + carrier, orders are paid from a **prepaid wallet** (API cannot top it up), **API cannot create products** (Studio only), signed webhooks (`Gubo-Assinatura: t=,v1=` HMAC-SHA256 of `t.rawbody`, at-least-once, unordered -> `versao`), polling `GET /pedidos?atualizado_desde=`. API is a *pilot* needing "Ativar produção" in Gubo Dev. NF-e is issued by Gubo (triangular operation); the sale value comes from the product's "Preço de revenda" in the Studio, **not** from the order API.
+
+**Catalog reality check (important):** the repo only contains a dump of **one** Gubo test product (`CAV-LINE-CLASSIC-F-DK`, colours `PRET/MAR/VMG/AZM` released, `BRAN/OFWH` not; sizes P M G GG XG XGG; cost R$54,53 P-GG, R$62,95 XG/XGG). The owner's description (16 breeds x 12 designs, SKU `{BREED}-{LN|GE}-{CL|OC|CO}-{F|B}-{DK|LT}`, names like "Camiseta Shih Tzu Linha Classico Frente Clara") is **not in the repo and I could not verify it** (no Gubo UI, no live API key in this environment). The two spellings differ (`LINE/CLASSIC` in the dump vs `LN/CL` as described), so the catalog builder accepts both and derives breed names from the Gubo product *name*; the shipped `catalog_br.json` therefore holds only the 1 real product until the read-only `br-catalog-sync` workflow runs against the real account.
+
+## 2. Target architecture (same domain, same Worker, same DB)
+```
+Visitor -> alphadogstyles.com/  --Worker geoGate()-->  country=BR  ->  serves /br/ page (pt-BR) at the SAME URL
+                                                       otherwise   ->  serves the US page
+          /br/                  always pt-BR (crawlable, hreflang target)
+          /?region=us|br        manual switch: sets cookie ad_region (1 yr) and 302s back to /
+pt-BR SPA (store/br/)  --/api/br/quote-->  Worker  --POST /fretes/cotacoes-->  Gubo   (freight by CEP, live)
+                       --/api/br/orders-->  Worker  -> order row (orders table, id BR-xxxxxxxx, BRL centavos, status reserved)
+                                                    -> Mercado Pago preference (placeholder) -> customer pays (Pix/cartao on MP page)
+MP webhook/confirm --> markPaidBR (status br_paid, pt email from pedidos@)
+                   --> fulfilBR(): POST /pedidos/por-variante (Idempotency-Key br-create-<id>) -> cost guard -> POST /pedidos/{id}/pagar (valor_esperado) from the Gubo wallet
+Gubo webhook /api/br/gubo/webhook (HMAC verified, dedup by event id + versao) -> br_in_production / br_shipped (tracking e-mail) / br_delivered
+store-fulfill-br.yml every 10 min -> /api/internal/br/sweep: retry br_paid/br_wallet_low, reconcile awaiting_payment, poll Gubo atualizado_desde (lost webhooks)
+Inbound suporte@ customiza@ pedidos@ -> Worker email() -> support_inbox (br_suporte|br_custom|br_pedidos) -> pt-BR support assistant (scheduled task) -> store-support.yml reply
+```
+Reused unchanged: DB schema (**no migration**), auth endpoints, `/api/contact`, `/api/subscribe`, Resend, Hyperdrive, store-support workflow. BR orders use their own status values (`br_*`) so the Printify fulfiller (`status=paid`) can never pick them up.
+
+### 2.1 Geo-routing without SEO/cloaking problems
+- Decision: **rewrite at `/` for country BR (same URL, no redirect)**, because the owner wants the same address. It is safe because: (a) `/br/` is a real crawlable URL with the same content; (b) both pages carry `rel=alternate hreflang` (pt-BR, en-US, x-default) in HTML and in `Link` headers; (c) **verified bots / bot user-agents always get the US page** at `/` (a crawler never sees different content for the same URL than a normal US visitor - that is what Google calls locale-adaptive, not cloaking); (d) `Vary: Cookie, CF-IPCountry` and `Cache-Control: private, no-cache` so no cache can serve one region's HTML to the other; (e) manual override beats geo (cookie), so a Brazilian on a US VPN or an expat in the US can switch (footer links on both pages).
+- Alternative if the owner prefers it (documented, 1-line change in `decideRegion`): 302 `/` -> `/br/` for BR visitors. Google's own guidance prefers separate URLs; rewrite is kept per the owner's "same address" request.
+- Limits (honest): the SPA uses `#/` routes, which crawlers do not index as separate pages (pre-existing in the US site). For real BR SEO, phase 2 = prerender `/br/p/<breed>/...` static pages + sitemap with hreflang pairs.
+- Cost: only `/`, `/index.html`, `/br`, `/br/` run through the Worker (`run_worker_first`); everything else stays static. Well inside the $5 plan (TODO-verify current request quota in the Cloudflare dashboard).
+
+### 2.2 pt-BR storefront (what is built)
+Home, shop with filters (breed, theme, style, dark/light), product page (side front/back, colour swatches, sizes P-XGG, qty), cart, checkout (name, CPF/CNPJ, phone, CEP with ViaCEP autofill, live Gubo freight options with price and delivery estimate, MP payment note), order page + guest tracking (`#/rastrear`, order id + email), account (email code login, BR orders), custom dog design (`#/personalizar`: 5-12 photos resized client-side, status page, purchase link once the artist's Gubo product is ready), pages: story, FAQ, shipping, returns, sizes, contact (+ the three mailboxes), privacy, terms. Same look (shares `/css/style.css`).
+
+### 2.3 Product mapping
+`br/scripts/build_br_catalog.py`: Gubo `produtos` + `variantes` (+ `dominios/cores`) -> `catalog_br.json`. Parses breed/theme/style/side/tone from the product code (both spellings), breed display name from the Gubo name, available colours/sizes per product from `disponivel`, visible only if at least one variant is available. Storefront SKU = Gubo `sku_padrao`, so **no SKU-link (`PUT /vinculos`) is needed**. Price: flat R$109,90 (owner) + optional XG/XGG surcharge (config, currently 0). Product images = Gubo `imagem_url` (hotlink; TODO-verify stability/permission, mirror to our own storage later). Dark products use only the colours Gubo released for them; light likewise.
+
+### 2.4 Order handoff rules (Gubo)
+Create the Gubo order only **after** the customer's payment is confirmed (nothing to cancel later; Gubo can't cancel after payment). Cost guard before debiting the wallet: if Gubo freight exceeds what the customer paid by more than R$5,00 (config) or item cost > 70% of the retail subtotal, the order is held (`needs_attention`) and the owner is emailed. `402 saldo_insuficiente` -> `br_wallet_low` + owner email, auto-retried every 10 min. Gubo `pendente/recusado` -> `needs_attention` + email. Unknown Gubo states are treated as "em andamento".
+
+### 2.5 Support / customization / orders (parity with US)
+- Mailboxes `suporte@`, `customiza@`, `pedidos@` (domain `alphadogstyles.com`, assumed = "the site's domain"): inbound mapped to `br_suporte|br_custom|br_pedidos`; outbound From names set per mailbox; order/shipping mails come from `pedidos@`, custom-design mails from `customiza@`, help replies from `suporte@`. `pedidos@` is also synced into the support inbox on purpose (customers reply to order emails there).
+- Scheduled task prompt for a pt-BR support assistant is in `br/automation/support_assistant_br.md` (not created; creating it before deploy would just poll an empty inbox). The US assistant needs one added line to ignore `br_*` mailboxes.
+- Custom dog design: same intake as US (photos, status page, artist, quote by email). **Limit:** the Gubo API cannot create products, so each custom design needs a Gubo product created by hand in the Studio; the artist then calls `POST /api/internal/br/custom/CU-xxx {status:"ready", gubo_product:"<code>", price_centavos:N, notify:true}` and the customer buys it from the status page (colour/size validated live against Gubo). BRL fee for the design: not decided (config `custom_design.fee_centavos` null).
+
+### 2.6 Payments (placeholders only)
+Provider adapter in `br.js`: `mercadopago` (Checkout Pro preference -> hosted page with Pix/cartao; webhook + search-by-external_reference confirmation; optional `x-signature` check) and a documented empty slot `pix_direct` (Asaas/Efi). **No keys, no fake keys.** Without `MP_ACCESS_TOKEN` the checkout returns 503 `payments_not_configured` (no dangling orders); `BR_DEV_MODE=1` allows staging orders without a provider. The Mercado Pago field names/endpoints were written from memory of its public API and **were not tested** (no docs or network access to MP here): validate in MP's test mode before go-live.
+
+## 3. Risks and open points
+- **R1 (pre-existing, fixed in the patch):** `store-deploy.yml` deploys production on a push to `store/**` from *any* branch. So nothing of mine touches `store/` on the branch; everything lives under `br/` and is installed by `br/apply.sh` + `br/patches/br-integration.patch` (which also restricts that trigger to `main`).
+- R2: catalog is 1 product until the sync runs with the real key; owner's 16x12 structure unverified (section 1).
+- R3: Gubo is a pilot; production needs "Ativar produção" and a first small real order.
+- R4: Brand label inside the neck (owner rule) is not expressible in the order API (label is configured per product in the Studio, R$1,50 each per Gubo pricing page) - TODO-verify it is on for every BR product.
+- R5: Fiscal: who is seller of record (owner MEI/CNPJ vs mother), NF-e value field, MEI scope for printed apparel, CNPJ/address on the site footer (config `seller`), IOF/remittance - all accountant items, none assumed.
+- R6: Returns: CDC art. 49 gives 7 days to withdraw from distance purchases. The US "no change-of-mind returns" text is **not** copied; the BR pages state 7 days (conservative). Owner/lawyer decision.
+- R7: Gubo IP allow-listing cannot be used (Cloudflare Workers egress IPs are not fixed).
+- R8: Margin sanity (my arithmetic, not a quote): R$109,90 - Gubo cost R$54,53 (card; R$51,80 Pix) = R$55,37 before payment fee (MP card 4,98% = R$5,47, TODO-verify), taxes and any R$1,50 label; freight is passed to the buyer (Gubo quotes seen R$12,82 SP ... R$32,33 Manaus, one tee).
+- R9: Pix/Mercado Pago/DNS/MX state of `alphadogstyles.com` could not be inspected from this sandbox (DNS and the Cloudflare API are not reachable) - which mail path (Email Routing vs own server) is active for the existing addresses is **U**.
+
+## 4. Test evidence
+`br/tests/run_worker_tests.sh` (CPF/CNPJ, region decision, SKU resolve, full quote -> order -> MP webhook -> Gubo create+pay -> Gubo signed webhooks -> tracking, wallet-low, geoGate with stub assets), `br/tests/run_integration.sh` (applies the patch to the real `index.js` and checks routing + inbound mailbox mapping), `br/tests/test_catalog.py` (real Gubo dump + synthetic owner-pattern fixture), `br/tests/smoke_site.mjs` (jsdom render of every pt-BR page). All passed on 2026-11-07; all network calls were mocked.
+
+## 5. Rollout order (after owner approval)
+1) Review branch -> merge (apply.sh output committed) -> deploy (secrets absent = BR checkout closed, site browsable). 2) Run `br-catalog-sync` (read-only) -> real catalog. 3) Staging pass with `BR_DEV_MODE` / MP test token / Gubo test key. 4) Owner activates Gubo production + MP credentials -> first real R$109,90 order to the owner's own address. 5) Open to BR traffic + social (tomorrow).
+
+## 6. Not done (needs the owner or a decision)
+See section 7 and status.md "Not done".
+
+## 7. Owner-only checklist (exact steps)
+**A. Decisions (reply with the choice):** (1) shipping: customer pays Gubo's quote (default built) or free over R$ X; (2) XG/XGG surcharge (Gubo costs R$8,42 more); (3) BRL fee for custom dog design; (4) returns policy (7-day arrependimento default); (5) which company is seller of record (MEI/CNPJ) and the footer text; (6) keep mailboxes on `alphadogstyles.com` or buy `alphadogstyles.com.br`.
+**B. Mailboxes (suporte@, customiza@, pedidos@):** pick ONE path. Path 1 (matches existing US routing): Cloudflare dashboard > Email > Email Routing is already on for the zone; the rules are created by `br/scripts/email_routing_br.py` (runs inside store-deploy) - owner action only if you also want copies forwarded: add destination `rodolfoaamattos@gmail.com` (already verified for US) and set Worker vars `FORWARD_BR_SUPORTE/CUSTOM/PEDIDOS`. Path 2 (own mail server, IMAP/SMTP for iPhone Mail): Actions > mail-server > Run workflow, `mode=add`, `addr=suporte@alphadogstyles.com`, repeat for `customiza@` and `pedidos@`, then add the account in iPhone Mail with the shown credentials. Do not use both for the same address.
+**C. Gubo:** Studio > Integrações > API Gubo: *Ativar API*; choose payment mode `aguardar` (default seen) or `automatico`; create a **production** key (scopes: catalogo:ler, pedidos:ler, pedidos:criar, pedidos:pagar, pedidos:cancelar, carteira:ler, fretes:cotar; no IP restriction); in GitHub > Settings > Secrets > Actions set `GUBO_API_KEY` (replace test key) and `GUBO_WEBHOOK_SECRET`; Gubo Dev > Webhooks > Add endpoint `https://alphadogstyles.com/api/br/gubo/webhook`, events all `pedido.*`, `pagamento.recusado`, `carteira.saldo_baixo`, copy the `whsec_` secret; complete the production checklist (test order paid, webhook 2xx, limits); top up the wallet (Pix) and set the low-balance alert; in the Studio confirm for every product: *Preço de revenda* R$109,90 (NF-e value) and the AlphaDog inside label enabled.
+**D. Mercado Pago:** create/verify the seller account (CPF or CNPJ per decision 5) > Your integrations > Create application (Checkout Pro) > copy production Access Token and test token; set secrets `MP_ACCESS_TOKEN`, `MP_WEBHOOK_SECRET`; application Webhooks: URL `https://alphadogstyles.com/api/br/pay/webhook/mercadopago`, topic Payments. First run with the TEST token and an MP test buyer.
+**E. GitHub:** repository variable `BR_ENABLED=1` (turns on the 10-min sweep and the daily catalog sync); then run workflow `store-deploy`.
+**F. Legal/accounting:** accountant confirms MEI CNAE for printed apparel, NF-e flow and who issues, remittance to the US; lawyer/accountant skim privacy + terms + returns pages; fill `seller` in `br/config/br_config.json`.
+**G. Tomorrow items already planned:** payment connection, Brazilian social accounts.

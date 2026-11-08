@@ -1,0 +1,13 @@
+/* pt-BR additions on top of /css/style.css */
+.row3{display:grid;grid-template-columns:1fr 90px 1.2fr;gap:12px}
+@media(max-width:560px){.row3{grid-template-columns:1fr 1fr}}
+.small{font-size:.8rem;color:var(--mut)}
+.opt{display:flex;gap:10px;align-items:center;border:1px solid #ddd;border-radius:12px;padding:10px 12px;margin:8px 0;cursor:pointer}
+.opt input{width:auto}
+.opt.on{border-color:var(--brand,#FF6B35);background:#fff7f2}
+.pgrid{display:grid;grid-template-columns:1fr 1fr;gap:28px;padding:24px 0}
+@media(max-width:760px){.pgrid{grid-template-columns:1fr}}
+.pgrid img{width:100%;border-radius:14px;background:#f3ecdf}
+.sz button,.sd button{min-width:46px}
+.stat{display:inline-block;padding:3px 10px;border-radius:99px;background:#eee;font-size:.8rem}
+.todo{border:1px dashed #c33;color:#c33;padding:6px 10px;border-radius:8px;font-size:.8rem}

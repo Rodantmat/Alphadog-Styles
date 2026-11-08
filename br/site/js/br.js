@@ -1,0 +1,200 @@
+// AlphaDog Styles - loja brasileira (pt-BR). Catalogo = produtos da Gubo (data/catalog_br.json, gerado por br/scripts/build_br_catalog.py).
+// Hash routes (#/loja, #/p/..., #/carrinho, #/checkout, #/pedido/ID, #/rastrear, #/personalizar, #/conta, #/pagina/ID) - mesmas funcoes da loja americana.
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const app = $("#app");
+const esc = x => String(x ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const money = c => new Intl.NumberFormat("pt-BR", { style: "currency", currency: "BRL" }).format(c / 100);
+const ls = { get(k, d) { try { return JSON.parse(localStorage.getItem(k)) ?? d } catch { return d } }, set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)) } catch { } } };
+let cat, cfg = { payments: false }, cart = ls.get("adbr_cart", []), user = ls.get("adbr_user", null);
+const SIZES = ["P", "M", "G", "GG", "XG", "XGG"];
+const STATUS = { reserved: "Recebido", awaiting_payment: "Aguardando pagamento", br_paid: "Pagamento confirmado", br_wallet_low: "Pagamento confirmado", br_gubo_confirmed: "Em preparação", br_in_production: "Em produção", br_shipped: "Enviado", br_delivered: "Entregue", needs_attention: "Em análise pela nossa equipe", cancelled: "Cancelado" };
+const toast = m => { const t = $("#toast"); t.textContent = m; t.classList.add("show"); clearTimeout(toast.t); toast.t = setTimeout(() => t.classList.remove("show"), 3200) };
+async function api(path, body, method) {
+  const r = await fetch(path, { method: method || (body ? "POST" : "GET"), headers: { "content-type": "application/json", ...(user ? { authorization: "Bearer " + user.token } : {}) }, body: body ? JSON.stringify(body) : undefined });
+  const j = await r.json().catch(() => ({})); if (!r.ok) { const e = new Error(j.error || "Não foi possível concluir. Tente novamente."); e.code = j.code; throw e } return j;
+}
+const saveCart = () => { ls.set("adbr_cart", cart); $("#cartn").textContent = cart.reduce((a, l) => a + l.qty, 0) };
+const breedOf = code => cat.breeds.find(b => b.code === code) || { name: code, slug: code.toLowerCase() };
+const visible = () => cat.products.filter(p => p.visible);
+const PRICE = () => cfg.retail_centavos || 10990;
+const designKey = p => [p.breed, p.theme, p.style].join("/");
+function designs() {                                   // group products: breed x theme x style (front/back and dark/light are options)
+  const m = new Map();
+  for (const p of visible()) { const k = designKey(p); if (!m.has(k)) m.set(k, { key: k, breed: p.breed, theme: p.theme, style: p.style, products: [] }); m.get(k).products.push(p) }
+  return [...m.values()];
+}
+const dName = d => `${breedOf(d.breed).name}`;
+const dSub = d => `${cat.labels.theme[d.theme]} · ${cat.labels.style[d.style]}`;
+const img = d => (d.products.find(p => p.tone === "dark") || d.products[0]).image;
+
+/* ---------- pages ---------- */
+function home() {
+  const ds = designs(), pick = ds.slice(0, 8);
+  app.innerHTML = `<section class="hero"><div class="wrap"><span class="eyebrow">Feito sob encomenda · Produzido no Brasil</span><h1>Seu melhor amigo, na sua melhor camiseta.</h1><p>Raças de cachorro em arte de linha contínua e geométrica, com estilos Clássico, Óculos escuros e Coração. Escolha, nós produzimos só para você.</p><a class="btn" href="#/loja">Ver designs</a> <a class="btn ghost" href="#/personalizar">Criar o do meu cachorro</a></div></section>
+  <section class="sec wrap"><div class="sh"><h2>Saindo do canil</h2><a href="#/loja"><u>Ver todos os ${ds.length} designs</u></a></div><div class="grid">${pick.map(card).join("") || "<p>Novos designs em breve.</p>"}</div></section>
+  <section class="sec wrap"><div class="steps"><div><b>1.</b> Escolha a raça, o estilo e a cor</div><div><b>2.</b> Pague com segurança</div><div><b>3.</b> Produzimos sob encomenda (cerca de 7 dias úteis)</div><div><b>4.</b> Enviamos para todo o Brasil com rastreio</div></div></section>`;
+}
+const card = d => `<a class="card" href="#/p/${esc(d.key)}"><div class="art"><img loading="lazy" src="${esc(img(d))}" alt="${esc(dName(d))}"></div><div class="meta"><b>${esc(dName(d))}</b><span>${esc(dSub(d))}</span><div class="price" style="font-size:1.1rem">${money(PRICE())}</div></div></a>`;
+
+function shop(q) {
+  const ds = designs(), f = { raca: q.raca || "", tema: q.tema || "", estilo: q.estilo || "", tom: q.tom || "" };
+  const list = ds.filter(d => (!f.raca || d.breed === f.raca) && (!f.tema || d.theme === f.tema) && (!f.estilo || d.style === f.estilo) && (!f.tom || d.products.some(p => p.tone === f.tom)));
+  const chip = (k, v, l) => `<a class="chip ${f[k] === v ? "on" : ""}" href="#/loja?${new URLSearchParams({ ...f, [k]: f[k] === v ? "" : v })}">${l}</a>`;
+  app.innerHTML = `<div class="wrap"><h1 style="padding-top:30px;font-size:clamp(2rem,4vw,3rem)">Loja</h1>
+  <div class="tools"><select id="fb" aria-label="Raça"><option value="">Todas as raças</option>${cat.breeds.map(b => `<option value="${esc(b.code)}" ${f.raca === b.code ? "selected" : ""}>${esc(b.name)}</option>`).join("")}</select></div>
+  <div class="chips">${Object.entries(cat.labels.theme).map(([k, l]) => chip("tema", k, l)).join("")}${Object.entries(cat.labels.style).map(([k, l]) => chip("estilo", k, l)).join("")}${chip("tom", "dark", "Cores escuras")}${chip("tom", "light", "Cores claras")}</div>
+  <p class="small">${list.length} designs</p><div class="grid">${list.map(card).join("") || "<p>Nenhum design com esses filtros.</p>"}</div></div>`;
+  $("#fb").onchange = e => { location.hash = "#/loja?" + new URLSearchParams({ ...f, raca: e.target.value }) };
+}
+
+function product(q, parts) {
+  const key = parts.join("/"), d = designs().find(x => x.key === key); if (!d) return notFound();
+  let side = (d.products.find(p => p.side === "front") ? "front" : "back"), color = null, size = null, qty = 1;
+  const prodFor = c => d.products.find(p => p.side === side && p.colors[c]);
+  const colorsFor = () => { const o = []; for (const p of d.products.filter(p => p.side === side)) for (const c of Object.keys(p.colors)) o.push(c); return o };
+  const draw = () => {
+    const cs = colorsFor(); if (!cs.includes(color)) { color = cs[0]; size = null }
+    const p = prodFor(color), sizes = p ? p.colors[color] : [];
+    if (!sizes.includes(size)) size = sizes.includes("M") ? "M" : sizes[0];
+    const sides = [...new Set(d.products.map(p => p.side))];
+    app.innerHTML = `<div class="wrap"><div class="crumbs"><a href="#/loja">Loja</a> / ${esc(dName(d))}</div><div class="pgrid"><div><img src="${esc(p ? p.image : img(d))}" alt="${esc(dName(d))}"></div><div>
+      <h1>${esc(dName(d))}</h1><p class="small">${esc(dSub(d))} · Camiseta 100% algodão (fio penteado 30.1, 170 g)</p><div class="price">${money(PRICE())}</div>
+      ${sides.length > 1 ? `<h3>Estampa</h3><div class="seg" id="sd">${sides.map(s => `<button class="${s === side ? "on" : ""}" data-s="${s}">${cat.labels.side[s]}</button>`).join("")}</div>` : `<p class="small">Estampa: ${cat.labels.side[sides[0]]}</p>`}
+      <h3>Cor: ${esc((cat.colors[color] || {}).name || "")}</h3><div class="swatches" id="cs">${cs.map(c => `<button class="sw ${c === color ? "on" : ""}" data-c="${c}" title="${esc(cat.colors[c].name)}" style="background:${esc(cat.colors[c].hex)}"></button>`).join("")}</div>
+      <h3>Tamanho</h3><div class="sizes" id="sz">${SIZES.filter(s => sizes.includes(s)).map(s => `<button class="${s === size ? "on" : ""}" data-z="${s}">${s}</button>`).join("")}</div><p class="small"><a href="#/pagina/tamanhos"><u>Guia de tamanhos</u></a></p>
+      <div class="buy"><div class="qty"><button id="qm">−</button><b>${qty}</b><button id="qp">+</button></div><button class="btn" id="add">Adicionar ao carrinho</button></div>
+      <p class="small">Feito sob encomenda: produção de cerca de ${7} dias úteis mais o prazo da transportadora. Frete calculado pelo CEP no checkout.</p></div></div></div>`;
+    $$("#sd button").forEach(b => b.onclick = () => { side = b.dataset.s; draw() }); $$("#cs button").forEach(b => b.onclick = () => { color = b.dataset.c; draw() });
+    $$("#sz button").forEach(b => b.onclick = () => { size = b.dataset.z; draw() });
+    $("#qm").onclick = () => { qty = Math.max(1, qty - 1); draw() }; $("#qp").onclick = () => { qty = Math.min(20, qty + 1); draw() };
+    $("#add").onclick = () => { const sku = `${p.code}-${color}-${size}`, l = cart.find(x => x.sku === sku); if (l) l.qty = Math.min(20, l.qty + qty); else cart.push({ sku, qty }); saveCart(); toast("Adicionado ao carrinho"); location.hash = "#/carrinho" };
+  };
+  draw();
+}
+function skuInfo(sku) {
+  const p = cat.products.find(x => sku.startsWith(x.code + "-")); if (!p) return null; const [c, s] = sku.slice(p.code.length + 1).split("-");
+  return { p, c, s, name: breedOf(p.breed).name, sub: `${cat.labels.theme[p.theme]} · ${cat.labels.style[p.style]} · ${cat.labels.side[p.side]}`, color: (cat.colors[c] || {}).name || c };
+}
+function cartPage() {
+  cart = cart.filter(l => skuInfo(l.sku));
+  const sub = cart.reduce((a, l) => a + PRICE() * l.qty, 0);
+  app.innerHTML = `<div class="wrap"><h1 style="padding-top:30px;font-size:clamp(2rem,4vw,3rem)">Carrinho</h1>${cart.length ? `<div class="cart"><div>${cart.map((l, i) => { const k = skuInfo(l.sku); return `<div class="line"><div class="th"><img src="${esc(k.p.image)}" alt="" style="width:100%;height:100%;object-fit:cover"></div><div><b>${esc(k.name)}</b><small>${esc(k.sub)}</small><small>${esc(k.color)} · ${k.s}</small><button class="x" data-rm="${i}">Remover</button></div><div class="qty"><button data-m="${i}">−</button><b>${l.qty}</b><button data-p="${i}">+</button></div></div>` }).join("")}</div>
+  <div class="sum"><h3>Resumo</h3><div class="r"><span>Subtotal</span><b>${money(sub)}</b></div><div class="r"><span>Frete</span><b>calculado no checkout</b></div><a class="btn" style="width:100%;margin-top:14px;text-align:center" href="#/checkout">Finalizar compra</a></div></div>` : `<p>Seu carrinho está vazio. <a href="#/loja" class="btn">Ver a loja</a></p>`}</div>`;
+  app.onclick = e => { const b = e.target.closest("button"); if (!b) return; const d = b.dataset; if (d.rm) cart.splice(+d.rm, 1); else if (d.m) cart[+d.m].qty = Math.max(1, cart[+d.m].qty - 1); else if (d.p) cart[+d.p].qty = Math.min(20, cart[+d.p].qty + 1); else return; saveCart(); cartPage() };
+}
+
+async function customCheckout(q, [id]) {
+  let r; try { r = await api(`/api/br/custom/${encodeURIComponent(id)}?k=${encodeURIComponent(q.k || "")}`) } catch (e) { app.innerHTML = `<div class="wrap narrow"><p>${esc(e.message)}</p></div>`; return }
+  if (!r.ready) { location.hash = `#/personalizado/${id}?k=${q.k}`; return }
+  checkout({}, [], { id, k: q.k, price: r.ready.price_centavos });
+}
+function checkout(q, parts, cu) {
+  if (!cu && !cart.length) { location.hash = "#/carrinho"; return }
+  const lines = cu ? [{ sku: "", qty: 1 }] : cart, unit = l => cu ? cu.price : PRICE();
+  const sub = lines.reduce((a, l) => a + unit(l) * l.qty, 0); let opts = [], sel = null;
+  const cuFields = () => { const F = $("#co").elements; return { custom: { id: cu.id, k: cu.k }, color: F.ccolor.value, size: F.csize.value, qty: 1 } };
+  const UFS = "AC AL AP AM BA CE DF ES GO MA MT MS MG PA PB PR PE PI RJ RN RS RO RR SC SP SE TO".split(" ");
+  const total = () => sub + (sel ? sel.preco_centavos : 0);
+  app.innerHTML = `<div class="wrap"><h1 style="padding-top:30px;font-size:clamp(2rem,4vw,3rem)">Finalizar compra</h1><form class="cart" id="co"><div class="form">
+  <div class="panel form"><h3>Contato</h3><label>E-mail<input name="email" type="email" required value="${esc(user?.email || "")}" autocomplete="email"></label></div>
+  <div class="panel form"><h3>Entrega <small>Brasil</small></h3>
+    <label>Nome completo do destinatário<input name="name" required minlength="3" autocomplete="name"></label>
+    <div class="row"><label>CPF (ou CNPJ)<input name="doc" required inputmode="numeric" autocomplete="off" placeholder="000.000.000-00"></label><label>Telefone com DDD<input name="phone" type="tel" autocomplete="tel" placeholder="(11) 99999-9999"></label></div>
+    <label>CEP<input name="cep" required inputmode="numeric" maxlength="9" autocomplete="postal-code" placeholder="00000-000"></label>
+    <label>Rua / Avenida<input name="logradouro" required autocomplete="address-line1"></label>
+    <div class="row"><label>Número<input name="numero" required placeholder="123 ou S/N"></label><label>Complemento<input name="complemento" maxlength="60"></label></div>
+    <div class="row3"><label>Bairro<input name="bairro" required></label><label>UF<select name="uf" required><option value="" disabled selected>UF</option>${UFS.map(u => `<option>${u}</option>`).join("")}</select></label><label>Cidade<input name="cidade" required></label></div>
+    <p class="small">O CPF é exigido pela transportadora e para a nota fiscal.</p></div>
+  ${cu ? `<div class="panel form"><h3>Sua camiseta personalizada</h3><div class="row"><label>Cor<select name="ccolor">${Object.entries(cat.colors).map(([k, c]) => `<option value="${k}">${esc(c.name)}</option>`).join("")}</select></label><label>Tamanho<select name="csize">${SIZES.map(z => `<option>${z}</option>`).join("")}</select></label></div><p class="small">Cores e tamanhos conferidos na Gubo ao calcular o frete.</p></div>` : ""}<div class="panel"><h3>Frete</h3><div id="fr" class="small">Informe o CEP para ver as opções de frete.</div></div>
+  <div class="panel"><h3>Pagamento</h3><div class="notice" id="paynote">${cfg.payments ? "Você escolhe a forma de pagamento (Pix, cartão e outras) na página segura do Mercado Pago depois de tocar em Pagar. Nós não vemos nem guardamos os dados do seu cartão." : "O pagamento ainda não está disponível. Você pode preparar o pedido, mas só será possível concluir quando a loja abrir."}</div></div>
+  </div><div class="sum"><h3>Resumo</h3>${cu ? `<div class="r"><span>Camiseta personalizada ${esc(cu.id)}</span><b>${money(cu.price)}</b></div>` : cart.map(l => { const k = skuInfo(l.sku); return `<div class="r"><span>${l.qty} × ${esc(k.name)} (${esc(k.color)}, ${k.s})</span><b>${money(PRICE() * l.qty)}</b></div>` }).join("")}
+  <div class="r"><span>Frete</span><b id="shv">—</b></div><div class="r t"><span>Total</span><span id="tot">${money(sub)}</span></div>
+  <button class="btn" style="width:100%;margin-top:14px" id="pay" ${cfg.payments ? "" : "disabled"}>Pagar</button><small class="small">Peça feita sob encomenda. Veja <a href="#/pagina/trocas"><u>trocas e devoluções</u></a>.</small></div></form></div>`;
+  const f = () => Object.fromEntries(new FormData($("#co")));
+  const drawFr = () => { $("#fr").innerHTML = opts.map((o, i) => `<label class="opt ${sel === o ? "on" : ""}"><input type="radio" name="frete" value="${i}" ${sel === o ? "checked" : ""}> <span><b>${esc(o.nome)}</b><br><span class="small">até ${o.prazo_dias_uteis} dias úteis (já com a produção) · previsão ${esc(o.previsao || "")}</span></span> <b style="margin-left:auto">${money(o.preco_centavos)}</b></label>`).join("");
+    $$("#fr input").forEach(r => r.onchange = () => { sel = opts[+r.value]; drawFr(); upd() }); upd() };
+  const upd = () => { $("#shv").textContent = sel ? money(sel.preco_centavos) : "—"; $("#tot").textContent = money(total()) };
+  const doQuote = async () => { const cep = f().cep.replace(/\D/g, ""); if (cep.length !== 8) return; $("#fr").textContent = "Calculando frete…";
+    try { const r = await api("/api/br/quote", cu ? { cep, ...cuFields() } : { cep, items: cart.map(l => ({ sku: l.sku, qty: l.qty })) }); opts = r.opcoes; sel = opts.find(o => o.servico === r.escolha) || opts[0]; drawFr() } catch (e) { $("#fr").textContent = e.message; opts = []; sel = null; upd() } };
+  $("#co").elements.cep.onblur = async e => { const cep = e.target.value.replace(/\D/g, ""); if (cep.length !== 8) return;
+    try { const j = await (await fetch(`https://viacep.com.br/ws/${cep}/json/`)).json(); if (!j.erro) { const F = $("#co").elements; if (!F.logradouro.value) F.logradouro.value = j.logradouro || ""; if (!F.bairro.value) F.bairro.value = j.bairro || ""; if (!F.cidade.value) F.cidade.value = j.localidade || ""; if (j.uf) F.uf.value = j.uf } } catch { } doQuote() };
+  $("#co").onsubmit = async e => { e.preventDefault(); const v = f(); if (!sel) { toast("Escolha uma opção de frete (informe o CEP)"); return }
+    const b = $("#pay"); b.disabled = true; b.textContent = "Abrindo pagamento seguro…";
+    try { const r = await api("/api/br/orders", { email: v.email, ...(cu ? cuFields() : { items: cart.map(l => ({ sku: l.sku, qty: l.qty })) }), servico: sel.servico, ship: { name: v.name, doc: v.doc, phone: v.phone, cep: v.cep, logradouro: v.logradouro, numero: v.numero, complemento: v.complemento, bairro: v.bairro, cidade: v.cidade, uf: v.uf } });
+      if (!cu) { cart = []; saveCart() } if (r.url) { location.href = r.url; return } location.hash = "#/pedido/" + r.id + "?email=" + encodeURIComponent(v.email) } catch (x) { toast(x.message); b.disabled = !cfg.payments; b.textContent = "Pagar" } };
+}
+
+async function orderPage(q, [id]) {
+  app.innerHTML = `<div class="wrap narrow"><span class="eyebrow">Pedido</span><h1>${esc(id)}</h1><p id="om">Carregando…</p><a class="btn" href="#/loja">Continuar comprando</a></div>`;
+  const email = q.email || user?.email || ""; if (/pago=1/.test(location.hash)) { try { await api("/api/br/orders/confirm", { id }) } catch { } }
+  if (!email) { $("#om").innerHTML = `Informe o e-mail do pedido em <a href="#/rastrear"><u>Rastrear pedido</u></a>.`; return }
+  try { const o = await api(`/api/br/orders/${encodeURIComponent(id)}?email=${encodeURIComponent(email)}`);
+    $("#om").innerHTML = `<span class="stat">${esc(STATUS[o.status] || "Em andamento")}</span><br><br>${o.itens.map(i => `${i.qty} × ${esc(i.nome)}`).join("<br>")}<br><br>Total: <b>${money(o.total)}</b>${o.frete ? `<br>Frete: ${esc(o.frete.nome || "")} · previsão ${esc(o.frete.previsao || "-")}` : ""}${o.rastreio ? `<br>Rastreio: <b>${esc(o.rastreio)}</b>` : ""}` } catch (e) { $("#om").textContent = e.message }
+}
+function track() {
+  app.innerHTML = `<div class="wrap narrow"><h1>Rastrear pedido</h1><form class="form" id="tf"><label>Número do pedido (BR-XXXXXXXX)<input name="id" required pattern="BR-[A-Za-z0-9]+"></label><label>E-mail usado na compra<input name="email" type="email" required value="${esc(user?.email || "")}"></label><button class="btn">Ver pedido</button></form></div>`;
+  $("#tf").onsubmit = e => { e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)); location.hash = `#/pedido/${f.id.toUpperCase()}?email=${encodeURIComponent(f.email)}` };
+}
+
+/* ---------- design personalizado ---------- */
+const resizeImg = file => new Promise((ok, no) => { const im = new Image(), u = URL.createObjectURL(file); im.onload = () => { const k = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement("canvas"); c.width = im.width * k; c.height = im.height * k; c.getContext("2d").drawImage(im, 0, 0, c.width, c.height); URL.revokeObjectURL(u); ok({ mime: "image/jpeg", b64: c.toDataURL("image/jpeg", .85).split(",")[1] }) }; im.onerror = () => no(new Error("Foto inválida")); im.src = u });
+function custom() {
+  app.innerHTML = `<div class="wrap narrow"><span class="eyebrow">Design personalizado</span><h1>Seu cachorro, no seu estilo</h1><p>Envie de 5 a 12 fotos do seu cachorro. Nosso artista cria a arte e envia uma prévia com o orçamento por e-mail, normalmente em 2 a 4 dias úteis. Você só paga se aprovar.</p>
+  <form class="form" id="cf"><label>Seu nome<input name="name" required></label><label>E-mail<input name="email" type="email" required value="${esc(user?.email || "")}"></label>
+  <label>Nome do cachorro<input name="dname" required></label><label>Raça<input name="breed" placeholder="ou SRD / vira-lata"></label><label>Cores e marcações<input name="colors"></label><label>Orelhas e rabo<input name="ears" placeholder="ex.: orelhas caídas, rabo enrolado"></label>
+  <label>Estilo preferido<select name="theme"><option value="line">Linha contínua</option><option value="geo">Geométrico</option></select></label><label>Observações<textarea name="notes" rows="3"></textarea></label>
+  <label>Fotos (5 a 12)<input type="file" name="photos" accept="image/jpeg,image/png,image/webp" multiple required></label><button class="btn" id="cb">Enviar pedido</button></form></div>`;
+  $("#cf").onsubmit = async e => { e.preventDefault(); const F = e.target, files = [...F.photos.files]; if (files.length < 5 || files.length > 12) { toast("Envie de 5 a 12 fotos"); return }
+    const b = $("#cb"); b.disabled = true; b.textContent = "Enviando fotos…";
+    try { const photos = await Promise.all(files.map(resizeImg)); const r = await api("/api/br/custom", { name: F.name.value, email: F.email.value, dog: { name: F.dname.value, breed: F.breed.value, colors: F.colors.value, ears: F.ears.value }, style: { theme: F.theme.value }, notes: F.notes.value, photos });
+      location.hash = `#/personalizado/${r.id}?k=${r.k}` } catch (x) { toast(x.message); b.disabled = false; b.textContent = "Enviar pedido" } };
+}
+async function customStatus(q, [id]) {
+  app.innerHTML = `<div class="wrap narrow"><h1>Pedido ${esc(id)}</h1><p id="cm">Carregando…</p></div>`;
+  try { const r = await api(`/api/br/custom/${encodeURIComponent(id)}?k=${encodeURIComponent(q.k || "")}`);
+    const L = { new: "Recebido - nosso artista vai analisar", working: "Em criação", quoted: "Prévia e orçamento enviados por e-mail", ready: "Pronto para comprar", cancelled: "Cancelado" };
+    $("#cm").innerHTML = `<span class="stat">${esc(L[r.status] || r.status)}</span>${r.note ? `<p>${esc(r.note)}</p>` : ""}${r.quote ? `<p>Valor do design: <b>${money(r.quote)}</b></p>` : ""}${r.ready ? `<p>Camiseta: <b>${money(r.ready.price_centavos)}</b></p><p class="small">Escolha cor e tamanho no checkout.</p><a class="btn" href="#/checkout-personalizado/${esc(id)}?k=${esc(q.k)}">Comprar</a>` : ""}` } catch (e) { $("#cm").textContent = e.message }
+}
+
+/* ---------- conta ---------- */
+function login() {
+  let step = 1, email = ""; const draw = () => { app.innerHTML = `<div class="wrap narrow"><h1>Entrar ou criar conta</h1><p class="small">Sem senha: enviamos um código para o seu e-mail.</p><form class="form" id="lf">${step === 1 ? `<label>E-mail<input type="email" name="email" required value="${esc(email)}"></label><button class="btn">Enviar código</button>` : `<label>Código enviado para ${esc(email)}<input name="code" required inputmode="numeric" maxlength="6"></label><button class="btn">Entrar</button> <button type="button" class="chip" id="bk">Voltar</button>`}</form></div>`;
+    $("#lf").onsubmit = async e => { e.preventDefault(); const f = Object.fromEntries(new FormData(e.target)); try { if (step === 1) { email = f.email; await api("/api/auth/request", { email, lang: "pt" }); step = 2; draw(); return } const r = await api("/api/auth/verify", { email, code: f.code }); user = { email: r.email || email, token: r.token }; ls.set("adbr_user", user); toast("Bem-vindo!"); location.hash = "#/conta" } catch (x) { toast(x.message) } };
+    const bk = $("#bk"); if (bk) bk.onclick = () => { step = 1; draw() } }; draw();
+}
+async function account() {
+  if (!user) { location.hash = "#/entrar"; return } let orders = []; try { orders = (await api("/api/orders")).items.filter(o => /^BR-/.test(o.id)) } catch { }
+  app.innerHTML = `<div class="wrap" style="padding-bottom:60px"><div class="sh" style="padding-top:34px"><div><h1>Olá! 🐾</h1><p>${esc(user.email)}</p></div><button class="btn ghost sm" id="lo">Sair</button></div><h2>Pedidos</h2>${orders.length ? `<table><tr><th>Pedido</th><th>Status</th><th>Total</th></tr>${orders.map(o => `<tr><td><a href="#/pedido/${esc(o.id)}?email=${encodeURIComponent(user.email)}">${esc(o.id)}</a></td><td>${esc(STATUS[o.status] || o.status)}${o.tracking ? ` · ${esc(o.tracking)}` : ""}</td><td>${money(o.total || 0)}</td></tr>`).join("")}</table>` : "<p>Nenhum pedido ainda.</p>"}</div>`;
+  $("#lo").onclick = () => { user = null; ls.set("adbr_user", null); location.hash = "#/" };
+}
+
+/* ---------- paginas institucionais (pt-BR) ---------- */
+const MB = "suporte@alphadogstyles.com";
+const PAGES = {
+  sobre: ["Nossa história", `<p>A AlphaDog Styles começou com uma poodle chamada Linda e uma ideia simples: seu cachorro merece mais do que uma patinha genérica. Cada design é desenhado em um estilo ousado de linha contínua ou geométrico, para parecer arte e não clipart.</p><p>Produzimos cada peça sob encomenda, então nada é desperdiçado e cada pedido é feito só para você.</p>`],
+  faq: ["Ajuda e perguntas frequentes", `<details><summary>Quanto tempo leva um pedido?</summary><p>Cada peça é feita sob encomenda. A produção leva até 7 dias úteis depois da confirmação do pagamento, mais o prazo da transportadora, que depende do seu CEP. No checkout você vê a previsão antes de pagar.</p></details><details><summary>Qual é o tecido?</summary><p>Camiseta 100% algodão, fio penteado 30.1, gramatura de 170 g, gola canelada com costura dupla.</p></details><details><summary>Posso pedir cores escuras?</summary><p>Sim. Os designs de cores escuras usam arte clara; os de cores claras usam arte escura. Filtre por "Cores escuras" ou "Cores claras" na loja.</p></details><details><summary>Preciso informar CPF?</summary><p>Sim. A transportadora e a nota fiscal exigem o CPF (ou CNPJ) do destinatário.</p></details><details><summary>Como acompanho meu pedido?</summary><p>Você recebe o código de rastreio por e-mail quando o pedido for enviado, e pode consultar em <a href="#/rastrear"><u>Rastrear pedido</u></a> ou na sua conta.</p></details><details><summary>Como funciona o design personalizado?</summary><p>Envie fotos do seu cachorro em <a href="#/personalizar"><u>Personalizar</u></a>. Nosso artista cria a arte, você recebe a prévia e o orçamento por e-mail e só paga se aprovar.</p></details><details><summary>Minha raça não está aqui?</summary><p>Conte para a gente na <a href="#/pagina/contato"><u>página de contato</u></a>. As mais pedidas entram primeiro.</p></details>`],
+  envio: ["Envio e prazos", `<h2>Para onde enviamos</h2><p>Para todo o Brasil, por transportadoras parceiras da produção (Correios, Jadlog, entre outras). As opções e os preços aparecem no checkout, calculados pelo seu CEP.</p><h2>Prazo</h2><p>Produção de até 7 dias úteis depois do pagamento aprovado, mais o prazo de transporte do seu CEP. A previsão de entrega é mostrada antes de você pagar.</p><h2>Rastreamento</h2><p>Enviamos o código de rastreio por e-mail assim que o pedido é postado. Itens do mesmo pedido podem ser enviados juntos ou separados.</p><h2>Endereço</h2><p>Confira bem o endereço e o CEP. Não conseguimos alterá-lo depois que a produção começa.</p><h2>Pacote perdido ou atrasado</h2><p>Escreva para <a href="mailto:${MB}"><u>${MB}</u></a> com o número do pedido.</p>`],
+  trocas: ["Trocas e devoluções", `<h2>Direito de arrependimento</h2><p>Você pode desistir da compra em até 7 dias corridos depois de receber o produto, conforme o Código de Defesa do Consumidor (art. 49). Escreva para <a href="mailto:${MB}"><u>${MB}</u></a> com o número do pedido.</p><h2>Produto com defeito, danificado ou errado</h2><p>Avise em até 30 dias depois da entrega, com o número do pedido e fotos nítidas. Reimprimimos sem custo ou reembolsamos, como você preferir.</p><h2>Reembolso</h2><p>Feito pelo mesmo meio de pagamento usado na compra.</p>`],
+  tamanhos: ["Guia de tamanhos", `<p>Tamanhos disponíveis: P, M, G, GG, XG e XGG. Modelagem clássica, unissex.</p><p>Dúvida de tamanho? Escreva para <a href="mailto:${MB}"><u>${MB}</u></a> e ajudamos a escolher.</p>`],
+  contato: ["Fale com a gente", `<p><b>Suporte e dúvidas:</b> <a href="mailto:suporte@alphadogstyles.com"><u>suporte@alphadogstyles.com</u></a></p><p><b>Design personalizado:</b> <a href="mailto:customiza@alphadogstyles.com"><u>customiza@alphadogstyles.com</u></a></p><p><b>Pedidos:</b> <a href="mailto:pedidos@alphadogstyles.com"><u>pedidos@alphadogstyles.com</u></a></p><form class="form" id="cf2"><label>Seu e-mail<input name="email" type="email" required></label><label>Mensagem<textarea name="msg" rows="5" required></textarea></label><button class="btn">Enviar</button></form>`],
+  privacidade: ["Política de privacidade", `<p>Coletamos apenas os dados necessários para processar seu pedido: nome, e-mail, telefone, CPF/CNPJ e endereço de entrega. Compartilhamos esses dados com a produção/transportadora e com o meio de pagamento, somente para cumprir o pedido. Você pode pedir acesso, correção ou exclusão dos seus dados (LGPD) em <a href="mailto:${MB}"><u>${MB}</u></a>.</p>`],
+  termos: ["Termos de uso", `<p>Os produtos são fabricados sob encomenda. Preços em reais (R$). Ao comprar, você concorda com as políticas de <a href="#/pagina/envio"><u>envio</u></a> e <a href="#/pagina/trocas"><u>trocas e devoluções</u></a>.</p>`],
+};
+function page(q, [id]) { const p = PAGES[id]; if (!p) return notFound(); app.innerHTML = `<div class="wrap prose"><h1 style="font-size:clamp(2rem,4vw,3rem)">${p[0]}</h1>${p[1]}</div>`;
+  const cf = $("#cf2"); if (cf) cf.onsubmit = async e => { e.preventDefault(); try { await api("/api/contact", { ...Object.fromEntries(new FormData(cf)), lang: "pt" }) } catch (x) { toast(x.message); return } cf.innerHTML = "<p><b>Obrigado! Respondemos por e-mail em breve.</b></p>" } }
+function notFound() { app.innerHTML = `<div class="wrap narrow"><h1>Cachorro perdido?</h1><p>Essa página foi passear. <a href="#/loja" class="btn">Voltar para a loja</a></p></div>` }
+
+const routes = { "": home, loja: shop, p: product, carrinho: cartPage, checkout, "checkout-personalizado": customCheckout, pedido: orderPage, rastrear: track, personalizar: custom, personalizado: customStatus, entrar: login, conta: account, pagina: page };
+async function route() {
+  const h = location.hash.replace(/^#\/?/, ""), [path, qs] = h.split("?"), parts = path.split("/"), q = Object.fromEntries(new URLSearchParams(qs || ""));
+  $("#links").classList.remove("open"); app.onclick = null; window.scrollTo(0, 0);
+  if (!cat) return; await (routes[parts[0]] || notFound)(q, parts.slice(1)); document.title = "AlphaDog Styles - Vista seu melhor amigo";
+}
+$("#burger").onclick = () => $("#links").classList.toggle("open"); $("#yr").textContent = new Date().getFullYear();
+$("#news").onsubmit = async e => { e.preventDefault(); try { await api("/api/subscribe", { email: e.target.querySelector("input").value, lang: "pt" }) } catch (x) { toast(x.message); return } e.target.reset(); toast("Você está na matilha!") };
+(async () => {
+  cat = await (await fetch("/br/data/catalog_br.json")).json();
+  try { cfg = await (await fetch("/api/br/config")).json() } catch { }
+  const sl = cfg.seller; if (sl && sl.name) $("#seller").textContent = `${sl.name} · CNPJ ${sl.cnpj || ""} · ${sl.address || ""}`;
+  saveCart(); window.addEventListener("hashchange", route); route();
+})();

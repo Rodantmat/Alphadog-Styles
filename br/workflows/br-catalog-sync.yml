@@ -1,0 +1,29 @@
+name: br-catalog-sync
+# READ-ONLY against Gubo (GET /catalogo/produtos, /catalogo/variantes, /dominios/cores). Rebuilds the Brazilian storefront catalog from what the
+# Gubo Studio really has. The Gubo API cannot create products: they are made in the Studio, then this sync publishes them in the store.
+on:
+  workflow_dispatch:
+  schedule: [{ cron: "17 9 * * *" }]
+permissions:
+  contents: write
+jobs:
+  sync:
+    if: ${{ vars.BR_ENABLED == '1' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    env:
+      GUBO_API_KEY: ${{ secrets.GUBO_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install requests
+      - name: Pull catalog (paginated) and build
+        run: |
+          python3 br/scripts/gubo_catalog_pull.py /tmp/gubo
+          python3 br/scripts/build_br_catalog.py --produtos /tmp/gubo/produtos.json --variantes /tmp/gubo/variantes.json --cores /tmp/gubo/cores.json --out br/site/data/catalog_br.json --public
+          [ -d store/br/data ] && cp br/site/data/catalog_br.json store/br/data/catalog_br.json || true
+      - name: Commit if changed
+        run: |
+          git config user.name br-catalog-sync; git config user.email noreply@users.noreply.github.com
+          git add br/site/data/catalog_br.json store/br/data/catalog_br.json 2>/dev/null || true
+          git diff --cached --quiet || { git commit -m "br: catalog sync from Gubo"; for i in 1 2 3; do git pull --rebase origin ${GITHUB_REF_NAME} && git push && break || sleep 3; done; }

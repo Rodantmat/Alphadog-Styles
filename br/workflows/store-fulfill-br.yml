@@ -1,0 +1,17 @@
+name: store-fulfill-br
+# Brazilian arm: retry sweep (Gubo order creation/payment, Mercado Pago reconciliation, Gubo status polling).
+# Inert until the repository variable BR_ENABLED is set to 1 (Settings > Secrets and variables > Actions > Variables).
+on:
+  workflow_dispatch:
+  schedule: [{ cron: "*/10 * * * *" }]
+concurrency: store-fulfill-br
+jobs:
+  sweep:
+    if: ${{ vars.BR_ENABLED == '1' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+          STORE_URL: "https://alphadogstyles.com"
+        run: python3 br/scripts/br_sweep.py
