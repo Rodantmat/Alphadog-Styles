@@ -1,77 +1,20 @@
 [
- 201,
+ 422,
  {
-  "objeto": "pedido",
-  "id": "ped_01M6W9WVFSXBA3MQ4D78N8DJRW",
-  "modo": "teste",
-  "referencia": "TESTE-1794098752",
-  "numero": "T79067242",
-  "situacao": "aguardando_pagamento",
-  "versao": 2,
-  "pendencias": [],
-  "motivo_recusa": null,
-  "itens": [
-   {
-    "sku": "CAV01-PRET-M",
-    "produto": "CAV01",
-    "nome": "Camiseta Cavalier Coracao Frente Preta",
-    "cor": {
-     "codigo": "PRET",
-     "nome": "Preto"
-    },
-    "tamanho": "M",
-    "quantidade": 1,
-    "preco_unitario_centavos": 5453,
-    "subtotal_centavos": 5453
-   }
-  ],
-  "valores": {
-   "itens_centavos": 5453,
-   "desconto_centavos": 0,
-   "frete_centavos": 1282,
-   "total_centavos": 6735
+  "erro": {
+   "codigo": "itens_invalidos",
+   "mensagem": "Há itens inválidos. Veja erro.detalhes.",
+   "campo": null,
+   "detalhes": [
+    {
+     "campo": "itens[0].sku",
+     "codigo": "sku_desconhecido",
+     "mensagem": "O SKU não existe na marca.",
+     "sugestoes": []
+    }
+   ],
+   "documentacao": "https://gubo.com.br/docs-api/erros#itens_invalidos"
   },
-  "frete": {
-   "servico": "Olist Envios Pax",
-   "servico_codigo": "pax",
-   "transportadora": "Pax",
-   "prazo_dias_uteis": 8,
-   "previsao_entrega": "2026-11-18",
-   "regra": "mais_barata",
-   "prazo_em_risco": false,
-   "simulado": false
-  },
-  "entrega": {
-   "preferencia": "mais_barata"
-  },
-  "pagamento": {
-   "forma": "saldo",
-   "situacao": "pendente",
-   "pago_em": null,
-   "motivo_recusa": null
-  },
-  "envio": null,
-  "destinatario": {
-   "nome": "Cliente Teste",
-   "documento": "12345678909",
-   "endereco": {
-    "cep": "01310-100",
-    "logradouro": "Av. Paulista",
-    "numero": "1000",
-    "bairro": "Bela Vista",
-    "cidade": "São Paulo",
-    "uf": "SP",
-    "complemento": "ap 12"
-   },
-   "email": "teste@example.com"
-  },
-  "observacao": null,
-  "metadados": {
-   "canal": "teste"
-  },
-  "criado_em": "2026-11-08T00:45:53Z",
-  "atualizado_em": "2026-11-08T00:45:54Z",
-  "cancelado_em": null,
-  "motivo_cancelamento": null
+  "request_id": "req_01M6WFEVX8RW1V92VRWX9V1KCT"
  }
 ]

@@ -2,11 +2,11 @@
  201,
  {
   "objeto": "cotacao_frete",
-  "id": "cot_01M6W9WTZ3AJ5QKFKPDJ3EFRB7",
+  "id": "cot_01M6WFESKPK01F2Q8M0BNTGSAY",
   "situacao": "pronta",
   "cep": "90010-000",
   "simulada": false,
-  "valida_ate": "2026-11-08T01:10:52Z",
+  "valida_ate": "2026-11-08T02:53:05Z",
   "pacote": {
    "pecas": 1,
    "peso_g": 190,
@@ -14,11 +14,11 @@
   },
   "itens": [
    {
-    "sku": "CAV01-PRET-G",
-    "produto": "CAV01",
+    "sku": "CAV-LINE-CLASSIC-F-DK-AZM-G",
+    "produto": "CAV-LINE-CLASSIC-F-DK",
     "cor": {
-     "codigo": "PRET",
-     "nome": "Preto"
+     "codigo": "AZM",
+     "nome": "Azul Marinho"
     },
     "tamanho": "G",
     "quantidade": 1
@@ -125,6 +125,6 @@
   },
   "sem_escolha": null,
   "erro": null,
-  "criado_em": "2026-11-08T00:45:52Z"
+  "criado_em": "2026-11-08T02:23:03Z"
  }
 ]
