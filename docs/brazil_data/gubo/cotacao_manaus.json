@@ -2,7 +2,7 @@
  201,
  {
   "objeto": "cotacao_frete",
-  "id": "cot_01M6W9KH6440KC5G127MT9CM6N",
+  "id": "cot_01M6W9PMMPF3DEK97N44NA403W",
   "situacao": "pronta",
   "cep": "69005-010",
   "simulada": false,
@@ -113,6 +113,6 @@
   },
   "sem_escolha": null,
   "erro": null,
-  "criado_em": "2026-11-08T00:40:47Z"
+  "criado_em": "2026-11-08T00:42:29Z"
  }
 ]
