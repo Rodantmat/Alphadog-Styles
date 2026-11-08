@@ -19,6 +19,29 @@ const ok = BR.resolveSku("CAV-LINE-CLASSIC-F-DK-PRET-M"); assert.ok(ok && ok.pri
 assert.equal(BR.resolveSku("CAV-LINE-CLASSIC-F-DK-BRAN-M"), null);                  // colour not released on a dark product
 assert.equal(BR.resolveSku("CAV-LINE-CLASSIC-F-DK-PRET-XX"), null);
 assert.equal(BR.priceItems([]), null);
+{ // ---------- all Gubo models (synthetic catalog: 3 new breeds x 12 designs x 2 tones x 11 models, built by gen_multi_fixture.py)
+  const fs = await import("node:fs"); const M = JSON.parse(fs.readFileSync("./catalog_multi.json", "utf8"));
+  const px = sku => { const r = BR.resolveSku(sku, M); assert.ok(r, sku); return r };
+  assert.equal(px("LHA-LN-CL-F-LT-BRAN-M").price, 10990);                     // Padrao: original 5-segment SKU, unchanged price
+  assert.equal(px("LHA-LN-CL-F-LT-BRAN-XG").price, 10990 + 800);              // XG/XGG surcharge
+  assert.equal(px("LHA-LN-CL-F-LT-BL-BRAN-M").price, 10990);                  // Babylook: longest product code wins over the Padrao prefix
+  assert.match(px("LHA-LN-CL-F-LT-BL-BRAN-M").nome, /^Babylook - Lhasa Apso/);
+  assert.equal(px("MPN-GE-OC-B-DK-OV-PRET-G").price, 14790);
+  assert.equal(px("VLT-GE-CO-B-DK-H3-AZM-GG").price, 27490);
+  assert.equal(px("VLT-GE-CO-B-DK-H3-AZM-XG").price, 27490 + 2200);
+  assert.equal(px("VLT-LN-CL-F-LT-H2-OFWH-M").price, 21790);
+  assert.equal(px("VLT-LN-CL-F-LT-HS-OFWH-M").price, 17790);
+  assert.equal(px("VLT-LN-CL-F-LT-EC-OFWH-UN").price, 5990);
+  assert.equal(px("VLT-LN-CL-F-LT-KD-OFWH-8").price, 7490);
+  assert.equal(px("VLT-LN-CL-F-LT-PT-OFWH-P").price, 5990);
+  assert.equal(BR.resolveSku("LHA-LN-CL-F-LT-ZZ-BRAN-M", M), null);           // unknown model segment -> not sellable
+  assert.equal(BR.resolveSku("LHA-LN-CL-F-LT-BL-BRAN-XG", M), null);          // Babylook has no XG
+  const bad = { ...M, products: M.products.map(p => p.model === "OV" ? { ...p, model: "QQ" } : p) };
+  assert.equal(BR.resolveSku("MPN-GE-OC-B-DK-OV-PRET-G", bad), null);        // product with a model we have no price for is refused, never guessed
+  const lines = BR.priceItems([{ sku: "LHA-LN-CL-F-LT-BRAN-M", qty: 2 }, { sku: "LHA-LN-CL-F-LT-H2-BRAN-G", qty: 1 }], M);
+  assert.equal(lines.reduce((a, l) => a + l.price * l.qty, 0), 2 * 10990 + 21790);
+  assert.equal(M.products.filter(p => p.visible).length, 792);
+}
 
 // ---------- fake DB (only the statements br.js issues)
 const tables = { orders: new Map(), kv: new Map(), custom: new Map() };
