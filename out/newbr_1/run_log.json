@@ -1,0 +1,1250 @@
+[
+ {
+  "id": "B_line_belgian_malinois_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 541,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1831,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 283
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 541,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1831,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 283
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 541,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1831,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 283
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 541,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1831,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 283
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 558,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1848,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 558,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1848,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 558,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1848,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 558,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1848,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 300
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 566,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1856,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 308
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 566,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1856,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 308
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 566,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1856,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 308
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_belgian_malinois_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 566,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1856,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 308
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 538,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1828,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 280
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 538,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1828,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 280
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 538,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1828,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 280
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 538,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1828,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 280
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 555,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1845,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 555,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1845,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 555,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1845,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 555,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1845,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 297
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 563,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1853,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 305
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 563,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1853,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 305
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 563,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1853,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 305
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_belgian_malinois_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 563,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1853,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 305
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 570,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1860,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 312
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 570,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1860,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 312
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 570,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1860,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 312
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 570,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1860,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 312
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 587,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1877,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 329
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 587,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1877,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 329
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 587,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1877,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 329
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 587,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1877,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 329
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 595,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1885,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 337
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 595,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1885,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 337
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 595,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1885,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 337
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_line_vira_lata_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 595,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1885,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 337
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_classic__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 567,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1857,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 309
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_classic__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 567,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1857,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 309
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_classic__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 567,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1857,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 309
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_classic__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 567,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1857,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 309
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_cool__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 584,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1874,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 326
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_cool__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 584,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1874,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 326
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_cool__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 584,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1874,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 326
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_cool__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 584,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1874,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 326
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_heart__a",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 592,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1882,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 334
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_heart__b",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 592,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1882,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 334
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_heart__c",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 592,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1882,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 334
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ },
+ {
+  "id": "B_geo_vira_lata_heart__d",
+  "ok": true,
+  "usage": {
+   "promptTokenCount": 592,
+   "candidatesTokenCount": 1290,
+   "totalTokenCount": 1882,
+   "promptTokensDetails": [
+    {
+     "modality": "TEXT",
+     "tokenCount": 334
+    },
+    {
+     "modality": "IMAGE",
+     "tokenCount": 258
+    }
+   ],
+   "candidatesTokensDetails": [
+    {
+     "modality": "IMAGE",
+     "tokenCount": 1290
+    }
+   ],
+   "serviceTier": "standard"
+  }
+ }
+]
