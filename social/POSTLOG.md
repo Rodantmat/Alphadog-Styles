@@ -33,3 +33,4 @@
 - Listed both accounts: all past posts `sent` on IG, TikTok, FB, Pinterest (no failed/missed). b08 (Nov 12 04:00Z) was already scheduled on all 4 (no duplicate created). Each channel was at 9/10.
 - Scheduled b09 (Nov 13 04:00Z) via social/planB2_b09_*.json: IG 6af0059851492b796e1ae03d, TikTok 6af0059951492b796e1ae067, FB 6af0059a9214322f6832e5ac, Pinterest 6af0059b004e4879a79910e5. All 4 channels now 10/10.
 - Pending (limit): the built Nov 13-16 items. Slots free after the Nov 8 18:00Z posts go out. No ALERT.
+2026-11-08T17:38:53Z checker: listed Buffer acct1+2; Nov7 A (hoodies) and Nov7 B (French Bulldog line art) sent on IG/TikTok/FB/Pinterest; Nov8 A (10:00 PT = 18:00Z) still scheduled on all 4, not yet due; nothing missed, nothing forced
