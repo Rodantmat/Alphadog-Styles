@@ -1,0 +1,170 @@
+[
+ {
+  "id": "M_geo_lhasa_apso_classic__a",
+  "images": [
+   "out/nb2/m1/M_geo_lhasa_apso_classic__a.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_lhasa_apso_classic__b",
+  "images": [
+   "out/nb2/m1/M_geo_lhasa_apso_classic__b.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_lhasa_apso_classic__c",
+  "images": [
+   "out/nb2/m1/M_geo_lhasa_apso_classic__c.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_lhasa_apso_classic__d",
+  "images": [
+   "out/nb2/m1/M_geo_lhasa_apso_classic__d.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_miniature_pinscher_classic__a",
+  "images": [
+   "out/nb2/m1/M_geo_miniature_pinscher_classic__a.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_miniature_pinscher_classic__b",
+  "images": [
+   "out/nb2/m1/M_geo_miniature_pinscher_classic__b.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_miniature_pinscher_classic__c",
+  "images": [
+   "out/nb2/m1/M_geo_miniature_pinscher_classic__c.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_miniature_pinscher_classic__d",
+  "images": [
+   "out/nb2/m1/M_geo_miniature_pinscher_classic__d.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_vira_lata_classic__a",
+  "images": [
+   "out/nb2/m1/M_geo_vira_lata_classic__a.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_vira_lata_classic__b",
+  "images": [
+   "out/nb2/m1/M_geo_vira_lata_classic__b.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_vira_lata_classic__c",
+  "images": [
+   "out/nb2/m1/M_geo_vira_lata_classic__c.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_geo_vira_lata_classic__d",
+  "images": [
+   "out/nb2/m1/M_geo_vira_lata_classic__d.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a geometric polygon line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_lhasa_apso_classic__a",
+  "images": [
+   "out/nb2/m1/M_line_lhasa_apso_classic__a.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_lhasa_apso_classic__b",
+  "images": [
+   "out/nb2/m1/M_line_lhasa_apso_classic__b.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_lhasa_apso_classic__c",
+  "images": [
+   "out/nb2/m1/M_line_lhasa_apso_classic__c.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_lhasa_apso_classic__d",
+  "images": [
+   "out/nb2/m1/M_line_lhasa_apso_classic__d.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Lhasa Apso. Facts: a Lhasa Apso has a very long straight floor-length coat parted in the center, beard and moustache, medium-length muzzle, tail curled over the back, and NO topknot/ponytail/bow. Commonly confused with: Shih Tzu, Maltese, Yorkshire Terrier, Havanese. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Lhasa Apso? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_miniature_pinscher_classic__a",
+  "images": [
+   "out/nb2/m1/M_line_miniature_pinscher_classic__a.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_miniature_pinscher_classic__b",
+  "images": [
+   "out/nb2/m1/M_line_miniature_pinscher_classic__b.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_miniature_pinscher_classic__c",
+  "images": [
+   "out/nb2/m1/M_line_miniature_pinscher_classic__c.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_miniature_pinscher_classic__d",
+  "images": [
+   "out/nb2/m1/M_line_miniature_pinscher_classic__d.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Miniature Pinscher. Facts: a Miniature Pinscher is a toy dog with a compact nearly square body, short neck, rounded skull, short blunt muzzle, medium-small erect ears; a Doberman has a long narrow head, long muzzle, tall neck; a Chihuahua has huge ears and a domed apple head. Commonly confused with: Doberman Pinscher, Chihuahua, Italian Greyhound, Whippet, Manchester Terrier. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Miniature Pinscher? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_vira_lata_classic__a",
+  "images": [
+   "out/nb2/m1/M_line_vira_lata_classic__a.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_vira_lata_classic__b",
+  "images": [
+   "out/nb2/m1/M_line_vira_lata_classic__b.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_vira_lata_classic__c",
+  "images": [
+   "out/nb2/m1/M_line_vira_lata_classic__c.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ },
+ {
+  "id": "M_line_vira_lata_classic__d",
+  "images": [
+   "out/nb2/m1/M_line_vira_lata_classic__d.png"
+  ],
+  "prompt": "You are a strict dog-breed illustrator and print-on-demand art director. The image is a continuous single-line line-art design: a small FRONT head emblem (left) and a full-body sitting dog (right) that are supposed to be a Vira-lata (Brazilian SRD caramel street dog). Facts: a Vira-lata is a generic lean medium mixed-breed street dog with a short coat, semi-erect triangular folded-tip ears, lean wedge muzzle, long thin tail; it must NOT have long drooping beagle/hound ears, tricolor beagle patches, or a heavy pit-bull jaw. Commonly confused with: Beagle, Labrador, Pit Bull, Whippet/Greyhound, Hound, Jack Russell. Judge critically like a customer looking at a printed T-shirt. Return ONLY JSON: {\"breed_identity\":0-10 (would a dog expert instantly say Vira-lata (Brazilian SRD caramel street dog)? 10=unmistakable; deduct hard if it looks like a confusable breed),\"looks_like\":\"which breed it most looks like\",\"head_back_match\":0-10 (front head and full body clearly same dog),\"completeness\":0-10 (all ears, tail, 4 legs and paws complete, nothing cut off, no stray marks),\"anatomy\":0-10 (no malformed anatomy, lines clean),\"appeal\":0-10,\"sitting\":true/false (is the full-body dog sitting),\"problems\":[short strings]}"
+ }
+]
