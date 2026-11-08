@@ -1,7 +1,8 @@
 import os, json, requests
 KEY = os.environ["GUBO_API_KEY"]
 OUT = "docs/brazil_data/gubo"; os.makedirs(OUT, exist_ok=True)
-BASES = ["https://api.gubo.com.br/v1",
+BASES = ["https://api.gubo.com.br/v1"]
+_UNUSED = [
          "https://kx75xapy8azwdvdnd4brts7y098e5qvg.buildprintusercontent.com/gubo-api/latest/live/v1"]
 H = {"Authorization": "Bearer " + KEY}
 def save(n, o):
