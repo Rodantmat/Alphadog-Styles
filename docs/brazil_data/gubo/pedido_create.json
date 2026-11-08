@@ -1,0 +1,19 @@
+[
+ 422,
+ {
+  "erro": {
+   "codigo": "validacao",
+   "mensagem": "Há campos inválidos. Veja erro.detalhes.",
+   "campo": null,
+   "detalhes": [
+    {
+     "campo": "valor_venda_centavos",
+     "codigo": "campo_desconhecido",
+     "mensagem": "O campo valor_venda_centavos não existe no contrato."
+    }
+   ],
+   "documentacao": "https://gubo.com.br/docs-api/erros#validacao"
+  },
+  "request_id": "req_01M6W9S7DN857SA294W2KJ76ME"
+ }
+]
