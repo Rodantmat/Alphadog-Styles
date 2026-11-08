@@ -2,7 +2,512 @@
  200,
  {
   "objeto": "lista",
-  "dados": [],
+  "dados": [
+   {
+    "objeto": "variante",
+    "sku": "CAV01-AZM-G",
+    "sku_padrao": "CAV01-AZM-G",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "AZM",
+     "nome": "Azul Marinho"
+    },
+    "tamanho": "G",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-AZM-GG",
+    "sku_padrao": "CAV01-AZM-GG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "AZM",
+     "nome": "Azul Marinho"
+    },
+    "tamanho": "GG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-AZM-M",
+    "sku_padrao": "CAV01-AZM-M",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "AZM",
+     "nome": "Azul Marinho"
+    },
+    "tamanho": "M",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-AZM-P",
+    "sku_padrao": "CAV01-AZM-P",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "AZM",
+     "nome": "Azul Marinho"
+    },
+    "tamanho": "P",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-AZM-XG",
+    "sku_padrao": "CAV01-AZM-XG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "AZM",
+     "nome": "Azul Marinho"
+    },
+    "tamanho": "XG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-AZM-XGG",
+    "sku_padrao": "CAV01-AZM-XGG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "AZM",
+     "nome": "Azul Marinho"
+    },
+    "tamanho": "XGG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-BRAN-G",
+    "sku_padrao": "CAV01-BRAN-G",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "BRAN",
+     "nome": "Branco"
+    },
+    "tamanho": "G",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-BRAN-GG",
+    "sku_padrao": "CAV01-BRAN-GG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "BRAN",
+     "nome": "Branco"
+    },
+    "tamanho": "GG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-BRAN-M",
+    "sku_padrao": "CAV01-BRAN-M",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "BRAN",
+     "nome": "Branco"
+    },
+    "tamanho": "M",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-BRAN-P",
+    "sku_padrao": "CAV01-BRAN-P",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "BRAN",
+     "nome": "Branco"
+    },
+    "tamanho": "P",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-BRAN-XG",
+    "sku_padrao": "CAV01-BRAN-XG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "BRAN",
+     "nome": "Branco"
+    },
+    "tamanho": "XG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-BRAN-XGG",
+    "sku_padrao": "CAV01-BRAN-XGG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "BRAN",
+     "nome": "Branco"
+    },
+    "tamanho": "XGG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-MAR-G",
+    "sku_padrao": "CAV01-MAR-G",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "MAR",
+     "nome": "Marrom"
+    },
+    "tamanho": "G",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-MAR-GG",
+    "sku_padrao": "CAV01-MAR-GG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "MAR",
+     "nome": "Marrom"
+    },
+    "tamanho": "GG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-MAR-M",
+    "sku_padrao": "CAV01-MAR-M",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "MAR",
+     "nome": "Marrom"
+    },
+    "tamanho": "M",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-MAR-P",
+    "sku_padrao": "CAV01-MAR-P",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "MAR",
+     "nome": "Marrom"
+    },
+    "tamanho": "P",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-MAR-XG",
+    "sku_padrao": "CAV01-MAR-XG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "MAR",
+     "nome": "Marrom"
+    },
+    "tamanho": "XG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-MAR-XGG",
+    "sku_padrao": "CAV01-MAR-XGG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "MAR",
+     "nome": "Marrom"
+    },
+    "tamanho": "XGG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-OFWH-G",
+    "sku_padrao": "CAV01-OFWH-G",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "OFWH",
+     "nome": "Offwhite"
+    },
+    "tamanho": "G",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-OFWH-GG",
+    "sku_padrao": "CAV01-OFWH-GG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "OFWH",
+     "nome": "Offwhite"
+    },
+    "tamanho": "GG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-OFWH-M",
+    "sku_padrao": "CAV01-OFWH-M",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "OFWH",
+     "nome": "Offwhite"
+    },
+    "tamanho": "M",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-OFWH-P",
+    "sku_padrao": "CAV01-OFWH-P",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "OFWH",
+     "nome": "Offwhite"
+    },
+    "tamanho": "P",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-OFWH-XG",
+    "sku_padrao": "CAV01-OFWH-XG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "OFWH",
+     "nome": "Offwhite"
+    },
+    "tamanho": "XG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-OFWH-XGG",
+    "sku_padrao": "CAV01-OFWH-XGG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "OFWH",
+     "nome": "Offwhite"
+    },
+    "tamanho": "XGG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-PRET-G",
+    "sku_padrao": "CAV01-PRET-G",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "PRET",
+     "nome": "Preto"
+    },
+    "tamanho": "G",
+    "disponivel": true,
+    "motivo_indisponivel": null,
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-PRET-GG",
+    "sku_padrao": "CAV01-PRET-GG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "PRET",
+     "nome": "Preto"
+    },
+    "tamanho": "GG",
+    "disponivel": true,
+    "motivo_indisponivel": null,
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-PRET-M",
+    "sku_padrao": "CAV01-PRET-M",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "PRET",
+     "nome": "Preto"
+    },
+    "tamanho": "M",
+    "disponivel": true,
+    "motivo_indisponivel": null,
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-PRET-P",
+    "sku_padrao": "CAV01-PRET-P",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "PRET",
+     "nome": "Preto"
+    },
+    "tamanho": "P",
+    "disponivel": true,
+    "motivo_indisponivel": null,
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-PRET-XG",
+    "sku_padrao": "CAV01-PRET-XG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "PRET",
+     "nome": "Preto"
+    },
+    "tamanho": "XG",
+    "disponivel": true,
+    "motivo_indisponivel": null,
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-PRET-XGG",
+    "sku_padrao": "CAV01-PRET-XGG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "PRET",
+     "nome": "Preto"
+    },
+    "tamanho": "XGG",
+    "disponivel": true,
+    "motivo_indisponivel": null,
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-VMG-G",
+    "sku_padrao": "CAV01-VMG-G",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "VMG",
+     "nome": "Verde Musgo"
+    },
+    "tamanho": "G",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-VMG-GG",
+    "sku_padrao": "CAV01-VMG-GG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "VMG",
+     "nome": "Verde Musgo"
+    },
+    "tamanho": "GG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-VMG-M",
+    "sku_padrao": "CAV01-VMG-M",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "VMG",
+     "nome": "Verde Musgo"
+    },
+    "tamanho": "M",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-VMG-P",
+    "sku_padrao": "CAV01-VMG-P",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "VMG",
+     "nome": "Verde Musgo"
+    },
+    "tamanho": "P",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 5453
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-VMG-XG",
+    "sku_padrao": "CAV01-VMG-XG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "VMG",
+     "nome": "Verde Musgo"
+    },
+    "tamanho": "XG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   },
+   {
+    "objeto": "variante",
+    "sku": "CAV01-VMG-XGG",
+    "sku_padrao": "CAV01-VMG-XGG",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "VMG",
+     "nome": "Verde Musgo"
+    },
+    "tamanho": "XGG",
+    "disponivel": false,
+    "motivo_indisponivel": "cor_nao_liberada",
+    "preco_unitario_centavos": 6295
+   }
+  ],
   "tem_mais": false,
   "proximo_cursor": null
  }

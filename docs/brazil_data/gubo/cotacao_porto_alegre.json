@@ -1,0 +1,130 @@
+[
+ 201,
+ {
+  "objeto": "cotacao_frete",
+  "id": "cot_01M6W9KKHX60MM06C6R5GVMYKC",
+  "situacao": "pronta",
+  "cep": "90010-000",
+  "simulada": false,
+  "valida_ate": "2026-11-08T01:10:52Z",
+  "pacote": {
+   "pecas": 1,
+   "peso_g": 190,
+   "valor_declarado_centavos": 5453
+  },
+  "itens": [
+   {
+    "sku": "CAV01-PRET-G",
+    "produto": "CAV01",
+    "cor": {
+     "codigo": "PRET",
+     "nome": "Preto"
+    },
+    "tamanho": "G",
+    "quantidade": 1
+   }
+  ],
+  "entrega": null,
+  "opcoes": [
+   {
+    "servico": "gfl",
+    "nome": "Olist Envios GFL",
+    "transportadora": "Magalog",
+    "modalidade": "Expresso",
+    "preco_centavos": 2184,
+    "prazo_transporte_dias_uteis": 3,
+    "prazo_producao_dias_uteis": 7,
+    "prazo_total_dias_uteis": 10,
+    "previsao_entrega": "2026-11-20",
+    "dentro_do_prazo": null
+   },
+   {
+    "servico": "jet",
+    "nome": "Olist Envios J&T Express",
+    "transportadora": "J&T Express",
+    "modalidade": "Normal",
+    "preco_centavos": 1639,
+    "prazo_transporte_dias_uteis": 5,
+    "prazo_producao_dias_uteis": 7,
+    "prazo_total_dias_uteis": 12,
+    "previsao_entrega": "2026-11-24",
+    "dentro_do_prazo": null
+   },
+   {
+    "servico": "loggi",
+    "nome": "Olist Envios Loggi",
+    "transportadora": "Loggi",
+    "modalidade": "Expresso",
+    "preco_centavos": 2335,
+    "prazo_transporte_dias_uteis": 4,
+    "prazo_producao_dias_uteis": 7,
+    "prazo_total_dias_uteis": 11,
+    "previsao_entrega": "2026-11-23",
+    "dentro_do_prazo": null
+   },
+   {
+    "servico": "imile",
+    "nome": "Olist Envios IMile",
+    "transportadora": "iMile",
+    "modalidade": "Normal",
+    "preco_centavos": 2107,
+    "prazo_transporte_dias_uteis": 5,
+    "prazo_producao_dias_uteis": 7,
+    "prazo_total_dias_uteis": 12,
+    "previsao_entrega": "2026-11-24",
+    "dentro_do_prazo": null
+   },
+   {
+    "servico": "jadlog",
+    "nome": "Olist Envios Jadlog",
+    "transportadora": "Jadlog",
+    "modalidade": "Normal",
+    "preco_centavos": 2117,
+    "prazo_transporte_dias_uteis": 6,
+    "prazo_producao_dias_uteis": 7,
+    "prazo_total_dias_uteis": 13,
+    "previsao_entrega": "2026-11-25",
+    "dentro_do_prazo": null
+   },
+   {
+    "servico": "correios-sedex",
+    "nome": "Olist Envios Correios SEDEX",
+    "transportadora": "Correios",
+    "modalidade": "Sedex",
+    "preco_centavos": 5141,
+    "prazo_transporte_dias_uteis": 3,
+    "prazo_producao_dias_uteis": 7,
+    "prazo_total_dias_uteis": 10,
+    "previsao_entrega": "2026-11-20",
+    "dentro_do_prazo": null
+   },
+   {
+    "servico": "correios",
+    "nome": "Olist Envios Correios PAC",
+    "transportadora": "Correios",
+    "modalidade": "PAC",
+    "preco_centavos": 3509,
+    "prazo_transporte_dias_uteis": 7,
+    "prazo_producao_dias_uteis": 7,
+    "prazo_total_dias_uteis": 14,
+    "previsao_entrega": "2026-11-26",
+    "dentro_do_prazo": null
+   }
+  ],
+  "recomendacoes": {
+   "mais_barata": "jet",
+   "mais_rapida": "gfl",
+   "mais_barata_no_prazo": null
+  },
+  "escolha": {
+   "servico": "jet",
+   "regra": "mais_barata",
+   "prazo_em_risco": false,
+   "preco_centavos": 1639,
+   "previsao_entrega": "2026-11-24"
+  },
+  "sem_escolha": null,
+  "erro": null,
+  "criado_em": "2026-11-08T00:40:49Z"
+ }
+]
