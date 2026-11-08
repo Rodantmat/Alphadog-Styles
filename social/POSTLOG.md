@@ -27,3 +27,4 @@
 - Verified: every past post is `sent` on IG, TikTok, FB, Pinterest (Nov 6 17:00Z, Nov 7 04:00Z and 18:00Z). No misses.
 - Scheduled b08 (Nov 11 8pm PT = Nov 12 04:00Z) on all 4 apps via social/planB2_b08_*.json: IG 6aef874dd6bbae6fa1ab92ec, TikTok 6aef874e562f2e6de97ba625, FB 6aef8753004e4879a779f495, Pinterest 6aef8754229bf05daf70c98d. All 4 channels now 10/10.
 - Pending (limit): b09 (Nov 12 8pm PT) and the built Nov 13-16 items. Tomorrow (Nov 8) A and B are scheduled; no ALERT. Lead beyond Nov 17 A is thin (A TODO Nov 17-19).
+2026-11-08T04:38:31Z checker: Sat Nov 7 20:00 PT slot B (b02 French Bulldog line art, due 2026-11-08T04:00Z) listed acct1+2: SENT on IG 6aee0fbd004e4879a704bc12, TikTok 6aee0fbe9214322f689f2d44, FB 6aee0ff7229bf05daffcc040, Pinterest 6aee35baaf7e526d43dd0b84. No failed/stuck/missed items; nothing forced; future items untouched. Result OK.
