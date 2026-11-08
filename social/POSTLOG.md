@@ -34,3 +34,8 @@
 - Scheduled b09 (Nov 13 04:00Z) via social/planB2_b09_*.json: IG 6af0059851492b796e1ae03d, TikTok 6af0059951492b796e1ae067, FB 6af0059a9214322f6832e5ac, Pinterest 6af0059b004e4879a79910e5. All 4 channels now 10/10.
 - Pending (limit): the built Nov 13-16 items. Slots free after the Nov 8 18:00Z posts go out. No ALERT.
 2026-11-08T17:38:53Z checker: listed Buffer acct1+2; Nov7 A (hoodies) and Nov7 B (French Bulldog line art) sent on IG/TikTok/FB/Pinterest; Nov8 A (10:00 PT = 18:00Z) still scheduled on all 4, not yet due; nothing missed, nothing forced
+
+## 2026-11-08 (20:15Z) Buffer fill run
+- Listed both accounts: all past posts `sent` on IG, TikTok, FB, Pinterest (Nov 8 18:00Z A included). No failed/missed. Each channel was at 9/10.
+- Scheduled Nov 13 A (d1b_drooling_ride, 17:00Z) via social/planA_d1b_*.json: IG 6af0d9039214322f68753b7b, TikTok 6af0d904d6bbae6fa10cc003, FB 6af0d90a562f2e6de9dd8156, Pinterest 6af0d90a562f2e6de9dd8181. All 4 channels now 10/10. Music m21 unused before; rules checked vs Nov 12 (laugh02).
+- Pending (limit): Nov 13 B b13 and later built items (Nov 14-17). Tomorrow (Nov 9) A + B scheduled; no ALERT. A still TODO for Nov 18-19.
