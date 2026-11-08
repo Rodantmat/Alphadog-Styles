@@ -1,0 +1,29 @@
+[
+ {
+  "id": "M2_geo_lhasa_apso_classic",
+  "refs": [
+   "out/nb2/m1/M_line_lhasa_apso_classic__a.png",
+   "out/sets/geo_p1/yorkshire_terrier__classic.jpg"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is the identity reference: a continuous-line drawing of a Lhasa Apso (front head left, sitting full-body dog right). Image 2 is an APPROVED example of the target ART STYLE: bold geometric polygon lines (angular facets, thick uniform outer outline, thinner inner facet lines). Redraw the exact same two dogs of image 1 (same breed anatomy, same proportions, same ears, same coat/hair amount, same nose, mouth, eyebrows/eye-area markings, chest lines, same pose and layout) in the geometric polygon style of image 2. The hair has NO topknot, NO ponytail and NO bow; keep the center parting, the long straight floor-length coat, beard and moustache, the tail curled over the back. The full-body dog must be SITTING (hindquarters on the ground, front legs straight, paws visible in front), not standing. Eyes: one simple round ring outline with a solid black round pupil, both identical. Pure black lines on flat pure white, no gray, no shading, no fills except the nose, no text, nothing cut off, the two drawings must not touch each other or the edges. No accessories, no collar, no sunglasses, no hearts."
+ },
+ {
+  "id": "M2_geo_miniature_pinscher_classic",
+  "refs": [
+   "out/nb2/m1/M_line_miniature_pinscher_classic__a.png",
+   "out/sets/geo_p2/chihuahua__classic.jpg"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is the identity reference: a continuous-line drawing of a Miniature Pinscher (front head left, sitting full-body dog right). Image 2 is an APPROVED example of the target ART STYLE: bold geometric polygon lines (angular facets, thick uniform outer outline, thinner inner facet lines). Redraw the exact same two dogs of image 1 (same breed anatomy, same proportions, same ears, same coat/hair amount, same nose, mouth, eyebrows/eye-area markings, chest lines, same pose and layout) in the geometric polygon style of image 2. Keep the compact proportions: short neck, small rounded head, short blunt muzzle, MODERATE-size upright triangular ears (each ear clearly smaller than the head, not oversized like a chihuahua), moderate-size eyes, slim legs, short upright tail. The full-body dog must be SITTING. Eyes: one simple round ring outline with a solid black round pupil, both identical. Pure black lines on flat pure white, no gray, no shading, no fills except the nose, no text, nothing cut off, the two drawings must not touch each other or the edges. No accessories, no collar, no sunglasses, no hearts."
+ },
+ {
+  "id": "M2_geo_vira_lata_classic",
+  "refs": [
+   "out/nb2/m1/M_line_vira_lata_classic__a.png",
+   "out/sets/geo_p3/american_pit_bull_terrier__classic.jpg"
+  ],
+  "aspect": "3:2",
+  "prompt": "Image 1 is the identity reference: a continuous-line drawing of a Vira-lata (front head left, sitting full-body dog right). Image 2 is an APPROVED example of the target ART STYLE: bold geometric polygon lines (angular facets, thick uniform outer outline, thinner inner facet lines). Redraw the exact same two dogs of image 1 (same breed anatomy, same proportions, same ears, same coat/hair amount, same nose, mouth, eyebrows/eye-area markings, chest lines, same pose and layout) in the geometric polygon style of image 2. Keep the semi-erect triangular folded-tip ears, lean wedge muzzle, slim body, long thin tail. The full-body dog must be SITTING. Eyes: one simple round ring outline with a solid black round pupil, both identical. Pure black lines on flat pure white, no gray, no shading, no fills except the nose, no text, nothing cut off, the two drawings must not touch each other or the edges. No accessories, no collar, no sunglasses, no hearts."
+ }
+]
