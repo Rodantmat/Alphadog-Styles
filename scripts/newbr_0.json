@@ -1,0 +1,581 @@
+{
+ "base": "",
+ "styles": [
+  {
+   "id": "B_line_lhasa_apso_classic__a",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_lhasa_apso_classic__b",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_lhasa_apso_classic__c",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_lhasa_apso_classic__d",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_lhasa_apso_cool__a",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_lhasa_apso_cool__b",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_lhasa_apso_cool__c",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_lhasa_apso_cool__d",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_lhasa_apso_heart__a",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_line_lhasa_apso_heart__b",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_line_lhasa_apso_heart__c",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_line_lhasa_apso_heart__d",
+   "theme": "line",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in single flowing continuous hand-drawn line style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_lhasa_apso_classic__a",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_lhasa_apso_classic__b",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_lhasa_apso_classic__c",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_lhasa_apso_classic__d",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_lhasa_apso_cool__a",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_lhasa_apso_cool__b",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_lhasa_apso_cool__c",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_lhasa_apso_cool__d",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_lhasa_apso_heart__a",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_lhasa_apso_heart__b",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_lhasa_apso_heart__c",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_lhasa_apso_heart__d",
+   "theme": "geo",
+   "slug": "lhasa_apso",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/shih_tzu__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a shih tzu in bold geometric polygon lines style. Redraw it as a Lhasa Apso: long straight floor-length silky coat parted down the middle of the back, heavy fall of hair over the eyes and a beard and moustache, small drop ears hidden in the coat, dark round eyes, short muzzle, compact body, feathered tail curled over the back. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Lhasa Apso, not a shih tzu.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_line_miniature_pinscher_classic__a",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_miniature_pinscher_classic__b",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_miniature_pinscher_classic__c",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_miniature_pinscher_classic__d",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_line_miniature_pinscher_cool__a",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_miniature_pinscher_cool__b",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_miniature_pinscher_cool__c",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_miniature_pinscher_cool__d",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_line_miniature_pinscher_heart__a",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_line_miniature_pinscher_heart__b",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_line_miniature_pinscher_heart__c",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_line_miniature_pinscher_heart__d",
+   "theme": "line",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/line_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in single flowing continuous hand-drawn line style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_classic__a",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_classic__b",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_classic__c",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_classic__d",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "classic",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__classic.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Plain classic version, no accessories."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_cool__a",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_cool__b",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_cool__c",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_cool__d",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "cool",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__cool.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Both the front head and the back dog wear the same aviator sunglasses as in image 1 (nothing else added)."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_heart__a",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_heart__b",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_heart__c",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  },
+  {
+   "id": "B_geo_miniature_pinscher_heart__d",
+   "theme": "geo",
+   "slug": "miniature_pinscher",
+   "variant": "heart",
+   "side": "both",
+   "refs": [
+    "out/sets/geo_p2/doberman_pinscher__heart.jpg"
+   ],
+   "aspect": "3:2",
+   "prompt": "Image 1 is an APPROVED finished design set of a doberman pinscher in bold geometric polygon lines style. Redraw it as a Miniature Pinscher: small sleek short-coated toy dog with a high-stepping stance, erect pointed ears (naturally upright), fine arched neck, refined narrow head, dark round eyes, slender legs, short tail, smooth coat with clean body contour lines. Change ONLY the dog's identity (head shape, ears, coat, body proportions, tail) so it is instantly recognizable as a Miniature Pinscher, not a doberman pinscher.  KEEP IDENTICAL to image 1: the exact same drawing style, line weight, level of detail, eye style (white iris with one off-centre black pupil and a small highlight, both eyes looking the same direction), layout (small front head emblem on the left, matching full-body sitting dog on the right), pose type, size and positions. The front head AND the full-body dog must both be complete and clearly the same breed: all ears fully drawn and continuous, the tail fully drawn and clearly visible (closed, tapered), chest and body contour lines drawn on the back dog just like the base dog in image 1, legs and paws complete. Pure black on flat white, no gray, no shading, no text, nothing cut off at the canvas or between the two drawings. Keep the heart element of image 1 around the front head and the collar with a small heart tag on the back dog, exactly as in image 1."
+  }
+ ]
+}
