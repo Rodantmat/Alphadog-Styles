@@ -20,3 +20,12 @@ Branch `br-site` (repo rodantmat/alphadog-styles). Everything is under `br/`; no
 - Product images hotlink Gubo `imagem_url` (mockups on plain photos); our own art mockups for BR not generated. Brand label and NF-e "Preço de revenda" are Studio-side settings, not verifiable here.
 - SEO: hash routes not indexable (as in the US site); prerendered `/br/` product pages = phase 2. Admin panel shows BR orders but formats money as USD.
 - Social (tomorrow), payments connection (tomorrow).
+
+
+## Update 2026-11-08 (branch br-site-2): all Gubo models + proportional prices
+- Prices decided by method, not conversion: see `br/docs/pricing.md` (US retail/cost multiple x BR cost, owner de/por ratio, ,90 endings, 15% floor, ecobag/pet market cap). Padrao R$109,90 (de 139,90), Oversized 147,90, Tech Modal 140,90, Babylook 109,90, Cropped 80,90, Infantil 74,90, Moletom capuz 2/3 cabos 217,90/274,90, sem capuz 177,90, Ecobag 59,90, Pet 59,90. XG/XGG surcharge per model.
+- SKU: Padrao unchanged `{BREED}-{LN|GE}-{CL|OC|CO}-{F|B}-{DK|LT}-{COLOR}-{SIZE}`; other models add a 6th product-code segment: OV TM BL CR KD H2 H3 HS EC PT (e.g. `LHA-LN-CL-F-LT-BL-BRAN-M`). Worker/site resolve the longest product code; a model with no configured price is refused.
+- New breeds in `config/br_breeds.json`: LHA Lhasa Apso, MPN Pinscher Miniatura, VLT Vira-lata (SRD). The 16 approved breeds' Gubo codes are not in the repo (list empty, TODO): the storefront does not need them (reads breeds from the Gubo dump).
+- Product page has a "Modelo" selector, crossed-out "de" price, XG/XGG surcharge; cart/checkout price per model. Checkout still closed (no MP token).
+- Planned matrix: 19 breeds x 12 designs x 2 tones x 11 models = 5.016 Gubo products to exist in Studio (456 per model). `python3 -I br/scripts/br_matrix.py --csv out.csv` lists them.
+- Tests: `test_pricing.py`, `test_catalog.py`, `run_worker_tests.sh`, `run_integration.sh`, `CATALOG=<multi.json> node smoke_site.mjs` all pass. US store files untouched.

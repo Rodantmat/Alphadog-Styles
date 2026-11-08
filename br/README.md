@@ -7,7 +7,8 @@ Read `br/docs/plan.md` (architecture + owner checklist) and `br/docs/status.md` 
 | `worker/br.js` | Worker module: region routing, `/api/br/*`, Gubo + Mercado Pago, mailbox mapping |
 | `site/` | pt-BR storefront (installed to `store/br/`) |
 | `config/br_config.json` | prices, shipping policy, mailboxes, payment slots, every TODO-verify |
-| `scripts/` | catalog builder, Gubo read-only pull, retry sweep, email routing |
+| `scripts/` | catalog builder (all Gubo models), `br_pricing.py` (proportional BRL table), `br_matrix.py` (planned breed x design x model matrix), Gubo read-only pull, retry sweep, email routing |
+| `docs/pricing.md` | price method, formula and final table (read before changing any price) |
 | `workflows/` | `store-fulfill-br.yml`, `br-catalog-sync.yml` (inert until repo variable `BR_ENABLED=1`) |
 | `patches/br-integration.patch` | the only edits to existing files (worker index, wrangler routes, US index hreflang, mail_bridge, store-deploy secrets + branch filter) |
 | `automation/support_assistant_br.md` | prompt for the pt-BR support scheduled task |

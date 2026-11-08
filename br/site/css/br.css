@@ -11,3 +11,6 @@
 .sz button,.sd button{min-width:46px}
 .stat{display:inline-block;padding:3px 10px;border-radius:99px;background:#eee;font-size:.8rem}
 .todo{border:1px dashed #c33;color:#c33;padding:6px 10px;border-radius:8px;font-size:.8rem}
+
+.was{color:var(--mut,#777);font-weight:400;font-size:.85em;margin-right:4px}
+#md{flex-wrap:wrap}

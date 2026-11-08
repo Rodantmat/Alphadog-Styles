@@ -5,18 +5,24 @@ The Gubo API is read-only for products (they are created in the Studio), so this
 everything comes from the dump. It tolerates the two SKU spellings seen so far:
   owner pattern : {BREED}-{LN|GE}-{CL|OC|CO}-{F|B}-{DK|LT}        e.g. SHI-LN-CL-F-LT
   probe pattern : {BREED}-{LINE|GEO}-{CLASSIC|COOL|HEART}-{F|B}-{DK|LT}  e.g. CAV-LINE-CLASSIC-F-DK
+  other models  : the same code + a 6th MODEL segment (PD = Camiseta Padrao has NO segment, so existing SKUs are unchanged):
+                  OV oversized, TM tech modal, BL babylook, CR cropped, KD infantil, H2/H3 moletom capuz 2/3 cabos, HS moletom sem capuz, EC ecobag, PT pet
+                  e.g. SHI-LN-CL-F-LT-BL  -> variant SKU SHI-LN-CL-F-LT-BL-BRAN-M
 Variant SKU = <product>-<colour>-<size> (Gubo docs: sku_padrao).
 
 usage: build_br_catalog.py --produtos P.json --variantes V.json [--cores C.json] [--out br/site/data/catalog_br.json]
 Dumps may be raw API bodies, {"dados":[...]} or the [status, body] pairs saved by scripts/brazil/gubo_probe.py.
 Exit code 2 if nothing parseable was found.
 """
-import argparse, json, re, sys, unicodedata, datetime
+import argparse, json, os, re, sys, unicodedata, datetime
 
 THEME = {"LN": "line", "LINE": "line", "GE": "geo", "GEO": "geo", "GEOM": "geo", "GEOMETRIC": "geo"}
 STYLE = {"CL": "classic", "CLASSIC": "classic", "OC": "cool", "COOL": "cool", "CO": "heart", "HEART": "heart"}
 SIDE = {"F": "front", "B": "back"}
 TONE = {"DK": "dark", "LT": "light"}
+MODEL = {"OV": "Camiseta Oversized", "TM": "Camiseta Tech Modal", "BL": "Babylook", "CR": "Cropped", "KD": "Camiseta Infantil",
+         "H2": "Moletom com capuz (2 cabos)", "H3": "Moletom com capuz (3 cabos)", "HS": "Moletom sem capuz", "EC": "Ecobag", "PT": "Camiseta Pet"}
+MODEL_NAME = {"PD": "Camiseta Padrão", **MODEL}                                   # PD is implicit (5-segment code)
 THEME_PT = {"line": "Linha contínua", "geo": "Geométrico"}
 STYLE_PT = {"classic": "Clássico", "cool": "Óculos escuros", "heart": "Coração"}
 SIDE_PT = {"front": "Frente", "back": "Costas"}
@@ -25,6 +31,7 @@ COLOR_FALLBACK = {
     "PRET": ("Preto", "#1A1A1A", "dark"), "MAR": ("Marrom", "#5B4636", "dark"), "VMG": ("Verde Musgo", "#4B5320", "dark"),
     "AZM": ("Azul Marinho", "#1F2A44", "dark"), "BRAN": ("Branco", "#FFFFFF", "light"), "OFWH": ("Offwhite", "#F2EDE1", "light"),
 }
+NAME_PREFIX = re.compile(r"^\s*(?:(?:(?:Camiseta|Camisa|Moletom|Padr[aã]o|Babylook|Baby\s?look|Cropped|Oversized|Tech\s+Modal|Infantil|Ecobag|Pet|Canguru|Com|Sem|Capuz|[23]|Cabos?)\b|[()])\s*)+", re.I)
 BREED_CUT = re.compile(r"\s+(Linha|Geom[eé]tric[oa]?|Geometria|Cl[aá]ssic[oa]?|Classic|Cool|Heart|Cora[cç][aã]o|[OÓ]culos|Frente|Costas)\b", re.I)
 
 
@@ -60,22 +67,47 @@ def slug(s):
 
 def parse_code(code):
     p = str(code).upper().split("-")
-    if len(p) != 5:
+    if len(p) not in (5, 6):
         return None
-    b, th, st, sd, tn = p
+    b, th, st, sd, tn = p[:5]
+    mdl = p[5] if len(p) == 6 else "PD"
+    if mdl != "PD" and mdl not in MODEL:
+        return None
     if th in THEME and st in STYLE and sd in SIDE and tn in TONE:
-        return {"breed": b, "theme": THEME[th], "style": STYLE[st], "side": SIDE[sd], "tone": TONE[tn]}
+        return {"breed": b, "theme": THEME[th], "style": STYLE[st], "side": SIDE[sd], "tone": TONE[tn], "model": mdl}
     return None
 
 
 def breed_name(nome, code_breed):
-    n = re.sub(r"^\s*(Camiseta|Moletom|Camisa)\s+", "", nome or "", flags=re.I)
+    n = NAME_PREFIX.sub("", nome or "")
     m = BREED_CUT.search(n)
     n = (n[:m.start()] if m else n).strip()
     return n or code_breed
 
 
-def build(produtos, variantes, cores=None):
+def price_for(models, p, size):
+    """Mirror of worker priceCentavos(size, p). None if the model has no price."""
+    m = (models or {}).get(p.get("model") or "PD")
+    if not m:
+        return None
+    base = m["price_back_centavos"] if p.get("side") == "back" else m["price_front_centavos"]
+    return base + (m.get("size_surcharge_centavos", 0) if size in m.get("surcharge_sizes", []) else 0)
+
+
+def load_models():
+    try:
+        with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "config", "br_config.json"), encoding="utf-8") as f:
+            return json.load(f)["pricing"].get("models")
+    except (OSError, KeyError, ValueError):
+        return None
+
+
+LABEL_CENTAVOS = 150     # custom brand label (Gubo price page); the owner requires it on every piece
+FLOOR = 1.15             # owner rule: price >= (cost + label) + 15%
+
+
+def build(produtos, variantes, cores=None, models="config"):
+    models = load_models() if models == "config" else models
     warnings = []
     colors = {k: {"name": v[0], "hex": v[1], "tone": v[2], "approx": k != "PRET"} for k, v in COLOR_FALLBACK.items()}
     for c in cores or []:
@@ -108,16 +140,23 @@ def build(produtos, variantes, cores=None):
                 warnings.append(f"colour {v['cor']['codigo']} has no known hex")
             if v["sku"] != v.get("sku_padrao") and v.get("sku_padrao"):
                 warnings.append(f"{v['sku_padrao']} is linked to store SKU {v['sku']} - storefront uses sku_padrao (both accepted by Gubo)")
-        for t in sorted({t for ts in cols.values() for t in ts}, key=lambda s: ["P", "M", "G", "GG", "XG", "XGG"].index(s) if s in ["P", "M", "G", "GG", "XG", "XGG"] else 99):
+        for t in sorted({t for ts in cols.values() for t in ts}, key=lambda s: ["P", "M", "G", "GG", "XG", "XGG"].index(s) if s in ["P", "M", "G", "GG", "XG", "XGG"] else (100 + int(s) if s.isdigit() else 99)):
             sizes.append(t)
-        prods.append({"code": code, **meta, "name": p.get("nome"), "image": p.get("imagem_url"), "model": (p.get("modelo") or {}).get("codigo"),
+        if models:
+            for t, c in costs.items():
+                pr = price_for(models, meta, t)
+                if pr is None:
+                    warnings.append(f"product {code}: model {meta['model']} has no configured price - the worker will refuse to sell it")
+                elif c and pr < FLOOR * (c + LABEL_CENTAVOS):
+                    warnings.append(f"PRICE BELOW FLOOR: {code} size {t} price {pr} < 1.15 x (Gubo cost {c} + label {LABEL_CENTAVOS})")
+        prods.append({"code": code, **meta, "name": p.get("nome"), "image": p.get("imagem_url"), "gubo_model": (p.get("modelo") or {}).get("codigo"),
                       "colors": {k: sorted(set(v)) for k, v in cols.items()}, "sizes": sizes, "cost_centavos": costs, "visible": bool(avail)})
     prods.sort(key=lambda x: x["code"])
     return {
         "generated": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         "source": "gubo_api_dump",
         "currency": "BRL",
-        "labels": {"theme": THEME_PT, "style": STYLE_PT, "side": SIDE_PT},
+        "labels": {"theme": THEME_PT, "style": STYLE_PT, "side": SIDE_PT, "model": MODEL_NAME},
         "colors": colors,
         "breeds": sorted(breeds.values(), key=lambda b: b["name"]),
         "products": prods,

@@ -1,0 +1,10 @@
+{
+  "_note": "Breed codes for the Gubo SKU {BREED}-... (3 letters). The 3 new breeds are owner-stated (2026-11-08). The 16 approved breeds' Gubo codes are NOT in the repo: fill 'approved' (code + pt-BR name) from the Gubo Studio product list or let br-catalog-sync discover them (the storefront needs no list, it reads breeds from the Gubo dump). Seen in the repo: CAV (Cavalier King Charles), SHI (Shih Tzu, owner example).",
+  "approved": [],
+  "seen_in_repo": [{"code": "CAV", "name": "Cavalier King Charles"}, {"code": "SHI", "name": "Shih Tzu"}],
+  "new": [
+    {"code": "LHA", "name": "Lhasa Apso", "us_slug": "lhasa_apso"},
+    {"code": "MPN", "name": "Pinscher Miniatura", "us_slug": "miniature_pinscher"},
+    {"code": "VLT", "name": "Vira-lata (SRD)", "us_slug": "vira_lata"}
+  ]
+}
