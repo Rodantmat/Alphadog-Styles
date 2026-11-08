@@ -1,0 +1,9 @@
+import json,sys,os
+sys.path.insert(0,'scripts')
+from nb_req1 import CONF
+R=[]
+for slug,(nm,conf,desc) in CONF.items():
+  for mode in("light","dark"):
+    f=f"out/nb2/final/{slug}_{mode}_card.jpg"
+    R.append({"id":f"{slug}_{mode}","images":[f],"prompt":f"You are a strict independent print-on-demand art QA reviewer. The image is a contact sheet of 6 T-shirt designs of a {nm} ({mode} garment art, {'black lines on white' if mode=='light' else 'white lines on black'}). Each design = FRONT head emblem + BACK full-body sitting dog; rows: line classic (cols1-2), line cool/sunglasses (cols3-4), line heart (row2 cols1-2), geometric classic (row2 cols3-4), geometric cool (row3 cols1-2), geometric heart (row3 cols3-4). Facts: {desc}. Commonly confused with: {conf}. Check every item critically as a person looking at the printed shirt and return ONLY JSON: {{\"breed_identity\":0-10,\"looks_like\":\"..\",\"lenses_solid\":true/false (ALL four sunglasses incl. both lenses on head and back dog are completely solid {'black' if mode=='light' else 'white'} with nothing visible through them, no glare slashes),\"eyes_consistent\":true/false (all visible eyes in all designs share ONE identical style: ring outline + pupil/iris + highlight; no filled blobs, no mismatched eyes, no leftover old eye marks),\"eye_notes\":\"..\",\"lines_print_safe\":true/false (no hairline-thin or broken lines; white lines on dark not too thin),\"variant_consistency\":0-10 (within each of the 2 style families, classic/cool/heart show the same dog with same hair amount, line density, eyebrows, nostrils, mouth, chest lines; geometric designs consistent with each other),\"variant_notes\":\"..\",\"completeness\":0-10 (ears, tail, legs, paws complete, nothing cut off, no stray marks/fragments),\"overall_pass\":true/false,\"problems\":[...]}}"})
+json.dump(R,open("scripts/nb_req2.json","w"),indent=1)
