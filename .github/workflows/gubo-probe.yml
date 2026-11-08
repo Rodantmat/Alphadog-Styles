@@ -22,6 +22,8 @@ jobs:
       - run: pip install requests
       - run: python scripts/brazil/gubo_probe.py
         continue-on-error: true
+      - run: python scripts/brazil/gubo_order.py
+        continue-on-error: true
       - name: Commit results
         run: |
           git config user.name "gubo-probe"
