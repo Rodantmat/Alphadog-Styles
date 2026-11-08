@@ -1,0 +1,48 @@
+[
+ 200,
+ {
+  "objeto": "lista",
+  "dados": [
+   {
+    "objeto": "produto",
+    "codigo": "CAV-LINE-CLASSIC-F-DK",
+    "nome": "Camiseta Cavalier King Charles Classic Frente Escura",
+    "modelo": {
+     "codigo": "CAMP",
+     "nome": "Camiseta Padrão"
+    },
+    "situacao": "ativo",
+    "imagem_url": "https://studio.gubo.com.br/fileupload/f1794104503161x191254474300643900/camiseta-padrao-preto-foto-frente.jpg",
+    "cores": [
+     {
+      "codigo": "PRET",
+      "nome": "Preto"
+     },
+     {
+      "codigo": "MAR",
+      "nome": "Marrom"
+     },
+     {
+      "codigo": "VMG",
+      "nome": "Verde Musgo"
+     },
+     {
+      "codigo": "AZM",
+      "nome": "Azul Marinho"
+     }
+    ],
+    "tamanhos": [
+     "P",
+     "M",
+     "G",
+     "GG",
+     "XG",
+     "XGG"
+    ],
+    "atualizado_em": "2026-11-08T02:22:42Z"
+   }
+  ],
+  "tem_mais": false,
+  "proximo_cursor": null
+ }
+]

@@ -1,0 +1,93 @@
+{
+  "_note": "Single source of truth for the Brazilian (pt-BR) arm. Every value marked TODO-verify is NOT confirmed and must be checked by the owner before go-live.",
+  "locale": "pt-BR",
+  "currency": "BRL",
+  "domain": "alphadogstyles.com",
+  "mailboxes": {
+    "suporte": "suporte@alphadogstyles.com",
+    "customiza": "customiza@alphadogstyles.com",
+    "pedidos": "pedidos@alphadogstyles.com",
+    "_todo": "Domain assumed to be the American site's domain (owner: 'domain = the site's domain'). Mailboxes must be created/routed by the owner (see plan.md section 7)."
+  },
+  "pricing": {
+    "retail_centavos": 10990,
+    "retail_note": "Owner-stated retail R$109,90. Gubo cost seen in test mode: R$54,53 card / R$51,80 Pix (P-GG), R$62,95 (XG/XGG) - 2026-11-07 probe.",
+    "size_surcharge_centavos": {
+      "XG": 0,
+      "XGG": 0
+    },
+    "size_surcharge_todo": "TODO-verify owner decision: XG/XGG cost R$8,42 more at Gubo; surcharge currently 0."
+  },
+  "shipping": {
+    "mode": "quote_passthrough",
+    "free_over_centavos": null,
+    "preference": "mais_barata",
+    "_todo": "TODO-verify owner decision: customer pays the Gubo freight quote (default) or free shipping over a threshold. Freight is quoted live from POST /fretes/cotacoes by CEP; no static table is shipped (would be a guess)."
+  },
+  "gubo": {
+    "base_url": "https://api.gubo.com.br/v1",
+    "base_url_note": "Verified by the 2026-11-07 test probe (docs show a placeholder host). TODO-verify again with the production key.",
+    "production_days": 7,
+    "max_freight_overrun_centavos": 500,
+    "max_freight_overrun_note": "Guard: if Gubo freight exceeds what the customer paid by more than this, the order is held (needs_attention) instead of being paid from the wallet. Value is a placeholder policy, owner may change.",
+    "production_days_source": "Gubo docs: 7 business days of production + carrier time",
+    "recipient_document_required": true,
+    "webhook_path": "/api/br/gubo/webhook",
+    "wallet_note": "Orders are paid from the prepaid Gubo wallet; the owner tops it up by hand (Studio, Pix/card). The API cannot top up or create products."
+  },
+  "payments": {
+    "provider": "mercadopago",
+    "enabled": false,
+    "slots": {
+      "mercadopago": {
+        "env": [
+          "MP_ACCESS_TOKEN",
+          "MP_WEBHOOK_SECRET",
+          "MP_PUBLIC_KEY"
+        ],
+        "methods": [
+          "pix",
+          "credit_card",
+          "debit_card",
+          "boleto"
+        ],
+        "status": "placeholder - owner connects tomorrow"
+      },
+      "pix_direct": {
+        "env": [
+          "PIX_PROVIDER",
+          "PIX_API_KEY"
+        ],
+        "methods": [
+          "pix"
+        ],
+        "status": "reserved slot (Asaas / Efi / Pagar.me) - not implemented"
+      }
+    },
+    "fees_note": "TODO-verify: do not hard-code gateway fees. Vendor pages seen in the Nov 7 study: MP Pix 0,99%, MP card 4,98% instant (secondary sources)."
+  },
+  "custom_design": {
+    "fee_centavos": null,
+    "fee_note": "TODO-verify owner decision: US fee is $19.99 one-time; the BRL fee is not decided. The request/quote flow works without it (quote set by the artist per request).",
+    "gubo_product_creation": "manual in Gubo Studio (the API cannot create products)"
+  },
+  "policy": {
+    "withdrawal_days": 7,
+    "withdrawal_note": "TODO-verify with an accountant/lawyer: CDC art. 49 gives a 7-day right of withdrawal for distance sales. The US 'no returns for change of mind' wording is NOT copied. Default here is the conservative reading (7 days offered); owner decides.",
+    "defect_claim_days": 30,
+    "nf": "TODO-verify: Gubo issues the NF-e (triangular operation, simplified DANFE without values). Who is the seller of record (MEI/CNPJ under owner) and the invoice value field are unconfirmed."
+  },
+  "regions": {
+    "cookie": "ad_region",
+    "values": [
+      "us",
+      "br"
+    ]
+  },
+  "seller": {
+    "_todo": "TODO owner: fill after the MEI/CNPJ is opened. Brazilian e-commerce rules (Decreto 7.962/2013) expect the seller's name, CNPJ and address visible on the site - TODO-verify wording with the accountant.",
+    "name": null,
+    "cnpj": null,
+    "address": null
+  }
+}

@@ -1,0 +1,138 @@
+diff -ruN a/.github/workflows/store-deploy.yml b/.github/workflows/store-deploy.yml
+--- a/.github/workflows/store-deploy.yml	2026-11-07 22:18:24.677758437 -0800
++++ b/.github/workflows/store-deploy.yml	2026-11-07 22:19:42.501772911 -0800
+@@ -4,6 +4,7 @@
+   schedule:
+     - cron: '23 */2 * * *'
+   push:
++    branches: [main]   # was: any branch. A feature branch that touches store/** must never deploy to production.
+     paths: ["store/**"]
+ jobs:
+   deploy:
+@@ -42,6 +43,10 @@
+           APPLE_KEY_ID: ${{ secrets.APPLE_KEY_ID }}
+           APPLE_PRIVATE_KEY: ${{ secrets.APPLE_PRIVATE_KEY }}
+           ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
++          GUBO_API_KEY: ${{ secrets.GUBO_API_KEY }}
++          GUBO_WEBHOOK_SECRET: ${{ secrets.GUBO_WEBHOOK_SECRET }}
++          MP_ACCESS_TOKEN: ${{ secrets.MP_ACCESS_TOKEN }}
++          MP_WEBHOOK_SECRET: ${{ secrets.MP_WEBHOOK_SECRET }}
+         run: |
+           set -e
+           npm install --silent
+@@ -57,7 +62,7 @@
+           HDR=$(python3 ../../scripts/hyperdrive_setup.py | tail -1); echo "$HDR" | sed 's/HYPERDRIVE_ID=\(....\).*/HYPERDRIVE_ID=\1.../'
+           case "$HDR" in HYPERDRIVE_ID=*) printf '\n[[hyperdrive]]\nbinding = "HYPERDRIVE"\nid = "%s"\n' "${HDR#HYPERDRIVE_ID=}" >> wrangler.toml ;; esac
+           npx wrangler@4 deploy
+-          for v in DATABASE_URL ADMIN_TOKEN STRIPE_SECRET_KEY RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY ETSY_KEYSTRING; do
++          for v in DATABASE_URL ADMIN_TOKEN STRIPE_SECRET_KEY RESEND_API_KEY GOOGLE_CLIENT_ID GOOGLE_CLIENT_SECRET FACEBOOK_APP_ID FACEBOOK_APP_SECRET APPLE_CLIENT_ID APPLE_TEAM_ID APPLE_KEY_ID APPLE_PRIVATE_KEY ETSY_KEYSTRING GUBO_API_KEY GUBO_WEBHOOK_SECRET MP_ACCESS_TOKEN MP_WEBHOOK_SECRET; do
+             val=$(printf '%s' "${!v}" | tr -d '\r\n'); if [ -n "$val" ]; then printf '%s' "$val" | npx wrangler@4 secret put $v; fi
+           done
+           # Stripe webhook: one endpoint for the live domain (secret is only returned at creation); remove old endpoints for other URLs.
+@@ -74,4 +79,5 @@
+           fi
+           python3 ../../scripts/resend_setup.py || true
+           python3 ../../scripts/email_routing_setup.py || true
++          python3 ../../br/scripts/email_routing_br.py || true
+           npx wrangler@4 deployments list | tail -5
+diff -ruN a/scripts/mail_bridge.py b/scripts/mail_bridge.py
+--- a/scripts/mail_bridge.py	2026-11-07 22:18:24.670159426 -0800
++++ b/scripts/mail_bridge.py	2026-11-07 22:18:24.694398883 -0800
+@@ -26,8 +26,8 @@
+ def sync():
+     n=0
+     for addr,pw in creds().items():
+-        if addr.startswith("orders@"): continue   # marketplace sale notifications: handled by market_orders.py
+-        box="custom" if addr.startswith("customization") else "support"
++        if addr.startswith("orders@"): continue   # (pedidos@ is synced on purpose: customers reply to BR order e-mails there)   # marketplace sale notifications: handled by market_orders.py
++        box={"suporte":"br_suporte","customiza":"br_custom","pedidos":"br_pedidos"}.get(addr.split("@")[0]) or ("custom" if addr.startswith("customization") else "support")
+         try:
+             M=imaplib.IMAP4_SSL(HOST,993,ssl_context=ssl.create_default_context()); M.login(addr,pw); M.select("INBOX")
+             typ,data=M.uid("search",None,"UNKEYWORD","$AlphaSynced")
+@@ -49,7 +49,7 @@
+         except Exception as e: print("sync error",addr,e)
+     return n
+ def send(mailbox,to,subject,html,in_reply_to=None):
+-    c=creds(); addr=("customization" if mailbox=="custom" else "support")+"@alphadogstyles.com"
++    c=creds(); addr={"br_suporte":"suporte","br_custom":"customiza","br_pedidos":"pedidos"}.get(mailbox) or ("customization" if mailbox=="custom" else "support"); addr+="@alphadogstyles.com"
+     if addr not in c: return False
+     msg=EmailMessage(); msg["From"]=f"AlphaDog Styles <{addr}>"; msg["To"]=to; msg["Subject"]=subject; msg["Date"]=email.utils.formatdate(localtime=True); msg["Message-ID"]=email.utils.make_msgid(domain="alphadogstyles.com")
+     if in_reply_to: msg["In-Reply-To"]=in_reply_to; msg["References"]=in_reply_to
+diff -ruN a/store/index.html b/store/index.html
+--- a/store/index.html	2026-11-07 22:18:24.662776213 -0800
++++ b/store/index.html	2026-11-07 22:18:24.694284520 -0800
+@@ -7,6 +7,7 @@
+ <meta name="description" content="Custom dog-breed tees and hoodies. Pick your breed, art style and placement, we print it to order and ship it across the US.">
+ <meta name="theme-color" content="#FF6B35">
+ <meta property="og:type" content="website"><meta property="og:site_name" content="AlphaDog Styles"><meta property="og:title" content="AlphaDog Styles - Wear your best friend"><meta property="og:description" content="Custom dog-breed tees and hoodies. 33 breeds, pick your style and placement, printed to order and shipped across the US."><meta property="og:image" content="https://alphadogstyles.com/logo.png"><meta name="twitter:card" content="summary">
++<link rel="alternate" hreflang="en-US" href="https://alphadogstyles.com/"><link rel="alternate" hreflang="pt-BR" href="https://alphadogstyles.com/br/"><link rel="alternate" hreflang="x-default" href="https://alphadogstyles.com/">
+ <link rel="icon" href="logo.png"><link rel="apple-touch-icon" href="logo.png">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+@@ -33,7 +34,7 @@
+     <div><h4 data-i="Help">Help</h4><a href="#/page/faq" data-i="FAQ">FAQ</a><a href="#/page/shipping" data-i="Shipping policy">Shipping policy</a><a href="#/page/returns" data-i="Returns & refunds">Returns & refunds</a><a href="#/page/sizing" data-i="Size guide">Size guide</a><a href="#/page/contact" data-i="Contact">Contact</a><a href="mailto:support@alphadogstyles.com" data-i="Support">Support</a><a href="#/custom" data-i="Custom design">Custom design</a></div>
+     <div><h4 data-i="Stay in the pack">Stay in the pack</h4><form id="news" class="inline"><input type="email" required placeholder="you@email.com" aria-label="Email" data-ia="Email"><button class="btn sm" data-i="Join">Join</button></form><small data-i="New breeds and colors first. No spam.">New breeds and colors first. No spam.</small></div>
+   </div>
+-  <div class="legal">© <span id="yr"></span> AlphaDog Styles · <a href="#/page/privacy" data-i="Privacy">Privacy</a> · <a href="#/page/terms" data-i="Terms">Terms</a> · <select id="lang" aria-label="Language"><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option></select></div>
++  <div class="legal">© <span id="yr"></span> AlphaDog Styles · <a href="#/page/privacy" data-i="Privacy">Privacy</a> · <a href="#/page/terms" data-i="Terms">Terms</a> · <a href="/?region=br" rel="nofollow">Brasil (Português)</a> · <select id="lang" aria-label="Language"><option value="en">English</option><option value="es">Español</option><option value="pt">Português</option></select></div>
+ </footer>
+ <div class="toast" id="toast" role="status"></div>
+ <script type="module" src="js/app.js?v=20261105a"></script>
+diff -ruN a/store/worker/index.js b/store/worker/index.js
+--- a/store/worker/index.js	2026-11-07 22:18:24.646900431 -0800
++++ b/store/worker/index.js	2026-11-07 22:18:24.692801980 -0800
+@@ -4,6 +4,7 @@
+ import PostalMime from "postal-mime";
+ import cat from "../data/catalog.json";
+ import MPLAN from "../data/market_plan.json";
++import {handleBR,geoGate,brMailbox} from "./br/br.js";   // pt-BR arm (br/ in the branch)
+ const esc=x=>String(x).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+ const J=(o,s=200,h={})=>new Response(JSON.stringify(o),{status:s,headers:{"content-type":"application/json","cache-control":"no-store",...h}});
+ const err=(m,s=400)=>J({error:m},s);
+@@ -126,20 +127,22 @@
+    const db=env.DB||makeDB(env.DATABASE_URL,env.HYPERDRIVE);
+    try{
+      const raw=await new Response(message.raw).arrayBuffer(); const mail_=await PostalMime.parse(raw);
+-     const to=String(message.to||"").toLowerCase(), box=to.startsWith("customization")?"custom":"support";
++     const to=String(message.to||"").toLowerCase(), box=brMailbox(to)||(to.startsWith("customization")?"custom":"support");
+      const text=(mail_.text||String(mail_.html||"").replace(/<[^>]+>/g," ")).slice(0,20000);
+      await db.prepare("INSERT INTO support_inbox(mailbox,from_addr,subject,body,raw_size,created) VALUES(?,?,?,?,?,?)").bind(box,String(message.from||"").toLowerCase(),String(mail_.subject||"").slice(0,300),text,raw.byteLength,Date.now()).run();
+    }finally{ if(db.close)ctx.waitUntil(db.close()) }
+-   const fwd=String(message.to||"").toLowerCase().startsWith("customization")?env.FORWARD_CUSTOM:env.FORWARD_SUPPORT;  // separate mailboxes (verified Email Routing destinations)
++   const _t=String(message.to||"").toLowerCase(),fwd=_t.startsWith("suporte@")?env.FORWARD_BR_SUPORTE:_t.startsWith("customiza@")?env.FORWARD_BR_CUSTOM:_t.startsWith("pedidos@")?env.FORWARD_BR_PEDIDOS:_t.startsWith("customization")?env.FORWARD_CUSTOM:env.FORWARD_SUPPORT;  // separate mailboxes (verified Email Routing destinations)
+    if(fwd){try{await message.forward(fwd)}catch(e){}}
+  },
+  async fetch(req,env0,ctx){const box={};try{return await this.handle(req,env0,ctx,box)}finally{if(box.db&&box.db.close)ctx.waitUntil(box.db.close())}},
+  async handle(req,env0,ctx,box){
+   const u=new URL(req.url),path=u.pathname,m=req.method;
+   const env={...env0};if(path.startsWith("/api/")&&!path.startsWith("/api/health")){env._db=env0.DB||makeDB(env0.DATABASE_URL,env0.HYPERDRIVE);box.db=env._db}const DB=env._db;
++  {const gg=await geoGate(req,env0,path);if(gg)return gg}   // same-URL region routing (BR visitors get /br/)
+   if(!path.startsWith("/api/"))return env0.ASSETS.fetch(req);
+   let body={},raw="";if((m==="POST"||m==="PUT")&&!path.includes("/oauth/")){raw=await req.text();if(path!=="/api/stripe/webhook"){try{body=raw?JSON.parse(raw):{}}catch{return err("Bad JSON")}}}
+   try{
++  {const br=await handleBR({mail,kvGet,kvSet,rnd,okEmail},{req,env,path,m,body,raw,u,ctx});if(br)return br}   // /api/br/* and /api/internal/br/*
+   if(path==="/api/health")return J({ok:true,mail:!!env.RESEND_API_KEY||env.DEV_MODE==="1",providers:providers(env)});
+   if(path==="/api/auth/request"&&m==="POST"){
+     const email=String(body.email||"").trim().toLowerCase(); if(!okEmail(email))return err("Enter a valid email");
+@@ -368,7 +371,7 @@
+         fulfil_last:fl,fulfil_age_min:fl?Math.round((T-fl)/60000):null,checkout_paused:(await kvGet(DB,"checkout_paused"))==="1",fulfil_paused:(await kvGet(DB,"fulfil_paused"))==="1",issues,server_time:T});
+     }
+     if(path==="/api/internal/send"&&m==="POST"){if(!okEmail(body.to)||!body.subject||!body.html)return err("to, subject, html required");
+-      const from=body.mailbox==="custom"?CUSTOM_FROM:SUPPORT_FROM,rt=body.mailbox==="custom"?"customization@alphadogstyles.com":"support@alphadogstyles.com";
++      const BRX={br_suporte:["suporte","AlphaDog Suporte"],br_custom:["customiza","AlphaDog Personalizados"],br_pedidos:["pedidos","AlphaDog Pedidos"]}[body.mailbox];const from=BRX?`${BRX[1]} <${BRX[0]}@alphadogstyles.com>`:body.mailbox==="custom"?CUSTOM_FROM:SUPPORT_FROM,rt=BRX?`${BRX[0]}@alphadogstyles.com`:body.mailbox==="custom"?"customization@alphadogstyles.com":"support@alphadogstyles.com";
+       const ok=await mail(env,body.to,String(body.subject).slice(0,200),String(body.html).slice(0,20000),rt,from);return J({ok})}
+     if(path==="/api/internal/support"&&m==="GET"){const st=u.searchParams.get("status")||"new";const r=await DB.prepare("SELECT id,mailbox,from_addr,subject,body,status,created,reply FROM support_inbox WHERE status=? ORDER BY created LIMIT 50").bind(st).all();return J({items:r.results})}
+     if((im=path.match(/^\/api\/internal\/support\/(\d+)$/))&&m==="POST"){await DB.prepare("UPDATE support_inbox SET status=COALESCE(?::text,status),reply=COALESCE(?::text,reply),handled=? WHERE id=?").bind(body.status||null,body.reply||null,now(),+im[1]).run();return J({ok:true})}
+diff -ruN a/store/worker/wrangler.toml b/store/worker/wrangler.toml
+--- a/store/worker/wrangler.toml	2026-11-07 22:18:24.654989132 -0800
++++ b/store/worker/wrangler.toml	2026-11-07 22:18:24.694166648 -0800
+@@ -10,7 +10,8 @@
+ directory = "../"
+ binding = "ASSETS"
+ not_found_handling = "single-page-application"
+-run_worker_first = ["/api/*"]
++# "/" and "/br" are run through the Worker so country=BR visitors get the pt-BR page at the same URL (cheap: HTML entry only)
++run_worker_first = ["/api/*", "/", "/index.html", "/br", "/br/"]
+ [vars]
+ MAIL_FROM = "AlphaDog Styles <orders@alphadogstyles.com>"
+ SITE_URL = "https://alphadogstyles.com"
