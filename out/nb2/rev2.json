@@ -1,0 +1,80 @@
+{
+ "lhasa_apso_dark": {
+  "breed_identity": 9,
+  "looks_like": "Lhasa Apso",
+  "lenses_solid": true,
+  "eyes_consistent": true,
+  "eye_notes": "All visible eyes are consistent (ring outline + pupil + highlight).",
+  "lines_print_safe": true,
+  "variant_consistency": 9,
+  "variant_notes": "The line art family and geometric family are internally consistent. The heart and sunglasses variants are built correctly on the base designs.",
+  "completeness": 10,
+  "overall_pass": true,
+  "problems": []
+ },
+ "vira_lata_light": {
+  "breed_identity": 9,
+  "looks_like": "Vira-lata (Brazilian SRD)",
+  "lenses_solid": true,
+  "eyes_consistent": true,
+  "eye_notes": "All visible eyes are consistent (ring outline + pupil/iris + highlight).",
+  "lines_print_safe": true,
+  "variant_consistency": 9,
+  "variant_notes": "The line art family is consistent across classic, cool, and heart variants. The geometric family is also consistent across its variants.",
+  "completeness": 10,
+  "overall_pass": true,
+  "problems": []
+ },
+ "vira_lata_dark": {
+  "breed_identity": 9,
+  "looks_like": "Vira-lata (Brazilian street dog)",
+  "lenses_solid": true,
+  "eyes_consistent": true,
+  "eye_notes": "All visible eyes are consistent (ring outline + pupil + highlight).",
+  "lines_print_safe": true,
+  "variant_consistency": 9,
+  "variant_notes": "The line art family is consistent across classic, cool, and heart variants. The geometric family is also consistent across its variants.",
+  "completeness": 10,
+  "overall_pass": true,
+  "problems": []
+ },
+ "lhasa_apso_light": {
+  "breed_identity": 9,
+  "looks_like": "Lhasa Apso",
+  "lenses_solid": true,
+  "eyes_consistent": true,
+  "eye_notes": "All visible eyes share the same consistent style: ring outline, black pupil, and white highlight.",
+  "lines_print_safe": true,
+  "variant_consistency": 10,
+  "variant_notes": "Excellent consistency across variants. Base heads and bodies are identical within their respective style families (line and geometric). Additions like sunglasses and collars are applied cleanly.",
+  "completeness": 10,
+  "overall_pass": true,
+  "problems": []
+ },
+ "miniature_pinscher_light": {
+  "breed_identity": 9,
+  "looks_like": "Miniature Pinscher",
+  "lenses_solid": true,
+  "eyes_consistent": true,
+  "eye_notes": "All visible eyes consistently feature an outer ring, a dark pupil/iris, and a clear white highlight dot.",
+  "lines_print_safe": true,
+  "variant_consistency": 10,
+  "variant_notes": "Excellent consistency. The base dog is identical across variants within each style family. The heart variants appropriately add a collar with a heart tag on the back designs to carry the theme.",
+  "completeness": 10,
+  "overall_pass": true,
+  "problems": []
+ },
+ "miniature_pinscher_dark": {
+  "breed_identity": 9,
+  "looks_like": "Miniature Pinscher",
+  "lenses_solid": true,
+  "eyes_consistent": true,
+  "eye_notes": "All visible eyes consistently use an outer ring with an inner pupil/iris and a single highlight dot. No mismatched or leftover marks.",
+  "lines_print_safe": true,
+  "variant_consistency": 10,
+  "variant_notes": "Excellent consistency across variants. The base dog models are identical within their respective line and geometric families, with appropriate additions (sunglasses, collars, backgrounds) for the cool and heart variants.",
+  "completeness": 10,
+  "overall_pass": true,
+  "problems": []
+ }
+}
