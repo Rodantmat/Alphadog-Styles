@@ -16,7 +16,7 @@ def call(p,method="GET",body=None):
     raise err
 apply_,sh,n=int(sys.argv[1]),int(sys.argv[2]),int(sys.argv[3]); only=set(sys.argv[4:])
 bad={}
-for f in glob.glob("out/audit/shard*.tsv"):
+for f in glob.glob("out/audit/*.tsv"):
     for r in csv.DictReader(open(f),delimiter="\t"):
         if r.get("overflow") and r["pid"]: bad.setdefault((r["shop"],r["pid"]),[]).append(r)
 keys=sorted(k for k in bad if not only or k[1] in only); keys=[k for i,k in enumerate(keys) if i%n==sh]
