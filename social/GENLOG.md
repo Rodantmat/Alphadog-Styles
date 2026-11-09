@@ -25,3 +25,4 @@
 2026-11-09T18:37:51Z checker run started
 2026-11-09T18:40:08Z checker: Mon Nov 9 slot A (laugh01 Labracadabrador, due 17:00Z) re-checked acct1+2: SENT on IG 6aee5fa2af7e526d43e9ad2d, TikTok 6aee5fa39214322f68b98f04, FB 6aee5fc1004e4879a71f4de2, Pinterest 6aeec4ce004e4879a73a4653; Nov 9 04:00Z B sent on all 4. No failed/stuck/missed; nothing forced; future scheduled items untouched. Result OK.
 2026-11-09T22:51:07Z generator run started
+2026-11-09T22:51:24Z generator: lead check OK, nothing to build. Built A+B files exist for every day 2026-11-10..2026-11-19 (10 days ahead, target 7). Heavy-asset restore skipped (not needed). Run finished.
