@@ -19,20 +19,21 @@ FAM=lambda p:"Tee" if p in("Tee A","Tee B") else p
 HATS={"Mesh Trucker Cap","Foam Trucker Hat","Dad Hat"}
 def load():
     d=json.load(gzip.open("out/mockidx/slim.json.gz","rt")); d=[o for o in d if o["breed"] not in FORBID]
-    P={k:[o for o in d if (o["prod"],o["cam"])==v] for k,v in PEOPLE.items()}
+    P={k:[o for o in d if (o["prod"],o["cam"])==v and (k!="polo" or o["colour"]=="Athletic Heather")] for k,v in PEOPLE.items()}  # white polo hides the line art
     big=("Tee A","Tee B","Hoodie")
-    F=[o for o in d if o["cam"] in("front","front-2") and ((o["prod"] in big and o["place"] in("Big Portrait","Pocket Print","Front & Back")) or o["prod"] in("Racerback Tank","Tank Top","Dad Hat","Polo","Mesh Trucker Cap","Foam Trucker Hat"))]
-    Bk=[o for o in d if o["cam"] in("back","back-2") and ((o["prod"] in big and o["place"] in BACKP) or o["prod"] in("Racerback Tank","Tank Top"))]
-    return P,F,Bk
+    F=[o for o in d if o["cam"] in("front","front-2") and ((o["prod"] in big and o["place"] in("Big Portrait","Pocket Print","Front & Back")) or o["prod"] in("Dad Hat","Polo","Mesh Trucker Cap","Foam Trucker Hat"))]
+    Bk=[o for o in d if o["cam"] in("back","back-2") and ((o["prod"] in big and o["place"] in BACKP) or False)]
+    V=[o for o in d if o["cam"] in("hanging-1","front-collar-closeup") and o["prod"] in big and o["place"] in("Big Portrait","Pocket Print","Front & Back")]
+    return P,F,Bk,V
 def pick(rng,pool,ok):
     c=[o for o in pool if ok(o)]
     return rng.choice(c) if c else None
 def make(rng,pools,hist,vid,idx):
-    P,F,Bk=pools; recent=set(b for h in hist[-1:] for b in h["breeds"]); art_hist=set(tuple(a) for h in hist[-ART_WINDOW:] for a in h["arts"]); assets=set(a for h in hist for a in h["srcs"])
+    P,F,Bk,V=pools; recent=set(b for h in hist[-1:] for b in h["breeds"]); art_hist=set(tuple(a) for h in hist[-ART_WINDOW:] for a in h["arts"]); assets=set(a for h in hist for a in h["srcs"])
     prevpc=set(tuple(x) for x in (hist[-1].get("pc",[]) if hist else [])); prevprods=set(x[0] for x in prevpc)
     pair=PAIRS[idx%len(PAIRS)]
     # 10 frames: person, back, front, back, front, person, back, front, back, back
-    slots=["P0","B","F","B","F","P1","B","F","B","B"]
+    slots=["P0","B","F","B","V","P1","B","F","B","B"]
     for attempt in range(1500):
         order=[]; used_b=set(); arts=set(); cols=set(); cnt={}; fail=False
         for s in slots:
@@ -44,14 +45,15 @@ def make(rng,pools,hist,vid,idx):
                 if o["colour"] and o["colour"] in cols and not s[0]=="P": return False
                 if o["colour"] and s[0]!="P" and (o["prod"],o["colour"]) in prevpc: return False
                 if prev:
-                    if FAM(o["prod"]) in {FAM(x["prod"]) for x in order[-2:]} or o["style"]==prev["style"] and rng.random()<.9: return False
+                    if FAM(o["prod"]) in {FAM(x["prod"]) for x in order[-(1 if o["prod"] in("Tee A","Tee B","Hoodie") else 2):]} or o["style"]==prev["style"] and rng.random()<.9: return False
                     if s[0]!="P" and prev["prod"] not in PEOPLEPRODS and o["tone"] and prev["tone"] and o["tone"]==prev["tone"]: return False
                 g="hat" if o["prod"] in HATS else ("tee" if o["prod"] in("Tee A","Tee B") else o["prod"])
-                lim={"hat":3,"tee":3,"Hoodie":3}.get(g,2)
+                lim={"hat":3,"tee":4,"Hoodie":4}.get(g,2)
                 if cnt.get(g,0)>=lim: return False
                 return True
             if s[0]=="P": o=pick(rng,P[pair[int(s[1])]],ok)
             elif s=="F": o=pick(rng,F,ok)
+            elif s=="V": o=pick(rng,V,ok)
             else: o=pick(rng,Bk,ok)
             if not o: fail=True; break
             order.append(o); used_b.add(o["breed"]); arts.add((o["breed"],o["style"],o["sub"]))
@@ -59,8 +61,8 @@ def make(rng,pools,hist,vid,idx):
             g="hat" if o["prod"] in HATS else ("tee" if o["prod"] in("Tee A","Tee B") else o["prod"]); cnt[g]=cnt.get(g,0)+1
         if fail: continue
         prods={o["prod"] for o in order}
-        if len(prods)<6 or len(prods-{"Tee A","Tee B","Hoodie"})<3: continue
-        if len(prods&prevprods)>4: continue
+        if len(prods)<5 or len(prods-{"Tee A","Tee B","Hoodie"})<2: continue
+        if len(prods&prevprods)>5: continue
         if sum(1 for o in order if o["tone"]=="dark")<3 or sum(1 for o in order if o["tone"] in("light","pastel"))<3: continue
         if sum(1 for o in order if o["breed"] in POPULAR)<3: continue
         if len({o["style"] for o in order})<2: continue
