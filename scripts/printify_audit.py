@@ -8,7 +8,7 @@ def call(p,raw=False):
     err=None
     for t in range(5):
         try:
-            r=urllib.request.urlopen(urllib.request.Request(p if p.startswith("http") else "https://api.printify.com"+p,headers=H),timeout=90).read()
+            r=urllib.request.urlopen(urllib.request.Request(p if p.startswith("http") else "https://api.printify.com"+p,headers=H if not p.startswith("http") else {"User-Agent":"Mozilla/5.0"}),timeout=90).read()
             return r if raw else json.loads(r)
         except Exception as e: err=e; time.sleep(3+4*t)
     raise err
