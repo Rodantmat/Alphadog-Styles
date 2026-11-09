@@ -10,10 +10,18 @@ def call(p,raw=False):
         try:
             r=urllib.request.urlopen(urllib.request.Request(p if p.startswith("http") else "https://api.printify.com"+p,headers=H if not p.startswith("http") else {"User-Agent":"Mozilla/5.0"}),timeout=90).read()
             return r if raw else json.loads(r)
-        except Exception as e: err=e; time.sleep(3+4*t)
+        except Exception as e:
+            err=e; time.sleep(30+20*t if "429" in str(e) else 3+4*t)
     raise err
 sh,n=int(sys.argv[1]),int(sys.argv[2]); only=set(sys.argv[3:])
 rows=json.load(open("out/mockidx/index.json")); rows=[r for r in rows if r["bp"] in(77,145,12,1734,1735,1447,1402,18,39) and (not only or r["pid"] in only)]
+import glob,csv
+done=set()
+for f in glob.glob("out/audit/*.tsv"):
+    for l in open(f):
+        c=l.split("\t")
+        if len(c)>7 and c[3]!="ERR" and c[1]!="pid": done.add(c[1])
+rows=[r for r in rows if r["pid"] not in done]
 rows=[r for i,r in enumerate(sorted(rows,key=lambda r:r["pid"])) if i%n==sh]
 os.makedirs("out/audit",exist_ok=True); L=threading.Lock(); dims={}; arts={}
 def area(bp,prov,vid,pos):
@@ -31,8 +39,11 @@ def art(iid):
             ys,xs=np.where(a>20); h,w=a.shape; r=(round(xs.min()/w,3),round(ys.min()/h,3),round((xs.max()+1)/w,3),round((ys.max()+1)/h,3),u.get("width"),u.get("height"))
     except Exception as e: r=("err",str(e)[:40])
     arts[iid]=r; return r
-out=open(f"out/audit/shard{sh}.tsv","w"); out.write("shop\tpid\ttitle\tbp\tprov\tpos\timg\tx\ty\tscale\tareaW\tareaH\timgW\timgH\tbbox\toverflow\tedgecut\n")
+out=open(f"out/audit/r2_shard{sh}.tsv","w"); out.write("shop\tpid\ttitle\tbp\tprov\tpos\timg\tx\ty\tscale\tareaW\tareaH\timgW\timgH\tbbox\toverflow\tedgecut\n")
 def one(r):
+    try: return one2(r)
+    except Exception as e: return [f"{r['shop']}\t{r['pid']}\t{r['title']}\tERR\t{str(e)[:80]}\n"]
+def one2(r):
     try: p=call(f"/v1/shops/{r['shop']}/products/{r['pid']}.json")
     except Exception as e: return [f"{r['shop']}\t{r['pid']}\t{r['title']}\tERR\t{e}\n"]
     res=[]
@@ -59,7 +70,7 @@ def one(r):
                     if cy0<-2 or cy1>Hh+2: ov.append("CONTENTCLIP")
                 res.append(f"{r['shop']}\t{r['pid']}\t{p['title']}\t{p['blueprint_id']}\t{p['print_provider_id']}\t{ph['position']}\t{im['id']}\t{im['x']}\t{im['y']}\t{im['scale']}\t{W}\t{Hh}\t{im['width']}\t{im['height']}\t{bb}\t{','.join(ov)}\t{ec}\n")
     return res
-with cf.ThreadPoolExecutor(6) as ex:
+with cf.ThreadPoolExecutor(3) as ex:
     for k,res in enumerate(ex.map(one,rows)):
         for l in res: out.write(l)
         if k%50==0: out.flush(); print(k,len(rows),flush=True)
