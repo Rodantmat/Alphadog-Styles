@@ -1,5 +1,7 @@
 shop	pid	title	bp	prov	pos	img	x	y	scale	areaW	areaH	imgW	imgH	bbox	overflow	edgecut
-29545924	6ae5737b90e00e273b088257	German Shepherd T-Shirt Dog Lover Line Art Heart Front & Back	145	99	back	6ae56b8341ffed40c3acf60f	0.5	0.5	0.898	3185	3636	4155	5400	('err', 'HTTP Error 403: Forbidden')	top1%,bottom1%	
-29545924	6ae5737b90e00e273b088257	German Shepherd T-Shirt Dog Lover Line Art Heart Front & Back	145	99	front	6ae56b8317b1a6034d808945	0.76	0.17	0.3	3185	3636	1114	1200	('err', 'HTTP Error 403: Forbidden')		
-29545924	6ae5737b90e00e273b088257	German Shepherd T-Shirt Dog Lover Line Art Heart Front & Back	145	99	back	6ae56b855bfaa89b36e125cf	0.5	0.5	0.898	3185	3636	4155	5400	('err', 'HTTP Error 403: Forbidden')	top1%,bottom1%	
-29545924	6ae5737b90e00e273b088257	German Shepherd T-Shirt Dog Lover Line Art Heart Front & Back	145	99	front	6ae56b84ccfd1081ce10f86a	0.76	0.17	0.3	3185	3636	1114	1200	('err', 'HTTP Error 403: Forbidden')		
+29544854	6ae561c9dfc920946610704b	PILOT Golden Retriever Line Art Tee - Pocket Portrait and Full Body Back (draft)	ERR	HTTP Error 429: Too Many Requests
+29544854	6ae56b42b3e56e7b5f092bbd	French Bulldog Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	ERR	HTTP Error 429: Too Many Requests
+29544854	6ae56b5b93e71ab22e09ffe5	Labrador Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	ERR	HTTP Error 429: Too Many Requests
+29544854	6ae56b7155e86fafe60acc99	Golden Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	ERR	HTTP Error 429: Too Many Requests
+29544854	6ae56b8990e00e273b087b18	German Shepherd Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	ERR	HTTP Error 429: Too Many Requests
+29544854	6ae56ba055e86fafe60acccc	Dachshund Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	ERR	HTTP Error 429: Too Many Requests
