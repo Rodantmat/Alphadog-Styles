@@ -11,19 +11,21 @@ FB,FR,FS=B2.FB,B2.FR,B2.FS
 def cover(im,W,H):
     w,h=im.size; s=max(W/w,H/h); im=im.resize((int(w*s)+1,int(h*s)+1),Image.LANCZOS); L=(im.width-W)//2; T=(im.height-H)//2; return im.crop((L,T,L+W,T+H))
 def tile(path,W,H):
+    R=300 if H>=1500 else 0
     im=Image.open(path).convert("RGB"); w,h=im.size
     edge=np.array(im.crop((0,h-6,w,h))).astype("float32")
-    if edge.mean(axis=2).std()>22: return cover(im,W,H)          # busy photo: true cover
+    if edge.mean(axis=2).std()>22:   # photo/square mockup: show the WHOLE image (never crop the design), blurred fill behind
+        bg=cover(im,W,H).filter(ImageFilter.GaussianBlur(28)); bg=Image.eval(bg,lambda v:int(v*0.55)); sc=min(W/w,(H-R)/h); im3=im.resize((int(w*sc),int(h*sc)),Image.LANCZOS); bg.paste(im3,((W-im3.width)//2,max(0,(H-R-im3.height)//2+(30 if R else 0)))); return bg
     a=np.array(im).astype("int16"); bgc=np.median(np.concatenate([a[:4,:4].reshape(-1,3),a[:4,-4:].reshape(-1,3),a[-4:,:4].reshape(-1,3),a[-4:,-4:].reshape(-1,3)]),axis=0)
     m=(np.abs(a-bgc).max(axis=2)>22)
-    if m.sum()>200:
-        ys,xs=np.where(m); x0,x1,y0,y1=xs.min(),xs.max(),ys.min(),ys.max(); mx=int((x1-x0)*0.06)+4; my=int((y1-y0)*0.06)+4
+    if m.sum()>200 and m.sum()>0.04*m.size:
+        ys,xs=np.where(m); x0,x1,y0,y1=xs.min(),xs.max(),ys.min(),ys.max(); mx=int((x1-x0)*0.10)+12; my=int((y1-y0)*0.10)+12
         im=im.crop((max(0,x0-mx),max(0,y0-my),min(w,x1+mx),min(h,y1+my))); w,h=im.size
-    s=min(W*0.96/w,(H-300)/h); im2=im.resize((max(1,int(w*s)),max(1,int(h*s))),Image.LANCZOS)
+    s=min(W*0.90/w,(H-(340 if R else 20))/h); im2=im.resize((max(1,int(w*s)),max(1,int(h*s))),Image.LANCZOS)
     top=np.array(im.resize((W,H)).crop((0,0,W,4))).mean(axis=(0,1)); bot=np.array(im.resize((W,H)).crop((0,H-4,W,H))).mean(axis=(0,1))
     a=np.zeros((H,W,3),"float32")
     for y in range(H): t=y/(H-1); a[y]=top*(1-t)+bot*t
-    can=Image.fromarray(a.astype("uint8")); can.paste(im2,((W-im2.width)//2,max(0,(H-300-im2.height)//2+30))); return can
+    can=Image.fromarray(a.astype("uint8")); can.paste(im2,((W-im2.width)//2,max(0,(H-R-im2.height)//2+(30 if R else 0)))); return can
 def brand(can,title=None,W=1080,H=1920):
     d=ImageDraw.Draw(can)
     if os.path.exists(B2.LOGO):
@@ -46,7 +48,7 @@ def frames_for(p,od,files):
     elif fmt=="reel_split":
         for k in range(0,len(files)-1,2):
             top=tile(files[k],W,H//2); bot=tile(files[k+1],W,H//2); can=Image.new("RGB",(W,H)); can.paste(top,(0,0)); can.paste(bot,(0,H//2))
-            ImageDraw.Draw(can).rectangle([0,H//2-3,W,H//2+3],fill=(250,248,242)); can=brand(can,title if k==0 else None); fn=f"{od}/f{k//2:02d}.png"; can.save(fn); out.append(fn)
+            ImageDraw.Draw(can).rectangle([0,H//2-3,W,H//2+3],fill=(250,248,242)); can=brand(can,None); fn=f"{od}/f{k//2:02d}.png"; can.save(fn); out.append(fn)
     elif fmt=="reel_grid":
         n=min(6,len(files)); tw,th=W//2,(H-300)//3
         for s_ in range(1,n+1):
@@ -61,7 +63,7 @@ def ffmpeg_reel(p,od,fr,music):
     ins=[];filt=[]; DU=p.get('durs') if fmt=='reel_rhythm' and p.get('durs') else [D]*len(fr)
     for i,f in enumerate(fr):
         ins+=["-framerate","30","-loop","1","-t",f"{DU[i]+X}","-i",f]; D=DU[i]
-        zmax={"reel_hero":0.18,"reel_flip":0.10}.get(fmt,0.07); step=zmax/(D*30)
+        zmax=0.035; step=zmax/(D*30)
         z=f"min(zoom+{step:.5f},{1+zmax})" if i%2==0 else f"if(eq(on,1),{1+zmax},max(zoom-{step:.5f},1.0))"
         if fmt in("reel_split","reel_grid"): z="1.0"
         filt.append(f"[{i}:v]scale=1700:3022:flags=lanczos,zoompan=z='{z}':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,setsar=1,format=yuv420p[v{i}]")
