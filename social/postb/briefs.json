@@ -1,1008 +1,1899 @@
 [
  {
-  "id": "b20",
-  "prod": "Tee A",
+  "id": "m40",
+  "prod": "Mix",
+  "title": "Dog people wear it better",
   "breeds": [
-   "Doberman Pinscher",
-   "Siberian Husky",
-   "Cavalier King Charles Spaniel",
-   "Cane Corso",
-   "Golden Retriever",
-   "Beagle"
-  ],
-  "colours": [
-   "Black",
-   "Charcoal",
-   "Heather Navy"
-  ],
-  "tone": "dark",
-  "design": [
-   "Line Art",
-   "Cool"
-  ],
-  "place": "Big Portrait",
-  "grp": "closeup",
-  "format": "reel_grid",
-  "trans": 2,
-  "music": "Funk & Disco",
-  "pal": "charcoal",
-  "cap": "seasonal",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae597e2aa7972528106a410/42830/97994/doberman-pinscher-t-shirt-dog-lover-line-art-cool-big-portrait.jpg",
-    "breed": "Doberman Pinscher",
-    "colour": "Heather Navy",
-    "cam": "front-collar-closeup",
-    "pid": "6ae597e2aa7972528106a410"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae599550e146105c80c72e8/38192/97994/siberian-husky-t-shirt-dog-lover-line-art-cool-big-portrait.jpg",
-    "breed": "Siberian Husky",
-    "colour": "Black",
-    "cam": "front-collar-closeup",
-    "pid": "6ae599550e146105c80c72e8"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae59411aa7972528106a1ff/42830/97994/cavalier-king-charles-spaniel-t-shirt-dog-lover-line-art-cool-big-portrait.jpg",
-    "breed": "Cavalier King Charles Spaniel",
-    "colour": "Heather Navy",
-    "cam": "front-collar-closeup",
-    "pid": "6ae59411aa7972528106a1ff"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae593f251172073430337d0/42830/97994/cane-corso-t-shirt-dog-lover-line-art-cool-big-portrait.jpg",
-    "breed": "Cane Corso",
-    "colour": "Heather Navy",
-    "cam": "front-collar-closeup",
-    "pid": "6ae593f251172073430337d0"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae592f00e146105c80c6d84/42830/97994/golden-retriever-t-shirt-dog-lover-line-art-cool-big-portrait.jpg",
-    "breed": "Golden Retriever",
-    "colour": "Heather Navy",
-    "cam": "front-collar-closeup",
-    "pid": "6ae592f00e146105c80c6d84"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae59372944026b113050f3d/38181/97994/beagle-t-shirt-dog-lover-line-art-cool-big-portrait.jpg",
-    "breed": "Beagle",
-    "colour": "Charcoal",
-    "cam": "front-collar-closeup",
-    "pid": "6ae59372944026b113050f3d"
-   }
-  ]
- },
- {
-  "id": "b21",
-  "prod": "Dad Hat",
-  "breeds": [
-   "Boxer",
    "Bernese Mountain Dog",
-   "Standard Poodle",
+   "Cavalier King Charles Spaniel",
+   "Pembroke Welsh Corgi",
    "Australian Shepherd",
-   "Rottweiler",
+   "Boxer",
+   "German Shepherd",
+   "Boston Terrier",
+   "American Pit Bull Terrier",
+   "Golden Retriever",
    "Border Collie"
   ],
-  "colours": [
-   "Khaki",
-   "Stone"
-  ],
-  "tone": "light",
-  "design": [
-   "Line Art",
-   "Heart"
-  ],
-  "place": "",
-  "grp": "flat-front",
-  "format": "reel_hero",
-  "trans": 1,
-  "music": "Chill & Lo-fi",
-  "pal": "ink",
-  "cap": "benefit",
+  "format": "reel_split",
+  "trans": 5,
+  "music": "Feel-good",
+  "cap": "seasonal",
+  "durs": null,
   "assets": [
    {
-    "src": "https://images.printify.com/mockup/6ae7a2af8e070d8cc20b6599/105380/135042/boxer-dad-hat-dog-lover-line-art-heart.jpg",
-    "breed": "Boxer",
-    "colour": "Stone",
-    "cam": "front",
-    "pid": "6ae7a2af8e070d8cc20b6599"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a324e9fcc76a2908fa2e/105380/135042/bernese-mountain-dog-dad-hat-dog-lover-line-art-heart.jpg",
+    "src": "https://images.printify.com/mockup/6ae7a346cefd302331097d76/118545/110007/bernese-mountain-dog-mesh-trucker-cap-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a346cefd302331097d76",
     "breed": "Bernese Mountain Dog",
-    "colour": "Stone",
-    "cam": "front",
-    "pid": "6ae7a324e9fcc76a2908fa2e"
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae79fd38e070d8cc20b6246/105375/135042/standard-poodle-dad-hat-dog-lover-line-art-heart.jpg",
-    "breed": "Standard Poodle",
-    "colour": "Khaki",
-    "cam": "front",
-    "pid": "6ae79fd38e070d8cc20b6246"
+    "src": "https://images.printify.com/mockup/6ae575951db256d3020eaad9/33419/98425/cavalier-king-charles-spaniel-hoodie-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae575951db256d3020eaad9",
+    "breed": "Cavalier King Charles Spaniel",
+    "colour": "Forest Green",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a1c3d037ed7f1f02dec4/105375/135042/australian-shepherd-dad-hat-dog-lover-line-art-heart.jpg",
+    "src": "https://images.printify.com/mockup/6ae57f8190e00e273b088ded/38194/97992/pembroke-welsh-corgi-t-shirt-dog-lover-geometric-heart-pocket-print.jpg",
+    "pid": "6ae57f8190e00e273b088ded",
+    "breed": "Pembroke Welsh Corgi",
+    "colour": "Military Green",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5768490e00e273b08867b/42237/98425/australian-shepherd-hoodie-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae5768490e00e273b08867b",
     "breed": "Australian Shepherd",
-    "colour": "Khaki",
-    "cam": "front",
-    "pid": "6ae7a1c3d037ed7f1f02dec4"
+    "colour": "Light Blue",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a05af5f22e3bbd08584a/105375/135042/rottweiler-dad-hat-dog-lover-line-art-heart.jpg",
-    "breed": "Rottweiler",
-    "colour": "Khaki",
-    "cam": "front",
-    "pid": "6ae7a05af5f22e3bbd08584a"
+    "src": "https://images.printify.com/mockup/6ae7a2b8d037ed7f1f02df67/104619/102926/boxer-polo-shirt-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a2b8d037ed7f1f02df67",
+    "breed": "Boxer",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a540f5f22e3bbd085c0c/105380/135042/border-collie-dad-hat-dog-lover-line-art-heart.jpg",
+    "src": "https://images.printify.com/mockup/6ae5737b90e00e273b088257/38193/97993/german-shepherd-t-shirt-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae5737b90e00e273b088257",
+    "breed": "German Shepherd",
+    "colour": "Forest Green",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a3e8a895c5bd4e00b2b2/118554/110281/boston-terrier-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a3e8a895c5bd4e00b2b2",
+    "breed": "Boston Terrier",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57b7b90e00e273b088b29/42221/98425/american-pit-bull-terrier-hoodie-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae57b7b90e00e273b088b29",
+    "breed": "American Pit Bull Terrier",
+    "colour": "Dark Chocolate",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae79f2eeff2af9b7c0be46f/118545/110007/golden-retriever-mesh-trucker-cap-dog-lover-geometric-cool.jpg",
+    "pid": "6ae79f2eeff2af9b7c0be46f",
+    "breed": "Golden Retriever",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57baf499964581706fd8d/32920/98426/border-collie-hoodie-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae57baf499964581706fd8d",
     "breed": "Border Collie",
-    "colour": "Stone",
-    "cam": "front",
-    "pid": "6ae7a540f5f22e3bbd085c0c"
+    "colour": "Black",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
    }
   ]
  },
  {
-  "id": "b22",
-  "prod": "Foam Trucker Hat",
+  "id": "m41",
+  "prod": "Mix",
+  "title": "Pick your pup",
+  "breeds": [
+   "Beagle",
+   "Great Dane",
+   "Miniature Schnauzer",
+   "Rottweiler",
+   "Siberian Husky",
+   "Doberman Pinscher",
+   "German Shorthaired Pointer",
+   "Labrador Retriever",
+   "Shiba Inu",
+   "Chihuahua"
+  ],
+  "format": "reel_slideshow",
+  "trans": 0,
+  "music": "Chill & Lo-fi",
+  "cap": "benefit",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae7a012eff2af9b7c0be634/104619/102926/beagle-polo-shirt-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a012eff2af9b7c0be634",
+    "breed": "Beagle",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae579b61db256d3020eb0d7/66365/98426/great-dane-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae579b61db256d3020eb0d7",
+    "breed": "Great Dane",
+    "colour": "Heather Navy",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae585818361c937380a70c4/38186/97992/miniature-schnauzer-t-shirt-dog-lover-line-art-classic-big-portrait.jpg",
+    "pid": "6ae585818361c937380a70c4",
+    "breed": "Miniature Schnauzer",
+    "colour": "Navy",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae574a455e86fafe60ad56e/42213/98426/rottweiler-hoodie-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae574a455e86fafe60ad56e",
+    "breed": "Rottweiler",
+    "colour": "Charcoal",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a47ba895c5bd4e00b354/104649/102926/siberian-husky-polo-shirt-dog-lover-line-art-classic.jpg",
+    "pid": "6ae7a47ba895c5bd4e00b354",
+    "breed": "Siberian Husky",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58b7cc0e74489cc070dba/66243/97993/doberman-pinscher-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae58b7cc0e74489cc070dba",
+    "breed": "Doberman Pinscher",
+    "colour": "Ice Grey",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a0986aa5485ffc0a00ff/118545/110007/german-shorthaired-pointer-mesh-trucker-cap-dog-lover-line-art-heart.jpg",
+    "pid": "6ae7a0986aa5485ffc0a00ff",
+    "breed": "German Shorthaired Pointer",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5732c5d127aa2b30af009/66243/97993/labrador-retriever-t-shirt-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae5732c5d127aa2b30af009",
+    "breed": "Labrador Retriever",
+    "colour": "Ice Grey",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a57ca04ae2f1280accad/118554/110280/shiba-inu-foam-trucker-hat-dog-lover-line-art-heart.jpg",
+    "pid": "6ae7a57ca04ae2f1280accad",
+    "breed": "Shiba Inu",
+    "colour": "",
+    "cam": "person-1-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57a64197e2a8042026d94/38190/97993/chihuahua-t-shirt-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae57a64197e2a8042026d94",
+    "breed": "Chihuahua",
+    "colour": "Sport Grey",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m42",
+  "prod": "Mix",
+  "title": "Front, back and everything between",
+  "breeds": [
+   "Golden Retriever",
+   "English Bulldog",
+   "Dachshund",
+   "Bernese Mountain Dog",
+   "German Shepherd",
+   "French Bulldog",
+   "Cane Corso",
+   "Standard Poodle",
+   "Australian Shepherd",
+   "Border Collie"
+  ],
+  "format": "reel_flip",
+  "trans": 3,
+  "music": "Feel-good",
+  "cap": "list",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae79f16f9c00c9ec009fa1c/104649/102926/golden-retriever-polo-shirt-dog-lover-line-art-heart.jpg",
+    "pid": "6ae79f16f9c00c9ec009fa1c",
+    "breed": "Golden Retriever",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae575101db256d3020eaa52/42830/97993/english-bulldog-t-shirt-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae575101db256d3020eaa52",
+    "breed": "English Bulldog",
+    "colour": "Heather Navy",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57db955e86fafe60ade83/32896/98424/dachshund-hoodie-dog-lover-line-art-classic-pocket-print.jpg",
+    "pid": "6ae57db955e86fafe60ade83",
+    "breed": "Dachshund",
+    "colour": "Navy",
+    "cam": "front",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58c1baa797252810695e4/63300/97993/bernese-mountain-dog-t-shirt-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae58c1baa797252810695e4",
+    "breed": "Bernese Mountain Dog",
+    "colour": "Dark Heather",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae79f4d8e070d8cc20b6192/118545/110007/german-shepherd-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
+    "pid": "6ae79f4d8e070d8cc20b6192",
+    "breed": "German Shepherd",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae572d7e22d5a72000fd361/32888/98426/french-bulldog-hoodie-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae572d7e22d5a72000fd361",
+    "breed": "French Bulldog",
+    "colour": "Maroon",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a105cefd302331097ba9/118554/110281/cane-corso-foam-trucker-hat-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a105cefd302331097ba9",
+    "breed": "Cane Corso",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae574155d127aa2b30af165/33419/98426/standard-poodle-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae574155d127aa2b30af165",
+    "breed": "Standard Poodle",
+    "colour": "Forest Green",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a1bceff2af9b7c0be7d0/118545/110007/australian-shepherd-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a1bceff2af9b7c0be7d0",
+    "breed": "Australian Shepherd",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58d78949c1d10dd0bc0c6/42150/98426/border-collie-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae58d78949c1d10dd0bc0c6",
+    "breed": "Border Collie",
+    "colour": "Light Pink",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m43",
+  "prod": "Mix",
+  "title": "Made for dog people",
   "breeds": [
    "American Pit Bull Terrier",
+   "German Shorthaired Pointer",
+   "Great Dane",
+   "Beagle",
+   "Boxer",
+   "Labrador Retriever",
    "Pembroke Welsh Corgi",
-   "Yorkshire Terrier",
-   "Mini Poodle",
-   "English Bulldog",
-   "German Shorthaired Pointer"
+   "Boston Terrier",
+   "Doberman Pinscher",
+   "Miniature Schnauzer"
   ],
-  "colours": [],
-  "tone": "",
-  "design": [
-   "Geometric",
-   "Heart"
+  "format": "reel_rhythm",
+  "trans": 2,
+  "music": "Chill & Lo-fi",
+  "cap": "list",
+  "durs": [
+   1.98,
+   1.49,
+   1.67,
+   0.92,
+   1.7,
+   2.22,
+   1.3,
+   2.27,
+   2.05,
+   1.33
   ],
-  "place": "",
-  "grp": "person",
-  "format": "reel_split",
-  "trans": 4,
-  "music": "Electronic & House",
-  "pal": "ocean",
-  "cap": "question",
   "assets": [
    {
     "src": "https://images.printify.com/mockup/6ae7a5247861ac1c1c0425d2/118554/110280/american-pit-bull-terrier-foam-trucker-hat-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a5247861ac1c1c0425d2",
     "breed": "American Pit Bull Terrier",
     "colour": "",
     "cam": "person-1-front",
-    "pid": "6ae7a5247861ac1c1c0425d2"
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a259d037ed7f1f02df2e/118554/110281/pembroke-welsh-corgi-foam-trucker-hat-dog-lover-geometric-heart.jpg",
-    "breed": "Pembroke Welsh Corgi",
-    "colour": "",
-    "cam": "person-2-front",
-    "pid": "6ae7a259d037ed7f1f02df2e"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a1a66aa5485ffc0a0232/118554/110281/yorkshire-terrier-foam-trucker-hat-dog-lover-geometric-heart.jpg",
-    "breed": "Yorkshire Terrier",
-    "colour": "",
-    "cam": "person-2-front",
-    "pid": "6ae7a1a66aa5485ffc0a0232"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a5d6cefd302331097f45/118554/110280/mini-poodle-foam-trucker-hat-dog-lover-geometric-heart.jpg",
-    "breed": "Mini Poodle",
-    "colour": "",
-    "cam": "person-1-front",
-    "pid": "6ae7a5d6cefd302331097f45"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a0f1f9c00c9ec009fcf9/118554/110280/english-bulldog-foam-trucker-hat-dog-lover-geometric-heart.jpg",
-    "breed": "English Bulldog",
-    "colour": "",
-    "cam": "person-1-front",
-    "pid": "6ae7a0f1f9c00c9ec009fcf9"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a0b4f5f22e3bbd0858c1/118554/110280/german-shorthaired-pointer-foam-trucker-hat-dog-lover-geometric-heart.jpg",
+    "src": "https://images.printify.com/mockup/6ae574dd1db256d3020ea9fa/38194/97993/german-shorthaired-pointer-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae574dd1db256d3020ea9fa",
     "breed": "German Shorthaired Pointer",
-    "colour": "",
-    "cam": "person-1-front",
-    "pid": "6ae7a0b4f5f22e3bbd0858c1"
-   }
-  ]
- },
- {
-  "id": "b23",
-  "prod": "Polo",
-  "breeds": [
-   "Miniature Schnauzer",
-   "German Shepherd",
-   "Bichon Frise",
-   "Maltese",
-   "Shih Tzu",
-   "Pomeranian"
-  ],
-  "colours": [
-   "Athletic Heather",
-   "White"
-  ],
-  "tone": "light",
-  "design": [
-   "Geometric",
-   "Classic"
-  ],
-  "place": "",
-  "grp": "flat-front",
-  "format": "reel_flip",
-  "trans": 5,
-  "music": "Latin & Reggae",
-  "pal": "terracotta",
-  "cap": "gift",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae7a27ee9fcc76a2908f97f/104649/102236/miniature-schnauzer-polo-shirt-dog-lover-geometric-classic.jpg",
-    "breed": "Miniature Schnauzer",
-    "colour": "White",
-    "cam": "front",
-    "pid": "6ae7a27ee9fcc76a2908f97f"
+    "colour": "Military Green",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae79f5d8e070d8cc20b61cf/104619/102236/german-shepherd-polo-shirt-dog-lover-geometric-classic.jpg",
-    "breed": "German Shepherd",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae79f5d8e070d8cc20b61cf"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a5f88e070d8cc20b67ae/104649/102236/bichon-frise-polo-shirt-dog-lover-geometric-classic.jpg",
-    "breed": "Bichon Frise",
-    "colour": "White",
-    "cam": "front",
-    "pid": "6ae7a5f88e070d8cc20b67ae"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a637eff2af9b7c0beaa2/104619/102236/maltese-polo-shirt-dog-lover-geometric-classic.jpg",
-    "breed": "Maltese",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a637eff2af9b7c0beaa2"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a3698e070d8cc20b660b/104619/102236/shih-tzu-polo-shirt-dog-lover-geometric-classic.jpg",
-    "breed": "Shih Tzu",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a3698e070d8cc20b660b"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a2f2d037ed7f1f02dfb2/104619/102236/pomeranian-polo-shirt-dog-lover-geometric-classic.jpg",
-    "breed": "Pomeranian",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a2f2d037ed7f1f02dfb2"
-   }
-  ]
- },
- {
-  "id": "b24",
-  "prod": "Tee B",
-  "breeds": [
-   "Shiba Inu",
-   "Boston Terrier",
-   "Great Dane",
-   "French Bulldog",
-   "Havanese",
-   "Dachshund"
-  ],
-  "colours": [
-   "Light Blue",
-   "Soft Pink"
-  ],
-  "tone": "pastel",
-  "design": [
-   "Geometric",
-   "Cool"
-  ],
-  "place": "Pocket Print",
-  "grp": "hanging",
-  "format": "carousel",
-  "trans": 3,
-  "music": "Feel-good",
-  "pal": "sage",
-  "cap": "list",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae6cf9af0cc71d31d095512/18358/102048/shiba-inu-t-shirt-dog-lover-geometric-cool-pocket-print.jpg",
-    "breed": "Shiba Inu",
-    "colour": "Light Blue",
-    "cam": "hanging-1",
-    "pid": "6ae6cf9af0cc71d31d095512"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae6ce43340a0b43b901bdaa/18358/102048/boston-terrier-t-shirt-dog-lover-geometric-cool-pocket-print.jpg",
-    "breed": "Boston Terrier",
-    "colour": "Light Blue",
-    "cam": "hanging-1",
-    "pid": "6ae6ce43340a0b43b901bdaa"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae6ce135d17aa531b00d4b7/18358/102048/great-dane-t-shirt-dog-lover-geometric-cool-pocket-print.jpg",
+    "src": "https://images.printify.com/mockup/6ae58039e22d5a72000fdfb5/42150/98424/great-dane-hoodie-dog-lover-line-art-classic-pocket-print.jpg",
+    "pid": "6ae58039e22d5a72000fdfb5",
     "breed": "Great Dane",
-    "colour": "Light Blue",
-    "cam": "hanging-1",
-    "pid": "6ae6ce135d17aa531b00d4b7"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae6ca0905f6dc952a0e8989/18358/102048/french-bulldog-t-shirt-dog-lover-geometric-cool-pocket-print.jpg",
-    "breed": "French Bulldog",
-    "colour": "Light Blue",
-    "cam": "hanging-1",
-    "pid": "6ae6ca0905f6dc952a0e8989"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae6cea65d17aa531b00d526/18470/102048/havanese-t-shirt-dog-lover-geometric-cool-pocket-print.jpg",
-    "breed": "Havanese",
-    "colour": "Soft Pink",
-    "cam": "hanging-1",
-    "pid": "6ae6cea65d17aa531b00d526"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae6cacebdc68f81c20f1bdb/18470/102048/dachshund-t-shirt-dog-lover-geometric-cool-pocket-print.jpg",
-    "breed": "Dachshund",
-    "colour": "Soft Pink",
-    "cam": "hanging-1",
-    "pid": "6ae6cacebdc68f81c20f1bdb"
-   }
-  ]
- },
- {
-  "id": "b25",
-  "prod": "Racerback Tank",
-  "breeds": [
-   "Pug",
-   "Chihuahua",
-   "Labrador Retriever",
-   "Siberian Husky",
-   "Maltese",
-   "American Pit Bull Terrier"
-  ],
-  "colours": [
-   "Solid Mint",
-   "Solid Tahiti Blue",
-   "Solid White"
-  ],
-  "tone": "light",
-  "design": [
-   "Line Art",
-   "Classic"
-  ],
-  "place": "",
-  "grp": "flat-front",
-  "format": "reel_slideshow",
-  "trans": 0,
-  "music": "Funk & Disco",
-  "pal": "blush",
-  "cap": "story",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae7a4b3e8a14b46b70ea2cf/19369/111806/pug-womens-racerback-tank-dog-lover-line-art-classic.jpg",
-    "breed": "Pug",
-    "colour": "Solid Tahiti Blue",
-    "cam": "front-2",
-    "pid": "6ae7a4b3e8a14b46b70ea2cf"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a400a04ae2f1280acb87/19369/48/chihuahua-womens-racerback-tank-dog-lover-line-art-classic.jpg",
-    "breed": "Chihuahua",
-    "colour": "Solid Tahiti Blue",
+    "colour": "Light Pink",
     "cam": "front",
-    "pid": "6ae7a400a04ae2f1280acb87"
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae79ec4e8a14b46b70e9c4c/19339/111806/labrador-retriever-womens-racerback-tank-dog-lover-line-art-classic.jpg",
+    "src": "https://images.printify.com/mockup/6ae57442e22d5a72000fd478/66243/97993/beagle-t-shirt-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae57442e22d5a72000fd478",
+    "breed": "Beagle",
+    "colour": "Ice Grey",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a29f7861ac1c1c0423c4/118545/110007/boxer-mesh-trucker-cap-dog-lover-line-art-classic.jpg",
+    "pid": "6ae7a29f7861ac1c1c0423c4",
+    "breed": "Boxer",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5731ed9d5b70e2704f1d9/63300/97993/labrador-retriever-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae5731ed9d5b70e2704f1d9",
     "breed": "Labrador Retriever",
-    "colour": "Solid Mint",
-    "cam": "front-2",
-    "pid": "6ae79ec4e8a14b46b70e9c4c"
+    "colour": "Dark Heather",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a479a895c5bd4e00b350/19384/111806/siberian-husky-womens-racerback-tank-dog-lover-line-art-classic.jpg",
-    "breed": "Siberian Husky",
-    "colour": "Solid White",
-    "cam": "front-2",
-    "pid": "6ae7a479a895c5bd4e00b350"
+    "src": "https://images.printify.com/mockup/6ae7a22f8e070d8cc20b6536/104619/102926/pembroke-welsh-corgi-polo-shirt-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a22f8e070d8cc20b6536",
+    "breed": "Pembroke Welsh Corgi",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a6188e070d8cc20b6801/19339/111806/maltese-womens-racerback-tank-dog-lover-line-art-classic.jpg",
-    "breed": "Maltese",
-    "colour": "Solid Mint",
-    "cam": "front-2",
-    "pid": "6ae7a6188e070d8cc20b6801"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a4eeeff2af9b7c0be9cb/19384/48/american-pit-bull-terrier-womens-racerback-tank-dog-lover-line-art-classic.jpg",
-    "breed": "American Pit Bull Terrier",
-    "colour": "Solid White",
-    "cam": "front",
-    "pid": "6ae7a4eeeff2af9b7c0be9cb"
-   }
-  ]
- },
- {
-  "id": "b26",
-  "prod": "Mesh Trucker Cap",
-  "breeds": [
-   "Cavalier King Charles Spaniel",
-   "French Bulldog",
-   "Doberman Pinscher",
-   "Border Collie",
-   "Dachshund",
-   "Bichon Frise"
-  ],
-  "colours": [
-   "White"
-  ],
-  "tone": "light",
-  "design": [
-   "Line Art",
-   "Cool"
-  ],
-  "place": "",
-  "grp": "person",
-  "format": "reel_grid",
-  "trans": 2,
-  "music": "Chill & Lo-fi",
-  "pal": "dusk",
-  "cap": "seasonal",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae7a141d037ed7f1f02de2d/118545/110007/cavalier-king-charles-spaniel-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
-    "breed": "Cavalier King Charles Spaniel",
-    "colour": "White",
-    "cam": "person-1-front",
-    "pid": "6ae7a141d037ed7f1f02de2d"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae79e99e8a14b46b70e9c20/118545/110007/french-bulldog-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
-    "breed": "French Bulldog",
-    "colour": "White",
-    "cam": "person-1-front",
-    "pid": "6ae79e99e8a14b46b70e9c20"
+    "src": "https://images.printify.com/mockup/6ae57a0a90e00e273b0889f3/66365/98426/boston-terrier-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae57a0a90e00e273b0889f3",
+    "breed": "Boston Terrier",
+    "colour": "Heather Navy",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
    },
    {
     "src": "https://images.printify.com/mockup/6ae7a1f8e8a14b46b70ea0ad/118545/110007/doberman-pinscher-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a1f8e8a14b46b70ea0ad",
     "breed": "Doberman Pinscher",
     "colour": "White",
     "cam": "person-1-front",
-    "pid": "6ae7a1f8e8a14b46b70ea0ad"
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a5397861ac1c1c0425e1/118545/110007/border-collie-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
+    "src": "https://images.printify.com/mockup/6ae6cd20f0cc71d31d095321/18462/102045/miniature-schnauzer-t-shirt-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae6cd20f0cc71d31d095321",
+    "breed": "Miniature Schnauzer",
+    "colour": "Soft Cream",
+    "cam": "back-2",
+    "prod": "Tee B",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m44",
+  "prod": "Mix",
+  "title": "Pick your pup",
+  "breeds": [
+   "Siberian Husky",
+   "Shiba Inu",
+   "German Shepherd",
+   "Cane Corso",
+   "Border Collie",
+   "Chihuahua",
+   "French Bulldog",
+   "Cavalier King Charles Spaniel",
+   "Rottweiler",
+   "Bernese Mountain Dog"
+  ],
+  "format": "reel_flip",
+  "trans": 0,
+  "music": "Feel-good",
+  "cap": "gift",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae7a49ca895c5bd4e00b371/118545/110007/siberian-husky-mesh-trucker-cap-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a49ca895c5bd4e00b371",
+    "breed": "Siberian Husky",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57c0b55e86fafe60add83/38181/97993/shiba-inu-t-shirt-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae57c0b55e86fafe60add83",
+    "breed": "Shiba Inu",
+    "colour": "Charcoal",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5931f43fcd2f3870b329a/32904/98424/german-shepherd-hoodie-dog-lover-geometric-classic-big-portrait.jpg",
+    "pid": "6ae5931f43fcd2f3870b329a",
+    "breed": "German Shepherd",
+    "colour": "Sport Grey",
+    "cam": "front",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae575761db256d3020eaac2/38186/97993/cane-corso-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae575761db256d3020eaac2",
+    "breed": "Cane Corso",
+    "colour": "Navy",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a53ea895c5bd4e00b3df/104649/102926/border-collie-polo-shirt-dog-lover-line-art-heart.jpg",
+    "pid": "6ae7a53ea895c5bd4e00b3df",
+    "breed": "Border Collie",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57a4be22d5a72000fdb5f/66365/98425/chihuahua-hoodie-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae57a4be22d5a72000fdb5f",
+    "breed": "Chihuahua",
+    "colour": "Heather Navy",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae79e97a895c5bd4e00ad14/118554/110280/french-bulldog-foam-trucker-hat-dog-lover-line-art-cool.jpg",
+    "pid": "6ae79e97a895c5bd4e00ad14",
+    "breed": "French Bulldog",
+    "colour": "",
+    "cam": "person-1-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae575cd1db256d3020eab02/32872/98425/cavalier-king-charles-spaniel-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae575cd1db256d3020eab02",
+    "breed": "Cavalier King Charles Spaniel",
+    "colour": "Ash",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a0497861ac1c1c0421ce/118545/110007/rottweiler-mesh-trucker-cap-dog-lover-line-art-classic.jpg",
+    "pid": "6ae7a0497861ac1c1c0421ce",
+    "breed": "Rottweiler",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae578d7b3e56e7b5f093962/38192/97993/bernese-mountain-dog-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae578d7b3e56e7b5f093962",
+    "breed": "Bernese Mountain Dog",
+    "colour": "Black",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m45",
+  "prod": "Mix",
+  "title": "10 breeds. 10 looks.",
+  "breeds": [
+   "Dachshund",
+   "Golden Retriever",
+   "Boxer",
+   "Miniature Schnauzer",
+   "Labrador Retriever",
+   "Doberman Pinscher",
+   "Great Dane",
+   "Boston Terrier",
+   "American Pit Bull Terrier",
+   "German Shorthaired Pointer"
+  ],
+  "format": "reel_slideshow",
+  "trans": 4,
+  "music": "Chill & Lo-fi",
+  "cap": "gift",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae79fab6aa5485ffc09fef1/118545/110007/dachshund-mesh-trucker-cap-dog-lover-geometric-cool.jpg",
+    "pid": "6ae79fab6aa5485ffc09fef1",
+    "breed": "Dachshund",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae573325d127aa2b30af012/38186/97993/golden-retriever-t-shirt-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae573325d127aa2b30af012",
+    "breed": "Golden Retriever",
+    "colour": "Navy",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae59078949c1d10dd0bc31b/42150/98424/boxer-hoodie-dog-lover-geometric-cool-pocket-print.jpg",
+    "pid": "6ae59078949c1d10dd0bc31b",
+    "breed": "Boxer",
+    "colour": "Light Pink",
+    "cam": "front",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58bb1c0e74489cc070dda/66243/97993/miniature-schnauzer-t-shirt-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae58bb1c0e74489cc070dda",
+    "breed": "Miniature Schnauzer",
+    "colour": "Ice Grey",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae79ee6f5f22e3bbd0855ec/118554/110281/labrador-retriever-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae79ee6f5f22e3bbd0855ec",
+    "breed": "Labrador Retriever",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae576e81594575b4307344e/32912/98425/doberman-pinscher-hoodie-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae576e81594575b4307344e",
+    "breed": "Doberman Pinscher",
+    "colour": "White",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a3a8a04ae2f1280acaea/118554/110281/great-dane-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a3a8a04ae2f1280acaea",
+    "breed": "Great Dane",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58c9d43fcd2f3870b2891/63300/97993/boston-terrier-t-shirt-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae58c9d43fcd2f3870b2891",
+    "breed": "Boston Terrier",
+    "colour": "Dark Heather",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a517f9c00c9ec00a0097/104619/102926/american-pit-bull-terrier-polo-shirt-dog-lover-geometric-cool.jpg",
+    "pid": "6ae7a517f9c00c9ec00a0097",
+    "breed": "American Pit Bull Terrier",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae574ad1db256d3020ea9b0/32888/98426/german-shorthaired-pointer-hoodie-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae574ad1db256d3020ea9b0",
+    "breed": "German Shorthaired Pointer",
+    "colour": "Maroon",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m46",
+  "prod": "Mix",
+  "title": "Pick your pup",
+  "breeds": [
+   "Cavalier King Charles Spaniel",
+   "Pembroke Welsh Corgi",
+   "Chihuahua",
+   "Siberian Husky",
+   "Australian Shepherd",
+   "Bernese Mountain Dog",
+   "Rottweiler",
+   "French Bulldog",
+   "Beagle",
+   "Border Collie"
+  ],
+  "format": "reel_flip",
+  "trans": 1,
+  "music": "Funk & Disco",
+  "cap": "story",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae7a168f5f22e3bbd08595d/104619/102926/cavalier-king-charles-spaniel-polo-shirt-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a168f5f22e3bbd08595d",
+    "breed": "Cavalier King Charles Spaniel",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5776955e86fafe60ada85/33427/98426/pembroke-welsh-corgi-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae5776955e86fafe60ada85",
+    "breed": "Pembroke Welsh Corgi",
+    "colour": "Military Green",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57a21521a59fb2b094e66/38183/97992/chihuahua-t-shirt-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae57a21521a59fb2b094e66",
+    "breed": "Chihuahua",
+    "colour": "Dark Chocolate",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57ae090e00e273b088aa8/32896/98425/siberian-husky-hoodie-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae57ae090e00e273b088aa8",
+    "breed": "Siberian Husky",
+    "colour": "Navy",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a1dfd037ed7f1f02ded4/104649/102926/australian-shepherd-polo-shirt-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a1dfd037ed7f1f02ded4",
+    "breed": "Australian Shepherd",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58c09aa797252810695cf/66243/97993/bernese-mountain-dog-t-shirt-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae58c09aa797252810695cf",
+    "breed": "Bernese Mountain Dog",
+    "colour": "Ice Grey",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a0706aa5485ffc0a00d8/118554/110280/rottweiler-foam-trucker-hat-dog-lover-geometric-cool.jpg",
+    "pid": "6ae7a0706aa5485ffc0a00d8",
+    "breed": "Rottweiler",
+    "colour": "",
+    "cam": "person-1-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae572b9e22d5a72000fd34d/38181/97993/french-bulldog-t-shirt-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae572b9e22d5a72000fd34d",
+    "breed": "French Bulldog",
+    "colour": "Charcoal",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a035cefd302331097abb/118545/110007/beagle-mesh-trucker-cap-dog-lover-geometric-cool.jpg",
+    "pid": "6ae7a035cefd302331097abb",
+    "breed": "Beagle",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57bbc49f7cb0d0b02e997/32880/98425/border-collie-hoodie-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae57bbc49f7cb0d0b02e997",
+    "breed": "Border Collie",
+    "colour": "Dark Heather",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m47",
+  "prod": "Mix",
+  "title": "Made for dog people",
+  "breeds": [
+   "English Bulldog",
+   "Cane Corso",
+   "Golden Retriever",
+   "Labrador Retriever",
+   "German Shorthaired Pointer",
+   "Dachshund",
+   "Standard Poodle",
+   "Boxer",
+   "Shiba Inu",
+   "American Pit Bull Terrier"
+  ],
+  "format": "reel_slideshow",
+  "trans": 5,
+  "music": "Electronic & House",
+  "cap": "benefit",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae7a0eef9c00c9ec009fcf7/104649/102926/english-bulldog-polo-shirt-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a0eef9c00c9ec009fcf7",
+    "breed": "English Bulldog",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5753e1594575b43072f3e/32896/98425/cane-corso-hoodie-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae5753e1594575b43072f3e",
+    "breed": "Cane Corso",
+    "colour": "Navy",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58e5890e00e273b089871/38193/97992/golden-retriever-t-shirt-dog-lover-geometric-classic-pocket-print.jpg",
+    "pid": "6ae58e5890e00e273b089871",
+    "breed": "Golden Retriever",
+    "colour": "Forest Green",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae572ff1db256d3020ea774/42213/98425/labrador-retriever-hoodie-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae572ff1db256d3020ea774",
+    "breed": "Labrador Retriever",
+    "colour": "Charcoal",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a0a0e8a14b46b70e9f15/118554/110281/german-shorthaired-pointer-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a0a0e8a14b46b70e9f15",
+    "breed": "German Shorthaired Pointer",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae6cab8340a0b43b901ba9b/18470/102045/dachshund-t-shirt-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae6cab8340a0b43b901ba9b",
+    "breed": "Dachshund",
+    "colour": "Soft Pink",
+    "cam": "back-2",
+    "prod": "Tee B",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae79fec6aa5485ffc09ffa5/118545/110007/standard-poodle-mesh-trucker-cap-dog-lover-geometric-classic.jpg",
+    "pid": "6ae79fec6aa5485ffc09ffa5",
+    "breed": "Standard Poodle",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58bd1c0e74489cc070dec/38181/97993/boxer-t-shirt-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae58bd1c0e74489cc070dec",
+    "breed": "Boxer",
+    "colour": "Charcoal",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a58ceff2af9b7c0bea19/104649/102926/shiba-inu-polo-shirt-dog-lover-geometric-cool.jpg",
+    "pid": "6ae7a58ceff2af9b7c0bea19",
+    "breed": "Shiba Inu",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57b5f499964581706fd63/38194/97993/american-pit-bull-terrier-t-shirt-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae57b5f499964581706fd63",
+    "breed": "American Pit Bull Terrier",
+    "colour": "Military Green",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m48",
+  "prod": "Mix",
+  "title": "Find your breed",
+  "breeds": [
+   "French Bulldog",
+   "Pembroke Welsh Corgi",
+   "German Shepherd",
+   "Beagle",
+   "Siberian Husky",
+   "Boston Terrier",
+   "Australian Shepherd",
+   "Miniature Schnauzer",
+   "Doberman Pinscher",
+   "Great Dane"
+  ],
+  "format": "reel_flip",
+  "trans": 5,
+  "music": "Chill & Lo-fi",
+  "cap": "benefit",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae79ec16aa5485ffc09fdeb/118545/110007/french-bulldog-mesh-trucker-cap-dog-lover-geometric-heart.jpg",
+    "pid": "6ae79ec16aa5485ffc09fdeb",
+    "breed": "French Bulldog",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57727b3e56e7b5f09387e/32872/98425/pembroke-welsh-corgi-hoodie-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae57727b3e56e7b5f09387e",
+    "breed": "Pembroke Welsh Corgi",
+    "colour": "Ash",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae573a890e00e273b0882a2/38192/97992/german-shepherd-t-shirt-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae573a890e00e273b0882a2",
+    "breed": "German Shepherd",
+    "colour": "Black",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58a7090e00e273b0895d2/32904/98426/beagle-hoodie-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae58a7090e00e273b0895d2",
+    "breed": "Beagle",
+    "colour": "Sport Grey",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a4a48e070d8cc20b6703/118554/110281/siberian-husky-foam-trucker-hat-dog-lover-geometric-cool.jpg",
+    "pid": "6ae7a4a48e070d8cc20b6703",
+    "breed": "Siberian Husky",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae579e090e00e273b0889da/42213/98426/boston-terrier-hoodie-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae579e090e00e273b0889da",
+    "breed": "Boston Terrier",
+    "colour": "Charcoal",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a1ced037ed7f1f02dec9/118554/110281/australian-shepherd-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a1ced037ed7f1f02dec9",
+    "breed": "Australian Shepherd",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5779755e86fafe60adaa5/33419/98426/miniature-schnauzer-hoodie-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae5779755e86fafe60adaa5",
+    "breed": "Miniature Schnauzer",
+    "colour": "Forest Green",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a21bf9c00c9ec009fe04/104649/102926/doberman-pinscher-polo-shirt-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a21bf9c00c9ec009fe04",
+    "breed": "Doberman Pinscher",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5798890e00e273b0889ad/63302/97993/great-dane-t-shirt-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae5798890e00e273b0889ad",
+    "breed": "Great Dane",
+    "colour": "Maroon",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m49",
+  "prod": "Mix",
+  "title": "Front, back and everything between",
+  "breeds": [
+   "Cane Corso",
+   "German Shorthaired Pointer",
+   "Dachshund",
+   "Golden Retriever",
+   "Rottweiler",
+   "Standard Poodle",
+   "Border Collie",
+   "Cavalier King Charles Spaniel",
+   "Shiba Inu",
+   "English Bulldog"
+  ],
+  "format": "reel_split",
+  "trans": 4,
+  "music": "Feel-good",
+  "cap": "story",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae7a119a895c5bd4e00b095/118554/110281/cane-corso-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a119a895c5bd4e00b095",
+    "breed": "Cane Corso",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58aab49f7cb0d0b02f4cd/42166/98426/german-shorthaired-pointer-hoodie-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae58aab49f7cb0d0b02f4cd",
+    "breed": "German Shorthaired Pointer",
+    "colour": "Sand",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae59346944026b113050f21/38192/97992/dachshund-t-shirt-dog-lover-geometric-heart-big-portrait.jpg",
+    "pid": "6ae59346944026b113050f21",
+    "breed": "Dachshund",
+    "colour": "Black",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5733b5d127aa2b30af01f/42221/98426/golden-retriever-hoodie-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae5733b5d127aa2b30af01f",
+    "breed": "Golden Retriever",
+    "colour": "Dark Chocolate",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a063a895c5bd4e00afee/104619/102926/rottweiler-polo-shirt-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a063a895c5bd4e00afee",
+    "breed": "Rottweiler",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae573f890e00e273b088313/32896/98425/standard-poodle-hoodie-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae573f890e00e273b088313",
+    "breed": "Standard Poodle",
+    "colour": "Navy",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a560a895c5bd4e00b3f4/118545/110007/border-collie-mesh-trucker-cap-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a560a895c5bd4e00b3f4",
     "breed": "Border Collie",
     "colour": "White",
     "cam": "person-1-front",
-    "pid": "6ae7a5397861ac1c1c0425e1"
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae79f8cf5f22e3bbd0856ad/118545/110013/dachshund-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
-    "breed": "Dachshund",
-    "colour": "White",
-    "cam": "person-1-back",
-    "pid": "6ae79f8cf5f22e3bbd0856ad"
+    "src": "https://images.printify.com/mockup/6ae575b1d9d5b70e2704f3af/42221/98426/cavalier-king-charles-spaniel-hoodie-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae575b1d9d5b70e2704f3af",
+    "breed": "Cavalier King Charles Spaniel",
+    "colour": "Dark Chocolate",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a5ead037ed7f1f02e1d1/118545/110013/bichon-frise-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
-    "breed": "Bichon Frise",
-    "colour": "White",
-    "cam": "person-1-back",
-    "pid": "6ae7a5ead037ed7f1f02e1d1"
-   }
-  ]
- },
- {
-  "id": "b27",
-  "prod": "Tank Top",
-  "breeds": [
-   "Labrador Retriever",
-   "Pomeranian",
-   "Boston Terrier",
-   "German Shorthaired Pointer",
-   "Golden Retriever",
-   "Cane Corso"
-  ],
-  "colours": [
-   "Athletic Heather"
-  ],
-  "tone": "light",
-  "design": [
-   "Line Art",
-   "Heart"
-  ],
-  "place": "",
-  "grp": "flat-front",
-  "format": "reel_hero",
-  "trans": 1,
-  "music": "Electronic & House",
-  "pal": "cream",
-  "cap": "benefit",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae79ed68e070d8cc20b60f0/24621/101889/labrador-retriever-tank-top-dog-lover-line-art-heart.jpg",
-    "breed": "Labrador Retriever",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae79ed68e070d8cc20b60f0"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a2e57861ac1c1c0423f5/24621/101889/pomeranian-tank-top-dog-lover-line-art-heart.jpg",
-    "breed": "Pomeranian",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a2e57861ac1c1c0423f5"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a3d5f9c00c9ec009ff96/24621/101889/boston-terrier-tank-top-dog-lover-line-art-heart.jpg",
-    "breed": "Boston Terrier",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a3d5f9c00c9ec009ff96"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a08f6aa5485ffc0a00f3/24621/101889/german-shorthaired-pointer-tank-top-dog-lover-line-art-heart.jpg",
-    "breed": "German Shorthaired Pointer",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a08f6aa5485ffc0a00f3"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae79f12e8a14b46b70e9ca7/24621/101889/golden-retriever-tank-top-dog-lover-line-art-heart.jpg",
-    "breed": "Golden Retriever",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae79f12e8a14b46b70e9ca7"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a108d037ed7f1f02de04/24621/101889/cane-corso-tank-top-dog-lover-line-art-heart.jpg",
-    "breed": "Cane Corso",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a108d037ed7f1f02de04"
-   }
-  ]
- },
- {
-  "id": "b28",
-  "prod": "Hoodie",
-  "breeds": [
-   "Beagle",
-   "Shih Tzu",
-   "Shiba Inu",
-   "English Bulldog",
-   "Chihuahua",
-   "Mini Poodle"
-  ],
-  "colours": [
-   "Black",
-   "Heather Navy",
-   "Maroon"
-  ],
-  "tone": "dark",
-  "design": [
-   "Geometric",
-   "Heart"
-  ],
-  "place": "Pocket Portrait + Full Body Back",
-  "grp": "flat-back",
-  "format": "reel_split",
-  "trans": 4,
-  "music": "Latin & Reggae",
-  "pal": "charcoal",
-  "cap": "question",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae57e1955e86fafe60adedd/32888/98425/beagle-hoodie-dog-lover-geometric-heart-pocket-print.jpg",
-    "breed": "Beagle",
-    "colour": "Maroon",
-    "cam": "back",
-    "pid": "6ae57e1955e86fafe60adedd"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae5796fe22d5a72000fdafe/66365/98425/shih-tzu-hoodie-dog-lover-geometric-heart-front-back.jpg",
-    "breed": "Shih Tzu",
-    "colour": "Heather Navy",
-    "cam": "back",
-    "pid": "6ae5796fe22d5a72000fdafe"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae581a5e22d5a72000fe07e/32920/98425/shiba-inu-hoodie-dog-lover-geometric-heart-pocket-print.jpg",
+    "src": "https://images.printify.com/mockup/6ae7a568f9c00c9ec00a00d3/118554/110281/shiba-inu-foam-trucker-hat-dog-lover-line-art-classic.jpg",
+    "pid": "6ae7a568f9c00c9ec00a00d3",
     "breed": "Shiba Inu",
-    "colour": "Black",
-    "cam": "back",
-    "pid": "6ae581a5e22d5a72000fe07e"
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae5842a0e146105c80c5ddb/66365/98425/english-bulldog-hoodie-dog-lover-geometric-heart-big-portrait.jpg",
+    "src": "https://images.printify.com/mockup/6ae57522e22d5a72000fd51b/66365/98425/english-bulldog-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae57522e22d5a72000fd51b",
     "breed": "English Bulldog",
     "colour": "Heather Navy",
     "cam": "back",
-    "pid": "6ae5842a0e146105c80c5ddb"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae57a67499964581706fc64/32920/98426/chihuahua-hoodie-dog-lover-geometric-heart-front-back.jpg",
-    "breed": "Chihuahua",
-    "colour": "Black",
-    "cam": "back-2",
-    "pid": "6ae57a67499964581706fc64"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae581c7197e2a80420272ab/66365/98425/mini-poodle-hoodie-dog-lover-geometric-heart-pocket-print.jpg",
-    "breed": "Mini Poodle",
-    "colour": "Heather Navy",
-    "cam": "back",
-    "pid": "6ae581c7197e2a80420272ab"
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
    }
   ]
  },
  {
-  "id": "b29",
-  "prod": "Tee A",
-  "breeds": [
-   "Great Dane",
-   "Pug",
-   "Doberman Pinscher",
-   "Havanese",
-   "Boxer",
-   "Golden Retriever"
-  ],
-  "colours": [
-   "Ice Grey",
-   "Natural",
-   "Sport Grey"
-  ],
-  "tone": "light",
-  "design": [
-   "Geometric",
-   "Classic"
-  ],
-  "place": "Front & Back",
-  "grp": "folded",
-  "format": "reel_flip",
-  "trans": 5,
-  "music": "Feel-good",
-  "pal": "ink",
-  "cap": "gift",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae579a5197e2a8042026d3e/63303/100615/great-dane-t-shirt-dog-lover-geometric-classic-front-back.jpg",
-    "breed": "Great Dane",
-    "colour": "Natural",
-    "cam": "folded",
-    "pid": "6ae579a5197e2a8042026d3e"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae57b3a197e2a8042026e7b/66243/100615/pug-t-shirt-dog-lover-geometric-classic-front-back.jpg",
-    "breed": "Pug",
-    "colour": "Ice Grey",
-    "cam": "folded",
-    "pid": "6ae57b3a197e2a8042026e7b"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae58b76c0e74489cc070db1/38190/100615/doberman-pinscher-t-shirt-dog-lover-geometric-classic-front-back.jpg",
-    "breed": "Doberman Pinscher",
-    "colour": "Sport Grey",
-    "cam": "folded",
-    "pid": "6ae58b76c0e74489cc070db1"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae57a9b521a59fb2b094eaf/66243/100615/havanese-t-shirt-dog-lover-geometric-classic-front-back.jpg",
-    "breed": "Havanese",
-    "colour": "Ice Grey",
-    "cam": "folded",
-    "pid": "6ae57a9b521a59fb2b094eaf"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae58bd8949c1d10dd0bbf88/66243/100615/boxer-t-shirt-dog-lover-geometric-classic-front-back.jpg",
-    "breed": "Boxer",
-    "colour": "Ice Grey",
-    "cam": "folded",
-    "pid": "6ae58bd8949c1d10dd0bbf88"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae5734c90e00e273b088246/63303/100615/golden-retriever-t-shirt-dog-lover-geometric-classic-front-back.jpg",
-    "breed": "Golden Retriever",
-    "colour": "Natural",
-    "cam": "folded",
-    "pid": "6ae5734c90e00e273b088246"
-   }
-  ]
- },
- {
-  "id": "b30",
-  "prod": "Dad Hat",
-  "breeds": [
-   "Standard Poodle",
-   "Rottweiler",
-   "Australian Shepherd",
-   "Bernese Mountain Dog",
-   "Cavalier King Charles Spaniel",
-   "Miniature Schnauzer"
-  ],
-  "colours": [
-   "Light Blue",
-   "Pink"
-  ],
-  "tone": "pastel",
-  "design": [
-   "Geometric",
-   "Cool"
-  ],
-  "place": "",
-  "grp": "closeup",
-  "format": "carousel",
-  "trans": 3,
-  "music": "Funk & Disco",
-  "pal": "ocean",
-  "cap": "list",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae79ff3e8a14b46b70e9e09/105376/135045/standard-poodle-dad-hat-dog-lover-geometric-cool.jpg",
-    "breed": "Standard Poodle",
-    "colour": "Light Blue",
-    "cam": "right",
-    "pid": "6ae79ff3e8a14b46b70e9e09"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a06ef9c00c9ec009fc8d/105376/135045/rottweiler-dad-hat-dog-lover-geometric-cool.jpg",
-    "breed": "Rottweiler",
-    "colour": "Light Blue",
-    "cam": "right",
-    "pid": "6ae7a06ef9c00c9ec009fc8d"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a1d7a895c5bd4e00b14c/105376/135045/australian-shepherd-dad-hat-dog-lover-geometric-cool.jpg",
-    "breed": "Australian Shepherd",
-    "colour": "Light Blue",
-    "cam": "right",
-    "pid": "6ae7a1d7a895c5bd4e00b14c"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a338f9c00c9ec009fed9/105376/135045/bernese-mountain-dog-dad-hat-dog-lover-geometric-cool.jpg",
-    "breed": "Bernese Mountain Dog",
-    "colour": "Light Blue",
-    "cam": "right",
-    "pid": "6ae7a338f9c00c9ec009fed9"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a15fe8a14b46b70e9fef/105378/135044/cavalier-king-charles-spaniel-dad-hat-dog-lover-geometric-cool.jpg",
-    "breed": "Cavalier King Charles Spaniel",
-    "colour": "Pink",
-    "cam": "left",
-    "pid": "6ae7a15fe8a14b46b70e9fef"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a289eff2af9b7c0be832/105378/135044/miniature-schnauzer-dad-hat-dog-lover-geometric-cool.jpg",
-    "breed": "Miniature Schnauzer",
-    "colour": "Pink",
-    "cam": "left",
-    "pid": "6ae7a289eff2af9b7c0be832"
-   }
-  ]
- },
- {
-  "id": "b31",
-  "prod": "Foam Trucker Hat",
+  "id": "m50",
+  "prod": "Mix",
+  "title": "Dog people wear it better",
   "breeds": [
    "Pembroke Welsh Corgi",
-   "Yorkshire Terrier",
-   "German Shepherd",
-   "Siberian Husky",
-   "American Pit Bull Terrier",
-   "Beagle"
+   "French Bulldog",
+   "Boston Terrier",
+   "Great Dane",
+   "Labrador Retriever",
+   "Miniature Schnauzer",
+   "Bernese Mountain Dog",
+   "Australian Shepherd",
+   "Chihuahua",
+   "Siberian Husky"
   ],
-  "colours": [],
-  "tone": "",
-  "design": [
-   "Line Art",
-   "Classic"
-  ],
-  "place": "",
-  "grp": "person",
   "format": "reel_slideshow",
-  "trans": 0,
-  "music": "Chill & Lo-fi",
-  "pal": "terracotta",
-  "cap": "story",
+  "trans": 5,
+  "music": "Funk & Disco",
+  "cap": "seasonal",
+  "durs": null,
   "assets": [
    {
-    "src": "https://images.printify.com/mockup/6ae7a228eff2af9b7c0be800/118554/110280/pembroke-welsh-corgi-foam-trucker-hat-dog-lover-line-art-classic.jpg",
+    "src": "https://images.printify.com/mockup/6ae7a23ca04ae2f1280ac9f7/118554/110281/pembroke-welsh-corgi-foam-trucker-hat-dog-lover-line-art-heart.jpg",
+    "pid": "6ae7a23ca04ae2f1280ac9f7",
     "breed": "Pembroke Welsh Corgi",
     "colour": "",
-    "cam": "person-1-front",
-    "pid": "6ae7a228eff2af9b7c0be800"
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a1756aa5485ffc0a0203/118554/110280/yorkshire-terrier-foam-trucker-hat-dog-lover-line-art-classic.jpg",
-    "breed": "Yorkshire Terrier",
+    "src": "https://images.printify.com/mockup/6ae589b443fcd2f3870b2656/32912/98426/french-bulldog-hoodie-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae589b443fcd2f3870b2656",
+    "breed": "French Bulldog",
+    "colour": "White",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5871849f7cb0d0b02f2a1/42830/97992/boston-terrier-t-shirt-dog-lover-line-art-heart-big-portrait.jpg",
+    "pid": "6ae5871849f7cb0d0b02f2a1",
+    "breed": "Boston Terrier",
+    "colour": "Heather Navy",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58c9a43fcd2f3870b288f/32872/98426/great-dane-hoodie-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae58c9a43fcd2f3870b288f",
+    "breed": "Great Dane",
+    "colour": "Ash",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae79ec6f9c00c9ec009f9c6/104649/102926/labrador-retriever-polo-shirt-dog-lover-line-art-classic.jpg",
+    "pid": "6ae79ec6f9c00c9ec009f9c6",
+    "breed": "Labrador Retriever",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58bbb0e146105c80c6355/42830/97993/miniature-schnauzer-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae58bbb0e146105c80c6355",
+    "breed": "Miniature Schnauzer",
+    "colour": "Heather Navy",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a31d7861ac1c1c04241a/118545/110007/bernese-mountain-dog-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a31d7861ac1c1c04241a",
+    "breed": "Bernese Mountain Dog",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58b5b949c1d10dd0bbf5c/38193/97993/australian-shepherd-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae58b5b949c1d10dd0bbf5c",
+    "breed": "Australian Shepherd",
+    "colour": "Forest Green",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a419eff2af9b7c0be94b/118554/110281/chihuahua-foam-trucker-hat-dog-lover-line-art-heart.jpg",
+    "pid": "6ae7a419eff2af9b7c0be94b",
+    "breed": "Chihuahua",
     "colour": "",
-    "cam": "person-1-front",
-    "pid": "6ae7a1756aa5485ffc0a0203"
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae79f418e070d8cc20b616e/118554/110280/german-shepherd-foam-trucker-hat-dog-lover-line-art-classic.jpg",
+    "src": "https://images.printify.com/mockup/6ae58d1bc0e74489cc070f04/32904/98425/siberian-husky-hoodie-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae58d1bc0e74489cc070f04",
+    "breed": "Siberian Husky",
+    "colour": "Sport Grey",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m51",
+  "prod": "Mix",
+  "title": "Made for dog people",
+  "breeds": [
+   "German Shepherd",
+   "Golden Retriever",
+   "Standard Poodle",
+   "English Bulldog",
+   "Doberman Pinscher",
+   "Boxer",
+   "Shiba Inu",
+   "Beagle",
+   "Border Collie",
+   "Rottweiler"
+  ],
+  "format": "reel_rhythm",
+  "trans": 5,
+  "music": "Feel-good",
+  "cap": "seasonal",
+  "durs": [
+   2.26,
+   1.83,
+   2.22,
+   1.88,
+   2.23,
+   2.19,
+   2.13,
+   0.98,
+   0.97,
+   2.08
+  ],
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae79f438e070d8cc20b6171/118545/110007/german-shepherd-mesh-trucker-cap-dog-lover-line-art-classic.jpg",
+    "pid": "6ae79f438e070d8cc20b6171",
     "breed": "German Shepherd",
-    "colour": "",
+    "colour": "White",
     "cam": "person-1-front",
-    "pid": "6ae79f418e070d8cc20b616e"
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a47ecefd302331097e77/118554/110280/siberian-husky-foam-trucker-hat-dog-lover-line-art-classic.jpg",
+    "src": "https://images.printify.com/mockup/6ae589fc0e146105c80c6228/38186/97993/golden-retriever-t-shirt-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae589fc0e146105c80c6228",
+    "breed": "Golden Retriever",
+    "colour": "Navy",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5934eaa7972528106a1af/42237/98424/standard-poodle-hoodie-dog-lover-line-art-classic-big-portrait.jpg",
+    "pid": "6ae5934eaa7972528106a1af",
+    "breed": "Standard Poodle",
+    "colour": "Light Blue",
+    "cam": "front",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae574fa90e00e273b0883c7/63302/97993/english-bulldog-t-shirt-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae574fa90e00e273b0883c7",
+    "breed": "English Bulldog",
+    "colour": "Maroon",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a1ecf9c00c9ec009fdd7/118554/110280/doberman-pinscher-foam-trucker-hat-dog-lover-line-art-classic.jpg",
+    "pid": "6ae7a1ecf9c00c9ec009fdd7",
+    "breed": "Doberman Pinscher",
+    "colour": "",
+    "cam": "person-1-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57834521a59fb2b094d8c/63300/97993/boxer-t-shirt-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae57834521a59fb2b094d8c",
+    "breed": "Boxer",
+    "colour": "Dark Heather",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a582e9fcc76a2908fbc1/104619/102926/shiba-inu-polo-shirt-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a582e9fcc76a2908fbc1",
+    "breed": "Shiba Inu",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae574291db256d3020ea8ee/32888/98425/beagle-hoodie-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae574291db256d3020ea8ee",
+    "breed": "Beagle",
+    "colour": "Maroon",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a54b7861ac1c1c0425e6/118554/110281/border-collie-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a54b7861ac1c1c0425e6",
+    "breed": "Border Collie",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58a8e0e146105c80c6268/42830/97993/rottweiler-t-shirt-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae58a8e0e146105c80c6268",
+    "breed": "Rottweiler",
+    "colour": "Heather Navy",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   }
+  ]
+ },
+ {
+  "id": "m52",
+  "prod": "Mix",
+  "title": "Front, back and everything between",
+  "breeds": [
+   "Bernese Mountain Dog",
+   "Miniature Schnauzer",
+   "Labrador Retriever",
+   "American Pit Bull Terrier",
+   "Cane Corso",
+   "Pembroke Welsh Corgi",
+   "Siberian Husky",
+   "German Shorthaired Pointer",
+   "Chihuahua",
+   "Cavalier King Charles Spaniel"
+  ],
+  "format": "reel_flip",
+  "trans": 1,
+  "music": "Electronic & House",
+  "cap": "question",
+  "durs": null,
+  "assets": [
+   {
+    "src": "https://images.printify.com/mockup/6ae7a327cefd302331097d59/118545/110007/bernese-mountain-dog-mesh-trucker-cap-dog-lover-line-art-heart.jpg",
+    "pid": "6ae7a327cefd302331097d59",
+    "breed": "Bernese Mountain Dog",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58bb90e146105c80c6354/32872/98426/miniature-schnauzer-hoodie-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae58bb90e146105c80c6354",
+    "breed": "Miniature Schnauzer",
+    "colour": "Ash",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5825490e00e273b089010/63300/97992/labrador-retriever-t-shirt-dog-lover-line-art-heart-big-portrait.jpg",
+    "pid": "6ae5825490e00e273b089010",
+    "breed": "Labrador Retriever",
+    "colour": "Dark Heather",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58d52c0e74489cc070f21/42237/98425/american-pit-bull-terrier-hoodie-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae58d52c0e74489cc070f21",
+    "breed": "American Pit Bull Terrier",
+    "colour": "Light Blue",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a10ce9fcc76a2908f846/104619/102926/cane-corso-polo-shirt-dog-lover-line-art-heart.jpg",
+    "pid": "6ae7a10ce9fcc76a2908f846",
+    "breed": "Cane Corso",
+    "colour": "Athletic Heather",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58b96c0e74489cc070dc8/38183/97993/pembroke-welsh-corgi-t-shirt-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae58b96c0e74489cc070dc8",
+    "breed": "Pembroke Welsh Corgi",
+    "colour": "Dark Chocolate",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a4877861ac1c1c04253f/118554/110280/siberian-husky-foam-trucker-hat-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a4877861ac1c1c04253f",
     "breed": "Siberian Husky",
     "colour": "",
     "cam": "person-1-front",
-    "pid": "6ae7a47ecefd302331097e77"
+    "prod": "Foam Trucker Hat",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a4f3a895c5bd4e00b3a1/118554/110281/american-pit-bull-terrier-foam-trucker-hat-dog-lover-line-art-classic.jpg",
-    "breed": "American Pit Bull Terrier",
-    "colour": "",
-    "cam": "person-2-front",
-    "pid": "6ae7a4f3a895c5bd4e00b3a1"
+    "src": "https://images.printify.com/mockup/6ae574ed90e00e273b0883b9/38194/97993/german-shorthaired-pointer-t-shirt-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae574ed90e00e273b0883b9",
+    "breed": "German Shorthaired Pointer",
+    "colour": "Military Green",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a00aeff2af9b7c0be61c/118554/110281/beagle-foam-trucker-hat-dog-lover-line-art-classic.jpg",
-    "breed": "Beagle",
-    "colour": "",
-    "cam": "person-2-front",
-    "pid": "6ae7a00aeff2af9b7c0be61c"
-   }
-  ]
- },
- {
-  "id": "b32",
-  "prod": "Polo",
-  "breeds": [
-   "Rottweiler",
-   "Mini Poodle",
-   "Bichon Frise",
-   "Pomeranian",
-   "Border Collie",
-   "Shih Tzu"
-  ],
-  "colours": [
-   "Athletic Heather",
-   "White"
-  ],
-  "tone": "light",
-  "design": [
-   "Line Art",
-   "Cool"
-  ],
-  "place": "",
-  "grp": "flat-front",
-  "format": "reel_grid",
-  "trans": 2,
-  "music": "Electronic & House",
-  "pal": "sage",
-  "cap": "seasonal",
-  "assets": [
-   {
-    "src": "https://images.printify.com/mockup/6ae7a04ee9fcc76a2908f784/104619/102236/rottweiler-polo-shirt-dog-lover-line-art-cool.jpg",
-    "breed": "Rottweiler",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a04ee9fcc76a2908f784"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a5aca04ae2f1280accd6/104619/102236/mini-poodle-polo-shirt-dog-lover-line-art-cool.jpg",
-    "breed": "Mini Poodle",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a5aca04ae2f1280accd6"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a5e58e070d8cc20b679b/104619/102236/bichon-frise-polo-shirt-dog-lover-line-art-cool.jpg",
-    "breed": "Bichon Frise",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a5e58e070d8cc20b679b"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a2dee9fcc76a2908f9e9/104619/102236/pomeranian-polo-shirt-dog-lover-line-art-cool.jpg",
-    "breed": "Pomeranian",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a2dee9fcc76a2908f9e9"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae7a535e8a14b46b70ea330/104649/102236/border-collie-polo-shirt-dog-lover-line-art-cool.jpg",
-    "breed": "Border Collie",
+    "src": "https://images.printify.com/mockup/6ae7a40ca895c5bd4e00b2f6/104649/102926/chihuahua-polo-shirt-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a40ca895c5bd4e00b2f6",
+    "breed": "Chihuahua",
     "colour": "White",
-    "cam": "front",
-    "pid": "6ae7a535e8a14b46b70ea330"
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6ae7a3547861ac1c1c04243e/104619/102236/shih-tzu-polo-shirt-dog-lover-line-art-cool.jpg",
-    "breed": "Shih Tzu",
-    "colour": "Athletic Heather",
-    "cam": "front",
-    "pid": "6ae7a3547861ac1c1c04243e"
+    "src": "https://images.printify.com/mockup/6ae575bcd9d5b70e2704f3b4/38193/97993/cavalier-king-charles-spaniel-t-shirt-dog-lover-geometric-classic-front-back.jpg",
+    "pid": "6ae575bcd9d5b70e2704f3b4",
+    "breed": "Cavalier King Charles Spaniel",
+    "colour": "Forest Green",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
    }
   ]
  },
  {
-  "id": "b33",
-  "prod": "Tee B",
+  "id": "m53",
+  "prod": "Mix",
+  "title": "Wear your best friend",
   "breeds": [
-   "Boston Terrier",
-   "Yorkshire Terrier",
-   "Havanese",
-   "Pembroke Welsh Corgi",
-   "Miniature Schnauzer",
-   "Cane Corso"
+   "Boxer",
+   "Standard Poodle",
+   "Dachshund",
+   "English Bulldog",
+   "Shiba Inu",
+   "Rottweiler",
+   "Doberman Pinscher",
+   "Great Dane",
+   "French Bulldog",
+   "German Shepherd"
   ],
-  "colours": [
-   "Ash",
-   "Asphalt",
-   "Light Blue",
-   "Maroon",
-   "Navy"
-  ],
-  "tone": "dark",
-  "design": [
-   "Line Art",
-   "Heart"
-  ],
-  "place": "Big Portrait",
-  "grp": "hanging",
-  "format": "reel_hero",
-  "trans": 1,
-  "music": "Latin & Reggae",
-  "pal": "blush",
-  "cap": "benefit",
+  "format": "reel_split",
+  "trans": 5,
+  "music": "Feel-good",
+  "cap": "list",
+  "durs": null,
   "assets": [
    {
-    "src": "https://images.printify.com/mockup/6aed2ef8e7be4e1ecd0985f3/18398/102048/boston-terrier-shirt-line-art-dog-t-shirt-in-black-dark-colors-dog-mom-dad-gift.jpg",
-    "breed": "Boston Terrier",
-    "colour": "Navy",
-    "cam": "hanging-1",
-    "pid": "6aed2ef8e7be4e1ecd0985f3"
+    "src": "https://images.printify.com/mockup/6ae7a2a9e9fcc76a2908f9a6/118545/110007/boxer-mesh-trucker-cap-dog-lover-line-art-cool.jpg",
+    "pid": "6ae7a2a9e9fcc76a2908f9a6",
+    "breed": "Boxer",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": true
    },
    {
-    "src": "https://images.printify.com/mockup/6aed2efbc53c76c1630e5f13/18374/102048/yorkshire-terrier-shirt-line-art-dog-t-shirt-in-black-dark-colors-dog-mom-dad-gift.jpg",
-    "breed": "Yorkshire Terrier",
-    "colour": "Maroon",
-    "cam": "hanging-1",
-    "pid": "6aed2efbc53c76c1630e5f13"
-   },
-   {
-    "src": "https://images.printify.com/mockup/6ae6bdb0d7584ee56f091dc2/18358/102048/havanese-t-shirt-dog-lover-geometric-cool-big-portrait.jpg",
-    "breed": "Havanese",
+    "src": "https://images.printify.com/mockup/6ae58a600e146105c80c6251/42237/98426/standard-poodle-hoodie-dog-lover-geometric-heart-front-back.jpg",
+    "pid": "6ae58a600e146105c80c6251",
+    "breed": "Standard Poodle",
     "colour": "Light Blue",
-    "cam": "hanging-1",
-    "pid": "6ae6bdb0d7584ee56f091dc2"
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6aed2f1a32b1c0af69065143/18374/102048/pembroke-welsh-corgi-shirt-geometric-sunglasses-dog-t-shirt-in-black-dark-colors-dog-lover-gift.jpg",
-    "breed": "Pembroke Welsh Corgi",
-    "colour": "Maroon",
-    "cam": "hanging-1",
-    "pid": "6aed2f1a32b1c0af69065143"
+    "src": "https://images.printify.com/mockup/6ae58e9990e00e273b0898a7/66243/97992/dachshund-t-shirt-dog-lover-geometric-classic-pocket-print.jpg",
+    "pid": "6ae58e9990e00e273b0898a7",
+    "breed": "Dachshund",
+    "colour": "Ice Grey",
+    "cam": "front",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6aed2f21950d2791130f89c5/18070/102048/miniature-schnauzer-shirt-geometric-sunglasses-dog-t-shirt-in-black-dark-colors-dog-lover-gift.jpg",
-    "breed": "Miniature Schnauzer",
-    "colour": "Asphalt",
-    "cam": "hanging-1",
-    "pid": "6aed2f21950d2791130f89c5"
+    "src": "https://images.printify.com/mockup/6ae574f71db256d3020eaa30/42221/98425/english-bulldog-hoodie-dog-lover-line-art-classic-front-back.jpg",
+    "pid": "6ae574f71db256d3020eaa30",
+    "breed": "English Bulldog",
+    "colour": "Dark Chocolate",
+    "cam": "back",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Classic",
+    "person": false
    },
    {
-    "src": "https://images.printify.com/mockup/6ae6bcb4bdc68f81c20f0dc2/38608/102048/cane-corso-t-shirt-dog-lover-geometric-heart-big-portrait.jpg",
-    "breed": "Cane Corso",
-    "colour": "Ash",
-    "cam": "hanging-1",
-    "pid": "6ae6bcb4bdc68f81c20f0dc2"
+    "src": "https://images.printify.com/mockup/6ae7a59ca895c5bd4e00b424/118545/110007/shiba-inu-mesh-trucker-cap-dog-lover-geometric-heart.jpg",
+    "pid": "6ae7a59ca895c5bd4e00b424",
+    "breed": "Shiba Inu",
+    "colour": "White",
+    "cam": "person-1-front",
+    "prod": "Mesh Trucker Cap",
+    "style": "Geometric",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae5746c663e719ab1087c19/42237/98426/rottweiler-hoodie-dog-lover-line-art-cool-front-back.jpg",
+    "pid": "6ae5746c663e719ab1087c19",
+    "breed": "Rottweiler",
+    "colour": "Light Blue",
+    "cam": "back-2",
+    "prod": "Hoodie",
+    "style": "Line Art",
+    "sub": "Cool",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae7a20be9fcc76a2908f92f/118554/110281/doberman-pinscher-foam-trucker-hat-dog-lover-geometric-classic.jpg",
+    "pid": "6ae7a20be9fcc76a2908f92f",
+    "breed": "Doberman Pinscher",
+    "colour": "",
+    "cam": "person-2-front",
+    "prod": "Foam Trucker Hat",
+    "style": "Geometric",
+    "sub": "Classic",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae57997521a59fb2b094e33/38181/97993/great-dane-t-shirt-dog-lover-line-art-heart-front-back.jpg",
+    "pid": "6ae57997521a59fb2b094e33",
+    "breed": "Great Dane",
+    "colour": "Charcoal",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": false
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae79e9e7861ac1c1c041f07/104649/102926/french-bulldog-polo-shirt-dog-lover-line-art-heart.jpg",
+    "pid": "6ae79e9e7861ac1c1c041f07",
+    "breed": "French Bulldog",
+    "colour": "White",
+    "cam": "person-front",
+    "prod": "Polo",
+    "style": "Line Art",
+    "sub": "Heart",
+    "person": true
+   },
+   {
+    "src": "https://images.printify.com/mockup/6ae58a1749f7cb0d0b02f48e/38194/97993/german-shepherd-t-shirt-dog-lover-geometric-cool-front-back.jpg",
+    "pid": "6ae58a1749f7cb0d0b02f48e",
+    "breed": "German Shepherd",
+    "colour": "Military Green",
+    "cam": "back",
+    "prod": "Tee A",
+    "style": "Geometric",
+    "sub": "Cool",
+    "person": false
    }
   ]
  }

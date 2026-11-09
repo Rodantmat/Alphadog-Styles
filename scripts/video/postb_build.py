@@ -19,11 +19,11 @@ def tile(path,W,H):
     if m.sum()>200:
         ys,xs=np.where(m); x0,x1,y0,y1=xs.min(),xs.max(),ys.min(),ys.max(); mx=int((x1-x0)*0.06)+4; my=int((y1-y0)*0.06)+4
         im=im.crop((max(0,x0-mx),max(0,y0-my),min(w,x1+mx),min(h,y1+my))); w,h=im.size
-    s=min(W*0.96/w,H*0.92/h); im2=im.resize((max(1,int(w*s)),max(1,int(h*s))),Image.LANCZOS)
+    s=min(W*0.96/w,(H-300)/h); im2=im.resize((max(1,int(w*s)),max(1,int(h*s))),Image.LANCZOS)
     top=np.array(im.resize((W,H)).crop((0,0,W,4))).mean(axis=(0,1)); bot=np.array(im.resize((W,H)).crop((0,H-4,W,H))).mean(axis=(0,1))
     a=np.zeros((H,W,3),"float32")
     for y in range(H): t=y/(H-1); a[y]=top*(1-t)+bot*t
-    can=Image.fromarray(a.astype("uint8")); can.paste(im2,((W-im2.width)//2,(H-im2.height)//2)); return can
+    can=Image.fromarray(a.astype("uint8")); can.paste(im2,((W-im2.width)//2,max(0,(H-300-im2.height)//2+30))); return can
 def brand(can,title=None,W=1080,H=1920):
     d=ImageDraw.Draw(can)
     if os.path.exists(B2.LOGO):
@@ -38,8 +38,8 @@ def brand(can,title=None,W=1080,H=1920):
     f3=ImageFont.truetype(FB,28); s="ALPHADOG STYLES"; w=d.textlength(s,font=f3); d.text(((W-w)/2,H-92),s,font=f3,fill=(250,248,242)); return can
 def frames_for(p,od,files):
     W,H=1080,1920; fmt=p["format"]; out=[]
-    title=f"{p['prod']} · {p['design'][0]} {p['design'][1]}".replace("Tee A","Tee").replace("Tee B","Tee")
-    if fmt in("reel_slideshow","reel_hero","reel_flip"):
+    title=p.get("title") or f"{p['prod']} · {p['design'][0]} {p['design'][1]}".replace("Tee A","Tee").replace("Tee B","Tee")
+    if fmt in("reel_slideshow","reel_hero","reel_flip","reel_rhythm"):
         use=files[:3] if fmt=="reel_hero" else files
         for i,f in enumerate(use):
             can=brand(cover(Image.open(f).convert("RGB"),W,H) if False else tile(f,W,H),title if i==0 else None); fn=f"{od}/f{i:02d}.png"; can.save(fn); out.append(fn)
@@ -57,18 +57,18 @@ def frames_for(p,od,files):
     return out
 def ffmpeg_reel(p,od,fr,music):
     fmt=p["format"]; tr=TRS[p["trans"]%len(TRS)]
-    D={"reel_slideshow":1.9,"reel_hero":3.0,"reel_flip":0.75,"reel_split":2.5,"reel_grid":1.1}[fmt]; X={"reel_slideshow":0.7,"reel_hero":0.9,"reel_flip":0.12,"reel_split":0.6,"reel_grid":0.25}[fmt]
-    ins=[];filt=[]
+    D={"reel_rhythm":1.5,"reel_slideshow":1.9,"reel_hero":3.0,"reel_flip":0.75,"reel_split":2.5,"reel_grid":1.1}[fmt]; X={"reel_rhythm":0.4,"reel_slideshow":0.7,"reel_hero":0.9,"reel_flip":0.12,"reel_split":0.6,"reel_grid":0.25}[fmt]
+    ins=[];filt=[]; DU=p.get('durs') if fmt=='reel_rhythm' and p.get('durs') else [D]*len(fr)
     for i,f in enumerate(fr):
-        ins+=["-loop","1","-t",f"{D+X}","-i",f]
+        ins+=["-loop","1","-t",f"{DU[i]+X}","-i",f]; D=DU[i]
         zmax={"reel_hero":0.18,"reel_flip":0.10}.get(fmt,0.07); step=zmax/(D*30)
         z=f"min(zoom+{step:.5f},{1+zmax})" if i%2==0 else f"if(eq(on,1),{1+zmax},max(zoom-{step:.5f},1.0))"
         if fmt in("reel_split","reel_grid"): z="1.0"
         filt.append(f"[{i}:v]scale=1700:3022:flags=lanczos,zoompan=z='{z}':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=30,setsar=1,format=yuv420p[v{i}]")
     cur="v0";t=0
     for i in range(1,len(fr)):
-        t+=D; filt.append(f"[{cur}][v{i}]xfade=transition={tr[(i-1)%3]}:duration={X}:offset={t:.2f}[x{i}]"); cur=f"x{i}"
-    total=D*len(fr)+X
+        t+=DU[i-1]; filt.append(f"[{cur}][v{i}]xfade=transition={tr[(i-1)%3]}:duration={X}:offset={t:.2f}[x{i}]"); cur=f"x{i}"
+    total=sum(DU)+X
     ins+=["-ss","0","-i",music]; filt.append(f"[{len(fr)}:a]atrim=0:{total:.2f},afade=t=in:d=0.6,afade=t=out:st={total-1.4:.2f}:d=1.4,volume=0.6[a]")
     subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map",f"[{cur}]","-map","[a]","-t",f"{total:.2f}","-c:v","libx264","-preset","veryfast","-crf","16","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
 CAP={
