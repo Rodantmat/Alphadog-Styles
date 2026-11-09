@@ -1,0 +1,17 @@
+name: printify-mockcount
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: |
+          python3 scripts/printify_mockcount.py | tee out/mockcount_log.txt
+          git config user.name bot; git config user.email bot@x
+          git add out/mockcount_result.json out/mockcount_log.txt
+          git commit -m "mockcount result" || true
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 3; done
