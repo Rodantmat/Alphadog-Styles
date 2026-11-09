@@ -2,7 +2,7 @@ import os,json,re,time,hashlib,urllib.request,sys
 T=os.environ["PRINTIFY_TOKEN"].strip()
 def call(p):
     return json.load(urllib.request.urlopen(urllib.request.Request("https://api.printify.com"+p,headers={"Authorization":"Bearer "+T,"User-Agent":"a"}),timeout=60))
-pids=json.load(open("out/mockcount_pids.json"))
+pids={k:v["pid"] for k,v in json.load(open("out/mockcount_pids2.json")).items()}; SEEDS={k:v["seeds"] for k,v in json.load(open("out/mockcount_pids2.json")).items()}
 only=sys.argv[1:] 
 SH=[s["id"] for s in call("/v1/shops.json")]
 os.makedirs("out/mockfull",exist_ok=True)
@@ -17,7 +17,7 @@ for prod,pid in pids.items():
         m=re.search(r"/mockup/[^/]+/(\d+)/(\d+)/",im["src"]); lab=re.search(r"camera_label=([^&]+)",im["src"])
         if m: known[int(m.group(2))]=lab.group(1) if lab else ""; vars_.add(int(m.group(1)))
     var=sorted(vars_)[0]
-    ids=sorted({j for k in known for j in range(k-150,k+150)})
+    ids=sorted({j for k in (set(known)|set(SEEDS[prod])) for j in range(k-12,k+13)})
     d=f"out/mockfull/{prod.replace(' ','_').replace(chr(39),'')}"; os.makedirs(d,exist_ok=True)
     found={}; seen={}
     print("PROD",prod,"var",var,"probing",len(ids),"known",known,flush=True)
