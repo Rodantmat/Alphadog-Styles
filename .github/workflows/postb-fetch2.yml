@@ -1,0 +1,16 @@
+name: postb-fetch2
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 -u scripts/postb_fetch.py
+      - run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -f out/pmk3
+          git commit -qm "pmk3 fetch" || echo nothing
+          for i in 1 2 3; do git pull -q --rebase && git push -q && break; sleep 5; done
