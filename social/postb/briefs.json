@@ -131,7 +131,8 @@
     "sub": "Classic",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m292.mp3"
  },
  {
   "id": "m41",
@@ -265,7 +266,8 @@
     "sub": "Heart",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m195.mp3"
  },
  {
   "id": "m42",
@@ -399,7 +401,8 @@
     "sub": "Cool",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m268.mp3"
  },
  {
   "id": "m43",
@@ -544,7 +547,8 @@
     "sub": "Heart",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m160.mp3"
  },
  {
   "id": "m44",
@@ -678,7 +682,8 @@
     "sub": "Cool",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m282.mp3"
  },
  {
   "id": "m45",
@@ -812,7 +817,8 @@
     "sub": "Classic",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m200.mp3"
  },
  {
   "id": "m46",
@@ -946,7 +952,8 @@
     "sub": "Cool",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m225.mp3"
  },
  {
   "id": "m47",
@@ -1080,7 +1087,8 @@
     "sub": "Classic",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m146.mp3"
  },
  {
   "id": "m48",
@@ -1100,7 +1108,7 @@
   ],
   "format": "reel_flip",
   "trans": 5,
-  "music": "Chill & Lo-fi",
+  "music": "Feel-good",
   "cap": "benefit",
   "durs": null,
   "assets": [
@@ -1214,7 +1222,8 @@
     "sub": "Cool",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m224.mp3"
  },
  {
   "id": "m49",
@@ -1348,7 +1357,8 @@
     "sub": "Cool",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m193.mp3"
  },
  {
   "id": "m50",
@@ -1482,7 +1492,8 @@
     "sub": "Heart",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m179.mp3"
  },
  {
   "id": "m51",
@@ -1627,7 +1638,8 @@
     "sub": "Heart",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m298.mp3"
  },
  {
   "id": "m52",
@@ -1761,7 +1773,8 @@
     "sub": "Classic",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m249.mp3"
  },
  {
   "id": "m53",
@@ -1895,6 +1908,7 @@
     "sub": "Cool",
     "person": false
    }
-  ]
+  ],
+  "music_file": "out/music2/m247.mp3"
  }
 ]
