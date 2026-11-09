@@ -32,7 +32,9 @@ def fix(k):
                 r=dim.get((ph["position"],im["id"]))
                 if not r: continue
                 W,Hh=float(r["areaW"]),float(r["areaH"]); w=im["scale"]*W; h=w*im["height"]/im["width"]; cx,cy=im["x"]*W,im["y"]*Hh
-                bb=eval(r["bbox"]) if r["bbox"].startswith("(") and "err" not in r["bbox"] else (0,0,1,1)
+                import re
+                fl=[float(x) for x in re.findall(r"(?<![\w.])\d\.\d+|(?<=\()\d\.\d+",r["bbox"].replace("np.float64(","(").split(", 4")[0])] if "err" not in r["bbox"] else []
+                bb=tuple(fl[:4]) if len(fl)>=4 else (0,0,1,1)
                 # visible content box relative to image centre, as fractions of image w/h
                 lim=1.0
                 # allowed half extents
