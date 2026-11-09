@@ -1,3 +1,550 @@
 shop	pid	title	before(scale,y)	after(scale,y)	status
-29545924	6ae57b7b90e00e273b088b29	American Pit Bull Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.415,0.63	0.415,0.64	UPDATED
-29545924	6ae57b7b90e00e273b088b29	American Pit Bull Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.415,0.63	0.415,0.64	UPDATED
+29544854	6ae56b42b3e56e7b5f092bbd	French Bulldog Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.372,0.61	0.357,0.61	UPDATED
+29544854	6ae56b42b3e56e7b5f092bbd	French Bulldog Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.372,0.61	0.357,0.61	UPDATED
+29544854	6ae56b5b93e71ab22e09ffe5	Labrador Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.512,0.61	0.492,0.61	UPDATED
+29544854	6ae56b5b93e71ab22e09ffe5	Labrador Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.512,0.61	0.492,0.61	UPDATED
+29544854	6ae56b7155e86fafe60acc99	Golden Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.493,0.61	0.474,0.61	UPDATED
+29544854	6ae56b7155e86fafe60acc99	Golden Retriever Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.493,0.61	0.474,0.61	UPDATED
+29544854	6ae56b8990e00e273b087b18	German Shepherd Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.494,0.61	0.475,0.61	UPDATED
+29544854	6ae56b8990e00e273b087b18	German Shepherd Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.494,0.61	0.475,0.61	UPDATED
+29544854	6ae56ba055e86fafe60acccc	Dachshund Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.593,0.61	0.57,0.61	UPDATED
+29544854	6ae56ba055e86fafe60acccc	Dachshund Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.593,0.61	0.57,0.61	UPDATED
+29544854	6ae56bb755e86fafe60acce5	Standard Poodle Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.405,0.61	0.389,0.61	UPDATED
+29544854	6ae56bb755e86fafe60acce5	Standard Poodle Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.405,0.61	0.389,0.61	UPDATED
+29544854	6ae56bceb3e56e7b5f092c34	Beagle Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.432,0.61	0.416,0.61	UPDATED
+29544854	6ae56bceb3e56e7b5f092c34	Beagle Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.432,0.61	0.416,0.61	UPDATED
+29544854	6ae56be57962d6e080007426	Rottweiler Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.378,0.61	0.363,0.61	UPDATED
+29544854	6ae56be57962d6e080007426	Rottweiler Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.378,0.61	0.363,0.61	UPDATED
+29544854	6ae56bfb663e719ab10874b3	German Shorthaired Pointer Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.354,0.61	0.341,0.61	UPDATED
+29544854	6ae56bfb663e719ab10874b3	German Shorthaired Pointer Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.354,0.61	0.341,0.61	UPDATED
+29544854	6ae56c147962d6e08000746c	English Bulldog Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.423,0.61	0.407,0.61	UPDATED
+29544854	6ae56c147962d6e08000746c	English Bulldog Continuous Line Art Heart Dog Lover Hoodie | Pocket Portrait + Full Body Back	0.423,0.61	0.407,0.61	UPDATED
+29545924	6ae572c155e86fafe60ad3cf	French Bulldog Hoodie Dog Lover Line Art Cool Front & Back	0.468,0.5	0.358,0.61	UPDATED
+29545924	6ae572c155e86fafe60ad3cf	French Bulldog Hoodie Dog Lover Line Art Cool Front & Back	0.468,0.5	0.358,0.61	UPDATED
+29545924	6ae572e55d127aa2b30aefc0	French Bulldog Hoodie Dog Lover Geometric Cool Front & Back	0.531,0.5	0.405,0.61	UPDATED
+29545924	6ae572e55d127aa2b30aefc0	French Bulldog Hoodie Dog Lover Geometric Cool Front & Back	0.531,0.5	0.405,0.61	UPDATED
+29545924	6ae572ff1db256d3020ea774	Labrador Retriever Hoodie Dog Lover Line Art Cool Front & Back	0.601,0.5	0.458,0.61	UPDATED
+29545924	6ae572ff1db256d3020ea774	Labrador Retriever Hoodie Dog Lover Line Art Cool Front & Back	0.601,0.5	0.458,0.61	UPDATED
+29545924	6ae573215d127aa2b30aeffc	Labrador Retriever Hoodie Dog Lover Geometric Cool Front & Back	0.569,0.5	0.435,0.61	UPDATED
+29545924	6ae573215d127aa2b30aeffc	Labrador Retriever Hoodie Dog Lover Geometric Cool Front & Back	0.569,0.5	0.435,0.61	UPDATED
+29545924	6ae5733b5d127aa2b30af01f	Golden Retriever Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.486,0.61	UPDATED
+29545924	6ae5733b5d127aa2b30af01f	Golden Retriever Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.486,0.61	UPDATED
+29545924	6ae5735e5d127aa2b30af046	Golden Retriever Hoodie Dog Lover Geometric Cool Front & Back	0.578,0.5	0.441,0.61	UPDATED
+29545924	6ae5735e5d127aa2b30af046	Golden Retriever Hoodie Dog Lover Geometric Cool Front & Back	0.578,0.5	0.441,0.61	UPDATED
+29545924	6ae573785d127aa2b30af053	German Shepherd Hoodie Dog Lover Line Art Cool Front & Back	0.634,0.5	0.484,0.61	UPDATED
+29545924	6ae573785d127aa2b30af053	German Shepherd Hoodie Dog Lover Line Art Cool Front & Back	0.634,0.5	0.484,0.61	UPDATED
+29545924	6ae5739c1db256d3020ea803	German Shepherd Hoodie Dog Lover Geometric Cool Front & Back	0.555,0.5	0.423,0.61	UPDATED
+29545924	6ae5739c1db256d3020ea803	German Shepherd Hoodie Dog Lover Geometric Cool Front & Back	0.555,0.5	0.423,0.61	UPDATED
+29545924	6ae573b655e86fafe60ad492	Dachshund Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.537,0.61	UPDATED
+29545924	6ae573b655e86fafe60ad492	Dachshund Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.537,0.61	UPDATED
+29545924	6ae573d890e00e273b0882d9	Dachshund Hoodie Dog Lover Geometric Cool Front & Back	0.607,0.5	0.463,0.61	UPDATED
+29545924	6ae573d890e00e273b0882d9	Dachshund Hoodie Dog Lover Geometric Cool Front & Back	0.607,0.5	0.463,0.61	UPDATED
+29545924	6ae573f290e00e273b08830f	Standard Poodle Hoodie Dog Lover Line Art Cool Front & Back	0.546,0.5	0.417,0.61	UPDATED
+29545924	6ae573f290e00e273b08830f	Standard Poodle Hoodie Dog Lover Line Art Cool Front & Back	0.546,0.5	0.417,0.61	UPDATED
+29545924	6ae574155d127aa2b30af165	Standard Poodle Hoodie Dog Lover Geometric Cool Front & Back	0.551,0.5	0.42,0.61	UPDATED
+29545924	6ae574155d127aa2b30af165	Standard Poodle Hoodie Dog Lover Geometric Cool Front & Back	0.551,0.5	0.42,0.61	UPDATED
+29545924	6ae5742f1db256d3020ea8f3	Beagle Hoodie Dog Lover Line Art Cool Front & Back	0.555,0.5	0.423,0.61	UPDATED
+29545924	6ae5742f1db256d3020ea8f3	Beagle Hoodie Dog Lover Line Art Cool Front & Back	0.555,0.5	0.423,0.61	UPDATED
+29545924	6ae5745290e00e273b08834f	Beagle Hoodie Dog Lover Geometric Cool Front & Back	0.607,0.5	0.463,0.61	UPDATED
+29545924	6ae5745290e00e273b08834f	Beagle Hoodie Dog Lover Geometric Cool Front & Back	0.607,0.5	0.463,0.61	UPDATED
+29545924	6ae5746c663e719ab1087c19	Rottweiler Hoodie Dog Lover Line Art Cool Front & Back	0.477,0.5	0.364,0.61	UPDATED
+29545924	6ae5746c663e719ab1087c19	Rottweiler Hoodie Dog Lover Line Art Cool Front & Back	0.477,0.5	0.364,0.61	UPDATED
+29545924	6ae57493b3e56e7b5f093385	Rottweiler Hoodie Dog Lover Geometric Cool Front & Back	0.541,0.5	0.413,0.61	UPDATED
+29545924	6ae57493b3e56e7b5f093385	Rottweiler Hoodie Dog Lover Geometric Cool Front & Back	0.541,0.5	0.413,0.61	UPDATED
+29545924	6ae574b91594575b43072ebd	German Shorthaired Pointer Hoodie Dog Lover Line Art Cool Front & Back	0.448,0.5	0.342,0.61	UPDATED
+29545924	6ae574b91594575b43072ebd	German Shorthaired Pointer Hoodie Dog Lover Line Art Cool Front & Back	0.448,0.5	0.342,0.61	UPDATED
+29545924	6ae574e190e00e273b08839d	German Shorthaired Pointer Hoodie Dog Lover Geometric Cool Front & Back	0.58,0.5	0.442,0.61	UPDATED
+29545924	6ae574e190e00e273b08839d	German Shorthaired Pointer Hoodie Dog Lover Geometric Cool Front & Back	0.58,0.5	0.442,0.61	UPDATED
+29545924	6ae574fd90e00e273b0883cb	English Bulldog Hoodie Dog Lover Line Art Cool Front & Back	0.537,0.5	0.408,0.61	UPDATED
+29545924	6ae574fd90e00e273b0883cb	English Bulldog Hoodie Dog Lover Line Art Cool Front & Back	0.537,0.5	0.408,0.61	UPDATED
+29545924	6ae57522e22d5a72000fd51b	English Bulldog Hoodie Dog Lover Geometric Cool Front & Back	0.583,0.5	0.445,0.61	UPDATED
+29545924	6ae57522e22d5a72000fd51b	English Bulldog Hoodie Dog Lover Geometric Cool Front & Back	0.583,0.5	0.445,0.61	UPDATED
+29545924	6ae5754d1db256d3020eaa99	Cane Corso Hoodie Dog Lover Line Art Cool Front & Back	0.496,0.5	0.379,0.61	UPDATED
+29545924	6ae5754d1db256d3020eaa99	Cane Corso Hoodie Dog Lover Line Art Cool Front & Back	0.496,0.5	0.379,0.61	UPDATED
+29545924	6ae57579e22d5a72000fd554	Cane Corso Hoodie Dog Lover Geometric Cool Front & Back	0.532,0.5	0.406,0.61	UPDATED
+29545924	6ae57579e22d5a72000fd554	Cane Corso Hoodie Dog Lover Geometric Cool Front & Back	0.532,0.5	0.406,0.61	UPDATED
+29545924	6ae575a31db256d3020eaae6	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Cool Front & Back	0.599,0.5	0.457,0.61	UPDATED
+29545924	6ae575a31db256d3020eaae6	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Cool Front & Back	0.599,0.5	0.457,0.61	UPDATED
+29545924	6ae575cd1db256d3020eab02	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Cool Front & Back	0.628,0.5	0.479,0.61	UPDATED
+29545924	6ae575cd1db256d3020eab02	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Cool Front & Back	0.628,0.5	0.479,0.61	UPDATED
+29545924	6ae576001594575b43073050	Yorkshire Terrier Hoodie Dog Lover Line Art Cool Front & Back	0.48,0.5	0.367,0.61	UPDATED
+29545924	6ae576001594575b43073050	Yorkshire Terrier Hoodie Dog Lover Line Art Cool Front & Back	0.48,0.5	0.367,0.61	UPDATED
+29545924	6ae5763a55e86fafe60ad6da	Yorkshire Terrier Hoodie Dog Lover Geometric Cool Front & Back	0.543,0.5	0.415,0.61	UPDATED
+29545924	6ae5763a55e86fafe60ad6da	Yorkshire Terrier Hoodie Dog Lover Geometric Cool Front & Back	0.543,0.5	0.415,0.61	UPDATED
+29545924	6ae576711594575b43073244	Australian Shepherd Hoodie Dog Lover Line Art Cool Front & Back	0.487,0.5	0.372,0.61	UPDATED
+29545924	6ae576711594575b43073244	Australian Shepherd Hoodie Dog Lover Line Art Cool Front & Back	0.487,0.5	0.372,0.61	UPDATED
+29545924	6ae576a649f7cb0d0b02e5fc	Australian Shepherd Hoodie Dog Lover Geometric Cool Front & Back	0.526,0.5	0.401,0.61	UPDATED
+29545924	6ae576a649f7cb0d0b02e5fc	Australian Shepherd Hoodie Dog Lover Geometric Cool Front & Back	0.526,0.5	0.401,0.61	UPDATED
+29545924	6ae576d890e00e273b088816	Doberman Pinscher Hoodie Dog Lover Line Art Cool Front & Back	0.41,0.5	0.313,0.61	UPDATED
+29545924	6ae576d890e00e273b088816	Doberman Pinscher Hoodie Dog Lover Line Art Cool Front & Back	0.41,0.5	0.313,0.61	UPDATED
+29545924	6ae57708e22d5a72000fd98c	Doberman Pinscher Hoodie Dog Lover Geometric Cool Front & Back	0.507,0.5	0.387,0.61	UPDATED
+29545924	6ae57708e22d5a72000fd98c	Doberman Pinscher Hoodie Dog Lover Geometric Cool Front & Back	0.507,0.5	0.387,0.61	UPDATED
+29545924	6ae577371594575b4307348b	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Cool Front & Back	0.464,0.5	0.354,0.61	UPDATED
+29545924	6ae577371594575b4307348b	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Cool Front & Back	0.464,0.5	0.354,0.61	UPDATED
+29545924	6ae5776955e86fafe60ada85	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Cool Front & Back	0.541,0.5	0.413,0.61	UPDATED
+29545924	6ae5776955e86fafe60ada85	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Cool Front & Back	0.541,0.5	0.413,0.61	UPDATED
+29545924	6ae5779755e86fafe60adaa5	Miniature Schnauzer Hoodie Dog Lover Line Art Cool Front & Back	0.504,0.5	0.383,0.61	UPDATED
+29545924	6ae5779755e86fafe60adaa5	Miniature Schnauzer Hoodie Dog Lover Line Art Cool Front & Back	0.504,0.5	0.383,0.61	UPDATED
+29545924	6ae577ca1db256d3020eafe7	Miniature Schnauzer Hoodie Dog Lover Geometric Cool Front & Back	0.56,0.5	0.427,0.61	UPDATED
+29545924	6ae577ca1db256d3020eafe7	Miniature Schnauzer Hoodie Dog Lover Geometric Cool Front & Back	0.56,0.5	0.427,0.61	UPDATED
+29545924	6ae577fc1db256d3020eaffa	Boxer Hoodie Dog Lover Line Art Cool Front & Back	0.455,0.5	0.347,0.61	UPDATED
+29545924	6ae577fc1db256d3020eaffa	Boxer Hoodie Dog Lover Line Art Cool Front & Back	0.455,0.5	0.347,0.61	UPDATED
+29545924	6ae57827b3e56e7b5f0938e1	Boxer Hoodie Dog Lover Geometric Cool Front & Back	0.553,0.5	0.422,0.61	UPDATED
+29545924	6ae57827b3e56e7b5f0938e1	Boxer Hoodie Dog Lover Geometric Cool Front & Back	0.553,0.5	0.422,0.61	UPDATED
+29545924	6ae5785549f7cb0d0b02e770	Pomeranian Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.56,0.61	UPDATED
+29545924	6ae5785549f7cb0d0b02e770	Pomeranian Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.56,0.61	UPDATED
+29545924	6ae578861594575b43073529	Pomeranian Hoodie Dog Lover Geometric Cool Front & Back	0.634,0.5	0.484,0.61	UPDATED
+29545924	6ae578861594575b43073529	Pomeranian Hoodie Dog Lover Geometric Cool Front & Back	0.634,0.5	0.484,0.61	UPDATED
+29545924	6ae578b01594575b43073543	Bernese Mountain Dog Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.523,0.61	UPDATED
+29545924	6ae578b01594575b43073543	Bernese Mountain Dog Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.523,0.61	UPDATED
+29545924	6ae578dab3e56e7b5f093964	Bernese Mountain Dog Hoodie Dog Lover Geometric Cool Front & Back	0.565,0.5	0.431,0.61	UPDATED
+29545924	6ae578dab3e56e7b5f093964	Bernese Mountain Dog Hoodie Dog Lover Geometric Cool Front & Back	0.565,0.5	0.431,0.61	UPDATED
+29545924	6ae579051594575b43073578	Shih Tzu Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.509,0.61	UPDATED
+29545924	6ae579051594575b43073578	Shih Tzu Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.509,0.61	UPDATED
+29545924	6ae5792e49f7cb0d0b02e7e9	Shih Tzu Hoodie Dog Lover Geometric Cool Front & Back	0.586,0.5	0.447,0.61	UPDATED
+29545924	6ae5792e49f7cb0d0b02e7e9	Shih Tzu Hoodie Dog Lover Geometric Cool Front & Back	0.586,0.5	0.447,0.61	UPDATED
+29545924	6ae5798b1db256d3020eb0c6	Great Dane Hoodie Dog Lover Line Art Cool Front & Back	0.438,0.5	0.334,0.61	UPDATED
+29545924	6ae5798b1db256d3020eb0c6	Great Dane Hoodie Dog Lover Line Art Cool Front & Back	0.438,0.5	0.334,0.61	UPDATED
+29545924	6ae579b61db256d3020eb0d7	Great Dane Hoodie Dog Lover Geometric Cool Front & Back	0.475,0.5	0.363,0.61	UPDATED
+29545924	6ae579b61db256d3020eb0d7	Great Dane Hoodie Dog Lover Geometric Cool Front & Back	0.475,0.5	0.363,0.61	UPDATED
+29545924	6ae579e090e00e273b0889da	Boston Terrier Hoodie Dog Lover Line Art Cool Front & Back	0.468,0.5	0.357,0.61	UPDATED
+29545924	6ae579e090e00e273b0889da	Boston Terrier Hoodie Dog Lover Line Art Cool Front & Back	0.468,0.5	0.357,0.61	UPDATED
+29545924	6ae57a0a90e00e273b0889f3	Boston Terrier Hoodie Dog Lover Geometric Cool Front & Back	0.539,0.5	0.411,0.61	UPDATED
+29545924	6ae57a0a90e00e273b0889f3	Boston Terrier Hoodie Dog Lover Geometric Cool Front & Back	0.539,0.5	0.411,0.61	UPDATED
+29545924	6ae57a30e22d5a72000fdb5a	Chihuahua Hoodie Dog Lover Line Art Cool Front & Back	0.61,0.5	0.466,0.61	UPDATED
+29545924	6ae57a30e22d5a72000fdb5a	Chihuahua Hoodie Dog Lover Line Art Cool Front & Back	0.61,0.5	0.466,0.61	UPDATED
+29545924	6ae57a5a521a59fb2b094e7b	Chihuahua Hoodie Dog Lover Geometric Cool Front & Back	0.548,0.5	0.418,0.61	UPDATED
+29545924	6ae57a5a521a59fb2b094e7b	Chihuahua Hoodie Dog Lover Geometric Cool Front & Back	0.548,0.5	0.418,0.61	UPDATED
+29545924	6ae57a801db256d3020eb136	Havanese Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.528,0.61	UPDATED
+29545924	6ae57a801db256d3020eb136	Havanese Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.528,0.61	UPDATED
+29545924	6ae57aab197e2a8042026dde	Havanese Hoodie Dog Lover Geometric Cool Front & Back	0.596,0.5	0.455,0.61	UPDATED
+29545924	6ae57aab197e2a8042026dde	Havanese Hoodie Dog Lover Geometric Cool Front & Back	0.596,0.5	0.455,0.61	UPDATED
+29545924	6ae57ad2e22d5a72000fdbc1	Siberian Husky Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.491,0.61	UPDATED
+29545924	6ae57ad2e22d5a72000fdbc1	Siberian Husky Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.491,0.61	UPDATED
+29545924	6ae57afb90e00e273b088ad3	Siberian Husky Hoodie Dog Lover Geometric Cool Front & Back	0.566,0.5	0.432,0.61	UPDATED
+29545924	6ae57afb90e00e273b088ad3	Siberian Husky Hoodie Dog Lover Geometric Cool Front & Back	0.566,0.5	0.432,0.61	UPDATED
+29545924	6ae57b23499964581706fd3b	Pug Hoodie Dog Lover Line Art Cool Front & Back	0.564,0.5	0.428,0.61	UPDATED
+29545924	6ae57b23499964581706fd3b	Pug Hoodie Dog Lover Line Art Cool Front & Back	0.564,0.5	0.428,0.61	UPDATED
+29545924	6ae57b49499964581706fd4f	Pug Hoodie Dog Lover Geometric Cool Front & Back	0.656,0.5	0.496,0.61	UPDATED
+29545924	6ae57b49499964581706fd4f	Pug Hoodie Dog Lover Geometric Cool Front & Back	0.656,0.5	0.496,0.61	UPDATED
+29545924	6ae57b6e49f7cb0d0b02e973	American Pit Bull Terrier Hoodie Dog Lover Line Art Cool Front & Back	0.611,0.5	0.466,0.61	UPDATED
+29545924	6ae57b6e49f7cb0d0b02e973	American Pit Bull Terrier Hoodie Dog Lover Line Art Cool Front & Back	0.611,0.5	0.466,0.61	UPDATED
+29545924	6ae57b9555e86fafe60add40	American Pit Bull Terrier Hoodie Dog Lover Geometric Cool Front & Back	0.602,0.5	0.459,0.61	UPDATED
+29545924	6ae57b9555e86fafe60add40	American Pit Bull Terrier Hoodie Dog Lover Geometric Cool Front & Back	0.602,0.5	0.459,0.61	UPDATED
+29545924	6ae57bbc49f7cb0d0b02e997	Border Collie Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.534,0.61	UPDATED
+29545924	6ae57bbc49f7cb0d0b02e997	Border Collie Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.534,0.61	UPDATED
+29545924	6ae57be555e86fafe60add70	Border Collie Hoodie Dog Lover Geometric Cool Front & Back	0.563,0.5	0.429,0.61	UPDATED
+29545924	6ae57be555e86fafe60add70	Border Collie Hoodie Dog Lover Geometric Cool Front & Back	0.563,0.5	0.429,0.61	UPDATED
+29545924	6ae57c0e197e2a8042026f1a	Shiba Inu Hoodie Dog Lover Line Art Cool Front & Back	0.55,0.5	0.419,0.61	UPDATED
+29545924	6ae57c0e197e2a8042026f1a	Shiba Inu Hoodie Dog Lover Line Art Cool Front & Back	0.55,0.5	0.419,0.61	UPDATED
+29545924	6ae57c3690e00e273b088b8c	Shiba Inu Hoodie Dog Lover Geometric Cool Front & Back	0.582,0.5	0.444,0.61	UPDATED
+29545924	6ae57c3690e00e273b088b8c	Shiba Inu Hoodie Dog Lover Geometric Cool Front & Back	0.582,0.5	0.444,0.61	UPDATED
+29545924	6ae57c5d1db256d3020eb29a	Mini Poodle Hoodie Dog Lover Line Art Cool Front & Back	0.576,0.5	0.44,0.61	UPDATED
+29545924	6ae57c5d1db256d3020eb29a	Mini Poodle Hoodie Dog Lover Line Art Cool Front & Back	0.576,0.5	0.44,0.61	UPDATED
+29545924	6ae57c85e22d5a72000fdd10	Mini Poodle Hoodie Dog Lover Geometric Cool Front & Back	0.586,0.5	0.447,0.61	UPDATED
+29545924	6ae57c85e22d5a72000fdd10	Mini Poodle Hoodie Dog Lover Geometric Cool Front & Back	0.586,0.5	0.447,0.61	UPDATED
+29545924	6ae57ca71db256d3020eb2ab	Bichon Frise Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.515,0.61	UPDATED
+29545924	6ae57ca71db256d3020eb2ab	Bichon Frise Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.515,0.61	UPDATED
+29545924	6ae57cce90e00e273b088bd2	Bichon Frise Hoodie Dog Lover Geometric Cool Front & Back	0.595,0.5	0.454,0.61	UPDATED
+29545924	6ae57cce90e00e273b088bd2	Bichon Frise Hoodie Dog Lover Geometric Cool Front & Back	0.595,0.5	0.454,0.61	UPDATED
+29545924	6ae57cf6197e2a8042026f8d	Maltese Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.497,0.61	UPDATED
+29545924	6ae57cf6197e2a8042026f8d	Maltese Hoodie Dog Lover Line Art Cool Front & Back	0.656,0.5	0.497,0.61	UPDATED
+29545924	6ae57d1e499964581706fe69	Maltese Hoodie Dog Lover Geometric Cool Front & Back	0.578,0.5	0.441,0.61	UPDATED
+29545924	6ae57d1e499964581706fe69	Maltese Hoodie Dog Lover Geometric Cool Front & Back	0.578,0.5	0.441,0.61	UPDATED
+29545924	6ae57d371db256d3020eb318	French Bulldog Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57d4890e00e273b088c24	French Bulldog Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57d5a521a59fb2b0950bf	Labrador Retriever Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57d6b521a59fb2b0950c9	Labrador Retriever Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57d7b49f7cb0d0b02eaad	Golden Retriever Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57d8c49f7cb0d0b02eab8	Golden Retriever Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57d9d90e00e273b088c54	German Shepherd Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57dae197e2a8042027003	German Shepherd Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57dbe197e2a804202700d	Dachshund Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57dd090e00e273b088c65	Dachshund Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57de055e86fafe60adeac	Standard Poodle Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57df1197e2a8042027030	Standard Poodle Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57e0290e00e273b088c90	Beagle Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57e1455e86fafe60aded8	Beagle Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57e2649f7cb0d0b02eb0b	Rottweiler Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57e3790e00e273b088cb9	Rottweiler Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57e49197e2a8042027078	German Shorthaired Pointer Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57e8c49f7cb0d0b02eb51	German Shorthaired Pointer Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57e9d90e00e273b088d1b	English Bulldog Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57ead1db256d3020eb430	English Bulldog Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57ebee22d5a72000fde6c	Cane Corso Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57ed0e22d5a72000fde79	Cane Corso Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57ee0197e2a80420270ac	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57ef290e00e273b088d5c	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57f0355e86fafe60adf46	Yorkshire Terrier Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57f141db256d3020eb46b	Yorkshire Terrier Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57f25197e2a80420270c2	Australian Shepherd Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57f36e22d5a72000fdeb6	Australian Shepherd Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57f4855e86fafe60adf96	Doberman Pinscher Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57f5949f7cb0d0b02ebf3	Doberman Pinscher Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57f6b1db256d3020eb4b6	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57f7f49f7cb0d0b02ec11	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57f911db256d3020eb4f9	Miniature Schnauzer Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57fa4197e2a8042027157	Miniature Schnauzer Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57fb749f7cb0d0b02ec64	Boxer Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57fc8e22d5a72000fdf64	Boxer Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57fda90e00e273b088e64	Pomeranian Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae57fea90e00e273b088e70	Pomeranian Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae57ffb55e86fafe60ae031	Bernese Mountain Dog Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae5800ce22d5a72000fdf9a	Bernese Mountain Dog Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae5801d1db256d3020eb562	Shih Tzu Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae5802ee22d5a72000fdfb1	Shih Tzu Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae5803e1db256d3020eb57a	Great Dane Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae5804f49f7cb0d0b02ecda	Great Dane Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae58062e22d5a72000fdfc4	Boston Terrier Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae58073197e2a80420271d4	Boston Terrier Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae5808690e00e273b088ecb	Chihuahua Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae5809b1db256d3020eb598	Chihuahua Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae580ac55e86fafe60ae0ad	Havanese Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae580bc197e2a8042027222	Havanese Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae580cc197e2a804202722e	Siberian Husky Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae580de197e2a804202723d	Siberian Husky Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae580f055e86fafe60ae0eb	Pug Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae5810149f7cb0d0b02ed48	Pug Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae5811290e00e273b088f23	American Pit Bull Terrier Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae581231db256d3020eb5f1	American Pit Bull Terrier Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae5813455e86fafe60ae111	Border Collie Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae5814490e00e273b088f42	Border Collie Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae5815755e86fafe60ae126	Shiba Inu Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae5819f49f7cb0d0b02edb3	Shiba Inu Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae581b1197e2a804202729a	Mini Poodle Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae581c149f7cb0d0b02edc2	Mini Poodle Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae581d21db256d3020eb66d	Bichon Frise Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae581e490e00e273b088fba	Bichon Frise Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae581f690e00e273b088fe5	Maltese Hoodie Dog Lover Line Art Cool Pocket Print	-	-	no-back
+29545924	6ae58208197e2a8042027305	Maltese Hoodie Dog Lover Geometric Cool Pocket Print	-	-	no-back
+29545924	6ae5822090e00e273b089000	French Bulldog Hoodie Dog Lover Line Art Cool Big Portrait	-	-	no-back
+29545924	6ae5823b0e146105c80c5c59	French Bulldog Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5825749f7cb0d0b02ee44	Labrador Retriever Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae582721db256d3020eb727	Labrador Retriever Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5828d0e146105c80c5ca0	Golden Retriever Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae582a890e00e273b089036	Golden Retriever Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae582c590e00e273b08905b	German Shepherd Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae582e10e146105c80c5cda	German Shepherd Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae582fa55e86fafe60ae26c	Dachshund Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae583150e146105c80c5cff	Dachshund Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae583320e146105c80c5d17	Standard Poodle Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5834d55e86fafe60ae2a6	Standard Poodle Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5836649f7cb0d0b02eefe	Beagle Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5837f1db256d3020eb7c3	Beagle Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5839855e86fafe60ae2d2	Rottweiler Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae583b249f7cb0d0b02ef47	Rottweiler Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae583cc1db256d3020eb7d7	German Shorthaired Pointer Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae583ea90e00e273b089118	German Shorthaired Pointer Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5840a1db256d3020eb840	English Bulldog Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5842a0e146105c80c5ddb	English Bulldog Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae58446197e2a80420274dd	Cane Corso Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae584641db256d3020eb8f2	Cane Corso Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5847f43fcd2f3870b231e	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5849a49f7cb0d0b02f0f1	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae584b60e146105c80c5ee7	Yorkshire Terrier Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae584d38361c937380a7047	Yorkshire Terrier Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae584ed49f7cb0d0b02f116	Australian Shepherd Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae585098361c937380a7070	Australian Shepherd Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae585250e146105c80c5f41	Doberman Pinscher Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae585420e146105c80c5f69	Doberman Pinscher Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5855f90e00e273b0892e7	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5857b49f7cb0d0b02f18a	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5859590e00e273b089316	Miniature Schnauzer Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae585b055e86fafe60ae52d	Miniature Schnauzer Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae585ca55e86fafe60ae53d	Boxer Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5862390e00e273b089339	Boxer Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5863d90e00e273b089353	Pomeranian Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5865a43fcd2f3870b2441	Pomeranian Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae586758361c937380a7132	Bernese Mountain Dog Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5869255e86fafe60ae59a	Bernese Mountain Dog Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae586ad55e86fafe60ae5a9	Shih Tzu Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae586c990e00e273b0893a2	Shih Tzu Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae586e449f7cb0d0b02f272	Great Dane Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5870049f7cb0d0b02f284	Great Dane Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5871b49f7cb0d0b02f2a5	Boston Terrier Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5873643fcd2f3870b24d8	Boston Terrier Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5874f8361c937380a71b0	Chihuahua Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5876b8361c937380a71c0	Chihuahua Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae587871db256d3020ebb07	Havanese Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae587a649f7cb0d0b02f2cb	Havanese Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae587c1c0e74489cc070a78	Siberian Husky Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae587dd0e146105c80c60d3	Siberian Husky Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae587f649f7cb0d0b02f2f5	Pug Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae58811c0e74489cc070aad	Pug Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5882b0e146105c80c60f3	American Pit Bull Terrier Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5884643fcd2f3870b2552	American Pit Bull Terrier Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae58860c0e74489cc070ac9	Border Collie Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5887d0e146105c80c610d	Border Collie Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5889b55e86fafe60ae6a3	Shiba Inu Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae588b749f7cb0d0b02f375	Shiba Inu Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae588d243fcd2f3870b259a	Mini Poodle Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae588ecc0e74489cc070b2a	Mini Poodle Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae58906c0e74489cc070b48	Bichon Frise Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5892290e00e273b08950e	Bichon Frise Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29545924	6ae5893d949c1d10dd0bbdbc	Maltese Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29545924	6ae5895b49f7cb0d0b02f411	Maltese Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae589a9c0e74489cc070bb8	French Bulldog Hoodie Dog Lover Line Art Heart Front & Back	0.372,0.61	0.357,0.61	UPDATED
+29546485	6ae589a9c0e74489cc070bb8	French Bulldog Hoodie Dog Lover Line Art Heart Front & Back	0.372,0.61	0.357,0.61	UPDATED
+29546485	6ae589ba43fcd2f3870b265a	French Bulldog Hoodie Dog Lover Geometric Heart Front & Back	0.422,0.61	0.405,0.61	UPDATED
+29546485	6ae589ba43fcd2f3870b265a	French Bulldog Hoodie Dog Lover Geometric Heart Front & Back	0.422,0.61	0.405,0.61	UPDATED
+29546485	6ae589cb0e146105c80c6201	Labrador Retriever Hoodie Dog Lover Line Art Heart Front & Back	0.512,0.61	0.492,0.61	UPDATED
+29546485	6ae589cb0e146105c80c6201	Labrador Retriever Hoodie Dog Lover Line Art Heart Front & Back	0.512,0.61	0.492,0.61	UPDATED
+29546485	6ae589dcc0e74489cc070c22	Labrador Retriever Hoodie Dog Lover Geometric Heart Front & Back	0.475,0.61	0.457,0.61	UPDATED
+29546485	6ae589dcc0e74489cc070c22	Labrador Retriever Hoodie Dog Lover Geometric Heart Front & Back	0.475,0.61	0.457,0.61	UPDATED
+29546485	6ae589ee0e146105c80c621b	Golden Retriever Hoodie Dog Lover Line Art Heart Front & Back	0.493,0.61	0.474,0.61	UPDATED
+29546485	6ae589ee0e146105c80c621b	Golden Retriever Hoodie Dog Lover Line Art Heart Front & Back	0.493,0.61	0.474,0.61	UPDATED
+29546485	6ae589ff49f7cb0d0b02f483	Golden Retriever Hoodie Dog Lover Geometric Heart Front & Back	0.43,0.61	0.413,0.61	UPDATED
+29546485	6ae589ff49f7cb0d0b02f483	Golden Retriever Hoodie Dog Lover Geometric Heart Front & Back	0.43,0.61	0.413,0.61	UPDATED
+29546485	6ae58a0f90e00e273b08959d	German Shepherd Hoodie Dog Lover Line Art Heart Front & Back	0.494,0.61	0.475,0.61	UPDATED
+29546485	6ae58a0f90e00e273b08959d	German Shepherd Hoodie Dog Lover Line Art Heart Front & Back	0.494,0.61	0.475,0.61	UPDATED
+29546485	6ae58a2049f7cb0d0b02f494	German Shepherd Hoodie Dog Lover Geometric Heart Front & Back	0.43,0.61	0.413,0.61	UPDATED
+29546485	6ae58a2049f7cb0d0b02f494	German Shepherd Hoodie Dog Lover Geometric Heart Front & Back	0.43,0.61	0.413,0.61	UPDATED
+29546485	6ae58a3090e00e273b0895b5	Dachshund Hoodie Dog Lover Line Art Heart Front & Back	0.593,0.61	0.57,0.61	UPDATED
+29546485	6ae58a3090e00e273b0895b5	Dachshund Hoodie Dog Lover Line Art Heart Front & Back	0.593,0.61	0.57,0.61	UPDATED
+29546485	6ae58a400e146105c80c6244	Dachshund Hoodie Dog Lover Geometric Heart Front & Back	0.482,0.61	0.463,0.61	UPDATED
+29546485	6ae58a400e146105c80c6244	Dachshund Hoodie Dog Lover Geometric Heart Front & Back	0.482,0.61	0.463,0.61	UPDATED
+29546485	6ae58a5049f7cb0d0b02f4a7	Standard Poodle Hoodie Dog Lover Line Art Heart Front & Back	0.405,0.61	0.389,0.61	UPDATED
+29546485	6ae58a5049f7cb0d0b02f4a7	Standard Poodle Hoodie Dog Lover Line Art Heart Front & Back	0.405,0.61	0.389,0.61	UPDATED
+29546485	6ae58a600e146105c80c6251	Standard Poodle Hoodie Dog Lover Geometric Heart Front & Back	0.437,0.61	0.42,0.61	UPDATED
+29546485	6ae58a600e146105c80c6251	Standard Poodle Hoodie Dog Lover Geometric Heart Front & Back	0.437,0.61	0.42,0.61	UPDATED
+29546485	6ae58a7090e00e273b0895d2	Beagle Hoodie Dog Lover Line Art Heart Front & Back	0.432,0.61	0.416,0.61	UPDATED
+29546485	6ae58a7090e00e273b0895d2	Beagle Hoodie Dog Lover Line Art Heart Front & Back	0.432,0.61	0.416,0.61	UPDATED
+29546485	6ae58a80c0e74489cc070c8d	Beagle Hoodie Dog Lover Geometric Heart Front & Back	0.443,0.61	0.426,0.61	UPDATED
+29546485	6ae58a80c0e74489cc070c8d	Beagle Hoodie Dog Lover Geometric Heart Front & Back	0.443,0.61	0.426,0.61	UPDATED
+29546485	6ae58a9043fcd2f3870b26cd	Rottweiler Hoodie Dog Lover Line Art Heart Front & Back	0.378,0.61	0.363,0.61	UPDATED
+29546485	6ae58a9043fcd2f3870b26cd	Rottweiler Hoodie Dog Lover Line Art Heart Front & Back	0.378,0.61	0.363,0.61	UPDATED
+29546485	6ae58aa190e00e273b0895ec	Rottweiler Hoodie Dog Lover Geometric Heart Front & Back	0.424,0.61	0.407,0.61	UPDATED
+29546485	6ae58aa190e00e273b0895ec	Rottweiler Hoodie Dog Lover Geometric Heart Front & Back	0.424,0.61	0.407,0.61	UPDATED
+29546485	6ae58ab20e146105c80c627c	German Shorthaired Pointer Hoodie Dog Lover Line Art Heart Front & Back	0.354,0.61	0.341,0.61	UPDATED
+29546485	6ae58ab20e146105c80c627c	German Shorthaired Pointer Hoodie Dog Lover Line Art Heart Front & Back	0.354,0.61	0.341,0.61	UPDATED
+29546485	6ae58ac155e86fafe60ae7db	German Shorthaired Pointer Hoodie Dog Lover Geometric Heart Front & Back	0.438,0.61	0.421,0.61	UPDATED
+29546485	6ae58ac155e86fafe60ae7db	German Shorthaired Pointer Hoodie Dog Lover Geometric Heart Front & Back	0.438,0.61	0.421,0.61	UPDATED
+29546485	6ae58ad10e146105c80c628a	English Bulldog Hoodie Dog Lover Line Art Heart Front & Back	0.423,0.61	0.407,0.61	UPDATED
+29546485	6ae58ad10e146105c80c628a	English Bulldog Hoodie Dog Lover Line Art Heart Front & Back	0.423,0.61	0.407,0.61	UPDATED
+29546485	6ae58ae10e146105c80c6292	English Bulldog Hoodie Dog Lover Geometric Heart Front & Back	0.474,0.61	0.456,0.61	UPDATED
+29546485	6ae58ae10e146105c80c6292	English Bulldog Hoodie Dog Lover Geometric Heart Front & Back	0.474,0.61	0.456,0.61	UPDATED
+29546485	6ae58af155e86fafe60ae7e2	Cane Corso Hoodie Dog Lover Line Art Heart Front & Back	0.36,0.61	0.346,0.61	UPDATED
+29546485	6ae58af155e86fafe60ae7e2	Cane Corso Hoodie Dog Lover Line Art Heart Front & Back	0.36,0.61	0.346,0.61	UPDATED
+29546485	6ae58b0290e00e273b089619	Cane Corso Hoodie Dog Lover Geometric Heart Front & Back	0.445,0.61	0.428,0.61	UPDATED
+29546485	6ae58b0290e00e273b089619	Cane Corso Hoodie Dog Lover Geometric Heart Front & Back	0.445,0.61	0.428,0.61	UPDATED
+29546485	6ae58b11c0e74489cc070ce4	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Front & Back	0.5718,0.61	0.549,0.61	UPDATED
+29546485	6ae58b11c0e74489cc070ce4	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Front & Back	0.5718,0.61	0.549,0.61	UPDATED
+29546485	6ae58b22c0e74489cc070cf0	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Heart Front & Back	0.469,0.61	0.451,0.61	UPDATED
+29546485	6ae58b22c0e74489cc070cf0	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Heart Front & Back	0.469,0.61	0.451,0.61	UPDATED
+29546485	6ae58b3290e00e273b089631	Yorkshire Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.396,0.61	0.381,0.61	UPDATED
+29546485	6ae58b3290e00e273b089631	Yorkshire Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.396,0.61	0.381,0.61	UPDATED
+29546485	6ae58b4255e86fafe60ae82c	Yorkshire Terrier Hoodie Dog Lover Geometric Heart Front & Back	0.436,0.61	0.42,0.61	UPDATED
+29546485	6ae58b4255e86fafe60ae82c	Yorkshire Terrier Hoodie Dog Lover Geometric Heart Front & Back	0.436,0.61	0.42,0.61	UPDATED
+29546485	6ae58b5390e00e273b0896b1	Australian Shepherd Hoodie Dog Lover Line Art Heart Front & Back	0.381,0.61	0.366,0.61	UPDATED
+29546485	6ae58b5390e00e273b0896b1	Australian Shepherd Hoodie Dog Lover Line Art Heart Front & Back	0.381,0.61	0.366,0.61	UPDATED
+29546485	6ae58b64c0e74489cc070d9f	Australian Shepherd Hoodie Dog Lover Geometric Heart Front & Back	0.459,0.61	0.441,0.61	UPDATED
+29546485	6ae58b64c0e74489cc070d9f	Australian Shepherd Hoodie Dog Lover Geometric Heart Front & Back	0.459,0.61	0.441,0.61	UPDATED
+29546485	6ae58b7490e00e273b0896d1	Doberman Pinscher Hoodie Dog Lover Line Art Heart Front & Back	0.299,0.61	0.287,0.61	UPDATED
+29546485	6ae58b7490e00e273b0896d1	Doberman Pinscher Hoodie Dog Lover Line Art Heart Front & Back	0.299,0.61	0.287,0.61	UPDATED
+29546485	6ae58b8490e00e273b0896d9	Doberman Pinscher Hoodie Dog Lover Geometric Heart Front & Back	0.395,0.61	0.38,0.61	UPDATED
+29546485	6ae58b8490e00e273b0896d9	Doberman Pinscher Hoodie Dog Lover Geometric Heart Front & Back	0.395,0.61	0.38,0.61	UPDATED
+29546485	6ae58b94aa79725281069573	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Heart Front & Back	0.39,0.61	0.375,0.61	UPDATED
+29546485	6ae58b94aa79725281069573	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Heart Front & Back	0.39,0.61	0.375,0.61	UPDATED
+29546485	6ae58ba443fcd2f3870b27df	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Heart Front & Back	0.426,0.61	0.409,0.61	UPDATED
+29546485	6ae58ba443fcd2f3870b27df	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Heart Front & Back	0.426,0.61	0.409,0.61	UPDATED
+29546485	6ae58bb3c0e74489cc070ddf	Miniature Schnauzer Hoodie Dog Lover Line Art Heart Front & Back	0.389,0.61	0.374,0.61	UPDATED
+29546485	6ae58bb3c0e74489cc070ddf	Miniature Schnauzer Hoodie Dog Lover Line Art Heart Front & Back	0.389,0.61	0.374,0.61	UPDATED
+29546485	6ae58bc3c0e74489cc070de8	Miniature Schnauzer Hoodie Dog Lover Geometric Heart Front & Back	0.458,0.61	0.44,0.61	UPDATED
+29546485	6ae58bc3c0e74489cc070de8	Miniature Schnauzer Hoodie Dog Lover Geometric Heart Front & Back	0.458,0.61	0.44,0.61	UPDATED
+29546485	6ae58bd455e86fafe60ae89c	Boxer Hoodie Dog Lover Line Art Heart Front & Back	0.356,0.61	0.342,0.61	UPDATED
+29546485	6ae58bd455e86fafe60ae89c	Boxer Hoodie Dog Lover Line Art Heart Front & Back	0.356,0.61	0.342,0.61	UPDATED
+29546485	6ae58be655e86fafe60ae8b1	Boxer Hoodie Dog Lover Geometric Heart Front & Back	0.433,0.61	0.416,0.61	UPDATED
+29546485	6ae58be655e86fafe60ae8b1	Boxer Hoodie Dog Lover Geometric Heart Front & Back	0.433,0.61	0.416,0.61	UPDATED
+29546485	6ae58bf643fcd2f3870b2825	Pomeranian Hoodie Dog Lover Line Art Heart Front & Back	0.554,0.61	0.533,0.61	UPDATED
+29546485	6ae58bf643fcd2f3870b2825	Pomeranian Hoodie Dog Lover Line Art Heart Front & Back	0.554,0.61	0.533,0.61	UPDATED
+29546485	6ae58c06949c1d10dd0bbfb7	Pomeranian Hoodie Dog Lover Geometric Heart Front & Back	0.478,0.61	0.459,0.61	UPDATED
+29546485	6ae58c06949c1d10dd0bbfb7	Pomeranian Hoodie Dog Lover Geometric Heart Front & Back	0.478,0.61	0.459,0.61	UPDATED
+29546485	6ae58c180e146105c80c6384	Bernese Mountain Dog Hoodie Dog Lover Line Art Heart Front & Back	0.522,0.61	0.502,0.61	UPDATED
+29546485	6ae58c180e146105c80c6384	Bernese Mountain Dog Hoodie Dog Lover Line Art Heart Front & Back	0.522,0.61	0.502,0.61	UPDATED
+29546485	6ae58c2890e00e273b089725	Bernese Mountain Dog Hoodie Dog Lover Geometric Heart Front & Back	0.456,0.61	0.438,0.61	UPDATED
+29546485	6ae58c2890e00e273b089725	Bernese Mountain Dog Hoodie Dog Lover Geometric Heart Front & Back	0.456,0.61	0.438,0.61	UPDATED
+29546485	6ae58c3855e86fafe60ae8f9	Shih Tzu Hoodie Dog Lover Line Art Heart Front & Back	0.479,0.61	0.46,0.61	UPDATED
+29546485	6ae58c3855e86fafe60ae8f9	Shih Tzu Hoodie Dog Lover Line Art Heart Front & Back	0.479,0.61	0.46,0.61	UPDATED
+29546485	6ae58c7855e86fafe60ae93b	Shih Tzu Hoodie Dog Lover Geometric Heart Front & Back	0.467,0.61	0.449,0.61	UPDATED
+29546485	6ae58c7855e86fafe60ae93b	Shih Tzu Hoodie Dog Lover Geometric Heart Front & Back	0.467,0.61	0.449,0.61	UPDATED
+29546485	6ae58c8855e86fafe60ae948	Great Dane Hoodie Dog Lover Line Art Heart Front & Back	0.322,0.61	0.31,0.61	UPDATED
+29546485	6ae58c8855e86fafe60ae948	Great Dane Hoodie Dog Lover Line Art Heart Front & Back	0.322,0.61	0.31,0.61	UPDATED
+29546485	6ae58c9a43fcd2f3870b288f	Great Dane Hoodie Dog Lover Geometric Heart Front & Back	0.377,0.61	0.363,0.61	UPDATED
+29546485	6ae58c9a43fcd2f3870b288f	Great Dane Hoodie Dog Lover Geometric Heart Front & Back	0.377,0.61	0.363,0.61	UPDATED
+29546485	6ae58cabc0e74489cc070ecb	Boston Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.372,0.61	0.358,0.61	UPDATED
+29546485	6ae58cabc0e74489cc070ecb	Boston Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.372,0.61	0.358,0.61	UPDATED
+29546485	6ae58cbbc0e74489cc070ed4	Boston Terrier Hoodie Dog Lover Geometric Heart Front & Back	0.421,0.61	0.405,0.61	UPDATED
+29546485	6ae58cbbc0e74489cc070ed4	Boston Terrier Hoodie Dog Lover Geometric Heart Front & Back	0.421,0.61	0.405,0.61	UPDATED
+29546485	6ae58ccb55e86fafe60ae96c	Chihuahua Hoodie Dog Lover Line Art Heart Front & Back	0.48,0.61	0.461,0.61	UPDATED
+29546485	6ae58ccb55e86fafe60ae96c	Chihuahua Hoodie Dog Lover Line Art Heart Front & Back	0.48,0.61	0.461,0.61	UPDATED
+29546485	6ae58cdb55e86fafe60ae974	Chihuahua Hoodie Dog Lover Geometric Heart Front & Back	0.464,0.61	0.446,0.61	UPDATED
+29546485	6ae58cdb55e86fafe60ae974	Chihuahua Hoodie Dog Lover Geometric Heart Front & Back	0.464,0.61	0.446,0.61	UPDATED
+29546485	6ae58cebaa797252810696c5	Havanese Hoodie Dog Lover Line Art Heart Front & Back	0.543,0.61	0.522,0.61	UPDATED
+29546485	6ae58cebaa797252810696c5	Havanese Hoodie Dog Lover Line Art Heart Front & Back	0.543,0.61	0.522,0.61	UPDATED
+29546485	6ae58cfb0e146105c80c642c	Havanese Hoodie Dog Lover Geometric Heart Front & Back	0.528,0.61	0.507,0.61	UPDATED
+29546485	6ae58cfb0e146105c80c642c	Havanese Hoodie Dog Lover Geometric Heart Front & Back	0.528,0.61	0.507,0.61	UPDATED
+29546485	6ae58d0b0e146105c80c6435	Siberian Husky Hoodie Dog Lover Line Art Heart Front & Back	0.507,0.61	0.487,0.61	UPDATED
+29546485	6ae58d0b0e146105c80c6435	Siberian Husky Hoodie Dog Lover Line Art Heart Front & Back	0.507,0.61	0.487,0.61	UPDATED
+29546485	6ae58d1bc0e74489cc070f04	Siberian Husky Hoodie Dog Lover Geometric Heart Front & Back	0.449,0.61	0.432,0.61	UPDATED
+29546485	6ae58d1bc0e74489cc070f04	Siberian Husky Hoodie Dog Lover Geometric Heart Front & Back	0.449,0.61	0.432,0.61	UPDATED
+29546485	6ae58d2b0e146105c80c6444	Pug Hoodie Dog Lover Line Art Heart Front & Back	0.451,0.61	0.433,0.61	UPDATED
+29546485	6ae58d2b0e146105c80c6444	Pug Hoodie Dog Lover Line Art Heart Front & Back	0.451,0.61	0.433,0.61	UPDATED
+29546485	6ae58d3baa797252810696ec	Pug Hoodie Dog Lover Geometric Heart Front & Back	0.534,0.61	0.513,0.61	UPDATED
+29546485	6ae58d3baa797252810696ec	Pug Hoodie Dog Lover Geometric Heart Front & Back	0.534,0.61	0.513,0.61	UPDATED
+29546485	6ae58d4caa79725281069702	American Pit Bull Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.484,0.61	0.466,0.61	UPDATED
+29546485	6ae58d4caa79725281069702	American Pit Bull Terrier Hoodie Dog Lover Line Art Heart Front & Back	0.484,0.61	0.466,0.61	UPDATED
+29546485	6ae58d5d949c1d10dd0bc0b3	American Pit Bull Terrier Hoodie Dog Lover Geometric Heart Front & Back	0.478,0.61	0.459,0.61	UPDATED
+29546485	6ae58d5d949c1d10dd0bc0b3	American Pit Bull Terrier Hoodie Dog Lover Geometric Heart Front & Back	0.478,0.61	0.459,0.61	UPDATED
+29546485	6ae58d6d0e146105c80c6470	Border Collie Hoodie Dog Lover Line Art Heart Front & Back	0.564,0.61	0.542,0.61	UPDATED
+29546485	6ae58d6d0e146105c80c6470	Border Collie Hoodie Dog Lover Line Art Heart Front & Back	0.564,0.61	0.542,0.61	UPDATED
+29546485	6ae58d7d43fcd2f3870b2901	Border Collie Hoodie Dog Lover Geometric Heart Front & Back	0.476,0.61	0.458,0.61	UPDATED
+29546485	6ae58d7d43fcd2f3870b2901	Border Collie Hoodie Dog Lover Geometric Heart Front & Back	0.476,0.61	0.458,0.61	UPDATED
+29546485	6ae58d8f949c1d10dd0bc0dc	Shiba Inu Hoodie Dog Lover Line Art Heart Front & Back	0.42,0.61	0.404,0.61	UPDATED
+29546485	6ae58d8f949c1d10dd0bc0dc	Shiba Inu Hoodie Dog Lover Line Art Heart Front & Back	0.42,0.61	0.404,0.61	UPDATED
+29546485	6ae58da090e00e273b089800	Shiba Inu Hoodie Dog Lover Geometric Heart Front & Back	0.462,0.61	0.444,0.61	UPDATED
+29546485	6ae58da090e00e273b089800	Shiba Inu Hoodie Dog Lover Geometric Heart Front & Back	0.462,0.61	0.444,0.61	UPDATED
+29546485	6ae58db00e146105c80c64a9	Mini Poodle Hoodie Dog Lover Line Art Heart Front & Back	0.458,0.61	0.44,0.61	UPDATED
+29546485	6ae58db00e146105c80c64a9	Mini Poodle Hoodie Dog Lover Line Art Heart Front & Back	0.458,0.61	0.44,0.61	UPDATED
+29546485	6ae58dc1aa79725281069762	Mini Poodle Hoodie Dog Lover Geometric Heart Front & Back	0.4483,0.625	0.448,0.61	UPDATED
+29546485	6ae58dc1aa79725281069762	Mini Poodle Hoodie Dog Lover Geometric Heart Front & Back	0.4483,0.625	0.448,0.61	UPDATED
+29546485	6ae58dd1aa7972528106976b	Bichon Frise Hoodie Dog Lover Line Art Heart Front & Back	0.537,0.61	0.516,0.61	UPDATED
+29546485	6ae58dd1aa7972528106976b	Bichon Frise Hoodie Dog Lover Line Art Heart Front & Back	0.537,0.61	0.516,0.61	UPDATED
+29546485	6ae58de155e86fafe60aea20	Bichon Frise Hoodie Dog Lover Geometric Heart Front & Back	0.513,0.61	0.493,0.61	UPDATED
+29546485	6ae58de155e86fafe60aea20	Bichon Frise Hoodie Dog Lover Geometric Heart Front & Back	0.513,0.61	0.493,0.61	UPDATED
+29546485	6ae58df1949c1d10dd0bc13a	Maltese Hoodie Dog Lover Line Art Heart Front & Back	0.544,0.61	0.523,0.61	UPDATED
+29546485	6ae58df1949c1d10dd0bc13a	Maltese Hoodie Dog Lover Line Art Heart Front & Back	0.544,0.61	0.523,0.61	UPDATED
+29546485	6ae58e03c0e74489cc070f82	Maltese Hoodie Dog Lover Geometric Heart Front & Back	0.485,0.61	0.466,0.61	UPDATED
+29546485	6ae58e03c0e74489cc070f82	Maltese Hoodie Dog Lover Geometric Heart Front & Back	0.485,0.61	0.466,0.61	UPDATED
+29546485	6ae58e14949c1d10dd0bc14a	French Bulldog Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58e2443fcd2f3870b2956	French Bulldog Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58e3543fcd2f3870b296a	Labrador Retriever Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58e45949c1d10dd0bc171	Labrador Retriever Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58e55aa797252810697be	Golden Retriever Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58e65aa797252810697c4	Golden Retriever Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58e7790e00e273b089880	German Shepherd Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58e87aa797252810697e3	German Shepherd Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58e97949c1d10dd0bc1ae	Dachshund Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58ea80e146105c80c6535	Dachshund Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58eb8c0e74489cc070fe1	Standard Poodle Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58ec7949c1d10dd0bc1c6	Standard Poodle Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58ed743fcd2f3870b29b1	Beagle Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58ee7aa79725281069816	Beagle Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58ef6949c1d10dd0bc1ea	Rottweiler Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58f06aa79725281069831	Rottweiler Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58f16c0e74489cc071028	German Shorthaired Pointer Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58f5a43fcd2f3870b2a11	German Shorthaired Pointer Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58f6aaa7972528106987a	English Bulldog Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58f7ac0e74489cc07105f	English Bulldog Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58f8a90e00e273b089920	Cane Corso Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58f9b43fcd2f3870b2a30	Cane Corso Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58fac949c1d10dd0bc251	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58fbcaa797252810698ae	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58fcdc0e74489cc071098	Yorkshire Terrier Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58fdd949c1d10dd0bc26e	Yorkshire Terrier Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae58fedaa797252810698d0	Australian Shepherd Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae58ffd949c1d10dd0bc2af	Australian Shepherd Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5900daa79725281069921	Doberman Pinscher Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5901f90e00e273b0899b6	Doberman Pinscher Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5902faa79725281069950	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5903f0e146105c80c6666	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5904f55e86fafe60aeb85	Miniature Schnauzer Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5905f55e86fafe60aeb8e	Miniature Schnauzer Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5906e55e86fafe60aeb95	Boxer Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5907eaa79725281069962	Boxer Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5908ec0e74489cc071158	Pomeranian Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5909e43fcd2f3870b2b42	Pomeranian Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae590ae55e86fafe60aebaa	Bernese Mountain Dog Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae590bd55e86fafe60aebb0	Bernese Mountain Dog Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae590cdc0e74489cc071169	Shih Tzu Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae590deaa7972528106999c	Shih Tzu Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae590ee43fcd2f3870b2b6e	Great Dane Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae591000e146105c80c6692	Great Dane Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae59111c0e74489cc071187	Boston Terrier Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5912190e00e273b089a05	Boston Terrier Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5913143fcd2f3870b2b89	Chihuahua Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5914190e00e273b089a1a	Chihuahua Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae59151aa797252810699ea	Havanese Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae59161aa79725281069a11	Havanese Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5917290e00e273b089a2d	Siberian Husky Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae59182aa79725281069a30	Siberian Husky Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae59192aa79725281069a37	Pug Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae591a1aa79725281069a3d	Pug Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae591b1aa79725281069a49	American Pit Bull Terrier Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae591c255e86fafe60aec2a	American Pit Bull Terrier Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae591d290e00e273b089a58	Border Collie Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae591e290e00e273b089a61	Border Collie Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae591f543fcd2f3870b2bc7	Shiba Inu Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5923b55e86fafe60aed1a	Shiba Inu Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5924c949c1d10dd0bc4df	Mini Poodle Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae5925e0e146105c80c6879	Mini Poodle Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae5927043fcd2f3870b2dde	Bichon Frise Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae59280aa79725281069d64	Bichon Frise Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae59291949c1d10dd0bc7be	Maltese Hoodie Dog Lover Line Art Heart Pocket Print	-	-	no-back
+29546485	6ae592a2949c1d10dd0bc89d	Maltese Hoodie Dog Lover Geometric Heart Pocket Print	-	-	no-back
+29546485	6ae592b5949c1d10dd0bc982	French Bulldog Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae592c643fcd2f3870b3145	French Bulldog Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae592d743fcd2f3870b319b	Labrador Retriever Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae592e80e146105c80c6d49	Labrador Retriever Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae592f943fcd2f3870b324f	Golden Retriever Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5930a949c1d10dd0bcb24	Golden Retriever Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5931a43fcd2f3870b3294	German Shepherd Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5932943fcd2f3870b32a2	German Shepherd Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae593390e146105c80c6e0d	Dachshund Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae59348d2194c8e730f3b24	Dachshund Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae59359944026b113050f2f	Standard Poodle Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5936a949c1d10dd0bcb56	Standard Poodle Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5937a5117207343033787	Beagle Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5938a511720734303378d	Beagle Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5939b944026b113050f49	Rottweiler Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae593acd2194c8e730f3b43	Rottweiler Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae593bb944026b113050f61	German Shorthaired Pointer Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae593ca90e00e273b08a1ff	German Shorthaired Pointer Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae593dbc0e74489cc07192f	English Bulldog Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae593ea90e00e273b08a215	English Bulldog Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae593fa90e00e273b08a224	Cane Corso Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae59409949c1d10dd0bcb8b	Cane Corso Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae594190e146105c80c6e9c	Cavalier King Charles Spaniel Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5942990e00e273b08a23f	Cavalier King Charles Spaniel Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5943990e00e273b08a24c	Yorkshire Terrier Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5944890e00e273b08a257	Yorkshire Terrier Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae59458d2194c8e730f3b96	Australian Shepherd Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae597d80e146105c80c713c	Australian Shepherd Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae597ea90e00e273b08a4d1	Doberman Pinscher Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae597fa0e146105c80c7170	Doberman Pinscher Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5980a0e146105c80c7181	Pembroke Welsh Corgi Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5981a0e146105c80c7190	Pembroke Welsh Corgi Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5982dc0e74489cc071b64	Miniature Schnauzer Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5983d949c1d10dd0bcdbe	Miniature Schnauzer Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5984e0e146105c80c71c8	Boxer Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5985f0e146105c80c71e6	Boxer Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5986f944026b11305125b	Pomeranian Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae59882949c1d10dd0bcdfa	Pomeranian Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae598930e146105c80c7218	Bernese Mountain Dog Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae598a4c0e74489cc071bc6	Bernese Mountain Dog Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae598b6c0e74489cc071bd0	Shih Tzu Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae598c6949c1d10dd0bce24	Shih Tzu Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae598d7949c1d10dd0bce2b	Great Dane Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae598e70e146105c80c7255	Great Dane Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae598f80e146105c80c7264	Boston Terrier Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5990aaa7972528106a4c9	Boston Terrier Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5991b0e146105c80c7294	Chihuahua Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5992cc0e74489cc071c26	Chihuahua Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5993d0e146105c80c72b4	Havanese Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5994d0e146105c80c72d0	Havanese Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5995e90e00e273b08a65f	Siberian Husky Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5996e90e00e273b08a676	Siberian Husky Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5997f0e146105c80c7320	Pug Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae5998ec0e74489cc071c88	Pug Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae5999e9b05ecc6130eba95	American Pit Bull Terrier Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae599ad90e00e273b08a695	American Pit Bull Terrier Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae599be0e146105c80c736d	Border Collie Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae599cd90e00e273b08a6a9	Border Collie Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae599dd9b05ecc6130ebad1	Shiba Inu Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae599ed0e146105c80c7395	Shiba Inu Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae599fe90e00e273b08a6ce	Mini Poodle Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae59a0d0e146105c80c73b1	Mini Poodle Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae59a1dc0e74489cc071cdb	Bichon Frise Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae59a2c0e146105c80c73c6	Bichon Frise Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29546485	6ae59a3c90e00e273b08a719	Maltese Hoodie Dog Lover Line Art Heart Big Portrait	-	-	no-back
+29546485	6ae59a4c9b05ecc6130ebb3b	Maltese Hoodie Dog Lover Geometric Heart Big Portrait	-	-	no-back
+29559517	6aec3a48ed16741eb3069eee	BLANK dark mockup source - do not publish hoodie	0.05,0.5	0.617,0.61	UPDATED
