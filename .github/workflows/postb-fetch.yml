@@ -1,0 +1,15 @@
+name: postb-fetch
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/postb_fetch.py
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -f out/pmk3 && git commit -qm "pmk3 fetch" && git pull -q --rebase && git push -q
