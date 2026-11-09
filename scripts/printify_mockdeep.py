@@ -12,7 +12,8 @@ def get(a):
         try:
             b=urllib.request.urlopen(urllib.request.Request(f"https://images.printify.com/mockup/{pid}/{var}/{i}/x.jpg?camera_label=front",headers={"User-Agent":"Mozilla/5.0"}),timeout=30).read()
             return i,b
-        except Exception: time.sleep(0.5)
+        except Exception as e:
+            time.sleep(2 if '429' in str(e) else 0.4)
     return i,None
 for prod,c in cfg.items():
     if only and prod not in only: continue
@@ -26,7 +27,7 @@ for prod,c in cfg.items():
     d=f"out/mockdeep/{prod.replace(' ','_').replace(chr(39),'')}"; os.makedirs(d,exist_ok=True)
     print("PROD",prod,"variants",vs,"ids",len(ids),flush=True)
     seen={};found={}
-    with cf.ThreadPoolExecutor(10) as ex:
+    with cf.ThreadPoolExecutor(3) as ex:
         for i,b in ex.map(get,[(pid,vs[0],i) for i in ids]):
             if not b or len(b)<3000: continue
             h=hashlib.md5(b).hexdigest()[:10]
@@ -34,5 +35,12 @@ for prod,c in cfg.items():
                 seen[h]=i; open(f"{d}/{i}.jpg","wb").write(b); print("NEW",i,len(b),flush=True)
             found[i]=h
     # second variant check: do all found distinct ids exist for another variant too
+    import collections
+    cnt=collections.Counter(found.values()); bad={h for h,n in cnt.items() if n>25}
+    print('placeholder-like hashes',bad,'errors',len(ids)-len(found),flush=True)
+    for h in bad:
+        try: os.remove(f"{d}/{seen[h]}.jpg")
+        except Exception: pass
+    seen={h:i for h,i in seen.items() if h not in bad}
     json.dump(dict(pid=pid,variants=vs,found=found,distinct=sorted(seen.values())),open(f"{d}/found.json","w"))
     print("DONE",prod,"distinct",len(seen),sorted(seen.values()),flush=True)
