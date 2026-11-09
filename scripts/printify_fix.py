@@ -47,7 +47,7 @@ def fix(k):
                 if new<im["scale"]-0.001: im["scale"]=new; changed=True
     st="nochange"
     if changed:
-        body={"print_areas":[{"variant_ids":a["variant_ids"],"placeholders":[{"position":ph["position"],"images":[{k2:im[k2] for k2 in("id","x","y","scale","angle") if k2 in im} for im in ph["images"]]} for ph in a["placeholders"]]} for a in p["print_areas"]]}
+        body={"print_areas":[{"variant_ids":a["variant_ids"],"placeholders":[{"position":ph["position"],"images":[{k2:v for k2,v in im.items() if k2 not in("height","width")} for im in ph["images"]]} for ph in a["placeholders"] if ph["images"]]} for a in p["print_areas"]]}
         if apply_:
             try: call(f"/v1/shops/{shop}/products/{pid}.json","PUT",body); st="UPDATED"
             except Exception as e: st="ERR "+str(e)[:200]
