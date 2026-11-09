@@ -1,0 +1,25 @@
+name: printify-audit
+on:
+  workflow_dispatch:
+    inputs:
+      pids: {description: "optional PIDs (space sep)", required: false, default: ""}
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5]
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow numpy -q
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: python3 scripts/printify_audit.py ${{ matrix.shard }} 6 ${{ github.event.inputs.pids }}
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -f out/audit/shard${{ matrix.shard }}.tsv && git commit -qm "audit ${{ matrix.shard }}" ; for i in 1 2 3 4; do git pull -q --rebase && git push -q && break; sleep 5; done
