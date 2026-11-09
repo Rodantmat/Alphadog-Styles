@@ -8070,7 +8070,7 @@
   }
  ],
  "created_at": "2026-10-31 05:03:00+00:00",
- "updated_at": "2026-11-09 08:05:51+00:00",
+ "updated_at": "2026-11-09 08:10:14+00:00",
  "visible": true,
  "is_locked": false,
  "blueprint_id": 77,
@@ -8134,14 +8134,14 @@
        "height": 7535,
        "width": 4471,
        "x": 0.5,
-       "y": 0.63,
+       "y": 0.64,
        "flipX": false,
        "flipY": false,
        "scale": 0.326,
        "angle": 0,
        "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28899222/611ad043-4acd-4a95-95b2-f147cea01197",
        "layerType": "image",
-       "imageId": "6ae576766b7e23fca2572b3e_75d6a25b-cfd2-d8e4-5df6-95fc2db1d4e8"
+       "imageId": "6ae576766b7e23fca2572b3e_715eb116-c669-6477-f5d5-31ec515cb715"
       }
      ],
      "decoration_method": "dtg"
@@ -8163,7 +8163,7 @@
        "angle": 0,
        "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28899222/3378cafb-5fb5-4142-8bfd-ebe6e6670f52",
        "layerType": "image",
-       "imageId": "6ae5767396bdcb67357e8554_ad5a5b67-aec0-7729-745f-8662ab93831d"
+       "imageId": "6ae5767396bdcb67357e8554_f6484aff-56a9-6319-e800-458871a52e6b"
       }
      ],
      "decoration_method": "dtg"
@@ -8195,7 +8195,7 @@
        "angle": 0,
        "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28899222/1adb9dc2-fd4f-48a2-885d-8af1f69ba973",
        "layerType": "image",
-       "imageId": "6ae98955c557736bb884d1ac_e9207bc4-9862-4e69-a516-28617ed5821f"
+       "imageId": "6ae98955c557736bb884d1ac_3866ecae-83b3-398b-8678-8caff4f63b93"
       },
       {
        "id": "5941187eb8e7e37b3f0e62e5",
@@ -8211,7 +8211,7 @@
        "angle": 0,
        "src": "",
        "layerType": "image",
-       "imageId": "5941187eb8e7e37b3f0e62e5_7ec6be36-b982-7830-aa54-14494f034318"
+       "imageId": "5941187eb8e7e37b3f0e62e5_e897a213-10f3-6e5e-801d-5dbb8821a47c"
       }
      ],
      "decoration_method": "dtf"
@@ -8495,14 +8495,14 @@
        "height": 7535,
        "width": 4471,
        "x": 0.5,
-       "y": 0.63,
+       "y": 0.64,
        "flipX": false,
        "flipY": false,
        "scale": 0.326,
        "angle": 0,
        "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28899222/1a14ded7-f2fc-415b-ae78-3325b498956a",
        "layerType": "image",
-       "imageId": "6ae5767c734b069efa5e7ec1_f5fd57f3-2d44-1c01-780c-eff3e8015aab"
+       "imageId": "6ae5767c734b069efa5e7ec1_3d84dd4f-ce36-508e-b099-24a0a203aee0"
       }
      ],
      "decoration_method": "dtg"
@@ -8524,7 +8524,7 @@
        "angle": 0,
        "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28899222/ea46b8c9-54f2-43c7-ab25-f3579ad6640b",
        "layerType": "image",
-       "imageId": "6ae57677d4d29d9c60a352f0_ec0240ab-eefb-4696-baf8-81881b107705"
+       "imageId": "6ae57677d4d29d9c60a352f0_862e8fa3-545f-8e34-3025-b2a8677dbcdf"
       }
      ],
      "decoration_method": "dtg"
@@ -8556,7 +8556,7 @@
        "angle": 0,
        "src": "https://pfy-prod-image-storage.s3.us-east-2.amazonaws.com/28899222/de44d066-8c4e-4c09-b6bd-cbf604489111",
        "layerType": "image",
-       "imageId": "6ae9895691ba40481b3dc486_35cfc07b-765f-7c43-84a4-6cdabd227b39"
+       "imageId": "6ae9895691ba40481b3dc486_5c14744b-7a7c-54ad-c5ac-af416dfa6675"
       },
       {
        "id": "5941187eb8e7e37b3f0e62e5",
@@ -8572,7 +8572,7 @@
        "angle": 0,
        "src": "",
        "layerType": "image",
-       "imageId": "5941187eb8e7e37b3f0e62e5_14345c92-fdf2-2a4c-6ea6-a997a5ab7cf5"
+       "imageId": "5941187eb8e7e37b3f0e62e5_9e8d28ca-ae7c-3605-54ea-5d9fd7561a86"
       }
      ],
      "decoration_method": "dtf"
