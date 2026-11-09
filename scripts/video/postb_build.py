@@ -14,8 +14,8 @@ def tile(path,W,H):
     R=300 if H>=1500 else 0
     im=Image.open(path).convert("RGB"); w,h=im.size
     edge=np.array(im.crop((0,h-6,w,h))).astype("float32")
-    if edge.mean(axis=2).std()>22:   # photo/square mockup: show the WHOLE image (never crop the design), blurred fill behind
-        bg=cover(im,W,H).filter(ImageFilter.GaussianBlur(28)); bg=Image.eval(bg,lambda v:int(v*0.55)); sc=min(W/w,(H-R)/h); im3=im.resize((int(w*sc),int(h*sc)),Image.LANCZOS); bg.paste(im3,((W-im3.width)//2,max(0,(H-R-im3.height)//2+(30 if R else 0)))); return bg
+    if edge.mean(axis=2).std()>22:   # photo: true full-bleed cover (same as the approved b01-b03 videos)
+        return cover(im,W,H)
     a=np.array(im).astype("int16"); bgc=np.median(np.concatenate([a[:4,:4].reshape(-1,3),a[:4,-4:].reshape(-1,3),a[-4:,:4].reshape(-1,3),a[-4:,-4:].reshape(-1,3)]),axis=0)
     m=(np.abs(a-bgc).max(axis=2)>22)
     if m.sum()>200 and m.sum()>0.04*m.size:

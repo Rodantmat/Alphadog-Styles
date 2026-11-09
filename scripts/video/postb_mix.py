@@ -26,7 +26,7 @@ def make(rng,pools,hist,vid):
     for attempt in range(400):
         # slot order: P B F B P B P B P B  (person opens, back closes)
         slots="PBFBPBPBPB"; order=[]; used_b=set(); arts=set(); prev=None; fail=False; styles=[]
-        pprods=rng.sample(["Mesh Trucker Cap","Foam Trucker Hat","Polo"],3); pprods.append(rng.choice(pprods)); rng.shuffle(pprods); pi=0
+        pprods=[("Mesh Trucker Cap","person-1-front"),("Foam Trucker Hat","person-1-front"),("Foam Trucker Hat","person-2-front"),("Polo","person-front")]; rng.shuffle(pprods); pi=0  # 4 different models, never the same person twice
         for s in slots:
             def ok(o):
                 if o["breed"] in used_b or o["breed"] in recent: return False
@@ -35,7 +35,7 @@ def make(rng,pools,hist,vid):
                 if prev and (o["prod"]==prev["prod"] or o["colour"]==prev["colour"] or o["style"]==prev["style"] and rng.random()<.9): return False
                 return True
             if s=="P":
-                pp=pprods[pi]; pi+=1; o=pick(rng,[x for x in P if x["prod"]==pp],ok)
+                pp=pprods[pi]; pi+=1; o=pick(rng,[x for x in P if (x["prod"],x["cam"])==pp],ok)
             elif s=="F": o=pick(rng,F,ok)
             else:
                 # force dark-shade variety on backs
@@ -58,7 +58,7 @@ def main():
     for i in range(n):
         vid=f"m{start+i:02d}"; order=make(rng,pools,hist,vid)
         prevf=hist[-1]["format"] if hist else None; prevm=hist[-1]["music"] if hist else None; prevt=hist[-1]["title"] if hist else None
-        fmt=rng.choice([f for f in FORMATS if f!=prevf]); mus=rng.choice([m for m in MUSIC if m!=prevm]); tit=rng.choice([t for t in TITLES if t!=prevt])
+        fmt="reel_slideshow"; mus=rng.choice([m for m in MUSIC if m!=prevm]); tit=rng.choice([t for t in TITLES if t!=prevt])
         durs=[round(rng.uniform(.9,2.4),2) for _ in order] if fmt=="reel_rhythm" else None
         a=[{"src":o["src"],"pid":o["pid"],"breed":o["breed"],"colour":o["colour"],"cam":o["cam"],"prod":o["prod"],"style":o["style"],"sub":o["sub"],"person":"person" in o["cam"]} for o in order]
         p={"id":vid,"prod":"Mix","title":tit,"breeds":[o["breed"] for o in order],"format":fmt,"trans":rng.randrange(6),"music":mus,"cap":rng.choice(["story","question","list","benefit","gift","seasonal"]),"durs":durs,"assets":a}
