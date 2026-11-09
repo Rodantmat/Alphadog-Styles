@@ -14,7 +14,12 @@ def tile(path,W,H):
     im=Image.open(path).convert("RGB"); w,h=im.size
     edge=np.array(im.crop((0,h-6,w,h))).astype("float32")
     if edge.mean(axis=2).std()>22: return cover(im,W,H)          # busy photo: true cover
-    s=min(W/w,H/h)*1.0; im2=im.resize((int(w*s),int(h*s)),Image.LANCZOS)
+    a=np.array(im).astype("int16"); bgc=np.median(np.concatenate([a[:4,:4].reshape(-1,3),a[:4,-4:].reshape(-1,3),a[-4:,:4].reshape(-1,3),a[-4:,-4:].reshape(-1,3)]),axis=0)
+    m=(np.abs(a-bgc).max(axis=2)>22)
+    if m.sum()>200:
+        ys,xs=np.where(m); x0,x1,y0,y1=xs.min(),xs.max(),ys.min(),ys.max(); mx=int((x1-x0)*0.06)+4; my=int((y1-y0)*0.06)+4
+        im=im.crop((max(0,x0-mx),max(0,y0-my),min(w,x1+mx),min(h,y1+my))); w,h=im.size
+    s=min(W*0.96/w,H*0.92/h); im2=im.resize((max(1,int(w*s)),max(1,int(h*s))),Image.LANCZOS)
     top=np.array(im.resize((W,H)).crop((0,0,W,4))).mean(axis=(0,1)); bot=np.array(im.resize((W,H)).crop((0,H-4,W,H))).mean(axis=(0,1))
     a=np.zeros((H,W,3),"float32")
     for y in range(H): t=y/(H-1); a[y]=top*(1-t)+bot*t
@@ -27,7 +32,9 @@ def brand(can,title=None,W=1080,H=1920):
     for k in range(n): g[H-n+k]*=1-0.55*(k/n)**1.4
     can=Image.fromarray(g.astype("uint8")); d=ImageDraw.Draw(can)
     if title:
-        f=ImageFont.truetype(FS,52); w=d.textlength(title,font=f); d.text(((W-w)/2,H-210),title,font=f,fill=(250,248,242))
+        sz=52
+        while sz>30 and d.textlength(title,font=ImageFont.truetype(FS,sz))>W-120: sz-=2
+        f=ImageFont.truetype(FS,sz); w=d.textlength(title,font=f); d.text(((W-w)/2,H-210),title,font=f,fill=(250,248,242))
     f3=ImageFont.truetype(FB,28); s="ALPHADOG STYLES"; w=d.textlength(s,font=f3); d.text(((W-w)/2,H-92),s,font=f3,fill=(250,248,242)); return can
 def frames_for(p,od,files):
     W,H=1080,1920; fmt=p["format"]; out=[]

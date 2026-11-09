@@ -19,6 +19,11 @@ ONE_TONE={"Polo","Tank Top","Mesh Trucker Cap","Foam Trucker Hat","Racerback Tan
 CAP=["story","question","list","benefit","gift","seasonal"]
 def tonef(c): 
     return c
+FRONT_ONLY={"Big Portrait","Pocket Print"}
+def groups_ok(prod,place):
+    if prod in ("Dad Hat","Mesh Trucker Cap","Foam Trucker Hat","Polo","Tank Top","Racerback Tank"): return {"flat-front","person","closeup","folded"}
+    if place in FRONT_ONLY: return {"flat-front","person","closeup","folded","hanging"}
+    return {"flat-front","flat-back","person","closeup","folded","hanging"}
 def build_index():
     X=collections.defaultdict(list)
     for o in cat():
@@ -35,6 +40,7 @@ def pick_post(pid,hist,X,rnd):
             for v in vv:
                 if v in use: use[v]=i
         ok=[v for v in vals if v not in (last.get(key) if isinstance(last.get(key),list) else [last.get(key)])]
+        ok=ok or list(vals)
         ok.sort(key=lambda v:(use[v],rnd.random()))
         return ok
     prod=lru("prod",list(X))[0]
@@ -57,7 +63,7 @@ def pick_post(pid,hist,X,rnd):
     pls=sorted({o["place"] for o in pool if o["place"]})
     place=(lru("place",pls) or pls or [""])[0] if pls else ""
     cams=collections.Counter(GROUP.get(o["cam"],"other") for o in pool)
-    groups=[g for g in cams if g!="other"]
+    groups=[g for g in cams if g!="other" and g in groups_ok(prod,place)]
     grp=lru("grp",groups)[0] if groups else "flat-front"
     # breeds: not in last 20 posts' breeds, up to 6, different from last post
     usedb=collections.Counter(b for h in hist[-8:] for b in h["breeds"])
