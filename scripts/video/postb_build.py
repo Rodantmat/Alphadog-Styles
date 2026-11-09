@@ -29,7 +29,7 @@ def brand(can,title=None,W=1080,H=1920):
     if os.path.exists(B2.LOGO):
         lg=Image.open(B2.LOGO).convert("RGBA"); lg.thumbnail((84,84)); can.paste(lg,(W-84-40,56),lg)
     g=np.array(can).astype("float32"); n=300
-    for k in range(n): g[H-n+k]*=1-0.55*(k/n)**1.4
+    for k in range(n): g[H-n+k]*=1-0.72*(k/n)**1.3
     can=Image.fromarray(g.astype("uint8")); d=ImageDraw.Draw(can)
     if title:
         sz=52
@@ -60,7 +60,7 @@ def ffmpeg_reel(p,od,fr,music):
     D={"reel_rhythm":1.5,"reel_slideshow":1.9,"reel_hero":3.0,"reel_flip":0.75,"reel_split":2.5,"reel_grid":1.1}[fmt]; X={"reel_rhythm":0.4,"reel_slideshow":0.7,"reel_hero":0.9,"reel_flip":0.12,"reel_split":0.6,"reel_grid":0.25}[fmt]
     ins=[];filt=[]; DU=p.get('durs') if fmt=='reel_rhythm' and p.get('durs') else [D]*len(fr)
     for i,f in enumerate(fr):
-        ins+=["-loop","1","-t",f"{DU[i]+X}","-i",f]; D=DU[i]
+        ins+=["-framerate","30","-loop","1","-t",f"{DU[i]+X}","-i",f]; D=DU[i]
         zmax={"reel_hero":0.18,"reel_flip":0.10}.get(fmt,0.07); step=zmax/(D*30)
         z=f"min(zoom+{step:.5f},{1+zmax})" if i%2==0 else f"if(eq(on,1),{1+zmax},max(zoom-{step:.5f},1.0))"
         if fmt in("reel_split","reel_grid"): z="1.0"
@@ -82,7 +82,8 @@ def caption(p):
     br=", ".join(p["breeds"][:-1])+" and "+p["breeds"][-1] if len(p["breeds"])>1 else p["breeds"][0]
     prod={"Tee A":"tee","Tee B":"tee"}.get(p["prod"],p["prod"].lower())
     lead={"Hoodie":"Cozy season.","Dad Hat":"Finish the look.","Polo":"Smart, with a tail.","Tank Top":"Warm-weather ready.","Racerback Tank":"Warm-weather ready.","Mesh Trucker Cap":"Cap season.","Foam Trucker Hat":"Cap season."}.get(p["prod"],"New in the shop.")
-    body=f"{p['design'][0]} {p['design'][1]} {prod}: {br}."
+    if p["prod"]=="Mix": br=", ".join(p["breeds"][:4])+" and "+p["breeds"][4]; body=f"Tees, hoodies, polos and caps for {br} lovers (and 5 more breeds inside)."; lead="Front or back?"
+    else: body=f"{p['design'][0]} {p['design'][1]} {prod}: {br}."
     tags="#doglover #dogmom #dogdad #alphadogstyles "+" ".join("#"+b.lower().replace(" ","") for b in p["breeds"][:5])
     return CAP[p["cap"]].format(lead=lead,body=body,tags=tags)
 def build(p):
