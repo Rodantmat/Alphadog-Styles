@@ -38,7 +38,7 @@ def one(r):
                 for im in ph["images"]:
                     if im.get("name")=="text_layer.svg": continue
                     ratio=im["height"]/im["width"]; s=im["scale"]
-                    s=min(s,HMAX*Hh/(W*ratio),0.9)          # height cap, width cap
+                    s=min(HMAX*Hh/(W*ratio),0.9)          # max size: height cap, width cap (independent of current scale)
                     h=s*W*ratio; y=round(BOT-h/(2*Hh),3)
                     log.append((im["scale"],im["y"],round(s,3),y))
                     if abs(s-im["scale"])>0.0005 or abs(y-im["y"])>0.0005: im["scale"]=round(s,3); im["y"]=y; ch=True
