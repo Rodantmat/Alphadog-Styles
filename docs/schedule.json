@@ -98,7 +98,7 @@
     "reel": "out/postb2/b13/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A scheduled on all 4 apps (17:00Z); B b13 pending (Buffer limit 10/10)"
+   "status": "A + B (b13, Nov 14 04:00Z) scheduled on all 4 apps"
   },
   {
    "date": "2026-11-14",
@@ -112,7 +112,7 @@
     "reel": "out/postb2/b14/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "built"
+   "status": "A (18:00Z) scheduled on all 4 apps; B b14 pending (Buffer limit 10/10)"
   },
   {
    "date": "2026-11-15",
