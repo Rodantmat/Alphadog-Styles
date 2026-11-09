@@ -1,0 +1,29 @@
+name: printify-lower
+on:
+  workflow_dispatch:
+    inputs:
+      apply: {description: "0 dry-run, 1 apply", required: true, default: "0"}
+      pids: {description: "optional PIDs", required: false, default: ""}
+      hmax: {description: "max art height as fraction of print area", required: false, default: "0.66"}
+      bot: {description: "bottom edge fraction", required: false, default: "0.96"}
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2]
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+          HMAX: ${{ github.event.inputs.hmax }}
+          BOT: ${{ github.event.inputs.bot }}
+        run: python3 scripts/printify_lower.py ${{ github.event.inputs.apply }} ${{ matrix.shard }} 3 ${{ github.event.inputs.pids }}
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -f out/lower/shard${{ matrix.shard }}.tsv && git commit -qm "lower ${{ matrix.shard }}" ; for i in 1 2 3 4; do git pull -q --rebase && git push -q && break; sleep 5; done
