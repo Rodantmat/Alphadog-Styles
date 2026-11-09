@@ -15,13 +15,14 @@ TITLES=["10 breeds. 10 looks.","Find your breed","Dog people wear it better","Fr
 PEOPLE={"mesh":("Mesh Trucker Cap","person-1-front"),"foam1":("Foam Trucker Hat","person-1-front"),"foam2":("Foam Trucker Hat","person-2-front"),"polo":("Polo","person-front")}
 PAIRS=[("polo","mesh"),("foam1","foam2"),("polo","foam1"),("mesh","foam2")]   # 2 people per video, 4 different models; neighbours never share a person
 PEOPLEPRODS={"Mesh Trucker Cap","Foam Trucker Hat","Polo"}
+FAM=lambda p:"Tee" if p in("Tee A","Tee B") else p
 HATS={"Mesh Trucker Cap","Foam Trucker Hat","Dad Hat"}
 def load():
     d=json.load(gzip.open("out/mockidx/slim.json.gz","rt")); d=[o for o in d if o["breed"] not in FORBID]
     P={k:[o for o in d if (o["prod"],o["cam"])==v] for k,v in PEOPLE.items()}
     big=("Tee A","Tee B","Hoodie")
     F=[o for o in d if o["cam"] in("front","front-2") and ((o["prod"] in big and o["place"] in("Big Portrait","Pocket Print","Front & Back")) or o["prod"] in("Racerback Tank","Tank Top","Dad Hat","Polo","Mesh Trucker Cap","Foam Trucker Hat"))]
-    Bk=[o for o in d if o["cam"] in("back","back-2") and ((o["prod"] in big and o["place"] in BACKP) or o["prod"] in("Racerback Tank","Tank Top","Dad Hat","Polo","Mesh Trucker Cap"))]
+    Bk=[o for o in d if o["cam"] in("back","back-2") and ((o["prod"] in big and o["place"] in BACKP) or o["prod"] in("Racerback Tank","Tank Top"))]
     return P,F,Bk
 def pick(rng,pool,ok):
     c=[o for o in pool if ok(o)]
@@ -43,8 +44,8 @@ def make(rng,pools,hist,vid,idx):
                 if o["colour"] and o["colour"] in cols and not s[0]=="P": return False
                 if o["colour"] and s[0]!="P" and (o["prod"],o["colour"]) in prevpc: return False
                 if prev:
-                    if o["prod"]==prev["prod"] or o["style"]==prev["style"] and rng.random()<.9: return False
-                    if s[0]!="P" and prev["prod"] not in PEOPLEPRODS and o["tone"] and prev["tone"] and o["tone"]==prev["tone"] and rng.random()<.85: return False
+                    if FAM(o["prod"]) in {FAM(x["prod"]) for x in order[-2:]} or o["style"]==prev["style"] and rng.random()<.9: return False
+                    if s[0]!="P" and prev["prod"] not in PEOPLEPRODS and o["tone"] and prev["tone"] and o["tone"]==prev["tone"]: return False
                 g="hat" if o["prod"] in HATS else ("tee" if o["prod"] in("Tee A","Tee B") else o["prod"])
                 lim={"hat":3,"tee":3,"Hoodie":3}.get(g,2)
                 if cnt.get(g,0)>=lim: return False
