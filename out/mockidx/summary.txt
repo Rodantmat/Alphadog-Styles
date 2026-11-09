@@ -1,0 +1,37 @@
+products 4508  images 174378
+blueprints {1447: 223, 5836: 2, 6036: 2, 5287: 2, 6143: 2, 6791: 2, 12: 797, 145: 1223, 528: 1, 175: 1, 696: 1, 1298: 1, 706: 1, 77: 1221, 6: 1, 1734: 202, 1735: 202, 1402: 202, 18: 202, 39: 202, 6488: 4, 6519: 1, 3874: 1, 2026: 1, 3393: 2, 3894: 1, 3383: 1, 3912: 1, 6150: 1, 2041: 1, 6497: 1, 3038: 1, 1459: 1, 880: 1}
+cameras {'front': 36674, 'size-chart': 3872, 'left': 1032, 'back': 36070, 'front-left': 2, 'right': 1026, 'front-2': 7483, 'back-2': 20718, 'front-collar-closeup': 19187, 'folded': 38343, 'folded-2': 14, 'hanging-1': 6078, 'person-1-front': 874, 'person-1-back': 258, 'side': 616, 'person-2-front': 676, 'person-front': 409, 'person-back': 408, 'left-chest': 68, 'right-chest': 68, 'left-sleeve': 57, 'person-2-back': 60, 'person-1-front-2': 39, 'person-closeup': 12, 'lifestyle-2': 6, 'person-1': 13, 'person-2': 13, 'person-3': 13, 'person-4': 13, 'person-4-back': 6, 'person-5-right-sleeve': 6, 'person-5-left-sleeve': 6, 'person-6-front': 6, 'person-6-back': 13, 'lifestyle': 13, 'hanging-2': 7, 'hanging-3': 7, 'back-collar-closeup': 7, 'person-5': 7, 'person-6': 7, 'person-7-front': 7, 'person-7-back': 7, 'person-8-front': 7, 'person-8-back': 7, 'person-9-front': 7, 'person-9-back': 7, 'duo': 7, 'duo-2': 7, 'duo-3': 7, 'duo-4': 7, 'person-10-left-sleeve': 7, 'person-10-right-sleeve': 7, 'person-11-left-sleeve': 7, 'person-11-right-sleeve': 7, 'right-sleeve': 54, 'person-2-front-2': 17, 'on-person-1': 11, 'on-person-2': 11}
+bp 1447: 223 prods, e.g. BRAND TEST FB_small (draft, delete me) | variants 1 | imgs 2
+bp 5836: 2 prods, e.g. BRAND TEST PF_5836_left_dtf (draft, delete me) | variants 2 | imgs 4
+bp 6036: 2 prods, e.g. BRAND TEST PF_6036_left_dtf (draft, delete me) | variants 1 | imgs 2
+bp 5287: 2 prods, e.g. BRAND TEST PF_5287_left_dtf (draft, delete me) | variants 2 | imgs 4
+bp 6143: 2 prods, e.g. BRAND TEST PF_6143_back_dtf (draft, delete me) | variants 1 | imgs 2
+bp 6791: 2 prods, e.g. BRAND TEST PF_6791_back_dtf (draft, delete me) | variants 1 | imgs 2
+bp 12: 797 prods, e.g. BRAND TEST SAMPLE_tee_natural_minipoodle (draft, delete me) | variants 5 | imgs 4
+bp 145: 1223 prods, e.g. BRAND TEST tee (draft, delete me) | variants 4 | imgs 4
+bp 528: 1 prods, e.g. COSTTEST hoodie_528_99 (draft) | variants 8 | imgs 4
+bp 175: 1 prods, e.g. COSTTEST hoodie_175_99 (draft) | variants 6 | imgs 4
+bp 696: 1 prods, e.g. COSTTEST hoodie_696_99 (draft) | variants 6 | imgs 4
+bp 1298: 1 prods, e.g. COSTTEST hoodie_1298_29 (draft) | variants 2 | imgs 3
+bp 706: 1 prods, e.g. COSTTEST tee_706_29 (draft) | variants 8 | imgs 5
+bp 77: 1221 prods, e.g. NECK LABEL TEST hoodie (draft, delete me) | variants 8 | imgs 3
+bp 6: 1 prods, e.g. Unisex Heavy Cotton Tee | variants 100 | imgs 57
+bp 1734: 202 prods, e.g. Maltese Mesh Trucker Cap Dog Lover Geometric Heart | variants 1 | imgs 4
+bp 1735: 202 prods, e.g. Maltese Foam Trucker Hat Dog Lover Geometric Heart | variants 3 | imgs 12
+bp 1402: 202 prods, e.g. Maltese Polo Shirt Dog Lover Geometric Heart | variants 12 | imgs 8
+bp 18: 202 prods, e.g. Maltese Women's Racerback Tank Dog Lover Geometric Heart | variants 30 | imgs 25
+bp 39: 202 prods, e.g. Maltese Tank Top Dog Lover Geometric Heart | variants 12 | imgs 5
+bp 6488: 4 prods, e.g. French Bulldog Women's Polo Shirt Dog Lover Line Art Classic | variants 21 | imgs 12
+bp 6519: 1 prods, e.g. BLANK mockup source - do not publish wpolo_6519 calib | variants 1 | imgs 5
+bp 3874: 1 prods, e.g. BLANK mockup source - do not publish wpolo_3874 calib | variants 1 | imgs 5
+bp 2026: 1 prods, e.g. BLANK mockup source - do not publish wpolo_2026 calib | variants 1 | imgs 3
+bp 3393: 2 prods, e.g. BLANK mockup source - do not publish wpolo_3393 calib | variants 1 | imgs 5
+bp 3894: 1 prods, e.g. BLANK mockup source - do not publish wpolo_3894 calib | variants 1 | imgs 5
+bp 3383: 1 prods, e.g. BLANK mockup source - do not publish wpolo_3383 calib | variants 1 | imgs 5
+bp 3912: 1 prods, e.g. BLANK mockup source - do not publish wpolo_3912 calib | variants 1 | imgs 5
+bp 6150: 1 prods, e.g. BLANK mockup source - do not publish wpolo_6150 calib | variants 1 | imgs 5
+bp 2041: 1 prods, e.g. COST PROBE - do not publish cap_mid_31069 | variants 7 | imgs 28
+bp 6497: 1 prods, e.g. COST PROBE - do not publish polo_core365_m | variants 100 | imgs 60
+bp 3038: 1 prods, e.g. COST PROBE - do not publish wtank_bc6008 | variants 52 | imgs 44
+bp 1459: 1 prods, e.g. COST PROBE - do not publish tank_cc9360 | variants 100 | imgs 136
+bp 880: 1 prods, e.g. COST PROBE - do not publish tank_gildan5200 | variants 54 | imgs 44
