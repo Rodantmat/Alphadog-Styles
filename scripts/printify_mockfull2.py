@@ -17,7 +17,7 @@ for prod,pid in pids.items():
         m=re.search(r"/mockup/[^/]+/(\d+)/(\d+)/",im["src"]); lab=re.search(r"camera_label=([^&]+)",im["src"])
         if m: known[int(m.group(2))]=lab.group(1) if lab else ""; vars_.add(int(m.group(1)))
     var=sorted(vars_)[0]
-    ids=sorted({j for k in known for j in range(k-40,k+70)})
+    ids=sorted({j for k in known for j in range(k-150,k+150)})
     d=f"out/mockfull/{prod.replace(' ','_').replace(chr(39),'')}"; os.makedirs(d,exist_ok=True)
     found={}; seen={}
     print("PROD",prod,"var",var,"probing",len(ids),"known",known,flush=True)
