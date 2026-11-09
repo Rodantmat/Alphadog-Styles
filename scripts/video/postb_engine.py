@@ -13,7 +13,7 @@ GROUP={"person-1-front":"person","person-2-front":"person","person-front":"perso
  "side":"closeup","left":"closeup","right":"closeup","left-chest":"closeup","right-chest":"closeup","left-sleeve":"closeup"}
 FORMATS=["reel_slideshow","carousel","reel_split","reel_grid","reel_flip","reel_hero"]
 TRANS=[["fade","smoothleft","circleopen"],["zoomin","fadeblack","smoothup"],["wipeleft","slideright","fadewhite"],["radial","smoothdown","dissolve"],["pixelize","fade","wiperight"],["squeezev","circleclose","slideup"]]
-MUSIC=["Hip-hop & Trap","Pop & Party","Funk & Disco","Feel-good","Chill & Lo-fi","Acoustic","Latin","Rock & Indie"]
+MUSIC=["Chill & Lo-fi","Electronic & House","Feel-good","Funk & Disco","Latin & Reggae"]
 PAL=["cream","dusk","ink","sage","terracotta","ocean","blush","charcoal"]
 ONE_TONE={"Polo","Tank Top","Mesh Trucker Cap","Foam Trucker Hat","Racerback Tank"}
 CAP=["story","question","list","benefit","gift","seasonal"]
