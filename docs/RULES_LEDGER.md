@@ -6,12 +6,12 @@ Last audit: 2026-11-10.
 ## Product / print
 | ID | Rule (owner) | Where enforced | Status |
 |---|---|---|---|
-| P1 | Brand logo only on the INSIDE neck label, with the brand name, never printed on the outside (docs/03) | scripts/printify_labelfix.py + workflow printify-labelfix (removes outer logo, fixes neck); printify_extras.LABEL must never use back/hat positions | OPEN: polo back logo on 198 live products (fixing Nov 10) |
-| P2 | Label ink in tone with the garment: black ink on light garments, white ink on dark; never trespasses the fabric | printify_labelfix.py tone check (is_dark list) | OPEN (dry-run first) |
+| P1 | Brand logo only on the INSIDE neck label, with the brand name, never printed on the outside (docs/03) | scripts/printify_labelfix.py + workflow printify-labelfix (removes outer logo, fixes neck); printify_extras.LABEL must never use back/hat positions | FIXED Nov 10: removed outside logo from 198 polos + 9 cap test products (scan certified 0 remaining); printify_extras no longer adds it. Re-run printify-labelscan after any product build |
+| P2 | Label ink in tone with the garment: black ink on light garments, white ink on dark; never trespasses the fabric | printify_labelfix.py (neck ink must equal the artwork ink) | FIXED Nov 10: 17 old v1 labels moved to v3; all live necks are v3 logo+name, tone matches art |
 | P3 | Light garments black-ink art, dark garments white-ink art; white lines not too thin | art analyzer (docs/05) | CHECKED |
 | P4 | Use only approved art (BLACK_CARDS_v2) | manual | MANUAL |
 | P5 | Printify may hold old unapproved dark versions - never use | manual | MANUAL |
-| P6 | A listing/mockup must never show a product that is wrong (missing design, outside logo, cut art) | printify_audit.py + labelscan; cutout_blocklist for videos | OPEN |
+| P6 | A listing/mockup must never show a product that is wrong (missing design, outside logo, cut art) | printify_audit.py + labelscan; cutout_blocklist for videos | CHECKED: labelscan certifies placement; run after every product build |
 
 ## Video / post
 | ID | Rule | Where enforced | Status |
