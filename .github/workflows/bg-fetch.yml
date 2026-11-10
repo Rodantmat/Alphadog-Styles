@@ -2,20 +2,27 @@ name: bg-fetch
 on:
   workflow_dispatch:
     inputs:
-      hdri: {description: "number of HDRI scenes", default: "120"}
-      tex: {description: "number of textures", default: "80"}
-      views: {description: "views per HDRI", default: "2"}
+      views: {description: "views per HDRI", default: "4"}
+      hdri: {description: "max HDRIs (997 = all)", default: "997"}
+      tex: {description: "max Poly Haven textures", default: "869"}
+      amb: {description: "ambientCG materials", default: "300"}
+      shards: {description: "shards", default: "8"}
 permissions:
   contents: write
 jobs:
   r:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0,1,2,3,4,5,6,7]
     steps:
       - uses: actions/checkout@v4
       - run: pip install numpy pillow opencv-python-headless
-      - run: python3 scripts/bgfetch.py out/bgphotos ${{ inputs.hdri }} ${{ inputs.tex }} ${{ inputs.views }} 2>&1 | tee bg_log.txt
+      - run: python3 scripts/bgfetch.py out/bg ${{ matrix.shard }} ${{ inputs.shards }} ${{ inputs.views }} ${{ inputs.hdri }} ${{ inputs.tex }} ${{ inputs.amb }} 2>&1 | tee bg_log_${{ matrix.shard }}.txt
       - env: {GH_TOKEN: "${{ github.token }}"}
         run: |
-          cd out/bgphotos; n=0; ls *.jpg | split -l 60 - part_; for p in part_*; do n=$((n+1)); zip -q -@ ../../bgp_$n.zip < $p; done; cp catalog.json ../../bg_catalog.json; cd ../..
-          gh release delete bgphotos -y --cleanup-tag || true
-          gh release create bgphotos bgp_*.zip bg_catalog.json bg_log.txt --title bgphotos --notes "Poly Haven CC0 real-photo backgrounds"
+          cd out/bg; ls *.jpg | split -l 70 - part_; n=0; for p in part_*; do n=$((n+1)); zip -q -@ ../../bgp_s${{ matrix.shard }}_$n.zip < $p; done; cd ../..
+          T=bgphotos_s${{ matrix.shard }}
+          gh release delete $T -y --cleanup-tag || true
+          gh release create $T bgp_s*.zip out/bg/catalog_${{ matrix.shard }}.json bg_log_${{ matrix.shard }}.txt --title $T --notes "CC0 real-photo backgrounds shard ${{ matrix.shard }}"
