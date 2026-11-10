@@ -48,10 +48,11 @@ def push(PL,A,B): pass
 PLN=lambda p,x,y:f"if(eq(PLANE,0),{p}0({x},{y}),if(eq(PLANE,1),{p}1({x},{y}),{p}2({x},{y})))"
 EXPR_PUSH="st(0,if(lt(P,0.5),4*P*P*P,1-pow(-2*P+2,3)/2));if(lt(X,W*(1-ld(0))),"+PLN("a","X+W*ld(0)","Y")+","+PLN("b","X-W*(1-ld(0))","Y")+")"
 def pick_trans(a,b,used,rnd):
-    if a["k"]=="person" and b["k"]!="person" and used.get("push",0)<3: return "push",0.45
-    if a["k"]!="person" and b["k"]=="person": return "smoothleft",0.40
+    if a["k"]=="person" and b["k"]!="person" and used.get("push",0)<3: return "push",0.8
+    if a["k"]!="person" and b["k"]=="person": return "smoothleft",0.8
     if abs(a["lum"]-b["lum"])>0.25: return "cut",0.033
-    return ("fade",0.35) if rnd.random()<0.5 else ("cut",0.033)
+    return ("fade",0.7) if rnd.random()<0.5 else ("cut",0.033)
+N=8; NF=4
 def build(vid,seed,music,variant="v0"):
     rnd=random.Random(seed); od=f"out/postc/{vid}"; os.makedirs(od,exist_ok=True)
     pool=P1.pool(); cat=BM.Catalog()
@@ -63,9 +64,9 @@ def build(vid,seed,music,variant="v0"):
     pf=[p for p in pool if p["kind"]=="person" and p["side"]=="front"]; pb=[p for p in pool if p["kind"]=="person" and p["side"]=="back"]
     ppl=rnd.sample(pf,2)+rnd.sample(pb,2); flats=[p for p in pool if p["kind"]!="person"]; rnd.shuffle(flats); rest=[]; seen=set()
     for p in flats:
-        if p["prod"] in seen and len(seen)<6: continue
+        if p["prod"] in seen and len(seen)<NF: continue
         seen.add(p["prod"]); rest.append(p)
-        if len(rest)==6: break
+        if len(rest)==NF: break
     fr=[]
     for it in ppl+rest:
         im=C.load(it["file"]); k=kind_of(it); g=C.garment_rgb(im,k)
@@ -82,23 +83,23 @@ def build(vid,seed,music,variant="v0"):
         if variant!="v0" and i==0: img=add_text(img,HOOKS.get(variant,HOOKS["v1"]),310,66)
         if variant in CTAS and i==len(seq)-1: img=add_text(img,CTAS[variant],1400,60)
         fn=f"{od}/s{i:02d}.png"; img.save(fn); shots.append(fn); meta.append(dict(i=i,prod=f["prod"],cam=f["it"]["cam"],kind=f["k"],bg=b["file"],bgname=b.get("name"),fam=fams[-1],ratio=round(BM.ratio(BM.relL(f["rgb"]),BM.bgL(b)),1)))
-    phase,L=beat_grid(music); T_used={}; trs=[pick_trans(seq[i],seq[i+1],T_used,rnd) for i in range(9)]
-    sT=sum(t for _,t in trs); Ls=[(10.0+sT)/10]*10          # fill to exactly ~10 s
+    phase,L=beat_grid(music); T_used={}; trs=[pick_trans(seq[i],seq[i+1],T_used,rnd) for i in range(N-1)]
+    sT=sum(t for _,t in trs); Ls=[(10.0+sT)/N]*N          # fill to exactly ~10 s
     FPS=30; ins=[]; filt=[]
     for i,fn in enumerate(shots):
-        fr_n=int((Ls[i]+0.5)*FPS)+2; z0,z1=(1.0,1.06) if i%2==0 else (1.06,1.0)
+        fr_n=int((Ls[i]+0.5)*FPS)+2; z0,z1=1.0,1.05
         p=f"(on/{fr_n-1})"; ease=f"({p}*{p}*(3-2*{p}))"; z=f"{z0}+({z1}-{z0})*{ease}"
-        ins+=["-loop","1","-framerate",str(FPS),"-t",f"{Ls[i]+0.6:.3f}","-i",fn]
+        ins+=["-i",fn]
         filt.append(f"[{i}:v]scale=2160:3840:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr_n}:s=1080x1920:fps={FPS},setsar=1,format=gbrp[v{i}]")
     cur="v0"; off=0.0
-    for i in range(1,10):
+    for i in range(1,N):
         name,T=trs[i-1]; off+=Ls[i-1]-T
         if name=="push": filt.append(f"[{cur}][v{i}]xfade=transition=custom:duration={T}:offset={off:.3f}:expr='{EXPR_PUSH}'[x{i}]"); T_used["push"]=T_used.get("push",0)+1
         elif name=="cut": filt.append(f"[{cur}][v{i}]xfade=transition=fade:duration=0.033:offset={off:.3f}[x{i}]")
         else: filt.append(f"[{cur}][v{i}]xfade=transition={name}:duration={T}:offset={off:.3f}[x{i}]")
         cur=f"x{i}"
     total=10.0; ins+=["-ss",f"{phase:.3f}","-i",music]
-    filt.append(f"[10:a]atrim=0:{total:.2f},afade=t=in:d=0.2,afade=t=out:st={total-1.2:.2f}:d=1.2,volume=0.7[a]")
+    filt.append(f"[{N}:a]atrim=0:{total:.2f},afade=t=in:d=0.2,afade=t=out:st={total-1.2:.2f}:d=1.2,volume=0.7[a]")
     filt.append(f"[{cur}]format=yuv420p[vout]")
     subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map","[vout]","-map","[a]","-t","10","-c:v","libx264","-preset","medium","-crf","20","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
     for fn in shots: os.remove(fn)
