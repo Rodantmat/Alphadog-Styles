@@ -58,7 +58,7 @@ for s,p in prods:
                 for g,l in groups.items():
                     if not l: continue
                     nph=[dict(q) for q in phs if q["position"]!="neck"]+[{"position":"neck","images":[{"id":V3[g],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]+[i for i in neck["images"] if i.get("type")=="text/plain"]}]
-                    new_areas.append({"variant_ids":l,"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"]]} for q in nph]})
+                    new_areas.append({"variant_ids":l,"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"]]} for q in nph if q["images"]]})
                 continue
         new_areas.append({"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[(im if im.get("type")=="text/plain" else {k:v for k,v in im.items() if k in("id","x","y","scale","angle")}) for im in q["images"]]} for q in phs if q["images"]]})
     if changed and not DRY:
