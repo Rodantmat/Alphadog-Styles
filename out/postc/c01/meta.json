@@ -1,0 +1,72 @@
+[
+ {
+  "i": 0,
+  "prod": "Dad Hat",
+  "cam": "135046",
+  "kind": "person",
+  "bg": "bg_p_284_waves.jpg"
+ },
+ {
+  "i": 1,
+  "prod": "Dad Hat",
+  "cam": "135042",
+  "kind": "flat_front",
+  "bg": "bg_p_018_wallfloor.jpg"
+ },
+ {
+  "i": 2,
+  "prod": "Polo",
+  "cam": "102236",
+  "kind": "flat_front",
+  "bg": "bg_p_081_foliage.jpg"
+ },
+ {
+  "i": 3,
+  "prod": "Tee B",
+  "cam": "92581",
+  "kind": "person",
+  "bg": "bg_p_186_sea.jpg"
+ },
+ {
+  "i": 4,
+  "prod": "Mesh Trucker Cap",
+  "cam": "109529",
+  "kind": "flat_back",
+  "bg": "bg_p_143_blinds.jpg"
+ },
+ {
+  "i": 5,
+  "prod": "Tee B",
+  "cam": "102044",
+  "kind": "flat_front",
+  "bg": "bg_p_219_confetti.jpg"
+ },
+ {
+  "i": 6,
+  "prod": "Mesh Trucker Cap",
+  "cam": "110013",
+  "kind": "person",
+  "bg": "bg_p_224_stars.jpg"
+ },
+ {
+  "i": 7,
+  "prod": "Hoodie",
+  "cam": "98424",
+  "kind": "flat_front",
+  "bg": "bg_p_204_mount.jpg"
+ },
+ {
+  "i": 8,
+  "prod": "Tee A",
+  "cam": "97993",
+  "kind": "flat_back",
+  "bg": "bg_p_294_dapple.jpg"
+ },
+ {
+  "i": 9,
+  "prod": "Tee A",
+  "cam": "100620",
+  "kind": "person",
+  "bg": "bg_p_120_tile.jpg"
+ }
+]
