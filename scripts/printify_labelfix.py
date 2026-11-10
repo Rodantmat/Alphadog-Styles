@@ -15,29 +15,16 @@ def call(m,p,b=None,retry=8):
             raise RuntimeError(f"{e.code} {p} {msg}")
 DARK=("black","navy","charcoal","dark","asphalt","forest","maroon","espresso","brown","deep","military","indigo","midnight","heather navy","storm","graphite","burgundy","cardinal","royal","kelly","evergreen","dk ","pine","cocoa","chocolate","coal","olive","hunter","emerald","purple","plum","denim","slate","steel","oxford","iron","bottle","army")
 def is_dark(c): c=(c or "").lower(); return any(k in c for k in DARK) and not any(k in c for k in ("light","white","natural"))
-# neck v3 upload ids: find by name among the ids actually used
-NECK_IDS=json.load(open("out/neck_ids.json")); OLD_V1=set(NECK_IDS.values())
-used=collections.Counter(); prods=[]
-for s in call("GET","/v1/shops.json"):
+# neck v3 upload ids (logo + "AlphaDog Styles" name); text_layer.svg entries (text/plain) are part of the label and are kept
+B2=json.load(open("out/brand_v2_ids.json")); V3={"white":B2["neck_whiteink_v3"],"black":B2["neck_blackink_v3"]}; OLD_V1=set(json.load(open('out/neck_ids.json')).values())
+prods=[]
+for s_ in call("GET","/v1/shops.json"):
     pg=1
     while True:
-        d=call("GET",f"/v1/shops/{s['id']}/products.json?limit=50&page={pg}"); prods+=[(s["id"],p) for p in d["data"]]
+        d=call("GET",f"/v1/shops/{s_['id']}/products.json?limit=50&page={pg}"); prods+=[(s_["id"],p) for p in d["data"]]
         if pg>=d["last_page"]: break
         pg+=1
-for s,p in prods:
-    for a in p["print_areas"]:
-        for ph in a["placeholders"]:
-            if ph["position"]=="neck":
-                for im in ph["images"]: used[im["id"]]+=1
-names={i:call("GET",f"/v1/uploads/{i}.json").get("file_name") for i in used}
-print("neck images in use:",{i[:8]+".."+str(used[i]):names[i] for i in used},flush=True)
-V3={}
-for i,n in names.items():
-    n=(n or "").lower()
-    if "v3" in n and "white" in n: V3["white"]=i
-    if "v3" in n and "black" in n: V3["black"]=i
-print("v3",V3,flush=True)
-if len(V3)<2: raise SystemExit("v3 neck ids not identified: "+json.dumps(names))
+print("products",len(prods),flush=True)
 OUTER={1402:{"back"},1447:{"back_hat_embroidery","left_hat_embroidery","right_hat_embroidery","back"},2041:{"back_hat_embroidery","left_hat_embroidery","right_hat_embroidery"}}
 catcache={}
 def colors(bp,pv):
@@ -55,21 +42,21 @@ for s,p in prods:
                 res["removed_outer"].append([s,p["id"],p["title"][:60],bp,ph["position"]]); changed=True; continue
             phs.append(ph)
         # tone check on neck
-        neck=next((ph for ph in phs if ph["position"]=="neck" and ph["images"]),None)
+        neck=next((ph for ph in phs if ph["position"]=="neck" and any(i.get("type")!="text/plain" for i in ph["images"])),None)
         if neck:
             col=colors(bp,pv); vids=a["variant_ids"]; groups={"white":[],"black":[]}
             for v in vids:
                 c=col.get(v); res["colors"].setdefault(c,"dark" if is_dark(c) else "light"); groups["white" if is_dark(c) else "black"].append(v)
-            cur=neck["images"][0]["id"]
+            cur=next(i["id"] for i in neck["images"] if i.get("type")!="text/plain")
             ok=all((g=="white" and cur==V3["white"]) or (g=="black" and cur==V3["black"]) for g,l in groups.items() if l)
             if not ok:
                 res["neck_fixed"].append([s,p["id"],p["title"][:60],bp,{g:len(l) for g,l in groups.items()},cur[:8]]); changed=True
                 for g,l in groups.items():
                     if not l: continue
-                    nph=[dict(q) for q in phs if q["position"]!="neck"]+[{"position":"neck","images":[{"id":V3[g],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]
-                    new_areas.append({"variant_ids":l,"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"] if im.get("type")!="text/plain"]} for q in nph]})
+                    nph=[dict(q) for q in phs if q["position"]!="neck"]+[{"position":"neck","images":[{"id":V3[g],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]+[i for i in neck["images"] if i.get("type")=="text/plain"]}]
+                    new_areas.append({"variant_ids":l,"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"]]} for q in nph]})
                 continue
-        new_areas.append({"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"] if im.get("type")!="text/plain"]} for q in phs if q["images"]]})
+        new_areas.append({"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[(im if im.get("type")=="text/plain" else {k:v for k,v in im.items() if k in("id","x","y","scale","angle")}) for im in q["images"]]} for q in phs if q["images"]]})
     if changed and not DRY:
         try:
             call("PUT",f"/v1/shops/{s}/products/{p['id']}.json",{"print_areas":new_areas})
