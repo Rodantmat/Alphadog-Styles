@@ -1,22 +1,21 @@
-PROD Mesh Trucker Cap variants [118545] ids 1728
-NEW 108894 138025
-DONE Mesh Trucker Cap distinct 1 [108894]
-PROD Foam Trucker Hat variants [118549, 118553, 118554] ids 3483
-NEW 108889 79775
-DONE Foam Trucker Hat distinct 1 [108889]
-PROD Dad Hat variants [105375, 105376, 105378, 105380, 105381] ids 3598
-NEW 110318 72343
-DONE Dad Hat distinct 1 [110318]
-PROD Polo variants [104619, 104649] ids 2593
-NEW 101310 71523
-DONE Polo distinct 1 [101310]
-PROD Racerback Tank variants [19319, 19339, 19369, 19379, 19384, 25941] ids 3052
-NEW 1 71795
-NEW 49 54696
-DONE Racerback Tank distinct 2 [1, 49]
-PROD Tank Top variants [24621, 24828] ids 2405
-NEW 101289 69598
-DONE Tank Top distinct 1 [101289]
-PROD Women's Polo variants [284154, 284243, 284315] ids 1209
-NEW 153628 56948
-DONE Women's Polo distinct 1 [153628]
+PROD Polo variants [104619, 104649] ids 1904
+NEW 101610 71523
+NEW 101910 68992
+NEW 102926 82052
+NEW 103301 77585
+NEW 103302 151660
+placeholder-like hashes {'b1fc2e4daf'} errors 1
+DONE Polo distinct 4 [101910, 102926, 103301, 103302]
+PROD Tank Top variants [24621, 24828] ids 1205
+NEW 101589 69598
+NEW 101892 59779
+NEW 119051 75026
+placeholder-like hashes {'f1bd44db60'} errors 0
+DONE Tank Top distinct 2 [101892, 119051]
+PROD Women's Polo variants [284154, 284243, 284315] ids 609
+NEW 153928 56948
+NEW 154229 52337
+NEW 154232 45275
+NEW 154234 39084
+placeholder-like hashes {'133ac026b9'} errors 0
+DONE Women's Polo distinct 3 [154229, 154232, 154234]
