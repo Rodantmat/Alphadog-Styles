@@ -17,6 +17,7 @@ Owner style: wants instructions followed exactly, everything automated, Claude r
 ## 3. Video system (read docs/VIDEO_RULES.md, docs/video_rotation.md, docs/PRODUCTION_RUNBOOK.md)
 - Weekly: Mon = 4-dog laugh (social/laugh/build.py), Thu = 2-dog laugh (build2.py), each week NEW joke, background, music, laugh track, mixed merch; other days rotate models d1-d7 with new bg/music/merch; never same style/colour/product/design back-to-back. The owner adds a new Post A model now and then; add it to docs/music_style_map.json and docs/style_registry.json and use it as new base content.
 - Post B: full-screen Printify mockups (social/postb/build2.py, PLAN env), popular breeds, varied dark shades, people views, banned breeds (yorkshire_terrier, pomeranian, shih_tzu, havanese, pug, mini_poodle, bichon_frise, maltese).
+- TRIMMING (permanent, owner 2026-11-09): every trimmed Printify picture comes from Printify's own transparent PNG (docs/PRINTIFY_TRANSPARENT.md, scripts/video/ptrans.py, camera map docs/printify_cameras.json). No AI background removal. Scenes post as-is, charts/blanks never used.
 - Libraries: merch cutouts (5,159) and 300 backgrounds (never reuse a background within 2 months), 300 themed songs out/music2 matched to video style (docs/music_style_map.json, enforced by scripts/video/pick_music.py; never reuse a track). QA: scripts/video/qa2.py, defringe.py, repair_lost.py.
 - Registries: docs/style_registry.json, docs/music_log.md + music_used.json, docs/schedule.json (internal schedule to ~day 16/17), social/POSTLOG.md, social/GENLOG.md.
 

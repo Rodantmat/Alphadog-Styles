@@ -1,0 +1,2702 @@
+[
+{
+"id": 1,
+"file": "bg_p_001_seamless.jpg",
+"family": "seamless",
+"tone": "light",
+"mean_lum": 194.0,
+"centre_lum": 208.3,
+"palette": "ddd0ee a78bd0 faf7fd c3aee0 f1ecf7"
+},
+{
+"id": 2,
+"file": "bg_p_002_seamless.jpg",
+"family": "seamless",
+"tone": "light",
+"mean_lum": 190.2,
+"centre_lum": 202.5,
+"palette": "d6e2ee eef3f7 f8fbfd 9db8d3 bcd0e4"
+},
+{
+"id": 3,
+"file": "bg_p_003_seamless.jpg",
+"family": "seamless",
+"tone": "light",
+"mean_lum": 203.9,
+"centre_lum": 223.7,
+"palette": "ffc79e ffdcc2 fffaf5 fff1e6 ffae78"
+},
+{
+"id": 4,
+"file": "bg_p_004_seamless.jpg",
+"family": "seamless",
+"tone": "mid",
+"mean_lum": 145.9,
+"centre_lum": 168.4,
+"palette": "a37b48 bf9a68 7e5c30 ebd6b5 d7b98e"
+},
+{
+"id": 5,
+"file": "bg_p_005_seamless.jpg",
+"family": "seamless",
+"tone": "mid",
+"mean_lum": 126.2,
+"centre_lum": 137.8,
+"palette": "9a6670 7e4d58 d4a5ae b5838d 613a44"
+},
+{
+"id": 6,
+"file": "bg_p_006_seamless.jpg",
+"family": "seamless",
+"tone": "mid",
+"mean_lum": 102.7,
+"centre_lum": 107.4,
+"palette": "a8863d c4a35a dbc283 8c6c2a 6e5319"
+},
+{
+"id": 7,
+"file": "bg_p_007_seamless.jpg",
+"family": "seamless",
+"tone": "dark",
+"mean_lum": 69.5,
+"centre_lum": 80.8,
+"palette": "2e3652 0e111a 06080c 4a5785 1a1f2e"
+},
+{
+"id": 8,
+"file": "bg_p_008_seamless.jpg",
+"family": "seamless",
+"tone": "dark",
+"mean_lum": 44.1,
+"centre_lum": 40.3,
+"palette": "4a2f6b 2a1a3d 7a55a8 0a0512 160c24"
+},
+{
+"id": 9,
+"file": "bg_p_009_seamless.jpg",
+"family": "seamless",
+"tone": "mid",
+"mean_lum": 108.4,
+"centre_lum": 110.4,
+"palette": "d98e5f c2703f eaae85 85431f a85a2f"
+},
+{
+"id": 10,
+"file": "bg_p_010_seamless.jpg",
+"family": "seamless",
+"tone": "light",
+"mean_lum": 189.7,
+"centre_lum": 202.5,
+"palette": "f1ecf7 ddd0ee c3aee0 a78bd0 faf7fd"
+},
+{
+"id": 11,
+"file": "bg_p_011_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "light",
+"mean_lum": 200.4,
+"centre_lum": 207.2,
+"palette": "fbf7f0 e8d9c5 f5efe6 d9c2a7 c9b08f"
+},
+{
+"id": 12,
+"file": "bg_p_012_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "light",
+"mean_lum": 169.0,
+"centre_lum": 173.4,
+"palette": "e9aa3c f8e0a6 fffaf0 f2c96b fdf3dc"
+},
+{
+"id": 13,
+"file": "bg_p_013_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "mid",
+"mean_lum": 137.2,
+"centre_lum": 131.4,
+"palette": "e1c3a1 6b4e35 c9a27e 8a6747 a9825d"
+},
+{
+"id": 14,
+"file": "bg_p_014_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "mid",
+"mean_lum": 112.5,
+"centre_lum": 96.4,
+"palette": "a9825d 8a6747 c9a27e 6b4e35 e1c3a1"
+},
+{
+"id": 15,
+"file": "bg_p_015_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "mid",
+"mean_lum": 90.9,
+"centre_lum": 85.2,
+"palette": "4f8d85 95c4bd 38746c 255a53 6fa8a0"
+},
+{
+"id": 16,
+"file": "bg_p_016_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "dark",
+"mean_lum": 39.4,
+"centre_lum": 56.7,
+"palette": "060b14 4d6a94 1b2a41 324a6b 0c1424"
+},
+{
+"id": 17,
+"file": "bg_p_017_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "dark",
+"mean_lum": 42.7,
+"centre_lum": 52.3,
+"palette": "0b060c 170d19 6e4575 4a2d4f 2b1b2e"
+},
+{
+"id": 18,
+"file": "bg_p_018_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "mid",
+"mean_lum": 157.9,
+"centre_lum": 184.7,
+"palette": "9b8fc4 625494 483b78 bdb3dc 7d70ad"
+},
+{
+"id": 19,
+"file": "bg_p_019_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "light",
+"mean_lum": 207.3,
+"centre_lum": 218.4,
+"palette": "f8fbfd eef3f7 d6e2ee bcd0e4 9db8d3"
+},
+{
+"id": 20,
+"file": "bg_p_020_wallfloor.jpg",
+"family": "wallfloor",
+"tone": "light",
+"mean_lum": 168.0,
+"centre_lum": 164.2,
+"palette": "f2c96b fffaf0 f8e0a6 e9aa3c fdf3dc"
+},
+{
+"id": 21,
+"file": "bg_p_021_spot.jpg",
+"family": "spot",
+"tone": "light",
+"mean_lum": 227.9,
+"centre_lum": 221.5,
+"palette": "e9aa3c fffaf0 f2c96b f8e0a6 fdf3dc"
+},
+{
+"id": 22,
+"file": "bg_p_022_spot.jpg",
+"family": "spot",
+"tone": "mid",
+"mean_lum": 160.8,
+"centre_lum": 139.3,
+"palette": "9b8fc4 483b78 7d70ad 625494 bdb3dc"
+},
+{
+"id": 23,
+"file": "bg_p_023_spot.jpg",
+"family": "spot",
+"tone": "mid",
+"mean_lum": 83.6,
+"centre_lum": 89.3,
+"palette": "9a6670 b5838d d4a5ae 7e4d58 613a44"
+},
+{
+"id": 24,
+"file": "bg_p_024_spot.jpg",
+"family": "spot",
+"tone": "mid",
+"mean_lum": 111.9,
+"centre_lum": 131.5,
+"palette": "5f869d 476d84 a5c3d4 7fa3b8 325669"
+},
+{
+"id": 25,
+"file": "bg_p_025_spot.jpg",
+"family": "spot",
+"tone": "dark",
+"mean_lum": 31.7,
+"centre_lum": 37.2,
+"palette": "4d6a94 324a6b 060b14 1b2a41 0c1424"
+},
+{
+"id": 26,
+"file": "bg_p_026_spot.jpg",
+"family": "spot",
+"tone": "dark",
+"mean_lum": 75.4,
+"centre_lum": 84.1,
+"palette": "1c2b24 070d0a 0f1a15 4b7461 2f4a3e"
+},
+{
+"id": 27,
+"file": "bg_p_027_spot.jpg",
+"family": "spot",
+"tone": "mid",
+"mean_lum": 77.5,
+"centre_lum": 71.5,
+"palette": "3f72a0 5b8db8 86b0d4 1c3f63 2c5882"
+},
+{
+"id": 28,
+"file": "bg_p_028_spot.jpg",
+"family": "spot",
+"tone": "light",
+"mean_lum": 213.4,
+"centre_lum": 228.9,
+"palette": "f3f0ed dcd6d0 a89f95 fbfaf9 c4bcb4"
+},
+{
+"id": 29,
+"file": "bg_p_029_spot.jpg",
+"family": "spot",
+"tone": "light",
+"mean_lum": 199.0,
+"centre_lum": 208.9,
+"palette": "fff1e6 fffaf5 ffc79e ffdcc2 ffae78"
+},
+{
+"id": 30,
+"file": "bg_p_030_spot.jpg",
+"family": "spot",
+"tone": "light",
+"mean_lum": 213.6,
+"centre_lum": 228.2,
+"palette": "eef5ee 8fb88f d3e5d3 f7fbf7 b4d0b4"
+},
+{
+"id": 31,
+"file": "bg_p_031_arch.jpg",
+"family": "arch",
+"tone": "mid",
+"mean_lum": 129.6,
+"centre_lum": 122.7,
+"palette": "bf9a68 7e5c30 d7b98e a37b48 ebd6b5"
+},
+{
+"id": 32,
+"file": "bg_p_032_arch.jpg",
+"family": "arch",
+"tone": "mid",
+"mean_lum": 106.1,
+"centre_lum": 133.3,
+"palette": "2c5882 3f72a0 1c3f63 5b8db8 86b0d4"
+},
+{
+"id": 33,
+"file": "bg_p_033_arch.jpg",
+"family": "arch",
+"tone": "mid",
+"mean_lum": 94.8,
+"centre_lum": 96.7,
+"palette": "6f9370 8fae8d 3f5e40 557856 b0c9ae"
+},
+{
+"id": 34,
+"file": "bg_p_034_arch.jpg",
+"family": "arch",
+"tone": "dark",
+"mean_lum": 37.7,
+"centre_lum": 55.0,
+"palette": "1a140c 2e2418 0d0a06 4d3c27 7a6140"
+},
+{
+"id": 35,
+"file": "bg_p_035_arch.jpg",
+"family": "arch",
+"tone": "dark",
+"mean_lum": 35.5,
+"centre_lum": 15.4,
+"palette": "2f4a3e 0f1a15 4b7461 070d0a 1c2b24"
+},
+{
+"id": 36,
+"file": "bg_p_036_arch.jpg",
+"family": "arch",
+"tone": "mid",
+"mean_lum": 153.0,
+"centre_lum": 201.3,
+"palette": "7e5c30 d7b98e a37b48 ebd6b5 bf9a68"
+},
+{
+"id": 37,
+"file": "bg_p_037_arch.jpg",
+"family": "arch",
+"tone": "light",
+"mean_lum": 206.0,
+"centre_lum": 225.1,
+"palette": "9db8d3 bcd0e4 f8fbfd d6e2ee eef3f7"
+},
+{
+"id": 38,
+"file": "bg_p_038_arch.jpg",
+"family": "arch",
+"tone": "light",
+"mean_lum": 207.4,
+"centre_lum": 222.1,
+"palette": "c3aee0 a78bd0 faf7fd ddd0ee f1ecf7"
+},
+{
+"id": 39,
+"file": "bg_p_039_arch.jpg",
+"family": "arch",
+"tone": "light",
+"mean_lum": 198.6,
+"centre_lum": 200.0,
+"palette": "ddd0ee faf7fd f1ecf7 c3aee0 a78bd0"
+},
+{
+"id": 40,
+"file": "bg_p_040_arch.jpg",
+"family": "arch",
+"tone": "light",
+"mean_lum": 205.8,
+"centre_lum": 243.2,
+"palette": "8fb88f b4d0b4 d3e5d3 f7fbf7 eef5ee"
+},
+{
+"id": 41,
+"file": "bg_p_041_blocks.jpg",
+"family": "blocks",
+"tone": "mid",
+"mean_lum": 142.1,
+"centre_lum": 126.3,
+"palette": "9b8fc4 625494 7d70ad bdb3dc 483b78"
+},
+{
+"id": 42,
+"file": "bg_p_042_blocks.jpg",
+"family": "blocks",
+"tone": "light",
+"mean_lum": 210.2,
+"centre_lum": 206.5,
+"palette": "eef3f7 f8fbfd bcd0e4 9db8d3 d6e2ee"
+},
+{
+"id": 43,
+"file": "bg_p_043_blocks.jpg",
+"family": "blocks",
+"tone": "light",
+"mean_lum": 209.0,
+"centre_lum": 226.9,
+"palette": "a9c27d f9fbf4 c5d8a4 dde8c8 f0f4e8"
+},
+{
+"id": 44,
+"file": "bg_p_044_blocks.jpg",
+"family": "blocks",
+"tone": "light",
+"mean_lum": 185.7,
+"centre_lum": 191.5,
+"palette": "d9c2a7 c9b08f e8d9c5 fbf7f0 f5efe6"
+},
+{
+"id": 45,
+"file": "bg_p_045_blocks.jpg",
+"family": "blocks",
+"tone": "mid",
+"mean_lum": 119.9,
+"centre_lum": 120.7,
+"palette": "ad5565 f1b2bc e08e9b 8c3e4d c96f7e"
+},
+{
+"id": 46,
+"file": "bg_p_046_blocks.jpg",
+"family": "blocks",
+"tone": "mid",
+"mean_lum": 94.0,
+"centre_lum": 86.2,
+"palette": "d98e5f 85431f a85a2f c2703f eaae85"
+},
+{
+"id": 47,
+"file": "bg_p_047_blocks.jpg",
+"family": "blocks",
+"tone": "mid",
+"mean_lum": 137.5,
+"centre_lum": 136.7,
+"palette": "8fae8d 6f9370 557856 3f5e40 b0c9ae"
+},
+{
+"id": 48,
+"file": "bg_p_048_blocks.jpg",
+"family": "blocks",
+"tone": "mid",
+"mean_lum": 115.5,
+"centre_lum": 100.9,
+"palette": "9a6670 613a44 d4a5ae b5838d 7e4d58"
+},
+{
+"id": 49,
+"file": "bg_p_049_blocks.jpg",
+"family": "blocks",
+"tone": "light",
+"mean_lum": 184.6,
+"centre_lum": 186.8,
+"palette": "a89f95 dcd6d0 f3f0ed fbfaf9 c4bcb4"
+},
+{
+"id": 50,
+"file": "bg_p_050_blocks.jpg",
+"family": "blocks",
+"tone": "mid",
+"mean_lum": 139.3,
+"centre_lum": 150.7,
+"palette": "8a6747 a9825d 6b4e35 e1c3a1 c9a27e"
+},
+{
+"id": 51,
+"file": "bg_p_051_diag.jpg",
+"family": "diag",
+"tone": "mid",
+"mean_lum": 120.1,
+"centre_lum": 118.8,
+"palette": "a9825d c9a27e e1c3a1 8a6747 6b4e35"
+},
+{
+"id": 52,
+"file": "bg_p_052_diag.jpg",
+"family": "diag",
+"tone": "dark",
+"mean_lum": 48.4,
+"centre_lum": 45.8,
+"palette": "4a2d4f 2b1b2e 6e4575 170d19 0b060c"
+},
+{
+"id": 53,
+"file": "bg_p_053_diag.jpg",
+"family": "diag",
+"tone": "dark",
+"mean_lum": 60.2,
+"centre_lum": 75.6,
+"palette": "2f4a3e 070d0a 0f1a15 4b7461 1c2b24"
+},
+{
+"id": 54,
+"file": "bg_p_054_diag.jpg",
+"family": "diag",
+"tone": "mid",
+"mean_lum": 125.7,
+"centre_lum": 140.1,
+"palette": "8fae8d 3f5e40 6f9370 557856 b0c9ae"
+},
+{
+"id": 55,
+"file": "bg_p_055_diag.jpg",
+"family": "diag",
+"tone": "light",
+"mean_lum": 200.8,
+"centre_lum": 212.4,
+"palette": "d3e5d3 b4d0b4 f7fbf7 8fb88f eef5ee"
+},
+{
+"id": 56,
+"file": "bg_p_056_diag.jpg",
+"family": "diag",
+"tone": "light",
+"mean_lum": 187.3,
+"centre_lum": 195.6,
+"palette": "eef5ee b4d0b4 d3e5d3 8fb88f f7fbf7"
+},
+{
+"id": 57,
+"file": "bg_p_057_diag.jpg",
+"family": "diag",
+"tone": "light",
+"mean_lum": 206.3,
+"centre_lum": 225.8,
+"palette": "eef5ee 8fb88f d3e5d3 b4d0b4 f7fbf7"
+},
+{
+"id": 58,
+"file": "bg_p_058_diag.jpg",
+"family": "diag",
+"tone": "light",
+"mean_lum": 211.9,
+"centre_lum": 226.8,
+"palette": "efd0d0 e3b0b0 fdf6f6 f7eaea d48f8f"
+},
+{
+"id": 59,
+"file": "bg_p_059_diag.jpg",
+"family": "diag",
+"tone": "mid",
+"mean_lum": 98.6,
+"centre_lum": 110.0,
+"palette": "8c6c2a dbc283 6e5319 a8863d c4a35a"
+},
+{
+"id": 60,
+"file": "bg_p_060_diag.jpg",
+"family": "diag",
+"tone": "mid",
+"mean_lum": 112.8,
+"centre_lum": 116.9,
+"palette": "5b8db8 3f72a0 86b0d4 1c3f63 2c5882"
+},
+{
+"id": 61,
+"file": "bg_p_061_bokeh.jpg",
+"family": "bokeh",
+"tone": "dark",
+"mean_lum": 24.8,
+"centre_lum": 27.0,
+"palette": "3a3a3a 101010 080808 5a5a5a 222222"
+},
+{
+"id": 62,
+"file": "bg_p_062_bokeh.jpg",
+"family": "bokeh",
+"tone": "dark",
+"mean_lum": 46.3,
+"centre_lum": 52.2,
+"palette": "4d6a94 0c1424 060b14 1b2a41 324a6b"
+},
+{
+"id": 63,
+"file": "bg_p_063_bokeh.jpg",
+"family": "bokeh",
+"tone": "mid",
+"mean_lum": 128.2,
+"centre_lum": 123.5,
+"palette": "3f72a0 1c3f63 86b0d4 5b8db8 2c5882"
+},
+{
+"id": 64,
+"file": "bg_p_064_bokeh.jpg",
+"family": "bokeh",
+"tone": "light",
+"mean_lum": 232.6,
+"centre_lum": 232.5,
+"palette": "e9f6f5 6fb9b2 f6fcfb 9fd4cf c8e8e5"
+},
+{
+"id": 65,
+"file": "bg_p_065_bokeh.jpg",
+"family": "bokeh",
+"tone": "light",
+"mean_lum": 214.4,
+"centre_lum": 212.0,
+"palette": "e8d9c5 c9b08f f5efe6 fbf7f0 d9c2a7"
+},
+{
+"id": 66,
+"file": "bg_p_066_bokeh.jpg",
+"family": "bokeh",
+"tone": "light",
+"mean_lum": 218.0,
+"centre_lum": 217.7,
+"palette": "dde8c8 a9c27d f9fbf4 f0f4e8 c5d8a4"
+},
+{
+"id": 67,
+"file": "bg_p_067_bokeh.jpg",
+"family": "bokeh",
+"tone": "light",
+"mean_lum": 206.3,
+"centre_lum": 204.4,
+"palette": "f0f4e8 a9c27d dde8c8 f9fbf4 c5d8a4"
+},
+{
+"id": 68,
+"file": "bg_p_068_bokeh.jpg",
+"family": "bokeh",
+"tone": "mid",
+"mean_lum": 146.9,
+"centre_lum": 153.0,
+"palette": "557856 3f5e40 6f9370 8fae8d b0c9ae"
+},
+{
+"id": 69,
+"file": "bg_p_069_bokeh.jpg",
+"family": "bokeh",
+"tone": "mid",
+"mean_lum": 158.9,
+"centre_lum": 157.1,
+"palette": "8c3e4d ad5565 e08e9b f1b2bc c96f7e"
+},
+{
+"id": 70,
+"file": "bg_p_070_bokeh.jpg",
+"family": "bokeh",
+"tone": "mid",
+"mean_lum": 100.8,
+"centre_lum": 103.9,
+"palette": "7fa3b8 5f869d 325669 a5c3d4 476d84"
+},
+{
+"id": 71,
+"file": "bg_p_071_sunset.jpg",
+"family": "sunset",
+"tone": "dark",
+"mean_lum": 62.5,
+"centre_lum": 107.3,
+"palette": "2f7d90 1e5260 081a20 040e11 12303a"
+},
+{
+"id": 72,
+"file": "bg_p_072_sunset.jpg",
+"family": "sunset",
+"tone": "mid",
+"mean_lum": 95.2,
+"centre_lum": 111.2,
+"palette": "255a53 38746c 95c4bd 6fa8a0 4f8d85"
+},
+{
+"id": 73,
+"file": "bg_p_073_sunset.jpg",
+"family": "sunset",
+"tone": "light",
+"mean_lum": 173.3,
+"centre_lum": 227.6,
+"palette": "f7eaea efd0d0 e3b0b0 fdf6f6 d48f8f"
+},
+{
+"id": 74,
+"file": "bg_p_074_sunset.jpg",
+"family": "sunset",
+"tone": "light",
+"mean_lum": 187.0,
+"centre_lum": 219.0,
+"palette": "ffae78 ffc79e ffdcc2 fffaf5 fff1e6"
+},
+{
+"id": 75,
+"file": "bg_p_075_sunset.jpg",
+"family": "sunset",
+"tone": "light",
+"mean_lum": 195.5,
+"centre_lum": 234.0,
+"palette": "b4d0b4 8fb88f eef5ee d3e5d3 f7fbf7"
+},
+{
+"id": 76,
+"file": "bg_p_076_sunset.jpg",
+"family": "sunset",
+"tone": "light",
+"mean_lum": 186.2,
+"centre_lum": 236.7,
+"palette": "f0f4e8 a9c27d dde8c8 f9fbf4 c5d8a4"
+},
+{
+"id": 77,
+"file": "bg_p_077_sunset.jpg",
+"family": "sunset",
+"tone": "mid",
+"mean_lum": 117.7,
+"centre_lum": 135.8,
+"palette": "3f5e40 8fae8d 6f9370 557856 b0c9ae"
+},
+{
+"id": 78,
+"file": "bg_p_078_sunset.jpg",
+"family": "sunset",
+"tone": "mid",
+"mean_lum": 99.3,
+"centre_lum": 132.1,
+"palette": "ad5565 e08e9b c96f7e f1b2bc 8c3e4d"
+},
+{
+"id": 79,
+"file": "bg_p_079_sunset.jpg",
+"family": "sunset",
+"tone": "mid",
+"mean_lum": 137.5,
+"centre_lum": 187.3,
+"palette": "e08e9b f1b2bc ad5565 8c3e4d c96f7e"
+},
+{
+"id": 80,
+"file": "bg_p_080_sunset.jpg",
+"family": "sunset",
+"tone": "dark",
+"mean_lum": 36.8,
+"centre_lum": 52.6,
+"palette": "070d0a 4b7461 0f1a15 1c2b24 2f4a3e"
+},
+{
+"id": 81,
+"file": "bg_p_081_foliage.jpg",
+"family": "foliage",
+"tone": "mid",
+"mean_lum": 120.2,
+"centre_lum": 114.5,
+"palette": "b5838d 9a6670 7e4d58 d4a5ae 613a44"
+},
+{
+"id": 82,
+"file": "bg_p_082_foliage.jpg",
+"family": "foliage",
+"tone": "light",
+"mean_lum": 205.4,
+"centre_lum": 208.1,
+"palette": "fffaf0 fdf3dc e9aa3c f2c96b f8e0a6"
+},
+{
+"id": 83,
+"file": "bg_p_083_foliage.jpg",
+"family": "foliage",
+"tone": "light",
+"mean_lum": 213.8,
+"centre_lum": 218.1,
+"palette": "f3f0ed c4bcb4 fbfaf9 a89f95 dcd6d0"
+},
+{
+"id": 84,
+"file": "bg_p_084_foliage.jpg",
+"family": "foliage",
+"tone": "light",
+"mean_lum": 208.7,
+"centre_lum": 206.2,
+"palette": "e9aa3c fffaf0 f2c96b f8e0a6 fdf3dc"
+},
+{
+"id": 85,
+"file": "bg_p_085_foliage.jpg",
+"family": "foliage",
+"tone": "light",
+"mean_lum": 210.1,
+"centre_lum": 211.3,
+"palette": "c5d8a4 f0f4e8 a9c27d f9fbf4 dde8c8"
+},
+{
+"id": 86,
+"file": "bg_p_086_foliage.jpg",
+"family": "foliage",
+"tone": "mid",
+"mean_lum": 156.0,
+"centre_lum": 154.6,
+"palette": "625494 9b8fc4 bdb3dc 7d70ad 483b78"
+},
+{
+"id": 87,
+"file": "bg_p_087_foliage.jpg",
+"family": "foliage",
+"tone": "mid",
+"mean_lum": 149.6,
+"centre_lum": 153.1,
+"palette": "ebd6b5 bf9a68 a37b48 7e5c30 d7b98e"
+},
+{
+"id": 88,
+"file": "bg_p_088_foliage.jpg",
+"family": "foliage",
+"tone": "mid",
+"mean_lum": 120.1,
+"centre_lum": 118.4,
+"palette": "a85a2f d98e5f 85431f c2703f eaae85"
+},
+{
+"id": 89,
+"file": "bg_p_089_foliage.jpg",
+"family": "foliage",
+"tone": "dark",
+"mean_lum": 45.4,
+"centre_lum": 47.9,
+"palette": "1a0a0a 301414 824040 542424 0c0404"
+},
+{
+"id": 90,
+"file": "bg_p_090_foliage.jpg",
+"family": "foliage",
+"tone": "dark",
+"mean_lum": 50.2,
+"centre_lum": 42.7,
+"palette": "4a2d4f 6e4575 170d19 2b1b2e 0b060c"
+},
+{
+"id": 91,
+"file": "bg_p_091_brick.jpg",
+"family": "brick",
+"tone": "light",
+"mean_lum": 194.7,
+"centre_lum": 205.7,
+"palette": "f9fbf4 dde8c8 a9c27d f0f4e8 c5d8a4"
+},
+{
+"id": 92,
+"file": "bg_p_092_brick.jpg",
+"family": "brick",
+"tone": "light",
+"mean_lum": 204.1,
+"centre_lum": 218.6,
+"palette": "f8fbfd d6e2ee bcd0e4 9db8d3 eef3f7"
+},
+{
+"id": 93,
+"file": "bg_p_093_brick.jpg",
+"family": "brick",
+"tone": "light",
+"mean_lum": 195.1,
+"centre_lum": 207.5,
+"palette": "ffae78 ffc79e ffdcc2 fff1e6 fffaf5"
+},
+{
+"id": 94,
+"file": "bg_p_094_brick.jpg",
+"family": "brick",
+"tone": "light",
+"mean_lum": 196.3,
+"centre_lum": 208.9,
+"palette": "f3f0ed dcd6d0 c4bcb4 a89f95 fbfaf9"
+},
+{
+"id": 95,
+"file": "bg_p_095_brick.jpg",
+"family": "brick",
+"tone": "mid",
+"mean_lum": 113.6,
+"centre_lum": 125.5,
+"palette": "b5838d 9a6670 d4a5ae 613a44 7e4d58"
+},
+{
+"id": 96,
+"file": "bg_p_096_brick.jpg",
+"family": "brick",
+"tone": "mid",
+"mean_lum": 148.4,
+"centre_lum": 154.3,
+"palette": "bf9a68 d7b98e a37b48 ebd6b5 7e5c30"
+},
+{
+"id": 97,
+"file": "bg_p_097_brick.jpg",
+"family": "brick",
+"tone": "mid",
+"mean_lum": 136.6,
+"centre_lum": 132.7,
+"palette": "483b78 9b8fc4 625494 7d70ad bdb3dc"
+},
+{
+"id": 98,
+"file": "bg_p_098_brick.jpg",
+"family": "brick",
+"tone": "dark",
+"mean_lum": 38.0,
+"centre_lum": 47.0,
+"palette": "2f7d90 081a20 1e5260 040e11 12303a"
+},
+{
+"id": 99,
+"file": "bg_p_099_brick.jpg",
+"family": "brick",
+"tone": "dark",
+"mean_lum": 35.0,
+"centre_lum": 40.3,
+"palette": "3a3a3a 222222 101010 5a5a5a 080808"
+},
+{
+"id": 100,
+"file": "bg_p_100_brick.jpg",
+"family": "brick",
+"tone": "mid",
+"mean_lum": 120.1,
+"centre_lum": 144.2,
+"palette": "ebd6b5 7e5c30 a37b48 d7b98e bf9a68"
+},
+{
+"id": 101,
+"file": "bg_p_101_slats.jpg",
+"family": "slats",
+"tone": "light",
+"mean_lum": 202.6,
+"centre_lum": 214.0,
+"palette": "c8e8e5 e9f6f5 6fb9b2 f6fcfb 9fd4cf"
+},
+{
+"id": 102,
+"file": "bg_p_102_slats.jpg",
+"family": "slats",
+"tone": "light",
+"mean_lum": 202.0,
+"centre_lum": 218.9,
+"palette": "fff1e6 ffae78 ffc79e fffaf5 ffdcc2"
+},
+{
+"id": 103,
+"file": "bg_p_103_slats.jpg",
+"family": "slats",
+"tone": "light",
+"mean_lum": 179.6,
+"centre_lum": 208.6,
+"palette": "f9fbf4 a9c27d dde8c8 f0f4e8 c5d8a4"
+},
+{
+"id": 104,
+"file": "bg_p_104_slats.jpg",
+"family": "slats",
+"tone": "mid",
+"mean_lum": 122.2,
+"centre_lum": 114.5,
+"palette": "7d70ad 625494 9b8fc4 bdb3dc 483b78"
+},
+{
+"id": 105,
+"file": "bg_p_105_slats.jpg",
+"family": "slats",
+"tone": "mid",
+"mean_lum": 122.9,
+"centre_lum": 129.3,
+"palette": "8fae8d b0c9ae 3f5e40 6f9370 557856"
+},
+{
+"id": 106,
+"file": "bg_p_106_slats.jpg",
+"family": "slats",
+"tone": "mid",
+"mean_lum": 141.8,
+"centre_lum": 154.3,
+"palette": "bdb3dc 7d70ad 483b78 9b8fc4 625494"
+},
+{
+"id": 107,
+"file": "bg_p_107_slats.jpg",
+"family": "slats",
+"tone": "dark",
+"mean_lum": 38.8,
+"centre_lum": 37.2,
+"palette": "0a0512 4a2f6b 2a1a3d 7a55a8 160c24"
+},
+{
+"id": 108,
+"file": "bg_p_108_slats.jpg",
+"family": "slats",
+"tone": "dark",
+"mean_lum": 69.6,
+"centre_lum": 72.1,
+"palette": "7a55a8 0a0512 4a2f6b 2a1a3d 160c24"
+},
+{
+"id": 109,
+"file": "bg_p_109_slats.jpg",
+"family": "slats",
+"tone": "mid",
+"mean_lum": 121.9,
+"centre_lum": 141.8,
+"palette": "7d70ad 625494 483b78 bdb3dc 9b8fc4"
+},
+{
+"id": 110,
+"file": "bg_p_110_slats.jpg",
+"family": "slats",
+"tone": "light",
+"mean_lum": 185.9,
+"centre_lum": 207.1,
+"palette": "c8e8e5 9fd4cf e9f6f5 f6fcfb 6fb9b2"
+},
+{
+"id": 111,
+"file": "bg_p_111_tile.jpg",
+"family": "tile",
+"tone": "light",
+"mean_lum": 204.8,
+"centre_lum": 224.1,
+"palette": "f8e0a6 f2c96b fffaf0 fdf3dc e9aa3c"
+},
+{
+"id": 112,
+"file": "bg_p_112_tile.jpg",
+"family": "tile",
+"tone": "light",
+"mean_lum": 179.5,
+"centre_lum": 214.7,
+"palette": "d9c2a7 f5efe6 c9b08f fbf7f0 e8d9c5"
+},
+{
+"id": 113,
+"file": "bg_p_113_tile.jpg",
+"family": "tile",
+"tone": "mid",
+"mean_lum": 104.3,
+"centre_lum": 135.5,
+"palette": "7e4d58 b5838d 613a44 d4a5ae 9a6670"
+},
+{
+"id": 114,
+"file": "bg_p_114_tile.jpg",
+"family": "tile",
+"tone": "mid",
+"mean_lum": 102.6,
+"centre_lum": 98.7,
+"palette": "6e5319 8c6c2a c4a35a a8863d dbc283"
+},
+{
+"id": 115,
+"file": "bg_p_115_tile.jpg",
+"family": "tile",
+"tone": "mid",
+"mean_lum": 126.5,
+"centre_lum": 141.2,
+"palette": "a9825d e1c3a1 8a6747 c9a27e 6b4e35"
+},
+{
+"id": 116,
+"file": "bg_p_116_tile.jpg",
+"family": "tile",
+"tone": "dark",
+"mean_lum": 51.9,
+"centre_lum": 61.4,
+"palette": "222222 101010 3a3a3a 5a5a5a 080808"
+},
+{
+"id": 117,
+"file": "bg_p_117_tile.jpg",
+"family": "tile",
+"tone": "dark",
+"mean_lum": 59.6,
+"centre_lum": 67.6,
+"palette": "2b1b2e 0b060c 4a2d4f 6e4575 170d19"
+},
+{
+"id": 118,
+"file": "bg_p_118_tile.jpg",
+"family": "tile",
+"tone": "mid",
+"mean_lum": 117.1,
+"centre_lum": 167.5,
+"palette": "7fa3b8 5f869d 325669 a5c3d4 476d84"
+},
+{
+"id": 119,
+"file": "bg_p_119_tile.jpg",
+"family": "tile",
+"tone": "light",
+"mean_lum": 179.6,
+"centre_lum": 195.9,
+"palette": "e9f6f5 f6fcfb 9fd4cf 6fb9b2 c8e8e5"
+},
+{
+"id": 120,
+"file": "bg_p_120_tile.jpg",
+"family": "tile",
+"tone": "light",
+"mean_lum": 201.0,
+"centre_lum": 216.1,
+"palette": "bcd0e4 9db8d3 f8fbfd d6e2ee eef3f7"
+},
+{
+"id": 121,
+"file": "bg_p_121_concrete.jpg",
+"family": "concrete",
+"tone": "light",
+"mean_lum": 190.9,
+"centre_lum": 202.8,
+"palette": "fdf6f6 f7eaea d48f8f e3b0b0 efd0d0"
+},
+{
+"id": 122,
+"file": "bg_p_122_concrete.jpg",
+"family": "concrete",
+"tone": "mid",
+"mean_lum": 109.3,
+"centre_lum": 113.4,
+"palette": "86b0d4 5b8db8 1c3f63 3f72a0 2c5882"
+},
+{
+"id": 123,
+"file": "bg_p_123_concrete.jpg",
+"family": "concrete",
+"tone": "mid",
+"mean_lum": 84.3,
+"centre_lum": 92.5,
+"palette": "6b4e35 a9825d 8a6747 c9a27e e1c3a1"
+},
+{
+"id": 124,
+"file": "bg_p_124_concrete.jpg",
+"family": "concrete",
+"tone": "mid",
+"mean_lum": 101.2,
+"centre_lum": 111.0,
+"palette": "7e4d58 613a44 9a6670 b5838d d4a5ae"
+},
+{
+"id": 125,
+"file": "bg_p_125_concrete.jpg",
+"family": "concrete",
+"tone": "dark",
+"mean_lum": 68.2,
+"centre_lum": 69.3,
+"palette": "7a55a8 0a0512 160c24 4a2f6b 2a1a3d"
+},
+{
+"id": 126,
+"file": "bg_p_126_concrete.jpg",
+"family": "concrete",
+"tone": "dark",
+"mean_lum": 24.5,
+"centre_lum": 28.0,
+"palette": "0a0512 160c24 2a1a3d 4a2f6b 7a55a8"
+},
+{
+"id": 127,
+"file": "bg_p_127_concrete.jpg",
+"family": "concrete",
+"tone": "mid",
+"mean_lum": 137.7,
+"centre_lum": 143.0,
+"palette": "ebd6b5 a37b48 7e5c30 bf9a68 d7b98e"
+},
+{
+"id": 128,
+"file": "bg_p_128_concrete.jpg",
+"family": "concrete",
+"tone": "light",
+"mean_lum": 197.4,
+"centre_lum": 216.9,
+"palette": "d9c2a7 c9b08f f5efe6 fbf7f0 e8d9c5"
+},
+{
+"id": 129,
+"file": "bg_p_129_concrete.jpg",
+"family": "concrete",
+"tone": "light",
+"mean_lum": 210.2,
+"centre_lum": 230.5,
+"palette": "bcd0e4 d6e2ee f8fbfd eef3f7 9db8d3"
+},
+{
+"id": 130,
+"file": "bg_p_130_concrete.jpg",
+"family": "concrete",
+"tone": "light",
+"mean_lum": 186.7,
+"centre_lum": 203.8,
+"palette": "b4d0b4 eef5ee d3e5d3 8fb88f f7fbf7"
+},
+{
+"id": 131,
+"file": "bg_p_131_curtain.jpg",
+"family": "curtain",
+"tone": "mid",
+"mean_lum": 141.7,
+"centre_lum": 152.9,
+"palette": "d4a5ae 613a44 9a6670 7e4d58 b5838d"
+},
+{
+"id": 132,
+"file": "bg_p_132_curtain.jpg",
+"family": "curtain",
+"tone": "mid",
+"mean_lum": 133.5,
+"centre_lum": 142.2,
+"palette": "3f72a0 2c5882 86b0d4 5b8db8 1c3f63"
+},
+{
+"id": 133,
+"file": "bg_p_133_curtain.jpg",
+"family": "curtain",
+"tone": "mid",
+"mean_lum": 154.0,
+"centre_lum": 165.1,
+"palette": "dbc283 a8863d c4a35a 8c6c2a 6e5319"
+},
+{
+"id": 134,
+"file": "bg_p_134_curtain.jpg",
+"family": "curtain",
+"tone": "dark",
+"mean_lum": 31.2,
+"centre_lum": 33.9,
+"palette": "4d3c27 2e2418 0d0a06 7a6140 1a140c"
+},
+{
+"id": 135,
+"file": "bg_p_135_curtain.jpg",
+"family": "curtain",
+"tone": "dark",
+"mean_lum": 72.7,
+"centre_lum": 78.1,
+"palette": "4b7461 070d0a 2f4a3e 0f1a15 1c2b24"
+},
+{
+"id": 136,
+"file": "bg_p_136_curtain.jpg",
+"family": "curtain",
+"tone": "mid",
+"mean_lum": 107.7,
+"centre_lum": 116.4,
+"palette": "5f869d a5c3d4 476d84 7fa3b8 325669"
+},
+{
+"id": 137,
+"file": "bg_p_137_curtain.jpg",
+"family": "curtain",
+"tone": "light",
+"mean_lum": 170.2,
+"centre_lum": 182.5,
+"palette": "d9c2a7 f5efe6 c9b08f e8d9c5 fbf7f0"
+},
+{
+"id": 138,
+"file": "bg_p_138_curtain.jpg",
+"family": "curtain",
+"tone": "light",
+"mean_lum": 190.6,
+"centre_lum": 204.5,
+"palette": "c5d8a4 f0f4e8 dde8c8 f9fbf4 a9c27d"
+},
+{
+"id": 139,
+"file": "bg_p_139_curtain.jpg",
+"family": "curtain",
+"tone": "light",
+"mean_lum": 228.8,
+"centre_lum": 244.9,
+"palette": "f1ecf7 c3aee0 faf7fd ddd0ee a78bd0"
+},
+{
+"id": 140,
+"file": "bg_p_140_curtain.jpg",
+"family": "curtain",
+"tone": "light",
+"mean_lum": 156.7,
+"centre_lum": 168.2,
+"palette": "f2c96b f8e0a6 e9aa3c fffaf0 fdf3dc"
+},
+{
+"id": 141,
+"file": "bg_p_141_blinds.jpg",
+"family": "blinds",
+"tone": "mid",
+"mean_lum": 118.2,
+"centre_lum": 123.8,
+"palette": "b5838d 613a44 d4a5ae 9a6670 7e4d58"
+},
+{
+"id": 142,
+"file": "bg_p_142_blinds.jpg",
+"family": "blinds",
+"tone": "mid",
+"mean_lum": 155.8,
+"centre_lum": 163.5,
+"palette": "bdb3dc 625494 7d70ad 9b8fc4 483b78"
+},
+{
+"id": 143,
+"file": "bg_p_143_blinds.jpg",
+"family": "blinds",
+"tone": "dark",
+"mean_lum": 50.7,
+"centre_lum": 49.8,
+"palette": "4a5785 1a1f2e 06080c 0e111a 2e3652"
+},
+{
+"id": 144,
+"file": "bg_p_144_blinds.jpg",
+"family": "blinds",
+"tone": "dark",
+"mean_lum": 57.8,
+"centre_lum": 66.8,
+"palette": "0a0512 2a1a3d 4a2f6b 7a55a8 160c24"
+},
+{
+"id": 145,
+"file": "bg_p_145_blinds.jpg",
+"family": "blinds",
+"tone": "mid",
+"mean_lum": 127.8,
+"centre_lum": 132.5,
+"palette": "95c4bd 255a53 38746c 4f8d85 6fa8a0"
+},
+{
+"id": 146,
+"file": "bg_p_146_blinds.jpg",
+"family": "blinds",
+"tone": "light",
+"mean_lum": 197.1,
+"centre_lum": 207.8,
+"palette": "f0f4e8 c5d8a4 a9c27d dde8c8 f9fbf4"
+},
+{
+"id": 147,
+"file": "bg_p_147_blinds.jpg",
+"family": "blinds",
+"tone": "light",
+"mean_lum": 169.1,
+"centre_lum": 180.3,
+"palette": "9db8d3 eef3f7 d6e2ee bcd0e4 f8fbfd"
+},
+{
+"id": 148,
+"file": "bg_p_148_blinds.jpg",
+"family": "blinds",
+"tone": "light",
+"mean_lum": 177.8,
+"centre_lum": 184.2,
+"palette": "f9fbf4 dde8c8 f0f4e8 a9c27d c5d8a4"
+},
+{
+"id": 149,
+"file": "bg_p_149_blinds.jpg",
+"family": "blinds",
+"tone": "light",
+"mean_lum": 190.7,
+"centre_lum": 199.5,
+"palette": "fdf6f6 efd0d0 f7eaea e3b0b0 d48f8f"
+},
+{
+"id": 150,
+"file": "bg_p_150_blinds.jpg",
+"family": "blinds",
+"tone": "mid",
+"mean_lum": 97.4,
+"centre_lum": 99.5,
+"palette": "b5838d 7e4d58 d4a5ae 613a44 9a6670"
+},
+{
+"id": 151,
+"file": "bg_p_151_plaster.jpg",
+"family": "plaster",
+"tone": "mid",
+"mean_lum": 84.3,
+"centre_lum": 92.0,
+"palette": "6b4e35 a9825d c9a27e 8a6747 e1c3a1"
+},
+{
+"id": 152,
+"file": "bg_p_152_plaster.jpg",
+"family": "plaster",
+"tone": "dark",
+"mean_lum": 86.7,
+"centre_lum": 92.7,
+"palette": "4d6a94 1b2a41 0c1424 324a6b 060b14"
+},
+{
+"id": 153,
+"file": "bg_p_153_plaster.jpg",
+"family": "plaster",
+"tone": "dark",
+"mean_lum": 30.9,
+"centre_lum": 32.9,
+"palette": "542424 824040 0c0404 1a0a0a 301414"
+},
+{
+"id": 154,
+"file": "bg_p_154_plaster.jpg",
+"family": "plaster",
+"tone": "mid",
+"mean_lum": 97.5,
+"centre_lum": 106.7,
+"palette": "8c3e4d c96f7e e08e9b ad5565 f1b2bc"
+},
+{
+"id": 155,
+"file": "bg_p_155_plaster.jpg",
+"family": "plaster",
+"tone": "light",
+"mean_lum": 213.0,
+"centre_lum": 230.2,
+"palette": "f8e0a6 f2c96b e9aa3c fffaf0 fdf3dc"
+},
+{
+"id": 156,
+"file": "bg_p_156_plaster.jpg",
+"family": "plaster",
+"tone": "light",
+"mean_lum": 204.2,
+"centre_lum": 222.1,
+"palette": "9fd4cf e9f6f5 c8e8e5 f6fcfb 6fb9b2"
+},
+{
+"id": 157,
+"file": "bg_p_157_plaster.jpg",
+"family": "plaster",
+"tone": "light",
+"mean_lum": 186.4,
+"centre_lum": 198.4,
+"palette": "f0f4e8 c5d8a4 dde8c8 a9c27d f9fbf4"
+},
+{
+"id": 158,
+"file": "bg_p_158_plaster.jpg",
+"family": "plaster",
+"tone": "light",
+"mean_lum": 178.4,
+"centre_lum": 190.5,
+"palette": "efd0d0 f7eaea fdf6f6 d48f8f e3b0b0"
+},
+{
+"id": 159,
+"file": "bg_p_159_plaster.jpg",
+"family": "plaster",
+"tone": "mid",
+"mean_lum": 77.9,
+"centre_lum": 84.0,
+"palette": "8c6c2a a8863d dbc283 6e5319 c4a35a"
+},
+{
+"id": 160,
+"file": "bg_p_160_plaster.jpg",
+"family": "plaster",
+"tone": "mid",
+"mean_lum": 136.1,
+"centre_lum": 145.1,
+"palette": "e08e9b f1b2bc 8c3e4d ad5565 c96f7e"
+},
+{
+"id": 161,
+"file": "bg_p_161_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 20.4,
+"centre_lum": 22.4,
+"palette": "7a55a8 4a2f6b 0a0512 2a1a3d 160c24"
+},
+{
+"id": 162,
+"file": "bg_p_162_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 86.4,
+"centre_lum": 95.5,
+"palette": "0e111a 2e3652 1a1f2e 06080c 4a5785"
+},
+{
+"id": 163,
+"file": "bg_p_163_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 61.1,
+"centre_lum": 67.6,
+"palette": "040e11 081a20 2f7d90 12303a 1e5260"
+},
+{
+"id": 164,
+"file": "bg_p_164_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 55.3,
+"centre_lum": 55.8,
+"palette": "222222 5a5a5a 101010 080808 3a3a3a"
+},
+{
+"id": 165,
+"file": "bg_p_165_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 58.8,
+"centre_lum": 59.0,
+"palette": "06080c 1a1f2e 4a5785 0e111a 2e3652"
+},
+{
+"id": 166,
+"file": "bg_p_166_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 19.0,
+"centre_lum": 18.6,
+"palette": "0d0a06 2e2418 4d3c27 7a6140 1a140c"
+},
+{
+"id": 167,
+"file": "bg_p_167_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 20.4,
+"centre_lum": 22.4,
+"palette": "2a1a3d 0a0512 7a55a8 4a2f6b 160c24"
+},
+{
+"id": 168,
+"file": "bg_p_168_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 55.4,
+"centre_lum": 55.8,
+"palette": "101010 5a5a5a 080808 222222 3a3a3a"
+},
+{
+"id": 169,
+"file": "bg_p_169_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 73.9,
+"centre_lum": 75.3,
+"palette": "060b14 4d6a94 0c1424 1b2a41 324a6b"
+},
+{
+"id": 170,
+"file": "bg_p_170_neon.jpg",
+"family": "neon",
+"tone": "dark",
+"mean_lum": 17.0,
+"centre_lum": 9.3,
+"palette": "1c2b24 2f4a3e 4b7461 0f1a15 070d0a"
+},
+{
+"id": 171,
+"file": "bg_p_171_circles.jpg",
+"family": "circles",
+"tone": "dark",
+"mean_lum": 23.2,
+"centre_lum": 26.3,
+"palette": "0e111a 06080c 1a1f2e 2e3652 4a5785"
+},
+{
+"id": 172,
+"file": "bg_p_172_circles.jpg",
+"family": "circles",
+"tone": "mid",
+"mean_lum": 117.2,
+"centre_lum": 114.3,
+"palette": "9a6670 7e4d58 b5838d 613a44 d4a5ae"
+},
+{
+"id": 173,
+"file": "bg_p_173_circles.jpg",
+"family": "circles",
+"tone": "light",
+"mean_lum": 192.7,
+"centre_lum": 203.5,
+"palette": "9db8d3 d6e2ee bcd0e4 f8fbfd eef3f7"
+},
+{
+"id": 174,
+"file": "bg_p_174_circles.jpg",
+"family": "circles",
+"tone": "light",
+"mean_lum": 201.2,
+"centre_lum": 204.4,
+"palette": "e8d9c5 c9b08f f5efe6 d9c2a7 fbf7f0"
+},
+{
+"id": 175,
+"file": "bg_p_175_circles.jpg",
+"family": "circles",
+"tone": "light",
+"mean_lum": 213.8,
+"centre_lum": 227.9,
+"palette": "efd0d0 d48f8f fdf6f6 e3b0b0 f7eaea"
+},
+{
+"id": 176,
+"file": "bg_p_176_circles.jpg",
+"family": "circles",
+"tone": "light",
+"mean_lum": 203.8,
+"centre_lum": 218.0,
+"palette": "bcd0e4 f8fbfd 9db8d3 eef3f7 d6e2ee"
+},
+{
+"id": 177,
+"file": "bg_p_177_circles.jpg",
+"family": "circles",
+"tone": "mid",
+"mean_lum": 124.4,
+"centre_lum": 139.2,
+"palette": "9a6670 613a44 b5838d d4a5ae 7e4d58"
+},
+{
+"id": 178,
+"file": "bg_p_178_circles.jpg",
+"family": "circles",
+"tone": "mid",
+"mean_lum": 135.3,
+"centre_lum": 147.3,
+"palette": "8fae8d 6f9370 b0c9ae 557856 3f5e40"
+},
+{
+"id": 179,
+"file": "bg_p_179_circles.jpg",
+"family": "circles",
+"tone": "mid",
+"mean_lum": 100.5,
+"centre_lum": 109.0,
+"palette": "3f5e40 557856 8fae8d b0c9ae 6f9370"
+},
+{
+"id": 180,
+"file": "bg_p_180_circles.jpg",
+"family": "circles",
+"tone": "dark",
+"mean_lum": 45.2,
+"centre_lum": 52.6,
+"palette": "040e11 1e5260 081a20 2f7d90 12303a"
+},
+{
+"id": 181,
+"file": "bg_p_181_sea.jpg",
+"family": "sea",
+"tone": "mid",
+"mean_lum": 131.2,
+"centre_lum": 160.9,
+"palette": "7fa3b8 476d84 a5c3d4 325669 5f869d"
+},
+{
+"id": 182,
+"file": "bg_p_182_sea.jpg",
+"family": "sea",
+"tone": "light",
+"mean_lum": 193.9,
+"centre_lum": 215.9,
+"palette": "b4d0b4 f7fbf7 d3e5d3 8fb88f eef5ee"
+},
+{
+"id": 183,
+"file": "bg_p_183_sea.jpg",
+"family": "sea",
+"tone": "light",
+"mean_lum": 202.7,
+"centre_lum": 209.1,
+"palette": "ffae78 fff1e6 ffdcc2 fffaf5 ffc79e"
+},
+{
+"id": 184,
+"file": "bg_p_184_sea.jpg",
+"family": "sea",
+"tone": "light",
+"mean_lum": 197.6,
+"centre_lum": 209.8,
+"palette": "b4d0b4 d3e5d3 eef5ee f7fbf7 8fb88f"
+},
+{
+"id": 185,
+"file": "bg_p_185_sea.jpg",
+"family": "sea",
+"tone": "light",
+"mean_lum": 205.8,
+"centre_lum": 226.6,
+"palette": "fbf7f0 d9c2a7 f5efe6 e8d9c5 c9b08f"
+},
+{
+"id": 186,
+"file": "bg_p_186_sea.jpg",
+"family": "sea",
+"tone": "mid",
+"mean_lum": 121.4,
+"centre_lum": 143.5,
+"palette": "476d84 7fa3b8 a5c3d4 5f869d 325669"
+},
+{
+"id": 187,
+"file": "bg_p_187_sea.jpg",
+"family": "sea",
+"tone": "mid",
+"mean_lum": 101.8,
+"centre_lum": 101.2,
+"palette": "b5838d d4a5ae 613a44 9a6670 7e4d58"
+},
+{
+"id": 188,
+"file": "bg_p_188_sea.jpg",
+"family": "sea",
+"tone": "mid",
+"mean_lum": 125.3,
+"centre_lum": 150.0,
+"palette": "eaae85 a85a2f d98e5f 85431f c2703f"
+},
+{
+"id": 189,
+"file": "bg_p_189_sea.jpg",
+"family": "sea",
+"tone": "dark",
+"mean_lum": 35.8,
+"centre_lum": 40.6,
+"palette": "324a6b 4d6a94 0c1424 060b14 1b2a41"
+},
+{
+"id": 190,
+"file": "bg_p_190_sea.jpg",
+"family": "sea",
+"tone": "dark",
+"mean_lum": 40.2,
+"centre_lum": 59.5,
+"palette": "1c2b24 2f4a3e 4b7461 0f1a15 070d0a"
+},
+{
+"id": 191,
+"file": "bg_p_191_city.jpg",
+"family": "city",
+"tone": "light",
+"mean_lum": 181.9,
+"centre_lum": 203.5,
+"palette": "eef3f7 d6e2ee f8fbfd bcd0e4 9db8d3"
+},
+{
+"id": 192,
+"file": "bg_p_192_city.jpg",
+"family": "city",
+"tone": "light",
+"mean_lum": 153.2,
+"centre_lum": 166.1,
+"palette": "fdf3dc f8e0a6 f2c96b fffaf0 e9aa3c"
+},
+{
+"id": 193,
+"file": "bg_p_193_city.jpg",
+"family": "city",
+"tone": "light",
+"mean_lum": 139.6,
+"centre_lum": 162.2,
+"palette": "8fb88f f7fbf7 eef5ee b4d0b4 d3e5d3"
+},
+{
+"id": 194,
+"file": "bg_p_194_city.jpg",
+"family": "city",
+"tone": "light",
+"mean_lum": 163.1,
+"centre_lum": 165.1,
+"palette": "d6e2ee 9db8d3 bcd0e4 eef3f7 f8fbfd"
+},
+{
+"id": 195,
+"file": "bg_p_195_city.jpg",
+"family": "city",
+"tone": "mid",
+"mean_lum": 72.8,
+"centre_lum": 80.1,
+"palette": "3f5e40 8fae8d 557856 b0c9ae 6f9370"
+},
+{
+"id": 196,
+"file": "bg_p_196_city.jpg",
+"family": "city",
+"tone": "mid",
+"mean_lum": 113.8,
+"centre_lum": 105.7,
+"palette": "bdb3dc 9b8fc4 483b78 7d70ad 625494"
+},
+{
+"id": 197,
+"file": "bg_p_197_city.jpg",
+"family": "city",
+"tone": "mid",
+"mean_lum": 77.3,
+"centre_lum": 84.8,
+"palette": "6e5319 8c6c2a c4a35a dbc283 a8863d"
+},
+{
+"id": 198,
+"file": "bg_p_198_city.jpg",
+"family": "city",
+"tone": "dark",
+"mean_lum": 26.8,
+"centre_lum": 29.1,
+"palette": "2b1b2e 6e4575 4a2d4f 170d19 0b060c"
+},
+{
+"id": 199,
+"file": "bg_p_199_city.jpg",
+"family": "city",
+"tone": "dark",
+"mean_lum": 24.0,
+"centre_lum": 28.0,
+"palette": "1a1f2e 0e111a 2e3652 4a5785 06080c"
+},
+{
+"id": 200,
+"file": "bg_p_200_city.jpg",
+"family": "city",
+"tone": "mid",
+"mean_lum": 74.4,
+"centre_lum": 80.3,
+"palette": "7e4d58 d4a5ae 613a44 b5838d 9a6670"
+},
+{
+"id": 201,
+"file": "bg_p_201_mount.jpg",
+"family": "mount",
+"tone": "light",
+"mean_lum": 190.3,
+"centre_lum": 167.2,
+"palette": "c4bcb4 f3f0ed a89f95 fbfaf9 dcd6d0"
+},
+{
+"id": 202,
+"file": "bg_p_202_mount.jpg",
+"family": "mount",
+"tone": "light",
+"mean_lum": 148.5,
+"centre_lum": 158.7,
+"palette": "c5d8a4 f0f4e8 dde8c8 a9c27d f9fbf4"
+},
+{
+"id": 203,
+"file": "bg_p_203_mount.jpg",
+"family": "mount",
+"tone": "light",
+"mean_lum": 185.1,
+"centre_lum": 163.1,
+"palette": "a89f95 dcd6d0 c4bcb4 fbfaf9 f3f0ed"
+},
+{
+"id": 204,
+"file": "bg_p_204_mount.jpg",
+"family": "mount",
+"tone": "mid",
+"mean_lum": 81.0,
+"centre_lum": 97.4,
+"palette": "6fa8a0 95c4bd 4f8d85 255a53 38746c"
+},
+{
+"id": 205,
+"file": "bg_p_205_mount.jpg",
+"family": "mount",
+"tone": "mid",
+"mean_lum": 89.5,
+"centre_lum": 98.0,
+"palette": "9a6670 613a44 d4a5ae 7e4d58 b5838d"
+},
+{
+"id": 206,
+"file": "bg_p_206_mount.jpg",
+"family": "mount",
+"tone": "mid",
+"mean_lum": 89.8,
+"centre_lum": 101.5,
+"palette": "a8863d 6e5319 dbc283 8c6c2a c4a35a"
+},
+{
+"id": 207,
+"file": "bg_p_207_mount.jpg",
+"family": "mount",
+"tone": "dark",
+"mean_lum": 64.7,
+"centre_lum": 40.4,
+"palette": "060b14 0c1424 1b2a41 4d6a94 324a6b"
+},
+{
+"id": 208,
+"file": "bg_p_208_mount.jpg",
+"family": "mount",
+"tone": "dark",
+"mean_lum": 23.1,
+"centre_lum": 35.2,
+"palette": "4d3c27 7a6140 2e2418 0d0a06 1a140c"
+},
+{
+"id": 209,
+"file": "bg_p_209_mount.jpg",
+"family": "mount",
+"tone": "mid",
+"mean_lum": 136.4,
+"centre_lum": 110.7,
+"palette": "8fae8d 3f5e40 557856 b0c9ae 6f9370"
+},
+{
+"id": 210,
+"file": "bg_p_210_mount.jpg",
+"family": "mount",
+"tone": "light",
+"mean_lum": 187.2,
+"centre_lum": 169.7,
+"palette": "ffae78 ffdcc2 ffc79e fff1e6 fffaf5"
+},
+{
+"id": 211,
+"file": "bg_p_211_confetti.jpg",
+"family": "confetti",
+"tone": "light",
+"mean_lum": 216.5,
+"centre_lum": 212.7,
+"palette": "ffae78 fff1e6 ffdcc2 fffaf5 ffc79e"
+},
+{
+"id": 212,
+"file": "bg_p_212_confetti.jpg",
+"family": "confetti",
+"tone": "light",
+"mean_lum": 231.3,
+"centre_lum": 232.5,
+"palette": "fff1e6 ffae78 ffc79e ffdcc2 fffaf5"
+},
+{
+"id": 213,
+"file": "bg_p_213_confetti.jpg",
+"family": "confetti",
+"tone": "light",
+"mean_lum": 242.5,
+"centre_lum": 241.9,
+"palette": "f0f4e8 a9c27d c5d8a4 f9fbf4 dde8c8"
+},
+{
+"id": 214,
+"file": "bg_p_214_confetti.jpg",
+"family": "confetti",
+"tone": "mid",
+"mean_lum": 94.2,
+"centre_lum": 91.5,
+"palette": "255a53 95c4bd 6fa8a0 4f8d85 38746c"
+},
+{
+"id": 215,
+"file": "bg_p_215_confetti.jpg",
+"family": "confetti",
+"tone": "mid",
+"mean_lum": 165.2,
+"centre_lum": 159.7,
+"palette": "a37b48 bf9a68 7e5c30 ebd6b5 d7b98e"
+},
+{
+"id": 216,
+"file": "bg_p_216_confetti.jpg",
+"family": "confetti",
+"tone": "mid",
+"mean_lum": 164.8,
+"centre_lum": 163.0,
+"palette": "bf9a68 ebd6b5 7e5c30 d7b98e a37b48"
+},
+{
+"id": 217,
+"file": "bg_p_217_confetti.jpg",
+"family": "confetti",
+"tone": "light",
+"mean_lum": 230.0,
+"centre_lum": 231.0,
+"palette": "e9f6f5 f6fcfb 9fd4cf c8e8e5 6fb9b2"
+},
+{
+"id": 218,
+"file": "bg_p_218_confetti.jpg",
+"family": "confetti",
+"tone": "mid",
+"mean_lum": 137.1,
+"centre_lum": 130.8,
+"palette": "6b4e35 8a6747 c9a27e e1c3a1 a9825d"
+},
+{
+"id": 219,
+"file": "bg_p_219_confetti.jpg",
+"family": "confetti",
+"tone": "mid",
+"mean_lum": 104.3,
+"centre_lum": 102.8,
+"palette": "7e5c30 ebd6b5 d7b98e a37b48 bf9a68"
+},
+{
+"id": 220,
+"file": "bg_p_220_confetti.jpg",
+"family": "confetti",
+"tone": "mid",
+"mean_lum": 104.0,
+"centre_lum": 105.3,
+"palette": "a37b48 bf9a68 ebd6b5 7e5c30 d7b98e"
+},
+{
+"id": 221,
+"file": "bg_p_221_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 44.5,
+"centre_lum": 47.1,
+"palette": "1b2a41 060b14 4d6a94 324a6b 0c1424"
+},
+{
+"id": 222,
+"file": "bg_p_222_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 30.7,
+"centre_lum": 35.5,
+"palette": "222222 080808 101010 5a5a5a 3a3a3a"
+},
+{
+"id": 223,
+"file": "bg_p_223_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 35.4,
+"centre_lum": 37.8,
+"palette": "1a0a0a 542424 824040 301414 0c0404"
+},
+{
+"id": 224,
+"file": "bg_p_224_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 35.2,
+"centre_lum": 38.8,
+"palette": "0d0a06 1a140c 4d3c27 7a6140 2e2418"
+},
+{
+"id": 225,
+"file": "bg_p_225_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 26.6,
+"centre_lum": 29.5,
+"palette": "2f4a3e 4b7461 1c2b24 070d0a 0f1a15"
+},
+{
+"id": 226,
+"file": "bg_p_226_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 21.7,
+"centre_lum": 24.5,
+"palette": "324a6b 4d6a94 0c1424 1b2a41 060b14"
+},
+{
+"id": 227,
+"file": "bg_p_227_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 41.7,
+"centre_lum": 45.4,
+"palette": "4d6a94 0c1424 324a6b 060b14 1b2a41"
+},
+{
+"id": 228,
+"file": "bg_p_228_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 20.1,
+"centre_lum": 23.4,
+"palette": "7a6140 4d3c27 0d0a06 2e2418 1a140c"
+},
+{
+"id": 229,
+"file": "bg_p_229_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 36.5,
+"centre_lum": 39.5,
+"palette": "0a0512 2a1a3d 4a2f6b 7a55a8 160c24"
+},
+{
+"id": 230,
+"file": "bg_p_230_stars.jpg",
+"family": "stars",
+"tone": "dark",
+"mean_lum": 51.6,
+"centre_lum": 56.0,
+"palette": "2b1b2e 170d19 6e4575 0b060c 4a2d4f"
+},
+{
+"id": 231,
+"file": "bg_p_231_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 162.8,
+"centre_lum": 183.6,
+"palette": "a89f95 fbfaf9 c4bcb4 dcd6d0 f3f0ed"
+},
+{
+"id": 232,
+"file": "bg_p_232_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 154.1,
+"centre_lum": 174.8,
+"palette": "e9aa3c f8e0a6 fdf3dc f2c96b fffaf0"
+},
+{
+"id": 233,
+"file": "bg_p_233_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 229.8,
+"centre_lum": 237.4,
+"palette": "f9fbf4 c5d8a4 dde8c8 a9c27d f0f4e8"
+},
+{
+"id": 234,
+"file": "bg_p_234_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "mid",
+"mean_lum": 179.5,
+"centre_lum": 173.3,
+"palette": "bdb3dc 7d70ad 9b8fc4 625494 483b78"
+},
+{
+"id": 235,
+"file": "bg_p_235_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 169.8,
+"centre_lum": 177.0,
+"palette": "a78bd0 ddd0ee f1ecf7 faf7fd c3aee0"
+},
+{
+"id": 236,
+"file": "bg_p_236_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 227.6,
+"centre_lum": 239.1,
+"palette": "f5efe6 fbf7f0 d9c2a7 c9b08f e8d9c5"
+},
+{
+"id": 237,
+"file": "bg_p_237_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "mid",
+"mean_lum": 86.1,
+"centre_lum": 101.3,
+"palette": "85431f eaae85 d98e5f a85a2f c2703f"
+},
+{
+"id": 238,
+"file": "bg_p_238_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 206.6,
+"centre_lum": 217.2,
+"palette": "c8e8e5 9fd4cf f6fcfb e9f6f5 6fb9b2"
+},
+{
+"id": 239,
+"file": "bg_p_239_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 161.5,
+"centre_lum": 169.9,
+"palette": "d48f8f e3b0b0 fdf6f6 efd0d0 f7eaea"
+},
+{
+"id": 240,
+"file": "bg_p_240_sunpaper.jpg",
+"family": "sunpaper",
+"tone": "light",
+"mean_lum": 206.7,
+"centre_lum": 215.4,
+"palette": "c8e8e5 9fd4cf e9f6f5 6fb9b2 f6fcfb"
+},
+{
+"id": 241,
+"file": "bg_p_241_mist.jpg",
+"family": "mist",
+"tone": "mid",
+"mean_lum": 154.1,
+"centre_lum": 159.7,
+"palette": "8c3e4d ad5565 c96f7e f1b2bc e08e9b"
+},
+{
+"id": 242,
+"file": "bg_p_242_mist.jpg",
+"family": "mist",
+"tone": "mid",
+"mean_lum": 120.9,
+"centre_lum": 133.7,
+"palette": "b5838d d4a5ae 7e4d58 613a44 9a6670"
+},
+{
+"id": 243,
+"file": "bg_p_243_mist.jpg",
+"family": "mist",
+"tone": "dark",
+"mean_lum": 19.8,
+"centre_lum": 20.7,
+"palette": "1a140c 0d0a06 4d3c27 2e2418 7a6140"
+},
+{
+"id": 244,
+"file": "bg_p_244_mist.jpg",
+"family": "mist",
+"tone": "dark",
+"mean_lum": 53.8,
+"centre_lum": 61.0,
+"palette": "12303a 2f7d90 1e5260 040e11 081a20"
+},
+{
+"id": 245,
+"file": "bg_p_245_mist.jpg",
+"family": "mist",
+"tone": "mid",
+"mean_lum": 161.7,
+"centre_lum": 176.9,
+"palette": "5f869d a5c3d4 476d84 7fa3b8 325669"
+},
+{
+"id": 246,
+"file": "bg_p_246_mist.jpg",
+"family": "mist",
+"tone": "light",
+"mean_lum": 219.8,
+"centre_lum": 230.0,
+"palette": "bcd0e4 eef3f7 9db8d3 d6e2ee f8fbfd"
+},
+{
+"id": 247,
+"file": "bg_p_247_mist.jpg",
+"family": "mist",
+"tone": "light",
+"mean_lum": 208.9,
+"centre_lum": 220.3,
+"palette": "dcd6d0 c4bcb4 f3f0ed fbfaf9 a89f95"
+},
+{
+"id": 248,
+"file": "bg_p_248_mist.jpg",
+"family": "mist",
+"tone": "light",
+"mean_lum": 195.4,
+"centre_lum": 207.6,
+"palette": "d9c2a7 f5efe6 fbf7f0 c9b08f e8d9c5"
+},
+{
+"id": 249,
+"file": "bg_p_249_mist.jpg",
+"family": "mist",
+"tone": "light",
+"mean_lum": 214.3,
+"centre_lum": 226.1,
+"palette": "a9c27d dde8c8 c5d8a4 f0f4e8 f9fbf4"
+},
+{
+"id": 250,
+"file": "bg_p_250_mist.jpg",
+"family": "mist",
+"tone": "mid",
+"mean_lum": 157.5,
+"centre_lum": 162.1,
+"palette": "9b8fc4 7d70ad 483b78 bdb3dc 625494"
+},
+{
+"id": 251,
+"file": "bg_p_251_stage.jpg",
+"family": "stage",
+"tone": "mid",
+"mean_lum": 166.3,
+"centre_lum": 204.6,
+"palette": "ebd6b5 a37b48 bf9a68 d7b98e 7e5c30"
+},
+{
+"id": 252,
+"file": "bg_p_252_stage.jpg",
+"family": "stage",
+"tone": "dark",
+"mean_lum": 77.8,
+"centre_lum": 103.1,
+"palette": "4d6a94 0c1424 1b2a41 324a6b 060b14"
+},
+{
+"id": 253,
+"file": "bg_p_253_stage.jpg",
+"family": "stage",
+"tone": "dark",
+"mean_lum": 28.6,
+"centre_lum": 39.3,
+"palette": "301414 824040 542424 1a0a0a 0c0404"
+},
+{
+"id": 254,
+"file": "bg_p_254_stage.jpg",
+"family": "stage",
+"tone": "mid",
+"mean_lum": 114.7,
+"centre_lum": 124.4,
+"palette": "a37b48 ebd6b5 d7b98e 7e5c30 bf9a68"
+},
+{
+"id": 255,
+"file": "bg_p_255_stage.jpg",
+"family": "stage",
+"tone": "light",
+"mean_lum": 209.3,
+"centre_lum": 243.5,
+"palette": "d6e2ee bcd0e4 9db8d3 eef3f7 f8fbfd"
+},
+{
+"id": 256,
+"file": "bg_p_256_stage.jpg",
+"family": "stage",
+"tone": "light",
+"mean_lum": 211.8,
+"centre_lum": 244.6,
+"palette": "e9f6f5 6fb9b2 f6fcfb c8e8e5 9fd4cf"
+},
+{
+"id": 257,
+"file": "bg_p_257_stage.jpg",
+"family": "stage",
+"tone": "light",
+"mean_lum": 182.0,
+"centre_lum": 220.7,
+"palette": "a9c27d f0f4e8 c5d8a4 f9fbf4 dde8c8"
+},
+{
+"id": 258,
+"file": "bg_p_258_stage.jpg",
+"family": "stage",
+"tone": "light",
+"mean_lum": 198.3,
+"centre_lum": 234.4,
+"palette": "b4d0b4 8fb88f d3e5d3 f7fbf7 eef5ee"
+},
+{
+"id": 259,
+"file": "bg_p_259_stage.jpg",
+"family": "stage",
+"tone": "mid",
+"mean_lum": 111.1,
+"centre_lum": 129.8,
+"palette": "6f9370 8fae8d b0c9ae 557856 3f5e40"
+},
+{
+"id": 260,
+"file": "bg_p_260_stage.jpg",
+"family": "stage",
+"tone": "mid",
+"mean_lum": 145.5,
+"centre_lum": 187.3,
+"palette": "9b8fc4 7d70ad 483b78 bdb3dc 625494"
+},
+{
+"id": 261,
+"file": "bg_p_261_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "dark",
+"mean_lum": 10.4,
+"centre_lum": 11.4,
+"palette": "0f1a15 4b7461 1c2b24 070d0a 2f4a3e"
+},
+{
+"id": 262,
+"file": "bg_p_262_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "dark",
+"mean_lum": 11.0,
+"centre_lum": 11.0,
+"palette": "6e4575 2b1b2e 170d19 0b060c 4a2d4f"
+},
+{
+"id": 263,
+"file": "bg_p_263_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "mid",
+"mean_lum": 152.4,
+"centre_lum": 161.5,
+"palette": "a9825d 8a6747 6b4e35 c9a27e e1c3a1"
+},
+{
+"id": 264,
+"file": "bg_p_264_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "light",
+"mean_lum": 232.4,
+"centre_lum": 246.4,
+"palette": "d48f8f f7eaea efd0d0 fdf6f6 e3b0b0"
+},
+{
+"id": 265,
+"file": "bg_p_265_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "light",
+"mean_lum": 226.3,
+"centre_lum": 239.7,
+"palette": "c3aee0 a78bd0 ddd0ee f1ecf7 faf7fd"
+},
+{
+"id": 266,
+"file": "bg_p_266_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "light",
+"mean_lum": 234.5,
+"centre_lum": 248.0,
+"palette": "ffc79e fff1e6 ffdcc2 fffaf5 ffae78"
+},
+{
+"id": 267,
+"file": "bg_p_267_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "light",
+"mean_lum": 210.0,
+"centre_lum": 221.9,
+"palette": "fffaf5 fff1e6 ffae78 ffdcc2 ffc79e"
+},
+{
+"id": 268,
+"file": "bg_p_268_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "mid",
+"mean_lum": 85.6,
+"centre_lum": 91.2,
+"palette": "ebd6b5 a37b48 d7b98e 7e5c30 bf9a68"
+},
+{
+"id": 269,
+"file": "bg_p_269_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "mid",
+"mean_lum": 104.8,
+"centre_lum": 110.8,
+"palette": "bdb3dc 483b78 9b8fc4 625494 7d70ad"
+},
+{
+"id": 270,
+"file": "bg_p_270_terrazzo.jpg",
+"family": "terrazzo",
+"tone": "mid",
+"mean_lum": 113.5,
+"centre_lum": 120.5,
+"palette": "7e5c30 bf9a68 ebd6b5 a37b48 d7b98e"
+},
+{
+"id": 271,
+"file": "bg_p_271_rays.jpg",
+"family": "rays",
+"tone": "dark",
+"mean_lum": 51.3,
+"centre_lum": 56.6,
+"palette": "2e2418 0d0a06 4d3c27 7a6140 1a140c"
+},
+{
+"id": 272,
+"file": "bg_p_272_rays.jpg",
+"family": "rays",
+"tone": "mid",
+"mean_lum": 126.2,
+"centre_lum": 137.7,
+"palette": "86b0d4 3f72a0 1c3f63 5b8db8 2c5882"
+},
+{
+"id": 273,
+"file": "bg_p_273_rays.jpg",
+"family": "rays",
+"tone": "light",
+"mean_lum": 212.8,
+"centre_lum": 230.0,
+"palette": "f9fbf4 dde8c8 f0f4e8 c5d8a4 a9c27d"
+},
+{
+"id": 274,
+"file": "bg_p_274_rays.jpg",
+"family": "rays",
+"tone": "light",
+"mean_lum": 215.0,
+"centre_lum": 234.5,
+"palette": "fff1e6 ffae78 ffc79e fffaf5 ffdcc2"
+},
+{
+"id": 275,
+"file": "bg_p_275_rays.jpg",
+"family": "rays",
+"tone": "light",
+"mean_lum": 172.9,
+"centre_lum": 186.1,
+"palette": "b4d0b4 eef5ee d3e5d3 8fb88f f7fbf7"
+},
+{
+"id": 276,
+"file": "bg_p_276_rays.jpg",
+"family": "rays",
+"tone": "light",
+"mean_lum": 220.9,
+"centre_lum": 239.0,
+"palette": "f6fcfb 9fd4cf e9f6f5 c8e8e5 6fb9b2"
+},
+{
+"id": 277,
+"file": "bg_p_277_rays.jpg",
+"family": "rays",
+"tone": "mid",
+"mean_lum": 134.1,
+"centre_lum": 143.3,
+"palette": "b5838d 9a6670 d4a5ae 7e4d58 613a44"
+},
+{
+"id": 278,
+"file": "bg_p_278_rays.jpg",
+"family": "rays",
+"tone": "mid",
+"mean_lum": 123.7,
+"centre_lum": 132.3,
+"palette": "c9a27e 8a6747 a9825d 6b4e35 e1c3a1"
+},
+{
+"id": 279,
+"file": "bg_p_279_rays.jpg",
+"family": "rays",
+"tone": "mid",
+"mean_lum": 80.9,
+"centre_lum": 87.7,
+"palette": "255a53 95c4bd 38746c 4f8d85 6fa8a0"
+},
+{
+"id": 280,
+"file": "bg_p_280_rays.jpg",
+"family": "rays",
+"tone": "dark",
+"mean_lum": 23.2,
+"centre_lum": 24.4,
+"palette": "160c24 7a55a8 2a1a3d 0a0512 4a2f6b"
+},
+{
+"id": 281,
+"file": "bg_p_281_waves.jpg",
+"family": "waves",
+"tone": "mid",
+"mean_lum": 127.0,
+"centre_lum": 137.6,
+"palette": "a85a2f d98e5f eaae85 c2703f 85431f"
+},
+{
+"id": 282,
+"file": "bg_p_282_waves.jpg",
+"family": "waves",
+"tone": "light",
+"mean_lum": 192.8,
+"centre_lum": 207.2,
+"palette": "f6fcfb 9fd4cf e9f6f5 c8e8e5 6fb9b2"
+},
+{
+"id": 283,
+"file": "bg_p_283_waves.jpg",
+"family": "waves",
+"tone": "light",
+"mean_lum": 192.7,
+"centre_lum": 200.7,
+"palette": "e8d9c5 c9b08f d9c2a7 f5efe6 fbf7f0"
+},
+{
+"id": 284,
+"file": "bg_p_284_waves.jpg",
+"family": "waves",
+"tone": "light",
+"mean_lum": 193.8,
+"centre_lum": 210.9,
+"palette": "d9c2a7 fbf7f0 f5efe6 c9b08f e8d9c5"
+},
+{
+"id": 285,
+"file": "bg_p_285_waves.jpg",
+"family": "waves",
+"tone": "light",
+"mean_lum": 228.4,
+"centre_lum": 244.8,
+"palette": "6fb9b2 e9f6f5 c8e8e5 f6fcfb 9fd4cf"
+},
+{
+"id": 286,
+"file": "bg_p_286_waves.jpg",
+"family": "waves",
+"tone": "mid",
+"mean_lum": 118.8,
+"centre_lum": 122.3,
+"palette": "eaae85 a85a2f 85431f d98e5f c2703f"
+},
+{
+"id": 287,
+"file": "bg_p_287_waves.jpg",
+"family": "waves",
+"tone": "mid",
+"mean_lum": 115.6,
+"centre_lum": 123.5,
+"palette": "9b8fc4 625494 483b78 7d70ad bdb3dc"
+},
+{
+"id": 288,
+"file": "bg_p_288_waves.jpg",
+"family": "waves",
+"tone": "mid",
+"mean_lum": 101.5,
+"centre_lum": 112.4,
+"palette": "625494 7d70ad 9b8fc4 483b78 bdb3dc"
+},
+{
+"id": 289,
+"file": "bg_p_289_waves.jpg",
+"family": "waves",
+"tone": "dark",
+"mean_lum": 52.4,
+"centre_lum": 56.9,
+"palette": "081a20 12303a 2f7d90 1e5260 040e11"
+},
+{
+"id": 290,
+"file": "bg_p_290_waves.jpg",
+"family": "waves",
+"tone": "dark",
+"mean_lum": 41.4,
+"centre_lum": 41.7,
+"palette": "7a55a8 0a0512 160c24 4a2f6b 2a1a3d"
+},
+{
+"id": 291,
+"file": "bg_p_291_dapple.jpg",
+"family": "dapple",
+"tone": "light",
+"mean_lum": 177.8,
+"centre_lum": 191.7,
+"palette": "6fb9b2 e9f6f5 f6fcfb c8e8e5 9fd4cf"
+},
+{
+"id": 292,
+"file": "bg_p_292_dapple.jpg",
+"family": "dapple",
+"tone": "light",
+"mean_lum": 194.7,
+"centre_lum": 202.6,
+"palette": "f1ecf7 faf7fd c3aee0 a78bd0 ddd0ee"
+},
+{
+"id": 293,
+"file": "bg_p_293_dapple.jpg",
+"family": "dapple",
+"tone": "light",
+"mean_lum": 172.4,
+"centre_lum": 185.8,
+"palette": "e9aa3c fffaf0 fdf3dc f8e0a6 f2c96b"
+},
+{
+"id": 294,
+"file": "bg_p_294_dapple.jpg",
+"family": "dapple",
+"tone": "light",
+"mean_lum": 206.9,
+"centre_lum": 216.4,
+"palette": "fbf7f0 f5efe6 c9b08f d9c2a7 e8d9c5"
+},
+{
+"id": 295,
+"file": "bg_p_295_dapple.jpg",
+"family": "dapple",
+"tone": "mid",
+"mean_lum": 144.6,
+"centre_lum": 150.0,
+"palette": "d4a5ae 7e4d58 b5838d 9a6670 613a44"
+},
+{
+"id": 296,
+"file": "bg_p_296_dapple.jpg",
+"family": "dapple",
+"tone": "mid",
+"mean_lum": 143.8,
+"centre_lum": 155.7,
+"palette": "9a6670 613a44 7e4d58 d4a5ae b5838d"
+},
+{
+"id": 297,
+"file": "bg_p_297_dapple.jpg",
+"family": "dapple",
+"tone": "mid",
+"mean_lum": 155.5,
+"centre_lum": 166.3,
+"palette": "bf9a68 ebd6b5 7e5c30 d7b98e a37b48"
+},
+{
+"id": 298,
+"file": "bg_p_298_dapple.jpg",
+"family": "dapple",
+"tone": "dark",
+"mean_lum": 49.1,
+"centre_lum": 53.5,
+"palette": "2b1b2e 170d19 6e4575 4a2d4f 0b060c"
+},
+{
+"id": 299,
+"file": "bg_p_299_dapple.jpg",
+"family": "dapple",
+"tone": "dark",
+"mean_lum": 25.4,
+"centre_lum": 28.4,
+"palette": "0a0512 4a2f6b 160c24 2a1a3d 7a55a8"
+},
+{
+"id": 300,
+"file": "bg_p_300_dapple.jpg",
+"family": "dapple",
+"tone": "mid",
+"mean_lum": 116.0,
+"centre_lum": 124.3,
+"palette": "625494 bdb3dc 9b8fc4 7d70ad 483b78"
+}
+]

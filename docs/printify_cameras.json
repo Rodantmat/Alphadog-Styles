@@ -123,13 +123,15 @@
   "102048": {
    "kind": "hanging",
    "side": "front",
-   "people": 0
+   "people": 0,
+   "uncut": true
   },
   "102047": {
    "kind": "hanging",
    "side": "front",
    "people": 0,
-   "rod": true
+   "rod": true,
+   "uncut": true
   },
   "102049": {
    "kind": "scene",
