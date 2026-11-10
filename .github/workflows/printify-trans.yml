@@ -19,6 +19,12 @@ jobs:
           LIM: ${{ inputs.lim }}
           SIZE: ${{ inputs.size }}
         run: python3 -u scripts/printify_trans.py | tee trans_log.txt
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd out/mocktrans && for d in */; do n=${d%/}; zip -qr "../../mt_$n.zip" "$n"; done; cd ../..
+          gh release delete mocktrans -y --cleanup-tag || true
+          gh release create mocktrans mt_*.zip trans_log.txt --title mocktrans --notes "Printify transparent mockups"
       - uses: actions/upload-artifact@v4
         with:
           name: mocktrans
