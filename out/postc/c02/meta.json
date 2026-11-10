@@ -1,0 +1,145 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100618",
+   "kind": "person",
+   "bg": "pg_mpumalanga_veld_puresky_0.jpg",
+   "bgname": "Mpumalanga Veld (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.3
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98424",
+   "kind": "flat",
+   "bg": "pa_Wood051.jpg",
+   "bgname": "Wood 051",
+   "fam": "texture:x:0",
+   "ratio": 5.3
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100620",
+   "kind": "person",
+   "bg": "pg_hilly_terrain_01_puresky_0.jpg",
+   "bgname": "Hilly Terrain 01 (Pure Sky)",
+   "fam": "hdri:outdoor:1",
+   "ratio": 4.4
+  },
+  {
+   "i": 3,
+   "prod": "Polo",
+   "cam": "102236",
+   "kind": "flat",
+   "bg": "pt_worn_shutter_0.jpg",
+   "bgname": "Worn Shutter",
+   "fam": "texture:metal:0",
+   "ratio": 6.3
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "92581",
+   "kind": "person",
+   "bg": "pg_wooden_studio_16_0.jpg",
+   "bgname": "Wooden Studio 16",
+   "fam": "hdri:studio:4",
+   "ratio": 7.2
+  },
+  {
+   "i": 5,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489",
+   "kind": "flat",
+   "bg": "pt_smoke_speckled_veneer_0.jpg",
+   "bgname": "Smoke Speckled Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 6.9
+  },
+  {
+   "i": 6,
+   "prod": "Polo",
+   "cam": "103301",
+   "kind": "person",
+   "bg": "pg_wooden_studio_08_0.jpg",
+   "bgname": "Wooden Studio 08",
+   "fam": "hdri:studio:3",
+   "ratio": 8.2
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "97992",
+   "kind": "flat",
+   "bg": "pa_Metal058A.jpg",
+   "bgname": "Metal 058 A",
+   "fam": "texture:x:0",
+   "ratio": 5.4
+  },
+  {
+   "i": 8,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494",
+   "kind": "flat",
+   "bg": "pt_worn_shutter_1.jpg",
+   "bgname": "Worn Shutter",
+   "fam": "texture:metal:0",
+   "ratio": 8.4
+  },
+  {
+   "i": 9,
+   "prod": "Dad Hat",
+   "cam": "135042",
+   "kind": "flat",
+   "bg": "pa_Plastic006.jpg",
+   "bgname": "Plastic 006",
+   "fam": "texture:x:3",
+   "ratio": 7.7
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.45
+  ],
+  [
+   "smoothleft",
+   0.4
+  ],
+  [
+   "push",
+   0.45
+  ],
+  [
+   "smoothleft",
+   0.4
+  ],
+  [
+   "push",
+   0.45
+  ],
+  [
+   "smoothleft",
+   0.4
+  ],
+  [
+   "push",
+   0.45
+  ],
+  [
+   "cut",
+   0.033
+  ],
+  [
+   "cut",
+   0.033
+  ]
+ ],
+ "beat_phase": 0.139319727891154,
+ "shot_len": 0.9752380952380952,
+ "variant": "v2"
+}

@@ -19,6 +19,7 @@ def score(row,garment,kind):
     """Higher = better combination; None = reject."""
     if not row.get("ok"): return None
     mb,ms=BUSY[kind]
+    if row.get("kind")!="hdri" and kind in("flat","folded"): mb=16.0   # fine-grain textures read as calm behind a garment
     if row["busy"]>mb or row["centre_std"]>ms: return None
     if kind in("flat","folded") and row["kind"]=="hdri" and not (row["busy"]<=3.6 and "studio" in (row.get("cats") or [])): 
         return None if row["busy"]>3.0 else 0
@@ -35,7 +36,7 @@ def score(row,garment,kind):
         s-= row["busy"]/10.0                                                 # calmer is better behind a person
     elif kind in("flat","folded"):
         if row["kind"]=="texture": s+=1.2
-        s-= row["busy"]/3.0
+        s-= row["busy"]/(8.0 if row["kind"]!="hdri" else 3.0)
     elif kind=="closeup":
         if row["kind"]=="hdri": s+=0.8
     return s
@@ -47,10 +48,11 @@ class Catalog:
         self.used=json.load(open(USED)) if os.path.exists(USED) else {}
     def recent(self,days=60):
         lim=(datetime.date.today()-datetime.timedelta(days=days)).isoformat(); return {k for k,v in self.used.items() if v>=lim}
-    def pick(self,garment,kind,avoid_fam=(),taken=(),rnd=random,top=12):
+    def pick(self,garment,kind,avoid_fam=(),taken=(),rnd=random,top=12,only=None):
         rec=self.recent(); cands=[]
         for r in self.rows:
             if r["file"] in rec or r["file"] in taken or family(r) in avoid_fam: continue
+            if only and not only(r): continue
             s=score(r,garment,kind)
             if s is not None: cands.append((s,r))
         cands.sort(key=lambda x:-x[0]); cands=cands[:top]
