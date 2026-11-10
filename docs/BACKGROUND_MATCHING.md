@@ -1,0 +1,12 @@
+# Background library and matching rules (owner request 2026-11-10: "elite", real texture, matched by combination quality)
+## Library
+- Real photographs only, all CC0 (Poly Haven HDRIs -> 4 rectilinear camera views each; Poly Haven textures; ambientCG materials). No people, no logos. Built by workflow `bg-fetch` (scripts/bgfetch.py), stored as release assets `bgphotos_s0..s7` (zips of 1080x1920 jpgs + catalog_N.json + log). Pexels/Pixabay/Unsplash are NOT bulk-stored (their terms forbid bulk copying/need hotlinking); individual fetches only.
+- Catalog fields per image: kind (hdri|texture), name, cats, tags, mean/centre/top/bottom luminance, centre_std and busy (Laplacian) = how busy behind the subject, hue/sat/warm, sky fraction, flags ok / people_ok / flat_ok / dark / light. Blocklist words (hospital, factory, garage, toilet...) are rejected automatically.
+- Never reuse a background within 60 days (docs/bg_used.json), never two backgrounds of the same family adjacent in one video (family = kind:category:hue-bucket).
+## Matching rules (scripts/video/bgmatch.py)
+1. Separation: garment-to-background luminance ratio (WCAG formula on the centre region) must be >= 3.0; best 5-11. Dark garment -> mid/light bg (L 0.25-0.8); light garment -> dark/mid bg (never bg L>0.6); mid garment either extreme.
+2. Busyness behind the subject: people/caps <= 7 Laplacian (calm scenes, soft sky/horizon/forest bokeh); flats <= 3.2 and folded <= 4 (smooth textures: plaster, concrete, fine wood, fabric, paper, marble, studio walls). Rocky, brick, cobble, rusty metal are rejected for products.
+3. Hue: no saturated (>0.45) background behind a coloured garment; avoid same hue within 35 degrees; prefer muted quiet-luxury tones (sat 0.04-0.45).
+4. Subject kind affinities: PEOPLE -> real places (outdoor/nature/skies/sunrise-sunset/urban/studio) with visible sky or horizon, calm centre; FLAT/FOLDED -> textures and studio walls; CAPS/CLOSEUPS -> nature/bokeh plates.
+5. Variety inside a video: alternate light/dark backgrounds, no repeated family back-to-back, max 2 backgrounds of the same kind in a row.
+## Composition (docs/research/11, 12): hero inside y 270-1440, x 100-940; people height 1050-1250 px, feet near y 1400-1440; flats width 760-860 centred y 780-900; folded 560-680; caps 420-560. One upper-left key light; tinted contact shadow + soft cast shadow; bg haze/contrast -10..20%; grain on whole frame; vignette 10-16%. Transitions: hard cut on beat, fade, smooth*, eased push, <=1 whip/flash/zoom-through; ban list in docs/research/12.
