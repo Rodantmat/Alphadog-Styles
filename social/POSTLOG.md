@@ -52,3 +52,8 @@
 2026-11-10T04:39Z CHECK evening slot B (2026-11-10T04:00Z): IG sent, TikTok sent, Facebook sent, Pinterest sent. Missed: none. Forced: none.
 2026-11-10T17:42Z checker: Tue Nov 10 9:00 PT slot A (d2 real-shades-vs-ours, due 2026-11-10T17:00Z) listed acct1+2: SENT on IG 6aed5971c1e74b84e5c8226b, TikTok 6aed5977f3498efda76d75bd, FB 6aed59a9f3498efda76d7de2. MISSED: Pinterest 6aeec4cfaf7e526d430473bb status=error. Force (delete errored item + re-plan now+5min) was NOT executed: the delete dispatch was blocked by the session permission classifier. Result ALERT. Nov 10 04:00Z B sent on all 4; future items untouched.
 2026-11-10T18:20Z manual check: Nov 10 A d2 sent on IG/TikTok/FB at 17:00Z; Pinterest errored -> deleted 6aeec4cfaf7e526d430473bb, forced via social/plan_force_20261110_pin.json, new pin 6af35e820649793ed2fe82f2 SENT 18:16Z. Result OK.
+
+## 2026-11-10 (20:25Z) Buffer fill run
+- Listed both accounts: every past post `sent` on IG, TikTok, FB, Pinterest (Nov 10 A d2 + Pinterest repost 18:16Z included). No failed/missed. Each channel was 8/10.
+- Scheduled Nov 15 A d7b_which_back_edition (18:00Z) + Nov 16 A laugh01_hotdog_v1 (17:00Z) via social/planA_d7b_h01_*.json (captions written; none existed). IG 6af37cc9e4acfdf0c7065b78 / 6af37cca2cac17fcaff64ff9, TikTok 6af37cca41bc75bbeb600082 / 6af37ccb7c81278dfdb70cee, FB 6af37ccaead9c53d41bb325c / 6af37ccb41bc75bbeb6000c0, Pinterest 6af37ccac0addee3a3159144 / 6af37ccbe4acfdf0c7065bd3. All 4 channels now 10/10.
+- Skipped (rule breaks): b14 (hoodies incl. Sport Grey, same day as A d6b Sport Grey hoodie) and b15 (tees, shares Pit Bull + Aussie with b13). Both need rebuilding with different product/colour/breeds. Tomorrow (Nov 11) A + B scheduled; no ALERT.

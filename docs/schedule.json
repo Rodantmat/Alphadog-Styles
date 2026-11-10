@@ -112,7 +112,7 @@
     "reel": "out/postb2/b14/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A (18:00Z) scheduled on all 4 apps; B b14 pending (Buffer limit 10/10)"
+   "status": "A (18:00Z) scheduled on all 4 apps; B b14 SKIPPED: hoodie + Sport Grey same day as A d6b, needs rebuild"
   },
   {
    "date": "2026-11-15",
@@ -126,7 +126,7 @@
     "reel": "out/postb2/b15/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "built"
+   "status": "A d7b scheduled on all 4 apps (Nov 15 18:00Z); B b15 skipped (tees + Pit Bull/Aussie overlap with b13)"
   },
   {
    "date": "2026-11-16",
@@ -140,7 +140,7 @@
     "reel": "out/postb2/b16/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "built"
+   "status": "A laugh01_hotdog scheduled on all 4 apps (Nov 16 17:00Z); B b16 pending"
   },
   {
    "date": "2026-11-17",
