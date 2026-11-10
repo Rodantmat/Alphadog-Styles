@@ -1,0 +1,27 @@
+name: printify-trans
+on:
+  workflow_dispatch:
+    inputs:
+      lim:
+        default: "1"
+      size:
+        default: "2048"
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow -q
+      - env:
+          LIM: ${{ inputs.lim }}
+          SIZE: ${{ inputs.size }}
+        run: python3 -u scripts/printify_trans.py | tee trans_log.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mocktrans
+          path: |
+            out/mocktrans
+            trans_log.txt
