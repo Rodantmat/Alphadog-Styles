@@ -10,7 +10,7 @@ def call(m,p,b=None,retry=8):
         r=urllib.request.Request("https://api.printify.com"+p,data=json.dumps(b).encode() if b is not None else None,method=m,headers={"Authorization":"Bearer "+T,"Content-Type":"application/json","User-Agent":"a"})
         try: return json.load(urllib.request.urlopen(r,timeout=120))
         except urllib.error.HTTPError as e:
-            msg=e.read().decode()[:300]
+            msg=e.read().decode()[:1200]
             if e.code in(429,500,502,503,504) and a<retry-1: time.sleep(20*(a+1)); continue
             raise RuntimeError(f"{e.code} {p} {msg}")
 DARK=("black","navy","charcoal","dark","asphalt","forest","maroon","espresso","brown","deep","military","indigo","midnight","heather navy","storm","graphite","burgundy","cardinal","royal","kelly","evergreen","dk ","pine","cocoa","chocolate","coal","olive","hunter","emerald","purple","plum","denim","slate","steel","oxford","iron","bottle","army")
@@ -24,7 +24,10 @@ for s_ in call("GET","/v1/shops.json"):
         d=call("GET",f"/v1/shops/{s_['id']}/products.json?limit=50&page={pg}"); prods+=[(s_["id"],p) for p in d["data"]]
         if pg>=d["last_page"]: break
         pg+=1
+ONLY=set(filter(None,os.environ.get("ONLY","").split(",")))
+if ONLY: prods=[(s_,p) for s_,p in prods if p["id"] in ONLY]
 print("products",len(prods),flush=True)
+if ONLY: print(json.dumps([(p["id"],p["print_areas"]) for s_,p in prods][:1])[:3000])
 OUTER={1402:{"back"},1447:{"back_hat_embroidery","left_hat_embroidery","right_hat_embroidery","back"},2041:{"back_hat_embroidery","left_hat_embroidery","right_hat_embroidery"}}
 catcache={}
 def colors(bp,pv):
@@ -62,7 +65,7 @@ for s,p in prods:
         try:
             call("PUT",f"/v1/shops/{s}/products/{p['id']}.json",{"print_areas":new_areas})
             if p.get("external"): call("POST",f"/v1/shops/{s}/products/{p['id']}/publish.json",{"title":False,"description":False,"images":True,"variants":False,"tags":False,"keyfeatures":False,"shipping_template":False})
-        except Exception as e: res["errors"].append([s,p["id"],str(e)[:200]])
+        except Exception as e: res["errors"].append([s,p["id"],str(e)[:1200]])
         time.sleep(0.4)
 os.makedirs("out",exist_ok=True); json.dump(res,open("out/labelfix_result.json","w"),indent=1)
 print("DRY" if DRY else "LIVE","outer removed",len(res["removed_outer"]),"neck fixed",len(res["neck_fixed"]),"errors",len(res["errors"]))

@@ -3,6 +3,7 @@ on:
   workflow_dispatch:
     inputs:
       dry: {default: "1"}
+      only: {default: ""}
 permissions:
   contents: write
 jobs:
@@ -14,6 +15,7 @@ jobs:
       - env:
           PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
           DRY: ${{ inputs.dry }}
+          ONLY: ${{ inputs.only }}
         run: python3 scripts/printify_labelfix.py 2>&1 | tee out/labelfix.log
       - if: always()
         run: |
