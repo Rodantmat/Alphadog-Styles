@@ -57,10 +57,10 @@ for s,p in prods:
                 res["neck_fixed"].append([s,p["id"],p["title"][:60],bp,{g:len(l) for g,l in groups.items()},cur[:8]]); changed=True
                 for g,l in groups.items():
                     if not l: continue
-                    nph=[dict(q) for q in phs if q["position"]!="neck"]+[{"position":"neck","images":[{"id":V3[g],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]+[i for i in neck["images"] if i.get("type")=="text/plain"]}]
-                    new_areas.append({"variant_ids":l,"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"]]} for q in nph if q["images"]]})
+                    nph=[dict(q) for q in phs if q["position"]!="neck"]+[{"position":"neck","images":[{"id":V3[g],"x":0.5,"y":0.5,"scale":1.0,"angle":0}]}]
+                    new_areas.append({"variant_ids":l,"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"] if im.get("type")!="text/plain"]} for q in nph if q["images"]]})
                 continue
-        new_areas.append({"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[(im if im.get("type")=="text/plain" else {k:v for k,v in im.items() if k in("id","x","y","scale","angle")}) for im in q["images"]]} for q in phs if q["images"]]})
+        new_areas.append({"variant_ids":a["variant_ids"],"placeholders":[{"position":q["position"],"images":[{k:v for k,v in im.items() if k in("id","x","y","scale","angle")} for im in q["images"] if im.get("type")!="text/plain"]} for q in phs if q["images"]]})
     if changed and not DRY:
         try:
             call("PUT",f"/v1/shops/{s}/products/{p['id']}.json",{"print_areas":new_areas})
