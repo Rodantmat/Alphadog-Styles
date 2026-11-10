@@ -46,7 +46,7 @@ def add_text(img,text,y,sz=64):
     return Image.alpha_composite(im,ov).convert("RGB")
 def push(PL,A,B): pass
 PLN=lambda p,x,y:f"if(eq(PLANE,0),{p}0({x},{y}),if(eq(PLANE,1),{p}1({x},{y}),{p}2({x},{y})))"
-EXPR_PUSH="st(0,if(lt(P,0.5),4*P*P*P,1-pow(-2*P+2,3)/2));if(lt(X,W*(1-ld(0))),"+PLN("a","X+W*ld(0)","Y")+","+PLN("b","X-W*(1-ld(0))","Y")+")"
+EXPR_PUSH="st(1,1-P);st(0,if(lt(ld(1),0.5),4*ld(1)*ld(1)*ld(1),1-pow(-2*ld(1)+2,3)/2));if(lt(X,W*(1-ld(0))),"+PLN("a","X+W*ld(0)","Y")+","+PLN("b","X-W*(1-ld(0))","Y")+")"
 def pick_trans(a,b,used,rnd):
     if a["k"]=="person" and b["k"]!="person" and used.get("push",0)<3: return "push",0.8
     if a["k"]!="person" and b["k"]=="person": return "smoothleft",0.8
