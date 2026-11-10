@@ -1,0 +1,20 @@
+name: printify-mockexact
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          PRINTIFY_TOKEN: ${{ secrets.PRINTIFY_TOKEN }}
+        run: |
+          python3 -u scripts/printify_mockexact.py | tee out/mockexact_log.txt
+          git config user.name bot; git config user.email bot@x
+          git add out/mockexact out/mockexact_log.txt
+          git commit -m "mockexact result" || true
+          for i in 1 2 3 4; do git pull --rebase -q && git push -q && break; sleep 3; done
