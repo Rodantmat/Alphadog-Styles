@@ -2,83 +2,83 @@
  "meta": [
   {
    "i": 0,
-   "prod": "Tee B",
-   "cam": "92581",
+   "prod": "Foam Trucker Hat",
+   "cam": "110280",
    "kind": "person",
-   "bg": "pg_ferndale_studio_07_1.jpg",
-   "bgname": "Ferndale Studio 07",
-   "fam": "hdri:studio:5",
-   "ratio": 6.9
+   "bg": "pg_newman_lobby_0.jpg",
+   "bgname": "Newman Lobby",
+   "fam": "hdri:indoor:4",
+   "ratio": 7.5
   },
   {
    "i": 1,
-   "prod": "Mesh Trucker Cap",
-   "cam": "109494",
-   "kind": "flat",
-   "bg": "pt_slab_tiles_0.jpg",
-   "bgname": "Slab Tiles",
-   "fam": "texture:floor:0",
-   "ratio": 8.7
+   "prod": "Tee A",
+   "cam": "100615",
+   "kind": "folded",
+   "bg": "pa_Metal012.jpg",
+   "bgname": "Metal 012",
+   "fam": "texture:x:3",
+   "ratio": 5.9
   },
   {
    "i": 2,
-   "prod": "Tee A",
-   "cam": "100620",
+   "prod": "Tee B",
+   "cam": "102058",
    "kind": "person",
-   "bg": "pg_rosendal_park_sunset_puresky_0.jpg",
-   "bgname": "Rosendal Park Sunset (Pure Sky)",
-   "fam": "hdri:outdoor:3",
-   "ratio": 5.4
+   "bg": "pg_wooden_studio_16_3.jpg",
+   "bgname": "Wooden Studio 16",
+   "fam": "hdri:studio:3",
+   "ratio": 5.7
   },
   {
    "i": 3,
-   "prod": "Polo",
-   "cam": "102236",
+   "prod": "Dad Hat",
+   "cam": "135042",
    "kind": "flat",
-   "bg": "pt_wood_trunk_wall_1.jpg",
-   "bgname": "Wood Trunk Wall",
-   "fam": "texture:outdoor:0",
-   "ratio": 6.1
+   "bg": "pa_Plastic012A.jpg",
+   "bgname": "Plastic 012 A",
+   "fam": "texture:x:0",
+   "ratio": 5.6
   },
   {
    "i": 4,
    "prod": "Tee A",
-   "cam": "100618",
+   "cam": "100620",
    "kind": "person",
-   "bg": "pg_belfast_sunset_puresky_1.jpg",
-   "bgname": "Belfast Sunset (Pure Sky)",
-   "fam": "hdri:outdoor:5",
-   "ratio": 4.3
+   "bg": "pg_syferfontein_0d_clear_puresky_0.jpg",
+   "bgname": "Syferfontein 0d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.8
   },
   {
    "i": 5,
-   "prod": "Dad Hat",
-   "cam": "135042",
+   "prod": "Hoodie",
+   "cam": "98424",
    "kind": "flat",
-   "bg": "pt_black_painted_planks_0.jpg",
-   "bgname": "Black Painted Planks",
-   "fam": "texture:wood:3",
-   "ratio": 6.7
+   "bg": "pt_dark_rock_0.jpg",
+   "bgname": "Dark Rock",
+   "fam": "texture:outdoor:0",
+   "ratio": 7.6
   },
   {
    "i": 6,
-   "prod": "Polo",
-   "cam": "103301",
+   "prod": "Tee A",
+   "cam": "100618",
    "kind": "person",
-   "bg": "pg_wooden_studio_08_1.jpg",
-   "bgname": "Wooden Studio 08",
-   "fam": "hdri:studio:3",
-   "ratio": 4.9
+   "bg": "pg_studio_small_03_3.jpg",
+   "bgname": "Studio Small 03",
+   "fam": "hdri:indoor:3",
+   "ratio": 4.8
   },
   {
    "i": 7,
-   "prod": "Tee A",
-   "cam": "97992",
+   "prod": "Tee B",
+   "cam": "102044",
    "kind": "flat",
-   "bg": "pa_Porcelain001.jpg",
-   "bgname": "Porcelain 001",
-   "fam": "texture:x:0",
-   "ratio": 7.4
+   "bg": "pt_rubber_tiles_0.jpg",
+   "bgname": "Rubber Tiles",
+   "fam": "texture:floor:3",
+   "ratio": 7.1
   }
  ],
  "trans": [

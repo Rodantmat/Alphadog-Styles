@@ -11,6 +11,7 @@ import postb_build as PB, build2 as B2
 W,H=1080,1920
 DIRS={"Hoodie":"Hoodie","Tee B":"Tee_B","Tee A":"Tee_A","Mesh Trucker Cap":"Mesh","Foam Trucker Hat":"Foam","Polo":"Polo","Dad Hat":"Dad"}
 SUB={"Hoodie":"Hoodie","Tee B":"Tee_B","Tee A":"Tee_A","Mesh Trucker Cap":"Mesh_Trucker_Cap","Foam Trucker Hat":"Foam_Trucker_Hat","Polo":"Polo","Dad Hat":"Dad_Hat"}
+BLOCK=json.load(open('docs/cutout_blocklist.json'))
 def pool():
     M=json.load(open("docs/printify_cameras.json")); out=[]
     for prod,cams in M.items():
@@ -18,6 +19,7 @@ def pool():
         for c,m in cams.items():
             if m["kind"] not in("person","flat_front","flat_back","flat_side","folded"): continue
             f=f"out/trans/{DIRS[prod]}/{SUB[prod]}/{c}.png"
+            if c in BLOCK: continue
             if os.path.exists(f): out.append(dict(prod=prod,cam=c,kind=m["kind"],side=m.get("side"),file=f))
     return out
 def load(f):
