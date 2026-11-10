@@ -29,7 +29,7 @@ def save(img,out,name,meta,cat):
     img.save(f"{out}/{name}.jpg",quality=88); m,c,s=stats(img); cat.append(dict(file=name+".jpg",mean_lum=m,centre_lum=c,centre_std=s,**meta))
 def main():
     out=sys.argv[1]; hn=int(sys.argv[2]); tn=int(sys.argv[3]); nv=int(sys.argv[4]); os.makedirs(out,exist_ok=True); cat=[]; rnd=random.Random(5)
-    A=J("https://api.polyhaven.com/assets?t=hdrs"); print("hdri assets",len(A))
+    A=J("https://api.polyhaven.com/assets?t=hdris"); print("hdri assets",len(A))
     ids=sorted(A); rnd.shuffle(ids); done=0
     for i in ids:
         if done>=hn: break
