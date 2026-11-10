@@ -44,11 +44,12 @@ for s,p in prods:
         # tone check on neck
         neck=next((ph for ph in phs if ph["position"]=="neck" and any(i.get("type")!="text/plain" for i in ph["images"])),None)
         if neck:
-            col=colors(bp,pv); vids=a["variant_ids"]; groups={"white":[],"black":[]}
-            for v in vids:
-                c=col.get(v); res["colors"].setdefault(c,"dark" if is_dark(c) else "light"); groups["white" if is_dark(c) else "black"].append(v)
+            names_=" ".join((im.get("name") or "") for q in phs if q["position"]!="neck" for im in q["images"]).lower()
+            ink="white" if "whiteink" in names_ else "black" if "blackink" in names_ else None
+            groups={"white":[],"black":[]}
+            if ink: groups[ink]=list(a["variant_ids"])
             cur=next(i["id"] for i in neck["images"] if i.get("type")!="text/plain")
-            ok=all((g=="white" and cur==V3["white"]) or (g=="black" and cur==V3["black"]) for g,l in groups.items() if l)
+            ok=(ink is None) or cur==V3[ink]
             if not ok:
                 res["neck_fixed"].append([s,p["id"],p["title"][:60],bp,{g:len(l) for g,l in groups.items()},cur[:8]]); changed=True
                 for g,l in groups.items():
