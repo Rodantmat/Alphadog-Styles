@@ -1639,6 +1639,92 @@
    "6ae638b6"
   ]
  ],
- "errors": [],
+ "errors": [
+  [
+   29546485,
+   "6aed2f21950d2791130f89c5",
+   "400 /v1/shops/29546485/products/6aed2f21950d2791130f89c5.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f1d7304d206f807909c",
+   "400 /v1/shops/29546485/products/6aed2f1d7304d206f807909c.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f1a32b1c0af69065143",
+   "400 /v1/shops/29546485/products/6aed2f1a32b1c0af69065143.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f16950d2791130f89bb",
+   "400 /v1/shops/29546485/products/6aed2f16950d2791130f89bb.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f12cf20bee54a07dcaf",
+   "400 /v1/shops/29546485/products/6aed2f12cf20bee54a07dcaf.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f0f32b1c0af69065135",
+   "400 /v1/shops/29546485/products/6aed2f0f32b1c0af69065135.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f0b7304d206f8079083",
+   "400 /v1/shops/29546485/products/6aed2f0b7304d206f8079083.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f07c63b783dd60f9e22",
+   "400 /v1/shops/29546485/products/6aed2f07c63b783dd60f9e22.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.1.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2f03e7be4e1ecd098601",
+   "400 /v1/shops/29546485/products/6aed2f03e7be4e1ecd098601.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2effe7be4e1ecd0985fc",
+   "400 /v1/shops/29546485/products/6aed2effe7be4e1ecd0985fc.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2efbc53c76c1630e5f13",
+   "400 /v1/shops/29546485/products/6aed2efbc53c76c1630e5f13.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2ef8e7be4e1ecd0985f3",
+   "400 /v1/shops/29546485/products/6aed2ef8e7be4e1ecd0985f3.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2ef4c53c76c1630e5f09",
+   "400 /v1/shops/29546485/products/6aed2ef4c53c76c1630e5f09.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2ef0e7be4e1ecd0985e7",
+   "400 /v1/shops/29546485/products/6aed2ef0e7be4e1ecd0985e7.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2eecc63b783dd60f9e10",
+   "400 /v1/shops/29546485/products/6aed2eecc63b783dd60f9e10.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6aed2ee9e7be4e1ecd0985e1",
+   "400 /v1/shops/29546485/products/6aed2ee9e7be4e1ecd0985e1.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ],
+  [
+   29546485,
+   "6ae6c9e1340a0b43b901b999",
+   "400 /v1/shops/29546485/products/6ae6c9e1340a0b43b901b999.json {\"status\":\"error\",\"code\":8150,\"message\":\"Validation failed.\",\"errors\":{\"reason\":\"print_areas.0.placeholders.2.images: The print_areas.0.pl"
+  ]
+ ],
  "colors": {}
 }
