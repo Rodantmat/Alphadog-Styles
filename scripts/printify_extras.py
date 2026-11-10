@@ -37,11 +37,12 @@ P={
  "cap_mesh":dict(bp=1734,pos="front_dtf",colors=["White"],sizes=None,price=2599,sur={},art="front",rule="fill",
              name="Mesh Trucker Cap",blank="Yupoong 6006 five-panel trucker cap with mesh back and snapback. Printed front."),
 }
+# OWNER RULE (docs/RULES_LEDGER P1/P2): logo ONLY on the inside neck label; products without a neck position (polo, caps) carry NO logo. Never use back/hat positions.
 # brand logo / label (same AlphaDog logo as the tee & hoodie neck labels)
 NECK=json.load(open("out/neck_ids.json"))["blackink"]
 LABEL={"tank":("neck",dict(x=.5,y=.5,scale=1.0)),"wtank":("neck",dict(x=.5,y=.5,scale=1.0)),
-       "polo":("back",dict(x=.5,y=.07,scale=.15)),"wpolo":None,
-       "cap_dad":("back_hat_embroidery",dict(x=.5,y=.5,scale=.45)),"cap_foam":None,"cap_mesh":None}
+       "polo":None,"wpolo":None,
+       "cap_dad":None,"cap_foam":None,"cap_mesh":None}
 def label_ph(prod):
     L=LABEL.get(prod)
     return [{"position":L[0],"images":[dict(id=NECK,angle=0,**L[1])]}] if L else []
