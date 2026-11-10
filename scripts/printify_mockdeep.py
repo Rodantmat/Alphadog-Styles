@@ -38,9 +38,5 @@ for prod,c in cfg.items():
     import collections
     cnt=collections.Counter(found.values()); bad={h for h,n in cnt.items() if n>25}
     print('placeholder-like hashes',bad,'errors',len(ids)-len(found),flush=True)
-    for h in bad:
-        try: os.remove(f"{d}/{seen[h]}.jpg")
-        except Exception: pass
-    seen={h:i for h,i in seen.items() if h not in bad}
     json.dump(dict(pid=pid,variants=vs,found=found,distinct=sorted(seen.values())),open(f"{d}/found.json","w"))
     print("DONE",prod,"distinct",len(seen),sorted(seen.values()),flush=True)
