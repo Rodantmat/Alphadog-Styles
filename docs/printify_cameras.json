@@ -1,0 +1,549 @@
+{
+ "Hoodie": {
+  "98424": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "98425": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "98426": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0,
+   "alt": true
+  },
+  "98432": {
+   "kind": "folded",
+   "side": "other",
+   "people": 0
+  },
+  "98427": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "98428": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "98429": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "98430": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "111847": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "111848": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "100682": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "100683": {
+   "kind": "person",
+   "side": "side",
+   "people": 1
+  },
+  "100684": {
+   "kind": "person",
+   "side": "side",
+   "people": 1
+  },
+  "100685": {
+   "kind": "closeup",
+   "side": "front",
+   "people": 0
+  },
+  "102766": {
+   "kind": "scene",
+   "side": "front",
+   "people": 1
+  },
+  "127688": {
+   "kind": "scene",
+   "side": "front",
+   "people": 1
+  },
+  "127738": {
+   "kind": "scene",
+   "side": "front",
+   "people": 0
+  },
+  "110151": {
+   "kind": "chart",
+   "side": "front",
+   "people": 0
+  }
+ },
+ "Tee B": {
+  "102044": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "92547": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0,
+   "alt": true
+  },
+  "102045": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "92720": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0,
+   "alt": true
+  },
+  "102046": {
+   "kind": "folded",
+   "side": "other",
+   "people": 0
+  },
+  "102048": {
+   "kind": "hanging",
+   "side": "front",
+   "people": 0
+  },
+  "102047": {
+   "kind": "hanging",
+   "side": "front",
+   "people": 0,
+   "rod": true
+  },
+  "102049": {
+   "kind": "scene",
+   "side": "front",
+   "people": 0
+  },
+  "102050": {
+   "kind": "chart",
+   "side": "front",
+   "people": 0
+  },
+  "102051": {
+   "kind": "person",
+   "side": "front",
+   "people": 2
+  },
+  "102052": {
+   "kind": "person",
+   "side": "front",
+   "people": 2
+  },
+  "102053": {
+   "kind": "person",
+   "side": "front",
+   "people": 2
+  },
+  "92585": {
+   "kind": "person",
+   "side": "mixed",
+   "people": 2
+  },
+  "102054": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "102057": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "102058": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "102059": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "102060": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "102061": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "102062": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "111785": {
+   "kind": "person",
+   "side": "side",
+   "people": 1,
+   "crop": "closeup"
+  },
+  "111786": {
+   "kind": "person",
+   "side": "side",
+   "people": 1,
+   "crop": "closeup"
+  },
+  "111787": {
+   "kind": "person",
+   "side": "side",
+   "people": 1,
+   "crop": "closeup"
+  },
+  "111788": {
+   "kind": "person",
+   "side": "side",
+   "people": 1,
+   "crop": "closeup"
+  },
+  "92578": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "92579": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "92580": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "92581": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "92582": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "92583": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "92584": {
+   "kind": "scene",
+   "side": "front",
+   "people": 1
+  },
+  "92735": {
+   "kind": "closeup",
+   "side": "front",
+   "people": 0
+  },
+  "92736": {
+   "kind": "closeup",
+   "side": "front",
+   "people": 0
+  }
+ },
+ "Tee A": {
+  "97992": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "97993": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "97994": {
+   "kind": "closeup",
+   "side": "front",
+   "people": 0
+  },
+  "100615": {
+   "kind": "folded",
+   "side": "other",
+   "people": 0
+  },
+  "100616": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "100617": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "100618": {
+   "kind": "person",
+   "side": "front",
+   "people": 1,
+   "crop": "closeup"
+  },
+  "100619": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "100620": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "100621": {
+   "kind": "person",
+   "side": "front",
+   "people": 1,
+   "seated": true
+  },
+  "100622": {
+   "kind": "person",
+   "side": "side",
+   "people": 1
+  },
+  "100623": {
+   "kind": "person",
+   "side": "front",
+   "people": 1,
+   "seated": true
+  },
+  "127670": {
+   "kind": "scene",
+   "side": "front",
+   "people": 0
+  },
+  "127673": {
+   "kind": "scene",
+   "side": "front",
+   "people": 1
+  },
+  "110135": {
+   "kind": "chart",
+   "side": "front",
+   "people": 0
+  }
+ },
+ "Mesh Trucker Cap": {
+  "109494": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "109529": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "110007": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "110013": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "110020": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "110021": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  }
+ },
+ "Foam Trucker Hat": {
+  "109489": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "127559": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "110282": {
+   "kind": "flat_side",
+   "side": "side",
+   "people": 0
+  },
+  "110280": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "110281": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "110570": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  }
+ },
+ "Dad Hat": {
+  "135042": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "135043": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "135044": {
+   "kind": "flat_side",
+   "side": "side",
+   "people": 0
+  },
+  "135045": {
+   "kind": "flat_side",
+   "side": "side",
+   "people": 0
+  },
+  "135046": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "135047": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "135048": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "135049": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "110918": {
+   "kind": "chart",
+   "side": "front",
+   "people": 0
+  },
+  "110858": {
+   "kind": "blank",
+   "side": "front",
+   "people": 0
+  },
+  "112104": {
+   "kind": "blank",
+   "side": "front",
+   "people": 0
+  },
+  "112107": {
+   "kind": "blank",
+   "side": "front",
+   "people": 0
+  }
+ },
+ "Polo": {
+  "102236": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "101910": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "102926": {
+   "kind": "person",
+   "side": "front",
+   "people": 1
+  },
+  "103301": {
+   "kind": "person",
+   "side": "back",
+   "people": 1
+  },
+  "103302": {
+   "kind": "person",
+   "side": "front",
+   "people": 1,
+   "crop": "closeup"
+  }
+ },
+ "Racerback Tank": {
+  "48": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "111806": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0,
+   "alt": true
+  },
+  "49": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "111807": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0,
+   "alt": true
+  },
+  "119048": {
+   "kind": "chart",
+   "side": "front",
+   "people": 0
+  }
+ },
+ "Tank Top": {
+  "101889": {
+   "kind": "flat_front",
+   "side": "front",
+   "people": 0
+  },
+  "101892": {
+   "kind": "flat_back",
+   "side": "back",
+   "people": 0
+  },
+  "119051": {
+   "kind": "chart",
+   "side": "front",
+   "people": 0
+  }
+ }
+}
