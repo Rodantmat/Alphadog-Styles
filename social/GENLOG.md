@@ -27,3 +27,4 @@
 2026-11-09T22:51:07Z generator run started
 2026-11-09T22:51:24Z generator: lead check OK, nothing to build. Built A+B files exist for every day 2026-11-10..2026-11-19 (10 days ahead, target 7). Heavy-asset restore skipped (not needed). Run finished.
 2026-11-10T04:37Z checker run started
+2026-11-10T04:39Z checker run finished: slot B Nov 9 20:00 PT (m40) sent on IG, TikTok, FB, Pinterest; no past-due unsent posts; nothing forced
