@@ -39,3 +39,5 @@ No repeat of music/background within 2 months (music never); never same colour/p
 ## 7. Next big project: Colombia and Brazil (to study, then automate fully)
 - Brazil: owner's mother is seller of record; Paolla Oliveira (cousin) may promote; Brazilian POD + Mercado Livre + own store, all via API. Colombia same idea. Workflows printify-brazil.yml and printful-brazil.yml already exist (earlier probes).
 - Plan: study local print-on-demand with API (Brazil: e.g. Printi, Camiseteria/Dreamy, Printify/Printful shipping to Brazil; Colombia: local POD options), marketplaces (Mercado Livre BR/CO, Shopee, Amazon BR), payment (Pix, Mercado Pago, Wompi/PayU), tax/legal, shipping/customs, language (pt-BR/es-CO) for designs, posts and support; decide per country using numbers (cost, delivery time, fees, margin); keep it fully automated like the US arm. Present all options with numbers before deciding (owner decides).
+
+- 2026-11-10 additions: docs/WORDING_PLAYBOOK.md (wording research), docs/BACKGROUND_MATCHING.md (real-photo background library + matching rules), docs/research/01-13 (full research logs), scripts/video/{compose2,bgmatch,postc2_build}.py (new Post B pipeline).
