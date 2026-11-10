@@ -4,7 +4,7 @@
  - Poly Haven textures (869) and ambientCG materials (CC0) -> portrait crops
 Every image gets a feature record (luminance, centre busyness, hue/sat/warmth, sky fraction, scene tags, usable-for flags) -> catalog shard json.
 usage: bgfetch.py OUTDIR SHARD NSHARDS VIEWS [HDRI_MAX] [TEX_MAX] [AMB_MAX]"""
-import sys,os,json,io,random,urllib.request,math,time,zipfile,colorsys
+import zlib,sys,os,json,io,random,urllib.request,math,time,zipfile,colorsys
 from concurrent.futures import ThreadPoolExecutor
 import numpy as np, cv2
 from PIL import Image
@@ -28,7 +28,7 @@ def feats(img):
     a=np.asarray(img.convert("RGB"),"float32"); g=a.mean(axis=2); c=a[480:1500,220:860]; cg=g[480:1500,220:860]
     lap=cv2.Laplacian(cg.astype("float32"),cv2.CV_32F); r,gg,b=[c[:,:,i].mean() for i in range(3)]; hh,ss,vv=colorsys.rgb_to_hsv(r/255,gg/255,b/255)
     top=a[:560]; sky=float(((top[:,:,2]>top[:,:,0]+12)&(top[:,:,2]>110)).mean())
-    return dict(mean_lum=round(float(g.mean()),1),centre_lum=round(float(cg.mean()),1),centre_std=round(float(cg.std()),1),busy=round(float(np.abs(lap).mean()),2),hue=round(hh*360),sat=round(ss,2),warm=round(float((r-b)/255),2),sky=round(sky,2),
+    return dict(mean_lum=round(float(g.mean()),1),centre_lum=round(float(cg.mean()),1),centre_std=round(float(cg.std()),1),busy=round(float(np.abs(lap).mean()),2),hue=int(round(float(hh)*360)),sat=round(float(ss),2),warm=round(float((r-b)/255),2),sky=round(sky,2),
       lum_top=round(float(g[:480].mean()),1),lum_bot=round(float(g[1440:].mean()),1))
 def flags(m,kind,cats,tags,name):
     t=" ".join((cats or [])+(tags or [])+[name or ""]).lower()
@@ -51,7 +51,7 @@ def portrait(im,rnd,k=0):
     if cw>w: im=im.resize((int(w*1920/ (w*16/9) ),h)) ; return im.resize((1080,1920))
     x0=rnd.randint(0,max(0,w-cw)); return im.crop((x0,0,x0+cw,h)).resize((1080,1920),Image.LANCZOS)
 def do_tex(i,T,out,rnd_seed):
-    rnd=random.Random(rnd_seed); cat=[]; F=J(f"https://api.polyhaven.com/files/{i}"); d=F["Diffuse"]; res="4k" if "4k" in d else sorted(d)[-1]
+    rnd=random.Random(rnd_seed); cat=[]; F=J(f"https://api.polyhaven.com/files/{i}"); d=F.get("Diffuse") or next(F[k] for k in F if k.lower().startswith(("diff","col","albedo"))); res="4k" if "4k" in d else sorted(d)[-1]
     im=Image.open(io.BytesIO(get(d[res]["jpg"]["url"]))).convert("RGB")
     for k in range(2):
         save(portrait(im,rnd,k),out,f"pt_{i}_{k}",dict(kind="texture",src=i,name=T[i].get("name"),cats=T[i].get("categories"),tags=T[i].get("tags"),license="CC0 Poly Haven"),cat)
@@ -80,9 +80,9 @@ def main():
         try: return fn(*a)
         except Exception as e: print("FAIL",fn.__name__,a[0] if not isinstance(a[0],dict) else a[0].get("assetId"),repr(e)[:120]); return []
     with ThreadPoolExecutor(6) as ex:
-        fs=[ex.submit(run,do_hdri,i,A,out,nv,hash(i)%100000) for i in ids]+[ex.submit(run,do_tex,i,T,out,hash(i)%100000) for i in tids]+[ex.submit(run,do_amb,a,out,hash(a["assetId"])%100000) for a in amb]
+        fs=[ex.submit(run,do_hdri,i,A,out,nv,zlib.crc32(i.encode())%100000) for i in ids]+[ex.submit(run,do_tex,i,T,out,zlib.crc32(i.encode())%100000) for i in tids]+[ex.submit(run,do_amb,a,out,zlib.crc32(a["assetId"].encode())%100000) for a in amb]
         for n,f in enumerate(fs):
             cat+=f.result()
             if n%20==0: print("done",n,"/",len(fs),len(cat),flush=True)
-    json.dump(cat,open(f"{out}/catalog_{sh}.json","w")); print("TOTAL",len(cat))
+    json.dump(cat,open(f"{out}/catalog_{sh}.json","w"),default=lambda o:o.item() if hasattr(o,"item") else str(o)); print("TOTAL",len(cat))
 if __name__=="__main__": main()
