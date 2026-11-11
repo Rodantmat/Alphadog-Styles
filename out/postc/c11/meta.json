@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98427@6ae588c0_Dark Chocolate",
+   "raw": "98427",
+   "breed": "Mini Poodle",
+   "colour": "Dark Chocolate",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_table_mountain_2_puresky_1.jpg",
+   "bgname": "Table Mountain 2 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.7
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "102046@6aed2ef4_Maroon",
+   "raw": "102046",
+   "breed": "Pug",
+   "colour": "Maroon",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pt_silver_oak_veneer_01_0.jpg",
+   "bgname": "Silver Oak Veneer 01",
+   "fam": "texture:wood:0",
+   "ratio": 6.5
+  },
+  {
+   "i": 2,
+   "prod": "Polo",
+   "cam": "102926@6ae7a484_Athletic Heather",
+   "raw": "102926",
+   "breed": "Siberian Husky",
+   "colour": "Athletic Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_schadowplatz_3.jpg",
+   "bgname": "Schadowplatz",
+   "fam": "hdri:outdoor:0",
+   "ratio": 5.3
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "97993@6ae58d8c_Navy",
+   "raw": "97993",
+   "breed": "Shiba Inu",
+   "colour": "Navy",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_plastered_wall_02_0.jpg",
+   "bgname": "Plastered Wall 02",
+   "fam": "texture:wall:0",
+   "ratio": 6.7
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102054@6ae6ca34_Light Blue",
+   "raw": "102054",
+   "breed": "Labrador Retriever",
+   "colour": "Light Blue",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_story_studio_05_1.jpg",
+   "bgname": "Story Studio 05",
+   "fam": "hdri:studio:0",
+   "ratio": 6.9
+  },
+  {
+   "i": 5,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a361_none",
+   "raw": "109489",
+   "breed": "Shih Tzu",
+   "colour": "none",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_moon_meteor_01_0.jpg",
+   "bgname": "Moon Meteor 01",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.4
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102058@6ae6cb6f_Sand Dune",
+   "raw": "102058",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_ferndale_studio_04_2.jpg",
+   "bgname": "Ferndale Studio 04",
+   "fam": "hdri:studio:3",
+   "ratio": 7.3
+  },
+  {
+   "i": 7,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae79fab_White",
+   "raw": "109494",
+   "breed": "Dachshund",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_beige_wall_002_1.jpg",
+   "bgname": "Beige Wall 002",
+   "fam": "texture:wall:0",
+   "ratio": 3.8
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.30185941043083897,
+ "shot_len": 0.9752380952380952,
+ "variant": "v1"
+}

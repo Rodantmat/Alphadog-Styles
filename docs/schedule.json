@@ -115,8 +115,8 @@
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
-    "id": "b14",
-    "reel": "out/postb2/b14/reel.mp4",
+    "id": "c06",
+    "reel": "out/postc/c06/reel.mp4",
     "slot": "20:00 PT"
    },
    "status": "A (18:00Z) scheduled on all 4 apps; B b14 SKIPPED: hoodie + Sport Grey same day as A d6b, needs rebuild"
@@ -129,8 +129,8 @@
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
-    "id": "b15",
-    "reel": "out/postb2/b15/reel.mp4",
+    "id": "c07",
+    "reel": "out/postc/c07/reel.mp4",
     "slot": "20:00 PT"
    },
    "status": "A d7b scheduled on all 4 apps (Nov 15 18:00Z); B b15 skipped (tees + Pit Bull/Aussie overlap with b13)"
@@ -143,8 +143,8 @@
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
-    "id": "b16",
-    "reel": "out/postb2/b16/reel.mp4",
+    "id": "c08",
+    "reel": "out/postc/c08/reel.mp4",
     "slot": "20:00 PT"
    },
    "status": "A laugh01_hotdog scheduled on all 4 apps (Nov 16 17:00Z); B b16 pending"
@@ -158,10 +158,9 @@
     "theme": "Feel-good"
    },
    "B": {
-    "id": "b17",
-    "reel": "out/postb2/b17/reel.mp4",
-    "slot": "20:00 PT",
-    "theme": "Electronic & House"
+    "id": "c09",
+    "reel": "out/postc/c09/reel.mp4",
+    "slot": "20:00 PT"
    },
    "status": "built"
   },
@@ -174,10 +173,9 @@
     "theme": "Chill & Lo-fi"
    },
    "B": {
-    "id": "b18",
-    "reel": "out/postb2/b18/reel.mp4",
-    "slot": "20:00 PT",
-    "theme": "Funk & Disco"
+    "id": "c10",
+    "reel": "out/postc/c10/reel.mp4",
+    "slot": "20:00 PT"
    },
    "status": "built (A d3b + B b18 re-themed)"
   },
@@ -190,10 +188,9 @@
     "theme": "Hip-hop & Trap"
    },
    "B": {
-    "id": "b19",
-    "reel": "out/postb2/b19/reel.mp4",
-    "slot": "20:00 PT",
-    "theme": "Electronic & House"
+    "id": "c11",
+    "reel": "out/postc/c11/reel.mp4",
+    "slot": "20:00 PT"
    },
    "status": "built"
   }

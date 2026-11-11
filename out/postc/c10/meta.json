@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98429@6ae57d76_Light Pink",
+   "raw": "98429",
+   "breed": "Golden Retriever",
+   "colour": "Light Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_studio_small_04_3.jpg",
+   "bgname": "Studio Small 04",
+   "fam": "hdri:indoor:3",
+   "ratio": 5.2
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "97993@6ae579dd_Heather Navy",
+   "raw": "97993",
+   "breed": "Boston Terrier",
+   "colour": "Heather Navy",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Metal058A.jpg",
+   "bgname": "Metal 058 A",
+   "fam": "texture:x:0",
+   "ratio": 6.5
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102062@6ae6ccbf_Natural",
+   "raw": "102062",
+   "breed": "Doberman Pinscher",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_modern_buildings_1.jpg",
+   "bgname": "Modern Buildings",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.3
+  },
+  {
+   "i": 3,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a0fd_White",
+   "raw": "109494",
+   "breed": "Cane Corso",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_grey_tiles_0.jpg",
+   "bgname": "Grey Tiles",
+   "fam": "texture:outdoor:0",
+   "ratio": 4.8
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "100682@6ae5738d_Forest Green",
+   "raw": "100682",
+   "breed": "German Shepherd",
+   "colour": "Forest Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_19_0.jpg",
+   "bgname": "Wooden Studio 19",
+   "fam": "hdri:studio:3",
+   "ratio": 9.1
+  },
+  {
+   "i": 5,
+   "prod": "Tee B",
+   "cam": "102044@6ae6cad9_Ash",
+   "raw": "102044",
+   "breed": "Standard Poodle",
+   "colour": "Ash",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Rock061.jpg",
+   "bgname": "Rock 061",
+   "fam": "texture:x:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 6,
+   "prod": "Tee A",
+   "cam": "100619@6ae57d00_Charcoal",
+   "raw": "100619",
+   "breed": "Maltese",
+   "colour": "Charcoal",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_rustig_koppie_puresky_1.jpg",
+   "bgname": "Rustig Koppie (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.9
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98425@6ae57626_Dark Chocolate",
+   "raw": "98425",
+   "breed": "Yorkshire Terrier",
+   "colour": "Dark Chocolate",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_beige_wall_001_0.jpg",
+   "bgname": "Beige Wall 001",
+   "fam": "texture:wall:0",
+   "ratio": 4.2
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.13931972789115532,
+ "shot_len": 1.207437641723356,
+ "variant": "v4"
+}
