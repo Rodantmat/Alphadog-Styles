@@ -29,9 +29,10 @@ elif c == "probe":
         if ch["service"]=="pinterest":
             print("PROBE", json.dumps(gql('query($i:ChannelId!){channel(input:{id:$i}){id name displayName descriptor externalLink isDisconnected isLocked isNew allowedActions metadata{__typename ... on PinterestMetadata{boards{id name serviceId url}}}}}', {"i": ch["id"]})))
 elif c == "posts":
-    q = 'query($o:OrganizationId!){posts(input:{organizationId:$o},first:100){edges{node{id status dueAt channelService text}}}}'
+    q = 'query($o:OrganizationId!){posts(input:{organizationId:$o},first:100){edges{node{id status dueAt channelService text error{message rawError}}}}}'
     for e in (gql(q, {"o": org()}).get("posts") or {}).get("edges") or []:
         n = e["node"]; print("POST", n["id"], n["status"], n["dueAt"], n["channelService"], repr((n["text"] or "")[:50]))
+        if n.get("error"): print("POSTERROR", n["id"], json.dumps(n["error"])[:700])
 elif c == "delete":
     ids=sys.argv[2:]
     if ids==["ALL"]:
