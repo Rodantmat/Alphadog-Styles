@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102059@6aed2f1a_Forest",
+   "raw": "102059",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Forest",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_rustig_koppie_puresky_0.jpg",
+   "bgname": "Rustig Koppie (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.6
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae5844d_Sport Grey",
+   "raw": "100615",
+   "breed": "Cane Corso",
+   "colour": "Sport Grey",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_red_sandstone_tiles_1.jpg",
+   "bgname": "Red Sandstone Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 6.1
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102062@6ae6cfff_Ash",
+   "raw": "102062",
+   "breed": "Bichon Frise",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_schadowplatz_3.jpg",
+   "bgname": "Schadowplatz",
+   "fam": "hdri:outdoor:0",
+   "ratio": 8.2
+  },
+  {
+   "i": 3,
+   "prod": "Hoodie",
+   "cam": "98424@6ae593a6_Sand",
+   "raw": "98424",
+   "breed": "Rottweiler",
+   "colour": "Sand",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Leather037.jpg",
+   "bgname": "Leather 037",
+   "fam": "texture:x:0",
+   "ratio": 6.4
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102046@6aed2f12_Black",
+   "raw": "102046",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Black",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pt_plastered_wall_02_0.jpg",
+   "bgname": "Plastered Wall 02",
+   "fam": "texture:wall:0",
+   "ratio": 7.1
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "100682@6ae57b88_Ash",
+   "raw": "100682",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Ash",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_royal_esplanade_1.jpg",
+   "bgname": "Royal Esplanade",
+   "fam": "hdri:indoor:0",
+   "ratio": 7.4
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "92579@6ae6ca09_Light Blue",
+   "raw": "92579",
+   "breed": "French Bulldog",
+   "colour": "Light Blue",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_story_studio_05_0.jpg",
+   "bgname": "Story Studio 05",
+   "fam": "hdri:studio:0",
+   "ratio": 7.8
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "92720@6ae6cc13_Natural",
+   "raw": "92720",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_beige_wall_002_1.jpg",
+   "bgname": "Beige Wall 002",
+   "fam": "texture:wall:0",
+   "ratio": 4.6
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "cut",
+   0.033
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "cut",
+   0.033
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.23219954648526187,
+ "shot_len": 1.0216780045351472,
+ "variant": "v3"
+}

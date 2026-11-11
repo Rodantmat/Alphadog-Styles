@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "92580@6ae6cab0_Natural",
+   "raw": "92580",
+   "breed": "Dachshund",
+   "colour": "Natural",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_citrus_orchard_road_puresky_2.jpg",
+   "bgname": "Citrus Orchard Road (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.3
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae58e58_Light Blue",
+   "raw": "100615",
+   "breed": "Golden Retriever",
+   "colour": "Light Blue",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_worn_shutter_0.jpg",
+   "bgname": "Worn Shutter",
+   "fam": "texture:metal:0",
+   "ratio": 8.3
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "98429@6ae57dec_Charcoal",
+   "raw": "98429",
+   "breed": "Standard Poodle",
+   "colour": "Charcoal",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_scythian_tombs_puresky_1.jpg",
+   "bgname": "Scythian Tombs (Pure Sky)",
+   "fam": "hdri:outdoor:0",
+   "ratio": 3.4
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "102045@6ae6cc3c_Soft Cream",
+   "raw": "102045",
+   "breed": "Yorkshire Terrier",
+   "colour": "Soft Cream",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_slab_tiles_0.jpg",
+   "bgname": "Slab Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 9.1
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100617@6ae58b7c_Sand",
+   "raw": "100617",
+   "breed": "Doberman Pinscher",
+   "colour": "Sand",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_royal_esplanade_0.jpg",
+   "bgname": "Royal Esplanade",
+   "fam": "hdri:indoor:0",
+   "ratio": 5.0
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "98424@6ae57378_Dark Chocolate",
+   "raw": "98424",
+   "breed": "German Shepherd",
+   "colour": "Dark Chocolate",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Metal011.jpg",
+   "bgname": "Metal 011",
+   "fam": "texture:x:3",
+   "ratio": 5.5
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102058@6ae6d020_Ash",
+   "raw": "102058",
+   "breed": "Maltese",
+   "colour": "Ash",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloppenheim_01_puresky_2.jpg",
+   "bgname": "Kloppenheim 01 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.1
+  },
+  {
+   "i": 7,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a3e9_White",
+   "raw": "109494",
+   "breed": "Boston Terrier",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_flamed_black_veneer_1.jpg",
+   "bgname": "Flamed Black Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 5.9
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2321995464852631,
+ "shot_len": 1.0216780045351472,
+ "variant": "v4"
+}

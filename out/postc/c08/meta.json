@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cf95_Athletic Heather",
+   "raw": "102054",
+   "breed": "Shiba Inu",
+   "colour": "Athletic Heather",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_15_0.jpg",
+   "bgname": "Wooden Studio 15",
+   "fam": "hdri:studio:4",
+   "ratio": 7.7
+  },
+  {
+   "i": 1,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a29c_Stone",
+   "raw": "135042",
+   "breed": "Boxer",
+   "colour": "Stone",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_wood_trunk_wall_1.jpg",
+   "bgname": "Wood Trunk Wall",
+   "fam": "texture:outdoor:0",
+   "ratio": 6.2
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "111848@6ae57c8f_Dark Chocolate",
+   "raw": "111848",
+   "breed": "Mini Poodle",
+   "colour": "Dark Chocolate",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_qwantani_mid_morning_puresky_1.jpg",
+   "bgname": "Qwantani Mid Morning (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.2
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "102045@6ae6cec1_Light Blue",
+   "raw": "102045",
+   "breed": "Siberian Husky",
+   "colour": "Light Blue",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_RoofingTiles013A.jpg",
+   "bgname": "Roofing Tiles 013 A",
+   "fam": "texture:x:4",
+   "ratio": 6.9
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "98430@6ae57e0e_Dark Chocolate",
+   "raw": "98430",
+   "breed": "Beagle",
+   "colour": "Dark Chocolate",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_belfast_sunset_puresky_1.jpg",
+   "bgname": "Belfast Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:5",
+   "ratio": 7.3
+  },
+  {
+   "i": 5,
+   "prod": "Tee B",
+   "cam": "102046@6aed2ef4_Dark Grey Heather",
+   "raw": "102046",
+   "breed": "Pug",
+   "colour": "Dark Grey Heather",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pa_Plastic010.jpg",
+   "bgname": "Plastic 010",
+   "fam": "texture:x:3",
+   "ratio": 5.4
+  },
+  {
+   "i": 6,
+   "prod": "Dad Hat",
+   "cam": "135048@6ae7a2e0_White",
+   "raw": "135048",
+   "breed": "Pomeranian",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_balcony_1.jpg",
+   "bgname": "Balcony",
+   "fam": "hdri:outdoor:4",
+   "ratio": 5.9
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98426@6ae574ad_Heather Navy",
+   "raw": "98426",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Heather Navy",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Tiles107.jpg",
+   "bgname": "Tiles 107",
+   "fam": "texture:x:0",
+   "ratio": 5.6
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.3018594104308385,
+ "shot_len": 0.6733786848072563,
+ "variant": "v2"
+}
