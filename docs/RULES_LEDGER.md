@@ -24,7 +24,7 @@ Last audit: 2026-11-10.
 | V6 | Never repeat music (log) / backgrounds within 60 days | pick_music.py commit, bgmatch used log | ENFORCED if commit step runs |
 | V7 | Transitions: slow, each clip once, no return | postc2_build (fixed Nov 10) | ENFORCED |
 | V8 | Backgrounds real, textured, premium, matched to garment | bgmatch + 6,026 library | ENFORCED |
-| V9 | Absolute ban on look-alikes between reels | docs/style_registry.json | MANUAL -> add automated check |
+| V9 | Absolute ban on look-alikes between reels | postc2_build.py: env C2_EXCL=<reel ids> (no camera, person, background or breed shared with those reels), distinct breed/colour/person inside a reel; cutout library = release `trans2` (docs/trans2_plan.json, restore: unzip into out/) | ENFORCED for Post B C2 (Nov 10); Post A still via variation.py |
 | V10 | Post A morning, Post B ~8 pm PT; 2 posts/app/day; verify every post actually posted | scheduled tasks + checker | CHECKED |
 
 | V11 | Post A: same concept, everything inside different (breed, merch, placement, style, bg, music); neon = 1 breed/week; scenery = real photos; jokes never repeat | scripts/video/variation.py + docs/video_models.json | ENFORCED (needs scheduled-task prompts to call it) |
