@@ -21,6 +21,12 @@ def pool():
             f=f"out/trans/{DIRS[prod]}/{SUB[prod]}/{c}.png"
             if c in BLOCK: continue
             if os.path.exists(f): out.append(dict(prod=prod,cam=c,kind=m["kind"],side=m.get("side"),file=f))
+    ix="out/trans2/index.json"                                                      # multi-breed/colour library (docs/trans2_plan.json); replaces the one-bulldog pool when present
+    if os.path.exists(ix):
+        out=[]
+        for r in json.load(open(ix)):
+            if r["file"] in BLOCK or not os.path.exists(r["file"]): continue
+            out.append(dict(prod=r["prod"],cam=f"{r['cam']}@{r['pid'][:8]}_{r['colour']}",raw=r["cam"],kind=r["kind"],side=r.get("side"),file=r["file"],breed=r["breed"],colour=r["colour"],design=r["design"],style=r["style"],tone=r["tone"]))
     return out
 def load(f):
     im=Image.open(f).convert("RGBA"); a=np.array(im)[:,:,3]; ys,xs=np.where(a>6)

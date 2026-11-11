@@ -67,12 +67,26 @@ def build(vid,seed,music,variant="v0"):
         mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exc|={m["cam"] for m in mm}; exb|={m["bg"] for m in mm}
     pool=[p for p in pool if str(p["cam"]) not in exc]
     taken0=set(exb)
+    nob=set(x for x in os.environ.get("C2_NOBREED","").split(",") if x)               # breeds already shown in other reels
+    exr=set()                                                                          # people/cameras (raw ids) and breeds of the other reels
+    for x in ex:
+        mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm
+        exr|={m.get("raw") for m in mm if m.get("raw")}; nob|={m["breed"] for m in mm if m.get("breed")}
+    pool=[p for p in pool if p.get("breed") not in nob and not (p["kind"]=="person" and p.get("raw") in exr)]
     pf=[p for p in pool if p["kind"]=="person" and p["side"]=="front"]; pb=[p for p in pool if p["kind"]=="person" and p["side"]=="back"]
-    ppl=rnd.sample(pf,2)+rnd.sample(pb,2); flats=[p for p in pool if p["kind"]!="person"]; rnd.shuffle(flats); rest=[]; seen=set()
+    ub=set(); uc=set(); ur=set()
+    def take(cands):                                                                   # distinct breed, colour and person inside the reel
+        c=[x for x in cands if x.get("breed") not in ub and x.get("colour") not in uc and x.get("raw",x["cam"]) not in ur] or [x for x in cands if x.get("breed") not in ub]
+        x=rnd.choice(c); ub.add(x.get("breed")); uc.add(x.get("colour")); ur.add(x.get("raw",x["cam"])); return x
+    ppl=[take(pf),take(pb),take(pf),take(pb)]; flats=[p for p in pool if p["kind"]!="person"]; rnd.shuffle(flats); rest=[]; seen=set()
     for p in flats:
         if p["prod"] in seen and len(seen)<NF: continue
-        seen.add(p["prod"]); rest.append(p)
+        if p.get("breed") in ub or p.get("colour") in uc: continue
+        seen.add(p["prod"]); rest.append(p); ub.add(p.get("breed")); uc.add(p.get("colour"))
         if len(rest)==NF: break
+    for p in flats:                                                                    # fallback: relax colour/product spread, never the breed
+        if len(rest)==NF: break
+        if p not in rest and p.get("breed") not in ub: rest.append(p); ub.add(p.get("breed"))
     fr=[]
     for it in ppl+rest:
         im=C.load(it["file"]); k=kind_of(it); g=C.garment_rgb(im,k)
@@ -88,7 +102,7 @@ def build(vid,seed,music,variant="v0"):
         img,pos=C.compose(f["it"]["file"],f["k"],f"out/bg/{b['file']}",seed=seed*100+i)
         if variant!="v0" and i==0: img=add_text(img,HOOKS.get(variant,HOOKS["v1"]),310,66)
         if variant in CTAS and i==len(seq)-1: img=add_text(img,CTAS[variant],1400,60)
-        fn=f"{od}/s{i:02d}.png"; img.save(fn); shots.append(fn); meta.append(dict(i=i,prod=f["prod"],cam=f["it"]["cam"],kind=f["k"],bg=b["file"],bgname=b.get("name"),fam=fams[-1],ratio=round(BM.ratio(BM.relL(f["rgb"]),BM.bgL(b)),1)))
+        fn=f"{od}/s{i:02d}.png"; img.save(fn); shots.append(fn); meta.append(dict(i=i,prod=f["prod"],cam=f["it"]["cam"],raw=f["it"].get("raw"),breed=f["it"].get("breed"),colour=f["it"].get("colour"),design=f["it"].get("design"),style=f["it"].get("style"),kind=f["k"],bg=b["file"],bgname=b.get("name"),fam=fams[-1],ratio=round(BM.ratio(BM.relL(f["rgb"]),BM.bgL(b)),1)))
     phase,L=beat_grid(music); T_used={}; trs=[pick_trans(seq[i],seq[i+1],T_used,rnd) for i in range(N-1)]
     sT=sum(t for _,t in trs); Ls=[(10.0+sT)/N]*N          # fill to exactly ~10 s
     FPS=30; ins=[]; filt=[]

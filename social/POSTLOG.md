@@ -59,3 +59,7 @@
 - Skipped (rule breaks): b14 (hoodies incl. Sport Grey, same day as A d6b Sport Grey hoodie) and b15 (tees, shares Pit Bull + Aussie with b13). Both need rebuilding with different product/colour/breeds. Tomorrow (Nov 11) A + B scheduled; no ALERT.
 
 - 2026-11-10 17:17 PT: Post B for tonight 8 pm PT (2026-11-11T04:00Z) replaced: old b07 (look-alike) deleted on IG/TikTok/FB/Pinterest; new C2-format reel out/postc/c02 scheduled (ids IG 6af3c22bd9a6812579c1b758, TT 6af3c22c0b5acab58627a73d, FB 6af3c22ad9a6812579c1b6fb, Pin 6af3c22a0b5acab58627a6d7). Music m134. Bgs real-photo library.
+
+## 2026-11-10 (evening) Post B look-alike replacement
+- New multi-breed/colour cutout library (release `trans2`, docs/trans2_plan.json, 181 pictures, 33 breeds): fixes the one-bulldog-on-grey look-alike in every C2 reel.
+- c03 -> Nov 12 04:00Z (8 pm PT Nov 11), c04 -> Nov 13 04:00Z, c05 -> Nov 14 04:00Z on IG/TikTok/FB/Pinterest (planC3_*.json). Replaces old b08/b09/b13 white-mockup reels. Distinct breed, colour, person, background, music and caption per shot/reel.

@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100619@6ae57776_Forest Green",
+   "raw": "100619",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Forest Green",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_drakensberg_solitary_mountain_puresky_1.jpg",
+   "bgname": "Drakensberg Solitary Mountain (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.9
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98426@6ae577fc_Military Green",
+   "raw": "98426",
+   "breed": "Boxer",
+   "colour": "Military Green",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_OfficeCeiling001.jpg",
+   "bgname": "Office Ceiling 001",
+   "fam": "texture:x:0",
+   "ratio": 5.9
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100616@6ae5998b_Black",
+   "raw": "100616",
+   "breed": "Pug",
+   "colour": "Black",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_19_3.jpg",
+   "bgname": "Wooden Studio 19",
+   "fam": "hdri:studio:3",
+   "ratio": 6.5
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "102044@6ae6cd5b_Natural",
+   "raw": "102044",
+   "breed": "Pomeranian",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_weathered_planks_1.jpg",
+   "bgname": "Weathered Planks",
+   "fam": "texture:outdoor:0",
+   "ratio": 8.8
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae57c00_Navy",
+   "raw": "111848",
+   "breed": "Shiba Inu",
+   "colour": "Navy",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_morning_puresky_1.jpg",
+   "bgname": "Qwantani Morning (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.1
+  },
+  {
+   "i": 5,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a08d_none",
+   "raw": "109489",
+   "breed": "German Shorthaired Pointer",
+   "colour": "none",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_slab_tiles_1.jpg",
+   "bgname": "Slab Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 9.4
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102062@6ae6cb23_Light Blue",
+   "raw": "102062",
+   "breed": "Beagle",
+   "colour": "Light Blue",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_05_2.jpg",
+   "bgname": "Wooden Studio 05",
+   "fam": "hdri:studio:3",
+   "ratio": 7.5
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "100615@6ae5923e_Heather Navy",
+   "raw": "100615",
+   "breed": "Mini Poodle",
+   "colour": "Heather Navy",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_white_maple_veneer_0.jpg",
+   "bgname": "White Maple Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 6.2
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.16253968253968298,
+ "shot_len": 0.6965986394557823,
+ "variant": "v2"
+}

@@ -41,3 +41,6 @@
 - 2026-11-19 laugh02_watchdog_v1: m129.mp3 "Love Layout" - Diego Nava [Hip-hop & Trap, style laugh2]
 - 2026-11-18 b18 re-themed: m160 (Chill, released unused) replaced by m131 so d3b A could take Chill.
 - 2026-11-10 Post B Nov 10 8pm PT (C2 new format c02): m134.mp3 "Dub Techno Groove" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
+- 2026-11-12 Post B Nov 11 8pm PT (c03): mx697.mp3 "Pop Two" - Grigoriy Nuzhny [Feel-good, style postB]
+- 2026-11-13 Post B Nov 12 8pm PT (c04): mx528.mp3 "You Got Jazz" - Diego Nava [Funk & Disco, style postB]
+- 2026-11-14 Post B Nov 13 8pm PT (c05): mx737.mp3 "Hip Hop 01" - Lily J [Chill & Lo-fi, style postB]

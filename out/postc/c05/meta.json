@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102059@6aed2f12_Maroon",
+   "raw": "102059",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Maroon",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_syferfontein_18d_clear_puresky_1.jpg",
+   "bgname": "Syferfontein 18d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.0
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "97993@6ae57b92_White",
+   "raw": "97993",
+   "breed": "American Pit Bull Terrier",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_moon_meteor_02_0.jpg",
+   "bgname": "Moon Meteor 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.9
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "92583@6aed2f1d_Red",
+   "raw": "92583",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Red",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_wasteland_clouds_puresky_0.jpg",
+   "bgname": "Wasteland Clouds (Pure Sky)",
+   "fam": "hdri:outdoor:2",
+   "ratio": 3.2
+  },
+  {
+   "i": 3,
+   "prod": "Hoodie",
+   "cam": "98432@6ae57d31_Navy",
+   "raw": "98432",
+   "breed": "French Bulldog",
+   "colour": "Navy",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pa_Foil002.jpg",
+   "bgname": "Foil 002",
+   "fam": "texture:x:0",
+   "ratio": 8.6
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102060@6ae6cb57_Sand Dune",
+   "raw": "102060",
+   "breed": "Rottweiler",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_belfast_sunset_puresky_3.jpg",
+   "bgname": "Belfast Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:4",
+   "ratio": 3.6
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "97993@6ae57ccb_Forest Green",
+   "raw": "97993",
+   "breed": "Bichon Frise",
+   "colour": "Forest Green",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_ChristmasTreeOrnament021.jpg",
+   "bgname": "Christmas Tree Ornament 021",
+   "fam": "texture:x:2",
+   "ratio": 7.3
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "100682@6ae57587_Military Green",
+   "raw": "100682",
+   "breed": "Cane Corso",
+   "colour": "Military Green",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloofendal_43d_clear_puresky_1.jpg",
+   "bgname": "Kloofendal 43d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.7
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "92720@6ae6cd10_Athletic Heather",
+   "raw": "92720",
+   "breed": "Miniature Schnauzer",
+   "colour": "Athletic Heather",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Plastic006.jpg",
+   "bgname": "Plastic 006",
+   "fam": "texture:x:3",
+   "ratio": 9.3
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.23219954648526386,
+ "shot_len": 1.0216780045351472,
+ "variant": "v3"
+}

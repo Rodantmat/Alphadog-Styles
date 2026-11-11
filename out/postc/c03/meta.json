@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100618@6ae57dab_Military Green",
+   "raw": "100618",
+   "breed": "German Shepherd",
+   "colour": "Military Green",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_05_0.jpg",
+   "bgname": "Wooden Studio 05",
+   "fam": "hdri:studio:3",
+   "ratio": 6.3
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98426@6ae573f2_Maroon",
+   "raw": "98426",
+   "breed": "Standard Poodle",
+   "colour": "Maroon",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Metal048C.jpg",
+   "bgname": "Metal 048 C",
+   "fam": "texture:x:0",
+   "ratio": 7.0
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102054@6ae6ca24_Sand Dune",
+   "raw": "102054",
+   "breed": "Labrador Retriever",
+   "colour": "Sand Dune",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_citrus_orchard_puresky_2.jpg",
+   "bgname": "Citrus Orchard (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.4
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "100615@6ae5877b_Dark Heather",
+   "raw": "100615",
+   "breed": "Havanese",
+   "colour": "Dark Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_curly_teddy_natural_0.jpg",
+   "bgname": "Curly Teddy Natural",
+   "fam": "texture:fabric:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102058@6ae6cc65_Soft Pink",
+   "raw": "102058",
+   "breed": "Australian Shepherd",
+   "colour": "Soft Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_potsdamer_platz_1.jpg",
+   "bgname": "Potsdamer Platz",
+   "fam": "hdri:outdoor:5",
+   "ratio": 6.1
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79fb3_Pink",
+   "raw": "135042",
+   "breed": "Dachshund",
+   "colour": "Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_dark_rock_02_1.jpg",
+   "bgname": "Dark Rock 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 7.3
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "98430@6ae59920_Light Blue",
+   "raw": "98430",
+   "breed": "Chihuahua",
+   "colour": "Light Blue",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_citrus_orchard_road_puresky_3.jpg",
+   "bgname": "Citrus Orchard Road (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.8
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102044@6aed2ef8_Asphalt",
+   "raw": "102044",
+   "breed": "Boston Terrier",
+   "colour": "Asphalt",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pa_Fabric048.jpg",
+   "bgname": "Fabric 048",
+   "fam": "texture:x:0",
+   "ratio": 6.9
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.4643990929705203,
+ "shot_len": 1.207437641723356,
+ "variant": "v1"
+}
