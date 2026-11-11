@@ -55,9 +55,12 @@ def check(e,r=None):
         for b in e.get("bg",[]):
             if not (b.startswith("pg_") or b.startswith("scenery_")): v.append(f"scenery model needs a real scenery photo, got {b}")
     # music / joke / laugh never
-    mu=json.load(open("docs/music_used.json"))
-    if e.get("music") and (e["music"]+".mp3" in mu or e["music"] in mu): v.append(f"music {e['music']} already used")
-    if e.get("music") and any(x.get("music")==e["music"] for x in r): v.append(f"music {e['music']} already in registry")
+    mu=json.load(open("docs/music_used.json")); cat=json.load(open("docs/music_catalog.json")); cm={}
+    for t in cat:
+        cm[t["file"]]=t["id"]; cm[t["file"][:-4]]=t["id"]
+        if t.get("legacy"): cm[t["legacy"]]=t["id"]; cm[t["legacy"][:-4]]=t["id"]
+    usedid={cm.get(k,k) for k in mu}|{cm.get(x.get("music"),x.get("music")) for x in r if x.get("music")}
+    if e.get("music") and cm.get(e["music"],e["music"]) in usedid: v.append(f"music {e['music']} already used")
     j=(e.get("joke") or "").lower().strip()
     if mdl in("laugh4","laugh2"):
         if not j: v.append("joke videos need a joke")

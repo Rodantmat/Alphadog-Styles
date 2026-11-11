@@ -27,6 +27,9 @@ Last audit: 2026-11-10.
 | V9 | Absolute ban on look-alikes between reels | docs/style_registry.json | MANUAL -> add automated check |
 | V10 | Post A morning, Post B ~8 pm PT; 2 posts/app/day; verify every post actually posted | scheduled tasks + checker | CHECKED |
 
+| V11 | Post A: same concept, everything inside different (breed, merch, placement, style, bg, music); neon = 1 breed/week; scenery = real photos; jokes never repeat | scripts/video/variation.py + docs/video_models.json | ENFORCED (needs scheduled-task prompts to call it) |
+| V12 | Extensive music library, never repeat, retrievable by any task | docs/music_catalog.json (1,017) + pick_music.py restore + docs/ASSET_RESTORE.md | ENFORCED |
+
 ## Process (how I work)
 - Before delivering any video: contact-sheet EVERY shot at <=0.2 s spacing, confirm design visible on each garment, confirm no look-alike. (Learned Nov 10: certified without looking for the neck-logo defect.)
 - A defect found anywhere = fix the cause in the source (live product, pipeline, rule), not just hide the item.
