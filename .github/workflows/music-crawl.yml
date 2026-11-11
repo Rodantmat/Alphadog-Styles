@@ -1,0 +1,14 @@
+name: music-crawl
+on: {workflow_dispatch: {}}
+permissions: {contents: write}
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/music/crawl.py 2>&1 | tee out/musiclib_crawl.log
+      - if: always()
+        run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -f out/musiclib out/musiclib_crawl.log && git commit -qm "music crawl"; for i in 1 2 3 4; do git pull -q --rebase && git push -q && break; sleep 5; done
