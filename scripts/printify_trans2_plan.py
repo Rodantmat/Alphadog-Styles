@@ -5,7 +5,8 @@ Camera ids are valid for every product id + colour of a blueprint (docs/PRINTIFY
 (out/mockidx/catalog.tsv.gz). Back cameras only get combos that have a back print (placement contains 'Back'). Breeds/colours are rotated so the
 library spreads over all 33 breeds and all colours. Test/draft products excluded by title slug. Output docs/trans2_plan.json."""
 import gzip,csv,json,re,random,collections,sys
-K=int(sys.argv[1]) if len(sys.argv)>1 else 2
+K=int(sys.argv[1]) if len(sys.argv)>1 else 6          # combos per person camera
+KF=int(sys.argv[2]) if len(sys.argv)>2 else 16         # combos per flat/folded camera (flats are the scarce shot type: only ~2-3 cameras per product)
 rows=list(csv.DictReader(gzip.open("out/mockidx/catalog.tsv.gz","rt"),delimiter="\t"))
 bad=re.compile(r"test|sample|costtest|neck-label|draft",re.I)
 M=json.load(open("docs/printify_cameras.json")); BLOCK=json.load(open("docs/cutout_blocklist.json"))
@@ -23,8 +24,9 @@ for prod in USE:
     for cam,m in cams:
         back=m.get("side")=="back"; got=[]
         if back and not any("Back" in c["placement"] for c in cs): continue      # caps/polo: no back print exists
-        for _ in range(K):
-            ok=[c for c in cs if (("Back" in c["placement"]) or not back) and c["breed"] not in {g["breed"] for g in got} and c["colour"] not in {g["colour"] for g in got}]
+        ncol=len({c["colour"] for c in cs}); kk=K if m["kind"]=="person" else KF
+        for _ in range(kk):
+            ok=[c for c in cs if (("Back" in c["placement"]) or not back) and c["breed"] not in {g["breed"] for g in got} and (ncol<kk or c["colour"] not in {g["colour"] for g in got})]
             if not ok: break
             ok.sort(key=lambda c:(usedb[c["breed"]],usedc[(prod,c["colour"])],rnd.random())); c=ok[0]; got.append(c)
             usedb[c["breed"]]+=1; usedc[(prod,c["colour"])]+=1

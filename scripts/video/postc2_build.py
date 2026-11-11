@@ -69,7 +69,8 @@ def build(vid,seed,music,variant="v0"):
     taken0=set(exb)
     nob=set(x for x in os.environ.get("C2_NOBREED","").split(",") if x)               # breeds already shown in other reels
     exr=set()                                                                          # people/cameras (raw ids) and breeds of the other reels
-    for x in ex:
+    exp=[x for x in os.environ.get("C2_EXCLP",os.environ.get("C2_EXCL","")).split(",") if x]   # window for people + breeds (only 33 breeds / ~40 people exist, so a rolling window of recent reels)
+    for x in exp:
         mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm
         exr|={m.get("raw") for m in mm if m.get("raw")}; nob|={m["breed"] for m in mm if m.get("breed")}
     pool=[p for p in pool if p.get("breed") not in nob and not (p["kind"]=="person" and p.get("raw") in exr)]
