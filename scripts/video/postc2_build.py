@@ -61,6 +61,12 @@ def build(vid,seed,music,variant="v0"):
         if p["file"] not in _ok: _ok[p["file"]]=not C.edge_bad(C.load(p["file"]),kind_of(p))
         return _ok[p["file"]]
     pool=[p for p in pool if okc(p)]
+    ex=[x for x in os.environ.get("C2_EXCL","").split(",") if x]                     # V9: never reuse a cutout camera or background from these reels
+    exc=set(); exb=set()
+    for x in ex:
+        mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exc|={m["cam"] for m in mm}; exb|={m["bg"] for m in mm}
+    pool=[p for p in pool if str(p["cam"]) not in exc]
+    taken0=set(exb)
     pf=[p for p in pool if p["kind"]=="person" and p["side"]=="front"]; pb=[p for p in pool if p["kind"]=="person" and p["side"]=="back"]
     ppl=rnd.sample(pf,2)+rnd.sample(pb,2); flats=[p for p in pool if p["kind"]!="person"]; rnd.shuffle(flats); rest=[]; seen=set()
     for p in flats:
@@ -71,7 +77,7 @@ def build(vid,seed,music,variant="v0"):
     for it in ppl+rest:
         im=C.load(it["file"]); k=kind_of(it); g=C.garment_rgb(im,k)
         fr.append(dict(it=it,k=k,view=it.get("side"),prod=it["prod"],lum=BM.relL(g),rgb=g))
-    seq=order(fr,rnd); taken=set(); fams=[]; shots=[]; meta=[]
+    seq=order(fr,rnd); taken=set(taken0); fams=[]; shots=[]; meta=[]
     for i,f in enumerate(seq):
         b=None
         for att in range(3):

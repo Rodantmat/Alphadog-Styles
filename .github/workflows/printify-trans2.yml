@@ -1,0 +1,19 @@
+name: printify-trans2
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install pillow -q
+      - run: python3 -u scripts/printify_trans2.py | tee trans2_log.txt
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd out && zip -qr ../trans2.zip trans2 && cd ..
+          gh release delete trans2 -y --cleanup-tag || true
+          gh release create trans2 trans2.zip trans2_log.txt --title trans2 --notes "Multi-breed/colour Printify transparent cutouts (docs/trans2_plan.json)"
