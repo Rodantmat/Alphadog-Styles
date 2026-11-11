@@ -34,3 +34,5 @@ Last audit: 2026-11-10.
 - Before delivering any video: contact-sheet EVERY shot at <=0.2 s spacing, confirm design visible on each garment, confirm no look-alike. (Learned Nov 10: certified without looking for the neck-logo defect.)
 - A defect found anywhere = fix the cause in the source (live product, pipeline, rule), not just hide the item.
 - Every owner correction is added to this ledger the same day.
+
+- 2026-11-11 run note: Post A bg must differ from same-day Post B bgs (register A bg in docs/bg_used.json BEFORE building B); variation.py commit must run BEFORE pick_music.py commit (check flags music already used). Engine needs pip: cairosvg pymatting librosa + stub rembg + /home/claude/passive-income/brand/alphadog_logo.png (copy of refs/alphadog_logo.png).

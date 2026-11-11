@@ -50,3 +50,5 @@
 - 2026-11-18 Post B Nov 17 8pm PT (c09): mx610.mp3 "Peenzee O'Traak" - Eugenio Mininni [Funk & Disco, style postB]
 - 2026-11-19 Post B Nov 18 8pm PT (c10): mx108.mp3 "Chillstep House" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
 - 2026-11-20 Post B Nov 19 8pm PT (c11): mx33.mp3 "Motivating Mornings" - Ahjay Stelino [Feel-good, style postB]
+- 2026-11-20 Post B Nov 20 8pm PT (c12): mx134.mp3 "Deep Techno Ambience" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
+- 2026-11-20 Post A Nov 20 9am PT (d1c_corgi_walkies): mx837.mp3 "Life is a Dream" - Michael Ramir C. [Funk & Disco, style d1]

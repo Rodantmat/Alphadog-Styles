@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98428@6ae58787_Black",
+   "raw": "98428",
+   "breed": "Havanese",
+   "colour": "Black",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_late_afternoon_puresky_0.jpg",
+   "bgname": "Qwantani Late Afternoon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.0
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "102046@6aed2f0b_Maroon",
+   "raw": "102046",
+   "breed": "Great Dane",
+   "colour": "Maroon",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pt_curly_teddy_natural_1.jpg",
+   "bgname": "Curly Teddy Natural",
+   "fam": "texture:fabric:0",
+   "ratio": 7.9
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100617@6ae58ad9_Ice Grey",
+   "raw": "100617",
+   "breed": "English Bulldog",
+   "colour": "Ice Grey",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_08_1.jpg",
+   "bgname": "Wooden Studio 08",
+   "fam": "hdri:studio:3",
+   "ratio": 5.8
+  },
+  {
+   "i": 3,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a02a_none",
+   "raw": "109489",
+   "breed": "Beagle",
+   "colour": "none",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_RoofingTiles013A.jpg",
+   "bgname": "Roofing Tiles 013 A",
+   "fam": "texture:x:4",
+   "ratio": 10.3
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae57a67_Heather Navy",
+   "raw": "111848",
+   "breed": "Chihuahua",
+   "colour": "Heather Navy",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_rosendal_park_sunset_puresky_0.jpg",
+   "bgname": "Rosendal Park Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.9
+  },
+  {
+   "i": 5,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a2f7_White",
+   "raw": "109494",
+   "breed": "Pomeranian",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Leather037.jpg",
+   "bgname": "Leather 037",
+   "fam": "texture:x:0",
+   "ratio": 7.7
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102059@6ae6cf6c_Ash",
+   "raw": "102059",
+   "breed": "Border Collie",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_belfast_sunset_puresky_3.jpg",
+   "bgname": "Belfast Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:4",
+   "ratio": 4.7
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "97992@6ae597d0_Forest Green",
+   "raw": "97992",
+   "breed": "Australian Shepherd",
+   "colour": "Forest Green",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_cherry_veneer_1.jpg",
+   "bgname": "Cherry Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 5.4
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.19736961451247215,
+ "shot_len": 0.9752380952380952,
+ "variant": "v2"
+}

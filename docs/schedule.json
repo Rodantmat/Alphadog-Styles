@@ -193,6 +193,24 @@
     "slot": "20:00 PT"
    },
    "status": "built"
+  },
+  {
+   "date": "2026-11-20",
+   "weekday": "Fri",
+   "A": {
+    "video": "social/videos/d1c_corgi_walkies.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Funk & Disco",
+    "music": "mx837"
+   },
+   "B": {
+    "id": "c12",
+    "reel": "out/postc/c12/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Electronic & House",
+    "music": "mx134"
+   },
+   "status": "built"
   }
  ]
 }
