@@ -38,3 +38,4 @@
 2026-11-11T17:44:34Z checker: Wed Nov 11 9:00 PT slot A (d5 funny-breed-compilation, due 2026-11-11T17:00Z) listed acct1+2: SENT on IG 6aed597207f945cca93f59a1, TikTok 6aed5978c1e74b84e5c8238c, FB 6aed59aaf3498efda76d7e12, Pinterest 6aeec4d0229bf05daf310909. Nov 11 04:00Z B (c02) sent on all 4 (Pinterest via repost). No failed/stuck/missed; nothing forced; future scheduled items untouched. Result OK.
 2026-11-11T18:35Z checker run started
 2026-11-11T18:37Z checker: Wed Nov 11 9:00 PT slot A (d5, due 2026-11-11T17:00Z) re-listed acct1+2: SENT on IG 6aed597207f945cca93f59a1, TikTok 6aed5978c1e74b84e5c8238c, FB 6aed59aaf3498efda76d7e12, Pinterest 6aeec4d0229bf05daf310909. Nov 11 04:00Z B (c02) sent on all 4. No failed/stuck/missed; nothing forced; future scheduled items untouched. Result OK.
+2026-11-11T22:50Z generator run started
