@@ -11,13 +11,16 @@ def relL(rgb): r,g,b=rgb; return 0.2126*lin(r)+0.7152*lin(g)+0.0722*lin(b)
 def ratio(a,b): hi,lo=max(a,b),min(a,b); return (hi+.05)/(lo+.05)
 def bgL(row): return (row["centre_lum"]/255)**2.2     # approx linear luminance of the centre region
 def hue_d(a,b): d=abs(a-b)%360; return min(d,360-d)
-BUSY={"person":(7.0,58),"closeup":(8.0,60),"flat":(3.2,32),"folded":(4.0,36)}   # (max laplacian busyness, max centre std)
+BUSY={"person":(7.0,58),"closeup":(8.0,60),"flat":(3.2,32),"folded":(4.0,36),"scenery":(20.0,60)}   # (max laplacian busyness, max centre std)
 def family(r):
     cats=[c for c in (r.get("cats") or []) if c in("skies","nature","urban","studio","outdoor","indoor","sunrise-sunset","floor","wall","wood","fabric","concrete","plaster","marble","paper","tiles","brick","rock","metal","leather")]
     return f"{r['kind']}:{(cats[0] if cats else 'x')}:{(r['hue']//60)}"
 def score(row,garment,kind):
     """Higher = better combination; None = reject."""
     if not row.get("ok"): return None
+    if kind=="scenery":
+        cats=set(row.get("cats") or [])
+        if row.get("kind")!="hdri" or not (cats&{"outdoor","urban","nature"}) or "indoor" in cats or "studio" in cats: return None
     mb,ms=BUSY[kind]
     if row.get("kind")!="hdri" and kind in("flat","folded"): mb=16.0   # fine-grain textures read as calm behind a garment
     if row["busy"]>mb or row["centre_std"]>ms: return None
@@ -37,6 +40,8 @@ def score(row,garment,kind):
     elif kind in("flat","folded"):
         if row["kind"]=="texture": s+=1.2
         s-= row["busy"]/(8.0 if row["kind"]!="hdri" else 3.0)
+    elif kind=="scenery":
+        s+=1.0+0.8*min(1,row["sky"]/0.3); s-=row["busy"]/12.0   # real places with a readable sky/horizon; calmer behind merch
     elif kind=="closeup":
         if row["kind"]=="hdri": s+=0.8
     return s
@@ -62,3 +67,11 @@ class Catalog:
         day=day or datetime.date.today().isoformat()
         for f in files: self.used[f]=day
         json.dump(self.used,open(USED,"w"),indent=0)
+
+def scenery_type(r):
+    c=set(r.get("cats") or [])
+    if "night" in c: return "night"
+    if "sunrise-sunset" in c: return "sunset"
+    if "urban" in c: return "city"
+    if "nature" in c: return "nature"
+    return "outdoor"

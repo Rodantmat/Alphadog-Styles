@@ -1,0 +1,26 @@
+{
+ "_note": "Post A video models (owner 2026-11-10: same concept every time, EVERYTHING inside changes). Enforced by scripts/video/variation.py. Read docs/VIDEO_MODELS.md.",
+ "fixed_days": {"Mon": "laugh4", "Thu": "laugh2"},
+ "models": {
+  "laugh4": {"concept": "4 dogs snap-to-laugh + crowd laugh, joke on top, finale 4 corners + middle merch", "builder": "social/laugh/build.py", "keep": ["the 4 dogs", "snap-to-laugh effect", "layout"], "change": ["joke (always new, never repeated)", "background (structurally different)", "music", "laugh track", "merch mix"], "breed": "joke breed's merch, otherwise assorted"},
+  "laugh2": {"concept": "2 dogs (chihuahua + yorkie) laugh video", "builder": "social/laugh/build2.py", "keep": ["the 2 dogs", "style"], "change": ["joke (always new)", "background", "music", "laugh track", "merch mix"], "breed": "assorted"},
+  "d1": {"concept": "snack / ride comedy gag", "builder": "social/videos d1", "change": ["breed", "merch type+colour+design+placement", "background", "music", "gag"]},
+  "d2": {"concept": "real dog in shades vs our design", "builder": "social/videos d2", "change": ["breed", "merch", "background", "music"]},
+  "d3": {"concept": "scenery tees: merch on top of REAL scenery (landscape / city / skyline / nature photos, never flat or procedural)", "builder": "social/videos d3", "background_kind": "scenery", "change": ["breed", "merch type+colour+design+placement", "scenery photo (never repeat)", "music"]},
+  "d4": {"concept": "line-art hoodies / one breed line by line", "builder": "social/videos d4", "change": ["breed", "merch type+colour", "background", "music"]},
+  "d5": {"concept": "funny breed compilation", "builder": "social/videos d5", "change": ["breeds", "merch", "background", "music", "captions"]},
+  "d6": {"concept": "neon sign: ONE breed per week, different merchandise and colour each time", "builder": "social/videos d6", "breed_rule": "one breed, never reused until every breed has had a week", "change": ["breed (weekly)", "merch type", "merch colour", "neon colour", "music"]},
+  "d7": {"concept": "which one is yours / which back (interactive picks)", "builder": "social/videos d7", "change": ["breeds", "merch", "views", "background", "music"]}
+ },
+ "cooldowns": {
+  "model_back_to_back": false,
+  "breed_primary_last_n_videos": 4,
+  "neon_breed_never_until_all_used": true,
+  "merch_vs_previous_video": ["product", "colour_code_family", "design"],
+  "background_days": 60,
+  "music": "never",
+  "joke": "never",
+  "laugh_sfx": "never",
+  "min_distinct_views_when_4plus_items": 3
+ }
+}
