@@ -20,3 +20,5 @@ out/postc/*/f/
 out/musiclib/clips/
 out/musiccat/
 out/musicbuild/
+out/trans2/
+__pycache__/
