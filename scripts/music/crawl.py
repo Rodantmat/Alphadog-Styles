@@ -8,10 +8,11 @@ def get(u):
         except Exception as e: err=e; time.sleep(3+3*t)
     return None
 RX=re.compile(r'\{"@id":"([^"]+)","@type":"MusicRecording","name":"([^"]+)","genre":"([^"]*)","byArtist":"([^"]*)","duration":"([^"]*)","url":"(https://assets[^"]+)"')
-tracks={}; log=[]
-def scan(base,maxp=80):
+tracks={}; log=[]; T0=time.time()
+def scan(base,maxp=40):
     n_total=0
     for p in range(1,maxp+1):
+        if time.time()-T0>1200: break
         u=base if p==1 else base.rstrip("/")+f"/?page={p}" if "?" not in base else base+f"&page={p}"
         h=get(u)
         if not h: break
@@ -23,6 +24,7 @@ def scan(base,maxp=80):
             if tid not in tracks: tracks[tid]={"id":"mx"+tid,"title":name,"artist":artist,"genre":genre,"dur":dur,"url":url,"tags":[]}; new+=1
             tracks[tid]["tags"]=sorted(set(tracks[tid]["tags"]+[base.rstrip("/").split("/")[-1]]))
         n_total+=new; log.append((u,new))
+        print("  ",u,new,flush=True)
         if new==0 and p>1: break
     return n_total
 print("all",scan("https://mixkit.co/free-stock-music/"),len(tracks),flush=True)
