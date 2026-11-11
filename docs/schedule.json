@@ -119,7 +119,7 @@
     "reel": "out/postc/c06/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A (18:00Z) scheduled on all 4 apps; B b14 SKIPPED: hoodie + Sport Grey same day as A d6b, needs rebuild"
+   "status": "A (18:00Z) scheduled on all 4 apps; B b14 SKIPPED: hoodie + Sport Grey same day as A d6b, needs rebuild | B c06 plan dispatched 2026-11-11 (planC4, due Nov 15 04:00Z) - UNVERIFIED, Actions stalled"
   },
   {
    "date": "2026-11-15",
@@ -133,7 +133,7 @@
     "reel": "out/postc/c07/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A d7b scheduled on all 4 apps (Nov 15 18:00Z); B b15 skipped (tees + Pit Bull/Aussie overlap with b13)"
+   "status": "A d7b scheduled on all 4 apps (Nov 15 18:00Z); B b15 skipped (tees + Pit Bull/Aussie overlap with b13) | B c07 plan dispatched 2026-11-11 (planC4, due Nov 16 04:00Z) - UNVERIFIED, Actions stalled"
   },
   {
    "date": "2026-11-16",
