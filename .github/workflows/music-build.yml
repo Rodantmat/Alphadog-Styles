@@ -1,0 +1,18 @@
+name: music-build
+on: {workflow_dispatch: {inputs: {shards: {default: "8"}}}}
+permissions: {contents: write}
+jobs:
+  r:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    strategy:
+      fail-fast: false
+      matrix: {shard: [0,1,2,3,4,5,6,7]}
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get install -y -q ffmpeg && pip install -q librosa numpy soundfile
+      - run: python3 scripts/music/build.py ${{ matrix.shard }} 8
+      - env: {GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"}
+        run: |
+          cd out/musicbuild/s${{ matrix.shard }} && zip -q -r ../../musiclib_s${{ matrix.shard }}.zip *.mp3 && cp catalog_${{ matrix.shard }}.json ../../
+          cd ../../.. && gh release create musiclib_s${{ matrix.shard }} out/musiclib_s${{ matrix.shard }}.zip out/catalog_${{ matrix.shard }}.json --title "music library shard ${{ matrix.shard }}" --notes "Mixkit free music clips (45 s) + catalog" || gh release upload musiclib_s${{ matrix.shard }} out/musiclib_s${{ matrix.shard }}.zip out/catalog_${{ matrix.shard }}.json --clobber
