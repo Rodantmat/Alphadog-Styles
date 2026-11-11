@@ -52,9 +52,10 @@
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
-    "id": "b07",
-    "reel": "out/postb2/b07/reel.mp4",
-    "slot": "20:00 PT"
+    "id": "c02",
+    "reel": "out/postc/c02/reel.mp4",
+    "slot": "20:00 PT",
+    "note": "replaced look-alike b07 (owner 11/10)"
    },
    "status": "scheduled"
   },

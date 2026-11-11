@@ -57,3 +57,5 @@
 - Listed both accounts: every past post `sent` on IG, TikTok, FB, Pinterest (Nov 10 A d2 + Pinterest repost 18:16Z included). No failed/missed. Each channel was 8/10.
 - Scheduled Nov 15 A d7b_which_back_edition (18:00Z) + Nov 16 A laugh01_hotdog_v1 (17:00Z) via social/planA_d7b_h01_*.json (captions written; none existed). IG 6af37cc9e4acfdf0c7065b78 / 6af37cca2cac17fcaff64ff9, TikTok 6af37cca41bc75bbeb600082 / 6af37ccb7c81278dfdb70cee, FB 6af37ccaead9c53d41bb325c / 6af37ccb41bc75bbeb6000c0, Pinterest 6af37ccac0addee3a3159144 / 6af37ccbe4acfdf0c7065bd3. All 4 channels now 10/10.
 - Skipped (rule breaks): b14 (hoodies incl. Sport Grey, same day as A d6b Sport Grey hoodie) and b15 (tees, shares Pit Bull + Aussie with b13). Both need rebuilding with different product/colour/breeds. Tomorrow (Nov 11) A + B scheduled; no ALERT.
+
+- 2026-11-10 17:17 PT: Post B for tonight 8 pm PT (2026-11-11T04:00Z) replaced: old b07 (look-alike) deleted on IG/TikTok/FB/Pinterest; new C2-format reel out/postc/c02 scheduled (ids IG 6af3c22bd9a6812579c1b758, TT 6af3c22c0b5acab58627a73d, FB 6af3c22ad9a6812579c1b6fb, Pin 6af3c22a0b5acab58627a6d7). Music m134. Bgs real-photo library.
