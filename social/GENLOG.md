@@ -33,3 +33,4 @@
 2026-11-10 22:49 UTC generator run started
 2026-11-10 22:49 UTC generator: lead check OK, nothing to build. Built A+B files exist for every day 2026-11-11..2026-11-19 (9 days ahead, target 7); pick_music check ok (37/300 used). Heavy-asset restore skipped (not needed). Run finished.
 2026-11-11T04:36Z checker run started
+2026-11-11T04:37Z checker run finished: slot B Nov 10 20:00 PT (c02, due 2026-11-11T04:00Z) re-listed acct1+2: IG 6af3c22bd9a6812579c1b758 sent, TikTok 6af3c22c0b5acab58627a73d sent, FB 6af3c22ad9a6812579c1b6fb sent, Pinterest 6af3ebf76a689e197d22c82d sent (forced repost 04:17Z by earlier check). No failed/stuck/missed; nothing forced this run; Nov 11 A + Nov 12-16 items untouched (future scheduled). OK
