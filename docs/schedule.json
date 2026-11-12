@@ -143,26 +143,30 @@
     "slot": "09:00 PT weekdays / 10:00 PT weekends"
    },
    "B": {
-    "id": "c08",
-    "reel": "out/postc/c08/reel.mp4",
-    "slot": "20:00 PT"
+    "id": "c13",
+    "reel": "out/postc/c13/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Electronic & House",
+    "music": "mx581",
+    "note": "replaces c08 (banned breeds, Tee B Light Blue repeat)"
    },
-   "status": "A laugh01_hotdog scheduled on all 4 apps (Nov 16 17:00Z); B b16 pending | B c08 (due Nov 17 04:00Z) SKIPPED 2026-11-12: Tee B Light Blue back-to-back with c07 (Tee B Light Blue), banned breeds Pug/Pomeranian/Mini Poodle - needs rebuild"
+   "status": "A laugh01_hotdog scheduled on all 4 apps (Nov 16 17:00Z); B b16 pending  | B c13 built 2026-11-12 (rebuild of c08), needs scheduling"
   },
   {
    "date": "2026-11-17",
    "weekday": "Tue",
    "A": {
-    "video": "social/videos/d4b_golden_line_art.mp4",
+    "video": "social/videos/d1d_collie_waiting.mp4",
     "slot": "09:00 PT weekdays / 10:00 PT weekends",
-    "theme": "Feel-good"
+    "theme": "Feel-good",
+    "music": "mx508"
    },
    "B": {
     "id": "c09",
     "reel": "out/postc/c09/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "built; A d4b SKIPPED 2026-11-12 (golden retriever hoodie + SA colour same as Nov 16 laugh01 hotdog hoodie = adjacent-day repeat) - needs rebuild with other product/colour/breed; B c09 pending"
+   "status": "A d1d_collie_waiting built 2026-11-12 (replaces skipped d4b), needs scheduling; B c09 pending (contains banned breed Bichon Frise - rebuild)"
   },
   {
    "date": "2026-11-18",

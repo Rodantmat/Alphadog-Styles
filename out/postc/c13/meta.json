@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100623@6ae57b78_Light Pink",
+   "raw": "100623",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Light Pink",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_plac_wolnosci_0.jpg",
+   "bgname": "Plac Wolnosci",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.1
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "92720@6ae6cb23_Soft Cream",
+   "raw": "92720",
+   "breed": "Beagle",
+   "colour": "Soft Cream",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_weathered_planks_0.jpg",
+   "bgname": "Weathered Planks",
+   "fam": "texture:outdoor:0",
+   "ratio": 7.8
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "98427@6ae58619_Military Green",
+   "raw": "98427",
+   "breed": "Boxer",
+   "colour": "Military Green",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_16_0.jpg",
+   "bgname": "Wooden Studio 16",
+   "fam": "hdri:studio:4",
+   "ratio": 3.2
+  },
+  {
+   "i": 3,
+   "prod": "Polo",
+   "cam": "102236@6ae7a30f_Athletic Heather",
+   "raw": "102236",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Athletic Heather",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_flamed_black_veneer_1.jpg",
+   "bgname": "Flamed Black Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 4.4
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102062@6ae6cb90_Ash",
+   "raw": "102062",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Ash",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_aristea_wreck_puresky_3.jpg",
+   "bgname": "Aristea Wreck (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.7
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "97992@6ae585a4_Charcoal",
+   "raw": "97992",
+   "breed": "Miniature Schnauzer",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_curly_teddy_natural_0.jpg",
+   "bgname": "Curly Teddy Natural",
+   "fam": "texture:fabric:0",
+   "ratio": 5.2
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cec9_Sand Dune",
+   "raw": "102054",
+   "breed": "Siberian Husky",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_balcony_1.jpg",
+   "bgname": "Balcony",
+   "fam": "hdri:outdoor:4",
+   "ratio": 4.9
+  },
+  {
+   "i": 7,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a169_Stone",
+   "raw": "135042",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_rubber_tiles_0.jpg",
+   "bgname": "Rubber Tiles",
+   "fam": "texture:floor:3",
+   "ratio": 9.5
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.13931972789115893,
+ "shot_len": 1.0216780045351472,
+ "variant": "v2"
+}

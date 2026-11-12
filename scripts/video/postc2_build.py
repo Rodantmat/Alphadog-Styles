@@ -53,6 +53,7 @@ def pick_trans(a,b,used,rnd):
     if abs(a["lum"]-b["lum"])>0.25: return "cut",0.033
     return ("fade",0.7) if rnd.random()<0.5 else ("cut",0.033)
 N=8; NF=4
+BANNED_BREEDS={"Yorkshire Terrier","Pomeranian","Shih Tzu","Havanese","Pug","Mini Poodle","Bichon Frise","Maltese"}  # owner: never in Post B (enforced Nov 12)
 def build(vid,seed,music,variant="v0"):
     rnd=random.Random(seed); od=f"out/postc/{vid}"; os.makedirs(od,exist_ok=True)
     pool=P1.pool(); cat=BM.Catalog()
@@ -68,12 +69,17 @@ def build(vid,seed,music,variant="v0"):
     pool=[p for p in pool if str(p["cam"]) not in exc]
     taken0=set(exb)
     nob=set(x for x in os.environ.get("C2_NOBREED","").split(",") if x)               # breeds already shown in other reels
+    nob|=BANNED_BREEDS                                                                 # owner rule (runbook/RULES_LEDGER V13): never show these breeds in Post B
     exr=set()                                                                          # people/cameras (raw ids) and breeds of the other reels
     exp=[x for x in os.environ.get("C2_EXCLP",os.environ.get("C2_EXCL","")).split(",") if x]   # window for people + breeds (only 33 breeds / ~40 people exist, so a rolling window of recent reels)
     for x in exp:
         mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm
         exr|={m.get("raw") for m in mm if m.get("raw")}; nob|={m["breed"] for m in mm if m.get("breed")}
     pool=[p for p in pool if p.get("breed") not in nob and not (p["kind"]=="person" and p.get("raw") in exr)]
+    exq=set()                                                                          # V1: never the same product+colour as the previous reel (C2_EXCLC=<previous reel ids>)
+    for x in [y for y in os.environ.get("C2_EXCLC","").split(",") if y]:
+        mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exq|={(m["prod"],m.get("colour")) for m in mm}
+    pool=[p for p in pool if (p["prod"],p.get("colour")) not in exq]
     pf=[p for p in pool if p["kind"]=="person" and p["side"]=="front"]; pb=[p for p in pool if p["kind"]=="person" and p["side"]=="back"]
     ub=set(); uc=set(); ur=set()
     def take(cands):                                                                   # distinct breed, colour and person inside the reel

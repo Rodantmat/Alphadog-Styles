@@ -61,18 +61,6 @@
   ]
  },
  {
-  "date": "2026-11-17",
-  "type": "d4b",
-  "name": "d4b_golden_line_art",
-  "bg": "bg_286 lowpoly, bg_114 seigaiha, bg_063 marble, bg_230 lattice",
-  "music": "m220",
-  "merch": [
-   "hoodie/golden_retriever/5NV",
-   "hoodie/golden_retriever/2SA",
-   "hoodie/golden_retriever/6LB"
-  ]
- },
- {
   "date": "2026-11-18",
   "type": "d3b",
   "name": "d3b_scenery_aurora",
@@ -122,6 +110,25 @@
   "type": "d1",
   "bg_ids": [
    "pg_chapmans_drive_1.jpg"
+  ]
+ },
+ {
+  "date": "2026-11-17",
+  "model": "d1",
+  "breeds": [
+   "border_collie"
+  ],
+  "merch": [
+   "wtank/border_collie/1MI_back",
+   "tee/border_collie/2AS",
+   "cap_foam/border_collie/2FP"
+  ],
+  "music": "mx508",
+  "joke": "waiting for one last email",
+  "name": "d1d_collie_waiting",
+  "type": "d1",
+  "bg_ids": [
+   "pg_citrus_orchard_puresky_2.jpg"
   ]
  }
 ]

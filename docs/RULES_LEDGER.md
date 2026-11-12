@@ -36,3 +36,4 @@ Last audit: 2026-11-10.
 - Every owner correction is added to this ledger the same day.
 
 - 2026-11-11 run note: Post A bg must differ from same-day Post B bgs (register A bg in docs/bg_used.json BEFORE building B); variation.py commit must run BEFORE pick_music.py commit (check flags music already used). Engine needs pip: cairosvg pymatting librosa + stub rembg + /home/claude/passive-income/brand/alphadog_logo.png (copy of refs/alphadog_logo.png).
+| V13 | Post B: never show yorkshire_terrier, pomeranian, shih_tzu, havanese, pug, mini_poodle, bichon_frise, maltese (owner, runbook) | postc2_build.BANNED_BREEDS filter in pool (added 2026-11-12) ; C2_EXCLC env = no same product+colour as previous reel | ENFORCED from c13. OPEN: older C2 reels c04-c07, c09-c12 contain banned breeds (found 2026-11-12 audit) - rebuild unscheduled ones |
