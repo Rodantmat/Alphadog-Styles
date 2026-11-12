@@ -44,3 +44,4 @@
 2026-11-12T04:36:17Z checker run started
 2026-11-12T04:41:18Z checker run finished: OK, nothing forced (gh CLI token invalid, used GitHub MCP for dispatch/logs)
 2026-11-12T17:35:44Z checker run started
+2026-11-12T17:52Z checker: Thu Nov 12 9:00 PT slot A (laugh02_pupperoni_v3, due 17:00Z): IG 6aeecf72a7751de7c9d08af7 sent, TikTok 6aeecf73af7e526d43076972 sent, FB 6aeecf6caf7e526d430768df sent, Pinterest 6aeecf6ca7751de7c9d089f3 ERROR ("This site doesn't allow you to save Pins"). Forced: deleted stuck pin, re-planned now+5min (social/plan_force_20261112_1740_1.json) -> pin 6af5fa6b1b490358bd2e0951 SENT 17:45Z. Final: all 4 apps sent. Nov 12 04:00Z B (c03) sent on all 4. Future posts untouched. Result OK.
