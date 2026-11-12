@@ -54,3 +54,7 @@
 - 2026-11-20 Post A Nov 20 9am PT (d1c_corgi_walkies): mx837.mp3 "Life is a Dream" - Michael Ramir C. [Funk & Disco, style d1]
 - 2026-11-17 Post A Nov 17 9am PT (d1d_collie_waiting): mx508.mp3 "Holiday / Seasonal 1" - Diego Nava [Feel-good, style d1]
 - 2026-11-17 Post B Nov 16 8pm PT (c13 rebuild of c08, banned breeds removed): mx581.mp3 "Nights With Ga" - Eugenio Mininni [Electronic & House, style postB]
+- 2026-11-18 Post B Nov 17 8pm PT (c14, replaces c09): mx526.mp3 "Swing is the Answer" - Diego Nava [Chill & Lo-fi, style postB]
+- 2026-11-19 Post B Nov 18 8pm PT (c15, replaces c10): mx858.mp3 "Too Hot" - Michael Ramir C. [Funk & Disco, style postB]
+- 2026-11-20 Post B Nov 19 8pm PT (c16, replaces c11): mx522.mp3 "Relaxing in Nature" - Diego Nava [Electronic & House, style postB]
+- 2026-11-21 Post B Nov 20 8pm PT (c17, replaces c12): mx510.mp3 "Holiday / Seasonal 3" - Diego Nava [Feel-good, style postB]

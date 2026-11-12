@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "92578@6aed2f1a_Maroon",
+   "raw": "92578",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Maroon",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_belfast_sunset_puresky_1.jpg",
+   "bgname": "Belfast Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:5",
+   "ratio": 7.0
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98425@6ae58d9a_Ash",
+   "raw": "98425",
+   "breed": "Shiba Inu",
+   "colour": "Ash",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Travertine005.jpg",
+   "bgname": "Travertine 005",
+   "fam": "texture:x:0",
+   "ratio": 5.5
+  },
+  {
+   "i": 2,
+   "prod": "Foam Trucker Hat",
+   "cam": "110570@6ae7a110_none",
+   "raw": "110570",
+   "breed": "Cane Corso",
+   "colour": "none",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_table_mountain_1_puresky_2.jpg",
+   "bgname": "Table Mountain 1 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.4
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "92547@6ae6ca7d_Athletic Heather",
+   "raw": "92547",
+   "breed": "German Shepherd",
+   "colour": "Athletic Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_red_sandstone_tiles_1.jpg",
+   "bgname": "Red Sandstone Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 6.0
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100617@6ae58a4d_Dark Chocolate",
+   "raw": "100617",
+   "breed": "Standard Poodle",
+   "colour": "Dark Chocolate",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_wasteland_clouds_puresky_0.jpg",
+   "bgname": "Wasteland Clouds (Pure Sky)",
+   "fam": "hdri:outdoor:2",
+   "ratio": 6.5
+  },
+  {
+   "i": 5,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae79fab_White",
+   "raw": "109494",
+   "breed": "Dachshund",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_wood_trunk_wall_1.jpg",
+   "bgname": "Wood Trunk Wall",
+   "fam": "texture:outdoor:0",
+   "ratio": 8.2
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "111848@6ae57708_Black",
+   "raw": "111848",
+   "breed": "Doberman Pinscher",
+   "colour": "Black",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloofendal_misty_morning_puresky_2.jpg",
+   "bgname": "Kloofendal Misty Morning (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.7
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "97992@6ae589b6_Natural",
+   "raw": "97992",
+   "breed": "French Bulldog",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_worn_shutter_0.jpg",
+   "bgname": "Worn Shutter",
+   "fam": "texture:metal:0",
+   "ratio": 9.4
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.5340589569160987,
+ "shot_len": 0.6733786848072563,
+ "variant": "v2"
+}

@@ -162,11 +162,14 @@
     "music": "mx508"
    },
    "B": {
-    "id": "c09",
-    "reel": "out/postc/c09/reel.mp4",
-    "slot": "20:00 PT"
+    "id": "c14",
+    "reel": "out/postc/c14/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Chill & Lo-fi",
+    "music": "mx526",
+    "note": "replaces c09 (banned breeds)"
    },
-   "status": "A d1d_collie_waiting built 2026-11-12 (replaces skipped d4b), needs scheduling; B c09 pending (contains banned breed Bichon Frise - rebuild)"
+   "status": "A d1d_collie_waiting built 2026-11-12 (replaces skipped d4b), needs scheduling | B c14 built 2026-11-12 (replaces c09), needs scheduling"
   },
   {
    "date": "2026-11-18",
@@ -177,11 +180,14 @@
     "theme": "Chill & Lo-fi"
    },
    "B": {
-    "id": "c10",
-    "reel": "out/postc/c10/reel.mp4",
-    "slot": "20:00 PT"
+    "id": "c15",
+    "reel": "out/postc/c15/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Funk & Disco",
+    "music": "mx858",
+    "note": "replaces c10 (banned breeds)"
    },
-   "status": "built (A d3b + B b18 re-themed)"
+   "status": "built (A d3b + B b18 re-themed) | B c15 built 2026-11-12 (replaces c10), needs scheduling"
   },
   {
    "date": "2026-11-19",
@@ -192,11 +198,14 @@
     "theme": "Hip-hop & Trap"
    },
    "B": {
-    "id": "c11",
-    "reel": "out/postc/c11/reel.mp4",
-    "slot": "20:00 PT"
+    "id": "c16",
+    "reel": "out/postc/c16/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Electronic & House",
+    "music": "mx522",
+    "note": "replaces c11 (banned breeds)"
    },
-   "status": "built"
+   "status": "built | B c16 built 2026-11-12 (replaces c11), needs scheduling"
   },
   {
    "date": "2026-11-20",
@@ -208,13 +217,14 @@
     "music": "mx837"
    },
    "B": {
-    "id": "c12",
-    "reel": "out/postc/c12/reel.mp4",
+    "id": "c17",
+    "reel": "out/postc/c17/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Electronic & House",
-    "music": "mx134"
+    "theme": "Feel-good",
+    "music": "mx510",
+    "note": "replaces c12 (banned breeds)"
    },
-   "status": "built"
+   "status": "built | B c17 built 2026-11-12 (replaces c12), needs scheduling"
   }
  ]
 }

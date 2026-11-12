@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "100682@6ae57695_Dark Chocolate",
+   "raw": "100682",
+   "breed": "Australian Shepherd",
+   "colour": "Dark Chocolate",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_table_mountain_2_puresky_1.jpg",
+   "bgname": "Table Mountain 2 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.6
+  },
+  {
+   "i": 1,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a3bc_Pink",
+   "raw": "135042",
+   "breed": "Great Dane",
+   "colour": "Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_dark_rock_02_0.jpg",
+   "bgname": "Dark Rock 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 7.2
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100620@6ae5749f_Heather Navy",
+   "raw": "100620",
+   "breed": "Rottweiler",
+   "colour": "Heather Navy",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_hilly_terrain_01_puresky_1.jpg",
+   "bgname": "Hilly Terrain 01 (Pure Sky)",
+   "fam": "hdri:outdoor:2",
+   "ratio": 4.6
+  },
+  {
+   "i": 3,
+   "prod": "Hoodie",
+   "cam": "98432@6ae57ead_Dark Heather",
+   "raw": "98432",
+   "breed": "English Bulldog",
+   "colour": "Dark Heather",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pa_Metal048C.jpg",
+   "bgname": "Metal 048 C",
+   "fam": "texture:x:0",
+   "ratio": 5.9
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "92580@6ae6bd95_White",
+   "raw": "92580",
+   "breed": "Chihuahua",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_citrus_orchard_road_puresky_3.jpg",
+   "bgname": "Citrus Orchard Road (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.5
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "97993@6ae589f6_Charcoal",
+   "raw": "97993",
+   "breed": "Golden Retriever",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_white_maple_veneer_1.jpg",
+   "bgname": "White Maple Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 5.1
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "98430@6ae57bd8_Military Green",
+   "raw": "98430",
+   "breed": "Border Collie",
+   "colour": "Military Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_qwantani_dusk_2_puresky_1.jpg",
+   "bgname": "Qwantani Dusk 2 (Pure Sky)",
+   "fam": "hdri:outdoor:5",
+   "ratio": 3.2
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102045@6ae6ca34_Sand Dune",
+   "raw": "102045",
+   "breed": "Labrador Retriever",
+   "colour": "Sand Dune",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_worn_shutter_1.jpg",
+   "bgname": "Worn Shutter",
+   "fam": "texture:metal:0",
+   "ratio": 7.2
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.20897959183673742,
+ "shot_len": 0.9752380952380952,
+ "variant": "v2"
+}

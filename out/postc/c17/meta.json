@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102059@6ae6caa7_Light Blue",
+   "raw": "102059",
+   "breed": "Dachshund",
+   "colour": "Light Blue",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_studio_kominka_04_1.jpg",
+   "bgname": "Studio Kominka 04",
+   "fam": "hdri:studio:3",
+   "ratio": 7.7
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98424@6ae57dae_Dark Heather",
+   "raw": "98424",
+   "breed": "German Shepherd",
+   "colour": "Dark Heather",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_ChristmasTreeOrnament021.jpg",
+   "bgname": "Christmas Tree Ornament 021",
+   "fam": "texture:x:2",
+   "ratio": 6.5
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cb3c_Soft Pink",
+   "raw": "102054",
+   "breed": "Rottweiler",
+   "colour": "Soft Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_moon_noon_puresky_1.jpg",
+   "bgname": "Qwantani Moon Noon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.8
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "97992@6ae5809e_Sand",
+   "raw": "97992",
+   "breed": "Chihuahua",
+   "colour": "Sand",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_slab_tiles_0.jpg",
+   "bgname": "Slab Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 7.3
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102062@6ae6ccbf_Natural",
+   "raw": "102062",
+   "breed": "Doberman Pinscher",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_potsdamer_platz_1.jpg",
+   "bgname": "Potsdamer Platz",
+   "fam": "hdri:outdoor:5",
+   "ratio": 6.4
+  },
+  {
+   "i": 5,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae79fec_White",
+   "raw": "109494",
+   "breed": "Standard Poodle",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_MetalPlates006.jpg",
+   "bgname": "Metal Plates 006",
+   "fam": "texture:x:3",
+   "ratio": 6.8
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102046@6aed2ee9_Forest",
+   "raw": "102046",
+   "breed": "English Bulldog",
+   "colour": "Forest",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pa_Metal061A.jpg",
+   "bgname": "Metal 061 A",
+   "fam": "texture:x:0",
+   "ratio": 7.0
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "100619@6ae59114_Military Green",
+   "raw": "100619",
+   "breed": "Boston Terrier",
+   "colour": "Military Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_table_mountain_1_puresky_1.jpg",
+   "bgname": "Table Mountain 1 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.2
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "cut",
+   0.033
+  ],
+  [
+   "smoothleft",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.3482993197278926,
+ "shot_len": 1.0216780045351472,
+ "variant": "v2"
+}

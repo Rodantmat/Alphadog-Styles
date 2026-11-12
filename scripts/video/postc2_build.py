@@ -75,6 +75,8 @@ def build(vid,seed,music,variant="v0"):
     for x in exp:
         mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm
         exr|={m.get("raw") for m in mm if m.get("raw")}; nob|={m["breed"] for m in mm if m.get("breed")}
+    for x in [y for y in os.environ.get("C2_EXCLR","").split(",") if y]:               # people only (wider window than breeds)
+        mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exr|={m.get("raw") for m in mm if m.get("raw")}
     pool=[p for p in pool if p.get("breed") not in nob and not (p["kind"]=="person" and p.get("raw") in exr)]
     exq=set()                                                                          # V1: never the same product+colour as the previous reel (C2_EXCLC=<previous reel ids>)
     for x in [y for y in os.environ.get("C2_EXCLC","").split(",") if y]:

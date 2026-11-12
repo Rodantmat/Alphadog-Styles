@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102060@6ae6cb0a_Athletic Heather",
+   "raw": "102060",
+   "breed": "Beagle",
+   "colour": "Athletic Heather",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_wooden_studio_05_2.jpg",
+   "bgname": "Wooden Studio 05",
+   "fam": "hdri:studio:3",
+   "ratio": 6.3
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae574cf_Dark Heather",
+   "raw": "100615",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Dark Heather",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_silver_oak_veneer_01_0.jpg",
+   "bgname": "Silver Oak Veneer 01",
+   "fam": "texture:wood:0",
+   "ratio": 5.4
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102058@6ae6cf2b_Ash",
+   "raw": "102058",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Ash",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_farm_field_puresky_3.jpg",
+   "bgname": "Farm Field (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.8
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a169_Stone",
+   "raw": "135042",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Wood051.jpg",
+   "bgname": "Wood 051",
+   "fam": "texture:x:0",
+   "ratio": 7.1
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102061@6aed2f12_Black",
+   "raw": "102061",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Black",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_qwantani_dusk_2_1.jpg",
+   "bgname": "Qwantani Dusk 2",
+   "fam": "hdri:outdoor:4",
+   "ratio": 6.9
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "98426@6ae57797_Charcoal",
+   "raw": "98426",
+   "breed": "Miniature Schnauzer",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_white_maple_veneer_0.jpg",
+   "bgname": "White Maple Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 4.9
+  },
+  {
+   "i": 6,
+   "prod": "Polo",
+   "cam": "102926@6ae7a2c1_White",
+   "raw": "102926",
+   "breed": "Boxer",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_san_giuseppe_bridge_1.jpg",
+   "bgname": "San Giuseppe Bridge",
+   "fam": "hdri:outdoor:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102044@6aed2f16_Asphalt",
+   "raw": "102044",
+   "breed": "Siberian Husky",
+   "colour": "Asphalt",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pa_Metal058A.jpg",
+   "bgname": "Metal 058 A",
+   "fam": "texture:x:0",
+   "ratio": 5.3
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2205895691609976,
+ "shot_len": 0.9752380952380952,
+ "variant": "v2"
+}
