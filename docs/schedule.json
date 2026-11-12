@@ -147,7 +147,7 @@
     "reel": "out/postc/c08/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "A laugh01_hotdog scheduled on all 4 apps (Nov 16 17:00Z); B b16 pending"
+   "status": "A laugh01_hotdog scheduled on all 4 apps (Nov 16 17:00Z); B b16 pending | B c08 (due Nov 17 04:00Z) SKIPPED 2026-11-12: Tee B Light Blue back-to-back with c07 (Tee B Light Blue), banned breeds Pug/Pomeranian/Mini Poodle - needs rebuild"
   },
   {
    "date": "2026-11-17",
@@ -162,7 +162,7 @@
     "reel": "out/postc/c09/reel.mp4",
     "slot": "20:00 PT"
    },
-   "status": "built"
+   "status": "built; A d4b SKIPPED 2026-11-12 (golden retriever hoodie + SA colour same as Nov 16 laugh01 hotdog hoodie = adjacent-day repeat) - needs rebuild with other product/colour/breed; B c09 pending"
   },
   {
    "date": "2026-11-18",
