@@ -59,3 +59,5 @@
 - 2026-11-20 Post B Nov 19 8pm PT (c16, replaces c11): mx522.mp3 "Relaxing in Nature" - Diego Nava [Electronic & House, style postB]
 - 2026-11-21 Post B Nov 20 8pm PT (c17, replaces c12): mx510.mp3 "Holiday / Seasonal 3" - Diego Nava [Feel-good, style postB]
 - 2026-11-18 Post A Nov 18 9am PT (d3c_scenery_tees): mx664.mp3 "Pop One" - Francisco Alvear [Chill & Lo-fi, style d3]
+- 2026-11-21 Post B Nov 21 8pm PT (c18): mx766.mp3 "Lo-Fi 04" - Lily J [Chill & Lo-fi, style postB]
+- 2026-11-21 Post A Nov 21 10am PT (d2b_shades_vs_ours): mx487.mp3 "Peace" - Diego Nava [Pop & Party, style d2]

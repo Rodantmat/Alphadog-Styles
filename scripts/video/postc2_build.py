@@ -50,8 +50,9 @@ EXPR_PUSH="st(1,1-P);st(0,if(lt(ld(1),0.5),4*ld(1)*ld(1)*ld(1),1-pow(-2*ld(1)+2,
 def pick_trans(a,b,used,rnd):
     if a["k"]=="person" and b["k"]!="person" and used.get("push",0)<3: return "push",0.8
     if a["k"]!="person" and b["k"]=="person": return "smoothleft",0.8
-    if abs(a["lum"]-b["lum"])>0.25: return "cut",0.033
-    return ("fade",0.7) if rnd.random()<0.5 else ("cut",0.033)
+    # owner rule (2026-11-13 gate): transitions slow, >=0.7 s; no hard cuts
+    if abs(a["lum"]-b["lum"])>0.25: return "fadeblack",0.8
+    return ("fade",0.8) if rnd.random()<0.5 else ("dissolve",0.8)
 N=8; NF=4
 BANNED_BREEDS={"Yorkshire Terrier","Pomeranian","Shih Tzu","Havanese","Pug","Mini Poodle","Bichon Frise","Maltese"}  # owner: never in Post B (enforced Nov 12)
 def build(vid,seed,music,variant="v0"):

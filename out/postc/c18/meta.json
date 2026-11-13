@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "111848@6ae589e2_Sand",
+   "raw": "111848",
+   "breed": "Golden Retriever",
+   "colour": "Sand",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_studio_small_07_1.jpg",
+   "bgname": "Studio Small 07",
+   "fam": "hdri:indoor:3",
+   "ratio": 6.3
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae57ec7_Navy",
+   "raw": "100615",
+   "breed": "Cane Corso",
+   "colour": "Navy",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_cherry_veneer_0.jpg",
+   "bgname": "Cherry Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 6.8
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "98427@6ae599e2_Light Blue",
+   "raw": "98427",
+   "breed": "Shiba Inu",
+   "colour": "Light Blue",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_modern_buildings_1.jpg",
+   "bgname": "Modern Buildings",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.5
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "102046@6ae6cf67_Athletic Heather",
+   "raw": "102046",
+   "breed": "Border Collie",
+   "colour": "Athletic Heather",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pa_Rubber004.jpg",
+   "bgname": "Rubber 004",
+   "fam": "texture:x:3",
+   "ratio": 5.9
+  },
+  {
+   "i": 4,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a1d9_none",
+   "raw": "109489",
+   "breed": "Australian Shepherd",
+   "colour": "none",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_beige_wall_002_1.jpg",
+   "bgname": "Beige Wall 002",
+   "fam": "texture:wall:0",
+   "ratio": 4.1
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "100682@6ae589d0_Sport Grey",
+   "raw": "100682",
+   "breed": "Labrador Retriever",
+   "colour": "Sport Grey",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_ferndale_studio_05_1.jpg",
+   "bgname": "Ferndale Studio 05",
+   "fam": "hdri:studio:4",
+   "ratio": 7.4
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "92583@6ae6c9f3_White",
+   "raw": "92583",
+   "breed": "French Bulldog",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_kloppenheim_05_puresky_2.jpg",
+   "bgname": "Kloppenheim 05 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.7
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98432@6ae58039_Black",
+   "raw": "98432",
+   "breed": "Great Dane",
+   "colour": "Black",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pa_Bricks084.jpg",
+   "bgname": "Bricks 084",
+   "fam": "texture:x:0",
+   "ratio": 5.9
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "fadeblack",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "fadeblack",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.4179591836734696,
+ "shot_len": 1.1145578231292517,
+ "variant": "v2"
+}

@@ -59,3 +59,4 @@
 2026-11-13T22:49:16Z generator run started
 2026-11-13T22:52:35Z restore OK: music 1084, bg 6026, trans 107, trans2 ok
 2026-11-13T23:00:39Z BUILT Nov 18 A d3c_scenery_tees (8 real scenery photos via bgmatch, 8 distinct tees, 3 views, 0.7s crossfades, mx664 Chill; variation check OK, contact sheet reviewed) replacing skipped procedural d3b (fix at source: new engine/vidD3c.py). Next: Nov 21 A+B.
+2026-11-13T23:18:01Z BUILT Nov 21 A d2b_shades_vs_ours (french bulldog/dachshund/cane corso/golden/lab, mx487 Pop&Party, bg pg_altanka_1, check OK, contact sheet reviewed) + B c18 (mx766 Chill, 8 shots reviewed, transitions 0.8s after fixing postc2_build hard cuts at source). REPORT: lead now 8 days A+B built Nov 14-21 (Nov 18 A rebuilt with real scenery). Open: c04-c07 banned breeds; c13-c17 may include 0.033s cut transitions; Nov 18-21 A/B need Buffer scheduling (auto-scheduler). FINISH OK

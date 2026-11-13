@@ -151,5 +151,35 @@
    "pg_tiber_2_0.jpg",
    "pg_snowy_park_01_1.jpg"
   ]
+ },
+ {
+  "date": "2026-11-21",
+  "model": "d2",
+  "breeds": [
+   "french_bulldog",
+   "dachshund",
+   "cane_corso",
+   "golden_retriever",
+   "labrador_retriever",
+   "boxer",
+   "beagle",
+   "rottweiler"
+  ],
+  "merch": [
+   "hoodie/french_bulldog/2SA",
+   "wtank/dachshund/3TB_back",
+   "cap_foam/cane_corso/3FW",
+   "tank/golden_retriever/2HE",
+   "cap_dad/labrador_retriever/4DN",
+   "cap_dad/boxer/2DP",
+   "tee/beagle/3HE_back",
+   "hoodie/rottweiler/1GR_back"
+  ],
+  "music": "mx487",
+  "name": "d2b_shades_vs_ours",
+  "type": "d2",
+  "bg_ids": [
+   "pg_altanka_1.jpg"
+  ]
  }
 ]
