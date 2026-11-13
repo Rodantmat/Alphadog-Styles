@@ -1,0 +1,25 @@
+name: printify-orders
+on:
+  workflow_dispatch:
+jobs:
+  go:
+    runs-on: ubuntu-latest
+    steps:
+      - name: orders
+        env:
+          T: ${{ secrets.PRINTIFY_TOKEN }}
+        run: |
+          python3 - <<'P'
+          import os,json,urllib.request
+          T=os.environ["T"].strip()
+          def g(p):
+              r=urllib.request.Request("https://api.printify.com"+p,headers={"Authorization":"Bearer "+T,"User-Agent":"ad"})
+              return json.load(urllib.request.urlopen(r))
+          for s in g("/v1/shops.json"):
+              print("SHOP",s["id"],s["title"],s["sales_channel"])
+              try: d=g(f"/v1/shops/{s['id']}/orders.json?limit=15")
+              except Exception as e: print("  err",e); continue
+              for o in d.get("data",[]):
+                  print(" ORDER",o["id"],o.get("created_at","")[:16],o.get("status"),"label:",o.get("address_to",{}).get("first_name"),"items:",[ (i.get("metadata",{}).get("title"),i.get("status"),i.get("quantity")) for i in o.get("line_items",[])])
+                  for sh in o.get("shipments",[]): print("   SHIP",sh.get("carrier"),sh.get("number"),sh.get("delivered_at"),sh.get("url"))
+          P
