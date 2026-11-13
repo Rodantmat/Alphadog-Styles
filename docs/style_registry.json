@@ -61,23 +61,6 @@
   ]
  },
  {
-  "date": "2026-11-18",
-  "type": "d3b",
-  "name": "d3b_scenery_aurora",
-  "bg": "bg_012 aurora, bg_064 watercolor, bg_161 bokeh, bg_256 ripples, bg_152 nebula, bg_094 wood, bg_050 topo, bg_238 liquid",
-  "music": "m180",
-  "merch": [
-   "tee/german_shepherd/5CR",
-   "tee/boxer/2NV",
-   "tee/french_bulldog/1PK_back",
-   "tee/rottweiler/5AS",
-   "tee/dachshund/3LB_back",
-   "tee/great_dane/2BK",
-   "tee/pembroke_welsh_corgi/5WH",
-   "tee/labrador_retriever/1HE_back"
-  ]
- },
- {
   "date": "2026-11-19",
   "type": "laugh2",
   "name": "laugh02_watchdog_v1",
@@ -129,6 +112,44 @@
   "type": "d1",
   "bg_ids": [
    "pg_citrus_orchard_puresky_2.jpg"
+  ]
+ },
+ {
+  "date": "2026-11-18",
+  "model": "d3",
+  "breeds": [
+   "boxer",
+   "miniature_schnauzer",
+   "shiba_inu",
+   "golden_retriever",
+   "cane_corso",
+   "german_shorthaired_pointer",
+   "siberian_husky",
+   "bulldog"
+  ],
+  "merch": [
+   "tee/boxer/5HE",
+   "tee/miniature_schnauzer/6PK",
+   "tee/shiba_inu/5CR",
+   "tee/golden_retriever/3NV",
+   "tee/cane_corso/4LB_back",
+   "tee/german_shorthaired_pointer/5WH",
+   "tee/siberian_husky/2RD",
+   "tee/bulldog/1FO_back"
+  ],
+  "music": "mx664",
+  "joke": "",
+  "name": "d3c_scenery_tees",
+  "type": "d3",
+  "bg_ids": [
+   "pg_alte_veste_station_2.jpg",
+   "pg_the_sky_is_on_fire_2.jpg",
+   "pg_red_wall_0.jpg",
+   "pg_qwantani_sunset_0.jpg",
+   "pg_preller_drive_0.jpg",
+   "pg_the_sky_is_on_fire_3.jpg",
+   "pg_tiber_2_0.jpg",
+   "pg_snowy_park_01_1.jpg"
   ]
  }
 ]

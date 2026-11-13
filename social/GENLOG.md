@@ -57,3 +57,5 @@
 2026-11-13T18:35Z checker run started
 2026-11-13T18:39Z checker: Fri Nov 13 9:00 PT slot A (d1b_drooling_ride, due 17:00Z) re-verified: IG 6af0d9039214322f68753b7b sent, TikTok 6af0d904d6bbae6fa10cc003 sent, FB 6af0d90a562f2e6de9dd8156 sent, Pinterest 6af74e355bbd7cc6dbc48956 sent (17:53Z, forced repost by earlier run). Nothing missed, nothing forced. Future scheduled untouched. Result OK.
 2026-11-13T22:49:16Z generator run started
+2026-11-13T22:52:35Z restore OK: music 1084, bg 6026, trans 107, trans2 ok
+2026-11-13T23:00:39Z BUILT Nov 18 A d3c_scenery_tees (8 real scenery photos via bgmatch, 8 distinct tees, 3 views, 0.7s crossfades, mx664 Chill; variation check OK, contact sheet reviewed) replacing skipped procedural d3b (fix at source: new engine/vidD3c.py). Next: Nov 21 A+B.
