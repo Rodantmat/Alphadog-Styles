@@ -150,7 +150,7 @@
     "music": "mx581",
     "note": "replaces c08 (banned breeds, Tee B Light Blue repeat)"
    },
-   "status": "A laugh01_hotdog scheduled on all 4 apps (Nov 16 17:00Z); B b16 pending  | B c13 built 2026-11-12 (rebuild of c08), needs scheduling"
+   "status": "A laugh01_hotdog + B c13 scheduled on all 4 apps (B due Nov 17 04:00Z, 2026-11-13 run)"
   },
   {
    "date": "2026-11-17",
@@ -169,7 +169,7 @@
     "music": "mx526",
     "note": "replaces c09 (banned breeds)"
    },
-   "status": "A d1d_collie_waiting built 2026-11-12 (replaces skipped d4b), needs scheduling | B c14 built 2026-11-12 (replaces c09), needs scheduling"
+   "status": "A d1d_collie_waiting (Nov 17 17:00Z) + B c14 (Nov 18 04:00Z) scheduled on all 4 apps (2026-11-13 run)"
   },
   {
    "date": "2026-11-18",
@@ -187,7 +187,7 @@
     "music": "mx858",
     "note": "replaces c10 (banned breeds)"
    },
-   "status": "built (A d3b + B b18 re-themed) | B c15 built 2026-11-12 (replaces c10), needs scheduling"
+   "status": "A d3b_scenery_aurora SKIPPED (tee Ash back-to-back with d1d tee 2AS; 8 tees NV+BK share colour family, 3 views rule; generator must rebuild) | B c15 scheduled on all 4 apps (due Nov 19 04:00Z)"
   },
   {
    "date": "2026-11-19",
