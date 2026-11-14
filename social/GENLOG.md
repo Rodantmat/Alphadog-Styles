@@ -63,3 +63,4 @@
 2026-11-14T04:36Z checker run started
 2026-11-14T04:38Z checker: Fri Nov 13 20:00 PT slot B (due 2026-11-14T04:00Z, 'POV: your dog has merch') listed acct1+2 (runs 43557499601/43557506067): IG 6af3d661d9a6812579c77c8f sent, TikTok 6af3d661ffe2872794eab8df sent, FB 6af3d65961555afe9ef22626 sent, Pinterest 6af3d65affe2872794eab798 sent. No failed/stuck/missed; nothing forced; future scheduled items (Nov 14 18:00Z, Nov 15 04:00Z+) untouched. Result OK.
 2026-11-14T17:35:28Z checker run started
+2026-11-14T17:38:30Z checker: run fired 17:35Z (9:35 PT Sat) BEFORE Sat Post A slot (due 18:00Z, 'Neon husky energy'); listed acct1+2 (runs 43621986397/43621994360): all 4 apps have it scheduled for 18:00Z, all earlier due posts (Nov 13 A+B, Nov 14 04:00Z B) sent on IG/TT/FB/Pin. Nothing failed/missed, nothing forced. Result OK (Sat A not yet due; next checker 10:34 PT should confirm).
