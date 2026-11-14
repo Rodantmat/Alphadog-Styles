@@ -72,6 +72,16 @@ def bullets(L, P):
          "PERFECT GIFT for dog moms, dog dads and every dog lover. Durable print made to last"]
     return [x[:255] for x in b]
 
+def amazon_title(pk, br):
+    """<=200 chars, the word 'dog' at most twice (Amazon rejects more: error 100470)"""
+    full = ", ".join(M.BR[b] for b in br); short = ", ".join(M.short(b) for b in br); noun = NOUN_SHORT[pk]
+    tails = [" - Line Art & Geometric Design, Dog Lover Gift", " - Line Art Design, Dog Lover Gift", " - Dog Lover Gift", ""]
+    for names in (full, short):
+        for tail in tails:
+            t = f"AlphaDog Styles {names} {noun}{tail}"
+            if len(t) <= 200 and len(re.findall(r"\bdog\b", t, re.I)) <= 2: return t
+    return f"AlphaDog Styles {short} {noun}"[:200]
+
 def build():
     plan = M.build()   # re-derive the base tables (products, designs, colors); amazon listings are built below
     out = []
@@ -81,7 +91,7 @@ def build():
             nD, nC = M.fill("amazon", pk, len(br)); fam = M.famname(br)
             L = {"id": f"amazon-{pk}-{i+1:02d}", "plat": "amazon", "prod": pk, "breeds": br, "family": fam,
                  "designs": [d[0] for d in P["designs"][:nD]], "colors": [c[0] for c in P["colors"][:nC]], "sizes": P["sizes"]}
-            L["title"] = ("AlphaDog Styles " + M.title("tiktok", pk, br, fam))[:200]
+            L["title"] = amazon_title(pk, br)
             kids = []
             for b in br:
                 for dc in L["designs"]:
