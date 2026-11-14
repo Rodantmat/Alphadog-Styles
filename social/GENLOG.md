@@ -67,3 +67,5 @@
 2026-11-14 18:35 UTC checker run started
 2026-11-14T18:38Z checker: Sat Nov 14 10:00 PT slot A ('Neon husky energy', due 2026-11-14T18:00Z) listed acct1+2 (runs 43627510588/43627512747): IG 6af22b426e772a59941cc52f sent, TikTok 6af22b42f931818db2dd6b84 sent, FB 6af22b44391eeaff3325978f sent, Pinterest 6af22b45398ae91929ad5dc3 sent. All earlier due posts sent on all 4 apps. No failed/stuck/missed; nothing forced; future scheduled items (Nov 15 04:00Z onward) untouched. Result OK.
 2026-11-14T22:49:20Z generator run started
+2026-11-14T22:52:21Z generator: restore OK (music 1084, bg 6026, trans 107, merch_lib 5159); building Nov 22 A (d4) + B (c19)
+2026-11-14T23:03:15Z BUILT Nov 22 A d4c_doberman_line_art (2BK/4LB_back/3SA_back hoodies, mx702 Electronic&House, real bgs, check OK, contact sheet reviewed) + B c19 (mx635 Funk&Disco, 8 shots reviewed, transitions 0.8s). REPORT: lead 8 days A+B built Nov 15-22; fixed vidA4 (real bg, 0.75s transitions, zoom ghost bug). Open: c19 shares breeds (not cutouts) with c16 (pool limit V14); c04-c07 banned breeds, c14-c17 transitions unverified; Nov 18-22 need Buffer scheduling. FINISH OK

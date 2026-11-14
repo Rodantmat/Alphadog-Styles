@@ -181,5 +181,27 @@
   "bg_ids": [
    "pg_altanka_1.jpg"
   ]
+ },
+ {
+  "date": "2026-11-22",
+  "model": "d4",
+  "breeds": [
+   "doberman_pinscher"
+  ],
+  "merch": [
+   "hoodie/doberman_pinscher/2BK",
+   "hoodie/doberman_pinscher/4LB_back",
+   "hoodie/doberman_pinscher/3SA_back"
+  ],
+  "music": "mx702",
+  "joke": "",
+  "name": "d4c_doberman_line_art",
+  "type": "d4",
+  "bg_ids": [
+   "pt_plastered_wall_02_1.jpg",
+   "pa_Snow014.jpg",
+   "pt_patterned_terracotta_tiling_1.jpg",
+   "pt_rubber_tiles_1.jpg"
+  ]
  }
 ]

@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100623@6ae575a0_Dark Heather",
+   "raw": "100623",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Dark Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_syferfontein_0d_clear_puresky_0.jpg",
+   "bgname": "Syferfontein 0d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.7
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "102045@6ae6cb0a_Soft Cream",
+   "raw": "102045",
+   "breed": "Beagle",
+   "colour": "Soft Cream",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_beige_wall_002_0.jpg",
+   "bgname": "Beige Wall 002",
+   "fam": "texture:wall:0",
+   "ratio": 4.0
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100617@6ae57825_Charcoal",
+   "raw": "100617",
+   "breed": "Boxer",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_quarry_01_puresky_0.jpg",
+   "bgname": "Quarry 01 (Pure Sky)",
+   "fam": "hdri:outdoor:1",
+   "ratio": 5.4
+  },
+  {
+   "i": 3,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a22a_White",
+   "raw": "109494",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_slab_tiles_1.jpg",
+   "bgname": "Slab Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 8.7
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102058@6ae6cb6f_Sand Dune",
+   "raw": "102058",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_blue_photo_studio_2.jpg",
+   "bgname": "Blue Photo Studio",
+   "fam": "hdri:studio:3",
+   "ratio": 5.9
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a4f1_Khaki",
+   "raw": "135042",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Khaki",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_rock_wall_16_1.jpg",
+   "bgname": "Rock Wall 16",
+   "fam": "texture:wall:0",
+   "ratio": 5.6
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102061@6aed2f21_Maroon",
+   "raw": "102061",
+   "breed": "Miniature Schnauzer",
+   "colour": "Maroon",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_rosendal_park_sunset_puresky_1.jpg",
+   "bgname": "Rosendal Park Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.1
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "97993@6ae578bb_Ice Grey",
+   "raw": "97993",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Ice Grey",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_dark_rock_02_1.jpg",
+   "bgname": "Dark Rock 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 8.3
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.25541950113379003,
+ "shot_len": 1.0216780045351472,
+ "variant": "v2"
+}

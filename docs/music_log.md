@@ -61,3 +61,5 @@
 - 2026-11-18 Post A Nov 18 9am PT (d3c_scenery_tees): mx664.mp3 "Pop One" - Francisco Alvear [Chill & Lo-fi, style d3]
 - 2026-11-21 Post B Nov 21 8pm PT (c18): mx766.mp3 "Lo-Fi 04" - Lily J [Chill & Lo-fi, style postB]
 - 2026-11-21 Post A Nov 21 10am PT (d2b_shades_vs_ours): mx487.mp3 "Peace" - Diego Nava [Pop & Party, style d2]
+- 2026-11-22 d4c_doberman_line_art A: mx702.mp3 "Pop 09" - Grigoriy Nuzhny [Electronic & House, style d4]
+- 2026-11-22 c19 B: mx635.mp3 "Adone" - Eugenio Mininni [Funk & Disco, style postB]

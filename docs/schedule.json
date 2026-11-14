@@ -244,6 +244,24 @@
     "music": "mx766"
    },
    "status": "built | A d2b + B c18 built 2026-11-13, need scheduling"
+  },
+  {
+   "date": "2026-11-22",
+   "weekday": "Sun",
+   "A": {
+    "video": "social/videos/d4c_doberman_line_art.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Electronic & House",
+    "music": "mx702"
+   },
+   "B": {
+    "id": "c19",
+    "reel": "out/postc/c19/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Funk & Disco",
+    "music": "mx635"
+   },
+   "status": "built | A d4c + B c19 built 2026-11-14, need scheduling"
   }
  ]
 }

@@ -11,6 +11,7 @@ FB='/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf'; FM='/usr/share/fon
 cfg=json.load(open(sys.argv[1]))
 def font(s,f=FB): return ImageFont.truetype(f,s)
 def bg(i):
+    if isinstance(i,str): return Image.open(R+'out/bg/'+i).convert('RGB').resize((W,H))   # real photo (bgmatch id)
     f=glob.glob(R+f'out/backgrounds/bg_{i:03d}_*.jpg')[0]; return Image.open(f).convert('RGB').resize((W,H))
 def pill(txt,size,logo=True,fill=(18,20,26,215)):
     f=font(size); d0=ImageDraw.Draw(Image.new('L',(1,1))); tw=int(d0.textlength(txt,font=f))+(size+18 if logo else 0)
@@ -81,7 +82,7 @@ def merch_frame(sc,t,cta=None):
         d2.rounded_rectangle([0,0,c.width-1,c.height-1],radius=c.height//2,fill=(255,255,255,240)); d2.text((c.width//2,c.height//2),cta,font=font(36),fill=(20,20,26,255),anchor='mm'); im=paste_c(im,c2,1250,1)
     return im
 def arr_bgr(im): return np.array(im.convert('RGB'))[:,:,::-1]
-sc=cfg['scenes']; DUR=cfg.get('dur',[36,36,60]); X=8
+sc=cfg['scenes']; DUR=cfg.get('dur',[48,48,66]); X=18
 out_sil='/tmp/s/_a4_silent.mp4'
 p=subprocess.Popen(['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','bgr24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-c:v','libx264','-preset','veryfast','-crf','17','-pix_fmt','yuv420p',out_sil],stdin=subprocess.PIPE)
 nd=DR+24; last=None
@@ -92,9 +93,9 @@ for si,s_ in enumerate(sc):
         fr=arr_bgr(merch_frame(s_,f/24.,cfg['cta'] if (fin and f>=14) else None))
         if f<X: a=(f+1)/(X+1); fr=cv2.addWeighted(last,1-a,fr,a,0)
         p.stdin.write(fr.tobytes())
-    last=arr_bgr(merch_frame(s_,99,cfg['cta'] if fin else None))
+    last=arr_bgr(merch_frame(s_,(DUR[si]-1)/24.,cfg['cta'] if fin else None))
 p.stdin.close(); p.wait()
 T=(nd+sum(DUR))/FPS
-subprocess.run(['ffmpeg','-y','-v','error','-i',out_sil,'-ss',str(cfg.get('ss',0)),'-i',R+'out/music2/'+cfg['music'],
+subprocess.run(['ffmpeg','-y','-v','error','-i',out_sil,'-ss',str(cfg.get('ss',0)),'-i',(R+'out/musiclib/clips/'+cfg['music'] if cfg['music'].startswith('mx') else R+'out/music2/'+cfg['music']),
  '-filter_complex',f'[1:a]atrim=0:{T:.2f},afade=t=in:d=0.4,afade=t=out:st={T-1.2:.2f}:d=1.2,volume=0.7[a]','-map','0:v','-map','[a]','-c:v','copy','-c:a','aac','-b:a','160k','-t',f'{T:.2f}','-movflags','+faststart',R+cfg['out']],check=True)
 print('BUILT',cfg['out'],T)
