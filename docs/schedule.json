@@ -188,7 +188,7 @@
     "music": "mx858",
     "note": "replaces c10 (banned breeds)"
    },
-   "status": "built | A d3c_scenery_tees built 2026-11-13 (replaces skipped d3b; real scenery photos), needs scheduling; B c15 built (needs scheduling)"
+   "status": "A d3c (Nov 18 17:00Z) + B c15 (Nov 19 04:00Z) scheduled on all 4 apps (2026-11-14 run)"
   },
   {
    "date": "2026-11-19",
@@ -206,7 +206,7 @@
     "music": "mx522",
     "note": "replaces c11 (banned breeds)"
    },
-   "status": "built | B c16 built 2026-11-12 (replaces c11), needs scheduling"
+   "status": "B c16 (Nov 20 04:00Z) scheduled on all 4 apps (2026-11-14 run); A laugh02_watchdog_v1 SKIPPED: tee Pink (3PK) back-to-back with d3c tee 6PK; also built Nov 10 with older registry data - generator must rebuild with new joke/colour"
   },
   {
    "date": "2026-11-20",
