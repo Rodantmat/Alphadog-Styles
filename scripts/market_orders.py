@@ -40,6 +40,40 @@ def ebay_poll():
         res=E.store("POST","/api/internal/market/order",{"plat":"ebay","ext_id":o["orderId"],"email":st.get("email",""),"ship":ship,"items":[{"sku":x["sku"],"qty":x.get("quantity",1),"title":(x.get("title") or "")[:80]} for x in ours],"total":cents})
         print("ebay order",o["orderId"],res); n+=0 if res.get("dup") else 1
     return n
+
+# ---------------- Amazon (SP-API Orders v0): merchant-fulfilled, unshipped orders whose SKUs are ours -> store bridge; tracking pushed back with shipmentConfirmation ----------------
+def _amz():
+    import amazon_sp as A
+    if not (os.environ.get("AMZ_CLIENT") and os.environ.get("AMZ_SECRET") and os.environ.get("AMZ_REFRESH_TOKEN")): return None,None
+    return A,{"CLIENT_ID":os.environ["AMZ_CLIENT"].strip(),"CLIENT_SECRET":os.environ["AMZ_SECRET"].strip(),"REFRESH_TOKEN":os.environ["AMZ_REFRESH_TOKEN"].strip()}
+def amazon_poll():
+    A,c=_amz()
+    if not A: print("amazon: no keys yet"); return 0
+    import datetime as dt, etsy_api as E
+    since=(dt.datetime.utcnow()-dt.timedelta(days=14)).strftime("%Y-%m-%dT%H:%M:%SZ"); n=0
+    r=A.call(c,"GET","/orders/v0/orders",{"MarketplaceIds":A.MARKETPLACE,"LastUpdatedAfter":since,"FulfillmentChannels":"MFN","OrderStatuses":"Unshipped"})
+    for o in (r.get("payload") or {}).get("Orders",[]):
+        oid=o["AmazonOrderId"]
+        its=(A.call(c,"GET",f"/orders/v0/orders/{oid}/orderItems").get("payload") or {}).get("OrderItems",[])
+        ours=[x for x in its if SKU.match((x.get("SellerSKU") or "").upper())]
+        if not ours: continue
+        ad=(A.call(c,"GET",f"/orders/v0/orders/{oid}/address").get("payload") or {}).get("ShippingAddress") or {}
+        if not ad.get("AddressLine1"): print("amazon order",oid,"has no shipping address yet - skipped"); continue
+        ship={"name":ad.get("Name",""),"a1":ad.get("AddressLine1",""),"a2":ad.get("AddressLine2") or "","city":ad.get("City",""),"st":ad.get("StateOrRegion",""),"zip":ad.get("PostalCode",""),"phone":ad.get("Phone") or "","country":ad.get("CountryCode") or "US"}
+        cents=int(round(float((o.get("OrderTotal") or {}).get("Amount") or 0)*100))
+        res=E.store("POST","/api/internal/market/order",{"plat":"amazon","ext_id":oid,"email":"","ship":ship,"items":[{"sku":x["SellerSKU"],"qty":int(x.get("QuantityOrdered",1)),"title":(x.get("Title") or "")[:80]} for x in ours],"total":cents})
+        print("amazon order",oid,res); n+=0 if res.get("dup") else 1
+    return n
+def amazon_tracking(ext,carrier,number):
+    A,c=_amz()
+    if not A: return "amazon: no keys"
+    import datetime as dt
+    its=(A.call(c,"GET",f"/orders/v0/orders/{ext}/orderItems").get("payload") or {}).get("OrderItems",[])
+    code=next((v for k,v in {"usps":"USPS","ups":"UPS","fedex":"FedEx","dhl":"DHL"}.items() if k in (carrier or "").lower()),"Other")
+    body={"marketplaceId":A.MARKETPLACE,"packageDetail":{"packageReferenceId":"1","carrierCode":code,"trackingNumber":number,"shipDate":dt.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
+          "orderItems":[{"orderItemId":x["OrderItemId"],"quantity":int(x.get("QuantityOrdered",1))} for x in its]}}
+    if code=="Other": body["packageDetail"]["carrierName"]=carrier or "Other"
+    A.call(c,"POST",f"/orders/v0/orders/{ext}/shipmentConfirmation",body=body); return "amazon shipment confirmed"
 CARRIER={"usps":"usps","ups":"ups","fedex":"fedex","dhl":"dhl"}
 def push_tracking(plat,ext,carrier,number):
     if not number: return "no tracking number yet"
@@ -50,6 +84,7 @@ def push_tracking(plat,ext,carrier,number):
     if plat=="ebay":
         import ebay_api as EB
         r=EB.add_tracking(ext,carrier,number); return r
+    if plat=="amazon": return amazon_tracking(ext,carrier,number)
     return f"{plat}: tracking push not available yet"
 
 # ---------------- eBay / TikTok sale emails (forwarded from the seller Gmail to orders@alphadogstyles.com) ----------------
@@ -188,6 +223,9 @@ if __name__=="__main__":
     try: n+=ebay_poll()
     except SystemExit as e: print(e)
     except Exception as e: print("ebay poll error",e)
+    try: n+=amazon_poll()
+    except SystemExit as e: print(e)
+    except Exception as e: print("amazon poll error",e)
     try: n+=mail_poll()
     except Exception as e: print("mail poll error",e)
     try: n+=gmail_poll()

@@ -20,6 +20,9 @@ jobs:
           ETSY_KEYSTRING: ${{ secrets.ETSY_KEYSTRING }}
           ETSY_SHARED_SECRET: ${{ secrets.ETSY_SHARED_SECRET }}
           FLIPPING_GMAIL_APP_PASSWORD: ${{ secrets.FLIPPING_GMAIL_APP_PASSWORD }}
+          AMZ_CLIENT: ${{ secrets.AMZ_CLIENT }}
+          AMZ_SECRET: ${{ secrets.AMZ_SECRET }}
+          AMZ_REFRESH_TOKEN: ${{ secrets.AMZ_REFRESH_TOKEN }}
         run: python3 scripts/market_orders.py || true
       - name: Fulfil paid orders and update tracking
         env:
@@ -32,4 +35,7 @@ jobs:
           PRINTIFY_API_SHOP_ID: "29559517"
           STORE_URL: "https://alphadogstyles.com"
           STORE_ADMIN_TOKEN: ${{ secrets.STORE_ADMIN_TOKEN }}
+          AMZ_CLIENT: ${{ secrets.AMZ_CLIENT }}
+          AMZ_SECRET: ${{ secrets.AMZ_SECRET }}
+          AMZ_REFRESH_TOKEN: ${{ secrets.AMZ_REFRESH_TOKEN }}
         run: python3 scripts/store_fulfill.py
