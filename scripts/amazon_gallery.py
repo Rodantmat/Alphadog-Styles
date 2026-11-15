@@ -58,7 +58,7 @@ for DC in DCS:
         with ThreadPoolExecutor(8 if ps == 0 else 3) as ex:
             for key, res in ex.map(work, todo): out[f"{key[1]}|{key[2]}"] = res
         todo = [k for k in keys if out[f"{k[1]}|{k[2]}"]["main"] != "ok" and out[f"{k[1]}|{k[2]}"]["pid"] or any(g != "ok" for g in out[f"{k[1]}|{k[2]}"]["g"]) or len(out[f"{k[1]}|{k[2]}"]["g"]) < 8 and out[f"{k[1]}|{k[2]}"]["pid"]]
-        print("  pass", ps + 1, "still incomplete:", len(todo), flush=True)
+        print("  pass", ps + 1, "still incomplete:", len(todo), file=sys.stderr, flush=True)
         if not todo: break
         time.sleep(20)
     for res in out.values():
