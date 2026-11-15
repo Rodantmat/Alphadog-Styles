@@ -134,7 +134,7 @@ for n in range(N):
 pr.stdin.close();pr.wait()
 # audio
 name=J['name'];out=R+f'out/laugh/{name}.mp4'
-L=R+'out/sfx/'+J.get('laugh','424')+'.mp3';M=R+'out/music2/'+J['music']
+L=R+'out/sfx/'+J.get('laugh','424')+'.mp3';M=(R+'out/musiclib/clips/'+J['music']) if os.path.exists(R+'out/musiclib/clips/'+J['music']) else R+'out/music2/'+J['music']
 dl=int(T_LAUGH*1000)
 subprocess.run(['ffmpeg','-y','-v','error','-i',R+'out/laugh/_v.mp4','-i',M,'-i',L,'-filter_complex',
  f'[1:a]atrim=0:{T_TOT},afade=t=in:d=0.6,afade=t=out:st={T_TOT-1.2}:d=1.2,volume=0.28[m];[2:a]atrim=start={J.get('trim',0.4)}:end={LAUGH+0.9},asetpts=PTS-STARTPTS,volume=1.9,adelay={dl}|{dl}[l];[m][l]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.95[a]',

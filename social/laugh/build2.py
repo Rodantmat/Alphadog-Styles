@@ -41,7 +41,7 @@ def rmask(w,h,r):
     return cv2.GaussianBlur(m,(0,0),0.8).astype(np.float32)/255
 SM=rmask(SQ,SQ,40);BW=10;SMi=rmask(SQ-2*BW,SQ-2*BW,32)
 import bgs
-bg=(bgs.make(J['bgstyle'],J.get('seed',5),*J['bgcols']) if 'bgstyle' in J else funny.paws(seed=J.get('seed',5),**J.get('pal',{}))).astype(np.float32)
+bg=(cv2.cvtColor(cv2.resize(cv2.imread(R+'out/bg/'+J['bgphoto']),(W,H),interpolation=cv2.INTER_AREA),cv2.COLOR_BGR2RGB).astype(np.float32)*J.get('bgdim',0.8) if 'bgphoto' in J else bgs.make(J['bgstyle'],J.get('seed',5),*J['bgcols']) if 'bgstyle' in J else funny.paws(seed=J.get('seed',5),**J.get('pal',{}))).astype(np.float32)
 POS=[(CX-SQ-GAP//2,560),(CX+GAP//2,560)]
 def sm(x): x=min(max(x,0),1);return x*x*(3-2*x)
 def bounce(t):
@@ -85,7 +85,7 @@ def shadow(im,blur=22,off=16,op=0.45):
     s.paste(sh,(60,60+off),sh);s=s.filter(ImageFilter.GaussianBlur(blur));s.alpha_composite(im,(60,60));return s
 # merch
 MERCH=[]
-POSM=[(300,650,430,-6),(700,660,430,5),(700,1110,420,-4),(300,1100,430,4),(500,880,400,2)]
+POSM=[(300,650,430,-6),(700,660,430,5),(700,1110,420,-4),(270,1110,430,4),(530,860,340,2)]
 sys.path.insert(0,R+'scripts/video');import merch_lib as ML
 def ensure(k):
     o=R+'out/merch_lib/'+k+'.webp'
@@ -132,7 +132,7 @@ for n in range(N):
 pr.stdin.close();pr.wait()
 # audio
 name=J['name'];out=R+f'out/laugh/{name}.mp4'
-L=R+'out/sfx/'+J.get('laugh','424')+'.mp3';M=R+'out/music2/'+J['music']
+L=R+'out/sfx/'+J.get('laugh','424')+'.mp3';M=(R+'out/musiclib/clips/'+J['music']) if os.path.exists(R+'out/musiclib/clips/'+J['music']) else R+'out/music2/'+J['music']
 dl=int(T_LAUGH*1000)
 subprocess.run(['ffmpeg','-y','-v','error','-i',R+'out/laugh/_v.mp4','-i',M,'-i',L,'-filter_complex',
  f'[1:a]atrim=0:{T_TOT},afade=t=in:d=0.6,afade=t=out:st={T_TOT-1.2}:d=1.2,volume=0.28[m];[2:a]atrim=start={J.get('trim',0.4)}:end={LAUGH+0.9},asetpts=PTS-STARTPTS,volume=1.9,adelay={dl}|{dl}[l];[m][l]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.95[a]',

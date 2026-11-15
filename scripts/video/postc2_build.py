@@ -83,6 +83,8 @@ def build(vid,seed,music,variant="v0"):
     for x in [y for y in os.environ.get("C2_EXCLC","").split(",") if y]:
         mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exq|={(m["prod"],m.get("colour")) for m in mm}
     pool=[p for p in pool if (p["prod"],p.get("colour")) not in exq]
+    nocol=set(x for x in os.environ.get("C2_NOCOL","").split(",") if x)               # colours worn in the same-day / neighbouring Post A (owner V1)
+    pool=[p for p in pool if p.get("colour") not in nocol]
     pf=[p for p in pool if p["kind"]=="person" and p["side"]=="front"]; pb=[p for p in pool if p["kind"]=="person" and p["side"]=="back"]
     ub=set(); uc=set(); ur=set()
     def take(cands):                                                                   # distinct breed, colour and person inside the reel

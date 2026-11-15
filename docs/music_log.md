@@ -63,3 +63,6 @@
 - 2026-11-21 Post A Nov 21 10am PT (d2b_shades_vs_ours): mx487.mp3 "Peace" - Diego Nava [Pop & Party, style d2]
 - 2026-11-22 d4c_doberman_line_art A: mx702.mp3 "Pop 09" - Grigoriy Nuzhny [Electronic & House, style d4]
 - 2026-11-22 c19 B: mx635.mp3 "Adone" - Eugenio Mininni [Funk & Disco, style postB]
+- 2026-11-19 laugh02_newyorkie: mx841.mp3 "Tonight" - Michael Ramir C. [Hip-hop & Trap, style laugh2]
+- 2026-11-21 d2c_shades_vs_ours: mx798.mp3 "Francisco" - Michael Ramir C. [Pop & Party, style d2]
+- 2026-11-20 c20: mx1.mp3 "Lullaby" - Ahjay Stelino [Feel-good, style postB]

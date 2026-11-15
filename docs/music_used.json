@@ -418,5 +418,26 @@
   "style": "postB",
   "theme": "Funk & Disco",
   "title": "Adone"
+ },
+ "mx841.mp3": {
+  "date": "2026-11-19",
+  "use": "laugh02_newyorkie",
+  "style": "laugh2",
+  "theme": "Hip-hop & Trap",
+  "title": "Tonight"
+ },
+ "mx798.mp3": {
+  "date": "2026-11-21",
+  "use": "d2c_shades_vs_ours",
+  "style": "d2",
+  "theme": "Pop & Party",
+  "title": "Francisco"
+ },
+ "mx1.mp3": {
+  "date": "2026-11-20",
+  "use": "c20",
+  "style": "postB",
+  "theme": "Feel-good",
+  "title": "Lullaby"
  }
 }

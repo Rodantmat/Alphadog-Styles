@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100618@6ae59114_Forest Green",
+   "raw": "100618",
+   "breed": "Boston Terrier",
+   "colour": "Forest Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_rustig_koppie_puresky_1.jpg",
+   "bgname": "Rustig Koppie (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.2
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98424@6ae59915_Ash",
+   "raw": "98424",
+   "breed": "Chihuahua",
+   "colour": "Ash",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_moon_meteor_02_0.jpg",
+   "bgname": "Moon Meteor 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.2
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102062@6ae6ccbf_Natural",
+   "raw": "102062",
+   "breed": "Doberman Pinscher",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_shanghai_bund_1.jpg",
+   "bgname": "Shanghai Bund",
+   "fam": "hdri:outdoor:4",
+   "ratio": 4.8
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "97992@6ae57d94_Military Green",
+   "raw": "97992",
+   "breed": "German Shepherd",
+   "colour": "Military Green",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Porcelain001.jpg",
+   "bgname": "Porcelain 001",
+   "fam": "texture:x:0",
+   "ratio": 6.2
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cb3c_Soft Pink",
+   "raw": "102054",
+   "breed": "Rottweiler",
+   "colour": "Soft Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_venetian_crossroads_3.jpg",
+   "bgname": "Venetian Crossroads",
+   "fam": "hdri:outdoor:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 5,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae79fab_White",
+   "raw": "109494",
+   "breed": "Dachshund",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_weathered_planks_1.jpg",
+   "bgname": "Weathered Planks",
+   "fam": "texture:outdoor:0",
+   "ratio": 7.3
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "98429@6ae57de0_White",
+   "raw": "98429",
+   "breed": "Standard Poodle",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_kloofendal_28d_misty_puresky_2.jpg",
+   "bgname": "Kloofendal 28d Misty (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.0
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102044@6aed2ee9_Forest",
+   "raw": "102044",
+   "breed": "English Bulldog",
+   "colour": "Forest",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pa_Metal048A.jpg",
+   "bgname": "Metal 048 A",
+   "fam": "texture:x:0",
+   "ratio": 7.9
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.4411791383219952,
+ "shot_len": 0.6733786848072563,
+ "variant": "v2"
+}
