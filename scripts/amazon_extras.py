@@ -46,13 +46,15 @@ json.dump(out, open(f"{ROOT}/store/data/amazon_extras.json", "w"), indent=0)
 # detail crops of the print itself (front emblem / back design), taken from the SAME rendered mockups
 import numpy as np
 from scipy import ndimage as ndi
-def detail(path, min_frac=0.22):
+def detail(path, min_frac=0.22, skip_top=0.0):
     im = Image.open(path).convert("RGB"); a = np.asarray(im).astype(int)
     garment = (255 - a.min(axis=2)) > 12                               # everything that is not the white backdrop
     garment = ndi.binary_fill_holes(garment); inner = ndi.binary_erosion(garment, iterations=45)
     ys, xs = np.where(inner)
     if len(xs) < 5000: return None
-    med = np.median(a[inner], axis=0); dev = np.abs(a - med).max(axis=2)
+    gy = np.where(inner)[0]; top = gy.min() + skip_top * (gy.max() - gy.min())
+    inner[: int(top)] = False                                           # front view: skip the collar / neck label so only the emblem is cropped
+    med = np.median(a[ndi.binary_erosion(garment, iterations=45)], axis=0); dev = np.abs(a - med).max(axis=2)
     pm = (dev > 38) & inner; pm = ndi.binary_opening(pm, iterations=1)
     ys, xs = np.where(pm)
     if len(xs) < 60: return None
@@ -67,10 +69,10 @@ def detail(path, min_frac=0.22):
 dstat = collections.Counter()
 for key, res in out.items():
     b, cc = key.split("|")
-    for src_s, dst_s, frac in (("", "_z1", 0.22), ("_b", "_z2", 0.45)):
+    for src_s, dst_s, frac, skt in (("", "_z1", 0.22, 0.22), ("_b", "_z2", 0.45, 0.0)):
         sp = f"{OUT}/{PK}/{b}/{DC}{cc}{src_s}.jpg"; dp = f"{OUT}/{PK}/{b}/{DC}{cc}{dst_s}.jpg"
         if not os.path.exists(sp): res[dst_s] = "nosrc"; continue
-        data = detail(sp, frac)
+        data = detail(sp, frac, skt)
         if data is None: res[dst_s] = "none"
         else: open(dp, "wb").write(data); res[dst_s] = "ok"
         dstat[(dst_s, res[dst_s])] += 1
