@@ -225,7 +225,7 @@
     "music": "mx510",
     "note": "replaces c12 (banned breeds)"
    },
-   "status": "built | B c17 built 2026-11-12 (replaces c12), needs scheduling"
+   "status": "A d1c scheduled on all 4 apps (Nov 20 17:00Z, 2026-11-15 run); B c17 SKIPPED: Tee B Light Blue same day as A d1c tee Light Blue, generator must rebuild"
   },
   {
    "date": "2026-11-21",
@@ -243,7 +243,7 @@
     "theme": "Chill & Lo-fi",
     "music": "mx766"
    },
-   "status": "built | A d2b + B c18 built 2026-11-13, need scheduling"
+   "status": "built; A d2b SKIPPED: Sand hoodie (2SA) back-to-back with d1c Sand hoodie (3SA) and with c18 Sand hoodie same day; generator must rebuild"
   },
   {
    "date": "2026-11-22",

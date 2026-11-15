@@ -106,3 +106,10 @@
 2026-11-15T04:38Z checker: Nov 14 20:00 PT slot B (due 2026-11-15T04:00Z, 'Pick your breed') listed acct1+2 (runs 43677491149/43677495833): IG 6af4cdaff75ab77b0ec6f34c sent, TikTok 6af4cdb02f8776bfa37cde6e sent, FB 6af4cda1b933477d282058d7 sent, Pinterest 6af4cda1b459c6001d4c9caa sent. No failed/error/stuck/missed posts; nothing forced; future scheduled items (Nov 15 18:00Z onward) untouched. Result OK.
 2026-11-15T17:39:56Z checker run (pre-slot 9:35 PT Sun): listed Buffer acct1+acct2; last slot Sat B c06 (Nov 15 04:00Z) sent on IG/TikTok/FB/Pinterest; no past-due non-sent posts; Sun A (18:00Z) still future-scheduled on all 4, untouched; nothing forced
 2026-11-15T18:37:33Z checker: Sun Nov 15 10:00 PT slot A ('Which back print is yours?', due 2026-11-15T18:00Z) listed acct1+2 (runs 43747650114/43747652376): IG 6af37cc9e4acfdf0c7065b78 sent, TikTok 6af37cca41bc75bbeb600082 sent, FB 6af37ccaead9c53d41bb325c sent, Pinterest 6af37ccac0addee3a3159144 sent. Nov 15 04:00Z B sent on all 4. No failed/stuck/missed; nothing forced; future scheduled items (Nov 16 04:00Z onward) untouched. Result OK.
+
+## 2026-11-15 (20:30Z) Buffer fill run
+- Listed acct1+2 (runs 43756907506/43756909506; re-list 43757418991/43757416926): every past post `sent` on IG, TikTok, FB, Pinterest through Nov 15 18:00Z (A d7b); no failed/missed, nothing recreated.
+- Tomorrow (Nov 16) A hotdog + B c07 (due Nov 16 04:00Z) / c13 scheduled on all 4 apps; no ALERT.
+- Scheduled via social/planH_20261115_ig_tt.json (acct1) / planH_20261115_fbpin.json (acct2), confirmed on all 4 apps: A d1c_corgi_walkies (Nov 20 17:00Z). Channels now 9/10.
+- Checks: variation.py d1c flags only self-used music (known artefact); pick_music check ok.
+- SKIPPED, generator must fix at source: B c17 (Nov 21 04:00Z) Tee B Light Blue same day as d1c Light Blue tee; A d2b (Nov 21) Sand hoodie back-to-back with d1c Sand hoodie and same-day c18 Sand hoodie; A laugh02_watchdog_v1 (Nov 19) still unfixed (Pink tee back-to-back with d3c) - Nov 19 morning has NO Post A scheduled. Minor: d1c and d3c both Light Blue back-print tees (2 days apart). Old white-mockup B not scheduled.
