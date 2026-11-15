@@ -6,7 +6,8 @@ import market_plan as M
 ROOT = M.ROOT
 PK = "tee"; DC = os.environ.get("LDC", "1")
 LIST = {"1": dict(id="pilot-tee-1", out="amazon_pilot.json", gal="amazon_gallery.json", psku="AMZ-P-tee-d1", art="Line Art", artd="Minimalist continuous line art", pk="minimalist line art"),
-        "4": dict(id="listing-tee-4", out="amazon_listing_tee4.json", gal="amazon_gallery_d4.json", psku="AMZ-P-tee-d4", art="Geometric Art", artd="Bold geometric faceted illustration", pk="geometric art")}[DC]
+        "4": dict(id="listing-tee-4", out="amazon_listing_tee4.json", gal="amazon_gallery_d4.json", psku="AMZ-P-tee-d4", art="Geometric Art", artd="Bold geometric faceted illustration", pk="geometric art"),
+        "3": dict(id="listing-tee-3", out="amazon_listing_tee3.json", gal="amazon_gallery_d3.json", psku="AMZ-P-tee-d3", art="Line Art Heart", artd="Minimalist continuous line art with a heart", pk="line art with a heart")}[DC]
 COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]
 plan = M.build(); PP = plan["products"][PK]; C = {c["code"]: c for c in PP["colors"]}
 EX = json.load(open(f"{ROOT}/store/data/amazon_extras.json")); GAL = json.load(open(f"{ROOT}/store/data/{LIST['gal']}"))
