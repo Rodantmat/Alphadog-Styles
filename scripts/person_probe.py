@@ -9,7 +9,7 @@ picks=[("french_bulldog|NV","Tee A"),("french_bulldog|WH","Tee B")]
 COL={"french_bulldog|NV":"Navy","french_bulldog|WH":"White"}
 def vid(r,key):
     for v,l in r["variants"].items():
-        if l.split(" / ")[-1].strip()==COL[key]: return str(v)
+        if COL[key] in [x.strip() for x in l.split(" / ")] : return str(v)
 def get(u):
     try:
         b=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=60).read(); return Image.open(io.BytesIO(b)).convert("RGB")
