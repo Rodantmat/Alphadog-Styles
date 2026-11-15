@@ -7,7 +7,8 @@ sys.argv = sys.argv[:1]
 exec(src)
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
-PK, DC, COLORS = "tee", "1", ["WH", "BK", "NV", "AS"]
+PK, DC = "tee", "1"
+COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]      # every tee colour that has real Printify photos for all 33 breeds
 D = {d["code"]: d for d in plan["products"][PK]["designs"]}; C = {c["code"]: c for c in plan["products"][PK]["colors"]}
 def product(b, cc):
     d = D[DC]; c = C[cc]; want = {norm(c["name"]), norm(c.get("color", c["name"]))}
@@ -21,7 +22,7 @@ def product(b, cc):
                     for im in r["imgs"]:
                         if im["cam"] == cam and img_color_ok(im, r, want): return im["src"]
             f = pick(("front", "front-2"))
-            if f: return r["pid"], r["title"], {"": f, "_b": pick(("back", "back-2")), "_c": pick(("front-collar-closeup",))}
+            if f: return r["pid"], r["title"], {"": f, "_b": pick(("back", "back-2")), "_c": pick(("front-collar-closeup",)), "_f": pick(("folded",)), "_h": pick(("hanging-1", "hanging-2")), "_s": pick(("size-chart",))}
     return None, None, {}
 def work(key):
     b, cc = key; pid, title, ims = product(b, cc); res = {"pid": pid, "title": title}
@@ -39,13 +40,22 @@ out = {}; st = collections.Counter()
 with ThreadPoolExecutor(12) as ex:
     for key, res in ex.map(work, keys):
         out[f"{key[0]}|{key[1]}"] = res
-        for k in ("main", "_b", "_c"): st[(k, res.get(k))] += 1
+        for k in ("main", "_b", "_c", "_f", "_h", "_s"): st[(k, res.get(k))] += 1
 print("pilot images:", dict(st))
 json.dump(out, open(f"{ROOT}/store/data/amazon_extras.json", "w"), indent=0)
-# contact sheet: breed rows, main/back/collar for WH and BK
-rows = [b for b in M.BR]; TH = 140; sheet = Image.new("RGB", (TH * 12 + 10, TH * len(rows)), (230, 230, 230))
+# contact sheets: sheet 1 = main+back for every breed x colour; sheet 2 = every extra view for 3 breeds
+rows = list(M.BR); TH = 110; cols = [(c, s_) for c in COLORS for s_ in ("", "_b")]
+sheet = Image.new("RGB", (TH * len(cols), TH * len(rows)), (230, 230, 230))
 for i, b in enumerate(rows):
-    for j, (cc, suf) in enumerate([(c, s) for c in COLORS for s in ("", "_b", "_c")]):
+    for j, (cc, suf) in enumerate(cols):
         p = f"{OUT}/{PK}/{b}/{DC}{cc}{suf}.jpg"
         if os.path.exists(p): sheet.paste(Image.open(p).resize((TH - 4, TH - 4)), (j * TH, i * TH))
 os.makedirs(f"{ROOT}/out", exist_ok=True); sheet.save(f"{ROOT}/out/amazon_pilot_sheet.png")
+views = ("", "_b", "_c", "_f", "_h", "_s"); sub = list(M.BR)[:3]; TH2 = 150
+s2 = Image.new("RGB", (TH2 * len(views) * 3, TH2 * len(COLORS)), (230, 230, 230))
+for bi, b in enumerate(sub):
+    for ci, cc in enumerate(COLORS):
+        for vi, v in enumerate(views):
+            p = f"{OUT}/{PK}/{b}/{DC}{cc}{v}.jpg"
+            if os.path.exists(p): s2.paste(Image.open(p).resize((TH2 - 4, TH2 - 4)), ((bi * len(views) + vi) * TH2, ci * TH2))
+s2.save(f"{ROOT}/out/amazon_pilot_views.png")
