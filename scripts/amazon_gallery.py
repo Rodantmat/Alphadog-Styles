@@ -22,9 +22,9 @@ def product(b, cc):
     return None, None, None
 def fetch(pid, v, cam):
     u = f"https://images.printify.com/mockup/{pid}/{v}/{cam}/x.jpg?camera_label=front&s=1600&use_cache=false&t={int(time.time()*1000)}"
-    for k in range(3):
+    for k in range(6):
         try: return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=90).read()
-        except Exception as e: err = e; time.sleep(1.5 * (k + 1))
+        except Exception as e: err = e; time.sleep(2 * (k + 1))
     raise err
 def work(key):
     b, cc = key; pid, bp, v = product(b, cc); res = {"pid": pid, "g": []}
@@ -40,7 +40,7 @@ def work(key):
         res["g"].append("ok")
     return key, res
 keys = [(b, cc) for b in M.BR for cc in COLORS]; out = {}; st = collections.Counter()
-with ThreadPoolExecutor(12) as ex:
+with ThreadPoolExecutor(8) as ex:
     for key, res in ex.map(work, keys):
         out[f"{key[0]}|{key[1]}"] = res
         for s in res["g"]: st[s] += 1
