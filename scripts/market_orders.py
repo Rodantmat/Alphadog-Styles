@@ -44,8 +44,8 @@ def ebay_poll():
 # ---------------- Amazon (SP-API Orders v0): merchant-fulfilled, unshipped orders whose SKUs are ours -> store bridge; tracking pushed back with shipmentConfirmation ----------------
 def _amz():
     import amazon_sp as A
-    if not (os.environ.get("AMZ_CLIENT") and os.environ.get("AMZ_SECRET") and os.environ.get("AMZ_REFRESH_TOKEN")): return None,None
-    return A,{"CLIENT_ID":os.environ["AMZ_CLIENT"].strip(),"CLIENT_SECRET":os.environ["AMZ_SECRET"].strip(),"REFRESH_TOKEN":os.environ["AMZ_REFRESH_TOKEN"].strip()}
+    if not (os.environ.get("AMZ_LWA_CLIENT_ID") and os.environ.get("AMZ_LWA_CLIENT_SECRET") and os.environ.get("AMZ_LWA_REFRESH_TOKEN")): return None,None
+    return A,{"CLIENT_ID":os.environ["AMZ_LWA_CLIENT_ID"].strip(),"CLIENT_SECRET":os.environ["AMZ_LWA_CLIENT_SECRET"].strip(),"REFRESH_TOKEN":os.environ["AMZ_LWA_REFRESH_TOKEN"].strip()}
 def amazon_poll():
     A,c=_amz()
     if not A: print("amazon: no keys yet"); return 0
