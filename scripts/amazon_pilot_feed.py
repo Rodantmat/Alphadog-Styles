@@ -7,7 +7,7 @@ ROOT = M.ROOT
 PK, DC = "tee", "1"
 COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]
 plan = M.build(); PP = plan["products"][PK]; C = {c["code"]: c for c in PP["colors"]}
-EX = json.load(open(f"{ROOT}/store/data/amazon_extras.json"))
+EX = json.load(open(f"{ROOT}/store/data/amazon_extras.json")); GAL = json.load(open(f"{ROOT}/store/data/amazon_gallery.json"))
 STD = {"WH": "White", "BK": "Black", "NV": "Blue", "AS": "Grey", "LB": "Blue", "HE": "Grey", "PK": "Pink", "CR": "Off White", "NA": "Beige", "MR": "Red"}
 NAME = {"WH": "White", "BK": "Black", "NV": "Navy", "AS": "Ash", "LB": "Light Blue", "HE": "Athletic Heather", "PK": "Soft Pink", "CR": "Soft Cream", "NA": "Natural", "MR": "Maroon"}
 kids = []; skipped = []
@@ -16,7 +16,8 @@ for b in M.BR:
         e = EX.get(f"{b}|{cc}") or {}
         if e.get("main") != "ok": skipped.append((b, cc, "no main")); continue
         base = f"amz/{PK}/{b}/{DC}{cc}"
-        extra = [base + s + ".jpg" for s in ("_b", "_z1", "_z2", "_f", "_h", "_c", "_s") if e.get(s) == "ok"][:7]      # back, folded, size chart - all from the same Printify product/colour; slots 1-3 are always filled (back + 2 detail crops) so no stale gallery photo can survive
+        g = (GAL.get(f"{b}|{cc}") or {}).get("g", [])
+        extra = [base + "_g%d.jpg" % (i + 1) for i, t in enumerate(g) if t == "ok"][:8]      # real Printify photos: back, people wearing it, hanger/folded, lifestyle (all 8 slots overwritten)
         for s in PP["sizes"]:
             kids.append({"sku": M.sku(PK, b, DC, cc, s), "style": M.BR[b], "breed": b, "color": NAME[cc], "color_std": STD[cc], "cc": cc, "size": s,
                          "price": M.price(C[cc]["prod"], s), "img": base + ".jpg", "others": extra,
