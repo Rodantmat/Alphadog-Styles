@@ -33,11 +33,14 @@ def work(key):
     mp = f"{OUT}/{PK}/{b}/{DC}{cc}.jpg"          # the white-background MAIN photo (same Printify product + colour)
     if os.path.exists(mp): res["main"] = "ok"
     else:
-        try:
-            data, st_ = render(get(fsrc))
-            if st_ == "ok": os.makedirs(os.path.dirname(mp), exist_ok=True); open(mp, "wb").write(data); res["main"] = "ok"
-            else: res["main"] = st_
-        except Exception as e: res["main"] = "err"
+        res["main"] = "err"
+        for k in range(5):                                   # transient Printify/network errors: retry
+            try:
+                data, st_ = render(get(fsrc))
+                if st_ == "ok": os.makedirs(os.path.dirname(mp), exist_ok=True); open(mp, "wb").write(data); res["main"] = "ok"; break
+                else: res["main"] = st_
+            except Exception as e: res["main"] = "err"
+            time.sleep(2 * (k + 1))
     for i, cam in enumerate(CAMS[bp], 1):
         path = f"{OUT}/{PK}/{b}/{DC}{cc}_g{i}.jpg"
         if not os.path.exists(path):

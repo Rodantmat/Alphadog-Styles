@@ -10,7 +10,7 @@ jobs:
         with: { python-version: "3.12" }
       - run: pip install -q pillow numpy cairosvg scipy
       - run: python3 scripts/market_plan.py | tail -1
-      - run: DCS=3,7,8,9 python3 scripts/amazon_gallery.py
+      - run: DCS=7,8,9 python3 scripts/amazon_gallery.py
       - run: |
           git config user.name bot && git config user.email bot@users.noreply.github.com
           git add store/data/amazon_gallery*.json && git commit -qm "amazon pilot gallery" && git pull -q --rebase && git push
