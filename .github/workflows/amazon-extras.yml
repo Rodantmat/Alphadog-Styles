@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.12" }
-      - run: pip install -q pillow numpy cairosvg
+      - run: pip install -q pillow numpy cairosvg scipy
       - run: python3 scripts/market_plan.py | tail -1
       - run: python3 scripts/amazon_extras.py
       - run: |
