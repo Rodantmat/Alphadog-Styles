@@ -53,9 +53,15 @@ def work(key):
     return key, res
 for DC in DCS:
     keys = [(DC, b, cc) for b in M.BR for cc in COLORS]; out = {}; st = collections.Counter()
-    with ThreadPoolExecutor(8) as ex:
-        for key, res in ex.map(work, keys):
-            out[f"{key[1]}|{key[2]}"] = res
-            for s_ in res["g"]: st[s_] += 1
+    todo = keys
+    for ps in range(5):                       # pass 1 = everything; later passes retry only what is still missing (files already on disk are skipped), gentler
+        with ThreadPoolExecutor(8 if ps == 0 else 3) as ex:
+            for key, res in ex.map(work, todo): out[f"{key[1]}|{key[2]}"] = res
+        todo = [k for k in keys if out[f"{k[1]}|{k[2]}"]["main"] != "ok" and out[f"{k[1]}|{k[2]}"]["pid"] or any(g != "ok" for g in out[f"{k[1]}|{k[2]}"]["g"]) or len(out[f"{k[1]}|{k[2]}"]["g"]) < 8 and out[f"{k[1]}|{k[2]}"]["pid"]]
+        print("  pass", ps + 1, "still incomplete:", len(todo), flush=True)
+        if not todo: break
+        time.sleep(20)
+    for res in out.values():
+        for s_ in res["g"]: st[s_] += 1
     print("design", DC, "mains:", dict(collections.Counter(r["main"] for r in out.values())), "gallery:", dict(st), "products missing:", sum(1 for r in out.values() if not r["pid"]))
     json.dump(out, open(f"{ROOT}/store/data/amazon_gallery{'' if DC == '1' else '_d' + DC}.json", "w"), indent=0)
