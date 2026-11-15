@@ -6,12 +6,13 @@ sys.argv = sys.argv[:1]
 exec(src)
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
-PK, DC = "tee", "1"
+PK = "tee"
+DCS = os.environ.get("DCS", "1").split(",")      # design codes to render, e.g. "1,4"
 COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]
 CAMS = {145: [97993, 100619, 100620, 100616, 100617, 100621, 100615, 127673],        # Tee A: back, man front, man back, woman front, woman back, seated, folded, lifestyle on couch
         12:  [102045, 102047, 102057, 102058, 102059, 102060, 102046, 92584]}         # Tee B: back, on hanger, woman front/back, man front/back, folded, lifestyle
 D = {d["code"]: d for d in plan["products"][PK]["designs"]}; C = {c["code"]: c for c in plan["products"][PK]["colors"]}
-def product(b, cc):
+def product(b, cc, DC):
     d = D[DC]; c = C[cc]; want = {norm(c["name"]), norm(c.get("color", c["name"]))}
     for bp in BP[PK]:
         for r in BY[bp]:
@@ -27,7 +28,7 @@ def fetch(pid, v, cam):
         except Exception as e: err = e; time.sleep(2 * (k + 1))
     raise err
 def work(key):
-    b, cc = key; pid, bp, v, fsrc = product(b, cc); res = {"pid": pid, "g": [], "main": "none"}
+    DC, b, cc = key; pid, bp, v, fsrc = product(b, cc, DC); res = {"pid": pid, "g": [], "main": "none"}
     if not pid: return key, res
     mp = f"{OUT}/{PK}/{b}/{DC}{cc}.jpg"          # the white-background MAIN photo (same Printify product + colour)
     if os.path.exists(mp): res["main"] = "ok"
@@ -47,10 +48,11 @@ def work(key):
             except Exception as e: res["g"].append("err"); continue
         res["g"].append("ok")
     return key, res
-keys = [(b, cc) for b in M.BR for cc in COLORS]; out = {}; st = collections.Counter()
-with ThreadPoolExecutor(8) as ex:
-    for key, res in ex.map(work, keys):
-        out[f"{key[0]}|{key[1]}"] = res
-        for s in res["g"]: st[s] += 1
-print("mains:", dict(collections.Counter(r["main"] for r in out.values())), "gallery:", dict(st), "products missing:", sum(1 for r in out.values() if not r["pid"]))
-json.dump(out, open(f"{ROOT}/store/data/amazon_gallery.json", "w"), indent=0)
+for DC in DCS:
+    keys = [(DC, b, cc) for b in M.BR for cc in COLORS]; out = {}; st = collections.Counter()
+    with ThreadPoolExecutor(8) as ex:
+        for key, res in ex.map(work, keys):
+            out[f"{key[1]}|{key[2]}"] = res
+            for s_ in res["g"]: st[s_] += 1
+    print("design", DC, "mains:", dict(collections.Counter(r["main"] for r in out.values())), "gallery:", dict(st), "products missing:", sum(1 for r in out.values() if not r["pid"]))
+    json.dump(out, open(f"{ROOT}/store/data/amazon_gallery{'' if DC == '1' else '_d' + DC}.json", "w"), indent=0)

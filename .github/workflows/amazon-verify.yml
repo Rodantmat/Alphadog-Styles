@@ -1,5 +1,5 @@
 name: amazon-verify
-on: { workflow_dispatch: {} }
+on: { workflow_dispatch: { inputs: { ldc: { default: "4" } } } }
 permissions: { contents: write }
 jobs:
   run:
@@ -11,8 +11,8 @@ jobs:
       - run: pip install -q pillow numpy cairosvg scipy
       - run: python3 scripts/market_plan.py | tail -1
       - run: python3 scripts/amazon_mains.py | head -3
-      - run: python3 scripts/amazon_gallery.py
-      - run: python3 scripts/amazon_verify.py | tee verify.txt
+      - run: DCS=${{ inputs.ldc }} python3 scripts/amazon_gallery.py
+      - run: LDC=${{ inputs.ldc }} python3 scripts/amazon_verify.py | tee verify.txt
       - run: |
           git config user.name bot && git config user.email bot@users.noreply.github.com
-          git add -f out/verify && git commit -qm "pilot verify sheets" && git pull -q --rebase --autostash && git push
+          git add -f out/verify* && git commit -qm "pilot verify sheets" && git pull -q --rebase --autostash && git push
