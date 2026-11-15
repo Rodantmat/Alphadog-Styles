@@ -18,8 +18,8 @@ def product(b, cc):
             if M.BR[b] not in r["title"] or not title_ok(PK, d["art"], d["front"], d["back"], r["title"]): continue
             for cam in ("front", "front-2"):
                 for im in r["imgs"]:
-                    if im["cam"] == cam and img_color_ok(im, r, want): return r["pid"], bp, im["src"].split("/")[-3]
-    return None, None, None
+                    if im["cam"] == cam and img_color_ok(im, r, want): return r["pid"], bp, im["src"].split("/")[-3], im["src"]
+    return None, None, None, None
 def fetch(pid, v, cam):
     u = f"https://images.printify.com/mockup/{pid}/{v}/{cam}/x.jpg?camera_label=front&s=1600&use_cache=false&t={int(time.time()*1000)}"
     for k in range(6):
@@ -27,8 +27,16 @@ def fetch(pid, v, cam):
         except Exception as e: err = e; time.sleep(2 * (k + 1))
     raise err
 def work(key):
-    b, cc = key; pid, bp, v = product(b, cc); res = {"pid": pid, "g": []}
+    b, cc = key; pid, bp, v, fsrc = product(b, cc); res = {"pid": pid, "g": [], "main": "none"}
     if not pid: return key, res
+    mp = f"{OUT}/{PK}/{b}/{DC}{cc}.jpg"          # the white-background MAIN photo (same Printify product + colour)
+    if os.path.exists(mp): res["main"] = "ok"
+    else:
+        try:
+            data, st_ = render(get(fsrc))
+            if st_ == "ok": os.makedirs(os.path.dirname(mp), exist_ok=True); open(mp, "wb").write(data); res["main"] = "ok"
+            else: res["main"] = st_
+        except Exception as e: res["main"] = "err"
     for i, cam in enumerate(CAMS[bp], 1):
         path = f"{OUT}/{PK}/{b}/{DC}{cc}_g{i}.jpg"
         if not os.path.exists(path):
@@ -44,5 +52,5 @@ with ThreadPoolExecutor(8) as ex:
     for key, res in ex.map(work, keys):
         out[f"{key[0]}|{key[1]}"] = res
         for s in res["g"]: st[s] += 1
-print("gallery:", dict(st), "products missing:", sum(1 for r in out.values() if not r["pid"]))
+print("mains:", dict(collections.Counter(r["main"] for r in out.values())), "gallery:", dict(st), "products missing:", sum(1 for r in out.values() if not r["pid"]))
 json.dump(out, open(f"{ROOT}/store/data/amazon_gallery.json", "w"), indent=0)
