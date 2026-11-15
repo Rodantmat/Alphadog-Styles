@@ -5,18 +5,18 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import market_plan as M
 ROOT = M.ROOT
 PK, DC = "tee", "1"
-COLORS = ["WH", "BK", "NV", "AS"]
+COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]
 plan = M.build(); PP = plan["products"][PK]; C = {c["code"]: c for c in PP["colors"]}
 EX = json.load(open(f"{ROOT}/store/data/amazon_extras.json"))
-STD = {"WH": "White", "BK": "Black", "NV": "Blue", "AS": "Grey"}
-NAME = {"WH": "White", "BK": "Black", "NV": "Navy", "AS": "Ash"}
+STD = {"WH": "White", "BK": "Black", "NV": "Blue", "AS": "Grey", "LB": "Blue", "HE": "Grey", "PK": "Pink", "CR": "Off White", "NA": "Beige", "MR": "Red"}
+NAME = {"WH": "White", "BK": "Black", "NV": "Navy", "AS": "Ash", "LB": "Light Blue", "HE": "Athletic Heather", "PK": "Soft Pink", "CR": "Soft Cream", "NA": "Natural", "MR": "Maroon"}
 kids = []; skipped = []
 for b in M.BR:
     for cc in COLORS:
         e = EX.get(f"{b}|{cc}") or {}
         if e.get("main") != "ok": skipped.append((b, cc, "no main")); continue
         base = f"amz/{PK}/{b}/{DC}{cc}"
-        extra = [base + s + ".jpg" for s, k in (("_b", "_b"), ("_c", "_c")) if e.get(k) == "ok"]
+        extra = [base + s + ".jpg" for s in ("_b", "_f", "_s") if e.get(s) == "ok"]      # back, folded, size chart - all from the same Printify product/colour
         for s in PP["sizes"]:
             kids.append({"sku": M.sku(PK, b, DC, cc, s), "style": M.BR[b], "breed": b, "color": NAME[cc], "color_std": STD[cc], "cc": cc, "size": s,
                          "price": M.price(C[cc]["prod"], s), "img": base + ".jpg", "others": extra,
