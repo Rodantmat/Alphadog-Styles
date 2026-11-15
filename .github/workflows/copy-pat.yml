@@ -1,0 +1,11 @@
+name: copy-pat-to-melaleuca (one time)
+on: { workflow_dispatch: {} }
+jobs:
+  c:
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_PAT }}
+          V: ${{ secrets.GH_SECRETS_PAT }}
+        run: |
+          gh secret set GH_SECRETS_PAT -R Rodantmat/melaleuca-cart --body "$V" && echo "copied" || echo "FAILED"
