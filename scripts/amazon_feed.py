@@ -51,9 +51,10 @@ def img_lookup():
             if len(p) >= 2: d["hero"].setdefault(p[1], []).append(h)
     return L
 IMG = img_lookup()
+MAINS = set(json.load(open(f"{ROOT}/store/data/amazon_mains.json")))   # (prod|breed|design|colour) that have a real Printify mockup -> white-background main (scripts/amazon_mains.py)
+def has_main(pk, b, dc, cc): return f"{pk}|{b}|{dc}|{cc}" in MAINS
 def child_image(pk, b, dc, cc):
-    d = IMG.get(pk, {})
-    return d.get("bdc", {}).get(f"{b}|{dc}|{cc}") or d.get("bd", {}).get(f"{b}|{dc}") or (d.get("hero", {}).get(b) or [None])[0]
+    return f"amz/{pk}/{b}/{dc}{cc}.jpg"          # white-background Printify mockup, built at deploy by amazon_mains.py
 
 def color_value(L, b, dc, cc, C, D):
     cname = C[cc]["name"]; cname = CS.get(cname, cname)
@@ -97,6 +98,7 @@ def build():
             for b in br:
                 for dc in L["designs"]:
                     for cc in L["colors"]:
+                        if not has_main(pk, b, dc, cc): continue      # only colours with a real Printify photo
                         cv = color_value(L, b, dc, cc, C, D)
                         for s in L["sizes"]:
                             kids.append({"sku": M.sku(pk, b, dc, cc, s), "color": cv, "color_std": std_color(C[cc]["color"]), "size": s,
