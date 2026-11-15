@@ -7,7 +7,10 @@ ROOT = M.ROOT
 PK = "tee"; DC = os.environ.get("LDC", "1")
 LIST = {"1": dict(id="pilot-tee-1", out="amazon_pilot.json", gal="amazon_gallery.json", psku="AMZ-P-tee-d1", art="Line Art", artd="Minimalist continuous line art", pk="minimalist line art"),
         "4": dict(id="listing-tee-4", out="amazon_listing_tee4.json", gal="amazon_gallery_d4.json", psku="AMZ-P-tee-d4", art="Geometric Art", artd="Bold geometric faceted illustration", pk="geometric art"),
-        "3": dict(id="listing-tee-3", out="amazon_listing_tee3.json", gal="amazon_gallery_d3.json", psku="AMZ-P-tee-d3", art="Line Art Heart", artd="Minimalist continuous line art with a heart", pk="line art with a heart")}[DC]
+        "3": dict(id="listing-tee-3", out="amazon_listing_tee3.json", gal="amazon_gallery_d3.json", psku="AMZ-P-tee-d3", art="Line Art Heart", artd="Minimalist continuous line art with a heart", pk="line art with a heart"),
+        "7": dict(id="listing-tee-7", out="amazon_listing_tee7.json", gal="amazon_gallery_d7.json", psku="AMZ-P-tee-d7", art="Geometric Sunglasses", artd="Bold geometric faceted illustration with cool sunglasses", pk="geometric art with sunglasses"),
+        "8": dict(id="listing-tee-8", out="amazon_listing_tee8.json", gal="amazon_gallery_d8.json", psku="AMZ-P-tee-d8", art="Line Art Sunglasses", artd="Minimalist continuous line art with cool sunglasses", pk="line art with sunglasses"),
+        "9": dict(id="listing-tee-9", out="amazon_listing_tee9.json", gal="amazon_gallery_d9.json", psku="AMZ-P-tee-d9", art="Geometric Heart", artd="Bold geometric faceted illustration with a heart", pk="geometric art with a heart")}[DC]
 COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]
 plan = M.build(); PP = plan["products"][PK]; C = {c["code"]: c for c in PP["colors"]}
 EX = json.load(open(f"{ROOT}/store/data/amazon_extras.json")); GAL = json.load(open(f"{ROOT}/store/data/{LIST['gal']}"))
