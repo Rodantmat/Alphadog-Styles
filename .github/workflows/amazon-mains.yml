@@ -1,0 +1,22 @@
+name: amazon-mains
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        default: "0"
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -q pillow numpy cairosvg
+      - run: python3 scripts/market_plan.py | tail -1
+      - run: |
+          L="${{ inputs.limit }}"; if [ "$L" != "0" ] && [ -n "$L" ]; then python3 scripts/amazon_mains.py --limit $L; else python3 scripts/amazon_mains.py; fi
+      - run: |
+          git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add out/amazon_mains_report.json out/amazon_mains_sheet.png && git commit -qm "amazon mains report" && git pull -q --rebase && git push
