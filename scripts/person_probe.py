@@ -6,16 +6,17 @@ from concurrent.futures import ThreadPoolExecutor
 R=json.load(open("out/mockidx/index.json")); CAM=json.load(open("docs/printify_cameras.json"))
 ex=json.load(open("store/data/amazon_extras.json"))
 picks=[("french_bulldog|NV","Tee A"),("french_bulldog|WH","Tee B")]
-def vid(r):
-    for i in r["imgs"]:
-        if i["cam"]=="front": return i["src"].split("/")[-3]
+COL={"french_bulldog|NV":"Navy","french_bulldog|WH":"White"}
+def vid(r,key):
+    for v,l in r["variants"].items():
+        if l.split(" / ")[-1].strip()==COL[key]: return str(v)
 def get(u):
     try:
         b=urllib.request.urlopen(urllib.request.Request(u,headers={"User-Agent":"Mozilla/5.0"}),timeout=60).read(); return Image.open(io.BytesIO(b)).convert("RGB")
     except Exception as e: return str(e)[:60]
 tiles=[]
 for key,_ in picks:
-    pid=ex[key]["pid"]; r=[x for x in R if x["pid"]==pid][0]; v=vid(r); bp=r["bp"]; name="Tee A" if bp==145 else "Tee B"
+    pid=ex[key]["pid"]; r=[x for x in R if x["pid"]==pid][0]; v=vid(r,key); bp=r["bp"]; name="Tee A" if bp==145 else "Tee B"
     print(key,pid,"bp",bp,"variant",v,name)
     cams=CAM[name]
     def one(c):
