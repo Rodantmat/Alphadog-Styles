@@ -73,14 +73,15 @@ def bullets(L, P):
     return [x[:255] for x in b]
 
 def amazon_title(pk, br):
-    """<=200 chars, the word 'dog' at most twice (Amazon rejects more: error 100470)"""
+    """<=200 chars. Reads as adult human apparel (Amazon re-types dog-heavy titles to PET_APPAREL) and keeps the word 'dog' at most twice (error 100470)"""
     full = ", ".join(M.BR[b] for b in br); short = ", ".join(M.short(b) for b in br); noun = NOUN_SHORT[pk]
-    tails = [" - Line Art & Geometric Design, Dog Lover Gift", " - Line Art Design, Dog Lover Gift", " - Dog Lover Gift", ""]
+    tails = [" Line Art & Geometric Design, Gift for Owners", " Line Art Design, Gift for Owners", " Line Art Design", ""]
     for names in (full, short):
         for tail in tails:
-            t = f"AlphaDog Styles {names} {noun}{tail}"
+            t = f"AlphaDog Styles Unisex {noun} for Adults - {names}{tail}"
+            if pk == "wtank": t = t.replace("Unisex", "Women's", 1).replace("Women's Women's", "Women's")
             if len(t) <= 200 and len(re.findall(r"\bdog\b", t, re.I)) <= 2: return t
-    return f"AlphaDog Styles {short} {noun}"[:200]
+    return f"AlphaDog Styles {noun} for Adults - {short}"[:200]
 
 def build():
     plan = M.build()   # re-derive the base tables (products, designs, colors); amazon listings are built below
