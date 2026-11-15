@@ -101,7 +101,9 @@ def build():
                         if not has_main(pk, b, dc, cc): continue      # only colours with a real Printify photo
                         cv = color_value(L, b, dc, cc, C, D)
                         for s in L["sizes"]:
-                            kids.append({"sku": M.sku(pk, b, dc, cc, s), "color": cv, "color_std": std_color(C[cc]["color"]), "size": s,
+                            oth = [f"amz/{pk}/{b}/{d2}{cc}.jpg" for d2 in L["designs"] if d2 != dc and has_main(pk, b, d2, cc)][:3]
+                            if len(oth) < 3: oth += [f"amz/{pk}/{b}/{dc}{c2}.jpg" for c2 in L["colors"] if c2 != cc and has_main(pk, b, dc, c2)][:3 - len(oth)]
+                            kids.append({"others": oth, "sku": M.sku(pk, b, dc, cc, s), "color": cv, "color_std": std_color(C[cc]["color"]), "size": s,
                                          "price": M.price(C[cc]["prod"], s), "img": child_image(pk, b, dc, cc), "breed": b, "design": dc, "cc": cc})
             assert len({(k["color"], k["size"]) for k in kids}) == len(kids), L["id"]       # Amazon needs unique Color x Size
             assert len({k["sku"] for k in kids}) == len(kids), L["id"]
@@ -111,7 +113,7 @@ def build():
             out.append({"id": L["id"], "prod": pk, "ptype": PTYPE[pk], "title": L["title"], "parent_sku": f"AMZ-P-{pk}-{i+1:02d}",
                         "desc": T.description({**L, "plat": "etsy"}).replace("\n\n", "\n"), "bullets": bullets(L, PP),
                         "fabric": FABRIC_SHORT[pk], "material": MATERIAL[pk], "noun": NOUN_SHORT[pk],
-                        "heroes": [SITE + h for h in heroes[:8]], "children": kids})
+                        "heroes": [], "children": kids})
     return out
 
 if __name__ == "__main__":
