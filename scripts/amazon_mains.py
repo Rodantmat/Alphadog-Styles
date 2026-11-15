@@ -39,8 +39,13 @@ def find(pk, breed, dc, cc, D, C):
             if not vids: continue
             for cam in ("front", "front-2"):
                 for im in r["imgs"]:
-                    if im["cam"] == cam and vids & {str(v) for v in im["vids"]}: return im["src"], r["pid"]
+                    if im["cam"] == cam and img_color_ok(im, r, want): return im["src"], r["pid"]
     return None, None
+def img_color_ok(im, r, want):
+    """the variant id in the mockup URL (mockup/<pid>/<variant>/<camera>/...) is the colour this picture really shows; the index 'vids' list is NOT reliable (often every variant)"""
+    try: lab = r["variants"].get(str(int(im["src"].split("/")[-3])))
+    except Exception: return False
+    return bool(lab) and variant_color(lab) in want
 def get(u):
     for t in range(4):
         try: return urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=60).read()

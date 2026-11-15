@@ -19,7 +19,7 @@ def product(b, cc):
             def pick(cams):
                 for cam in cams:
                     for im in r["imgs"]:
-                        if im["cam"] == cam and vids & {str(v) for v in im["vids"]}: return im["src"]
+                        if im["cam"] == cam and img_color_ok(im, r, want): return im["src"]
             f = pick(("front", "front-2"))
             if f: return r["pid"], r["title"], {"": f, "_b": pick(("back", "back-2")), "_c": pick(("front-collar-closeup",))}
     return None, None, {}
