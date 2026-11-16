@@ -22,3 +22,5 @@ out/musiccat/
 out/musicbuild/
 out/trans2/
 __pycache__/
+
+scripts/__pycache__/
