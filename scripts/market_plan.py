@@ -65,6 +65,8 @@ CAPD=[("1","line_classic","head_s",None,"Line Art","Line"),("2","geo_cool","head
 AMZX=[("7","geo_cool","head_s","body_l","Geometric Sunglasses · Emblem + Back","GeoCool+Back"),
       ("8","line_cool","head_s","body_l","Line Art Sunglasses · Emblem + Back","LineCool+Back"),
       ("9","geo_heart","head_s","body_l","Geometric Heart · Emblem + Back","GeoHeart+Back")]
+# Amazon-only extra polo designs (chest emblem for the two remaining art styles); plan output only, like AMZX
+AMZXP=[("5","line_cool","head_s",None,"Line Art Sunglasses Emblem","Line Cool"),("6","geo_heart","head_s",None,"Geometric Heart Emblem","Geo Heart")]
 def cols(pid,pairs):
     """pairs = [(printify color, 2-letter code)] in marketplace priority order (first ones go live first; ALL stay decodable)."""
     p=next(x for x in cat["products"] if x["id"]==pid); ok={c[0]:c for c in p["colors"] if c[2]}
@@ -171,7 +173,7 @@ def build():
     out={"version":1,"products":{},"listings":[]}
     for pk,P in PRODUCTS.items():
         out["products"][pk]={"L":P["L"],"name":P["name"],"sizes":P["sizes"],
-            "designs":[{"code":d[0],"art":d[1],"front":d[2],"back":d[3],"name":d[4],"short":d[5]} for d in P["designs"]+(AMZX if pk=="tee" else [])],
+            "designs":[{"code":d[0],"art":d[1],"front":d[2],"back":d[3],"name":d[4],"short":d[5]} for d in P["designs"]+(AMZX if pk=="tee" else AMZXP if pk=="polo" else [])],
             "colors":[{"code":c[0],"prod":c[1],"color":c[2],"name":(CAPLABEL[c[1]]+" "+c[3] if pk=="cap" else c[3])} for c in P["colors"]]}
     for plat,cn in COUNTS.items():
         for pk,n in cn.items():

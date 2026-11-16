@@ -3,16 +3,20 @@ Also checks every file exists, is >=1000px and that the 9 photos of a colour are
 import os, json, hashlib, collections
 from PIL import Image, ImageDraw
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__))); OUT = f"{ROOT}/store/mk/amz/tee"
-LD = os.environ.get("LDC", "1"); f = json.load(open(f"{ROOT}/store/data/" + {"1": "amazon_pilot.json", "3": "amazon_listing_tee3.json", "4": "amazon_listing_tee4.json", "7": "amazon_listing_tee7.json", "8": "amazon_listing_tee8.json", "9": "amazon_listing_tee9.json"}[LD]))[0]
-COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]
+PKV = os.environ.get("PK", "tee"); OUT = f"{ROOT}/store/mk/amz/{PKV}"
+LD = os.environ.get("LDC", "1")
+if PKV == "tee": f = json.load(open(f"{ROOT}/store/data/" + {"1": "amazon_pilot.json", "3": "amazon_listing_tee3.json", "4": "amazon_listing_tee4.json", "7": "amazon_listing_tee7.json", "8": "amazon_listing_tee8.json", "9": "amazon_listing_tee9.json"}[LD]))[0]
+else: f = json.load(open(f"{ROOT}/store/data/amazon_listing_{PKV}{LD}.json"))[0]
+COLORS = sorted({k["cc"] for k in f["children"]}, key=[k["cc"] for k in f["children"]].index)
+NIMG = max(1 + len(k["others"]) for k in f["children"])      # photos per colour (9 for tees)
 breeds = sorted({k["breed"] for k in f["children"]}); T = 150
-VD = f"{ROOT}/out/verify" + ("" if LD == "1" else "_d" + LD); os.makedirs(VD, exist_ok=True); problems = []
+VD = f"{ROOT}/out/verify" + (("" if LD == "1" else "_d" + LD) if PKV == "tee" else "_" + PKV + "_d" + LD); os.makedirs(VD, exist_ok=True); problems = []
 by = {(k["breed"], k["cc"]): k for k in f["children"]}
 for b in breeds:
-    sheet = Image.new("RGB", (9 * T + 60, len(COLORS) * T), (255, 255, 255)); d = ImageDraw.Draw(sheet)
+    sheet = Image.new("RGB", (NIMG * T + 60, len(COLORS) * T), (255, 255, 255)); d = ImageDraw.Draw(sheet)
     for r, cc in enumerate(COLORS):
         k = by[(b, cc)]; files = [k["img"]] + k["others"]; hs = set()
-        if len(files) != 9: problems.append((b, cc, "files %d" % len(files)))
+        if len(files) != NIMG: problems.append((b, cc, "files %d" % len(files)))
         d.text((2, r * T + T // 2), cc, fill=(200, 0, 0))
         for c, rel in enumerate(files):
             p = f"{ROOT}/store/mk/{rel}"

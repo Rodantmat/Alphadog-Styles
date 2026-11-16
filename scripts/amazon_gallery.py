@@ -6,10 +6,14 @@ sys.argv = sys.argv[:1]
 exec(src)
 from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
-PK = "tee"
+PK = os.environ.get("PK", "tee")              # tee (default) | polo | tank | wtank
 DCS = os.environ.get("DCS", "1").split(",")      # design codes to render, e.g. "1,4"
-COLORS = ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"]
-CAMS = {145: [97993, 100619, 100620, 100616, 100617, 100621, 100615, 127673],        # Tee A: back, man front, man back, woman front, woman back, seated, folded, lifestyle on couch
+# colours that have REAL Printify mockups per product (others are not published)
+COLORS = {"tee": ["WH", "BK", "NV", "AS", "LB", "HE", "PK", "CR", "NA", "MR"], "polo": ["WH", "HE"], "tank": ["WH", "HE"], "wtank": ["WH", "HG", "TB", "MI", "LO"]}[PK]
+CAMS = {1402: [101910, 102926, 103301, 103302],                                       # Polo: back, person front, person back, person close-up
+        39:   [101892, 119051],                                                       # Tank Top: back, size chart
+        18:   [49, 111806, 111807, 119048],                                           # Racerback Tank: back, alt front, alt back, size chart
+        145: [97993, 100619, 100620, 100616, 100617, 100621, 100615, 127673],        # Tee A: back, man front, man back, woman front, woman back, seated, folded, lifestyle on couch
         12:  [102045, 102047, 102057, 102058, 102059, 102060, 102046, 92584]}         # Tee B: back, on hanger, woman front/back, man front/back, folded, lifestyle
 D = {d["code"]: d for d in plan["products"][PK]["designs"]}; C = {c["code"]: c for c in plan["products"][PK]["colors"]}
 def product(b, cc, DC):
@@ -51,17 +55,18 @@ def work(key):
             except Exception as e: res["g"].append("err"); continue
         res["g"].append("ok")
     return key, res
+NG = len(next(iter(CAMS[bp] for bp in BP[PK])))          # gallery photos per colour for this product (8 for tees)
 for DC in DCS:
     keys = [(DC, b, cc) for b in M.BR for cc in COLORS]; out = {}; st = collections.Counter()
     todo = keys
     for ps in range(5):                       # pass 1 = everything; later passes retry only what is still missing (files already on disk are skipped), gentler
         with ThreadPoolExecutor(8 if ps == 0 else 3) as ex:
             for key, res in ex.map(work, todo): out[f"{key[1]}|{key[2]}"] = res
-        todo = [k for k in keys if out[f"{k[1]}|{k[2]}"]["main"] != "ok" and out[f"{k[1]}|{k[2]}"]["pid"] or any(g != "ok" for g in out[f"{k[1]}|{k[2]}"]["g"]) or len(out[f"{k[1]}|{k[2]}"]["g"]) < 8 and out[f"{k[1]}|{k[2]}"]["pid"]]
+        todo = [k for k in keys if out[f"{k[1]}|{k[2]}"]["main"] != "ok" and out[f"{k[1]}|{k[2]}"]["pid"] or any(g != "ok" for g in out[f"{k[1]}|{k[2]}"]["g"]) or len(out[f"{k[1]}|{k[2]}"]["g"]) < NG and out[f"{k[1]}|{k[2]}"]["pid"]]
         print("  pass", ps + 1, "still incomplete:", len(todo), file=sys.stderr, flush=True)
         if not todo: break
         time.sleep(20)
     for res in out.values():
         for s_ in res["g"]: st[s_] += 1
-    print("design", DC, "mains:", dict(collections.Counter(r["main"] for r in out.values())), "gallery:", dict(st), "products missing:", sum(1 for r in out.values() if not r["pid"]))
-    json.dump(out, open(f"{ROOT}/store/data/amazon_gallery{'' if DC == '1' else '_d' + DC}.json", "w"), indent=0)
+    print(PK, "design", DC, "mains:", dict(collections.Counter(r["main"] for r in out.values())), "gallery:", dict(st), "products missing:", sum(1 for r in out.values() if not r["pid"]))
+    json.dump(out, open(f"{ROOT}/store/data/amazon_gallery{('' if DC == '1' else '_d' + DC) if PK == 'tee' else '_' + PK + '_d' + DC}.json", "w"), indent=0)
