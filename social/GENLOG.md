@@ -82,3 +82,4 @@
 2026-11-16T17:36Z checker run started
 2026-11-16T17:39Z checker: Mon Nov 16 9:00 PT slot A ('Why did the dog sit in the shade?', due 2026-11-16T17:00Z) listed acct1+2 (runs 43920227832/43920232654): IG 6af37cca2cac17fcaff64ff9 sent, TikTok 6af37ccb7c81278dfdb70cee sent, FB 6af37ccb41bc75bbeb6000c0 sent, Pinterest 6af37ccbe4acfdf0c7065bd3 sent. Nov 16 04:00Z B sent on all 4. No failed/stuck/missed; nothing forced; future scheduled items (Nov 17 04:00Z onward) untouched. Result OK.
 2026-11-16T18:36:02Z checker run started
+2026-11-16T18:38:40Z checker (Mon Post A 09:00 PT slot): listed Buffer accts 1+2; all 4 apps (IG, TikTok, FB, Pinterest) show Post A laugh01_hotdog sent 2026-11-16T17:00Z; Nov 15 B (04:00Z Nov 16) sent on all 4; nothing missed, nothing forced; next up scheduled 2026-11-17T04:00Z.
