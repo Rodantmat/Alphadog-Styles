@@ -66,3 +66,5 @@
 - 2026-11-19 laugh02_newyorkie: mx841.mp3 "Tonight" - Michael Ramir C. [Hip-hop & Trap, style laugh2]
 - 2026-11-21 d2c_shades_vs_ours: mx798.mp3 "Francisco" - Michael Ramir C. [Pop & Party, style d2]
 - 2026-11-20 c20: mx1.mp3 "Lullaby" - Ahjay Stelino [Feel-good, style postB]
+- 2026-11-23 Post A laugh01_bulldozer: mx456.mp3 "Trap Pack 06" - Arulo [Hip-hop & Trap, style laugh4]
+- 2026-11-23 Post B c21: mx730.mp3 "Pop Track 04" - Lily J [Feel-good, style postB]

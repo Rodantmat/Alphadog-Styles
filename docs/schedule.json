@@ -260,6 +260,24 @@
     "music": "mx635"
    },
    "status": "built | A d4c + B c19 built 2026-11-14, need scheduling"
+  },
+  {
+   "date": "2026-11-23",
+   "weekday": "Mon",
+   "A": {
+    "video": "social/videos/laugh01_bulldozer.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Hip-hop & Trap",
+    "music": "mx456"
+   },
+   "B": {
+    "id": "c21",
+    "reel": "out/postc/c21/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Feel-good",
+    "music": "mx730"
+   },
+   "status": "built 2026-11-16 (A laugh4 bulldozer + B c21), need scheduling"
   }
  ]
 }

@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98430@6ae57bd8_Military Green",
+   "raw": "98430",
+   "breed": "Border Collie",
+   "colour": "Military Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_19_2.jpg",
+   "bgname": "Wooden Studio 19",
+   "fam": "hdri:studio:3",
+   "ratio": 5.1
+  },
+  {
+   "i": 1,
+   "prod": "Polo",
+   "cam": "102236@6ae79ef7_White",
+   "raw": "102236",
+   "breed": "Labrador Retriever",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_distressed_painted_planks_0.jpg",
+   "bgname": "Distressed Painted Planks",
+   "fam": "texture:wood:0",
+   "ratio": 3.7
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "100682@6ae57c00_Maroon",
+   "raw": "100682",
+   "breed": "Shiba Inu",
+   "colour": "Maroon",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_studio_small_03_3.jpg",
+   "bgname": "Studio Small 03",
+   "fam": "hdri:indoor:3",
+   "ratio": 6.6
+  },
+  {
+   "i": 3,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a491_none",
+   "raw": "109489",
+   "breed": "Siberian Husky",
+   "colour": "none",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_moon_meteor_01_0.jpg",
+   "bgname": "Moon Meteor 01",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.5
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100620@6ae589e4_Dark Chocolate",
+   "raw": "100620",
+   "breed": "Golden Retriever",
+   "colour": "Dark Chocolate",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_noon_puresky_1.jpg",
+   "bgname": "Qwantani Noon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.3
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a3bc_Pink",
+   "raw": "135042",
+   "breed": "Great Dane",
+   "colour": "Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Road014B.jpg",
+   "bgname": "Road 014 B",
+   "fam": "texture:x:0",
+   "ratio": 6.5
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "92579@6ae6cbd1_Ash",
+   "raw": "92579",
+   "breed": "Cane Corso",
+   "colour": "Ash",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_lakeside_night_3.jpg",
+   "bgname": "Lakeside Night",
+   "fam": "hdri:outdoor:0",
+   "ratio": 3.7
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98425@6ae576a6_Heather Navy",
+   "raw": "98425",
+   "breed": "Australian Shepherd",
+   "colour": "Heather Navy",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Plastic006.jpg",
+   "bgname": "Plastic 006",
+   "fam": "texture:x:3",
+   "ratio": 3.4
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.3715192743764207,
+ "shot_len": 1.0216780045351472,
+ "variant": "v2"
+}
