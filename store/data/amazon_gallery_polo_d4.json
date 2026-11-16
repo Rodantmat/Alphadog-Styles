@@ -1,0 +1,662 @@
+{
+"french_bulldog|WH": {
+"pid": "6ae79eb28e070d8cc20b60c3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"french_bulldog|HE": {
+"pid": "6ae79eb28e070d8cc20b60c3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|WH": {
+"pid": "6ae79eec6aa5485ffc09fe12",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|HE": {
+"pid": "6ae79eec6aa5485ffc09fe12",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|WH": {
+"pid": "6ae79f296aa5485ffc09fe58",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|HE": {
+"pid": "6ae79f296aa5485ffc09fe58",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|WH": {
+"pid": "6ae79f67f5f22e3bbd08568b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|HE": {
+"pid": "6ae79f67f5f22e3bbd08568b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|WH": {
+"pid": "6ae79fa5e8a14b46b70e9d2f",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|HE": {
+"pid": "6ae79fa5e8a14b46b70e9d2f",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|WH": {
+"pid": "6ae79ff1a895c5bd4e00aef4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|HE": {
+"pid": "6ae79ff1a895c5bd4e00aef4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|WH": {
+"pid": "6ae7a0316aa5485ffc0a008b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|HE": {
+"pid": "6ae7a0316aa5485ffc0a008b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|WH": {
+"pid": "6ae7a06d6aa5485ffc0a00d2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|HE": {
+"pid": "6ae7a06d6aa5485ffc0a00d2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|WH": {
+"pid": "6ae7a0a76aa5485ffc0a0110",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|HE": {
+"pid": "6ae7a0a76aa5485ffc0a0110",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|WH": {
+"pid": "6ae7a0e3cefd302331097b75",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|HE": {
+"pid": "6ae7a0e3cefd302331097b75",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|WH": {
+"pid": "6ae7a120a895c5bd4e00b09d",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|HE": {
+"pid": "6ae7a120a895c5bd4e00b09d",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|WH": {
+"pid": "6ae7a15deff2af9b7c0be74e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|HE": {
+"pid": "6ae7a15deff2af9b7c0be74e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|WH": {
+"pid": "6ae7a199a04ae2f1280ac947",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|HE": {
+"pid": "6ae7a199a04ae2f1280ac947",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|WH": {
+"pid": "6ae7a1d5a895c5bd4e00b149",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|HE": {
+"pid": "6ae7a1d5a895c5bd4e00b149",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|WH": {
+"pid": "6ae7a2128e070d8cc20b651f",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|HE": {
+"pid": "6ae7a2128e070d8cc20b651f",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|WH": {
+"pid": "6ae7a24ca04ae2f1280aca01",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|HE": {
+"pid": "6ae7a24ca04ae2f1280aca01",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|WH": {
+"pid": "6ae7a2878e070d8cc20b657a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|HE": {
+"pid": "6ae7a2878e070d8cc20b657a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|WH": {
+"pid": "6ae7a2c1eff2af9b7c0be860",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|HE": {
+"pid": "6ae7a2c1eff2af9b7c0be860",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|WH": {
+"pid": "6ae7a2fca895c5bd4e00b20b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|HE": {
+"pid": "6ae7a2fca895c5bd4e00b20b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|WH": {
+"pid": "6ae7a336f9c00c9ec009fed8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|HE": {
+"pid": "6ae7a336f9c00c9ec009fed8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|WH": {
+"pid": "6ae7a3728e070d8cc20b6612",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|HE": {
+"pid": "6ae7a3728e070d8cc20b6612",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|WH": {
+"pid": "6ae7a3afe8a14b46b70ea1be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|HE": {
+"pid": "6ae7a3afe8a14b46b70ea1be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|WH": {
+"pid": "6ae7a3eea895c5bd4e00b2b5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|HE": {
+"pid": "6ae7a3eea895c5bd4e00b2b5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|WH": {
+"pid": "6ae7a42c8e070d8cc20b66c7",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|HE": {
+"pid": "6ae7a42c8e070d8cc20b66c7",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|WH": {
+"pid": "6ae7a467e8a14b46b70ea291",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|HE": {
+"pid": "6ae7a467e8a14b46b70ea291",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|WH": {
+"pid": "6ae7a4a17861ac1c1c042558",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|HE": {
+"pid": "6ae7a4a17861ac1c1c042558",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|WH": {
+"pid": "6ae7a4dc7861ac1c1c04259b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|HE": {
+"pid": "6ae7a4dc7861ac1c1c04259b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|WH": {
+"pid": "6ae7a517f9c00c9ec00a0097",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|HE": {
+"pid": "6ae7a517f9c00c9ec00a0097",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|WH": {
+"pid": "6ae7a552f5f22e3bbd085c17",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|HE": {
+"pid": "6ae7a552f5f22e3bbd085c17",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|WH": {
+"pid": "6ae7a58ceff2af9b7c0bea19",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|HE": {
+"pid": "6ae7a58ceff2af9b7c0bea19",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|WH": {
+"pid": "6ae7a5c97861ac1c1c042633",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|HE": {
+"pid": "6ae7a5c97861ac1c1c042633",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|WH": {
+"pid": "6ae7a603d037ed7f1f02e1ec",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|HE": {
+"pid": "6ae7a603d037ed7f1f02e1ec",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|WH": {
+"pid": "6ae7a641a895c5bd4e00b4b2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|HE": {
+"pid": "6ae7a641a895c5bd4e00b4b2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+}
+}
