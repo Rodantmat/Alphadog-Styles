@@ -278,6 +278,24 @@
     "music": "mx730"
    },
    "status": "built 2026-11-16 (A laugh4 bulldozer + B c21), need scheduling"
+  },
+  {
+   "date": "2026-11-24",
+   "weekday": "Tue",
+   "A": {
+    "video": "social/videos/d5c_breed_compilation.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Feel-good",
+    "music": "mx141"
+   },
+   "B": {
+    "id": "c22",
+    "reel": "out/postc/c22/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Electronic & House",
+    "music": "mx118"
+   },
+   "status": "built 2026-11-17, need scheduling"
   }
  ]
 }

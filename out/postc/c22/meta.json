@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Dad Hat",
+   "cam": "135048@6ae79eb4_White",
+   "raw": "135048",
+   "breed": "French Bulldog",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_sunset_fairway_2.jpg",
+   "bgname": "Sunset Fairway",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.5
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae574cf_Dark Heather",
+   "raw": "100615",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Dark Heather",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pa_OfficeCeiling001.jpg",
+   "bgname": "Office Ceiling 001",
+   "fam": "texture:x:0",
+   "ratio": 9.1
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "111848@6ae58ba4_Ash",
+   "raw": "111848",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_18_3.jpg",
+   "bgname": "Wooden Studio 18",
+   "fam": "hdri:studio:3",
+   "ratio": 4.8
+  },
+  {
+   "i": 3,
+   "prod": "Polo",
+   "cam": "102236@6ae7a291_Athletic Heather",
+   "raw": "102236",
+   "breed": "Miniature Schnauzer",
+   "colour": "Athletic Heather",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_flamed_black_veneer_0.jpg",
+   "bgname": "Flamed Black Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 4.4
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae578da_Navy",
+   "raw": "111848",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Navy",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_syferfontein_6d_clear_puresky_1.jpg",
+   "bgname": "Syferfontein 6d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.5
+  },
+  {
+   "i": 5,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a2a9_White",
+   "raw": "109494",
+   "breed": "Boxer",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_red_brick_pavers_1.jpg",
+   "bgname": "Red Brick Pavers",
+   "fam": "texture:floor:0",
+   "ratio": 6.4
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102057@6aed2f1d_Navy",
+   "raw": "102057",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Navy",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_studio_small_06_1.jpg",
+   "bgname": "Studio Small 06",
+   "fam": "hdri:indoor:1",
+   "ratio": 7.1
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102044@6ae6cb1b_Soft Pink",
+   "raw": "102044",
+   "breed": "Beagle",
+   "colour": "Soft Pink",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_grey_tiles_1.jpg",
+   "bgname": "Grey Tiles",
+   "fam": "texture:outdoor:0",
+   "ratio": 5.4
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.13931972789115765,
+ "shot_len": 1.0681179138321995,
+ "variant": "v2"
+}
