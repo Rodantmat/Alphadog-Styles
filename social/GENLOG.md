@@ -93,3 +93,4 @@
 2026-11-17T18:38:03Z checker run started
 2026-11-17T18:39:53Z checker: Tue Nov 17 09:00 PT slot A ('Me waiting for one last email... or one last walk', due 2026-11-17T17:00Z) re-verified acct1+2 (runs 44149982598/44149988762): IG, TikTok, FB, Pinterest all sent. No failed/stuck/missed; nothing forced; future scheduled items (Nov 18 04:00Z onward) untouched. Result OK.
 2026-11-17T22:51Z generator run started
+2026-11-17T22:54:47Z generator: restore OK (music 1084, bg 6026, trans 107, trans2, merch_lib 5172 files); building Nov 24 A (d5) + B
