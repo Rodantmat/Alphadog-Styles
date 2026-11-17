@@ -86,3 +86,4 @@
 2026-11-16T22:49Z generator run started
 2026-11-16T22:54:42Z generator: restore OK (music 1084, bg 6026, trans 107, trans2); merch_lib pending; building Nov 23 A (laugh4) + B
 2026-11-16T23:07:07Z generator: BUILT Nov 23 A laugh01_bulldozer (laugh4, joke 'sleeping bulldog/bulldozer', 4 dogs, bulldog merch 5 items, bg pg_kloppenheim_01_puresky_2, mx456 Hip-hop&Trap, laugh 516, variation check OK, contact sheet reviewed) + B c21 (mx730 Feel-good, 8 shots reviewed, transitions push/smoothleft >=0.7s, designs visible). REPORT: lead 7 days A+B built Nov 17-23. Fixed at source: laugh build.py now accepts bgphoto (real photo). Problems: V14 pool tight - c21 needed relaxed windows (C2_EXCLP=c19,c20, EXCLR=c19, EXCL=c19,c18); rembg stub + pip deps needed. merch_lib restored from prod-assets (16 product dirs).
+2026-11-17T04:36:36Z checker run started
