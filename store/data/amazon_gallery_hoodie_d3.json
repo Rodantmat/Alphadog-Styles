@@ -1,0 +1,2774 @@
+{
+"french_bulldog|WH": {
+"pid": "6ae56b42b3e56e7b5f092bbd",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"french_bulldog|GR": {
+"pid": "6ae56b42b3e56e7b5f092bbd",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"french_bulldog|SA": {
+"pid": "6ae56b42b3e56e7b5f092bbd",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"french_bulldog|LB": {
+"pid": "6ae56b42b3e56e7b5f092bbd",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"french_bulldog|PK": {
+"pid": "6ae572c890e00e273b088205",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"french_bulldog|AS": {
+"pid": "6ae572c890e00e273b088205",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|WH": {
+"pid": "6ae56b5b93e71ab22e09ffe5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|GR": {
+"pid": "6ae56b5b93e71ab22e09ffe5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|SA": {
+"pid": "6ae56b5b93e71ab22e09ffe5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|LB": {
+"pid": "6ae56b5b93e71ab22e09ffe5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|PK": {
+"pid": "6ae57305b3e56e7b5f093249",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"labrador_retriever|AS": {
+"pid": "6ae57305b3e56e7b5f093249",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|WH": {
+"pid": "6ae56b7155e86fafe60acc99",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|GR": {
+"pid": "6ae56b7155e86fafe60acc99",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|SA": {
+"pid": "6ae56b7155e86fafe60acc99",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|LB": {
+"pid": "6ae56b7155e86fafe60acc99",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|PK": {
+"pid": "6ae573405d127aa2b30af022",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"golden_retriever|AS": {
+"pid": "6ae573405d127aa2b30af022",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|WH": {
+"pid": "6ae56b8990e00e273b087b18",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|GR": {
+"pid": "6ae56b8990e00e273b087b18",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|SA": {
+"pid": "6ae56b8990e00e273b087b18",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|LB": {
+"pid": "6ae56b8990e00e273b087b18",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|PK": {
+"pid": "6ae5737e90e00e273b08825a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shepherd|AS": {
+"pid": "6ae5737e90e00e273b08825a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|WH": {
+"pid": "6ae56ba055e86fafe60acccc",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|GR": {
+"pid": "6ae56ba055e86fafe60acccc",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|SA": {
+"pid": "6ae56ba055e86fafe60acccc",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|LB": {
+"pid": "6ae56ba055e86fafe60acccc",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|PK": {
+"pid": "6ae573bc5d127aa2b30af0d7",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"dachshund|AS": {
+"pid": "6ae573bc5d127aa2b30af0d7",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|WH": {
+"pid": "6ae56bb755e86fafe60acce5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|GR": {
+"pid": "6ae56bb755e86fafe60acce5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|SA": {
+"pid": "6ae56bb755e86fafe60acce5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|LB": {
+"pid": "6ae56bb755e86fafe60acce5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|PK": {
+"pid": "6ae573f890e00e273b088313",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"poodle|AS": {
+"pid": "6ae573f890e00e273b088313",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|WH": {
+"pid": "6ae56bceb3e56e7b5f092c34",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|GR": {
+"pid": "6ae56bceb3e56e7b5f092c34",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|SA": {
+"pid": "6ae56bceb3e56e7b5f092c34",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|LB": {
+"pid": "6ae56bceb3e56e7b5f092c34",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|PK": {
+"pid": "6ae574355d127aa2b30af17e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"beagle|AS": {
+"pid": "6ae574355d127aa2b30af17e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|WH": {
+"pid": "6ae56be57962d6e080007426",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|GR": {
+"pid": "6ae56be57962d6e080007426",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|SA": {
+"pid": "6ae56be57962d6e080007426",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|LB": {
+"pid": "6ae56be57962d6e080007426",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|PK": {
+"pid": "6ae57474d9d5b70e2704f2e5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"rottweiler|AS": {
+"pid": "6ae57474d9d5b70e2704f2e5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|WH": {
+"pid": "6ae56bfb663e719ab10874b3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|GR": {
+"pid": "6ae56bfb663e719ab10874b3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|SA": {
+"pid": "6ae56bfb663e719ab10874b3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|LB": {
+"pid": "6ae56bfb663e719ab10874b3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|PK": {
+"pid": "6ae574c21db256d3020ea9cf",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"german_shorthaired_pointer|AS": {
+"pid": "6ae574c21db256d3020ea9cf",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|WH": {
+"pid": "6ae56c147962d6e08000746c",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|GR": {
+"pid": "6ae56c147962d6e08000746c",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|SA": {
+"pid": "6ae56c147962d6e08000746c",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|LB": {
+"pid": "6ae56c147962d6e08000746c",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|PK": {
+"pid": "6ae575021db256d3020eaa44",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bulldog|AS": {
+"pid": "6ae575021db256d3020eaa44",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|WH": {
+"pid": "6ae5755d1db256d3020eaaa2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|GR": {
+"pid": "6ae5755d1db256d3020eaaa2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|SA": {
+"pid": "6ae5755d1db256d3020eaaa2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|LB": {
+"pid": "6ae5755d1db256d3020eaaa2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|PK": {
+"pid": "6ae5755d1db256d3020eaaa2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cane_corso|AS": {
+"pid": "6ae5755d1db256d3020eaaa2",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|WH": {
+"pid": "6ae575b1d9d5b70e2704f3af",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|GR": {
+"pid": "6ae575b1d9d5b70e2704f3af",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|SA": {
+"pid": "6ae575b1d9d5b70e2704f3af",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|LB": {
+"pid": "6ae575b1d9d5b70e2704f3af",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|PK": {
+"pid": "6ae575b1d9d5b70e2704f3af",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"cavalier_king_charles_spaniel|AS": {
+"pid": "6ae575b1d9d5b70e2704f3af",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|WH": {
+"pid": "6ae57614d9d5b70e2704f452",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|GR": {
+"pid": "6ae57614d9d5b70e2704f452",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|SA": {
+"pid": "6ae57614d9d5b70e2704f452",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|LB": {
+"pid": "6ae57614d9d5b70e2704f452",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|PK": {
+"pid": "6ae57614d9d5b70e2704f452",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"yorkshire_terrier|AS": {
+"pid": "6ae57614d9d5b70e2704f452",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|WH": {
+"pid": "6ae5768490e00e273b08867b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|GR": {
+"pid": "6ae5768490e00e273b08867b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|SA": {
+"pid": "6ae5768490e00e273b08867b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|LB": {
+"pid": "6ae5768490e00e273b08867b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|PK": {
+"pid": "6ae5768490e00e273b08867b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"australian_shepherd|AS": {
+"pid": "6ae5768490e00e273b08867b",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|WH": {
+"pid": "6ae576e81594575b4307344e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|GR": {
+"pid": "6ae576e81594575b4307344e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|SA": {
+"pid": "6ae576e81594575b4307344e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|LB": {
+"pid": "6ae576e81594575b4307344e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|PK": {
+"pid": "6ae576e81594575b4307344e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"doberman_pinscher|AS": {
+"pid": "6ae576e81594575b4307344e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|WH": {
+"pid": "6ae5774755e86fafe60ada65",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|GR": {
+"pid": "6ae5774755e86fafe60ada65",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|SA": {
+"pid": "6ae5774755e86fafe60ada65",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|LB": {
+"pid": "6ae5774755e86fafe60ada65",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|PK": {
+"pid": "6ae5774755e86fafe60ada65",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pembroke_welsh_corgi|AS": {
+"pid": "6ae5774755e86fafe60ada65",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|WH": {
+"pid": "6ae577a855e86fafe60adab5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|GR": {
+"pid": "6ae577a855e86fafe60adab5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|SA": {
+"pid": "6ae577a855e86fafe60adab5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|LB": {
+"pid": "6ae577a855e86fafe60adab5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|PK": {
+"pid": "6ae577a855e86fafe60adab5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"miniature_schnauzer|AS": {
+"pid": "6ae577a855e86fafe60adab5",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|WH": {
+"pid": "6ae5780b521a59fb2b094d71",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|GR": {
+"pid": "6ae5780b521a59fb2b094d71",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|SA": {
+"pid": "6ae5780b521a59fb2b094d71",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|LB": {
+"pid": "6ae5780b521a59fb2b094d71",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|PK": {
+"pid": "6ae5780b521a59fb2b094d71",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boxer|AS": {
+"pid": "6ae5780b521a59fb2b094d71",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|WH": {
+"pid": "6ae57863197e2a8042026c95",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|GR": {
+"pid": "6ae57863197e2a8042026c95",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|SA": {
+"pid": "6ae57863197e2a8042026c95",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|LB": {
+"pid": "6ae57863197e2a8042026c95",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|PK": {
+"pid": "6ae57863197e2a8042026c95",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pomeranian|AS": {
+"pid": "6ae57863197e2a8042026c95",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|WH": {
+"pid": "6ae578beb3e56e7b5f09394e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|GR": {
+"pid": "6ae578beb3e56e7b5f09394e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|SA": {
+"pid": "6ae578beb3e56e7b5f09394e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|LB": {
+"pid": "6ae578beb3e56e7b5f09394e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|PK": {
+"pid": "6ae578beb3e56e7b5f09394e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bernese_mountain_dog|AS": {
+"pid": "6ae578beb3e56e7b5f09394e",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|WH": {
+"pid": "6ae57913521a59fb2b094e02",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|GR": {
+"pid": "6ae57913521a59fb2b094e02",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|SA": {
+"pid": "6ae57913521a59fb2b094e02",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|LB": {
+"pid": "6ae57913521a59fb2b094e02",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|PK": {
+"pid": "6ae57913521a59fb2b094e02",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shih_tzu|AS": {
+"pid": "6ae57913521a59fb2b094e02",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|WH": {
+"pid": "6ae5799a90e00e273b0889be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|GR": {
+"pid": "6ae5799a90e00e273b0889be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|SA": {
+"pid": "6ae5799a90e00e273b0889be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|LB": {
+"pid": "6ae5799a90e00e273b0889be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|PK": {
+"pid": "6ae5799a90e00e273b0889be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"great_dane|AS": {
+"pid": "6ae5799a90e00e273b0889be",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|WH": {
+"pid": "6ae579ee49f7cb0d0b02e83a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|GR": {
+"pid": "6ae579ee49f7cb0d0b02e83a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|SA": {
+"pid": "6ae579ee49f7cb0d0b02e83a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|LB": {
+"pid": "6ae579ee49f7cb0d0b02e83a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|PK": {
+"pid": "6ae579ee49f7cb0d0b02e83a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"boston_terrier|AS": {
+"pid": "6ae579ee49f7cb0d0b02e83a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|WH": {
+"pid": "6ae57a3d55e86fafe60adc32",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|GR": {
+"pid": "6ae57a3d55e86fafe60adc32",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|SA": {
+"pid": "6ae57a3d55e86fafe60adc32",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|LB": {
+"pid": "6ae57a3d55e86fafe60adc32",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|PK": {
+"pid": "6ae57a3d55e86fafe60adc32",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"chihuahua|AS": {
+"pid": "6ae57a3d55e86fafe60adc32",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|WH": {
+"pid": "6ae57a9190e00e273b088a48",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|GR": {
+"pid": "6ae57a9190e00e273b088a48",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|SA": {
+"pid": "6ae57a9190e00e273b088a48",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|LB": {
+"pid": "6ae57a9190e00e273b088a48",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|PK": {
+"pid": "6ae57a9190e00e273b088a48",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"havanese|AS": {
+"pid": "6ae57a9190e00e273b088a48",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|WH": {
+"pid": "6ae57ae090e00e273b088aa8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|GR": {
+"pid": "6ae57ae090e00e273b088aa8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|SA": {
+"pid": "6ae57ae090e00e273b088aa8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|LB": {
+"pid": "6ae57ae090e00e273b088aa8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|PK": {
+"pid": "6ae57ae090e00e273b088aa8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"siberian_husky|AS": {
+"pid": "6ae57ae090e00e273b088aa8",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|WH": {
+"pid": "6ae57b30e22d5a72000fdc2a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|GR": {
+"pid": "6ae57b30e22d5a72000fdc2a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|SA": {
+"pid": "6ae57b30e22d5a72000fdc2a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|LB": {
+"pid": "6ae57b30e22d5a72000fdc2a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|PK": {
+"pid": "6ae57b30e22d5a72000fdc2a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"pug|AS": {
+"pid": "6ae57b30e22d5a72000fdc2a",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|WH": {
+"pid": "6ae57b7b90e00e273b088b29",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|GR": {
+"pid": "6ae57b7b90e00e273b088b29",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|SA": {
+"pid": "6ae57b7b90e00e273b088b29",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|LB": {
+"pid": "6ae57b7b90e00e273b088b29",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|PK": {
+"pid": "6ae57b7b90e00e273b088b29",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"american_pit_bull_terrier|AS": {
+"pid": "6ae57b7b90e00e273b088b29",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|WH": {
+"pid": "6ae57bcae22d5a72000fdc91",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|GR": {
+"pid": "6ae57bcae22d5a72000fdc91",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|SA": {
+"pid": "6ae57bcae22d5a72000fdc91",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|LB": {
+"pid": "6ae57bcae22d5a72000fdc91",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|PK": {
+"pid": "6ae57bcae22d5a72000fdc91",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"border_collie|AS": {
+"pid": "6ae57bcae22d5a72000fdc91",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|WH": {
+"pid": "6ae57c1be22d5a72000fdcd4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|GR": {
+"pid": "6ae57c1be22d5a72000fdcd4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|SA": {
+"pid": "6ae57c1be22d5a72000fdcd4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|LB": {
+"pid": "6ae57c1be22d5a72000fdcd4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|PK": {
+"pid": "6ae57c1be22d5a72000fdcd4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"shiba_inu|AS": {
+"pid": "6ae57c1be22d5a72000fdcd4",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|WH": {
+"pid": "6ae57c6a90e00e273b088bb3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|GR": {
+"pid": "6ae57c6a90e00e273b088bb3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|SA": {
+"pid": "6ae57c6a90e00e273b088bb3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|LB": {
+"pid": "6ae57c6a90e00e273b088bb3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|PK": {
+"pid": "6ae57c6a90e00e273b088bb3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"mini_poodle|AS": {
+"pid": "6ae57c6a90e00e273b088bb3",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|WH": {
+"pid": "6ae57cb4e22d5a72000fdd23",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|GR": {
+"pid": "6ae57cb4e22d5a72000fdd23",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|SA": {
+"pid": "6ae57cb4e22d5a72000fdd23",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|LB": {
+"pid": "6ae57cb4e22d5a72000fdd23",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|PK": {
+"pid": "6ae57cb4e22d5a72000fdd23",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"bichon_frise|AS": {
+"pid": "6ae57cb4e22d5a72000fdd23",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|WH": {
+"pid": "6ae57d03499964581706fe57",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|GR": {
+"pid": "6ae57d03499964581706fe57",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|SA": {
+"pid": "6ae57d03499964581706fe57",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|LB": {
+"pid": "6ae57d03499964581706fe57",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|PK": {
+"pid": "6ae57d03499964581706fe57",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+},
+"maltese|AS": {
+"pid": "6ae57d03499964581706fe57",
+"g": [
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok",
+"ok"
+],
+"main": "ok"
+}
+}
