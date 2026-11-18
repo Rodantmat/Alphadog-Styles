@@ -72,6 +72,9 @@ if PK == "cap":
     F["desc"] = F["desc"].replace("2. Color: pick the color.\n3. Size: pick your size.", "2. Color: pick the hat style and color.\n3. Add to cart.").replace("Finished with the AlphaDog Styles logo label", "Durable print made to last").replace("Machine wash cold, inside out, with similar colors. Tumble dry low. Do not iron or dry clean the print.", "Spot clean with a damp cloth. Do not machine wash or tumble dry.")
     F["bullets"][4] = "PERFECT GIFT for dog moms, dog dads and every dog lover. Durable print made to last"
     for k in kids: k["title"] = k["title"].replace(", Front Emblem, ", ", ")
+if PK in ("hoodie", "cap"):      # Amazon rejects (8560) hoodie titles containing the word "Sunglasses" - it reads them as eyewear needing a UPC. Verified Nov 17 2026.
+    F["title"] = F["title"].replace("Sunglasses", "Cool Shades")
+    for k in kids: k["title"] = k["title"].replace("Sunglasses", "Cool Shades")
 json.dump([F], open(f"{ROOT}/store/data/amazon_listing_{PK}{DC}.json", "w"), separators=(",", ":"))
 print(F["id"], "| parent", F["parent_sku"], "|", F["title"])
 print("children", len(kids), "breeds", len({k['breed'] for k in kids}), "colors", len({k['color'] for k in kids}), "skipped", skipped[:10], "decode failures", bad)
