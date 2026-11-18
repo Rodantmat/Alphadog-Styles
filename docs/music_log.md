@@ -73,3 +73,5 @@
 - 2026-11-21 Post B c23 (replaces c18): mx751.mp3 "Relaxation 01" - Lily J [Chill & Lo-fi, style postB]
 - 2026-11-22 Post B c24 (replaces c19): mx776.mp3 "Stay" - Mauro Urbina [Funk & Disco, style postB]
 - 2026-11-24 Post B c25 (replaces c22): mx1165.mp3 "Back to East" - Michael Ramir C. [Latin & Reggae, style postB]
+- 2026-11-25 Post B c26: mx119.mp3 "Perfect Stranger" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
+- 2026-11-25 Post A d6c_neon_pointer: mx476.mp3 "Baileys" - Diego Nava [Hip-hop & Trap, style d6]

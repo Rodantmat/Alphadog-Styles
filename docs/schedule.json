@@ -235,13 +235,14 @@
     "theme": "Pop & Party"
    },
    "B": {
-    "id": "c18",
-    "reel": "out/postc/c18/reel.mp4",
+    "id": "c23",
+    "reel": "out/postc/c23/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Chill & Lo-fi",
-    "music": "mx766"
+    "music": "mx751",
+    "note": "replaces c18 (Athletic Heather tee same day as d2c; hoodies matched next A d4c)"
    },
-   "status": "A d2c (Nov 21 18:00Z) scheduled on all 4 apps; B c18 SKIPPED (Athletic Heather tee same day as d2c heather tee; Sand/Light Blue/Black hoodies identical to next A d4c) - generator must rebuild"
+   "status": "A d2c (Nov 21 18:00Z) scheduled on all 4 apps; B c23 built 2026-11-18, needs scheduling (Nov 22 04:00Z)"
   },
   {
    "date": "2026-11-22",
@@ -253,13 +254,14 @@
     "music": "mx702"
    },
    "B": {
-    "id": "c19",
-    "reel": "out/postc/c19/reel.mp4",
+    "id": "c24",
+    "reel": "out/postc/c24/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Funk & Disco",
-    "music": "mx635"
+    "music": "mx776",
+    "note": "replaces c19 (Mesh Trucker Cap White repeated c20)"
    },
-   "status": "A d4c (Nov 22 18:00Z) scheduled on all 4 apps (2026-11-17 run); B c19 SKIPPED (Mesh Trucker Cap White repeats c20) - generator must rebuild"
+   "status": "A d4c (Nov 22 18:00Z) scheduled on all 4 apps; B c24 built 2026-11-18, needs scheduling (Nov 23 04:00Z)"
   },
   {
    "date": "2026-11-23",
@@ -289,13 +291,32 @@
     "music": "mx141"
    },
    "B": {
-    "id": "c22",
-    "reel": "out/postc/c22/reel.mp4",
+    "id": "c25",
+    "reel": "out/postc/c25/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Latin & Reggae",
+    "music": "mx1165",
+    "note": "replaces c22 (shared Beagle/Boxer with same-day d5c)"
+   },
+   "status": "A d5c (Nov 24 17:00Z) scheduled on all 4 apps; B c25 built 2026-11-18, needs scheduling (Nov 25 04:00Z)"
+  },
+  {
+   "date": "2026-11-25",
+   "weekday": "Wed",
+   "A": {
+    "video": "social/videos/d6c_neon_pointer.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Hip-hop & Trap",
+    "music": "mx476"
+   },
+   "B": {
+    "id": "c26",
+    "reel": "out/postc/c26/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Electronic & House",
-    "music": "mx118"
+    "music": "mx119"
    },
-   "status": "A d5c (Nov 24 17:00Z) scheduled on all 4 apps (2026-11-18 run); B c22 built, WAITING (channels 10/10); c22 shares Beagle/Boxer with same-day d5c - generator should rebuild"
+   "status": "built, needs scheduling (A d6c neon GSP wtank Light Orange; B c26 Nov 26 04:00Z)"
   }
  ]
 }

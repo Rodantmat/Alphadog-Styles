@@ -281,5 +281,23 @@
    "pg_studio_small_04_3.jpg",
    "pg_wooden_studio_16_3.jpg"
   ]
+ },
+ {
+  "date": "2026-11-25",
+  "model": "d6",
+  "breeds": [
+   "german_shorthaired_pointer"
+  ],
+  "merch": [
+   "wtank/german_shorthaired_pointer/5LO"
+  ],
+  "music": "mx476",
+  "joke": "",
+  "neon_color": "hot pink art + lime text on real dark brick wall",
+  "name": "d6c_neon_pointer",
+  "type": "d6",
+  "bg_ids": [
+   "pt_dark_brick_wall_0.jpg"
+  ]
  }
 ]

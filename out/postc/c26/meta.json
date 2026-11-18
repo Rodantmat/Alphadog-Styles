@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98430@6ae58039_Navy",
+   "raw": "98430",
+   "breed": "Great Dane",
+   "colour": "Navy",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_afternoon_puresky_1.jpg",
+   "bgname": "Qwantani Afternoon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.4
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "97993@6ae579dd_Heather Navy",
+   "raw": "97993",
+   "breed": "Boston Terrier",
+   "colour": "Heather Navy",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Ground097.jpg",
+   "bgname": "Ground 097",
+   "fam": "texture:x:0",
+   "ratio": 3.6
+  },
+  {
+   "i": 2,
+   "prod": "Foam Trucker Hat",
+   "cam": "110280@6ae7a426_none",
+   "raw": "110280",
+   "breed": "Chihuahua",
+   "colour": "none",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_ferndale_studio_07_1.jpg",
+   "bgname": "Ferndale Studio 07",
+   "fam": "hdri:studio:5",
+   "ratio": 6.2
+  },
+  {
+   "i": 3,
+   "prod": "Hoodie",
+   "cam": "98426@6ae5734f_Forest Green",
+   "raw": "98426",
+   "breed": "Golden Retriever",
+   "colour": "Forest Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_oak_veneer_03_1.jpg",
+   "bgname": "Oak Veneer 03",
+   "fam": "texture:wood:0",
+   "ratio": 7.1
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102060@6ae6cb0a_Athletic Heather",
+   "raw": "102060",
+   "breed": "Beagle",
+   "colour": "Athletic Heather",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_story_studio_05_2.jpg",
+   "bgname": "Story Studio 05",
+   "fam": "hdri:studio:0",
+   "ratio": 7.3
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a52c_Khaki",
+   "raw": "135042",
+   "breed": "Border Collie",
+   "colour": "Khaki",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Metal036.jpg",
+   "bgname": "Metal 036",
+   "fam": "texture:x:0",
+   "ratio": 3.5
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "100682@6ae57c00_Maroon",
+   "raw": "100682",
+   "breed": "Shiba Inu",
+   "colour": "Maroon",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_rustig_koppie_puresky_0.jpg",
+   "bgname": "Rustig Koppie (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.0
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "92547@6ae6bd28_Ash",
+   "raw": "92547",
+   "breed": "Boxer",
+   "colour": "Ash",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_smoke_speckled_veneer_1.jpg",
+   "bgname": "Smoke Speckled Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 6.7
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.32507936507936364,
+ "shot_len": 0.9752380952380952,
+ "variant": "v2"
+}
