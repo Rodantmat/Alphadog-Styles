@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "92581@6ae6cb02_Soft Pink",
+   "raw": "92581",
+   "breed": "Standard Poodle",
+   "colour": "Soft Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_royal_esplanade_2.jpg",
+   "bgname": "Royal Esplanade",
+   "fam": "hdri:indoor:0",
+   "ratio": 5.9
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae57480_Sport Grey",
+   "raw": "100615",
+   "breed": "Rottweiler",
+   "colour": "Sport Grey",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_red_sandstone_tiles_0.jpg",
+   "bgname": "Red Sandstone Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 5.9
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "92583@6aed2f12_Red",
+   "raw": "92583",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Red",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_lonely_road_afternoon_puresky_0.jpg",
+   "bgname": "Lonely Road Afternoon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.3
+  },
+  {
+   "i": 3,
+   "prod": "Hoodie",
+   "cam": "98426@6ae574f7_Light Pink",
+   "raw": "98426",
+   "breed": "English Bulldog",
+   "colour": "Light Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_moon_meteor_02_1.jpg",
+   "bgname": "Moon Meteor 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.4
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102062@6ae6ccbf_Natural",
+   "raw": "102062",
+   "breed": "Doberman Pinscher",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_cedar_bridge_sunset_1_3.jpg",
+   "bgname": "Cedar Bridge Sunset 1",
+   "fam": "hdri:outdoor:4",
+   "ratio": 4.8
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79ea0_Stone",
+   "raw": "135042",
+   "breed": "French Bulldog",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_patterned_terracotta_tiling_0.jpg",
+   "bgname": "Patterned Terracotta Tiling",
+   "fam": "texture:floor:0",
+   "ratio": 6.3
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "111848@6ae575b1_Charcoal",
+   "raw": "111848",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Charcoal",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_wooden_studio_19_0.jpg",
+   "bgname": "Wooden Studio 19",
+   "fam": "hdri:studio:3",
+   "ratio": 6.0
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "92547@6aed2f21_Dark Grey Heather",
+   "raw": "92547",
+   "breed": "Miniature Schnauzer",
+   "colour": "Dark Grey Heather",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pt_oak_veneer_04_1.jpg",
+   "bgname": "Oak Veneer 04",
+   "fam": "texture:wood:0",
+   "ratio": 6.6
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.23219954648526342,
+ "shot_len": 1.0681179138321995,
+ "variant": "v4"
+}

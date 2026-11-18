@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102058@6ae6c9e1_Natural",
+   "raw": "102058",
+   "breed": "French Bulldog",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_moon_noon_puresky_2.jpg",
+   "bgname": "Qwantani Moon Noon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.4
+  },
+  {
+   "i": 1,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a3fa_Khaki",
+   "raw": "135042",
+   "breed": "Boston Terrier",
+   "colour": "Khaki",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_slate_floor_0.jpg",
+   "bgname": "Slate Floor",
+   "fam": "texture:floor:5",
+   "ratio": 6.3
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cb3c_Soft Pink",
+   "raw": "102054",
+   "breed": "Rottweiler",
+   "colour": "Soft Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_ferndale_studio_09_0.jpg",
+   "bgname": "Ferndale Studio 09",
+   "fam": "hdri:studio:0",
+   "ratio": 7.4
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "97992@6ae57ddd_Navy",
+   "raw": "97992",
+   "breed": "Standard Poodle",
+   "colour": "Navy",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_plastered_wall_02_0.jpg",
+   "bgname": "Plastered Wall 02",
+   "fam": "texture:wall:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "92580@6ae6bd95_White",
+   "raw": "92580",
+   "breed": "Chihuahua",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_blue_lagoon_2.jpg",
+   "bgname": "Blue Lagoon",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.9
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "98425@6ae58a1a_Sport Grey",
+   "raw": "98425",
+   "breed": "German Shepherd",
+   "colour": "Sport Grey",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_black_painted_planks_1.jpg",
+   "bgname": "Black Painted Planks",
+   "fam": "texture:wood:3",
+   "ratio": 7.6
+  },
+  {
+   "i": 6,
+   "prod": "Tee A",
+   "cam": "100623@6ae575a0_Dark Heather",
+   "raw": "100623",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Dark Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_wasteland_clouds_puresky_1.jpg",
+   "bgname": "Wasteland Clouds (Pure Sky)",
+   "fam": "hdri:outdoor:1",
+   "ratio": 4.6
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102046@6aed2eec_Forest",
+   "raw": "102046",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Forest",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pt_romantic_veneer_0.jpg",
+   "bgname": "Romantic Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 6.1
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.32507936507937024,
+ "shot_len": 1.0216780045351472,
+ "variant": "v3"
+}

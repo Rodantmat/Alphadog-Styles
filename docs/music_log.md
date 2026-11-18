@@ -70,3 +70,6 @@
 - 2026-11-23 Post B c21: mx730.mp3 "Pop Track 04" - Lily J [Feel-good, style postB]
 - 2026-11-24 d5c_breed_compilation: mx141.mp3 "Cyberpunk City 2" - Alejandro Magaña (A. M.) [Feel-good, style d5]
 - 2026-11-24 c22: mx118.mp3 "No Turning Back" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
+- 2026-11-21 Post B c23 (replaces c18): mx751.mp3 "Relaxation 01" - Lily J [Chill & Lo-fi, style postB]
+- 2026-11-22 Post B c24 (replaces c19): mx776.mp3 "Stay" - Mauro Urbina [Funk & Disco, style postB]
+- 2026-11-24 Post B c25 (replaces c22): mx1165.mp3 "Back to East" - Michael Ramir C. [Latin & Reggae, style postB]

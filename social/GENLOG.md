@@ -102,3 +102,4 @@
 2026-11-18T18:35:57Z checker run started
 2026-11-18T18:37:59Z checker OK: Post A 2026-11-18 17:00Z sent on IG, TikTok, FB, Pinterest (runs 44371484265/44371490464); no missed/failed posts, nothing forced; 14 future posts per account untouched
 2026-11-18T22:52:36Z generator run started
+2026-11-18T23:52:28Z generator: REBUILT B c23 (Nov 21, replaces c18, mx751), c24 (Nov 22, replaces c19, mx776), c25 (Nov 24, replaces c22, mx1165); frames reviewed. Machine restarted mid-run; continuing with Nov 25 A neon + B c26
