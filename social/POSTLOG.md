@@ -136,3 +136,10 @@
 
 - 2026-11-18T17:38:18Z checker (Wed 9:30 PT slot A): listed Buffer acct1+2; d3c scenery tees sent on Instagram, TikTok, Facebook, Pinterest. No failed/stuck items, no forced posts. Status: OK
 2026-11-18T18:37:59Z checker OK: Post A 2026-11-18 17:00Z sent on IG, TikTok, FB, Pinterest (runs 44371484265/44371490464); no missed/failed posts, nothing forced; 14 future posts per account untouched
+
+## 2026-11-18 (20:30Z) Buffer fill run
+- Listed acct1+2 (runs 44388985862/44388990129): every past post `sent` on IG, TikTok, FB, Pinterest through Nov 18 17:00Z (A d3c). No failed/missed, nothing recreated. Channels were 7/10.
+- Scheduled via social/planK_20261118_ig_tt.json (acct1) / planK_20261118_fbpin.json (acct2), API status scheduled on all 4 apps: A laugh01_bulldozer (Nov 23 17:00Z), B c21 (Nov 24 04:00Z), A d5c_breed_compilation (Nov 24 17:00Z). Channels now 10/10 (full).
+- Checks: variation.py flags only self-registered music/joke/laugh track (known artefact); pick_music check ok. Minor: c21 (Feel-good) and d5c (Feel-good) are back-to-back themes; c21 shares Golden/Husky/Great Dane breeds with d5c.
+- WAITING (no free slots): B c22 (Nov 25 04:00Z; also shares Beagle/Boxer with same-day d5c - generator should rebuild).
+- ALERT: B for Nov 21 (c18) and Nov 22 (c19) evenings still have NO reel scheduled and were not rebuilt by the generator (files unchanged since Nov 16). Nov 19 and Nov 20 A/B all scheduled; tomorrow (Nov 19) A+B built, no ALERT. Old white-mockup B not scheduled.
