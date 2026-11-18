@@ -15,7 +15,7 @@ by = {(k["breed"], k["cc"]): k for k in f["children"]}
 for b in breeds:
     sheet = Image.new("RGB", (NIMG * T + 60, len(COLORS) * T), (255, 255, 255)); d = ImageDraw.Draw(sheet)
     for r, cc in enumerate(COLORS):
-        k = by[(b, cc)]; files = [k["img"]] + k["others"]; hs = set()
+        k = by[(b, cc)]; files = [k["img"].split("?")[0]] + k["others"]; hs = set()
         if len(files) != NIMG: problems.append((b, cc, "files %d" % len(files)))
         d.text((2, r * T + T // 2), cc, fill=(200, 0, 0))
         for c, rel in enumerate(files):
