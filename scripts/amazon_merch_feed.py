@@ -44,6 +44,7 @@ if PK == "cap": place, pdesc = "Front Emblem", "a portrait printed on the front 
 GAL = json.load(open(f"{ROOT}/store/data/amazon_gallery_{PK}_d{DC}.json"))
 head = f"AlphaDog Styles {PROD['who']} {PROD['noun']}" + (" for Adults" if PROD["who"] == "Unisex" else "")
 kids = []; skipped = []
+CAP_WHITE = ("DS", "DK", "DB", "DP")      # cap mains cleaned to pure white by amazon_cap_white.py (Amazon 100588); "?w=1" makes Amazon fetch the cleaned photo
 for b in M.BR:
     for cc in COLORS:
         e = GAL.get(f"{b}|{cc}") or {}
@@ -52,7 +53,7 @@ for b in M.BR:
         extra = [base + "_g%d.jpg" % (i + 1) for i, t in enumerate(e.get("g", [])) if t == "ok"][:8]      # real Printify photos only
         for s in PP["sizes"]:
             kids.append({"sku": M.sku(PK, b, DC, cc, s), "style": M.BR[b], "breed": b, "color": NAME[cc], "color_std": STD[cc], "cc": cc, "size": s,
-                         "price": M.price(C[cc]["prod"], s), "img": base + ".jpg", "others": extra,
+                         "price": M.price(C[cc]["prod"], s), "img": base + (".jpg?w=1" if PK == "cap" and cc in CAP_WHITE else ".jpg"), "others": extra,
                          "title": f"{head} - {M.BR[b]} {art}, {place}, {NAME[cc]}"[:200]})
 assert len({(k["style"], k["color"], k["size"]) for k in kids}) == len(kids)
 assert len({k["sku"] for k in kids}) == len(kids)
