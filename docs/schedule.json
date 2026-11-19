@@ -242,7 +242,7 @@
     "music": "mx751",
     "note": "replaces c18 (Athletic Heather tee same day as d2c; hoodies matched next A d4c)"
    },
-   "status": "A d2c (Nov 21 18:00Z) scheduled on all 4 apps; B c23 built 2026-11-18, needs scheduling (Nov 22 04:00Z)"
+   "status": "B c23 NOT SCHEDULED (2026-11-19 run): hook text in top 125 px covered by account bar (VIDEO_RULES 15); generator must rebuild with text in rows 430-1580"
   },
   {
    "date": "2026-11-22",
@@ -261,7 +261,7 @@
     "music": "mx776",
     "note": "replaces c19 (Mesh Trucker Cap White repeated c20)"
    },
-   "status": "A d4c (Nov 22 18:00Z) scheduled on all 4 apps; B c24 built 2026-11-18, needs scheduling (Nov 23 04:00Z)"
+   "status": "B c24 NOT SCHEDULED (2026-11-19 run): same feed-safe failure (hook text in covered band); generator must rebuild"
   },
   {
    "date": "2026-11-23",
@@ -298,7 +298,7 @@
     "music": "mx1165",
     "note": "replaces c22 (shared Beagle/Boxer with same-day d5c)"
    },
-   "status": "A d5c (Nov 24 17:00Z) scheduled on all 4 apps; B c25 built 2026-11-18, needs scheduling (Nov 25 04:00Z)"
+   "status": "B c25 NOT SCHEDULED (2026-11-19 run): same feed-safe failure; generator must rebuild"
   },
   {
    "date": "2026-11-25",
@@ -316,7 +316,7 @@
     "theme": "Electronic & House",
     "music": "mx119"
    },
-   "status": "built, needs scheduling (A d6c neon GSP wtank Light Orange; B c26 Nov 26 04:00Z)"
+   "status": "A d6c NOT SCHEDULED (2026-11-19 run): brand pill in covered band; B c26 NOT SCHEDULED: hook text in covered band. Generator must fix at source"
   }
  ]
 }
