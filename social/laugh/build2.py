@@ -12,7 +12,8 @@ FB=R+'out/footage/'
 DOGS=[('out/footage3/chi.mp4',[(0,512,288),(9,512,288)],576,3.5,1.4,6.6),
  ('out/footage3/yorkie.mp4',[(0,235,665),(40,235,665)],460,13.0,11.0,13.8)]
 TR=0.28  # seconds the face takes to snap from serious to full laugh
-ANSY=1180;LAUGH=3.5;SQ=420;GAP=24;CX=500  # phone-safe area: x 70-930, y 250-1500 (clear of app buttons/captions)
+FEED_TOP,FEED_BOT=430,1580   # OWNER 2026-11-19: Instagram/Facebook FEED shows a reel as a centred 4:5 crop (frame y 285-1635) with the account/audio bar over its top ~110 px -> ALL text and merch must sit in y 430-1580 or it is cut in the scrolling feed
+ANSY=1290;LAUGH=3.5;SQ=420;GAP=24;CX=500  # phone-safe area: x 70-930, y 430-1580 (feed 4:5 crop, clear of app bar/captions)
 def font(sz): return ImageFont.truetype('/usr/share/fonts/truetype/google-fonts/Poppins-Bold.ttf',sz)
 def loadall(f,kf,sz):
     cap=cv2.VideoCapture(R+f);fps=cap.get(cv2.CAP_PROP_FPS) or 30;out=[];i=0
@@ -42,7 +43,7 @@ def rmask(w,h,r):
 SM=rmask(SQ,SQ,40);BW=10;SMi=rmask(SQ-2*BW,SQ-2*BW,32)
 import bgs
 bg=(cv2.cvtColor(cv2.resize(cv2.imread(R+'out/bg/'+J['bgphoto']),(W,H),interpolation=cv2.INTER_AREA),cv2.COLOR_BGR2RGB).astype(np.float32)*J.get('bgdim',0.8) if 'bgphoto' in J else bgs.make(J['bgstyle'],J.get('seed',5),*J['bgcols']) if 'bgstyle' in J else funny.paws(seed=J.get('seed',5),**J.get('pal',{}))).astype(np.float32)
-POS=[(CX-SQ-GAP//2,560),(CX+GAP//2,560)]
+POS=[(CX-SQ-GAP//2,740),(CX+GAP//2,740)]
 def sm(x): x=min(max(x,0),1);return x*x*(3-2*x)
 def bounce(t):
     if t<=0: return 0.0
@@ -85,7 +86,7 @@ def shadow(im,blur=22,off=16,op=0.45):
     s.paste(sh,(60,60+off),sh);s=s.filter(ImageFilter.GaussianBlur(blur));s.alpha_composite(im,(60,60));return s
 # merch
 MERCH=[]
-POSM=[(300,650,430,-6),(700,660,430,5),(700,1110,420,-4),(270,1110,430,4),(530,860,340,2)]
+POSM=[(300,760,390,-6),(700,770,390,5),(700,1190,380,-4),(270,1190,390,4),(530,975,310,2)]
 sys.path.insert(0,R+'scripts/video');import merch_lib as ML
 def ensure(k):
     o=R+'out/merch_lib/'+k+'.webp'
@@ -98,6 +99,7 @@ for k,(x,y,w,rot) in zip(J['merch'],POSM):
 Q=textlayer(J['q'],J.get('qsize',70),maxw=820);A=textlayer(J['a'],J.get('asize',78),color=(255,226,60),maxw=840)
 TOP=textlayer(J['top'],58,maxw=820);BOT=textlayer(J['bottom'],42,maxw=820)
 # timeline
+assert FEED_TOP+Q.height+10<=POS[0][1]+10 and 1290+A.height//2<=FEED_BOT and 1525+BOT.height//2<=FEED_BOT+30,'text does not fit the feed-safe zone (shorten the joke or lower qsize)'
 T_Q=0.3;T_FACE=2.6;T_HOLD=T_FACE+3.7;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.6;T_TOT=T_M+len(MERCH)*STEP+2.2
 N=int(T_TOT*FPS)
 cmd=['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-an','-c:v','libx264','-preset','veryfast','-crf','17','-pix_fmt','yuv420p',R+'out/laugh/_v.mp4']
@@ -108,7 +110,7 @@ for n in range(N):
     clr=1-sm((t-T_END-0.05)/0.3) if t<T_CLR else 0  # fade/scale out of dog scene
     if t<T_CLR:
         # question: centred then moves up
-        mv=1;qy=330
+        mv=1;qy=max(520,FEED_TOP+Q.height//2+10)
         qs=bounce((t-0.3)/0.45)
         paste(cv,Q,CX,qy,scale=max(qs,0.01)*(0.92+0.08*clr)+0.0,alpha=clr)
         for i in range(2):
@@ -122,12 +124,12 @@ for n in range(N):
             s=bounce((t-T_LAUGH)/0.35);paste(cv,A,CX,ANSY,scale=max(s,0.01)*(0.9+0.1*clr),alpha=clr)
             # little shake while laughing
     else:
-        paste(cv,TOP,CX,300,alpha=sm((t-T_M)/0.4))
+        paste(cv,TOP,CX,490,alpha=sm((t-T_M)/0.4))
         for j,(im,x,y,rot) in enumerate(MERCH):
             ti=T_M+j*STEP
             if t>=ti:
                 s=bounce((t-ti)/0.28);ox=(1-s)*(-1 if j%2 else 1)*160;paste(cv,im,x+ox,y,scale=max(0.4+0.6*s,0.05),alpha=min(1,(t-ti)/0.1),rot=rot)
-        paste(cv,BOT,CX,1470,alpha=sm((t-T_M-1.2)/0.5))
+        paste(cv,BOT,CX,1525,alpha=sm((t-T_M-1.2)/0.5))
     pr.stdin.write(np.array(cv.convert('RGB')).tobytes())
 pr.stdin.close();pr.wait()
 # audio
