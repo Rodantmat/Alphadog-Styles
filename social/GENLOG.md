@@ -107,3 +107,4 @@
 2026-11-19T04:36:20Z checker run started
 2026-11-19T04:38:41Z checker OK: Post B 2026-11-19 04:00Z (Nov 18 20:00 PT) sent on IG, TikTok, FB, Pinterest (runs 44459494340/44459496633); no missed/failed posts, nothing forced; future scheduled posts per account untouched
 2026-11-19T17:36Z checker run started
+2026-11-19T17:49Z checker: Thu Nov 19 09:00 PT slot A ('What's a small dog's favorite city? New Yorkie!', due 2026-11-19T17:00Z) listed acct1 (run 44578984481) + acct2 (run 44578999271): IG, TikTok, Facebook sent; Pinterest ERROR "Sorry! This site doesn't allow you to save Pins." (6afb65383509d4c5b880113d). Deleted stuck item, re-planned social/plan_force_20261119_1741_1.json (Pinterest, due 17:46Z); sent on Pinterest as 6aff34cb95650eb4b8b994fb (acct2 run 44580865427). Nov 19 A now sent on all 4 apps. Nov 19 B (04:00Z) and earlier sent; future scheduled posts untouched. Result OK (one forced repost).
