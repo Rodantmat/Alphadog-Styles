@@ -42,6 +42,8 @@ def add_text(img,text,y,sz=64):
     im=img.convert("RGBA"); ov=Image.new("RGBA",im.size,(0,0,0,0)); d=ImageDraw.Draw(ov); f=font(sz)
     while d.textlength(text,font=f)>W-220 and sz>40: sz-=2; f=font(sz)
     w=d.textlength(text,font=f); x=(W-w)/2
+    y=max(y,448)            # VIDEO_RULES 15: pill (y-18) must sit below row 430, clear of the feed account bar
+    y=min(y,1580-sz-26)     # and above row 1580
     d.rounded_rectangle([x-30,y-18,x+w+30,y+sz+26],radius=28,fill=(12,12,14,150)); d.text((x,y),text,font=f,fill=(255,255,255,255),stroke_width=2,stroke_fill=(0,0,0,200))
     return Image.alpha_composite(im,ov).convert("RGB")
 def push(PL,A,B): pass
