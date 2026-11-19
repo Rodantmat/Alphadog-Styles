@@ -294,10 +294,32 @@
   "music": "mx476",
   "joke": "",
   "neon_color": "hot pink art + lime text on real dark brick wall",
-  "name": "d6c_neon_pointer",
+  "name": "d6d_neon_pointer",
   "type": "d6",
   "bg_ids": [
    "pt_dark_brick_wall_0.jpg"
-  ]
+  ],
+  "note": "re-render of d6c (brand pill/garment moved into feed-safe rows 430-1580, 2026-11-19); same breed/merch/bg/music"
+ },
+ {
+  "date": "2026-11-26",
+  "model": "laugh2",
+  "breeds": [
+   "yorkshire_terrier",
+   "chihuahua"
+  ],
+  "merch": [
+   "tee/poodle/1PK_back",
+   "hoodie/poodle/2BK",
+   "tank/poodle/2WH",
+   "wtank/poodle/1TB",
+   "cap_dad/poodle/1DK"
+  ],
+  "music": "mx840",
+  "joke": "bubble bath dog / shampoodle",
+  "laugh": "745",
+  "name": "laugh02_shampoodle",
+  "type": "laugh2",
+  "bg_ids": []
  }
 ]

@@ -235,14 +235,14 @@
     "theme": "Pop & Party"
    },
    "B": {
-    "id": "c23",
-    "reel": "out/postc/c23/reel.mp4",
+    "id": "c27",
+    "reel": "out/postc/c27/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Chill & Lo-fi",
-    "music": "mx751",
-    "note": "replaces c18 (Athletic Heather tee same day as d2c; hoodies matched next A d4c)"
+    "music": "mx96",
+    "note": "replaces c23 (feed-safe zone fail, VIDEO_RULES 15)"
    },
-   "status": "B c23 NOT SCHEDULED (2026-11-19 run): hook text in top 125 px covered by account bar (VIDEO_RULES 15); generator must rebuild with text in rows 430-1580"
+   "status": "B c27 built 2026-11-19, needs scheduling (replaces c23); A as before"
   },
   {
    "date": "2026-11-22",
@@ -254,14 +254,14 @@
     "music": "mx702"
    },
    "B": {
-    "id": "c24",
-    "reel": "out/postc/c24/reel.mp4",
+    "id": "c28",
+    "reel": "out/postc/c28/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Funk & Disco",
-    "music": "mx776",
-    "note": "replaces c19 (Mesh Trucker Cap White repeated c20)"
+    "music": "mx757",
+    "note": "replaces c24 (feed-safe zone fail, VIDEO_RULES 15)"
    },
-   "status": "B c24 NOT SCHEDULED (2026-11-19 run): same feed-safe failure (hook text in covered band); generator must rebuild"
+   "status": "B c28 built 2026-11-19, needs scheduling (replaces c24); A as before"
   },
   {
    "date": "2026-11-23",
@@ -291,32 +291,52 @@
     "music": "mx141"
    },
    "B": {
-    "id": "c25",
-    "reel": "out/postc/c25/reel.mp4",
+    "id": "c29",
+    "reel": "out/postc/c29/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Latin & Reggae",
-    "music": "mx1165",
-    "note": "replaces c22 (shared Beagle/Boxer with same-day d5c)"
+    "theme": "Electronic & House",
+    "music": "mx125",
+    "note": "replaces c25 (feed-safe zone fail, VIDEO_RULES 15)"
    },
-   "status": "B c25 NOT SCHEDULED (2026-11-19 run): same feed-safe failure; generator must rebuild"
+   "status": "B c29 built 2026-11-19, needs scheduling (replaces c25); A as before"
   },
   {
    "date": "2026-11-25",
    "weekday": "Wed",
    "A": {
-    "video": "social/videos/d6c_neon_pointer.mp4",
+    "video": "social/videos/d6d_neon_pointer.mp4",
     "slot": "09:00 PT weekdays / 10:00 PT weekends",
     "theme": "Hip-hop & Trap",
-    "music": "mx476"
+    "music": "mx476",
+    "note": "replaces d6c_neon_pointer (brand pill and garment in covered feed band, VIDEO_RULES 15)"
    },
    "B": {
-    "id": "c26",
-    "reel": "out/postc/c26/reel.mp4",
+    "id": "c30",
+    "reel": "out/postc/c30/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Chill & Lo-fi",
+    "music": "mx34",
+    "note": "replaces c26 (feed-safe zone fail, VIDEO_RULES 15)"
+   },
+   "status": "A d6d + B c30 built 2026-11-19, needs scheduling (replace d6c / c26)"
+  },
+  {
+   "date": "2026-11-26",
+   "weekday": "Thu",
+   "A": {
+    "video": "social/videos/laugh02_shampoodle.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Pop & Party",
+    "music": "mx840"
+   },
+   "B": {
+    "id": "c31",
+    "reel": "out/postc/c31/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Electronic & House",
-    "music": "mx119"
+    "music": "mx163"
    },
-   "status": "A d6c NOT SCHEDULED (2026-11-19 run): brand pill in covered band; B c26 NOT SCHEDULED: hook text in covered band. Generator must fix at source"
+   "status": "A laugh02_shampoodle + B c31 built 2026-11-19, needs scheduling"
   }
  ]
 }

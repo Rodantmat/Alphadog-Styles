@@ -502,5 +502,47 @@
   "style": "d6",
   "theme": "Hip-hop & Trap",
   "title": "Baileys"
+ },
+ "mx96.mp3": {
+  "date": "2026-11-21",
+  "use": "Post B c27 (replaces c23)",
+  "style": "postB",
+  "theme": "Chill & Lo-fi",
+  "title": "Digging Them Grooves"
+ },
+ "mx757.mp3": {
+  "date": "2026-11-22",
+  "use": "Post B c28 (replaces c24)",
+  "style": "postB",
+  "theme": "Funk & Disco",
+  "title": "Workout 02"
+ },
+ "mx125.mp3": {
+  "date": "2026-11-24",
+  "use": "Post B c29 (replaces c25)",
+  "style": "postB",
+  "theme": "Electronic & House",
+  "title": "Techno Fest Feel"
+ },
+ "mx34.mp3": {
+  "date": "2026-11-25",
+  "use": "Post B c30 (replaces c26)",
+  "style": "postB",
+  "theme": "Chill & Lo-fi",
+  "title": "Raising Me Higher"
+ },
+ "mx840.mp3": {
+  "date": "2026-11-26",
+  "use": "Post A laugh02_shampoodle",
+  "style": "laugh2",
+  "theme": "Pop & Party",
+  "title": "That's the Way of Life"
+ },
+ "mx163.mp3": {
+  "date": "2026-11-26",
+  "use": "Post B c31",
+  "style": "postB",
+  "theme": "Electronic & House",
+  "title": "Niro"
  }
 }

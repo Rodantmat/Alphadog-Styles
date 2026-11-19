@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100618@6ae59114_Forest Green",
+   "raw": "100618",
+   "breed": "Boston Terrier",
+   "colour": "Forest Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_qwantani_mid_morning_puresky_0.jpg",
+   "bgname": "Qwantani Mid Morning (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.5
+  },
+  {
+   "i": 1,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79ea0_Stone",
+   "raw": "135042",
+   "breed": "French Bulldog",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_exterior_wall_cladding_02_0.jpg",
+   "bgname": "Exterior Wall Cladding 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 5.9
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "111848@6ae578da_Navy",
+   "raw": "111848",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Navy",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_blouberg_sunrise_2_2.jpg",
+   "bgname": "Blouberg Sunrise 2",
+   "fam": "hdri:outdoor:0",
+   "ratio": 4.9
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "92547@6aed2f1d_Asphalt",
+   "raw": "92547",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Asphalt",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pa_Foil002.jpg",
+   "bgname": "Foil 002",
+   "fam": "texture:x:0",
+   "ratio": 4.4
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100620@6ae58b71_Sport Grey",
+   "raw": "100620",
+   "breed": "Doberman Pinscher",
+   "colour": "Sport Grey",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_story_studio_05_1.jpg",
+   "bgname": "Story Studio 05",
+   "fam": "hdri:studio:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "98425@6ae57429_Military Green",
+   "raw": "98425",
+   "breed": "Beagle",
+   "colour": "Military Green",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Snow010A.jpg",
+   "bgname": "Snow 010 A",
+   "fam": "texture:x:3",
+   "ratio": 5.7
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "92578@6aed2f1a_Maroon",
+   "raw": "92578",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Maroon",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_table_mountain_2_puresky_0.jpg",
+   "bgname": "Table Mountain 2 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.7
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "100615@6ae574cf_Dark Heather",
+   "raw": "100615",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Dark Heather",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pa_Fabric081C.jpg",
+   "bgname": "Fabric 081 C",
+   "fam": "texture:x:0",
+   "ratio": 6.1
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.26702947845805264,
+ "shot_len": 1.0216780045351472,
+ "variant": "v3"
+}

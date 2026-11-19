@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98427@6ae58619_Military Green",
+   "raw": "98427",
+   "breed": "Boxer",
+   "colour": "Military Green",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloofendal_43d_clear_puresky_1.jpg",
+   "bgname": "Kloofendal 43d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.7
+  },
+  {
+   "i": 1,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a1d9_none",
+   "raw": "109489",
+   "breed": "Australian Shepherd",
+   "colour": "none",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Rock062.jpg",
+   "bgname": "Rock 062",
+   "fam": "texture:x:0",
+   "ratio": 6.7
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "100682@6ae589d0_Sport Grey",
+   "raw": "100682",
+   "breed": "Labrador Retriever",
+   "colour": "Sport Grey",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_15_0.jpg",
+   "bgname": "Wooden Studio 15",
+   "fam": "hdri:studio:4",
+   "ratio": 8.9
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "97992@6ae585a4_Charcoal",
+   "raw": "97992",
+   "breed": "Miniature Schnauzer",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Metal012.jpg",
+   "bgname": "Metal 012",
+   "fam": "texture:x:3",
+   "ratio": 5.8
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102059@6ae6cbe6_White",
+   "raw": "102059",
+   "breed": "Cane Corso",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_blue_lagoon_1.jpg",
+   "bgname": "Blue Lagoon",
+   "fam": "hdri:outdoor:0",
+   "ratio": 4.1
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a3bc_Pink",
+   "raw": "135042",
+   "breed": "Great Dane",
+   "colour": "Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Rock061.jpg",
+   "bgname": "Rock 061",
+   "fam": "texture:x:0",
+   "ratio": 4.4
+  },
+  {
+   "i": 6,
+   "prod": "Tee A",
+   "cam": "100620@6ae589e4_Dark Chocolate",
+   "raw": "100620",
+   "breed": "Golden Retriever",
+   "colour": "Dark Chocolate",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_quarry_01_puresky_1.jpg",
+   "bgname": "Quarry 01 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.4
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102044@6aed2f1a_Red",
+   "raw": "102044",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Red",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pt_romantic_veneer_1.jpg",
+   "bgname": "Romantic Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 3.6
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.4411791383219943,
+ "shot_len": 0.6733786848072563,
+ "variant": "v2"
+}

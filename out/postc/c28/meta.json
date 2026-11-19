@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "92581@6ae6cb02_Soft Pink",
+   "raw": "92581",
+   "breed": "Standard Poodle",
+   "colour": "Soft Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_pretville_street_1.jpg",
+   "bgname": "Pretville Street",
+   "fam": "hdri:outdoor:5",
+   "ratio": 5.3
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98432@6ae58fa1_Ash",
+   "raw": "98432",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Ash",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_smoke_speckled_veneer_0.jpg",
+   "bgname": "Smoke Speckled Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 5.9
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100617@6ae5737b_White",
+   "raw": "100617",
+   "breed": "German Shepherd",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_moon_noon_puresky_0.jpg",
+   "bgname": "Qwantani Moon Noon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.3
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79ea0_Stone",
+   "raw": "135042",
+   "breed": "French Bulldog",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_patterned_slate_tiles_0.jpg",
+   "bgname": "Patterned Slate Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 7.0
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae578da_Navy",
+   "raw": "111848",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Navy",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_scythian_tombs_puresky_1.jpg",
+   "bgname": "Scythian Tombs (Pure Sky)",
+   "fam": "hdri:outdoor:0",
+   "ratio": 6.2
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "100615@6ae58817_Natural",
+   "raw": "100615",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_moon_01_0.jpg",
+   "bgname": "Moon 01",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.6
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "111847@6ae58068_Light Pink",
+   "raw": "111847",
+   "breed": "Boston Terrier",
+   "colour": "Light Pink",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_kloppenheim_03_puresky_3.jpg",
+   "bgname": "Kloppenheim 03 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.5
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102045@6ae6cb0a_Soft Cream",
+   "raw": "102045",
+   "breed": "Beagle",
+   "colour": "Soft Cream",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_distressed_painted_planks_1.jpg",
+   "bgname": "Distressed Painted Planks",
+   "fam": "texture:wood:0",
+   "ratio": 3.2
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2089795918367382,
+ "shot_len": 1.0681179138321995,
+ "variant": "v3"
+}

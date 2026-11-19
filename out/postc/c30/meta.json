@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102059@6ae6cf6c_Ash",
+   "raw": "102059",
+   "breed": "Border Collie",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_illovo_beach_balcony_0.jpg",
+   "bgname": "Illovo Beach Balcony",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.3
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae58312_Light Blue",
+   "raw": "100615",
+   "breed": "Dachshund",
+   "colour": "Light Blue",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_clay_plaster_0.jpg",
+   "bgname": "Clay Plaster",
+   "fam": "texture:wall:0",
+   "ratio": 5.1
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "111847@6ae57474_Heather Navy",
+   "raw": "111847",
+   "breed": "Rottweiler",
+   "colour": "Heather Navy",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_rocky_ridge_puresky_0.jpg",
+   "bgname": "Rocky Ridge (Pure Sky)",
+   "fam": "hdri:outdoor:0",
+   "ratio": 4.1
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "102045@6ae6ca34_Sand Dune",
+   "raw": "102045",
+   "breed": "Labrador Retriever",
+   "colour": "Sand Dune",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_patterned_slate_tiles_1.jpg",
+   "bgname": "Patterned Slate Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 7.9
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100617@6ae57c32_Sand",
+   "raw": "100617",
+   "breed": "Shiba Inu",
+   "colour": "Sand",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_08_0.jpg",
+   "bgname": "Wooden Studio 08",
+   "fam": "hdri:studio:3",
+   "ratio": 9.6
+  },
+  {
+   "i": 5,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a491_none",
+   "raw": "109489",
+   "breed": "Siberian Husky",
+   "colour": "none",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_moon_03_1.jpg",
+   "bgname": "Moon 03",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.1
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102060@6ae6cd30_Soft Cream",
+   "raw": "102060",
+   "breed": "Boxer",
+   "colour": "Soft Cream",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_goegap_0.jpg",
+   "bgname": "Goegap",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.3
+  },
+  {
+   "i": 7,
+   "prod": "Polo",
+   "cam": "102236@6ae7a436_Athletic Heather",
+   "raw": "102236",
+   "breed": "Chihuahua",
+   "colour": "Athletic Heather",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_WoodFloor070.jpg",
+   "bgname": "Wood Floor 070",
+   "fam": "texture:x:0",
+   "ratio": 7.2
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2554195011337869,
+ "shot_len": 1.0681179138321995,
+ "variant": "v2"
+}

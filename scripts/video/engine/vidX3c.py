@@ -1,6 +1,9 @@
 from v5lib import *
 import art,math,os
 BREED=os.environ.get('NEON_BREED','german_shorthaired_pointer');PKEY=os.environ.get('NEON_PROD','tee/german_shorthaired_pointer/5WH');NTXT=os.environ.get('NEON_TXT','POINTER');BGF=os.environ.get('NEON_BG','pt_dark_brick_wall_0.jpg');OUTF=os.environ.get('NEON_OUT','/tmp/kl/vX3c_silent.mp4')
+# VIDEO_RULES 15 (2026-11-19): brand pill moved from y276 (covered by the feed account bar) to the lower feed-safe zone; CTA stays at 1345
+LKY2=int(os.environ.get('NEON_LKY','1515'))
+def lock(im): return paste_c(im,V.LK,LKY2)
 rs=np.random.RandomState(31)
 # ---------- brick wall ----------
 def wall():
@@ -63,7 +66,8 @@ dm[:int(ph_*0.25)]=0;dm[int(ph_*0.62):]=0
 ys,xs=np.where(dm);PX0,PX1,PY0,PY1=np.percentile(xs,0.3),np.percentile(xs,99.7),np.percentile(ys,0.3),np.percentile(ys,99.7)
 print('print bbox in product',PX0,PX1,PY0,PY1,prod.shape)
 PCX,PCY,PW,PHH=(PX0+PX1)/2-pw_/2,(PY0+PY1)/2-ph_/2,PX1-PX0,PY1-PY0   # relative to product centre
-HCY=785
+DY=70   # shift everything down so garment/art sit inside feed-safe rows 430-1580 (rule 15)
+HCY=785+DY
 def sm(x): x=min(max(x,0),1);return x*x*(3-2*x)
 def hood(bg,s,al):
     sw=int(pw_*s);shh=int(ph_*s);ss=cut3.rs(prod,(sw,shh));x0=W//2-sw//2;y0=int(HCY-shh//2)
@@ -91,7 +95,7 @@ for f in range(TEND):
     tsc=min(H,1)*0+ (PHH*hs)/AH       # neon scale landing on print height
     tx,ty=W/2+PCX*hs,HCY+PCY*hs
     sc=1+(tsc-1)*u
-    ac=np.array([W/2,800.],np.float32)+artc;ac=ac+(np.array([tx,ty])-ac)*u
+    ac=np.array([W/2,800.+DY],np.float32)+artc;ac=ac+(np.array([tx,ty])-ac)*u
     cx,cy=ac[0]-artc[0]*sc,ac[1]-artc[1]*sc
     fo=1-sm((f-FADE0)/(FADE1-FADE0))
     Lp=place(L*fo,sc,cx,cy)
@@ -103,6 +107,6 @@ for f in range(TEND):
     frame=hood(base,hs,hal)
     frame=frame+Lp*(0.55+0.45*(1-hal)) if f>=T0 else frame+Lp
     im=toim(np.clip(frame,0,255));im=lock(im)
-    if f>=T1: im=paste_c(im,V.cta("alphadogstyles.com  ·  link in bio"),1345,min(1,(f-T1)/12))
+    if f>=T1: im=paste_c(im,V.cta("alphadogstyles.com  ·  link in bio"),1345+DY,min(1,(f-T1)/12))
     p.stdin.write(back(im).tobytes())
 p.stdin.close();p.wait()

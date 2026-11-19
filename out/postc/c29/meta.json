@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102057@6aed2f21_Dark Grey Heather",
+   "raw": "102057",
+   "breed": "Miniature Schnauzer",
+   "colour": "Dark Grey Heather",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_qwantani_morning_puresky_1.jpg",
+   "bgname": "Qwantani Morning (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.2
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98425@6ae58a1a_Sport Grey",
+   "raw": "98425",
+   "breed": "German Shepherd",
+   "colour": "Sport Grey",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_dark_rock_0.jpg",
+   "bgname": "Dark Rock",
+   "fam": "texture:outdoor:0",
+   "ratio": 7.6
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "92583@6ae6c9f3_White",
+   "raw": "92583",
+   "breed": "French Bulldog",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_royal_esplanade_0.jpg",
+   "bgname": "Royal Esplanade",
+   "fam": "hdri:indoor:0",
+   "ratio": 6.9
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "97992@6ae57ddd_Navy",
+   "raw": "97992",
+   "breed": "Standard Poodle",
+   "colour": "Navy",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_beige_wall_001_0.jpg",
+   "bgname": "Beige Wall 001",
+   "fam": "texture:wall:0",
+   "ratio": 4.2
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102062@6ae6ccbf_Natural",
+   "raw": "102062",
+   "breed": "Doberman Pinscher",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloppenheim_01_puresky_3.jpg",
+   "bgname": "Kloppenheim 01 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.4
+  },
+  {
+   "i": 5,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a22a_White",
+   "raw": "109494",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_WoodFloor064.jpg",
+   "bgname": "Wood Floor 064",
+   "fam": "texture:x:0",
+   "ratio": 7.7
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "111848@6ae575b1_Charcoal",
+   "raw": "111848",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Charcoal",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_evening_road_01_puresky_0.jpg",
+   "bgname": "Evening Road 01 (Pure Sky)",
+   "fam": "hdri:outdoor:0",
+   "ratio": 3.4
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "92547@6aed2f12_Red",
+   "raw": "92547",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Red",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pa_PaintedPlaster017.jpg",
+   "bgname": "Painted Plaster 017",
+   "fam": "texture:x:1",
+   "ratio": 3.4
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2321995464852591,
+ "shot_len": 0.9752380952380952,
+ "variant": "v4"
+}
