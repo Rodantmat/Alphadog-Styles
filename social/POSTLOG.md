@@ -143,3 +143,4 @@
 - Checks: variation.py flags only self-registered music/joke/laugh track (known artefact); pick_music check ok. Minor: c21 (Feel-good) and d5c (Feel-good) are back-to-back themes; c21 shares Golden/Husky/Great Dane breeds with d5c.
 - WAITING (no free slots): B c22 (Nov 25 04:00Z; also shares Beagle/Boxer with same-day d5c - generator should rebuild).
 - ALERT: B for Nov 21 (c18) and Nov 22 (c19) evenings still have NO reel scheduled and were not rebuilt by the generator (files unchanged since Nov 16). Nov 19 and Nov 20 A/B all scheduled; tomorrow (Nov 19) A+B built, no ALERT. Old white-mockup B not scheduled.
+2026-11-19T04:38:41Z checker OK: Post B 2026-11-19 04:00Z (Nov 18 20:00 PT) sent on IG, TikTok, FB, Pinterest (runs 44459494340/44459496633); no missed/failed posts, nothing forced; future scheduled posts per account untouched
