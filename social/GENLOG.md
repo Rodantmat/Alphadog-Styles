@@ -106,3 +106,4 @@
 2026-11-18T23:57:54Z generator: BUILT Nov 25 A d6c_neon_pointer (d6, GSP, wtank Light Orange 5LO, real brick photo, hot pink+lime neon, mx476 Hip-hop&Trap, variation check OK, frames reviewed) + B c26 (mx119 Electronic&House, 8 shots reviewed). REPORT: rebuilt B c23 (Nov 21), c24 (Nov 22), c25 (Nov 24); built Nov 25 A+B; lead 7 days (Nov 19-25) all built; no flagged items open. Violations fixed: neon tee repeat (switched to wtank), CTA over garment. Problems: machine restarted mid-run (re-ran c26); V14 pool tight (minor repeats noted in RULES_LEDGER). Nothing scheduled in Buffer.
 2026-11-19T04:36:20Z checker run started
 2026-11-19T04:38:41Z checker OK: Post B 2026-11-19 04:00Z (Nov 18 20:00 PT) sent on IG, TikTok, FB, Pinterest (runs 44459494340/44459496633); no missed/failed posts, nothing forced; future scheduled posts per account untouched
+2026-11-19T17:36Z checker run started
