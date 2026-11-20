@@ -1,0 +1,32 @@
+{
+ "out": "social/videos/d7c_which_one_beagle.mp4",
+ "music": "mx93.mp3",
+ "ss": 6,
+ "cta": "alphadogstyles.com  \u00b7  link in bio",
+ "scenes": [
+  {
+   "head": "BEAGLE",
+   "item": "hoodie/beagle/1NV_back",
+   "bg": "pt_beige_wall_001_1.jpg"
+  },
+  {
+   "head": "GREAT DANE",
+   "item": "tee/great_dane/2RD",
+   "bg": "pa_Ground093A.jpg"
+  },
+  {
+   "head": "DOBERMAN",
+   "item": "cap_foam/doberman_pinscher/1FB",
+   "bg": "pg_studio_kontrast_01_1.jpg"
+  },
+  {
+   "head": [
+    "WHICH BREED",
+    "IS YOURS?"
+   ],
+   "hs": 68,
+   "item": "tank/boxer/2HE",
+   "bg": "pt_hangar_concrete_floor_1.jpg"
+  }
+ ]
+}

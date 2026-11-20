@@ -178,3 +178,6 @@
 - Checks: variation.py flags only self-registration matches (music, joke, laugh track and neon breed are unique to each entry); pick_music check ok (78 used of 1017); music mx96, mx757, mx476, mx840 not used elsewhere. Neighbour checks by hand (postb_variety.py does not cover C2): c20/c27/c28 share no breed between neighbours.
 - ALERT: none. Tomorrow (Nov 21) A d2c and B c27's slot are scheduled; A d2c and B c20 already on all 4 apps.
 - Status: schedule.json updated (Nov 21, 22, 24, 25, 26). Result OK with the Post B gap above.
+
+## 2026-11-20 Generator run (PM)
+- Rebuilt B c29/c30/c31 as c32/c33/c34 (v5 breed-led, pin.json); built Nov 27 A d7c_which_one_beagle + B c35. docs/schedule.json status "built, needs scheduling". Nothing scheduled in Buffer by the generator.

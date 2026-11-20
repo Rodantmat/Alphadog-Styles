@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "92578@6aed2ef8_Navy",
+   "raw": "92578",
+   "breed": "Boston Terrier",
+   "colour": "Navy",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_qwantani_dusk_1_puresky_1.jpg",
+   "bgname": "Qwantani Dusk 1 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 7.6
+  },
+  {
+   "i": 1,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a1d9_none",
+   "raw": "109489",
+   "breed": "Australian Shepherd",
+   "colour": "none",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_wood_trunk_wall_0.jpg",
+   "bgname": "Wood Trunk Wall",
+   "fam": "texture:outdoor:0",
+   "ratio": 8.9
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102060@6ae6ca85_Light Blue",
+   "raw": "102060",
+   "breed": "German Shepherd",
+   "colour": "Light Blue",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_story_studio_02_2.jpg",
+   "bgname": "Story Studio 02",
+   "fam": "hdri:studio:0",
+   "ratio": 5.7
+  },
+  {
+   "i": 3,
+   "prod": "Tee A",
+   "cam": "97992@6ae58843_Heather Navy",
+   "raw": "97992",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Heather Navy",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Metal052A.jpg",
+   "bgname": "Metal 052 A",
+   "fam": "texture:x:3",
+   "ratio": 5.5
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cf84_Ash",
+   "raw": "102054",
+   "breed": "Shiba Inu",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_snow_field_puresky_3.jpg",
+   "bgname": "Snow Field (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.1
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79ea0_Stone",
+   "raw": "135042",
+   "breed": "French Bulldog",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_red_brick_pavers_0.jpg",
+   "bgname": "Red Brick Pavers",
+   "fam": "texture:floor:0",
+   "ratio": 4.9
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "98427@6ae57db9_White",
+   "raw": "98427",
+   "breed": "Dachshund",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_green_point_park_3.jpg",
+   "bgname": "Green Point Park",
+   "fam": "hdri:outdoor:1",
+   "ratio": 4.6
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "92547@6ae6cbe9_Natural",
+   "raw": "92547",
+   "breed": "Cane Corso",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_peeling_painted_wall_1.jpg",
+   "bgname": "Peeling Painted Wall",
+   "fam": "texture:wall:0",
+   "ratio": 4.1
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.3018594104308391,
+ "shot_len": 0.9752380952380952,
+ "variant": "v5"
+}

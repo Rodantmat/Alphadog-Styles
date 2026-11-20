@@ -291,14 +291,14 @@
     "music": "mx141"
    },
    "B": {
-    "id": "c29",
-    "reel": "out/postc/c29/reel.mp4",
+    "id": "c32",
+    "reel": "out/postc/c32/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Electronic & House",
-    "music": "mx125",
-    "note": "replaces c25 (feed-safe zone fail, VIDEO_RULES 15)"
+    "theme": "Chill & Lo-fi",
+    "music": "mx888",
+    "note": "replaces c29 (not v5 breed-led, no pin.json); built 2026-11-20 with v5 + pin.json"
    },
-   "status": "A d5c (Nov 24 17:00Z) scheduled; B c29 NOT scheduled: built before engagement rule 16 (no breed-led v5 hook/caption/pin.json) - generator must rebuild with v5 (owner 2026-11-20)"
+   "status": "A as before; B c32 built, needs scheduling (replaces c29, v5 breed-led, pin.json)"
   },
   {
    "date": "2026-11-25",
@@ -311,14 +311,14 @@
     "note": "replaces d6c_neon_pointer (brand pill and garment in covered feed band, VIDEO_RULES 15)"
    },
    "B": {
-    "id": "c30",
-    "reel": "out/postc/c30/reel.mp4",
+    "id": "c33",
+    "reel": "out/postc/c33/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Chill & Lo-fi",
-    "music": "mx34",
-    "note": "replaces c26 (feed-safe zone fail, VIDEO_RULES 15)"
+    "theme": "Electronic & House",
+    "music": "mx132",
+    "note": "replaces c30 (not v5 breed-led, no pin.json); built 2026-11-20 with v5 + pin.json"
    },
-   "status": "A d6d_neon_pointer (Nov 25 17:00Z) scheduled on all 4 apps after loopify (2026-11-20 run); B c30 NOT scheduled: not v5, rebuild first"
+   "status": "A as before; B c33 built, needs scheduling (replaces c30, v5 breed-led, pin.json)"
   },
   {
    "date": "2026-11-26",
@@ -330,13 +330,32 @@
     "music": "mx840"
    },
    "B": {
-    "id": "c31",
-    "reel": "out/postc/c31/reel.mp4",
+    "id": "c34",
+    "reel": "out/postc/c34/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Electronic & House",
-    "music": "mx163"
+    "theme": "Funk & Disco",
+    "music": "mx696",
+    "note": "replaces c31 (not v5 breed-led, no pin.json); built 2026-11-20 with v5 + pin.json"
    },
-   "status": "A laugh02_shampoodle (Nov 26 17:00Z) scheduled on all 4 apps after loopify (2026-11-20 run); B c31 NOT scheduled: not v5, rebuild first"
+   "status": "A as before; B c34 built, needs scheduling (replaces c31, v5 breed-led, pin.json)"
+  },
+  {
+   "date": "2026-11-27",
+   "weekday": "Fri",
+   "A": {
+    "video": "social/videos/d7c_which_one_beagle.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Feel-good",
+    "music": "mx93"
+   },
+   "B": {
+    "id": "c35",
+    "reel": "out/postc/c35/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Latin & Reggae",
+    "music": "mx239"
+   },
+   "status": "built, needs scheduling (2026-11-20 run; A d7c looped, B c35 v5 breed-led, pin.json)"
   }
  ]
 }

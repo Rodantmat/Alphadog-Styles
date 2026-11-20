@@ -321,5 +321,26 @@
   "name": "laugh02_shampoodle",
   "type": "laugh2",
   "bg_ids": []
+ },
+ {
+  "date": "2026-11-27",
+  "model": "d7",
+  "breeds": [
+   "beagle",
+   "great_dane",
+   "doberman_pinscher",
+   "boxer"
+  ],
+  "merch": [
+   "hoodie/beagle/1NV_back",
+   "tee/great_dane/2RD",
+   "cap_foam/doberman_pinscher/1FB",
+   "tank/boxer/2HE"
+  ],
+  "music": "mx93",
+  "joke": "",
+  "name": "d7c_which_one_beagle",
+  "type": "d7",
+  "bg_ids": []
  }
 ]

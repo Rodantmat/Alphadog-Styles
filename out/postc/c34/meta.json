@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "111847@6ae587d4_Sport Grey",
+   "raw": "111847",
+   "breed": "Siberian Husky",
+   "colour": "Sport Grey",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_ferndale_studio_07_2.jpg",
+   "bgname": "Ferndale Studio 07",
+   "fam": "hdri:studio:0",
+   "ratio": 6.5
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "97993@6ae576d5_Natural",
+   "raw": "97993",
+   "breed": "Doberman Pinscher",
+   "colour": "Natural",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_peeling_painted_wall_0.jpg",
+   "bgname": "Peeling Painted Wall",
+   "fam": "texture:wall:0",
+   "ratio": 3.7
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "98430@6ae57ea8_Dark Heather",
+   "raw": "98430",
+   "breed": "English Bulldog",
+   "colour": "Dark Heather",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_autumn_field_puresky_0.jpg",
+   "bgname": "Autumn Field (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.4
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "102046@6ae6cf67_Athletic Heather",
+   "raw": "102046",
+   "breed": "Border Collie",
+   "colour": "Athletic Heather",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_slate_floor_1.jpg",
+   "bgname": "Slate Floor",
+   "fam": "texture:floor:5",
+   "ratio": 6.8
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae58ba4_Ash",
+   "raw": "111848",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_ferndale_studio_03_2.jpg",
+   "bgname": "Ferndale Studio 03",
+   "fam": "hdri:studio:0",
+   "ratio": 8.2
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a324_Light Blue",
+   "raw": "135042",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Light Blue",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Road008A.jpg",
+   "bgname": "Road 008 A",
+   "fam": "texture:x:0",
+   "ratio": 6.1
+  },
+  {
+   "i": 6,
+   "prod": "Tee A",
+   "cam": "100620@6ae589e4_Dark Chocolate",
+   "raw": "100620",
+   "breed": "Golden Retriever",
+   "colour": "Dark Chocolate",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_autumn_field_puresky_2.jpg",
+   "bgname": "Autumn Field (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.3
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98426@6ae589d0_Sand",
+   "raw": "98426",
+   "breed": "Labrador Retriever",
+   "colour": "Sand",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_terrain_red_01_1.jpg",
+   "bgname": "Terrain Red 01",
+   "fam": "texture:outdoor:0",
+   "ratio": 6.8
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2089795918367361,
+ "shot_len": 1.0681179138321995,
+ "variant": "v5"
+}

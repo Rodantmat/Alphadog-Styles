@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Foam Trucker Hat",
+   "cam": "110280@6ae7a426_none",
+   "raw": "110280",
+   "breed": "Chihuahua",
+   "colour": "none",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_studio_small_09_1.jpg",
+   "bgname": "Studio Small 09",
+   "fam": "hdri:indoor:0",
+   "ratio": 5.9
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "102046@6aed2f03_Maroon",
+   "raw": "102046",
+   "breed": "Australian Shepherd",
+   "colour": "Maroon",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pa_Travertine009.jpg",
+   "bgname": "Travertine 009",
+   "fam": "texture:x:0",
+   "ratio": 6.9
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "98429@6ae57de0_White",
+   "raw": "98429",
+   "breed": "Standard Poodle",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_kloofendal_48d_partly_cloudy_puresky_2.jpg",
+   "bgname": "Kloofendal 48d Partly Cloudy (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.1
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a169_Stone",
+   "raw": "135042",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_brick_wall_10_0.jpg",
+   "bgname": "Brick Wall 10",
+   "fam": "texture:wall:0",
+   "ratio": 6.8
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "100682@6ae5738d_Forest Green",
+   "raw": "100682",
+   "breed": "German Shepherd",
+   "colour": "Forest Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_18_0.jpg",
+   "bgname": "Wooden Studio 18",
+   "fam": "hdri:studio:3",
+   "ratio": 9.5
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "97992@6ae585a4_Charcoal",
+   "raw": "97992",
+   "breed": "Miniature Schnauzer",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Metal049A.jpg",
+   "bgname": "Metal 049 A",
+   "fam": "texture:x:0",
+   "ratio": 7.5
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102058@6ae6cb6f_Sand Dune",
+   "raw": "102058",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_treetop_balcony_3.jpg",
+   "bgname": "Treetop Balcony",
+   "fam": "hdri:sunrise-sunset:0",
+   "ratio": 4.2
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98432@6ae59396_Light Pink",
+   "raw": "98432",
+   "breed": "Rottweiler",
+   "colour": "Light Pink",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_moon_02_0.jpg",
+   "bgname": "Moon 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.4
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.32507936507937074,
+ "shot_len": 0.6965986394557823,
+ "variant": "v5"
+}

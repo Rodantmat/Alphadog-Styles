@@ -81,3 +81,8 @@
 - 2026-11-25 Post B c30 (replaces c26): mx34.mp3 "Raising Me Higher" - Ahjay Stelino [Chill & Lo-fi, style postB]
 - 2026-11-26 Post A laugh02_shampoodle: mx840.mp3 "That's the Way of Life" - Michael Ramir C. [Pop & Party, style laugh2]
 - 2026-11-26 Post B c31: mx163.mp3 "Niro" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
+- 2026-11-27 Post A d7c_which_one_beagle: mx93.mp3 "Tinsel and Mistletoe" - Ahjay Stelino [Feel-good, style d7]
+- 2026-11-24 Post B c32 (replaces c29): mx888.mp3 "Truth Hurts" - Michael Ramir C. [Chill & Lo-fi, style postB]
+- 2026-11-25 Post B c33 (replaces c30): mx132.mp3 "Hazy After Hours" - Alejandro Magaña (A. M.) [Electronic & House, style postB]
+- 2026-11-26 Post B c34 (replaces c31): mx696.mp3 "Pop 04" - Grigoriy Nuzhny [Funk & Disco, style postB]
+- 2026-11-27 Post B c35: mx239.mp3 "Be This Way" - Arulo [Latin & Reggae, style postB]

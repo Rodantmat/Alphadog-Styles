@@ -544,5 +544,40 @@
   "style": "postB",
   "theme": "Electronic & House",
   "title": "Niro"
+ },
+ "mx93.mp3": {
+  "date": "2026-11-27",
+  "use": "Post A d7c_which_one_beagle",
+  "style": "d7",
+  "theme": "Feel-good",
+  "title": "Tinsel and Mistletoe"
+ },
+ "mx888.mp3": {
+  "date": "2026-11-24",
+  "use": "Post B c32 (replaces c29)",
+  "style": "postB",
+  "theme": "Chill & Lo-fi",
+  "title": "Truth Hurts"
+ },
+ "mx132.mp3": {
+  "date": "2026-11-25",
+  "use": "Post B c33 (replaces c30)",
+  "style": "postB",
+  "theme": "Electronic & House",
+  "title": "Hazy After Hours"
+ },
+ "mx696.mp3": {
+  "date": "2026-11-26",
+  "use": "Post B c34 (replaces c31)",
+  "style": "postB",
+  "theme": "Funk & Disco",
+  "title": "Pop 04"
+ },
+ "mx239.mp3": {
+  "date": "2026-11-27",
+  "use": "Post B c35",
+  "style": "postB",
+  "theme": "Latin & Reggae",
+  "title": "Be This Way"
  }
 }

@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "102057@6aed2f21_Dark Grey Heather",
+   "raw": "102057",
+   "breed": "Miniature Schnauzer",
+   "colour": "Dark Grey Heather",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_kloofendal_48d_partly_cloudy_puresky_0.jpg",
+   "bgname": "Kloofendal 48d Partly Cloudy (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.9
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae57480_Sport Grey",
+   "raw": "100615",
+   "breed": "Rottweiler",
+   "colour": "Sport Grey",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_dark_rock_1.jpg",
+   "bgname": "Dark Rock",
+   "fam": "texture:outdoor:0",
+   "ratio": 8.3
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102058@6ae6cae2_Soft Pink",
+   "raw": "102058",
+   "breed": "Standard Poodle",
+   "colour": "Soft Pink",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_zhengyang_gate_1.jpg",
+   "bgname": "Zhengyang Gate",
+   "fam": "hdri:outdoor:0",
+   "ratio": 5.1
+  },
+  {
+   "i": 3,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a1f8_White",
+   "raw": "109494",
+   "breed": "Doberman Pinscher",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_corrugated_iron_02_0.jpg",
+   "bgname": "Corrugated Iron 02",
+   "fam": "texture:wall:0",
+   "ratio": 5.4
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100617@6ae58ad9_Ice Grey",
+   "raw": "100617",
+   "breed": "English Bulldog",
+   "colour": "Ice Grey",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_03_1.jpg",
+   "bgname": "Wooden Studio 03",
+   "fam": "hdri:studio:5",
+   "ratio": 7.4
+  },
+  {
+   "i": 5,
+   "prod": "Tee B",
+   "cam": "92547@6aed2f1d_Asphalt",
+   "raw": "92547",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Asphalt",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pa_Tiles107.jpg",
+   "bgname": "Tiles 107",
+   "fam": "texture:x:0",
+   "ratio": 6.7
+  },
+  {
+   "i": 6,
+   "prod": "Tee A",
+   "cam": "100616@6ae59139_Natural",
+   "raw": "100616",
+   "breed": "Chihuahua",
+   "colour": "Natural",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloofendal_28d_misty_puresky_1.jpg",
+   "bgname": "Kloofendal 28d Misty (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.1
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98425@6ae57737_Dark Heather",
+   "raw": "98425",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Dark Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_exterior_wall_cladding_03_1.jpg",
+   "bgname": "Exterior Wall Cladding 03",
+   "fam": "texture:outdoor:0",
+   "ratio": 4.1
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.4411791383219934,
+ "shot_len": 0.6733786848072563,
+ "variant": "v5"
+}
