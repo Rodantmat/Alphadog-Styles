@@ -242,7 +242,7 @@
     "music": "mx96",
     "note": "replaces c23 (feed-safe zone fail, VIDEO_RULES 15)"
    },
-   "status": "B c27 built 2026-11-19, needs scheduling (replaces c23); A as before"
+   "status": "A d2c_shades_vs_ours (Nov 21 18:00Z) + B c27 (Nov 22 04:00Z) scheduled on all 4 apps (2026-11-20 run, c27 caption breed-led)"
   },
   {
    "date": "2026-11-22",
@@ -261,7 +261,7 @@
     "music": "mx757",
     "note": "replaces c24 (feed-safe zone fail, VIDEO_RULES 15)"
    },
-   "status": "B c28 built 2026-11-19, needs scheduling (replaces c24); A as before"
+   "status": "A d4c (Nov 22 18:00Z) scheduled on all 4 apps; B c28 (Nov 23 04:00Z) scheduled on all 4 apps (2026-11-20 run, caption breed-led)"
   },
   {
    "date": "2026-11-23",
@@ -298,7 +298,7 @@
     "music": "mx125",
     "note": "replaces c25 (feed-safe zone fail, VIDEO_RULES 15)"
    },
-   "status": "B c29 built 2026-11-19, needs scheduling (replaces c25); A as before"
+   "status": "A d5c (Nov 24 17:00Z) scheduled; B c29 NOT scheduled: built before engagement rule 16 (no breed-led v5 hook/caption/pin.json) - generator must rebuild with v5 (owner 2026-11-20)"
   },
   {
    "date": "2026-11-25",
@@ -318,7 +318,7 @@
     "music": "mx34",
     "note": "replaces c26 (feed-safe zone fail, VIDEO_RULES 15)"
    },
-   "status": "A d6d + B c30 built 2026-11-19, needs scheduling (replace d6c / c26)"
+   "status": "A d6d_neon_pointer (Nov 25 17:00Z) scheduled on all 4 apps after loopify (2026-11-20 run); B c30 NOT scheduled: not v5, rebuild first"
   },
   {
    "date": "2026-11-26",
@@ -336,7 +336,7 @@
     "theme": "Electronic & House",
     "music": "mx163"
    },
-   "status": "A laugh02_shampoodle + B c31 built 2026-11-19, needs scheduling"
+   "status": "A laugh02_shampoodle (Nov 26 17:00Z) scheduled on all 4 apps after loopify (2026-11-20 run); B c31 NOT scheduled: not v5, rebuild first"
   }
  ]
 }
