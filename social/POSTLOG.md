@@ -155,3 +155,4 @@
 - postb_variety.py does not cover C2 reels (out/postc); adjacent-pair check done by hand (no shared product+colour or breed between neighbours). Known OPEN V14: breeds repeat inside 7-post windows.
 - Minor, already posted or scheduled: c21 (Nov 23 B, Feel-good) and d5c (Nov 24 A, Feel-good) are back-to-back themes.
 - Channels 8/10 leave room for 2 more per channel once the rebuilt items exist. Result: 1 ALERT (Nov 22 04:00Z Post B has no reel yet; generator must deliver within the 7-day lead).
+2026-11-20T04:40Z checker: nothing missed; Nov 20 04:00Z B sent on IG/TikTok/FB/Pinterest; 57 sent / 14 scheduled per account; no forced posts.
