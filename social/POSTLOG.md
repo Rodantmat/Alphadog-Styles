@@ -167,3 +167,14 @@
 - No failed, error or stuck items; nothing missed; nothing forced; no deletes; no plan files created.
 - Scheduled per channel now 6 (Nov 21 04:00Z B, Nov 21 18:00Z A, Nov 22 18:00Z A, Nov 23 17:00Z A, Nov 24 04:00Z B, Nov 24 17:00Z A). Gap: no item for Post B Nov 21 20:00 PT (due Nov 22 04:00Z); the auto-scheduler should fill it before that slot.
 - Result: OK.
+
+## 2026-11-20T20:30Z Buffer fill run (scheduled routine, Fri Nov 20 12:14 PT)
+- Listed acct1+2 (runs 44809572085 / 44809575038, then verified 44810982846 / 44810979861): every past post `sent` on IG, TikTok, FB, Pinterest through Nov 20 17:00Z (A d1c) and Nov 20 04:00Z (B c20). No failed, missed or stuck items; nothing recreated; nothing forced.
+- Scheduled via social/planL_20261120_ig_tt.json (acct1) and social/planL_20261120_fbpin.json (acct2), API status scheduled on all 4 apps: B c27 (Nov 22 04:00Z), B c28 (Nov 23 04:00Z), A d6d_neon_pointer (Nov 25 17:00Z), A laugh02_shampoodle (Nov 26 17:00Z). Re-listed: 10/10 per channel on IG, TikTok, FB and Pinterest (full).
+- FIXED AT SOURCE: d6d_neon_pointer and laugh02_shampoodle were built before loopify existed (last frame differs from frame 0, MAE ~30). Re-rendered with scripts/video/loopify.py (last-vs-first MAE now ~1); frame check of the loop tail done. Same filenames, committed.
+- FIXED AT SOURCE (text only, video unchanged as the owner asked): out/postc/c27 and c28 captions were identical and not breed-led. Now breed-led (Boxer, Standard Poodle), per VIDEO_RULES 16a/16c and rule 8 (neighbours differ in caption).
+- Pinterest keyword titles written in the plan files (no pin.json for c27, c28, d6d, shampoodle).
+- NOT SCHEDULED, generator must rebuild with v5 (owner 2026-11-20): B c29 (Nov 25 04:00Z slot), c30 (Nov 26 04:00Z), c31 (Nov 27 04:00Z). Captions are not breed-led and there is no pin.json. Nov 25 B slot is empty until rebuilt.
+- Checks: variation.py flags only self-registration matches (music, joke, laugh track and neon breed are unique to each entry); pick_music check ok (78 used of 1017); music mx96, mx757, mx476, mx840 not used elsewhere. Neighbour checks by hand (postb_variety.py does not cover C2): c20/c27/c28 share no breed between neighbours.
+- ALERT: none. Tomorrow (Nov 21) A d2c and B c27's slot are scheduled; A d2c and B c20 already on all 4 apps.
+- Status: schedule.json updated (Nov 21, 22, 24, 25, 26). Result OK with the Post B gap above.
