@@ -11,6 +11,16 @@ import postb_build as PB
 W,H=1080,1920
 HOOKS={"v1":"Which breed is yours?","v2":"Find your breed","v3":"POV: your dog has merch","v4":"Find your dog's shirt"}
 CTAS={"v2":"Send this to a dog person","v3":"Save for your next gift","v4":"Tag your dog's biggest fan"}
+# 2026-11-20 (owner "do them all", engagement research): v5 = breed-led reel. The breed of the OPENING shot is named in the first-frame hook, the share CTA, the caption (front-loaded) and 3-5 descriptive hashtags; the end dissolves back to frame 0 so a replay loops cleanly (replays + shares + watch-through are the top ranking signals). Rule 9 still holds: the other frames keep their own distinct breeds.
+def breed_slug(b): return "".join(ch for ch in b.lower() if ch.isalnum())
+def v5_texts(b):
+    if len(b)>20: return "Your breed is here", "Send this to a dog person"   # long breed names would overflow the 860 px pill
+    return f"For {b} lovers", f"Send this to a {b} owner"
+def v5_caption(b):
+    sl=breed_slug(b)
+    return (f"{b} lovers, this one is yours. \U0001F43E Send it to a {b} owner.\n"
+            f"Dog line art tees, hoodies, polos and caps, front and back.\nalphadogstyles.com (link in bio)\n"
+            f"#{sl} #{sl}lover #dogtshirt #dogapparel #doglover")
 def kind_of(it):
     k=it["kind"]; return "person" if k=="person" else ("folded" if k=="folded" else "flat")
 def order(frames,rnd,tries=300):
@@ -57,7 +67,17 @@ def pick_trans(a,b,used,rnd):
     return ("fade",0.8) if rnd.random()<0.5 else ("dissolve",0.8)
 N=8; NF=4
 BANNED_BREEDS={"Yorkshire Terrier","Pomeranian","Shih Tzu","Havanese","Pug","Mini Poodle","Bichon Frise","Maltese"}  # owner: never in Post B (enforced Nov 12)
-def build(vid,seed,music,variant="v0"):
+def pin_json(b,variant,prods):
+    # Pinterest = keyword search (docs/WORDING_PLAYBOOK.md 3): title keyword-first, first 40 chars visible; description ~220 chars, <=5 related keywords
+    if variant=="v5" and b!="dog":
+        t=f"{b} Line Art Hoodie, Tee and Cap, Dog Dad and Dog Mom Gift"[:100]
+        d=(f"{b} line art tees, hoodies, polos and caps for {b} lovers: a front print or chest emblem, plus a full-body back print. "
+           f"A gift for dog dads, dog moms and every {b} owner. Shop alphadogstyles.com. #{breed_slug(b)} #doggift #dogmom #dogdad #dogapparel")[:500]
+    else:
+        t="Dog Line Art Hoodie, Tee and Cap, Dog Lover Gift"; d="Dog line art tees, hoodies, polos and caps in 33 breeds. A gift for dog dads and dog moms. Shop alphadogstyles.com. #doggift #dogmom #dogdad #dogapparel #doglover"
+    return dict(title=t,description=d,url="https://alphadogstyles.com")
+def build(vid,seed,music,variant="v5"):
+    if variant in ("v1","v2","v3","v4") and not os.environ.get("C2_KEEP_VARIANT"): variant="v5"   # 2026-11-20: the generator prompt still passes v2; every Post B is now the breed-led v5 unless C2_KEEP_VARIANT=1 (A/B tests)
     rnd=random.Random(seed); od=f"out/postc/{vid}"; os.makedirs(od,exist_ok=True)
     pool=P1.pool(); cat=BM.Catalog()
     _ok={}
@@ -106,6 +126,7 @@ def build(vid,seed,music,variant="v0"):
         im=C.load(it["file"]); k=kind_of(it); g=C.garment_rgb(im,k)
         fr.append(dict(it=it,k=k,view=it.get("side"),prod=it["prod"],lum=BM.relL(g),rgb=g))
     seq=order(fr,rnd); taken=set(taken0); fams=[]; shots=[]; meta=[]
+    lead=seq[0]["it"].get("breed") or "dog"
     for i,f in enumerate(seq):
         b=None
         for att in range(3):
@@ -114,30 +135,36 @@ def build(vid,seed,music,variant="v0"):
         if not b: raise SystemExit(f"no background for {f['k']} {f['rgb']}")
         taken.add(b["file"]); fams.append(BM.family(b))
         img,pos=C.compose(f["it"]["file"],f["k"],f"out/bg/{b['file']}",seed=seed*100+i)
-        if variant!="v0" and i==0: img=add_text(img,HOOKS.get(variant,HOOKS["v1"]),310,66)
-        if variant in CTAS and i==len(seq)-1: img=add_text(img,CTAS[variant],1400,60)
+        if variant=="v5":
+            if i==0: img=add_text(img,v5_texts(lead)[0],310,66)
+            if i==len(seq)-1: img=add_text(img,v5_texts(lead)[1],1400,60)
+        else:
+            if variant!="v0" and i==0: img=add_text(img,HOOKS.get(variant,HOOKS["v1"]),310,66)
+            if variant in CTAS and i==len(seq)-1: img=add_text(img,CTAS[variant],1400,60)
         fn=f"{od}/s{i:02d}.png"; img.save(fn); shots.append(fn); meta.append(dict(i=i,prod=f["prod"],cam=f["it"]["cam"],raw=f["it"].get("raw"),breed=f["it"].get("breed"),colour=f["it"].get("colour"),design=f["it"].get("design"),style=f["it"].get("style"),kind=f["k"],bg=b["file"],bgname=b.get("name"),fam=fams[-1],ratio=round(BM.ratio(BM.relL(f["rgb"]),BM.bgL(b)),1)))
     phase,L=beat_grid(music); T_used={}; trs=[pick_trans(seq[i],seq[i+1],T_used,rnd) for i in range(N-1)]
     sT=sum(t for _,t in trs); Ls=[(10.0+sT)/N]*N          # fill to exactly ~10 s
     FPS=30; ins=[]; filt=[]
-    for i,fn in enumerate(shots):
+    LOOP=0.6; shots_all=shots+[shots[0]]; Ls=Ls+[LOOP+0.1]                 # shot N = frame 0 again: the last LOOP s dissolve into the opening frame (clean replay loop)
+    for i,fn in enumerate(shots_all):
         fr_n=int((Ls[i]+0.5)*FPS)+2; z0,z1=1.0,1.05
         p=f"(on/{fr_n-1})"; ease=f"({p}*{p}*(3-2*{p}))"; z=f"{z0}+({z1}-{z0})*{ease}"
         ins+=["-i",fn]
         filt.append(f"[{i}:v]scale=2160:3840:flags=lanczos,zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr_n}:s=1080x1920:fps={FPS},setsar=1,format=gbrp[v{i}]")
     cur="v0"; off=0.0
-    for i in range(1,N):
-        name,T=trs[i-1]; off+=Ls[i-1]-T
+    for i in range(1,N+1):
+        name,T=(trs[i-1] if i<N else ("fade",LOOP)); off+=Ls[i-1]-T
         if name=="push": filt.append(f"[{cur}][v{i}]xfade=transition=custom:duration={T}:offset={off:.3f}:expr='{EXPR_PUSH}'[x{i}]"); T_used["push"]=T_used.get("push",0)+1
         elif name=="cut": filt.append(f"[{cur}][v{i}]xfade=transition=fade:duration=0.033:offset={off:.3f}[x{i}]")
         else: filt.append(f"[{cur}][v{i}]xfade=transition={name}:duration={T}:offset={off:.3f}[x{i}]")
         cur=f"x{i}"
-    total=10.0; ins+=["-ss",f"{phase:.3f}","-i",music]
-    filt.append(f"[{N}:a]atrim=0:{total:.2f},afade=t=in:d=0.2,afade=t=out:st={total-1.2:.2f}:d=1.2,volume=0.7[a]")
+    total=10.1; ins+=["-ss",f"{phase:.3f}","-i",music]
+    filt.append(f"[{N+1}:a]atrim=0:{total:.2f},afade=t=in:d=0.2,afade=t=out:st={total-1.2:.2f}:d=1.2,volume=0.7[a]")
     filt.append(f"[{cur}]format=yuv420p[vout]")
-    subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map","[vout]","-map","[a]","-t","10","-c:v","libx264","-preset","medium","-crf","20","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
+    subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map","[vout]","-map","[a]","-t","10.1","-c:v","libx264","-preset","medium","-crf","20","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
     for fn in shots: os.remove(fn)
-    cap=open(f"{od}/caption.txt","w"); cap.write("Which one is yours? Tell us your breed in the comments.\nTees, hoodies, polos and caps with our dog line art, front and back.\nalphadogstyles.com (link in bio)\n#doglover #dogmom #dogdad #alphadogstyles"); cap.close()
-    json.dump(dict(meta=meta,trans=[t for t in trs],beat_phase=phase,shot_len=L,variant=variant),open(f"{od}/meta.json","w"),indent=1); print("BUILT",od,"transitions",[t[0] for t in trs])
+    cap=open(f"{od}/caption.txt","w"); cap.write(v5_caption(lead) if variant=="v5" else "Which one is yours? Tell us your breed in the comments.\nTees, hoodies, polos and caps with our dog line art, front and back.\nalphadogstyles.com (link in bio)\n#doglover #dogmom #dogdad #alphadogstyles"); cap.close()
+    json.dump(pin_json(lead,variant,[m["prod"] for m in meta]),open(f"{od}/pin.json","w"),indent=1)
+    json.dump(dict(meta=meta,trans=[t for t in trs],beat_phase=phase,shot_len=L,variant=variant),open(f"{od}/meta.json","w"),indent=1); print("lead breed",lead,"BUILT",od,"transitions",[t[0] for t in trs])
     return [m["bg"] for m in meta]
-if __name__=="__main__": build(sys.argv[1],int(sys.argv[2]),sys.argv[3],sys.argv[4] if len(sys.argv)>4 else "v0")
+if __name__=="__main__": build(sys.argv[1],int(sys.argv[2]),sys.argv[3],sys.argv[4] if len(sys.argv)>4 else "v5")
