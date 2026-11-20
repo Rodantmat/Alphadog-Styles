@@ -156,3 +156,8 @@
 - Minor, already posted or scheduled: c21 (Nov 23 B, Feel-good) and d5c (Nov 24 A, Feel-good) are back-to-back themes.
 - Channels 8/10 leave room for 2 more per channel once the rebuilt items exist. Result: 1 ALERT (Nov 22 04:00Z Post B has no reel yet; generator must deliver within the 7-day lead).
 2026-11-20T04:40Z checker: nothing missed; Nov 20 04:00Z B sent on IG/TikTok/FB/Pinterest; 57 sent / 14 scheduled per account; no forced posts.
+
+## 2026-11-20T17:38:30Z Buffer checker (scheduled routine)
+- Listed acct1+2 (runs 44784865789 / 44784861730). Post A Nov 20 09:00 PT (17:00Z): IG, TikTok, FB, Pinterest all sent. Post B Nov 19 20:00 PT (04:00Z): all four sent.
+- No failed/error/stuck items; nothing missed; nothing forced; future scheduled posts untouched.
+- Result: OK.
