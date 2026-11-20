@@ -161,3 +161,9 @@
 - Listed acct1+2 (runs 44784865789 / 44784861730). Post A Nov 20 09:00 PT (17:00Z): IG, TikTok, FB, Pinterest all sent. Post B Nov 19 20:00 PT (04:00Z): all four sent.
 - No failed/error/stuck items; nothing missed; nothing forced; future scheduled posts untouched.
 - Result: OK.
+
+## 2026-11-20T18:38Z Buffer checker (scheduled routine, Fri Nov 20 10:35 PT run)
+- Listed acct1+2 (runs 44794289775 / 44794294106, both success). Post A Nov 20 09:00 PT (17:00Z): IG, TikTok, FB, Pinterest all sent. Post B Nov 19 20:00 PT (04:00Z Nov 20): all four sent.
+- No failed, error or stuck items; nothing missed; nothing forced; no deletes; no plan files created.
+- Scheduled per channel now 6 (Nov 21 04:00Z B, Nov 21 18:00Z A, Nov 22 18:00Z A, Nov 23 17:00Z A, Nov 24 04:00Z B, Nov 24 17:00Z A). Gap: no item for Post B Nov 21 20:00 PT (due Nov 22 04:00Z); the auto-scheduler should fill it before that slot.
+- Result: OK.
