@@ -120,3 +120,4 @@
 2026-11-20T18:35:49Z checker run started
 2026-11-20T18:38Z checker: Fri Nov 20 Post A 09:00 PT (due 17:00Z, 'Me when someone says walkies? Corgi') sent on IG 6afa13b28e87c256a38bed21, TikTok 6afa13b38e87c256a38bedca, FB 6afa13b2ff465c57daad3b1a, Pinterest 6afa13b3a869c35e5b93b3db. Post B Nov 19 20:00 PT (due 04:00Z Nov 20) sent on all 4. Buffer runs 44794289775 (acct1) and 44794294106 (acct2) success. No failed/error/stuck items; nothing missed; nothing forced. Heads-up: no Buffer item yet for Post B Nov 21 20:00 PT (due Nov 22 04:00Z); 6/10 scheduled per channel; left for the auto-scheduler. Result OK.
 2026-11-20T22:49:01Z generator run started
+2026-11-20T22:53:52Z generator: restore OK (music 1084, bg 6026, trans 107, trans2 472); REBUILD FIRST: B c29 (Nov 24), c30 (Nov 25), c31 (Nov 26) -> v5 breed-led; then Nov 27 A+B
