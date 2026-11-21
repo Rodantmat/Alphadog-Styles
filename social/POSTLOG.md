@@ -196,3 +196,10 @@
 - No failed, error or stuck items; nothing missed; nothing forced; no deletes; no plan files created.
 - Scheduled per channel: 9 of 10 (Nov 21 18:00Z Post A; Nov 22 04:00Z B Boxer; Nov 22 18:00Z A Doberman; Nov 23 04:00Z B Standard Poodle; Nov 23 17:00Z A bulldozer; Nov 24 04:00Z B; Nov 24 17:00Z A; Nov 25 17:00Z A German Shorthaired Pointer; Nov 26 17:00Z A poodle bubble baths). Future items untouched.
 - Result: OK.
+
+## 2026-11-21T18:38Z Sat Nov 21 checker (10:00 PT A slot)
+- Listed Buffer acct1 (run 44936470313) and acct2 (run 44936472396): success.
+- Sat A d2c_shades_vs_ours ("Real dogs in shades vs. our designs", due 2026-11-21T18:00Z): sent on IG, TikTok, FB, Pinterest.
+- Sat B c20-series ("Which one is yours? Tell us your breed", due 2026-11-21T04:00Z): sent on all 4.
+- No failed/error/stuck or missed items; nothing forced; no deletes. Future scheduled items (Nov 22 04:00Z onward) untouched.
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK.
