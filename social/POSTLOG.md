@@ -181,3 +181,10 @@
 
 ## 2026-11-20 Generator run (PM)
 - Rebuilt B c29/c30/c31 as c32/c33/c34 (v5 breed-led, pin.json); built Nov 27 A d7c_which_one_beagle + B c35. docs/schedule.json status "built, needs scheduling". Nothing scheduled in Buffer by the generator.
+
+## 2026-11-21T04:39Z Post checker (20:34 PT run, Nov 20)
+- Checked Buffer account 1 (IG+TikTok) and account 2 (FB+Pinterest), runs 44867067007 and 44867065339, both success.
+- Post B Nov 20 20:00 PT (due 2026-11-21T04:00Z, c20 'Which one is yours?') sent on IG, TikTok, FB, Pinterest. Post A Nov 20 09:00 PT (17:00Z, Corgi walkies) sent on all 4.
+- No failed, error or stuck items. Nothing missed, nothing forced, no deletes. Future scheduled items (Nov 21 18:00Z Post A d2c; Nov 22 18:00Z Doberman) untouched.
+- Heads-up: no Buffer item for Nov 22 04:00Z (Post B Nov 21, c27) on any app; schedule.json says scheduled. Left for the auto-scheduler.
+- Result OK.
