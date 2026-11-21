@@ -129,3 +129,4 @@
 2026-11-21T18:36:33Z checker run started
 2026-11-21T18:38Z checker OK: Sat Nov 21 10:00 PT slot A ('Real dogs in shades vs. our designs', d2c_shades_vs_ours, due 2026-11-21T18:00Z) sent on all 4 apps (IG 6afb6551710e22a9c7ba2f17, TikTok 6afb6551e9e30bcd5a8a43e6, FB 6afb653be9e30bcd5a8a3f5d, Pinterest 6afb653b5c671a37dd599fea). Sat B (Nov 21 04:00Z) sent on all 4. Buffer list runs 44936470313 (acct1) and 44936472396 (acct2) success. No failed/error/stuck/missed; nothing forced; future scheduled items (Nov 22 04:00Z onward) untouched. Repo note: local main had diverged from origin (50/50, unpushed local commits); main reset to origin/main, local commits kept on branch backup-local-main-20261121. Result OK.
 2026-11-21T22:49:19Z generator run started
+2026-11-21T22:51:56Z restore OK: music 1084 clips, bg 6026 jpg, trans cutouts 107 png, trans2 8
