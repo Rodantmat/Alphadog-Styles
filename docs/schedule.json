@@ -296,9 +296,9 @@
     "slot": "20:00 PT",
     "theme": "Chill & Lo-fi",
     "music": "mx888",
-    "note": "replaces c29 (not v5 breed-led, no pin.json); built 2026-11-20 with v5 + pin.json"
+    "note": "c32 BLOCKED 2026-11-21 (art Standard Poodle Line Art Cool = c20). Rebuild needed."
    },
-   "status": "A as before; B c32 built, needs scheduling (replaces c29, v5 breed-led, pin.json)"
+   "status": "A d5c_breed_compilation scheduled on all 4 apps (Nov 24 17:00Z); B c32 BLOCKED, not scheduled 2026-11-21 (due 2026-11-25 04:00Z): art Standard Poodle Line Art Cool repeats c20 (posted Nov 21); VIDEO_RULES 9 art never reused within 18 videos. Generator must rebuild this B slot."
   },
   {
    "date": "2026-11-25",
@@ -316,9 +316,9 @@
     "slot": "20:00 PT",
     "theme": "Electronic & House",
     "music": "mx132",
-    "note": "replaces c30 (not v5 breed-led, no pin.json); built 2026-11-20 with v5 + pin.json"
+    "note": "c33 BLOCKED 2026-11-21 (art repeats c21, c28). Rebuild needed."
    },
-   "status": "A as before; B c33 built, needs scheduling (replaces c30, v5 breed-led, pin.json)"
+   "status": "A d6d_neon_pointer scheduled on all 4 apps (Nov 25 17:00Z); B c33 BLOCKED, not scheduled 2026-11-21 (due 2026-11-26 04:00Z): art Australian Shepherd Geometric Cool repeats c21; French Bulldog and German Shepherd Line Art Heart repeat c28; breeds repeat c21/c28. Generator must rebuild this B slot."
   },
   {
    "date": "2026-11-26",
@@ -335,9 +335,9 @@
     "slot": "20:00 PT",
     "theme": "Funk & Disco",
     "music": "mx696",
-    "note": "replaces c31 (not v5 breed-led, no pin.json); built 2026-11-20 with v5 + pin.json"
+    "note": "c34 BLOCKED 2026-11-21 (art repeats c21, c27). Rebuild needed."
    },
-   "status": "A as before; B c34 built, needs scheduling (replaces c31, v5 breed-led, pin.json)"
+   "status": "A laugh02_shampoodle scheduled on all 4 apps (Nov 26 17:00Z); B c34 BLOCKED, not scheduled 2026-11-21 (due 2026-11-27 04:00Z): art Golden Retriever Line Art Cool repeats c21/c27, Labrador Geometric Classic repeats c27; breeds repeat c21/c27. Generator must rebuild this B slot."
   },
   {
    "date": "2026-11-27",
@@ -346,16 +346,18 @@
     "video": "social/videos/d7c_which_one_beagle.mp4",
     "slot": "09:00 PT weekdays / 10:00 PT weekends",
     "theme": "Feel-good",
-    "music": "mx93"
+    "music": "mx93",
+    "note": "A d7c looped, 10.7 s; variation check OK (music mx93 is only its own registration)"
    },
    "B": {
     "id": "c35",
     "reel": "out/postc/c35/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Latin & Reggae",
-    "music": "mx239"
+    "music": "mx239",
+    "note": "c35 BLOCKED 2026-11-21 (art repeats c20, c27). Rebuild needed."
    },
-   "status": "built, needs scheduling (2026-11-20 run; A d7c looped, B c35 v5 breed-led, pin.json)"
+   "status": "A d7c_which_one_beagle scheduled on all 4 apps (Nov 27 17:00Z, social/planM files, 2026-11-21 run); B c35 BLOCKED, not scheduled (due 2026-11-28 04:00Z): art Standard Poodle Line Art Cool repeats c20; Miniature Schnauzer Geometric Cool repeats c27. Channels now 9/10."
   }
  ]
 }

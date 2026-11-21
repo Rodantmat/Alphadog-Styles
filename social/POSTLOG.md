@@ -203,3 +203,16 @@
 - Sat B c20-series ("Which one is yours? Tell us your breed", due 2026-11-21T04:00Z): sent on all 4.
 - No failed/error/stuck or missed items; nothing forced; no deletes. Future scheduled items (Nov 22 04:00Z onward) untouched.
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK.
+
+## 2026-11-21T20:22Z Buffer fill run (scheduled routine, Sat Nov 21 12:22 PT)
+- Listed acct1 (IG+TikTok) and acct2 (FB+Pinterest), runs 44945198755 / 44945196691 and 44945719168 / 44945716987, all success.
+- Past posts: every past item sent on IG, TikTok, FB and Pinterest, including Sat A d2c (Nov 21 18:00Z) and Post B c20 (Nov 21 04:00Z). No failed, error or stuck items; nothing recreated; nothing forced; no deletes.
+- SCHEDULED: Post A d7c_which_one_beagle (Nov 27 17:00Z) on all 4 apps via social/planM_20261121_ig_tt.json (acct1) and social/planM_20261121_fbpin.json (acct2), API status scheduled. Re-listed: 9 of 10 per channel.
+- BLOCKED (not scheduled, built but rule-breaking; VIDEO_RULES 9: breed x style x design never reused within 18 videos, breeds not repeated in the next video):
+  - B c32 (due Nov 25 04:00Z): Standard Poodle Line Art Cool repeats c20 (posted Nov 21).
+  - B c33 (due Nov 26 04:00Z): Australian Shepherd Geometric Cool repeats c21; French Bulldog and German Shepherd Line Art Heart repeat c28; breeds repeat c21/c28.
+  - B c34 (due Nov 27 04:00Z): Golden Retriever Line Art Cool repeats c21/c27; Labrador Geometric Classic repeats c27; breeds repeat c21/c27.
+  - B c35 (due Nov 28 04:00Z): Standard Poodle Line Art Cool repeats c20; Miniature Schnauzer Geometric Cool repeats c27.
+- ALERT: none for tomorrow (Sun Nov 22: A d4c and B c28 already on all 4 apps). But Post B slots Nov 25, 26, 27 and 28 have NO valid built reel. Generator must rebuild these with art not already used in the last 18 videos (its own pool is too small, see V14).
+- Checks run: variation.py check on d7c (only music mx93 flagged, which is its own registration); pick_music used-track check ok; no Post B item with pin.json missing; d7c duration 10.7 s (slightly over the 8-10 s ideal, accepted).
+- docs/schedule.json statuses updated (Nov 24-27). Result: Buffer OK, 4 Post B slots open, generator rebuild needed.
