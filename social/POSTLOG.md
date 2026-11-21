@@ -188,3 +188,11 @@
 - No failed, error or stuck items. Nothing missed, nothing forced, no deletes. Future scheduled items (Nov 21 18:00Z Post A d2c; Nov 22 18:00Z Doberman) untouched.
 - Heads-up: no Buffer item for Nov 22 04:00Z (Post B Nov 21, c27) on any app; schedule.json says scheduled. Left for the auto-scheduler.
 - Result OK.
+
+## 2026-11-21T17:38Z Post checker (Sat Nov 21 09:36 PT run)
+- Listed acct1 (IG+TikTok) and acct2 (FB+Pinterest), runs 44931017180 / 44931018992, both success.
+- Past-due posts: Post B Nov 20 20:00 PT (due 2026-11-21T04:00Z, c20 'Which one is yours?') sent on IG, TikTok, FB, Pinterest. Nothing else past due is unsent.
+- Post A Sat Nov 21 is due 10:00 PT (18:00Z), not yet due at this run, so nothing to check for it yet.
+- No failed, error or stuck items; nothing missed; nothing forced; no deletes; no plan files created.
+- Scheduled per channel: 9 of 10 (Nov 21 18:00Z Post A; Nov 22 04:00Z B Boxer; Nov 22 18:00Z A Doberman; Nov 23 04:00Z B Standard Poodle; Nov 23 17:00Z A bulldozer; Nov 24 04:00Z B; Nov 24 17:00Z A; Nov 25 17:00Z A German Shorthaired Pointer; Nov 26 17:00Z A poodle bubble baths). Future items untouched.
+- Result: OK.
