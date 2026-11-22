@@ -579,5 +579,47 @@
   "style": "postB",
   "theme": "Latin & Reggae",
   "title": "Be This Way"
+ },
+ "mx750.mp3": {
+  "date": "2026-11-28",
+  "use": "Post A d3d_scenery_tees",
+  "style": "d3",
+  "theme": "Chill & Lo-fi",
+  "title": "Relaxation 04"
+ },
+ "mx122.mp3": {
+  "date": "2026-11-24",
+  "use": "Post B c36 (replaces c32)",
+  "style": "postB",
+  "theme": "Electronic & House",
+  "title": "Slow Rain"
+ },
+ "mx753.mp3": {
+  "date": "2026-11-25",
+  "use": "Post B c37 (replaces c33)",
+  "style": "postB",
+  "theme": "Chill & Lo-fi",
+  "title": "Romantic 02"
+ },
+ "mx824.mp3": {
+  "date": "2026-11-26",
+  "use": "Post B c38 (replaces c34)",
+  "style": "postB",
+  "theme": "Funk & Disco",
+  "title": "Bob"
+ },
+ "mx991.mp3": {
+  "date": "2026-11-27",
+  "use": "Post B c39 (replaces c35)",
+  "style": "postB",
+  "theme": "Latin & Reggae",
+  "title": "Esperanza"
+ },
+ "mx638.mp3": {
+  "date": "2026-11-28",
+  "use": "Post B c40",
+  "style": "postB",
+  "theme": "Feel-good",
+  "title": "Jazz 2"
  }
 }

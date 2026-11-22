@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98429@6ae57d76_Light Pink",
+   "raw": "98429",
+   "breed": "Golden Retriever",
+   "colour": "Light Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_kloppenheim_07_puresky_2.jpg",
+   "bgname": "Kloppenheim 07 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.2
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae5982a_Heather Navy",
+   "raw": "100615",
+   "breed": "Miniature Schnauzer",
+   "colour": "Heather Navy",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_olive_veneer_0.jpg",
+   "bgname": "Olive Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 4.9
+  },
+  {
+   "i": 2,
+   "prod": "Polo",
+   "cam": "102926@6ae7a484_Athletic Heather",
+   "raw": "102926",
+   "breed": "Siberian Husky",
+   "colour": "Athletic Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_story_studio_05_0.jpg",
+   "bgname": "Story Studio 05",
+   "fam": "hdri:studio:0",
+   "ratio": 8.6
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "92547@6ae6cbe9_Natural",
+   "raw": "92547",
+   "breed": "Cane Corso",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_grey_roof_01_1.jpg",
+   "bgname": "Grey Roof 01",
+   "fam": "texture:outdoor:0",
+   "ratio": 6.8
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100620@6ae58b71_Sport Grey",
+   "raw": "100620",
+   "breed": "Doberman Pinscher",
+   "colour": "Sport Grey",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_white_home_studio_1.jpg",
+   "bgname": "White Home Studio",
+   "fam": "hdri:studio:3",
+   "ratio": 8.1
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "98424@6ae57e08_Navy",
+   "raw": "98424",
+   "breed": "Beagle",
+   "colour": "Navy",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Marble020.jpg",
+   "bgname": "Marble 020",
+   "fam": "texture:x:0",
+   "ratio": 6.0
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102060@6ae6cd30_Soft Cream",
+   "raw": "102060",
+   "breed": "Boxer",
+   "colour": "Soft Cream",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_winter_lake_01_3.jpg",
+   "bgname": "Winter Lake 01",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.0
+  },
+  {
+   "i": 7,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a3aa_White",
+   "raw": "109494",
+   "breed": "Great Dane",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_stenciled_brick_floor_1.jpg",
+   "bgname": "Stenciled Brick Floor",
+   "fam": "texture:outdoor:0",
+   "ratio": 4.7
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2554195011337863,
+ "shot_len": 0.6733786848072563,
+ "variant": "v5"
+}

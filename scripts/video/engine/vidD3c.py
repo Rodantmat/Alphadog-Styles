@@ -25,8 +25,8 @@ def cta(text):
     d.rounded_rectangle((0,0,w-1,h-1),radius=48,fill=(255,255,255,245));d.text((w/2,h/2+1),text,font=f,fill=(20,20,24,255),anchor="mm");return im
 def tee(key):
     im=Image.open(R+f'out/merch_lib/{key}.webp').convert("RGBA");bb=im.getbbox();im=im.crop(bb)
-    sw=800;sh=int(im.height*sw/im.width)
-    if sh>880: sh=880;sw=int(im.width*sh/im.height)
+    sw=760;sh=int(im.height*sw/im.width)
+    if sh>780: sh=780;sw=int(im.width*sh/im.height)   # feed-safe (rule 15): merch inside rows 430-1580, below the lockup
     return np.array(im.resize((sw,sh),Image.LANCZOS))
 def bgimg(n):
     im=cv2.imread(R+f'out/bg/{n}');im=cv2.resize(im,(W,H),interpolation=cv2.INTER_AREA).astype(np.float32)
@@ -35,14 +35,14 @@ def bgimg(n):
 def frame(bg,s,t,ctatext):
     z=1.0+0.03*t;M=cv2.getRotationMatrix2D((W/2,H*0.5),0,z);b=cv2.warpAffine(bg,M,(W,H),flags=cv2.INTER_LINEAR,borderMode=cv2.BORDER_REFLECT)
     pop=0.93+0.07*(1-np.exp(-t*10));sw=int(s.shape[1]*pop);sh=int(s.shape[0]*pop);ss=cv2.resize(s,(sw,sh),interpolation=cv2.INTER_AREA)
-    cx,cy=W//2,860;x0=cx-sw//2;y0=cy-sh//2
+    cx,cy=W//2,1010;x0=cx-sw//2;y0=cy-sh//2
     A=np.zeros((H,W),np.float32);A[y0:y0+sh,x0:x0+sw]=ss[...,3]/255.
     sh1=cv2.GaussianBlur(np.roll(A,(30,0),(0,1)),(0,0),30)*0.45;sh2=cv2.GaussianBlur(np.roll(A,(6,0),(0,1)),(0,0),5)*0.3
     Fb=np.zeros((H,W,3),np.float32);Fb[y0:y0+sh,x0:x0+sw]=ss[...,[2,1,0]]
     out=b*(1-np.clip(sh1+sh2,0,0.7)[...,None]);out=out*(1-A[...,None])+Fb*A[...,None]
     im=Image.fromarray(cv2.cvtColor(np.clip(out,0,255).astype(np.uint8),cv2.COLOR_BGR2RGB)).convert("RGBA")
-    im.alpha_composite(LK,((W-LK.width)//2,270))
-    if ctatext: c=cta(ctatext);im.alpha_composite(c,((W-c.width)//2,1370))
+    im.alpha_composite(LK,((W-LK.width)//2,440))   # rule 15: was y270 (covered by the feed account bar)
+    if ctatext: c=cta(ctatext);im.alpha_composite(c,((W-c.width)//2,1470))
     return cv2.cvtColor(np.array(im.convert("RGB")),cv2.COLOR_RGB2BGR)
 def build(out,music):
     tmp=out+'.silent.mp4'

@@ -90,6 +90,9 @@ def build(vid,seed,music,variant="v5"):
     for x in ex:
         mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exc|={m["cam"] for m in mm}; exb|={m["bg"] for m in mm}
     pool=[p for p in pool if str(p["cam"]) not in exc]
+    for x in [y for y in os.environ.get("C2_EXCLBG","").split(",") if y]:             # backgrounds only (60-day rule): reels built in this run are not yet in docs/bg_used.json, so list them here (added 2026-11-21)
+        mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exb|={m["bg"] for m in mm}
+    exb|={y for y in os.environ.get("C2_TAKENBG","").split(",") if y}                # explicit bg files (e.g. the same-day Post A)
     taken0=set(exb)
     nob=set(x for x in os.environ.get("C2_NOBREED","").split(",") if x)               # breeds already shown in other reels
     nob|=BANNED_BREEDS                                                                 # owner rule (runbook/RULES_LEDGER V13): never show these breeds in Post B
@@ -105,6 +108,10 @@ def build(vid,seed,music,variant="v5"):
     for x in [y for y in os.environ.get("C2_EXCLC","").split(",") if y]:
         mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exq|={(m["prod"],m.get("colour")) for m in mm}
     pool=[p for p in pool if (p["prod"],p.get("colour")) not in exq]
+    exa=set()                                                                          # VIDEO_RULES 9: art (breed x style x design) never reused within 18 videos (C2_EXCLART=<reel ids>); added 2026-11-21 so the builder can no longer produce art the scheduler blocks
+    for x in [y for y in os.environ.get("C2_EXCLART","").split(",") if y]:
+        mm=json.load(open(f"out/postc/{x}/meta.json")); mm=mm["meta"] if isinstance(mm,dict) else mm; exa|={(m.get("breed"),m.get("style"),m.get("design")) for m in mm}
+    pool=[p for p in pool if (p.get("breed"),p.get("style"),p.get("design")) not in exa]
     nocol=set(x for x in os.environ.get("C2_NOCOL","").split(",") if x)               # colours worn in the same-day / neighbouring Post A (owner V1)
     pool=[p for p in pool if p.get("colour") not in nocol]
     pf=[p for p in pool if p["kind"]=="person" and p["side"]=="front"]; pb=[p for p in pool if p["kind"]=="person" and p["side"]=="back"]
@@ -126,6 +133,10 @@ def build(vid,seed,music,variant="v5"):
         im=C.load(it["file"]); k=kind_of(it); g=C.garment_rgb(im,k)
         fr.append(dict(it=it,k=k,view=it.get("side"),prod=it["prod"],lum=BM.relL(g),rgb=g))
     seq=order(fr,rnd); taken=set(taken0); fams=[]; shots=[]; meta=[]
+    if os.environ.get("C2_DRY"):                                                       # selection-only dry run (2026-11-21): print the pick so seeds can be scored before the 3-minute render
+        import collections
+        cs=[f['it'].get('colour') for f in seq if f['it'].get('colour')!='none']; pr=[f['prod'] for f in seq]
+        print("DRY",json.dumps(dict(breeds=[f['it'].get('breed') for f in seq],prods=pr,colours=cs,nprod=len(set(pr)),dupcol=len(cs)-len(set(cs)),art=[(f['it'].get('breed'),f['it'].get('style'),f['it'].get('design')) for f in seq]))); return None
     lead=seq[0]["it"].get("breed") or "dog"
     for i,f in enumerate(seq):
         b=None

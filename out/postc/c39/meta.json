@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98430@6ae57ea8_Dark Heather",
+   "raw": "98430",
+   "breed": "English Bulldog",
+   "colour": "Dark Heather",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_syferfontein_18d_clear_puresky_0.jpg",
+   "bgname": "Syferfontein 18d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.7
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "97993@6ae57480_Maroon",
+   "raw": "97993",
+   "breed": "Rottweiler",
+   "colour": "Maroon",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Wood096.jpg",
+   "bgname": "Wood 096",
+   "fam": "texture:x:0",
+   "ratio": 4.0
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102062@6ae6cf43_Light Blue",
+   "raw": "102062",
+   "breed": "Border Collie",
+   "colour": "Light Blue",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_wooden_studio_05_3.jpg",
+   "bgname": "Wooden Studio 05",
+   "fam": "hdri:studio:0",
+   "ratio": 9.3
+  },
+  {
+   "i": 3,
+   "prod": "Polo",
+   "cam": "102236@6ae79ff1_White",
+   "raw": "102236",
+   "breed": "Standard Poodle",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_patterned_brick_wall_02_0.jpg",
+   "bgname": "Patterned Brick Wall 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 6.7
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae57a67_Heather Navy",
+   "raw": "111848",
+   "breed": "Chihuahua",
+   "colour": "Heather Navy",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_05_0.jpg",
+   "bgname": "Wooden Studio 05",
+   "fam": "hdri:studio:3",
+   "ratio": 5.3
+  },
+  {
+   "i": 5,
+   "prod": "Tee B",
+   "cam": "92547@6aed2f1d_Asphalt",
+   "raw": "92547",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Asphalt",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pt_silver_oak_veneer_01_1.jpg",
+   "bgname": "Silver Oak Veneer 01",
+   "fam": "texture:wood:0",
+   "ratio": 3.9
+  },
+  {
+   "i": 6,
+   "prod": "Tee A",
+   "cam": "100618@6ae5855b_Military Green",
+   "raw": "100618",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Military Green",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_mid_morning_puresky_1.jpg",
+   "bgname": "Qwantani Mid Morning (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.7
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98425@6ae58a1a_Sport Grey",
+   "raw": "98425",
+   "breed": "German Shepherd",
+   "colour": "Sport Grey",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Wood028.jpg",
+   "bgname": "Wood 028",
+   "fam": "texture:x:0",
+   "ratio": 7.1
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.348299319727893,
+ "shot_len": 0.6965986394557823,
+ "variant": "v5"
+}

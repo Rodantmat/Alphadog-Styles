@@ -342,5 +342,43 @@
   "name": "d7c_which_one_beagle",
   "type": "d7",
   "bg_ids": []
+ },
+ {
+  "date": "2026-11-28",
+  "model": "d3",
+  "breeds": [
+   "pomeranian",
+   "shih_tzu",
+   "maltese",
+   "havanese",
+   "pug",
+   "yorkshire_terrier",
+   "mini_poodle",
+   "bichon_frise"
+  ],
+  "merch": [
+   "tee/pomeranian/2RD",
+   "tee/shih_tzu/1FO_back",
+   "tee/maltese/2BK",
+   "tee/havanese/4CR_back",
+   "tee/pug/1MR_back",
+   "tee/yorkshire_terrier/1HE_back",
+   "tee/mini_poodle/3LB",
+   "tee/bichon_frise/2WH"
+  ],
+  "music": "mx750",
+  "joke": "",
+  "name": "d3d_scenery_tees",
+  "type": "d3",
+  "bg_ids": [
+   "pg_qwantani_morning_puresky_0.jpg",
+   "pg_qwantani_sunset_puresky_1.jpg",
+   "pg_under_bridge_2.jpg",
+   "pg_piazza_martin_lutero_0.jpg",
+   "pg_evening_road_01_puresky_1.jpg",
+   "pg_palermo_sidewalk_1.jpg",
+   "pg_moonlit_golf_1.jpg",
+   "pg_snowy_cemetery_2.jpg"
+  ]
  }
 ]

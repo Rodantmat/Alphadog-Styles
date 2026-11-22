@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100620@6ae57ac2_Sand",
+   "raw": "100620",
+   "breed": "Siberian Husky",
+   "colour": "Sand",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_nowhere_road_0.jpg",
+   "bgname": "Nowhere Road",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.9
+  },
+  {
+   "i": 1,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a263_none",
+   "raw": "109489",
+   "breed": "Miniature Schnauzer",
+   "colour": "none",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_clay_plaster_1.jpg",
+   "bgname": "Clay Plaster",
+   "fam": "texture:wall:0",
+   "ratio": 5.8
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102058@6ae6c9e1_Natural",
+   "raw": "102058",
+   "breed": "French Bulldog",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_dusk_2_puresky_2.jpg",
+   "bgname": "Qwantani Dusk 2 (Pure Sky)",
+   "fam": "hdri:outdoor:4",
+   "ratio": 3.1
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a081_Pink",
+   "raw": "135042",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Pink",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_chinese_hackberry_bark_0.jpg",
+   "bgname": "Chinese Hackberry Bark",
+   "fam": "texture:x:0",
+   "ratio": 5.4
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "98427@6ae57db9_White",
+   "raw": "98427",
+   "breed": "Dachshund",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_blue_photo_studio_3.jpg",
+   "bgname": "Blue Photo Studio",
+   "fam": "hdri:studio:3",
+   "ratio": 4.5
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "97993@6ae579dd_Heather Navy",
+   "raw": "97993",
+   "breed": "Boston Terrier",
+   "colour": "Heather Navy",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_olive_veneer_1.jpg",
+   "bgname": "Olive Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 4.7
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102059@6aed2f03_Forest",
+   "raw": "102059",
+   "breed": "Australian Shepherd",
+   "colour": "Forest",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_kloofendal_43d_clear_puresky_0.jpg",
+   "bgname": "Kloofendal 43d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.5
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98426@6ae5734f_Forest Green",
+   "raw": "98426",
+   "breed": "Golden Retriever",
+   "colour": "Forest Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Metal061B.jpg",
+   "bgname": "Metal 061 B",
+   "fam": "texture:x:2",
+   "ratio": 6.4
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.18575963718820754,
+ "shot_len": 0.7430385487528345,
+ "variant": "v5"
+}

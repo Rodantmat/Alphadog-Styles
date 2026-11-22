@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100616@6ae59139_Natural",
+   "raw": "100616",
+   "breed": "Chihuahua",
+   "colour": "Natural",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_qwantani_mid_morning_puresky_2.jpg",
+   "bgname": "Qwantani Mid Morning (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.1
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98432@6ae59396_Light Pink",
+   "raw": "98432",
+   "breed": "Rottweiler",
+   "colour": "Light Pink",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_european_walnut_veneer_05_0.jpg",
+   "bgname": "European Walnut Veneer 05",
+   "fam": "texture:wood:0",
+   "ratio": 4.8
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102057@6aed2f21_Dark Grey Heather",
+   "raw": "102057",
+   "breed": "Miniature Schnauzer",
+   "colour": "Dark Grey Heather",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_hilly_terrain_01_puresky_0.jpg",
+   "bgname": "Hilly Terrain 01 (Pure Sky)",
+   "fam": "hdri:outdoor:1",
+   "ratio": 7.7
+  },
+  {
+   "i": 3,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae79fec_White",
+   "raw": "109494",
+   "breed": "Standard Poodle",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Bricks100.jpg",
+   "bgname": "Bricks 100",
+   "fam": "texture:x:0",
+   "ratio": 3.3
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102060@6ae6c9fb_Sand Dune",
+   "raw": "102060",
+   "breed": "French Bulldog",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_story_studio_03_0.jpg",
+   "bgname": "Story Studio 03",
+   "fam": "hdri:studio:0",
+   "ratio": 8.4
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a3fa_Khaki",
+   "raw": "135042",
+   "breed": "Boston Terrier",
+   "colour": "Khaki",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Metal027.jpg",
+   "bgname": "Metal 027",
+   "fam": "texture:x:4",
+   "ratio": 5.2
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102062@6ae6ca9f_Soft Pink",
+   "raw": "102062",
+   "breed": "German Shepherd",
+   "colour": "Soft Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_schadowplatz_3.jpg",
+   "bgname": "Schadowplatz",
+   "fam": "hdri:outdoor:0",
+   "ratio": 7.9
+  },
+  {
+   "i": 7,
+   "prod": "Tee B",
+   "cam": "102044@6aed2f07_Navy",
+   "raw": "102044",
+   "breed": "Doberman Pinscher",
+   "colour": "Navy",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pt_moon_04_0.jpg",
+   "bgname": "Moon 04",
+   "fam": "texture:outdoor:0",
+   "ratio": 4.0
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2554195011337849,
+ "shot_len": 1.1609977324263039,
+ "variant": "v5"
+}

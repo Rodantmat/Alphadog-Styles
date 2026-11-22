@@ -1,0 +1,157 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100619@6ae5856f_Maroon",
+   "raw": "100619",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Maroon",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_syferfontein_18d_clear_puresky_1.jpg",
+   "bgname": "Syferfontein 18d Clear (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.7
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98432@6ae57ed5_Sand",
+   "raw": "98432",
+   "breed": "Cane Corso",
+   "colour": "Sand",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_hangar_concrete_floor_0.jpg",
+   "bgname": "Hangar Concrete Floor",
+   "fam": "texture:floor:0",
+   "ratio": 8.8
+  },
+  {
+   "i": 2,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cf84_Ash",
+   "raw": "102054",
+   "breed": "Shiba Inu",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_blocky_photo_studio_3.jpg",
+   "bgname": "Blocky Photo Studio",
+   "fam": "hdri:urban:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a324_Light Blue",
+   "raw": "135042",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Light Blue",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_weathered_plank_siding_0.jpg",
+   "bgname": "Weathered Plank Siding",
+   "fam": "texture:outdoor:0",
+   "ratio": 6.8
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae575b1_Charcoal",
+   "raw": "111848",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Charcoal",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_table_mountain_1_1.jpg",
+   "bgname": "Table Mountain 1",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.1
+  },
+  {
+   "i": 5,
+   "prod": "Tee B",
+   "cam": "92547@6ae6cf36_Soft Cream",
+   "raw": "92547",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Soft Cream",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_rusty_metal_sheet_0.jpg",
+   "bgname": "Rusty Metal Sheet",
+   "fam": "texture:metal:0",
+   "ratio": 4.3
+  },
+  {
+   "i": 6,
+   "prod": "Polo",
+   "cam": "102926@6ae7a386_Athletic Heather",
+   "raw": "102926",
+   "breed": "Great Dane",
+   "colour": "Athletic Heather",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_studio_small_07_0.jpg",
+   "bgname": "Studio Small 07",
+   "fam": "hdri:indoor:4",
+   "ratio": 8.5
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "97993@6ae57bf0_White",
+   "raw": "97993",
+   "breed": "Border Collie",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_moon_02_1.jpg",
+   "bgname": "Moon 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.8
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.4876190476190456,
+ "shot_len": 0.6733786848072563,
+ "variant": "v5"
+}
