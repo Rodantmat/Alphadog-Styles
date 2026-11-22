@@ -216,3 +216,11 @@
 - ALERT: none for tomorrow (Sun Nov 22: A d4c and B c28 already on all 4 apps). But Post B slots Nov 25, 26, 27 and 28 have NO valid built reel. Generator must rebuild these with art not already used in the last 18 videos (its own pool is too small, see V14).
 - Checks run: variation.py check on d7c (only music mx93 flagged, which is its own registration); pick_music used-track check ok; no Post B item with pin.json missing; d7c duration 10.7 s (slightly over the 8-10 s ideal, accepted).
 - docs/schedule.json statuses updated (Nov 24-27). Result: Buffer OK, 4 Post B slots open, generator rebuild needed.
+
+## 2026-11-22T04:39Z Buffer check (scheduled checker, Sun Nov 22 04:36 UTC = Sat Nov 21 20:36 PT)
+- Listed acct1 (IG+TikTok) and acct2 (FB+Pinterest): runs 44985803399 / 44985808501, both success.
+- Checked slot Sat Nov 21 B (20:00 PT, due 2026-11-22T04:00Z): sent on IG, TikTok, FB, Pinterest. Caption "For Boxer lovers: which line art is yours? Hoodies".
+- Checked slot Sat Nov 21 A (10:00 PT, due 18:00Z): sent on all 4 earlier.
+- No failed, error or stuck items; no past item unsent (130 sent). Nothing missed, nothing forced, no deletes.
+- Future scheduled items (Sun Nov 22 A onward, 32 total) untouched.
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK.
