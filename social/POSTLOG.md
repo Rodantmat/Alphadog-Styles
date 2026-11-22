@@ -224,3 +224,10 @@
 - No failed, error or stuck items; no past item unsent (130 sent). Nothing missed, nothing forced, no deletes.
 - Future scheduled items (Sun Nov 22 A onward, 32 total) untouched.
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK.
+
+## 2026-11-22 (2026-11-22T17:41Z) Post checker, Sun 09:34 PT pre-slot run
+- Listed acct1 (run 45050468610) and acct2 (run 45050465484) via buffer-run.yml args=posts; logs read (jobs 137294230867 / 137294224309), both success.
+- Checked every past-due post (through Nov 22 04:00Z, Nov 21 B): IG, TikTok, FB, Pinterest all `sent`. No failed, error, stuck or missing channel. Nothing forced, nothing deleted.
+- Slot A Nov 22 (10:00 PT = 18:00Z, d4c_doberman_line_art) is still in the future and scheduled on all 4 apps (IG 6afcb6ad57c8fecbcd1ad175, TikTok 6afcb6ae700b9ade62f29110, FB 6afcb6adca5f4f8df9d0b7fd, Pinterest 6afcb6ad7847359f57aec4c0). Not touched.
+- Future scheduled items (Nov 23 04:00Z onward) left untouched.
+- Result: OK.
