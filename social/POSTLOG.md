@@ -231,3 +231,10 @@
 - Slot A Nov 22 (10:00 PT = 18:00Z, d4c_doberman_line_art) is still in the future and scheduled on all 4 apps (IG 6afcb6ad57c8fecbcd1ad175, TikTok 6afcb6ae700b9ade62f29110, FB 6afcb6adca5f4f8df9d0b7fd, Pinterest 6afcb6ad7847359f57aec4c0). Not touched.
 - Future scheduled items (Nov 23 04:00Z onward) left untouched.
 - Result: OK.
+
+## 2026-11-22T18:38Z Post checker, Sun Nov 22 10:36 PT (after slot A)
+- Listed acct1 (IG+TikTok, run 45056023805) and acct2 (FB+Pinterest, run 45056020835) via buffer-run.yml args=posts; both jobs success, logs read (jobs 137311321334 / 137311313129).
+- Slot A Sun Nov 22 (10:00 PT = 18:00Z, d4c_doberman_line_art, "One line. One Doberman...") is sent on IG 6afcb6ad57c8fecbcd1ad175, TikTok 6afcb6ae700b9ade62f29110, FB 6afcb6adca5f4f8df9d0b7fd, Pinterest 6afcb6ad7847359f57aec4c0.
+- Every past-due item is sent on all channels (through Nov 22 18:00Z). No failed, error, stuck or missing channel. Nothing forced, nothing deleted.
+- Future scheduled items untouched: Sun Nov 22 B (20:00 PT) and Nov 23 onward (Nov 23 04:00Z first).
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
