@@ -131,3 +131,4 @@
 2026-11-21T22:49:19Z generator run started
 2026-11-21T22:51:56Z restore OK: music 1084 clips, bg 6026 jpg, trans cutouts 107 png, trans2 8
 2026-11-22T00:41:34Z restore ok; REBUILD FIRST done: B c36 (Nov24 mx122) c37 (Nov25 mx753) c38 (Nov26 mx824) c39 (Nov27 mx991) replace blocked c32-c35 (art filter C2_EXCLART added to postc2_build.py); NEW Nov 28: A d3d_scenery_tees (mx750, 8 real scenery photos, variation check OK, feed-safe d3 builder) + B c40 (mx638). Reviewed 6 fps contact sheets; music/bg/registry committed. Lead = 7 days (through Nov 28). Open flagged items: none. Relaxed (V14): see RULES_LEDGER 2026-11-21. Needs scheduling by auto-scheduler: Nov 24-27 B (c36-c39), Nov 28 A+B. No Nov 29+ built.
+2026-11-22T04:36Z checker run started
