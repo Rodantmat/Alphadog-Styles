@@ -238,3 +238,11 @@
 - Every past-due item is sent on all channels (through Nov 22 18:00Z). No failed, error, stuck or missing channel. Nothing forced, nothing deleted.
 - Future scheduled items untouched: Sun Nov 22 B (20:00 PT) and Nov 23 onward (Nov 23 04:00Z first).
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-22T20:30Z Buffer fill run (Sun Nov 22 12:30 PT), scheduled task
+- Checked both accounts (runs 45065277484 / 45065800187 after fill; logs read). All 67 past-due posts are `sent` on IG, TikTok, FB, Pinterest. No failed, error or stuck items, nothing forced or deleted.
+- Scheduled B c36 (due Nov 25 04:00Z), B c37 (Nov 26 04:00Z), B c38 (Nov 27 04:00Z) on all 4 apps via social/plan_c36_c38_ig_tt.json (acct 1) and social/plan_c36_c38_fbpin.json (acct 2). Re-listed: all 12 present as `scheduled`. Pinterest uses pin.json titles, boardServiceId 1133710974888199746.
+- Channels now full: 10 scheduled per channel (IG, TikTok, FB, Pinterest). Not scheduled yet: B c39 (Nov 28 04:00Z), A d3d_scenery_tees and B c40 (Nov 28 17:00Z / Nov 29 04:00Z). Next run adds them as slots free up.
+- Checks: music mx122/mx753/mx824 appear only in their own music_log registration (no repeat). Product+colour and design back-to-back checked. Not blocked, but noted: Tee/cap White (c21 Polo White, c36 Mesh Trucker Cap White, c37 Tee White) and Sand (c37 Hoodie Sand, c38 Tee Sand) fall on adjacent days across different products; c36 and c38 share 3 to 4 breeds with c28/c21 (V14 window, pool still tight). Look-alike reels (b/m) not scheduled.
+- ALERT: none. Tomorrow (Mon Nov 23) has A laugh01_bulldozer and B c21 on all 4 apps; built items exist through Nov 28.
+- docs/schedule.json statuses updated for Nov 24-26. Result: OK.
