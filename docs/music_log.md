@@ -92,3 +92,5 @@
 - 2026-11-26 Post B c38 (replaces c34): mx824.mp3 "Bob" - Michael Ramir C. [Funk & Disco, style postB]
 - 2026-11-27 Post B c39 (replaces c35): mx991.mp3 "Esperanza" - Michael Ramir C. [Latin & Reggae, style postB]
 - 2026-11-28 Post B c40: mx638.mp3 "Jazz 2" - Francisco Alvear [Feel-good, style postB]
+- 2026-11-29 social/videos/d1e_labrador_scratch.mp4: mx1127.mp3 "Are U Ready For This?" - Michael Ramir C. [Funk & Disco, style d1]
+- 2026-11-29 out/postc/c41/reel.mp4: mx653.mp3 "Cinematic Jazz" - Francisco Alvear [Electronic & House, style postB]

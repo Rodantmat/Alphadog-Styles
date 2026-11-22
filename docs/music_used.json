@@ -621,5 +621,19 @@
   "style": "postB",
   "theme": "Feel-good",
   "title": "Jazz 2"
+ },
+ "mx1127.mp3": {
+  "date": "2026-11-29",
+  "use": "social/videos/d1e_labrador_scratch.mp4",
+  "style": "d1",
+  "theme": "Funk & Disco",
+  "title": "Are U Ready For This?"
+ },
+ "mx653.mp3": {
+  "date": "2026-11-29",
+  "use": "out/postc/c41/reel.mp4",
+  "style": "postB",
+  "theme": "Electronic & House",
+  "title": "Cinematic Jazz"
  }
 }

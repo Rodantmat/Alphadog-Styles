@@ -376,6 +376,25 @@
     "music": "mx638"
    },
    "status": "A d3d_scenery_tees + B c40 built 2026-11-21, needs scheduling"
+  },
+  {
+   "date": "2026-11-29",
+   "weekday": "Sun",
+   "A": {
+    "video": "social/videos/d1e_labrador_scratch.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Funk & Disco",
+    "music": "mx1127"
+   },
+   "B": {
+    "id": "c41",
+    "reel": "out/postc/c41/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Electronic & House",
+    "music": "mx653",
+    "note": "built 2026-11-22 with C2 exclusions; breed/people windows relaxed to c39-c40 (pool empty at 3 reels); lead Boston Terrier"
+   },
+   "status": "A d1e_labrador_scratch + B c41 built 2026-11-22, needs scheduling"
   }
  ]
 }
