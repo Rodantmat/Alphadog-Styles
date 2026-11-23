@@ -355,7 +355,8 @@
     "slot": "20:00 PT",
     "theme": "Latin & Reggae",
     "music": "mx991",
-    "note": "replaces c35 (art repeated c20/c27); built 2026-11-21 with C2_EXCLART art filter"
+    "note": "replaces c35 (art repeated c20/c27); built 2026-11-21 with C2_EXCLART art filter",
+    "ig_format": "carousel - Instagram gets the 8 stills (social/plan_c39_ig_carousel.json, account 1) INSTEAD of the reel; TikTok, Facebook and Pinterest keep the reel. Experiment rule 16l."
    },
    "status": "A as before; B c39 built 2026-11-21, needs scheduling (replaces blocked c35)"
   },
