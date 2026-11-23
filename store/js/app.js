@@ -44,7 +44,7 @@ async function route(){
   $("#links").classList.remove("open");
   $$("#links a").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#/"+parts[0]));
   const fn=routes[parts[0]]||notFound; app.onclick=null; app.innerHTML=""; window.scrollTo(0,0);
-  await fn(q,parts.slice(1)); document.title=tn(app.dataset.title||"AlphaDog Styles")+" - AlphaDog Styles";
+  await fn(q,parts.slice(1)); document.title=app.dataset.title?tn(app.dataset.title)+" - AlphaDog Styles":"Dog Breed T-Shirts, Hoodies and Caps - AlphaDog Styles";
 }
 function notFound(){app.innerHTML=`<div class="wrap narrow"><h1>${t("Lost dog?")}</h1><p>${t("That page wandered off.")} <a href="#/shop" class="btn">${t("Back to the shop")}</a></p></div>`}
 /* ---------- cards ---------- */
@@ -373,7 +373,7 @@ function applyStatic(){
   $$("[data-i]").forEach(e=>{e.textContent=t(e.dataset.i)});
   $$("[data-iph]").forEach(e=>{e.placeholder=t(e.dataset.iph)});
   $$("[data-ia]").forEach(e=>{e.setAttribute("aria-label",t(e.dataset.ia))});
-  const md=$('meta[name=description]');if(md)md.content=t("Custom dog-breed tees and hoodies. Pick your breed, art style and placement, we print it to order and ship it across the US.");
+  const md=$('meta[name=description]');if(md)md.content=t("Dog breed line art tees, hoodies, polos and caps for dog dads and dog moms. 33 breeds, front and back prints, made to order and shipped across the US. A gift dog lovers actually want.");
   const sel=$("#lang");if(sel){sel.value=lang;sel.onchange=()=>{setLang(sel.value);applyStatic();refreshAcct();saveCart();route()}}
 }
 (async()=>{
