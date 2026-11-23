@@ -253,3 +253,11 @@
 - Every past-due item is sent on all channels (through Nov 23 04:00Z). No failed, error, stuck or missing channel. Nothing forced, nothing deleted.
 - Future scheduled items untouched: Mon Nov 23 A (9:00 PT, 17:00Z) and later, 9 scheduled per channel.
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-23T17:39Z Post checker, Mon Nov 23 9:34 PT (after slot A)
+- Listed acct1 (IG+TikTok, run 45229621825) and acct2 (FB+Pinterest, run 45229608139) via buffer-run.yml args=posts; both jobs success, logs read (jobs 137885308414 / 137885261348).
+- Slot A Mon Nov 23 (9:00 PT = 17:00Z, laugh01_bulldozer) sent on IG, TikTok, FB, Pinterest.
+- Slot B Sun Nov 22 (20:00 PT = 04:00Z Nov 23, Standard Poodle, c28-era item) sent on all 4.
+- Every past-due item is sent on all channels; no failed, error, stuck or missing channel. Nothing forced, nothing deleted.
+- Future scheduled items untouched: Nov 24 A/B onward (Post B c21 Nov 24 04:00Z next).
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
