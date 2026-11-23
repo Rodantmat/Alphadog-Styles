@@ -261,3 +261,10 @@
 - Every past-due item is sent on all channels; no failed, error, stuck or missing channel. Nothing forced, nothing deleted.
 - Future scheduled items untouched: Nov 24 A/B onward (Post B c21 Nov 24 04:00Z next).
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+## 2026-11-23T18:39Z checker (Mon Nov 23, 9:34 PT-style run, executed 11:38 PT)
+- Listed Buffer acct1 (IG+TikTok) run 45240287165 and acct2 (FB+Pinterest) run 45240300120; full logs read.
+- Mon Nov 23 9:00 PT Post A (laugh01_bulldozer, due 17:00Z): sent on IG, TikTok, Facebook, Pinterest.
+- Sun Nov 22 20:00 PT Post B (Standard Poodle, due 04:00Z Nov 23): sent on IG, TikTok, Facebook, Pinterest.
+- Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed.
+- Nothing forced, nothing deleted. Scheduled items left alone: Nov 24 A/B, Nov 25, Nov 26, Nov 27 (IG and TikTok 8 each; FB and Pinterest 8 each).
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
