@@ -399,5 +399,25 @@
   "bg_ids": [
    "pg_grasslands_sunset_3.jpg"
   ]
+ },
+ {
+  "date": "2026-11-30",
+  "model": "laugh4",
+  "breeds": [
+   "pembroke_welsh_corgi"
+  ],
+  "merch": [
+   "tee/pembroke_welsh_corgi/2FO",
+   "hoodie/pembroke_welsh_corgi/4SA_back",
+   "tank/pembroke_welsh_corgi/2BK",
+   "wtank/pembroke_welsh_corgi/2HG",
+   "cap_foam/pembroke_welsh_corgi/2FB"
+  ],
+  "music": "mx414",
+  "joke": "corgi sits on bread / rise to the occasion",
+  "laugh": "427",
+  "name": "laugh01_corgi_bread",
+  "type": "laugh4",
+  "bg_ids": []
  }
 ]

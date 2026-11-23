@@ -1,0 +1,158 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98428@6ae57f59_Maroon",
+   "raw": "98428",
+   "breed": "Doberman Pinscher",
+   "colour": "Maroon",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_drakensberg_solitary_mountain_puresky_1.jpg",
+   "bgname": "Drakensberg Solitary Mountain (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.4
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "102044@6ae6bca6_Natural",
+   "raw": "102044",
+   "breed": "Cane Corso",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_grey_cartago_03_0.jpg",
+   "bgname": "Grey Cartago 03",
+   "fam": "texture:floor:0",
+   "ratio": 6.3
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100617@6ae58a4d_Dark Chocolate",
+   "raw": "100617",
+   "breed": "Standard Poodle",
+   "colour": "Dark Chocolate",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_venice_sunset_1.jpg",
+   "bgname": "Venice Sunset",
+   "fam": "hdri:outdoor:4",
+   "ratio": 6.2
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79f35_Pink",
+   "raw": "135042",
+   "breed": "Golden Retriever",
+   "colour": "Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_grey_tiles_0.jpg",
+   "bgname": "Grey Tiles",
+   "fam": "texture:outdoor:0",
+   "ratio": 3.7
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100617@6ae5737b_White",
+   "raw": "100617",
+   "breed": "German Shepherd",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_rocky_ridge_puresky_2.jpg",
+   "bgname": "Rocky Ridge (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.3
+  },
+  {
+   "i": 5,
+   "prod": "Hoodie",
+   "cam": "98425@6ae579b6_Heather Navy",
+   "raw": "98425",
+   "breed": "Great Dane",
+   "colour": "Heather Navy",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Metal042A.jpg",
+   "bgname": "Metal 042 A",
+   "fam": "texture:x:0",
+   "ratio": 3.8
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "92578@6aed2ee9_Dark Grey Heather",
+   "raw": "92578",
+   "breed": "English Bulldog",
+   "colour": "Dark Grey Heather",
+   "design": "",
+   "style": "Other",
+   "kind": "person",
+   "bg": "pg_ehingen_hillside_0.jpg",
+   "bgname": "Ehingen Hillside",
+   "fam": "hdri:outdoor:0",
+   "ratio": 6.6
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "97992@6ae585a4_Charcoal",
+   "raw": "97992",
+   "breed": "Miniature Schnauzer",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Plastic010.jpg",
+   "bgname": "Plastic 010",
+   "fam": "texture:x:3",
+   "ratio": 3.3
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2554195011337874,
+ "shot_len": 1.0681179138321995,
+ "variant": "v5",
+ "hook_id": 1
+}

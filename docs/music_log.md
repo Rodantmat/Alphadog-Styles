@@ -94,3 +94,5 @@
 - 2026-11-28 Post B c40: mx638.mp3 "Jazz 2" - Francisco Alvear [Feel-good, style postB]
 - 2026-11-29 social/videos/d1e_labrador_scratch.mp4: mx1127.mp3 "Are U Ready For This?" - Michael Ramir C. [Funk & Disco, style d1]
 - 2026-11-29 out/postc/c41/reel.mp4: mx653.mp3 "Cinematic Jazz" - Francisco Alvear [Electronic & House, style postB]
+- 2026-11-30 Post A laugh01_corgi_bread: mx414.mp3 "Regret" - Arulo [Hip-hop & Trap, style laugh4]
+- 2026-11-30 Post B c42: mx731.mp3 "Pop Track 05" - Lily J [Chill & Lo-fi, style postB]

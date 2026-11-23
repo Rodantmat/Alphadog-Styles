@@ -396,6 +396,26 @@
     "note": "built 2026-11-22 with C2 exclusions; breed/people windows relaxed to c39-c40 (pool empty at 3 reels); lead Boston Terrier"
    },
    "status": "A d1e_labrador_scratch + B c41 built 2026-11-22, needs scheduling"
+  },
+  {
+   "date": "2026-11-30",
+   "weekday": "Mon",
+   "A": {
+    "video": "social/videos/laugh01_corgi_bread.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Hip-hop & Trap",
+    "music": "mx414",
+    "note": "laugh4 new joke 'corgi sits on bread / rise to the occasion', laugh track 427, bg pg_cliffside_1, looped 16.4 s, caption social/videos/laugh01_corgi_bread.caption.txt"
+   },
+   "B": {
+    "id": "c42",
+    "reel": "out/postc/c42/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Chill & Lo-fi",
+    "music": "mx731",
+    "note": "built 2026-11-23 with neighbour exclusions (same-day A corgi colours Forest/Sand/Black/Heather Grey/Blue + breed, c41, art c36-c41); breed window relaxed to c41 only, people window c41-c40 (V14 pool tight); lead Doberman Pinscher"
+   },
+   "status": "A laugh01_corgi_bread + B c42 built 2026-11-23, needs scheduling"
   }
  ]
 }
