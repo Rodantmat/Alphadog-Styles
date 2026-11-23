@@ -268,3 +268,11 @@
 - Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed.
 - Nothing forced, nothing deleted. Scheduled items left alone: Nov 24 A/B, Nov 25, Nov 26, Nov 27 (IG and TikTok 8 each; FB and Pinterest 8 each).
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-23T20:30Z Buffer fill run, Mon Nov 23 12:30 PT (scheduled task)
+- Listed acct1 (IG+TikTok, run 45259122405) and acct2 (FB+Pinterest, run 45259109908) via buffer-run.yml args=posts, both success, logs read. 71 sent per account; no failed, error or stuck items; nothing missed, forced, recreated or deleted.
+- SCHEDULED for Nov 28: B c39 at 04:00Z (IG as the 8-slide carousel via social/plan_c39_ig_carousel.json, TikTok reel, FB reel, Pinterest from pin.json) and A d3d_scenery_tees at 18:00Z (IG reel, TikTok, FB reel, Pinterest). Plan files social/plan_20261123_c39_d3d_ig_tt.json (acct 1) and social/plan_20261123_c39_d3d_fbpin.json (acct 2). Re-listed: all 8 present as `scheduled`, 10 per channel on all 4 apps (full).
+- Checks: variation.py check on d3d flags only "music mx750 already used", which is its own registration (same as d7c). Breeds and music do not overlap with c39 or the neighbouring days. NOTE (not blocked): d7c (Nov 27) and d3d (Nov 28) both have a Red tee (code 2RD); variation.py does not compare colour for 4+ item videos.
+- Waiting for a free slot (built, not scheduled): B c40 (Nov 29 04:00Z), A d1e_labrador_scratch (Nov 29 18:00Z), B c41 (Nov 30 04:00Z). They go in as the next slots send.
+- ALERT: none. Tomorrow (Tue Nov 24) has A d5c and B c36 built; Nov 24 A and B are already scheduled on all 4 apps. Built items exist through Nov 30 (lead target 7 days met).
+- Result: OK.

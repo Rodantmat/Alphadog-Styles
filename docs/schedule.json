@@ -358,7 +358,7 @@
     "note": "replaces c35 (art repeated c20/c27); built 2026-11-21 with C2_EXCLART art filter",
     "ig_format": "carousel - Instagram gets the 8 stills (social/plan_c39_ig_carousel.json, account 1) INSTEAD of the reel; TikTok, Facebook and Pinterest keep the reel. Experiment rule 16l."
    },
-   "status": "A as before; B c39 built 2026-11-21, needs scheduling (replaces blocked c35)"
+   "status": "A as before; B c39 scheduled on all 4 apps (Nov 28 04:00Z; IG as the 8-slide carousel, TikTok/FB/Pinterest as the reel; 2026-11-23 run)"
   },
   {
    "date": "2026-11-28",
@@ -376,7 +376,7 @@
     "theme": "Feel-good",
     "music": "mx638"
    },
-   "status": "A d3d_scenery_tees + B c40 built 2026-11-21, needs scheduling"
+   "status": "A d3d_scenery_tees scheduled on all 4 apps (Nov 28 18:00Z; 2026-11-23 run); B c40 built, waiting for a free slot (Buffer 10/10 per channel)"
   },
   {
    "date": "2026-11-29",
