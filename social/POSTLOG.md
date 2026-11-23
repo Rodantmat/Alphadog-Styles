@@ -246,3 +246,10 @@
 - Checks: music mx122/mx753/mx824 appear only in their own music_log registration (no repeat). Product+colour and design back-to-back checked. Not blocked, but noted: Tee/cap White (c21 Polo White, c36 Mesh Trucker Cap White, c37 Tee White) and Sand (c37 Hoodie Sand, c38 Tee Sand) fall on adjacent days across different products; c36 and c38 share 3 to 4 breeds with c28/c21 (V14 window, pool still tight). Look-alike reels (b/m) not scheduled.
 - ALERT: none. Tomorrow (Mon Nov 23) has A laugh01_bulldozer and B c21 on all 4 apps; built items exist through Nov 28.
 - docs/schedule.json statuses updated for Nov 24-26. Result: OK.
+
+## 2026-11-23T04:39Z Post checker, Sun Nov 22 20:36 PT (after slot B)
+- Listed acct1 (IG+TikTok, run 45112971474) and acct2 (FB+Pinterest, run 45112964348) via buffer-run.yml args=posts; both jobs success, logs read (jobs 137489276178 / 137489254645).
+- Slot B Sun Nov 22 (20:00 PT = 04:00Z Nov 23, c28 Funk & Disco) is sent on IG, TikTok, FB, Pinterest.
+- Every past-due item is sent on all channels (through Nov 23 04:00Z). No failed, error, stuck or missing channel. Nothing forced, nothing deleted.
+- Future scheduled items untouched: Mon Nov 23 A (9:00 PT, 17:00Z) and later, 9 scheduled per channel.
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
