@@ -13,14 +13,23 @@ HOOKS={"v1":"Which breed is yours?","v2":"Find your breed","v3":"POV: your dog h
 CTAS={"v2":"Send this to a dog person","v3":"Save for your next gift","v4":"Tag your dog's biggest fan"}
 # 2026-11-20 (owner "do them all", engagement research): v5 = breed-led reel. The breed of the OPENING shot is named in the first-frame hook, the share CTA, the caption (front-loaded) and 3-5 descriptive hashtags; the end dissolves back to frame 0 so a replay loops cleanly (replays + shares + watch-through are the top ranking signals). Rule 9 still holds: the other frames keep their own distinct breeds.
 def breed_slug(b): return "".join(ch for ch in b.lower() if ch.isalnum())
-def v5_texts(b):
+HOOKS=["For {b} lovers","Every {b} owner needs this","Calling all {b} owners","{b} people, this is you"]   # 2026-11-22: call-out hooks (Virlo 2026: call-out/bold-claim hooks lead for pet products); picked per video, id stored in meta.json for the 24 h/72 h comparison
+def art(b): return 'an' if b[:1].upper() in 'AEIOU' else 'a'                         # 'an English Bulldog' (the on-screen CTA of c39 says 'a English Bulldog' and is already burned in)
+def v5_hook_id(vid): return sum(ord(ch) for ch in str(vid))%len(HOOKS)
+def v5_texts(b,hid=0):
+    h=HOOKS[hid].format(b=b)
+    if len(h)>31: h=HOOKS[0].format(b=b)                                                  # chosen hook would overflow the 860 px pill: use the short one ("For <breed> lovers" fitted up to 31 chars before)
     if len(b)>20: return "Your breed is here", "Send this to a dog person"   # long breed names would overflow the 860 px pill
-    return f"For {b} lovers", f"Send this to a {b} owner"
-def v5_caption(b):
-    sl=breed_slug(b)
-    return (f"{b} lovers, this one is yours. \U0001F43E Send it to a {b} owner.\n"
-            f"Dog line art tees, hoodies, polos and caps, front and back.\nalphadogstyles.com (link in bio)\n"
-            f"#{sl} #{sl}lover #dogtshirt #dogapparel #doglover")
+    return h, f"Send this to {art(b)} {b} owner"
+def season_gift(today=None):
+    import datetime as D; t=today or D.date.today(); return D.date(t.year,11,15)<=t<=D.date(t.year,12,24)   # holiday gifting window (Pinterest holiday guide: gifting searches start early, keep going to Dec 24)
+def v5_caption(b,today=None):
+    sl=breed_slug(b); g=season_gift(today)
+    l2=(f"Gift idea for dog dads and dog moms: {b} line art tees, hoodies, polos and caps, front and back." if g
+        else "Dog line art tees, hoodies, polos and caps, front and back.")
+    tags=f"#{sl} #doggifts #dogapparel" if g else f"#{sl} #dogtshirt #dogapparel"          # 3 descriptive tags (Mosseri: tags do not add reach; IG caps at 5; Metricool 2026: tagged posts got fewer views) - sources conflict, so 3 not 0
+    return (f"{b} lovers, this one is yours. \U0001F43E Send it to {art(b)} {b} owner.\n{l2}\n"
+            f"What is your {b}'s name? \U0001F447\nalphadogstyles.com (link in bio)\n{tags}")
 def kind_of(it):
     k=it["kind"]; return "person" if k=="person" else ("folded" if k=="folded" else "flat")
 def order(frames,rnd,tries=300):
@@ -67,15 +76,17 @@ def pick_trans(a,b,used,rnd):
     return ("fade",0.8) if rnd.random()<0.5 else ("dissolve",0.8)
 N=8; NF=4
 BANNED_BREEDS={"Yorkshire Terrier","Pomeranian","Shih Tzu","Havanese","Pug","Mini Poodle","Bichon Frise","Maltese"}  # owner: never in Post B (enforced Nov 12)
-def pin_json(b,variant,prods):
+def pin_json(b,variant,prods,vid=None):
     # Pinterest = keyword search (docs/WORDING_PLAYBOOK.md 3): title keyword-first, first 40 chars visible; description ~220 chars, <=5 related keywords
     if variant=="v5" and b!="dog":
         t=f"{b} Line Art Hoodie, Tee and Cap, Dog Dad and Dog Mom Gift"[:100]
         d=(f"{b} line art tees, hoodies, polos and caps for {b} lovers: a front print or chest emblem, plus a full-body back print. "
-           f"A gift for dog dads, dog moms and every {b} owner. Shop alphadogstyles.com. #{breed_slug(b)} #doggift #dogmom #dogdad #dogapparel")[:500]
+           f"A gift for dog dads, dog moms and every {b} owner. Shop alphadogstyles.com. #{breed_slug(b)} #doggift #dogapparel")[:500]
     else:
         t="Dog Line Art Hoodie, Tee and Cap, Dog Lover Gift"; d="Dog line art tees, hoodies, polos and caps in 33 breeds. A gift for dog dads and dog moms. Shop alphadogstyles.com. #doggift #dogmom #dogdad #dogapparel #doglover"
-    return dict(title=t,description=d,url="https://alphadogstyles.com")
+    url="https://alphadogstyles.com"
+    if variant=="v5" and b!="dog": url=f"https://alphadogstyles.com/?utm_source=pinterest&utm_medium=social&utm_campaign={vid or 'pin'}#/design?breed={'_'.join(b.lower().split())}"   # unique URL per pin (Pinterest fresh-pin guidance) that opens the shop on THAT breed; the store reads #/design?breed=<slug>
+    return dict(title=t,description=d,url=url)
 def build(vid,seed,music,variant="v5"):
     if variant in ("v1","v2","v3","v4") and not os.environ.get("C2_KEEP_VARIANT"): variant="v5"   # 2026-11-20: the generator prompt still passes v2; every Post B is now the breed-led v5 unless C2_KEEP_VARIANT=1 (A/B tests)
     rnd=random.Random(seed); od=f"out/postc/{vid}"; os.makedirs(od,exist_ok=True)
@@ -147,8 +158,8 @@ def build(vid,seed,music,variant="v5"):
         taken.add(b["file"]); fams.append(BM.family(b))
         img,pos=C.compose(f["it"]["file"],f["k"],f"out/bg/{b['file']}",seed=seed*100+i)
         if variant=="v5":
-            if i==0: img=add_text(img,v5_texts(lead)[0],310,66)
-            if i==len(seq)-1: img=add_text(img,v5_texts(lead)[1],1400,60)
+            if i==0: img=add_text(img,v5_texts(lead,v5_hook_id(vid))[0],310,66)
+            if i==len(seq)-1: img=add_text(img,v5_texts(lead,v5_hook_id(vid))[1],1400,60)
         else:
             if variant!="v0" and i==0: img=add_text(img,HOOKS.get(variant,HOOKS["v1"]),310,66)
             if variant in CTAS and i==len(seq)-1: img=add_text(img,CTAS[variant],1400,60)
@@ -175,7 +186,7 @@ def build(vid,seed,music,variant="v5"):
     subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map","[vout]","-map","[a]","-t","10.1","-c:v","libx264","-preset","medium","-crf","20","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
     for fn in shots: os.remove(fn)
     cap=open(f"{od}/caption.txt","w"); cap.write(v5_caption(lead) if variant=="v5" else "Which one is yours? Tell us your breed in the comments.\nTees, hoodies, polos and caps with our dog line art, front and back.\nalphadogstyles.com (link in bio)\n#doglover #dogmom #dogdad #alphadogstyles"); cap.close()
-    json.dump(pin_json(lead,variant,[m["prod"] for m in meta]),open(f"{od}/pin.json","w"),indent=1)
-    json.dump(dict(meta=meta,trans=[t for t in trs],beat_phase=phase,shot_len=L,variant=variant),open(f"{od}/meta.json","w"),indent=1); print("lead breed",lead,"BUILT",od,"transitions",[t[0] for t in trs])
+    json.dump(pin_json(lead,variant,[m["prod"] for m in meta],vid),open(f"{od}/pin.json","w"),indent=1)
+    json.dump(dict(meta=meta,trans=[t for t in trs],beat_phase=phase,shot_len=L,variant=variant,hook_id=v5_hook_id(vid) if variant=="v5" else None),open(f"{od}/meta.json","w"),indent=1); print("lead breed",lead,"BUILT",od,"transitions",[t[0] for t in trs])
     return [m["bg"] for m in meta]
 if __name__=="__main__": build(sys.argv[1],int(sys.argv[2]),sys.argv[3],sys.argv[4] if len(sys.argv)>4 else "v5")
