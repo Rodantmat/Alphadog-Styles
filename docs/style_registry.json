@@ -419,5 +419,35 @@
   "name": "laugh01_corgi_bread",
   "type": "laugh4",
   "bg_ids": []
+ },
+ {
+  "date": "2026-12-01",
+  "model": "d2",
+  "breeds": [
+   "shiba_inu",
+   "border_collie",
+   "siberian_husky",
+   "french_bulldog",
+   "golden_retriever"
+  ],
+  "merch": [
+   "polo/shiba_inu/2HE",
+   "hoodie/border_collie/3SA_back",
+   "tee/siberian_husky/2RD",
+   "tank/french_bulldog/3NV_back",
+   "cap_dad/golden_retriever/2DG",
+   "tee/golden_retriever/3LB_back",
+   "cap_foam/border_collie/2FP",
+   "tank/siberian_husky/4HE_back"
+  ],
+  "bg_ids": [
+   "pa_Rock060.jpg"
+  ],
+  "music": "mx832",
+  "joke": "",
+  "laugh": "",
+  "neon_color": "",
+  "name": "d2d_shades_vs_ours",
+  "type": "d2"
  }
 ]

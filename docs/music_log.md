@@ -96,3 +96,5 @@
 - 2026-11-29 out/postc/c41/reel.mp4: mx653.mp3 "Cinematic Jazz" - Francisco Alvear [Electronic & House, style postB]
 - 2026-11-30 Post A laugh01_corgi_bread: mx414.mp3 "Regret" - Arulo [Hip-hop & Trap, style laugh4]
 - 2026-11-30 Post B c42: mx731.mp3 "Pop Track 05" - Lily J [Chill & Lo-fi, style postB]
+- 2026-12-01 A d2d_shades_vs_ours: mx832.mp3 "I'm Going Home" - Michael Ramir C. [Pop & Party, style d2]
+- 2026-12-01 B c43: mx627.mp3 "Our Nights" - Eugenio Mininni [Electronic & House, style postB]

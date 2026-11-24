@@ -649,5 +649,19 @@
   "style": "postB",
   "theme": "Chill & Lo-fi",
   "title": "Pop Track 05"
+ },
+ "mx832.mp3": {
+  "date": "2026-12-01",
+  "use": "A d2d_shades_vs_ours",
+  "style": "d2",
+  "theme": "Pop & Party",
+  "title": "I'm Going Home"
+ },
+ "mx627.mp3": {
+  "date": "2026-12-01",
+  "use": "B c43",
+  "style": "postB",
+  "theme": "Electronic & House",
+  "title": "Our Nights"
  }
 }

@@ -1,0 +1,158 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98427@6ae58619_Military Green",
+   "raw": "98427",
+   "breed": "Boxer",
+   "colour": "Military Green",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_mpumalanga_veld_puresky_0.jpg",
+   "bgname": "Mpumalanga Veld (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.1
+  },
+  {
+   "i": 1,
+   "prod": "Tee A",
+   "cam": "100615@6ae58817_Natural",
+   "raw": "100615",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_patterned_brick_wall_03_0.jpg",
+   "bgname": "Patterned Brick Wall 03",
+   "fam": "texture:wall:0",
+   "ratio": 6.1
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "100682@6ae5738d_Forest Green",
+   "raw": "100682",
+   "breed": "German Shepherd",
+   "colour": "Forest Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_spruit_sunrise_1.jpg",
+   "bgname": "Spruit Sunrise",
+   "fam": "hdri:outdoor:1",
+   "ratio": 5.0
+  },
+  {
+   "i": 3,
+   "prod": "Foam Trucker Hat",
+   "cam": "109489@6ae7a02a_none",
+   "raw": "109489",
+   "breed": "Beagle",
+   "colour": "none",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_rusty_metal_sheet_1.jpg",
+   "bgname": "Rusty Metal Sheet",
+   "fam": "texture:metal:0",
+   "ratio": 4.4
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102058@6ae6ce5e_White",
+   "raw": "102058",
+   "breed": "Chihuahua",
+   "colour": "White",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_farm_field_puresky_2.jpg",
+   "bgname": "Farm Field (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.5
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a169_Stone",
+   "raw": "135042",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Plastic012A.jpg",
+   "bgname": "Plastic 012 A",
+   "fam": "texture:x:0",
+   "ratio": 8.4
+  },
+  {
+   "i": 6,
+   "prod": "Tee A",
+   "cam": "100623@6ae573e3_Maroon",
+   "raw": "100623",
+   "breed": "Dachshund",
+   "colour": "Maroon",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloppenheim_01_puresky_0.jpg",
+   "bgname": "Kloppenheim 01 (Pure Sky)",
+   "fam": "hdri:outdoor:4",
+   "ratio": 5.8
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98426@6ae57423_Black",
+   "raw": "98426",
+   "breed": "Standard Poodle",
+   "colour": "Black",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_okoume_veneer_1.jpg",
+   "bgname": "Okoume Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 6.7
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.3018594104308392,
+ "shot_len": 0.9752380952380952,
+ "variant": "v5",
+ "hook_id": 2
+}

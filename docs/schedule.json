@@ -416,6 +416,26 @@
     "note": "built 2026-11-23 with neighbour exclusions (same-day A corgi colours Forest/Sand/Black/Heather Grey/Blue + breed, c41, art c36-c41); breed window relaxed to c41 only, people window c41-c40 (V14 pool tight); lead Doberman Pinscher"
    },
    "status": "A laugh01_corgi_bread + B c42 built 2026-11-23, needs scheduling"
+  },
+  {
+   "date": "2026-12-01",
+   "weekday": "Tue",
+   "A": {
+    "video": "social/videos/d2d_shades_vs_ours.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Pop & Party",
+    "music": "mx832",
+    "note": "d2 shades vs ours, new breeds shiba/border collie/husky/frenchie/golden, bg pa_Rock060, looped 11.1 s, caption social/videos/d2d_shades_vs_ours.caption.txt"
+   },
+   "B": {
+    "id": "c43",
+    "reel": "out/postc/c43/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Electronic & House",
+    "music": "mx627",
+    "note": "built 2026-11-24 with neighbour exclusions (same-day A breeds+colours, c42 cameras/people/colour/art c36-c42); breed window vs c42 relaxed (pool empty); lead Boxer; foam cap light blue vs A light-blue tee (minor)"
+   },
+   "status": "A + B built 2026-11-24, needs scheduling"
   }
  ]
 }
