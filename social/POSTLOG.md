@@ -276,3 +276,11 @@
 - Waiting for a free slot (built, not scheduled): B c40 (Nov 29 04:00Z), A d1e_labrador_scratch (Nov 29 18:00Z), B c41 (Nov 30 04:00Z). They go in as the next slots send.
 - ALERT: none. Tomorrow (Tue Nov 24) has A d5c and B c36 built; Nov 24 A and B are already scheduled on all 4 apps. Built items exist through Nov 30 (lead target 7 days met).
 - Result: OK.
+
+## 2026-11-24T17:38Z checker (Tue Nov 24 9:00 PT Post A, executed ~09:37 PT)
+- Listed Buffer acct1 (IG+TikTok) run 45450364374 and acct2 (FB+Pinterest) run 45450372300 via buffer-run.yml args=posts, both success, logs read.
+- Tue Nov 24 9:00 PT Post A (Every breed has a personality, due 17:00Z): sent on IG 6afe07e972a787cbb5dd024c, TikTok 6afe07ea61c30f01f6cf28c4, FB 6afe07e91173b0b5f0e17839, Pinterest 6afe07ea750db4a2bff45cd9.
+- Mon Nov 23 20:00 PT Post B (Which one is yours? Tell us your breed, due 04:00Z Nov 24): sent on IG 6afe07e872a787cbb5dd01c2, TikTok 6afe07e924f63f6d4cb237c9, FB 6afe07e81173b0b5f0e17663, Pinterest 6afe07e8750db4a2bff45c78.
+- Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed.
+- Nothing forced, nothing deleted. Scheduled items left alone: Nov 25 through Nov 28 (IG/TikTok 8 each; FB/Pinterest 8 each).
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
