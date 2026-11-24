@@ -284,3 +284,11 @@
 - Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed.
 - Nothing forced, nothing deleted. Scheduled items left alone: Nov 25 through Nov 28 (IG/TikTok 8 each; FB/Pinterest 8 each).
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-24T18:38Z Post checker, Tue Nov 24 10:34 PT (after slot A)
+- Listed acct1 (IG+TikTok) run 45461172127 and acct2 (FB+Pinterest) run 45461167077 via buffer-run.yml args=posts; both jobs success, logs read (jobs 138683822291 / 138683816987).
+- Slot A Tue Nov 24 9:00 PT (17:00Z, Every breed has a personality): sent on IG 6afe07e972a787cbb5dd024c, TikTok 6afe07ea61c30f01f6cf28c4, FB 6afe07e91173b0b5f0e17839, Pinterest 6afe07ea750db4a2bff45cd9.
+- Slot B Mon Nov 23 20:00 PT (04:00Z Nov 24, Which one is yours?): sent on all 4 (IG 6afe07e872a787cbb5dd01c2, TikTok 6afe07e924f63f6d4cb237c9, FB 6afe07e81173b0b5f0e17663, Pinterest 6afe07e8750db4a2bff45c78).
+- Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed. Nothing forced, nothing deleted.
+- Scheduled items left alone: Nov 25 A/B through Nov 28 (all 4 apps scheduled).
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
