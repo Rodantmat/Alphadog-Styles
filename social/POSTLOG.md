@@ -292,3 +292,12 @@
 - Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed. Nothing forced, nothing deleted.
 - Scheduled items left alone: Nov 25 A/B through Nov 28 (all 4 apps scheduled).
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-24T20:30Z Buffer fill run (Tue Nov 24 12:30 PT, scheduled task)
+- Listed acct1 (IG+TikTok, runs 45478577441 / 45479899164 after fill) and acct2 (FB+Pinterest, runs 45478591964 / 45479904155 after fill) via buffer-run.yml args=posts; logs read. Bridge dispatch returned 403, so dispatch used gh REST (workflow_dispatch 204).
+- Past-due check: Tue Nov 24 A (17:00Z) and B (04:00Z Nov 24) are `sent` on IG, TikTok, FB, Pinterest. 75 sent per account; no failed, error or stuck items; nothing missed, forced, recreated or deleted.
+- SCHEDULED (plan files social/plan_20261124_c40_d1e_ig_tt.json acct1 and social/plan_20261124_c40_d1e_fbpin.json acct2, committed 4ca3155): B c40 Golden Retriever (Nov 29 04:00Z, reel on IG/TikTok/FB, Pinterest pin.json title+url, 3-hashtag pin text) and A d1e_labrador_scratch (Nov 29 18:00Z, all 4 apps). Re-listed: all 8 present as `scheduled`. Channels now 10 of 10 on every app (Nov 25 to Nov 29 PT).
+- Checks: variation.py check d1e flags only its own registration of mx1127 (expected). Music mx638 and mx1127 appear only in their own music log entries. c40 shares no breed and no product+colour with c39 or c41; no banned Post B breed in c40 or c41.
+- NOT SCHEDULED (channel full): B c41 Boston Terrier lead (Nov 30 04:00Z), A laugh01_corgi_bread (Nov 30 17:00Z), B c42 (Dec 1 04:00Z). They go in as slots send.
+- ALERT (lead target): built items end at Nov 30 PT. No built Post A for Dec 1 (7-day lead target from Nov 24); the generator must build it. Tomorrow (Nov 25) is built and scheduled, so no tomorrow alert.
+- Result: OK. Buffer full; generator build needed for Dec 1.
