@@ -102,21 +102,21 @@ Q=textlayer(J['q'],J.get('qsize',70),maxw=820);A=textlayer(J['a'],J.get('asize',
 TOP=textlayer(J['top'],58,maxw=820);BOT=textlayer(J['bottom'],42,maxw=820)
 # timeline
 assert FEED_TOP+Q.height+10<=POS[0][1]+10 and ANSY+A.height//2<=FEED_BOT and 1525+BOT.height//2<=FEED_BOT+30,'text does not fit the feed-safe zone (shorten the joke or lower qsize)'
-T_Q=0.3;T_FACE=2.6;T_HOLD=T_FACE+3.7;T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.6;T_TOT=T_M+len(MERCH)*STEP+2.2
+T_Q=0.0;T_FACE=0.0;T_HOLD=J.get('hold',2.6);T_LAUGH=T_HOLD;T_END=T_LAUGH+LAUGH;T_CLR=T_END+0.5;T_M=T_CLR+0.2;STEP=0.5;T_TOT=T_M+len(MERCH)*STEP+2.0
 N=int(T_TOT*FPS)
 cmd=['ffmpeg','-y','-v','error','-f','rawvideo','-pix_fmt','rgb24','-s',f'{W}x{H}','-r',str(FPS),'-i','-','-an','-c:v','libx264','-preset','veryfast','-crf','17','-pix_fmt','yuv420p',R+'out/laugh/_v.mp4']
 pr=subprocess.Popen(cmd,stdin=subprocess.PIPE)
 tile_cache={}
 for n in range(N):
-    t=n/FPS;cv=Image.fromarray(np.clip(bg,0,255).astype(np.uint8)).convert('RGBA')
+    t=n/FPS+0.25;cv=Image.fromarray(np.clip(bg,0,255).astype(np.uint8)).convert('RGBA')
     clr=1-sm((t-T_END-0.05)/0.3) if t<T_CLR else 0  # fade/scale out of dog scene
     if t<T_CLR:
         # question: centred then moves up
         mv=1;qy=max(520,FEED_TOP+Q.height//2+10)
-        qs=bounce((t-0.3)/0.45)
+        qs=bounce((t-T_Q)/0.35)
         paste(cv,Q,CX,qy,scale=max(qs,0.01)*(0.92+0.08*clr)+0.0,alpha=clr)
         for i in range(4):
-            ti=T_FACE+i*0.4
+            ti=T_FACE+i*0.12
             if t>=ti:
                 fr=dogframe(i,t-ti,T_LAUGH-ti);tl=tile(fr,i+1);sc=bounce((t-ti)/0.4)
                 pulse=1;rot=0
@@ -137,7 +137,7 @@ pr.stdin.close();pr.wait()
 # audio
 name=J['name'];out=R+f'out/laugh/{name}.mp4'
 L=R+'out/sfx/'+J.get('laugh','424')+'.mp3';M=(R+'out/musiclib/clips/'+J['music']) if os.path.exists(R+'out/musiclib/clips/'+J['music']) else R+'out/music2/'+J['music']
-dl=int(T_LAUGH*1000)
+dl=int((T_LAUGH-0.25)*1000)
 subprocess.run(['ffmpeg','-y','-v','error','-i',R+'out/laugh/_v.mp4','-i',M,'-i',L,'-filter_complex',
  f'[1:a]atrim=0:{T_TOT},afade=t=in:d=0.6,afade=t=out:st={T_TOT-1.2}:d=1.2,volume=0.28[m];[2:a]atrim=start={J.get('trim',0.4)}:end={LAUGH+0.9},asetpts=PTS-STARTPTS,volume=1.9,adelay={dl}|{dl}[l];[m][l]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.95[a]',
  '-map','0:v','-map','[a]','-c:v','copy','-c:a','aac','-b:a','192k','-t',str(T_TOT),out],check=True)
