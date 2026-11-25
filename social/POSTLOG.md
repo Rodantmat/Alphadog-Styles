@@ -301,3 +301,11 @@
 - NOT SCHEDULED (channel full): B c41 Boston Terrier lead (Nov 30 04:00Z), A laugh01_corgi_bread (Nov 30 17:00Z), B c42 (Dec 1 04:00Z). They go in as slots send.
 - ALERT (lead target): built items end at Nov 30 PT. No built Post A for Dec 1 (7-day lead target from Nov 24); the generator must build it. Tomorrow (Nov 25) is built and scheduled, so no tomorrow alert.
 - Result: OK. Buffer full; generator build needed for Dec 1.
+
+## 2026-11-25T04:38Z Post checker, Tue Nov 24 20:37 PT (after slot B)
+- Listed acct1 (IG+TikTok) run 45547859100 and acct2 (FB+Pinterest) run 45547865980 via buffer-run.yml args=posts; both jobs success, logs read (jobs 138981677127 / 138981700286).
+- Slot A Tue Nov 24 9:00 PT (17:00Z, Every breed has a personality): sent on IG 6afe07e972a787cbb5dd024c, TikTok 6afe07ea61c30f01f6cf28c4, FB 6afe07e91173b0b5f0e17839, Pinterest 6afe07ea750db4a2bff45cd9.
+- Slot B Tue Nov 24 20:00 PT (04:00Z Nov 25, Chihuahua): sent on all 4 (IG 6b034e33c72676f5e9599dd8, TikTok 6b034e34bf5d5a73b6bc4c69, FB 6b034e42846b0ee907b5a0a1, Pinterest 6b034e42d864a01105f1b198).
+- Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed. Nothing forced, nothing deleted.
+- Scheduled items left alone: Nov 25 A (17:00Z) through Nov 29 B (18 per account, IG/TikTok and FB/Pinterest).
+- Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
