@@ -309,3 +309,11 @@
 - Every item due 20+ min ago is sent on all 4 apps; no failed, error or stuck items; nothing missed. Nothing forced, nothing deleted.
 - Scheduled items left alone: Nov 25 A (17:00Z) through Nov 29 B (18 per account, IG/TikTok and FB/Pinterest).
 - Final status per app: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-25T17:46Z Post checker, Wed Nov 25 9:36 PT (after slot A)
+- Listed acct1 (IG+TikTok, run 45666538482) and acct2 (FB+Pinterest, run 45666545192) via buffer-run.yml args=posts; both success, logs read.
+- Slot A Wed Nov 25 9:00 PT (17:00Z, d6d_neon_pointer, German Shorthaired Pointer neon): IG 6b00ac3e44c36191135c4ee8 sent, TikTok 6b00ac3f44c36191135c4f33 sent, FB 6b00ac3ee3772ee0cf64a16a sent, Pinterest 6b00ac3f44c36191135c4f3d ERROR ("Sorry! This site doesn't allow you to save Pins", Pinterest rejected pin to alphadogstyles.com).
+- FORCED: deleted errored Pinterest item 6b00ac3f44c36191135c4f3d (run 45666991947 success). Created social/plan_force_20261125T1740Z_1.json (same text, video URL and pinterest metadata as planL_20261120_fbpin.json, due 17:45Z), committed and pushed 0c22089c, dispatched plan run 45667302465 -> Pinterest 6b071e04c3e5b879357ad00f created. Re-list run 45667981648: 6b071e04c3e5b879357ad00f = sent (17:45Z). No retry needed.
+- Slot B Tue Nov 24 20:00 PT (04:00Z Nov 25, Chihuahua): sent on all 4 (IG 6b034e33c72676f5e9599dd8, TikTok 6b034e34bf5d5a73b6bc4c69, FB 6b034e42846b0ee907b5a0a1, Pinterest 6b034e42d864a01105f1b198).
+- Nothing else past due and unsent. Future scheduled items (Nov 26 A/B onward) untouched.
+- Final status per app for Wed Nov 25 A: IG OK, TikTok OK, FB OK, Pinterest OK (forced). Result: OK.
