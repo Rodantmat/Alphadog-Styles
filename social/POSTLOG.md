@@ -325,3 +325,13 @@
 - Nothing past due and unsent; no failed, error or stuck items. Nothing forced, nothing deleted.
 - Future items left alone: 16 scheduled per account (Nov 26 onward).
 - Final status per app for Wed Nov 25 A and B: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-25T20:26Z Buffer fill run (Wed Nov 25 12:20 PT, scheduled task)
+- Listed acct1 (IG+TikTok, run 45693118297) and acct2 (FB+Pinterest, run 45693124464) via buffer-run.yml args=posts; both success, logs read.
+- Past-due check: Nov 25 B (04:00Z) and A (17:00Z) are `sent` on all 4 apps (Pinterest A was forced at 17:45Z, see 18:38Z entry). No failed, error or stuck items; nothing missed. 158 sent, 40 scheduled in the listing.
+- SCHEDULED (plan files social/plan_20261125_c41_corgi_ig_tt.json acct 1 and social/plan_20261125_c41_corgi_fbpin.json acct 2, committed 36e39eeb): B c41 Boston Terrier lead (Nov 30 04:00Z; reel on IG/TikTok/FB, Pinterest from pin.json title, description and UTM url) and A laugh01_corgi_bread (Nov 30 17:00Z, all 4 apps). Dispatch runs 45693697872 (acct 1) and 45693710209 (acct 2) both success, all 4 POSTs returned `scheduled`.
+- Re-listed (runs 45694056297 acct 1, 45694069374 acct 2): all 8 present as `scheduled`. Each channel now has 10 of 10 scheduled (Nov 26 to Nov 30).
+- Checks: variation.py check laugh01_corgi_bread flags only its own registration (music mx414, joke, laugh track 427 each appear only in its own entry; music_log line 97). c41: music mx653 used once; no banned Post B breed in c41/c42/c43; no breed shared with c40. Minor, not blocked: c41 Black tee and the same-day corgi A tank are both Black (different product, V1 colour note).
+- NOT SCHEDULED (channel full): B c42 Doberman Pinscher (Dec 1 04:00Z), A d2d_shades_vs_ours (Dec 1 17:00Z), B c43 Boxer (Dec 2 04:00Z). Built, waiting for slots.
+- ALERT (lead target, not tomorrow): no Post A built for Dec 2 yet (built items end at Dec 2 B). Generator must build the Dec 2 A. Tomorrow (Nov 26) is scheduled on all 4 apps.
+- Result: OK. Buffer full (10/10 per channel).
