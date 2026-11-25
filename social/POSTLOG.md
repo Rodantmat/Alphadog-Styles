@@ -317,3 +317,11 @@
 - Slot B Tue Nov 24 20:00 PT (04:00Z Nov 25, Chihuahua): sent on all 4 (IG 6b034e33c72676f5e9599dd8, TikTok 6b034e34bf5d5a73b6bc4c69, FB 6b034e42846b0ee907b5a0a1, Pinterest 6b034e42d864a01105f1b198).
 - Nothing else past due and unsent. Future scheduled items (Nov 26 A/B onward) untouched.
 - Final status per app for Wed Nov 25 A: IG OK, TikTok OK, FB OK, Pinterest OK (forced). Result: OK.
+
+## 2026-11-25T18:38:27Z Post checker, Wed Nov 25 10:36 PT (after slot A, late run)
+- Listed acct1 (IG+TikTok, run 45676805690) and acct2 (FB+Pinterest, run 45676816983) via buffer-run.yml args=posts; both success, logs read.
+- Slot A Wed Nov 25 9:00 PT (17:00Z, d6d_neon_pointer): IG 6b00ac3e44c36191135c4ee8 sent, TikTok 6b00ac3f44c36191135c4f33 sent, FB 6b00ac3ee3772ee0cf64a16a sent, Pinterest 6b071e04c3e5b879357ad00f sent (forced re-plan from earlier run, 17:45Z).
+- Slot B Tue Nov 24 20:00 PT (04:00Z Nov 25, Chihuahua): sent on all 4 (IG 6b034e33c72676f5e9599dd8, TikTok 6b034e34bf5d5a73b6bc4c69, FB 6b034e42846b0ee907b5a0a1, Pinterest 6b034e42d864a01105f1b198).
+- Nothing past due and unsent; no failed, error or stuck items. Nothing forced, nothing deleted.
+- Future items left alone: 16 scheduled per account (Nov 26 onward).
+- Final status per app for Wed Nov 25 A and B: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
