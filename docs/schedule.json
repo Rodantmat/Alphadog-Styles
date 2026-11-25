@@ -436,6 +436,19 @@
     "note": "built 2026-11-24 with neighbour exclusions (same-day A breeds+colours, c42 cameras/people/colour/art c36-c42); breed window vs c42 relaxed (pool empty); lead Boxer; foam cap light blue vs A light-blue tee (minor)"
    },
    "status": "A + B built 2026-11-24, needs scheduling"
+  },
+  {
+   "date": "2026-12-02",
+   "weekday": "Wed",
+   "A": {
+    "video": "social/videos/d4d_german_shepherd_line_art.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Chill & Lo-fi",
+    "music": "mx105",
+    "note": "d4 line-art hoodies, German Shepherd, 3 hoodies (Light Pink front face, Navy back print, Light Blue face), real textures bg, looped 12.2 s, caption social/videos/d4d_german_shepherd_line_art.caption.txt; vidA4 now removes white armhole slivers and names the breed from frame 0"
+   },
+   "B": null,
+   "status": "A built, needs scheduling; B pending"
   }
  ]
 }

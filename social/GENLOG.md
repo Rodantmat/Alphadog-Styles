@@ -163,3 +163,6 @@
 2026-11-25T18:36Z checker run started
 2026-11-25T18:38:27Z checker OK: Wed Nov 25 9:00 PT slot A (d6d_neon_pointer, due 17:00Z) and Wed Nov 25 20:00 PT-prior slot B (Chihuahua, due 04:00Z Nov 25) sent on IG, TikTok, FB, Pinterest. Buffer runs 45676805690 (acct1) and 45676816983 (acct2) success, logs read. No failed/error/stuck items, nothing missed, nothing forced, no deletes. 16 future items per account left scheduled. Result OK.
 2026-11-25T22:49Z generator run started
+2026-11-25T22:55Z restore OK: music 1084 clips, bg 6026 jpg, trans png 107, trans2 restored. Lead built through Dec 2 B; no flagged items; building Dec 2 A+B
+2026-11-25T22:57Z merch_lib + kl engine restored (/tmp/kl). Next: Dec 2 A d4 + Dec 2 B c44
+2026-11-25T23:01Z BUILT Dec 2 A d4d_german_shepherd_line_art (3 GSD hoodies, mx105 Chill, real bgs, looped 12.2s, variation check OK). Fixed vidA4: white armhole slivers removed (defringe), breed named from frame 0. Next: Dec 2 B

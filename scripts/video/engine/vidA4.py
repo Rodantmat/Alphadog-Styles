@@ -28,9 +28,26 @@ def head(txt,size,fill=(255,255,255,255),shadow=True,sp=6,f=FB):
         if shadow: d.text((x+2,size+3),c,font=ft,fill=(0,0,0,140),anchor='lm')
         d.text((x,size),c,font=ft,fill=fill,anchor='lm'); x+=d.textlength(c,font=ft)+sp
     return im
+def defringe(im):
+    """2026-11-25 fix at source (RULES_LEDGER V3/quality gate 'no white leftovers'): hoodie BACK sprites carry white slivers at the armholes.
+    On a dark/mid garment remove near-white, low-saturation pixels that lie within 70 px of the silhouette edge, then drop tiny orphan blobs."""
+    a=np.array(im); al=a[...,3]; m=al>200
+    if m.sum()==0: return im
+    med=np.median(a[m][:,:3],axis=0); lum=0.2126*med[0]+0.7152*med[1]+0.0722*med[2]
+    if lum>170: return im
+    rgb=a[...,:3].astype(np.int32); mn=rgb.min(axis=2); mx=rgb.max(axis=2)
+    pl=0.2126*rgb[...,0]+0.7152*rgb[...,1]+0.0722*rgb[...,2]; white=(pl>lum+70)&((mx-mn)<40)&m
+    dist=cv2.distanceTransform(m.astype(np.uint8),cv2.DIST_L2,3); kill=white&(dist<90)
+    kill=cv2.dilate(kill.astype(np.uint8),np.ones((5,5),np.uint8))>0
+    kill&=(pl>lum+55)&m
+    al2=al.copy(); al2[kill]=0
+    n,lab,st,_=cv2.connectedComponentsWithStats((al2>200).astype(np.uint8),connectivity=8)
+    if n>1:
+        big=1+int(np.argmax(st[1:,4])); al2[(lab!=big)&(lab>0)]=0
+    a[...,3]=al2; return Image.fromarray(a)
 def merch(code,box):
     p,b,c=code.split('/'); im=Image.open(R+f'out/merch_lib/{p}/{b}/{c}.webp').convert('RGBA')
-    im=im.crop(im.getchannel('A').getbbox()); s=min(box[0]/im.width,box[1]/im.height); return im.resize((int(im.width*s),int(im.height*s)),Image.LANCZOS)
+    im=defringe(im); im=im.crop(im.getchannel('A').getbbox()); s=min(box[0]/im.width,box[1]/im.height); return im.resize((int(im.width*s),int(im.height*s)),Image.LANCZOS)
 def shadow(m):
     a=np.array(m.getchannel('A')).astype(np.float32)/255; a=np.pad(a,90); s=cv2.GaussianBlur(a,(0,0),22)*0.55
     sh=Image.new('RGBA',(m.width+180,m.height+180),(0,0,0,0)); sh.putalpha(Image.fromarray((s*255).astype(np.uint8))); return sh
@@ -69,7 +86,7 @@ def draw_frame(f):
     im=Image.fromarray(np.clip(out,0,255).astype(np.uint8)[:,:,::-1]).convert('RGBA')
     ink_c=(40,36,32,255)
     im=paste_c(im,head('DRAWN LINE BY LINE',50,ink_c,False),436,min(1,f/10))
-    if f>=DR-8: im=paste_c(im,head(cfg['label'],44,ink_c,False,8,FM),1212,min(1,(f-DR+8)/10))
+    im=paste_c(im,head(cfg['label'],44,ink_c,False,8,FM),1212,1.0)   # 2026-11-25 rule 16b: breed named from frame 0
     return lock(im)
 def merch_frame(sc,t,cta=None):
     im=bg(sc['bg']).convert('RGBA'); im=tint_top(im)

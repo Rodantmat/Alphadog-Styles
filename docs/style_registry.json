@@ -449,5 +449,24 @@
   "neon_color": "",
   "name": "d2d_shades_vs_ours",
   "type": "d2"
+ },
+ {
+  "date": "2026-12-02",
+  "model": "d4",
+  "breeds": [
+   "german_shepherd"
+  ],
+  "merch": [
+   "hoodie/german_shepherd/2PK",
+   "hoodie/german_shepherd/3NV_back",
+   "hoodie/german_shepherd/5LB"
+  ],
+  "bg_ids": [],
+  "music": "mx105",
+  "joke": "",
+  "laugh": "",
+  "neon_color": "",
+  "name": "d4d_german_shepherd_line_art",
+  "type": "d4"
  }
 ]
