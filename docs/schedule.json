@@ -447,8 +447,15 @@
     "music": "mx105",
     "note": "d4 line-art hoodies, German Shepherd, 3 hoodies (Light Pink front face, Navy back print, Light Blue face), real textures bg, looped 12.2 s, caption social/videos/d4d_german_shepherd_line_art.caption.txt; vidA4 now removes white armhole slivers and names the breed from frame 0"
    },
-   "B": null,
-   "status": "A built, needs scheduling; B pending"
+   "B": {
+    "id": "c44",
+    "reel": "out/postc/c44/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Funk & Disco",
+    "music": "mx1129",
+    "note": "built 2026-11-25 (seed 77, Rottweiler lead); neighbour exclusions: same-day A GSD hoodie colours Light Pink/Navy/Light Blue/Heather Navy (C2_NOCOL), German Shepherd (NOBREED), c43 cameras+bgs, c42-c43 breeds, c41-c43 people, c42-c43 product+colour, art c36-c43, same-day A bgs. 10.1 s looped, 8 shots reviewed at 6 fps"
+   },
+   "status": "A d4d + B c44 built, needs scheduling"
   }
  ]
 }

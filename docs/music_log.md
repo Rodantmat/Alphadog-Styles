@@ -99,3 +99,4 @@
 - 2026-12-01 A d2d_shades_vs_ours: mx832.mp3 "I'm Going Home" - Michael Ramir C. [Pop & Party, style d2]
 - 2026-12-01 B c43: mx627.mp3 "Our Nights" - Eugenio Mininni [Electronic & House, style postB]
 - 2026-12-02 d4d_german_shepherd_line_art: mx105.mp3 "See Line Funk" - Alejandro Magaña [Chill & Lo-fi, style d4]
+- 2026-12-02 c44: mx1129.mp3 "At Sixes and Sevens" - Michael Ramir C. [Funk & Disco, style postB]

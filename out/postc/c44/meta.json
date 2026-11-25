@@ -1,0 +1,158 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "92579@6ae6cb61_Soft Cream",
+   "raw": "92579",
+   "breed": "Rottweiler",
+   "colour": "Soft Cream",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_sunset_fairway_3.jpg",
+   "bgname": "Sunset Fairway",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.8
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98426@6ae579fc_Dark Chocolate",
+   "raw": "98426",
+   "breed": "Boston Terrier",
+   "colour": "Dark Chocolate",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Plaster007.jpg",
+   "bgname": "Plaster 007",
+   "fam": "texture:x:0",
+   "ratio": 7.1
+  },
+  {
+   "i": 2,
+   "prod": "Polo",
+   "cam": "102926@6ae7a093_Athletic Heather",
+   "raw": "102926",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Athletic Heather",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_ferndale_studio_04_2.jpg",
+   "bgname": "Ferndale Studio 04",
+   "fam": "hdri:studio:3",
+   "ratio": 6.0
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "92547@6aed2f12_Red",
+   "raw": "92547",
+   "breed": "Bernese Mountain Dog",
+   "colour": "Red",
+   "design": "",
+   "style": "Other",
+   "kind": "flat",
+   "bg": "pt_long_white_tiles_1.jpg",
+   "bgname": "Long White Tiles",
+   "fam": "texture:floor:0",
+   "ratio": 3.6
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae58ba4_Ash",
+   "raw": "111848",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_kloppenheim_03_puresky_2.jpg",
+   "bgname": "Kloppenheim 03 (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.9
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "97992@6ae597d0_Forest Green",
+   "raw": "97992",
+   "breed": "Australian Shepherd",
+   "colour": "Forest Green",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_okoume_veneer_0.jpg",
+   "bgname": "Okoume Veneer",
+   "fam": "texture:wood:0",
+   "ratio": 4.9
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cec9_Sand Dune",
+   "raw": "102054",
+   "breed": "Siberian Husky",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_shanghai_bund_0.jpg",
+   "bgname": "Shanghai Bund",
+   "fam": "hdri:outdoor:4",
+   "ratio": 3.0
+  },
+  {
+   "i": 7,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79eee_White",
+   "raw": "135042",
+   "breed": "Labrador Retriever",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_dirt_aerial_03_1.jpg",
+   "bgname": "Dirt Aerial 03",
+   "fam": "texture:outdoor:0",
+   "ratio": 5.0
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.06965986394557823,
+ "shot_len": 1.1145578231292517,
+ "variant": "v5",
+ "hook_id": 3
+}
