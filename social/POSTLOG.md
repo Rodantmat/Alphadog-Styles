@@ -359,3 +359,18 @@
 - No failed, error or stuck items. Nothing past due and unsent. Nothing forced, nothing deleted.
 - Future items left alone: 32 scheduled across both accounts (Nov 26 B onward).
 - Final status per app for Nov 26 A: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-26T20:26Z Buffer fill run (Thu Nov 26 12:20 PT, scheduled task)
+- Listed acct1 (run 45889608436) and acct2 (run 45889612405) via buffer-run.yml args=posts: both success, logs read.
+- Past-due check: every post due before now is `sent` on all 4 apps (Nov 26 A poodle, Nov 26 B corgi, Nov 25 A neon GSP incl. Pinterest forced 17:45Z, Nov 25 B chihuahua, and all earlier). Nothing missed, nothing recreated.
+- SCHEDULED (plan social/plan_20261126_d2d_d4d_ig_tt.json acct 1, social/plan_20261126_d2d_d4d_fbpin.json acct 2, committed 854412b4; runs 45890304883 and 45890309503 success, all 8 POSTs `scheduled`): A d2d_shades_vs_ours (Dec 1 17:00Z) and A d4d_german_shepherd_line_art (Dec 2 17:00Z), on IG, TikTok, FB and Pinterest (keyword titles, per-breed UTM urls).
+- Re-listed (runs 45890704577 acct 1, 45890709086 acct 2): both new items present as `scheduled` on all 4 apps. Each channel now has 10 of 10 scheduled.
+- Checks: variation.py check passes for d2d and d4d except the self-registered music line (mx832 and mx105 each appear only in their own entry, music_log lines 99 and 101).
+- SKIPPED, rule breaks (generator must rebuild):
+  - B c42 Doberman (due Dec 1 04:00Z): Dark Chocolate colour repeats c41 back-to-back (V1); Cane Corso, Golden Retriever, Doberman, Great Dane and Miniature Schnauzer repeat c40 inside 7 posts (rule 8).
+  - B c43 Boxer (due Dec 2 04:00Z): Stone dad hat repeats c41 (product + colour); American Pit Bull Terrier and Dachshund repeat c41 (rule 8).
+  - B c44 Rottweiler (due Dec 3 04:00Z): Boston Terrier, Bernese Mountain Dog, German Shorthaired Pointer and Australian Shepherd repeat c41 (rule 8). Also Forest Green tee vs c43.
+- FLAG d2d caption (social/videos/d2d_shades_vs_ours.caption.txt): 8 hashtags (rule 16c wants 3-5) and no "send this to ..." line. Scheduled as built (not an enforcement check); generator to fix the caption at source for future posts.
+- ALERT (lead): empty Post B slots Nov 30 PT (Dec 1 04:00Z) and Dec 1 PT (Dec 2 04:00Z), Dec 2 PT (Dec 3 04:00Z). No built A or B for Dec 3 or later. Generator must rebuild c42/c43/c44 replacements with exclusions for c40/c41 and build from Dec 3 (7-day lead target).
+- Tomorrow (Nov 27) is fully scheduled (A d7c beagle 17:00Z, B c38 husky 04:00Z). No Post B slot is empty before Dec 1.
+- Result: OK for posts (none missed). Scheduling: 2 added, 3 Post B items skipped for rule breaks, lead ALERT.
