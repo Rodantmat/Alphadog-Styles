@@ -335,3 +335,11 @@
 - NOT SCHEDULED (channel full): B c42 Doberman Pinscher (Dec 1 04:00Z), A d2d_shades_vs_ours (Dec 1 17:00Z), B c43 Boxer (Dec 2 04:00Z). Built, waiting for slots.
 - ALERT (lead target, not tomorrow): no Post A built for Dec 2 yet (built items end at Dec 2 B). Generator must build the Dec 2 A. Tomorrow (Nov 26) is scheduled on all 4 apps.
 - Result: OK. Buffer full (10/10 per channel).
+
+## 2026-11-26T04:37Z Checker run (Thu Nov 26 04:34Z, scheduled task)
+- Listed acct1 (IG+TikTok, run 45756156071) and acct2 (FB+Pinterest, run 45756159048) via buffer-run.yml args=posts; both success, logs read.
+- Slot B Wed Nov 25 20:00 PT (c37 Pembroke Welsh Corgi, due 04:00Z Nov 26): sent on all 4 (IG 6b034e35d864a01105f1ae95, TikTok 6b034e35d864a01105f1aee8, FB 6b034e43cc364169c181900c, Pinterest 6b034e43846b0ee907b5a108).
+- Slot A Wed Nov 25 9:00 PT (d6d_neon_pointer, due 17:00Z): sent on all 4 (IG 6b00ac3e44c36191135c4ee8, TikTok 6b00ac3f44c36191135c4f33, FB 6b00ac3ee3772ee0cf64a16a, Pinterest 6b071e04c3e5b879357ad00f).
+- No failed, error or stuck items. Nothing past due and unsent. Nothing forced, nothing deleted.
+- Future items left alone: 9 scheduled per channel (Nov 26 A poodle 17:00Z through Nov 30 B c41/c42 and A laugh01).
+- Final status per app for Nov 25 A and B: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
