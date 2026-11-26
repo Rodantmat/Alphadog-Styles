@@ -343,3 +343,11 @@
 - No failed, error or stuck items. Nothing past due and unsent. Nothing forced, nothing deleted.
 - Future items left alone: 9 scheduled per channel (Nov 26 A poodle 17:00Z through Nov 30 B c41/c42 and A laugh01).
 - Final status per app for Nov 25 A and B: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-26T17:38Z Checker run (Thu Nov 26 09:35 PT, scheduled task)
+- Listed acct1 (IG+TikTok, run 45869056209) and acct2 (FB+Pinterest, run 45869066464) via buffer-run.yml args=posts; both success, logs read.
+- Slot A Thu Nov 26 9:00 PT (poodle "What do you call a poodle who loves bubble baths?", due 17:00Z): sent on all 4 (IG 6b00ac3fe3772ee0cf64a393, TikTok 6b00ac40861298c9b14e6201, FB 6b00ac3fd425f1473a0ff202, Pinterest 6b00ac40e3772ee0cf64a3dc).
+- Slot B Wed Nov 25 20:00 PT (c37 Pembroke Welsh Corgi, due 04:00Z Nov 26): sent on all 4 (re-confirmed).
+- No failed, error or stuck items. Nothing past due and unsent. Nothing forced, nothing deleted.
+- Future items left alone: 16 scheduled per account (Nov 26 B Nov 27 04:00Z onward).
+- Final status per app for Nov 26 A: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
