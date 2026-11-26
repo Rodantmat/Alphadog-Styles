@@ -415,7 +415,7 @@
     "music": "mx731",
     "note": "built 2026-11-23 with neighbour exclusions (same-day A corgi colours Forest/Sand/Black/Heather Grey/Blue + breed, c41, art c36-c41); breed window relaxed to c41 only, people window c41-c40 (V14 pool tight); lead Doberman Pinscher"
    },
-   "status": "A laugh01_corgi_bread scheduled on all 4 apps (Nov 30 17:00Z, 2026-11-25 run); B c42 built 2026-11-23, waiting for a free slot (Buffer 10/10 per channel)"
+   "status": "A laugh01_corgi_bread scheduled on all 4 apps (Nov 30 17:00Z, 2026-11-25 run); B c42 built 2026-11-23, waiting for a free slot (Buffer 10/10 per channel) | 2026-11-26 run: B c42 NOT SCHEDULED, skipped: colour Dark Chocolate repeats c41 back-to-back; Cane Corso, Golden Retriever, Doberman, Great Dane, Miniature Schnauzer repeat c40 inside 7 posts (VIDEO_RULES 8, V1). Dec 1 04:00Z slot empty until the generator rebuilds it."
   },
   {
    "date": "2026-12-01",
@@ -435,7 +435,7 @@
     "music": "mx627",
     "note": "built 2026-11-24 with neighbour exclusions (same-day A breeds+colours, c42 cameras/people/colour/art c36-c42); breed window vs c42 relaxed (pool empty); lead Boxer; foam cap light blue vs A light-blue tee (minor)"
    },
-   "status": "A + B built 2026-11-24, needs scheduling"
+   "status": "A d2d_shades_vs_ours scheduled on all 4 apps (Dec 1 17:00Z, 2026-11-26 run; its caption has 8 hashtags and no send-this line, rule 16c, flagged for the generator). B c43 NOT SCHEDULED, skipped: Dad Hat Stone repeats c41 and American Pit Bull Terrier and Dachshund repeat c41 inside 7 posts. Dec 2 04:00Z slot empty until rebuilt."
   },
   {
    "date": "2026-12-02",
@@ -455,7 +455,7 @@
     "music": "mx1129",
     "note": "built 2026-11-25 (seed 77, Rottweiler lead); neighbour exclusions: same-day A GSD hoodie colours Light Pink/Navy/Light Blue/Heather Navy (C2_NOCOL), German Shepherd (NOBREED), c43 cameras+bgs, c42-c43 breeds, c41-c43 people, c42-c43 product+colour, art c36-c43, same-day A bgs. 10.1 s looped, 8 shots reviewed at 6 fps"
    },
-   "status": "A d4d + B c44 built, needs scheduling"
+   "status": "A d4d_german_shepherd_line_art scheduled on all 4 apps (Dec 2 17:00Z, 2026-11-26 run). B c44 NOT SCHEDULED, skipped: Boston Terrier, Bernese Mountain Dog, German Shorthaired Pointer and Australian Shepherd repeat c41 inside 7 posts (rule 8); Dec 3 04:00Z slot empty until rebuilt."
   }
  ]
 }
