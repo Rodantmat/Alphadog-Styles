@@ -1,0 +1,158 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee A",
+   "cam": "100623@6ae573e3_Maroon",
+   "raw": "100623",
+   "breed": "Dachshund",
+   "colour": "Maroon",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_qwantani_sunset_puresky_0.jpg",
+   "bgname": "Qwantani Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.6
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "102046@6aed2ee9_Forest",
+   "raw": "102046",
+   "breed": "English Bulldog",
+   "colour": "Forest",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pa_Bricks105.jpg",
+   "bgname": "Bricks 105",
+   "fam": "texture:x:0",
+   "ratio": 3.7
+  },
+  {
+   "i": 2,
+   "prod": "Hoodie",
+   "cam": "111848@6ae58ba4_Ash",
+   "raw": "111848",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Ash",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_green_point_park_2.jpg",
+   "bgname": "Green Point Park",
+   "fam": "hdri:outdoor:2",
+   "ratio": 3.5
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a169_Stone",
+   "raw": "135042",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Stone",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_stone_pathway_02_0.jpg",
+   "bgname": "Stone Pathway 02",
+   "fam": "texture:floor:0",
+   "ratio": 7.1
+  },
+  {
+   "i": 4,
+   "prod": "Tee B",
+   "cam": "102058@6ae6cae2_Soft Pink",
+   "raw": "102058",
+   "breed": "Standard Poodle",
+   "colour": "Soft Pink",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_citrus_orchard_puresky_3.jpg",
+   "bgname": "Citrus Orchard (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.2
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "100615@6ae58817_Natural",
+   "raw": "100615",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Natural",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "folded",
+   "bg": "pt_stenciled_brick_floor_0.jpg",
+   "bgname": "Stenciled Brick Floor",
+   "fam": "texture:outdoor:0",
+   "ratio": 5.3
+  },
+  {
+   "i": 6,
+   "prod": "Foam Trucker Hat",
+   "cam": "110570@6ae7a110_none",
+   "raw": "110570",
+   "breed": "Cane Corso",
+   "colour": "none",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_belfast_sunset_puresky_2.jpg",
+   "bgname": "Belfast Sunset (Pure Sky)",
+   "fam": "hdri:outdoor:4",
+   "ratio": 6.2
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98425@6ae57a3d_Charcoal",
+   "raw": "98425",
+   "breed": "Chihuahua",
+   "colour": "Charcoal",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Fabric048.jpg",
+   "bgname": "Fabric 048",
+   "fam": "texture:x:0",
+   "ratio": 7.1
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.32507936507936364,
+ "shot_len": 0.9752380952380952,
+ "variant": "v5",
+ "hook_id": 1
+}

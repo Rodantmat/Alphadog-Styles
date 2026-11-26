@@ -408,14 +408,14 @@
     "note": "laugh4 new joke 'corgi sits on bread / rise to the occasion', laugh track 427, bg pg_cliffside_1, looped 16.4 s, caption social/videos/laugh01_corgi_bread.caption.txt"
    },
    "B": {
-    "id": "c42",
-    "reel": "out/postc/c42/reel.mp4",
+    "id": "c45",
+    "reel": "out/postc/c45/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Chill & Lo-fi",
-    "music": "mx731",
-    "note": "built 2026-11-23 with neighbour exclusions (same-day A corgi colours Forest/Sand/Black/Heather Grey/Blue + breed, c41, art c36-c41); breed window relaxed to c41 only, people window c41-c40 (V14 pool tight); lead Doberman Pinscher"
+    "music": "mx183",
+    "note": "replaces c42 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 104, Rottweiler lead): same-day A corgi colours + breed, c41, art c36-c41 excluded; relaxed (V14 pool tight): people/breeds window c41 only; minor: Athletic Heather tee and Pink dad hat vs next-morning A d2d heather polo / pink foam cap"
    },
-   "status": "A laugh01_corgi_bread scheduled on all 4 apps (Nov 30 17:00Z, 2026-11-25 run); B c42 built 2026-11-23, waiting for a free slot (Buffer 10/10 per channel) | 2026-11-26 run: B c42 NOT SCHEDULED, skipped: colour Dark Chocolate repeats c41 back-to-back; Cane Corso, Golden Retriever, Doberman, Great Dane, Miniature Schnauzer repeat c40 inside 7 posts (VIDEO_RULES 8, V1). Dec 1 04:00Z slot empty until the generator rebuilds it."
+   "status": "A as before; B c45 built 2026-11-26, needs scheduling (replaces skipped c42)"
   },
   {
    "date": "2026-12-01",
@@ -428,14 +428,14 @@
     "note": "d2 shades vs ours, new breeds shiba/border collie/husky/frenchie/golden, bg pa_Rock060, looped 11.1 s, caption social/videos/d2d_shades_vs_ours.caption.txt"
    },
    "B": {
-    "id": "c43",
-    "reel": "out/postc/c43/reel.mp4",
+    "id": "c46",
+    "reel": "out/postc/c46/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Electronic & House",
-    "music": "mx627",
-    "note": "built 2026-11-24 with neighbour exclusions (same-day A breeds+colours, c42 cameras/people/colour/art c36-c42); breed window vs c42 relaxed (pool empty); lead Boxer; foam cap light blue vs A light-blue tee (minor)"
+    "music": "mx740",
+    "note": "replaces c43 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 203, Dachshund lead): excluded d2d breeds (shiba/border collie/husky/frenchie/golden), next-morning A d4d GSD + colours Light Pink/Navy/Light Blue, c45 breeds/people/product+colour, art c36-c45; minor: Soft Pink tee near d4d Light Pink hoodie"
    },
-   "status": "A d2d_shades_vs_ours scheduled on all 4 apps (Dec 1 17:00Z, 2026-11-26 run; its caption has 8 hashtags and no send-this line, rule 16c, flagged for the generator). B c43 NOT SCHEDULED, skipped: Dad Hat Stone repeats c41 and American Pit Bull Terrier and Dachshund repeat c41 inside 7 posts. Dec 2 04:00Z slot empty until rebuilt."
+   "status": "A as before; B c46 built 2026-11-26, needs scheduling (replaces skipped c43)"
   },
   {
    "date": "2026-12-02",
@@ -448,14 +448,34 @@
     "note": "d4 line-art hoodies, German Shepherd, 3 hoodies (Light Pink front face, Navy back print, Light Blue face), real textures bg, looped 12.2 s, caption social/videos/d4d_german_shepherd_line_art.caption.txt; vidA4 now removes white armhole slivers and names the breed from frame 0"
    },
    "B": {
-    "id": "c44",
-    "reel": "out/postc/c44/reel.mp4",
+    "id": "c47",
+    "reel": "out/postc/c47/reel.mp4",
     "slot": "20:00 PT",
     "theme": "Funk & Disco",
-    "music": "mx1129",
-    "note": "built 2026-11-25 (seed 77, Rottweiler lead); neighbour exclusions: same-day A GSD hoodie colours Light Pink/Navy/Light Blue/Heather Navy (C2_NOCOL), German Shepherd (NOBREED), c43 cameras+bgs, c42-c43 breeds, c41-c43 people, c42-c43 product+colour, art c36-c43, same-day A bgs. 10.1 s looped, 8 shots reviewed at 6 fps"
+    "music": "mx793",
+    "note": "replaces c44 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 311, French Bulldog lead): excluded GSD + Bernese (A neighbours), c45-c46 breeds/people, c46 product+colour, art c36-c46, A colours Light Pink/Navy/Light Blue/cream/grey/heather/sand; minor: Pink dad hat vs d4d Light Pink hoodie"
    },
-   "status": "A d4d_german_shepherd_line_art scheduled on all 4 apps (Dec 2 17:00Z, 2026-11-26 run). B c44 NOT SCHEDULED, skipped: Boston Terrier, Bernese Mountain Dog, German Shorthaired Pointer and Australian Shepherd repeat c41 inside 7 posts (rule 8); Dec 3 04:00Z slot empty until rebuilt."
+   "status": "A as before; B c47 built 2026-11-26, needs scheduling (replaces skipped c44)"
+  },
+  {
+   "date": "2026-12-03",
+   "weekday": "Thu",
+   "A": {
+    "video": "social/videos/laugh02_bernese.mp4",
+    "slot": "09:00 PT weekdays / 10:00 PT weekends",
+    "theme": "Hip-hop & Trap",
+    "music": "mx135",
+    "note": "laugh2 new joke 'Why is a Bernese the best winter coat? / 100 pounds of fluff!' (JOKES.md #16), laugh track 413, bg pg_viale_giuseppe_garibaldi_2 (night city), looped 12.0 s, caption social/videos/laugh02_bernese.caption.txt (3 tags + send-this line, rule 16c)"
+   },
+   "B": {
+    "id": "c48",
+    "reel": "out/postc/c48/reel.mp4",
+    "slot": "20:00 PT",
+    "theme": "Feel-good",
+    "music": "mx747",
+    "note": "built 2026-11-26 (seed 410, Great Dane lead, re-rolled from seed 404 whose opener design was too faint): same-day A Bernese + colours cream/grey/heather/sand excluded, c46-c47 breeds/people, c47 product+colour, art c36-c47; relaxed (V14): breeds of c45 reused (3 reels back); White tee + White polo/tee share colour"
+   },
+   "status": "A laugh02_bernese and B c48 built 2026-11-26, need scheduling"
   }
  ]
 }

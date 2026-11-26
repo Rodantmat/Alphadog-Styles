@@ -1,0 +1,158 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Tee B",
+   "cam": "92579@6ae6cb61_Soft Cream",
+   "raw": "92579",
+   "breed": "Rottweiler",
+   "colour": "Soft Cream",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_wooden_studio_04_1.jpg",
+   "bgname": "Wooden Studio 04",
+   "fam": "hdri:studio:3",
+   "ratio": 3.7
+  },
+  {
+   "i": 1,
+   "prod": "Hoodie",
+   "cam": "98425@6ae57429_Military Green",
+   "raw": "98425",
+   "breed": "Beagle",
+   "colour": "Military Green",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_macro_flour_1.jpg",
+   "bgname": "Macro Flour",
+   "fam": "texture:x:0",
+   "ratio": 4.2
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100616@6ae592e0_Dark Heather",
+   "raw": "100616",
+   "breed": "Labrador Retriever",
+   "colour": "Dark Heather",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_qwantani_noon_puresky_0.jpg",
+   "bgname": "Qwantani Noon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 4.8
+  },
+  {
+   "i": 3,
+   "prod": "Tee B",
+   "cam": "92547@6ae6ca7d_Athletic Heather",
+   "raw": "92547",
+   "breed": "German Shepherd",
+   "colour": "Athletic Heather",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_exterior_wall_cladding_02_1.jpg",
+   "bgname": "Exterior Wall Cladding 02",
+   "fam": "texture:outdoor:0",
+   "ratio": 4.7
+  },
+  {
+   "i": 4,
+   "prod": "Tee A",
+   "cam": "100617@6ae57825_Charcoal",
+   "raw": "100617",
+   "breed": "Boxer",
+   "colour": "Charcoal",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_qwantani_dusk_2_puresky_0.jpg",
+   "bgname": "Qwantani Dusk 2 (Pure Sky)",
+   "fam": "hdri:outdoor:5",
+   "ratio": 4.7
+  },
+  {
+   "i": 5,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a26d_White",
+   "raw": "109494",
+   "breed": "Miniature Schnauzer",
+   "colour": "White",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Concrete042A.jpg",
+   "bgname": "Concrete 042 A",
+   "fam": "texture:x:0",
+   "ratio": 4.8
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102062@6ae6ccbf_Natural",
+   "raw": "102062",
+   "breed": "Doberman Pinscher",
+   "colour": "Natural",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_aristea_wreck_puresky_2.jpg",
+   "bgname": "Aristea Wreck (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.3
+  },
+  {
+   "i": 7,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a3bc_Pink",
+   "raw": "135042",
+   "breed": "Great Dane",
+   "colour": "Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_grey_roof_01_0.jpg",
+   "bgname": "Grey Roof 01",
+   "fam": "texture:outdoor:0",
+   "ratio": 4.2
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2902494331065767,
+ "shot_len": 1.0681179138321995,
+ "variant": "v5",
+ "hook_id": 0
+}

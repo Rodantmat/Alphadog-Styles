@@ -100,3 +100,8 @@
 - 2026-12-01 B c43: mx627.mp3 "Our Nights" - Eugenio Mininni [Electronic & House, style postB]
 - 2026-12-02 d4d_german_shepherd_line_art: mx105.mp3 "See Line Funk" - Alejandro Magaña [Chill & Lo-fi, style d4]
 - 2026-12-02 c44: mx1129.mp3 "At Sixes and Sevens" - Michael Ramir C. [Funk & Disco, style postB]
+- 2026-12-03 A laugh02_bernese: mx135.mp3 "Sleepy Cat" - Alejandro Magaña (A. M.) [Hip-hop & Trap, style laugh2]
+- 2026-12-01 B c45: mx183.mp3 "Roses" - Andrew Ev [Chill & Lo-fi, style postB]
+- 2026-12-02 B c46: mx740.mp3 "Dance Zero" - Lily J [Electronic & House, style postB]
+- 2026-12-03 B c47: mx793.mp3 "Déjà vu" - Michael Ramir C. [Funk & Disco, style postB]
+- 2026-12-04 B c48: mx747.mp3 "Relaxation 03" - Lily J [Feel-good, style postB]

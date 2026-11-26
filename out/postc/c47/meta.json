@@ -1,0 +1,158 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98429@6ae57d4e_Forest Green",
+   "raw": "98429",
+   "breed": "French Bulldog",
+   "colour": "Forest Green",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_mpumalanga_veld_puresky_1.jpg",
+   "bgname": "Mpumalanga Veld (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 6.0
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "92720@6ae6cb88_Ash",
+   "raw": "92720",
+   "breed": "German Shorthaired Pointer",
+   "colour": "Ash",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_grey_cartago_03_1.jpg",
+   "bgname": "Grey Cartago 03",
+   "fam": "texture:floor:0",
+   "ratio": 6.2
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100619@6ae59114_Military Green",
+   "raw": "100619",
+   "breed": "Boston Terrier",
+   "colour": "Military Green",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_large_corridor_2.jpg",
+   "bgname": "Large Corridor",
+   "fam": "hdri:indoor:0",
+   "ratio": 3.2
+  },
+  {
+   "i": 3,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae79f35_Pink",
+   "raw": "135042",
+   "breed": "Golden Retriever",
+   "colour": "Pink",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Rock058.jpg",
+   "bgname": "Rock 058",
+   "fam": "texture:x:3",
+   "ratio": 4.3
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "100682@6ae57c00_Maroon",
+   "raw": "100682",
+   "breed": "Shiba Inu",
+   "colour": "Maroon",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_qwantani_late_afternoon_puresky_1.jpg",
+   "bgname": "Qwantani Late Afternoon (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.9
+  },
+  {
+   "i": 5,
+   "prod": "Tee A",
+   "cam": "100615@6ae58b61_Charcoal",
+   "raw": "100615",
+   "breed": "Australian Shepherd",
+   "colour": "Charcoal",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "folded",
+   "bg": "pt_oak_veneer_03_0.jpg",
+   "bgname": "Oak Veneer 03",
+   "fam": "texture:wood:0",
+   "ratio": 4.9
+  },
+  {
+   "i": 6,
+   "prod": "Tee B",
+   "cam": "102054@6ae6cec9_Sand Dune",
+   "raw": "102054",
+   "breed": "Siberian Husky",
+   "colour": "Sand Dune",
+   "design": "Classic",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_photo_studio_loft_hall_3.jpg",
+   "bgname": "Photo Studio Loft Hall",
+   "fam": "hdri:indoor:1",
+   "ratio": 5.5
+  },
+  {
+   "i": 7,
+   "prod": "Hoodie",
+   "cam": "98424@6ae58144_Dark Chocolate",
+   "raw": "98424",
+   "breed": "Border Collie",
+   "colour": "Dark Chocolate",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pa_Metal041A.jpg",
+   "bgname": "Metal 041 A",
+   "fam": "texture:x:3",
+   "ratio": 7.3
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.4643990929705194,
+ "shot_len": 1.207437641723356,
+ "variant": "v5",
+ "hook_id": 2
+}
