@@ -415,7 +415,7 @@
     "music": "mx183",
     "note": "replaces c42 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 104, Rottweiler lead): same-day A corgi colours + breed, c41, art c36-c41 excluded; relaxed (V14 pool tight): people/breeds window c41 only; minor: Athletic Heather tee and Pink dad hat vs next-morning A d2d heather polo / pink foam cap"
    },
-   "status": "A as before; B c45 built 2026-11-26, needs scheduling (replaces skipped c42)"
+   "status": "A as before; B c45 built 2026-11-26, needs scheduling (replaces skipped c42) | 2026-11-27 fill run: NOT scheduled, skipped (V1 clash with next-morning A d2d: Pink dad hat = pink foam cap, heather tee vs heather polo); rebuild needed"
   },
   {
    "date": "2026-12-01",
@@ -435,7 +435,7 @@
     "music": "mx740",
     "note": "replaces c43 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 203, Dachshund lead): excluded d2d breeds (shiba/border collie/husky/frenchie/golden), next-morning A d4d GSD + colours Light Pink/Navy/Light Blue, c45 breeds/people/product+colour, art c36-c45; minor: Soft Pink tee near d4d Light Pink hoodie"
    },
-   "status": "A as before; B c46 built 2026-11-26, needs scheduling (replaces skipped c43)"
+   "status": "A as before; B c46 built 2026-11-26, needs scheduling (replaces skipped c43) | 2026-11-27 fill run: NOT scheduled, skipped (V1 clash: foam trucker hat = foam cap of same-day A d2d; Soft Pink tee vs d4d Light Pink hoodie); rebuild needed"
   },
   {
    "date": "2026-12-02",
@@ -455,7 +455,7 @@
     "music": "mx793",
     "note": "replaces c44 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 311, French Bulldog lead): excluded GSD + Bernese (A neighbours), c45-c46 breeds/people, c46 product+colour, art c36-c46, A colours Light Pink/Navy/Light Blue/cream/grey/heather/sand; minor: Pink dad hat vs d4d Light Pink hoodie"
    },
-   "status": "A as before; B c47 built 2026-11-26, needs scheduling (replaces skipped c44)"
+   "status": "A as before; B c47 built 2026-11-26, needs scheduling (replaces skipped c44) | 2026-11-27 fill run: not scheduled (held back: date order after skipped c46; pink dad hat vs d4d Light Pink hoodie); rebuild with exclusions"
   },
   {
    "date": "2026-12-03",
@@ -475,7 +475,7 @@
     "music": "mx747",
     "note": "built 2026-11-26 (seed 410, Great Dane lead, re-rolled from seed 404 whose opener design was too faint): same-day A Bernese + colours cream/grey/heather/sand excluded, c46-c47 breeds/people, c47 product+colour, art c36-c47; relaxed (V14): breeds of c45 reused (3 reels back); White tee + White polo/tee share colour"
    },
-   "status": "A laugh02_bernese and B c48 built 2026-11-26, need scheduling"
+   "status": "A laugh02_bernese and B c48 built 2026-11-26, need scheduling | 2026-11-27 fill run: not scheduled (held back: date order after skipped B c45/c46)"
   }
  ]
 }

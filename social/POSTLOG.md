@@ -398,3 +398,16 @@
 - Totals per account: 100 posts, 84 sent, 16 scheduled, 0 failed/error/stuck. Nothing due before 18:16Z and unsent.
 - Nothing forced, nothing deleted. Future scheduled items (Nov 28 04:00Z onward) left alone.
 - Final status Nov 27 A and Nov 26 B: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
+
+## 2026-11-27T20:14Z Buffer fill run (Fri Nov 27 12:14 PT, scheduled task)
+- Listed acct1 (IG+TikTok, run 46062242183) and acct2 (FB+Pinterest, run 46062246047) via buffer-run.yml args=posts: both success, logs parsed.
+- Past-due check: every post due before 20:14Z is `sent` on all 4 apps (Nov 27 A beagle, Nov 27 B husky). No failed, error or stuck items. Nothing forced, nothing deleted.
+- Each channel has 8 scheduled (Nov 28 04:00Z to Dec 2 17:00Z), so 2 free slots per channel. Tomorrow (Nov 28) is fully scheduled on all 4 apps.
+- SCHEDULED: nothing added this run. Walked schedule.json in date order and stopped at the first blocked day.
+- SKIPPED, rule breaks (generator must rebuild):
+  - B c45 Rottweiler (Nov 30 PT, due Dec 1 04:00Z): Pink dad hat is the same colour and cap type as the next-morning A d2d pink foam cap; Athletic Heather tee vs heather polo (V1).
+  - B c46 Dachshund (Dec 1 PT, due Dec 2 04:00Z): foam trucker hat is the same product type as the same-day A d2d foam cap; Soft Pink tee vs next-morning d4d Light Pink hoodie (V1).
+  - B c47 (Dec 2 PT, due Dec 3 04:00Z) and A laugh02_bernese (Dec 3) and B c48 (Dec 4): held back by date order, not evaluated. c47 has a pink dad hat vs d4d Light Pink hoodie, the same clash as c46.
+- FLAG, owner decision (not a skip): VIDEO_RULES 8 "no breed twice inside 7 posts" cannot hold with 8 breeds per reel drawn from 25 allowed breeds. Breeds repeat across c36-c46 already, including c45 and c46 vs c36-c41. Needs an owner ruling (V14).
+- ALERT (lead): Post B slots Nov 30 PT (Dec 1 04:00Z) and Dec 1 PT (Dec 2 04:00Z) are empty on all 4 apps. Built stock ends at Dec 3 A and Dec 4 B; there is no built Dec 4 A. Generator must rebuild c45/c46 (and c47) with exclusions for same-day and next-morning A colours and product types.
+- Result: posts OK (none missed); scheduling 0 added, 2 skipped (V1), lead ALERT.
