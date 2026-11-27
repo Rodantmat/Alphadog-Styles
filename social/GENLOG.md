@@ -185,3 +185,4 @@
 2026-11-27T18:36Z checker run started (add_repo tool absent; repo at /home/claude/alphadog-styles on main)
 2026-11-27T18:39Z checker OK: Fri Nov 27 9:00 PT slot A (beagle, due 17:00Z) and Thu Nov 26 20:00 PT slot B (siberian husky, due 04:00Z Nov 27) sent on IG, TikTok, FB, Pinterest. Buffer runs 46050713048 (acct1) and 46050726188 (acct2) success, logs parsed (84 sent / 16 scheduled per account, 0 failed/error/stuck). Nothing missed, nothing forced, no deletes. Result OK.
 2026-11-27T22:49:48Z generator run started (add_repo tool absent; repo at /home/claude/alphadog-styles on main)
+2026-11-27T23:42:59Z generator: restore OK (music 1084, bg 6026, trans 103 png in out/trans + trans2 472, merch_lib, kl_engine in /tmp/kl). REBUILD FIRST: flagged c45/c46/c47 (Nov30/Dec1/Dec2 B). Done+pushed: c49 (Nov 30, Chihuahua lead, mx534), c50 (Dec 1, Pit Bull lead, mx1188). c51 (Dec 2) rendering. Then Dec 4 A (d5) + B.
