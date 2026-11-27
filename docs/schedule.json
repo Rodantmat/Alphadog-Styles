@@ -428,14 +428,14 @@
     "note": "d2 shades vs ours, new breeds shiba/border collie/husky/frenchie/golden, bg pa_Rock060, looped 11.1 s, caption social/videos/d2d_shades_vs_ours.caption.txt"
    },
    "B": {
-    "id": "c46",
-    "reel": "out/postc/c46/reel.mp4",
+    "id": "c50",
+    "reel": "out/postc/c50/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Electronic & House",
-    "music": "mx740",
-    "note": "replaces c43 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 203, Dachshund lead): excluded d2d breeds (shiba/border collie/husky/frenchie/golden), next-morning A d4d GSD + colours Light Pink/Navy/Light Blue, c45 breeds/people/product+colour, art c36-c45; minor: Soft Pink tee near d4d Light Pink hoodie"
+    "theme": "Funk & Disco",
+    "music": "mx1188",
+    "note": "replaces c46 (V1 clash: foam trucker hat = foam cap of same-day A d2d; Soft Pink tee vs d4d Light Pink hoodie); rebuilt 2026-11-27 (seed 224, Pit Bull lead): excluded d2d breeds + GSD, d2d/d4d colours (heather, sand, red, navy, light blue, all pinks, foam hat), c49 product+colour, art c40,c41,c48,c49; relaxed (V14, back-person pool 1-2): breed window none, people window c49 only, art window c40+; minor: Charcoal hoodie near d2d dark-grey dad cap"
    },
-   "status": "A as before; B c46 built 2026-11-26, needs scheduling (replaces skipped c43) | 2026-11-27 fill run: NOT scheduled, skipped (V1 clash: foam trucker hat = foam cap of same-day A d2d; Soft Pink tee vs d4d Light Pink hoodie); rebuild needed"
+   "status": "A as before; B c50 built 2026-11-27, needs scheduling (replaces skipped c46)"
   },
   {
    "date": "2026-12-02",

@@ -1,0 +1,158 @@
+{
+ "meta": [
+  {
+   "i": 0,
+   "prod": "Hoodie",
+   "cam": "98430@6ae58846_Dark Chocolate",
+   "raw": "98430",
+   "breed": "American Pit Bull Terrier",
+   "colour": "Dark Chocolate",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_autumn_field_puresky_1.jpg",
+   "bgname": "Autumn Field (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 5.5
+  },
+  {
+   "i": 1,
+   "prod": "Tee B",
+   "cam": "102046@6aed2ef0_Asphalt",
+   "raw": "102046",
+   "breed": "Boxer",
+   "colour": "Asphalt",
+   "design": "",
+   "style": "Other",
+   "kind": "folded",
+   "bg": "pa_Wallpaper001A.jpg",
+   "bgname": "Wallpaper 001 A",
+   "fam": "texture:x:1",
+   "ratio": 5.7
+  },
+  {
+   "i": 2,
+   "prod": "Tee A",
+   "cam": "100618@6ae58041_Ice Grey",
+   "raw": "100618",
+   "breed": "Great Dane",
+   "colour": "Ice Grey",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_studio_small_05_2.jpg",
+   "bgname": "Studio Small 05",
+   "fam": "hdri:indoor:5",
+   "ratio": 6.6
+  },
+  {
+   "i": 3,
+   "prod": "Mesh Trucker Cap",
+   "cam": "109494@6ae7a0fd_White",
+   "raw": "109494",
+   "breed": "Cane Corso",
+   "colour": "White",
+   "design": "Classic",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pa_Road008B.jpg",
+   "bgname": "Road 008 B",
+   "fam": "texture:x:0",
+   "ratio": 7.3
+  },
+  {
+   "i": 4,
+   "prod": "Hoodie",
+   "cam": "111848@6ae575b1_Charcoal",
+   "raw": "111848",
+   "breed": "Cavalier King Charles Spaniel",
+   "colour": "Charcoal",
+   "design": "Heart",
+   "style": "Line Art",
+   "kind": "person",
+   "bg": "pg_mpumalanga_veld_puresky_2.jpg",
+   "bgname": "Mpumalanga Veld (Pure Sky)",
+   "fam": "hdri:outdoor:3",
+   "ratio": 3.3
+  },
+  {
+   "i": 5,
+   "prod": "Dad Hat",
+   "cam": "135042@6ae7a3fa_Khaki",
+   "raw": "135042",
+   "breed": "Boston Terrier",
+   "colour": "Khaki",
+   "design": "Heart",
+   "style": "Geometric",
+   "kind": "flat",
+   "bg": "pt_volcanic_rock_tiles_0.jpg",
+   "bgname": "Volcanic Rock Tiles",
+   "fam": "texture:wall:0",
+   "ratio": 4.5
+  },
+  {
+   "i": 6,
+   "prod": "Hoodie",
+   "cam": "111848@6ae57708_Black",
+   "raw": "111848",
+   "breed": "Doberman Pinscher",
+   "colour": "Black",
+   "design": "Cool",
+   "style": "Geometric",
+   "kind": "person",
+   "bg": "pg_blouberg_sunrise_1_2.jpg",
+   "bgname": "Blouberg Sunrise 1",
+   "fam": "hdri:outdoor:0",
+   "ratio": 4.7
+  },
+  {
+   "i": 7,
+   "prod": "Tee A",
+   "cam": "97993@6ae57734_Military Green",
+   "raw": "97993",
+   "breed": "Pembroke Welsh Corgi",
+   "colour": "Military Green",
+   "design": "Cool",
+   "style": "Line Art",
+   "kind": "flat",
+   "bg": "pt_flour_0.jpg",
+   "bgname": "Flour",
+   "fam": "texture:x:0",
+   "ratio": 4.7
+  }
+ ],
+ "trans": [
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ],
+  [
+   "smoothleft",
+   0.8
+  ],
+  [
+   "push",
+   0.8
+  ]
+ ],
+ "beat_phase": 0.2321995464852593,
+ "shot_len": 1.1609977324263039,
+ "variant": "v5",
+ "hook_id": 0
+}
