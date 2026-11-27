@@ -408,14 +408,14 @@
     "note": "laugh4 new joke 'corgi sits on bread / rise to the occasion', laugh track 427, bg pg_cliffside_1, looped 16.4 s, caption social/videos/laugh01_corgi_bread.caption.txt"
    },
    "B": {
-    "id": "c45",
-    "reel": "out/postc/c45/reel.mp4",
+    "id": "c49",
+    "reel": "out/postc/c49/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Chill & Lo-fi",
-    "music": "mx183",
-    "note": "replaces c42 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 104, Rottweiler lead): same-day A corgi colours + breed, c41, art c36-c41 excluded; relaxed (V14 pool tight): people/breeds window c41 only; minor: Athletic Heather tee and Pink dad hat vs next-morning A d2d heather polo / pink foam cap"
+    "theme": "Feel-good",
+    "music": "mx534",
+    "note": "replaces c45 (V1 clash with next-morning A d2d: Pink dad hat = pink foam cap, heather tee vs heather polo); rebuilt 2026-11-27 (seed 105, Chihuahua lead): same-day A corgi + next-morning A d2d colours (forest/sand/black/heather/red/navy/light blue/pinks/foam) and breeds excluded, c41 breeds/people/product+colour, art c36-c41+c48; relaxed: people window c41,c40"
    },
-   "status": "A as before; B c45 built 2026-11-26, needs scheduling (replaces skipped c42) | 2026-11-27 fill run: NOT scheduled, skipped (V1 clash with next-morning A d2d: Pink dad hat = pink foam cap, heather tee vs heather polo); rebuild needed"
+   "status": "A as before; B c49 built 2026-11-27, needs scheduling (replaces skipped c45)"
   },
   {
    "date": "2026-12-01",
