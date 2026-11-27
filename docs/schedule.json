@@ -448,14 +448,14 @@
     "note": "d4 line-art hoodies, German Shepherd, 3 hoodies (Light Pink front face, Navy back print, Light Blue face), real textures bg, looped 12.2 s, caption social/videos/d4d_german_shepherd_line_art.caption.txt; vidA4 now removes white armhole slivers and names the breed from frame 0"
    },
    "B": {
-    "id": "c47",
-    "reel": "out/postc/c47/reel.mp4",
+    "id": "c51",
+    "reel": "out/postc/c51/reel.mp4",
     "slot": "20:00 PT",
-    "theme": "Funk & Disco",
-    "music": "mx793",
-    "note": "replaces c44 (rule 8/V1 repeats vs c41/c40); rebuilt 2026-11-26 (seed 311, French Bulldog lead): excluded GSD + Bernese (A neighbours), c45-c46 breeds/people, c46 product+colour, art c36-c46, A colours Light Pink/Navy/Light Blue/cream/grey/heather/sand; minor: Pink dad hat vs d4d Light Pink hoodie"
+    "theme": "Electronic & House",
+    "music": "mx65",
+    "note": "replaces c47 (pink dad hat vs d4d Light Pink hoodie); rebuilt 2026-11-27 (seed 302, French Bulldog lead): excluded GSD + Bernese, same-day d4d colours (pinks, navy, light blue) and next-morning laugh02_bernese colours (cream, sand, stone/khaki, greys/heathers), c50+c48 product+colour, art c40,c41,c48-c50; relaxed (V14): breed window none, people window c50 only; minor: Charcoal/Ash greys vs bernese heather tank, 4 hoodies"
    },
-   "status": "A as before; B c47 built 2026-11-26, needs scheduling (replaces skipped c44) | 2026-11-27 fill run: not scheduled (held back: date order after skipped c46; pink dad hat vs d4d Light Pink hoodie); rebuild with exclusions"
+   "status": "A as before; B c51 built 2026-11-27, needs scheduling (replaces skipped c47)"
   },
   {
    "date": "2026-12-03",
