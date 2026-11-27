@@ -374,3 +374,11 @@
 - ALERT (lead): empty Post B slots Nov 30 PT (Dec 1 04:00Z) and Dec 1 PT (Dec 2 04:00Z), Dec 2 PT (Dec 3 04:00Z). No built A or B for Dec 3 or later. Generator must rebuild c42/c43/c44 replacements with exclusions for c40/c41 and build from Dec 3 (7-day lead target).
 - Tomorrow (Nov 27) is fully scheduled (A d7c beagle 17:00Z, B c38 husky 04:00Z). No Post B slot is empty before Dec 1.
 - Result: OK for posts (none missed). Scheduling: 2 added, 3 Post B items skipped for rule breaks, lead ALERT.
+
+## 2026-11-27T04:35Z Post checker (scheduled, Thu Nov 26 20:35 PT, 30 min after Post B slot)
+- Listed acct1 (run 45940884461) and acct2 (run 45940882376) via buffer-run.yml args=posts: both success, full logs parsed (202 post lines).
+- Slot checked: Thu Nov 26 B siberian husky (due 2026-11-27T04:00Z): sent on IG, TikTok, FB, Pinterest.
+- Slot before, Thu Nov 26 A poodle (due 17:00Z Nov 26): sent on all 4.
+- No failed, error or stuck items. Nothing overdue and unsent. Nothing forced, nothing deleted.
+- Next slot Fri Nov 27 A beagle (due 17:00Z) is scheduled on all 4 apps; left alone.
+- Final status per app for Nov 26 B: IG OK, TikTok OK, FB OK, Pinterest OK. Result: OK.
