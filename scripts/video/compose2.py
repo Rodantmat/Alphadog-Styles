@@ -8,9 +8,11 @@ def load(f,kind="flat_front"):
     if "trans" in str(f):
         import sprite_clean as _SC, hashlib, os as _os
         cf="out/clean_cache/"+hashlib.md5((str(f)+kind+"v1").encode()).hexdigest()+".png"   # cleaned sprites cached (clean() takes ~1 s); bump "v1" when sprite_clean changes
-        if _os.path.exists(cf): im=Image.open(cf).convert("RGBA")
+        try: cached=Image.open(cf).convert("RGBA") if _os.path.exists(cf) else None
+        except Exception: cached=None                                                         # half-written / corrupt cache file: recompute
+        if cached is not None: im=cached
         else:
-            im=_SC.clean(im,kind); _os.makedirs("out/clean_cache",exist_ok=True); im.save(cf)
+            im=_SC.clean(im,kind); _os.makedirs("out/clean_cache",exist_ok=True); tmp=cf+"."+str(_os.getpid())+".tmp"; im.save(tmp,format="PNG"); _os.replace(tmp,cf)   # atomic: parallel builds never see a partial file
     a=np.array(im)[:,:,3]; ys,xs=np.where(a>6); return im.crop((xs.min(),ys.min(),xs.max()+1,ys.max()+1))
 def garment_rgb(im,kind):
     a=np.array(im); h,w=a.shape[:2]
