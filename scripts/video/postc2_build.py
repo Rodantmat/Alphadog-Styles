@@ -7,7 +7,7 @@ import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 sys.path.insert(0,"scripts/video"); sys.path.insert(0,"social/postb")
 import compose2 as C, bgmatch as BM, postc_build as P1
-import postb_build as PB
+import postb_build as PB, edge_audit as EA
 W,H=1080,1920
 HOOKS={"v1":"Which breed is yours?","v2":"Find your breed","v3":"POV: your dog has merch","v4":"Find your dog's shirt"}
 CTAS={"v2":"Send this to a dog person","v3":"Save for your next gift","v4":"Tag your dog's biggest fan"}
@@ -93,7 +93,7 @@ def build(vid,seed,music,variant="v5"):
     pool=P1.pool(); cat=BM.Catalog()
     _ok={}
     def okc(p):
-        if p["file"] not in _ok: _ok[p["file"]]=not C.edge_bad(C.load(p["file"],kind_of(p)),kind_of(p))
+        if p["file"] not in _ok: _ok[p["file"]]=(lambda im:(not C.edge_bad(im,kind_of(p))) and EA.audit(im,kind_of(p))["ok"])(C.load(p["file"],kind_of(p)))
         return _ok[p["file"]]
     pool=[p for p in pool if okc(p)]
     ex=[x for x in os.environ.get("C2_EXCL","").split(",") if x]                     # V9: never reuse a cutout camera or background from these reels
