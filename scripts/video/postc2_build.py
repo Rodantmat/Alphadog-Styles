@@ -93,7 +93,7 @@ def build(vid,seed,music,variant="v5"):
     pool=P1.pool(); cat=BM.Catalog()
     _ok={}
     def okc(p):
-        if p["file"] not in _ok: _ok[p["file"]]=not C.edge_bad(C.load(p["file"]),kind_of(p))
+        if p["file"] not in _ok: _ok[p["file"]]=not C.edge_bad(C.load(p["file"],kind_of(p)),kind_of(p))
         return _ok[p["file"]]
     pool=[p for p in pool if okc(p)]
     ex=[x for x in os.environ.get("C2_EXCL","").split(",") if x]                     # V9: never reuse a cutout camera or background from these reels
@@ -141,7 +141,7 @@ def build(vid,seed,music,variant="v5"):
         if p not in rest and p.get("breed") not in ub: rest.append(p); ub.add(p.get("breed"))
     fr=[]
     for it in ppl+rest:
-        im=C.load(it["file"]); k=kind_of(it); g=C.garment_rgb(im,k)
+        im=k=kind_of(it); im=C.load(it["file"],k); g=C.garment_rgb(im,k)
         fr.append(dict(it=it,k=k,view=it.get("side"),prod=it["prod"],lum=BM.relL(g),rgb=g))
     seq=order(fr,rnd); taken=set(taken0); fams=[]; shots=[]; meta=[]
     if os.environ.get("C2_DRY"):                                                       # selection-only dry run (2026-11-21): print the pick so seeds can be scored before the 3-minute render

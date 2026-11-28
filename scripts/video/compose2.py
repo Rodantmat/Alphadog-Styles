@@ -3,8 +3,12 @@
 import numpy as np, random
 from PIL import Image,ImageFilter,ImageDraw
 W,H=1080,1920
-def load(f):
-    im=Image.open(f).convert("RGBA"); a=np.array(im)[:,:,3]; ys,xs=np.where(a>6); return im.crop((xs.min(),ys.min(),xs.max()+1,ys.max()+1))
+def load(f,kind="flat_front"):
+    im=Image.open(f).convert("RGBA")
+    if "trans" in str(f):
+        import sprite_clean as _SC
+        im=_SC.clean(im,kind)
+    a=np.array(im)[:,:,3]; ys,xs=np.where(a>6); return im.crop((xs.min(),ys.min(),xs.max()+1,ys.max()+1))
 def garment_rgb(im,kind):
     a=np.array(im); h,w=a.shape[:2]
     if kind=="person": a=a[int(h*.28):int(h*.58),int(w*.28):int(w*.72)]
@@ -43,7 +47,7 @@ def shadow_layer(im,x,y,kind,bgc,cropped):
 def put_squash(sq,x,y,col,op,blur):
     s=Image.new("RGBA",sq.size,col+(255,)); s.putalpha(sq.point(lambda v:int(v*op))); l=Image.new("RGBA",(W,H),(0,0,0,0)); l.paste(s,(x,y),s); return l.filter(ImageFilter.GaussianBlur(blur))
 def compose(cut_file,kind,bgfile,seed=0,kb=False):
-    rnd=random.Random(seed); im=load(cut_file); bg=prep_bg(Image.open(bgfile),kind,rnd); bgc=tuple(int(v) for v in np.array(bg.resize((16,16))).reshape(-1,3).mean(axis=0)); cropped=cropped_bottom(im); w,h=im.size
+    rnd=random.Random(seed); im=load(cut_file,kind); bg=prep_bg(Image.open(bgfile),kind,rnd); bgc=tuple(int(v) for v in np.array(bg.resize((16,16))).reshape(-1,3).mean(axis=0)); cropped=cropped_bottom(im); w,h=im.size
     if kind=="person":
         th=1480 if cropped else 1180; s=min(th/h,1000/w); im=im.resize((int(w*s),int(h*s)),Image.LANCZOS); x=(W-im.width)//2+rnd.randint(-40,40); y=H-im.height+ (6 if cropped else -(rnd.randint(480,520)))
         if not cropped: y=min(y,1440-im.height+0)
