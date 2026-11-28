@@ -90,7 +90,8 @@ def pin_json(b,variant,prods,vid=None):
 def build(vid,seed,music,variant="v5"):
     if variant in ("v1","v2","v3","v4") and not os.environ.get("C2_KEEP_VARIANT"): variant="v5"   # 2026-11-20: the generator prompt still passes v2; every Post B is now the breed-led v5 unless C2_KEEP_VARIANT=1 (A/B tests)
     rnd=random.Random(seed); od=f"out/postc/{vid}"; os.makedirs(od,exist_ok=True)
-    pool=P1.pool(); cat=BM.Catalog()
+    pool=P1.pool(); cat=BM.Catalog(); allpool=list(pool); REDO=bool(os.environ.get('C2_REDO')); OLD=json.load(open(f'{od}/meta.json')) if REDO else None
+    if REDO: import shutil; shutil.copy(f'{od}/reel.mp4',f'{od}/reel_prefix.mp4')
     _ok={}
     def okc(p):
         if p["file"] not in _ok: _ok[p["file"]]=(lambda im:(not C.edge_bad(im,kind_of(p))) and EA.audit(im,kind_of(p))["ok"])(C.load(p["file"],kind_of(p)))
@@ -143,7 +144,15 @@ def build(vid,seed,music,variant="v5"):
     for it in ppl+rest:
         im=k=kind_of(it); im=C.load(it["file"],k); g=C.garment_rgb(im,k)
         fr.append(dict(it=it,k=k,view=it.get("side"),prod=it["prod"],lum=BM.relL(g),rgb=g))
-    seq=order(fr,rnd); taken=set(taken0); fams=[]; shots=[]; meta=[]
+    if REDO:                                                                            # re-render an already built reel with the SAME shots/backgrounds/transitions/audio, only the (now cleaned + audited) sprites change
+        fr=[]
+        for m in OLD["meta"]:
+            it=next(q for q in allpool if q["cam"]==m["cam"] and q["prod"]==m["prod"]); k=kind_of(it); im=C.load(it["file"],k)
+            assert (not C.edge_bad(im,k)) and EA.audit(im,k)["ok"], ("sprite fails audit",it["file"])
+            g=C.garment_rgb(im,k); fr.append(dict(it=it,k=k,view=it.get("side"),prod=it["prod"],lum=BM.relL(g),rgb=g))
+        seq=fr
+    else: seq=order(fr,rnd)
+    taken=set(taken0); fams=[]; shots=[]; meta=[]
     if os.environ.get("C2_DRY"):                                                       # selection-only dry run (2026-11-21): print the pick so seeds can be scored before the 3-minute render
         import collections
         cs=[f['it'].get('colour') for f in seq if f['it'].get('colour')!='none']; pr=[f['prod'] for f in seq]
@@ -151,7 +160,8 @@ def build(vid,seed,music,variant="v5"):
     lead=seq[0]["it"].get("breed") or "dog"
     for i,f in enumerate(seq):
         b=None
-        for att in range(3):
+        if REDO: b=next(r for r in cat.rows if r["file"]==OLD["meta"][i]["bg"])
+        for att in range(0 if REDO else 3):
             b=cat.pick(f["rgb"],"person" if f["k"]=="person" else f["k"],avoid_fam=fams[-2:],taken=taken,rnd=rnd,only=None if f['k']=='person' else (lambda r:str(BM.family(r)).startswith('texture') or r['file'].startswith('pa_')))
             if b: break
         if not b: raise SystemExit(f"no background for {f['k']} {f['rgb']}")
@@ -164,7 +174,8 @@ def build(vid,seed,music,variant="v5"):
             if variant!="v0" and i==0: img=add_text(img,HOOKS.get(variant,HOOKS["v1"]),310,66)
             if variant in CTAS and i==len(seq)-1: img=add_text(img,CTAS[variant],1400,60)
         fn=f"{od}/s{i:02d}.png"; img.save(fn); shots.append(fn); meta.append(dict(i=i,prod=f["prod"],cam=f["it"]["cam"],raw=f["it"].get("raw"),breed=f["it"].get("breed"),colour=f["it"].get("colour"),design=f["it"].get("design"),style=f["it"].get("style"),kind=f["k"],bg=b["file"],bgname=b.get("name"),fam=fams[-1],ratio=round(BM.ratio(BM.relL(f["rgb"]),BM.bgL(b)),1)))
-    phase,L=beat_grid(music); T_used={}; trs=[pick_trans(seq[i],seq[i+1],T_used,rnd) for i in range(N-1)]
+    if REDO: phase,L=OLD["beat_phase"],OLD["shot_len"]; T_used={}; trs=[tuple(t) for t in OLD["trans"]]
+    else: phase,L=beat_grid(music); T_used={}; trs=[pick_trans(seq[i],seq[i+1],T_used,rnd) for i in range(N-1)]
     sT=sum(t for _,t in trs); Ls=[(10.0+sT)/N]*N          # fill to exactly ~10 s
     FPS=30; ins=[]; filt=[]
     LOOP=0.6; shots_all=shots+[shots[0]]; Ls=Ls+[LOOP+0.1]                 # shot N = frame 0 again: the last LOOP s dissolve into the opening frame (clean replay loop)
@@ -184,6 +195,8 @@ def build(vid,seed,music,variant="v5"):
     filt.append(f"[{N+1}:a]atrim=0:{total:.2f},afade=t=in:d=0.2,afade=t=out:st={total-1.2:.2f}:d=1.2,volume=0.7[a]")
     filt.append(f"[{cur}]format=yuv420p[vout]")
     subprocess.run(["ffmpeg","-y","-v","error"]+ins+["-filter_complex",";".join(filt),"-map","[vout]","-map","[a]","-t","10.1","-c:v","libx264","-preset","medium","-crf","20","-c:a","aac","-b:a","160k","-movflags","+faststart",f"{od}/reel.mp4"],check=True)
+    if REDO:                                                                            # keep the original soundtrack bit-for-bit
+        subprocess.run(["ffmpeg","-y","-v","error","-i",f"{od}/reel.mp4","-i",f"{od}/reel_prefix.mp4","-map","0:v","-map","1:a","-c","copy","-shortest","-movflags","+faststart",f"{od}/reel_new.mp4"],check=True); os.replace(f"{od}/reel_new.mp4",f"{od}/reel.mp4"); os.remove(f"{od}/reel_prefix.mp4")
     for fn in shots: os.remove(fn)
     cap=open(f"{od}/caption.txt","w"); cap.write(v5_caption(lead) if variant=="v5" else "Which one is yours? Tell us your breed in the comments.\nTees, hoodies, polos and caps with our dog line art, front and back.\nalphadogstyles.com (link in bio)\n#doglover #dogmom #dogdad #alphadogstyles"); cap.close()
     json.dump(pin_json(lead,variant,[m["prod"] for m in meta],vid),open(f"{od}/pin.json","w"),indent=1)

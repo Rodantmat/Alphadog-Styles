@@ -6,8 +6,11 @@ W,H=1080,1920
 def load(f,kind="flat_front"):
     im=Image.open(f).convert("RGBA")
     if "trans" in str(f):
-        import sprite_clean as _SC
-        im=_SC.clean(im,kind)
+        import sprite_clean as _SC, hashlib, os as _os
+        cf="out/clean_cache/"+hashlib.md5((str(f)+kind+"v1").encode()).hexdigest()+".png"   # cleaned sprites cached (clean() takes ~1 s); bump "v1" when sprite_clean changes
+        if _os.path.exists(cf): im=Image.open(cf).convert("RGBA")
+        else:
+            im=_SC.clean(im,kind); _os.makedirs("out/clean_cache",exist_ok=True); im.save(cf)
     a=np.array(im)[:,:,3]; ys,xs=np.where(a>6); return im.crop((xs.min(),ys.min(),xs.max()+1,ys.max()+1))
 def garment_rgb(im,kind):
     a=np.array(im); h,w=a.shape[:2]
