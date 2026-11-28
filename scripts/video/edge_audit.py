@@ -4,7 +4,7 @@ fringe: share of outline pixels brighter/whiter than the garment just inside | s
 ghost: translucent alpha mass away from the body (box shadow) | verdict ok only if all under limits."""
 import numpy as np, cv2
 W=np.array([0.114,0.587,0.299],np.float32)
-LIM=dict(fringe=0.10,sliver=0.0035,ghost=0.004)
+LIM=dict(fringe=0.10,sliver=0.0035,ghost=0.004,blob=0.0015)
 def audit(im,kind="flat_front"):
     a=np.array(im.convert("RGBA")); al=a[...,3]/255.; bgr=cv2.cvtColor(a[...,:3],cv2.COLOR_RGB2BGR).astype(np.float32)
     solid=(al>0.5).astype(np.uint8); n,l,st,_=cv2.connectedComponentsWithStats(solid)
@@ -30,4 +30,19 @@ def audit(im,kind="flat_front"):
     if kind!="person":
         near=cv2.dilate(keep,np.ones((15,15),np.uint8))
         gh=float(((al>0.04)&(al<0.9)&(near==0)).sum())/area
-    r=dict(fringe=round(fr,4),sliver=round(sl,5),ghost=round(gh,5)); r["ok"]=all(r[k]<=LIM[k] for k in LIM); return r
+    # blob: leftover photo-backdrop pieces (neutral grey/white) glued to the outline that contrast with the garment beside them: armhole slivers, cast shadow under caps/hems
+    bl=0.0
+    if kind!="person":
+        sat=bgr.max(2)-bgr.min(2); neu=((sat<24)&(al>0.1)&(lum>95)&(dist<120)&(dist>0)).astype(np.uint8)
+        nn,nl,nst,_=cv2.connectedComponentsWithStats(neu)
+        for i in range(1,nn):
+            if nst[i,4]<12 or nst[i,4]>0.12*area: continue
+            c=nl==i; dd=dist[c]
+            if dd.min()>8: continue
+            ys=np.where(c.any(1))[0]
+            if dd.max()>(85 if ys.min()>0.80*al.shape[0] else 62): continue
+            ring=(cv2.dilate(c.astype(np.uint8),np.ones((9,9),np.uint8))>0)&(~c)&(keep>0)
+            if ring.sum()<20: continue
+            if np.median(sat[ring])>40 or abs(np.median(lum[c])-np.median(lum[ring]))>55: bl+=nst[i,4]
+        bl=bl/area
+    r=dict(fringe=round(fr,4),sliver=round(sl,5),ghost=round(gh,5),blob=round(bl,5)); r["ok"]=all(r[k]<=LIM[k] for k in LIM); return r
