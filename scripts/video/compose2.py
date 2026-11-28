@@ -7,7 +7,7 @@ def load(f,kind="flat_front"):
     im=Image.open(f).convert("RGBA")
     if "trans" in str(f):
         import sprite_clean as _SC, hashlib, os as _os
-        cf="out/clean_cache/"+hashlib.md5((str(f)+kind+"v1").encode()).hexdigest()+".png"   # cleaned sprites cached (clean() takes ~1 s); bump "v1" when sprite_clean changes
+        cf="out/clean_cache/"+hashlib.md5((str(f)+kind+"v5").encode()).hexdigest()+".png"   # cleaned sprites cached (clean() takes ~1 s); bump "v5" when sprite_clean changes
         try: cached=Image.open(cf).convert("RGBA") if _os.path.exists(cf) else None
         except Exception: cached=None                                                         # half-written / corrupt cache file: recompute
         if cached is not None: im=cached

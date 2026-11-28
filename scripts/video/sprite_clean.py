@@ -21,16 +21,23 @@ def clean(im,kind="flat_front"):
     if not person:
         near=cv2.dilate(keep,cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(9,9)))
         al=np.where((near==0)&(al<0.95),0,al)
-    # 2) enclosed / edge-hugging white slivers when the garment itself is not white (armholes, gaps between sleeve and body)
-    lum=bgr@W; core=dist>22
-    gm=float(np.median(lum[core])) if core.sum()>800 else 255.0
-    if gm<185 and not person:
-        sat=bgr.max(2)-bgr.min(2)
-        wh=((bgr.min(2)>200)&(sat<26)&(al>0.1)&(dist<70)).astype(np.uint8)
-        wh=cv2.dilate(wh,np.ones((5,5),np.uint8))
-        # never delete the print itself: keep white pixels that sit inside the garment body (far from the outline, surrounded by solid garment)
-        body=cv2.erode(keep,np.ones((1,1),np.uint8)); body=(cv2.distanceTransform(body,cv2.DIST_L2,3)>34)
-        wh=np.where(body,0,wh); al=np.where(wh>0,0,al)
+    # 2) leftover photo-backdrop pieces: neutral (grey/white) blobs that hug the outline and contrast with the garment next to them
+    #    = armhole slivers, white fringe pockets, grey cast-shadow under caps. Prints never touch the outline and are deeper than 62 px, so they are safe.
+    if not person:
+        sat=bgr.max(2)-bgr.min(2); lum0=bgr@W
+        neu=((sat<24)&(al>0.1)&(lum0>95)&(dist<120)).astype(np.uint8)
+        nn,nl,nst,_=cv2.connectedComponentsWithStats(neu); A=float(keep.sum()); rm=np.zeros_like(neu)
+        for i in range(1,nn):
+            comp=(nl==i)
+            if nst[i,4]<12 or nst[i,4]>0.12*A: continue
+            dd=dist[comp]
+            ysb=np.where(comp.any(1))[0]; low=ysb.min()>0.80*al.shape[0]                      # grey cast shadow under a cap/hem sits in the bottom 20 %
+            if dd.min()>8 or dd.max()>(85 if low else 62): continue
+            ring=(cv2.dilate(comp.astype(np.uint8),np.ones((9,9),np.uint8))>0)&(~comp)&(keep>0)&(dist>0)
+            if ring.sum()<20: continue
+            rs=float(np.median(sat[ring])); rl=float(np.median(lum0[ring])); cl=float(np.median(lum0[comp]))
+            if rs>40 or abs(cl-rl)>55: rm|=comp.astype(np.uint8)
+        if rm.any(): rm=cv2.dilate(rm,np.ones((5,5),np.uint8)); al=np.where(rm>0,0,al)
     # 3) trim 1.5px from the outline, then re-feather: kills the white mixed-in rim
     k=cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(3,3))
     hard=(al>0.5).astype(np.uint8); hard=cv2.erode(hard,k,iterations=1 if person else 2)
@@ -42,7 +49,9 @@ def clean(im,kind="flat_front"):
         num=cv2.GaussianBlur(bgr*inner[...,None],(0,0),6); den=cv2.GaussianBlur(inner,(0,0),6)[...,None]+1e-3; F=num/den
         rim=(d2<=5)&(al>0.02)
         L0=bgr@W; LF=F@W
-        bad=rim&(((L0-LF)>18)|((L0-LF)<-55))
+        sat0=bgr.max(2)-bgr.min(2); satF=F.max(2)-F.min(2)
+        rim9=(d2<=9)&(al>0.02)&(sat0<32)&(satF>38)&((L0-LF)>22)      # neutral-white pixels on a coloured garment's edge (foam-cap visor rim, mesh edge)
+        bad=(rim&(((L0-LF)>18)|((L0-LF)<-55)))|rim9
         bgr=np.where(bad[...,None],F,bgr)
     # soft outline: 1.2px feather from the trimmed mask, intersected with the old alpha
     soft=cv2.GaussianBlur(keep2.astype(np.float32),(0,0),0.9)
